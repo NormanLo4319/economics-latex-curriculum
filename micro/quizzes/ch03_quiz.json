@@ -45,7 +45,7 @@
       ]
     },
     {
-      "id": "m3-q05", "outcome": "MIC-3", "bloom": "Apply", "difficulty": "medium",
+      "id": "m3-q05", "outcome": "C2001-2", "bloom": "Apply", "difficulty": "medium",
       "stem": "Demand is $Q_d = 90 - 3P$ and supply is $Q_s = 10 + 5P$. What is the equilibrium price?",
       "choices": [
         {"text": "$P^* = 10$", "correct": true, "why": "Set $90 - 3P = 10 + 5P$, so $80 = 8P$ and $P^* = 10$. Check: $Q_d = 60 = Q_s$."},
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "id": "m3-q06", "outcome": "MIC-3", "bloom": "Apply", "difficulty": "medium",
+      "id": "m3-q06", "outcome": "C2001-2", "bloom": "Apply", "difficulty": "medium",
       "stem": "Demand is $Q_d = 120 - 4P$ and supply is $Q_s = 20 + 6P$. What is the equilibrium quantity?",
       "choices": [
         {"text": "$Q^* = 80$", "correct": true, "why": "$P^* = (120-20)/(4+6) = 10$, so $Q^* = 120 - 4(10) = 80$. Check: $Q_s = 20 + 60 = 80$."},
@@ -65,7 +65,7 @@
       ]
     },
     {
-      "id": "m3-q07", "outcome": "MIC-3", "bloom": "Analyze", "difficulty": "medium",
+      "id": "m3-q07", "outcome": "C2001-2", "bloom": "Analyze", "difficulty": "medium",
       "stem": "In the market $Q_d = 120 - 4P$ and $Q_s = 20 + 6P$, the price is fixed at $P = 8$. What is the situation?",
       "choices": [
         {"text": "A shortage of 20 units.", "correct": true, "why": "At $P=8$, $Q_d = 88$ and $Q_s = 68$. Buyers want more than sellers offer, so there is a shortage of $88 - 68 = 20$."},
@@ -85,7 +85,7 @@
       ]
     },
     {
-      "id": "m3-q09", "outcome": "MIC-3", "bloom": "Apply", "difficulty": "hard",
+      "id": "m3-q09", "outcome": "C2001-2", "bloom": "Apply", "difficulty": "hard",
       "stem": "Start with $Q_d = 120 - 4P$ and $Q_s = 20 + 6P$. Demand increases to $Q_d = 160 - 4P$. What is the new equilibrium price?",
       "choices": [
         {"text": "$P^* = 14$", "correct": true, "why": "$P^* = (160-20)/(4+6) = 14$. Check: $Q_d = 160 - 56 = 104 = 20 + 84 = Q_s$."},
@@ -105,7 +105,7 @@
       ]
     },
     {
-      "id": "m3-q11", "outcome": "MIC-3", "bloom": "Evaluate", "difficulty": "medium",
+      "id": "m3-q11", "outcome": "C2001-2", "bloom": "Evaluate", "difficulty": "medium",
       "stem": "The FRED series PCOFFOTMUSDM (Global price of Coffee, Other Mild Arabica) is measured in nominal U.S. cents per pound. A student says its rise over ten years proves coffee became more expensive relative to other goods. What is the best response?",
       "choices": [
         {"text": "Not necessarily. The series is nominal, so you must adjust for inflation with a price index to compare real prices.", "correct": true, "why": "A nominal price can rise simply because the general price level rose. Dividing by a price index such as CPIAUCSL gives a real price."},
