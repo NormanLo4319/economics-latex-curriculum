@@ -1,0 +1,24 @@
+# LaTeX Build Artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+*.bcf
+*.xml
+*.nav
+*.snm
+*.vrb
+*.dvi
+*.lof
+*.lot
+
+# OS / Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
