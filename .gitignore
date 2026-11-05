@@ -22,3 +22,6 @@
 Thumbs.db
 .vscode/
 .idea/
+
+# Generated Canvas outputs (rebuild with tools/)
+build/

@@ -1,0 +1,118 @@
+{
+  "chapter": "Micro Chapter 3: Supply, Demand, and Market Equilibrium",
+  "quiz_title": "Micro Ch. 3 Quiz: Supply, Demand, and Equilibrium",
+  "points_per_question": 1,
+  "review_status": "DRAFT - not instructor-reviewed",
+  "questions": [
+    {
+      "id": "m3-q01", "outcome": "MC-2", "bloom": "Understand", "difficulty": "easy",
+      "stem": "Which event causes a **movement along** the demand curve for coffee?",
+      "choices": [
+        {"text": "A fall in the price of coffee.", "correct": true, "why": "A change in the good's own price moves buyers along the same demand curve. This is a change in quantity demanded."},
+        {"text": "A rise in consumers' incomes (coffee is a normal good).", "correct": false, "why": "Income is a non-price determinant. It shifts the whole demand curve to the right rather than moving along it."},
+        {"text": "A change in consumers' tastes toward coffee.", "correct": false, "why": "Tastes are a non-price determinant. They shift the demand curve."},
+        {"text": "An increase in the number of coffee buyers.", "correct": false, "why": "The number of buyers is a non-price determinant. It shifts the demand curve."}
+      ]
+    },
+    {
+      "id": "m3-q02", "outcome": "MC-2", "bloom": "Apply", "difficulty": "easy",
+      "stem": "The price of tea, a substitute for coffee, rises. What happens in the coffee market, holding all else constant?",
+      "choices": [
+        {"text": "The demand curve for coffee shifts right.", "correct": true, "why": "Tea became more expensive, so some buyers switch to coffee. Demand for coffee increases at every price."},
+        {"text": "The demand curve for coffee shifts left.", "correct": false, "why": "That would happen if tea were a complement, or if the price of a substitute fell."},
+        {"text": "There is a movement up along the demand curve for coffee.", "correct": false, "why": "A movement along the curve requires a change in the price of coffee itself. Here the price of a related good changed."},
+        {"text": "The supply curve for coffee shifts right.", "correct": false, "why": "The price of tea affects what buyers want, not what coffee sellers offer. Supply does not shift."}
+      ]
+    },
+    {
+      "id": "m3-q03", "outcome": "MC-2", "bloom": "Apply", "difficulty": "medium",
+      "stem": "Instant noodles are an inferior good. Consumers' incomes rise. What happens to the demand for instant noodles?",
+      "choices": [
+        {"text": "Demand shifts left.", "correct": true, "why": "For an inferior good, higher income lowers demand. Consumers switch to preferred alternatives."},
+        {"text": "Demand shifts right.", "correct": false, "why": "That is the response for a normal good. Inferior goods respond in the opposite direction."},
+        {"text": "Demand does not change, because income is not a determinant of demand.", "correct": false, "why": "Income is one of the main non-price determinants of demand."},
+        {"text": "There is a movement down along the demand curve.", "correct": false, "why": "The price of noodles did not change, so there is no movement along the curve. The curve itself shifts."}
+      ]
+    },
+    {
+      "id": "m3-q04", "outcome": "MC-2", "bloom": "Apply", "difficulty": "easy",
+      "stem": "A frost destroys part of the coffee harvest. Holding demand constant, what happens to the equilibrium price and quantity?",
+      "choices": [
+        {"text": "Price rises and quantity falls.", "correct": true, "why": "The frost shifts supply left. Along an unchanged demand curve, the new intersection has a higher price and a lower quantity."},
+        {"text": "Price falls and quantity rises.", "correct": false, "why": "That describes an increase in supply (a rightward shift), not a decrease."},
+        {"text": "Price and quantity both rise.", "correct": false, "why": "Both rise only when demand increases. A leftward supply shift cannot raise quantity."},
+        {"text": "Price and quantity both fall.", "correct": false, "why": "Both fall only when demand decreases. A leftward supply shift raises the price."}
+      ]
+    },
+    {
+      "id": "m3-q05", "outcome": "MIC-3", "bloom": "Apply", "difficulty": "medium",
+      "stem": "Demand is $Q_d = 90 - 3P$ and supply is $Q_s = 10 + 5P$. What is the equilibrium price?",
+      "choices": [
+        {"text": "$P^* = 10$", "correct": true, "why": "Set $90 - 3P = 10 + 5P$, so $80 = 8P$ and $P^* = 10$. Check: $Q_d = 60 = Q_s$."},
+        {"text": "$P^* = 12.5$", "correct": false, "why": "This adds the intercepts, $(90+10)/(3+5)$. The intercepts must be subtracted: $a - c$."},
+        {"text": "$P^* = 40$", "correct": false, "why": "This divides by the difference of the slopes, $(90-10)/(5-3)$. The denominator is the sum $b + d$, because both slopes work to push the price toward equilibrium."},
+        {"text": "$P^* = -10$", "correct": false, "why": "This reverses the sign of the numerator, $(10-90)/8$. A negative equilibrium price signals a sign error."}
+      ]
+    },
+    {
+      "id": "m3-q06", "outcome": "MIC-3", "bloom": "Apply", "difficulty": "medium",
+      "stem": "Demand is $Q_d = 120 - 4P$ and supply is $Q_s = 20 + 6P$. What is the equilibrium quantity?",
+      "choices": [
+        {"text": "$Q^* = 80$", "correct": true, "why": "$P^* = (120-20)/(4+6) = 10$, so $Q^* = 120 - 4(10) = 80$. Check: $Q_s = 20 + 60 = 80$."},
+        {"text": "$Q^* = 120$", "correct": false, "why": "$120$ is the quantity demanded at a price of zero (the intercept), not at the equilibrium price."},
+        {"text": "$Q^* = 20$", "correct": false, "why": "$20$ is the quantity supplied at a price of zero (the intercept), not at the equilibrium price."},
+        {"text": "$Q^* = 10$", "correct": false, "why": "$10$ is the equilibrium price. The question asks for the quantity, which comes from substituting the price into a curve."}
+      ]
+    },
+    {
+      "id": "m3-q07", "outcome": "MIC-3", "bloom": "Analyze", "difficulty": "medium",
+      "stem": "In the market $Q_d = 120 - 4P$ and $Q_s = 20 + 6P$, the price is fixed at $P = 8$. What is the situation?",
+      "choices": [
+        {"text": "A shortage of 20 units.", "correct": true, "why": "At $P=8$, $Q_d = 88$ and $Q_s = 68$. Buyers want more than sellers offer, so there is a shortage of $88 - 68 = 20$."},
+        {"text": "A surplus of 20 units.", "correct": false, "why": "A surplus requires $Q_s > Q_d$, which happens when the price is above equilibrium ($P > 10$). Here the price is below it."},
+        {"text": "A shortage of 88 units.", "correct": false, "why": "$88$ is the quantity demanded, not the shortage. The shortage is the gap between $Q_d$ and $Q_s$."},
+        {"text": "The market is in equilibrium.", "correct": false, "why": "Equilibrium occurs at $P = 10$. At $P = 8$, quantity demanded does not equal quantity supplied."}
+      ]
+    },
+    {
+      "id": "m3-q08", "outcome": "MC-2", "bloom": "Analyze", "difficulty": "hard",
+      "stem": "Demand for coffee increases and, at the same time, supply decreases. What can you say about the new equilibrium?",
+      "choices": [
+        {"text": "The price rises. The change in quantity is ambiguous.", "correct": true, "why": "Both shifts push the price up. The demand increase pushes quantity up and the supply decrease pushes it down, so the net effect depends on which shift is larger."},
+        {"text": "The quantity rises. The change in price is ambiguous.", "correct": false, "why": "The price effect is the unambiguous one here. It is the quantity effect that depends on the relative size of the shifts."},
+        {"text": "Both price and quantity rise.", "correct": false, "why": "Quantity rises only if the demand shift outweighs the supply shift. It is not guaranteed."},
+        {"text": "The price falls and the quantity is ambiguous.", "correct": false, "why": "Both a demand increase and a supply decrease raise the price, so the price cannot fall."}
+      ]
+    },
+    {
+      "id": "m3-q09", "outcome": "MIC-3", "bloom": "Apply", "difficulty": "hard",
+      "stem": "Start with $Q_d = 120 - 4P$ and $Q_s = 20 + 6P$. Demand increases to $Q_d = 160 - 4P$. What is the new equilibrium price?",
+      "choices": [
+        {"text": "$P^* = 14$", "correct": true, "why": "$P^* = (160-20)/(4+6) = 14$. Check: $Q_d = 160 - 56 = 104 = 20 + 84 = Q_s$."},
+        {"text": "$P^* = 10$", "correct": false, "why": "$10$ is the original equilibrium price. The demand intercept changed, so the equilibrium price must change too."},
+        {"text": "$P^* = 12$", "correct": false, "why": "$12$ is the equilibrium price when supply falls to $Q_s = 6P$ with the original demand. This question changes demand."},
+        {"text": "$P^* = 16$", "correct": false, "why": "$16$ is the price when demand rises to $160 - 4P$ and supply also falls to $6P$. Only demand changed here."}
+      ]
+    },
+    {
+      "id": "m3-q10", "outcome": "MC-2", "bloom": "Evaluate", "difficulty": "medium",
+      "stem": "A news article says: \"Because coffee prices rose, demand for coffee fell.\" Assuming nothing else changed, which statement is the best correction?",
+      "choices": [
+        {"text": "The rise in price decreased the quantity demanded, a movement along the demand curve. Demand itself did not change.", "correct": true, "why": "A change in the good's own price moves buyers along the curve. The curve shifts only when a non-price determinant changes."},
+        {"text": "The rise in price shifted the demand curve to the left.", "correct": false, "why": "This repeats the error. A price change never shifts the demand curve for that same good."},
+        {"text": "The rise in price shifted the supply curve to the left.", "correct": false, "why": "Supply responds to non-price determinants such as input costs. The price itself is the outcome, not a shifter."},
+        {"text": "The article is correct, because lower quantity demanded always means lower demand.", "correct": false, "why": "These are different concepts. Demand is the whole relationship between price and quantity, while quantity demanded is one point on it."}
+      ]
+    },
+    {
+      "id": "m3-q11", "outcome": "MIC-3", "bloom": "Evaluate", "difficulty": "medium",
+      "stem": "The FRED series PCOFFOTMUSDM (Global price of Coffee, Other Mild Arabica) is measured in nominal U.S. cents per pound. A student says its rise over ten years proves coffee became more expensive relative to other goods. What is the best response?",
+      "choices": [
+        {"text": "Not necessarily. The series is nominal, so you must adjust for inflation with a price index to compare real prices.", "correct": true, "why": "A nominal price can rise simply because the general price level rose. Dividing by a price index such as CPIAUCSL gives a real price."},
+        {"text": "Yes. Any rise in a commodity price means it became more expensive relative to other goods.", "correct": false, "why": "Relative prices require comparing with other prices. If all prices rose equally, coffee's relative price did not change."},
+        {"text": "No. Commodity prices cannot rise over ten years.", "correct": false, "why": "Commodity prices can and do rise. The issue is whether the rise reflects inflation or a change in relative price."},
+        {"text": "Yes, because FRED series are already adjusted for inflation.", "correct": false, "why": "FRED publishes both nominal and real series. The series notes state this one is in nominal U.S. dollars."}
+      ]
+    }
+  ]
+}
