@@ -1,0 +1,54 @@
+% ==============================================================================
+% TikZ & PGFPlots Global Configuration and Economics Styling
+% ==============================================================================
+
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+% TikZ Libraries
+\usetikzlibrary{
+    arrows.meta,
+    positioning,
+    calc,
+    shapes.geometric,
+    patterns,
+    decorations.pathreplacing,
+    intersections
+}
+
+% Common Economics TikZ Styles
+\tikzset{
+    % Axes and Structural Lines
+    econ axis/.style={->, >=Stealth, thick, color=SlateBlue!90!black},
+    econ grid/.style={thin, dashed, color=gray!30},
+    econ guide/.style={dashed, color=gray!60, thin},
+    
+    % Curves and Functions
+    demand curve/.style={very thick, color=SlateBlue},
+    supply curve/.style={very thick, color=Terracotta},
+    mb curve/.style={very thick, color=SlateBlue},
+    mc curve/.style={very thick, color=Terracotta},
+    
+    % Points and Highlights
+    econ point/.style={circle, fill=SlateBlue!90!black, inner sep=1.8pt},
+    econ highlight/.style={fill=Terracotta!20, opacity=0.5},
+    
+    % Annotations
+    econ label/.style={font=\small\sffamily, align=center},
+    econ annotation/.style={font=\footnotesize\itshape, color=SlateBlue!80!black}
+}
+
+% PGFPlots Standard Economics Style
+\pgfplotsset{
+    econ diagram/.style={
+        axis lines=left,
+        xlabel style={at={(ticklabel* cs:1)}, anchor=north west, font=\small\bfseries},
+        ylabel style={at={(ticklabel* cs:1)}, anchor=south east, font=\small\bfseries},
+        label style={font=\small},
+        tick label style={font=\small},
+        grid=none,
+        enlargelimits=false,
+        axis line style={->, >=Stealth, thick, color=SlateBlue!90!black}
+    }
+}
