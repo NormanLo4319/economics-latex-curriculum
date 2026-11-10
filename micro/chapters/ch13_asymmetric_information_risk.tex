@@ -1,0 +1,71 @@
+\documentclass[11pt,letterpaper]{article}
+\input{../../shared/preamble.tex}
+\input{../../shared/tikz-settings.tex}
+
+\begin{document}
+
+\title{\Huge\bfseries\color{SlateBlue} Chapter 13: Asymmetric Information, Risk, and Market Design}
+\author{\large Principles of Microeconomics Curriculum}
+\date{2026}
+\maketitle
+
+\thispagestyle{plain}
+
+\begin{abstract}
+This chapter provides a rigorous, pedagogical treatment of Chapter 13: Asymmetric Information, Risk, and Market Design, benchmarked to standard principles curriculum.
+\end{abstract}
+
+\tableofcontents
+\vspace{1.5em}
+\hrule
+\vspace{1.5em}
+
+\section{Learning Outcomes and Key Terms}
+Students should distinguish hidden information before a transaction from hidden actions after it, calculate expected value and expected utility in a simple risk problem, and evaluate screening, signaling, and contract design. These objectives support C2001-1, C2001-2, and C2001-3. Key terms include asymmetric information, adverse selection, signaling, screening, moral hazard, risk aversion, expected utility, and risk premium.
+
+\section{A Used-Car Market with Hidden Quality}
+Imagine a market in which sellers know whether a used car is reliable, but buyers cannot observe its condition before purchase. Buyers offer a price based on expected quality across cars offered for sale. Owners of especially reliable cars may reject that pooled price and keep their vehicles. The remaining pool has lower average quality, so buyers reduce their offers again. This feedback can shrink the market or drive high-quality products out of it.
+
+This is adverse selection: private information about a characteristic that exists before a contract affects who chooses to participate. It is not the same as a seller's deliberate fraud; the problem can arise even when everyone behaves legally and rationally.
+
+\section{A Graph of Pooling and Market Unraveling}
+In a price-quality diagram, put product quality on the horizontal axis and buyers' willingness to pay on the vertical axis. If quality is hidden, buyers initially offer a pooled price reflecting expected quality. Sellers whose cars are worth more than that price to them exit first. The average quality of cars still offered falls, shifting buyers' expected willingness to pay downward. A credible warranty, inspection, or reputation can make quality more observable and interrupt this unraveling process.
+
+\section{Screening and Signaling}
+Screening is an action by the less-informed party to learn about hidden types. An insurer may ask risk-relevant questions or offer a menu of plans with different premiums and deductibles. Signaling is an action by the informed party intended to credibly reveal type. A warranty may signal seller confidence if it is more costly for a seller of an unreliable product to honor.
+
+For a signal to separate types, it must be credible: the cost of sending it should differ across types. A signal everyone can imitate at negligible cost conveys little information. Screening and signaling can improve matching, but they can also exclude people, expose private information, or create administrative costs.
+
+\section{Moral Hazard after a Contract}
+Moral hazard is a change in behavior after a contract when one party's action is not fully observable or contractible. Insurance can reduce the cost of a loss to the insured person, which may change prevention effort or use of covered services. The effect is not necessarily fraud: it is a predictable response to changed incentives. Deductibles and co-payments can preserve some incentives to economize, but they also expose risk-averse households to more financial risk and may discourage valuable care.
+
+\section{Risk, Expected Value, and Expected Utility}
+Suppose a household faces a 10 percent chance of a \$1,000 loss and a 90 percent chance of no loss. The expected loss is \$100. A risk-neutral person compares premiums with expected monetary loss. A risk-averse person has a concave utility function and may be willing to pay more than the expected loss for insurance, up to the risk premium, because a certain outcome can provide greater utility than a risky outcome with the same expected wealth.
+
+For outcomes $x_i$ with probabilities $p_i$, expected value and expected utility are:
+\begin{equation}
+E[X]=\sum_i p_ix_i, \qquad EU=\sum_i p_i u(W+x_i).
+\end{equation}
+The certainty equivalent ($CE$) is the certain change in wealth that gives the same utility as the risky prospect. For a gain-risk representation, the risk premium is $RP=E[X]-CE$. The sign and interpretation depend on how gains and losses are represented; the central lesson is that expected dollars and expected utility are different criteria.
+
+\begin{examplecase}{FRED Data: Delinquency Is an Outcome, Not a Diagnosis}
+FRED series DRALACBS is the Delinquency Rate on All Loans at All Commercial Banks. It is quarterly, seasonally adjusted, and measured in percent; the Q2 2026 observation is 1.42 percent. This aggregate rate can motivate questions about credit risk, but it cannot by itself identify adverse selection, moral hazard, underwriting changes, borrower composition, or macroeconomic shocks as the cause. Identifying those mechanisms requires more detailed evidence and a credible comparison.
+\end{examplecase}
+
+\section{Contract Design and Trade-Offs}
+Markets use warranties, certification, deductibles, co-payments, collateral, audits, and reputation systems to mitigate information problems. Each tool trades off information or incentive benefits against cost, privacy, access, and fairness. A policy that reduces one information problem can create another: extensive screening may improve risk classification while making essential coverage unaffordable to some households.
+
+\begin{coreprinciple}
+\boxheader{SlateBlue}{Clear It Up: Adverse Selection and Moral Hazard Differ by Timing}
+Adverse selection concerns hidden characteristics that affect participation before a contract is signed. Moral hazard concerns hidden actions or effort after a contract changes incentives. The same market can experience both, but the diagnosis and remedy differ.
+\end{coreprinciple}
+
+\section{Check Your Understanding}
+\begin{enumerate}
+  \item A buyer cannot distinguish reliable from unreliable sellers before purchase. Which mechanism can cause high-quality sellers to leave the market?
+  \item An insured driver takes less care after coverage begins. Is this adverse selection or moral hazard, and why?
+  \item For the 10 percent, \$1,000-loss example, calculate expected loss. Does that number determine the maximum premium every risk-averse household will pay?
+\end{enumerate}
+Answers: (1) Adverse selection. (2) Moral hazard because the behavior changes after the contract. (3) Expected loss is \$100; risk preferences and the risk premium determine willingness to pay beyond it.
+
+\end{document}

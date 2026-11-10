@@ -1,0 +1,16 @@
+---
+title: "Chapter 2: The Macroeconomic Production Possibilities Frontier & Capital Deepening"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+## Consumer vs. Capital Goods Trade-Off
+A nation's operating position along its macro PPF dictates long-run secular growth:
+\begin{equation}
+\text{Investment } (I) \implies \Delta K > 0 \implies \text{Outward Shift of Potential GDP } (Y^*)
+\end{equation}
+
+## Output Gaps vs. Secular Growth
+Operating inside the frontier represents a recessionary gap ($Y < Y^*$) with idle labor. Recovery restores capacity; outward frontier expansion requires structural capital deepening or total factor productivity gains.

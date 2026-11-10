@@ -1,8 +1,3 @@
-% ==============================================================================
-% Shared Preamble: Principles of Economics Modular Curriculum
-% Core Colors: SlateBlue (#1E293B) & Terracotta (#C2410C)
-% ==============================================================================
-
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -22,23 +17,17 @@
 \pgfplotsset{compat=1.18}
 \usetikzlibrary{arrows.meta,positioning,calc,patterns,decorations.pathreplacing}
 
-% --- Color Palette Definitions ---
-\definecolor{SlateBlue}{HTML}{1E293B}      % Primary Accent / Structure
-\definecolor{Terracotta}{HTML}{C2410C}     % Secondary Accent / Emphasis
-\definecolor{ForestGreen}{HTML}{15803D}    % Equilibrium / Positive Shocks
-\definecolor{LightSlate}{HTML}{F8FAFC}     % Box Background Fill
-\definecolor{BorderGray}{HTML}{CBD5E1}     % Neutral Borders
-\definecolor{LightTerracotta}{HTML}{FFF7ED}% Cautionary / Principle Fill
+\definecolor{SlateBlue}{HTML}{1E293B}
+\definecolor{Terracotta}{HTML}{C2410C}
+\definecolor{ForestGreen}{HTML}{15803D}
+\definecolor{LightSlate}{HTML}{F8FAFC}
+\definecolor{BorderGray}{HTML}{CBD5E1}
+\definecolor{LightTerracotta}{HTML}{FFF7ED}
 
-% --- Section Heading Styling ---
-\titleformat{\section}
-  {\normalfont\Large\bfseries\color{SlateBlue}}{\thesection}{1em}{}[\titlerule]
-\titleformat{\subsection}
-  {\normalfont\large\bfseries\color{SlateBlue}}{\thesubsection}{1em}{}
-\titleformat{\subsubsection}
-  {\normalfont\normalsize\bfseries\color{Terracotta}}{\thesubsubsection}{1em}{}
+\titleformat{\section}{\normalfont\Large\bfseries\color{SlateBlue}}{\thesection}{1em}{}[\titlerule]
+\titleformat{\subsection}{\normalfont\large\bfseries\color{SlateBlue}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{Terracotta}}{\thesubsubsection}{1em}{}
 
-% --- Header and Footer Configuration ---
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0.4pt}
@@ -47,9 +36,6 @@
 \fancyhead[R]{\small\color{SlateBlue}Principles of Economics}
 \fancyfoot[C]{\thepage}
 
-% --- Custom Environments (mdframed) ---
-
-% 1. Core Principle Box
 \newmdenv[
   linecolor=Terracotta,
   linewidth=1.5pt,
@@ -63,7 +49,6 @@
   skipbelow=12pt
 ]{coreprinciple}
 
-% 2. Empirical Case Study Box
 \newmdenv[
   linecolor=SlateBlue,
   linewidth=1.5pt,
@@ -77,7 +62,14 @@
   skipbelow=12pt
 ]{casestudy}
 
-% 3. Key Takeaways Box
+\newenvironment{examplecase}[1]{%
+  \begin{casestudy}
+  \boxheader{SlateBlue}{#1}
+  \vspace{0.4em}
+}{%
+  \end{casestudy}
+}
+
 \newmdenv[
   linecolor=BorderGray,
   linewidth=1pt,
@@ -91,5 +83,4 @@
   skipbelow=12pt
 ]{takeaways}
 
-% Environment Title Helpers
 \newcommand{\boxheader}[2]{{\noindent\bfseries\color{#1}\Large #2}\vspace{0.4em}\par}

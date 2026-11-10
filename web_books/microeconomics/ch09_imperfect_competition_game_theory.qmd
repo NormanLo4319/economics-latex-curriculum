@@ -1,0 +1,13 @@
+---
+title: "Chapter 9: Monopolistic Competition, Oligopoly, and Game Theory"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+## Monopolistic Competition and Excess Capacity
+Firms sell differentiated products with free entry. In long-run equilibrium, demand is tangent to downward-sloping $ATC$, resulting in excess capacity: $Q_{\text{actual}} < Q_{\text{efficient scale}}$.
+
+## Oligopoly Game Theory
+Firms exhibit strategic interdependence. In a $2 \times 2$ Prisoner's Dilemma, dominant strategies lead to a non-cooperative Nash equilibrium where both firms discount, undercutting cartel profit.

@@ -1,0 +1,19 @@
+---
+title: "Chapter 1: First Principles of Economics & Macroeconomic Systems"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+## The Twelve Principles of Macroeconomics
+Macroeconomics rests upon systemic feedback loops where aggregate outcomes diverge from individual decisions.
+
+## The Paradox of Thrift
+When households collectively attempt to raise savings during a recession, aggregate consumption contracts. Because one person's spending is another's income, national income falls until dollar savings stagnate or decline.
+
+## Macroeconomic Circular Flow Identity
+\begin{equation}
+Y \equiv C + I + G + NX = \text{Factor Payments (Wages + Rent + Interest + Profit)}
+\end{equation}
+Leakages ($S + T + M$) identically equal Injections ($I + G + X$) in equilibrium.

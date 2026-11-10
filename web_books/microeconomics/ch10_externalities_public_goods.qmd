@@ -1,0 +1,57 @@
+---
+title: "Chapter 10: Externalities, Public Goods, and Common Resources"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+## Learning Outcomes and Key Terms
+Students should distinguish private from social costs and benefits, solve for a simple efficient quantity, and compare corrective policy tools. These objectives support C2001-1 and C2001-2. Key terms include externality, marginal private cost, marginal social cost, Pigouvian tax, public good, common resource, free rider, and Coase bargaining.
+
+## A Neighborhood, a Plant, and Unpriced Costs
+Imagine a production facility that releases pollution affecting nearby residents. The firm pays for labor, energy, and materials, but without a fee or regulation it may not pay for all health and environmental damage imposed on others. The firm's private production decision can therefore differ from the decision that maximizes total surplus. The same logic applies to traffic congestion: one driver's trip adds delay to other road users, a cost the driver may not fully consider.
+
+An externality is a cost or benefit from an action that affects a third party outside the transaction. A negative externality creates a wedge between private and social cost; a positive externality creates a wedge between private and social benefit. Not every spillover is a market failure of equal size: measurement, the number of affected parties, property rights, and transaction costs matter.
+
+## Negative Production Externalities: The Graph
+For a negative production externality, place quantity on the horizontal axis and dollars per unit on the vertical axis. Draw marginal private cost ($MPC$) below marginal social cost ($MSC$), because $MSC$ includes the damage borne by third parties. Draw marginal benefit ($MB$), assumed here to equal marginal private benefit. The unregulated market produces where $MB=MPC$. The efficient quantity is where $MB=MSC$; it is lower in this example. The vertical distance between $MSC$ and $MPC$ is marginal external cost ($MEC$). The overproduced units create deadweight loss between the benefit and social-cost curves.
+
+## A Corrective-Tax Calculation
+Suppose inverse marginal benefit is $MB=100-Q$, marginal private cost is $MPC=20+Q$, and marginal external cost is a constant 10 dollars per unit. Then $MSC=MPC+MEC=30+Q$. The unregulated outcome satisfies $100-Q=20+Q$, giving $Q_M=40$. The efficient outcome satisfies $100-Q=30+Q$, giving $Q^*=35$. A per-unit tax equal to $MEC(Q^*)=10$ makes the private decision face the social marginal cost at the efficient quantity:
+\begin{equation}
+MB(Q^*)=MSC(Q^*)=MPC(Q^*)+t^*, \qquad t^*=MEC(Q^*)=10.
+\end{equation}
+In this linear example, the deadweight loss from the five excess units is $\tfrac{1}{2}(40-35)(10)=25$ dollars per period. The triangle formula depends on the linear, constant-damage assumptions; with changing damage, use the area between $MB$ and $MSC$.
+
+::: {.callout-tip title="FRED Data: Emissions Are Not a Damage Estimate"}
+
+FRED series EMISSCO2TOTVTTTOUSA reports U.S. total carbon dioxide emissions from all sectors and fuels, in million metric tons, annually and not seasonally adjusted. It records 4,594.7 million metric tons in 2020 and 4,911.2 in 2021. These totals describe emissions, not the marginal health or climate damage from one additional unit, and the year-to-year rebound does not identify a single cause. Students should separate measured quantities from an external-cost estimate.
+
+:::
+
+## Positive Externalities and Corrective Subsidies
+Vaccination can reduce a recipient's risk and lower transmission risk for others. If decision-makers consider only private benefit, participation may be below the socially efficient level. In a graph, marginal social benefit ($MSB$) lies above marginal private benefit ($MPB$). The market chooses where $MPB=MC$; the efficient quantity satisfies $MSB=MC$. A subsidy can encourage participation, but its design should account for fiscal cost, targeting, and the size of the spillover rather than assuming every private benefit deserves public payment.
+
+## Public Goods and Common Resources
+Goods can be classified by whether people can be excluded and whether one person's use reduces another's use. Private goods are excludable and rival; public goods are difficult to exclude people from and are non-rival over the relevant range. A lighthouse signal is a classic stylized example. Common resources are difficult to exclude users from but rival, such as a congested fishery. Club goods are excludable and largely non-rival until congestion, such as a subscription service.
+
+The free-rider problem occurs when people can benefit without paying, making voluntary private provision difficult. For a pure public good, efficiency requires the sum of individuals' marginal willingness to pay to equal marginal cost:
+\begin{equation}
+\sum_i MB_i(Q^*)=MC(Q^*).
+\end{equation}
+For a common resource, each user may ignore the congestion or depletion imposed on others. Property rights, access rules, tradable permits, or community management can help, but monitoring and enforcement have costs.
+
+::: {.callout-note title="Clear It Up: A Tax Does Not Erase the Externality"}
+
+A corrective tax changes private incentives; it does not make the physical damage disappear. The efficient tax is tied to marginal external damage at the efficient quantity under the model's assumptions. Distribution, measurement error, and administrative costs still matter.
+
+:::
+
+## Check Your Understanding
+
+*  In the numerical example, why is the market quantity larger than the efficient quantity?
+*  If marginal external damage rises with output, should the efficient tax necessarily equal the damage at the unregulated market quantity?
+*  Give one example of a common resource and explain which of the two defining properties it has.
+
+Answers: (1) Producers face $MPC$ rather than the higher $MSC$. (2) No; the Pigouvian tax is the marginal damage at the efficient quantity in the standard model. (3) A fishery is rival and difficult to exclude users from without enforceable access rules.

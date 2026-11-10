@@ -1,0 +1,16 @@
+---
+title: "Chapter 12: Factor Markets, Labor Demand, and Wage Determination"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+## Derived Labor Demand
+A competitive firm hires labor where Marginal Revenue Product equals the market wage:
+\begin{equation}
+MRP_L = MP_L \times P = W
+\end{equation}
+
+## Monopsony Power
+A monopsonist faces an upward-sloping labor supply, so Marginal Factor Cost exceeds wage ($MFC_L > W$). Firms hire where $MRP_L = MFC_L$ and pay $W < MRP_L$. Binding minimum wages can raise both wage and employment under monopsony.

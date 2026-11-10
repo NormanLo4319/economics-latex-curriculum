@@ -1,0 +1,51 @@
+---
+title: "Chapter 10: Money, Banking, and the Federal Reserve System"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+## Learning Outcomes and Key Terms
+Students should describe the roles of money, commercial banks, and the Federal Reserve; interpret a simplified bank balance sheet; and distinguish a textbook multiplier from the modern banking system. These objectives support MA-5 and C2002-2, C2002-3, and C2002-4. Key terms include medium of exchange, unit of account, store of value, reserves, deposits, capital, liquidity, M1, and M2.
+
+## Why Money and Banks Matter
+A household can hold money to make payments while a firm uses deposits to meet payroll. Banks connect savers and borrowers, provide payment services, and transform short-term liabilities into longer-term loans. This transformation can support investment, but it exposes banks to liquidity and credit risk. A bank may be solvent because its assets exceed liabilities yet still face a liquidity problem if many depositors demand payment at once and assets cannot be sold quickly without loss.
+
+## A Bank Balance Sheet
+A simplified balance sheet records assets on one side and liabilities plus equity on the other:
+\begin{equation}
+ext{Reserves}+\text{Loans}+\text{Securities}=\text{Deposits}+\text{Borrowing}+\text{Equity}.
+\end{equation}
+Deposits are liabilities of the bank because the bank owes payment to depositors. Loans are assets because borrowers owe payments to the bank. Equity absorbs losses before depositors and other creditors. If loan defaults rise, bank capital can fall; if depositors withdraw rapidly, a bank may need liquid assets or central-bank funding.
+
+## How Lending Creates Deposits
+When a bank approves a loan and credits a borrower's deposit account, its balance sheet expands: the loan asset and deposit liability rise together. If the borrower pays someone at another bank, the banks settle the payment using reserves or other settlement arrangements. Lending is constrained by capital, liquidity, funding costs, credit risk, regulation, and loan demand; it is not simply a mechanical process in which a fixed stock of reserves is multiplied without limit.
+
+The textbook deposit multiplier $1/rr$ is a special model with a binding reserve requirement, no excess reserves, no currency drain, and willing banks and borrowers. It can illustrate repeated redepositing under those assumptions, but it is not a reliable general description of modern monetary policy or a forecasting formula for bank lending.
+
+## Monetary Aggregates and Current Definitions
+M1 and M2 are statistical measures of money-like assets, not physical quantities of all wealth. Under the Federal Reserve's current H.6 definitions, M1 includes currency, demand deposits, and other liquid deposits, including savings deposits. M2 adds small-denomination time deposits and retail money-market fund balances, with specified retirement-account adjustments. The inclusion of savings deposits in other liquid deposits took effect in 2020, so researchers must read series notes before comparing historical definitions.
+
+::: {.callout-tip title="FRED Data: M1 and M2 Series"}
+
+FRED's M1SL and M2SL series report seasonally adjusted monthly money-stock levels in billions of dollars. FRED notes that M1SL includes other liquid deposits beginning in May 2020, while M2SL is constructed from M1 plus additional components and adjustments. A rise in an aggregate is not by itself evidence that bank lending or consumer spending rose by the same amount; definitions, portfolio shifts, and financial behavior matter.
+
+:::
+
+## The Federal Reserve's Institutional Roles
+The Federal Reserve is the U.S. central bank. Its responsibilities include monetary policy, payment-system functions, and supervision and regulation of many banking organizations, with mandates and tools set by law. Commercial banks are private or public-chartered institutions that take deposits and make loans; they are not branches of the central bank. Deposit insurance, capital requirements, liquidity rules, and lender-of-last-resort facilities address different risks and do not eliminate every possibility of failure.
+
+::: {.callout-note title="Clear It Up: Reserves Are Not the Same as Bank Capital"}
+
+Reserves are liquid assets used for settlement and withdrawals. Capital is the residual claim that absorbs losses. A bank can hold ample reserves yet have weak capital, or have strong capital but insufficient immediately available liquidity.
+
+:::
+
+## Check Your Understanding
+
+*  In a bank balance sheet, is a customer deposit an asset or liability for the bank?
+*  Why is $1/rr$ not a universal predictor of modern bank lending?
+*  What change to M1's definition should analysts note when studying data across 2020?
+
+Answers: (1) A liability. (2) The multiplier assumes restrictive conditions on reserves, lending, and cash holdings that need not hold. (3) Savings deposits were included as other liquid deposits in M1 beginning in 2020.

@@ -1,0 +1,60 @@
+---
+title: "Chapter 7: Income and Expenditure: The Keynesian Cross and Multipliers"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+## Learning Outcomes and Key Terms
+Students should construct planned aggregate expenditure, identify equilibrium output in a simple Keynesian-cross model, and explain the assumptions behind the government-purchases multiplier. These objectives support MA-3 and C2002-2. Key terms include autonomous consumption, marginal propensity to consume, planned expenditure, unplanned inventory investment, equilibrium output, and multiplier.
+
+## The Inventory Story
+A firm produces goods before knowing exactly how many customers will buy them. If households and businesses plan to spend less than firms produce, unsold goods accumulate as unplanned inventory investment. Firms respond by reducing orders and production; household income falls, which can further reduce consumption. If planned spending exceeds production, inventories fall unexpectedly and firms have an incentive to increase output. The Keynesian cross formalizes this short-run adjustment when prices are relatively sticky and resources are not fully employed.
+
+## The Consumption Function and Expenditure Schedule
+Let consumption depend on autonomous consumption and disposable income:
+\begin{equation}
+C=C_0+c(Y-T), \qquad 0<c<1,
+\end{equation}
+where $c$ is the marginal propensity to consume. In a simplified closed economy with fixed planned investment, government purchases, and lump-sum taxes, planned aggregate expenditure is:
+\begin{equation}
+AE=C_0+c(Y-T)+I_p+G.
+\end{equation}
+On a graph with income/output $Y$ on the horizontal axis and planned expenditure $AE$ on the vertical axis, draw a 45-degree line where $AE=Y$ and the expenditure line with slope $c$. Their intersection is short-run equilibrium. If the expenditure line shifts upward, equilibrium output rises by more than the initial autonomous-spending increase because each round of income induces additional consumption.
+
+## Worked Multiplier Example
+Suppose values are in billions of dollars, $C_0=100$, $c=0.8$, $T=50$, $I_p=120$, and $G=80$. Then:
+\begin{align}
+AE &=100+0.8(Y-50)+120+80=260+0.8Y,\\
+Y&=AE=260+0.8Y,\\
+0.2Y&=260 \quad\Longrightarrow\quad Y^*=1{,}300.
+\end{align}
+If autonomous government purchases increase by 20, the simple multiplier is $1/(1-c)=5$, so the model predicts $\Delta Y=100$. This result assumes fixed prices, constant $c$, no proportional income taxes, no imports, and sufficient capacity to raise production. It is a model prediction, not a forecast that every real-world spending increase produces exactly five times as much output.
+
+## Leakages, Taxes, and a Smaller Multiplier
+Saving, taxes, and imports are leakages from each round of domestic consumption spending. If taxes rise with income at rate $t$ and imports rise with income at marginal propensity $m$, one simplified multiplier is:
+\begin{equation}
+k=\frac{1}{1-c(1-t)+m}.
+\end{equation}
+The exact expression depends on how the model specifies taxes, imports, and other induced spending. More leakages make each successive spending round smaller. Automatic stabilizers can moderate a downturn by reducing disposable-income losses, although their strength depends on program design and the initial shock.
+
+::: {.callout-tip title="FRED Data: Output Is Not Planned Expenditure"}
+
+FRED series GDPC1 reports real GDP in billions of chained 2017 dollars at a seasonally adjusted annual rate, quarterly. It measures realized production, not households' or firms' planned expenditure. A change in GDP alone cannot identify the Keynesian multiplier: analysts need a plausibly exogenous spending change and a strategy for separating its effects from simultaneous changes in income, policy, and expectations.
+
+:::
+
+::: {.callout-note title="Clear It Up: A Multiplier Is Conditional"}
+
+The algebraic multiplier follows from a specified behavioral model and assumptions about prices, taxes, imports, interest rates, and available capacity. It is not a universal constant and should not be applied mechanically to every fiscal action.
+
+:::
+
+## Check Your Understanding
+
+*  If $c=0.75$ in the simple closed model, what is the government-purchases multiplier?
+*  Why does an unplanned inventory increase tend to make firms cut production in the model?
+*  Name two leakages that make the multiplier smaller than $1/(1-c)$.
+
+Answers: (1) $k=1/(1-0.75)=4$. (2) Output exceeded planned sales, leaving firms with more inventory than intended. (3) Taxes and imports are examples.

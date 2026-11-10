@@ -1,0 +1,51 @@
+---
+title: "Chapter 3: Supply and Demand: Macroeconomic Foundations"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+## Learning Outcomes and Key Terms
+Students should distinguish a change in one market's relative price from a sustained change in the general price level, calculate a simple inflation rate, and explain how nominal values differ from real values. These objectives support MA-1 and C2002-1. Key terms include relative price, price index, inflation, nominal value, real value, and purchasing power.
+
+## One Price Changes, or the Price Level Changes?
+Suppose the price of a hospital visit rises while prices of most other goods are stable. That is a change in a relative price: medical care has become more expensive compared with the rest of the consumption basket. A family may respond by using insurance, choosing another provider, or postponing care. The change guides choices and reallocates resources in that market, but by itself it is not economy-wide inflation.
+
+Inflation is a sustained increase in a broad price index. It reduces the purchasing power of a nominal dollar if the dollar amount does not rise with prices. A one-time increase in a single price may contribute to an index, but it does not establish that the general price level is accelerating. Similarly, a temporary price-level increase is not the same thing as an ongoing inflation rate.
+
+## Graph Description: Relative Price and a Broad Index
+To compare price movements over time, put time on the horizontal axis and index values on the vertical axis. Set both series to 100 in a chosen base month. One line tracks the price index for a particular category, such as medical care; the other tracks the all-items CPI. If the medical-care line rises faster, its relative price has increased over that interval. If both rise at the same rate, the relative price is roughly unchanged even though nominal prices have risen. Indexing the series makes proportional changes comparable; it does not put different baskets on the same dollar scale.
+
+The economic distinction is between a movement in one component's price and a change in the overall index. A demand or supply shift in one product market changes that market's equilibrium price; economy-wide inflation requires broad price changes and a sustained process, not a relabeling of one relative-price shock.
+
+## Price Indexes, Inflation, and Real Values
+A price index compares the cost of a defined basket in one period with its cost in a reference period. The percentage inflation rate between periods $t-1$ and $t$ is:
+\begin{equation}
+\pi_t=\frac{P_t-P_{t-1}}{P_{t-1}}\times 100%.
+\end{equation}
+To express a nominal amount in the purchasing power of a selected base period, rescale it by the ratio of the base-period index to the current index:
+\begin{equation}
+X^{\text{real, base}}_t=X^{\text{nominal}}_t\frac{P_{\text{base}}}{P_t}.
+\end{equation}
+When the index base is 100, this is commonly written as nominal value times $100/P_t$. Real values answer a purchasing-power question; nominal values answer how many current dollars changed hands. Neither measure is universally preferable: use the one suited to the question.
+
+::: {.callout-tip title="FRED Data: Medical Care and the CPI"}
+
+FRED series CPIAUCSL is the all-items Consumer Price Index for All Urban Consumers: U.S. City Average, monthly and seasonally adjusted, with 1982-1984=100. CPIMEDSL is the corresponding medical-care index with the same base and frequency. Comparing their percentage changes can illustrate how a component's price movement differs from the overall basket. The CPI reflects a weighted urban-consumer basket, not every household's exact spending pattern; the comparison is descriptive and does not by itself identify why prices changed.
+
+:::
+
+::: {.callout-note title="Clear It Up: A Price Increase Is Not Automatically Inflation"}
+
+A rise in one product's price changes that product's relative price. Inflation refers to a sustained rise in a broad price index. Also keep nominal and real values distinct: a nominal wage can rise while its real purchasing power falls if the price level rises faster.
+
+:::
+
+## Check Your Understanding
+
+*  If a nominal wage rises by 3 percent while the relevant price index rises by 5 percent, what happens approximately to its purchasing power?
+*  Why is a rise in the price of one service not sufficient evidence of economy-wide inflation?
+*  What does rebasing two indexes to 100 help compare, and what does it not make identical?
+
+Answers: (1) Real purchasing power falls by roughly 2 percent, using the small-change approximation. (2) It may be a relative-price change confined to that market. (3) It compares proportional changes; it does not make the baskets or dollar costs identical.

@@ -1,0 +1,69 @@
+---
+title: "Chapter 8: Monopoly, Market Power, and Price Discrimination"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+## Learning Outcomes and Key Terms
+After this chapter, students should be able to model a single-price monopolist's output and price, calculate economic profit and deadweight loss in a linear example, and explain how market power differs from the mere presence of one seller. These objectives support C2001-1, C2001-2, and C2001-3.
+
+Key terms include monopoly, entry barrier, marginal revenue, market power, price discrimination, consumer surplus, and deadweight loss.
+
+## A Scanner, a Local Market, and the Cost of Entry
+Consider a hospital deciding whether to operate an advanced diagnostic scanner. The equipment has a large fixed cost: it must be purchased, staffed, maintained, and kept available even when no patient is being scanned. Once installed, the marginal cost of one additional scan may be much smaller than the average cost at low volume. A nearby clinic considering entry must also recruit technicians, obtain regulatory approvals, and attract enough patients to cover its fixed costs.
+
+This example helps distinguish scale economies from monopoly power. A scanner can lower average cost as its fixed cost is spread over more scans, but that fact alone does not establish that the hospital is a monopolist. We must define the relevant service and geographic market, identify reasonable substitutes, and examine whether entry is feasible. A patient may travel to another hospital, use a different diagnostic test, or defer a scan; each possibility changes the competitive constraint.
+
+::: {.callout-tip title="Illustrative Hospital Scanner Calculation"}
+
+Suppose annualized fixed cost is $900,000 and the marginal cost of each scan is $100. At 3,000 scans per year, average total cost is $900{,}000/3{,}000 + 100 = $400$ per scan. At 9,000 scans, it is $900{,}000/9{,}000 + 100 = $200$. These values are illustrative, not hospital data. Higher volume lowers average cost over this range, but it does not by itself prove that the hospital can profitably raise price above the level constrained by alternatives.
+
+:::
+
+## The Demand Curve, Marginal Revenue, and the Graph
+A competitive firm can sell another unit at the going market price without changing the price received on earlier units. A single-price monopolist cannot: to sell an additional unit, it generally must lower the price, and that lower price applies to all units sold. Therefore its marginal revenue lies below its demand curve.
+
+In the standard graph, put quantity on the horizontal axis and price or cost per unit on the vertical axis. Draw a downward-sloping demand curve $D$ and a marginal-revenue curve $MR$ below it. Draw marginal cost $MC$ rising or horizontal. The monopolist chooses the quantity at the intersection of $MR$ and $MC$, then moves vertically to the demand curve to find the price consumers will pay. Do not read the monopoly price from the $MR=MC$ intersection: that intersection determines quantity, not price.
+
+The competitive benchmark is the quantity where willingness to pay on demand equals marginal cost. With downward-sloping demand and the same marginal cost, the monopoly quantity is lower and its price is higher than that benchmark. The missing mutually beneficial trades between the two quantities are the source of deadweight loss.
+
+## A Linear Model: From Story to Equation
+Let inverse demand be $P(Q)=100-2Q$ and constant marginal cost be $MC=20$, with no fixed cost in this numerical exercise. Total revenue is $TR(Q)=P(Q)Q=100Q-2Q^2$. Differentiating gives $MR(Q)=100-4Q$. The firm's profit-maximizing condition is $MR=MC$:
+\begin{equation}
+100-4Q_M=20 \quad\Longrightarrow\quad Q_M=20, \qquad P_M=100-2(20)=60.
+\end{equation}
+At this outcome, profit is $(P_M-MC)Q_M=(60-20)20=800$. The competitive quantity in this simplified model solves $P=MC$, so $100-2Q_C=20$, or $Q_C=40$. Deadweight loss is the triangle between demand and marginal cost over the units from 20 to 40:
+\begin{equation}
+DWL=\tfrac{1}{2}(Q_C-Q_M)(P_M-MC)=\tfrac{1}{2}(20)(40)=400.
+\end{equation}
+The triangle formula assumes the linear curves used here. If curves are nonlinear, deadweight loss is the area between marginal social benefit and marginal cost over the underproduced units.
+
+The Lerner index relates a firm's price-cost margin to the absolute value of demand elasticity at the optimum, under the assumptions of a single-price profit-maximizing firm with an interior solution:
+\begin{equation}
+L=\frac{P-MC}{P}=\frac{1}{|\varepsilon_d|}.
+\end{equation}
+In the example, $L=(60-20)/60=2/3$. A larger index signals a larger price-cost margin relative to price; it is not, by itself, a complete measure of consumer harm or a legal finding of anticompetitive conduct.
+
+::: {.callout-note title="Clear It Up: One Seller Does Not Automatically Mean Monopoly Power"}
+
+The number of firms in a narrow category is not enough to establish market power. The relevant market includes products and locations that buyers see as substitutes, and potential entry can constrain an incumbent even before a new firm opens. Conversely, several firms may still have substantial market power if they face weak competition.
+
+:::
+
+## Price Discrimination
+Price discrimination means charging different prices for the same or similar product when the difference is not explained by a difference in marginal cost. It requires some ability to set price, a way to sort or identify buyers, and limits on resale between buyer groups. Student discounts, time-based fares, and quantity discounts are familiar examples, although their economic and legal details differ.
+
+Under first-degree discrimination, a seller charges each buyer close to that buyer's willingness to pay. In the idealized model, output can expand toward the efficient quantity while the seller captures most consumer surplus. Under third-degree discrimination, the seller separates observable groups and sets different prices; the group with less elastic demand generally faces the higher markup, provided marginal costs are comparable. Price discrimination can expand access for some buyers, but it can also transfer surplus from consumers to the seller. Its welfare effect depends on output, costs, and who receives the service.
+
+## A FRED Price Index Is Not a Monopoly Test
+FRED series CPIMEDSL is the Consumer Price Index for All Urban Consumers: Medical Care in U.S. City Average. It is a monthly, seasonally adjusted index with base period 1982-1984=100. The September 2026 observation is 593.666. The index tracks the average price movement of a defined basket; it is not a price for a particular hospital scanner, a hospital's marginal cost, or a measure of concentration. A rising index alone therefore cannot show that monopoly power caused medical-care inflation. To test that claim, researchers would also need evidence about product markets, entry, costs, quality, and substitutes.
+
+## Check Your Understanding
+
+*  In the linear example, what price corresponds to the quantity where $MR=MC$? Why is the intersection itself not the monopoly price?
+*  If the demand curve becomes more elastic at the optimum while marginal cost is unchanged, what does the Lerner relation predict about the percentage markup?
+*  A hospital is the only provider of one scanner type in a town. Name two additional facts needed before concluding that it has market power in the relevant market.
+
+Answers: (1) $P=60$, read from demand at $Q=20$; the $MR=MC$ intersection identifies quantity. (2) The markup share $L$ falls. (3) Examples include travel distance to substitutes, alternative diagnostic procedures, and the likelihood of entry.

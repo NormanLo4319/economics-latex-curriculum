@@ -1,0 +1,108 @@
+/* Compact, book-like typography and proportional visuals. */
+html {
+  font-size: 15px;
+}
+
+body {
+  line-height: 1.55;
+}
+
+#quarto-content main.content {
+  max-width: 850px;
+  font-size: 1rem;
+}
+
+#quarto-content main.content h1,
+#quarto-content main.content h2,
+#quarto-content main.content h3,
+#quarto-content main.content h4,
+.quarto-title-block .title {
+  line-height: 1.25;
+}
+
+#quarto-content main.content h1,
+.quarto-title-block .title {
+  font-size: 2.15rem;
+}
+
+#quarto-content main.content h2 {
+  font-size: 1.7rem;
+}
+
+#quarto-content main.content h3 {
+  font-size: 1.4rem;
+}
+
+#quarto-content main.content h4 {
+  font-size: 1.15rem;
+}
+
+#quarto-content main.content p,
+#quarto-content main.content li {
+  line-height: 1.6;
+}
+
+#quarto-sidebar,
+#quarto-sidebar .sidebar-item-text,
+#TOC {
+  font-size: 0.88rem;
+}
+
+#quarto-sidebar .sidebar-item-text,
+#TOC a {
+  line-height: 1.4;
+}
+
+#quarto-content main.content img,
+#quarto-content main.content video,
+#quarto-content main.content svg,
+#quarto-content main.content canvas {
+  max-width: min(100%, 760px);
+  height: auto;
+}
+
+#quarto-content main.content figure,
+#quarto-content main.content .quarto-figure {
+  max-width: 100%;
+  margin: 1.25rem auto;
+}
+
+#quarto-content main.content figcaption {
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+#quarto-content main.content table {
+  font-size: 0.9em;
+}
+
+#quarto-content main.content th,
+#quarto-content main.content td {
+  padding: 0.4rem 0.55rem;
+}
+
+#quarto-content main.content pre,
+#quarto-content main.content code {
+  font-size: 0.86em;
+}
+
+#quarto-content main.content .math.display {
+  max-width: 100%;
+  overflow-x: auto;
+  font-size: 0.94em;
+}
+
+#quarto-content main.content .callout {
+  font-size: 0.95em;
+}
+
+@media (max-width: 767.98px) {
+  html {
+    font-size: 15px;
+  }
+
+  #quarto-content main.content h1,
+  .quarto-title-block .title {
+    font-size: 1.85rem;
+  }
+}

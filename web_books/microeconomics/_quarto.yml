@@ -1,0 +1,49 @@
+project:
+  type: book
+  output-dir: ../../dist/web/micro
+
+book:
+  title: "Principles of Microeconomics"
+  subtitle: "An Institutional and Social Science Perspective"
+  author: "Norman Lo"
+  date: "2026"
+  search: true
+  sidebar:
+    style: "docked"
+    search: true
+    collapse-level: 1
+  page-navigation: true
+  chapters:
+    - index.qmd
+    - part: "Foundations of Market Analysis"
+      chapters:
+        - ch01_principles.qmd
+        - ch02_ppf.qmd
+        - ch03_supply_demand.qmd
+        - ch04_surplus.qmd
+        - ch05_elasticity.qmd
+    - part: "Firm Behavior & Market Structures"
+      chapters:
+        - ch06_costs_production.qmd
+        - ch07_perfect_competition.qmd
+        - ch08_monopoly.qmd
+        - ch09_imperfect_competition_game_theory.qmd
+    - part: "Market Failures & Factor Markets"
+      chapters:
+        - ch10_externalities_public_goods.qmd
+        - ch11_consumer_choice.qmd
+        - ch12_factor_markets.qmd
+        - ch13_asymmetric_information_risk.qmd
+        - ch14_international_trade.qmd
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-copy: true
+    html-math-method: mathjax

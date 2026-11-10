@@ -1,0 +1,62 @@
+\documentclass[11pt,letterpaper]{article}
+\input{../../shared/preamble.tex}
+\input{../../shared/tikz-settings.tex}
+
+\begin{document}
+
+\title{\Huge\bfseries\color{SlateBlue} Chapter 11: Monetary Policy Implementation and the Ample-Reserves Regime}
+\author{\large Principles of Macroeconomics Curriculum}
+\date{2026}
+\maketitle
+
+\thispagestyle{plain}
+
+\begin{abstract}
+This chapter provides a rigorous, pedagogical treatment of Chapter 11: Monetary Policy Implementation and the Ample-Reserves Regime, benchmarked to standard principles curriculum.
+\end{abstract}
+
+\tableofcontents
+\vspace{1.5em}
+\hrule
+\vspace{1.5em}
+
+\section{Learning Outcomes and Key Terms}
+Students should explain how the Federal Reserve implements monetary policy, trace a policy-rate change through interest-sensitive spending to output and inflation, and identify uncertainty and lags in that process. These objectives support MA-6 and C2002-3. Key terms include federal funds rate, target range, IORB, overnight reverse repurchase facility, transmission mechanism, expectations, policy lag, and effective lower bound.
+
+\section{From the Policy Decision to Market Rates}
+The Federal Open Market Committee sets a target range for the federal funds rate. In the current ample-reserves framework, administered rates, especially interest on reserve balances (IORB), help keep overnight rates within the target range. The overnight reverse repurchase facility provides an additional option for eligible counterparties. The discount window offers collateralized lending to eligible institutions. These tools operate through institutions and markets; the Fed does not simply dictate every loan or mortgage rate.
+
+\section{The Transmission Mechanism}
+If the policy stance tightens, short-term market rates generally rise. Longer-term borrowing costs may rise as expectations adjust; households can delay purchases of durable goods, and firms may postpone investment. Weaker interest-sensitive spending can reduce aggregate demand, output, and inflation pressure over time. An easing can work in the opposite direction. Exchange rates, credit conditions, expectations, and global events can amplify or offset these channels, and monetary policy affects demand with uncertain lags.
+
+\section{Graph Description: Policy and Aggregate Demand}
+In the money-market diagram, the vertical axis is the short-term nominal interest rate and the horizontal axis is reserve balances or overnight funding. Under abundant reserves, changes in administered rates shift the range in which overnight rates trade; the classic scarcity-of-reserves intersection is not the whole operating story. In AD--AS, a policy easing that lowers borrowing costs may shift AD right over time, while a tightening may shift it left. The rate decision is not a direct movement along AD caused by the price level.
+
+\section{A Policy Rule as a Benchmark}
+A Taylor-type rule summarizes how a central bank might respond to deviations of inflation and output from desired levels:
+\begin{equation}
+i_t=r^*+\pi_t+\alpha(\pi_t-\pi^*)+\beta\left(\frac{Y_t-Y_t^*}{Y_t^*}\right),
+\end{equation}
+where $i_t$ is a nominal policy rate, $r^*$ is an equilibrium real-rate benchmark, $\pi_t$ is inflation, $\pi^*$ is the inflation objective, and $Y_t-Y_t^*$ is the output gap. Coefficients $\alpha$ and $\beta$ describe responsiveness. This is a guide for analysis, not a law that the FOMC must follow; estimates of potential output and the equilibrium real rate are uncertain.
+
+\begin{examplecase}{FRED Data: Effective Federal Funds Rate}
+FRED's FEDFUNDS series is the monthly average of daily effective federal funds rates, in percent and not seasonally adjusted. It is an observed market rate influenced by policy implementation, not the FOMC target range itself. Compare it with policy announcements and other indicators before attributing a change to a particular decision.
+\end{examplecase}
+
+\section{The Effective Lower Bound and Policy Limits}
+When nominal short-term rates approach their effective lower bound, conventional rate cuts may have less room to stimulate demand. The Federal Reserve can use forward guidance and asset purchases, subject to legal authority, market functioning, and expected benefits. These tools still work through expectations and financial conditions; they do not guarantee a precise output or inflation result.
+
+\begin{coreprinciple}
+\boxheader{SlateBlue}{Clear It Up: The Fed Controls a Policy Instrument, Not GDP}
+The central bank can influence financial conditions, but output and inflation also respond to fiscal policy, supply shocks, global markets, and private expectations. A policy-rate change is not a one-for-one change in real GDP.
+\end{coreprinciple}
+
+\section{Check Your Understanding}
+\begin{enumerate}
+  \item Why is FEDFUNDS not exactly the same thing as the FOMC target range?
+  \item Trace one channel through which a higher policy rate may lower aggregate demand.
+  \item Why should a Taylor-type rule be treated as a benchmark rather than a mechanical instruction?
+\end{enumerate}
+Answers: (1) FEDFUNDS is an observed monthly average effective market rate; the Committee sets a target range. (2) Higher rates can raise borrowing costs, reducing planned consumption or investment. (3) Key variables and parameters are uncertain, and policy must account for multiple shocks and risks.
+
+\end{document}

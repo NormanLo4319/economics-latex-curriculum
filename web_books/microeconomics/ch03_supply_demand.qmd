@@ -1,0 +1,105 @@
+---
+title: "Chapter 3: Supply, Demand, and Market Equilibrium"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+## The Nature of Demand and Consumer Valuation
+The Law of Demand states that, *ceteris paribus*, there is an inverse relationship between the price of a good and the quantity demanded:
+\begin{equation}
+P \uparrow \implies Q_d \downarrow, \qquad P \downarrow \implies Q_d \uparrow
+\end{equation}
+This empirical regularity is driven by two microeconomic mechanisms:
+
+*  **The Substitution Effect:** As the price of a good rises, it becomes relatively more expensive compared to alternative goods, incentivizing consumers to substitute toward cheaper alternatives.
+*  **The Income Effect:** A price increase erodes the consumer's real purchasing power, constraining the total quantity of goods they can afford to purchase.
+
+### Direct vs. Inverse Demand
+In empirical economics, demand is specified directly as quantity as a function of price:
+\begin{equation}
+Q_d = a - bP \quad (a > 0, b > 0)
+\end{equation}
+Because economists traditionally graph price on the vertical axis and quantity on the horizontal axis (following Alfred Marshall), we invert the equation to obtain the **Inverse Demand Function**:
+\begin{equation}
+P = \frac{a}{b} - \frac{1}{b}Q_d
+\end{equation}
+Here, $\frac{a}{b}$ represents the **choke price**—the price at which quantity demanded drops to exactly zero.
+
+## Shifts in Demand vs. Movements Along the Demand Curve
+::: {.callout-note title="Crucial Distinction: Demand vs. Quantity Demanded"}
+
+*  **Movement Along the Curve (Change in Quantity Demanded):** Caused strictly by a change in the good's *own price*.
+*  **Shift of the Entire Curve (Change in Demand):** Caused by changes in non-price determinants, altering quantity demanded at every price level.
+
+:::
+
+### Non-Price Determinants of Demand
+
+*  **Consumer Income:** For a *normal good*, demand shifts rightward as income expands ($\varepsilon_I > 0$). For an *inferior good* (such as instant ramen or intercity bus transit), demand shifts leftward as income rises ($\varepsilon_I < 0$).
+*  **Prices of Related Goods:**
+
+*  *Substitutes:* An increase in the price of Good $Y$ shifts demand for Good $X$ to the right ($\varepsilon_{xy} > 0$).
+*  *Complements:* An increase in the price of Good $Y$ shifts demand for Good $X$ to the left ($\varepsilon_{xy} < 0$).
+
+*  **Tastes and Preferences:** Exogenous shifts in consumer culture, health studies, or advertising.
+*  **Buyer Expectations:** Anticipated future price increases prompt consumers to accelerate current purchases, shifting current demand rightward.
+*  **Market Demographics:** An expansion in the population of potential buyers shifts market demand outward.
+
+## The Nature of Supply and Marginal Opportunity Costs
+The Law of Supply establishes a positive relationship between price and quantity supplied, *ceteris paribus*:
+\begin{equation}
+P \uparrow \implies Q_s \uparrow, \qquad P \downarrow \implies Q_s \downarrow
+\end{equation}
+Supply slopes upward because production is governed by the **Law of Diminishing Marginal Productivity**. As firms hire variable factor inputs into fixed plant capacity, the marginal product of labor declines, forcing marginal production costs ($MC$) to escalate. To cover higher incremental costs, firms require higher market prices.
+
+### Linear Supply Formulations
+\begin{equation}
+Q_s = c + dP \iff P = -\frac{c}{d} + \frac{1}{d}Q_s \quad (d > 0)
+\end{equation}
+
+### Non-Price Determinants of Supply
+Supply shifts when underlying production parameters change:
+
+*  **Input Prices:** Wage increases, raw material inflation, or soaring energy costs increase marginal cost, shifting supply leftward.
+*  **Technological Progress:** Cost-reducing manufacturing breakthroughs allow firms to produce more output at each price level, shifting supply rightward.
+*  **Government Taxes and Subsidies:** An excise tax increases per-unit production cost, shifting supply vertically upward by the tax amount $t$.
+*  **Number of Active Producers:** Industry entry expands market supply; business closures contract it.
+
+## Market Equilibrium and Price Discovery
+A competitive market attains equilibrium where quantity demanded equals quantity supplied:
+\begin{equation}
+Q_d(P^*) = Q_s(P^*) = Q^*
+\end{equation}
+
+::: {.callout-tip title="Step-by-Step Algebraic Equilibrium Solution"}
+
+Consider a regional agricultural market for specialty roasted coffee beans:
+$$Q_d = 500 - 15P, \qquad Q_s = -100 + 15P$$
+1. Equate $Q_d$ and $Q_s$:
+$$500 - 15P = -100 + 15P \implies 30P = 600 \implies P^* = $20$$
+2. Substitute $P^* = $20$ into either direct schedule:
+$$Q^* = 500 - 15(20) = 500 - 300 = 200 \text{ bags}$$
+3. Verify at disequilibrium prices:
+
+*  If $P = $25$ (Price too high): $Q_d = 125$, $Q_s = 275 \implies \text{Surplus} = +150$. Unsold inventory forces price downward.
+*  If $P = $15$ (Price too low): $Q_d = 275$, $Q_s = 125 \implies \text{Shortage} = -150$. Eager buyers bid price upward.
+
+:::
+
+## Simultaneous Dual Shocks and the Indeterminacy Matrix
+When demand and supply shift concurrently, exactly one equilibrium variable ($P^*$ or $Q^*$) changes unambiguously, while the other is indeterminate without knowing the exact relative magnitudes of the shifts.
+
+\begin{center}
+\begin{tabular}{|l|c|c|}
+\hline
+**Simultaneous Shock** & **Equilibrium Price ($P^*$)** & **Equilibrium Quantity ($Q^*$)** \\
+\hline
+Demand $\uparrow$, Supply $\uparrow$ & Ambiguous & Unambiguously Rises ($\uparrow$) \\
+Demand $\downarrow$, Supply $\downarrow$ & Ambiguous & Unambiguously Falls ($\downarrow$) \\
+Demand $\uparrow$, Supply $\downarrow$ & Unambiguously Rises ($\uparrow$) & Ambiguous \\
+Demand $\downarrow$, Supply $\uparrow$ & Unambiguously Falls ($\downarrow$) & Ambiguous \\
+\hline
+\end{tabular}
+\end{center}

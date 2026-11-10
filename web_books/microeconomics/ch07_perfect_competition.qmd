@@ -1,0 +1,17 @@
+---
+title: "Chapter 7: Perfect Competition and Long-Run Industry Equilibrium"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+## Price-Taking Equilibrium
+Competitive firms face a horizontal demand curve at market price $P = MR = AR$. The profit-maximizing condition is $P = MC(q^*)$.
+
+## Shutdown and Exit Rules
+
+*  **Short-Run Shutdown:** Produce if $P \ge \min AVC$; halt if $P < \min AVC$.
+*  **Long-Run Exit:** Remain in market if $P \ge \min ATC$; exit if $P < \min ATC$.
+
+In long-run equilibrium, free entry and exit enforce zero economic profit: $P = MR = MC = \min ATC$.

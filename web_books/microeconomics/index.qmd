@@ -1,0 +1,7 @@
+# Preface {.unnumbered}
+
+Welcome to **Principles of Microeconomics: An Institutional and Social Science Perspective**.
+
+This textbook offers an analytical, empirical approach to microeconomic decision-making, price theory, market structures, and policy evaluation. It is structured around the analytical depth of Eric Chiang (*Microeconomics: Principles for a Changing World*, 5th ed.) and UC Berkeley Econ 1.
+
+Use the left sidebar navigation to explore individual chapters or press `s` to initiate full-text keyword searches across the entire volume.

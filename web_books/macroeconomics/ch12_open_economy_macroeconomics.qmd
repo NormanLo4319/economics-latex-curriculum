@@ -1,0 +1,46 @@
+---
+title: "Chapter 12: Open-Economy Macroeconomics, Exchange Rates, and the Balance of Payments"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+## Learning Outcomes and Key Terms
+Students should interpret a trade-balance measure, explain how saving and investment relate to the current account, and use supply and demand for foreign exchange to reason about currency appreciation and depreciation. These objectives support MA-7 and C2002-1, C2002-2. Key terms include exports, imports, trade balance, current account, financial account, exchange rate, appreciation, depreciation, and policy trilemma.
+
+## Trade, Spending, and the Current Account
+An open economy buys and sells goods and services across borders and exchanges financial claims. Exports are domestic production purchased abroad; imports are foreign production purchased domestically. A trade deficit means imports of goods and services exceed exports over the measured period. It does not by itself show whether trade is beneficial or harmful: consumers and firms may gain from lower-cost imports, while some domestic producers face adjustment costs.
+
+In a simplified national-accounting model, net exports are $NX=X-M$. With national saving $S=Y-C-G$ and investment $I$, the identity is $S-I=NX$. The official current account is broader: it includes the balance on goods and services plus net primary income and transfers. In the balance of payments, current-account transactions are matched by financial flows and other accounting items under a specified sign convention. Avoid treating the trade balance and the entire current account as identical.
+
+## The Foreign-Exchange Market: Graph Description
+To analyze the dollar, place the quantity of dollars traded on the horizontal axis and the foreign-currency price of one dollar on the vertical axis. Demand for dollars comes from foreign buyers who need dollars to purchase U.S. exports or U.S. assets; supply comes from U.S. residents exchanging dollars to buy foreign goods and assets. If demand for dollars rises relative to supply, the dollar appreciates in this quotation. A stronger dollar makes imports cheaper in dollars and U.S. exports more expensive to foreign buyers, other things equal. Actual trade quantities may adjust slowly and depend on contracts and elasticities.
+
+Exchange-rate quotations must be read carefully. If the rate is dollars per euro, an increase means the euro appreciates against the dollar. If it is euros per dollar, the same movement is a dollar appreciation. Always state which currency is the numerator.
+
+## Saving, Investment, and International Capital Flows
+In a simplified setting, a country that invests more than it saves borrows the difference from abroad and runs a current-account deficit; a country that saves more than it invests lends abroad and runs a surplus. This is an accounting relationship, not a claim that one flow alone causes the other. Returns, risk, demographics, fiscal policy, and global demand for assets can influence both saving and investment.
+
+::: {.callout-tip title="FRED Data: Trade Balance and Dollar Index"}
+
+FRED BOPGSTB measures the U.S. trade balance in goods and services on a balance-of-payments basis, in millions of dollars, monthly and seasonally adjusted. DTWEXBGS is the Federal Reserve's Nominal Broad U.S. Dollar Index, a daily index with January 2006=100 and not seasonally adjusted. The first is a flow over a month; the second is an index of exchange-rate movements. Their co-movement does not establish that the dollar caused a particular trade-balance change.
+
+:::
+
+## The Open-Economy Policy Trilemma
+A country cannot simultaneously maintain all three of the following: a fixed exchange rate, free international capital flows, and independent monetary policy. A fixed parity with mobile capital tends to require domestic rates to be consistent with the rate needed to defend the parity. Allowing the exchange rate to float gives more monetary autonomy but exposes firms and households to exchange-rate movements. The trilemma describes a constraint, not a ranking of which choice is best for every country.
+
+::: {.callout-note title="Clear It Up: A Trade Deficit Is Not a Household Credit-Card Bill"}
+
+The trade balance is a flow of exports minus imports over a period. It is not the national debt, and a negative balance does not alone identify policy failure. Interpret it with saving, investment, capital flows, and the composition of trade.
+
+:::
+
+## Check Your Understanding
+
+*  If $S=400$ and $I=450$ in the simplified identity, what is $NX$?
+*  Under a foreign-currency-per-dollar quotation, what does a rise in the rate mean?
+*  Name the two policies a country must choose between if it wants both fixed exchange rates and free capital flows.
+
+Answers: (1) $NX=S-I=-50$, a deficit in the simplified model. (2) The dollar appreciates. (3) It gives up independent monetary policy.

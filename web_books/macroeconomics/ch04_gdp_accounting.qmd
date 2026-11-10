@@ -1,0 +1,51 @@
+---
+title: "Chapter 4: Macroeconomic Variables: Measuring Output and GDP"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+## Learning Outcomes and Key Terms
+Students should interpret a basic GDP measure, distinguish nominal from real GDP, and explain why the expenditure, production, and income views describe the same current production. These objectives support MA-1 and C2002-1. Key terms include final good, intermediate good, value added, consumption, investment, government purchases, net exports, nominal GDP, real GDP, and GDP deflator.
+
+## What GDP Counts: A Chip in a Computer
+Imagine a processor sold to a computer maker and then installed in a new laptop. Counting the processor's full sale and the laptop's full sale would count some production twice. National accounts avoid this by counting final output or summing each firm's value added. The processor maker contributes the value of its output minus intermediate inputs; the computer maker contributes the laptop's value minus purchased components. GDP measures the market value of final goods and services produced within a country's borders during a period, not the value of every financial transaction or every useful activity.
+
+GDP excludes purchases of existing assets, such as a used home, because that production occurred earlier. It also excludes transfers such as Social Security benefits from government purchases: transfers redistribute income but are not direct purchases of current output. Newly produced residential construction is counted as investment, while a household's purchase of the same house from another household is an asset transfer.
+
+## Three Equivalent Accounting Views
+The expenditure approach adds spending on final domestic production:
+\begin{equation}
+Y=C+I+G+NX, \qquad NX=X-M.
+\end{equation}
+$C$ is household consumption, $I$ is gross private domestic investment (including inventory change and new residential construction), $G$ is government purchases of goods and services, and $NX$ is exports minus imports. Imports are subtracted because they may already be included in $C$, $I$, or $G$ but were produced abroad.
+
+The production or value-added approach sums each producer's value added, avoiding double counting. The income approach sums incomes generated in domestic production, including compensation of employees, proprietors' income, rental income, corporate profits, net interest, taxes on production and imports less subsidies, and consumption of fixed capital. GDP and gross domestic income (GDI) should be equal in principle because one producer's output is another party's expenditure and income; measured estimates can differ because of data sources and timing. The statistical discrepancy records that difference rather than implying two different economies.
+
+## Nominal GDP, Real GDP, and the Deflator
+Nominal GDP values current production at current-period prices. If both quantities and prices rise, nominal GDP can rise even when physical output does not. Real GDP values production using a chain-type quantity index designed to remove price changes. The GDP implicit price deflator is:
+\begin{equation}
+ext{GDP Deflator}_t=\frac{\text{Nominal GDP}_t}{\text{Real GDP}_t}\times 100.
+\end{equation}
+Its percent change approximates price change for domestically produced final output. It is not the same basket as the CPI, which focuses on prices paid by urban consumers and includes imports in the consumer basket.
+
+::: {.callout-tip title="FRED Data: Current-Dollar and Chained-Dollar GDP"}
+
+FRED's GDP series reports Gross Domestic Product in billions of current dollars at a seasonally adjusted annual rate, quarterly. GDPC1 reports real GDP in billions of chained 2017 dollars at a seasonally adjusted annual rate, quarterly. The series titles and units matter: compare changes over time using the appropriate real measure, and do not read chained-dollar levels as current-dollar spending. Both series are revised as the BEA incorporates new source data.
+
+:::
+
+::: {.callout-note title="Clear It Up: Investment Is Not a Stock Purchase"}
+
+In GDP accounting, investment means newly produced capital goods, new residential structures, and inventory accumulation. Buying an existing share of stock is a financial transaction, not current production, so it is not counted as $I$ in GDP.
+
+:::
+
+## Check Your Understanding
+
+*  Why are imported goods subtracted in $NX$ even though consumers and firms buy them?
+*  If nominal GDP rises while real GDP is unchanged, what has happened to the GDP deflator?
+*  Why does counting a final laptop and every component's full sale overstate output?
+
+Answers: (1) Imports were produced abroad and must be removed from domestic production. (2) The deflator rises. (3) It double-counts intermediate production; use final value or value added.

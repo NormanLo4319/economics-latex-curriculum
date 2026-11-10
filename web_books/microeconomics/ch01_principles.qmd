@@ -1,0 +1,48 @@
+---
+title: "Chapter 1: Foundations of Microeconomic Analysis & Core Principles"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+## What Is Economics? Scarcity, Choice, and Method
+Economics is the social science that studies how individuals, institutions, and societies allocate scarce resources among competing ends to satisfy unlimited human wants.
+
+### Microeconomics vs. Macroeconomics
+
+*  **Microeconomics:** Examines decision-making by individual units—such as households, workers, firms, and individual product and factor markets. It investigates how relative price signals coordinate supply and demand in specific sectors (e.g., electric vehicles or pharmaceutical labor).
+*  **Macroeconomics:** Examines aggregate performance, focusing on national output (GDP), price instability (inflation), systemic labor underutilization (unemployment), and long-run secular growth.
+
+## Economic Modeling and Ceteris Paribus
+To analyze human behavior, economists formulate models that isolate causal mechanisms:
+\begin{equation}
+\text{Ceteris Paribus} \equiv \text{"All other things held constant"}
+\end{equation}
+
+## Core Principle 1 — Scarcity, Choice, and Opportunity Cost
+Every choice implies an opportunity cost—the value of the next best alternative forgone:
+\begin{equation}
+\text{Economic Cost} = \text{Explicit Out-of-Pocket Outlays} + \text{Implicit Opportunity Costs}
+\end{equation}
+
+::: {.callout-note title="The Opportunity Cost of Higher Education"}
+
+An undergraduate student pays $12,000 per year in tuition and fees. If that student foregoes a $40,000 full-time salary, the true economic cost of attendance is $52,000 per year ($12,000 + $40,000), not merely the direct accounting expenditure.
+
+:::
+
+## Core Principle 2 — Marginal Decision-Making
+Rational agents optimize at the margin by weighing incremental benefits against incremental costs:
+\begin{equation}
+\text{Optimization Rule: Expand if } MB > MC; \quad \text{Halt where } MB = MC
+\end{equation}
+
+::: {.callout-tip title="Real-World Application: Airline Seat Pricing"}
+
+A commercial aircraft has an average operating cost of $100 per seat. An unsold seat ten minutes before departure costs only $10 in marginal jet fuel and refreshments. Selling it to a standby passenger for $60 increases operating profit by $50 because $MB\text{ ($60)} > MC\text{ ($10)}$.
+
+:::
+
+## Core Principle 3 — Response to Incentives and the Peltzman Effect
+Agents adjust behavior when relative prices change. Mandating vehicular safety equipment in 1968 reduced the perceived risk of reckless driving, causing drivers to speed and brake later, increasing pedestrian collisions.

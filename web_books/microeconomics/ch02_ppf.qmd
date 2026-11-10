@@ -1,0 +1,28 @@
+---
+title: "Chapter 2: The Production Possibilities Frontier & Gains from Trade"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+## The Production Possibilities Frontier (PPF) Model
+The PPF illustrates the boundary of maximum output combinations achievable under fixed technology and full factor utilization.
+\begin{equation}
+MRT = -\frac{\Delta Y}{\Delta X} = \left|\frac{dY}{dX}\right| = \frac{\text{Quantity of Good } Y \text{ Forgone}}{\text{Quantity of Good } X \text{ Gained}}
+\end{equation}
+
+## Law of Increasing Opportunity Cost
+Concave curvature reflects imperfect factor adaptability. As resources shift toward one sector, inputs progressively less suited to that industry must be utilized, driving opportunity costs upward.
+
+## Ricardian Comparative Advantage
+Comparative advantage is determined strictly by lower domestic opportunity cost.
+::: {.callout-note title="Terms of Trade Rule"}
+
+Mutually beneficial exchange requires the Terms of Trade ($TOT$) to settle strictly between both domestic opportunity cost ratios:
+\begin{equation}
+\left|\frac{\Delta Y}{\Delta X}\right|_{\text{Region A}} < TOT < \left|\frac{\Delta Y}{\Delta X}\right|_{\text{Region B}}
+\end{equation}
+Specialization and trade shift the Consumption Possibilities Frontier ($CPF$) strictly outside the domestic autarky PPF.
+
+:::

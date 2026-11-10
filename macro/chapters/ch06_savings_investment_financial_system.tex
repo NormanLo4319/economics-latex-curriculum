@@ -1,0 +1,61 @@
+\documentclass[11pt,letterpaper]{article}
+\input{../../shared/preamble.tex}
+\input{../../shared/tikz-settings.tex}
+
+\begin{document}
+
+\title{\Huge\bfseries\color{SlateBlue} Chapter 6: Saving, Investment Spending, and the Financial System}
+\author{\large Principles of Macroeconomics Curriculum}
+\date{2026}
+\maketitle
+
+\thispagestyle{plain}
+
+\begin{abstract}
+This chapter provides a rigorous, pedagogical treatment of Chapter 6: Saving, Investment Spending, and the Financial System, benchmarked to standard principles curriculum.
+\end{abstract}
+
+\tableofcontents
+\vspace{1.5em}
+\hrule
+\vspace{1.5em}
+
+\section{Learning Outcomes and Key Terms}
+Students should distinguish saving from wealth, apply the national saving identity, and use the loanable-funds model to explain how saving and investment plans respond to real interest rates. These objectives support MA-2 and MA-3 and prepare students for C2002-2. Key terms include private saving, public saving, national saving, investment, loanable funds, real interest rate, deficit, and capital inflow.
+
+\section{Saving Is a Flow; Wealth Is a Stock}
+A household that saves part of this month's income adds to its assets, but saving itself is measured over a period. Wealth is the value of assets held at a point in time. Likewise, investment in macroeconomics is spending on newly produced capital goods and inventories during a period; it is not the purchase of an existing stock certificate. Keeping stocks and flows separate prevents a common accounting error.
+
+\section{National Saving and the Open-Economy Identity}
+Start with the expenditure identity $Y=C+I+G+NX$. Rearranging gives $Y-C-G=I+NX$. National saving is $S=Y-C-G$, so in the simplified model $S=I+NX$. If net exports are used as the current-account proxy, then $S-I=NX$: saving above domestic investment corresponds to net lending abroad, while investment above saving is matched by net borrowing from abroad. In full balance-of-payments accounts, the current account includes net primary income and transfers as well as goods and services.
+
+With taxes $T$ and disposable income $Y-T$, private saving is $S_p=Y-T-C$ and public saving is $S_g=T-G$. National saving adds the two:
+\begin{equation}
+S=S_p+S_g=(Y-T-C)+(T-G)=Y-C-G, \qquad S-I=NX \quad\text{(simplified model)}.
+\end{equation}
+In a closed economy, $NX=0$ and planned national saving equals investment in the accounting identity. The identity does not guarantee that desired saving and planned investment are equal at every interest rate; prices, output, and financial markets adjust toward consistency.
+
+\section{Loanable Funds: Graph and Mechanism}
+Put the quantity of loanable funds on the horizontal axis and the real interest rate on the vertical axis. Planned saving is drawn as a supply of funds, often rising with the real return. Planned investment is a demand for funds, often falling as borrowing becomes more expensive. Their intersection is the model's equilibrium real rate and quantity. A shift in saving or investment plans moves one curve; a change in the interest rate is a movement along a curve. This is a market model, not a literal inventory of all bank deposits.
+
+\section{Deficits, Interest Rates, and Crowding Out}
+If government purchases rise while taxes and private saving behavior are fixed, public saving falls. In a closed-economy loanable-funds model, the saving supply can shift left, raising the equilibrium real interest rate and reducing some private investment. This is the crowding-out mechanism. Its size depends on conditions: monetary policy, spare capacity, household saving responses, international capital flows, and the central bank's reaction can change the outcome. A deficit does not mechanically imply a one-for-one decline in private investment.
+
+\begin{examplecase}{FRED Data: Gross Private Domestic Investment}
+FRED series GPDI reports gross private domestic investment in billions of current dollars at a seasonally adjusted annual rate, quarterly. It includes fixed investment and inventory change. It is a nominal expenditure flow, not a capital stock and not a direct measure of productive capacity. To study physical investment growth across time, compare an appropriate real series and account for revisions and price changes.
+\end{examplecase}
+
+\begin{coreprinciple}
+\boxheader{SlateBlue}{Clear It Up: The Identity Is Not a Causal Claim}
+The accounting relation $S-I=NX$ in the simplified model must hold ex post. It does not by itself tell us whether saving caused investment, investment caused income and saving, or foreign flows adjusted. Use a behavioral model and evidence to discuss causation.
+\end{coreprinciple}
+
+\section{Check Your Understanding}
+\begin{enumerate}
+  \item If $Y=1{,}000$, $C=650$, and $G=200$, calculate national saving.
+  \item If national saving is 150 and investment is 180, what is $NX$ in the simplified open-economy identity?
+  \item Is buying an existing share of a company macroeconomic investment? Why or why not?
+\end{enumerate}
+Answers: (1) $S=Y-C-G=150$. (2) $NX=S-I=-30$, a deficit in the simplified model. (3) No; it transfers ownership of an existing financial asset rather than purchasing newly produced capital.
+
+\end{document}

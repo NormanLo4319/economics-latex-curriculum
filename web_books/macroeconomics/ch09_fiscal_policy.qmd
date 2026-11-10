@@ -1,0 +1,49 @@
+---
+title: "Chapter 9: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+## Learning Outcomes and Key Terms
+Students should distinguish automatic stabilizers from discretionary fiscal actions, explain how taxes and government purchases affect planned spending, and distinguish a deficit flow from debt outstanding. These objectives support MA-4 and C2002-3. Key terms include fiscal policy, transfer, automatic stabilizer, multiplier, deficit, debt, and implementation lag.
+
+## A Downturn and the Budget Response
+During a recession, household incomes and tax receipts may fall while applications for unemployment insurance rise. These changes support disposable income without a new vote each month: they are automatic stabilizers. Congress and the executive branch can also change purchases, taxes, or transfers deliberately, but identifying the downturn, passing legislation, and delivering the policy take time. A well-timed policy may support demand; a delayed policy can arrive after conditions have changed.
+
+## Government Purchases and Taxes in a Simple Model
+In a closed-economy model with lump-sum taxes and fixed prices, planned spending is $AE=C_0+c(Y-T)+I_p+G$. An increase in $G$ raises autonomous spending directly. A tax reduction raises disposable income, but households spend only the marginal propensity $c$ of the extra income. The corresponding simple multipliers are:
+\begin{equation}
+k_G=\frac{1}{1-c}, \qquad k_T=-\frac{c}{1-c}.
+\end{equation}
+The tax multiplier has a negative sign because a tax increase lowers equilibrium output in this model. If taxes rise proportionally with income at rate $t$, one common version is $k_G=1/[1-c(1-t)]$. Imports, interest-rate responses, price changes, and supply constraints alter these multipliers.
+
+## Graph Description: Fiscal Policy in AD–AS
+On an AD–AS graph with real GDP on the horizontal axis and the price level on the vertical axis, an increase in government purchases shifts AD right. In the short run, output and the price level generally rise. If the economy is near capacity, more of the effect may appear in prices; if resources are idle, more may appear in output. The result is not an unconditional promise that fiscal expansion pays for itself or that every spending program has the same multiplier.
+
+## Automatic Stabilizers and Discretionary Choices
+Progressive income taxes, unemployment benefits, and some means-tested transfers tend to support disposable income when activity weakens and withdraw support as incomes recover. Their effect depends on eligibility rules and take-up. Discretionary measures include a temporary purchase, tax credit, or transfer enacted in response to conditions. Policymakers weigh stabilization benefits against opportunity cost, administrative capacity, distributional goals, and the risk that support persists after it is needed.
+
+## Deficits Are Flows; Debt Is a Stock
+A budget deficit is the excess of outlays over revenues during a fiscal period. Public debt is the accumulated stock of liabilities at a point in time, subject to accounting adjustments. An annual deficit can add to debt, but a change in debt also reflects other transactions and valuation choices. Compare these concepts as flow versus stock, just as saving during a year differs from wealth on a date.
+
+::: {.callout-tip title="FRED Data: Federal Surplus or Deficit"}
+
+FRED series FYFSD reports the federal surplus or deficit in millions of dollars, annual by fiscal year, not seasonally adjusted; a deficit is negative. The fiscal-year timing matters when comparing it with calendar-year GDP or quarterly data. The series describes a budget outcome; by itself it cannot show how much of a deficit was caused by policy choices versus changes in economic activity.
+
+:::
+
+::: {.callout-note title="Clear It Up: A Deficit Is Not the Same as Debt"}
+
+The deficit is a flow over a fiscal year; debt is a stock accumulated across years. Quoting a deficit as if it were the total debt confuses units and time dimensions.
+
+:::
+
+## Check Your Understanding
+
+*  Which has the larger absolute multiplier in the simple lump-sum-tax model: government purchases or taxes?
+*  Give one automatic stabilizer and explain how it changes over the business cycle.
+*  Why should an annual fiscal-year deficit series not be compared casually with one quarter of GDP?
+
+Answers: (1) $|k_G|=1/(1-c)$ exceeds $|k_T|=c/(1-c)$ for $0<c<1$. (2) Unemployment benefits rise as eligible unemployment rises, supporting disposable income. (3) They differ in time period and units; align annual fiscal-year flows with a comparable denominator.

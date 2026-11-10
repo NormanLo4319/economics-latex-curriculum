@@ -1,0 +1,75 @@
+\documentclass[11pt,letterpaper]{article}
+\input{../../shared/preamble.tex}
+\input{../../shared/tikz-settings.tex}
+
+\begin{document}
+
+\title{\Huge\bfseries\color{SlateBlue} Chapter 11: Consumer Choice Theory: Utility and Indifference Curves}
+\author{\large Principles of Microeconomics Curriculum}
+\date{2026}
+\maketitle
+
+\thispagestyle{plain}
+
+\begin{abstract}
+This chapter provides a rigorous, pedagogical treatment of Chapter 11: Consumer Choice Theory: Utility and Indifference Curves, benchmarked to standard principles curriculum.
+\end{abstract}
+
+\tableofcontents
+\vspace{1.5em}
+\hrule
+\vspace{1.5em}
+
+\section{Learning Outcomes and Key Terms}
+Students should represent a budget constraint, identify an affordable choice, and explain how prices and income shape a consumer's decision. These objectives support C2001-1 and C2001-3. Key terms include budget set, utility, indifference curve, marginal utility, marginal rate of substitution, substitution effect, and income effect.
+
+\section{A Monthly Budget and Two Goods}
+Suppose a student allocates a fixed monthly budget between meals ($X$) and transit trips ($Y$). The budget is limited, so buying more of one good means giving up some of the other. The consumer's choice depends on prices, income, and preferences; the model does not claim that every person calculates derivatives before buying lunch. It organizes the trade-offs implied by those constraints.
+
+\section{The Budget Line: Geometric Description}
+Place meals $X$ on the horizontal axis and transit trips $Y$ on the vertical axis. The budget line slopes downward. Its horizontal intercept is the number of meals affordable if all income is spent on meals; its vertical intercept is the number of transit trips affordable if all income is spent on transit. A rise in income shifts the budget line outward in parallel when prices are fixed. A change in one price pivots the line around the intercept for the other good.
+
+The budget constraint is
+\begin{equation}
+P_xX+P_yY=I, \qquad Y=\frac{I}{P_y}-\frac{P_x}{P_y}X.
+\end{equation}
+The slope is $-P_x/P_y$: it is the number of transit trips that must be forgone to purchase one more meal while staying on the same budget line.
+
+\section{Preferences, Utility, and Indifference Curves}
+An indifference curve collects bundles that provide the same ordinal utility. A higher curve represents a preferred bundle when preferences are monotonic. With well-behaved preferences, indifference curves slope downward and are convex to the origin: as a person has more of $X$ relative to $Y$, they are generally willing to give up fewer units of $Y$ for another unit of $X$.
+
+Marginal utility ($MU_x$) is the change in utility from a small increase in $X$, holding $Y$ fixed. The marginal rate of substitution is the absolute slope of an indifference curve:
+\begin{equation}
+MRS_{XY}=\frac{MU_x}{MU_y}.
+\end{equation}
+Utility numbers are a representation for ranking choices, not a literal measurement of happiness that can be compared across people.
+
+\section{Choice at a Tangency: Worked Example}
+Let income be $I=60$, with $P_x=4$ and $P_y=3$. The consumer has Cobb-Douglas utility $U(X,Y)=XY$. Since $MU_x=Y$ and $MU_y=X$, the tangency condition $MRS=P_x/P_y$ implies $Y/X=4/3$. Combining this with the budget constraint gives $X^*=7.5$ meals and $Y^*=10$ transit trips. The bundle exhausts the budget: $4(7.5)+3(10)=60$.
+
+For an interior optimum with smooth, convex preferences:
+\begin{equation}
+\frac{MU_x}{MU_y}=\frac{P_x}{P_y} \quad\Longleftrightarrow\quad \frac{MU_x}{P_x}=\frac{MU_y}{P_y}.
+\end{equation}
+At a corner solution, the consumer chooses only one good; the tangency equality need not hold. Perfect substitutes, perfect complements, and nonstandard preferences can also change the shape of the solution.
+
+\section{Price Changes: Substitution and Income Effects}
+If the price of $X$ falls, the budget line pivots outward along the $X$ axis. The total change in the chosen amount of $X$ can be separated conceptually into a substitution effect and an income effect. The substitution effect reflects the change in relative prices while holding purchasing power conceptually constant; the income effect reflects the change in real purchasing power. For a normal good, both effects of a price decrease usually raise quantity demanded. For an inferior good, the income effect works in the opposite direction and may partly offset the substitution effect. A parallel budget shift is caused by a change in income at fixed prices; it is not the price-change income effect itself.
+
+\begin{coreprinciple}
+\boxheader{SlateBlue}{Clear It Up: The Price Change Pivots the Budget Line}
+A change in $P_x$ changes the budget line's slope and rotates it around the $Y$ intercept. A change in income shifts the entire budget line in parallel when both prices remain fixed. Keep these two geometric changes distinct.
+\end{coreprinciple}
+
+\section{FRED Data and Real Purchasing Power}
+FRED series CPIAUCSL is the Consumer Price Index for All Urban Consumers: All Items in U.S. City Average. It is monthly, seasonally adjusted, and indexed to 1982-1984=100; its September 2026 observation is 336.298. The CPI is a broad price index, not the exact cost of every household's basket. It can help convert a nominal dollar amount to a broad real-dollar comparison, but it does not identify an individual's preferences or their personal inflation rate.
+
+\section{Check Your Understanding}
+\begin{enumerate}
+  \item With $I=60$, $P_x=4$, and $P_y=3$, what are the two intercepts of the budget line?
+  \item Why does the budget line pivot rather than shift in parallel when only $P_x$ changes?
+  \item Is utility measured in directly comparable units across people? Explain.
+\end{enumerate}
+Answers: (1) $X=15$ and $Y=20$. (2) The $X$ intercept changes while the $Y$ intercept remains $I/P_y$. (3) No; ordinal utility represents an individual's ranking of bundles.
+
+\end{document}

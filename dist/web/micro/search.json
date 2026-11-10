@@ -1,0 +1,892 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Principles of Microeconomics",
+    "section": "",
+    "text": "Preface\nWelcome to Principles of Microeconomics: An Institutional and Social Science Perspective.\nThis textbook offers an analytical, empirical approach to microeconomic decision-making, price theory, market structures, and policy evaluation. It is structured around the analytical depth of Eric Chiang (Microeconomics: Principles for a Changing World, 5th ed.) and UC Berkeley Econ 1.\nUse the left sidebar navigation to explore individual chapters or press s to initiate full-text keyword searches across the entire volume.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "ch01_principles.html",
+    "href": "ch01_principles.html",
+    "title": "1  Chapter 1: Foundations of Microeconomic Analysis & Core Principles",
+    "section": "",
+    "text": "1.1 What Is Economics? Scarcity, Choice, and Method\nEconomics is the social science that studies how individuals, institutions, and societies allocate scarce resources among competing ends to satisfy unlimited human wants.",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter 1: Foundations of Microeconomic Analysis & Core Principles</span>"
+    ]
+  },
+  {
+    "objectID": "ch01_principles.html#what-is-economics-scarcity-choice-and-method",
+    "href": "ch01_principles.html#what-is-economics-scarcity-choice-and-method",
+    "title": "1  Chapter 1: Foundations of Microeconomic Analysis & Core Principles",
+    "section": "",
+    "text": "1.1.1 Microeconomics vs. Macroeconomics\n\nMicroeconomics: Examines decision-making by individual units—such as households, workers, firms, and individual product and factor markets. It investigates how relative price signals coordinate supply and demand in specific sectors (e.g., electric vehicles or pharmaceutical labor).\nMacroeconomics: Examines aggregate performance, focusing on national output (GDP), price instability (inflation), systemic labor underutilization (unemployment), and long-run secular growth.",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter 1: Foundations of Microeconomic Analysis & Core Principles</span>"
+    ]
+  },
+  {
+    "objectID": "ch01_principles.html#economic-modeling-and-the-ceteris-paribus-assumption",
+    "href": "ch01_principles.html#economic-modeling-and-the-ceteris-paribus-assumption",
+    "title": "1  Chapter 1: Foundations of Microeconomic Analysis & Core Principles",
+    "section": "1.2 Economic Modeling and the Ceteris Paribus Assumption",
+    "text": "1.2 Economic Modeling and the Ceteris Paribus Assumption\nTo analyze human behavior, economists formulate economic models—stylized, simplified representations of real-world phenomena that isolate cause-and-effect relationships by stripping away confounding variables.\n\\[\\begin{equation}\nCeteris Paribus \\equiv \"All other things held constant\"\n\\end{equation}\\]\nEconomic models rely on assumptions (such as rational self-interest and net benefit optimization) not because humans are purely calculating machines, but because these abstractions yield predictable baseline tendencies across large populations.\n\n\n\n\n\n\nTipReal-World Application: California Gasoline Taxes\n\n\n\nWhen modeling the effect of an increase in the California gasoline excise tax on consumer fuel purchases, economists hold public transit availability, regional household income, and crude oil spot prices constant (ceteris paribus). In reality, transit routes and crude prices fluctuate simultaneously. Isolating the tax impact first establishes the clean directional policy response before introducing multi-variable empirical complexities.",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter 1: Foundations of Microeconomic Analysis & Core Principles</span>"
+    ]
+  },
+  {
+    "objectID": "ch01_principles.html#positive-vs.-normative-economic-analysis",
+    "href": "ch01_principles.html#positive-vs.-normative-economic-analysis",
+    "title": "1  Chapter 1: Foundations of Microeconomic Analysis & Core Principles",
+    "section": "1.3 Positive vs. Normative Economic Analysis",
+    "text": "1.3 Positive vs. Normative Economic Analysis\nClear economic discourse separates factual mechanics from ethical prescriptions:\n\nPositive Economics: Descriptive statements regarding how the economy actually operates. Positive claims are empirical assertions that can be tested, confirmed, or refuted using observable data (e.g., “Increasing the statutory minimum wage to $20 per hour will reduce teenage employment by 2.4%”).\nNormative Economics: Prescriptive statements regarding how the economy ought to be structured, incorporating ethical values and political priorities (e.g., “The government ought to increase the statutory minimum wage to $20 because every working individual deserves a living wage”).",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter 1: Foundations of Microeconomic Analysis & Core Principles</span>"
+    ]
+  },
+  {
+    "objectID": "ch01_principles.html#critical-thinking-pitfalls-in-economic-reasoning",
+    "href": "ch01_principles.html#critical-thinking-pitfalls-in-economic-reasoning",
+    "title": "1  Chapter 1: Foundations of Microeconomic Analysis & Core Principles",
+    "section": "1.4 Critical Thinking Pitfalls in Economic Reasoning",
+    "text": "1.4 Critical Thinking Pitfalls in Economic Reasoning\nWhen evaluating economic arguments, analysts must guard against three pervasive analytical traps:\n\nConfusing Correlation with Causation: Presuming that because variables \\(A\\) and \\(B\\) move together, \\(A\\) causes \\(B\\) (e.g., ice cream sales and drownings both spike in July due to summer temperatures, not mutual causation).\nThe Post Hoc Ergo Propter Hoc Fallacy: Concluding that because event \\(Y\\) occurred sequentially after \\(X\\), \\(X\\) must have caused \\(Y\\).\nThe Fallacy of Composition: Mistakenly presuming that what is true for an individual component is automatically true for the aggregate whole.",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter 1: Foundations of Microeconomic Analysis & Core Principles</span>"
+    ]
+  },
+  {
+    "objectID": "ch01_principles.html#core-principle-1-scarcity-choice-and-opportunity-cost",
+    "href": "ch01_principles.html#core-principle-1-scarcity-choice-and-opportunity-cost",
+    "title": "1  Chapter 1: Foundations of Microeconomic Analysis & Core Principles",
+    "section": "1.3 Core Principle 1 — Scarcity, Choice, and Opportunity Cost",
+    "text": "1.3 Core Principle 1 — Scarcity, Choice, and Opportunity Cost\nEvery choice implies an opportunity cost—the value of the next best alternative forgone: \\[\\begin{equation}\n\\text{Economic Cost} = \\text{Explicit Out-of-Pocket Outlays} + \\text{Implicit Opportunity Costs}\n\\end{equation}\\]\n\n\n\n\n\n\nNoteThe Opportunity Cost of Higher Education\n\n\n\nAn undergraduate student pays $12,000 per year in tuition and fees. If that student foregoes a $40,000 full-time salary, the true economic cost of attendance is $52,000 per year ($12,000 + $40,000), not merely the direct accounting expenditure.",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter 1: Foundations of Microeconomic Analysis & Core Principles</span>"
+    ]
+  },
+  {
+    "objectID": "ch01_principles.html#core-principle-2-marginal-analysis-and-rational-decision-making",
+    "href": "ch01_principles.html#core-principle-2-marginal-analysis-and-rational-decision-making",
+    "title": "1  Chapter 1: Foundations of Microeconomic Analysis & Core Principles",
+    "section": "1.6 Core Principle 2 — Marginal Analysis and Rational Decision-Making",
+    "text": "1.6 Core Principle 2 — Marginal Analysis and Rational Decision-Making\nDecisions are evaluated at the margin by weighing incremental benefits against incremental costs:\n\nMarginal Benefit (MB): The additional satisfaction or revenue generated by consuming or producing one extra unit.\nMarginal Cost (MC): The additional opportunity cost incurred by producing or consuming one extra unit.\n\nNet Benefit Maximization Rule: Expand if \\(MB &gt; MC\\); Halt where \\(MB = MC\\).\n\n\n\n\n\n\nTipReal-World Example: Airline Seat Pricing\n\n\n\nA commercial airliner with 180 seats has a total operating flight cost of $18,000 (average cost = $100 per seat). Ten minutes before departure, an unreserved seat remains empty, and a standby passenger offers $60. A manager fixated on average cost would reject the offer because $60 &lt; $100. A rational marginal manager accepts the $60, recognizing that the marginal cost of carrying one extra passenger (a small snack and minor incremental jet fuel) is roughly $10. Because $MB ($60) &gt; MC (\\(10)\\), selling the seat increases operating profits by $50.\n\n\n\n[Graphical Model: Marginal Benefit intersects Marginal Cost at equilibrium \\((Q^*, P^*)\\)]",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter 1: Foundations of Microeconomic Analysis & Core Principles</span>"
+    ]
+  },
+  {
+    "objectID": "ch01_principles.html#core-principle-3-response-to-incentives-and-the-peltzman-effect",
+    "href": "ch01_principles.html#core-principle-3-response-to-incentives-and-the-peltzman-effect",
+    "title": "1  Chapter 1: Foundations of Microeconomic Analysis & Core Principles",
+    "section": "1.5 Core Principle 3 — Response to Incentives and the Peltzman Effect",
+    "text": "1.5 Core Principle 3 — Response to Incentives and the Peltzman Effect\nAgents adjust behavior when relative prices change. Mandating vehicular safety equipment in 1968 reduced the perceived risk of reckless driving, causing drivers to speed and brake later, increasing pedestrian collisions.",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter 1: Foundations of Microeconomic Analysis & Core Principles</span>"
+    ]
+  },
+  {
+    "objectID": "ch01_principles.html#core-principle-4-markets-efficiency-and-the-invisible-hand",
+    "href": "ch01_principles.html#core-principle-4-markets-efficiency-and-the-invisible-hand",
+    "title": "1  Chapter 1: Foundations of Microeconomic Analysis & Core Principles",
+    "section": "1.8 Core Principle 4 — Markets, Efficiency, and the Invisible Hand",
+    "text": "1.8 Core Principle 4 — Markets, Efficiency, and the Invisible Hand\nAs Adam Smith observed in The Wealth of Nations (1776), decentralized price signals guide self-interested agents toward productive and allocative efficiency:\n\nAllocative Efficiency: Resources are distributed to produce the specific bundle of goods and services most highly valued by society (\\(MB = MC\\)).\nProductive Efficiency: Goods are produced at the lowest possible per-unit cost using the most effective combinations of factor inputs.",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter 1: Foundations of Microeconomic Analysis & Core Principles</span>"
+    ]
+  },
+  {
+    "objectID": "ch01_principles.html#core-principle-5-market-failures-and-the-economic-role-of-government",
+    "href": "ch01_principles.html#core-principle-5-market-failures-and-the-economic-role-of-government",
+    "title": "1  Chapter 1: Foundations of Microeconomic Analysis & Core Principles",
+    "section": "1.9 Core Principle 5 — Market Failures and the Economic Role of Government",
+    "text": "1.9 Core Principle 5 — Market Failures and the Economic Role of Government\nWhen decentralized private transactions fail to allocate resources efficiently, a market failure occurs, establishing an economic rationale for public intervention:\n\nExternalities: Unpriced costs or benefits imposed on third parties (e.g., pollution or basic research).\nMarket Power: Firms restricting output to artificially inflate prices above marginal cost.\nPublic Goods: Non-excludable and non-rival goods subject to free-riding (e.g., national defense).\nEfficiency vs. Equity Trade-off: Even perfectly efficient competitive markets can yield extreme inequality, requiring societies to balance allocative efficiency against distributive justice.",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter 1: Foundations of Microeconomic Analysis & Core Principles</span>"
+    ]
+  },
+  {
+    "objectID": "ch02_ppf.html",
+    "href": "ch02_ppf.html",
+    "title": "2  Chapter 2: The Production Possibilities Frontier & Gains from Trade",
+    "section": "",
+    "text": "2.1 The Production Possibilities Frontier (PPF) Model\nThe PPF illustrates the boundary of maximum output combinations achievable under fixed technology and full factor utilization. \\[\\begin{equation}\nMRT = -\\frac{\\Delta Y}{\\Delta X} = \\left|\\frac{dY}{dX}\\right| = \\frac{\\text{Quantity of Good } Y \\text{ Forgone}}{\\text{Quantity of Good } X \\text{ Gained}}\n\\end{equation}\\]",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 2: The Production Possibilities Frontier & Gains from Trade</span>"
+    ]
+  },
+  {
+    "objectID": "ch02_ppf.html#the-production-possibilities-frontier-ppf-model-core-assumptions",
+    "href": "ch02_ppf.html#the-production-possibilities-frontier-ppf-model-core-assumptions",
+    "title": "2  Chapter 2: The Production Possibilities Frontier & Gains from Trade",
+    "section": "",
+    "text": "2.1.1 Core Assumptions of the PPF Framework\n\nResource Scarcity: Productive factors are strictly bounded during the period under examination.\nFull and Efficient Employment: All factor inputs are actively engaged without operational waste or structural idling.\nFixed Technology: Engineering processes and organizational practices remain constant.\nTwo-Good Economy: Output is simplified to two alternative goods (or composite categories).",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 2: The Production Possibilities Frontier & Gains from Trade</span>"
+    ]
+  },
+  {
+    "objectID": "ch02_ppf.html#opportunity-cost-and-the-law-of-increasing-opportunity-cost",
+    "href": "ch02_ppf.html#opportunity-cost-and-the-law-of-increasing-opportunity-cost",
+    "title": "2  Chapter 2: The Production Possibilities Frontier & Gains from Trade",
+    "section": "2.2 Opportunity Cost and the Law of Increasing Opportunity Cost",
+    "text": "2.2 Opportunity Cost and the Law of Increasing Opportunity Cost\nBecause resources are scarce, expanding the production of Good \\(X\\) requires diverting inputs away from Good \\(Y\\). The slope of the PPF measures the Marginal Rate of Transformation (MRT): \\[\\begin{equation}\nMRT = -\\frac{\\Delta Y}{\\Delta X} = \\left| \\frac{dY}{dX} \\right| = \\frac{Quantity of Good  Y  Forgone}{Quantity of Good  X  Gained}\n\\end{equation}\\]\n\n2.2.1 Constant vs. Increasing Opportunity Cost\n\nConstant Opportunity Cost (Linear PPF): Productive factors are perfectly interchangeable between both production processes. The slope remains constant along the frontier (\\(MRT = k\\)).\nIncreasing Opportunity Cost (Bowed-Out / Concave PPF): Productive resources are specialized. Shifting factors into Good \\(X\\) pulls inputs that are progressively less adapted to its production, causing opportunity costs to escalate.\n\n\n\n\n\n\n\nTipEmpirical Case: Healthcare Facilities vs. Clean Energy Infrastructure\n\n\n\nA regional economy allocates bonding capacity and engineering labor between Diagnostic Healthcare Facilities and Solar Energy Arrays. Initially, reallocating general electrical contractors efficiently constructs solar arrays. However, pushing exclusively toward solar requires reassigning specialized biomedical researchers and surgical nursing teams. Because these professionals possess a comparative disadvantage in manufacturing solar cells, the forgone healthcare services per megawatt rise exponentially, generating a bowed-out PPF.",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 2: The Production Possibilities Frontier & Gains from Trade</span>"
+    ]
+  },
+  {
+    "objectID": "ch02_ppf.html#productive-vs.-allocative-efficiency-outward-shifts",
+    "href": "ch02_ppf.html#productive-vs.-allocative-efficiency-outward-shifts",
+    "title": "2  Chapter 2: The Production Possibilities Frontier & Gains from Trade",
+    "section": "2.3 Productive vs. Allocative Efficiency & Outward Shifts",
+    "text": "2.3 Productive vs. Allocative Efficiency & Outward Shifts\n\nProductive Efficiency: Producing directly along the PPF curve at minimum opportunity cost.\nAllocative Efficiency: The specific bundle on the PPF boundary where societal net marginal value is maximized (\\(MB = MC\\)).\n\n\n2.3.1 Symmetric vs. Asymmetric Technological Shifts\nGeneral demographic growth or educational attainment expands the PPF symmetrically outward. In contrast, sector-specific innovation (e.g., robotic photolithography in semiconductor manufacturing) pivots the PPF outward along the affected axis while leaving the alternative intercept fixed.",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 2: The Production Possibilities Frontier & Gains from Trade</span>"
+    ]
+  },
+  {
+    "objectID": "ch02_ppf.html#ricardian-comparative-advantage-gains-from-trade",
+    "href": "ch02_ppf.html#ricardian-comparative-advantage-gains-from-trade",
+    "title": "2  Chapter 2: The Production Possibilities Frontier & Gains from Trade",
+    "section": "2.4 Ricardian Comparative Advantage & Gains from Trade",
+    "text": "2.4 Ricardian Comparative Advantage & Gains from Trade\nOpportunity cost determines comparative advantage. Voluntary exchange expands societal consumption possibilities beyond domestic production boundaries.\n\n\n\n\n\n\nTipNumerical Case: Pacific Coast vs. Great Lakes Trade Matrix\n\n\n\nAllocating a standardized 1,000-hour block of skilled labor yields the following outputs:\n\nPacific Coast: 100 Aircraft or 200 Turbines. \\[Opportunity Cost of 1 Aircraft = 2.0 Turbines \\quad (1 Turbine = 0.5 Aircraft)\\]\nGreat Lakes: 40 Aircraft or 120 Turbines. \\[Opportunity Cost of 1 Aircraft = 3.0 Turbines \\quad (1 Turbine = 0.33 Aircraft)\\]\n\nBecause \\(2.0 &lt; 3.0\\), the Pacific Coast possesses a comparative advantage in Aircraft. Because \\(0.33 &lt; 0.5\\), the Great Lakes holds a comparative advantage in Turbines.",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 2: The Production Possibilities Frontier & Gains from Trade</span>"
+    ]
+  },
+  {
+    "objectID": "ch02_ppf.html#the-terms-of-trade-and-the-consumption-possibility-frontier-cpf",
+    "href": "ch02_ppf.html#the-terms-of-trade-and-the-consumption-possibility-frontier-cpf",
+    "title": "2  Chapter 2: The Production Possibilities Frontier & Gains from Trade",
+    "section": "2.5 The Terms of Trade and the Consumption Possibility Frontier (CPF)",
+    "text": "2.5 The Terms of Trade and the Consumption Possibility Frontier (CPF)\nMutually advantageous trade requires that the terms of trade (TOT) settle strictly between both domestic opportunity costs: \\[\\begin{equation}\n2.0 Turbines &lt; 1 Aircraft &lt; 3.0 Turbines\n\\end{equation}\\]\nAt an agreed exchange rate of \\(1 Aircraft = 2.5 Turbines\\):\n\nThe Pacific Coast exports 1 Aircraft (costing 2.0 turbines domestically) and receives 2.5 turbines, capturing a gain of \\(+0.5\\) turbines per transaction.\nThe Great Lakes imports 1 Aircraft for 2.5 turbines (saving 0.5 turbines compared to domestic production).\n\nBoth economies rotate their Consumption Possibilities Frontier (CPF) strictly beyond their domestic production possibilities.",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 2: The Production Possibilities Frontier & Gains from Trade</span>"
+    ]
+  },
+  {
+    "objectID": "ch03_supply_demand.html",
+    "href": "ch03_supply_demand.html",
+    "title": "3  Chapter 3: Supply, Demand, and Market Equilibrium",
+    "section": "",
+    "text": "3.1 The Nature of Demand and Consumer Valuation\nThe Law of Demand states that, ceteris paribus, there is an inverse relationship between the price of a good and the quantity demanded: \\[\\begin{equation}\nP \\uparrow \\implies Q_d \\downarrow, \\qquad P \\downarrow \\implies Q_d \\uparrow\n\\end{equation}\\] This empirical regularity is driven by two microeconomic mechanisms:",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter 3: Supply, Demand, and Market Equilibrium</span>"
+    ]
+  },
+  {
+    "objectID": "ch03_supply_demand.html#equilibrium-and-vector-shifts",
+    "href": "ch03_supply_demand.html#equilibrium-and-vector-shifts",
+    "title": "3  Chapter 3: Supply, Demand, and Market Equilibrium",
+    "section": "3.2 Equilibrium and Vector Shifts",
+    "text": "3.2 Equilibrium and Vector Shifts\nEquating \\(Q_d = Q_s\\): \\[\\begin{equation}\nP^* = \\frac{a - c}{b + d}, \\qquad Q^* = \\frac{ad + bc}{b + d}\n\\end{equation}\\]\n\n\n\n\n\n\nNoteClear It Up: Shifts vs. Movements Along Curves\n\n\n\nChanges in own-price cause movements along the static schedule (change in quantity demanded/supplied). Non-price determinants shift the schedule itself (change in demand/supply).",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter 3: Supply, Demand, and Market Equilibrium</span>"
+    ]
+  },
+  {
+    "objectID": "ch04_surplus.html",
+    "href": "ch04_surplus.html",
+    "title": "4  Chapter 4: Consumer and Producer Surplus, Market Efficiency, and Welfare",
+    "section": "",
+    "text": "4.1 Surplus Metrics\nConsumer Surplus (\\(CS\\)) is the area under inverse demand above market price: \\[\\begin{equation}\nCS = \\int_0^{Q^*} [P(q) - P^*] \\, dq = \\frac{1}{2} Q^* (P_{\\text{choke}} - P^*)\n\\end{equation}\\] Producer Surplus (\\(PS\\)) is the area above inverse supply below market price: \\[\\begin{equation}\nPS = \\int_0^{Q^*} [P^* - MC(q)] \\, dq = \\frac{1}{2} Q^* (P^* - P_{\\text{min}})\n\\end{equation}\\] Total Surplus (\\(TS = CS + PS\\)) is maximized at competitive market equilibrium where \\(MSB = MSC\\).",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter 4: Consumer and Producer Surplus, Market Efficiency, and Welfare</span>"
+    ]
+  },
+  {
+    "objectID": "ch04_surplus.html#deadweight-loss-of-price-controls-and-taxes",
+    "href": "ch04_surplus.html#deadweight-loss-of-price-controls-and-taxes",
+    "title": "4  Chapter 4: Consumer and Producer Surplus, Market Efficiency, and Welfare",
+    "section": "4.2 Deadweight Loss of Price Controls and Taxes",
+    "text": "4.2 Deadweight Loss of Price Controls and Taxes\nAn excise tax \\(t\\) creates a tax wedge \\(P_b - P_s = t\\). Deadweight loss (\\(DWL\\)) follows Harberger’s triangle: \\[\\begin{equation}\nDWL = \\frac{1}{2} \\times t \\times (Q^* - Q_t)\n\\end{equation}\\] The economic incidence ratio depends on relative elasticities: \\(\\frac{\\Delta P_b}{\\Delta P_s} = \\frac{\\varepsilon_s}{|\\varepsilon_d|}\\).",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter 4: Consumer and Producer Surplus, Market Efficiency, and Welfare</span>"
+    ]
+  },
+  {
+    "objectID": "ch05_elasticity.html",
+    "href": "ch05_elasticity.html",
+    "title": "5  Chapter 5: Elasticity: Responsiveness of Demand and Supply",
+    "section": "",
+    "text": "5.1 Midpoint Arc Elasticity Formula\n\\[\\begin{equation}\n\\varepsilon_d = \\frac{(Q_2 - Q_1) / [(Q_1 + Q_2)/2]}{(P_2 - P_1) / [(P_1 + P_2)/2]}\n\\end{equation}\\] Demand is classified as elastic if \\(|\\varepsilon_d| &gt; 1\\), unit elastic if \\(|\\varepsilon_d| = 1\\), and inelastic if \\(|\\varepsilon_d| &lt; 1\\).",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Chapter 5: Elasticity: Responsiveness of Demand and Supply</span>"
+    ]
+  },
+  {
+    "objectID": "ch05_elasticity.html#the-total-revenue-test",
+    "href": "ch05_elasticity.html#the-total-revenue-test",
+    "title": "5  Chapter 5: Elasticity: Responsiveness of Demand and Supply",
+    "section": "5.2 The Total Revenue Test",
+    "text": "5.2 The Total Revenue Test\nTotal Revenue \\(TR = P \\times Q\\). Differentiating with respect to price yields: \\[\\begin{equation}\n\\frac{d(TR)}{dP} = Q(1 - |\\varepsilon_d|)\n\\end{equation}\\] When demand is inelastic (\\(|\\varepsilon_d| &lt; 1\\)), price increases raise total revenue.",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Chapter 5: Elasticity: Responsiveness of Demand and Supply</span>"
+    ]
+  },
+  {
+    "objectID": "ch06_costs_production.html",
+    "href": "ch06_costs_production.html",
+    "title": "6  Chapter 6: The Theory of the Firm: Production and Cost Curves",
+    "section": "",
+    "text": "6.1 Production Functions and Diminishing Returns\nOutput \\(Q = f(L, \\bar{K})\\). The Marginal Product of Labor is \\(MP_L = \\frac{\\Delta Q}{\\Delta L}\\). By the Law of Diminishing Marginal Productivity, \\(\\frac{d(MP_L)}{dL} &lt; 0\\).",
+    "crumbs": [
+      "Firm Behavior & Market Structures",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chapter 6: The Theory of the Firm: Production and Cost Curves</span>"
+    ]
+  },
+  {
+    "objectID": "ch06_costs_production.html#cost-function-duality",
+    "href": "ch06_costs_production.html#cost-function-duality",
+    "title": "6  Chapter 6: The Theory of the Firm: Production and Cost Curves",
+    "section": "6.2 Cost Function Duality",
+    "text": "6.2 Cost Function Duality\nTotal Cost \\(TC = FC + VC(Q)\\). Marginal Cost \\(MC = \\frac{d(TC)}{dQ} = \\frac{w}{MP_L}\\). Average Total Cost \\(ATC = AFC + AVC\\). \\(MC\\) intersects \\(ATC\\) and \\(AVC\\) at their minimum points: \\[\\begin{equation}\n\\frac{d(ATC)}{dQ} = \\frac{MC - ATC}{Q} = 0 \\implies MC = ATC\n\\end{equation}\\]",
+    "crumbs": [
+      "Firm Behavior & Market Structures",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chapter 6: The Theory of the Firm: Production and Cost Curves</span>"
+    ]
+  },
+  {
+    "objectID": "ch07_perfect_competition.html",
+    "href": "ch07_perfect_competition.html",
+    "title": "7  Chapter 7: Perfect Competition and Long-Run Industry Equilibrium",
+    "section": "",
+    "text": "7.1 Price-Taking Equilibrium\nCompetitive firms face a horizontal demand curve at market price \\(P = MR = AR\\). The profit-maximizing condition is \\(P = MC(q^*)\\).",
+    "crumbs": [
+      "Firm Behavior & Market Structures",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Chapter 7: Perfect Competition and Long-Run Industry Equilibrium</span>"
+    ]
+  },
+  {
+    "objectID": "ch07_perfect_competition.html#price-taking-profit-maximization",
+    "href": "ch07_perfect_competition.html#price-taking-profit-maximization",
+    "title": "7  Chapter 7: Perfect Competition and Long-Run Industry Equilibrium",
+    "section": "",
+    "text": "NoteShutdown and Exit Decision Rules\n\n\n\n\nShort-Run Shutdown: Produce if \\(P \\ge \\min AVC\\); shut down if \\(P &lt; \\min AVC\\).\nLong-Run Exit: Stay in industry if \\(P \\ge \\min ATC\\); exit if \\(P &lt; \\min ATC\\).",
+    "crumbs": [
+      "Firm Behavior & Market Structures",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Chapter 7: Perfect Competition and Long-Run Industry Equilibrium</span>"
+    ]
+  },
+  {
+    "objectID": "ch08_monopoly.html",
+    "href": "ch08_monopoly.html",
+    "title": "8  Chapter 8: Monopoly, Market Power, and Price Discrimination",
+    "section": "",
+    "text": "8.1 Learning Outcomes and Key Terms\nAfter this chapter, students should be able to model a single-price monopolist’s output and price, calculate economic profit and deadweight loss in a linear example, and explain how market power differs from the mere presence of one seller. These objectives support C2001-1, C2001-2, and C2001-3.\nKey terms include monopoly, entry barrier, marginal revenue, market power, price discrimination, consumer surplus, and deadweight loss.",
+    "crumbs": [
+      "Firm Behavior & Market Structures",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 8: Monopoly, Market Power, and Price Discrimination</span>"
+    ]
+  },
+  {
+    "objectID": "ch08_monopoly.html#price-discrimination",
+    "href": "ch08_monopoly.html#price-discrimination",
+    "title": "8  Chapter 8: Monopoly, Market Power, and Price Discrimination",
+    "section": "8.5 Price Discrimination",
+    "text": "8.5 Price Discrimination\nPrice discrimination means charging different prices for the same or similar product when the difference is not explained by a difference in marginal cost. It requires some ability to set price, a way to sort or identify buyers, and limits on resale between buyer groups. Student discounts, time-based fares, and quantity discounts are familiar examples, although their economic and legal details differ.\nUnder first-degree discrimination, a seller charges each buyer close to that buyer’s willingness to pay. In the idealized model, output can expand toward the efficient quantity while the seller captures most consumer surplus. Under third-degree discrimination, the seller separates observable groups and sets different prices; the group with less elastic demand generally faces the higher markup, provided marginal costs are comparable. Price discrimination can expand access for some buyers, but it can also transfer surplus from consumers to the seller. Its welfare effect depends on output, costs, and who receives the service.",
+    "crumbs": [
+      "Firm Behavior & Market Structures",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 8: Monopoly, Market Power, and Price Discrimination</span>"
+    ]
+  },
+  {
+    "objectID": "ch09_imperfect_competition_game_theory.html",
+    "href": "ch09_imperfect_competition_game_theory.html",
+    "title": "9  Chapter 9: Monopolistic Competition, Oligopoly, and Game Theory",
+    "section": "",
+    "text": "9.1 Monopolistic Competition and Excess Capacity\nFirms sell differentiated products with free entry. In long-run equilibrium, demand is tangent to downward-sloping \\(ATC\\), resulting in excess capacity: \\(Q_{\\text{actual}} &lt; Q_{\\text{efficient scale}}\\).",
+    "crumbs": [
+      "Firm Behavior & Market Structures",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Chapter 9: Monopolistic Competition, Oligopoly, and Game Theory</span>"
+    ]
+  },
+  {
+    "objectID": "ch09_imperfect_competition_game_theory.html#oligopoly-and-game-theoretic-equilibrium",
+    "href": "ch09_imperfect_competition_game_theory.html#oligopoly-and-game-theoretic-equilibrium",
+    "title": "9  Chapter 9: Monopolistic Competition, Oligopoly, and Game Theory",
+    "section": "9.2 Oligopoly and Game Theoretic Equilibrium",
+    "text": "9.2 Oligopoly and Game Theoretic Equilibrium\nIn concentrated markets, strategic interdependence governs pricing. In a \\(2 \\times 2\\) Prisoner’s Dilemma, dominant strategies lead to a non-cooperative Nash Equilibrium where both firms defect, earning lower profits than cartel collusion.",
+    "crumbs": [
+      "Firm Behavior & Market Structures",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Chapter 9: Monopolistic Competition, Oligopoly, and Game Theory</span>"
+    ]
+  },
+  {
+    "objectID": "ch10_externalities_public_goods.html",
+    "href": "ch10_externalities_public_goods.html",
+    "title": "10  Chapter 10: Externalities, Public Goods, and Common Resources",
+    "section": "",
+    "text": "10.1 Learning Outcomes and Key Terms\nStudents should distinguish private from social costs and benefits, solve for a simple efficient quantity, and compare corrective policy tools. These objectives support C2001-1 and C2001-2. Key terms include externality, marginal private cost, marginal social cost, Pigouvian tax, public good, common resource, free rider, and Coase bargaining.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 10: Externalities, Public Goods, and Common Resources</span>"
+    ]
+  },
+  {
+    "objectID": "ch10_externalities_public_goods.html#typology-of-goods",
+    "href": "ch10_externalities_public_goods.html#typology-of-goods",
+    "title": "10  Chapter 10: Externalities, Public Goods, and Common Resources",
+    "section": "10.2 Typology of Goods",
+    "text": "10.2 Typology of Goods\n\nPrivate Goods: Excludable and Rivalrous.\nPublic Goods: Non-excludable and Non-rivalrous (Free-rider problem; optimal provision \\(\\sum MB_i = MC\\)).\nCommon Resources: Non-excludable and Rivalrous (Tragedy of the Commons).",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 10: Externalities, Public Goods, and Common Resources</span>"
+    ]
+  },
+  {
+    "objectID": "ch11_consumer_choice.html",
+    "href": "ch11_consumer_choice.html",
+    "title": "11  Chapter 11: Consumer Choice Theory: Utility and Indifference Curves",
+    "section": "",
+    "text": "11.1 Learning Outcomes and Key Terms\nStudents should represent a budget constraint, identify an affordable choice, and explain how prices and income shape a consumer’s decision. These objectives support C2001-1 and C2001-3. Key terms include budget set, utility, indifference curve, marginal utility, marginal rate of substitution, substitution effect, and income effect.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 11: Consumer Choice Theory: Utility and Indifference Curves</span>"
+    ]
+  },
+  {
+    "objectID": "ch11_consumer_choice.html#constrained-optimization",
+    "href": "ch11_consumer_choice.html#constrained-optimization",
+    "title": "11  Chapter 11: Consumer Choice Theory: Utility and Indifference Curves",
+    "section": "11.2 Constrained Optimization",
+    "text": "11.2 Constrained Optimization\nUtility is maximized at the tangency point where \\(MRS\\) equals the price ratio: \\[\\begin{equation}\n\\frac{MU_x}{P_x} = \\frac{MU_y}{P_y} \\iff MRS = \\frac{P_x}{P_y}\n\\end{equation}\\] Price changes decompose into a substitution effect (movement along indifference curve) and an income effect (parallel budget shift).",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 11: Consumer Choice Theory: Utility and Indifference Curves</span>"
+    ]
+  },
+  {
+    "objectID": "ch12_factor_markets.html",
+    "href": "ch12_factor_markets.html",
+    "title": "12  Chapter 12: Factor Markets, Labor Demand, and Wage Determination",
+    "section": "",
+    "text": "12.1 Derived Labor Demand\nA competitive firm hires labor where Marginal Revenue Product equals the market wage: \\[\\begin{equation}\nMRP_L = MP_L \\times P = W\n\\end{equation}\\]",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Chapter 12: Factor Markets, Labor Demand, and Wage Determination</span>"
+    ]
+  },
+  {
+    "objectID": "ch12_factor_markets.html#monopsony-in-labor-markets",
+    "href": "ch12_factor_markets.html#monopsony-in-labor-markets",
+    "title": "12  Chapter 12: Factor Markets, Labor Demand, and Wage Determination",
+    "section": "12.2 Monopsony in Labor Markets",
+    "text": "12.2 Monopsony in Labor Markets\nA monopsonist faces an upward-sloping labor supply curve, meaning Marginal Factor Cost exceeds the wage (\\(MFC_L &gt; W\\)). The firm hires where \\(MRP_L = MFC_L\\) and pays wage \\(W_m &lt; MRP_L\\), creating deadweight loss. Imposing a binding minimum wage can raise both wages and employment in monopsonies.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Chapter 12: Factor Markets, Labor Demand, and Wage Determination</span>"
+    ]
+  },
+  {
+    "objectID": "ch13_asymmetric_information_risk.html",
+    "href": "ch13_asymmetric_information_risk.html",
+    "title": "13  Chapter 13: Asymmetric Information, Risk, and Market Design",
+    "section": "",
+    "text": "13.1 Learning Outcomes and Key Terms\nStudents should distinguish hidden information before a transaction from hidden actions after it, calculate expected value and expected utility in a simple risk problem, and evaluate screening, signaling, and contract design. These objectives support C2001-1, C2001-2, and C2001-3. Key terms include asymmetric information, adverse selection, signaling, screening, moral hazard, risk aversion, expected utility, and risk premium.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Chapter 13: Asymmetric Information, Risk, and Market Design</span>"
+    ]
+  },
+  {
+    "objectID": "ch13_asymmetric_information_risk.html#adverse-selection-and-moral-hazard",
+    "href": "ch13_asymmetric_information_risk.html#adverse-selection-and-moral-hazard",
+    "title": "13  Chapter 13: Asymmetric Information, Risk, and Market Design",
+    "section": "",
+    "text": "Adverse Selection (Pre-contractual): Unobserved characteristics drive high-quality products out of the market (Akerlof’s Lemons Model). Mitigated via screening and Spence signaling.\nMoral Hazard (Post-contractual): Hidden actions occur when an insured party takes excessive risks. Mitigated via deductibles and co-payments.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Chapter 13: Asymmetric Information, Risk, and Market Design</span>"
+    ]
+  },
+  {
+    "objectID": "ch14_international_trade.html",
+    "href": "ch14_international_trade.html",
+    "title": "14  Chapter 14: International Trade, Comparative Advantage, and Protectionism",
+    "section": "",
+    "text": "14.1 Free Trade Welfare Mechanics\nDomestic prices converge to World Price \\(P_w\\). If \\(P_w &lt; P_d\\), the nation imports, expanding consumer surplus by more than domestic producer surplus contracts.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Chapter 14: International Trade, Comparative Advantage, and Protectionism</span>"
+    ]
+  },
+  {
+    "objectID": "ch14_international_trade.html#welfare-effects-of-protectionism",
+    "href": "ch14_international_trade.html#welfare-effects-of-protectionism",
+    "title": "14  Chapter 14: International Trade, Comparative Advantage, and Protectionism",
+    "section": "14.2 Welfare Effects of Protectionism",
+    "text": "14.2 Welfare Effects of Protectionism\nA tariff \\(t\\) raises domestic price to \\(P_w + t\\):\n\nDomestic consumer surplus falls by area \\(A + B + C + D\\).\nDomestic producer surplus rises by area \\(A\\).\nGovernment tariff revenue equals area \\(C = t \\times Imports\\).\nDeadweight loss equals production distortion \\(B\\) plus consumption distortion \\(D\\): \\(DWL = B + D\\).",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Chapter 14: International Trade, Comparative Advantage, and Protectionism</span>"
+    ]
+  },
+  {
+    "objectID": "ch07_perfect_competition.html#shutdown-and-exit-rules",
+    "href": "ch07_perfect_competition.html#shutdown-and-exit-rules",
+    "title": "7  Chapter 7: Perfect Competition and Long-Run Industry Equilibrium",
+    "section": "7.2 Shutdown and Exit Rules",
+    "text": "7.2 Shutdown and Exit Rules\n\nShort-Run Shutdown: Produce if \\(P \\ge \\min AVC\\); halt if \\(P &lt; \\min AVC\\).\nLong-Run Exit: Remain in market if \\(P \\ge \\min ATC\\); exit if \\(P &lt; \\min ATC\\).\n\nIn long-run equilibrium, free entry and exit enforce zero economic profit: \\(P = MR = MC = \\min ATC\\).",
+    "crumbs": [
+      "Firm Behavior & Market Structures",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Chapter 7: Perfect Competition and Long-Run Industry Equilibrium</span>"
+    ]
+  },
+  {
+    "objectID": "ch03_supply_demand.html#the-nature-of-demand-and-consumer-valuation",
+    "href": "ch03_supply_demand.html#the-nature-of-demand-and-consumer-valuation",
+    "title": "3  Chapter 3: Supply, Demand, and Market Equilibrium",
+    "section": "",
+    "text": "The Substitution Effect: As the price of a good rises, it becomes relatively more expensive compared to alternative goods, incentivizing consumers to substitute toward cheaper alternatives.\nThe Income Effect: A price increase erodes the consumer’s real purchasing power, constraining the total quantity of goods they can afford to purchase.\n\n\n3.1.1 Direct vs. Inverse Demand\nIn empirical economics, demand is specified directly as quantity as a function of price: \\[\\begin{equation}\nQ_d = a - bP \\quad (a &gt; 0, b &gt; 0)\n\\end{equation}\\] Because economists traditionally graph price on the vertical axis and quantity on the horizontal axis (following Alfred Marshall), we invert the equation to obtain the Inverse Demand Function: \\[\\begin{equation}\nP = \\frac{a}{b} - \\frac{1}{b}Q_d\n\\end{equation}\\] Here, \\(\\frac{a}{b}\\) represents the choke price—the price at which quantity demanded drops to exactly zero.",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter 3: Supply, Demand, and Market Equilibrium</span>"
+    ]
+  },
+  {
+    "objectID": "ch03_supply_demand.html#shifts-in-demand-vs.-movements-along-the-demand-curve",
+    "href": "ch03_supply_demand.html#shifts-in-demand-vs.-movements-along-the-demand-curve",
+    "title": "3  Chapter 3: Supply, Demand, and Market Equilibrium",
+    "section": "3.2 Shifts in Demand vs. Movements Along the Demand Curve",
+    "text": "3.2 Shifts in Demand vs. Movements Along the Demand Curve\n\n\n\n\n\n\nNoteCrucial Distinction: Demand vs. Quantity Demanded\n\n\n\n\nMovement Along the Curve (Change in Quantity Demanded): Caused strictly by a change in the good’s own price.\nShift of the Entire Curve (Change in Demand): Caused by changes in non-price determinants, altering quantity demanded at every price level.\n\n\n\n\n3.2.1 Non-Price Determinants of Demand\n\nConsumer Income: For a normal good, demand shifts rightward as income expands (\\(\\varepsilon_I &gt; 0\\)). For an inferior good (such as instant ramen or intercity bus transit), demand shifts leftward as income rises (\\(\\varepsilon_I &lt; 0\\)).\nPrices of Related Goods:\nSubstitutes: An increase in the price of Good \\(Y\\) shifts demand for Good \\(X\\) to the right (\\(\\varepsilon_{xy} &gt; 0\\)).\nComplements: An increase in the price of Good \\(Y\\) shifts demand for Good \\(X\\) to the left (\\(\\varepsilon_{xy} &lt; 0\\)).\nTastes and Preferences: Exogenous shifts in consumer culture, health studies, or advertising.\nBuyer Expectations: Anticipated future price increases prompt consumers to accelerate current purchases, shifting current demand rightward.\nMarket Demographics: An expansion in the population of potential buyers shifts market demand outward.",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter 3: Supply, Demand, and Market Equilibrium</span>"
+    ]
+  },
+  {
+    "objectID": "ch03_supply_demand.html#the-nature-of-supply-and-marginal-opportunity-costs",
+    "href": "ch03_supply_demand.html#the-nature-of-supply-and-marginal-opportunity-costs",
+    "title": "3  Chapter 3: Supply, Demand, and Market Equilibrium",
+    "section": "3.3 The Nature of Supply and Marginal Opportunity Costs",
+    "text": "3.3 The Nature of Supply and Marginal Opportunity Costs\nThe Law of Supply establishes a positive relationship between price and quantity supplied, ceteris paribus: \\[\\begin{equation}\nP \\uparrow \\implies Q_s \\uparrow, \\qquad P \\downarrow \\implies Q_s \\downarrow\n\\end{equation}\\] Supply slopes upward because production is governed by the Law of Diminishing Marginal Productivity. As firms hire variable factor inputs into fixed plant capacity, the marginal product of labor declines, forcing marginal production costs (\\(MC\\)) to escalate. To cover higher incremental costs, firms require higher market prices.\n\n3.3.1 Linear Supply Formulations\n\\[\\begin{equation}\nQ_s = c + dP \\iff P = -\\frac{c}{d} + \\frac{1}{d}Q_s \\quad (d &gt; 0)\n\\end{equation}\\]\n\n\n3.3.2 Non-Price Determinants of Supply\nSupply shifts when underlying production parameters change:\n\nInput Prices: Wage increases, raw material inflation, or soaring energy costs increase marginal cost, shifting supply leftward.\nTechnological Progress: Cost-reducing manufacturing breakthroughs allow firms to produce more output at each price level, shifting supply rightward.\nGovernment Taxes and Subsidies: An excise tax increases per-unit production cost, shifting supply vertically upward by the tax amount \\(t\\).\nNumber of Active Producers: Industry entry expands market supply; business closures contract it.",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter 3: Supply, Demand, and Market Equilibrium</span>"
+    ]
+  },
+  {
+    "objectID": "ch03_supply_demand.html#market-equilibrium-and-price-discovery",
+    "href": "ch03_supply_demand.html#market-equilibrium-and-price-discovery",
+    "title": "3  Chapter 3: Supply, Demand, and Market Equilibrium",
+    "section": "3.4 Market Equilibrium and Price Discovery",
+    "text": "3.4 Market Equilibrium and Price Discovery\nA competitive market attains equilibrium where quantity demanded equals quantity supplied: \\[\\begin{equation}\nQ_d(P^*) = Q_s(P^*) = Q^*\n\\end{equation}\\]\n\n\n\n\n\n\nTipStep-by-Step Algebraic Equilibrium Solution\n\n\n\nConsider a regional agricultural market for specialty roasted coffee beans: \\[Q_d = 500 - 15P, \\qquad Q_s = -100 + 15P\\] 1. Equate \\(Q_d\\) and \\(Q_s\\): \\[500 - 15P = -100 + 15P \\implies 30P = 600 \\implies P^* = $20\\] 2. Substitute $P^* = \\(20\\) into either direct schedule: \\[Q^* = 500 - 15(20) = 500 - 300 = 200 \\text{ bags}\\] 3. Verify at disequilibrium prices:\n\nIf $P = \\(25\\) (Price too high): \\(Q_d = 125\\), \\(Q_s = 275 \\implies \\text{Surplus} = +150\\). Unsold inventory forces price downward.\nIf $P = \\(15\\) (Price too low): \\(Q_d = 275\\), \\(Q_s = 125 \\implies \\text{Shortage} = -150\\). Eager buyers bid price upward.",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter 3: Supply, Demand, and Market Equilibrium</span>"
+    ]
+  },
+  {
+    "objectID": "ch03_supply_demand.html#simultaneous-dual-shocks-and-the-indeterminacy-matrix",
+    "href": "ch03_supply_demand.html#simultaneous-dual-shocks-and-the-indeterminacy-matrix",
+    "title": "3  Chapter 3: Supply, Demand, and Market Equilibrium",
+    "section": "3.5 Simultaneous Dual Shocks and the Indeterminacy Matrix",
+    "text": "3.5 Simultaneous Dual Shocks and the Indeterminacy Matrix\nWhen demand and supply shift concurrently, exactly one equilibrium variable (\\(P^*\\) or \\(Q^*\\)) changes unambiguously, while the other is indeterminate without knowing the exact relative magnitudes of the shifts.",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter 3: Supply, Demand, and Market Equilibrium</span>"
+    ]
+  },
+  {
+    "objectID": "ch04_surplus.html#deadweight-loss-of-taxation",
+    "href": "ch04_surplus.html#deadweight-loss-of-taxation",
+    "title": "4  Chapter 4: Consumer and Producer Surplus, Market Efficiency, and Welfare",
+    "section": "4.2 Deadweight Loss of Taxation",
+    "text": "4.2 Deadweight Loss of Taxation\nAn excise tax \\(t\\) creates a tax wedge \\(P_b - P_s = t\\). Deadweight loss follows Harberger’s formulation: \\[\\begin{equation}\nDWL = \\frac{1}{2} \\times t \\times (Q^* - Q_t)\n\\end{equation}\\] The relative tax incidence ratio depends on elasticities: \\(\\frac{\\Delta P_b}{\\Delta P_s} = \\frac{\\varepsilon_s}{|\\varepsilon_d|}\\).",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter 4: Consumer and Producer Surplus, Market Efficiency, and Welfare</span>"
+    ]
+  },
+  {
+    "objectID": "ch01_principles.html#economic-modeling-and-ceteris-paribus",
+    "href": "ch01_principles.html#economic-modeling-and-ceteris-paribus",
+    "title": "1  Chapter 1: Foundations of Microeconomic Analysis & Core Principles",
+    "section": "1.2 Economic Modeling and Ceteris Paribus",
+    "text": "1.2 Economic Modeling and Ceteris Paribus\nTo analyze human behavior, economists formulate models that isolate causal mechanisms: \\[\\begin{equation}\n\\text{Ceteris Paribus} \\equiv \\text{\"All other things held constant\"}\n\\end{equation}\\]",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter 1: Foundations of Microeconomic Analysis & Core Principles</span>"
+    ]
+  },
+  {
+    "objectID": "ch01_principles.html#core-principle-2-marginal-decision-making",
+    "href": "ch01_principles.html#core-principle-2-marginal-decision-making",
+    "title": "1  Chapter 1: Foundations of Microeconomic Analysis & Core Principles",
+    "section": "1.4 Core Principle 2 — Marginal Decision-Making",
+    "text": "1.4 Core Principle 2 — Marginal Decision-Making\nRational agents optimize at the margin by weighing incremental benefits against incremental costs: \\[\\begin{equation}\n\\text{Optimization Rule: Expand if } MB &gt; MC; \\quad \\text{Halt where } MB = MC\n\\end{equation}\\]\n\n\n\n\n\n\nTipReal-World Application: Airline Seat Pricing\n\n\n\nA commercial aircraft has an average operating cost of $100 per seat. An unsold seat ten minutes before departure costs only $10 in marginal jet fuel and refreshments. Selling it to a standby passenger for $60 increases operating profit by $50 because \\(MB\\text{ ($60)} &gt; MC\\text{ ($10)}\\).",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter 1: Foundations of Microeconomic Analysis & Core Principles</span>"
+    ]
+  },
+  {
+    "objectID": "ch02_ppf.html#law-of-increasing-opportunity-cost",
+    "href": "ch02_ppf.html#law-of-increasing-opportunity-cost",
+    "title": "2  Chapter 2: The Production Possibilities Frontier & Gains from Trade",
+    "section": "2.2 Law of Increasing Opportunity Cost",
+    "text": "2.2 Law of Increasing Opportunity Cost\nConcave curvature reflects imperfect factor adaptability. As resources shift toward one sector, inputs progressively less suited to that industry must be utilized, driving opportunity costs upward.",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 2: The Production Possibilities Frontier & Gains from Trade</span>"
+    ]
+  },
+  {
+    "objectID": "ch02_ppf.html#ricardian-comparative-advantage",
+    "href": "ch02_ppf.html#ricardian-comparative-advantage",
+    "title": "2  Chapter 2: The Production Possibilities Frontier & Gains from Trade",
+    "section": "2.3 Ricardian Comparative Advantage",
+    "text": "2.3 Ricardian Comparative Advantage\nComparative advantage is determined strictly by lower domestic opportunity cost. ::: {.callout-note title=“Terms of Trade Rule”}\nMutually beneficial exchange requires the Terms of Trade (\\(TOT\\)) to settle strictly between both domestic opportunity cost ratios: \\[\\begin{equation}\n\\left|\\frac{\\Delta Y}{\\Delta X}\\right|_{\\text{Region A}} &lt; TOT &lt; \\left|\\frac{\\Delta Y}{\\Delta X}\\right|_{\\text{Region B}}\n\\end{equation}\\] Specialization and trade shift the Consumption Possibilities Frontier (\\(CPF\\)) strictly outside the domestic autarky PPF.\n:::",
+    "crumbs": [
+      "Foundations of Market Analysis",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 2: The Production Possibilities Frontier & Gains from Trade</span>"
+    ]
+  },
+  {
+    "objectID": "ch06_costs_production.html#cost-duality-and-minimum-crossings",
+    "href": "ch06_costs_production.html#cost-duality-and-minimum-crossings",
+    "title": "6  Chapter 6: The Theory of the Firm: Production and Cost Curves",
+    "section": "6.2 Cost Duality and Minimum Crossings",
+    "text": "6.2 Cost Duality and Minimum Crossings\nTotal Cost \\(TC = FC + VC(Q)\\). Marginal Cost is inversely linked to productivity: \\(MC = \\frac{w}{MP_L}\\). Average Total Cost \\(ATC = AFC + AVC\\). \\(MC\\) intersects \\(ATC\\) and \\(AVC\\) at their minimum points: \\[\\begin{equation}\n\\frac{d(ATC)}{dQ} = \\frac{MC - ATC}{Q} = 0 \\implies MC = ATC\n\\end{equation}\\]",
+    "crumbs": [
+      "Firm Behavior & Market Structures",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chapter 6: The Theory of the Firm: Production and Cost Curves</span>"
+    ]
+  },
+  {
+    "objectID": "ch09_imperfect_competition_game_theory.html#oligopoly-game-theory",
+    "href": "ch09_imperfect_competition_game_theory.html#oligopoly-game-theory",
+    "title": "9  Chapter 9: Monopolistic Competition, Oligopoly, and Game Theory",
+    "section": "9.2 Oligopoly Game Theory",
+    "text": "9.2 Oligopoly Game Theory\nFirms exhibit strategic interdependence. In a \\(2 \\times 2\\) Prisoner’s Dilemma, dominant strategies lead to a non-cooperative Nash equilibrium where both firms discount, undercutting cartel profit.",
+    "crumbs": [
+      "Firm Behavior & Market Structures",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Chapter 9: Monopolistic Competition, Oligopoly, and Game Theory</span>"
+    ]
+  },
+  {
+    "objectID": "ch12_factor_markets.html#monopsony-power",
+    "href": "ch12_factor_markets.html#monopsony-power",
+    "title": "12  Chapter 12: Factor Markets, Labor Demand, and Wage Determination",
+    "section": "12.2 Monopsony Power",
+    "text": "12.2 Monopsony Power\nA monopsonist faces an upward-sloping labor supply, so Marginal Factor Cost exceeds wage (\\(MFC_L &gt; W\\)). Firms hire where \\(MRP_L = MFC_L\\) and pay \\(W &lt; MRP_L\\). Binding minimum wages can raise both wage and employment under monopsony.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Chapter 12: Factor Markets, Labor Demand, and Wage Determination</span>"
+    ]
+  },
+  {
+    "objectID": "ch14_international_trade.html#tariffs-and-quotas",
+    "href": "ch14_international_trade.html#tariffs-and-quotas",
+    "title": "14  Chapter 14: International Trade, Comparative Advantage, and Protectionism",
+    "section": "14.2 Tariffs and Quotas",
+    "text": "14.2 Tariffs and Quotas\nA tariff \\(t\\) raises domestic price to \\(P_w + t\\). Consumer surplus falls by area \\(A + B + C + D\\), producer surplus expands by \\(A\\), and government tariff revenue equals \\(C = t \\times \\text{Imports}\\). Total societal deadweight loss equals \\(DWL = B + D\\).",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Chapter 14: International Trade, Comparative Advantage, and Protectionism</span>"
+    ]
+  },
+  {
+    "objectID": "ch08_monopoly.html#a-scanner-a-local-market-and-the-cost-of-entry",
+    "href": "ch08_monopoly.html#a-scanner-a-local-market-and-the-cost-of-entry",
+    "title": "8  Chapter 8: Monopoly, Market Power, and Price Discrimination",
+    "section": "8.2 A Scanner, a Local Market, and the Cost of Entry",
+    "text": "8.2 A Scanner, a Local Market, and the Cost of Entry\nConsider a hospital deciding whether to operate an advanced diagnostic scanner. The equipment has a large fixed cost: it must be purchased, staffed, maintained, and kept available even when no patient is being scanned. Once installed, the marginal cost of one additional scan may be much smaller than the average cost at low volume. A nearby clinic considering entry must also recruit technicians, obtain regulatory approvals, and attract enough patients to cover its fixed costs.\nThis example helps distinguish scale economies from monopoly power. A scanner can lower average cost as its fixed cost is spread over more scans, but that fact alone does not establish that the hospital is a monopolist. We must define the relevant service and geographic market, identify reasonable substitutes, and examine whether entry is feasible. A patient may travel to another hospital, use a different diagnostic test, or defer a scan; each possibility changes the competitive constraint.\n\n\n\n\n\n\nTipIllustrative Hospital Scanner Calculation\n\n\n\nSuppose annualized fixed cost is $900,000 and the marginal cost of each scan is $100. At 3,000 scans per year, average total cost is $900{,}000/3{,}000 + 100 = \\(400\\) per scan. At 9,000 scans, it is $900{,}000/9{,}000 + 100 = \\(200\\). These values are illustrative, not hospital data. Higher volume lowers average cost over this range, but it does not by itself prove that the hospital can profitably raise price above the level constrained by alternatives.",
+    "crumbs": [
+      "Firm Behavior & Market Structures",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 8: Monopoly, Market Power, and Price Discrimination</span>"
+    ]
+  },
+  {
+    "objectID": "ch08_monopoly.html#the-demand-curve-marginal-revenue-and-the-graph",
+    "href": "ch08_monopoly.html#the-demand-curve-marginal-revenue-and-the-graph",
+    "title": "8  Chapter 8: Monopoly, Market Power, and Price Discrimination",
+    "section": "8.3 The Demand Curve, Marginal Revenue, and the Graph",
+    "text": "8.3 The Demand Curve, Marginal Revenue, and the Graph\nA competitive firm can sell another unit at the going market price without changing the price received on earlier units. A single-price monopolist cannot: to sell an additional unit, it generally must lower the price, and that lower price applies to all units sold. Therefore its marginal revenue lies below its demand curve.\nIn the standard graph, put quantity on the horizontal axis and price or cost per unit on the vertical axis. Draw a downward-sloping demand curve \\(D\\) and a marginal-revenue curve \\(MR\\) below it. Draw marginal cost \\(MC\\) rising or horizontal. The monopolist chooses the quantity at the intersection of \\(MR\\) and \\(MC\\), then moves vertically to the demand curve to find the price consumers will pay. Do not read the monopoly price from the \\(MR=MC\\) intersection: that intersection determines quantity, not price.\nThe competitive benchmark is the quantity where willingness to pay on demand equals marginal cost. With downward-sloping demand and the same marginal cost, the monopoly quantity is lower and its price is higher than that benchmark. The missing mutually beneficial trades between the two quantities are the source of deadweight loss.",
+    "crumbs": [
+      "Firm Behavior & Market Structures",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 8: Monopoly, Market Power, and Price Discrimination</span>"
+    ]
+  },
+  {
+    "objectID": "ch08_monopoly.html#a-linear-model-from-story-to-equation",
+    "href": "ch08_monopoly.html#a-linear-model-from-story-to-equation",
+    "title": "8  Chapter 8: Monopoly, Market Power, and Price Discrimination",
+    "section": "8.4 A Linear Model: From Story to Equation",
+    "text": "8.4 A Linear Model: From Story to Equation\nLet inverse demand be \\(P(Q)=100-2Q\\) and constant marginal cost be \\(MC=20\\), with no fixed cost in this numerical exercise. Total revenue is \\(TR(Q)=P(Q)Q=100Q-2Q^2\\). Differentiating gives \\(MR(Q)=100-4Q\\). The firm’s profit-maximizing condition is \\(MR=MC\\): \\[\\begin{equation}\n100-4Q_M=20 \\quad\\Longrightarrow\\quad Q_M=20, \\qquad P_M=100-2(20)=60.\n\\end{equation}\\] At this outcome, profit is \\((P_M-MC)Q_M=(60-20)20=800\\). The competitive quantity in this simplified model solves \\(P=MC\\), so \\(100-2Q_C=20\\), or \\(Q_C=40\\). Deadweight loss is the triangle between demand and marginal cost over the units from 20 to 40: \\[\\begin{equation}\nDWL=\\tfrac{1}{2}(Q_C-Q_M)(P_M-MC)=\\tfrac{1}{2}(20)(40)=400.\n\\end{equation}\\] The triangle formula assumes the linear curves used here. If curves are nonlinear, deadweight loss is the area between marginal social benefit and marginal cost over the underproduced units.\nThe Lerner index relates a firm’s price-cost margin to the absolute value of demand elasticity at the optimum, under the assumptions of a single-price profit-maximizing firm with an interior solution: \\[\\begin{equation}\nL=\\frac{P-MC}{P}=\\frac{1}{|\\varepsilon_d|}.\n\\end{equation}\\] In the example, \\(L=(60-20)/60=2/3\\). A larger index signals a larger price-cost margin relative to price; it is not, by itself, a complete measure of consumer harm or a legal finding of anticompetitive conduct.\n\n\n\n\n\n\nNoteClear It Up: One Seller Does Not Automatically Mean Monopoly Power\n\n\n\nThe number of firms in a narrow category is not enough to establish market power. The relevant market includes products and locations that buyers see as substitutes, and potential entry can constrain an incumbent even before a new firm opens. Conversely, several firms may still have substantial market power if they face weak competition.",
+    "crumbs": [
+      "Firm Behavior & Market Structures",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 8: Monopoly, Market Power, and Price Discrimination</span>"
+    ]
+  },
+  {
+    "objectID": "ch08_monopoly.html#a-fred-price-index-is-not-a-monopoly-test",
+    "href": "ch08_monopoly.html#a-fred-price-index-is-not-a-monopoly-test",
+    "title": "8  Chapter 8: Monopoly, Market Power, and Price Discrimination",
+    "section": "8.6 A FRED Price Index Is Not a Monopoly Test",
+    "text": "8.6 A FRED Price Index Is Not a Monopoly Test\nFRED series CPIMEDSL is the Consumer Price Index for All Urban Consumers: Medical Care in U.S. City Average. It is a monthly, seasonally adjusted index with base period 1982-1984=100. The September 2026 observation is 593.666. The index tracks the average price movement of a defined basket; it is not a price for a particular hospital scanner, a hospital’s marginal cost, or a measure of concentration. A rising index alone therefore cannot show that monopoly power caused medical-care inflation. To test that claim, researchers would also need evidence about product markets, entry, costs, quality, and substitutes.",
+    "crumbs": [
+      "Firm Behavior & Market Structures",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 8: Monopoly, Market Power, and Price Discrimination</span>"
+    ]
+  },
+  {
+    "objectID": "ch08_monopoly.html#check-your-understanding",
+    "href": "ch08_monopoly.html#check-your-understanding",
+    "title": "8  Chapter 8: Monopoly, Market Power, and Price Discrimination",
+    "section": "8.7 Check Your Understanding",
+    "text": "8.7 Check Your Understanding\n\nIn the linear example, what price corresponds to the quantity where \\(MR=MC\\)? Why is the intersection itself not the monopoly price?\nIf the demand curve becomes more elastic at the optimum while marginal cost is unchanged, what does the Lerner relation predict about the percentage markup?\nA hospital is the only provider of one scanner type in a town. Name two additional facts needed before concluding that it has market power in the relevant market.\n\nAnswers: (1) \\(P=60\\), read from demand at \\(Q=20\\); the \\(MR=MC\\) intersection identifies quantity. (2) The markup share \\(L\\) falls. (3) Examples include travel distance to substitutes, alternative diagnostic procedures, and the likelihood of entry.",
+    "crumbs": [
+      "Firm Behavior & Market Structures",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 8: Monopoly, Market Power, and Price Discrimination</span>"
+    ]
+  },
+  {
+    "objectID": "ch10_externalities_public_goods.html#a-neighborhood-a-plant-and-unpriced-costs",
+    "href": "ch10_externalities_public_goods.html#a-neighborhood-a-plant-and-unpriced-costs",
+    "title": "10  Chapter 10: Externalities, Public Goods, and Common Resources",
+    "section": "10.2 A Neighborhood, a Plant, and Unpriced Costs",
+    "text": "10.2 A Neighborhood, a Plant, and Unpriced Costs\nImagine a production facility that releases pollution affecting nearby residents. The firm pays for labor, energy, and materials, but without a fee or regulation it may not pay for all health and environmental damage imposed on others. The firm’s private production decision can therefore differ from the decision that maximizes total surplus. The same logic applies to traffic congestion: one driver’s trip adds delay to other road users, a cost the driver may not fully consider.\nAn externality is a cost or benefit from an action that affects a third party outside the transaction. A negative externality creates a wedge between private and social cost; a positive externality creates a wedge between private and social benefit. Not every spillover is a market failure of equal size: measurement, the number of affected parties, property rights, and transaction costs matter.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 10: Externalities, Public Goods, and Common Resources</span>"
+    ]
+  },
+  {
+    "objectID": "ch10_externalities_public_goods.html#negative-production-externalities-the-graph",
+    "href": "ch10_externalities_public_goods.html#negative-production-externalities-the-graph",
+    "title": "10  Chapter 10: Externalities, Public Goods, and Common Resources",
+    "section": "10.3 Negative Production Externalities: The Graph",
+    "text": "10.3 Negative Production Externalities: The Graph\nFor a negative production externality, place quantity on the horizontal axis and dollars per unit on the vertical axis. Draw marginal private cost (\\(MPC\\)) below marginal social cost (\\(MSC\\)), because \\(MSC\\) includes the damage borne by third parties. Draw marginal benefit (\\(MB\\)), assumed here to equal marginal private benefit. The unregulated market produces where \\(MB=MPC\\). The efficient quantity is where \\(MB=MSC\\); it is lower in this example. The vertical distance between \\(MSC\\) and \\(MPC\\) is marginal external cost (\\(MEC\\)). The overproduced units create deadweight loss between the benefit and social-cost curves.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 10: Externalities, Public Goods, and Common Resources</span>"
+    ]
+  },
+  {
+    "objectID": "ch10_externalities_public_goods.html#a-corrective-tax-calculation",
+    "href": "ch10_externalities_public_goods.html#a-corrective-tax-calculation",
+    "title": "10  Chapter 10: Externalities, Public Goods, and Common Resources",
+    "section": "10.4 A Corrective-Tax Calculation",
+    "text": "10.4 A Corrective-Tax Calculation\nSuppose inverse marginal benefit is \\(MB=100-Q\\), marginal private cost is \\(MPC=20+Q\\), and marginal external cost is a constant 10 dollars per unit. Then \\(MSC=MPC+MEC=30+Q\\). The unregulated outcome satisfies \\(100-Q=20+Q\\), giving \\(Q_M=40\\). The efficient outcome satisfies \\(100-Q=30+Q\\), giving \\(Q^*=35\\). A per-unit tax equal to \\(MEC(Q^*)=10\\) makes the private decision face the social marginal cost at the efficient quantity: \\[\\begin{equation}\nMB(Q^*)=MSC(Q^*)=MPC(Q^*)+t^*, \\qquad t^*=MEC(Q^*)=10.\n\\end{equation}\\] In this linear example, the deadweight loss from the five excess units is \\(\\tfrac{1}{2}(40-35)(10)=25\\) dollars per period. The triangle formula depends on the linear, constant-damage assumptions; with changing damage, use the area between \\(MB\\) and \\(MSC\\).\n\n\n\n\n\n\nTipFRED Data: Emissions Are Not a Damage Estimate\n\n\n\nFRED series EMISSCO2TOTVTTTOUSA reports U.S. total carbon dioxide emissions from all sectors and fuels, in million metric tons, annually and not seasonally adjusted. It records 4,594.7 million metric tons in 2020 and 4,911.2 in 2021. These totals describe emissions, not the marginal health or climate damage from one additional unit, and the year-to-year rebound does not identify a single cause. Students should separate measured quantities from an external-cost estimate.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 10: Externalities, Public Goods, and Common Resources</span>"
+    ]
+  },
+  {
+    "objectID": "ch10_externalities_public_goods.html#positive-externalities-and-corrective-subsidies",
+    "href": "ch10_externalities_public_goods.html#positive-externalities-and-corrective-subsidies",
+    "title": "10  Chapter 10: Externalities, Public Goods, and Common Resources",
+    "section": "10.5 Positive Externalities and Corrective Subsidies",
+    "text": "10.5 Positive Externalities and Corrective Subsidies\nVaccination can reduce a recipient’s risk and lower transmission risk for others. If decision-makers consider only private benefit, participation may be below the socially efficient level. In a graph, marginal social benefit (\\(MSB\\)) lies above marginal private benefit (\\(MPB\\)). The market chooses where \\(MPB=MC\\); the efficient quantity satisfies \\(MSB=MC\\). A subsidy can encourage participation, but its design should account for fiscal cost, targeting, and the size of the spillover rather than assuming every private benefit deserves public payment.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 10: Externalities, Public Goods, and Common Resources</span>"
+    ]
+  },
+  {
+    "objectID": "ch10_externalities_public_goods.html#public-goods-and-common-resources",
+    "href": "ch10_externalities_public_goods.html#public-goods-and-common-resources",
+    "title": "10  Chapter 10: Externalities, Public Goods, and Common Resources",
+    "section": "10.6 Public Goods and Common Resources",
+    "text": "10.6 Public Goods and Common Resources\nGoods can be classified by whether people can be excluded and whether one person’s use reduces another’s use. Private goods are excludable and rival; public goods are difficult to exclude people from and are non-rival over the relevant range. A lighthouse signal is a classic stylized example. Common resources are difficult to exclude users from but rival, such as a congested fishery. Club goods are excludable and largely non-rival until congestion, such as a subscription service.\nThe free-rider problem occurs when people can benefit without paying, making voluntary private provision difficult. For a pure public good, efficiency requires the sum of individuals’ marginal willingness to pay to equal marginal cost: \\[\\begin{equation}\n\\sum_i MB_i(Q^*)=MC(Q^*).\n\\end{equation}\\] For a common resource, each user may ignore the congestion or depletion imposed on others. Property rights, access rules, tradable permits, or community management can help, but monitoring and enforcement have costs.\n\n\n\n\n\n\nNoteClear It Up: A Tax Does Not Erase the Externality\n\n\n\nA corrective tax changes private incentives; it does not make the physical damage disappear. The efficient tax is tied to marginal external damage at the efficient quantity under the model’s assumptions. Distribution, measurement error, and administrative costs still matter.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 10: Externalities, Public Goods, and Common Resources</span>"
+    ]
+  },
+  {
+    "objectID": "ch10_externalities_public_goods.html#check-your-understanding",
+    "href": "ch10_externalities_public_goods.html#check-your-understanding",
+    "title": "10  Chapter 10: Externalities, Public Goods, and Common Resources",
+    "section": "10.7 Check Your Understanding",
+    "text": "10.7 Check Your Understanding\n\nIn the numerical example, why is the market quantity larger than the efficient quantity?\nIf marginal external damage rises with output, should the efficient tax necessarily equal the damage at the unregulated market quantity?\nGive one example of a common resource and explain which of the two defining properties it has.\n\nAnswers: (1) Producers face \\(MPC\\) rather than the higher \\(MSC\\). (2) No; the Pigouvian tax is the marginal damage at the efficient quantity in the standard model. (3) A fishery is rival and difficult to exclude users from without enforceable access rules.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 10: Externalities, Public Goods, and Common Resources</span>"
+    ]
+  },
+  {
+    "objectID": "ch11_consumer_choice.html#a-monthly-budget-and-two-goods",
+    "href": "ch11_consumer_choice.html#a-monthly-budget-and-two-goods",
+    "title": "11  Chapter 11: Consumer Choice Theory: Utility and Indifference Curves",
+    "section": "11.2 A Monthly Budget and Two Goods",
+    "text": "11.2 A Monthly Budget and Two Goods\nSuppose a student allocates a fixed monthly budget between meals (\\(X\\)) and transit trips (\\(Y\\)). The budget is limited, so buying more of one good means giving up some of the other. The consumer’s choice depends on prices, income, and preferences; the model does not claim that every person calculates derivatives before buying lunch. It organizes the trade-offs implied by those constraints.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 11: Consumer Choice Theory: Utility and Indifference Curves</span>"
+    ]
+  },
+  {
+    "objectID": "ch11_consumer_choice.html#the-budget-line-geometric-description",
+    "href": "ch11_consumer_choice.html#the-budget-line-geometric-description",
+    "title": "11  Chapter 11: Consumer Choice Theory: Utility and Indifference Curves",
+    "section": "11.3 The Budget Line: Geometric Description",
+    "text": "11.3 The Budget Line: Geometric Description\nPlace meals \\(X\\) on the horizontal axis and transit trips \\(Y\\) on the vertical axis. The budget line slopes downward. Its horizontal intercept is the number of meals affordable if all income is spent on meals; its vertical intercept is the number of transit trips affordable if all income is spent on transit. A rise in income shifts the budget line outward in parallel when prices are fixed. A change in one price pivots the line around the intercept for the other good.\nThe budget constraint is \\[\\begin{equation}\nP_xX+P_yY=I, \\qquad Y=\\frac{I}{P_y}-\\frac{P_x}{P_y}X.\n\\end{equation}\\] The slope is \\(-P_x/P_y\\): it is the number of transit trips that must be forgone to purchase one more meal while staying on the same budget line.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 11: Consumer Choice Theory: Utility and Indifference Curves</span>"
+    ]
+  },
+  {
+    "objectID": "ch11_consumer_choice.html#preferences-utility-and-indifference-curves",
+    "href": "ch11_consumer_choice.html#preferences-utility-and-indifference-curves",
+    "title": "11  Chapter 11: Consumer Choice Theory: Utility and Indifference Curves",
+    "section": "11.4 Preferences, Utility, and Indifference Curves",
+    "text": "11.4 Preferences, Utility, and Indifference Curves\nAn indifference curve collects bundles that provide the same ordinal utility. A higher curve represents a preferred bundle when preferences are monotonic. With well-behaved preferences, indifference curves slope downward and are convex to the origin: as a person has more of \\(X\\) relative to \\(Y\\), they are generally willing to give up fewer units of \\(Y\\) for another unit of \\(X\\).\nMarginal utility (\\(MU_x\\)) is the change in utility from a small increase in \\(X\\), holding \\(Y\\) fixed. The marginal rate of substitution is the absolute slope of an indifference curve: \\[\\begin{equation}\nMRS_{XY}=\\frac{MU_x}{MU_y}.\n\\end{equation}\\] Utility numbers are a representation for ranking choices, not a literal measurement of happiness that can be compared across people.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 11: Consumer Choice Theory: Utility and Indifference Curves</span>"
+    ]
+  },
+  {
+    "objectID": "ch11_consumer_choice.html#choice-at-a-tangency-worked-example",
+    "href": "ch11_consumer_choice.html#choice-at-a-tangency-worked-example",
+    "title": "11  Chapter 11: Consumer Choice Theory: Utility and Indifference Curves",
+    "section": "11.5 Choice at a Tangency: Worked Example",
+    "text": "11.5 Choice at a Tangency: Worked Example\nLet income be \\(I=60\\), with \\(P_x=4\\) and \\(P_y=3\\). The consumer has Cobb-Douglas utility \\(U(X,Y)=XY\\). Since \\(MU_x=Y\\) and \\(MU_y=X\\), the tangency condition \\(MRS=P_x/P_y\\) implies \\(Y/X=4/3\\). Combining this with the budget constraint gives \\(X^*=7.5\\) meals and \\(Y^*=10\\) transit trips. The bundle exhausts the budget: \\(4(7.5)+3(10)=60\\).\nFor an interior optimum with smooth, convex preferences: \\[\\begin{equation}\n\\frac{MU_x}{MU_y}=\\frac{P_x}{P_y} \\quad\\Longleftrightarrow\\quad \\frac{MU_x}{P_x}=\\frac{MU_y}{P_y}.\n\\end{equation}\\] At a corner solution, the consumer chooses only one good; the tangency equality need not hold. Perfect substitutes, perfect complements, and nonstandard preferences can also change the shape of the solution.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 11: Consumer Choice Theory: Utility and Indifference Curves</span>"
+    ]
+  },
+  {
+    "objectID": "ch11_consumer_choice.html#price-changes-substitution-and-income-effects",
+    "href": "ch11_consumer_choice.html#price-changes-substitution-and-income-effects",
+    "title": "11  Chapter 11: Consumer Choice Theory: Utility and Indifference Curves",
+    "section": "11.6 Price Changes: Substitution and Income Effects",
+    "text": "11.6 Price Changes: Substitution and Income Effects\nIf the price of \\(X\\) falls, the budget line pivots outward along the \\(X\\) axis. The total change in the chosen amount of \\(X\\) can be separated conceptually into a substitution effect and an income effect. The substitution effect reflects the change in relative prices while holding purchasing power conceptually constant; the income effect reflects the change in real purchasing power. For a normal good, both effects of a price decrease usually raise quantity demanded. For an inferior good, the income effect works in the opposite direction and may partly offset the substitution effect. A parallel budget shift is caused by a change in income at fixed prices; it is not the price-change income effect itself.\n\n\n\n\n\n\nNoteClear It Up: The Price Change Pivots the Budget Line\n\n\n\nA change in \\(P_x\\) changes the budget line’s slope and rotates it around the \\(Y\\) intercept. A change in income shifts the entire budget line in parallel when both prices remain fixed. Keep these two geometric changes distinct.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 11: Consumer Choice Theory: Utility and Indifference Curves</span>"
+    ]
+  },
+  {
+    "objectID": "ch11_consumer_choice.html#fred-data-and-real-purchasing-power",
+    "href": "ch11_consumer_choice.html#fred-data-and-real-purchasing-power",
+    "title": "11  Chapter 11: Consumer Choice Theory: Utility and Indifference Curves",
+    "section": "11.7 FRED Data and Real Purchasing Power",
+    "text": "11.7 FRED Data and Real Purchasing Power\nFRED series CPIAUCSL is the Consumer Price Index for All Urban Consumers: All Items in U.S. City Average. It is monthly, seasonally adjusted, and indexed to 1982-1984=100; its September 2026 observation is 336.298. The CPI is a broad price index, not the exact cost of every household’s basket. It can help convert a nominal dollar amount to a broad real-dollar comparison, but it does not identify an individual’s preferences or their personal inflation rate.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 11: Consumer Choice Theory: Utility and Indifference Curves</span>"
+    ]
+  },
+  {
+    "objectID": "ch11_consumer_choice.html#check-your-understanding",
+    "href": "ch11_consumer_choice.html#check-your-understanding",
+    "title": "11  Chapter 11: Consumer Choice Theory: Utility and Indifference Curves",
+    "section": "11.8 Check Your Understanding",
+    "text": "11.8 Check Your Understanding\n\nWith \\(I=60\\), \\(P_x=4\\), and \\(P_y=3\\), what are the two intercepts of the budget line?\nWhy does the budget line pivot rather than shift in parallel when only \\(P_x\\) changes?\nIs utility measured in directly comparable units across people? Explain.\n\nAnswers: (1) \\(X=15\\) and \\(Y=20\\). (2) The \\(X\\) intercept changes while the \\(Y\\) intercept remains \\(I/P_y\\). (3) No; ordinal utility represents an individual’s ranking of bundles.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 11: Consumer Choice Theory: Utility and Indifference Curves</span>"
+    ]
+  },
+  {
+    "objectID": "ch13_asymmetric_information_risk.html#a-used-car-market-with-hidden-quality",
+    "href": "ch13_asymmetric_information_risk.html#a-used-car-market-with-hidden-quality",
+    "title": "13  Chapter 13: Asymmetric Information, Risk, and Market Design",
+    "section": "13.2 A Used-Car Market with Hidden Quality",
+    "text": "13.2 A Used-Car Market with Hidden Quality\nImagine a market in which sellers know whether a used car is reliable, but buyers cannot observe its condition before purchase. Buyers offer a price based on expected quality across cars offered for sale. Owners of especially reliable cars may reject that pooled price and keep their vehicles. The remaining pool has lower average quality, so buyers reduce their offers again. This feedback can shrink the market or drive high-quality products out of it.\nThis is adverse selection: private information about a characteristic that exists before a contract affects who chooses to participate. It is not the same as a seller’s deliberate fraud; the problem can arise even when everyone behaves legally and rationally.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Chapter 13: Asymmetric Information, Risk, and Market Design</span>"
+    ]
+  },
+  {
+    "objectID": "ch13_asymmetric_information_risk.html#a-graph-of-pooling-and-market-unraveling",
+    "href": "ch13_asymmetric_information_risk.html#a-graph-of-pooling-and-market-unraveling",
+    "title": "13  Chapter 13: Asymmetric Information, Risk, and Market Design",
+    "section": "13.3 A Graph of Pooling and Market Unraveling",
+    "text": "13.3 A Graph of Pooling and Market Unraveling\nIn a price-quality diagram, put product quality on the horizontal axis and buyers’ willingness to pay on the vertical axis. If quality is hidden, buyers initially offer a pooled price reflecting expected quality. Sellers whose cars are worth more than that price to them exit first. The average quality of cars still offered falls, shifting buyers’ expected willingness to pay downward. A credible warranty, inspection, or reputation can make quality more observable and interrupt this unraveling process.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Chapter 13: Asymmetric Information, Risk, and Market Design</span>"
+    ]
+  },
+  {
+    "objectID": "ch13_asymmetric_information_risk.html#screening-and-signaling",
+    "href": "ch13_asymmetric_information_risk.html#screening-and-signaling",
+    "title": "13  Chapter 13: Asymmetric Information, Risk, and Market Design",
+    "section": "13.4 Screening and Signaling",
+    "text": "13.4 Screening and Signaling\nScreening is an action by the less-informed party to learn about hidden types. An insurer may ask risk-relevant questions or offer a menu of plans with different premiums and deductibles. Signaling is an action by the informed party intended to credibly reveal type. A warranty may signal seller confidence if it is more costly for a seller of an unreliable product to honor.\nFor a signal to separate types, it must be credible: the cost of sending it should differ across types. A signal everyone can imitate at negligible cost conveys little information. Screening and signaling can improve matching, but they can also exclude people, expose private information, or create administrative costs.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Chapter 13: Asymmetric Information, Risk, and Market Design</span>"
+    ]
+  },
+  {
+    "objectID": "ch13_asymmetric_information_risk.html#moral-hazard-after-a-contract",
+    "href": "ch13_asymmetric_information_risk.html#moral-hazard-after-a-contract",
+    "title": "13  Chapter 13: Asymmetric Information, Risk, and Market Design",
+    "section": "13.5 Moral Hazard after a Contract",
+    "text": "13.5 Moral Hazard after a Contract\nMoral hazard is a change in behavior after a contract when one party’s action is not fully observable or contractible. Insurance can reduce the cost of a loss to the insured person, which may change prevention effort or use of covered services. The effect is not necessarily fraud: it is a predictable response to changed incentives. Deductibles and co-payments can preserve some incentives to economize, but they also expose risk-averse households to more financial risk and may discourage valuable care.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Chapter 13: Asymmetric Information, Risk, and Market Design</span>"
+    ]
+  },
+  {
+    "objectID": "ch13_asymmetric_information_risk.html#risk-expected-value-and-expected-utility",
+    "href": "ch13_asymmetric_information_risk.html#risk-expected-value-and-expected-utility",
+    "title": "13  Chapter 13: Asymmetric Information, Risk, and Market Design",
+    "section": "13.6 Risk, Expected Value, and Expected Utility",
+    "text": "13.6 Risk, Expected Value, and Expected Utility\nSuppose a household faces a 10 percent chance of a $1,000 loss and a 90 percent chance of no loss. The expected loss is $100. A risk-neutral person compares premiums with expected monetary loss. A risk-averse person has a concave utility function and may be willing to pay more than the expected loss for insurance, up to the risk premium, because a certain outcome can provide greater utility than a risky outcome with the same expected wealth.\nFor outcomes \\(x_i\\) with probabilities \\(p_i\\), expected value and expected utility are: \\[\\begin{equation}\nE[X]=\\sum_i p_ix_i, \\qquad EU=\\sum_i p_i u(W+x_i).\n\\end{equation}\\] The certainty equivalent (\\(CE\\)) is the certain change in wealth that gives the same utility as the risky prospect. For a gain-risk representation, the risk premium is \\(RP=E[X]-CE\\). The sign and interpretation depend on how gains and losses are represented; the central lesson is that expected dollars and expected utility are different criteria.\n\n\n\n\n\n\nTipFRED Data: Delinquency Is an Outcome, Not a Diagnosis\n\n\n\nFRED series DRALACBS is the Delinquency Rate on All Loans at All Commercial Banks. It is quarterly, seasonally adjusted, and measured in percent; the Q2 2026 observation is 1.42 percent. This aggregate rate can motivate questions about credit risk, but it cannot by itself identify adverse selection, moral hazard, underwriting changes, borrower composition, or macroeconomic shocks as the cause. Identifying those mechanisms requires more detailed evidence and a credible comparison.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Chapter 13: Asymmetric Information, Risk, and Market Design</span>"
+    ]
+  },
+  {
+    "objectID": "ch13_asymmetric_information_risk.html#contract-design-and-trade-offs",
+    "href": "ch13_asymmetric_information_risk.html#contract-design-and-trade-offs",
+    "title": "13  Chapter 13: Asymmetric Information, Risk, and Market Design",
+    "section": "13.7 Contract Design and Trade-Offs",
+    "text": "13.7 Contract Design and Trade-Offs\nMarkets use warranties, certification, deductibles, co-payments, collateral, audits, and reputation systems to mitigate information problems. Each tool trades off information or incentive benefits against cost, privacy, access, and fairness. A policy that reduces one information problem can create another: extensive screening may improve risk classification while making essential coverage unaffordable to some households.\n\n\n\n\n\n\nNoteClear It Up: Adverse Selection and Moral Hazard Differ by Timing\n\n\n\nAdverse selection concerns hidden characteristics that affect participation before a contract is signed. Moral hazard concerns hidden actions or effort after a contract changes incentives. The same market can experience both, but the diagnosis and remedy differ.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Chapter 13: Asymmetric Information, Risk, and Market Design</span>"
+    ]
+  },
+  {
+    "objectID": "ch13_asymmetric_information_risk.html#check-your-understanding",
+    "href": "ch13_asymmetric_information_risk.html#check-your-understanding",
+    "title": "13  Chapter 13: Asymmetric Information, Risk, and Market Design",
+    "section": "13.8 Check Your Understanding",
+    "text": "13.8 Check Your Understanding\n\nA buyer cannot distinguish reliable from unreliable sellers before purchase. Which mechanism can cause high-quality sellers to leave the market?\nAn insured driver takes less care after coverage begins. Is this adverse selection or moral hazard, and why?\nFor the 10 percent, $1,000-loss example, calculate expected loss. Does that number determine the maximum premium every risk-averse household will pay?\n\nAnswers: (1) Adverse selection. (2) Moral hazard because the behavior changes after the contract. (3) Expected loss is $100; risk preferences and the risk premium determine willingness to pay beyond it.",
+    "crumbs": [
+      "Market Failures & Factor Markets",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Chapter 13: Asymmetric Information, Risk, and Market Design</span>"
+    ]
+  }
+]

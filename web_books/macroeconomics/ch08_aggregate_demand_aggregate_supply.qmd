@@ -1,0 +1,44 @@
+---
+title: "Chapter 8: Aggregate Demand and Aggregate Supply (AD-AS)"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+## Learning Outcomes and Key Terms
+Students should distinguish a change in the price level from a shift in aggregate demand, use the AD–AS model to explain output and inflation outcomes, and compare short-run with long-run adjustment. These objectives support MA-3 and C2002-2. Key terms include aggregate demand, short-run aggregate supply, long-run aggregate supply, potential output, output gap, demand shock, and supply shock.
+
+## Aggregate Demand: Total Planned Spending
+Aggregate demand (AD) represents planned spending on domestically produced final goods and services at different overall price levels, holding other determinants fixed. In the expenditure model, $AD=C+I+G+NX$. A lower price level can raise real purchasing power, affect interest rates, and change net exports; together these mechanisms help explain the downward slope in the standard AD curve. The curve is not the same thing as microeconomic demand for one product.
+
+## Movement Along AD or a Shift?
+Put real output $Y$ on the horizontal axis and the price level $P$ on the vertical axis. A change in the price level causes a movement along a given AD curve. A change in consumption confidence, planned investment, fiscal policy, monetary conditions, foreign income, or the exchange rate can shift AD. For example, an increase in government purchases shifts AD right at each price level in the short-run model; it does not mean the price level itself caused the shift.
+
+## Short-Run and Long-Run Aggregate Supply
+Short-run aggregate supply (SRAS) slopes upward in the basic model because some wages and prices adjust slowly. If the overall price level rises while nominal input costs are temporarily fixed, firms may find production more profitable and supply more output. Long-run aggregate supply (LRAS) is vertical at potential output $Y^*$, determined by labor, capital, technology, and institutions rather than the price level alone.
+
+The short-run equilibrium is where AD intersects SRAS. If output is below potential, the economy has a recessionary gap; if output is above potential, resource bottlenecks and wage or price pressures may build. Over time, wages, expectations, and other costs adjust, shifting SRAS. The speed and direction of adjustment depend on institutions and expectations, so the diagram is a framework rather than a calendar forecast.
+
+## Demand and Supply Shocks
+An increase in AD generally raises short-run output and the price level; a decrease generally lowers both. An adverse supply shock shifts SRAS left, reducing output while raising the price level, a combination called stagflation. A favorable productivity shock can shift SRAS and potential output outward. The diagram keeps separate the initial shock, the short-run movement, and any later adjustment.
+
+::: {.callout-tip title="FRED Data: Output, Prices, and Unemployment Move Together"}
+
+GDPC1 measures real GDP in billions of chained 2017 dollars at a seasonally adjusted annual rate, quarterly. CPIAUCSL is a monthly, seasonally adjusted all-items CPI index. UNRATE is the monthly, seasonally adjusted U-3 unemployment rate. These series can help students describe output, prices, and labor-market conditions around an episode, but their co-movement alone does not identify whether an AD or supply shock caused it. Frequency, units, revisions, and causal evidence must be considered.
+
+:::
+
+::: {.callout-note title="Clear It Up: Price Level Versus Aggregate Demand"}
+
+An increase in the price level is a movement along AD. A change in planned spending at every price level shifts AD. Confusing the two turns an outcome of the model into a cause of the curve's shift.
+
+:::
+
+## Check Your Understanding
+
+*  If households become more optimistic and raise planned consumption, is this a movement along AD or a shift? Which direction?
+*  What combination of short-run changes follows an adverse SRAS shock?
+*  Why cannot two FRED series moving together establish an AD shock?
+
+Answers: (1) A rightward shift in AD. (2) Output falls while the price level rises. (3) Other shocks and reverse causality may explain the co-movement; a causal design is needed.

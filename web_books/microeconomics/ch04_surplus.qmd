@@ -1,0 +1,25 @@
+---
+title: "Chapter 4: Consumer and Producer Surplus, Market Efficiency, and Welfare"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+## Surplus Metrics
+Consumer Surplus ($CS$) is the area under inverse demand above market price:
+\begin{equation}
+CS = \int_0^{Q^*} [P(q) - P^*] \, dq = \frac{1}{2} Q^* (P_{\text{choke}} - P^*)
+\end{equation}
+Producer Surplus ($PS$) is the area above inverse supply below market price:
+\begin{equation}
+PS = \int_0^{Q^*} [P^* - MC(q)] \, dq = \frac{1}{2} Q^* (P^* - P_{\text{min}})
+\end{equation}
+Total Surplus ($TS = CS + PS$) is maximized at competitive market equilibrium where $MSB = MSC$.
+
+## Deadweight Loss of Taxation
+An excise tax $t$ creates a tax wedge $P_b - P_s = t$. Deadweight loss follows Harberger's formulation:
+\begin{equation}
+DWL = \frac{1}{2} \times t \times (Q^* - Q_t)
+\end{equation}
+The relative tax incidence ratio depends on elasticities: $\frac{\Delta P_b}{\Delta P_s} = \frac{\varepsilon_s}{|\varepsilon_d|}$.

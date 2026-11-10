@@ -1,0 +1,13 @@
+---
+title: "Chapter 14: International Trade, Comparative Advantage, and Protectionism"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+## Free Trade Welfare Mechanics
+Domestic prices converge to World Price $P_w$. If $P_w < P_d$, the nation imports, expanding consumer surplus by more than domestic producer surplus contracts.
+
+## Tariffs and Quotas
+A tariff $t$ raises domestic price to $P_w + t$. Consumer surplus falls by area $A + B + C + D$, producer surplus expands by $A$, and government tariff revenue equals $C = t \times \text{Imports}$. Total societal deadweight loss equals $DWL = B + D$.

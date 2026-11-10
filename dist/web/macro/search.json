@@ -1,0 +1,1024 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Principles of Macroeconomics",
+    "section": "",
+    "text": "Preface\nWelcome to Principles of Macroeconomics: An Institutional and Social Science Perspective.\nThis textbook offers an analytical, empirical approach to macroeconomic systems, national accounting, business cycles, monetary mechanisms, and fiscal policy. It is structured around the analytical depth of Paul Krugman and Robin Wells (Macroeconomics, 6th ed.) and UC Berkeley Econ 2.\nUse the left sidebar navigation to explore individual chapters or press s to initiate full-text keyword searches across the entire volume.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "ch01_principles.html",
+    "href": "ch01_principles.html",
+    "title": "1  Chapter 1: First Principles of Economics & Macroeconomic Systems",
+    "section": "",
+    "text": "1.1 The Twelve Principles of Macroeconomics\nMacroeconomics rests upon systemic feedback loops where aggregate outcomes diverge from individual decisions.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter 1: First Principles of Economics & Macroeconomic Systems</span>"
+    ]
+  },
+  {
+    "objectID": "ch01_principles.html#the-twelve-first-principles-of-macroeconomics",
+    "href": "ch01_principles.html#the-twelve-first-principles-of-macroeconomics",
+    "title": "1  Chapter 1: First Principles of Economics & Macroeconomic Systems",
+    "section": "",
+    "text": "1.1.1 Principles of Individual Choice (1–4)\n\nPeople Must Make Choices Because Resources Are Scarce: Bounded aggregate labor, capital stocks, and natural resources require societal trade-offs between investment, private consumption, and environmental preservation.\nOpportunity Cost: The economic cost of any national outlay (such as high-speed rail) is measured by the alternative public infrastructure forgone.\nMarginal Analysis: Macroeconomic adjustments (e.g., quarterly capital equipment budgets) are decided at the margin by balancing marginal revenue against borrowing rates.\nIncentive Response: Human agents systematically exploit opportunities to make themselves better off when tax structures, subsidies, or interest rates adjust.\n\n\n\n1.1.2 Principles of Choice Interaction (5–9)\n\nThere Are Gains from Trade: Specialization across national borders allows economies to consume beyond their domestic production boundaries.\nMarkets Move Toward Equilibrium: Flexible price mechanisms adjust until shortages and surpluses clear (\\(Q_d = Q_s\\)).\nResources Should Be Used Efficiently: An economy is Pareto efficient when it exhausts all opportunities to make some individuals better off without harming others.\nMarkets Usually Lead to Efficiency: Decentralized market signals allocate productive factors to their highest-valued uses without centralized command.\nWhen Markets Fail, Government Intervention Can Help: Systemic breakdowns (e.g., bank runs, environmental degradation, severe monopoly power) require collective institutional stabilization.\n\n\n\n1.1.3 Principles of Economy-Wide Interaction (10–12)\n\nOne Person’s Spending Is Another Person’s Income: Because every dollar spent becomes income for another entity, an aggregate pull-back in consumer spending contracts national income.\nOverall Spending Sometimes Gets Out of Line with Productive Capacity: Spending shortfalls induce recessionary output gaps and cyclical unemployment; spending excesses generate demand-pull inflation.\nGovernment Policies Can Alter Overall Spending: Fiscal policy (taxation \\(T\\) and government outlays \\(G\\)) and monetary policy can stabilize cyclical downturns and prevent macroeconomic overheating.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter 1: First Principles of Economics & Macroeconomic Systems</span>"
+    ]
+  },
+  {
+    "objectID": "ch01_principles.html#the-macroeconomic-circular-flow-model",
+    "href": "ch01_principles.html#the-macroeconomic-circular-flow-model",
+    "title": "1  Chapter 1: First Principles of Economics & Macroeconomic Systems",
+    "section": "1.2 The Macroeconomic Circular Flow Model",
+    "text": "1.2 The Macroeconomic Circular Flow Model\nThe circular flow tracks real factor services and finished commodities circulating in parallel with counterbalancing monetary payments between households and business enterprises.\n\n1.2.1 Factor Markets vs. Product Markets\n\nFactor Markets: Households supply productive inputs (labor, land, capital, enterprise) to firms in exchange for factor compensation (wages, rent, interest, profit).\nProduct Markets: Firms deliver finished goods and services to households in return for consumption expenditures.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter 1: First Principles of Economics & Macroeconomic Systems</span>"
+    ]
+  },
+  {
+    "objectID": "ch01_principles.html#the-paradox-of-thrift",
+    "href": "ch01_principles.html#the-paradox-of-thrift",
+    "title": "1  Chapter 1: First Principles of Economics & Macroeconomic Systems",
+    "section": "1.2 The Paradox of Thrift",
+    "text": "1.2 The Paradox of Thrift\nWhen households collectively attempt to raise savings during a recession, aggregate consumption contracts. Because one person’s spending is another’s income, national income falls until dollar savings stagnate or decline.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter 1: First Principles of Economics & Macroeconomic Systems</span>"
+    ]
+  },
+  {
+    "objectID": "ch01_principles.html#macroeconomic-policy-trade-offs-efficiency-vs.-equity",
+    "href": "ch01_principles.html#macroeconomic-policy-trade-offs-efficiency-vs.-equity",
+    "title": "1  Chapter 1: First Principles of Economics & Macroeconomic Systems",
+    "section": "1.4 Macroeconomic Policy Trade-Offs: Efficiency vs. Equity",
+    "text": "1.4 Macroeconomic Policy Trade-Offs: Efficiency vs. Equity\nPolicymakers continuously calibrate policies along the frontier connecting productive efficiency and distributional fairness. While progressive income taxes and targeted transfers reduce child poverty and enhance social cohesion, excessive marginal rates may distort labor supply and capital formation incentives.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter 1: First Principles of Economics & Macroeconomic Systems</span>"
+    ]
+  },
+  {
+    "objectID": "ch02_macro_ppf.html",
+    "href": "ch02_macro_ppf.html",
+    "title": "2  Chapter 2: The Macroeconomic Production Possibilities Frontier & Capital Deepening",
+    "section": "",
+    "text": "2.1 Consumer vs. Capital Goods Trade-Off\nA nation’s operating position along its macro PPF dictates long-run secular growth: \\[\\begin{equation}\n\\text{Investment } (I) \\implies \\Delta K &gt; 0 \\implies \\text{Outward Shift of Potential GDP } (Y^*)\n\\end{equation}\\]",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 2: The Macroeconomic Production Possibilities Frontier & Capital Deepening</span>"
+    ]
+  },
+  {
+    "objectID": "ch02_macro_ppf.html#consumer-goods-vs.-capital-goods-current-living-standards-vs.-future-growth",
+    "href": "ch02_macro_ppf.html#consumer-goods-vs.-capital-goods-current-living-standards-vs.-future-growth",
+    "title": "2  Chapter 2: The Macroeconomic Production Possibilities Frontier",
+    "section": "2.2 Consumer Goods vs. Capital Goods: Current Living Standards vs. Future Growth",
+    "text": "2.2 Consumer Goods vs. Capital Goods: Current Living Standards vs. Future Growth\nA nation’s operating position along its macro PPF dictates its intertemporal growth rate:\n\nConsumer Goods (\\(C\\)): Manufactured for immediate utility satisfaction (e.g., retail food, residential entertainment). They do not enhance future productive capacity.\nCapital Goods (\\(I\\)): Durable physical equipment designed to manufacture other goods over extended horizons (e.g., semiconductor fabrication lines, electrical grids, transport logistics).\n\n\\[\\begin{equation}\nCurrent Investment  (I) \\implies \\Delta K &gt; 0 \\implies Outward Shift of Potential GDP  (Y^*)\n\\end{equation}\\]\n\n\n\n\n\n\nTipEmpirical Case: East Asian Capital Deepening\n\n\n\nIn the post-WWII era, emerging East Asian economies (such as South Korea and Japan) directed private and public savings into heavy industrial capital formation. By maintaining national investment shares above 30% to 35% of GDP, their macro PPFs expanded outward by 7% to 9% annually, driving multi-decade increases in real per-capita living standards.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 2: The Macroeconomic Production Possibilities Frontier</span>"
+    ]
+  },
+  {
+    "objectID": "ch02_macro_ppf.html#efficiency-unemployment-and-the-output-gap",
+    "href": "ch02_macro_ppf.html#efficiency-unemployment-and-the-output-gap",
+    "title": "2  Chapter 2: The Macroeconomic Production Possibilities Frontier",
+    "section": "2.3 Efficiency, Unemployment, and the Output Gap",
+    "text": "2.3 Efficiency, Unemployment, and the Output Gap\nThe macro PPF directly represents business cycle volatility:\n\nOn the Frontier: Full employment of national labor and physical capital (\\(Y = Y^*\\)).\nInside the Frontier: Recessionary gap with idle machinery and cyclical unemployment (\\(Y &lt; Y^*\\)).\nOutward Shift: Long-run economic growth resulting from capital deepening, labor force expansion, or total factor productivity (TFP) growth.\n\n\n\n\n\n\n\nTipRecessionary Gap vs. Frontier Expansion Post-2020\n\n\n\nDuring the contractions of 2020, public health shutdowns idled factories and grounded logistics networks, dropping the economy deep inside its macro PPF (unemployment reached 14.7%). The subsequent recovery re-employed idle resources, moving output from inside the frontier back toward the boundary. This cyclical re-utilization differed fundamentally from true outward expansions of the frontier, which were subsequently dictated by technological progress and capital deepening.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 2: The Macroeconomic Production Possibilities Frontier</span>"
+    ]
+  },
+  {
+    "objectID": "ch02_macro_ppf.html#national-specialization-and-global-macroeconomic-linkages",
+    "href": "ch02_macro_ppf.html#national-specialization-and-global-macroeconomic-linkages",
+    "title": "2  Chapter 2: The Macroeconomic Production Possibilities Frontier",
+    "section": "2.4 National Specialization and Global Macroeconomic Linkages",
+    "text": "2.4 National Specialization and Global Macroeconomic Linkages\nNations integrate into global commerce based on relative factor endowments. Economies with abundant capital equipment and research hubs develop comparative advantages in advanced technology and aerospace, whereas economies with vast labor endowments specialize in assembly or agricultural commodities. While international trade expands aggregate national consumption possibilities beyond the domestic PPF, structural shifts can create concentrated transitional dislocations for import-competing sectors.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 2: The Macroeconomic Production Possibilities Frontier</span>"
+    ]
+  },
+  {
+    "objectID": "ch03_supply_demand.html",
+    "href": "ch03_supply_demand.html",
+    "title": "3  Chapter 3: Supply and Demand: Macroeconomic Foundations",
+    "section": "",
+    "text": "3.1 Learning Outcomes and Key Terms\nStudents should distinguish a change in one market’s relative price from a sustained change in the general price level, calculate a simple inflation rate, and explain how nominal values differ from real values. These objectives support MA-1 and C2002-1. Key terms include relative price, price index, inflation, nominal value, real value, and purchasing power.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter 3: Supply and Demand: Macroeconomic Foundations</span>"
+    ]
+  },
+  {
+    "objectID": "ch04_gdp_accounting.html",
+    "href": "ch04_gdp_accounting.html",
+    "title": "4  Chapter 4: Macroeconomic Variables: Measuring Output and GDP",
+    "section": "",
+    "text": "4.1 Learning Outcomes and Key Terms\nStudents should interpret a basic GDP measure, distinguish nominal from real GDP, and explain why the expenditure, production, and income views describe the same current production. These objectives support MA-1 and C2002-1. Key terms include final good, intermediate good, value added, consumption, investment, government purchases, net exports, nominal GDP, real GDP, and GDP deflator.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter 4: Macroeconomic Variables: Measuring Output and GDP</span>"
+    ]
+  },
+  {
+    "objectID": "ch04_gdp_accounting.html#national-income-and-product-accounts-nipa",
+    "href": "ch04_gdp_accounting.html#national-income-and-product-accounts-nipa",
+    "title": "4  Chapter 4: Macroeconomic Variables: Measuring Output and GDP",
+    "section": "",
+    "text": "Expenditure Approach: \\(Y = C + I + G + NX\\), where \\(NX = X - M\\).\nValue-Added Approach: \\(\\sum (Gross Revenue - Purchases of Intermediate Inputs)\\).\nIncome Approach: \\(\\sum (Wages + Interest + Rent + Corporate Profits + Indirect Taxes)\\).",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter 4: Macroeconomic Variables: Measuring Output and GDP</span>"
+    ]
+  },
+  {
+    "objectID": "ch04_gdp_accounting.html#nominal-vs.-real-gdp-and-the-deflator",
+    "href": "ch04_gdp_accounting.html#nominal-vs.-real-gdp-and-the-deflator",
+    "title": "4  Chapter 4: Macroeconomic Variables: Measuring Output and GDP",
+    "section": "4.2 Nominal vs. Real GDP and the Deflator",
+    "text": "4.2 Nominal vs. Real GDP and the Deflator\nReal GDP measures physical production valued at constant base-year prices: \\[\\begin{equation}\nGDP Deflator_t = \\frac{Nominal GDP_t}{Real GDP_t} \\times 100\n\\end{equation}\\]",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter 4: Macroeconomic Variables: Measuring Output and GDP</span>"
+    ]
+  },
+  {
+    "objectID": "ch05_unemployment_inflation.html",
+    "href": "ch05_unemployment_inflation.html",
+    "title": "5  Chapter 5: Employment, Unemployment Metrics, and the Price Level",
+    "section": "",
+    "text": "5.1 Learning Outcomes and Key Terms\nStudents should calculate labor-market rates, interpret what the unemployment rate does and does not measure, and relate cyclical unemployment to output gaps without confusing correlation with causation. These objectives support MA-1 and C2002-1. Key terms include employed, unemployed, labor force, participation rate, U-3, underemployment, natural rate, and output gap.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Chapter 5: Employment, Unemployment Metrics, and the Price Level</span>"
+    ]
+  },
+  {
+    "objectID": "ch05_unemployment_inflation.html#the-natural-rate-of-unemployment-and-okuns-law",
+    "href": "ch05_unemployment_inflation.html#the-natural-rate-of-unemployment-and-okuns-law",
+    "title": "5  Chapter 5: Employment, Unemployment Metrics, and the Price Level",
+    "section": "5.2 The Natural Rate of Unemployment and Okun’s Law",
+    "text": "5.2 The Natural Rate of Unemployment and Okun’s Law\nThe Natural Rate (\\(u^*\\)) combines frictional and structural unemployment. Cyclical unemployment \\(u - u^*\\) creates output gaps following Okun’s Law: \\(\\frac{Y - Y^*}{Y^*} \\approx -2(u - u^*)\\).",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Chapter 5: Employment, Unemployment Metrics, and the Price Level</span>"
+    ]
+  },
+  {
+    "objectID": "ch06_savings_investment_financial_system.html",
+    "href": "ch06_savings_investment_financial_system.html",
+    "title": "6  Chapter 6: Saving, Investment Spending, and the Financial System",
+    "section": "",
+    "text": "6.1 Learning Outcomes and Key Terms\nStudents should distinguish saving from wealth, apply the national saving identity, and use the loanable-funds model to explain how saving and investment plans respond to real interest rates. These objectives support MA-2 and MA-3 and prepare students for C2002-2. Key terms include private saving, public saving, national saving, investment, loanable funds, real interest rate, deficit, and capital inflow.",
+    "crumbs": [
+      "Long-Run Growth & Financial Systems",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chapter 6: Saving, Investment Spending, and the Financial System</span>"
+    ]
+  },
+  {
+    "objectID": "ch06_savings_investment_financial_system.html#the-loanable-funds-market-and-crowding-out",
+    "href": "ch06_savings_investment_financial_system.html#the-loanable-funds-market-and-crowding-out",
+    "title": "6  Chapter 6: Saving, Investment Spending, and the Financial System",
+    "section": "6.2 The Loanable Funds Market and Crowding-Out",
+    "text": "6.2 The Loanable Funds Market and Crowding-Out\nThe real interest rate equilibrates loanable funds supply and investment demand. An expansion in the government budget deficit (\\(T - G &lt; 0\\)) reduces public saving, shifting supply left, driving up real interest rates and crowding out private corporate investment.",
+    "crumbs": [
+      "Savings, Investment & Financial Systems",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chapter 6: Saving, Investment Spending, and the Financial System</span>"
+    ]
+  },
+  {
+    "objectID": "ch07_aggregate_expenditure_multiplier.html",
+    "href": "ch07_aggregate_expenditure_multiplier.html",
+    "title": "7  Chapter 7: Income and Expenditure: The Keynesian Cross and Multipliers",
+    "section": "",
+    "text": "7.1 Learning Outcomes and Key Terms\nStudents should construct planned aggregate expenditure, identify equilibrium output in a simple Keynesian-cross model, and explain the assumptions behind the government-purchases multiplier. These objectives support MA-3 and C2002-2. Key terms include autonomous consumption, marginal propensity to consume, planned expenditure, unplanned inventory investment, equilibrium output, and multiplier.",
+    "crumbs": [
+      "Long-Run Growth & Financial Systems",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Chapter 7: Income and Expenditure: The Keynesian Cross and Multipliers</span>"
+    ]
+  },
+  {
+    "objectID": "ch07_aggregate_expenditure_multiplier.html#autonomous-multiplier-algebra",
+    "href": "ch07_aggregate_expenditure_multiplier.html#autonomous-multiplier-algebra",
+    "title": "7  Chapter 7: Income and Expenditure: The Keynesian Cross and Multipliers",
+    "section": "7.2 Autonomous Multiplier Algebra",
+    "text": "7.2 Autonomous Multiplier Algebra\nThe autonomous spending multiplier \\(k\\) derived from infinite geometric series: \\[\\begin{equation}\nk = \\frac{1}{1 - MPC} \\implies \\Delta Y = \\frac{1}{1 - MPC} \\Delta G\n\\end{equation}\\] The lump-sum tax multiplier is \\(k_t = \\frac{-MPC}{1 - MPC}\\), establishing the balanced-budget multiplier \\(k_{balanced} = 1.0\\).",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Chapter 7: Income and Expenditure: The Keynesian Cross and Multipliers</span>"
+    ]
+  },
+  {
+    "objectID": "ch08_aggregate_demand_aggregate_supply.html",
+    "href": "ch08_aggregate_demand_aggregate_supply.html",
+    "title": "8  Chapter 8: Aggregate Demand and Aggregate Supply (AD-AS)",
+    "section": "",
+    "text": "8.1 Learning Outcomes and Key Terms\nStudents should distinguish a change in the price level from a shift in aggregate demand, use the AD–AS model to explain output and inflation outcomes, and compare short-run with long-run adjustment. These objectives support MA-3 and C2002-2. Key terms include aggregate demand, short-run aggregate supply, long-run aggregate supply, potential output, output gap, demand shock, and supply shock.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 8: Aggregate Demand and Aggregate Supply (AD-AS)</span>"
+    ]
+  },
+  {
+    "objectID": "ch08_aggregate_demand_aggregate_supply.html#the-downward-slope-of-aggregate-demand",
+    "href": "ch08_aggregate_demand_aggregate_supply.html#the-downward-slope-of-aggregate-demand",
+    "title": "8  Chapter 8: Aggregate Demand and Aggregate Supply (AD-AS)",
+    "section": "",
+    "text": "Wealth Effect (Pigou): Lower price level raises real purchasing power of money balances.\nInterest Rate Effect (Keynes): Lower price level reduces transaction money demand, lowering interest rates and expanding investment.\nForeign Trade Effect (Mundell-Fleming): Lower domestic prices lower real exchange rates, expanding net exports.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 8: Aggregate Demand and Aggregate Supply (AD-AS)</span>"
+    ]
+  },
+  {
+    "objectID": "ch08_aggregate_demand_aggregate_supply.html#short-run-vs.-long-run-supply-and-stagflation",
+    "href": "ch08_aggregate_demand_aggregate_supply.html#short-run-vs.-long-run-supply-and-stagflation",
+    "title": "8  Chapter 8: Aggregate Demand and Aggregate Supply (AD-AS)",
+    "section": "8.2 Short-Run vs. Long-Run Supply and Stagflation",
+    "text": "8.2 Short-Run vs. Long-Run Supply and Stagflation\n\\(SRAS\\) slopes upward because nominal wages are sticky in the short run. \\(LRAS\\) is vertical at potential GDP \\(Y^*\\). A negative supply shock shifts \\(SRAS\\) leftward, creating stagflation (declining real GDP alongside rising inflation).",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 8: Aggregate Demand and Aggregate Supply (AD-AS)</span>"
+    ]
+  },
+  {
+    "objectID": "ch09_fiscal_policy.html",
+    "href": "ch09_fiscal_policy.html",
+    "title": "9  Chapter 9: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt",
+    "section": "",
+    "text": "9.1 Learning Outcomes and Key Terms\nStudents should distinguish automatic stabilizers from discretionary fiscal actions, explain how taxes and government purchases affect planned spending, and distinguish a deficit flow from debt outstanding. These objectives support MA-4 and C2002-3. Key terms include fiscal policy, transfer, automatic stabilizer, multiplier, deficit, debt, and implementation lag.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Chapter 9: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt</span>"
+    ]
+  },
+  {
+    "objectID": "ch09_fiscal_policy.html#discretionary-vs.-automatic-fiscal-policy",
+    "href": "ch09_fiscal_policy.html#discretionary-vs.-automatic-fiscal-policy",
+    "title": "9  Chapter 9: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt",
+    "section": "",
+    "text": "Automatic Stabilizers: Progressive income taxes and unemployment benefits that automatically cushion disposable income during recessions without legislative lags.\nDiscretionary Policy: Deliberate changes in spending or tax statutes, subject to recognition, legislative, and implementation lags.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Chapter 9: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt</span>"
+    ]
+  },
+  {
+    "objectID": "ch10_money_banking_fed.html",
+    "href": "ch10_money_banking_fed.html",
+    "title": "10  Chapter 10: Money, Banking, and the Federal Reserve System",
+    "section": "",
+    "text": "10.1 Learning Outcomes and Key Terms\nStudents should describe the roles of money, commercial banks, and the Federal Reserve; interpret a simplified bank balance sheet; and distinguish a textbook multiplier from the modern banking system. These objectives support MA-5 and C2002-2, C2002-3, and C2002-4. Key terms include medium of exchange, unit of account, store of value, reserves, deposits, capital, liquidity, M1, and M2.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 10: Money, Banking, and the Federal Reserve System</span>"
+    ]
+  },
+  {
+    "objectID": "ch10_money_banking_fed.html#monetary-aggregates-and-bank-balance-sheets",
+    "href": "ch10_money_banking_fed.html#monetary-aggregates-and-bank-balance-sheets",
+    "title": "10  Chapter 10: Money, Banking, and the Federal Reserve System",
+    "section": "",
+    "text": "\\(M1\\): Physical currency in circulation + demand checking deposits.\n\\(M2\\): \\(M1\\) + savings deposits + small-denomination time deposits + retail money funds.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 10: Money, Banking, and the Federal Reserve System</span>"
+    ]
+  },
+  {
+    "objectID": "ch11_monetary_policy.html",
+    "href": "ch11_monetary_policy.html",
+    "title": "11  Chapter 11: Monetary Policy Implementation and the Ample-Reserves Regime",
+    "section": "",
+    "text": "11.1 Learning Outcomes and Key Terms\nStudents should explain how the Federal Reserve implements monetary policy, trace a policy-rate change through interest-sensitive spending to output and inflation, and identify uncertainty and lags in that process. These objectives support MA-6 and C2002-3. Key terms include federal funds rate, target range, IORB, overnight reverse repurchase facility, transmission mechanism, expectations, policy lag, and effective lower bound.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 11: Monetary Policy Implementation and the Ample-Reserves Regime</span>"
+    ]
+  },
+  {
+    "objectID": "ch11_monetary_policy.html#the-modern-federal-reserve-operating-framework",
+    "href": "ch11_monetary_policy.html#the-modern-federal-reserve-operating-framework",
+    "title": "11  Chapter 11: Monetary Policy Implementation and the Ample-Reserves Regime",
+    "section": "",
+    "text": "Interest on Reserve Balances (IORB): Primary administered reservation floor rate.\nOvernight Reverse Repurchase (ON RRP): Administered sub-floor accessible to non-bank financial intermediaries.\nDiscount Window Rate: Ceilings for collateralized central bank lending.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 11: Monetary Policy Implementation and the Ample-Reserves Regime</span>"
+    ]
+  },
+  {
+    "objectID": "ch11_monetary_policy.html#the-taylor-rule-and-effective-lower-bound",
+    "href": "ch11_monetary_policy.html#the-taylor-rule-and-effective-lower-bound",
+    "title": "11  Chapter 11: Monetary Policy Implementation and the Ample-Reserves Regime",
+    "section": "11.2 The Taylor Rule and Effective Lower Bound",
+    "text": "11.2 The Taylor Rule and Effective Lower Bound\nThe baseline monetary reaction function: \\[\\begin{equation}\ni_t = r^* + \\pi_t + 0.5(\\pi_t - \\pi^*) + 0.5\\left(\\frac{Y_t - Y^*}{Y^*}\\right)\n\\end{equation}\\] When the policy rate hits the zero lower bound, the central bank engages in forward guidance and quantitative easing (QE).",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 11: Monetary Policy Implementation and the Ample-Reserves Regime</span>"
+    ]
+  },
+  {
+    "objectID": "ch12_open_economy_macroeconomics.html",
+    "href": "ch12_open_economy_macroeconomics.html",
+    "title": "12  Chapter 12: Open-Economy Macroeconomics, Exchange Rates, and the Balance of Payments",
+    "section": "",
+    "text": "12.1 Learning Outcomes and Key Terms\nStudents should interpret a trade-balance measure, explain how saving and investment relate to the current account, and use supply and demand for foreign exchange to reason about currency appreciation and depreciation. These objectives support MA-7 and C2002-1, C2002-2. Key terms include exports, imports, trade balance, current account, financial account, exchange rate, appreciation, depreciation, and policy trilemma.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Chapter 12: Open-Economy Macroeconomics, Exchange Rates, and the Balance of Payments</span>"
+    ]
+  },
+  {
+    "objectID": "ch12_open_economy_macroeconomics.html#exchange-rate-determination-and-the-policy-trilemma",
+    "href": "ch12_open_economy_macroeconomics.html#exchange-rate-determination-and-the-policy-trilemma",
+    "title": "12  Chapter 12: Open-Economy Macroeconomics, Exchange Rates, and the Balance of Payments",
+    "section": "12.2 Exchange Rate Determination and the Policy Trilemma",
+    "text": "12.2 Exchange Rate Determination and the Policy Trilemma\nUnder floating exchange rates, higher domestic interest rates induce capital inflows, appreciating the currency and reducing net exports. The Open-Economy Policy Trilemma establishes that an economy can achieve at most two of the following three objectives:\n\nFixed exchange rates.\nFree international capital mobility.\nIndependent monetary policy.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Chapter 12: Open-Economy Macroeconomics, Exchange Rates, and the Balance of Payments</span>"
+    ]
+  },
+  {
+    "objectID": "ch01_principles.html#macroeconomic-circular-flow-identity",
+    "href": "ch01_principles.html#macroeconomic-circular-flow-identity",
+    "title": "1  Chapter 1: First Principles of Economics & Macroeconomic Systems",
+    "section": "1.3 Macroeconomic Circular Flow Identity",
+    "text": "1.3 Macroeconomic Circular Flow Identity\n\\[\\begin{equation}\nY \\equiv C + I + G + NX = \\text{Factor Payments (Wages + Rent + Interest + Profit)}\n\\end{equation}\\] Leakages (\\(S + T + M\\)) identically equal Injections (\\(I + G + X\\)) in equilibrium.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter 1: First Principles of Economics & Macroeconomic Systems</span>"
+    ]
+  },
+  {
+    "objectID": "ch02_macro_ppf.html#output-gaps-vs.-secular-growth",
+    "href": "ch02_macro_ppf.html#output-gaps-vs.-secular-growth",
+    "title": "2  Chapter 2: The Macroeconomic Production Possibilities Frontier & Capital Deepening",
+    "section": "2.2 Output Gaps vs. Secular Growth",
+    "text": "2.2 Output Gaps vs. Secular Growth\nOperating inside the frontier represents a recessionary gap (\\(Y &lt; Y^*\\)) with idle labor. Recovery restores capacity; outward frontier expansion requires structural capital deepening or total factor productivity gains.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 2: The Macroeconomic Production Possibilities Frontier & Capital Deepening</span>"
+    ]
+  },
+  {
+    "objectID": "ch04_gdp_accounting.html#the-three-nipa-approaches",
+    "href": "ch04_gdp_accounting.html#the-three-nipa-approaches",
+    "title": "4  Chapter 4: Macroeconomic Variables: Measuring Output and GDP",
+    "section": "",
+    "text": "Expenditure Approach: \\(Y = C + I + G + NX\\).\nValue-Added Approach: \\(\\sum (\\text{Gross Revenue} - \\text{Intermediate Purchases})\\).\nIncome Approach: \\(\\sum (\\text{Wages} + \\text{Rent} + \\text{Interest} + \\text{Profits} + \\text{Indirect Taxes})\\).",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter 4: Macroeconomic Variables: Measuring Output and GDP</span>"
+    ]
+  },
+  {
+    "objectID": "ch04_gdp_accounting.html#real-vs.-nominal-gdp-and-the-deflator",
+    "href": "ch04_gdp_accounting.html#real-vs.-nominal-gdp-and-the-deflator",
+    "title": "4  Chapter 4: Macroeconomic Variables: Measuring Output and GDP",
+    "section": "4.2 Real vs. Nominal GDP and the Deflator",
+    "text": "4.2 Real vs. Nominal GDP and the Deflator\n\\[\\begin{equation}\n\\text{GDP Deflator}_t = \\frac{\\text{Nominal GDP}_t}{\\text{Real GDP}_t} \\times 100\n\\end{equation}\\]",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter 4: Macroeconomic Variables: Measuring Output and GDP</span>"
+    ]
+  },
+  {
+    "objectID": "ch05_unemployment_inflation.html#natural-rate-and-okuns-law",
+    "href": "ch05_unemployment_inflation.html#natural-rate-and-okuns-law",
+    "title": "5  Chapter 5: Employment, Unemployment Metrics, and the Price Level",
+    "section": "5.2 Natural Rate and Okun’s Law",
+    "text": "5.2 Natural Rate and Okun’s Law\nCyclical unemployment creates output gaps quantified by Okun’s Law: \\(\\frac{Y - Y^*}{Y^*} \\approx -2(u - u^*)\\).",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Chapter 5: Employment, Unemployment Metrics, and the Price Level</span>"
+    ]
+  },
+  {
+    "objectID": "ch06_savings_investment_financial_system.html#loanable-funds-and-crowding-out",
+    "href": "ch06_savings_investment_financial_system.html#loanable-funds-and-crowding-out",
+    "title": "6  Chapter 6: Saving, Investment Spending, and the Financial System",
+    "section": "6.2 Loanable Funds and Crowding-Out",
+    "text": "6.2 Loanable Funds and Crowding-Out\nGovernment budget deficits (\\(T - G &lt; 0\\)) diminish public savings, shifting loanable funds supply leftward, driving up real interest rates and crowding out private corporate investment.",
+    "crumbs": [
+      "Long-Run Growth & Financial Systems",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chapter 6: Saving, Investment Spending, and the Financial System</span>"
+    ]
+  },
+  {
+    "objectID": "ch07_aggregate_expenditure_multiplier.html#autonomous-spending-multipliers",
+    "href": "ch07_aggregate_expenditure_multiplier.html#autonomous-spending-multipliers",
+    "title": "7  Chapter 7: Income and Expenditure: The Keynesian Cross and Multipliers",
+    "section": "7.2 Autonomous Spending Multipliers",
+    "text": "7.2 Autonomous Spending Multipliers\n\\[\\begin{equation}\nk = \\frac{1}{1 - MPC} \\implies \\Delta Y = \\frac{1}{1 - MPC} \\Delta G\n\\end{equation}\\] The balanced-budget multiplier equals \\(k_{\\text{balanced}} = 1.0\\).",
+    "crumbs": [
+      "Long-Run Growth & Financial Systems",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Chapter 7: Income and Expenditure: The Keynesian Cross and Multipliers</span>"
+    ]
+  },
+  {
+    "objectID": "ch08_aggregate_demand_aggregate_supply.html#sras-lras-and-stagflation",
+    "href": "ch08_aggregate_demand_aggregate_supply.html#sras-lras-and-stagflation",
+    "title": "8  Chapter 8: Aggregate Demand and Aggregate Supply (AD-AS)",
+    "section": "8.2 SRAS, LRAS, and Stagflation",
+    "text": "8.2 SRAS, LRAS, and Stagflation\n\\(SRAS\\) slopes upward because nominal wages are sticky in the short run. \\(LRAS\\) is vertical at potential GDP (\\(Y^*\\)). Negative supply shocks shift \\(SRAS\\) left, producing stagflation (output contraction with accelerating inflation).",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 8: Aggregate Demand and Aggregate Supply (AD-AS)</span>"
+    ]
+  },
+  {
+    "objectID": "ch12_open_economy_macroeconomics.html#the-open-economy-policy-trilemma",
+    "href": "ch12_open_economy_macroeconomics.html#the-open-economy-policy-trilemma",
+    "title": "12  Chapter 12: Open-Economy Macroeconomics, Exchange Rates, and the Balance of Payments",
+    "section": "12.5 The Open-Economy Policy Trilemma",
+    "text": "12.5 The Open-Economy Policy Trilemma\nA country cannot simultaneously maintain all three of the following: a fixed exchange rate, free international capital flows, and independent monetary policy. A fixed parity with mobile capital tends to require domestic rates to be consistent with the rate needed to defend the parity. Allowing the exchange rate to float gives more monetary autonomy but exposes firms and households to exchange-rate movements. The trilemma describes a constraint, not a ranking of which choice is best for every country.\n\n\n\n\n\n\nNoteClear It Up: A Trade Deficit Is Not a Household Credit-Card Bill\n\n\n\nThe trade balance is a flow of exports minus imports over a period. It is not the national debt, and a negative balance does not alone identify policy failure. Interpret it with saving, investment, capital flows, and the composition of trade.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Chapter 12: Open-Economy Macroeconomics, Exchange Rates, and the Balance of Payments</span>"
+    ]
+  },
+  {
+    "objectID": "ch03_supply_demand.html#one-price-changes-or-the-price-level-changes",
+    "href": "ch03_supply_demand.html#one-price-changes-or-the-price-level-changes",
+    "title": "3  Chapter 3: Supply and Demand: Macroeconomic Foundations",
+    "section": "3.2 One Price Changes, or the Price Level Changes?",
+    "text": "3.2 One Price Changes, or the Price Level Changes?\nSuppose the price of a hospital visit rises while prices of most other goods are stable. That is a change in a relative price: medical care has become more expensive compared with the rest of the consumption basket. A family may respond by using insurance, choosing another provider, or postponing care. The change guides choices and reallocates resources in that market, but by itself it is not economy-wide inflation.\nInflation is a sustained increase in a broad price index. It reduces the purchasing power of a nominal dollar if the dollar amount does not rise with prices. A one-time increase in a single price may contribute to an index, but it does not establish that the general price level is accelerating. Similarly, a temporary price-level increase is not the same thing as an ongoing inflation rate.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter 3: Supply and Demand: Macroeconomic Foundations</span>"
+    ]
+  },
+  {
+    "objectID": "ch03_supply_demand.html#graph-description-relative-price-and-a-broad-index",
+    "href": "ch03_supply_demand.html#graph-description-relative-price-and-a-broad-index",
+    "title": "3  Chapter 3: Supply and Demand: Macroeconomic Foundations",
+    "section": "3.3 Graph Description: Relative Price and a Broad Index",
+    "text": "3.3 Graph Description: Relative Price and a Broad Index\nTo compare price movements over time, put time on the horizontal axis and index values on the vertical axis. Set both series to 100 in a chosen base month. One line tracks the price index for a particular category, such as medical care; the other tracks the all-items CPI. If the medical-care line rises faster, its relative price has increased over that interval. If both rise at the same rate, the relative price is roughly unchanged even though nominal prices have risen. Indexing the series makes proportional changes comparable; it does not put different baskets on the same dollar scale.\nThe economic distinction is between a movement in one component’s price and a change in the overall index. A demand or supply shift in one product market changes that market’s equilibrium price; economy-wide inflation requires broad price changes and a sustained process, not a relabeling of one relative-price shock.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter 3: Supply and Demand: Macroeconomic Foundations</span>"
+    ]
+  },
+  {
+    "objectID": "ch03_supply_demand.html#price-indexes-inflation-and-real-values",
+    "href": "ch03_supply_demand.html#price-indexes-inflation-and-real-values",
+    "title": "3  Chapter 3: Supply and Demand: Macroeconomic Foundations",
+    "section": "3.4 Price Indexes, Inflation, and Real Values",
+    "text": "3.4 Price Indexes, Inflation, and Real Values\nA price index compares the cost of a defined basket in one period with its cost in a reference period. The percentage inflation rate between periods \\(t-1\\) and \\(t\\) is: \\[\\begin{equation}\n\\pi_t=\\frac{P_t-P_{t-1}}{P_{t-1}}\\times 100%.\n\\end{equation}\\] To express a nominal amount in the purchasing power of a selected base period, rescale it by the ratio of the base-period index to the current index: \\[\\begin{equation}\nX^{\\text{real, base}}_t=X^{\\text{nominal}}_t\\frac{P_{\\text{base}}}{P_t}.\n\\end{equation}\\] When the index base is 100, this is commonly written as nominal value times \\(100/P_t\\). Real values answer a purchasing-power question; nominal values answer how many current dollars changed hands. Neither measure is universally preferable: use the one suited to the question.\n\n\n\n\n\n\nTipFRED Data: Medical Care and the CPI\n\n\n\nFRED series CPIAUCSL is the all-items Consumer Price Index for All Urban Consumers: U.S. City Average, monthly and seasonally adjusted, with 1982-1984=100. CPIMEDSL is the corresponding medical-care index with the same base and frequency. Comparing their percentage changes can illustrate how a component’s price movement differs from the overall basket. The CPI reflects a weighted urban-consumer basket, not every household’s exact spending pattern; the comparison is descriptive and does not by itself identify why prices changed.\n\n\n\n\n\n\n\n\nNoteClear It Up: A Price Increase Is Not Automatically Inflation\n\n\n\nA rise in one product’s price changes that product’s relative price. Inflation refers to a sustained rise in a broad price index. Also keep nominal and real values distinct: a nominal wage can rise while its real purchasing power falls if the price level rises faster.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter 3: Supply and Demand: Macroeconomic Foundations</span>"
+    ]
+  },
+  {
+    "objectID": "ch03_supply_demand.html#check-your-understanding",
+    "href": "ch03_supply_demand.html#check-your-understanding",
+    "title": "3  Chapter 3: Supply and Demand: Macroeconomic Foundations",
+    "section": "3.5 Check Your Understanding",
+    "text": "3.5 Check Your Understanding\n\nIf a nominal wage rises by 3 percent while the relevant price index rises by 5 percent, what happens approximately to its purchasing power?\nWhy is a rise in the price of one service not sufficient evidence of economy-wide inflation?\nWhat does rebasing two indexes to 100 help compare, and what does it not make identical?\n\nAnswers: (1) Real purchasing power falls by roughly 2 percent, using the small-change approximation. (2) It may be a relative-price change confined to that market. (3) It compares proportional changes; it does not make the baskets or dollar costs identical.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter 3: Supply and Demand: Macroeconomic Foundations</span>"
+    ]
+  },
+  {
+    "objectID": "ch04_gdp_accounting.html#what-gdp-counts-a-chip-in-a-computer",
+    "href": "ch04_gdp_accounting.html#what-gdp-counts-a-chip-in-a-computer",
+    "title": "4  Chapter 4: Macroeconomic Variables: Measuring Output and GDP",
+    "section": "4.2 What GDP Counts: A Chip in a Computer",
+    "text": "4.2 What GDP Counts: A Chip in a Computer\nImagine a processor sold to a computer maker and then installed in a new laptop. Counting the processor’s full sale and the laptop’s full sale would count some production twice. National accounts avoid this by counting final output or summing each firm’s value added. The processor maker contributes the value of its output minus intermediate inputs; the computer maker contributes the laptop’s value minus purchased components. GDP measures the market value of final goods and services produced within a country’s borders during a period, not the value of every financial transaction or every useful activity.\nGDP excludes purchases of existing assets, such as a used home, because that production occurred earlier. It also excludes transfers such as Social Security benefits from government purchases: transfers redistribute income but are not direct purchases of current output. Newly produced residential construction is counted as investment, while a household’s purchase of the same house from another household is an asset transfer.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter 4: Macroeconomic Variables: Measuring Output and GDP</span>"
+    ]
+  },
+  {
+    "objectID": "ch04_gdp_accounting.html#three-equivalent-accounting-views",
+    "href": "ch04_gdp_accounting.html#three-equivalent-accounting-views",
+    "title": "4  Chapter 4: Macroeconomic Variables: Measuring Output and GDP",
+    "section": "4.3 Three Equivalent Accounting Views",
+    "text": "4.3 Three Equivalent Accounting Views\nThe expenditure approach adds spending on final domestic production: \\[\\begin{equation}\nY=C+I+G+NX, \\qquad NX=X-M.\n\\end{equation}\\] \\(C\\) is household consumption, \\(I\\) is gross private domestic investment (including inventory change and new residential construction), \\(G\\) is government purchases of goods and services, and \\(NX\\) is exports minus imports. Imports are subtracted because they may already be included in \\(C\\), \\(I\\), or \\(G\\) but were produced abroad.\nThe production or value-added approach sums each producer’s value added, avoiding double counting. The income approach sums incomes generated in domestic production, including compensation of employees, proprietors’ income, rental income, corporate profits, net interest, taxes on production and imports less subsidies, and consumption of fixed capital. GDP and gross domestic income (GDI) should be equal in principle because one producer’s output is another party’s expenditure and income; measured estimates can differ because of data sources and timing. The statistical discrepancy records that difference rather than implying two different economies.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter 4: Macroeconomic Variables: Measuring Output and GDP</span>"
+    ]
+  },
+  {
+    "objectID": "ch04_gdp_accounting.html#nominal-gdp-real-gdp-and-the-deflator",
+    "href": "ch04_gdp_accounting.html#nominal-gdp-real-gdp-and-the-deflator",
+    "title": "4  Chapter 4: Macroeconomic Variables: Measuring Output and GDP",
+    "section": "4.4 Nominal GDP, Real GDP, and the Deflator",
+    "text": "4.4 Nominal GDP, Real GDP, and the Deflator\nNominal GDP values current production at current-period prices. If both quantities and prices rise, nominal GDP can rise even when physical output does not. Real GDP values production using a chain-type quantity index designed to remove price changes. The GDP implicit price deflator is: \\[\\begin{equation}\next{GDP Deflator}_t=\\frac{\\text{Nominal GDP}_t}{\\text{Real GDP}_t}\\times 100.\n\\end{equation}\\] Its percent change approximates price change for domestically produced final output. It is not the same basket as the CPI, which focuses on prices paid by urban consumers and includes imports in the consumer basket.\n\n\n\n\n\n\nTipFRED Data: Current-Dollar and Chained-Dollar GDP\n\n\n\nFRED’s GDP series reports Gross Domestic Product in billions of current dollars at a seasonally adjusted annual rate, quarterly. GDPC1 reports real GDP in billions of chained 2017 dollars at a seasonally adjusted annual rate, quarterly. The series titles and units matter: compare changes over time using the appropriate real measure, and do not read chained-dollar levels as current-dollar spending. Both series are revised as the BEA incorporates new source data.\n\n\n\n\n\n\n\n\nNoteClear It Up: Investment Is Not a Stock Purchase\n\n\n\nIn GDP accounting, investment means newly produced capital goods, new residential structures, and inventory accumulation. Buying an existing share of stock is a financial transaction, not current production, so it is not counted as \\(I\\) in GDP.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter 4: Macroeconomic Variables: Measuring Output and GDP</span>"
+    ]
+  },
+  {
+    "objectID": "ch04_gdp_accounting.html#check-your-understanding",
+    "href": "ch04_gdp_accounting.html#check-your-understanding",
+    "title": "4  Chapter 4: Macroeconomic Variables: Measuring Output and GDP",
+    "section": "4.5 Check Your Understanding",
+    "text": "4.5 Check Your Understanding\n\nWhy are imported goods subtracted in \\(NX\\) even though consumers and firms buy them?\nIf nominal GDP rises while real GDP is unchanged, what has happened to the GDP deflator?\nWhy does counting a final laptop and every component’s full sale overstate output?\n\nAnswers: (1) Imports were produced abroad and must be removed from domestic production. (2) The deflator rises. (3) It double-counts intermediate production; use final value or value added.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Chapter 4: Macroeconomic Variables: Measuring Output and GDP</span>"
+    ]
+  },
+  {
+    "objectID": "ch05_unemployment_inflation.html#how-a-household-enters-the-labor-statistics",
+    "href": "ch05_unemployment_inflation.html#how-a-household-enters-the-labor-statistics",
+    "title": "5  Chapter 5: Employment, Unemployment Metrics, and the Price Level",
+    "section": "5.2 How a Household Enters the Labor Statistics",
+    "text": "5.2 How a Household Enters the Labor Statistics\nThe Bureau of Labor Statistics classifies people in the civilian noninstitutional population age 16 and older using a household survey. A person is employed if they did paid work or had a job from which they were temporarily absent. A person is unemployed if they had no job, were available for work, and actively looked for work in the previous four weeks, or were on temporary layoff under the survey rules. Everyone else is not in the labor force. These are operational definitions for consistent measurement, not judgments about whether someone needs a job.\nThe labor force is the employed plus the unemployed. A discouraged worker who wants a job but stopped searching is not counted as unemployed under U-3; they are outside the labor force. A person working part time for economic reasons is counted as employed even if they want full-time work. Broader BLS measures include additional forms of labor underutilization.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Chapter 5: Employment, Unemployment Metrics, and the Price Level</span>"
+    ]
+  },
+  {
+    "objectID": "ch05_unemployment_inflation.html#rates-and-their-denominators",
+    "href": "ch05_unemployment_inflation.html#rates-and-their-denominators",
+    "title": "5  Chapter 5: Employment, Unemployment Metrics, and the Price Level",
+    "section": "5.3 Rates and Their Denominators",
+    "text": "5.3 Rates and Their Denominators\nThe unemployment rate uses the labor force, not the entire population. The labor-force participation rate and employment-population ratio answer different questions: \\[\\begin{align}\nLF &= E+U, \\\\\nu &= \\frac{U}{LF}\\times 100%, \\\\\nLFPR &= \\frac{LF}{P}\\times 100%, \\\\\nEPOP &= \\frac{E}{P}\\times 100%.\n\\end{align}\\] Here \\(E\\) is employment, \\(U\\) is unemployment, and \\(P\\) is the civilian noninstitutional population age 16 and older. Rates can move for different reasons. If people stop searching, the unemployment rate may fall even if employment does not rise; the participation rate can reveal that denominator change.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Chapter 5: Employment, Unemployment Metrics, and the Price Level</span>"
+    ]
+  },
+  {
+    "objectID": "ch05_unemployment_inflation.html#graph-description-cycles-and-the-natural-rate",
+    "href": "ch05_unemployment_inflation.html#graph-description-cycles-and-the-natural-rate",
+    "title": "5  Chapter 5: Employment, Unemployment Metrics, and the Price Level",
+    "section": "5.4 Graph Description: Cycles and the Natural Rate",
+    "text": "5.4 Graph Description: Cycles and the Natural Rate\nOn a time-series graph, put months or quarters on the horizontal axis and the unemployment rate on the vertical axis. Recessions often coincide with a rise in unemployment, followed by a gradual decline during recovery. The natural rate is not a fixed number written into the data; it is an estimated benchmark reflecting frictional and structural unemployment at a given time. The cyclical component is the gap between actual and estimated natural unemployment, and estimates are uncertain.\nOkun’s law summarizes a historical tendency for output to be below potential when unemployment is above its sustainable benchmark. A commonly used rough relation is: \\[\\begin{equation}\n\\frac{Y-Y^*}{Y^*}\\approx -\\beta(u-u^*), \\qquad \\beta&gt;0.\n\\end{equation}\\] The coefficient varies by period and specification. This relationship is a useful model, not a fixed engineering law or proof that unemployment alone caused an output change.\n\n\n\n\n\n\nTipFRED Data: Reading the U-3 Series\n\n\n\nFRED’s UNRATE series is the BLS U-3 unemployment rate: percent, seasonally adjusted, monthly. The October 2026 observation is 4.1 percent. A single monthly rate is a snapshot, not a complete account of job quality, hours desired, discouraged workers, or the causes of a change. Pair it with labor-force participation and employment measures when interpreting a cycle.\n\n\n\n\n\n\n\n\nNoteClear It Up: Unemployment Is a Stock; Separations and Hires Are Flows\n\n\n\nThe number unemployed at a point in time is a stock. New job losses, hires, exits, and entries are flows that change the stock over a period. A falling unemployment stock can result from hiring, labor-force exits, or both, so check the related flows and rates before drawing a conclusion.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Chapter 5: Employment, Unemployment Metrics, and the Price Level</span>"
+    ]
+  },
+  {
+    "objectID": "ch05_unemployment_inflation.html#check-your-understanding",
+    "href": "ch05_unemployment_inflation.html#check-your-understanding",
+    "title": "5  Chapter 5: Employment, Unemployment Metrics, and the Price Level",
+    "section": "5.5 Check Your Understanding",
+    "text": "5.5 Check Your Understanding\n\nA person wants work, is available, but has not searched in the past four weeks. How is that person classified in U-3?\nIf \\(E=160\\), \\(U=10\\), and \\(P=200\\), calculate the unemployment rate and participation rate.\nWhy might a falling unemployment rate fail to show that employment increased?\n\nAnswers: (1) Not in the labor force, under the stated facts. (2) \\(u=10/170\\times100%=5.9%\\); \\(LFPR=170/200\\times100%=85%\\). (3) People may have left the labor force, reducing the denominator.",
+    "crumbs": [
+      "Macroeconomic Foundations & Measurement",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Chapter 5: Employment, Unemployment Metrics, and the Price Level</span>"
+    ]
+  },
+  {
+    "objectID": "ch06_savings_investment_financial_system.html#saving-is-a-flow-wealth-is-a-stock",
+    "href": "ch06_savings_investment_financial_system.html#saving-is-a-flow-wealth-is-a-stock",
+    "title": "6  Chapter 6: Saving, Investment Spending, and the Financial System",
+    "section": "6.2 Saving Is a Flow; Wealth Is a Stock",
+    "text": "6.2 Saving Is a Flow; Wealth Is a Stock\nA household that saves part of this month’s income adds to its assets, but saving itself is measured over a period. Wealth is the value of assets held at a point in time. Likewise, investment in macroeconomics is spending on newly produced capital goods and inventories during a period; it is not the purchase of an existing stock certificate. Keeping stocks and flows separate prevents a common accounting error.",
+    "crumbs": [
+      "Long-Run Growth & Financial Systems",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chapter 6: Saving, Investment Spending, and the Financial System</span>"
+    ]
+  },
+  {
+    "objectID": "ch06_savings_investment_financial_system.html#national-saving-and-the-open-economy-identity",
+    "href": "ch06_savings_investment_financial_system.html#national-saving-and-the-open-economy-identity",
+    "title": "6  Chapter 6: Saving, Investment Spending, and the Financial System",
+    "section": "6.3 National Saving and the Open-Economy Identity",
+    "text": "6.3 National Saving and the Open-Economy Identity\nStart with the expenditure identity \\(Y=C+I+G+NX\\). Rearranging gives \\(Y-C-G=I+NX\\). National saving is \\(S=Y-C-G\\), so in the simplified model \\(S=I+NX\\). If net exports are used as the current-account proxy, then \\(S-I=NX\\): saving above domestic investment corresponds to net lending abroad, while investment above saving is matched by net borrowing from abroad. In full balance-of-payments accounts, the current account includes net primary income and transfers as well as goods and services.\nWith taxes \\(T\\) and disposable income \\(Y-T\\), private saving is \\(S_p=Y-T-C\\) and public saving is \\(S_g=T-G\\). National saving adds the two: \\[\\begin{equation}\nS=S_p+S_g=(Y-T-C)+(T-G)=Y-C-G, \\qquad S-I=NX \\quad\\text{(simplified model)}.\n\\end{equation}\\] In a closed economy, \\(NX=0\\) and planned national saving equals investment in the accounting identity. The identity does not guarantee that desired saving and planned investment are equal at every interest rate; prices, output, and financial markets adjust toward consistency.",
+    "crumbs": [
+      "Long-Run Growth & Financial Systems",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chapter 6: Saving, Investment Spending, and the Financial System</span>"
+    ]
+  },
+  {
+    "objectID": "ch06_savings_investment_financial_system.html#loanable-funds-graph-and-mechanism",
+    "href": "ch06_savings_investment_financial_system.html#loanable-funds-graph-and-mechanism",
+    "title": "6  Chapter 6: Saving, Investment Spending, and the Financial System",
+    "section": "6.4 Loanable Funds: Graph and Mechanism",
+    "text": "6.4 Loanable Funds: Graph and Mechanism\nPut the quantity of loanable funds on the horizontal axis and the real interest rate on the vertical axis. Planned saving is drawn as a supply of funds, often rising with the real return. Planned investment is a demand for funds, often falling as borrowing becomes more expensive. Their intersection is the model’s equilibrium real rate and quantity. A shift in saving or investment plans moves one curve; a change in the interest rate is a movement along a curve. This is a market model, not a literal inventory of all bank deposits.",
+    "crumbs": [
+      "Long-Run Growth & Financial Systems",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chapter 6: Saving, Investment Spending, and the Financial System</span>"
+    ]
+  },
+  {
+    "objectID": "ch06_savings_investment_financial_system.html#deficits-interest-rates-and-crowding-out",
+    "href": "ch06_savings_investment_financial_system.html#deficits-interest-rates-and-crowding-out",
+    "title": "6  Chapter 6: Saving, Investment Spending, and the Financial System",
+    "section": "6.5 Deficits, Interest Rates, and Crowding Out",
+    "text": "6.5 Deficits, Interest Rates, and Crowding Out\nIf government purchases rise while taxes and private saving behavior are fixed, public saving falls. In a closed-economy loanable-funds model, the saving supply can shift left, raising the equilibrium real interest rate and reducing some private investment. This is the crowding-out mechanism. Its size depends on conditions: monetary policy, spare capacity, household saving responses, international capital flows, and the central bank’s reaction can change the outcome. A deficit does not mechanically imply a one-for-one decline in private investment.\n\n\n\n\n\n\nTipFRED Data: Gross Private Domestic Investment\n\n\n\nFRED series GPDI reports gross private domestic investment in billions of current dollars at a seasonally adjusted annual rate, quarterly. It includes fixed investment and inventory change. It is a nominal expenditure flow, not a capital stock and not a direct measure of productive capacity. To study physical investment growth across time, compare an appropriate real series and account for revisions and price changes.\n\n\n\n\n\n\n\n\nNoteClear It Up: The Identity Is Not a Causal Claim\n\n\n\nThe accounting relation \\(S-I=NX\\) in the simplified model must hold ex post. It does not by itself tell us whether saving caused investment, investment caused income and saving, or foreign flows adjusted. Use a behavioral model and evidence to discuss causation.",
+    "crumbs": [
+      "Long-Run Growth & Financial Systems",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chapter 6: Saving, Investment Spending, and the Financial System</span>"
+    ]
+  },
+  {
+    "objectID": "ch06_savings_investment_financial_system.html#check-your-understanding",
+    "href": "ch06_savings_investment_financial_system.html#check-your-understanding",
+    "title": "6  Chapter 6: Saving, Investment Spending, and the Financial System",
+    "section": "6.6 Check Your Understanding",
+    "text": "6.6 Check Your Understanding\n\nIf \\(Y=1{,}000\\), \\(C=650\\), and \\(G=200\\), calculate national saving.\nIf national saving is 150 and investment is 180, what is \\(NX\\) in the simplified open-economy identity?\nIs buying an existing share of a company macroeconomic investment? Why or why not?\n\nAnswers: (1) \\(S=Y-C-G=150\\). (2) \\(NX=S-I=-30\\), a deficit in the simplified model. (3) No; it transfers ownership of an existing financial asset rather than purchasing newly produced capital.",
+    "crumbs": [
+      "Long-Run Growth & Financial Systems",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Chapter 6: Saving, Investment Spending, and the Financial System</span>"
+    ]
+  },
+  {
+    "objectID": "ch07_aggregate_expenditure_multiplier.html#the-inventory-story",
+    "href": "ch07_aggregate_expenditure_multiplier.html#the-inventory-story",
+    "title": "7  Chapter 7: Income and Expenditure: The Keynesian Cross and Multipliers",
+    "section": "7.2 The Inventory Story",
+    "text": "7.2 The Inventory Story\nA firm produces goods before knowing exactly how many customers will buy them. If households and businesses plan to spend less than firms produce, unsold goods accumulate as unplanned inventory investment. Firms respond by reducing orders and production; household income falls, which can further reduce consumption. If planned spending exceeds production, inventories fall unexpectedly and firms have an incentive to increase output. The Keynesian cross formalizes this short-run adjustment when prices are relatively sticky and resources are not fully employed.",
+    "crumbs": [
+      "Long-Run Growth & Financial Systems",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Chapter 7: Income and Expenditure: The Keynesian Cross and Multipliers</span>"
+    ]
+  },
+  {
+    "objectID": "ch07_aggregate_expenditure_multiplier.html#the-consumption-function-and-expenditure-schedule",
+    "href": "ch07_aggregate_expenditure_multiplier.html#the-consumption-function-and-expenditure-schedule",
+    "title": "7  Chapter 7: Income and Expenditure: The Keynesian Cross and Multipliers",
+    "section": "7.3 The Consumption Function and Expenditure Schedule",
+    "text": "7.3 The Consumption Function and Expenditure Schedule\nLet consumption depend on autonomous consumption and disposable income: \\[\\begin{equation}\nC=C_0+c(Y-T), \\qquad 0&lt;c&lt;1,\n\\end{equation}\\] where \\(c\\) is the marginal propensity to consume. In a simplified closed economy with fixed planned investment, government purchases, and lump-sum taxes, planned aggregate expenditure is: \\[\\begin{equation}\nAE=C_0+c(Y-T)+I_p+G.\n\\end{equation}\\] On a graph with income/output \\(Y\\) on the horizontal axis and planned expenditure \\(AE\\) on the vertical axis, draw a 45-degree line where \\(AE=Y\\) and the expenditure line with slope \\(c\\). Their intersection is short-run equilibrium. If the expenditure line shifts upward, equilibrium output rises by more than the initial autonomous-spending increase because each round of income induces additional consumption.",
+    "crumbs": [
+      "Long-Run Growth & Financial Systems",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Chapter 7: Income and Expenditure: The Keynesian Cross and Multipliers</span>"
+    ]
+  },
+  {
+    "objectID": "ch07_aggregate_expenditure_multiplier.html#worked-multiplier-example",
+    "href": "ch07_aggregate_expenditure_multiplier.html#worked-multiplier-example",
+    "title": "7  Chapter 7: Income and Expenditure: The Keynesian Cross and Multipliers",
+    "section": "7.4 Worked Multiplier Example",
+    "text": "7.4 Worked Multiplier Example\nSuppose values are in billions of dollars, \\(C_0=100\\), \\(c=0.8\\), \\(T=50\\), \\(I_p=120\\), and \\(G=80\\). Then: \\[\\begin{align}\nAE &=100+0.8(Y-50)+120+80=260+0.8Y,\\\\\nY&=AE=260+0.8Y,\\\\\n0.2Y&=260 \\quad\\Longrightarrow\\quad Y^*=1{,}300.\n\\end{align}\\] If autonomous government purchases increase by 20, the simple multiplier is \\(1/(1-c)=5\\), so the model predicts \\(\\Delta Y=100\\). This result assumes fixed prices, constant \\(c\\), no proportional income taxes, no imports, and sufficient capacity to raise production. It is a model prediction, not a forecast that every real-world spending increase produces exactly five times as much output.",
+    "crumbs": [
+      "Long-Run Growth & Financial Systems",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Chapter 7: Income and Expenditure: The Keynesian Cross and Multipliers</span>"
+    ]
+  },
+  {
+    "objectID": "ch07_aggregate_expenditure_multiplier.html#leakages-taxes-and-a-smaller-multiplier",
+    "href": "ch07_aggregate_expenditure_multiplier.html#leakages-taxes-and-a-smaller-multiplier",
+    "title": "7  Chapter 7: Income and Expenditure: The Keynesian Cross and Multipliers",
+    "section": "7.5 Leakages, Taxes, and a Smaller Multiplier",
+    "text": "7.5 Leakages, Taxes, and a Smaller Multiplier\nSaving, taxes, and imports are leakages from each round of domestic consumption spending. If taxes rise with income at rate \\(t\\) and imports rise with income at marginal propensity \\(m\\), one simplified multiplier is: \\[\\begin{equation}\nk=\\frac{1}{1-c(1-t)+m}.\n\\end{equation}\\] The exact expression depends on how the model specifies taxes, imports, and other induced spending. More leakages make each successive spending round smaller. Automatic stabilizers can moderate a downturn by reducing disposable-income losses, although their strength depends on program design and the initial shock.\n\n\n\n\n\n\nTipFRED Data: Output Is Not Planned Expenditure\n\n\n\nFRED series GDPC1 reports real GDP in billions of chained 2017 dollars at a seasonally adjusted annual rate, quarterly. It measures realized production, not households’ or firms’ planned expenditure. A change in GDP alone cannot identify the Keynesian multiplier: analysts need a plausibly exogenous spending change and a strategy for separating its effects from simultaneous changes in income, policy, and expectations.\n\n\n\n\n\n\n\n\nNoteClear It Up: A Multiplier Is Conditional\n\n\n\nThe algebraic multiplier follows from a specified behavioral model and assumptions about prices, taxes, imports, interest rates, and available capacity. It is not a universal constant and should not be applied mechanically to every fiscal action.",
+    "crumbs": [
+      "Long-Run Growth & Financial Systems",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Chapter 7: Income and Expenditure: The Keynesian Cross and Multipliers</span>"
+    ]
+  },
+  {
+    "objectID": "ch07_aggregate_expenditure_multiplier.html#check-your-understanding",
+    "href": "ch07_aggregate_expenditure_multiplier.html#check-your-understanding",
+    "title": "7  Chapter 7: Income and Expenditure: The Keynesian Cross and Multipliers",
+    "section": "7.6 Check Your Understanding",
+    "text": "7.6 Check Your Understanding\n\nIf \\(c=0.75\\) in the simple closed model, what is the government-purchases multiplier?\nWhy does an unplanned inventory increase tend to make firms cut production in the model?\nName two leakages that make the multiplier smaller than \\(1/(1-c)\\).\n\nAnswers: (1) \\(k=1/(1-0.75)=4\\). (2) Output exceeded planned sales, leaving firms with more inventory than intended. (3) Taxes and imports are examples.",
+    "crumbs": [
+      "Long-Run Growth & Financial Systems",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Chapter 7: Income and Expenditure: The Keynesian Cross and Multipliers</span>"
+    ]
+  },
+  {
+    "objectID": "ch08_aggregate_demand_aggregate_supply.html#aggregate-demand-total-planned-spending",
+    "href": "ch08_aggregate_demand_aggregate_supply.html#aggregate-demand-total-planned-spending",
+    "title": "8  Chapter 8: Aggregate Demand and Aggregate Supply (AD-AS)",
+    "section": "8.2 Aggregate Demand: Total Planned Spending",
+    "text": "8.2 Aggregate Demand: Total Planned Spending\nAggregate demand (AD) represents planned spending on domestically produced final goods and services at different overall price levels, holding other determinants fixed. In the expenditure model, \\(AD=C+I+G+NX\\). A lower price level can raise real purchasing power, affect interest rates, and change net exports; together these mechanisms help explain the downward slope in the standard AD curve. The curve is not the same thing as microeconomic demand for one product.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 8: Aggregate Demand and Aggregate Supply (AD-AS)</span>"
+    ]
+  },
+  {
+    "objectID": "ch08_aggregate_demand_aggregate_supply.html#movement-along-ad-or-a-shift",
+    "href": "ch08_aggregate_demand_aggregate_supply.html#movement-along-ad-or-a-shift",
+    "title": "8  Chapter 8: Aggregate Demand and Aggregate Supply (AD-AS)",
+    "section": "8.3 Movement Along AD or a Shift?",
+    "text": "8.3 Movement Along AD or a Shift?\nPut real output \\(Y\\) on the horizontal axis and the price level \\(P\\) on the vertical axis. A change in the price level causes a movement along a given AD curve. A change in consumption confidence, planned investment, fiscal policy, monetary conditions, foreign income, or the exchange rate can shift AD. For example, an increase in government purchases shifts AD right at each price level in the short-run model; it does not mean the price level itself caused the shift.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 8: Aggregate Demand and Aggregate Supply (AD-AS)</span>"
+    ]
+  },
+  {
+    "objectID": "ch08_aggregate_demand_aggregate_supply.html#short-run-and-long-run-aggregate-supply",
+    "href": "ch08_aggregate_demand_aggregate_supply.html#short-run-and-long-run-aggregate-supply",
+    "title": "8  Chapter 8: Aggregate Demand and Aggregate Supply (AD-AS)",
+    "section": "8.4 Short-Run and Long-Run Aggregate Supply",
+    "text": "8.4 Short-Run and Long-Run Aggregate Supply\nShort-run aggregate supply (SRAS) slopes upward in the basic model because some wages and prices adjust slowly. If the overall price level rises while nominal input costs are temporarily fixed, firms may find production more profitable and supply more output. Long-run aggregate supply (LRAS) is vertical at potential output \\(Y^*\\), determined by labor, capital, technology, and institutions rather than the price level alone.\nThe short-run equilibrium is where AD intersects SRAS. If output is below potential, the economy has a recessionary gap; if output is above potential, resource bottlenecks and wage or price pressures may build. Over time, wages, expectations, and other costs adjust, shifting SRAS. The speed and direction of adjustment depend on institutions and expectations, so the diagram is a framework rather than a calendar forecast.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 8: Aggregate Demand and Aggregate Supply (AD-AS)</span>"
+    ]
+  },
+  {
+    "objectID": "ch08_aggregate_demand_aggregate_supply.html#demand-and-supply-shocks",
+    "href": "ch08_aggregate_demand_aggregate_supply.html#demand-and-supply-shocks",
+    "title": "8  Chapter 8: Aggregate Demand and Aggregate Supply (AD-AS)",
+    "section": "8.5 Demand and Supply Shocks",
+    "text": "8.5 Demand and Supply Shocks\nAn increase in AD generally raises short-run output and the price level; a decrease generally lowers both. An adverse supply shock shifts SRAS left, reducing output while raising the price level, a combination called stagflation. A favorable productivity shock can shift SRAS and potential output outward. The diagram keeps separate the initial shock, the short-run movement, and any later adjustment.\n\n\n\n\n\n\nTipFRED Data: Output, Prices, and Unemployment Move Together\n\n\n\nGDPC1 measures real GDP in billions of chained 2017 dollars at a seasonally adjusted annual rate, quarterly. CPIAUCSL is a monthly, seasonally adjusted all-items CPI index. UNRATE is the monthly, seasonally adjusted U-3 unemployment rate. These series can help students describe output, prices, and labor-market conditions around an episode, but their co-movement alone does not identify whether an AD or supply shock caused it. Frequency, units, revisions, and causal evidence must be considered.\n\n\n\n\n\n\n\n\nNoteClear It Up: Price Level Versus Aggregate Demand\n\n\n\nAn increase in the price level is a movement along AD. A change in planned spending at every price level shifts AD. Confusing the two turns an outcome of the model into a cause of the curve’s shift.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 8: Aggregate Demand and Aggregate Supply (AD-AS)</span>"
+    ]
+  },
+  {
+    "objectID": "ch08_aggregate_demand_aggregate_supply.html#check-your-understanding",
+    "href": "ch08_aggregate_demand_aggregate_supply.html#check-your-understanding",
+    "title": "8  Chapter 8: Aggregate Demand and Aggregate Supply (AD-AS)",
+    "section": "8.6 Check Your Understanding",
+    "text": "8.6 Check Your Understanding\n\nIf households become more optimistic and raise planned consumption, is this a movement along AD or a shift? Which direction?\nWhat combination of short-run changes follows an adverse SRAS shock?\nWhy cannot two FRED series moving together establish an AD shock?\n\nAnswers: (1) A rightward shift in AD. (2) Output falls while the price level rises. (3) Other shocks and reverse causality may explain the co-movement; a causal design is needed.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Chapter 8: Aggregate Demand and Aggregate Supply (AD-AS)</span>"
+    ]
+  },
+  {
+    "objectID": "ch09_fiscal_policy.html#a-downturn-and-the-budget-response",
+    "href": "ch09_fiscal_policy.html#a-downturn-and-the-budget-response",
+    "title": "9  Chapter 9: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt",
+    "section": "9.2 A Downturn and the Budget Response",
+    "text": "9.2 A Downturn and the Budget Response\nDuring a recession, household incomes and tax receipts may fall while applications for unemployment insurance rise. These changes support disposable income without a new vote each month: they are automatic stabilizers. Congress and the executive branch can also change purchases, taxes, or transfers deliberately, but identifying the downturn, passing legislation, and delivering the policy take time. A well-timed policy may support demand; a delayed policy can arrive after conditions have changed.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Chapter 9: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt</span>"
+    ]
+  },
+  {
+    "objectID": "ch09_fiscal_policy.html#government-purchases-and-taxes-in-a-simple-model",
+    "href": "ch09_fiscal_policy.html#government-purchases-and-taxes-in-a-simple-model",
+    "title": "9  Chapter 9: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt",
+    "section": "9.3 Government Purchases and Taxes in a Simple Model",
+    "text": "9.3 Government Purchases and Taxes in a Simple Model\nIn a closed-economy model with lump-sum taxes and fixed prices, planned spending is \\(AE=C_0+c(Y-T)+I_p+G\\). An increase in \\(G\\) raises autonomous spending directly. A tax reduction raises disposable income, but households spend only the marginal propensity \\(c\\) of the extra income. The corresponding simple multipliers are: \\[\\begin{equation}\nk_G=\\frac{1}{1-c}, \\qquad k_T=-\\frac{c}{1-c}.\n\\end{equation}\\] The tax multiplier has a negative sign because a tax increase lowers equilibrium output in this model. If taxes rise proportionally with income at rate \\(t\\), one common version is \\(k_G=1/[1-c(1-t)]\\). Imports, interest-rate responses, price changes, and supply constraints alter these multipliers.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Chapter 9: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt</span>"
+    ]
+  },
+  {
+    "objectID": "ch09_fiscal_policy.html#graph-description-fiscal-policy-in-adas",
+    "href": "ch09_fiscal_policy.html#graph-description-fiscal-policy-in-adas",
+    "title": "9  Chapter 9: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt",
+    "section": "9.4 Graph Description: Fiscal Policy in AD–AS",
+    "text": "9.4 Graph Description: Fiscal Policy in AD–AS\nOn an AD–AS graph with real GDP on the horizontal axis and the price level on the vertical axis, an increase in government purchases shifts AD right. In the short run, output and the price level generally rise. If the economy is near capacity, more of the effect may appear in prices; if resources are idle, more may appear in output. The result is not an unconditional promise that fiscal expansion pays for itself or that every spending program has the same multiplier.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Chapter 9: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt</span>"
+    ]
+  },
+  {
+    "objectID": "ch09_fiscal_policy.html#automatic-stabilizers-and-discretionary-choices",
+    "href": "ch09_fiscal_policy.html#automatic-stabilizers-and-discretionary-choices",
+    "title": "9  Chapter 9: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt",
+    "section": "9.5 Automatic Stabilizers and Discretionary Choices",
+    "text": "9.5 Automatic Stabilizers and Discretionary Choices\nProgressive income taxes, unemployment benefits, and some means-tested transfers tend to support disposable income when activity weakens and withdraw support as incomes recover. Their effect depends on eligibility rules and take-up. Discretionary measures include a temporary purchase, tax credit, or transfer enacted in response to conditions. Policymakers weigh stabilization benefits against opportunity cost, administrative capacity, distributional goals, and the risk that support persists after it is needed.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Chapter 9: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt</span>"
+    ]
+  },
+  {
+    "objectID": "ch09_fiscal_policy.html#deficits-are-flows-debt-is-a-stock",
+    "href": "ch09_fiscal_policy.html#deficits-are-flows-debt-is-a-stock",
+    "title": "9  Chapter 9: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt",
+    "section": "9.6 Deficits Are Flows; Debt Is a Stock",
+    "text": "9.6 Deficits Are Flows; Debt Is a Stock\nA budget deficit is the excess of outlays over revenues during a fiscal period. Public debt is the accumulated stock of liabilities at a point in time, subject to accounting adjustments. An annual deficit can add to debt, but a change in debt also reflects other transactions and valuation choices. Compare these concepts as flow versus stock, just as saving during a year differs from wealth on a date.\n\n\n\n\n\n\nTipFRED Data: Federal Surplus or Deficit\n\n\n\nFRED series FYFSD reports the federal surplus or deficit in millions of dollars, annual by fiscal year, not seasonally adjusted; a deficit is negative. The fiscal-year timing matters when comparing it with calendar-year GDP or quarterly data. The series describes a budget outcome; by itself it cannot show how much of a deficit was caused by policy choices versus changes in economic activity.\n\n\n\n\n\n\n\n\nNoteClear It Up: A Deficit Is Not the Same as Debt\n\n\n\nThe deficit is a flow over a fiscal year; debt is a stock accumulated across years. Quoting a deficit as if it were the total debt confuses units and time dimensions.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Chapter 9: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt</span>"
+    ]
+  },
+  {
+    "objectID": "ch09_fiscal_policy.html#check-your-understanding",
+    "href": "ch09_fiscal_policy.html#check-your-understanding",
+    "title": "9  Chapter 9: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt",
+    "section": "9.7 Check Your Understanding",
+    "text": "9.7 Check Your Understanding\n\nWhich has the larger absolute multiplier in the simple lump-sum-tax model: government purchases or taxes?\nGive one automatic stabilizer and explain how it changes over the business cycle.\nWhy should an annual fiscal-year deficit series not be compared casually with one quarter of GDP?\n\nAnswers: (1) \\(|k_G|=1/(1-c)\\) exceeds \\(|k_T|=c/(1-c)\\) for \\(0&lt;c&lt;1\\). (2) Unemployment benefits rise as eligible unemployment rises, supporting disposable income. (3) They differ in time period and units; align annual fiscal-year flows with a comparable denominator.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Chapter 9: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt</span>"
+    ]
+  },
+  {
+    "objectID": "ch10_money_banking_fed.html#why-money-and-banks-matter",
+    "href": "ch10_money_banking_fed.html#why-money-and-banks-matter",
+    "title": "10  Chapter 10: Money, Banking, and the Federal Reserve System",
+    "section": "10.2 Why Money and Banks Matter",
+    "text": "10.2 Why Money and Banks Matter\nA household can hold money to make payments while a firm uses deposits to meet payroll. Banks connect savers and borrowers, provide payment services, and transform short-term liabilities into longer-term loans. This transformation can support investment, but it exposes banks to liquidity and credit risk. A bank may be solvent because its assets exceed liabilities yet still face a liquidity problem if many depositors demand payment at once and assets cannot be sold quickly without loss.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 10: Money, Banking, and the Federal Reserve System</span>"
+    ]
+  },
+  {
+    "objectID": "ch10_money_banking_fed.html#a-bank-balance-sheet",
+    "href": "ch10_money_banking_fed.html#a-bank-balance-sheet",
+    "title": "10  Chapter 10: Money, Banking, and the Federal Reserve System",
+    "section": "10.3 A Bank Balance Sheet",
+    "text": "10.3 A Bank Balance Sheet\nA simplified balance sheet records assets on one side and liabilities plus equity on the other: \\[\\begin{equation}\next{Reserves}+\\text{Loans}+\\text{Securities}=\\text{Deposits}+\\text{Borrowing}+\\text{Equity}.\n\\end{equation}\\] Deposits are liabilities of the bank because the bank owes payment to depositors. Loans are assets because borrowers owe payments to the bank. Equity absorbs losses before depositors and other creditors. If loan defaults rise, bank capital can fall; if depositors withdraw rapidly, a bank may need liquid assets or central-bank funding.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 10: Money, Banking, and the Federal Reserve System</span>"
+    ]
+  },
+  {
+    "objectID": "ch10_money_banking_fed.html#how-lending-creates-deposits",
+    "href": "ch10_money_banking_fed.html#how-lending-creates-deposits",
+    "title": "10  Chapter 10: Money, Banking, and the Federal Reserve System",
+    "section": "10.4 How Lending Creates Deposits",
+    "text": "10.4 How Lending Creates Deposits\nWhen a bank approves a loan and credits a borrower’s deposit account, its balance sheet expands: the loan asset and deposit liability rise together. If the borrower pays someone at another bank, the banks settle the payment using reserves or other settlement arrangements. Lending is constrained by capital, liquidity, funding costs, credit risk, regulation, and loan demand; it is not simply a mechanical process in which a fixed stock of reserves is multiplied without limit.\nThe textbook deposit multiplier \\(1/rr\\) is a special model with a binding reserve requirement, no excess reserves, no currency drain, and willing banks and borrowers. It can illustrate repeated redepositing under those assumptions, but it is not a reliable general description of modern monetary policy or a forecasting formula for bank lending.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 10: Money, Banking, and the Federal Reserve System</span>"
+    ]
+  },
+  {
+    "objectID": "ch10_money_banking_fed.html#monetary-aggregates-and-current-definitions",
+    "href": "ch10_money_banking_fed.html#monetary-aggregates-and-current-definitions",
+    "title": "10  Chapter 10: Money, Banking, and the Federal Reserve System",
+    "section": "10.5 Monetary Aggregates and Current Definitions",
+    "text": "10.5 Monetary Aggregates and Current Definitions\nM1 and M2 are statistical measures of money-like assets, not physical quantities of all wealth. Under the Federal Reserve’s current H.6 definitions, M1 includes currency, demand deposits, and other liquid deposits, including savings deposits. M2 adds small-denomination time deposits and retail money-market fund balances, with specified retirement-account adjustments. The inclusion of savings deposits in other liquid deposits took effect in 2020, so researchers must read series notes before comparing historical definitions.\n\n\n\n\n\n\nTipFRED Data: M1 and M2 Series\n\n\n\nFRED’s M1SL and M2SL series report seasonally adjusted monthly money-stock levels in billions of dollars. FRED notes that M1SL includes other liquid deposits beginning in May 2020, while M2SL is constructed from M1 plus additional components and adjustments. A rise in an aggregate is not by itself evidence that bank lending or consumer spending rose by the same amount; definitions, portfolio shifts, and financial behavior matter.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 10: Money, Banking, and the Federal Reserve System</span>"
+    ]
+  },
+  {
+    "objectID": "ch10_money_banking_fed.html#the-federal-reserves-institutional-roles",
+    "href": "ch10_money_banking_fed.html#the-federal-reserves-institutional-roles",
+    "title": "10  Chapter 10: Money, Banking, and the Federal Reserve System",
+    "section": "10.6 The Federal Reserve’s Institutional Roles",
+    "text": "10.6 The Federal Reserve’s Institutional Roles\nThe Federal Reserve is the U.S. central bank. Its responsibilities include monetary policy, payment-system functions, and supervision and regulation of many banking organizations, with mandates and tools set by law. Commercial banks are private or public-chartered institutions that take deposits and make loans; they are not branches of the central bank. Deposit insurance, capital requirements, liquidity rules, and lender-of-last-resort facilities address different risks and do not eliminate every possibility of failure.\n\n\n\n\n\n\nNoteClear It Up: Reserves Are Not the Same as Bank Capital\n\n\n\nReserves are liquid assets used for settlement and withdrawals. Capital is the residual claim that absorbs losses. A bank can hold ample reserves yet have weak capital, or have strong capital but insufficient immediately available liquidity.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 10: Money, Banking, and the Federal Reserve System</span>"
+    ]
+  },
+  {
+    "objectID": "ch10_money_banking_fed.html#check-your-understanding",
+    "href": "ch10_money_banking_fed.html#check-your-understanding",
+    "title": "10  Chapter 10: Money, Banking, and the Federal Reserve System",
+    "section": "10.7 Check Your Understanding",
+    "text": "10.7 Check Your Understanding\n\nIn a bank balance sheet, is a customer deposit an asset or liability for the bank?\nWhy is \\(1/rr\\) not a universal predictor of modern bank lending?\nWhat change to M1’s definition should analysts note when studying data across 2020?\n\nAnswers: (1) A liability. (2) The multiplier assumes restrictive conditions on reserves, lending, and cash holdings that need not hold. (3) Savings deposits were included as other liquid deposits in M1 beginning in 2020.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 10: Money, Banking, and the Federal Reserve System</span>"
+    ]
+  },
+  {
+    "objectID": "ch11_monetary_policy.html#from-the-policy-decision-to-market-rates",
+    "href": "ch11_monetary_policy.html#from-the-policy-decision-to-market-rates",
+    "title": "11  Chapter 11: Monetary Policy Implementation and the Ample-Reserves Regime",
+    "section": "11.2 From the Policy Decision to Market Rates",
+    "text": "11.2 From the Policy Decision to Market Rates\nThe Federal Open Market Committee sets a target range for the federal funds rate. In the current ample-reserves framework, administered rates, especially interest on reserve balances (IORB), help keep overnight rates within the target range. The overnight reverse repurchase facility provides an additional option for eligible counterparties. The discount window offers collateralized lending to eligible institutions. These tools operate through institutions and markets; the Fed does not simply dictate every loan or mortgage rate.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 11: Monetary Policy Implementation and the Ample-Reserves Regime</span>"
+    ]
+  },
+  {
+    "objectID": "ch11_monetary_policy.html#the-transmission-mechanism",
+    "href": "ch11_monetary_policy.html#the-transmission-mechanism",
+    "title": "11  Chapter 11: Monetary Policy Implementation and the Ample-Reserves Regime",
+    "section": "11.3 The Transmission Mechanism",
+    "text": "11.3 The Transmission Mechanism\nIf the policy stance tightens, short-term market rates generally rise. Longer-term borrowing costs may rise as expectations adjust; households can delay purchases of durable goods, and firms may postpone investment. Weaker interest-sensitive spending can reduce aggregate demand, output, and inflation pressure over time. An easing can work in the opposite direction. Exchange rates, credit conditions, expectations, and global events can amplify or offset these channels, and monetary policy affects demand with uncertain lags.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 11: Monetary Policy Implementation and the Ample-Reserves Regime</span>"
+    ]
+  },
+  {
+    "objectID": "ch11_monetary_policy.html#graph-description-policy-and-aggregate-demand",
+    "href": "ch11_monetary_policy.html#graph-description-policy-and-aggregate-demand",
+    "title": "11  Chapter 11: Monetary Policy Implementation and the Ample-Reserves Regime",
+    "section": "11.4 Graph Description: Policy and Aggregate Demand",
+    "text": "11.4 Graph Description: Policy and Aggregate Demand\nIn the money-market diagram, the vertical axis is the short-term nominal interest rate and the horizontal axis is reserve balances or overnight funding. Under abundant reserves, changes in administered rates shift the range in which overnight rates trade; the classic scarcity-of-reserves intersection is not the whole operating story. In AD–AS, a policy easing that lowers borrowing costs may shift AD right over time, while a tightening may shift it left. The rate decision is not a direct movement along AD caused by the price level.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 11: Monetary Policy Implementation and the Ample-Reserves Regime</span>"
+    ]
+  },
+  {
+    "objectID": "ch11_monetary_policy.html#a-policy-rule-as-a-benchmark",
+    "href": "ch11_monetary_policy.html#a-policy-rule-as-a-benchmark",
+    "title": "11  Chapter 11: Monetary Policy Implementation and the Ample-Reserves Regime",
+    "section": "11.5 A Policy Rule as a Benchmark",
+    "text": "11.5 A Policy Rule as a Benchmark\nA Taylor-type rule summarizes how a central bank might respond to deviations of inflation and output from desired levels: \\[\\begin{equation}\ni_t=r^*+\\pi_t+\\alpha(\\pi_t-\\pi^*)+\\beta\\left(\\frac{Y_t-Y_t^*}{Y_t^*}\\right),\n\\end{equation}\\] where \\(i_t\\) is a nominal policy rate, \\(r^*\\) is an equilibrium real-rate benchmark, \\(\\pi_t\\) is inflation, \\(\\pi^*\\) is the inflation objective, and \\(Y_t-Y_t^*\\) is the output gap. Coefficients \\(\\alpha\\) and \\(\\beta\\) describe responsiveness. This is a guide for analysis, not a law that the FOMC must follow; estimates of potential output and the equilibrium real rate are uncertain.\n\n\n\n\n\n\nTipFRED Data: Effective Federal Funds Rate\n\n\n\nFRED’s FEDFUNDS series is the monthly average of daily effective federal funds rates, in percent and not seasonally adjusted. It is an observed market rate influenced by policy implementation, not the FOMC target range itself. Compare it with policy announcements and other indicators before attributing a change to a particular decision.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 11: Monetary Policy Implementation and the Ample-Reserves Regime</span>"
+    ]
+  },
+  {
+    "objectID": "ch11_monetary_policy.html#the-effective-lower-bound-and-policy-limits",
+    "href": "ch11_monetary_policy.html#the-effective-lower-bound-and-policy-limits",
+    "title": "11  Chapter 11: Monetary Policy Implementation and the Ample-Reserves Regime",
+    "section": "11.6 The Effective Lower Bound and Policy Limits",
+    "text": "11.6 The Effective Lower Bound and Policy Limits\nWhen nominal short-term rates approach their effective lower bound, conventional rate cuts may have less room to stimulate demand. The Federal Reserve can use forward guidance and asset purchases, subject to legal authority, market functioning, and expected benefits. These tools still work through expectations and financial conditions; they do not guarantee a precise output or inflation result.\n\n\n\n\n\n\nNoteClear It Up: The Fed Controls a Policy Instrument, Not GDP\n\n\n\nThe central bank can influence financial conditions, but output and inflation also respond to fiscal policy, supply shocks, global markets, and private expectations. A policy-rate change is not a one-for-one change in real GDP.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 11: Monetary Policy Implementation and the Ample-Reserves Regime</span>"
+    ]
+  },
+  {
+    "objectID": "ch11_monetary_policy.html#check-your-understanding",
+    "href": "ch11_monetary_policy.html#check-your-understanding",
+    "title": "11  Chapter 11: Monetary Policy Implementation and the Ample-Reserves Regime",
+    "section": "11.7 Check Your Understanding",
+    "text": "11.7 Check Your Understanding\n\nWhy is FEDFUNDS not exactly the same thing as the FOMC target range?\nTrace one channel through which a higher policy rate may lower aggregate demand.\nWhy should a Taylor-type rule be treated as a benchmark rather than a mechanical instruction?\n\nAnswers: (1) FEDFUNDS is an observed monthly average effective market rate; the Committee sets a target range. (2) Higher rates can raise borrowing costs, reducing planned consumption or investment. (3) Key variables and parameters are uncertain, and policy must account for multiple shocks and risks.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 11: Monetary Policy Implementation and the Ample-Reserves Regime</span>"
+    ]
+  },
+  {
+    "objectID": "ch12_open_economy_macroeconomics.html#trade-spending-and-the-current-account",
+    "href": "ch12_open_economy_macroeconomics.html#trade-spending-and-the-current-account",
+    "title": "12  Chapter 12: Open-Economy Macroeconomics, Exchange Rates, and the Balance of Payments",
+    "section": "12.2 Trade, Spending, and the Current Account",
+    "text": "12.2 Trade, Spending, and the Current Account\nAn open economy buys and sells goods and services across borders and exchanges financial claims. Exports are domestic production purchased abroad; imports are foreign production purchased domestically. A trade deficit means imports of goods and services exceed exports over the measured period. It does not by itself show whether trade is beneficial or harmful: consumers and firms may gain from lower-cost imports, while some domestic producers face adjustment costs.\nIn a simplified national-accounting model, net exports are \\(NX=X-M\\). With national saving \\(S=Y-C-G\\) and investment \\(I\\), the identity is \\(S-I=NX\\). The official current account is broader: it includes the balance on goods and services plus net primary income and transfers. In the balance of payments, current-account transactions are matched by financial flows and other accounting items under a specified sign convention. Avoid treating the trade balance and the entire current account as identical.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Chapter 12: Open-Economy Macroeconomics, Exchange Rates, and the Balance of Payments</span>"
+    ]
+  },
+  {
+    "objectID": "ch12_open_economy_macroeconomics.html#the-foreign-exchange-market-graph-description",
+    "href": "ch12_open_economy_macroeconomics.html#the-foreign-exchange-market-graph-description",
+    "title": "12  Chapter 12: Open-Economy Macroeconomics, Exchange Rates, and the Balance of Payments",
+    "section": "12.3 The Foreign-Exchange Market: Graph Description",
+    "text": "12.3 The Foreign-Exchange Market: Graph Description\nTo analyze the dollar, place the quantity of dollars traded on the horizontal axis and the foreign-currency price of one dollar on the vertical axis. Demand for dollars comes from foreign buyers who need dollars to purchase U.S. exports or U.S. assets; supply comes from U.S. residents exchanging dollars to buy foreign goods and assets. If demand for dollars rises relative to supply, the dollar appreciates in this quotation. A stronger dollar makes imports cheaper in dollars and U.S. exports more expensive to foreign buyers, other things equal. Actual trade quantities may adjust slowly and depend on contracts and elasticities.\nExchange-rate quotations must be read carefully. If the rate is dollars per euro, an increase means the euro appreciates against the dollar. If it is euros per dollar, the same movement is a dollar appreciation. Always state which currency is the numerator.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Chapter 12: Open-Economy Macroeconomics, Exchange Rates, and the Balance of Payments</span>"
+    ]
+  },
+  {
+    "objectID": "ch12_open_economy_macroeconomics.html#saving-investment-and-international-capital-flows",
+    "href": "ch12_open_economy_macroeconomics.html#saving-investment-and-international-capital-flows",
+    "title": "12  Chapter 12: Open-Economy Macroeconomics, Exchange Rates, and the Balance of Payments",
+    "section": "12.4 Saving, Investment, and International Capital Flows",
+    "text": "12.4 Saving, Investment, and International Capital Flows\nIn a simplified setting, a country that invests more than it saves borrows the difference from abroad and runs a current-account deficit; a country that saves more than it invests lends abroad and runs a surplus. This is an accounting relationship, not a claim that one flow alone causes the other. Returns, risk, demographics, fiscal policy, and global demand for assets can influence both saving and investment.\n\n\n\n\n\n\nTipFRED Data: Trade Balance and Dollar Index\n\n\n\nFRED BOPGSTB measures the U.S. trade balance in goods and services on a balance-of-payments basis, in millions of dollars, monthly and seasonally adjusted. DTWEXBGS is the Federal Reserve’s Nominal Broad U.S. Dollar Index, a daily index with January 2006=100 and not seasonally adjusted. The first is a flow over a month; the second is an index of exchange-rate movements. Their co-movement does not establish that the dollar caused a particular trade-balance change.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Chapter 12: Open-Economy Macroeconomics, Exchange Rates, and the Balance of Payments</span>"
+    ]
+  },
+  {
+    "objectID": "ch12_open_economy_macroeconomics.html#check-your-understanding",
+    "href": "ch12_open_economy_macroeconomics.html#check-your-understanding",
+    "title": "12  Chapter 12: Open-Economy Macroeconomics, Exchange Rates, and the Balance of Payments",
+    "section": "12.6 Check Your Understanding",
+    "text": "12.6 Check Your Understanding\n\nIf \\(S=400\\) and \\(I=450\\) in the simplified identity, what is \\(NX\\)?\nUnder a foreign-currency-per-dollar quotation, what does a rise in the rate mean?\nName the two policies a country must choose between if it wants both fixed exchange rates and free capital flows.\n\nAnswers: (1) \\(NX=S-I=-50\\), a deficit in the simplified model. (2) The dollar appreciates. (3) It gives up independent monetary policy.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Chapter 12: Open-Economy Macroeconomics, Exchange Rates, and the Balance of Payments</span>"
+    ]
+  },
+  {
+    "objectID": "ch09_fiscal_policy.html#automatic-vs.-discretionary-fiscal-policy",
+    "href": "ch09_fiscal_policy.html#automatic-vs.-discretionary-fiscal-policy",
+    "title": "9  Chapter 9: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt",
+    "section": "",
+    "text": "Automatic Stabilizers: Progressive taxes and unemployment compensation automatically mitigate cyclical swings without legislative delays.\nDiscretionary Policy: Deliberate changes in statutory taxation or spending, subject to recognition and implementation lags.",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Chapter 9: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt</span>"
+    ]
+  },
+  {
+    "objectID": "ch10_money_banking_fed.html#fractional-reserve-banking-and-multipliers",
+    "href": "ch10_money_banking_fed.html#fractional-reserve-banking-and-multipliers",
+    "title": "10  Chapter 10: Money, Banking, and the Federal Reserve System",
+    "section": "10.2 Fractional Reserve Banking and Multipliers",
+    "text": "10.2 Fractional Reserve Banking and Multipliers\nBanks expand deposits through commercial lending. Under fixed reserve requirements without excess reserve holding, the theoretical deposit multiplier is: \\[\\begin{equation}\nm = \\frac{1}{rr}\n\\end{equation}\\]",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Chapter 10: Money, Banking, and the Federal Reserve System</span>"
+    ]
+  },
+  {
+    "objectID": "ch11_monetary_policy.html#the-taylor-rule",
+    "href": "ch11_monetary_policy.html#the-taylor-rule",
+    "title": "11  Chapter 11: Monetary Policy Implementation and the Ample-Reserves Regime",
+    "section": "11.2 The Taylor Rule",
+    "text": "11.2 The Taylor Rule\n\\[\\begin{equation}\ni_t = r^* + \\pi_t + 0.5(\\pi_t - \\pi^*) + 0.5\\left(\\frac{Y_t - Y^*}{Y^*}\\right)\n\\end{equation}\\]",
+    "crumbs": [
+      "Short-Run Fluctuations & Stabilization",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Chapter 11: Monetary Policy Implementation and the Ample-Reserves Regime</span>"
+    ]
+  }
+]

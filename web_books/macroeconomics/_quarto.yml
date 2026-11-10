@@ -1,0 +1,46 @@
+project:
+  type: book
+  output-dir: ../../dist/web/macro
+
+book:
+  title: "Principles of Macroeconomics"
+  subtitle: "An Institutional and Social Science Perspective"
+  author: "Norman Lo"
+  date: "2026"
+  search: true
+  sidebar:
+    style: "docked"
+    search: true
+    collapse-level: 1
+  page-navigation: true
+  chapters:
+    - index.qmd
+    - part: "Macroeconomic Foundations & Measurement"
+      chapters:
+        - ch01_principles.qmd
+        - ch02_macro_ppf.qmd
+        - ch03_supply_demand.qmd
+        - ch04_gdp_accounting.qmd
+        - ch05_unemployment_inflation.qmd
+    - part: "Long-Run Growth & Financial Systems"
+      chapters:
+        - ch06_savings_investment_financial_system.qmd
+        - ch07_aggregate_expenditure_multiplier.qmd
+    - part: "Short-Run Fluctuations & Stabilization"
+      chapters:
+        - ch08_aggregate_demand_aggregate_supply.qmd
+        - ch09_fiscal_policy.qmd
+        - ch10_money_banking_fed.qmd
+        - ch11_monetary_policy.qmd
+        - ch12_open_economy_macroeconomics.qmd
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-copy: true
+    html-math-method: mathjax

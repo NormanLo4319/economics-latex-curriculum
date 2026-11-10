@@ -1,0 +1,67 @@
+\documentclass[11pt,letterpaper]{article}
+\input{../../shared/preamble.tex}
+\input{../../shared/tikz-settings.tex}
+
+\begin{document}
+
+\title{\Huge\bfseries\color{SlateBlue} Chapter 5: Employment, Unemployment Metrics, and the Price Level}
+\author{\large Principles of Macroeconomics Curriculum}
+\date{2026}
+\maketitle
+
+\thispagestyle{plain}
+
+\begin{abstract}
+This chapter provides a rigorous, pedagogical treatment of Chapter 5: Employment, Unemployment Metrics, and the Price Level, benchmarked to standard principles curriculum.
+\end{abstract}
+
+\tableofcontents
+\vspace{1.5em}
+\hrule
+\vspace{1.5em}
+
+\section{Learning Outcomes and Key Terms}
+Students should calculate labor-market rates, interpret what the unemployment rate does and does not measure, and relate cyclical unemployment to output gaps without confusing correlation with causation. These objectives support MA-1 and C2002-1. Key terms include employed, unemployed, labor force, participation rate, U-3, underemployment, natural rate, and output gap.
+
+\section{How a Household Enters the Labor Statistics}
+The Bureau of Labor Statistics classifies people in the civilian noninstitutional population age 16 and older using a household survey. A person is employed if they did paid work or had a job from which they were temporarily absent. A person is unemployed if they had no job, were available for work, and actively looked for work in the previous four weeks, or were on temporary layoff under the survey rules. Everyone else is not in the labor force. These are operational definitions for consistent measurement, not judgments about whether someone needs a job.
+
+The labor force is the employed plus the unemployed. A discouraged worker who wants a job but stopped searching is not counted as unemployed under U-3; they are outside the labor force. A person working part time for economic reasons is counted as employed even if they want full-time work. Broader BLS measures include additional forms of labor underutilization.
+
+\section{Rates and Their Denominators}
+The unemployment rate uses the labor force, not the entire population. The labor-force participation rate and employment-population ratio answer different questions:
+\begin{align}
+LF &= E+U, \\
+u &= \frac{U}{LF}\times 100\%, \\
+LFPR &= \frac{LF}{P}\times 100\%, \\
+EPOP &= \frac{E}{P}\times 100\%.
+\end{align}
+Here $E$ is employment, $U$ is unemployment, and $P$ is the civilian noninstitutional population age 16 and older. Rates can move for different reasons. If people stop searching, the unemployment rate may fall even if employment does not rise; the participation rate can reveal that denominator change.
+
+\section{Graph Description: Cycles and the Natural Rate}
+On a time-series graph, put months or quarters on the horizontal axis and the unemployment rate on the vertical axis. Recessions often coincide with a rise in unemployment, followed by a gradual decline during recovery. The natural rate is not a fixed number written into the data; it is an estimated benchmark reflecting frictional and structural unemployment at a given time. The cyclical component is the gap between actual and estimated natural unemployment, and estimates are uncertain.
+
+Okun's law summarizes a historical tendency for output to be below potential when unemployment is above its sustainable benchmark. A commonly used rough relation is:
+\begin{equation}
+\frac{Y-Y^*}{Y^*}\approx -\beta(u-u^*), \qquad \beta>0.
+\end{equation}
+The coefficient varies by period and specification. This relationship is a useful model, not a fixed engineering law or proof that unemployment alone caused an output change.
+
+\begin{examplecase}{FRED Data: Reading the U-3 Series}
+FRED's UNRATE series is the BLS U-3 unemployment rate: percent, seasonally adjusted, monthly. The October 2026 observation is 4.1 percent. A single monthly rate is a snapshot, not a complete account of job quality, hours desired, discouraged workers, or the causes of a change. Pair it with labor-force participation and employment measures when interpreting a cycle.
+\end{examplecase}
+
+\begin{coreprinciple}
+\boxheader{SlateBlue}{Clear It Up: Unemployment Is a Stock; Separations and Hires Are Flows}
+The number unemployed at a point in time is a stock. New job losses, hires, exits, and entries are flows that change the stock over a period. A falling unemployment stock can result from hiring, labor-force exits, or both, so check the related flows and rates before drawing a conclusion.
+\end{coreprinciple}
+
+\section{Check Your Understanding}
+\begin{enumerate}
+  \item A person wants work, is available, but has not searched in the past four weeks. How is that person classified in U-3?
+  \item If $E=160$, $U=10$, and $P=200$, calculate the unemployment rate and participation rate.
+  \item Why might a falling unemployment rate fail to show that employment increased?
+\end{enumerate}
+Answers: (1) Not in the labor force, under the stated facts. (2) $u=10/170\times100\%=5.9\%$; $LFPR=170/200\times100\%=85\%$. (3) People may have left the labor force, reducing the denominator.
+
+\end{document}
