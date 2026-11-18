@@ -1,6 +1,8 @@
 \documentclass[11pt,letterpaper]{article}
 \input{../../shared/preamble.tex}
 \input{../../shared/tikz-settings.tex}
+\fancyhead[L]{\small\scshape\color{SlateBlue}Chapter 2: PPF and Trade}
+\usepackage{tcolorbox}
 
 \begin{document}
 
@@ -20,24 +22,271 @@ This chapter provides a rigorous, pedagogical treatment of Chapter 2: The Produc
 \hrule
 \vspace{1.5em}
 
-\section{The Production Possibilities Frontier (PPF) Model}
-The PPF illustrates the boundary of maximum output combinations achievable under fixed technology and full factor utilization.
+% -----------------------------------------------------------------------------
+% Section 2.1: The Production Possibilities Frontier and Efficiency
+% -----------------------------------------------------------------------------
+\section{The Production Possibilities Frontier and Efficiency}
+
+\subsection*{Conceptual Introduction}
+No economy—not even the wealthiest nation on earth—has enough workers, factories, farmland, and energy to produce unlimited quantities of every good simultaneously. To visualize this society-wide scarcity constraint, economists construct the \textbf{Production Possibilities Frontier (PPF)}, a curve showing the maximum combinations of two goods an economy can produce when all available resources and technology are fully and efficiently employed.
+
+Every point on or near the PPF reveals a critical truth about how an economy is performing:
+\begin{itemize}
+    \item \textbf{Productive Efficiency (Points on the Frontier):} The economy is squeezing the maximum possible output from its existing workers and machines. Along the frontier, producing more of Good $X$ is impossible without giving up some of Good $Y$.
+    \item \textbf{Inefficiency (Points Inside the Frontier):} The economy is producing below its potential due to unemployed workers, idle factories, or misallocated resources. Moving from an interior point to the frontier allows society to gain more of \emph{both} goods without any sacrifice.
+    \item \textbf{Unattainable Output (Points Outside the Frontier):} Combinations beyond the boundary cannot be achieved today given current labor, capital, and technology.
+\end{itemize}
+
+Because societies must choose \emph{which} point along the frontier best matches citizen preferences, economists also distinguish \textbf{productive efficiency} (producing at lowest possible cost on the curve) from \textbf{allocative efficiency} (choosing the specific point on the curve where marginal social benefit equals marginal social cost, $MB = MC$).
+
+\noindent\textbf{Real-World Connection.} During the 2020 recession, the U.S. unemployment rate reached $14.7\%$ in April, its highest seasonally adjusted level in the BLS series dating to 1948, as reported in the U.S. Bureau of Labor Statistics' \emph{The Employment Situation---April 2020} (\url{https://www.bls.gov/news.release/archives/empsit_05082020.htm}). In a PPF model, unused workers and capacity are represented by a point inside the frontier; the diagram is conceptual rather than a measured location. Wartime conversion of civilian production to military production is another illustration: at full use of resources, shifting output toward one good requires sacrificing some of another.
+
+\subsection*{Visual Representation}
+Figure~\ref{fig:ppf_efficiency} illustrates a bowed-out Production Possibilities Frontier comparing clean-energy wind turbines ($X$) against commercial cargo ships ($Y$), marking efficient, inefficient, and unattainable allocations.
+
+\begin{tcolorbox}[colback=yellow!10!white,colframe=orange!80!black,title=\textbf{Clear It Up: Productive Efficiency vs. Allocative Efficiency}]
+Every single point \emph{on} the PPF is \textbf{productively efficient} because no resources are wasted. However, only \emph{one} specific point on the PPF is \textbf{allocatively efficient}—the mix of goods society actually wants most ($MB = MC$). Producing $100\%$ left-handed baseball gloves and zero right-handed gloves is productively efficient if no leather is wasted, yet completely allocatively inefficient!
+\end{tcolorbox}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.05]
+    % Axes
+    \draw[->, thick] (0,0) -- (6.8,0) node[below] {Wind Turbines ($X$)};
+    \draw[->, thick] (0,0) -- (0,6.0) node[left] {Cargo Ships ($Y$)};
+    \node[below left] at (0,0) {$0$};
+
+    % Bowed-out PPF curve passing through the efficient points
+    \draw[very thick, color=SlateBlue] plot[smooth] coordinates {(0,5.0) (2.8,4.05) (4.4,2.45) (5.5,0)};
+
+    % Points on frontier
+    \coordinate (B) at (2.8,4.05);
+    \coordinate (C) at (4.4,2.45);
+    \coordinate (U) at (2.2,1.8);
+    \coordinate (N) at (5.0,4.5);
+
+    \filldraw[SlateBlue] (B) circle (2.2pt) node[above right] {$B$ (Efficient)};
+    \filldraw[SlateBlue] (C) circle (2.2pt) node[above right] {$C$ (Efficient)};
+    \filldraw[gray!80!black] (U) circle (2.2pt) node[below left] {$U$ (Inefficient / Unemployment)};
+    \filldraw[Terracotta] (N) circle (2.2pt) node[above right] {$N$ (Unattainable)};
+
+    % Dashed projections
+    \draw[dashed, gray] (2.8,0) node[below, black] {$X_B$} -- (B) -- (0,4.05) node[left, black] {$Y_B$};
+    \draw[dashed, gray] (4.4,0) node[below, black] {$X_C$} -- (C) -- (0,2.45) node[left, black] {$Y_C$};
+\end{tikzpicture}
+\caption{The Production Possibilities Frontier. Points $B$ and $C$ lie on the frontier and represent full employment and productive efficiency. Point $U$ lies inside the frontier (idle resources), while point $N$ is currently unattainable.}
+\label{fig:ppf_efficiency}
+\end{figure}
+
+\subsection*{Mathematical Foundation}
+Along a linear PPF connecting vertical intercept $Y_{\max}$ and horizontal intercept $X_{\max}$, the \textbf{Marginal Rate of Transformation ($MRT$)}—the opportunity cost of producing one additional unit of $X$—is the absolute slope of the line:
 \begin{equation}
-MRT = -\frac{\Delta Y}{\Delta X} = \left|\frac{dY}{dX}\right| = \frac{\text{Quantity of Good } Y \text{ Forgone}}{\text{Quantity of Good } X \text{ Gained}}
+MRT = \left|\frac{\Delta Y}{\Delta X}\right| = \frac{Y_{\max}}{X_{\max}}
 \end{equation}
 
-\section{Law of Increasing Opportunity Cost}
-Concave curvature reflects imperfect factor adaptability. As resources shift toward one sector, inputs progressively less suited to that industry must be utilized, driving opportunity costs upward.
+\noindent\textbf{Worked Problem:}
+A small island nation can produce a maximum of $200$ tons of mangoes per month if it devotes all labor to farming, or $50$ fishing boats per month if it devotes all labor to boatbuilding. Assuming a linear PPF with constant opportunity cost:
+\begin{enumerate}
+    \item Write the equation of the island's PPF with mangoes ($M$) on the vertical axis and boats ($B$) on the horizontal axis.
+    \item Calculate the opportunity cost of building $1$ fishing boat and the opportunity cost of harvesting $1$ ton of mangoes.
+    \item Determine whether the bundle $(B = 30, M = 90)$ is efficient, inefficient, or unattainable.
+\end{enumerate}
 
-\section{Ricardian Comparative Advantage}
-Comparative advantage is determined strictly by lower domestic opportunity cost.
-\begin{coreprinciple}
-\boxheader{Terracotta}{Terms of Trade Rule}
-Mutually beneficial exchange requires the Terms of Trade ($TOT$) to settle strictly between both domestic opportunity cost ratios:
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Write the Linear PPF Equation:}
+    The vertical intercept is $M_{\max} = 200$ and the horizontal intercept is $B_{\max} = 50$. The slope is $-\frac{200}{50} = -4$:
+    \[
+    M = 200 - 4B
+    \]
+
+    \item \textbf{Compute Opportunity Costs:}
+    \[
+    \text{Opportunity Cost of } 1 \text{ Boat} = \frac{200\text{ mangoes}}{50\text{ boats}} = \mathbf{4\text{ tons of mangoes}}
+    \]
+    \[
+    \text{Opportunity Cost of } 1 \text{ Ton of Mangoes} = \frac{50\text{ boats}}{200\text{ mangoes}} = \mathbf{0.25\text{ fishing boats}}
+    \]
+
+    \item \textbf{Evaluate Bundle $(B = 30, M = 90)$:}
+    Plug $B = 30$ into the PPF equation to find the maximum possible mango output:
+    \[
+    M_{\text{frontier}} = 200 - 4(30) = 200 - 120 = 80\text{ tons of mangoes}
+    \]
+    Because $90 > 80$, the bundle $(30, 90)$ lies outside the frontier and is \textbf{unattainable}.
+\end{enumerate}
+\textbf{Conclusion:} Building $30$ boats leaves only enough resources to harvest $80$ tons of mangoes, so producing $90$ tons is impossible without new technology or more workers.
+
+% -----------------------------------------------------------------------------
+% Section 2.2: Law of Increasing Opportunity Cost and Economic Growth
+% -----------------------------------------------------------------------------
+\section{Law of Increasing Opportunity Cost and Economic Growth}
+
+\subsection*{Conceptual Introduction}
+Why is the PPF in Figure~\ref{fig:ppf_efficiency} bowed outward (concave to the origin) rather than drawn as a straight line? Because economic resources are \textbf{not equally suited to producing every good}. Farmland in California's Central Valley is extraordinarily productive for growing almonds and tomatoes, whereas software engineers in Silicon Valley are specialized in writing code.
+
+When an economy first begins shifting resources out of agriculture and into software, it transfers the least fertile farmland and the most tech-savvy workers first—giving up very few crops for a huge gain in software. However, as society pushes further toward producing almost exclusively software, it must eventually pull prime agricultural land and veteran farmers out of farming, causing crop output to plummet for only a tiny gain in code. This universal pattern is the \textbf{Law of Increasing Opportunity Cost}: as production of one good expands, the opportunity cost of producing each additional unit rises.
+
+Over time, an economy can break through its existing frontier via \textbf{economic growth}—an outward shift of the entire PPF. Economic growth is driven by three engines: (1) expanding the capital stock through investment in machines and infrastructure (\textbf{capital deepening}), (2) growing the labor force or improving worker skills (\textbf{human capital}), and (3) advancing \textbf{technology}.
+
+\noindent\textbf{Real-World Connection.} A semiconductor fabrication plant requires land, skilled labor, equipment, and electricity that could have been used elsewhere while the plant is built. If the completed facility adds productive capacity, this investment can expand future production possibilities; the scale of that effect depends on the resources invested and the facility's productivity.
+
+\subsection*{Visual Representation}
+Figure~\ref{fig:ppf_growth} illustrates how prioritizing capital goods investment today shifts the entire PPF outward tomorrow, expanding future production possibilities.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.05]
+    % Axes
+    \draw[->, thick] (0,0) -- (6.5,0) node[below] {Consumer Goods ($C$)};
+    \draw[->, thick] (0,0) -- (0,5.8) node[left] {Capital Goods ($K$)};
+    \node[below left] at (0,0) {$0$};
+
+    % Initial PPF_1
+    \draw[very thick, color=SlateBlue] plot[smooth] coordinates {(0,4.2) (2.2,2.7) (4.4,0)};
+    \node[below left, color=SlateBlue, font=\small\bfseries] at (2.5,2.5) {$\text{PPF}_{2026}$};
+
+    % Expanded PPF_2
+    \draw[very thick, color=ForestGreen] plot[smooth] coordinates {(0,5.3) (2.9,3.7) (5.8,0)};
+    \node[above right, color=ForestGreen, font=\small\bfseries] at (3.6,3.3) {$\text{PPF}_{2036}$ (Growth)};
+
+    % Growth arrows
+    \draw[->, thick, color=Terracotta] (2.4,3.1) -- (3.2,4.0);
+    \draw[->, thick, color=Terracotta] (3.6,1.8) -- (4.7,2.4);
+\end{tikzpicture}
+\caption{Economic Growth Shifts the PPF Outward. Investing in physical capital, human capital, and technological innovation expands an economy's productive capacity from the 2026 frontier to the 2036 frontier.}
+\label{fig:ppf_growth}
+\end{figure}
+
+\subsection*{Mathematical Foundation}
+Along a curved PPF, the opportunity cost between two discrete points $(X_1, Y_1)$ and $(X_2, Y_2)$ is computed by dividing the vertical drop in $Y$ by the horizontal gain in $X$:
 \begin{equation}
-\left|\frac{\Delta Y}{\Delta X}\right|_{\text{Region A}} < TOT < \left|\frac{\Delta Y}{\Delta X}\right|_{\text{Region B}}
+\text{Opportunity Cost of } X \text{ over interval} = \left|\frac{Y_2 - Y_1}{X_2 - X_1}\right|
 \end{equation}
-Specialization and trade shift the Consumption Possibilities Frontier ($CPF$) strictly outside the domestic autarky PPF.
-\end{coreprinciple}
+
+\noindent\textbf{Worked Problem:}
+An economy produces solar panels ($X$) and electric buses ($Y$) along a bowed-out PPF with the following efficient production combinations:
+\begin{itemize}
+    \item \textbf{Point A:} $0$ solar panels, $100$ electric buses
+    \item \textbf{Point B:} $20$ solar panels, $90$ electric buses
+    \item \textbf{Point C:} $40$ solar panels, $65$ electric buses
+    \item \textbf{Point D:} $60$ solar panels, $0$ electric buses
+\end{itemize}
+Calculate the per-unit opportunity cost of producing solar panels as the economy moves from $A \to B$, from $B \to C$, and from $C \to D$.
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Interval $A \to B$:}
+    \[
+    \text{Opportunity Cost} = \left|\frac{90 - 100}{20 - 0}\right| = \frac{10}{20} = \mathbf{0.50\text{ buses per solar panel}}
+    \]
+
+    \item \textbf{Interval $B \to C$:}
+    \[
+    \text{Opportunity Cost} = \left|\frac{65 - 90}{40 - 20}\right| = \frac{25}{20} = \mathbf{1.25\text{ buses per solar panel}}
+    \]
+
+    \item \textbf{Interval $C \to D$:}
+    \[
+    \text{Opportunity Cost} = \left|\frac{0 - 65}{60 - 40}\right| = \frac{65}{20} = \mathbf{3.25\text{ buses per solar panel}}
+    \]
+\end{enumerate}
+\textbf{Conclusion:} Per-unit opportunity cost rises from $0.50 \to 1.25 \to 3.25$ buses per panel, confirming the Law of Increasing Opportunity Cost.
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=\textbf{Optional Advanced Section: Calculus of Concave PPFs}]
+\small
+\emph{Note for Economics Majors and Quantitative Students:}
+Suppose a bowed-out PPF is described by the quadratic equation $Y = 100 - \frac{1}{4}X^2$ for $X \in [0, 20]$. The instantaneous Marginal Rate of Transformation ($MRT$) is the absolute value of the first derivative:
+\[
+MRT(X) = \left|\frac{dY}{dX}\right| = \frac{1}{2}X
+\]
+Because the second derivative of $MRT(X)$ with respect to $X$ is $\frac{d(MRT)}{dX} = \frac{1}{2} > 0$, opportunity cost strictly increases with $X$ at every point along the frontier.
+\end{tcolorbox}
+
+% -----------------------------------------------------------------------------
+% Section 2.3: Comparative Advantage and Gains from Trade
+% -----------------------------------------------------------------------------
+\section{Comparative Advantage and Gains from Trade}
+
+\subsection*{Conceptual Introduction}
+Why do individuals, cities, and nations specialize in specific careers or industries and trade with one another instead of producing everything themselves? In 1817, economist David Ricardo proved that mutually beneficial trade does \emph{not} require being the most productive producer in the world. Instead, trade is governed by \textbf{comparative advantage}.
+
+To see why, keep two concepts strictly separate:
+\begin{itemize}
+    \item \textbf{Absolute Advantage:} The ability to produce a larger quantity of a good using the same amount of inputs (or the same output using fewer labor hours).
+    \item \textbf{Comparative Advantage:} The ability to produce a good at a \textbf{lower domestic opportunity cost} than a trading partner.
+\end{itemize}
+Even if one person or country holds an absolute advantage in \emph{every} activity, it is mathematically impossible for one party to have a comparative advantage in both goods (unless their opportunity costs are identical). When each party specializes in the good where its opportunity cost is lower and trades at a mutually agreeable \textbf{Terms of Trade ($TOT$)}, each gains access to consumption bundles beyond its domestic PPF. The expanded choice set allows each party to choose a bundle it prefers to its autarky bundle.
+
+\noindent\textbf{Real-World Connection.} The contrast between technology firms in Silicon Valley and agricultural production in the Central Valley offers a local illustration of specialization. Whether either region has a comparative advantage in a particular good depends on its opportunity cost, not simply on its reputation or absolute output.
+
+\subsection*{Visual Representation}
+Figure~\ref{fig:gains_from_trade} shows Region A's domestic PPF and its consumption possibilities frontier when it can trade at 2 tons of wheat per semiconductor.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=1cm,y=0.55cm]
+    % Axes use ten-unit increments to fit both frontiers
+    \draw[->, thick] (0,0) -- (7.2,0) node[below right] {Semiconductors ($X$, tens)};
+    \draw[->, thick] (0,0) -- (0,8.5) node[left] {Wheat ($Y$, tens)};
+    \node[below left] at (0,0) {$0$};
+
+    % Region A's domestic PPF: X + Y = 40
+    \draw[very thick, color=SlateBlue] (0,4.0) -- (4.0,0);
+    \node[left] at (0,4.0) {$40$};
+    \node[below] at (4.0,0) {$40$};
+    \node[above right, color=SlateBlue, font=\small\bfseries] at (1.0,3.5) {Region A PPF};
+
+    % Region A's consumption frontier at 2 tons of wheat per semiconductor
+    \draw[very thick, dashed, color=ForestGreen] (0,8.0) -- (4.0,0);
+    \node[right, color=ForestGreen, font=\small\bfseries] at (0.8,6.4) {CPF at $TOT=2$};
+
+    % Feasible autarky and post-trade bundles for Region A
+    \filldraw[SlateBlue] (3.0,1.0) circle (2.2pt) node[left] {Autarky $(30,10)$};
+    \filldraw[Terracotta] (3.0,2.0) circle (2.2pt) node[above right] {$C^*=(30,20)$};
+    \draw[->, thick, color=Terracotta] (4.0,0) -- (3.0,2.0);
+    \node[anchor=west, align=left, font=\scriptsize] at (4.15,1.8) {Export 10 $X$\\Import 20 $Y$};
+\end{tikzpicture}
+\caption{Trade expands Region A's feasible consumption set. After specializing in semiconductors, Region A exports 10 units for 20 tons of wheat at a terms of trade of 2 tons per semiconductor; the resulting bundle lies outside its domestic PPF.}
+\label{fig:gains_from_trade}
+\end{figure}
+
+\subsection*{Mathematical Foundation}
+For trade between Region A and Region B to benefit both sides, the \textbf{Terms of Trade ($TOT$)} for $1$ unit of Good $X$ must settle strictly between their two domestic opportunity costs:
+\begin{equation}
+\text{Opportunity Cost of } X \text{ in Region A} < TOT < \text{Opportunity Cost of } X \text{ in Region B}
+\end{equation}
+
+\noindent\textbf{Worked Problem:}
+In a single workday, \textbf{Region A} can produce either $40$ units of semiconductors ($X$) or $40$ tons of wheat ($Y$). \textbf{Region B} can produce either $10$ units of semiconductors ($X$) or $30$ tons of wheat ($Y$).
+\begin{enumerate}
+    \item Identify which region holds the absolute advantage in each good.
+    \item Calculate domestic opportunity costs and identify comparative advantage.
+    \item Verify that a Terms of Trade of $1\text{ semiconductor} = 2\text{ tons of wheat}$ benefits both regions if Region A trades $10$ semiconductors to Region B.
+\end{enumerate}
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Determine Absolute Advantage:}
+    Region A produces more semiconductors ($40 > 10$) and more wheat ($40 > 30$), so \textbf{Region A holds the absolute advantage in both goods}.
+
+    \item \textbf{Calculate Domestic Opportunity Costs:}
+    \begin{itemize}
+        \item \textbf{Region A:} One semiconductor costs $\frac{40}{40}=1$ ton of wheat; one ton of wheat costs $\frac{40}{40}=1$ semiconductor.
+        \item \textbf{Region B:} One semiconductor costs $\frac{30}{10}=3$ tons of wheat; one ton of wheat costs $\frac{10}{30}=\frac{1}{3}$ semiconductor.
+    \end{itemize}
+    Comparing opportunity costs:
+    \begin{itemize}
+        \item Region A has comparative advantage in semiconductors because $1 < 3$ tons of wheat per semiconductor.
+        \item Region B has comparative advantage in wheat because $\frac{1}{3} < 1$ semiconductor per ton of wheat.
+    \end{itemize}
+
+    \item \textbf{Verify Gains at $TOT = 2\text{ tons of wheat per semiconductor}$:}
+    \begin{itemize}
+        \item Region A specializes in semiconductors and produces $(40\ X,0\ Y)$. It exports $10\ X$ and imports $10 \times 2=20\ Y$, consuming $(30\ X,20\ Y)$. Its comparison bundle $(30\ X,10\ Y)$ is feasible on its domestic PPF, so trade makes 10 more tons of wheat available at the same semiconductor consumption.
+        \item Region B specializes in wheat and produces $(0\ X,30\ Y)$. It imports $10\ X$ and exports $10 \times 2=20\ Y$, consuming $(10\ X,10\ Y)$. Its comparison bundle $(10\ X,0\ Y)$ is feasible on its domestic PPF, so trade makes 10 more tons of wheat available at the same semiconductor consumption.
+    \end{itemize}
+\end{enumerate}
+\textbf{Conclusion:} The terms of trade ($2$ tons of wheat per semiconductor) lie between Region A's opportunity cost ($1$ ton) and Region B's ($3$ tons). Given the stated comparison bundles and the assumption that more of a good is preferred to less, each region can gain 10 tons of wheat at the same semiconductor consumption. The trade bundles lie beyond each region's domestic PPF.
 
 \end{document}

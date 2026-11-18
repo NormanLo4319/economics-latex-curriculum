@@ -445,8 +445,34 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#surplus-metrics" id="toc-surplus-metrics" class="nav-link active" data-scroll-target="#surplus-metrics"><span class="header-section-number">4.1</span> Surplus Metrics</a></li>
-  <li><a href="#deadweight-loss-of-taxation" id="toc-deadweight-loss-of-taxation" class="nav-link" data-scroll-target="#deadweight-loss-of-taxation"><span class="header-section-number">4.2</span> Deadweight Loss of Taxation</a></li>
+  <li><a href="#consumer-surplus-and-marginal-willingness-to-pay" id="toc-consumer-surplus-and-marginal-willingness-to-pay" class="nav-link active" data-scroll-target="#consumer-surplus-and-marginal-willingness-to-pay"><span class="header-section-number">4.1</span> Consumer Surplus and Marginal Willingness to Pay</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction" id="toc-conceptual-introduction" class="nav-link" data-scroll-target="#conceptual-introduction">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation" id="toc-visual-representation" class="nav-link" data-scroll-target="#visual-representation">Visual Representation</a></li>
+  <li><a href="#real-world-application-airline-dynamic-pricing-and-flight-upgrades" id="toc-real-world-application-airline-dynamic-pricing-and-flight-upgrades" class="nav-link" data-scroll-target="#real-world-application-airline-dynamic-pricing-and-flight-upgrades">Real-World Application: Airline Dynamic Pricing and Flight Upgrades</a></li>
+  <li><a href="#mathematical-foundation-algebra-level" id="toc-mathematical-foundation-algebra-level" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level">Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#producer-surplus-and-marginal-cost" id="toc-producer-surplus-and-marginal-cost" class="nav-link" data-scroll-target="#producer-surplus-and-marginal-cost"><span class="header-section-number">4.2</span> Producer Surplus and Marginal Cost</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-1" id="toc-conceptual-introduction-1" class="nav-link" data-scroll-target="#conceptual-introduction-1">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-1" id="toc-visual-representation-1" class="nav-link" data-scroll-target="#visual-representation-1">Visual Representation</a></li>
+  <li><a href="#real-world-application-coffee-shops-and-morning-espresso-sales" id="toc-real-world-application-coffee-shops-and-morning-espresso-sales" class="nav-link" data-scroll-target="#real-world-application-coffee-shops-and-morning-espresso-sales">Real-World Application: Coffee Shops and Morning Espresso Sales</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-1" id="toc-mathematical-foundation-algebra-level-1" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-1">Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#allocative-efficiency-and-price-controls" id="toc-allocative-efficiency-and-price-controls" class="nav-link" data-scroll-target="#allocative-efficiency-and-price-controls"><span class="header-section-number">4.3</span> Allocative Efficiency and Price Controls</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-2" id="toc-conceptual-introduction-2" class="nav-link" data-scroll-target="#conceptual-introduction-2">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-2" id="toc-visual-representation-2" class="nav-link" data-scroll-target="#visual-representation-2">Visual Representation</a></li>
+  <li><a href="#real-world-application-rent-control-in-san-francisco-and-new-york" id="toc-real-world-application-rent-control-in-san-francisco-and-new-york" class="nav-link" data-scroll-target="#real-world-application-rent-control-in-san-francisco-and-new-york">Real-World Application: Rent Control in San Francisco and New York</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-2" id="toc-mathematical-foundation-algebra-level-2" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-2">Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#market-distortions-taxes-wedges-and-deadweight-loss" id="toc-market-distortions-taxes-wedges-and-deadweight-loss" class="nav-link" data-scroll-target="#market-distortions-taxes-wedges-and-deadweight-loss"><span class="header-section-number">4.4</span> Market Distortions: Taxes, Wedges, and Deadweight Loss</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-3" id="toc-conceptual-introduction-3" class="nav-link" data-scroll-target="#conceptual-introduction-3">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-3" id="toc-visual-representation-3" class="nav-link" data-scroll-target="#visual-representation-3">Visual Representation</a></li>
+  <li><a href="#real-world-application-california-gasoline-excise-taxes" id="toc-real-world-application-california-gasoline-excise-taxes" class="nav-link" data-scroll-target="#real-world-application-california-gasoline-excise-taxes">Real-World Application: California Gasoline Excise Taxes</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-3" id="toc-mathematical-foundation-algebra-level-3" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-3">Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -473,22 +499,461 @@ window.Quarto = {
 </header>
 
 
-<section id="surplus-metrics" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="surplus-metrics"><span class="header-section-number">4.1</span> Surplus Metrics</h2>
-<p>Consumer Surplus (<span class="math inline">\(CS\)</span>) is the area under inverse demand above market price: <span class="math display">\[\begin{equation}
-CS = \int_0^{Q^*} [P(q) - P^*] \, dq = \frac{1}{2} Q^* (P_{\text{choke}} - P^*)
-\end{equation}\]</span> Producer Surplus (<span class="math inline">\(PS\)</span>) is the area above inverse supply below market price: <span class="math display">\[\begin{equation}
-PS = \int_0^{Q^*} [P^* - MC(q)] \, dq = \frac{1}{2} Q^* (P^* - P_{\text{min}})
-\end{equation}\]</span> Total Surplus (<span class="math inline">\(TS = CS + PS\)</span>) is maximized at competitive market equilibrium where <span class="math inline">\(MSB = MSC\)</span>.</p>
+<blockquote class="blockquote">
+<p>This chapter provides a rigorous, pedagogical treatment of Chapter 4: Consumer and Producer Surplus, Market Efficiency, and Welfare, benchmarked to standard principles curriculum.</p>
+</blockquote>
+<section id="consumer-surplus-and-marginal-willingness-to-pay" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="consumer-surplus-and-marginal-willingness-to-pay"><span class="header-section-number">4.1</span> Consumer Surplus and Marginal Willingness to Pay</h2>
+<section id="conceptual-introduction" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction">Conceptual Introduction</h3>
+<p>Have you ever walked into a store prepared to spend <span class="math inline">\(\$50\)</span> on a pair of shoes, only to find them on sale for <span class="math inline">\(\$30\)</span>? If so, you walked out with the shoes <em>and</em> an extra <span class="math inline">\(\$20\)</span> in your pocket that you were completely willing to part with. In economics, that <span class="math inline">\(\$20\)</span> gain is called your <strong>Consumer Surplus (<span class="math inline">\(CS\)</span>)</strong>. Every shopper enters the market with a personal maximum price in mind—the highest dollar amount they would pay before walking away empty-handed. Economists call this boundary your <strong>willingness to pay (WTP)</strong>. Whenever the actual market price is lower than what you were willing to pay, you capture a net financial and psychological win.</p>
+<p>In a market, buyers purchase goods one unit at a time. The very first buyers—or the first few items purchased—usually have the highest personal value to consumers (what economists sometimes call ``early buyers’’ or intramarginal units). For instance, your first cup of coffee in the morning might be worth <span class="math inline">\(\$8\)</span> to you, but the café only charges <span class="math inline">\(\$4\)</span>, giving you <span class="math inline">\(\$4\)</span> in surplus. Your second cup might be worth <span class="math inline">\(\$5\)</span>, giving you <span class="math inline">\(\$1\)</span> in surplus. By the time you consider a third cup, its value to you might drop to exactly <span class="math inline">\(\$4\)</span>. For that final unit, your willingness to pay matches the market price, yielding zero extra surplus. If price rose to <span class="math inline">\(\$4.01\)</span>, you simply would not buy it.</p>
+<p>When we add up the surplus enjoyed by every single customer in the entire market, we get <strong>Total Consumer Surplus</strong>. It represents the total dollar value of happiness, savings, and satisfaction that consumers walk away with over and above what they had to pay. When prices drop—thanks to new technology, cheaper shipping, or increased competition—consumer surplus expands, leaving households with more money left over to spend on other goals like tuition, healthcare, or savings.</p>
 </section>
-<section id="deadweight-loss-of-taxation" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="deadweight-loss-of-taxation"><span class="header-section-number">4.2</span> Deadweight Loss of Taxation</h2>
-<p>An excise tax <span class="math inline">\(t\)</span> creates a tax wedge <span class="math inline">\(P_b - P_s = t\)</span>. Deadweight loss follows Harberger’s formulation: <span class="math display">\[\begin{equation}
-DWL = \frac{1}{2} \times t \times (Q^* - Q_t)
-\end{equation}\]</span> The relative tax incidence ratio depends on elasticities: <span class="math inline">\(\frac{\Delta P_b}{\Delta P_s} = \frac{\varepsilon_s}{|\varepsilon_d|}\)</span>.</p>
+<section id="visual-representation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation">Visual Representation</h3>
+<p>Figure 1 graphs consumer surplus on a standard market diagram.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Graphing Tip: Why is Price on the Vertical Y-Axis?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In high school algebra, you usually put the independent variable on the horizontal <span class="math inline">\(x\)</span>-axis and the dependent variable on the vertical <span class="math inline">\(y\)</span>-axis (<span class="math inline">\(y = f(x)\)</span>). In economics, by historical tradition dating back to Alfred Marshall in 1890, we place <strong>Price (<span class="math inline">\(P\)</span>)</strong> on the vertical axis and <strong>Quantity (<span class="math inline">\(Q\)</span>)</strong> on the horizontal axis. When looking at a demand equation like <span class="math inline">\(P = 100 - 2Q\)</span>, to find the top vertical intercept (the <strong>choke price</strong> where nobody buys anything), simply plug in <span class="math inline">\(Q = 0\)</span>, giving <span class="math inline">\(P = \$100\)</span>.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_4_consumer_and_producer_surplus_market_efficiency_and_welfare_figure_01.svg" class="img-fluid figure-img" alt="Consumer Surplus at Equilibrium. The blue region lies below demand and above the $60 market price; at Q^*=20, its area is $400."></p>
+<figcaption>Figure 1. Consumer Surplus at Equilibrium. The blue region lies below demand and above the <span class="math inline">\(\$60\)</span> market price; at <span class="math inline">\(Q^*=20\)</span>, its area is <span class="math inline">\(\$400\)</span>.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-airline-dynamic-pricing-and-flight-upgrades" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-airline-dynamic-pricing-and-flight-upgrades">Real-World Application: Airline Dynamic Pricing and Flight Upgrades</h3>
+<p>Imagine a college student flying home for Thanksgiving break versus a business consultant booking a flight to close a critical <span class="math inline">\(\$100,000\)</span> client deal.</p>
+<ul>
+<li>The <strong>consultant</strong> has an urgent deadline. Their company’s maximum willingness to pay for a last-minute seat is <strong>$900</strong>.</li>
+<li>The <strong>student</strong> has a tight budget. Their personal maximum willingness to pay is <strong>$400</strong>.</li>
+</ul>
+<p>When both go online, the airline lists the standard coach fare at <strong>$350</strong>. Both travelers buy a ticket at that exact price, but look at the difference in their net surplus:</p>
+<p><span class="math display">\[
+\text{Consultant's Surplus} = \$900 - \$350 = \mathbf{\$550}
+\]</span></p>
+<p><span class="math display">\[
+\text{Student's Surplus} = \$400 - \$350 = \mathbf{\$50}
+\]</span></p>
+<p>Both sit in identical seats drinking the same tomato juice, but the consultant captures <span class="math inline">\(\$550\)</span> in surplus while the student captures <span class="math inline">\(\$50\)</span>. This real-world difference explains why airlines work so hard with algorithms to separate travelers and charge higher fares to business passengers whenever possible.</p>
+</section>
+<section id="mathematical-foundation-algebra-level" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level">Mathematical Foundation (Algebra Level)</h3>
+<p>Because the demand curve in our example is a straight line, the area of Consumer Surplus forms a simple right-angled triangle. You do not need any advanced calculus—just basic high school geometry:</p>
+<p><span class="math display">\[
+\text{Consumer Surplus } (CS) = \frac{1}{2} \times \text{Base} \times \text{Height}
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><span class="math inline">\(\text{Base} = Q^*\)</span> (The quantity of units bought at the market price).</li>
+<li><span class="math inline">\(\text{Height} = P_{\text{choke}} - P^*\)</span> (The vertical gap between the highest walk-away price on the demand curve and the actual price paid).</li>
+</ul>
+<p><strong>Worked Problem:</strong> A campus bookstore sells portable battery chargers according to the demand equation:</p>
+<p><span class="math display">\[
+P = 100 - 2Q
+\]</span></p>
+<p>If the market price settles at <span class="math inline">\(P^* = \$60\)</span>, calculate the total Consumer Surplus enjoyed by students.</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Find the Choke Price (<span class="math inline">\(P_{\text{choke}}\)</span>):</strong> The choke price is the vertical intercept where quantity demanded drops to zero (<span class="math inline">\(Q = 0\)</span>). Plug <span class="math inline">\(0\)</span> in for <span class="math inline">\(Q\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+P_{\text{choke}} = 100 - 2(0) = \$100
+\]</span></p>
+<p><em>Meaning: If the store charged <span class="math inline">\(\$100\)</span> or more, zero students would buy a charger.</em></p>
+<ul>
+<li><strong>Solve for the Quantity Bought (<span class="math inline">\(Q^*\)</span>):</strong> Plug the market price of <span class="math inline">\(\$60\)</span> into the demand equation and solve for <span class="math inline">\(Q\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+60 = 100 - 2Q
+\]</span></p>
+<p>Subtract <span class="math inline">\(100\)</span> from both sides:</p>
+<p><span class="math display">\[
+-40 = -2Q
+\]</span></p>
+<p>Divide both sides by <span class="math inline">\(-2\)</span>:</p>
+<p><span class="math display">\[
+Q^* = 20\text{ chargers}
+\]</span></p>
+<p><em>Meaning: At a price of <span class="math inline">\(\$60\)</span>, students purchase 20 chargers.</em></p>
+<ul>
+<li><strong>Find the Height of the Surplus Triangle:</strong></li>
+</ul>
+<p><span class="math display">\[
+\text{Height} = P_{\text{choke}} - P^* = \$100 - \$60 = \$40
+\]</span></p>
+<ul>
+<li><strong>Calculate the Area of the Consumer Surplus Triangle:</strong></li>
+</ul>
+<p><span class="math display">\[
+CS = \frac{1}{2} \times \text{Base} \times \text{Height} = \frac{1}{2} \times 20 \times \$40 = 10 \times \$40 = \mathbf{\$400}
+\]</span></p>
+<p><strong>Conclusion:</strong> Students receive a total net economic benefit of <strong>$400</strong> beyond what they paid for the chargers.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Calculus Extension
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> When demand curves are curved rather than straight lines (<span class="math inline">\(P = P(q)\)</span>), the area is found by taking the definite integral of marginal willingness to pay minus the market price from 0 to <span class="math inline">\(Q^*\)</span>:</p>
+<p><span class="math display">\[
+CS = \int_{0}^{Q^*} \left[ P(q) - P^* \right] dq
+\]</span></p>
+<p>For our linear equation <span class="math inline">\(P(q) = 100 - 2q\)</span> with <span class="math inline">\(Q^* = 20\)</span> and <span class="math inline">\(P^* = 60\)</span>:</p>
+<p><span class="math display">\[
+CS = \int_{0}^{20} (100 - 2q - 60)\,dq = \int_{0}^{20} (40 - 2q)\,dq = \left[ 40q - q^2 \right]_{0}^{20} = (40(20) - 20^2) - 0 = 800 - 400 = \mathbf{\$400}
+\]</span></p>
+<p>Notice that elementary triangle geometry and calculus yield the exact same <span class="math inline">\(\$400\)</span> result.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="producer-surplus-and-marginal-cost" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="producer-surplus-and-marginal-cost"><span class="header-section-number">4.2</span> Producer Surplus and Marginal Cost</h2>
+<section id="conceptual-introduction-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-1">Conceptual Introduction</h3>
+<p>Just as consumers gain surplus by paying less than their maximum valuation, sellers gain surplus by selling goods for more than it cost to make them. Every business owner has a minimum price they must receive before they agree to produce and sell an additional unit. Economists call this threshold their <strong>willingness to accept (WTA)</strong>, which directly equals the <strong>marginal cost (<span class="math inline">\(MC\)</span>)</strong> of producing that extra item.</p>
+<p><strong>Producer Surplus (<span class="math inline">\(PS\)</span>)</strong> is the net operating gain earned by firms. It is the gap between the money a firm collects at the market price and the minimum cost required to produce those items:</p>
+<p><span class="math display">\[
+PS = \text{Total Revenue Received} - \text{Total Variable Cost of Production}
+\]</span></p>
+<p>A vital point for business and economics students is that <strong>producer surplus is not the same thing as total accounting profit</strong>. Profit subtracts all costs, including fixed overhead like building rent, machinery leases, and insurance (<span class="math inline">\(\text{Profit} = \text{Revenue} - \text{Variable Costs} - \text{Fixed Costs}\)</span>). Producer surplus only looks at operating revenue minus the direct, day-to-day variable costs of making the product (<span class="math inline">\(PS = \text{Revenue} - \text{Variable Costs}\)</span>). That operating surplus is the cash flow a firm uses to pay its fixed rent and earn an eventual profit.</p>
+<p>Because supply curves slope upward (due to diminishing returns and rising production costs), earlier units can be produced very cheaply, generating large operating surplus. The very last unit produced breaks even on operating costs (<span class="math inline">\(P^* = MC\)</span>).</p>
+</section>
+<section id="visual-representation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-1">Visual Representation</h3>
+<p>Figure 2 depicts Producer Surplus as the orange shaded triangle located above the supply curve and below the market price line.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_4_consumer_and_producer_surplus_market_efficiency_and_welfare_figure_02.svg" class="img-fluid figure-img" alt="Producer Surplus at Equilibrium. The orange region lies above supply and below the $60 market price; at Q^*=20, its area is $400."></p>
+<figcaption>Figure 2. Producer Surplus at Equilibrium. The orange region lies above supply and below the <span class="math inline">\(\$60\)</span> market price; at <span class="math inline">\(Q^*=20\)</span>, its area is <span class="math inline">\(\$400\)</span>.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-coffee-shops-and-morning-espresso-sales" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-coffee-shops-and-morning-espresso-sales">Real-World Application: Coffee Shops and Morning Espresso Sales</h3>
+<p>Consider an independent café in San Francisco selling cold brew coffee for <strong>$5.00</strong> a cup.</p>
+<ul>
+<li>The direct variable cost (coffee beans, filtered water, compostable cup, and milk) for the barista to brew the first batch of cups is only about <strong>$1.50 per cup</strong>.</li>
+<li>On those early cups, the coffee shop earns a producer surplus of:</li>
+</ul>
+<p><span class="math display">\[
+\text{Surplus per Cup} = \$5.00 - \$1.50 = \mathbf{\$3.50}
+\]</span></p>
+<p>As the morning rush peaks, the café has to hire extra staff and run grinders continuously at higher overtime expense, pushing the marginal cost of the 300th cup up to <strong>$4.50</strong>. Even on that late cup, the café still captures <span class="math inline">\(\$0.50\)</span> in surplus.</p>
+<p>Across 300 cups, the accumulated producer surplus might total <span class="math inline">\(\$600\)</span> for the morning. Does the owner pocket all <span class="math inline">\(\$600\)</span> as pure profit? No—they must use that <span class="math inline">\(\$600\)</span> producer surplus to pay fixed bills like the <span class="math inline">\(\$4,000\)</span> monthly shop rent, electric utilities, and insurance. Whatever is left over after paying fixed costs is their economic profit.</p>
+</section>
+<section id="mathematical-foundation-algebra-level-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-1">Mathematical Foundation (Algebra Level)</h3>
+<p>For a linear supply curve, Producer Surplus (<span class="math inline">\(PS\)</span>) is calculated as the area of a right-angled triangle:</p>
+<p><span class="math display">\[
+\text{Producer Surplus } (PS) = \frac{1}{2} \times \text{Base} \times \text{Height}
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><span class="math inline">\(\text{Base} = Q^*\)</span> (The quantity sold in the market).</li>
+<li><span class="math inline">\(\text{Height} = P^* - P_{\text{min}}\)</span> (The difference between the market price received and the minimum threshold price at the bottom of the supply curve).</li>
+</ul>
+<p><strong>Worked Problem:</strong> A group of student tutoring services has an aggregate supply curve given by:</p>
+<p><span class="math display">\[
+P = 20 + 2Q
+\]</span></p>
+<p>If the equilibrium tutoring wage settles at <span class="math inline">\(P^* = \$60\)</span> per session, compute the total Producer Surplus earned by the student tutors.</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Find the Minimum Supply Price (<span class="math inline">\(P_{\text{min}}\)</span>):</strong> Plug <span class="math inline">\(Q = 0\)</span> into the supply curve:</li>
+</ul>
+<p><span class="math display">\[
+P_{\text{min}} = 20 + 2(0) = \$20
+\]</span></p>
+<p><em>Meaning: Below <span class="math inline">\(\$20\)</span>, no tutor is willing to work a session.</em></p>
+<ul>
+<li><strong>Solve for the Quantity Supplied (<span class="math inline">\(Q^*\)</span>):</strong> Set the market price equal to the supply equation:</li>
+</ul>
+<p><span class="math display">\[
+60 = 20 + 2Q \implies 40 = 2Q \implies Q^* = 20\text{ sessions}
+\]</span></p>
+<ul>
+<li><strong>Calculate the Height of the Triangle:</strong></li>
+</ul>
+<p><span class="math display">\[
+\text{Height} = P^* - P_{\text{min}} = \$60 - \$20 = \$40
+\]</span></p>
+<ul>
+<li><strong>Compute the Total Producer Surplus Area:</strong></li>
+</ul>
+<p><span class="math display">\[
+PS = \frac{1}{2} \times \text{Base} \times \text{Height} = \frac{1}{2} \times 20 \times \$40 = 10 \times \$40 = \mathbf{\$400}
+\]</span></p>
+<p><strong>Conclusion:</strong> The student tutors earn a collective operating surplus of <strong>$400</strong> above their minimum hourly opportunity costs.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Calculus Extension
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors:</em> For continuous, non-linear marginal cost curves <span class="math inline">\(MC(q)\)</span>, Producer Surplus is the integral of the market price minus marginal cost from 0 to <span class="math inline">\(Q^*\)</span>:</p>
+<p><span class="math display">\[
+PS = \int_{0}^{Q^*} \left[ P^* - MC(q) \right] dq = \int_{0}^{20} (60 - (20 + 2q))\,dq = \int_{0}^{20} (40 - 2q)\,dq = \left[ 40q - q^2 \right]_{0}^{20} = \mathbf{\$400}
+\]</span></p>
+</div>
+</div>
+</section>
+</section>
+<section id="allocative-efficiency-and-price-controls" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="allocative-efficiency-and-price-controls"><span class="header-section-number">4.3</span> Allocative Efficiency and Price Controls</h2>
+<section id="conceptual-introduction-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-2">Conceptual Introduction</h3>
+<p>When we combine both sides of the market, we arrive at the total economic gain created by voluntary trade, known as <strong>Total Social Surplus (<span class="math inline">\(TS\)</span>)</strong>:</p>
+<p><span class="math display">\[
+\text{Total Social Surplus} = \text{Consumer Surplus} + \text{Producer Surplus}
+\]</span></p>
+<p>Notice something remarkable about this equation: the market price itself actually cancels out! Price simply determines how the economic pie is divided between buyers and sellers. If the price goes up, buyers get less surplus and sellers get more; if the price goes down, buyers get more and sellers get less. But the <em>overall size</em> of the pie depends entirely on how many mutually beneficial trades are allowed to happen.</p>
+<p>A competitive market in equilibrium achieves what economists call <strong>allocative efficiency</strong>. At the point where the supply and demand curves cross, the marginal benefit to society matches the marginal cost of producing the good (<span class="math inline">\(MB = MC\)</span>). Every buyer who values the good at more than it costs to make gets one, and no resources are wasted making products that people don’t value. Economists call this condition <strong>Pareto efficiency</strong>: at this exact output level, you cannot make one person better off without making someone else worse off.</p>
+<p>When governments try to dictate prices by law—such as imposing a legal maximum price (<strong>price ceiling</strong>)—the market cannot reach this balance. If the ceiling is set below the natural equilibrium price, two things happen: sellers produce fewer units because low prices do not cover their costs, while buyers rush to purchase more because it is cheap. This creates an immediate physical <strong>shortage</strong>. More importantly, trades that both buyers and sellers wanted to make are legally blocked, shrinking the total economic pie and creating a permanent loss to society called <strong>deadweight loss</strong>.</p>
+</section>
+<section id="visual-representation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-2">Visual Representation</h3>
+<p>Figure 3 shows the market in natural balance, maximizing the total economic pie to <span class="math inline">\(\$800\)</span>. Figure 4 shows what happens when the government imposes a price ceiling at <span class="math inline">\(\$40\)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_4_consumer_and_producer_surplus_market_efficiency_and_welfare_figure_03.svg" class="img-fluid figure-img" alt="Maximized Social Surplus in a Free Market. At E^*(20,$60), consumer surplus and producer surplus each equal $400, for total surplus of $800."></p>
+<figcaption>Figure 3. Maximized Social Surplus in a Free Market. At <span class="math inline">\(E^*(20,\$60)\)</span>, consumer surplus and producer surplus each equal <span class="math inline">\(\$400\)</span>, for total surplus of <span class="math inline">\(\$800\)</span>.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_4_consumer_and_producer_surplus_market_efficiency_and_welfare_figure_04.svg" class="img-fluid figure-img" alt="The Impact of a Binding Price Ceiling. At $40, quantity supplied is 10 and quantity demanded is 30, so the shortage is 20 units. The purple triangle marks the lost gains from trade."></p>
+<figcaption>Figure 4. The Impact of a Binding Price Ceiling. At <span class="math inline">\(\$40\)</span>, quantity supplied is <span class="math inline">\(10\)</span> and quantity demanded is <span class="math inline">\(30\)</span>, so the shortage is <span class="math inline">\(20\)</span> units. The purple triangle marks the lost gains from trade.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-rent-control-in-san-francisco-and-new-york" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-rent-control-in-san-francisco-and-new-york">Real-World Application: Rent Control in San Francisco and New York</h3>
+<p>In expensive housing markets like San Francisco and New York City, local governments often cap how much landlords can raise apartment rents each year. The compassionate goal is simple: keep current residents from being priced out of their neighborhoods.</p>
+<p>However, consider the economic consequences over time:</p>
+<ul>
+<li><strong>Supply Collapses:</strong> Landlords faced with capped rents cannot cover rising maintenance, plumbing, and property tax costs. Some convert apartments into luxury condos, while developers stop building modest rental apartments altogether.</li>
+<li><strong>Demand Surges:</strong> Low capped rents encourage people to stay in huge apartments alone or move in from outside the city.</li>
+<li><strong>The Result:</strong> A severe <strong>housing shortage</strong>. College students and young workers searching for an apartment face lines around the block, application lotteries, and expensive broker finder fees. While incumbent tenants lucky enough to have a rent-controlled lease benefit, many others are locked out completely—an exact demonstration of deadweight loss and shortages in action.</li>
+</ul>
+</section>
+<section id="mathematical-foundation-algebra-level-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-2">Mathematical Foundation (Algebra Level)</h3>
+<p>Let’s analyze the exact numbers when the government imposes a price ceiling of <span class="math inline">\(\bar{P} = \$40\)</span> on our battery charger market (<span class="math inline">\(P_d = 100 - 2Q\)</span> and <span class="math inline">\(P_s = 20 + 2Q\)</span>).</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Calculate Quantity Supplied (<span class="math inline">\(Q_s\)</span>) under the Ceiling:</strong> Plug <span class="math inline">\(P = \$40\)</span> into the supply equation:</li>
+</ul>
+<p><span class="math display">\[
+40 = 20 + 2Q_s \implies 20 = 2Q_s \implies Q_s = \mathbf{10\text{ units}}
+\]</span></p>
+<p><em>Result: Sellers only produce 10 chargers because <span class="math inline">\(\$40\)</span> barely covers their costs.</em></p>
+<ul>
+<li><strong>Calculate Quantity Demanded (<span class="math inline">\(Q_d\)</span>) under the Ceiling:</strong> Plug <span class="math inline">\(P = \$40\)</span> into the demand equation:</li>
+</ul>
+<p><span class="math display">\[
+40 = 100 - 2Q_d \implies 2Q_d = 60 \implies Q_d = \mathbf{30\text{ units}}
+\]</span></p>
+<p><em>Result: At the bargain price of <span class="math inline">\(\$40\)</span>, students line up wanting 30 chargers.</em></p>
+<ul>
+<li><strong>Calculate the Physical Shortage:</strong></li>
+</ul>
+<p><span class="math display">\[
+\text{Shortage} = Q_d - Q_s = 30 - 10 = \mathbf{20\text{ units}}
+\]</span></p>
+<ul>
+<li><strong>Identify the Actual Number of Transactions:</strong> Because it takes two willing parties to make a deal, the number of units actually bought and sold is limited by whoever produces the least:</li>
+</ul>
+<p><span class="math display">\[
+Q_{\text{actual}} = \min(Q_s, Q_d) = \min(10, 30) = \mathbf{10\text{ units}}
+\]</span></p>
+<ul>
+<li><strong>Calculate the Value of the 10th Unit to Consumers:</strong> What was the 10th charger worth to students? Plug <span class="math inline">\(Q = 10\)</span> into the demand curve:</li>
+</ul>
+<p><span class="math display">\[
+P = 100 - 2(10) = \$80
+\]</span></p>
+<ul>
+<li><strong>Calculate Deadweight Loss (<span class="math inline">\(DWL\)</span>):</strong> The market dropped from producing 20 units down to 10 units. Trades for units 11 through 20 were completely eliminated. The lost value forms the purple triangle in Figure 4:</li>
+</ul>
+<p><span class="math display">\[
+\text{Base of DWL Triangle} = \text{Vertical Gap at } Q=10 = \$80 - \$40 = \$40
+\]</span></p>
+<p><span class="math display">\[
+\text{Height of DWL Triangle} = Q^* - Q_s = 20 - 10 = 10\text{ units}
+\]</span></p>
+<p><span class="math display">\[
+DWL = \frac{1}{2} \times \text{Base} \times \text{Height} = \frac{1}{2} \times \$40 \times 10 = \mathbf{\$200}
+\]</span></p>
+<p><strong>Conclusion:</strong> The price ceiling destroyed <strong>$200</strong> in social surplus that both students and producers would have shared if trade had not been blocked.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Social Planner Maximization
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors:</em> A benevolent social planner chooses total output <span class="math inline">\(Q\)</span> to maximize total surplus:</p>
+<p><span class="math display">\[
+\max_Q W(Q) = \int_{0}^{Q} \left[ P_d(q) - P_s(q) \right] dq
+\]</span></p>
+<p>Taking the first derivative with respect to <span class="math inline">\(Q\)</span> and setting it to 0:</p>
+<p><span class="math display">\[
+\frac{dW}{dQ} = P_d(Q) - P_s(Q) = 0 \implies P_d(Q^*) = P_s(Q^*)
+\]</span></p>
+<p>This proves mathematically that social welfare is strictly maximized where supply meets demand. Any artificial intervention that forces <span class="math inline">\(Q \neq Q^*\)</span> mathematically guarantees <span class="math inline">\(W(Q) &lt; W(Q^*)\)</span>.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="market-distortions-taxes-wedges-and-deadweight-loss" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="market-distortions-taxes-wedges-and-deadweight-loss"><span class="header-section-number">4.4</span> Market Distortions: Taxes, Wedges, and Deadweight Loss</h2>
+<section id="conceptual-introduction-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-3">Conceptual Introduction</h3>
+<p>Governments need revenue to fund essential public goods like highways, libraries, and public colleges. One of the most common ways they raise money is by levying an <strong>excise tax</strong>—a flat dollar tax per unit sold, such as a <span class="math inline">\(\$1.00\)</span> tax on a pack of cigarettes or a <span class="math inline">\(\$0.50\)</span> tax per gallon of gasoline.</p>
+<p>When a tax is enacted, it drives a physical <strong>tax wedge</strong> between what the buyer pays and what the seller actually gets to keep:</p>
+<p><span class="math display">\[
+P_{\text{buyer}} - P_{\text{seller}} = t
+\]</span></p>
+<p>A widespread misconception among the general public is that politicians can decide who pays a tax simply by writing it into law. If politicians say ``the oil company must pay this <span class="math inline">\(\$0.50\)</span> tax,’’ people assume the oil company bears 100% of the cost. In economics, this is completely false. The legal rule is called <strong>statutory incidence</strong>, but the true financial burden is called <strong>economic incidence</strong>. As you will see below, <strong>it makes zero difference whether the tax is legally placed on the buyer or the seller</strong>—the final prices paid, prices received, and quantity sold are 100% mathematically identical!</p>
+<p>Because the tax raises the price buyers pay and lowers the price sellers keep, fewer total transactions take place (<span class="math inline">\(Q_t &lt; Q^*\)</span>). The government successfully collects revenue, but the lost trades that never happened generate <strong>Deadweight Loss (<span class="math inline">\(DWL\)</span>)</strong>. Furthermore, as the tax rate increases, deadweight loss does not grow in a straight line—it explodes with the square of the tax rate (<span class="math inline">\(DWL \propto t^2\)</span>). This principle, known as the <strong>Quadratic Excess Burden Theorem</strong>, means that doubling a tax rate actually <em>quadruples</em> the wasted welfare in the economy!</p>
+</section>
+<section id="visual-representation-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-3">Visual Representation</h3>
+<p>Figure 5 illustrates a tax wedge of <span class="math inline">\(t = \$12\)</span> placed on our charger market.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_4_consumer_and_producer_surplus_market_efficiency_and_welfare_figure_05.svg" class="img-fluid figure-img" alt="The Anatomy of an Excise Tax. A $12 tax lowers quantity from 20 to 17, with buyers paying $66 and sellers receiving $54. The amber rectangle is $204 in tax revenue; the purple triangle is $18 in deadweight loss."></p>
+<figcaption>Figure 5. The Anatomy of an Excise Tax. A <span class="math inline">\(\$12\)</span> tax lowers quantity from <span class="math inline">\(20\)</span> to <span class="math inline">\(17\)</span>, with buyers paying <span class="math inline">\(\$66\)</span> and sellers receiving <span class="math inline">\(\$54\)</span>. The amber rectangle is <span class="math inline">\(\$204\)</span> in tax revenue; the purple triangle is <span class="math inline">\(\$18\)</span> in deadweight loss.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-california-gasoline-excise-taxes" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-california-gasoline-excise-taxes">Real-World Application: California Gasoline Excise Taxes</h3>
+<p>Every time drivers in California fill their fuel tanks, they pay approximately <strong>$0.54 per gallon</strong> in state excise taxes, plus federal taxes and environmental fees.</p>
+<ul>
+<li><strong>Where does the money go?</strong> The amber rectangle in Figure 5 represents the billions of dollars flowing directly into state coffers to pave roads, fix highway bridges, and fund regional transit like BART and Caltrain.</li>
+<li><strong>Where is the deadweight loss?</strong> Because gas costs more, some families cancel a weekend road trip, small contractors drive fewer delivery routes, and some commuters spend extra hours on slower buses. The loss in satisfaction and economic productivity from those foregone trips represents the purple triangle: deadweight loss that nobody captures.</li>
+</ul>
+</section>
+<section id="mathematical-foundation-algebra-level-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-3">Mathematical Foundation (Algebra Level)</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Key Concept: Statutory Neutrality (Who Pays Doesn’t Matter!)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose the government passes a <span class="math inline">\(\$12\)</span> tax on our chargers. Look at what happens under the two legal options:</p>
+<ul>
+<li><strong>Case A (Tax collected from sellers):</strong> Sellers must pay <span class="math inline">\(\$12\)</span> per charger to the government, so their required price increases by <span class="math inline">\(\$12\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+P_s^{\text{new}} = (20 + 2Q) + 12 = 32 + 2Q
+\]</span></p>
+<p>Set equal to Demand: <span class="math inline">\(100 - 2Q = 32 + 2Q \implies 68 = 4Q \implies \mathbf{Q_t = 17}\)</span>. Buyers pay <span class="math inline">\(P_b = 100 - 2(17) = \mathbf{\$66}\)</span>. Sellers keep <span class="math inline">\(P_s = 66 - 12 = \mathbf{\$54}\)</span>.</p>
+<ul>
+<li><strong>Case B (Tax collected from buyers):</strong> Buyers must hand <span class="math inline">\(\$12\)</span> to the government at the checkout register, so their willingness to pay the store drops by <span class="math inline">\(\$12\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+P_d^{\text{new}} = (100 - 2Q) - 12 = 88 - 2Q
+\]</span></p>
+<p>Set equal to original Supply: <span class="math inline">\(88 - 2Q = 20 + 2Q \implies 68 = 4Q \implies \mathbf{Q_t = 17}\)</span>. Store receives <span class="math inline">\(P_s = 20 + 2(17) = \mathbf{\$54}\)</span>. Buyer pays <span class="math inline">\(P_b = 54 + 12 = \mathbf{\$66}\)</span>.</p>
+<p><strong>The Takeaway:</strong> Regardless of who physically writes the check to the government, the outcome is 100% identical: <strong>buyers pay $66, sellers keep $54, and output is 17 units</strong>.</p>
+</div>
+</div>
+<p><strong>Worked Problem: Computing Government Revenue and Deadweight Loss</strong> Using our charger market where <span class="math inline">\(P_d = 100 - 2Q\)</span>, <span class="math inline">\(P_s = 20 + 2Q\)</span>, and tax <span class="math inline">\(t = \$12\)</span>:</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><p><strong>Find the Pre-Tax Baseline (<span class="math inline">\(Q^*, P^*\)</span>):</strong> Unregulated equilibrium occurred at <span class="math inline">\(Q^* = 20\)</span> units and <span class="math inline">\(P^* = \$60\)</span>.</p></li>
+<li><p><strong>Determine Post-Tax Volume (<span class="math inline">\(Q_t\)</span>):</strong> From our statutory proof above, <span class="math inline">\(Q_t = \mathbf{17\text{ chargers}}\)</span>.</p></li>
+<li><p><strong>Determine the Prices Paid and Received:</strong></p></li>
+</ul>
+<p><span class="math display">\[
+P_b = 100 - 2(17) = \mathbf{\$66\text{ (paid by buyer)}}
+\]</span></p>
+<p><span class="math display">\[
+P_s = 20 + 2(17) = \mathbf{\$54\text{ (kept by seller)}}
+\]</span></p>
+<p>Notice that the <span class="math inline">\(\$12\)</span> tax was split evenly: buyers pay <span class="math inline">\(\$6\)</span> more (<span class="math inline">\(66 - 60 = 6\)</span>) and sellers receive <span class="math inline">\(\$6\)</span> less (<span class="math inline">\(60 - 54 = 6\)</span>) because the demand and supply curves have identical steepness (both have slopes with magnitude 2).</p>
+<ul>
+<li><strong>Calculate Output Contraction (<span class="math inline">\(\Delta Q\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+\Delta Q = Q^* - Q_t = 20 - 17 = \mathbf{3\text{ chargers}}
+\]</span></p>
+<p><em>Meaning: 3 students and 3 sellers were priced out of doing business together.</em></p>
+<ul>
+<li><strong>Calculate Government Tax Revenue (<span class="math inline">\(T_{\text{rev}}\)</span>):</strong> Multiply the per-unit tax by the number of units actually sold:</li>
+</ul>
+<p><span class="math display">\[
+T_{\text{rev}} = \text{Tax per unit} \times Q_t = \$12 \times 17 = \mathbf{\$204}
+\]</span></p>
+<ul>
+<li><strong>Calculate Deadweight Loss (<span class="math inline">\(DWL\)</span>):</strong> The lost trades form the purple Harberger triangle with base equal to the tax wedge (<span class="math inline">\(t = \$12\)</span>) and height equal to the lost units (<span class="math inline">\(\Delta Q = 3\)</span>):</li>
+</ul>
+<p><span class="math display">\[
+DWL = \frac{1}{2} \times \text{Base} \times \text{Height} = \frac{1}{2} \times t \times \Delta Q = \frac{1}{2} \times \$12 \times 3 = 6 \times 3 = \mathbf{\$18}
+\]</span></p>
+<p><strong>Conclusion:</strong> The government successfully raises <strong>$204</strong> in tax revenue, but causes <strong>$18</strong> of economic value to be permanently lost to society.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: The Quadratic Excess Burden Theorem
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Quantitative Students:</em> Why do economists caution so strongly against high tax rates? Let linear demand have slope <span class="math inline">\(-b\)</span> and supply have slope <span class="math inline">\(d\)</span>. The output reduction is <span class="math inline">\(\Delta Q = \frac{t}{b + d}\)</span>. Plugging this into the Harberger triangle formula yields:</p>
+<p><span class="math display">\[
+DWL(t) = \frac{1}{2} \times t \times \Delta Q = \frac{1}{2} t \left( \frac{t}{b + d} \right) = \frac{t^2}{2(b + d)}
+\]</span></p>
+<p>Differentiating with respect to the tax rate <span class="math inline">\(t\)</span>:</p>
+<p><span class="math display">\[
+\frac{d(DWL)}{dt} = \frac{t}{b + d} &gt; 0, \quad \frac{d^2(DWL)}{dt^2} = \frac{1}{b + d} &gt; 0
+\]</span></p>
+<p>Because the second derivative is strictly positive, <strong>deadweight loss grows with the square of the tax rate (<span class="math inline">\(t^2\)</span>)</strong>.</p>
+<ul>
+<li>If tax is <span class="math inline">\(t = \$12\)</span>, <span class="math inline">\(DWL = \frac{12^2}{2(2+2)} = \frac{144}{8} = \mathbf{\$18}\)</span>.</li>
+<li>If tax doubles to <span class="math inline">\(t = \$24\)</span>, <span class="math inline">\(DWL = \frac{24^2}{8} = \frac{576}{8} = \mathbf{\$72}\)</span>.</li>
+</ul>
+<p>Doubling the tax from <span class="math inline">\(\$12\)</span> to <span class="math inline">\(\$24\)</span> did not double the deadweight loss—it <strong>quadrupled</strong> it from <span class="math inline">\(\$18\)</span> to <span class="math inline">\(\$72\)</span>!</p>
+</div>
+</div>
 
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

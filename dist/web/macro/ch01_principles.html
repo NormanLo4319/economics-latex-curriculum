@@ -111,6 +111,7 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
@@ -359,7 +360,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch05_unemployment_inflation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Employment, Unemployment Metrics, and the Price Level</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Unemployment and Inflation</span></span></a>
   </div>
 </li>
       </ul>
@@ -432,9 +433,28 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#the-twelve-principles-of-macroeconomics" id="toc-the-twelve-principles-of-macroeconomics" class="nav-link active" data-scroll-target="#the-twelve-principles-of-macroeconomics"><span class="header-section-number">1.1</span> The Twelve Principles of Macroeconomics</a></li>
-  <li><a href="#the-paradox-of-thrift" id="toc-the-paradox-of-thrift" class="nav-link" data-scroll-target="#the-paradox-of-thrift"><span class="header-section-number">1.2</span> The Paradox of Thrift</a></li>
-  <li><a href="#macroeconomic-circular-flow-identity" id="toc-macroeconomic-circular-flow-identity" class="nav-link" data-scroll-target="#macroeconomic-circular-flow-identity"><span class="header-section-number">1.3</span> Macroeconomic Circular Flow Identity</a></li>
+  <li><a href="#macroeconomics-vs.-microeconomics-and-systemic-feedback" id="toc-macroeconomics-vs.-microeconomics-and-systemic-feedback" class="nav-link active" data-scroll-target="#macroeconomics-vs.-microeconomics-and-systemic-feedback"><span class="header-section-number">1.1</span> Macroeconomics vs.&nbsp;Microeconomics and Systemic Feedback</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction" id="toc-conceptual-introduction" class="nav-link" data-scroll-target="#conceptual-introduction">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation" id="toc-visual-representation" class="nav-link" data-scroll-target="#visual-representation">Visual Representation</a></li>
+  <li><a href="#real-world-application-the-20082009-great-recession-and-household-deleveraging" id="toc-real-world-application-the-20082009-great-recession-and-household-deleveraging" class="nav-link" data-scroll-target="#real-world-application-the-20082009-great-recession-and-household-deleveraging">Real-World Application: The 2008–2009 Great Recession and Household Deleveraging</a></li>
+  <li><a href="#mathematical-foundation-algebra-level" id="toc-mathematical-foundation-algebra-level" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level">Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#the-expanded-circular-flow-leakages-and-injections" id="toc-the-expanded-circular-flow-leakages-and-injections" class="nav-link" data-scroll-target="#the-expanded-circular-flow-leakages-and-injections"><span class="header-section-number">1.2</span> The Expanded Circular Flow, Leakages, and Injections</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-1" id="toc-conceptual-introduction-1" class="nav-link" data-scroll-target="#conceptual-introduction-1">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-1" id="toc-visual-representation-1" class="nav-link" data-scroll-target="#visual-representation-1">Visual Representation</a></li>
+  <li><a href="#real-world-application-u.s.-budget-deficits-and-trade-balances" id="toc-real-world-application-u.s.-budget-deficits-and-trade-balances" class="nav-link" data-scroll-target="#real-world-application-u.s.-budget-deficits-and-trade-balances">Real-World Application: U.S. Budget Deficits and Trade Balances</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-1" id="toc-mathematical-foundation-algebra-level-1" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-1">Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#business-cycles-stabilization-policy-and-long-run-growth" id="toc-business-cycles-stabilization-policy-and-long-run-growth" class="nav-link" data-scroll-target="#business-cycles-stabilization-policy-and-long-run-growth"><span class="header-section-number">1.3</span> Business Cycles, Stabilization Policy, and Long-Run Growth</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-2" id="toc-conceptual-introduction-2" class="nav-link" data-scroll-target="#conceptual-introduction-2">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-2" id="toc-visual-representation-2" class="nav-link" data-scroll-target="#visual-representation-2">Visual Representation</a></li>
+  <li><a href="#real-world-application-nber-business-cycle-dating" id="toc-real-world-application-nber-business-cycle-dating" class="nav-link" data-scroll-target="#real-world-application-nber-business-cycle-dating">Real-World Application: NBER Business Cycle Dating</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-2" id="toc-mathematical-foundation-algebra-level-2" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-2">Mathematical Foundation (Algebra Level)</a></li>
+  <li><a href="#selected-references" id="toc-selected-references" class="nav-link" data-scroll-target="#selected-references">Selected References</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -461,22 +481,227 @@ window.Quarto = {
 </header>
 
 
-<section id="the-twelve-principles-of-macroeconomics" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="the-twelve-principles-of-macroeconomics"><span class="header-section-number">1.1</span> The Twelve Principles of Macroeconomics</h2>
-<p>Macroeconomics rests upon systemic feedback loops where aggregate outcomes diverge from individual decisions.</p>
+<blockquote class="blockquote">
+<p>This chapter provides a rigorous, pedagogical treatment of Chapter 1: First Principles of Economics &amp; Macroeconomic Systems, benchmarked to standard principles curriculum.</p>
+</blockquote>
+<section id="macroeconomics-vs.-microeconomics-and-systemic-feedback" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="macroeconomics-vs.-microeconomics-and-systemic-feedback"><span class="header-section-number">1.1</span> Macroeconomics vs.&nbsp;Microeconomics and Systemic Feedback</h2>
+<section id="conceptual-introduction" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction">Conceptual Introduction</h3>
+<p>While microeconomics zooms in on how individual households, workers, and firms make decisions in specific markets, <strong>macroeconomics</strong> steps back to examine the behavior of the entire economy as an interconnected system. Macroeconomists study economy-wide phenomena: why total national output (<strong>Real GDP</strong>) grows over decades, why recessions occasionally trigger widespread <strong>unemployment</strong>, what causes sustained <strong>inflation</strong>, and how central banks and governments use monetary and fiscal policies to stabilize economic fluctuations.</p>
+<p>A foundational insight of macroeconomics is that <strong>the whole is more than the simple sum of its parts</strong>. In an economy where people and businesses buy from and sell to one another, one person’s spending is another person’s income. When many households or businesses change their behavior at the same time, feedback can produce aggregate outcomes different from what any individual intended—a possibility economists call the <strong>fallacy of composition</strong>.</p>
+<p>The <strong>Paradox of Thrift</strong> is one possible short-run feedback mechanism. For an individual household facing financial uncertainty, cutting consumption and saving more may be prudent. If many households do this together, however, business sales can fall, reducing production, hiring, and household income. In a model with spare capacity, slow price adjustment, and no offsetting increase in investment or public spending, aggregate income may fall enough that total saving does not rise as intended. This result depends on those assumptions; it is not a universal prediction for every economy or time horizon.</p>
 </section>
-<section id="the-paradox-of-thrift" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="the-paradox-of-thrift"><span class="header-section-number">1.2</span> The Paradox of Thrift</h2>
-<p>When households collectively attempt to raise savings during a recession, aggregate consumption contracts. Because one person’s spending is another’s income, national income falls until dollar savings stagnate or decline.</p>
+<section id="visual-representation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation">Visual Representation</h3>
+<p>Figure 1 summarizes this conditional short-run feedback loop: lower consumption can reduce business revenue and household income, reinforcing efforts to save.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Fallacy of Composition in Macroeconomics
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>What is true for a single individual is not automatically true for the whole economy at once. If one fan stands up at a stadium concert, they get a better view; if <em>everyone</em> stands up simultaneously, nobody sees better and everyone’s legs get tired. Similarly, if every firm cuts wages simultaneously to boost profits, worker purchasing power falls and consumer demand for those firms’ products shrinks.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_1_first_principles_of_economics_macroeconomic_systems_figure_01.svg" class="img-fluid figure-img" alt="A possible short-run feedback in the Paradox of Thrift. The mechanism assumes spare capacity and no immediate offset from investment or policy; actual outcomes depend on economic conditions."></p>
+<figcaption>Figure 1. A possible short-run feedback in the Paradox of Thrift. The mechanism assumes spare capacity and no immediate offset from investment or policy; actual outcomes depend on economic conditions.</figcaption>
+</figure>
+</div>
 </section>
-<section id="macroeconomic-circular-flow-identity" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="macroeconomic-circular-flow-identity"><span class="header-section-number">1.3</span> Macroeconomic Circular Flow Identity</h2>
-<p><span class="math display">\[\begin{equation}
-Y \equiv C + I + G + NX = \text{Factor Payments (Wages + Rent + Interest + Profit)}
-\end{equation}\]</span> Leakages (<span class="math inline">\(S + T + M\)</span>) identically equal Injections (<span class="math inline">\(I + G + X\)</span>) in equilibrium.</p>
+<section id="real-world-application-the-20082009-great-recession-and-household-deleveraging" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-the-20082009-great-recession-and-household-deleveraging">Real-World Application: The 2008–2009 Great Recession and Household Deleveraging</h3>
+<p>The Great Recession offers a case for distinguishing a model mechanism from a historical explanation. When households try to repair balance sheets by cutting consumption, the short-run model predicts weaker sales and income if other spending does not offset the decline. Jones, Midrigan, and Philippon (2022) evaluate the household-leverage explanation and find that credit shocks account for only a small fraction of the aggregate employment decline in 2008–2010, while slowing the recovery. The saving-spending mechanism is useful for organizing the question, but it does not by itself establish the cause or size of a historical downturn.</p>
+</section>
+<section id="mathematical-foundation-algebra-level" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level">Mathematical Foundation (Algebra Level)</h3>
+<p>For the worked model, assume a closed economy with no government or foreign trade, fixed prices, spare productive capacity, fixed planned investment, and a constant marginal propensity to consume. If consumption depends on autonomous spending <span class="math inline">\(C_0\)</span> and a fraction <span class="math inline">\(c\)</span> of income <span class="math inline">\(Y\)</span>, private saving is <span class="math inline">\(S=Y-C\)</span>:</p>
+<p><span class="math display">\[
+C = C_0 + cY, \qquad S = Y - (C_0 + cY) = -C_0 + (1 - c)Y
+\]</span></p>
+<p>In this model’s equilibrium, planned saving equals planned investment (<span class="math inline">\(S=I_p\)</span>). The setup illustrates a short-run possibility rather than a universal response.</p>
+<p><strong>Worked Problem:</strong> Suppose a closed economy has planned business investment fixed at <span class="math inline">\(I_p = \$200\text{ billion}\)</span>, and households initially consume according to <span class="math inline">\(C = 100 + 0.75Y\)</span> (so initial saving is <span class="math inline">\(S = -100 + 0.25Y\)</span>).</p>
+<ul>
+<li>Find initial equilibrium national income <span class="math inline">\(Y_1^*\)</span> and confirm that equilibrium saving equals <span class="math inline">\(\$200\text{ billion}\)</span>.</li>
+<li>Suppose consumer anxiety causes households to cut autonomous consumption by <span class="math inline">\(\$50\text{ billion}\)</span> (trying to save <span class="math inline">\(\$50\text{ billion}\)</span> more at every income level), so <span class="math inline">\(C_{\text{new}} = 50 + 0.75Y\)</span> and <span class="math inline">\(S_{\text{new}} = -50 + 0.25Y\)</span>. Compute the new equilibrium income <span class="math inline">\(Y_2^*\)</span> and new total saving <span class="math inline">\(S_2^*\)</span>.</li>
+</ul>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Solve for Initial Equilibrium Income (<span class="math inline">\(Y_1^*\)</span>) Where <span class="math inline">\(S = I_p\)</span>:</strong></li>
+</ul>
+<p><span class="math display">\[
+-100 + 0.25Y_1^* = 200 \implies 0.25Y_1^* = 300 \implies Y_1^* = \mathbf{\$1{,}200\text{ billion}}
+\]</span></p>
+<p>Check equilibrium saving: <span class="math inline">\(S_1^* = -100 + 0.25(1{,}200) = -100 + 300 = \mathbf{\$200\text{ billion}}\)</span>.</p>
+<ul>
+<li><strong>Solve for New Equilibrium Income (<span class="math inline">\(Y_2^*\)</span>) After the Saving Surge:</strong> Set <span class="math inline">\(S_{\text{new}} = I_p\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+-50 + 0.25Y_2^* = 200 \implies 0.25Y_2^* = 250 \implies Y_2^* = \mathbf{\$1{,}000\text{ billion}}
+\]</span></p>
+<p>Check new equilibrium saving at <span class="math inline">\(Y_2^* = \$1{,}000\)</span>:</p>
+<p><span class="math display">\[
+S_2^* = -50 + 0.25(1{,}000) = -50 + 250 = \mathbf{\$200\text{ billion}}
+\]</span></p>
+<p><strong>Conclusion:</strong> Under the stated assumptions, the <span class="math inline">\(\$50\)</span> billion reduction in autonomous consumption lowers equilibrium income by <span class="math inline">\(\$200\)</span> billion (from <span class="math inline">\(\$1{,}200\)</span> billion to <span class="math inline">\(\$1{,}000\)</span> billion), while equilibrium saving remains <span class="math inline">\(\$200\)</span> billion. This is the paradox-of-thrift result for this model.</p>
+</section>
+</section>
+<section id="the-expanded-circular-flow-leakages-and-injections" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="the-expanded-circular-flow-leakages-and-injections"><span class="header-section-number">1.2</span> The Expanded Circular Flow, Leakages, and Injections</h2>
+<section id="conceptual-introduction-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-1">Conceptual Introduction</h3>
+<p>To track how dollars circulate across an open economy, macroeconomists add three sectors to the household-firm circular flow: the <strong>financial sector</strong>, which connects savers and borrowers; <strong>government</strong>, which collects taxes and purchases goods and services; and the <strong>rest of the world</strong>, which buys exports and sells imports.</p>
+<p>In this four-sector accounting framework, expenditure on domestically produced final goods and services (<span class="math inline">\(Y\)</span>) equals four spending components:</p>
+<p><span class="math display">\[
+Y \equiv C + I + G + NX, \qquad \text{where } NX = X - M
+\]</span></p>
+<p>Here <span class="math inline">\(C\)</span> is household consumption, <span class="math inline">\(I\)</span> is private investment spending, <span class="math inline">\(G\)</span> is government purchases of goods and services, and <span class="math inline">\(NX\)</span> is net exports (exports <span class="math inline">\(X\)</span> minus imports <span class="math inline">\(M\)</span>).</p>
+<p>Three flows are called <strong>leakages</strong>: <strong>private saving (<span class="math inline">\(S\)</span>)</strong>, <strong>net taxes (<span class="math inline">\(T\)</span>)</strong>, and <strong>imports (<span class="math inline">\(M\)</span>)</strong>. Three flows are called <strong>injections</strong>: <strong>investment (<span class="math inline">\(I\)</span>)</strong>, <strong>government purchases (<span class="math inline">\(G\)</span>)</strong>, and <strong>exports (<span class="math inline">\(X\)</span>)</strong>. In the accounting equilibrium represented here, total leakages equal total injections:</p>
+<p><span class="math display">\[
+S + T + M = I + G + X
+\]</span></p>
+</section>
+<section id="visual-representation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-1">Visual Representation</h3>
+<p>Figure 2 maps the expanded four-sector circular flow, distinguishing leakage channels (<span class="math inline">\(S, T, M\)</span>) from injection channels (<span class="math inline">\(I, G, X\)</span>) by both label and line style.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_1_first_principles_of_economics_macroeconomic_systems_figure_02.svg" class="img-fluid figure-img" alt="The Four-Sector Macroeconomic Circular Flow. Dashed orange arrows show leakages (S+T+M); solid teal arrows show injections (I+G+X)."></p>
+<figcaption>Figure 2. The Four-Sector Macroeconomic Circular Flow. Dashed orange arrows show <strong>leakages</strong> (<span class="math inline">\(S+T+M\)</span>); solid teal arrows show <strong>injections</strong> (<span class="math inline">\(I+G+X\)</span>).</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-u.s.-budget-deficits-and-trade-balances" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-u.s.-budget-deficits-and-trade-balances">Real-World Application: U.S. Budget Deficits and Trade Balances</h3>
+<p>Rearranging the leakage-injection identity <span class="math inline">\(S + T + M = I + G + X\)</span> yields the fundamental open-economy accounting relation:</p>
+<p><span class="math display">\[
+(S - I) + (T - G) = (X - M) = NX
+\]</span></p>
+<p>Here <span class="math inline">\((S-I)\)</span> is the private sector’s net saving balance and <span class="math inline">\((T-G)\)</span> is public saving (a government budget surplus if positive, or deficit if negative). If public saving and private net saving are both negative, the identity implies <span class="math inline">\(NX&lt;0\)</span>. This is an accounting relationship, not proof that a budget deficit causes a trade deficit; the private, public, and foreign balances are jointly linked.</p>
+</section>
+<section id="mathematical-foundation-algebra-level-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-1">Mathematical Foundation (Algebra Level)</h3>
+<p>Balancing total leakages against total injections confirms the expenditure identity:</p>
+<p><span class="math display">\[
+S + T + M = I + G + X \iff Y = C + I + G + (X - M)
+\]</span></p>
+<p><strong>Worked Problem:</strong> In a macroeconomic model of an open economy (in billions of dollars), household consumption is <span class="math inline">\(C = \$900\)</span>, private saving is <span class="math inline">\(S = \$250\)</span>, net taxes are <span class="math inline">\(T = \$350\)</span>, government purchases are <span class="math inline">\(G = \$400\)</span>, private investment is <span class="math inline">\(I = \$300\)</span>, exports are <span class="math inline">\(X = \$200\)</span>, and imports are <span class="math inline">\(M = \$300\)</span>.</p>
+<ul>
+<li>Verify that total leakages equal total injections.</li>
+<li>Compute national income (<span class="math inline">\(Y\)</span>) using both the income-disposition identity (<span class="math inline">\(Y = C + S + T\)</span>) and the aggregate expenditure identity (<span class="math inline">\(Y = C + I + G + NX\)</span>).</li>
+</ul>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Compare Total Leakages and Total Injections:</strong></li>
+</ul>
+<p><span class="math display">\[
+\text{Total Leakages} = S + T + M = \$250 + \$350 + \$300 = \mathbf{\$900\text{ billion}}
+\]</span></p>
+<p><span class="math display">\[
+\text{Total Injections} = I + G + X = \$300 + \$400 + \$200 = \mathbf{\$900\text{ billion}}
+\]</span></p>
+<p>Total leakages equal total injections (<span class="math inline">\(\$900\text{B} = \$900\text{B}\)</span>).</p>
+<ul>
+<li><strong>Compute National Income (<span class="math inline">\(Y\)</span>) via Both Identities:</strong></li>
+</ul>
+<p><span class="math display">\[
+Y_{\text{income}} = C + S + T = \$900 + \$250 + \$350 = \mathbf{\$1{,}500\text{ billion}}
+\]</span></p>
+<p><span class="math display">\[
+NX = X - M = \$200 - \$300 = -\$100\text{ billion}
+\]</span></p>
+<p><span class="math display">\[
+Y_{\text{expenditure}} = C + I + G + NX = \$900 + \$300 + \$400 + (-\$100) = \mathbf{\$1{,}500\text{ billion}}
+\]</span></p>
+<p><strong>Conclusion:</strong> Both accounting views yield the exact same national income of <span class="math inline">\(\$1{,}500\text{ billion}\)</span>.</p>
+</section>
+</section>
+<section id="business-cycles-stabilization-policy-and-long-run-growth" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="business-cycles-stabilization-policy-and-long-run-growth"><span class="header-section-number">1.3</span> Business Cycles, Stabilization Policy, and Long-Run Growth</h2>
+<section id="conceptual-introduction-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-2">Conceptual Introduction</h3>
+<p>If you trace U.S. Real GDP over the past century, two distinct patterns jump off the page: a steady upward trend across decades, interrupted periodically by jagged waves of expansion and contraction. Macroeconomists divide their discipline around these two horizons:</p>
+<ul>
+<li><strong>The Business Cycle (Short-Run Fluctuations):</strong> Alternating periods of economic <strong>expansion</strong> (rising output and falling unemployment) and <strong>recession</strong> (a broad downturn in output, income, and employment). The turning point from expansion to recession is a <strong>peak</strong>, and the bottom turning point where recovery begins is a <strong>trough</strong>.</li>
+<li><strong>Long-Run Economic Growth:</strong> The sustained upward trend in an economy’s potential productive capacity over decades, which determines long-run living standards across generations.</li>
+</ul>
+<p>To smooth out painful short-run business cycles without derailing long-run growth, policymakers deploy two stabilization toolkits: <strong>fiscal policy</strong> (changes in federal government spending and tax rates enacted by Congress and the President) and <strong>monetary policy</strong> (changes in interest rates and financial conditions implemented by the Federal Reserve).</p>
+</section>
+<section id="visual-representation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-2">Visual Representation</h3>
+<p>Figure 3 is a schematic—not a data series—showing output fluctuating around a rising long-run trend, with illustrative peaks, troughs, contractions, and recoveries.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_1_first_principles_of_economics_macroeconomic_systems_figure_03.svg" class="img-fluid figure-img" alt="Schematic Business Cycle. The solid orange line represents illustrative output fluctuations around a dashed long-run trend; it is not observed U.S. GDP data."></p>
+<figcaption>Figure 3. Schematic Business Cycle. The solid orange line represents illustrative output fluctuations around a dashed long-run trend; it is not observed U.S. GDP data.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-nber-business-cycle-dating" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-nber-business-cycle-dating">Real-World Application: NBER Business Cycle Dating</h3>
+<p>In the United States, the <strong>National Bureau of Economic Research (NBER)</strong> Business Cycle Dating Committee identifies peaks and troughs using a broad set of indicators. It emphasizes economy-wide measures and notes there is no fixed rule about which indicators receive weight; a recession is not determined solely by a two-quarter GDP rule (NBER, n.d.).</p>
+</section>
+<section id="mathematical-foundation-algebra-level-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-2">Mathematical Foundation (Algebra Level)</h3>
+<p>The percentage <strong>output gap</strong> measures how far actual Real GDP (<span class="math inline">\(Y\)</span>) deviates from estimated Potential GDP (<span class="math inline">\(Y^*\)</span>):</p>
+<p><span class="math display">\[
+\text{Output Gap } (\%) = \frac{Y - Y^*}{Y^*} \times 100\%
+\]</span></p>
+<p><strong>Worked Problem:</strong> For an illustrative calculation, suppose estimated Potential Real GDP is <span class="math inline">\(Y^*=\$25.0\)</span> trillion and actual Real GDP is <span class="math inline">\(Y=\$24.2\)</span> trillion. Compute the dollar output gap and the percentage output gap. Potential GDP is estimated rather than directly observed.</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Compute the Dollar Output Gap (<span class="math inline">\(Y - Y^*\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+Y - Y^* = \$24.2\text{ trillion} - \$25.0\text{ trillion} = \mathbf{-\$0.8\text{ trillion}\ (-\$800\text{ billion})}
+\]</span></p>
+<ul>
+<li><strong>Compute the Percentage Output Gap:</strong></li>
+</ul>
+<p><span class="math display">\[
+\text{Output Gap } (\%) = \frac{-0.8}{25.0} \times 100\% = -0.032 \times 100\% = \mathbf{-3.2\%}
+\]</span></p>
+<p><strong>Conclusion:</strong> In this example, actual output is <span class="math inline">\(3.2\%\)</span> below estimated potential output, a dollar gap of <span class="math inline">\(\$800\)</span> billion.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Hodrick-Prescott Trend Decomposition
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> The Hodrick–Prescott filter decomposes observed log Real GDP <span class="math inline">\(y_t=\ln(Y_t)\)</span> into a smooth trend <span class="math inline">\(\tau_t\)</span> and a residual component <span class="math inline">\(c_t=y_t-\tau_t\)</span> by solving:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\min_{\{\tau_t\}} \quad
+&amp;\sum_{t=1}^{T} (y_t - \tau_t)^2 \\
+&amp;+ \lambda \sum_{t=2}^{T-1}
+\left[ (\tau_{t+1} - \tau_t) - (\tau_t - \tau_{t-1}) \right]^2
+\end{aligned}
+\]</span></p>
+<p>For quarterly data, <span class="math inline">\(\lambda=1{,}600\)</span> is a widely used convention (Hodrick and Prescott, 1997). The residual is not automatically stationary, and the filtered trend is not a direct observation of potential GDP.</p>
+</div>
+</div>
+</section>
+<section id="selected-references" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="selected-references">Selected References</h3>
+<ul>
+<li>National Bureau of Economic Research. “Business Cycle Dating.” <a href="https://www.nber.org/research/business-cycle-dating" class="uri">https://www.nber.org/research/business-cycle-dating</a></li>
+<li>Jones, Callum, Virgiliu Midrigan, and Thomas Philippon. 2022. “Household Leverage and the Recession.” <em>Econometrica</em> 90(5): 2471–2505. NBER Working Paper 16965. <a href="https://www.nber.org/papers/w16965" class="uri">https://www.nber.org/papers/w16965</a></li>
+<li>Hodrick, Robert J., and Edward C. Prescott. 1997. “Postwar U.S. Business Cycles: An Empirical Investigation.” <em>Journal of Money, Credit and Banking</em> 29(1): 1–16. <a href="https://doi.org/10.2307/2953682" class="uri">https://doi.org/10.2307/2953682</a></li>
+</ul>
 
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

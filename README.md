@@ -1,6 +1,6 @@
 # economics-latex-curriculum
 
-Reusable Principles of Economics course content, written once in LaTeX and built into a PDF, a Canvas page, and a Canvas quiz.
+Reusable Principles of Economics course content, written in LaTeX with Quarto web-book and Canvas build helpers.
 
 - **Micro** follows the topic order of Chiang, *Microeconomics*.
 - **Macro** follows the topic order of Krugman and Wells, *Macroeconomics*.
@@ -12,7 +12,7 @@ Reusable Principles of Economics course content, written once in LaTeX and built
 shared/            preamble, TikZ styles, boxes (edit once, applies to every chapter)
 micro/chapters/    one .tex file per chapter
 micro/quizzes/     one question bank (JSON) per chapter
-macro/chapters/    (not started)
+macro/chapters/    one .tex file per chapter
 tools/             build_html.py, build_qti.py, check_math.py
 build/             generated output (not committed)
 ```
@@ -29,6 +29,16 @@ python tools/build_qti.py micro/quizzes/ch03_quiz.json
 ```
 
 `make micro_ch03`, `make html_ch03`, `make qti_ch03`, `make check_ch03` do the same when `make` and `latexmk` (needs Perl) are installed.
+
+## Chapter 1 source and web-book sync
+
+For Micro and Macro Chapter 1, the `.tex` chapter is canonical. Regenerate only the two Chapter 1 Quarto pages and their TikZ SVGs with:
+
+```
+python convert_to_quarto.py --chapter1-only
+```
+
+The deployment workflow converts all `.tex` chapters to Quarto and renders the books. The registry-based `sync_readings_to_tex.py` also synchronizes other chapters, so run its full sync only when those registry entries are intentionally being applied.
 
 ## Getting content into Canvas (no API token needed)
 

@@ -445,8 +445,35 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#midpoint-arc-elasticity-formula" id="toc-midpoint-arc-elasticity-formula" class="nav-link active" data-scroll-target="#midpoint-arc-elasticity-formula"><span class="header-section-number">5.1</span> Midpoint Arc Elasticity Formula</a></li>
-  <li><a href="#the-total-revenue-test" id="toc-the-total-revenue-test" class="nav-link" data-scroll-target="#the-total-revenue-test"><span class="header-section-number">5.2</span> The Total Revenue Test</a></li>
+  <li><a href="#price-elasticity-of-demand-and-the-midpoint-formula" id="toc-price-elasticity-of-demand-and-the-midpoint-formula" class="nav-link active" data-scroll-target="#price-elasticity-of-demand-and-the-midpoint-formula"><span class="header-section-number">5.1</span> Price Elasticity of Demand and the Midpoint Formula</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction" id="toc-conceptual-introduction" class="nav-link" data-scroll-target="#conceptual-introduction">1. Conceptual Introduction</a></li>
+  <li><a href="#visual-representation" id="toc-visual-representation" class="nav-link" data-scroll-target="#visual-representation">2. Visual Representation</a></li>
+  <li><a href="#real-world-application-necessities-and-substitutes" id="toc-real-world-application-necessities-and-substitutes" class="nav-link" data-scroll-target="#real-world-application-necessities-and-substitutes">3. Real-World Application: Necessities and Substitutes</a></li>
+  <li><a href="#mathematical-foundation-algebra-level" id="toc-mathematical-foundation-algebra-level" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level">4. Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#the-total-revenue-test" id="toc-the-total-revenue-test" class="nav-link" data-scroll-target="#the-total-revenue-test"><span class="header-section-number">5.2</span> The Total Revenue Test</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-1" id="toc-conceptual-introduction-1" class="nav-link" data-scroll-target="#conceptual-introduction-1">1. Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-1" id="toc-visual-representation-1" class="nav-link" data-scroll-target="#visual-representation-1">2. Visual Representation</a></li>
+  <li><a href="#real-world-application-subscription-and-ticket-pricing" id="toc-real-world-application-subscription-and-ticket-pricing" class="nav-link" data-scroll-target="#real-world-application-subscription-and-ticket-pricing">3. Real-World Application: Subscription and Ticket Pricing</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-1" id="toc-mathematical-foundation-algebra-level-1" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-1">4. Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#income-cross-price-and-supply-elasticities" id="toc-income-cross-price-and-supply-elasticities" class="nav-link" data-scroll-target="#income-cross-price-and-supply-elasticities"><span class="header-section-number">5.3</span> Income, Cross-Price, and Supply Elasticities</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-2" id="toc-conceptual-introduction-2" class="nav-link" data-scroll-target="#conceptual-introduction-2">1. Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-2" id="toc-visual-representation-2" class="nav-link" data-scroll-target="#visual-representation-2">2. Visual Representation</a></li>
+  <li><a href="#elasticity-shifts-income-and-related-good-prices" id="toc-elasticity-shifts-income-and-related-good-prices" class="nav-link" data-scroll-target="#elasticity-shifts-income-and-related-good-prices">Elasticity Shifts: Income and Related-Good Prices</a></li>
+  <li><a href="#real-world-application-capacity-and-substitutes" id="toc-real-world-application-capacity-and-substitutes" class="nav-link" data-scroll-target="#real-world-application-capacity-and-substitutes">3. Real-World Application: Capacity and Substitutes</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-2" id="toc-mathematical-foundation-algebra-level-2" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-2">4. Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#elasticity-and-economic-tax-incidence" id="toc-elasticity-and-economic-tax-incidence" class="nav-link" data-scroll-target="#elasticity-and-economic-tax-incidence"><span class="header-section-number">5.4</span> Elasticity and Economic Tax Incidence</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-3" id="toc-conceptual-introduction-3" class="nav-link" data-scroll-target="#conceptual-introduction-3">1. Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-3" id="toc-visual-representation-3" class="nav-link" data-scroll-target="#visual-representation-3">2. Visual Representation</a></li>
+  <li><a href="#real-world-application-cigarette-excise-taxes" id="toc-real-world-application-cigarette-excise-taxes" class="nav-link" data-scroll-target="#real-world-application-cigarette-excise-taxes">3. Real-World Application: Cigarette Excise Taxes</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-3" id="toc-mathematical-foundation-algebra-level-3" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-3">4. Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -473,20 +500,445 @@ window.Quarto = {
 </header>
 
 
-<section id="midpoint-arc-elasticity-formula" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="midpoint-arc-elasticity-formula"><span class="header-section-number">5.1</span> Midpoint Arc Elasticity Formula</h2>
-<p><span class="math display">\[\begin{equation}
-\varepsilon_d = \frac{(Q_2 - Q_1) / [(Q_1 + Q_2)/2]}{(P_2 - P_1) / [(P_1 + P_2)/2]}
-\end{equation}\]</span> Demand is classified as elastic if <span class="math inline">\(|\varepsilon_d| &gt; 1\)</span>, unit elastic if <span class="math inline">\(|\varepsilon_d| = 1\)</span>, and inelastic if <span class="math inline">\(|\varepsilon_d| &lt; 1\)</span>.</p>
+<blockquote class="blockquote">
+<p>This chapter provides a rigorous, pedagogical treatment of Chapter 5: Elasticity: Responsiveness of Demand and Supply, benchmarked to standard principles curriculum.</p>
+</blockquote>
+<section id="price-elasticity-of-demand-and-the-midpoint-formula" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="price-elasticity-of-demand-and-the-midpoint-formula"><span class="header-section-number">5.1</span> Price Elasticity of Demand and the Midpoint Formula</h2>
+<section id="conceptual-introduction" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction">1. Conceptual Introduction</h3>
+<p>In Chapter 3, we established the Law of Demand: when the price of a good goes up, consumers buy less of it. But for a business owner setting prices or a policymaker designing a tax, knowing the <em>direction</em> of the change is not enough—they need to know <em>how much</em> quantity changes. If a café raises the price of its morning latte by <span class="math inline">\(10\%\)</span>, will customer traffic drop by <span class="math inline">\(2\%\)</span> or collapse by <span class="math inline">\(40\%\)</span>? Economists measure this sensitivity using the <strong>Price Elasticity of Demand (<span class="math inline">\(\varepsilon_d\)</span>)</strong>, defined as the percentage change in quantity demanded divided by the percentage change in price.</p>
+<p>Why do economists use percentage changes rather than the raw slope of the demand curve? Because raw slope depends entirely on arbitrary measurement units. Switching a pricing table from dollars to cents, or measuring coffee in ounces instead of cups, changes the numerical slope even though consumer behavior has not changed at all. By converting both price and quantity movements into unit-free percentages, elasticity allows us to compare the responsiveness of insulin, concert tickets, and gasoline on a single standardized scale.</p>
+<p>Because demand curves slope downward, price and quantity move in opposite directions, making the raw ratio negative. By convention, economists take the absolute value <span class="math inline">\(|\varepsilon_d|\)</span> (or report the magnitude) to classify demand into three regimes:</p>
+<ul>
+<li><strong>Elastic Demand (<span class="math inline">\(|\varepsilon_d| &gt; 1\)</span>):</strong> Consumers are highly sensitive to price; the percentage change in quantity is larger than the percentage change in price.</li>
+<li><strong>Unit Elastic Demand (<span class="math inline">\(|\varepsilon_d| = 1\)</span>):</strong> The percentage change in quantity exactly matches the percentage change in price.</li>
+<li><strong>Inelastic Demand (<span class="math inline">\(|\varepsilon_d| &lt; 1\)</span>):</strong> Consumers are relatively unresponsive to price; the percentage change in quantity is smaller than the percentage change in price.</li>
+</ul>
+</section>
+<section id="visual-representation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation">2. Visual Representation</h3>
+<p>Figure 1 contrasts steep (inelastic) and flat (elastic) demand curves passing through the same initial market point, alongside the extreme polar cases of perfectly inelastic and perfectly elastic demand.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Slope Is Not the Same as Elasticity
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A linear demand curve has a <em>constant slope</em> from top to bottom, yet its <em>elasticity changes at every single point</em>! Near the top-left of a straight-line demand curve (high price, low quantity), a <span class="math inline">\(\$1\)</span> price cut represents a tiny percentage drop in price but a huge percentage jump in quantity, making demand <strong>elastic</strong>. Near the bottom-right (low price, high quantity), that exact same <span class="math inline">\(\$1\)</span> price cut is a large percentage drop in price and a tiny percentage gain in quantity, making demand <strong>inelastic</strong>.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_5_elasticity_responsiveness_of_demand_and_supply_figure_01.svg" class="img-fluid figure-img" alt="For the same price change, quantity responds less on steep inelastic demand than on flatter elastic demand; panel (b) shows the limiting cases."></p>
+<figcaption>Figure 1. For the same price change, quantity responds less on steep inelastic demand than on flatter elastic demand; panel (b) shows the limiting cases.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-necessities-and-substitutes" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-necessities-and-substitutes">3. Real-World Application: Necessities and Substitutes</h3>
+<p>Consider a household deciding how to allocate its budget between a medically necessary prescription and restaurant meals. If close alternatives for a purchase are limited, buyers may have less room to reduce quantity when its price rises; if many alternatives are available, buyers have more ways to switch. This comparison illustrates the economic mechanism, not a medical recommendation or a measured elasticity for either market.</p>
+<ul>
+<li>A treatment with few clinically appropriate alternatives may have less price-responsive demand than a discretionary purchase. Actual responsiveness depends on the treatment, patient group, insurance coverage, and time horizon.</li>
+<li>Restaurant meals often have alternatives such as cooking at home or choosing another restaurant. Those options can make switching easier, but the size of the response must be estimated rather than assumed.</li>
+</ul>
+<p>Four structural determinants help explain responsiveness: (1) <strong>availability of close substitutes</strong>, (2) <strong>necessity versus discretionary use</strong>, (3) <strong>share of the household budget</strong> (a given price change matters more when the good takes a larger share), and (4) <strong>time horizon</strong> (buyers generally have more opportunity to adjust over a longer period).</p>
+</section>
+<section id="mathematical-foundation-algebra-level" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level">4. Mathematical Foundation (Algebra Level)</h3>
+<p>If you compute a percentage change from Point A to Point B and then reverse direction from Point B back to Point A, standard percentage formulas give two different answers because the starting base changes. To eliminate this direction bias, economists use the <strong>Midpoint (Arc) Elasticity Formula</strong>, dividing each change by the average of the starting and ending values:</p>
+<p><span class="math display">\[
+\varepsilon_d = \frac{\%\Delta Q_d}{\%\Delta P} = \frac{\dfrac{Q_2 - Q_1}{(Q_1 + Q_2)/2}}{\dfrac{P_2 - P_1}{(P_1 + P_2)/2}}
+\]</span></p>
+<p><strong>Worked Problem:</strong> Suppose a hypothetical transit agency raises the monthly express-pass fare from <span class="math inline">\(P_1 = \$80\)</span> to <span class="math inline">\(P_2 = \$100\)</span>, and monthly sales fall from <span class="math inline">\(Q_1 = 1{,}200\)</span> to <span class="math inline">\(Q_2 = 800\)</span> passes. Calculate the price elasticity of demand using the midpoint formula and classify the demand regime.</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Calculate the Percentage Change in Quantity Demanded (<span class="math inline">\(\%\Delta Q_d\)</span>):</strong> First find the change in quantity and the midpoint quantity:</li>
+</ul>
+<p><span class="math display">\[
+\Delta Q = Q_2 - Q_1 = 800 - 1{,}200 = -400\text{ passes}
+\]</span></p>
+<p><span class="math display">\[
+Q_{\text{mid}} = \frac{Q_1 + Q_2}{2} = \frac{1{,}200 + 800}{2} = \frac{2{,}000}{2} = 1{,}000\text{ passes}
+\]</span></p>
+<p>Divide the change by the midpoint:</p>
+<p><span class="math display">\[
+\%\Delta Q_d = \frac{-400}{1{,}000} = -0.40 \quad (\text{or } -40\%)
+\]</span></p>
+<ul>
+<li><strong>Calculate the Percentage Change in Price (<span class="math inline">\(\%\Delta P\)</span>):</strong> Find the change in price and the midpoint price:</li>
+</ul>
+<p><span class="math display">\[
+\Delta P = P_2 - P_1 = \$100 - \$80 = +\$20
+\]</span></p>
+<p><span class="math display">\[
+P_{\text{mid}} = \frac{P_1 + P_2}{2} = \frac{\$80 + \$100}{2} = \frac{\$180}{2} = \$90
+\]</span></p>
+<p>Divide the change by the midpoint:</p>
+<p><span class="math display">\[
+\%\Delta P = \frac{20}{90} \approx +0.2222 \quad (\text{or } +22.22\%)
+\]</span></p>
+<ul>
+<li><strong>Divide <span class="math inline">\(\%\Delta Q_d\)</span> by <span class="math inline">\(\%\Delta P\)</span>:</strong></li>
+</ul>
+<p><span class="math display">\[
+\varepsilon_d = \frac{-0.40}{20/90} = -0.40 \times \frac{90}{20} = -0.40 \times 4.5 = -1.80
+\]</span></p>
+<ul>
+<li><strong>Take the Absolute Value and Classify:</strong></li>
+</ul>
+<p><span class="math display">\[
+|\varepsilon_d| = |-1.80| = \mathbf{1.80}
+\]</span></p>
+<p>Because <span class="math inline">\(1.80 &gt; 1\)</span>, demand for express commuter bus passes over this price range is <strong>elastic</strong>.</p>
+<p><strong>Conclusion:</strong> Over this price range, the midpoint elasticity is <span class="math inline">\(-1.80\)</span>: demand is elastic, so quantity responds more than proportionally to price. This arc estimate is not a forecast for every 1% price change.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Point Elasticity via Calculus
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> For infinitesimally small price changes along a differentiable demand function <span class="math inline">\(Q_d = f(P)\)</span>, the <strong>point price elasticity of demand</strong> replaces discrete differences with the first derivative:</p>
+<p><span class="math display">\[
+\varepsilon_d = \frac{dQ_d}{dP} \cdot \frac{P}{Q_d}
+\]</span></p>
+<p>For example, given linear demand <span class="math inline">\(Q_d = 100 - 2P\)</span>, we have <span class="math inline">\(\frac{dQ_d}{dP} = -2\)</span>. At <span class="math inline">\(P = \$30\)</span>, <span class="math inline">\(Q_d = 100 - 2(30) = 40\)</span>, giving:</p>
+<p><span class="math display">\[
+\varepsilon_d = (-2) \cdot \frac{30}{40} = -1.5 \implies |\varepsilon_d| = 1.5 \text{ (Elastic)}
+\]</span></p>
+<p>Notice that when <span class="math inline">\(P = \$25\)</span> and <span class="math inline">\(Q_d = 50\)</span> (the exact midpoint of the linear demand curve), <span class="math inline">\(|\varepsilon_d| = |-2 \cdot \frac{25}{50}| = 1.0\)</span> (Unit Elastic).</p>
+</div>
+</div>
+</section>
 </section>
 <section id="the-total-revenue-test" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="the-total-revenue-test"><span class="header-section-number">5.2</span> The Total Revenue Test</h2>
-<p>Total Revenue <span class="math inline">\(TR = P \times Q\)</span>. Differentiating with respect to price yields: <span class="math display">\[\begin{equation}
-\frac{d(TR)}{dP} = Q(1 - |\varepsilon_d|)
-\end{equation}\]</span> When demand is inelastic (<span class="math inline">\(|\varepsilon_d| &lt; 1\)</span>), price increases raise total revenue.</p>
+<section id="conceptual-introduction-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-1">1. Conceptual Introduction</h3>
+<p>Every business manager faces a fundamental pricing dilemma: if I raise my price, will my company bring in more money or less money? At first glance, raising prices sounds like a guaranteed way to boost sales dollars. Yet every price increase sets off a tug-of-war between two opposing forces inside the firm’s <strong>Total Revenue (<span class="math inline">\(TR = P \times Q\)</span>)</strong>:</p>
+<ul>
+<li><strong>The Price Effect:</strong> Each unit still sold now brings in more dollars (<span class="math inline">\(P \uparrow\)</span>), pushing total revenue upward.</li>
+<li><strong>The Quantity Effect:</strong> Fewer total units are sold because some buyers walk away (<span class="math inline">\(Q \downarrow\)</span>), pulling total revenue downward.</li>
+</ul>
+<p>Which force wins the tug-of-war depends entirely on the price elasticity of demand. When demand is <strong>inelastic</strong> (<span class="math inline">\(|\varepsilon_d| &lt; 1\)</span>), customers barely cut back their purchases when prices rise; the positive Price Effect overpowers the weak Quantity Effect, so <strong>raising price increases total revenue</strong>. Conversely, when demand is <strong>elastic</strong> (<span class="math inline">\(|\varepsilon_d| &gt; 1\)</span>), customers flee in large numbers; the negative Quantity Effect crushes the Price Effect, so <strong>raising price actually reduces total revenue</strong>.</p>
+<p>This relationship gives firms and economists a practical diagnostic known as the <strong>Total Revenue Test</strong>. Even without estimating a full econometric demand curve, observing how total dollar receipts move after a price change immediately reveals whether demand is elastic, inelastic, or unit elastic. Furthermore, it proves that a firm seeking to maximize total revenue (before accounting for production costs) should operate right at the <strong>unit elastic midpoint</strong> (<span class="math inline">\(|\varepsilon_d| = 1\)</span>), where revenue reaches its peak.</p>
+</section>
+<section id="visual-representation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-1">2. Visual Representation</h3>
+<p>Figure 2 stacks a linear demand curve directly above its corresponding parabolic Total Revenue curve, showing how revenue rises along the elastic upper half, peaks at the unit-elastic midpoint, and falls along the inelastic lower half.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_5_elasticity_responsiveness_of_demand_and_supply_figure_02.svg" class="img-fluid figure-img" alt="Demand Elasticity and Total Revenue. Moving down the linear demand curve from Q=0 to Q=25 lowers price in the elastic region, causing Total Revenue to climb to its maximum of $1{,}250 at the unit-elastic midpoint. Beyond Q=25, further price cuts enter the inelastic region and cause Total Revenue to decline."></p>
+<figcaption>Figure 2. Demand Elasticity and Total Revenue. Moving down the linear demand curve from <span class="math inline">\(Q=0\)</span> to <span class="math inline">\(Q=25\)</span> lowers price in the elastic region, causing Total Revenue to climb to its maximum of <span class="math inline">\(\$1{,}250\)</span> at the unit-elastic midpoint. Beyond <span class="math inline">\(Q=25\)</span>, further price cuts enter the inelastic region and cause Total Revenue to decline.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-subscription-and-ticket-pricing" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-subscription-and-ticket-pricing">3. Real-World Application: Subscription and Ticket Pricing</h3>
+<p>The following are stylized examples, not observations about any named company or event. They show how a seller can use the total-revenue test to reason about a price change:</p>
+<ul>
+<li>Suppose a monthly subscription price rises from <span class="math inline">\(\$15\)</span> to <span class="math inline">\(\$17\)</span> while subscribers fall from <span class="math inline">\(1{,}000\)</span> to <span class="math inline">\(970\)</span>. Revenue changes from <span class="math inline">\(\$15{,}000\)</span> to <span class="math inline">\(\$16{,}490\)</span> per month, so revenue rises over this interval.</li>
+<li>Suppose a ticket price falls from <span class="math inline">\(\$100\)</span> to <span class="math inline">\(\$70\)</span> while sales rise from 100 to 200 tickets. Revenue changes from <span class="math inline">\(\$10{,}000\)</span> to <span class="math inline">\(\$14{,}000\)</span>, so demand is elastic over this interval by the total-revenue test.</li>
+</ul>
+</section>
+<section id="mathematical-foundation-algebra-level-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-1">4. Mathematical Foundation (Algebra Level)</h3>
+<p>Total Revenue is the product of market price and quantity sold:</p>
+<p><span class="math display">\[
+TR = P \times Q
+\]</span></p>
+<p>To test how a price change alters total revenue, compute <span class="math inline">\(TR_1 = P_1 \times Q_1\)</span> before the change and <span class="math inline">\(TR_2 = P_2 \times Q_2\)</span> after the change:</p>
+<ul>
+<li>If <span class="math inline">\(P \uparrow\)</span> and <span class="math inline">\(TR \uparrow\)</span> (price and revenue move in the <strong>same</strong> direction), demand is <strong>inelastic</strong> (<span class="math inline">\(|\varepsilon_d| &lt; 1\)</span>).</li>
+<li>If <span class="math inline">\(P \uparrow\)</span> and <span class="math inline">\(TR \downarrow\)</span> (price and revenue move in <strong>opposite</strong> directions), demand is <strong>elastic</strong> (<span class="math inline">\(|\varepsilon_d| &gt; 1\)</span>).</li>
+<li>If <span class="math inline">\(P \uparrow\)</span> and <span class="math inline">\(TR\)</span> stays <strong>unchanged</strong>, demand is <strong>unit elastic</strong> (<span class="math inline">\(|\varepsilon_d| = 1\)</span>).</li>
+</ul>
+<p><strong>Worked Problem:</strong> Suppose a campus coffee kiosk faces the linear demand schedule <span class="math inline">\(P = 100 - 2Q\)</span>, where <span class="math inline">\(P\)</span> is cents per ounce and <span class="math inline">\(Q\)</span> is hundreds of ounces, as plotted in Figure 2. Thus actual revenue in dollars is <span class="math inline">\((P/100)(100Q)=PQ\)</span>. Compare total revenue across three pricing strategies:</p>
+<ul>
+<li><strong>Strategy A:</strong> High price <span class="math inline">\(P_A = 70\text{ cents}\)</span></li>
+<li><strong>Strategy B:</strong> Midpoint price <span class="math inline">\(P_B = 50\text{ cents}\)</span></li>
+<li><strong>Strategy C:</strong> Low price <span class="math inline">\(P_C = 30\text{ cents}\)</span></li>
+</ul>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Compute Quantity and Revenue under Strategy A (<span class="math inline">\(P_A = 70\)</span>):</strong> Substitute <span class="math inline">\(P = 70\)</span> into <span class="math inline">\(P = 100 - 2Q\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+70 = 100 - 2Q_A \implies 2Q_A = 30 \implies Q_A = 15
+\]</span></p>
+<p>Calculate Total Revenue:</p>
+<p><span class="math display">\[
+TR_A = P_A \times Q_A = 70 \times 15 = \mathbf{1{,}050}
+\]</span></p>
+<ul>
+<li><strong>Compute Quantity and Revenue under Strategy B (<span class="math inline">\(P_B = 50\)</span>):</strong> Substitute <span class="math inline">\(P = 50\)</span> into <span class="math inline">\(P = 100 - 2Q\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+50 = 100 - 2Q_B \implies 2Q_B = 50 \implies Q_B = 25
+\]</span></p>
+<p>Calculate Total Revenue:</p>
+<p><span class="math display">\[
+TR_B = P_B \times Q_B = 50 \times 25 = \mathbf{1{,}250}
+\]</span></p>
+<p><em>Interpretation:</em> Cutting price from <span class="math inline">\(70\)</span> to <span class="math inline">\(50\)</span> increased Total Revenue from <span class="math inline">\(1{,}050\)</span> to <span class="math inline">\(1{,}250\)</span>, confirming that demand between <span class="math inline">\(P=70\)</span> and <span class="math inline">\(P=50\)</span> is <strong>elastic</strong>.</p>
+<ul>
+<li><strong>Compute Quantity and Revenue under Strategy C (<span class="math inline">\(P_C = 30\)</span>):</strong> Substitute <span class="math inline">\(P = 30\)</span> into <span class="math inline">\(P = 100 - 2Q\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+30 = 100 - 2Q_C \implies 2Q_C = 70 \implies Q_C = 35
+\]</span></p>
+<p>Calculate Total Revenue:</p>
+<p><span class="math display">\[
+TR_C = P_C \times Q_C = 30 \times 35 = \mathbf{1{,}050}
+\]</span></p>
+<p><em>Interpretation:</em> Cutting price further from <span class="math inline">\(50\)</span> to <span class="math inline">\(30\)</span> reduced Total Revenue from <span class="math inline">\(1{,}250\)</span> back down to <span class="math inline">\(1{,}050\)</span>, confirming that demand below <span class="math inline">\(P=50\)</span> is <strong>inelastic</strong>.</p>
+<p><strong>Conclusion:</strong> Total Revenue is maximized at <span class="math inline">\(\mathbf{1{,}250}\)</span> when <span class="math inline">\(P = 50\)</span> and <span class="math inline">\(Q = 25\)</span>. This is the unit-elastic midpoint for this linear demand curve; the maximum for a general demand curve need not occur at its geometric midpoint.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Calculus Proof of the Total Revenue Test
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors:</em> Express Total Revenue as a function of price, <span class="math inline">\(TR(P) = P \cdot Q(P)\)</span>. Differentiating with respect to <span class="math inline">\(P\)</span> using the product rule gives:</p>
+<p><span class="math display">\[
+\frac{d(TR)}{dP} = Q(P) + P \frac{dQ}{dP} = Q(P) \left[ 1 + \frac{dQ}{dP} \cdot \frac{P}{Q(P)} \right] = Q(P) \left( 1 + \varepsilon_d \right)
+\]</span></p>
+<p>Since <span class="math inline">\(\varepsilon_d = -|\varepsilon_d|\)</span> for downward-sloping demand, we can rewrite this as:</p>
+<p><span class="math display">\[
+\frac{d(TR)}{dP} = Q(P) \left( 1 - |\varepsilon_d| \right)
+\]</span></p>
+<ul>
+<li>When <span class="math inline">\(|\varepsilon_d| &lt; 1\)</span> (inelastic), <span class="math inline">\(1 - |\varepsilon_d| &gt; 0 \implies \frac{d(TR)}{dP} &gt; 0\)</span> (price increases raise <span class="math inline">\(TR\)</span>).</li>
+<li>When <span class="math inline">\(|\varepsilon_d| &gt; 1\)</span> (elastic), <span class="math inline">\(1 - |\varepsilon_d| &lt; 0 \implies \frac{d(TR)}{dP} &lt; 0\)</span> (price increases lower <span class="math inline">\(TR\)</span>).</li>
+<li>At an interior stationary point with positive quantity, setting <span class="math inline">\(\frac{d(TR)}{dP}=0\)</span> yields <span class="math inline">\(|\varepsilon_d|=1\)</span>. At an interior revenue maximum, this is the unit-elastic point; for a linear demand curve, that point is also the geometric midpoint.</li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="income-cross-price-and-supply-elasticities" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="income-cross-price-and-supply-elasticities"><span class="header-section-number">5.3</span> Income, Cross-Price, and Supply Elasticities</h2>
+<section id="conceptual-introduction-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-2">1. Conceptual Introduction</h3>
+<p>While own-price elasticity measures movement <em>along</em> a demand curve, two related demand elasticities measure how much the entire demand curve <em>shifts</em> when income or related-good prices change:</p>
+<ul>
+<li><strong>Income Elasticity of Demand (<span class="math inline">\(\varepsilon_I\)</span>):</strong> Measures the percentage change in quantity demanded divided by the percentage change in consumer income (<span class="math inline">\(I\)</span>). Unlike own-price elasticity, <strong>never drop the plus or minus sign</strong> here! A positive value (<span class="math inline">\(\varepsilon_I &gt; 0\)</span>) identifies a <strong>normal good</strong> (if <span class="math inline">\(\varepsilon_I &gt; 1\)</span>, it is an income-elastic <em>luxury</em>; if <span class="math inline">\(0 &lt; \varepsilon_I &lt; 1\)</span>, it is an income-inelastic <em>necessity</em>). A negative value (<span class="math inline">\(\varepsilon_I &lt; 0\)</span>) identifies an <strong>inferior good</strong>, which households buy less of as their paychecks grow.</li>
+<li><strong>Cross-Price Elasticity of Demand (<span class="math inline">\(\varepsilon_{xy}\)</span>):</strong> Measures the percentage change in quantity demanded of Good <span class="math inline">\(X\)</span> divided by the percentage change in the price of Good <span class="math inline">\(Y\)</span>. Again, the sign carries critical economic meaning: if <span class="math inline">\(\varepsilon_{xy} &gt; 0\)</span>, rising prices for Good <span class="math inline">\(Y\)</span> drive consumers to buy more of Good <span class="math inline">\(X\)</span>, proving the two goods are <strong>substitutes</strong> (such as Uber and Lyft). If <span class="math inline">\(\varepsilon_{xy} &lt; 0\)</span>, rising prices for Good <span class="math inline">\(Y\)</span> cause sales of Good <span class="math inline">\(X\)</span> to fall, proving they are <strong>complements</strong> (such as game consoles and video games).</li>
+</ul>
+<p>On the other side of the market, the <strong>Price Elasticity of Supply (<span class="math inline">\(\varepsilon_s\)</span>)</strong> measures how flexibly producers can expand output when market prices rise (<span class="math inline">\(\varepsilon_s = \%\Delta Q_s / \%\Delta P \ge 0\)</span>). Supply elasticity is governed primarily by production capacity and time: agricultural crops after harvest or beachfront land have nearly vertical, inelastic supply (<span class="math inline">\(\varepsilon_s \approx 0\)</span>), whereas digital software downloads or mass-produced apparel can scale up rapidly at nearly constant cost, exhibiting high supply elasticity (<span class="math inline">\(\varepsilon_s &gt; 1\)</span>).</p>
+</section>
+<section id="visual-representation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-2">2. Visual Representation</h3>
+<p>Figure 3 illustrates how production time horizons transform the Price Elasticity of Supply from rigid in the immediate market period to highly responsive in the long run.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_5_elasticity_responsiveness_of_demand_and_supply_figure_03.svg" class="img-fluid figure-img" alt="Supply Elasticity Across Time Horizons. Following an unexpected demand surge from D_1 to D_2, fixed immediate capacity (S_{\text{immediate}}) forces price to spike to E_{\text{imm}}. Over the short run (S_{\text{short-run}}) and long run (S_{\text{long-run}}), firms expand factories and enter the market, flattening the supply curve and moderating the price increase."></p>
+<figcaption>Figure 3. Supply Elasticity Across Time Horizons. Following an unexpected demand surge from <span class="math inline">\(D_1\)</span> to <span class="math inline">\(D_2\)</span>, fixed immediate capacity (<span class="math inline">\(S_{\text{immediate}}\)</span>) forces price to spike to <span class="math inline">\(E_{\text{imm}}\)</span>. Over the short run (<span class="math inline">\(S_{\text{short-run}}\)</span>) and long run (<span class="math inline">\(S_{\text{long-run}}\)</span>), firms expand factories and enter the market, flattening the supply curve and moderating the price increase.</figcaption>
+</figure>
+</div>
+</section>
+<section id="elasticity-shifts-income-and-related-good-prices" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="elasticity-shifts-income-and-related-good-prices">Elasticity Shifts: Income and Related-Good Prices</h3>
+<p>Income elasticity and cross-price elasticity describe shifts in demand, rather than movements along a demand curve. The sign of the elasticity predicts the direction of the shift when the explanatory variable changes.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_5_elasticity_responsiveness_of_demand_and_supply_figure_04.svg" class="img-fluid figure-img" alt="How income and related-good prices shift demand. The direction depends on whether the good is normal or inferior, and whether the related goods are substitutes or complements."></p>
+<figcaption>Figure 4. How income and related-good prices shift demand. The direction depends on whether the good is normal or inferior, and whether the related goods are substitutes or complements.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-capacity-and-substitutes" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-capacity-and-substitutes">3. Real-World Application: Capacity and Substitutes</h3>
+<ul>
+<li><strong>Capacity over time:</strong> A producer in a capacity-intensive industry, such as semiconductor fabrication, may be unable to expand output immediately when demand rises. Investment and entry can make supply more responsive over a longer horizon. This is a qualitative illustration; specific build times, costs, and price movements require a dated source.</li>
+<li><strong>Related services:</strong> If two ride-hailing services are substitutes, a price increase for one may shift demand toward the other. If two goods are complements, a price increase for one may reduce demand for the other. These are illustrative mechanisms, not claims about measured responses by named firms.</li>
+</ul>
+</section>
+<section id="mathematical-foundation-algebra-level-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-2">4. Mathematical Foundation (Algebra Level)</h3>
+<p>Using the midpoint method, the three elasticity formulas are: <span class="math display">\[\begin{align}
+\varepsilon_I &amp;= \frac{\%\Delta Q_d}{\%\Delta I}
+= \frac{\dfrac{Q_2 - Q_1}{(Q_1 + Q_2)/2}}{\dfrac{I_2 - I_1}{(I_1 + I_2)/2}},\\
+\varepsilon_{xy} &amp;= \frac{\%\Delta Q_x}{\%\Delta P_y}
+= \frac{\dfrac{Q_{x2} - Q_{x1}}{(Q_{x1} + Q_{x2})/2}}{\dfrac{P_{y2} - P_{y1}}{(P_{y1} + P_{y2})/2}},\\
+\varepsilon_s &amp;= \frac{\%\Delta Q_s}{\%\Delta P}
+= \frac{\dfrac{Q_{s2} - Q_{s1}}{(Q_{s1} + Q_{s2})/2}}{\dfrac{P_2 - P_1}{(P_1 + P_2)/2}}.
+\end{align}\]</span></p>
+<p><strong>Worked Problem:</strong> In a hypothetical example, a graduating college senior’s annual income rises from <span class="math inline">\(I_1 = \$30{,}000\)</span> to <span class="math inline">\(I_2 = \$50{,}000\)</span>, while other factors affecting demand are held constant. Assume:</p>
+<ul>
+<li>Their annual purchases of instant ramen packs drop from <span class="math inline">\(Q_1 = 120\)</span> packs to <span class="math inline">\(Q_2 = 40\)</span> packs.</li>
+<li>Meanwhile, when the price of oat milk rises from <span class="math inline">\(P_{y1} = \$4.00\)</span> to <span class="math inline">\(P_{y2} = \$5.00\)</span> per carton, local café demand for espresso shots falls from <span class="math inline">\(Q_{x1} = 500\)</span> to <span class="math inline">\(Q_{x2} = 450\)</span> shots per day.</li>
+</ul>
+<p>Compute both the Income Elasticity of Demand for instant ramen and the Cross-Price Elasticity between espresso shots and oat milk.</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Calculate Percentage Change in Income (<span class="math inline">\(\%\Delta I\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+\%\Delta I = \frac{50{,}000 - 30{,}000}{(30{,}000 + 50{,}000)/2} = \frac{20{,}000}{40{,}000} = +0.50 \quad (+50\%)
+\]</span></p>
+<ul>
+<li><strong>Calculate Income Elasticity of Demand for Instant Ramen (<span class="math inline">\(\varepsilon_I\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+\%\Delta Q_{\text{ramen}} = \frac{40 - 120}{(120 + 40)/2} = \frac{-80}{80} = -1.00 \quad (-100\%)
+\]</span></p>
+<p>Divide <span class="math inline">\(\%\Delta Q_{\text{ramen}}\)</span> by <span class="math inline">\(\%\Delta I\)</span>:</p>
+<p><span class="math display">\[
+\varepsilon_I = \frac{-1.00}{+0.50} = \mathbf{-2.00}
+\]</span></p>
+<p><em>Classification:</em> Because <span class="math inline">\(\varepsilon_I &lt; 0\)</span>, instant ramen is an <strong>inferior good</strong>.</p>
+<ul>
+<li><strong>Calculate Cross-Price Elasticity (<span class="math inline">\(\varepsilon_{\text{espresso, oat milk}}\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+\%\Delta Q_{\text{espresso}} = \frac{450 - 500}{(500 + 450)/2} = \frac{-50}{475} \approx -0.1053 \quad (-10.53\%)
+\]</span></p>
+<p><span class="math display">\[
+\%\Delta P_{\text{oat milk}} = \frac{5.00 - 4.00}{(4.00 + 5.00)/2} = \frac{1.00}{4.50} \approx +0.2222 \quad (+22.22\%)
+\]</span></p>
+<p>Divide <span class="math inline">\(\%\Delta Q_{\text{espresso}}\)</span> by <span class="math inline">\(\%\Delta P_{\text{oat milk}}\)</span>:</p>
+<p><span class="math display">\[
+\varepsilon_{xy} = \frac{-50/475}{1.00/4.50} = -\frac{50}{475} \times 4.50 = -\frac{225}{475} \approx \mathbf{-0.47}
+\]</span></p>
+<p><em>Classification:</em> Because <span class="math inline">\(\varepsilon_{xy} &lt; 0\)</span>, espresso shots and oat milk are <strong>complements</strong>.</p>
+<p><strong>Conclusion:</strong> Retaining the algebraic signs reveals that instant ramen is an inferior good (<span class="math inline">\(\varepsilon_I = -2.00\)</span>) and oat milk and espresso are complementary goods (<span class="math inline">\(\varepsilon_{xy} = -0.47\)</span>).</p>
+<p><strong>Worked Supply Example (Illustrative):</strong> Suppose price rises from <span class="math inline">\(\$10\)</span> to <span class="math inline">\(\$12\)</span> while quantity supplied rises from 100 to 120 units. Using the midpoint formula:</p>
+<p><span class="math display">\[
+\%\Delta Q_s=\frac{120-100}{(120+100)/2}=\frac{20}{110},
+\qquad
+\%\Delta P=\frac{12-10}{(12+10)/2}=\frac{2}{11}.
+\]</span></p>
+<p>Therefore,</p>
+<p><span class="math display">\[
+\varepsilon_s=\frac{20/110}{2/11}=1.
+\]</span></p>
+<p>Supply is unit elastic over this interval. These values are hypothetical and are not an estimate for a particular market.</p>
+</section>
+</section>
+<section id="elasticity-and-economic-tax-incidence" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="elasticity-and-economic-tax-incidence"><span class="header-section-number">5.4</span> Elasticity and Economic Tax Incidence</h2>
+<section id="conceptual-introduction-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-3">1. Conceptual Introduction</h3>
+<p>Under the standard competitive supply-and-demand model, for a given per-unit tax and absent differences in compliance or transaction costs, <strong>statutory incidence</strong> (whether the law collects the tax from the buyer or the seller) does not change the economic burden. So what <em>does</em> determine how consumers and producers divide that burden? The answer is <strong>relative price elasticity</strong>.</p>
+<p>Think of a tax wedge as a financial squeeze between buyers and sellers. Whichever side of the market is <strong>more inelastic</strong>—meaning they have fewer alternatives and cannot easily walk away—gets trapped and absorbs the lion’s share of the tax burden. Conversely, whichever side is <strong>more elastic</strong> can easily escape the tax by switching to substitutes or shifting production elsewhere, forcing the other party to pay.</p>
+<p>This principle produces two polar rules of public finance:</p>
+<ul>
+<li><strong>When Demand Is More Inelastic Than Supply (<span class="math inline">\(|\varepsilon_d| &lt; \varepsilon_s\)</span>):</strong> Consumers have few substitutes while producers can easily redirect resources. Sellers pass most of the tax forward to buyers through a sharply higher retail price (<span class="math inline">\(P_b - P^* &gt; P^* - P_s\)</span>).</li>
+<li><strong>When Supply Is More Inelastic Than Demand (<span class="math inline">\(\varepsilon_s &lt; |\varepsilon_d|\)</span>):</strong> Producers are locked into fixed assets or specialized locations while consumers can easily switch away. Sellers must absorb most of the tax by accepting a sharply lower net price (<span class="math inline">\(P^* - P_s &gt; P_b - P^*\)</span>).</li>
+</ul>
+</section>
+<section id="visual-representation-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-3">2. Visual Representation</h3>
+<p>Figure 5 compares the exact same excise tax <span class="math inline">\(t\)</span> across two markets: one with inelastic demand (left) where buyers pay almost the entire tax, and one with elastic demand (right) where sellers absorb most of the burden.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_5_elasticity_responsiveness_of_demand_and_supply_figure_05.svg" class="img-fluid figure-img" alt="Elasticity Determines Tax Incidence. In panel (a), steep inelastic demand forces buyers to pay almost the entire tax (P_b - P^*). In panel (b), flat elastic demand allows buyers to walk away, forcing sellers with inelastic supply to absorb most of the tax (P^* - P_s)."></p>
+<figcaption>Figure 5. Elasticity Determines Tax Incidence. In panel (a), steep inelastic demand forces buyers to pay almost the entire tax (<span class="math inline">\(P_b - P^*\)</span>). In panel (b), flat elastic demand allows buyers to walk away, forcing sellers with inelastic supply to absorb most of the tax (<span class="math inline">\(P^* - P_s\)</span>).</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-cigarette-excise-taxes" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-cigarette-excise-taxes">3. Real-World Application: Cigarette Excise Taxes</h3>
+<ul>
+<li>Cigarette excise taxes are a policy example in which the statutory tax does not by itself reveal who bears the economic burden. Estimating buyer and seller shares requires evidence about how both prices and quantities respond in a specified market and period.</li>
+<li>The addictive nature of a product may affect the availability of substitutes, but it does not establish a universal demand elasticity or a precise tax pass-through rate. Avoid numerical incidence claims unless the market, period, and source are stated.</li>
+</ul>
+</section>
+<section id="mathematical-foundation-algebra-level-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-3">4. Mathematical Foundation (Algebra Level)</h3>
+<p>We can compute the exact dollar burden and percentage share borne by buyers and sellers using standard linear equations:</p>
+<p><span class="math display">\[
+\text{Buyer Tax Share} = \frac{P_b - P^*}{t}, \qquad \text{Seller Tax Share} = \frac{P^* - P_s}{t}
+\]</span></p>
+<p>Notice that <span class="math inline">\((P_b - P^*) + (P^* - P_s) = P_b - P_s = t\)</span>, so the two shares always sum to <span class="math inline">\(100\%\)</span>.</p>
+<p><strong>Worked Problem:</strong> Consider a stylized competitive market for a specialty allergy medication with linear demand and supply:</p>
+<p><span class="math display">\[
+\text{Demand: } P_d = 110 - 4Q, \qquad \text{Supply: } P_s = 10 + Q
+\]</span></p>
+<p>Suppose the government imposes a per-unit excise tax of <span class="math inline">\(t = \$20\)</span>. Calculate the pre-tax equilibrium, post-tax prices (<span class="math inline">\(P_b\)</span> and <span class="math inline">\(P_s\)</span>), and the exact percentage of the tax paid by buyers versus sellers.</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Find the Pre-Tax Equilibrium (<span class="math inline">\(Q^*, P^*\)</span>):</strong> Set <span class="math inline">\(P_d = P_s\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+110 - 4Q = 10 + Q \implies 100 = 5Q \implies Q^* = \mathbf{20\text{ units}}
+\]</span></p>
+<p>Plug <span class="math inline">\(Q^* = 20\)</span> into either equation to find <span class="math inline">\(P^*\)</span>:</p>
+<p><span class="math display">\[
+P^* = 10 + 20 = \mathbf{\$30}
+\]</span></p>
+<ul>
+<li><strong>Impose the Tax Wedge (<span class="math inline">\(P_b - P_s = \$20\)</span>):</strong> Substitute the demand and supply expressions into the tax wedge equation:</li>
+</ul>
+<p><span class="math display">\[
+(110 - 4Q_t) - (10 + Q_t) = 20
+\]</span></p>
+<p>Simplify the left-hand side:</p>
+<p><span class="math display">\[
+100 - 5Q_t = 20 \implies 5Q_t = 80 \implies Q_t = \mathbf{16\text{ units}}
+\]</span></p>
+<ul>
+<li><strong>Compute Post-Tax Buyer Price (<span class="math inline">\(P_b\)</span>) and Seller Price (<span class="math inline">\(P_s\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+P_b = 110 - 4(16) = 110 - 64 = \mathbf{\$46}
+\]</span></p>
+<p><span class="math display">\[
+P_s = 10 + 16 = \mathbf{\$26}
+\]</span></p>
+<p><em>Check:</em> <span class="math inline">\(P_b - P_s = \$46 - \$26 = \$20 = t\)</span>.</p>
+<ul>
+<li><strong>Calculate Dollar Burdens and Percentage Shares:</strong></li>
+</ul>
+<p><span class="math display">\[
+\text{Buyer Dollar Burden} = P_b - P^* = \$46 - \$30 = \mathbf{\$16\text{ per unit}} \quad \Longrightarrow \quad \frac{\$16}{\$20} = \mathbf{80\%}
+\]</span></p>
+<p><span class="math display">\[
+\text{Seller Dollar Burden} = P^* - P_s = \$30 - \$26 = \mathbf{\$4\text{ per unit}} \quad \Longrightarrow \quad \frac{\$4}{\$20} = \mathbf{20\%}
+\]</span></p>
+<p><strong>Conclusion:</strong> At the pre-tax equilibrium, demand elasticity has magnitude <span class="math inline">\(0.375\)</span> and supply elasticity is <span class="math inline">\(1.50\)</span>. Demand is more inelastic in this example, and the calculated tax wedge assigns <strong><span class="math inline">\(80\%\)</span></strong> of the per-unit burden to buyers and <strong><span class="math inline">\(20\%\)</span></strong> to sellers. Curve slopes alone do not generally measure relative elasticity.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: The Elasticity Tax-Pass-Through Formula
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> For small taxes, the exact share of an excise tax passed forward to buyers depends directly on the ratio of supply elasticity to the sum of demand and supply elasticities:</p>
+<p><span class="math display">\[
+\frac{dP_b}{dt} = \frac{\varepsilon_s}{\varepsilon_s + |\varepsilon_d|}, \qquad \frac{dP_s}{dt} = -\frac{|\varepsilon_d|}{\varepsilon_s + |\varepsilon_d|}
+\]</span></p>
+<p>In our worked problem above, at the pre-tax equilibrium <span class="math inline">\((Q^*=20, P^*=30)\)</span>:</p>
+<p><span class="math display">\[
+|\varepsilon_d| = \left|-\frac{1}{4}\right| \cdot \frac{30}{20} = 0.375, \qquad \varepsilon_s = (1) \cdot \frac{30}{20} = 1.50
+\]</span></p>
+<p>Plugging into the pass-through formula:</p>
+<p><span class="math display">\[
+\text{Buyer Share} = \frac{1.50}{1.50 + 0.375} = \frac{1.50}{1.875} = \mathbf{0.80 \text{ (80\%)}}
+\]</span></p>
+<p>This confirms the exact <span class="math inline">\(80\% / 20\%\)</span> split derived via linear algebra.</p>
+</div>
+</div>
 
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

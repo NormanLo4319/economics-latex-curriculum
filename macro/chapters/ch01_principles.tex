@@ -1,6 +1,10 @@
 \documentclass[11pt,letterpaper]{article}
 \input{../../shared/preamble.tex}
 \input{../../shared/tikz-settings.tex}
+\usepackage{tcolorbox}
+\definecolor{CourseBlue}{HTML}{0072B2}
+\definecolor{CourseOrange}{HTML}{D55E00}
+\definecolor{CourseTeal}{HTML}{009E73}
 
 \begin{document}
 
@@ -20,16 +24,265 @@ This chapter provides a rigorous, pedagogical treatment of Chapter 1: First Prin
 \hrule
 \vspace{1.5em}
 
-\section{The Twelve Principles of Macroeconomics}
-Macroeconomics rests upon systemic feedback loops where aggregate outcomes diverge from individual decisions.
+% -----------------------------------------------------------------------------
+% Section 1.1: Macroeconomics vs. Microeconomics and Systemic Feedback
+% -----------------------------------------------------------------------------
+\section{Macroeconomics vs. Microeconomics and Systemic Feedback}
 
-\section{The Paradox of Thrift}
-When households collectively attempt to raise savings during a recession, aggregate consumption contracts. Because one person's spending is another's income, national income falls until dollar savings stagnate or decline.
+\subsection*{Conceptual Introduction}
+While microeconomics zooms in on how individual households, workers, and firms make decisions in specific markets, \textbf{macroeconomics} steps back to examine the behavior of the entire economy as an interconnected system. Macroeconomists study economy-wide phenomena: why total national output (\textbf{Real GDP}) grows over decades, why recessions occasionally trigger widespread \textbf{unemployment}, what causes sustained \textbf{inflation}, and how central banks and governments use monetary and fiscal policies to stabilize economic fluctuations.
 
-\section{Macroeconomic Circular Flow Identity}
+A foundational insight of macroeconomics is that \textbf{the whole is more than the simple sum of its parts}. In an economy where people and businesses buy from and sell to one another, one person's spending is another person's income. When many households or businesses change their behavior at the same time, feedback can produce aggregate outcomes different from what any individual intended—a possibility economists call the \textbf{fallacy of composition}.
+
+The \textbf{Paradox of Thrift} is one possible short-run feedback mechanism. For an individual household facing financial uncertainty, cutting consumption and saving more may be prudent. If many households do this together, however, business sales can fall, reducing production, hiring, and household income. In a model with spare capacity, slow price adjustment, and no offsetting increase in investment or public spending, aggregate income may fall enough that total saving does not rise as intended. This result depends on those assumptions; it is not a universal prediction for every economy or time horizon.
+
+\subsection*{Visual Representation}
+Figure~\ref{fig:paradox_of_thrift} summarizes this conditional short-run feedback loop: lower consumption can reduce business revenue and household income, reinforcing efforts to save.
+
+\begin{tcolorbox}[colback=yellow!10!white,colframe=orange!80!black,title=\textbf{Clear It Up: Fallacy of Composition in Macroeconomics}]
+What is true for a single individual is not automatically true for the whole economy at once. If one fan stands up at a stadium concert, they get a better view; if \emph{everyone} stands up simultaneously, nobody sees better and everyone's legs get tired. Similarly, if every firm cuts wages simultaneously to boost profits, worker purchasing power falls and consumer demand for those firms' products shrinks.
+\end{tcolorbox}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.0]
+    % Flowchart of Paradox of Thrift Systemic Feedback Loop
+    \node[draw=SlateBlue, very thick, fill=LightSlate, rounded corners, minimum width=4.4cm, minimum height=1.1cm, align=center] (s1) at (0,3.6) {\textbf{1. Simultaneous Saving Surge}\\Households cut consumption ($C \downarrow$)};
+    \node[draw=CourseOrange, very thick, fill=LightTerracotta, rounded corners, minimum width=4.4cm, minimum height=1.1cm, align=center] (s2) at (6.2,3.6) {\textbf{2. Aggregate Spending Drops}\\Business revenue \& orders fall};
+    \node[draw=CourseOrange, very thick, fill=LightTerracotta, rounded corners, minimum width=4.4cm, minimum height=1.1cm, align=center] (s3) at (6.2,0.8) {\textbf{3. Output \& Hiring Contract}\\Firms reduce production and hiring};
+    \node[draw=SlateBlue, very thick, fill=LightSlate, rounded corners, minimum width=4.4cm, minimum height=1.1cm, align=center] (s4) at (0,0.8) {\textbf{4. Lower National Income}\\Total saving may stagnate or fall};
+
+    \draw[->, very thick, CourseBlue] (s1.east) -- node[above, font=\footnotesize\bfseries, fill=white, inner sep=2pt] {Spending = Income} (s2.west);
+    \draw[->, very thick, CourseOrange] (s2.south) -- node[right, font=\footnotesize\bfseries, fill=white, inner sep=2pt] {Inventory buildup} (s3.north);
+    \draw[->, very thick, CourseOrange] (s3.west) -- node[below, font=\footnotesize\bfseries, fill=white, inner sep=2pt] {Feedback loop} (s4.east);
+    \draw[->, dashed, thick, SlateBlue] (s4.north) -- node[left, font=\footnotesize, fill=white, inner sep=2pt] {Reinforces caution} (s1.south);
+\end{tikzpicture}
+\caption{A possible short-run feedback in the Paradox of Thrift. The mechanism assumes spare capacity and no immediate offset from investment or policy; actual outcomes depend on economic conditions.}
+\label{fig:paradox_of_thrift}
+\end{figure}
+
+\subsection*{Real-World Application: The 2008--2009 Great Recession and Household Deleveraging}
+The Great Recession offers a case for distinguishing a model mechanism from a historical explanation. When households try to repair balance sheets by cutting consumption, the short-run model predicts weaker sales and income if other spending does not offset the decline. Jones, Midrigan, and Philippon (2022) evaluate the household-leverage explanation and find that credit shocks account for only a small fraction of the aggregate employment decline in 2008--2010, while slowing the recovery. The saving-spending mechanism is useful for organizing the question, but it does not by itself establish the cause or size of a historical downturn.
+
+\subsection*{Mathematical Foundation (Algebra Level)}
+For the worked model, assume a closed economy with no government or foreign trade, fixed prices, spare productive capacity, fixed planned investment, and a constant marginal propensity to consume. If consumption depends on autonomous spending $C_0$ and a fraction $c$ of income $Y$, private saving is $S=Y-C$:
 \begin{equation}
-Y \equiv C + I + G + NX = \text{Factor Payments (Wages + Rent + Interest + Profit)}
+C = C_0 + cY, \qquad S = Y - (C_0 + cY) = -C_0 + (1 - c)Y
 \end{equation}
-Leakages ($S + T + M$) identically equal Injections ($I + G + X$) in equilibrium.
+In this model's equilibrium, planned saving equals planned investment ($S=I_p$). The setup illustrates a short-run possibility rather than a universal response.
+
+\noindent\textbf{Worked Problem:}
+Suppose a closed economy has planned business investment fixed at $I_p = \$200\text{ billion}$, and households initially consume according to $C = 100 + 0.75Y$ (so initial saving is $S = -100 + 0.25Y$).
+\begin{enumerate}
+    \item Find initial equilibrium national income $Y_1^*$ and confirm that equilibrium saving equals $\$200\text{ billion}$.
+    \item Suppose consumer anxiety causes households to cut autonomous consumption by $\$50\text{ billion}$ (trying to save $\$50\text{ billion}$ more at every income level), so $C_{\text{new}} = 50 + 0.75Y$ and $S_{\text{new}} = -50 + 0.25Y$. Compute the new equilibrium income $Y_2^*$ and new total saving $S_2^*$.
+\end{enumerate}
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Solve for Initial Equilibrium Income ($Y_1^*$) Where $S = I_p$:}
+    \[
+    -100 + 0.25Y_1^* = 200 \implies 0.25Y_1^* = 300 \implies Y_1^* = \mathbf{\$1{,}200\text{ billion}}
+    \]
+    Check equilibrium saving: $S_1^* = -100 + 0.25(1{,}200) = -100 + 300 = \mathbf{\$200\text{ billion}}$.
+
+    \item \textbf{Solve for New Equilibrium Income ($Y_2^*$) After the Saving Surge:}
+    Set $S_{\text{new}} = I_p$:
+    \[
+    -50 + 0.25Y_2^* = 200 \implies 0.25Y_2^* = 250 \implies Y_2^* = \mathbf{\$1{,}000\text{ billion}}
+    \]
+    Check new equilibrium saving at $Y_2^* = \$1{,}000$:
+    \[
+    S_2^* = -50 + 0.25(1{,}000) = -50 + 250 = \mathbf{\$200\text{ billion}}
+    \]
+\end{enumerate}
+\textbf{Conclusion:} Under the stated assumptions, the $\$50$ billion reduction in autonomous consumption lowers equilibrium income by $\$200$ billion (from $\$1{,}200$ billion to $\$1{,}000$ billion), while equilibrium saving remains $\$200$ billion. This is the paradox-of-thrift result for this model.
+
+% -----------------------------------------------------------------------------
+% Section 1.2: The Expanded Circular Flow, Leakages, and Injections
+% -----------------------------------------------------------------------------
+\section{The Expanded Circular Flow, Leakages, and Injections}
+
+\subsection*{Conceptual Introduction}
+To track how dollars circulate across an open economy, macroeconomists add three sectors to the household-firm circular flow: the \textbf{financial sector}, which connects savers and borrowers; \textbf{government}, which collects taxes and purchases goods and services; and the \textbf{rest of the world}, which buys exports and sells imports.
+
+In this four-sector accounting framework, expenditure on domestically produced final goods and services ($Y$) equals four spending components:
+\begin{equation}
+Y \equiv C + I + G + NX, \qquad \text{where } NX = X - M
+\end{equation}
+Here $C$ is household consumption, $I$ is private investment spending, $G$ is government purchases of goods and services, and $NX$ is net exports (exports $X$ minus imports $M$).
+
+Three flows are called \textbf{leakages}: \textbf{private saving ($S$)}, \textbf{net taxes ($T$)}, and \textbf{imports ($M$)}. Three flows are called \textbf{injections}: \textbf{investment ($I$)}, \textbf{government purchases ($G$)}, and \textbf{exports ($X$)}. In the accounting equilibrium represented here, total leakages equal total injections:
+\begin{equation}
+S + T + M = I + G + X
+\end{equation}
+
+\subsection*{Visual Representation}
+Figure~\ref{fig:macro_circular_flow} maps the expanded four-sector circular flow, distinguishing leakage channels ($S, T, M$) from injection channels ($I, G, X$) by both label and line style.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.0]
+    % Core Household <-> Firm loop
+    \node[draw=CourseBlue, very thick, fill=LightSlate, rounded corners, minimum width=3.2cm, minimum height=1.2cm, align=center] (hh) at (-4.2,0) {\textbf{Households}\\Income ($Y$)};
+    \node[draw=CourseOrange, very thick, fill=LightTerracotta, rounded corners, minimum width=3.2cm, minimum height=1.2cm, align=center] (firm) at (4.2,0) {\textbf{Firms}\\Output ($Y$)};
+
+    % Consumption C arrow across middle
+    \draw[->, very thick, CourseTeal] (hh.east) -- node[above, font=\small\bfseries, fill=white, inner sep=2pt] {Consumption ($C$)} (firm.west);
+
+    % Three Institutional Boxes along top/bottom
+    \node[draw=SlateBlue, thick, fill=white, rounded corners, minimum width=2.8cm, minimum height=0.9cm, align=center, font=\footnotesize] (fin) at (0,2.7) {\textbf{Financial Sector}\\Credit Markets};
+    \node[draw=SlateBlue, thick, fill=white, rounded corners, minimum width=2.8cm, minimum height=0.9cm, align=center, font=\footnotesize] (gov) at (0,-2.7) {\textbf{Government}\\Fiscal Sector};
+    \node[draw=SlateBlue, thick, fill=white, rounded corners, minimum width=2.8cm, minimum height=0.9cm, align=center, font=\footnotesize] (row) at (0,-4.4) {\textbf{Rest of World}\\Foreign Sector};
+
+    % Leakages (dashed orange) from households
+    \draw[->, thick, dashed, CourseOrange] (hh.north) |- node[above, pos=0.75, font=\footnotesize\bfseries, fill=white, inner sep=2pt] {Saving ($S$)} (fin.west);
+    \draw[->, thick, dashed, CourseOrange] (hh.south) |- node[above, pos=0.75, font=\footnotesize\bfseries, fill=white, inner sep=2pt] {Taxes ($T$)} (gov.west);
+    \draw[->, thick, dashed, CourseOrange] ([xshift=-12pt]hh.south) |- node[below, pos=0.75, font=\footnotesize\bfseries, fill=white, inner sep=2pt] {Imports ($M$)} (row.west);
+
+    % Injections (solid teal) into firms
+    \draw[->, very thick, CourseTeal] (fin.east) -| node[above, pos=0.25, font=\footnotesize\bfseries, fill=white, inner sep=2pt] {Investment ($I$)} (firm.north);
+    \draw[->, very thick, CourseTeal] (gov.east) -| node[above, pos=0.25, font=\footnotesize\bfseries, fill=white, inner sep=2pt] {Government purchases ($G$)} (firm.south);
+    \draw[->, very thick, CourseTeal] (row.east) -| node[below, pos=0.25, font=\footnotesize\bfseries, fill=white, inner sep=2pt] {Exports ($X$)} ([xshift=12pt]firm.south);
+\end{tikzpicture}
+\caption{The Four-Sector Macroeconomic Circular Flow. Dashed orange arrows show \textbf{leakages} ($S+T+M$); solid teal arrows show \textbf{injections} ($I+G+X$).}
+\label{fig:macro_circular_flow}
+\end{figure}
+
+\subsection*{Real-World Application: U.S. Budget Deficits and Trade Balances}
+Rearranging the leakage-injection identity $S + T + M = I + G + X$ yields the fundamental open-economy accounting relation:
+\[
+(S - I) + (T - G) = (X - M) = NX
+\]
+Here $(S-I)$ is the private sector's net saving balance and $(T-G)$ is public saving (a government budget surplus if positive, or deficit if negative). If public saving and private net saving are both negative, the identity implies $NX<0$. This is an accounting relationship, not proof that a budget deficit causes a trade deficit; the private, public, and foreign balances are jointly linked.
+
+\subsection*{Mathematical Foundation (Algebra Level)}
+Balancing total leakages against total injections confirms the expenditure identity:
+\begin{equation}
+S + T + M = I + G + X \iff Y = C + I + G + (X - M)
+\end{equation}
+
+\noindent\textbf{Worked Problem:}
+In a macroeconomic model of an open economy (in billions of dollars), household consumption is $C = \$900$, private saving is $S = \$250$, net taxes are $T = \$350$, government purchases are $G = \$400$, private investment is $I = \$300$, exports are $X = \$200$, and imports are $M = \$300$.
+\begin{enumerate}
+    \item Verify that total leakages equal total injections.
+    \item Compute national income ($Y$) using both the income-disposition identity ($Y = C + S + T$) and the aggregate expenditure identity ($Y = C + I + G + NX$).
+\end{enumerate}
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Compare Total Leakages and Total Injections:}
+    \[
+    \text{Total Leakages} = S + T + M = \$250 + \$350 + \$300 = \mathbf{\$900\text{ billion}}
+    \]
+    \[
+    \text{Total Injections} = I + G + X = \$300 + \$400 + \$200 = \mathbf{\$900\text{ billion}}
+    \]
+    Total leakages equal total injections ($\$900\text{B} = \$900\text{B}$).
+
+    \item \textbf{Compute National Income ($Y$) via Both Identities:}
+    \[
+    Y_{\text{income}} = C + S + T = \$900 + \$250 + \$350 = \mathbf{\$1{,}500\text{ billion}}
+    \]
+    \[
+    NX = X - M = \$200 - \$300 = -\$100\text{ billion}
+    \]
+    \[
+    Y_{\text{expenditure}} = C + I + G + NX = \$900 + \$300 + \$400 + (-\$100) = \mathbf{\$1{,}500\text{ billion}}
+    \]
+\end{enumerate}
+\textbf{Conclusion:} Both accounting views yield the exact same national income of $\$1{,}500\text{ billion}$.
+
+% -----------------------------------------------------------------------------
+% Section 1.3: Business Cycles, Stabilization Policy, and Long-Run Growth
+% -----------------------------------------------------------------------------
+\section{Business Cycles, Stabilization Policy, and Long-Run Growth}
+
+\subsection*{Conceptual Introduction}
+If you trace U.S. Real GDP over the past century, two distinct patterns jump off the page: a steady upward trend across decades, interrupted periodically by jagged waves of expansion and contraction. Macroeconomists divide their discipline around these two horizons:
+\begin{itemize}
+    \item \textbf{The Business Cycle (Short-Run Fluctuations):} Alternating periods of economic \textbf{expansion} (rising output and falling unemployment) and \textbf{recession} (a broad downturn in output, income, and employment). The turning point from expansion to recession is a \textbf{peak}, and the bottom turning point where recovery begins is a \textbf{trough}.
+    \item \textbf{Long-Run Economic Growth:} The sustained upward trend in an economy's potential productive capacity over decades, which determines long-run living standards across generations.
+\end{itemize}
+
+To smooth out painful short-run business cycles without derailing long-run growth, policymakers deploy two stabilization toolkits: \textbf{fiscal policy} (changes in federal government spending and tax rates enacted by Congress and the President) and \textbf{monetary policy} (changes in interest rates and financial conditions implemented by the Federal Reserve).
+
+\subsection*{Visual Representation}
+Figure~\ref{fig:business_cycle} is a schematic—not a data series—showing output fluctuating around a rising long-run trend, with illustrative peaks, troughs, contractions, and recoveries.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.05]
+    % Axes
+    \draw[->, thick] (0,0) -- (6.5,0) node[below] {Time (Years)};
+    \draw[->, thick] (0,0) -- (0,5.0) node[left] {Real GDP ($Y$)};
+    \node[below left] at (0,0) {$0$};
+
+    % Long-run trend line Y*
+    \draw[thick, dashed, color=SlateBlue] (0.3,1.0) -- (6.2,4.2) node[right, font=\footnotesize\bfseries] {Potential GDP Trend ($Y^*$)};
+
+    % Sinusoidal actual GDP wave around trend
+    \draw[very thick, color=CourseOrange, domain=0.3:6.1, samples=80] plot (\x, {0.84 + 0.54*\x + 0.65*sin(110*\x)});
+
+    % Peak and Trough labels
+    \filldraw[black] (0.82,1.93) circle (2pt) node[above, font=\scriptsize\bfseries] {Peak};
+    \filldraw[black] (2.45,1.51) circle (2pt) node[below, font=\scriptsize\bfseries] {Trough};
+    \filldraw[black] (4.09,3.70) circle (2pt) node[above, font=\scriptsize\bfseries] {Peak};
+
+    % Recession & Expansion annotations
+    \node[font=\scriptsize\bfseries, color=CourseOrange] at (1.5,1.1) {Recession};
+    \node[font=\scriptsize\bfseries, color=CourseTeal] at (3.4,2.2) {Expansion};
+\end{tikzpicture}
+\caption{Schematic Business Cycle. The solid orange line represents illustrative output fluctuations around a dashed long-run trend; it is not observed U.S. GDP data.}
+\label{fig:business_cycle}
+\end{figure}
+
+\subsection*{Real-World Application: NBER Business Cycle Dating}
+In the United States, the **National Bureau of Economic Research (NBER)** Business Cycle Dating Committee identifies peaks and troughs using a broad set of indicators. It emphasizes economy-wide measures and notes there is no fixed rule about which indicators receive weight; a recession is not determined solely by a two-quarter GDP rule (NBER, n.d.).
+
+\subsection*{Mathematical Foundation (Algebra Level)}
+The percentage \textbf{output gap} measures how far actual Real GDP ($Y$) deviates from estimated Potential GDP ($Y^*$):
+\begin{equation}
+\text{Output Gap } (\%) = \frac{Y - Y^*}{Y^*} \times 100\%
+\end{equation}
+
+\noindent\textbf{Worked Problem:}
+For an illustrative calculation, suppose estimated Potential Real GDP is $Y^*=\$25.0$ trillion and actual Real GDP is $Y=\$24.2$ trillion. Compute the dollar output gap and the percentage output gap. Potential GDP is estimated rather than directly observed.
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Compute the Dollar Output Gap ($Y - Y^*$):}
+    \[
+    Y - Y^* = \$24.2\text{ trillion} - \$25.0\text{ trillion} = \mathbf{-\$0.8\text{ trillion}\ (-\$800\text{ billion})}
+    \]
+
+    \item \textbf{Compute the Percentage Output Gap:}
+    \[
+    \text{Output Gap } (\%) = \frac{-0.8}{25.0} \times 100\% = -0.032 \times 100\% = \mathbf{-3.2\%}
+    \]
+\end{enumerate}
+\textbf{Conclusion:} In this example, actual output is $3.2\%$ below estimated potential output, a dollar gap of $\$800$ billion.
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=\textbf{Optional Advanced Section: Hodrick-Prescott Trend Decomposition}]
+\small
+\emph{Note for Economics Majors and Quantitative Students:}
+The Hodrick--Prescott filter decomposes observed log Real GDP $y_t=\ln(Y_t)$ into a smooth trend $\tau_t$ and a residual component $c_t=y_t-\tau_t$ by solving:
+\[
+\begin{aligned}
+\min_{\{\tau_t\}} \quad
+&\sum_{t=1}^{T} (y_t - \tau_t)^2 \\
+&+ \lambda \sum_{t=2}^{T-1}
+\left[ (\tau_{t+1} - \tau_t) - (\tau_t - \tau_{t-1}) \right]^2
+\end{aligned}
+\]
+For quarterly data, $\lambda=1{,}600$ is a widely used convention (Hodrick and Prescott, 1997). The residual is not automatically stationary, and the filtered trend is not a direct observation of potential GDP.
+\end{tcolorbox}
+
+\subsection*{Selected References}
+\begin{itemize}
+    \item National Bureau of Economic Research. “Business Cycle Dating.” \url{https://www.nber.org/research/business-cycle-dating}
+    \item Jones, Callum, Virgiliu Midrigan, and Thomas Philippon. 2022. “Household Leverage and the Recession.” \emph{Econometrica} 90(5): 2471--2505. NBER Working Paper 16965. \url{https://www.nber.org/papers/w16965}
+    \item Hodrick, Robert J., and Edward C. Prescott. 1997. “Postwar U.S. Business Cycles: An Empirical Investigation.” \emph{Journal of Money, Credit and Banking} 29(1): 1--16. \url{https://doi.org/10.2307/2953682}
+\end{itemize}
 
 \end{document}

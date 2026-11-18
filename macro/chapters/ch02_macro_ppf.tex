@@ -1,6 +1,8 @@
 \documentclass[11pt,letterpaper]{article}
 \input{../../shared/preamble.tex}
 \input{../../shared/tikz-settings.tex}
+\fancyhead[L]{\small\scshape\color{SlateBlue}Chapter 2: Macro PPF}
+\usepackage{tcolorbox}
 
 \begin{document}
 
@@ -20,13 +22,186 @@ This chapter provides a rigorous, pedagogical treatment of Chapter 2: The Macroe
 \hrule
 \vspace{1.5em}
 
-\section{Consumer vs. Capital Goods Trade-Off}
-A nation's operating position along its macro PPF dictates long-run secular growth:
+% -----------------------------------------------------------------------------
+% Section 2.1: Consumer vs. Capital Goods and Long-Run Secular Growth
+% -----------------------------------------------------------------------------
+\section{Consumer vs. Capital Goods and Long-Run Secular Growth}
+
+\subsection*{Conceptual Introduction}
+Every nation faces an intertemporal macroeconomic trade-off between \textbf{living well today} and \textbf{producing more tomorrow}. To visualize this choice, macroeconomists place \textbf{Consumer Goods ($C$)}—such as food, clothing, streaming entertainment, and restaurant meals that provide immediate satisfaction—on one axis of the Macroeconomic Production Possibilities Frontier, and \textbf{Capital Goods ($K$)}—such as factories, power grids, cargo ships, semiconductor equipment, and research laboratories—on the other axis.
+
+Because capital goods are durable inputs used to produce future goods and services, a nation's operating point along its current PPF affects its capacity for \textbf{long-run secular growth}:
+\begin{itemize}
+    \item \textbf{High-Consumption Strategy:} Devoting nearly all resources to immediate consumer goods raises current living standards today, but leaves little net investment to replace worn-out machinery (\textbf{depreciation})—causing the future PPF to stagnate or grow slowly.
+    \item \textbf{High-Investment Strategy (\textbf{Capital Deepening}):} Sacrificing some current consumption to build physical capital and infrastructure increases the economy's capital-to-labor ratio ($\Delta K > 0$), shifting Potential GDP ($Y^*$) and the entire PPF outward in future years.
+\end{itemize}
+
+\noindent\textbf{Real-World Connection.} A data-center or power-grid project uses construction labor, equipment, and materials that could have gone to other production today. Whether the investment raises future productive capacity depends on the services the completed capital provides and whether gross investment exceeds depreciation.
+
+\subsection*{Visual Representation}
+Figure~\ref{fig:macro_ppf_capital_deepening} contrasts two nations starting on identical frontiers in 2026: Country A prioritizes current consumption ($C_A$), while Country B invests heavily in capital goods ($K_B$), achieving a substantially larger frontier by 2036.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.05]
+    % Axes
+    \draw[->, thick] (0,0) -- (6.5,0) node[below] {Consumer Goods ($C$)};
+    \draw[->, thick] (0,0) -- (0,5.5) node[left] {Capital Goods ($K$)};
+    \node[below left] at (0,0) {$0$};
+
+    % Shared 2026 PPF passing through the two current allocations
+    \draw[very thick, color=SlateBlue] plot[smooth] coordinates {(0,4.0) (1.8,3.2) (3.4,1.5) (4.2,0)};
+    \node[below left, color=SlateBlue, font=\footnotesize\bfseries] at (2.1,2.2) {$\text{PPF}_{2026}$};
+
+    % Point A (High Consumption, Low Investment) -> (3.4, 1.5)
+    \filldraw[Terracotta] (3.4,1.5) circle (2.2pt) node[right, font=\footnotesize\bfseries] {$A$ (High $C$)};
+    % Point B (High Investment, Capital Deepening) -> (1.8, 3.2)
+    \filldraw[ForestGreen] (1.8,3.2) circle (2.2pt) node[above right, font=\footnotesize\bfseries] {$B$ (High $I$)};
+
+    % Modest outward shift from A: PPF_A_2036
+    \draw[thick, dashed, color=Terracotta] plot[smooth] coordinates {(0,4.4) (2.3,2.9) (4.6,0)};
+    % Large outward shift from B: PPF_B_2036
+    \draw[very thick, color=ForestGreen] plot[smooth] coordinates {(0,5.2) (2.8,3.6) (5.8,0)};
+    \node[above right, color=ForestGreen, font=\footnotesize\bfseries] at (3.7,3.1) {$\text{PPF}_{2036}$ (Country B)};
+\end{tikzpicture}
+\caption{Capital Deepening and Future PPF Expansion. Choosing point $B$ (higher capital investment today) sacrifices current consumption relative to point $A$, but accelerates capital accumulation and shifts the future frontier much further outward.}
+\label{fig:macro_ppf_capital_deepening}
+\end{figure}
+
+\subsection*{Mathematical Foundation}
+Next year's physical capital stock ($K_{t+1}$) equals this year's capital stock ($K_t$) plus gross investment ($I_t$) minus capital depreciation ($\delta K_t$, where $\delta$ is the annual depreciation rate):
 \begin{equation}
-\text{Investment } (I) \implies \Delta K > 0 \implies \text{Outward Shift of Potential GDP } (Y^*)
+K_{t+1} = K_t + I_t - \delta K_t, \qquad \text{Net Investment} = I_t - \delta K_t
 \end{equation}
 
-\section{Output Gaps vs. Secular Growth}
-Operating inside the frontier represents a recessionary gap ($Y < Y^*$) with idle labor. Recovery restores capacity; outward frontier expansion requires structural capital deepening or total factor productivity gains.
+\noindent\textbf{Worked Problem:}
+An economy begins Year 1 with a physical capital stock of $K_1 = \$10{,}000\text{ billion}$. Each year, $6\%$ of existing capital wears out ($\delta = 0.06$).
+\begin{enumerate}
+    \item Compute annual capital depreciation in Year 1.
+    \item Calculate Year 2 capital stock ($K_2$) and net capital deepening ($\Delta K$) if gross investment is $I_1 = \$950\text{ billion}$.
+    \item Determine the minimum gross investment required just to keep the capital stock from shrinking.
+\end{enumerate}
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Compute Annual Depreciation ($\delta K_1$):}
+    \[
+    \text{Depreciation} = 0.06 \times \$10{,}000\text{ billion} = \mathbf{\$600\text{ billion}}
+    \]
+
+    \item \textbf{Compute Net Investment ($\Delta K$) and Year 2 Capital Stock ($K_2$):}
+    \[
+    \Delta K = I_1 - \delta K_1 = \$950\text{ billion} - \$600\text{ billion} = \mathbf{+\$350\text{ billion}}
+    \]
+    \[
+    K_2 = \$10{,}000\text{ billion} + \$350\text{ billion} = \mathbf{\$10{,}350\text{ billion}}
+    \]
+
+    \item \textbf{Identify Break-Even Maintenance Investment:}
+    To keep $\Delta K = 0$, gross investment must at least replace worn-out capital: $I_{\min} = \delta K_1 = \mathbf{\$600\text{ billion}}$.
+\end{enumerate}
+\textbf{Conclusion:} Investing $\$950\text{ billion}$ covers $\$600\text{ billion}$ in depreciation and adds $+\$350\text{ billion}$ in net capital deepening, shifting the economy's future PPF outward.
+
+% -----------------------------------------------------------------------------
+% Section 2.2: Output Gaps vs. Secular Growth on the Macro PPF
+% -----------------------------------------------------------------------------
+\section{Output Gaps vs. Secular Growth on the Macro PPF}
+
+\subsection*{Conceptual Introduction}
+A common source of confusion in public policy debates is mixing up \textbf{short-run cyclical recovery} with \textbf{long-run structural growth}. On the Macroeconomic PPF, these two processes look completely different:
+\begin{itemize}
+    \item \textbf{Recessionary Gap and Cyclical Recovery (Movement Inside to On the Frontier):} During a recession, laid-off workers and idle factories push the economy to an interior point inside its existing PPF ($Y < Y^*$). Economic recovery—aided by countercyclical monetary or fiscal stimulus—puts idle resources back to work and moves the economy \emph{back out to its existing frontier}, without changing Potential GDP ($Y^*$).
+    \item \textbf{Overheating / Inflationary Gap (Unsustainable Temporary Push):} Actual GDP can temporarily exceed an estimate of potential GDP ($Y > Y^*$) when labor and equipment are used unusually intensively, putting upward pressure on inflation. This does not represent a sustainable point beyond the PPF; potential GDP is an estimate of normal sustainable output, not a directly observed frontier.
+    \item \textbf{Secular Growth (Outward Shift of the Frontier Itself):} Expanding long-run Potential GDP ($Y^*$) requires expanding the PPF boundary itself through capital accumulation, labor-force growth, human capital, and technological progress.
+\end{itemize}
+
+\noindent\textbf{Real-World Connection.} Growth accounting, associated with Robert Solow, separates output growth explained by measured changes in capital and labor from a residual associated with productivity. The residual is not a direct measure of one particular technology; it also reflects influences not captured by measured inputs.
+
+\subsection*{Visual Representation}
+Figure~\ref{fig:macro_ppf_gaps_vs_growth} distinguishes a cyclical recovery from an interior recession point ($R \to E_1$ along an unchanged frontier) from true secular economic growth ($E_1 \to E_2$ onto an expanded frontier).
+
+\begin{tcolorbox}[colback=yellow!10!white,colframe=orange!80!black,title=\textbf{Clear It Up: Demand Stimulus Restores Capacity; Supply Drivers Expand It}]
+Lowering interest rates or cutting taxes during a recession helps close a negative output gap by moving the economy from an idle interior point ($R$) back to its current PPF ($E_1$). However, once the economy reaches full employment on the frontier, demand stimulus alone cannot push the PPF outward—long-run living standards depend on productivity, education, and investment!
+\end{tcolorbox}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.05]
+    % Axes
+    \draw[->, thick] (0,0) -- (6.5,0) node[below] {Consumer Goods ($C$)};
+    \draw[->, thick] (0,0) -- (0,5.5) node[left] {Capital Goods ($K$)};
+    \node[below left] at (0,0) {$0$};
+
+    % Current PPF
+    \draw[very thick, color=SlateBlue] plot[smooth] coordinates {(0,4.2) (2.6,2.75) (4.4,0)};
+    \node[below left, color=SlateBlue, font=\footnotesize\bfseries] at (2.1,2.3) {$\text{PPF}_{\text{current}}$};
+
+    % Future expanded PPF
+    \draw[very thick, color=ForestGreen] plot[smooth] coordinates {(0,5.2) (3.5,3.65) (5.6,0)};
+    \node[above right, color=ForestGreen, font=\footnotesize\bfseries] at (4.2,4.2) {$\text{PPF}_{\text{expanded}}$};
+
+    % Interior Recession Point R(1.7, 1.7)
+    \filldraw[Terracotta] (1.7,1.7) circle (2.2pt) node[below left, font=\footnotesize\bfseries] {$R$ (Recession)};
+    % Full employment point E1(2.6, 2.75)
+    \filldraw[SlateBlue] (2.6,2.75) circle (2.2pt) node[above left, font=\footnotesize\bfseries] {$E_1$};
+    % Secular growth point E2(3.5, 3.65)
+    \filldraw[ForestGreen] (3.5,3.65) circle (2.2pt) node[above right, font=\footnotesize\bfseries] {$E_2$};
+
+    % Arrows
+    \draw[->, very thick, Terracotta] (1.75,1.75) -- node[right, font=\scriptsize\bfseries] {Recovery} (2.55,2.7);
+    \draw[->, very thick, ForestGreen] (2.65,2.8) -- (3.45,3.6);
+    \node[color=ForestGreen, font=\scriptsize\bfseries] at (1.7,4.35) {Secular Growth};
+\end{tikzpicture}
+\caption{Cyclical Recovery vs. Secular Growth. Moving from $R$ to $E_1$ eliminates recessionary unemployment by restoring full utilization of existing capacity. Moving from $E_1$ to $E_2$ represents long-run secular growth via outward expansion of the PPF.}
+\label{fig:macro_ppf_gaps_vs_growth}
+\end{figure}
+
+\subsection*{Mathematical Foundation}
+Aggregate production links Potential Output ($Y^*$) to Total Factor Productivity ($A$), physical capital ($K$), and full-employment labor ($L^*$):
+\begin{equation}
+Y^* = A \cdot f(K, L^*)
+\end{equation}
+Using the \textbf{Rule of 70}, the approximate number of years required for Real GDP per capita to double at an annual growth rate of $g\%$ is:
+\begin{equation}
+\text{Doubling Time (Years)} \approx \frac{70}{g}
+\end{equation}
+\noindent In this approximation, enter $g$ as a percentage value (for example, $2.0$, not $0.02$). For an exact annual-compounding calculation, use $Y_n=Y_0(1+r)^n$, where $r$ is the annual growth rate written as a decimal.
+
+\noindent\textbf{Worked Problem:}
+Assume each country's annual growth rate remains constant and income compounds once per year. Country X grows at $r_X=0.02$, whereas Country Y grows at $r_Y=0.035$. Both start with Real GDP per capita of $\$20{,}000$ in 2026.
+\begin{enumerate}
+    \item Use the Rule of 70 to compute how many years it takes each country to double its living standard to $\$40{,}000$.
+    \item Use annual compounding to compute each country's Real GDP per capita after $70$ years (in 2096).
+\end{enumerate}
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Apply the Rule of 70:}
+    \[
+    \text{Country X Doubling Time} = \frac{70}{2.0} = \mathbf{35\text{ years}}
+    \]
+    \[
+    \text{Country Y Doubling Time} = \frac{70}{3.5} = \mathbf{20\text{ years}}
+    \]
+
+    \item \textbf{Compute Real GDP per Capita After $70$ Years:}
+    \[
+    Y_{70,X} = \$20{,}000(1+0.02)^{70} \approx \mathbf{\$79{,}991}
+    \]
+    \[
+    Y_{70,Y} = \$20{,}000(1+0.035)^{70} \approx \mathbf{\$222{,}257}
+    \]
+\end{enumerate}
+\textbf{Conclusion:} Under these assumptions, Country Y's income per person after 70 years is about $2.8$ times Country X's. The Rule of 70 gives useful approximate doubling times; the compound-growth formula supplies the 70-year values.
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=\textbf{Optional Advanced Section: Solow Growth Accounting Equation}]
+\small
+\emph{Note for Economics Majors and Quantitative Students:}
+Assuming a Cobb-Douglas aggregate production function $Y = A K^\alpha L^{1-\alpha}$ with capital share $\alpha \in (0, 1)$, taking natural logarithms and differentiating with respect to time decomposes output growth into three measurable sources:
+\[
+\frac{\Delta Y}{Y} \approx \frac{\Delta A}{A} + \alpha \frac{\Delta K}{K} + (1 - \alpha)\frac{\Delta L}{L}
+\]
+Here $\frac{\Delta A}{A}$ is Total Factor Productivity (TFP) growth—the portion of output growth not explained by measured increases in capital or labor hours.
+\end{tcolorbox}
 
 \end{document}

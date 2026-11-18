@@ -22,6 +22,11 @@ jobs:
       - name: Set up Quarto CLI
         uses: quarto-dev/quarto-actions/setup@v2
 
+      - name: Set up LaTeX SVG renderer
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends texlive-latex-extra dvisvgm
+
       - name: Convert LaTeX to Quarto Markdown
         run: |
           python convert_to_quarto.py

@@ -603,6 +603,10 @@ def run_sync():
     (MACRO_QMD_DIR / "index.qmd").write_text(MACRO_INDEX_QMD, encoding="utf-8")
 
     for spec in CHAPTER_SPECS:
+        if spec["tex_filename"] == "ch01_principles.tex":
+            print(f"[SKIP] Canonical Chapter 1 left untouched: {spec['tex_filename']}")
+            continue
+
         # Write .tex chapter
         tex_path = spec["tex_dir"] / spec["tex_filename"]
         tex_path.write_text(spec["tex_content"], encoding="utf-8")

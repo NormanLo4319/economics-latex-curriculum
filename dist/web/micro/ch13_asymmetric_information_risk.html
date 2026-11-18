@@ -445,14 +445,27 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#learning-outcomes-and-key-terms" id="toc-learning-outcomes-and-key-terms" class="nav-link active" data-scroll-target="#learning-outcomes-and-key-terms"><span class="header-section-number">13.1</span> Learning Outcomes and Key Terms</a></li>
-  <li><a href="#a-used-car-market-with-hidden-quality" id="toc-a-used-car-market-with-hidden-quality" class="nav-link" data-scroll-target="#a-used-car-market-with-hidden-quality"><span class="header-section-number">13.2</span> A Used-Car Market with Hidden Quality</a></li>
-  <li><a href="#a-graph-of-pooling-and-market-unraveling" id="toc-a-graph-of-pooling-and-market-unraveling" class="nav-link" data-scroll-target="#a-graph-of-pooling-and-market-unraveling"><span class="header-section-number">13.3</span> A Graph of Pooling and Market Unraveling</a></li>
-  <li><a href="#screening-and-signaling" id="toc-screening-and-signaling" class="nav-link" data-scroll-target="#screening-and-signaling"><span class="header-section-number">13.4</span> Screening and Signaling</a></li>
-  <li><a href="#moral-hazard-after-a-contract" id="toc-moral-hazard-after-a-contract" class="nav-link" data-scroll-target="#moral-hazard-after-a-contract"><span class="header-section-number">13.5</span> Moral Hazard after a Contract</a></li>
-  <li><a href="#risk-expected-value-and-expected-utility" id="toc-risk-expected-value-and-expected-utility" class="nav-link" data-scroll-target="#risk-expected-value-and-expected-utility"><span class="header-section-number">13.6</span> Risk, Expected Value, and Expected Utility</a></li>
-  <li><a href="#contract-design-and-trade-offs" id="toc-contract-design-and-trade-offs" class="nav-link" data-scroll-target="#contract-design-and-trade-offs"><span class="header-section-number">13.7</span> Contract Design and Trade-Offs</a></li>
-  <li><a href="#check-your-understanding" id="toc-check-your-understanding" class="nav-link" data-scroll-target="#check-your-understanding"><span class="header-section-number">13.8</span> Check Your Understanding</a></li>
+  <li><a href="#adverse-selection-signaling-and-screening" id="toc-adverse-selection-signaling-and-screening" class="nav-link active" data-scroll-target="#adverse-selection-signaling-and-screening"><span class="header-section-number">13.1</span> Adverse Selection, Signaling, and Screening</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction" id="toc-conceptual-introduction" class="nav-link" data-scroll-target="#conceptual-introduction">1. Conceptual Introduction</a></li>
+  <li><a href="#visual-representation" id="toc-visual-representation" class="nav-link" data-scroll-target="#visual-representation">2. Visual Representation</a></li>
+  <li><a href="#real-world-application-certified-pre-owned-vehicle-programs" id="toc-real-world-application-certified-pre-owned-vehicle-programs" class="nav-link" data-scroll-target="#real-world-application-certified-pre-owned-vehicle-programs">3. Real-World Application: Certified Pre-Owned Vehicle Programs</a></li>
+  <li><a href="#mathematical-foundation-algebra-level" id="toc-mathematical-foundation-algebra-level" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level">4. Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#moral-hazard-and-incentive-design" id="toc-moral-hazard-and-incentive-design" class="nav-link" data-scroll-target="#moral-hazard-and-incentive-design"><span class="header-section-number">13.2</span> Moral Hazard and Incentive Design</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-1" id="toc-conceptual-introduction-1" class="nav-link" data-scroll-target="#conceptual-introduction-1">1. Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-1" id="toc-visual-representation-1" class="nav-link" data-scroll-target="#visual-representation-1">2. Visual Representation</a></li>
+  <li><a href="#real-world-application-deductibles-in-auto-insurance-and-coinsurance-in-health-plans" id="toc-real-world-application-deductibles-in-auto-insurance-and-coinsurance-in-health-plans" class="nav-link" data-scroll-target="#real-world-application-deductibles-in-auto-insurance-and-coinsurance-in-health-plans">3. Real-World Application: Deductibles in Auto Insurance and Coinsurance in Health Plans</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-1" id="toc-mathematical-foundation-algebra-level-1" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-1">4. Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#expected-value-risk-aversion-and-expected-utility" id="toc-expected-value-risk-aversion-and-expected-utility" class="nav-link" data-scroll-target="#expected-value-risk-aversion-and-expected-utility"><span class="header-section-number">13.3</span> Expected Value, Risk Aversion, and Expected Utility</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-2" id="toc-conceptual-introduction-2" class="nav-link" data-scroll-target="#conceptual-introduction-2">1. Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-2" id="toc-visual-representation-2" class="nav-link" data-scroll-target="#visual-representation-2">2. Visual Representation</a></li>
+  <li><a href="#real-world-application-smartphone-protection-plans-vs.-catastrophic-health-insurance" id="toc-real-world-application-smartphone-protection-plans-vs.-catastrophic-health-insurance" class="nav-link" data-scroll-target="#real-world-application-smartphone-protection-plans-vs.-catastrophic-health-insurance">3. Real-World Application: Smartphone Protection Plans vs.&nbsp;Catastrophic Health Insurance</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-2" id="toc-mathematical-foundation-algebra-level-2" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-2">4. Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -479,76 +492,209 @@ window.Quarto = {
 </header>
 
 
-<section id="learning-outcomes-and-key-terms" class="level2" data-number="13.1">
-<h2 data-number="13.1" class="anchored" data-anchor-id="learning-outcomes-and-key-terms"><span class="header-section-number">13.1</span> Learning Outcomes and Key Terms</h2>
-<p>Students should distinguish hidden information before a transaction from hidden actions after it, calculate expected value and expected utility in a simple risk problem, and evaluate screening, signaling, and contract design. These objectives support C2001-1, C2001-2, and C2001-3. Key terms include asymmetric information, adverse selection, signaling, screening, moral hazard, risk aversion, expected utility, and risk premium.</p>
+<blockquote class="blockquote">
+<p>This chapter provides a rigorous, pedagogical treatment of Chapter 13: Asymmetric Information, Risk, and Market Design, benchmarked to standard principles curriculum.</p>
+</blockquote>
+<section id="adverse-selection-signaling-and-screening" class="level2" data-number="13.1">
+<h2 data-number="13.1" class="anchored" data-anchor-id="adverse-selection-signaling-and-screening"><span class="header-section-number">13.1</span> Adverse Selection, Signaling, and Screening</h2>
+<section id="conceptual-introduction" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction">1. Conceptual Introduction</h3>
+<p>Standard supply-and-demand models assume that buyers and sellers share the exact same information about product quality. In many real-world markets—used cars, health insurance, bank loans, and job hiring—one side possesses private knowledge that the other side cannot observe. Economists call this imbalance <strong>asymmetric information</strong>, and it produces two distinct market failures depending on <em>when</em> the hidden information occurs:</p>
+<ul>
+<li><strong>Adverse Selection (Hidden Characteristics <em>Before</em> a Contract):</strong> When sellers or applicants know their private quality or risk type before signing a contract, uninformed buyers offer a single pooled price based on average expected quality. High-quality sellers (or healthy insurance applicants) find that pooled price unattractive and exit the market—lowering average quality further and causing the market to unravel (George Akerlof’s classic <em>“Market for Lemons”</em>).</li>
+<li><strong>Signaling and Screening:</strong> Markets counter adverse selection using two mechanisms. <strong>Signaling</strong> occurs when the <em>informed</em> party takes a costly, credible action to reveal high quality (e.g., a used-car dealer offering a 3-year powertrain warranty, or a job applicant earning a rigorous college degree). <strong>Screening</strong> occurs when the <em>uninformed</em> party designs a menu of choices to separate hidden types (e.g., an auto insurer offering high-deductible vs.&nbsp;low-deductible plans).</li>
+</ul>
 </section>
-<section id="a-used-car-market-with-hidden-quality" class="level2" data-number="13.2">
-<h2 data-number="13.2" class="anchored" data-anchor-id="a-used-car-market-with-hidden-quality"><span class="header-section-number">13.2</span> A Used-Car Market with Hidden Quality</h2>
-<p>Imagine a market in which sellers know whether a used car is reliable, but buyers cannot observe its condition before purchase. Buyers offer a price based on expected quality across cars offered for sale. Owners of especially reliable cars may reject that pooled price and keep their vehicles. The remaining pool has lower average quality, so buyers reduce their offers again. This feedback can shrink the market or drive high-quality products out of it.</p>
-<p>This is adverse selection: private information about a characteristic that exists before a contract affects who chooses to participate. It is not the same as a seller’s deliberate fraud; the problem can arise even when everyone behaves legally and rationally.</p>
-</section>
-<section id="a-graph-of-pooling-and-market-unraveling" class="level2" data-number="13.3">
-<h2 data-number="13.3" class="anchored" data-anchor-id="a-graph-of-pooling-and-market-unraveling"><span class="header-section-number">13.3</span> A Graph of Pooling and Market Unraveling</h2>
-<p>In a price-quality diagram, put product quality on the horizontal axis and buyers’ willingness to pay on the vertical axis. If quality is hidden, buyers initially offer a pooled price reflecting expected quality. Sellers whose cars are worth more than that price to them exit first. The average quality of cars still offered falls, shifting buyers’ expected willingness to pay downward. A credible warranty, inspection, or reputation can make quality more observable and interrupt this unraveling process.</p>
-</section>
-<section id="screening-and-signaling" class="level2" data-number="13.4">
-<h2 data-number="13.4" class="anchored" data-anchor-id="screening-and-signaling"><span class="header-section-number">13.4</span> Screening and Signaling</h2>
-<p>Screening is an action by the less-informed party to learn about hidden types. An insurer may ask risk-relevant questions or offer a menu of plans with different premiums and deductibles. Signaling is an action by the informed party intended to credibly reveal type. A warranty may signal seller confidence if it is more costly for a seller of an unreliable product to honor.</p>
-<p>For a signal to separate types, it must be credible: the cost of sending it should differ across types. A signal everyone can imitate at negligible cost conveys little information. Screening and signaling can improve matching, but they can also exclude people, expose private information, or create administrative costs.</p>
-</section>
-<section id="moral-hazard-after-a-contract" class="level2" data-number="13.5">
-<h2 data-number="13.5" class="anchored" data-anchor-id="moral-hazard-after-a-contract"><span class="header-section-number">13.5</span> Moral Hazard after a Contract</h2>
-<p>Moral hazard is a change in behavior after a contract when one party’s action is not fully observable or contractible. Insurance can reduce the cost of a loss to the insured person, which may change prevention effort or use of covered services. The effect is not necessarily fraud: it is a predictable response to changed incentives. Deductibles and co-payments can preserve some incentives to economize, but they also expose risk-averse households to more financial risk and may discourage valuable care.</p>
-</section>
-<section id="risk-expected-value-and-expected-utility" class="level2" data-number="13.6">
-<h2 data-number="13.6" class="anchored" data-anchor-id="risk-expected-value-and-expected-utility"><span class="header-section-number">13.6</span> Risk, Expected Value, and Expected Utility</h2>
-<p>Suppose a household faces a 10 percent chance of a $1,000 loss and a 90 percent chance of no loss. The expected loss is $100. A risk-neutral person compares premiums with expected monetary loss. A risk-averse person has a concave utility function and may be willing to pay more than the expected loss for insurance, up to the risk premium, because a certain outcome can provide greater utility than a risky outcome with the same expected wealth.</p>
-<p>For outcomes <span class="math inline">\(x_i\)</span> with probabilities <span class="math inline">\(p_i\)</span>, expected value and expected utility are: <span class="math display">\[\begin{equation}
-E[X]=\sum_i p_ix_i, \qquad EU=\sum_i p_i u(W+x_i).
-\end{equation}\]</span> The certainty equivalent (<span class="math inline">\(CE\)</span>) is the certain change in wealth that gives the same utility as the risky prospect. For a gain-risk representation, the risk premium is <span class="math inline">\(RP=E[X]-CE\)</span>. The sign and interpretation depend on how gains and losses are represented; the central lesson is that expected dollars and expected utility are different criteria.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>FRED Data: Delinquency Is an Outcome, Not a Diagnosis
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>FRED series DRALACBS is the Delinquency Rate on All Loans at All Commercial Banks. It is quarterly, seasonally adjusted, and measured in percent; the Q2 2026 observation is 1.42 percent. This aggregate rate can motivate questions about credit risk, but it cannot by itself identify adverse selection, moral hazard, underwriting changes, borrower composition, or macroeconomic shocks as the cause. Identifying those mechanisms requires more detailed evidence and a credible comparison.</p>
-</div>
+<section id="visual-representation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation">2. Visual Representation</h3>
+<p>Figure 1 illustrates adverse selection in a health insurance risk pool: when insurers charge a single pooled premium based on average risk, low-risk enrollees drop out, driving average medical costs and premiums steadily upward.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_13_asymmetric_information_risk_and_market_design_figure_01.svg" class="img-fluid figure-img" alt="Adverse Selection and Risk-Pool Unraveling. At a single pooled break-even premium P_{\text{pool}}, low-risk individuals on the right have willingness to pay below the pooled price and drop out, pushing average pool costs upward."></p>
+<figcaption>Figure 1. Adverse Selection and Risk-Pool Unraveling. At a single pooled break-even premium <span class="math inline">\(P_{\text{pool}}\)</span>, low-risk individuals on the right have willingness to pay below the pooled price and drop out, pushing average pool costs upward.</figcaption>
+</figure>
 </div>
 </section>
-<section id="contract-design-and-trade-offs" class="level2" data-number="13.7">
-<h2 data-number="13.7" class="anchored" data-anchor-id="contract-design-and-trade-offs"><span class="header-section-number">13.7</span> Contract Design and Trade-Offs</h2>
-<p>Markets use warranties, certification, deductibles, co-payments, collateral, audits, and reputation systems to mitigate information problems. Each tool trades off information or incentive benefits against cost, privacy, access, and fairness. A policy that reduces one information problem can create another: extensive screening may improve risk classification while making essential coverage unaffordable to some households.</p>
+<section id="real-world-application-certified-pre-owned-vehicle-programs" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-certified-pre-owned-vehicle-programs">3. Real-World Application: Certified Pre-Owned Vehicle Programs</h3>
+<p>Private used-car markets suffer heavily from adverse selection because owners of reliable vehicles refuse to sell at discounted “average” prices. Automakers solve this information gap through <strong>Certified Pre-Owned (CPO)</strong> inspections and extended factory warranties—a credible signal that would be prohibitively expensive to honor on a defective car.</p>
+</section>
+<section id="mathematical-foundation-algebra-level" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level">4. Mathematical Foundation (Algebra Level)</h3>
+<p>Under pooled pricing with asymmetric information, uninformed buyers offer the expected value across remaining types:</p>
+<p><span class="math display">\[
+E[V] = p_H V_H + p_L V_L
+\]</span></p>
+<p><strong>Worked Problem:</strong> In a used-car market, <span class="math inline">\(50\%\)</span> of cars are high-quality (“peaches”) worth <span class="math inline">\(\$12{,}000\)</span> to buyers (and <span class="math inline">\(\$10{,}500\)</span> to sellers), and <span class="math inline">\(50\%\)</span> are low-quality (“lemons”) worth <span class="math inline">\(\$6{,}000\)</span> to buyers (and <span class="math inline">\(\$5{,}000\)</span> to sellers). Buyers cannot tell peaches from lemons before purchase.</p>
+<ul>
+<li>Compute the maximum pooled price uninformed buyers are willing to pay if all cars are offered for sale.</li>
+<li>Determine which cars actually get sold and what the final equilibrium price becomes.</li>
+</ul>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Compute Initial Pooled Willingness to Pay (<span class="math inline">\(E[V]\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+E[V] = 0.50(\$12{,}000) + 0.50(\$6{,}000) = \$6{,}000 + \$3{,}000 = \mathbf{\$9{,}000}
+\]</span></p>
+<ul>
+<li><p><strong>Compare Pooled Offer (<span class="math inline">\(\$9{,}000\)</span>) Against Seller Reservation Values:</strong></p></li>
+<li><p>Peach owners value their cars at <span class="math inline">\(\$10{,}500 &gt; \$9{,}000\)</span>, so <strong>all peach owners withdraw from the market</strong>.</p></li>
+<li><p>Lemon owners value their cars at <span class="math inline">\(\$5{,}000 &lt; \$9{,}000\)</span>, so only lemons remain.</p></li>
+<li><p><strong>Update Buyer Beliefs (<span class="math inline">\(100\%\)</span> Lemons Remaining):</strong> Knowing only lemons remain in the pool, buyers revise their offer downward to <strong><span class="math inline">\(\$6{,}000\)</span></strong>.</p></li>
+</ul>
+<p><strong>Conclusion:</strong> Asymmetric information drives every high-quality vehicle out of the market, collapsing trade to lemons only at <span class="math inline">\(\$6{,}000\)</span>.</p>
+</section>
+</section>
+<section id="moral-hazard-and-incentive-design" class="level2" data-number="13.2">
+<h2 data-number="13.2" class="anchored" data-anchor-id="moral-hazard-and-incentive-design"><span class="header-section-number">13.2</span> Moral Hazard and Incentive Design</h2>
+<section id="conceptual-introduction-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-1">1. Conceptual Introduction</h3>
+<p>While adverse selection occurs <em>before</em> a contract is signed, <strong>moral hazard</strong> occurs <em>after</em> a transaction when one party’s hidden actions cannot be fully monitored by the other party. Whenever an insurance policy, corporate bailout, or fixed salary shields a person from the full financial consequences of their choices, they face weaker incentives to take costly precautions.</p>
+<p>For example, a driver with zero-deductible comprehensive auto insurance may park in riskier neighborhoods or drive slightly less cautiously than an uninsured driver, and a homeowner with full flood insurance may build in a coastal floodplain. Moral hazard is not necessarily malicious fraud—it is a predictable behavioral response to altered marginal incentives.</p>
+<p>To mitigate moral hazard while still providing valuable financial protection, insurers and employers design incentive-compatible contracts using three tools: (1) <strong>deductibles</strong> (requiring the insured to pay the first <span class="math inline">\(\$500\)</span> or <span class="math inline">\(\$1{,}000\)</span> of any claim), (2) <strong>co-payments and coinsurance</strong> (sharing a percentage of ongoing medical or repair bills), and (3) <strong>performance-linked compensation</strong> (aligning worker effort with firm outcomes).</p>
+</section>
+<section id="visual-representation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-1">2. Visual Representation</h3>
+<p>Figure 2 illustrates moral hazard in healthcare utilization: full insurance lowers the patient’s out-of-pocket price from <span class="math inline">\(P_0\)</span> to <span class="math inline">\(\$0\)</span>, expanding doctor visits from <span class="math inline">\(Q^*\)</span> to <span class="math inline">\(Q_{\text{insured}}\)</span> where marginal medical benefit falls below the true resource cost <span class="math inline">\(MC\)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_13_asymmetric_information_risk_and_market_design_figure_02.svg" class="img-fluid figure-img" alt="Moral Hazard in Health Insurance. Lowering out-of-pocket price from true resource cost MC to a low co-payment P_{\text{copay}} expands care consumption from Q^* to Q_{\text{ins}}, generating overutilization where MC > MB (orange triangle)."></p>
+<figcaption>Figure 2. Moral Hazard in Health Insurance. Lowering out-of-pocket price from true resource cost <span class="math inline">\(MC\)</span> to a low co-payment <span class="math inline">\(P_{\text{copay}}\)</span> expands care consumption from <span class="math inline">\(Q^*\)</span> to <span class="math inline">\(Q_{\text{ins}}\)</span>, generating overutilization where <span class="math inline">\(MC &gt; MB\)</span> (orange triangle).</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-deductibles-in-auto-insurance-and-coinsurance-in-health-plans" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-deductibles-in-auto-insurance-and-coinsurance-in-health-plans">3. Real-World Application: Deductibles in Auto Insurance and Coinsurance in Health Plans</h3>
+<p>Auto insurers rarely sell zero-deductible collision policies because even a small <span class="math inline">\(\$500\)</span> or <span class="math inline">\(\$1{,}000\)</span> deductible forces drivers to keep “skin in the game”—preserving strong incentives to drive carefully and avoid minor fender-benders while still protecting families against catastrophic <span class="math inline">\(\$30{,}000\)</span> accidents.</p>
+</section>
+<section id="mathematical-foundation-algebra-level-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-1">4. Mathematical Foundation (Algebra Level)</h3>
+<p>With a deductible <span class="math inline">\(D\)</span> and coinsurance rate <span class="math inline">\(c\)</span> (share paid by the insured above the deductible), a policyholder’s out-of-pocket cost on a loss <span class="math inline">\(L &gt; D\)</span> is:</p>
+<p><span class="math display">\[
+\text{Out-of-Pocket Payment} = D + c(L - D)
+\]</span></p>
+<p><strong>Worked Problem:</strong> A homeowner chooses between two property insurance policies against a potential <span class="math inline">\(\$10{,}000\)</span> storm damage claim:</p>
+<ul>
+<li><strong>Plan A:</strong> <span class="math inline">\(\$1{,}000\)</span> deductible plus <span class="math inline">\(20\%\)</span> coinsurance above the deductible.</li>
+<li><strong>Plan B:</strong> <span class="math inline">\(\$2{,}500\)</span> deductible with <span class="math inline">\(0\%\)</span> coinsurance above the deductible.</li>
+</ul>
+<p>Calculate the homeowner’s total out-of-pocket payment and the insurer’s payout under each plan if a <span class="math inline">\(\$10{,}000\)</span> loss occurs.</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Evaluate Plan A (<span class="math inline">\(D = \$1{,}000\)</span>, <span class="math inline">\(c = 0.20\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+\text{Out-of-Pocket}_A = \$1{,}000 + 0.20(\$10{,}000 - \$1{,}000) = \$1{,}000 + \$1{,}800 = \mathbf{\$2{,}800}
+\]</span></p>
+<p><span class="math display">\[
+\text{Insurer Payout}_A = \$10{,}000 - \$2{,}800 = \mathbf{\$7{,}200}
+\]</span></p>
+<ul>
+<li><strong>Evaluate Plan B (<span class="math inline">\(D = \$2{,}500\)</span>, <span class="math inline">\(c = 0.00\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+\text{Out-of-Pocket}_B = \$2{,}500 + 0 = \mathbf{\$2{,}500}, \qquad \text{Insurer Payout}_B = \$10{,}000 - \$2{,}500 = \mathbf{\$7{,}500}
+\]</span></p>
+<p><strong>Conclusion:</strong> Both plans require the homeowner to absorb at least <span class="math inline">\(\$2{,}500\)</span> of the loss, preserving strong incentives to maintain roof and drainage protection.</p>
+</section>
+</section>
+<section id="expected-value-risk-aversion-and-expected-utility" class="level2" data-number="13.3">
+<h2 data-number="13.3" class="anchored" data-anchor-id="expected-value-risk-aversion-and-expected-utility"><span class="header-section-number">13.3</span> Expected Value, Risk Aversion, and Expected Utility</h2>
+<section id="conceptual-introduction-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-2">1. Conceptual Introduction</h3>
+<p>Why are households willing to pay insurance premiums that exceed their average annual claim payouts? Because most people exhibit <strong>diminishing marginal utility of wealth</strong>: gaining an extra <span class="math inline">\(\$1{,}000\)</span> when you are already comfortable adds less happiness than losing <span class="math inline">\(\$1{,}000\)</span> when you are struggling to pay rent. Consequently, most individuals are <strong>risk averse</strong>—given two prospects with the exact same average dollar payoff, a risk-averse person strictly prefers a guaranteed certain outcome over a risky gamble.</p>
+<p>To model decisions under uncertainty, economists distinguish two criteria:</p>
+<ul>
+<li><strong>Expected Value (<span class="math inline">\(E[W]\)</span>):</strong> The probability-weighted average of dollar outcomes across all possible states of the world. A <strong>risk-neutral</strong> agent cares only about Expected Value.</li>
+<li><strong>Expected Utility (<span class="math inline">\(EU\)</span>):</strong> The probability-weighted average of the <em>utility</em> generated by wealth in each state. A <strong>risk-averse</strong> agent has a concave utility function <span class="math inline">\(u(W)\)</span> and maximizes Expected Utility.</li>
+</ul>
+<p>The maximum extra dollar amount above expected loss that a risk-averse person is willing to pay to eliminate risk completely is called the <strong>risk premium</strong>.</p>
+</section>
+<section id="visual-representation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-2">2. Visual Representation</h3>
+<p>Figure 3 plots a concave utility-of-wealth curve <span class="math inline">\(u(W)\)</span>, showing why a gamble between low wealth <span class="math inline">\(W_1\)</span> and high wealth <span class="math inline">\(W_2\)</span> yields lower expected utility <span class="math inline">\(EU\)</span> than receiving the expected wealth <span class="math inline">\(E[W]\)</span> with certainty—creating a positive risk premium between <span class="math inline">\(CE\)</span> and <span class="math inline">\(E[W]\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Clear It Up: Adverse Selection and Moral Hazard Differ by Timing
+<span class="screen-reader-only">Note</span>Clear It Up: Why Insurance Companies Can Profit While Customers Benefit
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Adverse selection concerns hidden characteristics that affect participation before a contract is signed. Moral hazard concerns hidden actions or effort after a contract changes incentives. The same market can experience both, but the diagnosis and remedy differ.</p>
+<p>An insurance company pools thousands of independent risks across many households, diversifying away randomness so its payout per customer is nearly certain. Because risk-averse households gain utility by trading an uncertain catastrophic loss for a predictable annual premium, insurance creates mutual gains from trade even when premiums include an administrative markup above expected loss!</p>
 </div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_13_asymmetric_information_risk_and_market_design_figure_03.svg" class="img-fluid figure-img" alt="Concave Utility and Risk Aversion. Because u(W) bends downward (diminishing marginal utility of wealth), the expected utility of a 50/50 gamble (EU) lies below the utility of certain expected wealth u(E[W]). The gap E[W] - CE is the risk premium."></p>
+<figcaption>Figure 3. Concave Utility and Risk Aversion. Because <span class="math inline">\(u(W)\)</span> bends downward (diminishing marginal utility of wealth), the expected utility of a 50/50 gamble (<span class="math inline">\(EU\)</span>) lies below the utility of certain expected wealth <span class="math inline">\(u(E[W])\)</span>. The gap <span class="math inline">\(E[W] - CE\)</span> is the risk premium.</figcaption>
+</figure>
 </div>
 </section>
-<section id="check-your-understanding" class="level2" data-number="13.8">
-<h2 data-number="13.8" class="anchored" data-anchor-id="check-your-understanding"><span class="header-section-number">13.8</span> Check Your Understanding</h2>
+<section id="real-world-application-smartphone-protection-plans-vs.-catastrophic-health-insurance" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-smartphone-protection-plans-vs.-catastrophic-health-insurance">3. Real-World Application: Smartphone Protection Plans vs.&nbsp;Catastrophic Health Insurance</h3>
+<p>Economic theory predicts that households should insure against large, catastrophic wealth shocks (home fires, major hospitalization) where diminishing marginal utility creates huge risk premiums—while self-insuring small, affordable losses (such as <span class="math inline">\(\$150\)</span> phone screen repairs) rather than paying steep retail warranty markups.</p>
+</section>
+<section id="mathematical-foundation-algebra-level-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-2">4. Mathematical Foundation (Algebra Level)</h3>
+<p>For two wealth states <span class="math inline">\(W_1\)</span> and <span class="math inline">\(W_2\)</span> occurring with probabilities <span class="math inline">\(p_1\)</span> and <span class="math inline">\(p_2\)</span> (<span class="math inline">\(p_1 + p_2 = 1\)</span>):</p>
+<p><span class="math display">\[
+E[W] = p_1 W_1 + p_2 W_2, \qquad EU = p_1 u(W_1) + p_2 u(W_2)
+\]</span></p>
+<p><strong>Worked Problem:</strong> A graduate student has initial wealth <span class="math inline">\(W_0 = \$10{,}000\)</span> and utility of wealth <span class="math inline">\(u(W) = \sqrt{W}\)</span>. During the academic year, there is a <span class="math inline">\(20\%\)</span> probability (<span class="math inline">\(p = 0.20\)</span>) that their laptop and equipment are stolen, causing a <span class="math inline">\(\$6{,}400\)</span> loss (leaving <span class="math inline">\(W_1 = \$3{,}600\)</span>), and an <span class="math inline">\(80\%\)</span> probability (<span class="math inline">\(1 - p = 0.80\)</span>) of no loss (<span class="math inline">\(W_2 = \$10{,}000\)</span>).</p>
 <ul>
-<li>A buyer cannot distinguish reliable from unreliable sellers before purchase. Which mechanism can cause high-quality sellers to leave the market?</li>
-<li>An insured driver takes less care after coverage begins. Is this adverse selection or moral hazard, and why?</li>
-<li>For the 10 percent, $1,000-loss example, calculate expected loss. Does that number determine the maximum premium every risk-averse household will pay?</li>
+<li>Calculate the Expected Wealth <span class="math inline">\(E[W]\)</span> and Expected Loss without insurance.</li>
+<li>Calculate Expected Utility <span class="math inline">\(EU\)</span> without insurance, and find the Certainty Equivalent wealth <span class="math inline">\(CE\)</span> (where <span class="math inline">\(\sqrt{CE} = EU\)</span>).</li>
+<li>Determine the maximum insurance premium the student would be willing to pay for full coverage.</li>
 </ul>
-<p>Answers: (1) Adverse selection. (2) Moral hazard because the behavior changes after the contract. (3) Expected loss is $100; risk preferences and the risk premium determine willingness to pay beyond it.</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Compute Expected Wealth (<span class="math inline">\(E[W]\)</span>) and Expected Loss:</strong></li>
+</ul>
+<p><span class="math display">\[
+\text{Expected Loss} = 0.20 \times \$6{,}400 = \mathbf{\$1{,}280}
+\]</span></p>
+<p><span class="math display">\[
+E[W] = 0.20(\$3{,}600) + 0.80(\$10{,}000) = \$720 + \$8{,}000 = \mathbf{\$8{,}720}
+\]</span></p>
+<ul>
+<li><strong>Compute Expected Utility (<span class="math inline">\(EU\)</span>) and Certainty Equivalent (<span class="math inline">\(CE\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+EU = 0.20\sqrt{3{,}600} + 0.80\sqrt{10{,}000} = 0.20(60) + 0.80(100) = 12 + 80 = \mathbf{92\text{ utils}}
+\]</span></p>
+<p>Find the Certainty Equivalent <span class="math inline">\(CE\)</span> yielding <span class="math inline">\(92\)</span> utils:</p>
+<p><span class="math display">\[
+\sqrt{CE} = 92 \implies CE = 92^2 = \mathbf{\$8{,}464}
+\]</span></p>
+<ul>
+<li><strong>Calculate Maximum Willingness to Pay for Full Insurance:</strong> The student is indifferent between facing the theft risk and paying up to <span class="math inline">\(\$10{,}000 - \$8{,}464 = \mathbf{\$1{,}536}\)</span> for full coverage—consisting of the <span class="math inline">\(\$1{,}280\)</span> actuarially fair expected loss plus a <span class="math inline">\(\mathbf{\$256}\)</span> risk premium (<span class="math inline">\(E[W] - CE = \$8{,}720 - \$8{,}464\)</span>).</li>
+</ul>
+<p><strong>Conclusion:</strong> Because the student is risk averse, they will gladly buy full coverage at any premium up to <span class="math inline">\(\$1{,}536\)</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Arrow-Pratt Measure of Risk Aversion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> For a twice-differentiable utility function <span class="math inline">\(u(W)\)</span> with <span class="math inline">\(u'(W) &gt; 0\)</span>, risk aversion requires strict concavity (<span class="math inline">\(u''(W) &lt; 0\)</span>). Economists measure the curvature of utility using the <strong>Arrow-Pratt Coefficient of Absolute Risk Aversion</strong>:</p>
+<p><span class="math display">\[
+A(W) = -\frac{u''(W)}{u'(W)} &gt; 0
+\]</span></p>
+<p>For <span class="math inline">\(u(W) = \sqrt{W} = W^{1/2}\)</span>, <span class="math inline">\(u'(W) = \frac{1}{2}W^{-1/2}\)</span> and <span class="math inline">\(u''(W) = -\frac{1}{4}W^{-3/2}\)</span>, giving <span class="math inline">\(A(W) = \frac{1}{2W}\)</span>—confirming decreasing absolute risk aversion as wealth grows.</p>
+</div>
+</div>
 
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

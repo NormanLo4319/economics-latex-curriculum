@@ -1,6 +1,7 @@
 \documentclass[11pt,letterpaper]{article}
 \input{../../shared/preamble.tex}
 \input{../../shared/tikz-settings.tex}
+\usepackage{tcolorbox}
 
 \begin{document}
 
@@ -20,17 +21,665 @@ This chapter provides a rigorous, pedagogical treatment of Chapter 5: Elasticity
 \hrule
 \vspace{1.5em}
 
-\section{Midpoint Arc Elasticity Formula}
-\begin{equation}
-\varepsilon_d = \frac{(Q_2 - Q_1) / [(Q_1 + Q_2)/2]}{(P_2 - P_1) / [(P_1 + P_2)/2]}
-\end{equation}
-Demand is classified as elastic if $|\varepsilon_d| > 1$, unit elastic if $|\varepsilon_d| = 1$, and inelastic if $|\varepsilon_d| < 1$.
+% -----------------------------------------------------------------------------
+% Section 5.1: Price Elasticity of Demand and the Midpoint Formula
+% -----------------------------------------------------------------------------
+\section{Price Elasticity of Demand and the Midpoint Formula}
 
-\section{The Total Revenue Test}
-Total Revenue $TR = P \times Q$. Differentiating with respect to price yields:
+\subsection*{1. Conceptual Introduction}
+In Chapter 3, we established the Law of Demand: when the price of a good goes up, consumers buy less of it. But for a business owner setting prices or a policymaker designing a tax, knowing the \emph{direction} of the change is not enough—they need to know \emph{how much} quantity changes. If a café raises the price of its morning latte by $10\%$, will customer traffic drop by $2\%$ or collapse by $40\%$? Economists measure this sensitivity using the \textbf{Price Elasticity of Demand ($\varepsilon_d$)}, defined as the percentage change in quantity demanded divided by the percentage change in price.
+
+Why do economists use percentage changes rather than the raw slope of the demand curve? Because raw slope depends entirely on arbitrary measurement units. Switching a pricing table from dollars to cents, or measuring coffee in ounces instead of cups, changes the numerical slope even though consumer behavior has not changed at all. By converting both price and quantity movements into unit-free percentages, elasticity allows us to compare the responsiveness of insulin, concert tickets, and gasoline on a single standardized scale.
+
+Because demand curves slope downward, price and quantity move in opposite directions, making the raw ratio negative. By convention, economists take the absolute value $|\varepsilon_d|$ (or report the magnitude) to classify demand into three regimes:
+\begin{itemize}
+    \item \textbf{Elastic Demand ($|\varepsilon_d| > 1$):} Consumers are highly sensitive to price; the percentage change in quantity is larger than the percentage change in price.
+    \item \textbf{Unit Elastic Demand ($|\varepsilon_d| = 1$):} The percentage change in quantity exactly matches the percentage change in price.
+    \item \textbf{Inelastic Demand ($|\varepsilon_d| < 1$):} Consumers are relatively unresponsive to price; the percentage change in quantity is smaller than the percentage change in price.
+\end{itemize}
+
+\subsection*{2. Visual Representation}
+Figure~\ref{fig:elasticity_regimes} contrasts steep (inelastic) and flat (elastic) demand curves passing through the same initial market point, alongside the extreme polar cases of perfectly inelastic and perfectly elastic demand.
+
+\begin{tcolorbox}[colback=yellow!10!white,colframe=orange!80!black,title=\textbf{Clear It Up: Slope Is Not the Same as Elasticity}]
+A linear demand curve has a \emph{constant slope} from top to bottom, yet its \emph{elasticity changes at every single point}! Near the top-left of a straight-line demand curve (high price, low quantity), a $\$1$ price cut represents a tiny percentage drop in price but a huge percentage jump in quantity, making demand \textbf{elastic}. Near the bottom-right (low price, high quantity), that exact same $\$1$ price cut is a large percentage drop in price and a tiny percentage gain in quantity, making demand \textbf{inelastic}.
+\end{tcolorbox}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=0.78cm,y=0.78cm]
+    % Left Panel: Steep vs Flat Demand
+    \begin{scope}[xshift=0cm]
+        \draw[->,thick,color=SlateBlue] (0,0) -- (5.1,0) node[below right=2pt] {$Q$};
+        \draw[->,thick,color=SlateBlue] (0,0) -- (0,5.1) node[above left=2pt] {$P$};
+        \node[below left=2pt] at (0,0) {$0$};
+        \node[font=\small\bfseries,anchor=south] at (2.5,5.65) {(a) Demand response};
+
+        % Reference Equilibrium E*(2, 3) -> (Q=20, P=$60)
+        % Inelastic (Steep) curve through (2,3): P = 140 - 4Q -> at Q=20, P=60. At P=40 (y=2), Q=25 (x=2.5).
+        \draw[thick,color=CourseOrange] (1.0,5.0) -- (3.5,0);
+        % Elastic (Flat) curve through (2,3): P = 80 - Q -> at Q=20, P=60. At P=40 (y=2), Q=40 (x=4.0).
+        \draw[thick,color=CourseBlue] (0,4.0) -- (4.8,1.6);
+        \node[font=\footnotesize,color=CourseOrange,fill=white,inner sep=1pt,anchor=south east] at (3.45,1.0) {$D_{\text{inelastic}}$};
+        \node[font=\footnotesize,color=CourseBlue,fill=white,inner sep=1pt,anchor=north west] at (3.45,1.45) {$D_{\text{elastic}}$};
+
+        % Price drop from P1=$60 (y=3) to P2=$40 (y=2)
+        \draw[dashed,color=SlateBlue!55] (0,3) -- (2,3);
+        \node[left=3pt,fill=white,inner sep=1pt] at (0,3) {$P_1=\$60$};
+        \draw[dashed,color=SlateBlue!55] (2,0) -- (2,3);
+
+        \draw[dashed,color=SlateBlue!55] (0,2) -- (4,2);
+        \node[left=3pt,fill=white,inner sep=1pt] at (0,2) {$P_2=\$40$};
+        \draw[dashed,color=CourseOrange] (2.5,0) -- (2.5,2);
+        \draw[dashed,color=CourseBlue] (4,0) -- (4,2);
+
+        \filldraw[color=SlateBlue] (2,3) circle (2pt);
+        \node[above right=2pt,fill=white,inner sep=1pt] at (2,3) {$E_1$};
+        \node[font=\scriptsize,below=3pt] at (2,0) {$Q_1$};
+        \node[font=\scriptsize,below=18pt,color=CourseOrange] at (2.5,0) {$Q_{\text{inel}}$};
+        \node[font=\scriptsize,below=3pt,color=CourseBlue] at (4,0) {$Q_{\text{el}}$};
+    \end{scope}
+
+    % Right Panel: Polar Extremes
+    \begin{scope}[xshift=7.1cm]
+        \draw[->,thick,color=SlateBlue] (0,0) -- (5.1,0) node[below right=2pt] {$Q$};
+        \draw[->,thick,color=SlateBlue] (0,0) -- (0,5.1) node[above left=2pt] {$P$};
+        \node[below left=2pt] at (0,0) {$0$};
+        \node[font=\small\bfseries,anchor=south] at (2.5,5.65) {(b) Polar limits};
+
+        % Perfectly Inelastic: Vertical at x=2.2
+        \draw[very thick,color=CourseOrange] (2.2,0) -- (2.2,4.8);
+        \node[font=\footnotesize,color=CourseOrange,fill=white,inner sep=1pt,anchor=west,text width=2.25cm,align=left] at (2.45,4.35) {$|\varepsilon_d|=0$\\Perfectly\\inelastic};
+
+        % Perfectly Elastic: Horizontal at y=2.5
+        \draw[very thick,color=CourseBlue] (0,2.5) -- (4.8,2.5);
+
+        \node[font=\footnotesize,color=CourseBlue,fill=white,inner sep=1pt,anchor=south west] at (2.7,2.72) {$|\varepsilon_d|=\infty$};
+    \end{scope}
+\end{tikzpicture}
+\caption{For the same price change, quantity responds less on steep inelastic demand than on flatter elastic demand; panel (b) shows the limiting cases.}
+\label{fig:elasticity_regimes}
+\end{figure}
+
+\subsection*{3. Real-World Application: Necessities and Substitutes}
+Consider a household deciding how to allocate its budget between a medically necessary prescription and restaurant meals. If close alternatives for a purchase are limited, buyers may have less room to reduce quantity when its price rises; if many alternatives are available, buyers have more ways to switch. This comparison illustrates the economic mechanism, not a medical recommendation or a measured elasticity for either market.
+\begin{itemize}
+    \item A treatment with few clinically appropriate alternatives may have less price-responsive demand than a discretionary purchase. Actual responsiveness depends on the treatment, patient group, insurance coverage, and time horizon.
+    \item Restaurant meals often have alternatives such as cooking at home or choosing another restaurant. Those options can make switching easier, but the size of the response must be estimated rather than assumed.
+\end{itemize}
+Four structural determinants help explain responsiveness: (1) \textbf{availability of close substitutes}, (2) \textbf{necessity versus discretionary use}, (3) \textbf{share of the household budget} (a given price change matters more when the good takes a larger share), and (4) \textbf{time horizon} (buyers generally have more opportunity to adjust over a longer period).
+
+\subsection*{4. Mathematical Foundation (Algebra Level)}
+If you compute a percentage change from Point A to Point B and then reverse direction from Point B back to Point A, standard percentage formulas give two different answers because the starting base changes. To eliminate this direction bias, economists use the \textbf{Midpoint (Arc) Elasticity Formula}, dividing each change by the average of the starting and ending values:
 \begin{equation}
-\frac{d(TR)}{dP} = Q(1 - |\varepsilon_d|)
+\varepsilon_d = \frac{\%\Delta Q_d}{\%\Delta P} = \frac{\dfrac{Q_2 - Q_1}{(Q_1 + Q_2)/2}}{\dfrac{P_2 - P_1}{(P_1 + P_2)/2}}
 \end{equation}
-When demand is inelastic ($|\varepsilon_d| < 1$), price increases raise total revenue.
+
+\noindent\textbf{Worked Problem:}
+Suppose a hypothetical transit agency raises the monthly express-pass fare from $P_1 = \$80$ to $P_2 = \$100$, and monthly sales fall from $Q_1 = 1{,}200$ to $Q_2 = 800$ passes. Calculate the price elasticity of demand using the midpoint formula and classify the demand regime.
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Calculate the Percentage Change in Quantity Demanded ($\%\Delta Q_d$):}
+    First find the change in quantity and the midpoint quantity:
+    \[
+    \Delta Q = Q_2 - Q_1 = 800 - 1{,}200 = -400\text{ passes}
+    \]
+    \[
+    Q_{\text{mid}} = \frac{Q_1 + Q_2}{2} = \frac{1{,}200 + 800}{2} = \frac{2{,}000}{2} = 1{,}000\text{ passes}
+    \]
+    Divide the change by the midpoint:
+    \[
+    \%\Delta Q_d = \frac{-400}{1{,}000} = -0.40 \quad (\text{or } -40\%)
+    \]
+
+    \item \textbf{Calculate the Percentage Change in Price ($\%\Delta P$):}
+    Find the change in price and the midpoint price:
+    \[
+    \Delta P = P_2 - P_1 = \$100 - \$80 = +\$20
+    \]
+    \[
+    P_{\text{mid}} = \frac{P_1 + P_2}{2} = \frac{\$80 + \$100}{2} = \frac{\$180}{2} = \$90
+    \]
+    Divide the change by the midpoint:
+    \[
+    \%\Delta P = \frac{20}{90} \approx +0.2222 \quad (\text{or } +22.22\%)
+    \]
+
+    \item \textbf{Divide $\%\Delta Q_d$ by $\%\Delta P$:}
+    \[
+    \varepsilon_d = \frac{-0.40}{20/90} = -0.40 \times \frac{90}{20} = -0.40 \times 4.5 = -1.80
+    \]
+
+    \item \textbf{Take the Absolute Value and Classify:}
+    \[
+    |\varepsilon_d| = |-1.80| = \mathbf{1.80}
+    \]
+    Because $1.80 > 1$, demand for express commuter bus passes over this price range is \textbf{elastic}.
+\end{enumerate}
+\textbf{Conclusion:} Over this price range, the midpoint elasticity is $-1.80$: demand is elastic, so quantity responds more than proportionally to price. This arc estimate is not a forecast for every 1\% price change.
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=\textbf{Optional Advanced Section: Point Elasticity via Calculus}]
+\small
+\emph{Note for Economics Majors and Quantitative Students:}
+For infinitesimally small price changes along a differentiable demand function $Q_d = f(P)$, the \textbf{point price elasticity of demand} replaces discrete differences with the first derivative:
+\[
+\varepsilon_d = \frac{dQ_d}{dP} \cdot \frac{P}{Q_d}
+\]
+For example, given linear demand $Q_d = 100 - 2P$, we have $\frac{dQ_d}{dP} = -2$. At $P = \$30$, $Q_d = 100 - 2(30) = 40$, giving:
+\[
+\varepsilon_d = (-2) \cdot \frac{30}{40} = -1.5 \implies |\varepsilon_d| = 1.5 \text{ (Elastic)}
+\]
+Notice that when $P = \$25$ and $Q_d = 50$ (the exact midpoint of the linear demand curve), $|\varepsilon_d| = |-2 \cdot \frac{25}{50}| = 1.0$ (Unit Elastic).
+\end{tcolorbox}
+
+% -----------------------------------------------------------------------------
+% Section 5.2: Elasticity and Total Revenue
+% -----------------------------------------------------------------------------
+\section{The Total Revenue Test}
+
+\subsection*{1. Conceptual Introduction}
+Every business manager faces a fundamental pricing dilemma: if I raise my price, will my company bring in more money or less money? At first glance, raising prices sounds like a guaranteed way to boost sales dollars. Yet every price increase sets off a tug-of-war between two opposing forces inside the firm's \textbf{Total Revenue ($TR = P \times Q$)}:
+\begin{itemize}
+    \item \textbf{The Price Effect:} Each unit still sold now brings in more dollars ($P \uparrow$), pushing total revenue upward.
+    \item \textbf{The Quantity Effect:} Fewer total units are sold because some buyers walk away ($Q \downarrow$), pulling total revenue downward.
+\end{itemize}
+
+Which force wins the tug-of-war depends entirely on the price elasticity of demand. When demand is \textbf{inelastic} ($|\varepsilon_d| < 1$), customers barely cut back their purchases when prices rise; the positive Price Effect overpowers the weak Quantity Effect, so \textbf{raising price increases total revenue}. Conversely, when demand is \textbf{elastic} ($|\varepsilon_d| > 1$), customers flee in large numbers; the negative Quantity Effect crushes the Price Effect, so \textbf{raising price actually reduces total revenue}.
+
+This relationship gives firms and economists a practical diagnostic known as the \textbf{Total Revenue Test}. Even without estimating a full econometric demand curve, observing how total dollar receipts move after a price change immediately reveals whether demand is elastic, inelastic, or unit elastic. Furthermore, it proves that a firm seeking to maximize total revenue (before accounting for production costs) should operate right at the \textbf{unit elastic midpoint} ($|\varepsilon_d| = 1$), where revenue reaches its peak.
+
+\subsection*{2. Visual Representation}
+Figure~\ref{fig:total_revenue_curve} stacks a linear demand curve directly above its corresponding parabolic Total Revenue curve, showing how revenue rises along the elastic upper half, peaks at the unit-elastic midpoint, and falls along the inelastic lower half.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=0.82cm,y=0.82cm]
+    % Top Panel: Linear Demand P = 100 - 2Q
+    \begin{scope}[yshift=4.5cm]
+        \draw[->,thick,color=SlateBlue] (0,0) -- (6,0) node[below right=2pt] {$Q$};
+        \draw[->,thick,color=SlateBlue] (0,0) -- (0,4.5) node[above left=2pt] {$P$};
+        \node[below left=2pt] at (0,0) {$0$};
+        \node[font=\small\bfseries,anchor=south] at (3,5.05) {(a) Linear demand};
+
+        % Line from (0,4) [P=100] to (5,0) [Q=50]
+        \draw[thick,color=CourseBlue] (0,4) -- (5,0);
+        \node[above left=2pt,fill=white,inner sep=1pt] at (0,4) {$\$100$};
+        \node[font=\footnotesize,color=CourseBlue,fill=white,inner sep=1pt,anchor=south west] at (0.35,0.25) {$P=100-2Q$};
+
+        % Midpoint: Q=25 (x=2.5), P=$50 (y=2.0)
+        \draw[dashed,color=SlateBlue!55] (0,2) -- (2.5,2);
+        \node[left=3pt,fill=white,inner sep=1pt] at (0,2) {$\$50$};
+        \draw[dashed,color=SlateBlue!55] (2.5,0) -- (2.5,2);
+        \filldraw[color=SlateBlue] (2.5,2) circle (2.2pt);
+
+        % Region labels
+        \node[font=\footnotesize\bfseries,color=CourseBlue,fill=white,inner sep=1pt,anchor=south west] at (0.35,2.75) {Elastic: $|\varepsilon_d|>1$};
+        \node[font=\footnotesize\bfseries,color=CoursePurple,fill=white,inner sep=1pt,anchor=south west] at (2.8,2.35) {Unit elastic: $|\varepsilon_d|=1$};
+        \node[font=\footnotesize\bfseries,color=CourseOrange,fill=white,inner sep=1pt,anchor=south west] at (2.7,1.45) {Inelastic: $|\varepsilon_d|<1$};
+    \end{scope}
+
+    % Bottom Panel: Total Revenue TR = 100Q - 2Q^2 (Max at Q=25, TR=$1,250)
+    \begin{scope}[yshift=0cm]
+        \draw[->,thick,color=SlateBlue] (0,0) -- (6,0) node[below right=2pt] {$Q$};
+        \draw[->,thick,color=SlateBlue] (0,0) -- (0,3.5) node[above left=2pt] {$TR$ (\$)};
+        \node[below left=2pt] at (0,0) {$0$};
+
+        % Parabola scaled: x in [0,5] corresponds to Q = 10*x. TR(x) = 1000*x - 200*x^2. Max at x=2.5 is 1250 -> y=2.8.
+        % Formula: y = 2.8 * (4*x*(5-x)/25) = 0.448 * x * (5 - x)
+        \draw[very thick,color=CoursePurple,domain=0:5,samples=60] plot (\x, {0.448*\x*(5-\x)});
+
+        % Peak projection
+        \draw[dashed,color=SlateBlue!55] (0,2.8) -- (2.5,2.8);
+        \node[left=3pt,fill=white,inner sep=1pt] at (0,2.8) {$\$1{,}250$};
+        \draw[dashed,color=SlateBlue!55] (2.5,0) -- (2.5,2.8);
+        \node[below=4pt] at (2.5,0) {$25$};
+        \node[below=4pt] at (5,0) {$50$};
+        \filldraw[color=CoursePurple] (2.5,2.8) circle (2.2pt);
+        \node[above=3pt,fill=white,inner sep=1pt] at (2.5,2.8) {\textbf{Maximum revenue}};
+    \end{scope}
+\end{tikzpicture}
+\caption{Demand Elasticity and Total Revenue. Moving down the linear demand curve from $Q=0$ to $Q=25$ lowers price in the elastic region, causing Total Revenue to climb to its maximum of $\$1{,}250$ at the unit-elastic midpoint. Beyond $Q=25$, further price cuts enter the inelastic region and cause Total Revenue to decline.}
+\label{fig:total_revenue_curve}
+\end{figure}
+
+\subsection*{3. Real-World Application: Subscription and Ticket Pricing}
+The following are stylized examples, not observations about any named company or event. They show how a seller can use the total-revenue test to reason about a price change:
+\begin{itemize}
+    \item Suppose a monthly subscription price rises from $\$15$ to $\$17$ while subscribers fall from $1{,}000$ to $970$. Revenue changes from $\$15{,}000$ to $\$16{,}490$ per month, so revenue rises over this interval.
+    \item Suppose a ticket price falls from $\$100$ to $\$70$ while sales rise from 100 to 200 tickets. Revenue changes from $\$10{,}000$ to $\$14{,}000$, so demand is elastic over this interval by the total-revenue test.
+\end{itemize}
+
+\subsection*{4. Mathematical Foundation (Algebra Level)}
+Total Revenue is the product of market price and quantity sold:
+\begin{equation}
+TR = P \times Q
+\end{equation}
+To test how a price change alters total revenue, compute $TR_1 = P_1 \times Q_1$ before the change and $TR_2 = P_2 \times Q_2$ after the change:
+\begin{itemize}
+    \item If $P \uparrow$ and $TR \uparrow$ (price and revenue move in the \textbf{same} direction), demand is \textbf{inelastic} ($|\varepsilon_d| < 1$).
+    \item If $P \uparrow$ and $TR \downarrow$ (price and revenue move in \textbf{opposite} directions), demand is \textbf{elastic} ($|\varepsilon_d| > 1$).
+    \item If $P \uparrow$ and $TR$ stays \textbf{unchanged}, demand is \textbf{unit elastic} ($|\varepsilon_d| = 1$).
+\end{itemize}
+
+\noindent\textbf{Worked Problem:}
+Suppose a campus coffee kiosk faces the linear demand schedule $P = 100 - 2Q$, where $P$ is cents per ounce and $Q$ is hundreds of ounces, as plotted in Figure~\ref{fig:total_revenue_curve}. Thus actual revenue in dollars is $(P/100)(100Q)=PQ$. Compare total revenue across three pricing strategies:
+\begin{itemize}
+    \item \textbf{Strategy A:} High price $P_A = 70\text{ cents}$
+    \item \textbf{Strategy B:} Midpoint price $P_B = 50\text{ cents}$
+    \item \textbf{Strategy C:} Low price $P_C = 30\text{ cents}$
+\end{itemize}
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Compute Quantity and Revenue under Strategy A ($P_A = 70$):}
+    Substitute $P = 70$ into $P = 100 - 2Q$:
+    \[
+    70 = 100 - 2Q_A \implies 2Q_A = 30 \implies Q_A = 15
+    \]
+    Calculate Total Revenue:
+    \[
+    TR_A = P_A \times Q_A = 70 \times 15 = \mathbf{1{,}050}
+    \]
+
+    \item \textbf{Compute Quantity and Revenue under Strategy B ($P_B = 50$):}
+    Substitute $P = 50$ into $P = 100 - 2Q$:
+    \[
+    50 = 100 - 2Q_B \implies 2Q_B = 50 \implies Q_B = 25
+    \]
+    Calculate Total Revenue:
+    \[
+    TR_B = P_B \times Q_B = 50 \times 25 = \mathbf{1{,}250}
+    \]
+    \emph{Interpretation:} Cutting price from $70$ to $50$ increased Total Revenue from $1{,}050$ to $1{,}250$, confirming that demand between $P=70$ and $P=50$ is \textbf{elastic}.
+
+    \item \textbf{Compute Quantity and Revenue under Strategy C ($P_C = 30$):}
+    Substitute $P = 30$ into $P = 100 - 2Q$:
+    \[
+    30 = 100 - 2Q_C \implies 2Q_C = 70 \implies Q_C = 35
+    \]
+    Calculate Total Revenue:
+    \[
+    TR_C = P_C \times Q_C = 30 \times 35 = \mathbf{1{,}050}
+    \]
+    \emph{Interpretation:} Cutting price further from $50$ to $30$ reduced Total Revenue from $1{,}250$ back down to $1{,}050$, confirming that demand below $P=50$ is \textbf{inelastic}.
+\end{enumerate}
+\textbf{Conclusion:} Total Revenue is maximized at $\mathbf{1{,}250}$ when $P = 50$ and $Q = 25$. This is the unit-elastic midpoint for this linear demand curve; the maximum for a general demand curve need not occur at its geometric midpoint.
+
+\begin{tcolorbox}[colback=green!5!white,colframe=green!65!black,title=\textbf{Optional Advanced Section: Calculus Proof of the Total Revenue Test}]
+\small
+\emph{Note for Economics Majors:}
+Express Total Revenue as a function of price, $TR(P) = P \cdot Q(P)$. Differentiating with respect to $P$ using the product rule gives:
+\[
+\frac{d(TR)}{dP} = Q(P) + P \frac{dQ}{dP} = Q(P) \left[ 1 + \frac{dQ}{dP} \cdot \frac{P}{Q(P)} \right] = Q(P) \left( 1 + \varepsilon_d \right)
+\]
+Since $\varepsilon_d = -|\varepsilon_d|$ for downward-sloping demand, we can rewrite this as:
+\[
+\frac{d(TR)}{dP} = Q(P) \left( 1 - |\varepsilon_d| \right)
+\]
+\begin{itemize}
+    \item When $|\varepsilon_d| < 1$ (inelastic), $1 - |\varepsilon_d| > 0 \implies \frac{d(TR)}{dP} > 0$ (price increases raise $TR$).
+    \item When $|\varepsilon_d| > 1$ (elastic), $1 - |\varepsilon_d| < 0 \implies \frac{d(TR)}{dP} < 0$ (price increases lower $TR$).
+    \item At an interior stationary point with positive quantity, setting $\frac{d(TR)}{dP}=0$ yields $|\varepsilon_d|=1$. At an interior revenue maximum, this is the unit-elastic point; for a linear demand curve, that point is also the geometric midpoint.
+\end{itemize}
+\end{tcolorbox}
+
+% -----------------------------------------------------------------------------
+% Section 5.3: Income Elasticity, Cross-Price Elasticity, and Elasticity of Supply
+% -----------------------------------------------------------------------------
+\section{Income, Cross-Price, and Supply Elasticities}
+
+\subsection*{1. Conceptual Introduction}
+While own-price elasticity measures movement \emph{along} a demand curve, two related demand elasticities measure how much the entire demand curve \emph{shifts} when income or related-good prices change:
+\begin{itemize}
+    \item \textbf{Income Elasticity of Demand ($\varepsilon_I$):} Measures the percentage change in quantity demanded divided by the percentage change in consumer income ($I$). Unlike own-price elasticity, \textbf{never drop the plus or minus sign} here! A positive value ($\varepsilon_I > 0$) identifies a \textbf{normal good} (if $\varepsilon_I > 1$, it is an income-elastic \emph{luxury}; if $0 < \varepsilon_I < 1$, it is an income-inelastic \emph{necessity}). A negative value ($\varepsilon_I < 0$) identifies an \textbf{inferior good}, which households buy less of as their paychecks grow.
+    \item \textbf{Cross-Price Elasticity of Demand ($\varepsilon_{xy}$):} Measures the percentage change in quantity demanded of Good $X$ divided by the percentage change in the price of Good $Y$. Again, the sign carries critical economic meaning: if $\varepsilon_{xy} > 0$, rising prices for Good $Y$ drive consumers to buy more of Good $X$, proving the two goods are \textbf{substitutes} (such as Uber and Lyft). If $\varepsilon_{xy} < 0$, rising prices for Good $Y$ cause sales of Good $X$ to fall, proving they are \textbf{complements} (such as game consoles and video games).
+\end{itemize}
+
+On the other side of the market, the \textbf{Price Elasticity of Supply ($\varepsilon_s$)} measures how flexibly producers can expand output when market prices rise ($\varepsilon_s = \%\Delta Q_s / \%\Delta P \ge 0$). Supply elasticity is governed primarily by production capacity and time: agricultural crops after harvest or beachfront land have nearly vertical, inelastic supply ($\varepsilon_s \approx 0$), whereas digital software downloads or mass-produced apparel can scale up rapidly at nearly constant cost, exhibiting high supply elasticity ($\varepsilon_s > 1$).
+
+\subsection*{2. Visual Representation}
+Figure~\ref{fig:supply_elasticity} illustrates how production time horizons transform the Price Elasticity of Supply from rigid in the immediate market period to highly responsive in the long run.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=0.9cm,y=0.78cm]
+    % Axes
+    \draw[->,thick,color=SlateBlue] (0,0) -- (6.2,0) node[below right=2pt] {$Q$};
+    \draw[->,thick,color=SlateBlue] (0,0) -- (0,5.2) node[above left=2pt] {$P$};
+    \node[below left=2pt] at (0,0) {$0$};
+
+    % Initial Equilibrium E1(2.0, 2.0)
+    % Immediate Run Supply (Vertical at x=2.0)
+    \draw[very thick,color=CourseOrange] (2.0,0) -- (2.0,4.8);
+    \node[font=\scriptsize,color=CourseOrange,fill=white,inner sep=1pt,anchor=west,align=left] at (2.18,4.65) {$S_{\text{immediate}}$\\$\varepsilon_s=0$};
+
+    % Short Run Supply (Steep through (2,2)): slope = 1.5 -> (0.67,0) to (3.87,4.8)
+    \draw[very thick,color=CourseTeal,dashed] (0.67,0) -- (3.87,4.8);
+    \node[font=\scriptsize,color=CourseTeal,fill=white,inner sep=1pt,anchor=west] at (3.95,4.45) {$S_{\text{short-run}}$};
+
+    % Long Run Supply (Flat through (2,2)): slope = 0.35 -> (0,1.3) to (5.8,3.33)
+    \draw[very thick,color=CoursePurple] (0,1.3) -- (5.8,3.33);
+    \node[font=\scriptsize,color=CoursePurple,fill=white,inner sep=1pt,anchor=south west] at (4.1,2.9) {$S_{\text{long-run}}$};
+
+    % Initial Demand D1 through (2,2)
+    \draw[thick,color=SlateBlue!65,dashed] (0.5,3.5) -- (3.5,0.5);
+    \node[font=\footnotesize,color=SlateBlue,fill=white,inner sep=1pt,anchor=north west] at (3.55,0.45) {$D_1$};
+    % Shifted Demand D2
+    \draw[thick,color=CourseBlue] (1.8,4.6) -- (5.2,1.2);
+    \node[font=\footnotesize,color=CourseBlue,fill=white,inner sep=1pt,anchor=west] at (5.3,1.2) {$D_2$};
+
+    % Equilibria
+    \filldraw[color=SlateBlue] (2.0,2.0) circle (2pt);
+    \node[font=\footnotesize,anchor=north west,fill=white,inner sep=1pt] at (2.14,1.85) {$E_1$};
+    % E_imm: intersection of x=2.0 and D2 (x + y = 6.4 -> y=4.4)
+    \filldraw[color=CourseOrange] (2.0,4.4) circle (2pt);
+    \node[font=\footnotesize,anchor=south west,fill=white,inner sep=1pt] at (2.12,4.48) {$E_{\text{imm}}$};
+    % E_sr: intersection of y - 2 = 1.5(x - 2) -> y = 1.5x - 1 and x + y = 6.4 -> 2.5x = 7.4 -> x=2.96, y=3.44
+    \filldraw[color=CourseTeal] (2.96,3.44) circle (2pt);
+    \node[font=\footnotesize,anchor=south west,fill=white,inner sep=1pt] at (3.08,3.62) {$E_{\text{sr}}$};
+    % E_lr: intersection of y = 1.3 + 0.35x and x + y = 6.4 -> 1.35x = 5.1 -> x=3.78, y=2.62
+    \filldraw[color=CoursePurple] (3.78,2.62) circle (2pt);
+    \node[font=\footnotesize,anchor=south west,fill=white,inner sep=1pt] at (3.9,2.82) {$E_{\text{lr}}$};
+    \draw[dashed,color=SlateBlue!50] (2.0,0) -- (2.0,4.4);
+    \draw[dashed,color=SlateBlue!50] (0,2.0) -- (2.0,2.0);
+    \draw[dashed,color=SlateBlue!50] (0,4.4) -- (2.0,4.4);
+    \draw[dashed,color=SlateBlue!50] (2.96,0) -- (2.96,3.44);
+    \draw[dashed,color=SlateBlue!50] (0,3.44) -- (2.96,3.44);
+    \draw[dashed,color=SlateBlue!50] (3.78,0) -- (3.78,2.62);
+    \draw[dashed,color=SlateBlue!50] (0,2.62) -- (3.78,2.62);
+    \node[font=\scriptsize,below=3pt] at (2.0,0) {$Q_1$};
+    \node[font=\scriptsize,below=14pt] at (2.96,0) {$Q_{\text{sr}}$};
+    \node[font=\scriptsize,below=3pt] at (3.78,0) {$Q_{\text{lr}}$};
+    \node[font=\scriptsize,left=3pt,fill=white,inner sep=1pt] at (0,2.0) {$P_1$};
+    \node[font=\scriptsize,left=3pt,fill=white,inner sep=1pt] at (0,2.62) {$P_{\text{lr}}$};
+    \node[font=\scriptsize,left=3pt,fill=white,inner sep=1pt] at (0,3.44) {$P_{\text{sr}}$};
+    \node[font=\scriptsize,left=3pt,fill=white,inner sep=1pt] at (0,4.4) {$P_{\text{imm}}$};
+\end{tikzpicture}
+\caption{Supply Elasticity Across Time Horizons. Following an unexpected demand surge from $D_1$ to $D_2$, fixed immediate capacity ($S_{\text{immediate}}$) forces price to spike to $E_{\text{imm}}$. Over the short run ($S_{\text{short-run}}$) and long run ($S_{\text{long-run}}$), firms expand factories and enter the market, flattening the supply curve and moderating the price increase.}
+\label{fig:supply_elasticity}
+\end{figure}
+
+\subsection*{Elasticity Shifts: Income and Related-Good Prices}
+Income elasticity and cross-price elasticity describe shifts in demand, rather than movements along a demand curve. The sign of the elasticity predicts the direction of the shift when the explanatory variable changes.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[>=Stealth,every node/.style={font=\small,align=center,inner sep=4pt}]
+    \node[draw,rounded corners,fill=CourseBlue!10,text width=3.2cm,minimum height=0.9cm] (income) at (0,0) {Income rises};
+    \node[draw,rounded corners,fill=CourseTeal!12,text width=3.2cm,minimum height=1.0cm] (normal) at (-2,-1.9) {Normal good\\$Q_d$ rises;\\demand shifts right};
+    \node[draw,rounded corners,fill=CoursePurple!12,text width=3.2cm,minimum height=1.0cm] (inferior) at (2,-1.9) {Inferior good\\$Q_d$ falls;\\demand shifts left};
+    \draw[->,thick,color=SlateBlue] (income.south) -- (normal.north);
+    \draw[->,thick,color=SlateBlue] (income.south) -- (inferior.north);
+
+    \node[draw,rounded corners,fill=CourseBlue!10,text width=4.1cm,minimum height=0.9cm] (price) at (8,0) {Price of related good $Y$ rises};
+    \node[draw,rounded corners,fill=CourseTeal!12,text width=3.3cm,minimum height=1.0cm] (substitute) at (6,-1.9) {Substitute for $Y$\\$Q_x$ rises;\\demand shifts right};
+    \node[draw,rounded corners,fill=CoursePurple!12,text width=3.3cm,minimum height=1.0cm] (complement) at (10,-1.9) {Complement to $Y$\\$Q_x$ falls;\\demand shifts left};
+    \draw[->,thick,color=SlateBlue] (price.south) -- (substitute.north);
+    \draw[->,thick,color=SlateBlue] (price.south) -- (complement.north);
+\end{tikzpicture}
+\caption{How income and related-good prices shift demand. The direction depends on whether the good is normal or inferior, and whether the related goods are substitutes or complements.}
+\label{fig:income-cross-shifts}
+\end{figure}
+
+\subsection*{3. Real-World Application: Capacity and Substitutes}
+\begin{itemize}
+    \item \textbf{Capacity over time:} A producer in a capacity-intensive industry, such as semiconductor fabrication, may be unable to expand output immediately when demand rises. Investment and entry can make supply more responsive over a longer horizon. This is a qualitative illustration; specific build times, costs, and price movements require a dated source.
+    \item \textbf{Related services:} If two ride-hailing services are substitutes, a price increase for one may shift demand toward the other. If two goods are complements, a price increase for one may reduce demand for the other. These are illustrative mechanisms, not claims about measured responses by named firms.
+\end{itemize}
+
+\subsection*{4. Mathematical Foundation (Algebra Level)}
+Using the midpoint method, the three elasticity formulas are:
+\begin{align}
+\varepsilon_I &= \frac{\%\Delta Q_d}{\%\Delta I}
+= \frac{\dfrac{Q_2 - Q_1}{(Q_1 + Q_2)/2}}{\dfrac{I_2 - I_1}{(I_1 + I_2)/2}},\\
+\varepsilon_{xy} &= \frac{\%\Delta Q_x}{\%\Delta P_y}
+= \frac{\dfrac{Q_{x2} - Q_{x1}}{(Q_{x1} + Q_{x2})/2}}{\dfrac{P_{y2} - P_{y1}}{(P_{y1} + P_{y2})/2}},\\
+\varepsilon_s &= \frac{\%\Delta Q_s}{\%\Delta P}
+= \frac{\dfrac{Q_{s2} - Q_{s1}}{(Q_{s1} + Q_{s2})/2}}{\dfrac{P_2 - P_1}{(P_1 + P_2)/2}}.
+\end{align}
+
+\noindent\textbf{Worked Problem:}
+In a hypothetical example, a graduating college senior's annual income rises from $I_1 = \$30{,}000$ to $I_2 = \$50{,}000$, while other factors affecting demand are held constant. Assume:
+\begin{itemize}
+    \item Their annual purchases of instant ramen packs drop from $Q_1 = 120$ packs to $Q_2 = 40$ packs.
+    \item Meanwhile, when the price of oat milk rises from $P_{y1} = \$4.00$ to $P_{y2} = \$5.00$ per carton, local café demand for espresso shots falls from $Q_{x1} = 500$ to $Q_{x2} = 450$ shots per day.
+\end{itemize}
+Compute both the Income Elasticity of Demand for instant ramen and the Cross-Price Elasticity between espresso shots and oat milk.
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Calculate Percentage Change in Income ($\%\Delta I$):}
+    \[
+    \%\Delta I = \frac{50{,}000 - 30{,}000}{(30{,}000 + 50{,}000)/2} = \frac{20{,}000}{40{,}000} = +0.50 \quad (+50\%)
+    \]
+
+    \item \textbf{Calculate Income Elasticity of Demand for Instant Ramen ($\varepsilon_I$):}
+    \[
+    \%\Delta Q_{\text{ramen}} = \frac{40 - 120}{(120 + 40)/2} = \frac{-80}{80} = -1.00 \quad (-100\%)
+    \]
+    Divide $\%\Delta Q_{\text{ramen}}$ by $\%\Delta I$:
+    \[
+    \varepsilon_I = \frac{-1.00}{+0.50} = \mathbf{-2.00}
+    \]
+    \emph{Classification:} Because $\varepsilon_I < 0$, instant ramen is an \textbf{inferior good}.
+
+    \item \textbf{Calculate Cross-Price Elasticity ($\varepsilon_{\text{espresso, oat milk}}$):}
+    \[
+    \%\Delta Q_{\text{espresso}} = \frac{450 - 500}{(500 + 450)/2} = \frac{-50}{475} \approx -0.1053 \quad (-10.53\%)
+    \]
+    \[
+    \%\Delta P_{\text{oat milk}} = \frac{5.00 - 4.00}{(4.00 + 5.00)/2} = \frac{1.00}{4.50} \approx +0.2222 \quad (+22.22\%)
+    \]
+    Divide $\%\Delta Q_{\text{espresso}}$ by $\%\Delta P_{\text{oat milk}}$:
+    \[
+    \varepsilon_{xy} = \frac{-50/475}{1.00/4.50} = -\frac{50}{475} \times 4.50 = -\frac{225}{475} \approx \mathbf{-0.47}
+    \]
+    \emph{Classification:} Because $\varepsilon_{xy} < 0$, espresso shots and oat milk are \textbf{complements}.
+\end{enumerate}
+\textbf{Conclusion:} Retaining the algebraic signs reveals that instant ramen is an inferior good ($\varepsilon_I = -2.00$) and oat milk and espresso are complementary goods ($\varepsilon_{xy} = -0.47$).
+
+\noindent\textbf{Worked Supply Example (Illustrative):}
+Suppose price rises from $\$10$ to $\$12$ while quantity supplied rises from 100 to 120 units. Using the midpoint formula:
+\[
+\%\Delta Q_s=\frac{120-100}{(120+100)/2}=\frac{20}{110},
+\qquad
+\%\Delta P=\frac{12-10}{(12+10)/2}=\frac{2}{11}.
+\]
+Therefore,
+\[
+\varepsilon_s=\frac{20/110}{2/11}=1.
+\]
+Supply is unit elastic over this interval. These values are hypothetical and are not an estimate for a particular market.
+
+% -----------------------------------------------------------------------------
+% Section 5.4: Elasticity and Tax Incidence
+% -----------------------------------------------------------------------------
+\section{Elasticity and Economic Tax Incidence}
+
+\subsection*{1. Conceptual Introduction}
+Under the standard competitive supply-and-demand model, for a given per-unit tax and absent differences in compliance or transaction costs, \textbf{statutory incidence} (whether the law collects the tax from the buyer or the seller) does not change the economic burden. So what \emph{does} determine how consumers and producers divide that burden? The answer is \textbf{relative price elasticity}.
+
+Think of a tax wedge as a financial squeeze between buyers and sellers. Whichever side of the market is \textbf{more inelastic}—meaning they have fewer alternatives and cannot easily walk away—gets trapped and absorbs the lion's share of the tax burden. Conversely, whichever side is \textbf{more elastic} can easily escape the tax by switching to substitutes or shifting production elsewhere, forcing the other party to pay.
+
+This principle produces two polar rules of public finance:
+\begin{itemize}
+    \item \textbf{When Demand Is More Inelastic Than Supply ($|\varepsilon_d| < \varepsilon_s$):} Consumers have few substitutes while producers can easily redirect resources. Sellers pass most of the tax forward to buyers through a sharply higher retail price ($P_b - P^* > P^* - P_s$).
+    \item \textbf{When Supply Is More Inelastic Than Demand ($\varepsilon_s < |\varepsilon_d|$):} Producers are locked into fixed assets or specialized locations while consumers can easily switch away. Sellers must absorb most of the tax by accepting a sharply lower net price ($P^* - P_s > P_b - P^*$).
+\end{itemize}
+
+\subsection*{2. Visual Representation}
+Figure~\ref{fig:tax_incidence_elasticity} compares the exact same excise tax $t$ across two markets: one with inelastic demand (left) where buyers pay almost the entire tax, and one with elastic demand (right) where sellers absorb most of the burden.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=0.78cm,y=0.78cm]
+    % Left Panel: Inelastic Demand -> Buyers bear most burden
+    \begin{scope}[xshift=0cm]
+        \draw[->,thick,color=SlateBlue] (0,0) -- (5.2,0) node[below right=2pt] {$Q$};
+        \draw[->,thick,color=SlateBlue] (0,0) -- (0,5.3) node[above left=2pt] {$P$};
+        \node[below left=2pt] at (0,0) {$0$};
+        \node[font=\small\bfseries,anchor=south] at (2.5,5.85) {(a) Steep demand: buyers bear more};
+
+        % Pre-tax E*(2.2, 2.5)
+        % Flat Supply: y = 1.4 + 0.5x -> at x=2.2, y=2.5
+        \draw[thick,color=CourseOrange] (0,1.4) -- (4.6,3.7);
+        % Steep Demand: y = 8.0 - 2.5x -> at x=2.2, y=2.5
+        \draw[thick,color=CourseBlue] (1.1,5.25) -- (3.2,0);
+        \node[font=\footnotesize,color=CourseOrange,fill=white,inner sep=1pt] at (4.1,3.6) {$S$};
+        \node[font=\footnotesize,color=CourseBlue,fill=white,inner sep=1pt] at (0.55,4.8) {$D$};
+
+        % Pre-tax P* = 2.5
+        \draw[dashed,color=SlateBlue!55] (0,2.5) -- (2.2,2.5);
+        \node[left=28pt,fill=white,inner sep=1pt] at (0,2.5) {$P^*$};
+        \draw[dashed,color=SlateBlue!55] (2.2,0) -- (2.2,2.5);
+
+        % Tax wedge t = 1.2 -> 3.0x = 1.2 -> dQ = 0.4 -> Qt = 1.8
+        % Pb = 8.0 - 2.5(1.8) = 3.5; Ps = 1.4 + 0.5(1.8) = 2.3
+        \draw[dashed,color=SlateBlue!55] (0,3.5) -- (1.8,3.5);
+        \node[left=3pt,fill=white,inner sep=1pt] at (0,3.5) {$P_b$};
+        \draw[dashed,color=SlateBlue!55] (0,2.3) -- (1.8,2.3);
+        \node[left=3pt,fill=white,inner sep=1pt] at (0,2.3) {$P_s$};
+        \draw[dashed,color=SlateBlue!55] (1.8,0) -- (1.8,3.5);
+
+        % Buyer burden (top box: 2.5 to 3.5)
+        \fill[CourseBlue,opacity=0.20] (0,2.5) rectangle (1.8,3.5);
+        \node[font=\scriptsize\bfseries,fill=white,inner sep=1pt] at (0.9,3.0) {Buyer};
+
+        % Seller burden (bottom box: 2.3 to 2.5)
+        \fill[CourseOrange,opacity=0.24] (0,2.3) rectangle (1.8,2.5);
+
+        \draw[thick,<->,color=SlateBlue] (2.05,2.3) -- (2.05,3.5);
+        \node[right=2pt,fill=white,inner sep=1pt] at (2.05,2.9) {$t$};
+        \node[font=\scriptsize,anchor=west,fill=white,inner sep=1pt] at (2.55,2.38) {Seller};
+        \node[font=\scriptsize,below=3pt] at (1.8,0) {$Q_t$};
+        \node[font=\scriptsize,below=18pt] at (2.2,0) {$Q^*$};
+    \end{scope}
+
+    % Right Panel: Elastic Demand -> Sellers bear most burden
+    \begin{scope}[xshift=6.8cm]
+        \draw[->,thick,color=SlateBlue] (0,0) -- (5.2,0) node[below right=2pt] {$Q$};
+        \draw[->,thick,color=SlateBlue] (0,0) -- (0,5.3) node[above left=2pt] {$P$};
+        \node[below left=2pt] at (0,0) {$0$};
+        \node[font=\small\bfseries,anchor=south] at (2.5,5.85) {(b) Flat demand: sellers bear more};
+
+        % Pre-tax E*(2.2, 2.5)
+        % Steep Supply: y = -3.0 + 2.5x -> at x=2.2, y=2.5
+        \draw[thick,color=CourseOrange] (1.2,0) -- (3.3,5.25);
+        % Flat Demand: y = 3.6 - 0.5x -> at x=2.2, y=2.5
+        \draw[thick,color=CourseBlue] (0,3.6) -- (4.8,1.2);
+        \node[font=\footnotesize,color=CourseOrange,fill=white,inner sep=1pt] at (3.55,4.75) {$S$};
+        \node[font=\footnotesize,color=CourseBlue,fill=white,inner sep=1pt] at (4.35,1.85) {$D$};
+
+        % Pre-tax P* = 2.5
+        \draw[dashed,color=SlateBlue!55] (0,2.5) -- (2.2,2.5);
+        \node[left=28pt,fill=white,inner sep=1pt] at (0,2.5) {$P^*$};
+        \draw[dashed,color=SlateBlue!55] (2.2,0) -- (2.2,2.5);
+
+        % Tax wedge t = 1.2 -> Qt = 1.8
+        % Pb = 3.6 - 0.5(1.8) = 2.7; Ps = -3.0 + 2.5(1.8) = 1.5
+        \draw[dashed,color=SlateBlue!55] (0,2.7) -- (1.8,2.7);
+        \node[left=3pt,fill=white,inner sep=1pt] at (0,2.7) {$P_b$};
+        \draw[dashed,color=SlateBlue!55] (0,1.5) -- (1.8,1.5);
+        \node[left=3pt,fill=white,inner sep=1pt] at (0,1.5) {$P_s$};
+        \draw[dashed,color=SlateBlue!55] (1.8,0) -- (1.8,2.7);
+
+        % Buyer burden (top box: 2.5 to 2.7)
+        \fill[CourseBlue,opacity=0.20] (0,2.5) rectangle (1.8,2.7);
+
+        % Seller burden (bottom box: 1.5 to 2.5)
+        \fill[CourseOrange,opacity=0.24] (0,1.5) rectangle (1.8,2.5);
+        \node[font=\scriptsize\bfseries,fill=white,inner sep=1pt] at (0.9,2.0) {Seller};
+
+        \draw[thick,<->,color=SlateBlue] (2.05,1.5) -- (2.05,2.7);
+        \node[right=2pt,fill=white,inner sep=1pt] at (2.05,2.1) {$t$};
+        \node[font=\scriptsize,anchor=west,fill=white,inner sep=1pt] at (2.55,2.9) {Buyer};
+        \node[font=\scriptsize,anchor=west,fill=white,inner sep=1pt] at (2.55,1.3) {Seller};
+        \node[font=\scriptsize,below=3pt] at (1.8,0) {$Q_t$};
+        \node[font=\scriptsize,below=18pt] at (2.2,0) {$Q^*$};
+    \end{scope}
+\end{tikzpicture}
+\caption{Elasticity Determines Tax Incidence. In panel (a), steep inelastic demand forces buyers to pay almost the entire tax ($P_b - P^*$). In panel (b), flat elastic demand allows buyers to walk away, forcing sellers with inelastic supply to absorb most of the tax ($P^* - P_s$).}
+\label{fig:tax_incidence_elasticity}
+\end{figure}
+
+\subsection*{3. Real-World Application: Cigarette Excise Taxes}
+\begin{itemize}
+    \item Cigarette excise taxes are a policy example in which the statutory tax does not by itself reveal who bears the economic burden. Estimating buyer and seller shares requires evidence about how both prices and quantities respond in a specified market and period.
+    \item The addictive nature of a product may affect the availability of substitutes, but it does not establish a universal demand elasticity or a precise tax pass-through rate. Avoid numerical incidence claims unless the market, period, and source are stated.
+\end{itemize}
+
+\subsection*{4. Mathematical Foundation (Algebra Level)}
+We can compute the exact dollar burden and percentage share borne by buyers and sellers using standard linear equations:
+\begin{equation}
+\text{Buyer Tax Share} = \frac{P_b - P^*}{t}, \qquad \text{Seller Tax Share} = \frac{P^* - P_s}{t}
+\end{equation}
+Notice that $(P_b - P^*) + (P^* - P_s) = P_b - P_s = t$, so the two shares always sum to $100\%$.
+
+\noindent\textbf{Worked Problem:}
+Consider a stylized competitive market for a specialty allergy medication with linear demand and supply:
+\[
+\text{Demand: } P_d = 110 - 4Q, \qquad \text{Supply: } P_s = 10 + Q
+\]
+Suppose the government imposes a per-unit excise tax of $t = \$20$. Calculate the pre-tax equilibrium, post-tax prices ($P_b$ and $P_s$), and the exact percentage of the tax paid by buyers versus sellers.
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Find the Pre-Tax Equilibrium ($Q^*, P^*$):}
+    Set $P_d = P_s$:
+    \[
+    110 - 4Q = 10 + Q \implies 100 = 5Q \implies Q^* = \mathbf{20\text{ units}}
+    \]
+    Plug $Q^* = 20$ into either equation to find $P^*$:
+    \[
+    P^* = 10 + 20 = \mathbf{\$30}
+    \]
+
+    \item \textbf{Impose the Tax Wedge ($P_b - P_s = \$20$):}
+    Substitute the demand and supply expressions into the tax wedge equation:
+    \[
+    (110 - 4Q_t) - (10 + Q_t) = 20
+    \]
+    Simplify the left-hand side:
+    \[
+    100 - 5Q_t = 20 \implies 5Q_t = 80 \implies Q_t = \mathbf{16\text{ units}}
+    \]
+
+    \item \textbf{Compute Post-Tax Buyer Price ($P_b$) and Seller Price ($P_s$):}
+    \[
+    P_b = 110 - 4(16) = 110 - 64 = \mathbf{\$46}
+    \]
+    \[
+    P_s = 10 + 16 = \mathbf{\$26}
+    \]
+    \emph{Check:} $P_b - P_s = \$46 - \$26 = \$20 = t$.
+
+    \item \textbf{Calculate Dollar Burdens and Percentage Shares:}
+    \[
+    \text{Buyer Dollar Burden} = P_b - P^* = \$46 - \$30 = \mathbf{\$16\text{ per unit}} \quad \Longrightarrow \quad \frac{\$16}{\$20} = \mathbf{80\%}
+    \]
+    \[
+    \text{Seller Dollar Burden} = P^* - P_s = \$30 - \$26 = \mathbf{\$4\text{ per unit}} \quad \Longrightarrow \quad \frac{\$4}{\$20} = \mathbf{20\%}
+    \]
+\end{enumerate}
+\textbf{Conclusion:} At the pre-tax equilibrium, demand elasticity has magnitude $0.375$ and supply elasticity is $1.50$. Demand is more inelastic in this example, and the calculated tax wedge assigns \textbf{$80\%$} of the per-unit burden to buyers and \textbf{$20\%$} to sellers. Curve slopes alone do not generally measure relative elasticity.
+
+\begin{tcolorbox}[colback=purple!5!white,colframe=purple!75!black,title=\textbf{Optional Advanced Section: The Elasticity Tax-Pass-Through Formula}]
+\small
+\emph{Note for Economics Majors and Quantitative Students:}
+For small taxes, the exact share of an excise tax passed forward to buyers depends directly on the ratio of supply elasticity to the sum of demand and supply elasticities:
+\[
+\frac{dP_b}{dt} = \frac{\varepsilon_s}{\varepsilon_s + |\varepsilon_d|}, \qquad \frac{dP_s}{dt} = -\frac{|\varepsilon_d|}{\varepsilon_s + |\varepsilon_d|}
+\]
+In our worked problem above, at the pre-tax equilibrium $(Q^*=20, P^*=30)$:
+\[
+|\varepsilon_d| = \left|-\frac{1}{4}\right| \cdot \frac{30}{20} = 0.375, \qquad \varepsilon_s = (1) \cdot \frac{30}{20} = 1.50
+\]
+Plugging into the pass-through formula:
+\[
+\text{Buyer Share} = \frac{1.50}{1.50 + 0.375} = \frac{1.50}{1.875} = \mathbf{0.80 \text{ (80\%)}}
+\]
+This confirms the exact $80\% / 20\%$ split derived via linear algebra.
+\end{tcolorbox}
 
 \end{document}

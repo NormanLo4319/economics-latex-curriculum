@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5&nbsp; Chapter 5: Employment, Unemployment Metrics, and the Price Level – Principles of Macroeconomics</title>
+<title>5&nbsp; Chapter 5: Unemployment and Inflation – Principles of Macroeconomics</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -111,6 +111,7 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
@@ -292,7 +293,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch01_principles.html">Macroeconomic Foundations &amp; Measurement</a></li><li class="breadcrumb-item"><a href="./ch05_unemployment_inflation.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Employment, Unemployment Metrics, and the Price Level</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch01_principles.html">Macroeconomic Foundations &amp; Measurement</a></li><li class="breadcrumb-item"><a href="./ch05_unemployment_inflation.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Unemployment and Inflation</span></a></li></ol></nav>
         <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -359,7 +360,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch05_unemployment_inflation.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Employment, Unemployment Metrics, and the Price Level</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Unemployment and Inflation</span></span></a>
   </div>
 </li>
       </ul>
@@ -433,10 +434,31 @@ window.Quarto = {
    
   <ul>
   <li><a href="#learning-outcomes-and-key-terms" id="toc-learning-outcomes-and-key-terms" class="nav-link active" data-scroll-target="#learning-outcomes-and-key-terms"><span class="header-section-number">5.1</span> Learning Outcomes and Key Terms</a></li>
-  <li><a href="#how-a-household-enters-the-labor-statistics" id="toc-how-a-household-enters-the-labor-statistics" class="nav-link" data-scroll-target="#how-a-household-enters-the-labor-statistics"><span class="header-section-number">5.2</span> How a Household Enters the Labor Statistics</a></li>
-  <li><a href="#rates-and-their-denominators" id="toc-rates-and-their-denominators" class="nav-link" data-scroll-target="#rates-and-their-denominators"><span class="header-section-number">5.3</span> Rates and Their Denominators</a></li>
-  <li><a href="#graph-description-cycles-and-the-natural-rate" id="toc-graph-description-cycles-and-the-natural-rate" class="nav-link" data-scroll-target="#graph-description-cycles-and-the-natural-rate"><span class="header-section-number">5.4</span> Graph Description: Cycles and the Natural Rate</a></li>
-  <li><a href="#check-your-understanding" id="toc-check-your-understanding" class="nav-link" data-scroll-target="#check-your-understanding"><span class="header-section-number">5.5</span> Check Your Understanding</a></li>
+  <li><a href="#part-1-the-bls-population-map" id="toc-part-1-the-bls-population-map" class="nav-link" data-scroll-target="#part-1-the-bls-population-map"><span class="header-section-number">5.2</span> Part 1: The BLS Population Map</a>
+  <ul class="collapse">
+  <li><a href="#bring-it-home-one-person-one-survey-week" id="toc-bring-it-home-one-person-one-survey-week" class="nav-link" data-scroll-target="#bring-it-home-one-person-one-survey-week"><span class="header-section-number">5.2.1</span> Bring It Home: One Person, One Survey Week</a></li>
+  <li><a href="#graph-description-the-bls-classification-tree" id="toc-graph-description-the-bls-classification-tree" class="nav-link" data-scroll-target="#graph-description-the-bls-classification-tree"><span class="header-section-number">5.2.2</span> Graph Description: The BLS Classification Tree</a></li>
+  <li><a href="#work-it-out-rates-have-different-denominators" id="toc-work-it-out-rates-have-different-denominators" class="nav-link" data-scroll-target="#work-it-out-rates-have-different-denominators"><span class="header-section-number">5.2.3</span> Work It Out: Rates Have Different Denominators</a></li>
+  </ul></li>
+  <li><a href="#part-2-u-3-u-6-and-the-gig-economy" id="toc-part-2-u-3-u-6-and-the-gig-economy" class="nav-link" data-scroll-target="#part-2-u-3-u-6-and-the-gig-economy"><span class="header-section-number">5.3</span> Part 2: U-3, U-6, and the Gig Economy</a>
+  <ul class="collapse">
+  <li><a href="#the-headline-rate-and-broader-underutilization" id="toc-the-headline-rate-and-broader-underutilization" class="nav-link" data-scroll-target="#the-headline-rate-and-broader-underutilization"><span class="header-section-number">5.3.1</span> The Headline Rate and Broader Underutilization</a></li>
+  <li><a href="#bring-it-home-a-platform-worker-wants-more-hours" id="toc-bring-it-home-a-platform-worker-wants-more-hours" class="nav-link" data-scroll-target="#bring-it-home-a-platform-worker-wants-more-hours"><span class="header-section-number">5.3.2</span> Bring It Home: A Platform Worker Wants More Hours</a></li>
+  <li><a href="#work-it-out-compare-u-3-and-u-6" id="toc-work-it-out-compare-u-3-and-u-6" class="nav-link" data-scroll-target="#work-it-out-compare-u-3-and-u-6"><span class="header-section-number">5.3.3</span> Work It Out: Compare U-3 and U-6</a></li>
+  </ul></li>
+  <li><a href="#part-3-vacancies-unemployment-and-output-slack" id="toc-part-3-vacancies-unemployment-and-output-slack" class="nav-link" data-scroll-target="#part-3-vacancies-unemployment-and-output-slack"><span class="header-section-number">5.4</span> Part 3: Vacancies, Unemployment, and Output Slack</a>
+  <ul class="collapse">
+  <li><a href="#the-beveridge-curve" id="toc-the-beveridge-curve" class="nav-link" data-scroll-target="#the-beveridge-curve"><span class="header-section-number">5.4.1</span> The Beveridge Curve</a></li>
+  <li><a href="#okuns-law-from-an-unemployment-gap-to-an-output-gap" id="toc-okuns-law-from-an-unemployment-gap-to-an-output-gap" class="nav-link" data-scroll-target="#okuns-law-from-an-unemployment-gap-to-an-output-gap"><span class="header-section-number">5.4.2</span> Okun’s Law: From an Unemployment Gap to an Output Gap</a></li>
+  <li><a href="#work-it-out-an-illustrative-1.0-trillion-output-shortfall" id="toc-work-it-out-an-illustrative-1.0-trillion-output-shortfall" class="nav-link" data-scroll-target="#work-it-out-an-illustrative-1.0-trillion-output-shortfall"><span class="header-section-number">5.4.3</span> Work It Out: An Illustrative $1.0 Trillion Output Shortfall</a></li>
+  </ul></li>
+  <li><a href="#part-4-cpi-inflation-and-real-wage-purchasing-power" id="toc-part-4-cpi-inflation-and-real-wage-purchasing-power" class="nav-link" data-scroll-target="#part-4-cpi-inflation-and-real-wage-purchasing-power"><span class="header-section-number">5.5</span> Part 4: CPI Inflation and Real-Wage Purchasing Power</a>
+  <ul class="collapse">
+  <li><a href="#a-price-index-and-the-cost-of-a-basket" id="toc-a-price-index-and-the-cost-of-a-basket" class="nav-link" data-scroll-target="#a-price-index-and-the-cost-of-a-basket"><span class="header-section-number">5.5.1</span> A Price Index and the Cost of a Basket</a></li>
+  <li><a href="#nominal-wages-and-real-purchasing-power" id="toc-nominal-wages-and-real-purchasing-power" class="nav-link" data-scroll-target="#nominal-wages-and-real-purchasing-power"><span class="header-section-number">5.5.2</span> Nominal Wages and Real Purchasing Power</a></li>
+  <li><a href="#work-it-out-a-raise-that-does-not-keep-pace-with-prices" id="toc-work-it-out-a-raise-that-does-not-keep-pace-with-prices" class="nav-link" data-scroll-target="#work-it-out-a-raise-that-does-not-keep-pace-with-prices"><span class="header-section-number">5.5.3</span> Work It Out: A Raise That Does Not Keep Pace with Prices</a></li>
+  </ul></li>
+  <li><a href="#check-your-understanding" id="toc-check-your-understanding" class="nav-link" data-scroll-target="#check-your-understanding"><span class="header-section-number">5.6</span> Check Your Understanding</a></li>
   </ul>
 </nav>
     </div>
@@ -444,9 +466,9 @@ window.Quarto = {
 <main class="content" id="quarto-document-content" tabindex="-1">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch01_principles.html">Macroeconomic Foundations &amp; Measurement</a></li><li class="breadcrumb-item"><a href="./ch05_unemployment_inflation.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Employment, Unemployment Metrics, and the Price Level</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch01_principles.html">Macroeconomic Foundations &amp; Measurement</a></li><li class="breadcrumb-item"><a href="./ch05_unemployment_inflation.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Unemployment and Inflation</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Employment, Unemployment Metrics, and the Price Level</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Unemployment and Inflation</span></h1>
 </div>
 
 
@@ -463,41 +485,165 @@ window.Quarto = {
 </header>
 
 
+<blockquote class="blockquote">
+<p>This chapter provides a rigorous, pedagogical treatment of Chapter 5: Employment, Unemployment Metrics, and the Price Level, benchmarked to standard principles curriculum.</p>
+</blockquote>
 <section id="learning-outcomes-and-key-terms" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="learning-outcomes-and-key-terms"><span class="header-section-number">5.1</span> Learning Outcomes and Key Terms</h2>
-<p>Students should calculate labor-market rates, interpret what the unemployment rate does and does not measure, and relate cyclical unemployment to output gaps without confusing correlation with causation. These objectives support MA-1 and C2002-1. Key terms include employed, unemployed, labor force, participation rate, U-3, underemployment, natural rate, and output gap.</p>
+<p>By the end of this chapter, students should be able to classify people in the Bureau of Labor Statistics (BLS) household-survey framework; calculate labor-force participation, employment-population, U-3, and U-6 rates; interpret unemployment and vacancy movements over the business cycle; estimate an illustrative output loss with Okun’s law; and distinguish nominal wage growth from changes in real purchasing power. Key terms include civilian noninstitutional population, labor force, not in the labor force, marginally attached, underemployment, U-3, U-6, Beveridge curve, potential output, CPI, and real wage.</p>
 </section>
-<section id="how-a-household-enters-the-labor-statistics" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="how-a-household-enters-the-labor-statistics"><span class="header-section-number">5.2</span> How a Household Enters the Labor Statistics</h2>
-<p>The Bureau of Labor Statistics classifies people in the civilian noninstitutional population age 16 and older using a household survey. A person is employed if they did paid work or had a job from which they were temporarily absent. A person is unemployed if they had no job, were available for work, and actively looked for work in the previous four weeks, or were on temporary layoff under the survey rules. Everyone else is not in the labor force. These are operational definitions for consistent measurement, not judgments about whether someone needs a job.</p>
-<p>The labor force is the employed plus the unemployed. A discouraged worker who wants a job but stopped searching is not counted as unemployed under U-3; they are outside the labor force. A person working part time for economic reasons is counted as employed even if they want full-time work. Broader BLS measures include additional forms of labor underutilization.</p>
+<section id="part-1-the-bls-population-map" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="part-1-the-bls-population-map"><span class="header-section-number">5.2</span> Part 1: The BLS Population Map</h2>
+<section id="bring-it-home-one-person-one-survey-week" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="bring-it-home-one-person-one-survey-week"><span class="header-section-number">5.2.1</span> Bring It Home: One Person, One Survey Week</h3>
+<p>Imagine that a worker’s restaurant closes for renovations during the BLS survey reference week. The worker did no paid work that week, is available, is on temporary layoff, and expects to be recalled within six months; the worker has not searched elsewhere. Another person worked a paid shift for a delivery platform, even though the work was only a few hours. A third person wants a job but stopped searching after repeated rejections. These people may all describe themselves as needing more work, but the household survey classifies them differently using consistent rules.</p>
+<p>The starting population is the civilian noninstitutional population (CNIP) age 16 and older, denoted <span class="math inline">\(P\)</span>. The BLS partitions it into people in the labor force and people not in the labor force:</p>
+<p><span class="math display">\[
+P = LF + NILF, \qquad LF = E + U.
+\]</span></p>
+<p>Here <span class="math inline">\(E\)</span> is employed, <span class="math inline">\(U\)</span> is unemployed, <span class="math inline">\(LF\)</span> is the labor force, and <span class="math inline">\(NILF\)</span> is not in the labor force. A person is employed if they did work for pay or profit during the reference week, worked without pay for at least 15 hours in a family-owned business or farm, or had a job but were temporarily absent. A person is generally unemployed if they had no job, were available for work, and actively searched in the prior four weeks. A person on temporary layoff can be counted as unemployed without searching if they have been given a return date or expect to return within six months. Everyone else in <span class="math inline">\(P\)</span> is classified as not in the labor force.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>SSOT Benchmark: Population and Headline Rates
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For the Master Summary benchmark, <span class="math inline">\(P=200\)</span> million, <span class="math inline">\(LF=120\)</span> million, <span class="math inline">\(E=114\)</span> million, and <span class="math inline">\(U=6\)</span> million. Thus <span class="math inline">\(U\)</span>-<span class="math inline">\(3=6/120\times100\%=5.0\%\)</span> and <span class="math inline">\(LFPR=120/200\times100\%=60.0\%\)</span>. A U-6 calculation also requires counts for marginally attached people and employed part-time workers for economic reasons; those component counts are not specified here.</p>
+</div>
+</div>
 </section>
-<section id="rates-and-their-denominators" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="rates-and-their-denominators"><span class="header-section-number">5.3</span> Rates and Their Denominators</h2>
-<p>The unemployment rate uses the labor force, not the entire population. The labor-force participation rate and employment-population ratio answer different questions: <span class="math display">\[\begin{align}
-LF &amp;= E+U, \\
-u &amp;= \frac{U}{LF}\times 100%, \\
-LFPR &amp;= \frac{LF}{P}\times 100%, \\
-EPOP &amp;= \frac{E}{P}\times 100%.
-\end{align}\]</span> Here <span class="math inline">\(E\)</span> is employment, <span class="math inline">\(U\)</span> is unemployment, and <span class="math inline">\(P\)</span> is the civilian noninstitutional population age 16 and older. Rates can move for different reasons. If people stop searching, the unemployment rate may fall even if employment does not rise; the participation rate can reveal that denominator change.</p>
+<section id="graph-description-the-bls-classification-tree" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="graph-description-the-bls-classification-tree"><span class="header-section-number">5.2.2</span> Graph Description: The BLS Classification Tree</h3>
+<p>Picture a flowchart rather than a graph with a behavioral curve. At the top is the full rectangle <span class="math inline">\(P\)</span>. A vertical split separates <span class="math inline">\(LF\)</span> on the left from <span class="math inline">\(NILF\)</span> on the right. The <span class="math inline">\(LF\)</span> rectangle splits again into <span class="math inline">\(E\)</span> and <span class="math inline">\(U\)</span>. Every person belongs to exactly one leaf of this tree for the survey classification. The categories describe survey status, not a person’s worth, effort, or need for income.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_5_unemployment_and_inflation_figure_01.svg" class="img-fluid figure-img" alt="The BLS population partition. Each person in the civilian noninstitutional population is classified as employed, unemployed, or not in the labor force; employed and unemployed people together make up the labor force."></p>
+<figcaption>Figure 1. The BLS population partition. Each person in the civilian noninstitutional population is classified as employed, unemployed, or not in the labor force; employed and unemployed people together make up the labor force.</figcaption>
+</figure>
+</div>
 </section>
-<section id="graph-description-cycles-and-the-natural-rate" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="graph-description-cycles-and-the-natural-rate"><span class="header-section-number">5.4</span> Graph Description: Cycles and the Natural Rate</h2>
-<p>On a time-series graph, put months or quarters on the horizontal axis and the unemployment rate on the vertical axis. Recessions often coincide with a rise in unemployment, followed by a gradual decline during recovery. The natural rate is not a fixed number written into the data; it is an estimated benchmark reflecting frictional and structural unemployment at a given time. The cyclical component is the gap between actual and estimated natural unemployment, and estimates are uncertain.</p>
-<p>Okun’s law summarizes a historical tendency for output to be below potential when unemployment is above its sustainable benchmark. A commonly used rough relation is: <span class="math display">\[\begin{equation}
-\frac{Y-Y^*}{Y^*}\approx -\beta(u-u^*), \qquad \beta&gt;0.
-\end{equation}\]</span> The coefficient varies by period and specification. This relationship is a useful model, not a fixed engineering law or proof that unemployment alone caused an output change.</p>
+<section id="work-it-out-rates-have-different-denominators" class="level3" data-number="5.2.3">
+<h3 data-number="5.2.3" class="anchored" data-anchor-id="work-it-out-rates-have-different-denominators"><span class="header-section-number">5.2.3</span> Work It Out: Rates Have Different Denominators</h3>
+<p>Suppose a hypothetical local population has <span class="math inline">\(P=1{,}000\)</span>, with <span class="math inline">\(E=600\)</span>, <span class="math inline">\(U=40\)</span>, and therefore <span class="math inline">\(NILF=360\)</span>. First add employed and unemployed people to find the labor force: <span class="math display">\[\begin{align}
+LF &amp;= E+U = 600+40=640,\\
+u_3 &amp;= \frac{U}{LF}\times 100\% = \frac{40}{640}\times100\%=6.25\%,\\
+LFPR &amp;= \frac{LF}{P}\times100\% = \frac{640}{1{,}000}\times100\%=64\%,\\
+EPOP &amp;= \frac{E}{P}\times100\% = \frac{600}{1{,}000}\times100\%=60\%.
+\end{align}\]</span> The unemployment rate is not the share of the entire population without a job. Its denominator is the labor force. The participation rate asks what share of the population is working or actively seeking work; the employment-population ratio asks what share is employed.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: A Falling U-3 Rate Can Hide a Falling Labor Force
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If unemployed people stop searching, they generally move from <span class="math inline">\(U\)</span> to <span class="math inline">\(NILF\)</span>. That lowers both the numerator and denominator of U-3 and can make the rate fall without any new hiring. Check <span class="math inline">\(LFPR\)</span> and <span class="math inline">\(EPOP\)</span> alongside unemployment before concluding that job conditions improved.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="part-2-u-3-u-6-and-the-gig-economy" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="part-2-u-3-u-6-and-the-gig-economy"><span class="header-section-number">5.3</span> Part 2: U-3, U-6, and the Gig Economy</h2>
+<section id="the-headline-rate-and-broader-underutilization" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="the-headline-rate-and-broader-underutilization"><span class="header-section-number">5.3.1</span> The Headline Rate and Broader Underutilization</h3>
+<p>U-3 is the official unemployment rate: unemployed people as a share of the civilian labor force. It is useful, comparable, and deliberately narrow. It does not count people who want a job but have not searched recently, and it counts a person working part time as employed even if that person wants full-time hours.</p>
+<p>U-6 is a broader BLS measure of labor underutilization. It includes the unemployed, people marginally attached to the labor force, and people employed part time for economic reasons. The latter category includes people working fewer than 35 hours for an economic reason who want and are available for full-time work. Marginally attached people want and are available for work, searched sometime in the prior 12 months, but did not search during the most recent four weeks. Discouraged workers are one subset of the marginally attached. U-6’s denominator adds the marginally attached to the labor force, so the numerator and denominator must be expanded together:</p>
+<p><span class="math display">\[
+U\text{-}6 =
+\frac{U + M + PT_{econ}}{LF + M}\times100\%,
+\]</span></p>
+<p>where <span class="math inline">\(M\)</span> is marginally attached people and <span class="math inline">\(PT_{econ}\)</span> is employed part-time for economic reasons.</p>
+</section>
+<section id="bring-it-home-a-platform-worker-wants-more-hours" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="bring-it-home-a-platform-worker-wants-more-hours"><span class="header-section-number">5.3.2</span> Bring It Home: A Platform Worker Wants More Hours</h3>
+<p>A courier completes several paid deliveries during the reference week and wants a stable, full-time schedule. Under the household-survey concept, the courier is employed because they performed paid work; being a gig worker does not by itself make someone unemployed. If the courier works fewer than 35 hours for an economic reason and wants and is available for full-time hours, they may be included in the U-6 numerator but not in U-3’s unemployed count. Another courier who did no work, wants a job, is available, and searched within the last four weeks may be unemployed. A worker who stopped searching may be marginally attached, rather than unemployed under U-3.</p>
+<p>The distinction is about measured labor utilization, not whether a gig job is good or bad. The survey classification alone does not reveal earnings volatility, benefits, schedule control, job security, or whether the worker prefers independent contracting. Those are important dimensions of job quality, but they require additional data.</p>
+</section>
+<section id="work-it-out-compare-u-3-and-u-6" class="level3" data-number="5.3.3">
+<h3 data-number="5.3.3" class="anchored" data-anchor-id="work-it-out-compare-u-3-and-u-6"><span class="header-section-number">5.3.3</span> Work It Out: Compare U-3 and U-6</h3>
+<p>Continue the hypothetical example with <span class="math inline">\(LF=640\)</span> and <span class="math inline">\(U=40\)</span>. Suppose <span class="math inline">\(M=20\)</span> people are marginally attached and <span class="math inline">\(PT_{econ}=30\)</span> employed people want full-time work but can only find part-time hours. Then: <span class="math display">\[\begin{align}
+U\text{-}3 &amp;= \frac{40}{640}\times100\%=6.25\%,\\
+U\text{-}6 &amp;= \frac{40+20+30}{640+20}\times100\%
+=\frac{90}{660}\times100\%\approx13.64\%.
+\end{align}\]</span> These are illustrative counts, not a current estimate for any city or month. The gap between the measures shows that the headline rate omits forms of underutilization; it does not mean U-3 is incorrectly calculated.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_5_unemployment_and_inflation_figure_02.svg" class="img-fluid figure-img" alt="Illustrative U-3 and U-6 rates from the hypothetical counts in this section. The measures use different definitions and denominators; these values are not current estimates."></p>
+<figcaption>Figure 2. Illustrative U-3 and U-6 rates from the hypothetical counts in this section. The measures use different definitions and denominators; these values are not current estimates.</figcaption>
+</figure>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>FRED Data: Reading the U-3 Series
+<span class="screen-reader-only">Tip</span>FRED Data: Compare Measures, Not Just Headlines
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>FRED’s UNRATE series is the BLS U-3 unemployment rate: percent, seasonally adjusted, monthly. The October 2026 observation is 4.1 percent. A single monthly rate is a snapshot, not a complete account of job quality, hours desired, discouraged workers, or the causes of a change. Pair it with labor-force participation and employment measures when interpreting a cycle.</p>
+<p>FRED distributes official BLS series including UNRATE (U-3), U6RATE (U-6), CIVPART (labor-force participation rate), and EMRATIO (employment-population ratio). These are seasonally adjusted monthly percentage series. Plotting them together can show whether a change in U-3 coincides with movement in broader underutilization or participation. The rates have different definitions and denominators; their difference is informative, not an arithmetic error.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="part-3-vacancies-unemployment-and-output-slack" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="part-3-vacancies-unemployment-and-output-slack"><span class="header-section-number">5.4</span> Part 3: Vacancies, Unemployment, and Output Slack</h2>
+<section id="the-beveridge-curve" class="level3" data-number="5.4.1">
+<h3 data-number="5.4.1" class="anchored" data-anchor-id="the-beveridge-curve"><span class="header-section-number">5.4.1</span> The Beveridge Curve</h3>
+<p>The Beveridge curve describes the usual inverse relationship between the unemployment rate and the job-vacancy rate. In a Cartesian diagram, place unemployment <span class="math inline">\(u\)</span> (percent) on the horizontal axis and vacancies <span class="math inline">\(v\)</span> (percent) on the vertical axis. Along a given curve, an up-left movement means vacancies rise while unemployment falls; a down-right movement means vacancies fall while unemployment rises. These movements can reflect changes in labor demand. This is a descriptive relationship, not a mechanical law.</p>
+<p>The curve can shift. Improved matching, geographic mobility, or training can move the relationship inward, allowing more hires for a given vacancy rate. Mismatch between workers’ skills and open jobs, search frictions, or slower matching can shift it outward. A point on the curve is an observed combination; a shift is a change in the relationship itself.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_5_unemployment_and_inflation_figure_03.svg" class="img-fluid figure-img" alt="A downward-sloping Beveridge relationship and an outward shift associated with weaker matching. Curves and endpoints are shown within the labeled 0–10 percent plotting range."></p>
+<figcaption>Figure 3. A downward-sloping Beveridge relationship and an outward shift associated with weaker matching. Curves and endpoints are shown within the labeled 0–10 percent plotting range.</figcaption>
+</figure>
+</div>
+</section>
+<section id="okuns-law-from-an-unemployment-gap-to-an-output-gap" class="level3" data-number="5.4.2">
+<h3 data-number="5.4.2" class="anchored" data-anchor-id="okuns-law-from-an-unemployment-gap-to-an-output-gap"><span class="header-section-number">5.4.2</span> Okun’s Law: From an Unemployment Gap to an Output Gap</h3>
+<p>Okun’s law summarizes a regularity: when unemployment is above its sustainable or natural benchmark, real output tends to be below potential. The relationship helps policymakers interpret labor-market slack alongside production, but it is an empirical approximation rather than a causal law. A simplified gap form is:</p>
+<p><span class="math display">\[
+\frac{Y-Y^*}{Y^*}\times100\%\approx -\beta(u_{\rm pp}-u^*_{\rm pp}), \qquad \beta&gt;0,
+\]</span></p>
+<p>where <span class="math inline">\(Y\)</span> is real output, <span class="math inline">\(Y^*\)</span> is potential output, and <span class="math inline">\(u_{\rm pp}\)</span> and <span class="math inline">\(u^*_{\rm pp}\)</span> are unemployment rates stated in percentage-point units. The coefficient <span class="math inline">\(\beta\)</span> is the percentage-point output gap associated with a one-percentage-point unemployment gap; it varies by period and specification.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_5_unemployment_and_inflation_figure_04.svg" class="img-fluid figure-img" alt="Illustrative Okun relationship when \beta=2: a two-percentage-point unemployment gap corresponds to an estimated output gap of -4%. The line is a schematic, not an estimated time series."></p>
+<figcaption>Figure 4. Illustrative Okun relationship when <span class="math inline">\(\beta=2\)</span>: a two-percentage-point unemployment gap corresponds to an estimated output gap of <span class="math inline">\(-4\%\)</span>. The line is a schematic, not an estimated time series.</figcaption>
+</figure>
+</div>
+<p><strong>Application:</strong> A local policymaker comparing employment conditions across neighborhoods might use unemployment and output-gap estimates together when assessing a downturn. Neither measure alone identifies the cause of the decline, and both the potential-output benchmark and Okun coefficient must be stated.</p>
+</section>
+<section id="work-it-out-an-illustrative-1.0-trillion-output-shortfall" class="level3" data-number="5.4.3">
+<h3 data-number="5.4.3" class="anchored" data-anchor-id="work-it-out-an-illustrative-1.0-trillion-output-shortfall"><span class="header-section-number">5.4.3</span> Work It Out: An Illustrative $1.0 Trillion Output Shortfall</h3>
+<p>Assume potential real GDP is <span class="math inline">\(Y^*=\$25.0\)</span> trillion in a chosen base-year dollar measure, actual unemployment is <span class="math inline">\(u_{\rm pp}=6\)</span>, the estimated benchmark is <span class="math inline">\(u^*_{\rm pp}=4\)</span>, and an illustrative Okun coefficient is <span class="math inline">\(\beta=2\)</span>. First find the unemployment gap: <span class="math inline">\(6-4=2\)</span> percentage points. Then estimate the output gap: <span class="math display">\[\begin{align}
+\frac{Y-Y^*}{Y^*}\times100\% &amp;\approx -2(6-4)=-4\%,\\
+Y^*-Y &amp;\approx 0.04\times \$25.0\text{ trillion}
+=\$1.0\text{ trillion}.
+\end{align}\]</span> The estimated shortfall is $1.0 trillion of real output relative to the assumed potential level. This is a model-based illustration, not a reported current loss. Potential GDP and <span class="math inline">\(\beta\)</span> are estimates, and the result depends on the units and period used.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced: Markov Job-Finding and Separation Flows
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In a two-state model, let <span class="math inline">\(s\)</span> be the period separation probability from employment to unemployment and <span class="math inline">\(f\)</span> the job-finding probability from unemployment to employment. At steady state, inflows to unemployment equal outflows: <span class="math inline">\(s(1-u)=fu\)</span>. Solving gives:</p>
+<p><span class="math display">\[
+u^*=\frac{s}{s+f}.
+\]</span></p>
+<p>This result assumes a stable two-state population, constant transition probabilities, and no labor-force entry or exit. It makes the stock-flow logic explicit: a higher separation rate raises steady-state unemployment, while a higher job-finding rate lowers it.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -506,22 +652,104 @@ EPOP &amp;= \frac{E}{P}\times 100%.
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Clear It Up: Unemployment Is a Stock; Separations and Hires Are Flows
+<span class="screen-reader-only">Note</span>Optional Advanced: State-Space Slack and Growth-Rate Okun Relations
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The number unemployed at a point in time is a stock. New job losses, hires, exits, and entries are flows that change the stock over a period. A falling unemployment stock can result from hiring, labor-force exits, or both, so check the related flows and rates before drawing a conclusion.</p>
+<p>Potential output <span class="math inline">\(Y_t^*\)</span> and the natural unemployment rate <span class="math inline">\(u_t^*\)</span> are not directly observed. A state-space approach treats them as latent states inferred from noisy observations. Output slack can be represented as <span class="math inline">\(x_t=\ln Y_t-\ln Y_t^*\)</span>, approximately the percentage output gap for small differences; labor slack can be represented as <span class="math inline">\(u_t-u_t^*\)</span>. Their estimated paths depend on the model and can be revised as new observations arrive.</p>
+<p>An alternative growth-difference form is <span class="math inline">\(\Delta u_t\approx-\kappa(g_{Y,t}-g_{Y,t}^*)\)</span>, where <span class="math inline">\(g_{Y,t}\)</span> is real output growth, <span class="math inline">\(g_{Y,t}^*\)</span> is potential growth, and <span class="math inline">\(\kappa&gt;0\)</span> is an estimated response coefficient. Growth above potential tends to reduce unemployment; growth below potential tends to raise it. This is an empirical approximation, not an identity.</p>
 </div>
 </div>
 </section>
-<section id="check-your-understanding" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="check-your-understanding"><span class="header-section-number">5.5</span> Check Your Understanding</h2>
+</section>
+<section id="part-4-cpi-inflation-and-real-wage-purchasing-power" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="part-4-cpi-inflation-and-real-wage-purchasing-power"><span class="header-section-number">5.5</span> Part 4: CPI Inflation and Real-Wage Purchasing Power</h2>
+<section id="a-price-index-and-the-cost-of-a-basket" class="level3" data-number="5.5.1">
+<h3 data-number="5.5.1" class="anchored" data-anchor-id="a-price-index-and-the-cost-of-a-basket"><span class="header-section-number">5.5.1</span> A Price Index and the Cost of a Basket</h3>
+<p>The Consumer Price Index (CPI) tracks price changes for a representative consumer basket under the BLS methodology. Inflation over a period is the percentage change in the index:</p>
+<p><span class="math display">\[
+\pi_t=\frac{CPI_t-CPI_{t-1}}{CPI_{t-1}}\times100\%.
+\]</span></p>
+<p>The CPI is an index, not a dollar price and not a perfect measure of every household’s cost of living. Households have different spending patterns, and the index summarizes an average basket using a defined method.</p>
+</section>
+<section id="nominal-wages-and-real-purchasing-power" class="level3" data-number="5.5.2">
+<h3 data-number="5.5.2" class="anchored" data-anchor-id="nominal-wages-and-real-purchasing-power"><span class="header-section-number">5.5.2</span> Nominal Wages and Real Purchasing Power</h3>
+<p>A nominal wage is measured in current dollars. A real wage adjusts for the price level and indicates how much of a reference-period basket that wage can buy:</p>
+<p><span class="math display">\[
+W^{real,0}_t=W^{nom}_t\frac{CPI_0}{CPI_t},
+\]</span></p>
+<p>where <span class="math inline">\(CPI_0\)</span> is the CPI in the chosen base period. If the CPI series is not rebased to that period, use the ratio <span class="math inline">\(CPI_0/CPI_t\)</span>. When nominal wages rise more slowly than prices, purchasing power falls even though the dollar wage increased.</p>
+<p><strong>Application:</strong> When workers and employers discuss an annual raise, comparing nominal wage growth with inflation helps distinguish a larger paycheck from a gain in purchasing power. The numerical values below are illustrative, not a current wage or CPI observation.</p>
+</section>
+<section id="work-it-out-a-raise-that-does-not-keep-pace-with-prices" class="level3" data-number="5.5.3">
+<h3 data-number="5.5.3" class="anchored" data-anchor-id="work-it-out-a-raise-that-does-not-keep-pace-with-prices"><span class="header-section-number">5.5.3</span> Work It Out: A Raise That Does Not Keep Pace with Prices</h3>
+<p>Suppose an hourly wage rises from $20.00 to $20.80, a 4% increase. Over the same period, the CPI rises from 300 to 315, a 5% increase. Express the new wage in the initial period’s purchasing power: <span class="math display">\[\begin{align}
+W^{real,0}_0 &amp;= \$20.00\frac{300}{300}=\$20.00,\\
+W^{real,0}_1 &amp;= \$20.80\frac{300}{315}\approx \$19.81.
+\end{align}\]</span> The real wage changes by approximately <span class="math inline">\((19.81/20.00)-1=-0.95\%\)</span>. The worker receives 80 cents more per hour in nominal terms, but the CPI basket costs more, so purchasing power falls slightly.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_5_unemployment_and_inflation_figure_05.svg" class="img-fluid figure-img" alt="Illustrative index changes from period 0 to period 1. With nominal wages indexed to 100 initially, the wage index rises 4 points while CPI rises 5 points, so the real-wage index falls to about 99.05."></p>
+<figcaption>Figure 5. Illustrative index changes from period 0 to period 1. With nominal wages indexed to 100 initially, the wage index rises 4 points while CPI rises 5 points, so the real-wage index falls to about 99.05.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Nominal Raise Does Not Guarantee a Real Raise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Compare growth rates, not dollar changes alone. When nominal wage growth is below inflation, real wage growth is negative. When the two rates are close, the approximation <span class="math inline">\(g_{real}\approx g_W-\pi\)</span> is useful, but exact compounding gives a slightly different result.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced: Exact Real-Wage Growth Identity
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The exact relation between nominal wage growth <span class="math inline">\(g_W\)</span>, inflation <span class="math inline">\(\pi\)</span>, and real wage growth <span class="math inline">\(g_{real}\)</span> is:</p>
+<p><span class="math display">\[
+1+g_{real}=\frac{1+g_W}{1+\pi},
+\qquad
+g_{real}=\frac{1+g_W}{1+\pi}-1.
+\]</span></p>
+<p>For <span class="math inline">\(g_W=0.04\)</span> and <span class="math inline">\(\pi=0.05\)</span>, exact real growth is <span class="math inline">\(1.04/1.05-1\approx-0.00952\)</span>, or about <span class="math inline">\(-0.95\%\)</span>. The subtraction approximation gives <span class="math inline">\(4\%-5\%=-1\%\)</span>. The difference is small here but matters when rates are large.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>FRED Data: Track Inflation and Real-Wage Context
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>FRED series CPIAUCSL is the seasonally adjusted U.S. all-items CPI for all urban consumers, reported monthly as an index with 1982–84=100. UNRATE and U6RATE report U-3 and U-6, while CIVPART and EMRATIO provide participation and employment-population context. To study purchasing power, compare nominal wage growth with CPI inflation over matching dates and frequencies; do not divide a wage by an index without stating the chosen base convention.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="check-your-understanding" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="check-your-understanding"><span class="header-section-number">5.6</span> Check Your Understanding</h2>
 <ul>
-<li>A person wants work, is available, but has not searched in the past four weeks. How is that person classified in U-3?</li>
-<li>If <span class="math inline">\(E=160\)</span>, <span class="math inline">\(U=10\)</span>, and <span class="math inline">\(P=200\)</span>, calculate the unemployment rate and participation rate.</li>
-<li>Why might a falling unemployment rate fail to show that employment increased?</li>
+<li>In the BLS partition, where is a person who wants work but has not searched in the past four weeks? What additional condition could make them marginally attached?</li>
+<li>With <span class="math inline">\(LF=800\)</span>, <span class="math inline">\(U=48\)</span>, <span class="math inline">\(M=16\)</span>, and <span class="math inline">\(PT_{econ}=32\)</span>, calculate U-3 and U-6.</li>
+<li>On the Beveridge diagram, what do an inward shift and a movement up-left represent?</li>
+<li>If <span class="math inline">\(Y^*=\$20\)</span> trillion, <span class="math inline">\(u-u^*=1.5\)</span> percentage points, and <span class="math inline">\(\beta=2\)</span>, estimate the output gap and shortfall.</li>
+<li>A nominal wage rises 3% while CPI inflation is 6%. Is real wage growth positive or negative? Use the exact relation to estimate it.</li>
 </ul>
-<p>Answers: (1) Not in the labor force, under the stated facts. (2) <span class="math inline">\(u=10/170\times100%=5.9%\)</span>; <span class="math inline">\(LFPR=170/200\times100%=85%\)</span>. (3) People may have left the labor force, reducing the denominator.</p>
+<p>Answers: (1) NILF; if they want a job, are available, searched in the prior 12 months, and not in the prior four weeks, they may be marginally attached. (2) U-3 <span class="math inline">\(=48/800=6\%\)</span>; U-6 <span class="math inline">\(=(48+16+32)/(800+16)=96/816\approx11.76\%\)</span>. (3) An inward shift indicates improved matching; up-left is a movement along the curve as vacancies rise and unemployment falls. (4) Output gap <span class="math inline">\(\approx-3\%\)</span> and shortfall <span class="math inline">\(\$0.6\)</span> trillion. (5) Negative: <span class="math inline">\(1.03/1.06-1\approx-2.83\%\)</span>.</p>
 
 
 

@@ -1,6 +1,10 @@
+% Review status: Technical and pedagogical fixes applied; instructor review pending (2026-11-15).
 \documentclass[11pt,letterpaper]{article}
 \input{../../shared/preamble.tex}
 \input{../../shared/tikz-settings.tex}
+\usepackage{tcolorbox}
+\definecolor{CourseBlue}{HTML}{0072B2}
+\definecolor{CourseTeal}{HTML}{009E73}
 
 \begin{document}
 
@@ -15,110 +19,344 @@
 This chapter provides a rigorous, pedagogical treatment of Chapter 3: Supply, Demand, and Market Equilibrium, benchmarked to standard principles curriculum.
 \end{abstract}
 
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=\textbf{Bring It Home: Why Did Campus Coffee Sales Change?}]
+If a campus coffee shop sells fewer drinks after raising its price, that is a movement along its demand curve. If a new café opens nearby or students' preferences change, demand may shift. If the price of coffee beans rises, supply may shift instead. This chapter gives you a method to distinguish these explanations and predict what happens to price and quantity.
+\end{tcolorbox}
+
 \tableofcontents
 \vspace{1.5em}
 \hrule
 \vspace{1.5em}
 
-\section{The Nature of Demand and Consumer Valuation}
-The Law of Demand states that, \textit{ceteris paribus}, there is an inverse relationship between the price of a good and the quantity demanded:
+% -----------------------------------------------------------------------------
+% Section 3.1: Demand, Determinants, and Shifts vs. Movements
+% -----------------------------------------------------------------------------
+\section{Demand: Consumer Valuation and Curve Shifts}
+
+\subsection*{Conceptual Introduction}
+In any market economy, prices serve as the primary signaling mechanism coordinating millions of decentralized buyers and sellers. On the buyer's side, the \textbf{Law of Demand} states that, \emph{ceteris paribus} (holding all other factors constant), when the price of a good rises, the quantity demanded falls, and when the price falls, the quantity demanded rises. Two microeconomic forces drive this inverse relationship: the \textbf{substitution effect} (a higher price makes alternative products relatively cheaper, prompting consumers to switch) and the \textbf{income effect} (a higher price reduces the real purchasing power of a household's fixed paycheck).
+
+Keeping a \textbf{change in quantity demanded} strictly separate from a \textbf{change in demand} is one of the most important analytical habits in economics. A change in the product's \emph{own price} moves consumers up or down along a fixed demand curve. By contrast, a change in any non-price determinant shifts the entire demand curve to the right (an increase in demand at every price) or to the left (a decrease in demand at every price).
+
+Five major non-price shifters move the entire demand curve:
+\begin{itemize}
+    \item \textbf{Consumer Income:} Higher income shifts demand rightward for \textbf{normal goods} (such as fresh produce or airline travel) and leftward for \textbf{inferior goods} (such as instant ramen or intercity bus tickets).
+    \item \textbf{Prices of Related Goods:} A price hike for a \textbf{substitute} (e.g., Pepsi) shifts demand rightward for the rival good (Coca-Cola); a price hike for a \textbf{complement} (e.g., smartphone data plans) shifts demand leftward for smartphones.
+    \item \textbf{Tastes and Preferences:} Health studies, cultural trends, and advertising.
+    \item \textbf{Buyer Expectations:} Anticipating higher future prices or future raises boosts current demand today.
+    \item \textbf{Number of Buyers:} Population growth or demographic expansion shifts market demand outward.
+\end{itemize}
+
+\subsection*{Visual Representation}
+Figure~\ref{fig:demand_shift_vs_movement} contrasts a movement along a stationary demand curve ($A \to B$, caused by a drop in own price) against a rightward shift of the entire demand curve ($D_1 \to D_2$, caused by a non-price determinant such as higher income).
+
+\begin{tcolorbox}[colback=yellow!10!white,colframe=orange!80!black,title=\textbf{Clear It Up: Never Say "Price Rose, So Demand Fell"}]
+When the price of concert tickets jumps from $\$60$ to $\$90$, the demand curve does \emph{not} shift! Buyers simply move upward along the existing demand curve to a smaller \textbf{quantity demanded}. Only non-price factors (income, substitutes, complements, tastes, expectations, or buyer count) shift the demand curve itself.
+\end{tcolorbox}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.05]
+    % Axes
+    \draw[->, thick] (0,0) -- (6.2,0) node[below] {Quantity ($Q$)};
+    \draw[->, thick] (0,0) -- (0,5.2) node[left] {Price ($P$, \$)};
+    \node[below left] at (0,0) {$(0,0)$};
+
+    % D1: P = 100 - 2Q -> (0,5) to (5,0)
+    \draw[very thick, color=CourseBlue] (0,5.0) -- (5.0,0) node[below right] {$D_1$};
+    % D2: P = 120 - 2Q, shown only within the plotted axes.
+    \draw[very thick, color=CourseTeal] (0.8,5.2) -- (6.0,0) node[below right] {$D_2$ (Increase in Demand)};
+
+    % Point A(10, $80) -> (1.0, 4.0)
+    \draw[dashed] (0,4.0) node[left] {$\$80$} -- (1.0,4.0);
+    \draw[dashed] (1.0,0) node[below] {$10$} -- (1.0,4.0);
+    \filldraw[SlateBlue] (1.0,4.0) circle (2.2pt) node[above right] {$A$};
+
+    % Point B(20, $60) -> (2.0, 3.0)
+    \draw[dashed] (0,3.0) node[left] {$\$60$} -- (2.0,3.0);
+    \draw[dashed] (2.0,0) node[below] {$20$} -- (2.0,3.0);
+    \filldraw[SlateBlue] (2.0,3.0) circle (2.2pt) node[below left] {$B$};
+
+    % Point C(30, $60) on D2 -> (3.0, 3.0)
+    \draw[dashed] (3.0,0) node[below] {$30$} -- (3.0,3.0);
+    \filldraw[CourseTeal] (3.0,3.0) circle (2.2pt) node[above right] {$C$};
+
+    % Shift arrow B -> C
+    \draw[->, thick, color=CourseTeal] (2.1,3.0) -- node[above, font=\scriptsize\bfseries] {Shift} (2.9,3.0);
+\end{tikzpicture}
+\caption{Movement Along Demand vs. Shift of Demand. A price drop from $\$80$ to $\$60$ moves buyers along $D_1$ from $A$ to $B$ (a change in quantity demanded). Higher consumer income shifts the entire curve from $D_1$ to $D_2$, raising quantity demanded at $\$60$ from $20$ to $30$ (point $C$).}
+\label{fig:demand_shift_vs_movement}
+\end{figure}
+
+\subsection*{Real-World Application: Electric Vehicle Demand and Charging Networks}
+As a hypothetical example, an EV sticker-price reduction moves buyers along the demand curve when the price shown on the vertical axis is the price they pay. More fast-charging access can raise the value of owning an EV, while a buyer tax credit lowers the buyer's effective price relative to the sticker price. When a graph uses the sticker price, these non-sticker-price changes can be represented as a demand shift; the tax credit is not itself a change in the posted sticker price.
+
+\subsection*{Mathematical Foundation (Algebra Level)}
+A linear demand function is written directly as $Q_d = a - bP$ and inverted for graphing as:
 \begin{equation}
-P \uparrow \implies Q_d \downarrow, \qquad P \downarrow \implies Q_d \uparrow
+P = \frac{a}{b} - \frac{1}{b}Q_d \qquad (a > 0, \; b > 0)
 \end{equation}
-This empirical regularity is driven by two microeconomic mechanisms:
+
+\noindent\textbf{Worked Problem:}
+Monthly demand for campus cold-brew subscriptions is given by $Q_d = 400 - 10P$, where $P$ is the monthly price in dollars.
 \begin{enumerate}
-  \item \textbf{The Substitution Effect:} As the price of a good rises, it becomes relatively more expensive compared to alternative goods, incentivizing consumers to substitute toward cheaper alternatives.
-  \item \textbf{The Income Effect:} A price increase erodes the consumer's real purchasing power, constraining the total quantity of goods they can afford to purchase.
+    \item Rewrite the demand equation in inverse form ($P$ as a function of $Q_d$) and find the choke price.
+    \item Compute quantity demanded at $P_1 = \$25$ and $P_2 = \$15$.
+    \item Suppose midterms begin and student demand increases by $80$ subscriptions at every price level. Write the new direct demand equation.
 \end{enumerate}
 
-\subsection{Direct vs. Inverse Demand}
-In empirical economics, demand is specified directly as quantity as a function of price:
-\begin{equation}
-Q_d = a - bP \quad (a > 0, b > 0)
-\end{equation}
-Because economists traditionally graph price on the vertical axis and quantity on the horizontal axis (following Alfred Marshall), we invert the equation to obtain the \textbf{Inverse Demand Function}:
-\begin{equation}
-P = \frac{a}{b} - \frac{1}{b}Q_d
-\end{equation}
-Here, $\frac{a}{b}$ represents the \textbf{choke price}---the price at which quantity demanded drops to exactly zero.
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Invert the Demand Equation:}
+    Solve $Q_d = 400 - 10P$ for $P$:
+    \[
+    10P = 400 - Q_d \implies P = \mathbf{40 - 0.1Q_d}
+    \]
+    Setting $Q_d = 0$ gives the choke price $P_{\text{choke}} = \mathbf{\$40}$.
 
-\section{Shifts in Demand vs. Movements Along the Demand Curve}
-\begin{coreprinciple}
-\boxheader{SlateBlue}{Crucial Distinction: Demand vs. Quantity Demanded}
+    \item \textbf{Calculate Quantities Along the Original Demand Curve:}
+    \[
+    Q_d(25) = 400 - 10(25) = \mathbf{150\text{ subscriptions}}, \qquad Q_d(15) = 400 - 10(15) = \mathbf{250\text{ subscriptions}}
+    \]
+
+    \item \textbf{Shift the Demand Equation Rightward by $+80$ Units:}
+    Add $80$ to the horizontal intercept $a$:
+    \[
+    Q_d^{\text{new}} = (400 + 80) - 10P = \mathbf{480 - 10P}
+    \]
+\end{enumerate}
+\textbf{Conclusion:} Lowering price from $\$25$ to $\$15$ increases quantity demanded by $100$ units along the curve, whereas midterm fatigue shifts the entire demand curve rightward by $80$ units at every price.
+
+% -----------------------------------------------------------------------------
+% Section 3.2: Supply, Determinants, and Curve Shifts
+% -----------------------------------------------------------------------------
+\section{Supply: Production Costs and Curve Shifts}
+
+\subsection*{Conceptual Introduction}
+On the seller's side of the market, the \textbf{Law of Supply} states that, \emph{ceteris paribus}, higher market prices induce firms to offer a larger quantity for sale, while lower prices reduce quantity supplied. In many short-run settings, some inputs are fixed; diminishing marginal productivity can then raise the \textbf{marginal cost ($MC$)} of additional units. Firms are willing to supply those units when the market price covers their marginal cost. This is one common reason for an upward-sloping supply curve, not a universal technological law.
+
+Just as with demand, a change in the product's \emph{own price} causes a movement along a stationary supply curve, whereas a change in underlying production conditions shifts the entire supply curve:
 \begin{itemize}
-  \item \textbf{Movement Along the Curve (Change in Quantity Demanded):} Caused strictly by a change in the good's \textit{own price}.
-  \item \textbf{Shift of the Entire Curve (Change in Demand):} Caused by changes in non-price determinants, altering quantity demanded at every price level.
+    \item \textbf{Input Prices:} Higher wages, raw material costs, or energy prices raise marginal cost and shift supply leftward (upward).
+    \item \textbf{Technology:} Automation and process innovations lower production costs and shift supply rightward.
+    \item \textbf{Taxes and Subsidies:} A per-unit business tax raises marginal cost (shifting supply leftward), while a production subsidy lowers marginal cost (shifting supply rightward).
+    \item \textbf{Seller Expectations and Number of Sellers:} New firms entering an industry shift market supply rightward.
 \end{itemize}
-\end{coreprinciple}
 
-\subsection{Non-Price Determinants of Demand}
-\begin{itemize}
-  \item \textbf{Consumer Income:} For a \textit{normal good}, demand shifts rightward as income expands ($\varepsilon_I > 0$). For an \textit{inferior good} (such as instant ramen or intercity bus transit), demand shifts leftward as income rises ($\varepsilon_I < 0$).
-  \item \textbf{Prices of Related Goods:} 
+\subsection*{Visual Representation}
+Figure~\ref{fig:supply_shift} shows how a technological breakthrough lowers marginal production cost at every output level, shifting the supply curve rightward from $S_1$ to $S_2$.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.05]
+    % Axes
+    \draw[->, thick] (0,0) -- (6.2,0) node[below] {Quantity ($Q$)};
+    \draw[->, thick] (0,0) -- (0,5.2) node[left] {Price ($P$, \$)};
+    \node[below left] at (0,0) {$(0,0)$};
+
+    % Both supply curves are shown only within the plotted axes.
+    \draw[very thick, color=Terracotta] (0,1.0) -- (4.2,5.2) node[right] {$S_1$};
+    \draw[very thick, color=CourseTeal] (0,0.5) -- (4.7,5.2) node[right] {$S_2$ (Lower Cost / Tech)};
+
+    % Compare at P = $60 (y = 3.0): Q1 = 20 (x=2.0), Q2 = 25 (x=2.5)
+    \draw[dashed] (0,3.0) node[left] {$\$60$} -- (2.5,3.0);
+    \draw[dashed] (2.0,0) node[below] {$20$} -- (2.0,3.0);
+    \draw[dashed] (2.5,0) node[below] {$25$} -- (2.5,3.0);
+
+    \filldraw[Terracotta] (2.0,3.0) circle (2.2pt);
+    \filldraw[CourseTeal] (2.5,3.0) circle (2.2pt);
+    \draw[->, thick, color=CourseTeal] (2.05,3.0) -- (2.45,3.0);
+\end{tikzpicture}
+\caption{Rightward Shift of Supply. Cost-reducing technology shifts supply from $S_1$ to $S_2$, expanding the quantity sellers are willing to supply at $\$60$ from $20$ units to $25$ units.}
+\label{fig:supply_shift}
+\end{figure}
+
+\subsection*{Real-World Application: Lithium Batteries and Coffee Harvests}
+The U.S. Department of Energy estimates that light-duty electric-vehicle lithium-ion battery-pack costs fell 90\% from 2008 to 2023 in 2023 dollars, from $\$1{,}415$ to $\$139$ per usable kilowatt-hour for production at a scale of at least 100{,}000 units per year. The estimate attributes the decline to improvements in technology and chemistry and to increased production volume. Lower unit costs can shift EV battery-pack supply right, all else equal; this estimate is for vehicle packs, not grid-scale storage.
+
+Weather can affect agricultural supply, but the net outcome should not be assumed. The USDA reported severe drought and fires in Brazil from July to September 2024 and expected effects on the 2024/25 coffee harvest. Its forecast nevertheless put total Brazilian coffee production 0.2\% above the previous season. This case illustrates why a supply explanation must account for the overall harvest, not just one adverse input condition.
+
+\subsection*{Mathematical Foundation (Algebra Level)}
+A linear supply function with a nonnegative minimum supply price is:
+\begin{equation}
+Q_s = d(P-P_{\min}) \quad \text{for } P \ge P_{\min}, \qquad
+P = P_{\min} + \frac{1}{d}Q_s \quad (d>0).
+\end{equation}
+For prices below $P_{\min}$, this simple model sets quantity supplied to zero. This avoids interpreting a negative algebraic quantity as actual market supply.
+
+\noindent\textbf{Worked Problem:}
+Local bakeries supply artisan loaves according to $Q_s = -40 + 8P$ for $P \ge \$5$.
+\begin{enumerate}
+    \item Find the inverse supply equation and minimum supply price $P_{\min}$.
+    \item Suppose flour and electricity prices rise, increasing sellers' minimum acceptable price by $\$3$ per loaf at every quantity. Write the new inverse and direct supply equations.
+\end{enumerate}
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Invert the Supply Equation:}
+    \[
+    8P = 40 + Q_s \implies P = \mathbf{5 + 0.125Q_s}
+    \]
+    At $Q_s = 0$, the minimum supply price is $P_{\min} = \mathbf{\$5\text{ per loaf}}$.
+
+    \item \textbf{Shift Supply Upward (Leftward) by $+\$3$ per Loaf:}
+    Add $\$3$ to the inverse supply intercept:
+    \[
+    P^{\text{new}} = (5 + 3) + 0.125Q_s = \mathbf{8 + 0.125Q_s}
+    \]
+    Solve for the new quantity schedule:
+    \[
+    P-8=0.125Q_s^{\text{new}}
+    \implies Q_s^{\text{new}}=8(P-8)=-64+8P.
+    \]
+    Restricting quantity supplied to nonnegative values gives:
+    \[
+    Q_s^{\text{new}} =
+    \begin{cases}
+        0, & P < \$8,\\
+        -64 + 8P, & P \ge \$8.
+    \end{cases}
+    \]
+\end{enumerate}
+    \textbf{Conclusion:} Higher input prices raise the minimum supply price to $\$8$ per loaf. At prices of $\$8$ or more, the new linear schedule supplies 24 fewer loaves than the old schedule; below $\$8$, the new schedule supplies zero.
+
+% -----------------------------------------------------------------------------
+% Section 3.3: Market Equilibrium and Comparative Statics
+% -----------------------------------------------------------------------------
+\section{Market Equilibrium and Comparative Statics}
+
+\subsection*{Conceptual Introduction}
+When buyers and sellers interact freely, the market converges toward \textbf{market equilibrium}—the unique price $P^*$ where quantity demanded equals quantity supplied ($Q_d = Q_s$). At any price above $P^*$, sellers produce more than buyers want to purchase, creating a \textbf{surplus} (excess supply) that pressures sellers to cut prices. At any price below $P^*$, buyers want more units than sellers offer, creating a \textbf{shortage} (excess demand) that bids prices upward. Only at $(Q^*, P^*)$ does the market clear with zero upward or downward pressure on price.
+
+To predict how equilibrium responds when real-world events disturb the market—an exercise called \textbf{comparative statics}—follow a strict three-step protocol: (1) identify whether the event shifts Demand, Supply, or both; (2) determine the direction of the shift (rightward or leftward); and (3) compare the new intersection $(Q_2^*, P_2^*)$ against the original equilibrium $(Q_1^*, P_1^*)$. When \emph{both} curves shift simultaneously, one outcome variable moves unambiguously while the other becomes \textbf{ambiguous} unless we know which shift is larger!
+
+\subsection*{Visual Representation}
+Figure~\ref{fig:market_equilibrium_shift} shows initial equilibrium $E_1^*(20, \$60)$, the surplus at a price of $\$80$, and the new equilibrium $E_2^*(25, \$70)$ following a rightward demand shift.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.05]
+    % Axes
+    \draw[->, thick] (0,0) -- (6.2,0) node[below] {Quantity ($Q$)};
+    \draw[->, thick] (0,0) -- (0,5.2) node[left] {Price ($P$, \$)};
+    \node[below left] at (0,0) {$(0,0)$};
+
+    % D1: P = 100 - 2Q; S: P = 20 + 2Q (curves shown within the axes)
+    \draw[very thick, color=CourseBlue] (0,5.0) -- (5.0,0) node[below right] {$D_1$};
+    \draw[very thick, color=Terracotta] (0,1.0) -- (4.2,5.2) node[right] {$S$};
+
+    % D2: P = 120 - 2Q, shown only within the plotted axes.
+    \draw[very thick, color=CourseTeal] (0.8,5.2) -- (6.0,0) node[below right] {$D_2$};
+
+    % At P = $80, Q_d = 10 (x=1) and Q_s = 30 (x=3): surplus = 20
+    \draw[dashed, color=SlateBlue] (0,4.0) node[left] {$P=\$80$} -- (3.0,4.0);
+    \draw[dashed, color=SlateBlue] (1.0,0) node[below] {$Q_d=10$} -- (1.0,4.0);
+    \draw[dashed, color=SlateBlue] (3.0,0) node[below] {$Q_s=30$} -- (3.0,4.0);
+
+    % E1(20, $60) -> (2.0, 3.0)
+    \draw[dashed] (0,3.0) node[left] {$P_1^* = \$60$} -- (2.0,3.0);
+    \draw[dashed] (2.0,0) node[below] {$Q_1^* = 20$} -- (2.0,3.0);
+    \filldraw[black] (2.0,3.0) circle (2.2pt) node[below right] {$E_1^*$};
+
+    % E2(25, $70) -> (2.5, 3.5)
+    \draw[dashed] (0,3.5) node[left] {$P_2^* = \$70$} -- (2.5,3.5);
+    \draw[dashed] (2.5,0) node[below] {$Q_2^* = 25$} -- (2.5,3.5);
+    \filldraw[CourseTeal] (2.5,3.5) circle (2.2pt) node[above right] {$E_2^*$};
+\end{tikzpicture}
+\caption{Market Equilibrium and Demand Shift. At $\$80$, the original curves imply $Q_d=10$ and $Q_s=30$, a surplus of 20 units. A rightward shift in demand creates a shortage at the original equilibrium price of $\$60$; the market moves to $E_2^*(25,\$70)$.}
+\label{fig:market_equilibrium_shift}
+\end{figure}
+
+\subsection*{Real-World Application: Simultaneous Shifts and Coffee Prices}
+As a hypothetical, suppose greater demand for AI servers shifts semiconductor demand right while new fabrication capacity shifts supply right. Both shifts raise equilibrium quantity; their effects on equilibrium price oppose one another, so the net price change depends on the relative sizes of the shifts.
+
+FRED's series APU0000717311 reports an average U.S. city price for a pound of 100\% ground-roast coffee; its July 2026 observation is $\$9.317$ per pound, not seasonally adjusted. This is a price-level observation, not a measure of quantity or a way to identify a demand or supply shift by itself. FRED cautions that average-price series are best for the price level in a particular month; use an appropriate price index to study price changes over time.
+
+\subsection*{Mathematical Foundation (Algebra Level)}
+Market equilibrium solves the system of two linear equations simultaneously:
+\begin{equation}
+Q_d(P^*) = Q_s(P^*) \quad \text{or} \quad P_d(Q^*) = P_s(Q^*)
+\end{equation}
+
+\noindent\textbf{Worked Problem:}
+In a city's market for portable solar generators, demand is $Q_d = 500 - 2P$ and supply is $Q_s = -100 + 4P$.
+\begin{enumerate}
+    \item Solve for the market equilibrium price $P^*$ and quantity $Q^*$.
+    \item Determine whether a price of $P = \$120$ creates a surplus or a shortage, and compute its exact size.
+\end{enumerate}
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Set $Q_d = Q_s$ and Solve for $P^*$:}
+    \[
+    500 - 2P^* = -100 + 4P^* \implies 600 = 6P^* \implies P^* = \mathbf{\$100}
+    \]
+    Substitute $P^* = \$100$ into either equation to find $Q^*$:
+    \[
+    Q^* = 500 - 2(100) = \mathbf{300\text{ generators}}
+    \]
+
+    \item \textbf{Evaluate Disequilibrium at $P = \$120$:}
+    \[
+    Q_d(120) = 500 - 2(120) = 260\text{ units}, \qquad Q_s(120) = -100 + 4(120) = 380\text{ units}
+    \]
+    Because $Q_s\ (380) > Q_d\ (260)$, there is a \textbf{surplus} of $380 - 260 = \mathbf{120\text{ generators}}$.
+\end{enumerate}
+\textbf{Conclusion:} The market clears at $P^* = \$100$ and $Q^* = 300$; pricing above equilibrium at $\$120$ leaves $120$ unsold units on shelves.
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=\textbf{Optional Advanced Section: Comparative Statics via Total Differentiation}]
+\small
+\emph{Note for Economics Majors and Quantitative Students:}
+Let general demand be $Q_d(P, \alpha)$ with $\frac{\partial Q_d}{\partial P} < 0$ and shift parameter $\alpha$ ($\frac{\partial Q_d}{\partial \alpha} > 0$), and supply be $Q_s(P)$. Differentiating the equilibrium identity $Q_d(P^*, \alpha) - Q_s(P^*) = 0$ with respect to $\alpha$:
+\[
+\frac{\partial Q_d}{\partial P} \frac{dP^*}{d\alpha} + \frac{\partial Q_d}{\partial \alpha} - \frac{dQ_s}{dP}\frac{dP^*}{d\alpha} = 0 \implies \frac{dP^*}{d\alpha} = \frac{\partial Q_d / \partial \alpha}{\frac{dQ_s}{dP} - \frac{\partial Q_d}{\partial P}} > 0
+\]
+This confirms analytically that any positive demand shock ($\partial Q_d / \partial \alpha > 0$) strictly raises equilibrium price $P^*$.
+\end{tcolorbox}
+
+\section*{Bring It Home: Diagnose the Coffee Market}
+Return to the campus coffee shop. A price reduction changes quantity demanded along a given demand curve; a change in student preferences shifts demand; and a rise in bean costs shifts supply. Identifying which curve changed is the first step toward explaining the new equilibrium.
+
+\section*{Practice Questions}
+\begin{enumerate}
+    \item Demand is $Q_d=400-10P$. At $P=\$15$, demand then rises by 80 subscriptions at every price. What is the new quantity demanded?
     \begin{itemize}
-      \item \textit{Substitutes:} An increase in the price of Good $Y$ shifts demand for Good $X$ to the right ($\varepsilon_{xy} > 0$).
-      \item \textit{Complements:} An increase in the price of Good $Y$ shifts demand for Good $X$ to the left ($\varepsilon_{xy} < 0$).
+        \item[A.] 250. \textbf{Incorrect:} This is the original quantity at $P=\$15$ and ignores the demand shift.
+        \item[B.] 170. \textbf{Incorrect:} This subtracts 80 instead of adding the stated increase.
+        \item[C.] 330. \textbf{Correct:} The original quantity is $400-10(15)=250$; after the shift it is $250+80=330$.
+        \item[D.] 480. \textbf{Incorrect:} This is the new demand intercept, not quantity at $P=\$15$.
     \end{itemize}
-  \item \textbf{Tastes and Preferences:} Exogenous shifts in consumer culture, health studies, or advertising.
-  \item \textbf{Buyer Expectations:} Anticipated future price increases prompt consumers to accelerate current purchases, shifting current demand rightward.
-  \item \textbf{Market Demographics:} An expansion in the population of potential buyers shifts market demand outward.
-\end{itemize}
 
-\section{The Nature of Supply and Marginal Opportunity Costs}
-The Law of Supply establishes a positive relationship between price and quantity supplied, \textit{ceteris paribus}:
-\begin{equation}
-P \uparrow \implies Q_s \uparrow, \qquad P \downarrow \implies Q_s \downarrow
-\end{equation}
-Supply slopes upward because production is governed by the \textbf{Law of Diminishing Marginal Productivity}. As firms hire variable factor inputs into fixed plant capacity, the marginal product of labor declines, forcing marginal production costs ($MC$) to escalate. To cover higher incremental costs, firms require higher market prices.
+    \item Original supply is $Q_s=-40+8P$ for $P\ge\$5$. Input costs raise the minimum acceptable price by $\$3$ per loaf. At $P=\$10$, what quantity is supplied under the new curve?
+    \begin{itemize}
+        \item[A.] 40 loaves. \textbf{Incorrect:} This uses the original curve, $-40+8(10)$.
+        \item[B.] 24 loaves. \textbf{Incorrect:} This is the reduction in supply at $\$10$, not the new quantity supplied.
+        \item[C.] 16 loaves. \textbf{Correct:} The shifted curve is $Q_s=-64+8P$, so $Q_s=-64+80=16$.
+        \item[D.] 8 loaves. \textbf{Incorrect:} This confuses the new minimum price with quantity supplied.
+    \end{itemize}
 
-\subsection{Linear Supply Formulations}
-\begin{equation}
-Q_s = c + dP \iff P = -\frac{c}{d} + \frac{1}{d}Q_s \quad (d > 0)
-\end{equation}
+    \item Demand is $Q_d=500-2P$ and supply is $Q_s=-100+4P$. At $P=\$120$, what is the disequilibrium?
+    \begin{itemize}
+        \item[A.] A shortage of 120 generators. \textbf{Incorrect:} It reverses which quantity is larger.
+        \item[B.] A surplus of 120 generators. \textbf{Correct:} $Q_d=260$ and $Q_s=380$, so the surplus is $380-260=120$.
+        \item[C.] A surplus of 80 generators. \textbf{Incorrect:} It subtracts the equilibrium quantity, 300, from one disequilibrium quantity.
+        \item[D.] No disequilibrium. \textbf{Incorrect:} $P=\$120$ is above the equilibrium price of $\$100$.
+    \end{itemize}
 
-\subsection{Non-Price Determinants of Supply}
-Supply shifts when underlying production parameters change:
+    \item Demand and supply both shift right. Which conclusion follows under the standard upward-sloping supply and downward-sloping demand model?
+    \begin{itemize}
+        \item[A.] Equilibrium price and quantity both rise. \textbf{Incorrect:} The demand shift raises price, but the supply shift lowers it.
+        \item[B.] Equilibrium price and quantity both fall. \textbf{Incorrect:} Both shifts increase equilibrium quantity.
+        \item[C.] Equilibrium quantity rises; the price change is ambiguous. \textbf{Correct:} Both shifts raise quantity, while their opposing effects on price require knowing relative shift sizes.
+        \item[D.] Equilibrium quantity is ambiguous; price must fall. \textbf{Incorrect:} It reverses the unambiguous quantity result and overstates the price effect.
+    \end{itemize}
+\end{enumerate}
+
+\section*{Sources}
 \begin{itemize}
-  \item \textbf{Input Prices:} Wage increases, raw material inflation, or soaring energy costs increase marginal cost, shifting supply leftward.
-  \item \textbf{Technological Progress:} Cost-reducing manufacturing breakthroughs allow firms to produce more output at each price level, shifting supply rightward.
-  \item \textbf{Government Taxes and Subsidies:} An excise tax increases per-unit production cost, shifting supply vertically upward by the tax amount $t$.
-  \item \textbf{Number of Active Producers:} Industry entry expands market supply; business closures contract it.
+    \item U.S. Department of Energy, Vehicle Technologies Office. “Electric Vehicle Battery Pack Costs for a Light-Duty Vehicle in 2023 Are 90\% Lower than in 2008.” \href{https://www.energy.gov/cmei/vehicles/articles/fotw-1354-august-5-2024-electric-vehicle-battery-pack-costs-light-duty}{DOE report}.
+    \item USDA Foreign Agricultural Service. \emph{Coffee Semi-annual: Brazil}, Report BR2024-0035. \href{https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Coffee+Semi-annual_Brasilia_Brazil_BR2024-0035.pdf}{USDA report}.
+    \item Federal Reserve Bank of St. Louis, FRED. Average Price: Coffee, 100\%, Ground Roast, All Sizes in U.S. City Average (APU0000717311). \url{https://fred.stlouisfed.org/series/APU0000717311}
 \end{itemize}
-
-\section{Market Equilibrium and Price Discovery}
-A competitive market attains equilibrium where quantity demanded equals quantity supplied:
-\begin{equation}
-Q_d(P^*) = Q_s(P^*) = Q^*
-\end{equation}
-
-\begin{examplecase}{Step-by-Step Algebraic Equilibrium Solution}
-Consider a regional agricultural market for specialty roasted coffee beans:
-$$Q_d = 500 - 15P, \qquad Q_s = -100 + 15P$$
-1. Equate $Q_d$ and $Q_s$:
-$$500 - 15P = -100 + 15P \implies 30P = 600 \implies P^* = \$20$$
-2. Substitute $P^* = \$20$ into either direct schedule:
-$$Q^* = 500 - 15(20) = 500 - 300 = 200 \text{ bags}$$
-3. Verify at disequilibrium prices:
-\begin{itemize}
-  \item If $P = \$25$ (Price too high): $Q_d = 125$, $Q_s = 275 \implies \text{Surplus} = +150$. Unsold inventory forces price downward.
-  \item If $P = \$15$ (Price too low): $Q_d = 275$, $Q_s = 125 \implies \text{Shortage} = -150$. Eager buyers bid price upward.
-\end{itemize}
-\end{examplecase}
-
-\section{Simultaneous Dual Shocks and the Indeterminacy Matrix}
-When demand and supply shift concurrently, exactly one equilibrium variable ($P^*$ or $Q^*$) changes unambiguously, while the other is indeterminate without knowing the exact relative magnitudes of the shifts.
-
-\begin{center}
-\begin{tabular}{|l|c|c|}
-\hline
-\textbf{Simultaneous Shock} & \textbf{Equilibrium Price ($P^*$)} & \textbf{Equilibrium Quantity ($Q^*$)} \\
-\hline
-Demand $\uparrow$, Supply $\uparrow$ & Ambiguous & Unambiguously Rises ($\uparrow$) \\
-Demand $\downarrow$, Supply $\downarrow$ & Ambiguous & Unambiguously Falls ($\downarrow$) \\
-Demand $\uparrow$, Supply $\downarrow$ & Unambiguously Rises ($\uparrow$) & Ambiguous \\
-Demand $\downarrow$, Supply $\uparrow$ & Unambiguously Falls ($\downarrow$) & Ambiguous \\
-\hline
-\end{tabular}
-\end{center}
 
 \end{document}

@@ -1,6 +1,10 @@
+% Review status: Technical and pedagogical fixes applied; instructor review pending (2026-11-15).
 \documentclass[11pt,letterpaper]{article}
 \input{../../shared/preamble.tex}
 \input{../../shared/tikz-settings.tex}
+\usepackage{tcolorbox}
+\definecolor{CourseBlue}{HTML}{0072B2}
+\definecolor{CourseTeal}{HTML}{009E73}
 
 \begin{document}
 
@@ -15,50 +19,313 @@
 This chapter provides a rigorous, pedagogical treatment of Chapter 3: Supply and Demand: Macroeconomic Foundations, benchmarked to standard principles curriculum.
 \end{abstract}
 
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=\textbf{Bring It Home: Is One Price Increase Inflation?}]
+Suppose the price of medical care rises faster than the prices of most other goods. Is that economy-wide inflation, or has medical care become more expensive relative to the overall basket? Compare the component price index with an all-items index before deciding.
+\end{tcolorbox}
+
 \tableofcontents
 \vspace{1.5em}
 \hrule
 \vspace{1.5em}
 
-\section{Learning Outcomes and Key Terms}
-Students should distinguish a change in one market's relative price from a sustained change in the general price level, calculate a simple inflation rate, and explain how nominal values differ from real values. These objectives support MA-1 and C2002-1. Key terms include relative price, price index, inflation, nominal value, real value, and purchasing power.
+% -----------------------------------------------------------------------------
+% Section 3.1: Relative Prices vs. The General Price Level
+% -----------------------------------------------------------------------------
+\section{Relative Prices vs. The General Price Level}
 
-\section{One Price Changes, or the Price Level Changes?}
-Suppose the price of a hospital visit rises while prices of most other goods are stable. That is a change in a relative price: medical care has become more expensive compared with the rest of the consumption basket. A family may respond by using insurance, choosing another provider, or postponing care. The change guides choices and reallocates resources in that market, but by itself it is not economy-wide inflation.
+\subsection*{Conceptual Introduction}
+In microeconomics, supply and demand explain how the price of a single product—such as coffee, avocados, or apartment rent—adjusts to balance buyers and sellers in that specific market. When the price of a hospital visit or a carton of eggs rises while most other prices remain stable, economists call that a change in a \textbf{relative price}. Relative price changes are vital market signals: they tell consumers to economize on scarcer goods and tell producers where to direct resources.
 
-Inflation is a sustained increase in a broad price index. It reduces the purchasing power of a nominal dollar if the dollar amount does not rise with prices. A one-time increase in a single price may contribute to an index, but it does not establish that the general price level is accelerating. Similarly, a temporary price-level increase is not the same thing as an ongoing inflation rate.
+Macroeconomics, by contrast, focuses on the \textbf{general price level}—the overall average price of a broad basket of goods and services across the entire economy. A sustained, economy-wide upward climb in a broad price index is called \textbf{inflation} (while a sustained decline in the broad price level is \textbf{deflation}). A rise in the broad index means that a dollar buys less of its weighted basket on average; it does not require every category's price to rise. A local drought that raises lettuce prices, for example, changes lettuce's relative price even if the broad index is unchanged.
 
-\section{Graph Description: Relative Price and a Broad Index}
-To compare price movements over time, put time on the horizontal axis and index values on the vertical axis. Set both series to 100 in a chosen base month. One line tracks the price index for a particular category, such as medical care; the other tracks the all-items CPI. If the medical-care line rises faster, its relative price has increased over that interval. If both rise at the same rate, the relative price is roughly unchanged even though nominal prices have risen. Indexing the series makes proportional changes comparable; it does not put different baskets on the same dollar scale.
+\subsection*{Visual Representation}
+Figure~\ref{fig:relative_vs_general_prices} compares the all-items CPI with its medical-care component at two observation dates. Both series are rebased to 100 in May 2015; the points show the two observations, not the intervening monthly path.
 
-The economic distinction is between a movement in one component's price and a change in the overall index. A demand or supply shift in one product market changes that market's equilibrium price; economy-wide inflation requires broad price changes and a sustained process, not a relabeling of one relative-price shock.
+\begin{tcolorbox}[colback=yellow!10!white,colframe=orange!80!black,title=\textbf{Clear It Up: A One-Time Price Spike Is Not Ongoing Inflation}]
+If a temporary supply disruption pushes gasoline prices up by $15\%$ in one month and prices then stay flat at that higher level, the \emph{price level} is higher, but the \emph{inflation rate} (the percentage rate of change from month to month) returns to zero! Inflation measures the \textbf{speed} at which the broad price level is rising over time.
+\end{tcolorbox}
 
-\section{Price Indexes, Inflation, and Real Values}
-A price index compares the cost of a defined basket in one period with its cost in a reference period. The percentage inflation rate between periods $t-1$ and $t$ is:
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.05]
+    % Axes
+    \draw[->, thick, color=SlateBlue] (0,0) -- (6.2,0) node[below] {Observation date};
+    \draw[->, thick, color=SlateBlue] (0,0) -- (0,5.0) node[left] {Index (May 2015 = 100)};
+    \node[below left] at (0,0) {$(0,0)$};
+
+    \draw[dashed, gray] (0,1.5) node[left, black] {$100$} -- (5.8,1.5);
+    \draw[dashed, gray] (0,2.5) node[left, black] {$125$} -- (5.8,2.5);
+    \draw[dashed, gray] (0,3.5) node[left, black] {$150$} -- (5.8,3.5);
+
+    \node[below, align=center, font=\footnotesize] at (0.8,0) {May 2015\\base};
+    \node[below, align=center, font=\footnotesize] at (5.0,0) {October 2026};
+    \filldraw[SlateBlue] (0.8,1.5) circle (2.2pt);
+    \node[above left, font=\footnotesize] at (0.8,1.5) {Both: 100};
+
+    % The vertical scale is 25 index points per coordinate unit.
+    \draw[dashed, color=SlateBlue] (5.0,0) -- (5.0,3.1956);
+    \filldraw[CourseBlue] (5.0,3.1956) circle (2.4pt)
+        node[above right, font=\footnotesize\bfseries] {All-items: 142.39};
+    \filldraw[Terracotta] (5.0,2.8336) circle (2.4pt)
+        node[below right, font=\footnotesize\bfseries] {Medical care: 133.34};
+\end{tikzpicture}
+\caption{Two-observation comparison using FRED monthly CPI data. Medical care rose less than the all-items index between May 2015 and October 2026, so its price fell relative to the all-items basket over that interval.}
+\label{fig:relative_vs_general_prices}
+\end{figure}
+
+\subsection*{Real-World Application: FRED Medical Care (`CPIMEDSL`) vs. All-Items CPI (`CPIAUCSL`)}
+FRED's seasonally adjusted CPIAUCSL (all items) was 237.001 in May 2015 and 337.476 in October 2026; CPIMEDSL (medical care) was 446.743 and 595.675 on those same dates. Each series uses 1982--1984 = 100. First calculate the growth in each index:
+\[
+\begin{aligned}
+\text{All-items growth} &= \frac{337.476-237.001}{237.001}\times100\% = 42.39\%,\\
+\text{Medical-care growth} &= \frac{595.675-446.743}{446.743}\times100\% = 33.34\%.
+\end{aligned}
+\]
+To calculate the change in medical care's price relative to the all-items basket, compare the component-to-all-items ratio at the two dates:
+\[
+\left(\frac{595.675/337.476}{446.743/237.001}-1\right)\times100\%=-6.36\%.
+\]
+Thus, medical care's relative price fell by 6.36\% over these observations even though both price indexes rose. The all-items CPI represents an average urban-consumer basket, not every household's exact spending pattern.
+
+\subsection*{Mathematical Foundation (Algebra Level)}
+A price index compares the current dollar cost of a fixed market basket against its base-period cost, and the inflation rate ($\pi_t$) measures the percentage change in that index between periods $t-1$ and $t$:
 \begin{equation}
-\pi_t=\frac{P_t-P_{t-1}}{P_{t-1}}\times 100\%.
+\text{Price Index}_t = \frac{\text{Cost of Basket}_t}{\text{Cost of Basket}_{\text{base}}} \times 100, \qquad \pi_t = \frac{P_t - P_{t-1}}{P_{t-1}} \times 100\%
 \end{equation}
-To express a nominal amount in the purchasing power of a selected base period, rescale it by the ratio of the base-period index to the current index:
-\begin{equation}
-X^{\text{real, base}}_t=X^{\text{nominal}}_t\frac{P_{\text{base}}}{P_t}.
-\end{equation}
-When the index base is 100, this is commonly written as nominal value times $100/P_t$. Real values answer a purchasing-power question; nominal values answer how many current dollars changed hands. Neither measure is universally preferable: use the one suited to the question.
 
-\begin{examplecase}{FRED Data: Medical Care and the CPI}
-FRED series CPIAUCSL is the all-items Consumer Price Index for All Urban Consumers: U.S. City Average, monthly and seasonally adjusted, with 1982-1984=100. CPIMEDSL is the corresponding medical-care index with the same base and frequency. Comparing their percentage changes can illustrate how a component's price movement differs from the overall basket. The CPI reflects a weighted urban-consumer basket, not every household's exact spending pattern; the comparison is descriptive and does not by itself identify why prices changed.
-\end{examplecase}
+\noindent\textbf{Worked Problem:}
+Suppose a simplified urban household basket costs $\$1{,}200$ in the base year (2024), rises to $\$1{,}260$ in 2025, and reaches $\$1{,}310.40$ in 2026. Compute the price index for 2024, 2025, and 2026, and calculate the annual inflation rate for 2025 and 2026.
 
-\begin{coreprinciple}
-\boxheader{SlateBlue}{Clear It Up: A Price Increase Is Not Automatically Inflation}
-A rise in one product's price changes that product's relative price. Inflation refers to a sustained rise in a broad price index. Also keep nominal and real values distinct: a nominal wage can rise while its real purchasing power falls if the price level rises faster.
-\end{coreprinciple}
-
-\section{Check Your Understanding}
+\noindent\textbf{Step-by-Step Breakdown:}
 \begin{enumerate}
-  \item If a nominal wage rises by 3 percent while the relevant price index rises by 5 percent, what happens approximately to its purchasing power?
-  \item Why is a rise in the price of one service not sufficient evidence of economy-wide inflation?
-  \item What does rebasing two indexes to 100 help compare, and what does it not make identical?
+    \item \textbf{Compute the Price Index for Each Year (Base Year 2024 = 100):}
+    \[
+    P_{2024} = \frac{\$1{,}200}{\$1{,}200} \times 100 = \mathbf{100.0}
+    \]
+    \[
+    P_{2025} = \frac{\$1{,}260}{\$1{,}200} \times 100 = \mathbf{105.0}
+    \]
+    \[
+    P_{2026} = \frac{\$1{,}310.40}{\$1{,}200} \times 100 = \mathbf{109.2}
+    \]
+
+    \item \textbf{Calculate Annual Inflation Rates ($\pi_{2025}$ and $\pi_{2026}$):}
+    \[
+    \pi_{2025} = \frac{105.0 - 100.0}{100.0} \times 100\% = \mathbf{5.0\%}
+    \]
+    \[
+    \pi_{2026} = \frac{109.2 - 105.0}{105.0} \times 100\% = \frac{4.2}{105.0} \times 100\% = \mathbf{4.0\%}
+    \]
 \end{enumerate}
-Answers: (1) Real purchasing power falls by roughly 2 percent, using the small-change approximation. (2) It may be a relative-price change confined to that market. (3) It compares proportional changes; it does not make the baskets or dollar costs identical.
+\textbf{Conclusion:} Notice that while the price level continued rising in 2026 (from $105.0$ to $109.2$), the inflation rate slowed from $5.0\%$ to $4.0\%$—a process economists call \textbf{disinflation} (slower positive inflation, not falling prices).
+
+% -----------------------------------------------------------------------------
+% Section 3.2: Nominal vs. Real Values and Purchasing Power
+% -----------------------------------------------------------------------------
+\section{Nominal vs. Real Values and Purchasing Power}
+
+\subsection*{Conceptual Introduction}
+Because inflation changes the measuring stick of money over time, comparing raw dollar figures across different decades is misleading. A $\$50{,}000$ salary in 1990 bought far more housing, groceries, and tuition than a $\$50{,}000$ salary buys today. To make valid comparisons across time, macroeconomists strictly separate \textbf{nominal values} (measured in current, unadjusted dollars of the period) from \textbf{real values} (adjusted for price-level changes to reflect true \textbf{purchasing power} in constant base-period dollars).
+
+The same distinction governs wages and interest rates:
+\begin{itemize}
+    \item \textbf{Real Wage:} Measures how many goods and services a worker's paycheck can actually purchase. If your nominal hourly wage rises by $3\%$ while consumer prices rise by $5\%$, your real wage falls by roughly $2\%$.
+    \item \textbf{Real Interest Rate ($r$):} Measures the true purchasing-power return earned by savers or paid by borrowers after subtracting inflation ($\pi$) from the stated \textbf{nominal interest rate ($i$)}—summarized by the \textbf{Fisher Equation}: $r \approx i - \pi$.
+\end{itemize}
+
+    \begin{tcolorbox}[colback=yellow!10!white,colframe=orange!80!black,title=\textbf{Clear It Up: A Nominal Raise Can Be a Real Pay Cut}]
+    A larger paycheck in dollars does not guarantee more purchasing power. Compare the percentage change in nominal pay with the percentage change in the price index; if prices rise faster, the real wage falls.
+    \end{tcolorbox}
+
+\subsection*{Visual Representation}
+Figure~\ref{fig:nominal_vs_real_wage} contrasts a rising nominal wage index against a flat or declining real wage index when price-level inflation outpaces paycheck growth.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.05]
+    % Axes
+    \draw[->, thick] (0,0) -- (6.2,0) node[below] {Time (Years)};
+    \draw[->, thick] (0,0) -- (0,5.0) node[left] {Wage Index (Base = 100)};
+    \node[below left] at (0,0) {$(0,0)$};
+
+    \draw[dashed, gray] (0,2.2) node[left, black] {$100$} -- (5.8,2.2);
+
+    % Nominal Wage climbs steadily: (0,2.2) to (5.5,4.2)
+    \draw[very thick, color=SlateBlue] (0,2.2) -- (5.5,4.2) node[right, font=\footnotesize\bfseries] {Nominal Wage ($W_{\text{nom}}$)};
+
+    % Price Level climbs faster: (0,2.2) to (5.5,4.7)
+    \draw[thick, dashed, color=Terracotta] (0,2.2) -- (5.5,4.7) node[right, font=\footnotesize\bfseries] {Price Level ($P$)};
+
+    % Real Wage erodes slightly: (0,2.2) to (5.5,1.8)
+    \draw[very thick, color=CourseTeal] (0,2.2) -- (5.5,1.8) node[right, font=\footnotesize\bfseries] {Real Wage ($W_{\text{real}}$)};
+\end{tikzpicture}
+\caption{Nominal Wages vs. Real Purchasing Power. Even when a worker's nominal wage increases steadily over time, if the broad price level rises faster than nominal pay, the worker's real purchasing power declines.}
+\label{fig:nominal_vs_real_wage}
+\end{figure}
+
+\subsection*{Real-World Application: Minimum Wage Purchasing Power Across Decades}
+For covered nonexempt employees, the U.S. federal minimum wage has been $\$7.25$ per hour since July 24, 2009. If the nominal rate stays fixed while the CPI rises, its purchasing power falls. This illustrates why minimum-wage comparisons should distinguish the stated dollar amount from its real value.
+
+\subsection*{Mathematical Foundation (Algebra Level)}
+To convert any nominal dollar amount $X_t^{\text{nominal}}$ into constant base-period purchasing power ($X_t^{\text{real}}$):
+\begin{equation}
+X_t^{\text{real}} = X_t^{\text{nominal}} \times \frac{P_{\text{base}}}{P_t}, \qquad r \approx i - \pi
+\end{equation}
+
+\noindent\textbf{Worked Problem:}
+Suppose a paralegal's nominal salary was $\$52{,}000$ in May 2015 and $\$68{,}000$ in October 2026. For these months, CPIAUCSL was $P_{2015}=237.001$ and $P_{2026}=337.476$.
+\begin{enumerate}
+    \item Express the 2026 salary in constant 2015 dollars to determine whether the paralegal's real purchasing power increased or decreased.
+    \item Calculate the percentage change in real salary between 2015 and 2026.
+\end{enumerate}
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Deflate the 2026 Nominal Salary into 2015 Base Dollars:}
+    \[
+    \text{Salary}_{2026}^{\text{real (May 2015 \$)}} = \$68{,}000 \times \frac{237.001}{337.476} \approx \mathbf{\$47{,}754.71}
+    \]
+
+    \item \textbf{Compute the Percentage Change in Real Purchasing Power:}
+    \[
+        \%\Delta \text{Real Salary} = \frac{\$47{,}754.71 - \$52{,}000}{\$52{,}000} \times 100\% = \frac{-\$4{,}245.29}{\$52{,}000} \times 100\% \approx \mathbf{-8.16\%}
+    \]
+\end{enumerate}
+    \textbf{Conclusion:} The hypothetical nominal salary rose by 30.77\%, while CPIAUCSL rose by 42.39\%. After adjusting for prices, purchasing power fell by 8.16\%.
+
+% -----------------------------------------------------------------------------
+% Section 3.3: Market Clearing and Sticky Wages in a Labor Market
+% -----------------------------------------------------------------------------
+\section{Market Clearing and Sticky Wages in a Labor Market}
+
+\subsection*{Conceptual Introduction}
+In a labor market, firms demand labor and workers supply it. The wage coordinates their plans: at a wage where labor demanded equals labor supplied, the simple competitive model clears. In practice, nominal wages may adjust slowly because of contracts, pay-review schedules, or workplace policies.
+
+If labor demand falls while the nominal wage is temporarily fixed above the new market-clearing wage, firms want fewer workers than households want to supply. In this simplified model, employment is limited by the short side of the market, so the gap is excess labor supply. It is an illustration of one possible adjustment mechanism, not a complete account of unemployment.
+
+When wages are flexible in this model, the wage can move toward a new labor-market equilibrium. That result does not imply that all unemployment disappears in the real economy, nor does the labor-market diagram by itself determine potential GDP. Search frictions, skills, institutions, and the link from employment to output are outside this model; this section is not an aggregate-demand/aggregate-supply analysis.
+
+\subsection*{Visual Representation}
+Figure~\ref{fig:sticky_vs_flexible_macro} uses the labor-market quantities in the worked problem. Coordinates use $x=L/40$ and $y=W/10$ for legibility; labels give labor in millions and wage dollars per hour.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.05]
+    \draw[->, thick, color=SlateBlue] (0,0) -- (4.5,0) node[below] {Labor ($L$, millions of workers)};
+    \draw[->, thick, color=SlateBlue] (0,0) -- (0,5.5) node[left] {Nominal wage ($W$, dollars/hour)};
+    \node[below left] at (0,0) {$(0,0)$};
+
+    % With x=L/40 and y=W/10, the curves reproduce the worked schedules.
+    \draw[very thick, color=Terracotta] (0.5,0) -- (3.0,5.0) node[above right] {$L_s$};
+    \draw[thick, dashed, color=CourseBlue] (0,5.0) -- (4.0,1.0) node[right] {$L_{d,1}$};
+    \draw[very thick, color=CourseTeal] (0,3.5) -- (3.5,0) node[below right] {$L_{d,2}$};
+
+    % Initial equilibrium: L=80, W=$30; post-shock equilibrium: L=60, W=$20.
+    \draw[dashed, color=SlateBlue] (0,3.0) node[left] {$W_1^*=\$30$} -- (2.0,3.0);
+    \draw[dashed, color=SlateBlue] (2.0,0) node[below] {$L_1^*=80$} -- (2.0,3.0);
+    \filldraw[black] (2.0,3.0) circle (2.2pt) node[above right] {$E_1$};
+
+    \draw[dashed, color=SlateBlue] (0,2.0) node[left] {$W_2^*=\$20$} -- (1.5,2.0);
+    \draw[dashed, color=SlateBlue] (1.5,0) node[below] {$L_2^*=60$} -- (1.5,2.0);
+    \filldraw[CourseTeal] (1.5,2.0) circle (2.2pt) node[above right] {$E_2$};
+
+    % At the fixed wage of $30, demand is 20 and supply is 80 million workers.
+    \draw[dashed, color=SlateBlue] (0.5,0) node[below] {$L_d=20$} -- (0.5,3.0);
+    \draw[dashed, color=SlateBlue] (2.0,0) -- (2.0,3.0);
+    \draw[<->, dashed, thick, color=SlateBlue] (0.5,3.3) -- node[above, font=\scriptsize\bfseries, fill=white] {Excess labor supply} (2.0,3.3);
+\end{tikzpicture}
+\caption{A leftward labor-demand shift lowers the model's flexible-wage equilibrium from $(L,W)=(80,\$30)$ to $(60,\$20)$. If the wage stays at $\$30$, labor demanded is 20 million while labor supplied is 80 million; the gap is excess labor supply in this stylized model.}
+\label{fig:sticky_vs_flexible_macro}
+\end{figure}
+
+\subsection*{Real-World Application: Downward Nominal Wage Rigidity}
+Federal Reserve research documents downward nominal wage rigidity, but also finds that some continuing workers receive nominal wage cuts. Wage freezes, pay cuts, reduced hiring, and layoffs are possible adjustment margins; this example isolates only the fixed-wage case and should not be read as a universal description of recession behavior.
+
+\subsection*{Mathematical Foundation (Algebra Level)}
+At a fixed nominal wage $\bar{W}$, employment in the simplified labor-market model is limited by the short side:
+\begin{equation}
+L_{\text{employed}} = \min\left(L_d(\bar{W}), \; L_s(\bar{W})\right)
+\end{equation}
+If labor supplied exceeds labor demanded, the difference is excess labor supply in this model; it is not automatically an official unemployment statistic.
+
+\noindent\textbf{Worked Problem:}
+In a hypothetical labor market, labor demand is $L_d = 200 - 4W$ and labor supply is $L_s = 20 + 2W$, with quantities in millions of workers and $W$ in dollars per hour. A recession shifts labor demand left to $L_d^{\text{new}} = 140 - 4W$.
+\begin{enumerate}
+    \item Compute employment and excess labor supply if the nominal wage remains fixed at $\$30$.
+    \item Find the new flexible-wage equilibrium $(W_2^*, L_2^*)$ in this model.
+\end{enumerate}
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Evaluate the Fixed-Wage Outcome at $W=\$30$:}
+    \[
+    \begin{aligned}
+    L_d^{\text{new}}(30) &= 140 - 4(30) = 140 - 120 = 20\text{ million},\\
+    L_s(30) &= 20 + 2(30) = 20 + 60 = 80\text{ million}.
+    \end{aligned}
+    \]
+    Employment is the smaller quantity, $20$ million. Excess labor supply is $80-20=\mathbf{60\text{ million}}$ in this hypothetical model.
+
+    \item \textbf{Solve for the Flexible-Wage Equilibrium ($L_d^{\text{new}} = L_s$):}
+    \[
+    \begin{aligned}
+    140 - 4W_2^* &= 20 + 2W_2^*\\
+    120 &= 6W_2^*\\
+    W_2^* &= \$20.
+    \end{aligned}
+    \]
+    Substitute the wage into either schedule:
+    \[
+    L_2^* = 20 + 2(20) = \mathbf{60\text{ million}}.
+    \]
+\end{enumerate}
+\textbf{Conclusion:} Employment is 20 million at the fixed wage and 60 million at the flexible-wage equilibrium in this simplified model. The 60-million gap is excess labor supply, not a measured unemployment count.
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=\textbf{Optional Advanced Section: Exact vs. Approximate Fisher Equation}]
+\small
+\emph{Note for Economics Majors and Quantitative Students:} Using decimal rates, the Fisher relation is $1+i=(1+r)(1+\pi)$. Solving for the exact real rate gives:
+\[
+r = \frac{i - \pi}{1 + \pi}
+\]
+For an expected real return, use expected inflation; realized inflation gives an ex-post real return. When inflation is small, $r \approx i-\pi$ is a useful approximation.
+\end{tcolorbox}
+
+\section*{Bring It Home: Read the Price Signal}
+Return to the opening question. Comparing the medical-care index with the all-items index shows whether medical care became more or less expensive relative to the broad basket. A nominal wage or salary comparison answers a different question: how much the money amount changed. Deflating it by an appropriate price index estimates how its purchasing power changed.
+
+\section*{Practice Questions}
+\begin{enumerate}
+    \item A price index rises from 100 to 105 in one year and then to 109.2 the next year. Which statement is correct?
+    \begin{itemize}
+        \item[A.] Inflation is 5\% in the first year and 4\% in the second; this is disinflation. \textbf{Correct:} The second annual rate is lower but remains positive.
+        \item[B.] Inflation is 5\% in both years. \textbf{Incorrect:} The second rate is $(109.2-105)/105 \times 100\%=4\%$.
+        \item[C.] Prices fell by 4\% in the second year. \textbf{Incorrect:} The index rose from 105 to 109.2; inflation slowed but stayed positive.
+        \item[D.] The price level fell by 1\%. \textbf{Incorrect:} This confuses the change in the inflation rate with the change in the price index.
+    \end{itemize}
+
+    \item From May 2015 to October 2026, CPIAUCSL rose from 237.001 to 337.476 while CPIMEDSL rose from 446.743 to 595.675. What happened to medical care's price relative to the all-items basket?
+    \begin{itemize}
+        \item[A.] It rose by 9.05 percentage points. \textbf{Incorrect:} This subtracts the two growth rates but does not calculate the change in the component-to-all-items price ratio.
+        \item[B.] It fell by about 6.36\%. \textbf{Correct:} The ratio $(CPIMEDSL/CPIAUCSL)$ fell by this percentage between the observations.
+        \item[C.] It rose by 33.34\%. \textbf{Incorrect:} That is medical care's own index growth, not its relative-price change.
+        \item[D.] It did not change because both indexes increased. \textbf{Incorrect:} The indexes grew at different rates.
+    \end{itemize}
+
+    \item In the labor-market example, labor demand after a recession is $L_d=140-4W$, supply is $L_s=20+2W$, and the wage is fixed at $\$30$. What does the model imply?
+    \begin{itemize}
+        \item[A.] Employment is 80 million and excess labor supply is zero. \textbf{Incorrect:} It uses labor supplied as employment even though firms demand only 20 million workers.
+        \item[B.] Employment is 20 million and excess labor supply is 60 million. \textbf{Correct:} Demand is 20 million and supply is 80 million; employment is the short side.
+        \item[C.] Employment is 60 million and excess labor supply is 20 million. \textbf{Incorrect:} These values do not equal the model's quantities at $W=\$30$.
+        \item[D.] The model proves that measured unemployment is 60 million. \textbf{Incorrect:} It gives a hypothetical excess-supply gap, not an official unemployment statistic.
+    \end{itemize}
+\end{enumerate}
+
+\section*{Sources}
+\begin{itemize}
+    \item Federal Reserve Bank of St. Louis, FRED. CPIAUCSL: Consumer Price Index for All Urban Consumers: All Items. \url{https://fred.stlouisfed.org/series/CPIAUCSL}
+    \item Federal Reserve Bank of St. Louis, FRED. CPIMEDSL: Consumer Price Index for All Urban Consumers: Medical Care. \url{https://fred.stlouisfed.org/series/CPIMEDSL}
+    \item U.S. Department of Labor. “Minimum Wage.” \href{https://www.dol.gov/agencies/whd/minimum-wage}{DOL minimum-wage guidance}.
+    \item Fallick, Bruce C., Daniel Villar Vallenas, and William L. Wascher. “Downward Nominal Wage Rigidity in the United States During and After the Great Recession.” Finance and Economics Discussion Series 2016-001r1, Board of Governors of the Federal Reserve System. \href{https://www.federalreserve.gov/econres/feds/files/2016001r1pap.pdf}{FEDS 2016-001r1 paper}.
+\end{itemize}
 
 \end{document}

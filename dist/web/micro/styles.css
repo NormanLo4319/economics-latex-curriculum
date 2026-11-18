@@ -42,6 +42,10 @@ body {
   line-height: 1.6;
 }
 
+#quarto-content main.content a {
+  overflow-wrap: anywhere;
+}
+
 #quarto-sidebar,
 #quarto-sidebar .sidebar-item-text,
 #TOC {
@@ -87,8 +91,10 @@ body {
 }
 
 #quarto-content main.content .math.display {
+  display: block;
   max-width: 100%;
   overflow-x: auto;
+  overflow-y: hidden;
   font-size: 0.94em;
 }
 

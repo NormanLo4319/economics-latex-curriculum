@@ -111,6 +111,7 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
@@ -359,7 +360,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch05_unemployment_inflation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Employment, Unemployment Metrics, and the Price Level</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Unemployment and Inflation</span></span></a>
   </div>
 </li>
       </ul>
@@ -432,8 +433,18 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#consumer-vs.-capital-goods-trade-off" id="toc-consumer-vs.-capital-goods-trade-off" class="nav-link active" data-scroll-target="#consumer-vs.-capital-goods-trade-off"><span class="header-section-number">2.1</span> Consumer vs.&nbsp;Capital Goods Trade-Off</a></li>
-  <li><a href="#output-gaps-vs.-secular-growth" id="toc-output-gaps-vs.-secular-growth" class="nav-link" data-scroll-target="#output-gaps-vs.-secular-growth"><span class="header-section-number">2.2</span> Output Gaps vs.&nbsp;Secular Growth</a></li>
+  <li><a href="#consumer-vs.-capital-goods-and-long-run-secular-growth" id="toc-consumer-vs.-capital-goods-and-long-run-secular-growth" class="nav-link active" data-scroll-target="#consumer-vs.-capital-goods-and-long-run-secular-growth"><span class="header-section-number">2.1</span> Consumer vs.&nbsp;Capital Goods and Long-Run Secular Growth</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction" id="toc-conceptual-introduction" class="nav-link" data-scroll-target="#conceptual-introduction">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation" id="toc-visual-representation" class="nav-link" data-scroll-target="#visual-representation">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation" id="toc-mathematical-foundation" class="nav-link" data-scroll-target="#mathematical-foundation">Mathematical Foundation</a></li>
+  </ul></li>
+  <li><a href="#output-gaps-vs.-secular-growth-on-the-macro-ppf" id="toc-output-gaps-vs.-secular-growth-on-the-macro-ppf" class="nav-link" data-scroll-target="#output-gaps-vs.-secular-growth-on-the-macro-ppf"><span class="header-section-number">2.2</span> Output Gaps vs.&nbsp;Secular Growth on the Macro PPF</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-1" id="toc-conceptual-introduction-1" class="nav-link" data-scroll-target="#conceptual-introduction-1">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-1" id="toc-visual-representation-1" class="nav-link" data-scroll-target="#visual-representation-1">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-1" id="toc-mathematical-foundation-1" class="nav-link" data-scroll-target="#mathematical-foundation-1">Mathematical Foundation</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -460,18 +471,157 @@ window.Quarto = {
 </header>
 
 
-<section id="consumer-vs.-capital-goods-trade-off" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="consumer-vs.-capital-goods-trade-off"><span class="header-section-number">2.1</span> Consumer vs.&nbsp;Capital Goods Trade-Off</h2>
-<p>A nation’s operating position along its macro PPF dictates long-run secular growth: <span class="math display">\[\begin{equation}
-\text{Investment } (I) \implies \Delta K &gt; 0 \implies \text{Outward Shift of Potential GDP } (Y^*)
-\end{equation}\]</span></p>
+<blockquote class="blockquote">
+<p>This chapter provides a rigorous, pedagogical treatment of Chapter 2: The Macroeconomic Production Possibilities Frontier &amp; Capital Deepening, benchmarked to standard principles curriculum.</p>
+</blockquote>
+<section id="consumer-vs.-capital-goods-and-long-run-secular-growth" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="consumer-vs.-capital-goods-and-long-run-secular-growth"><span class="header-section-number">2.1</span> Consumer vs.&nbsp;Capital Goods and Long-Run Secular Growth</h2>
+<section id="conceptual-introduction" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction">Conceptual Introduction</h3>
+<p>Every nation faces an intertemporal macroeconomic trade-off between <strong>living well today</strong> and <strong>producing more tomorrow</strong>. To visualize this choice, macroeconomists place <strong>Consumer Goods (<span class="math inline">\(C\)</span>)</strong>—such as food, clothing, streaming entertainment, and restaurant meals that provide immediate satisfaction—on one axis of the Macroeconomic Production Possibilities Frontier, and <strong>Capital Goods (<span class="math inline">\(K\)</span>)</strong>—such as factories, power grids, cargo ships, semiconductor equipment, and research laboratories—on the other axis.</p>
+<p>Because capital goods are durable inputs used to produce future goods and services, a nation’s operating point along its current PPF affects its capacity for <strong>long-run secular growth</strong>:</p>
+<ul>
+<li><strong>High-Consumption Strategy:</strong> Devoting nearly all resources to immediate consumer goods raises current living standards today, but leaves little net investment to replace worn-out machinery (<strong>depreciation</strong>)—causing the future PPF to stagnate or grow slowly.</li>
+<li><strong>High-Investment Strategy (</strong>Capital Deepening<strong>):</strong> Sacrificing some current consumption to build physical capital and infrastructure increases the economy’s capital-to-labor ratio (<span class="math inline">\(\Delta K &gt; 0\)</span>), shifting Potential GDP (<span class="math inline">\(Y^*\)</span>) and the entire PPF outward in future years.</li>
+</ul>
+<p><strong>Real-World Connection.</strong> A data-center or power-grid project uses construction labor, equipment, and materials that could have gone to other production today. Whether the investment raises future productive capacity depends on the services the completed capital provides and whether gross investment exceeds depreciation.</p>
 </section>
-<section id="output-gaps-vs.-secular-growth" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="output-gaps-vs.-secular-growth"><span class="header-section-number">2.2</span> Output Gaps vs.&nbsp;Secular Growth</h2>
-<p>Operating inside the frontier represents a recessionary gap (<span class="math inline">\(Y &lt; Y^*\)</span>) with idle labor. Recovery restores capacity; outward frontier expansion requires structural capital deepening or total factor productivity gains.</p>
+<section id="visual-representation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation">Visual Representation</h3>
+<p>Figure 1 contrasts two nations starting on identical frontiers in 2026: Country A prioritizes current consumption (<span class="math inline">\(C_A\)</span>), while Country B invests heavily in capital goods (<span class="math inline">\(K_B\)</span>), achieving a substantially larger frontier by 2036.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_2_the_macroeconomic_production_possibilities_frontier_capital_deepening_figure_01.svg" class="img-fluid figure-img" alt="Capital Deepening and Future PPF Expansion. Choosing point B (higher capital investment today) sacrifices current consumption relative to point A, but accelerates capital accumulation and shifts the future frontier much further outward."></p>
+<figcaption>Figure 1. Capital Deepening and Future PPF Expansion. Choosing point <span class="math inline">\(B\)</span> (higher capital investment today) sacrifices current consumption relative to point <span class="math inline">\(A\)</span>, but accelerates capital accumulation and shifts the future frontier much further outward.</figcaption>
+</figure>
+</div>
+</section>
+<section id="mathematical-foundation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation">Mathematical Foundation</h3>
+<p>Next year’s physical capital stock (<span class="math inline">\(K_{t+1}\)</span>) equals this year’s capital stock (<span class="math inline">\(K_t\)</span>) plus gross investment (<span class="math inline">\(I_t\)</span>) minus capital depreciation (<span class="math inline">\(\delta K_t\)</span>, where <span class="math inline">\(\delta\)</span> is the annual depreciation rate):</p>
+<p><span class="math display">\[
+K_{t+1} = K_t + I_t - \delta K_t, \qquad \text{Net Investment} = I_t - \delta K_t
+\]</span></p>
+<p><strong>Worked Problem:</strong> An economy begins Year 1 with a physical capital stock of <span class="math inline">\(K_1 = \$10{,}000\text{ billion}\)</span>. Each year, <span class="math inline">\(6\%\)</span> of existing capital wears out (<span class="math inline">\(\delta = 0.06\)</span>).</p>
+<ul>
+<li>Compute annual capital depreciation in Year 1.</li>
+<li>Calculate Year 2 capital stock (<span class="math inline">\(K_2\)</span>) and net capital deepening (<span class="math inline">\(\Delta K\)</span>) if gross investment is <span class="math inline">\(I_1 = \$950\text{ billion}\)</span>.</li>
+<li>Determine the minimum gross investment required just to keep the capital stock from shrinking.</li>
+</ul>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Compute Annual Depreciation (<span class="math inline">\(\delta K_1\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+\text{Depreciation} = 0.06 \times \$10{,}000\text{ billion} = \mathbf{\$600\text{ billion}}
+\]</span></p>
+<ul>
+<li><strong>Compute Net Investment (<span class="math inline">\(\Delta K\)</span>) and Year 2 Capital Stock (<span class="math inline">\(K_2\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+\Delta K = I_1 - \delta K_1 = \$950\text{ billion} - \$600\text{ billion} = \mathbf{+\$350\text{ billion}}
+\]</span></p>
+<p><span class="math display">\[
+K_2 = \$10{,}000\text{ billion} + \$350\text{ billion} = \mathbf{\$10{,}350\text{ billion}}
+\]</span></p>
+<ul>
+<li><strong>Identify Break-Even Maintenance Investment:</strong> To keep <span class="math inline">\(\Delta K = 0\)</span>, gross investment must at least replace worn-out capital: <span class="math inline">\(I_{\min} = \delta K_1 = \mathbf{\$600\text{ billion}}\)</span>.</li>
+</ul>
+<p><strong>Conclusion:</strong> Investing <span class="math inline">\(\$950\text{ billion}\)</span> covers <span class="math inline">\(\$600\text{ billion}\)</span> in depreciation and adds <span class="math inline">\(+\$350\text{ billion}\)</span> in net capital deepening, shifting the economy’s future PPF outward.</p>
+</section>
+</section>
+<section id="output-gaps-vs.-secular-growth-on-the-macro-ppf" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="output-gaps-vs.-secular-growth-on-the-macro-ppf"><span class="header-section-number">2.2</span> Output Gaps vs.&nbsp;Secular Growth on the Macro PPF</h2>
+<section id="conceptual-introduction-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-1">Conceptual Introduction</h3>
+<p>A common source of confusion in public policy debates is mixing up <strong>short-run cyclical recovery</strong> with <strong>long-run structural growth</strong>. On the Macroeconomic PPF, these two processes look completely different:</p>
+<ul>
+<li><strong>Recessionary Gap and Cyclical Recovery (Movement Inside to On the Frontier):</strong> During a recession, laid-off workers and idle factories push the economy to an interior point inside its existing PPF (<span class="math inline">\(Y &lt; Y^*\)</span>). Economic recovery—aided by countercyclical monetary or fiscal stimulus—puts idle resources back to work and moves the economy <em>back out to its existing frontier</em>, without changing Potential GDP (<span class="math inline">\(Y^*\)</span>).</li>
+<li><strong>Overheating / Inflationary Gap (Unsustainable Temporary Push):</strong> Actual GDP can temporarily exceed an estimate of potential GDP (<span class="math inline">\(Y &gt; Y^*\)</span>) when labor and equipment are used unusually intensively, putting upward pressure on inflation. This does not represent a sustainable point beyond the PPF; potential GDP is an estimate of normal sustainable output, not a directly observed frontier.</li>
+<li><strong>Secular Growth (Outward Shift of the Frontier Itself):</strong> Expanding long-run Potential GDP (<span class="math inline">\(Y^*\)</span>) requires expanding the PPF boundary itself through capital accumulation, labor-force growth, human capital, and technological progress.</li>
+</ul>
+<p><strong>Real-World Connection.</strong> Growth accounting, associated with Robert Solow, separates output growth explained by measured changes in capital and labor from a residual associated with productivity. The residual is not a direct measure of one particular technology; it also reflects influences not captured by measured inputs.</p>
+</section>
+<section id="visual-representation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-1">Visual Representation</h3>
+<p>Figure 2 distinguishes a cyclical recovery from an interior recession point (<span class="math inline">\(R \to E_1\)</span> along an unchanged frontier) from true secular economic growth (<span class="math inline">\(E_1 \to E_2\)</span> onto an expanded frontier).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Demand Stimulus Restores Capacity; Supply Drivers Expand It
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Lowering interest rates or cutting taxes during a recession helps close a negative output gap by moving the economy from an idle interior point (<span class="math inline">\(R\)</span>) back to its current PPF (<span class="math inline">\(E_1\)</span>). However, once the economy reaches full employment on the frontier, demand stimulus alone cannot push the PPF outward—long-run living standards depend on productivity, education, and investment!</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_2_the_macroeconomic_production_possibilities_frontier_capital_deepening_figure_02.svg" class="img-fluid figure-img" alt="Cyclical Recovery vs. Secular Growth. Moving from R to E_1 eliminates recessionary unemployment by restoring full utilization of existing capacity. Moving from E_1 to E_2 represents long-run secular growth via outward expansion of the PPF."></p>
+<figcaption>Figure 2. Cyclical Recovery vs.&nbsp;Secular Growth. Moving from <span class="math inline">\(R\)</span> to <span class="math inline">\(E_1\)</span> eliminates recessionary unemployment by restoring full utilization of existing capacity. Moving from <span class="math inline">\(E_1\)</span> to <span class="math inline">\(E_2\)</span> represents long-run secular growth via outward expansion of the PPF.</figcaption>
+</figure>
+</div>
+</section>
+<section id="mathematical-foundation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-1">Mathematical Foundation</h3>
+<p>Aggregate production links Potential Output (<span class="math inline">\(Y^*\)</span>) to Total Factor Productivity (<span class="math inline">\(A\)</span>), physical capital (<span class="math inline">\(K\)</span>), and full-employment labor (<span class="math inline">\(L^*\)</span>):</p>
+<p><span class="math display">\[
+Y^* = A \cdot f(K, L^*)
+\]</span></p>
+<p>Using the <strong>Rule of 70</strong>, the approximate number of years required for Real GDP per capita to double at an annual growth rate of <span class="math inline">\(g\%\)</span> is:</p>
+<p><span class="math display">\[
+\text{Doubling Time (Years)} \approx \frac{70}{g}
+\]</span></p>
+<p>In this approximation, enter <span class="math inline">\(g\)</span> as a percentage value (for example, <span class="math inline">\(2.0\)</span>, not <span class="math inline">\(0.02\)</span>). For an exact annual-compounding calculation, use <span class="math inline">\(Y_n=Y_0(1+r)^n\)</span>, where <span class="math inline">\(r\)</span> is the annual growth rate written as a decimal.</p>
+<p><strong>Worked Problem:</strong> Assume each country’s annual growth rate remains constant and income compounds once per year. Country X grows at <span class="math inline">\(r_X=0.02\)</span>, whereas Country Y grows at <span class="math inline">\(r_Y=0.035\)</span>. Both start with Real GDP per capita of <span class="math inline">\(\$20{,}000\)</span> in 2026.</p>
+<ul>
+<li>Use the Rule of 70 to compute how many years it takes each country to double its living standard to <span class="math inline">\(\$40{,}000\)</span>.</li>
+<li>Use annual compounding to compute each country’s Real GDP per capita after <span class="math inline">\(70\)</span> years (in 2096).</li>
+</ul>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Apply the Rule of 70:</strong></li>
+</ul>
+<p><span class="math display">\[
+\text{Country X Doubling Time} = \frac{70}{2.0} = \mathbf{35\text{ years}}
+\]</span></p>
+<p><span class="math display">\[
+\text{Country Y Doubling Time} = \frac{70}{3.5} = \mathbf{20\text{ years}}
+\]</span></p>
+<ul>
+<li><strong>Compute Real GDP per Capita After <span class="math inline">\(70\)</span> Years:</strong></li>
+</ul>
+<p><span class="math display">\[
+Y_{70,X} = \$20{,}000(1+0.02)^{70} \approx \mathbf{\$79{,}991}
+\]</span></p>
+<p><span class="math display">\[
+Y_{70,Y} = \$20{,}000(1+0.035)^{70} \approx \mathbf{\$222{,}257}
+\]</span></p>
+<p><strong>Conclusion:</strong> Under these assumptions, Country Y’s income per person after 70 years is about <span class="math inline">\(2.8\)</span> times Country X’s. The Rule of 70 gives useful approximate doubling times; the compound-growth formula supplies the 70-year values.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Solow Growth Accounting Equation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> Assuming a Cobb-Douglas aggregate production function <span class="math inline">\(Y = A K^\alpha L^{1-\alpha}\)</span> with capital share <span class="math inline">\(\alpha \in (0, 1)\)</span>, taking natural logarithms and differentiating with respect to time decomposes output growth into three measurable sources:</p>
+<p><span class="math display">\[
+\frac{\Delta Y}{Y} \approx \frac{\Delta A}{A} + \alpha \frac{\Delta K}{K} + (1 - \alpha)\frac{\Delta L}{L}
+\]</span></p>
+<p>Here <span class="math inline">\(\frac{\Delta A}{A}\)</span> is Total Factor Productivity (TFP) growth—the portion of output growth not explained by measured increases in capital or labor hours.</p>
+</div>
+</div>
 
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

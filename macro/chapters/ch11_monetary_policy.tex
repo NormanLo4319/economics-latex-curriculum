@@ -1,6 +1,7 @@
 \documentclass[11pt,letterpaper]{article}
 \input{../../shared/preamble.tex}
 \input{../../shared/tikz-settings.tex}
+\usepackage{tcolorbox}
 
 \begin{document}
 
@@ -20,43 +21,162 @@ This chapter provides a rigorous, pedagogical treatment of Chapter 11: Monetary 
 \hrule
 \vspace{1.5em}
 
-\section{Learning Outcomes and Key Terms}
-Students should explain how the Federal Reserve implements monetary policy, trace a policy-rate change through interest-sensitive spending to output and inflation, and identify uncertainty and lags in that process. These objectives support MA-6 and C2002-3. Key terms include federal funds rate, target range, IORB, overnight reverse repurchase facility, transmission mechanism, expectations, policy lag, and effective lower bound.
+% -----------------------------------------------------------------------------
+% Section 11.1: The Ample-Reserves Operating Regime (IORB, ON RRP, Discount Window)
+% -----------------------------------------------------------------------------
+\section{The Ample-Reserves Operating Regime}
 
-\section{From the Policy Decision to Market Rates}
-The Federal Open Market Committee sets a target range for the federal funds rate. In the current ample-reserves framework, administered rates, especially interest on reserve balances (IORB), help keep overnight rates within the target range. The overnight reverse repurchase facility provides an additional option for eligible counterparties. The discount window offers collateralized lending to eligible institutions. These tools operate through institutions and markets; the Fed does not simply dictate every loan or mortgage rate.
+\subsection*{1. Conceptual Introduction}
+How does the Federal Reserve control short-term interest rates in the modern U.S. banking system? Before 2008, bank reserves were scarce, so the Fed adjusted the \textbf{federal funds rate} (the overnight interest rate banks charge one another for reserve loans) by buying and selling small amounts of Treasury securities each day to shift a downward-sloping reserve demand curve. Today, however, the banking system holds trillions of dollars in abundant reserves—operating in an \textbf{ample-reserves regime}.
 
-\section{The Transmission Mechanism}
-If the policy stance tightens, short-term market rates generally rise. Longer-term borrowing costs may rise as expectations adjust; households can delay purchases of durable goods, and firms may postpone investment. Weaker interest-sensitive spending can reduce aggregate demand, output, and inflation pressure over time. An easing can work in the opposite direction. Exchange rates, credit conditions, expectations, and global events can amplify or offset these channels, and monetary policy affects demand with uncertain lags.
-
-\section{Graph Description: Policy and Aggregate Demand}
-In the money-market diagram, the vertical axis is the short-term nominal interest rate and the horizontal axis is reserve balances or overnight funding. Under abundant reserves, changes in administered rates shift the range in which overnight rates trade; the classic scarcity-of-reserves intersection is not the whole operating story. In AD--AS, a policy easing that lowers borrowing costs may shift AD right over time, while a tightening may shift it left. The rate decision is not a direct movement along AD caused by the price level.
-
-\section{A Policy Rule as a Benchmark}
-A Taylor-type rule summarizes how a central bank might respond to deviations of inflation and output from desired levels:
-\begin{equation}
-i_t=r^*+\pi_t+\alpha(\pi_t-\pi^*)+\beta\left(\frac{Y_t-Y_t^*}{Y_t^*}\right),
-\end{equation}
-where $i_t$ is a nominal policy rate, $r^*$ is an equilibrium real-rate benchmark, $\pi_t$ is inflation, $\pi^*$ is the inflation objective, and $Y_t-Y_t^*$ is the output gap. Coefficients $\alpha$ and $\beta$ describe responsiveness. This is a guide for analysis, not a law that the FOMC must follow; estimates of potential output and the equilibrium real rate are uncertain.
-
-\begin{examplecase}{FRED Data: Effective Federal Funds Rate}
-FRED's FEDFUNDS series is the monthly average of daily effective federal funds rates, in percent and not seasonally adjusted. It is an observed market rate influenced by policy implementation, not the FOMC target range itself. Compare it with policy announcements and other indicators before attributing a change to a particular decision.
-\end{examplecase}
-
-\section{The Effective Lower Bound and Policy Limits}
-When nominal short-term rates approach their effective lower bound, conventional rate cuts may have less room to stimulate demand. The Federal Reserve can use forward guidance and asset purchases, subject to legal authority, market functioning, and expected benefits. These tools still work through expectations and financial conditions; they do not guarantee a precise output or inflation result.
-
-\begin{coreprinciple}
-\boxheader{SlateBlue}{Clear It Up: The Fed Controls a Policy Instrument, Not GDP}
-The central bank can influence financial conditions, but output and inflation also respond to fiscal policy, supply shocks, global markets, and private expectations. A policy-rate change is not a one-for-one change in real GDP.
-\end{coreprinciple}
-
-\section{Check Your Understanding}
+When reserves are abundant, small open-market operations no longer move overnight interest rates. Instead, the FOMC steers the federal funds rate directly into its target range using three \textbf{administered rates}:
 \begin{enumerate}
-  \item Why is FEDFUNDS not exactly the same thing as the FOMC target range?
-  \item Trace one channel through which a higher policy rate may lower aggregate demand.
-  \item Why should a Taylor-type rule be treated as a benchmark rather than a mechanical instruction?
+    \item \textbf{Interest on Reserve Balances (IORB):} The primary policy tool. Because commercial banks can earn the risk-free IORB rate simply by leaving funds on deposit at the Fed, no bank will lend reserves overnight to another bank at a rate significantly below IORB—making IORB the primary \textbf{reservation floor} for overnight rates.
+    \item \textbf{Overnight Reverse Repurchase Agreement (ON RRP) Facility Rate:} Because non-bank financial institutions (such as money market mutual funds and government-sponsored enterprises) cannot earn IORB, the Fed offers them the ON RRP facility as a secondary \textbf{sub-floor} that prevents money-market rates from slipping below the FOMC's target range.
+    \item \textbf{Discount Window Primary Credit Rate:} The interest rate at which the Fed lends reserves directly to sound commercial banks against collateral, acting as a \textbf{ceiling} above the target range.
 \end{enumerate}
-Answers: (1) FEDFUNDS is an observed monthly average effective market rate; the Committee sets a target range. (2) Higher rates can raise borrowing costs, reducing planned consumption or investment. (3) Key variables and parameters are uncertain, and policy must account for multiple shocks and risks.
+
+\subsection*{2. Visual Representation}
+Figure~\ref{fig:ample_reserves_market} depicts the modern Reserve Market under ample reserves, showing the downward-sloping scarce-reserve segment flattening out along the IORB floor where abundant reserve supply ($S_R$) intersects reserve demand ($D_R$).
+
+\begin{tcolorbox}[colback=yellow!10!white,colframe=orange!80!black,title=\textbf{Clear It Up: Why Open-Market Operations Do Not Move Rates Under Ample Reserves}]
+In the flat, abundant-reserves region on the right of Figure~\ref{fig:ample_reserves_market}, shifting the vertical reserve supply line slightly left or right leaves the equilibrium federal funds rate anchored right near IORB. To tighten monetary policy, the FOMC simply raises its administered rates (IORB and ON RRP), shifting the entire floor upward!
+\end{tcolorbox}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.05]
+    % Axes
+    \draw[->, thick] (0,0) -- (6.5,0) node[below] {Quantity of Reserves ($R$, \$ Trillions)};
+    \draw[->, thick] (0,0) -- (0,5.2) node[left] {Federal Funds Rate ($i_{\text{ff}}$, $\%$)};
+    \node[below left] at (0,0) {$0$};
+
+    % Ceiling: Discount Rate at y = 4.3
+    \draw[thick, dashed, color=red!80!black] (0,4.3) node[left, black, font=\footnotesize] {Discount Rate} -- (6.0,4.3);
+
+    % Reserve Demand Curve D_R: starts at Discount Rate ceiling (0..1.2), slopes down in scarce region (1.2..2.5), flattens at IORB (y=2.4)
+    \draw[very thick, color=blue!80!black] (0,4.3) -- (1.2,4.3) -- (2.5,2.4) -- (6.0,2.4) node[right, font=\footnotesize\bfseries] {$D_R$ (IORB Floor)};
+
+    % Sub-floor ON RRP at y = 2.0
+    \draw[thick, dotted, color=ForestGreen] (0,2.0) node[left, black, font=\footnotesize] {ON RRP} -- (6.0,2.0);
+    \node[left, font=\footnotesize] at (0,2.4) {IORB};
+
+    % Ample Reserve Supply vertical line at x = 4.5
+    \draw[very thick, color=Terracotta] (4.5,0) node[below, font=\footnotesize] {$R_{\text{ample}}$} -- (4.5,4.9) node[above, font=\footnotesize\bfseries] {$S_R$};
+
+    % Equilibrium in flat ample region
+    \filldraw[black] (4.5,2.4) circle (2.3pt) node[above right, font=\footnotesize\bfseries] {$i_{\text{ff}}^*$};
+\end{tikzpicture}
+\caption{The Modern Ample-Reserves Market. With abundant reserve supply ($S_R$) intersecting the flat portion of reserve demand ($D_R$), the FOMC controls the effective federal funds rate ($i_{\text{ff}}^*$) by adjusting its administered IORB floor and ON RRP sub-floor.}
+\label{fig:ample_reserves_market}
+\end{figure}
+
+\subsection*{3. Real-World Application: FRED Effective Federal Funds Rate (`FEDFUNDS`) and `IORB`}
+Macroeconomists verify FOMC policy implementation on St. Louis Fed FRED by comparing `FEDFUNDS` (Effective Federal Funds Rate) against `IORB` and `RRPONTSYAWARD` (ON RRP award rate), observing how `FEDFUNDS` tracks inside the FOMC's target corridor whenever the committee raises or lowers administered rates.
+
+\subsection*{4. Mathematical Foundation (Algebra Level)}
+Under the ample-reserves corridor system, the effective federal funds rate is bounded between the administered sub-floor and ceiling:
+\begin{equation}
+i_{\text{ON RRP}} \le i_{\text{ff}}^* \approx i_{\text{IORB}} \le i_{\text{Discount}}
+\end{equation}
+
+\noindent\textbf{Worked Problem:}
+Suppose the FOMC sets a target range for the federal funds rate of $4.25\%$ to $4.50\%$, setting the ON RRP facility rate at $4.25\%$, the IORB rate at $4.40\%$, and the Discount Window primary credit rate at $5.00\%$.
+\begin{enumerate}
+    \item Explain why a commercial bank will refuse to lend overnight reserves at $4.10\%$.
+    \item Suppose inflation cools and the FOMC votes to cut its target range by $50\text{ basis points}$ ($0.50\%$). State the new target range, new ON RRP rate, and new IORB rate.
+\end{enumerate}
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Apply Arbitrage Floor Logic:}
+    Because any commercial bank can earn $4.40\%$ risk-free on deposits at the Federal Reserve (IORB), lending reserves to another bank at $4.10\%$ would lose $0.30\%$ in interest income—enforcing an immediate floor near $4.40\%$.
+
+    \item \textbf{Shift Administered Rates Downward by $0.50\%$ ($50\text{ bps}$):}
+    \[
+    \text{New Target Range} = 4.25\% - 0.50\% \text{ to } 4.50\% - 0.50\% = \mathbf{3.75\% \text{ to } 4.00\%}
+    \]
+    \[
+    \text{New ON RRP Rate} = \mathbf{3.75\%}, \qquad \text{New IORB Rate} = \mathbf{3.90\%}
+    \]
+\end{enumerate}
+\textbf{Conclusion:} Lowering administered rates shifts the entire reserve demand floor downward by $50\text{ basis points}$ without requiring reserve scarcity.
+
+% -----------------------------------------------------------------------------
+% Section 11.2: Monetary Transmission Mechanism and the Taylor Rule
+% -----------------------------------------------------------------------------
+\section{Monetary Transmission Mechanism and the Taylor Rule}
+
+\subsection*{1. Conceptual Introduction}
+How does an FOMC change in overnight administered rates ripple through the broader economy to affect employment and inflation? Economists trace this causal chain through the \textbf{monetary transmission mechanism}:
+\begin{enumerate}
+    \item \textbf{Short- and Long-Term Market Rates:} Raising the federal funds target range pushes up Treasury yields, corporate bond rates, auto loan rates, and 30-year mortgage rates as financial markets price in expected policy paths.
+    \item \textbf{Interest-Sensitive Spending ($I$ and $C$):} Higher borrowing costs cause businesses to delay capital equipment projects and households to postpone home and durable-goods purchases.
+    \item \textbf{Exchange Rate Channel ($NX$):} Higher U.S. interest rates attract foreign capital inflows, appreciating the U.S. dollar, making imports cheaper and exports more expensive ($NX \downarrow$).
+    \item \textbf{Aggregate Demand ($AD$):} Lower $C$, $I$, and $NX$ shift the $AD$ curve leftward, cooling output and inflation pressure over time with variable lags (typically 6 to 18 months).
+\end{enumerate}
+
+To benchmark how systematically a central bank responds to inflation and output gaps, economist John Taylor proposed the \textbf{Taylor Rule}:
+\begin{equation}
+i_t = r^* + \pi_t + 0.5(\pi_t - \pi^*) + 0.5\left(\frac{Y_t - Y_t^*}{Y_t^*} \times 100\right)
+\end{equation}
+where $r^*$ is the neutral real interest rate (often benchmarked around $2\%$), $\pi_t$ is current inflation, and $\pi^*$ is the $2\%$ inflation target. Note that if inflation rises by $1\%$, the nominal policy rate rises by $1.5\%$—raising the \emph{real} interest rate by $0.5\%$ (the \textbf{Taylor Principle}).
+
+\subsection*{2. Visual Representation}
+Figure~\ref{fig:monetary_transmission_adas} illustrates contractionary monetary policy shifting aggregate demand leftward from $AD_1$ to $AD_2$ to eliminate an inflationary gap ($Y_1 > Y^*$).
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.05]
+    % Axes
+    \draw[->, thick] (0,0) -- (6.2,0) node[below] {Real Output ($Y$)};
+    \draw[->, thick] (0,0) -- (0,5.2) node[left] {Price Level ($P$)};
+    \node[below left] at (0,0) {$0$};
+
+    \draw[very thick, color=purple] (2.8,0.5) -- (2.8,4.8) node[above, font=\footnotesize] {$LRAS$ ($Y^*$)};
+    \draw[very thick, color=Terracotta] (0.5,0.9) -- (5.0,4.3) node[right] {$SRAS$};
+
+    % AD1 overheating at Y1 = 3.8
+    \draw[thick, color=blue!60!gray] (1.3,4.8) -- (5.6,1.2) node[right] {$AD_1$ (Overheating)};
+    % AD2 cooled back to Y* = 2.8
+    \draw[very thick, color=blue!80!black] (0.5,4.5) -- (4.8,0.9) node[right] {$AD_2$ (Tightening)};
+
+    \filldraw[red!80!black] (3.73,3.34) circle (2pt) node[above right, font=\footnotesize] {$E_1$};
+    \filldraw[ForestGreen] (2.8,2.64) circle (2.2pt) node[above left, font=\footnotesize] {$E_2$ ($Y^*$)};
+
+    \draw[->, thick, color=Terracotta] (3.6,3.2) -- node[above left, font=\scriptsize] {Rate Hike ($AD \downarrow$)} (2.95,2.75);
+\end{tikzpicture}
+\caption{Contractionary Monetary Policy in AD-AS. Raising administered interest rates dampens interest-sensitive investment and consumption, shifting $AD_1 \to AD_2$ to cool an inflationary gap back to potential output $Y^*$.}
+\label{fig:monetary_transmission_adas}
+\end{figure}
+
+\subsection*{3. Real-World Application: The Effective Lower Bound and Quantitative Easing}
+During severe downturns (such as 2008 and 2020), the FOMC cut its target range all the way to $0.00\%\text{--}0.25\%$—hitting the \textbf{Effective Lower Bound (ELB)}. When conventional overnight rate cuts run out of room, the Federal Reserve deploys unconventional tools: \textbf{forward guidance} (communicating future rate commitments to lower long-term expectations) and \textbf{large-scale asset purchases (Quantitative Easing, QE)} to push down long-term Treasury and mortgage yields directly.
+
+\subsection*{4. Mathematical Foundation (Algebra Level)}
+Applying the standard Taylor Rule benchmark:
+\begin{equation}
+i_t = r^* + \pi_t + 0.5(\pi_t - \pi^*) + 0.5(\text{Output Gap } \%)
+\end{equation}
+
+\noindent\textbf{Worked Problem:}
+Suppose the neutral real interest rate is $r^* = 2.0\%$, the FOMC's inflation target is $\pi^* = 2.0\%$, actual inflation is running hot at $\pi_t = 4.0\%$, and Real GDP is $1.0\%$ above potential ($\text{Output Gap} = +1.0\%$). Compute the benchmark nominal federal funds rate prescribed by the Taylor Rule.
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Compute the Inflation Gap and Output Gap Terms:}
+    \[
+    0.5(\pi_t - \pi^*) = 0.5(4.0\% - 2.0\%) = 0.5(2.0\%) = +1.0\%
+    \]
+    \[
+    0.5(\text{Output Gap } \%) = 0.5(+1.0\%) = +0.5\%
+    \]
+
+    \item \textbf{Sum All Four Components of the Taylor Rule:}
+    \[
+    i_t = 2.0\% + 4.0\% + 1.0\% + 0.5\% = \mathbf{7.50\%}
+    \]
+\end{enumerate}
+\textbf{Conclusion:} Because inflation is $2$ percentage points above target and output exceeds potential, the Taylor Rule prescribes a restrictive nominal policy rate of $7.50\%$ (a real rate of $7.50\% - 4.0\% = 3.50\%$).
 
 \end{document}

@@ -445,8 +445,27 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#derived-labor-demand" id="toc-derived-labor-demand" class="nav-link active" data-scroll-target="#derived-labor-demand"><span class="header-section-number">12.1</span> Derived Labor Demand</a></li>
-  <li><a href="#monopsony-power" id="toc-monopsony-power" class="nav-link" data-scroll-target="#monopsony-power"><span class="header-section-number">12.2</span> Monopsony Power</a></li>
+  <li><a href="#derived-demand-and-marginal-revenue-product-of-labor" id="toc-derived-demand-and-marginal-revenue-product-of-labor" class="nav-link active" data-scroll-target="#derived-demand-and-marginal-revenue-product-of-labor"><span class="header-section-number">12.1</span> Derived Demand and Marginal Revenue Product of Labor</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction" id="toc-conceptual-introduction" class="nav-link" data-scroll-target="#conceptual-introduction">1. Conceptual Introduction</a></li>
+  <li><a href="#visual-representation" id="toc-visual-representation" class="nav-link" data-scroll-target="#visual-representation">2. Visual Representation</a></li>
+  <li><a href="#real-world-application-ai-productivity-tools-and-software-engineer-demand" id="toc-real-world-application-ai-productivity-tools-and-software-engineer-demand" class="nav-link" data-scroll-target="#real-world-application-ai-productivity-tools-and-software-engineer-demand">3. Real-World Application: AI Productivity Tools and Software Engineer Demand</a></li>
+  <li><a href="#mathematical-foundation-algebra-level" id="toc-mathematical-foundation-algebra-level" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level">4. Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#labor-supply-and-competitive-market-equilibrium" id="toc-labor-supply-and-competitive-market-equilibrium" class="nav-link" data-scroll-target="#labor-supply-and-competitive-market-equilibrium"><span class="header-section-number">12.2</span> Labor Supply and Competitive Market Equilibrium</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-1" id="toc-conceptual-introduction-1" class="nav-link" data-scroll-target="#conceptual-introduction-1">1. Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-1" id="toc-visual-representation-1" class="nav-link" data-scroll-target="#visual-representation-1">2. Visual Representation</a></li>
+  <li><a href="#real-world-application-nursing-shortages-and-demographic-shifts" id="toc-real-world-application-nursing-shortages-and-demographic-shifts" class="nav-link" data-scroll-target="#real-world-application-nursing-shortages-and-demographic-shifts">3. Real-World Application: Nursing Shortages and Demographic Shifts</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-1" id="toc-mathematical-foundation-algebra-level-1" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-1">4. Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#monopsony-power-and-minimum-wage-floors" id="toc-monopsony-power-and-minimum-wage-floors" class="nav-link" data-scroll-target="#monopsony-power-and-minimum-wage-floors"><span class="header-section-number">12.3</span> Monopsony Power and Minimum Wage Floors</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-2" id="toc-conceptual-introduction-2" class="nav-link" data-scroll-target="#conceptual-introduction-2">1. Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-2" id="toc-visual-representation-2" class="nav-link" data-scroll-target="#visual-representation-2">2. Visual Representation</a></li>
+  <li><a href="#real-world-application-empirical-minimum-wage-studies-in-local-labor-markets" id="toc-real-world-application-empirical-minimum-wage-studies-in-local-labor-markets" class="nav-link" data-scroll-target="#real-world-application-empirical-minimum-wage-studies-in-local-labor-markets">3. Real-World Application: Empirical Minimum Wage Studies in Local Labor Markets</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-2" id="toc-mathematical-foundation-algebra-level-2" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-2">4. Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -473,18 +492,199 @@ window.Quarto = {
 </header>
 
 
-<section id="derived-labor-demand" class="level2" data-number="12.1">
-<h2 data-number="12.1" class="anchored" data-anchor-id="derived-labor-demand"><span class="header-section-number">12.1</span> Derived Labor Demand</h2>
-<p>A competitive firm hires labor where Marginal Revenue Product equals the market wage: <span class="math display">\[\begin{equation}
-MRP_L = MP_L \times P = W
-\end{equation}\]</span></p>
+<blockquote class="blockquote">
+<p>This chapter provides a rigorous, pedagogical treatment of Chapter 12: Factor Markets, Labor Demand, and Wage Determination, benchmarked to standard principles curriculum.</p>
+</blockquote>
+<section id="derived-demand-and-marginal-revenue-product-of-labor" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="derived-demand-and-marginal-revenue-product-of-labor"><span class="header-section-number">12.1</span> Derived Demand and Marginal Revenue Product of Labor</h2>
+<section id="conceptual-introduction" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction">1. Conceptual Introduction</h3>
+<p>Up to this point, we have studied <strong>product markets</strong>, where households buy finished goods from businesses. Now we flip the Circular Flow diagram around to examine <strong>factor markets</strong>, where businesses hire the four inputs of production—<strong>labor, land, capital, and entrepreneurship</strong>—from households. Unlike pizza or concert tickets, firms do not hire workers for the personal enjoyment of watching people work; a company hires software engineers, nurses, or baristas solely because customers want to buy the goods and services those workers produce. Economists therefore call factor demand a <strong>derived demand</strong>—it is derived directly from consumer demand in the output market.</p>
+<p>How does a profit-maximizing firm decide exactly how many workers to hire? It applies the exact same marginal principle we learned in Chapter 1, comparing the extra dollar revenue generated by hiring one additional worker against the extra dollar wage paid to that worker:</p>
+<ul>
+<li><strong>Marginal Revenue Product of Labor (<span class="math inline">\(MRP_L\)</span>):</strong> The additional total revenue a firm earns by hiring one more unit of labor. For a firm selling output in a competitive product market at price <span class="math inline">\(P\)</span>, <span class="math inline">\(MRP_L\)</span> equals the worker’s physical output contribution (<strong>Marginal Product of Labor, <span class="math inline">\(MP_L\)</span></strong>) multiplied by the selling price of the product: <span class="math inline">\(MRP_L = MP_L \times P\)</span>.</li>
+<li><strong>Marginal Factor Cost (<span class="math inline">\(MFC_L\)</span>):</strong> The additional total cost incurred by hiring one more worker. In a competitive labor market where the firm is a wage taker, <span class="math inline">\(MFC_L\)</span> simply equals the market wage rate <span class="math inline">\(W\)</span>.</li>
+</ul>
+<p>Because diminishing marginal product causes <span class="math inline">\(MP_L\)</span> to decline as more workers are added to fixed capital, the firm’s <span class="math inline">\(MRP_L\)</span> curve slopes downward—and serves directly as the firm’s <strong>labor demand curve</strong>. A competitive firm hires workers up to the exact point where <span class="math inline">\(MRP_L = W\)</span>.</p>
 </section>
-<section id="monopsony-power" class="level2" data-number="12.2">
-<h2 data-number="12.2" class="anchored" data-anchor-id="monopsony-power"><span class="header-section-number">12.2</span> Monopsony Power</h2>
-<p>A monopsonist faces an upward-sloping labor supply, so Marginal Factor Cost exceeds wage (<span class="math inline">\(MFC_L &gt; W\)</span>). Firms hire where <span class="math inline">\(MRP_L = MFC_L\)</span> and pay <span class="math inline">\(W &lt; MRP_L\)</span>. Binding minimum wages can raise both wage and employment under monopsony.</p>
+<section id="visual-representation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation">2. Visual Representation</h3>
+<p>Figure 1 shows a competitive firm’s downward-sloping Marginal Revenue Product of Labor (<span class="math inline">\(MRP_L\)</span>) curve intersecting the horizontal market wage line <span class="math inline">\(W^*\)</span> at the optimal employment level <span class="math inline">\(L^*\)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_12_factor_markets_labor_demand_and_wage_determination_figure_01.svg" class="img-fluid figure-img" alt="Competitive Labor Demand (MRP_L). A wage-taking firm hires workers until the value of the last worker's marginal output (MRP_L) equals the market wage (W^*). Any shift in output price P or worker productivity MP_L shifts the entire MRP_L curve."></p>
+<figcaption>Figure 1. Competitive Labor Demand (<span class="math inline">\(MRP_L\)</span>). A wage-taking firm hires workers until the value of the last worker’s marginal output (<span class="math inline">\(MRP_L\)</span>) equals the market wage (<span class="math inline">\(W^*\)</span>). Any shift in output price <span class="math inline">\(P\)</span> or worker productivity <span class="math inline">\(MP_L\)</span> shifts the entire <span class="math inline">\(MRP_L\)</span> curve.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-ai-productivity-tools-and-software-engineer-demand" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-ai-productivity-tools-and-software-engineer-demand">3. Real-World Application: AI Productivity Tools and Software Engineer Demand</h3>
+<p>When generative AI coding assistants boost a software engineer’s physical productivity (<span class="math inline">\(MP_L \uparrow\)</span>) or when surging enterprise demand raises cloud software prices (<span class="math inline">\(P \uparrow\)</span>), each engineer’s Marginal Revenue Product (<span class="math inline">\(MRP_L = MP_L \times P\)</span>) shifts rightward—raising the equilibrium market wage and expanding hiring for skilled engineers. Conversely, if automated self-checkout kiosks substitute for routine cashier tasks, demand for manual cashier labor shifts leftward.</p>
+</section>
+<section id="mathematical-foundation-algebra-level" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level">4. Mathematical Foundation (Algebra Level)</h3>
+<p>For a competitive firm selling output at price <span class="math inline">\(P\)</span> and hiring labor at market wage <span class="math inline">\(W\)</span>:</p>
+<p><span class="math display">\[
+MRP_L = MP_L \times P, \qquad \text{Hiring Rule: } MRP_L = W
+\]</span></p>
+<p><strong>Worked Problem:</strong> A specialty coffee roaster sells bags of roasted beans in a competitive market for <span class="math inline">\(P = \$15\)</span> per bag and hires packaging technicians at a daily wage of <span class="math inline">\(W = \$180\)</span> per worker. The roaster’s daily output schedule is:</p>
+<ul>
+<li><span class="math inline">\(L = 1 \implies Q = 20\)</span> bags</li>
+<li><span class="math inline">\(L = 2 \implies Q = 38\)</span> bags</li>
+<li><span class="math inline">\(L = 3 \implies Q = 52\)</span> bags</li>
+<li><span class="math inline">\(L = 4 \implies Q = 62\)</span> bags</li>
+<li><span class="math inline">\(L = 5 \implies Q = 68\)</span> bags</li>
+</ul>
+<p>Compute <span class="math inline">\(MP_L\)</span> and <span class="math inline">\(MRP_L\)</span> for each worker and determine the profit-maximizing number of technicians to hire.</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><p><strong>Compute <span class="math inline">\(MP_L = \Delta Q / \Delta L\)</span> and <span class="math inline">\(MRP_L = MP_L \times \$15\)</span> for Each Worker:</strong></p></li>
+<li><p><strong>Worker 1:</strong> <span class="math inline">\(MP_1 = 20 - 0 = 20\text{ bags} \implies MRP_1 = 20 \times \$15 = \mathbf{\$300}\)</span></p></li>
+<li><p><strong>Worker 2:</strong> <span class="math inline">\(MP_2 = 38 - 20 = 18\text{ bags} \implies MRP_2 = 18 \times \$15 = \mathbf{\$270}\)</span></p></li>
+<li><p><strong>Worker 3:</strong> <span class="math inline">\(MP_3 = 52 - 38 = 14\text{ bags} \implies MRP_3 = 14 \times \$15 = \mathbf{\$210}\)</span></p></li>
+<li><p><strong>Worker 4:</strong> <span class="math inline">\(MP_4 = 62 - 52 = 10\text{ bags} \implies MRP_4 = 10 \times \$15 = \mathbf{\$150}\)</span></p></li>
+<li><p><strong>Worker 5:</strong> <span class="math inline">\(MP_5 = 68 - 62 = 6\text{ bags} \implies MRP_5 = 6 \times \$15 = \mathbf{\$90}\)</span></p></li>
+<li><p><strong>Compare <span class="math inline">\(MRP_L\)</span> to the Daily Wage (<span class="math inline">\(W = \$180\)</span>):</strong></p></li>
+<li><p>Workers 1, 2, and 3 generate <span class="math inline">\(\$300\)</span>, <span class="math inline">\(\$270\)</span>, and <span class="math inline">\(\$210\)</span> in extra revenue—each exceeding their <span class="math inline">\(\$180\)</span> daily wage.</p></li>
+<li><p>Worker 4 generates only <span class="math inline">\(\$150 &lt; \$180\)</span>, which would reduce profit by <span class="math inline">\(\$30\)</span>.</p></li>
+</ul>
+<p><strong>Conclusion:</strong> The roaster should hire <strong><span class="math inline">\(L^* = 3\)</span> technicians</strong>, earning a net surplus above wages of <span class="math inline">\((\$300 - \$180) + (\$270 - \$180) + (\$210 - \$180) = \$240\)</span>.</p>
+</section>
+</section>
+<section id="labor-supply-and-competitive-market-equilibrium" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="labor-supply-and-competitive-market-equilibrium"><span class="header-section-number">12.2</span> Labor Supply and Competitive Market Equilibrium</h2>
+<section id="conceptual-introduction-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-1">1. Conceptual Introduction</h3>
+<p>While firms form the demand side of the labor market, individual workers form the <strong>labor supply</strong> side. Every worker faces a fundamental trade-off between <strong>paid work</strong> (which generates income to buy consumption goods) and <strong>leisure</strong> (time spent resting, studying, or caring for family). The opportunity cost of an hour of leisure is the hourly wage <span class="math inline">\(W\)</span> you give up by not working.</p>
+<p>When the market wage rises, two competing behavioral effects tug on a worker’s hours:</p>
+<ul>
+<li><strong>The Substitution Effect:</strong> A higher wage makes leisure more expensive in terms of foregone earnings, motivating the worker to substitute away from leisure and <strong>work more hours</strong>.</li>
+<li><strong>The Income Effect:</strong> A higher wage makes the worker wealthier; because leisure is a normal good, higher income encourages the worker to “buy” more leisure and <strong>work fewer hours</strong>.</li>
+</ul>
+<p>Across an entire occupation or industry, higher wages attract new workers from other sectors, so the <strong>market labor supply curve slopes upward</strong>. Equilibrium wage <span class="math inline">\(W^*\)</span> and employment <span class="math inline">\(L^*\)</span> settle where market labor supply equals market labor demand.</p>
+</section>
+<section id="visual-representation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-1">2. Visual Representation</h3>
+<p>Figure 2 shows how an increase in labor demand (from <span class="math inline">\(D_{L1}\)</span> to <span class="math inline">\(D_{L2}\)</span>) raises both equilibrium wages and employment in a competitive occupation.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_12_factor_markets_labor_demand_and_wage_determination_figure_02.svg" class="img-fluid figure-img" alt="Competitive Labor Market Equilibrium. Rising productivity or higher product demand shifts labor demand rightward from D_{L1} to D_{L2}, raising equilibrium wages from W_1^* to W_2^* and expanding employment from L_1^* to L_2^*."></p>
+<figcaption>Figure 2. Competitive Labor Market Equilibrium. Rising productivity or higher product demand shifts labor demand rightward from <span class="math inline">\(D_{L1}\)</span> to <span class="math inline">\(D_{L2}\)</span>, raising equilibrium wages from <span class="math inline">\(W_1^*\)</span> to <span class="math inline">\(W_2^*\)</span> and expanding employment from <span class="math inline">\(L_1^*\)</span> to <span class="math inline">\(L_2^*\)</span>.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-nursing-shortages-and-demographic-shifts" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-nursing-shortages-and-demographic-shifts">3. Real-World Application: Nursing Shortages and Demographic Shifts</h3>
+<p>As the U.S. population ages, demand for hospital and outpatient healthcare services has surged—shifting the derived demand for registered nurses (<span class="math inline">\(D_L\)</span>) sharply rightward. Because becoming a licensed nurse requires years of clinical training, short-run nursing supply is relatively steep, driving substantial wage increases and sign-on bonuses across metropolitan hospital systems.</p>
+</section>
+<section id="mathematical-foundation-algebra-level-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-1">4. Mathematical Foundation (Algebra Level)</h3>
+<p>Market labor equilibrium solves <span class="math inline">\(L_d(W^*) = L_s(W^*)\)</span>:</p>
+<p><span class="math display">\[
+W_d(L^*) = W_s(L^*)
+\]</span></p>
+<p><strong>Worked Problem:</strong> In a metropolitan market for certified electricians, labor demand is <span class="math inline">\(L_d = 1{,}200 - 15W\)</span> and labor supply is <span class="math inline">\(L_s = 200 + 10W\)</span> (where <span class="math inline">\(W\)</span> is the hourly wage in dollars and <span class="math inline">\(L\)</span> is the number of employed electricians). Find the equilibrium wage <span class="math inline">\(W^*\)</span> and equilibrium employment <span class="math inline">\(L^*\)</span>.</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Set Labor Demand Equal to Labor Supply (<span class="math inline">\(L_d = L_s\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+1{,}200 - 15W^* = 200 + 10W^*
+\]</span></p>
+<ul>
+<li><strong>Solve for Equilibrium Hourly Wage (<span class="math inline">\(W^*\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+1{,}000 = 25W^* \implies W^* = \mathbf{\$40\text{ per hour}}
+\]</span></p>
+<ul>
+<li><strong>Substitute <span class="math inline">\(W^* = \$40\)</span> to Find Equilibrium Employment (<span class="math inline">\(L^*\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+L^* = 200 + 10(40) = 200 + 400 = \mathbf{600\text{ electricians}}
+\]</span></p>
+<p><strong>Conclusion:</strong> The competitive labor market clears at a wage of <span class="math inline">\(\$40\)</span> per hour with <span class="math inline">\(600\)</span> electricians employed.</p>
+</section>
+</section>
+<section id="monopsony-power-and-minimum-wage-floors" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="monopsony-power-and-minimum-wage-floors"><span class="header-section-number">12.3</span> Monopsony Power and Minimum Wage Floors</h2>
+<section id="conceptual-introduction-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-2">1. Conceptual Introduction</h3>
+<p>What happens when a single dominant employer—such as a rural hospital system, a remote mining company, or a dominant regional warehouse hub—is the primary buyer of labor in a local town? Economists call a market with a single buyer (or dominant employer) a <strong>monopsony</strong>.</p>
+<p>Unlike a competitive wage-taking firm, a monopsonist faces the entire upward-sloping local labor supply curve <span class="math inline">\(W(L)\)</span>. To attract one additional worker, the monopsonist must offer a higher wage—and because workplace fairness and payroll rules require paying the new higher wage to <em>all</em> existing employees as well, the <strong>Marginal Factor Cost of Labor (<span class="math inline">\(MFC_L\)</span>)</strong> lies strictly above the labor supply curve (<span class="math inline">\(MFC_L &gt; W\)</span>).</p>
+<p>To maximize profit, the monopsonist hires workers up to where <span class="math inline">\(MRP_L = MFC_L\)</span>, restricting hiring below the competitive level (<span class="math inline">\(L_M &lt; L_C\)</span>) and paying a depressed wage read off the labor supply curve (<span class="math inline">\(W_M &lt; MRP_L\)</span>). This creates a remarkable policy contrast:</p>
+<ul>
+<li>In a <strong>competitive labor market</strong>, a binding minimum wage set above <span class="math inline">\(W_C\)</span> reduces quantity of labor demanded and creates unemployment.</li>
+<li>In a <strong>monopsony labor market</strong>, a carefully set minimum wage flattens the firm’s <span class="math inline">\(MFC_L\)</span> curve over the lower range, which can <strong>increase both wages and employment simultaneously</strong> up to the competitive level!</li>
+</ul>
+</section>
+<section id="visual-representation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-2">2. Visual Representation</h3>
+<p>Figure 3 illustrates how a monopsonist equates <span class="math inline">\(MRP_L = MFC_L\)</span> to restrict employment to <span class="math inline">\(L_M\)</span> and depress wages to <span class="math inline">\(W_M\)</span>, below the competitive equilibrium <span class="math inline">\((L_C, W_C)\)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_12_factor_markets_labor_demand_and_wage_determination_figure_03.svg" class="img-fluid figure-img" alt="Monopsony Labor Market Power. Facing an upward-sloping labor supply curve, the monopsonist's Marginal Factor Cost (MFC_L) rises twice as fast as the wage. Hiring where MRP_L = MFC_L restricts employment to L_M < L_C and depresses wages to W_M < W_C, creating deadweight loss (orange triangle)."></p>
+<figcaption>Figure 3. Monopsony Labor Market Power. Facing an upward-sloping labor supply curve, the monopsonist’s Marginal Factor Cost (<span class="math inline">\(MFC_L\)</span>) rises twice as fast as the wage. Hiring where <span class="math inline">\(MRP_L = MFC_L\)</span> restricts employment to <span class="math inline">\(L_M &lt; L_C\)</span> and depresses wages to <span class="math inline">\(W_M &lt; W_C\)</span>, creating deadweight loss (orange triangle).</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-empirical-minimum-wage-studies-in-local-labor-markets" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-empirical-minimum-wage-studies-in-local-labor-markets">3. Real-World Application: Empirical Minimum Wage Studies in Local Labor Markets</h3>
+<p>Classic empirical research by economists David Card and Alan Krueger (and subsequent studies of regional hospital and retail labor markets) found that modest minimum wage increases frequently had little or no negative effect on employment—and occasionally increased employment—consistent with employers possessing local monopsony power due to worker commuting costs and search frictions.</p>
+</section>
+<section id="mathematical-foundation-algebra-level-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-2">4. Mathematical Foundation (Algebra Level)</h3>
+<p>When inverse labor supply is linear, <span class="math inline">\(W(L) = a + bL\)</span>, Total Labor Cost is <span class="math inline">\(TLC = W(L) \cdot L = aL + bL^2\)</span>, and Marginal Factor Cost has twice the slope of labor supply:</p>
+<p><span class="math display">\[
+MFC_L = a + 2bL
+\]</span></p>
+<p><strong>Worked Problem:</strong> A rural distribution center is a monopsonist facing an inverse labor supply curve <span class="math inline">\(W = 12 + L\)</span> and Marginal Factor Cost <span class="math inline">\(MFC_L = 12 + 2L\)</span> (where <span class="math inline">\(W\)</span> is hourly wage in dollars and <span class="math inline">\(L\)</span> is workers in tens). Its Marginal Revenue Product of Labor is <span class="math inline">\(MRP_L = 48 - L\)</span>.</p>
+<ul>
+<li>Find the monopsonist’s profit-maximizing employment <span class="math inline">\(L_M\)</span> and hourly wage <span class="math inline">\(W_M\)</span>.</li>
+<li>Compare this to the competitive benchmark <span class="math inline">\((L_C, W_C)\)</span> where <span class="math inline">\(MRP_L = W\)</span>.</li>
+</ul>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Solve for Monopsony Employment (<span class="math inline">\(L_M\)</span>) and Wage (<span class="math inline">\(W_M\)</span>):</strong> Set <span class="math inline">\(MRP_L = MFC_L\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+48 - L_M = 12 + 2L_M \implies 36 = 3L_M \implies L_M = \mathbf{12\ (120\text{ workers})}
+\]</span></p>
+<p>Read the wage off the labor supply curve <span class="math inline">\(W = 12 + L_M\)</span>:</p>
+<p><span class="math display">\[
+W_M = 12 + 12 = \mathbf{\$24\text{ per hour}}
+\]</span></p>
+<ul>
+<li><strong>Solve for Competitive Benchmark (<span class="math inline">\(L_C, W_C\)</span>):</strong> Set <span class="math inline">\(MRP_L = W\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+48 - L_C = 12 + L_C \implies 36 = 2L_C \implies L_C = \mathbf{18\ (180\text{ workers})}
+\]</span></p>
+<p><span class="math display">\[
+W_C = 12 + 18 = \mathbf{\$30\text{ per hour}}
+\]</span></p>
+<p><strong>Conclusion:</strong> Monopsony power cuts hiring from <span class="math inline">\(180\)</span> down to <span class="math inline">\(120\)</span> workers and depresses wages from <span class="math inline">\(\$30\)</span> to <span class="math inline">\(\$24\)</span> per hour. Setting a minimum wage at <span class="math inline">\(\$28\)</span> or <span class="math inline">\(\$30\)</span> per hour would raise both wages and employment.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Calculus of Monopsony Optimization
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> Let revenue be <span class="math inline">\(R(L)\)</span> with <span class="math inline">\(MRP_L = R'(L)\)</span>, and inverse labor supply be <span class="math inline">\(W(L)\)</span> with <span class="math inline">\(W'(L) &gt; 0\)</span>. The monopsonist maximizes <span class="math inline">\(\pi(L) = R(L) - W(L) \cdot L\)</span>. Differentiating with respect to <span class="math inline">\(L\)</span>:</p>
+<p><span class="math display">\[
+\frac{d\pi}{dL} = R'(L) - \left[ W(L) + L \cdot W'(L) \right] = 0 \implies MRP_L = W(L) \left( 1 + \frac{1}{\varepsilon_{L,s}} \right) = MFC_L
+\]</span></p>
+<p>where <span class="math inline">\(\varepsilon_{L,s} = \frac{dL}{dW}\frac{W}{L}\)</span> is the wage elasticity of labor supply. The less elastic the local labor supply, the wider the markdown between <span class="math inline">\(MRP_L\)</span> and the wage paid.</p>
+</div>
+</div>
 
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

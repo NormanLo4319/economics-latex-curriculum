@@ -1,6 +1,7 @@
 \documentclass[11pt,letterpaper]{article}
 \input{../../shared/preamble.tex}
 \input{../../shared/tikz-settings.tex}
+\usepackage{tcolorbox}
 
 \begin{document}
 
@@ -20,51 +21,266 @@ This chapter provides a rigorous, pedagogical treatment of Chapter 10: Externali
 \hrule
 \vspace{1.5em}
 
-\section{Learning Outcomes and Key Terms}
-Students should distinguish private from social costs and benefits, solve for a simple efficient quantity, and compare corrective policy tools. These objectives support C2001-1 and C2001-2. Key terms include externality, marginal private cost, marginal social cost, Pigouvian tax, public good, common resource, free rider, and Coase bargaining.
+% -----------------------------------------------------------------------------
+% Section 10.1: Negative and Positive Externalities
+% -----------------------------------------------------------------------------
+\section{Negative and Positive Externalities}
 
-\section{A Neighborhood, a Plant, and Unpriced Costs}
-Imagine a production facility that releases pollution affecting nearby residents. The firm pays for labor, energy, and materials, but without a fee or regulation it may not pay for all health and environmental damage imposed on others. The firm's private production decision can therefore differ from the decision that maximizes total surplus. The same logic applies to traffic congestion: one driver's trip adds delay to other road users, a cost the driver may not fully consider.
+\subsection*{1. Conceptual Introduction}
+In Chapter 4, we showed that competitive markets maximize total social surplus when private buyers and sellers capture all benefits and pay all costs of a transaction ($MB = MC$). However, markets fail to allocate resources efficiently whenever production or consumption creates an \textbf{externality}—an uncompensated cost or benefit imposed on a third party outside the market transaction.
 
-An externality is a cost or benefit from an action that affects a third party outside the transaction. A negative externality creates a wedge between private and social cost; a positive externality creates a wedge between private and social benefit. Not every spillover is a market failure of equal size: measurement, the number of affected parties, property rights, and transaction costs matter.
+Externalities split into two fundamental categories:
+\begin{itemize}
+    \item \textbf{Negative Externalities (External Costs):} When producing or consuming a good imposes unpriced harm on bystanders—such as industrial air pollution, highway traffic congestion, or late-night noise—the \textbf{Marginal Social Cost ($MSC$)} exceeds the firm's \textbf{Marginal Private Cost ($MPC$)} by the \textbf{Marginal External Cost ($MEC$)}: $MSC = MPC + MEC$. Because unregulated firms ignore $MEC$ and produce where $MB = MPC$, the free market \textbf{overproduces} ($Q_{\text{market}} > Q_{\text{efficient}}$), creating a Deadweight Loss triangle on the excess units.
+    \item \textbf{Positive Externalities (External Benefits):} When an activity generates unpriced spillover benefits for third parties—such as vaccinations reducing disease transmission, basic scientific research, or home solar installations—the \textbf{Marginal Social Benefit ($MSB$)} exceeds \textbf{Marginal Private Benefit ($MPB$)} by the \textbf{Marginal External Benefit ($MEB$)}: $MSB = MPB + MEB$. Left alone, the market produces where $MPB = MC$ and \textbf{underproduces} ($Q_{\text{market}} < Q_{\text{efficient}}$).
+\end{itemize}
 
-\section{Negative Production Externalities: The Graph}
-For a negative production externality, place quantity on the horizontal axis and dollars per unit on the vertical axis. Draw marginal private cost ($MPC$) below marginal social cost ($MSC$), because $MSC$ includes the damage borne by third parties. Draw marginal benefit ($MB$), assumed here to equal marginal private benefit. The unregulated market produces where $MB=MPC$. The efficient quantity is where $MB=MSC$; it is lower in this example. The vertical distance between $MSC$ and $MPC$ is marginal external cost ($MEC$). The overproduced units create deadweight loss between the benefit and social-cost curves.
+\subsection*{2. Visual Representation}
+Figure~\ref{fig:negative_externality} illustrates a negative production externality where $MSC$ lies above $MPC$ by the vertical distance $MEC$, causing unregulated market output $Q_M$ to exceed the socially efficient output $Q^*$ and generating an orange Deadweight Loss triangle.
 
-\section{A Corrective-Tax Calculation}
-Suppose inverse marginal benefit is $MB=100-Q$, marginal private cost is $MPC=20+Q$, and marginal external cost is a constant 10 dollars per unit. Then $MSC=MPC+MEC=30+Q$. The unregulated outcome satisfies $100-Q=20+Q$, giving $Q_M=40$. The efficient outcome satisfies $100-Q=30+Q$, giving $Q^*=35$. A per-unit tax equal to $MEC(Q^*)=10$ makes the private decision face the social marginal cost at the efficient quantity:
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.05]
+    % Axes
+    \draw[->, thick] (0,0) -- (6.2,0) node[below] {Quantity ($Q$)};
+    \draw[->, thick] (0,0) -- (0,5.2) node[left] {Price / Cost (\$)};
+    \node[below left] at (0,0) {$0$};
+
+    % MB = 100 - Q -> (0,5.0) to (5.0,0) [1 unit x = 10 Q, 1 unit y = $20]
+    \draw[very thick, color=blue!80!black] (0,5.0) -- (5.0,0) node[below right] {$MB = MPB$};
+
+    % MPC = 20 + Q -> (0,1.0) to (4.2,5.2)
+    \draw[very thick, color=red!80!black] (0,1.0) -- (4.2,5.2) node[right] {$MPC$};
+
+    % MSC = 30 + Q -> (0,1.5) to (3.7,5.2)
+    \draw[very thick, color=purple] (0,1.5) -- (3.7,5.2) node[above] {$MSC = MPC + MEC$};
+
+    % Unregulated Q_M = 40 (x=4.0), P_M = $60 (y=3.0) -> wait: 100 - Q = 20 + Q -> 2Q = 80 -> Q_M = 40 (x=4.0), P_M = $60 (y=3.0)
+    \draw[dashed] (4.0,0) node[below] {$Q_M = 40$} -- (4.0,3.5);
+    \draw[dashed] (0,3.0) node[left] {$P_M$} -- (4.0,3.0);
+
+    % Efficient Q* = 35 (x=3.5), P* = $65 (y=3.25)
+    \draw[dashed] (3.5,0) node[below] {$Q^* = 35$} -- (3.5,3.25);
+    \draw[dashed] (0,3.25) node[left] {$P^*$} -- (3.5,3.25);
+
+    % DWL triangle between Q*=35 and Q_M=40: (3.5, 3.25) to (4.0, 3.0) to (4.0, 3.5)
+    \fill[orange!45, opacity=0.85] (3.5,3.25) -- (4.0,3.0) -- (4.0,3.5) -- cycle;
+    \node[right, font=\footnotesize\bfseries, color=Terracotta] at (4.1,3.3) {DWL = $\$25$};
+
+    % MEC arrow
+    \draw[<->, thick, color=purple] (2.0,2.0) -- node[left, font=\scriptsize\bfseries] {$MEC$} (2.0,2.5);
+\end{tikzpicture}
+\caption{Negative Production Externality. Because firms ignore Marginal External Cost ($MEC$), the unregulated market produces $Q_M = 40$ where $MB = MPC$ instead of the socially optimal $Q^* = 35$ where $MB = MSC$, generating Deadweight Loss on the five overproduced units.}
+\label{fig:negative_externality}
+\end{figure}
+
+\subsection*{3. Real-World Application: Urban Traffic Congestion and Carbon Emissions}
+During rush hour on Bay Area bridges and freeways, every additional driver entering the highway slows down thousands of commuters behind them—an unpriced external time cost ($MEC$). Similarly, industrial carbon dioxide emissions impose climate damages outside the factory gate, separating measured physical emissions (tracked in St. Louis Fed FRED series `EMISSCO2TOTVTTTOUSA`) from marginal external dollar damages.
+
+\subsection*{4. Mathematical Foundation (Algebra Level)}
+Comparing unregulated equilibrium ($MB = MPC$) with social efficiency ($MB = MSC = MPC + MEC$):
 \begin{equation}
-MB(Q^*)=MSC(Q^*)=MPC(Q^*)+t^*, \qquad t^*=MEC(Q^*)=10.
+DWL = \frac{1}{2} \times (Q_M - Q^*) \times MEC(Q_M)
 \end{equation}
-In this linear example, the deadweight loss from the five excess units is $\tfrac{1}{2}(40-35)(10)=25$ dollars per period. The triangle formula depends on the linear, constant-damage assumptions; with changing damage, use the area between $MB$ and $MSC$.
 
-\begin{examplecase}{FRED Data: Emissions Are Not a Damage Estimate}
-FRED series EMISSCO2TOTVTTTOUSA reports U.S. total carbon dioxide emissions from all sectors and fuels, in million metric tons, annually and not seasonally adjusted. It records 4,594.7 million metric tons in 2020 and 4,911.2 in 2021. These totals describe emissions, not the marginal health or climate damage from one additional unit, and the year-to-year rebound does not identify a single cause. Students should separate measured quantities from an external-cost estimate.
-\end{examplecase}
+\noindent\textbf{Worked Problem:}
+Using the linear model in Figure~\ref{fig:negative_externality}, suppose inverse marginal benefit is $MB = 100 - Q$, marginal private cost is $MPC = 20 + Q$, and marginal external cost is a constant $MEC = \$10$ per unit. Compute $Q_M$, $Q^*$, and Deadweight Loss ($DWL$).
 
-\section{Positive Externalities and Corrective Subsidies}
-Vaccination can reduce a recipient's risk and lower transmission risk for others. If decision-makers consider only private benefit, participation may be below the socially efficient level. In a graph, marginal social benefit ($MSB$) lies above marginal private benefit ($MPB$). The market chooses where $MPB=MC$; the efficient quantity satisfies $MSB=MC$. A subsidy can encourage participation, but its design should account for fiscal cost, targeting, and the size of the spillover rather than assuming every private benefit deserves public payment.
-
-\section{Public Goods and Common Resources}
-Goods can be classified by whether people can be excluded and whether one person's use reduces another's use. Private goods are excludable and rival; public goods are difficult to exclude people from and are non-rival over the relevant range. A lighthouse signal is a classic stylized example. Common resources are difficult to exclude users from but rival, such as a congested fishery. Club goods are excludable and largely non-rival until congestion, such as a subscription service.
-
-The free-rider problem occurs when people can benefit without paying, making voluntary private provision difficult. For a pure public good, efficiency requires the sum of individuals' marginal willingness to pay to equal marginal cost:
-\begin{equation}
-\sum_i MB_i(Q^*)=MC(Q^*).
-\end{equation}
-For a common resource, each user may ignore the congestion or depletion imposed on others. Property rights, access rules, tradable permits, or community management can help, but monitoring and enforcement have costs.
-
-\begin{coreprinciple}
-\boxheader{SlateBlue}{Clear It Up: A Tax Does Not Erase the Externality}
-A corrective tax changes private incentives; it does not make the physical damage disappear. The efficient tax is tied to marginal external damage at the efficient quantity under the model's assumptions. Distribution, measurement error, and administrative costs still matter.
-\end{coreprinciple}
-
-\section{Check Your Understanding}
+\noindent\textbf{Step-by-Step Breakdown:}
 \begin{enumerate}
-  \item In the numerical example, why is the market quantity larger than the efficient quantity?
-  \item If marginal external damage rises with output, should the efficient tax necessarily equal the damage at the unregulated market quantity?
-  \item Give one example of a common resource and explain which of the two defining properties it has.
+    \item \textbf{Find Unregulated Output ($Q_M$) Where $MB = MPC$:}
+    \[
+    100 - Q_M = 20 + Q_M \implies 2Q_M = 80 \implies Q_M = \mathbf{40\text{ units}}
+    \]
+
+    \item \textbf{Construct $MSC$ and Find Efficient Output ($Q^*$) Where $MB = MSC$:}
+    \[
+    MSC = MPC + MEC = (20 + Q) + 10 = 30 + Q
+    \]
+    Set $MB = MSC$:
+    \[
+    100 - Q^* = 30 + Q^* \implies 2Q^* = 70 \implies Q^* = \mathbf{35\text{ units}}
+    \]
+
+    \item \textbf{Compute Deadweight Loss ($DWL$) from Overproduction:}
+    \[
+    DWL = \frac{1}{2} \times (40 - 35) \times \$10 = \frac{1}{2} \times 5 \times \$10 = \mathbf{\$25}
+    \]
 \end{enumerate}
-Answers: (1) Producers face $MPC$ rather than the higher $MSC$. (2) No; the Pigouvian tax is the marginal damage at the efficient quantity in the standard model. (3) A fishery is rival and difficult to exclude users from without enforceable access rules.
+\textbf{Conclusion:} Ignoring the $\$10$ external damage leads the market to overproduce by $5$ units and destroys $\$25$ in social welfare.
+
+% -----------------------------------------------------------------------------
+% Section 10.2: Corrective Policies: Pigouvian Taxes, Subsidies, and Coase
+% -----------------------------------------------------------------------------
+\section{Corrective Policies: Pigouvian Taxes, Subsidies, and Coase Bargaining}
+
+\subsection*{1. Conceptual Introduction}
+How can society restore efficiency when externalities distort market outcomes? Economists evaluate both private bargaining solutions and public policy tools designed to \textbf{internalize the externality}—forcing decision-makers to weigh external costs or benefits inside their own private calculations:
+\begin{itemize}
+    \item \textbf{Pigouvian Taxes and Subsidies:} Named after economist Arthur Pigou, a \textbf{Pigouvian tax} sets a per-unit tax equal to Marginal External Cost at the efficient quantity ($t^* = MEC(Q^*)$), shifting $MPC$ upward onto $MSC$ so firms voluntarily choose $Q^*$. Conversely, a \textbf{Pigouvian subsidy} equal to $MEB(Q^*)$ corrects positive externalities.
+    \item \textbf{Cap-and-Trade (Tradable Permits):} Regulators cap total emissions at $Q^*$ and allow firms to buy and sell permits—achieving the exact same pollution reduction at the lowest possible abatement cost across firms.
+    \item \textbf{The Coase Theorem:} Economist Ronald Coase proved that if \textbf{property rights are clearly defined} and \textbf{transaction costs are low}, private parties can bargain directly to reach the efficient outcome $Q^*$ without government intervention—regardless of which party initially holds the property right. However, when millions of dispersed residents are affected by urban smog, high transaction costs prevent private bargaining and require public policy.
+\end{itemize}
+
+\subsection*{2. Visual Representation}
+Figure~\ref{fig:pigouvian_tax} shows how levying a Pigouvian corrective tax $t^* = MEC = \$10$ shifts the private supply curve from $MPC$ onto $MSC$, eliminating deadweight loss and guiding the market cleanly to $Q^* = 35$.
+
+\begin{tcolorbox}[colback=yellow!10!white,colframe=orange!80!black,title=\textbf{Clear It Up: Why a Pigouvian Tax Increases Welfare Instead of Causing DWL}]
+In Chapter 4, taxing a distortion-free market created deadweight loss. When a market already suffers from a negative externality, however, a Pigouvian tax \emph{eliminates} deadweight loss by stopping overproduction where social cost exceeds social benefit ($MSC > MB$)!
+\end{tcolorbox}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.05]
+    % Axes
+    \draw[->, thick] (0,0) -- (6.2,0) node[below] {Quantity ($Q$)};
+    \draw[->, thick] (0,0) -- (0,5.2) node[left] {Price / Cost (\$)};
+    \node[below left] at (0,0) {$0$};
+
+    \draw[very thick, color=blue!80!black] (0,5.0) -- (5.0,0) node[below right] {$MB$};
+    \draw[thick, dashed, color=gray] (0,1.0) -- (4.2,5.2) node[right, black] {$MPC$};
+    \draw[very thick, color=ForestGreen] (0,1.5) -- (3.7,5.2) node[above] {$MSC = MPC + t^*$};
+
+    % Efficient E*(35, $65) -> (3.5, 3.25)
+    \draw[dashed] (0,3.25) node[left] {$P^* = \$65$} -- (3.5,3.25);
+    \draw[dashed] (3.5,0) node[below] {$Q^* = 35$} -- (3.5,3.25);
+    \filldraw[ForestGreen] (3.5,3.25) circle (2.2pt) node[right=4pt] {$E^*$ (Efficient)};
+
+    % Tax Revenue Box: width = 3.5, height = 0.5 (from y=2.75 to y=3.25)
+    \fill[ForestGreen!20, opacity=0.8] (0,2.75) rectangle (3.5,3.25);
+    \node[font=\footnotesize\bfseries, color=ForestGreen!90!black] at (1.75,3.0) {Pigouvian Tax Rev = $\$350$};
+\end{tikzpicture}
+\caption{Correcting a Negative Externality with a Pigouvian Tax. Setting $t^* = MEC = \$10$ shifts private cost from $MPC$ to $MSC$, contracting output from $40$ to $Q^* = 35$ and raising $\$350$ in revenue while eliminating deadweight loss.}
+\label{fig:pigouvian_tax}
+\end{figure}
+
+\subsection*{3. Real-World Application: California's Cap-and-Trade Program}
+California enforces a statewide cap on greenhouse gas emissions across power plants, refineries, and industrial facilities while allowing companies to trade emission allowances. Firms that can cut emissions cheaply sell spare permits to firms facing higher abatement costs, achieving the statewide emissions cap at minimum economic cost.
+
+\subsection*{4. Mathematical Foundation (Algebra Level)}
+To restore efficiency, set the corrective tax or subsidy equal to the marginal spillover at $Q^*$:
+\begin{equation}
+t^* = MEC(Q^*), \qquad s^* = MEB(Q^*)
+\end{equation}
+
+\noindent\textbf{Worked Problem:}
+Suppose community flu vaccinations have private marginal benefit $MPB = 80 - 2Q$, marginal social benefit $MSB = 100 - 2Q$, and constant marginal cost $MC = \$30$ per dose (where $Q$ is thousands of doses). Compute the unregulated vaccination quantity $Q_M$, the socially efficient quantity $Q^*$, and the optimal Pigouvian subsidy $s^*$ per dose.
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Find Unregulated Quantity ($Q_M$) Where $MPB = MC$:}
+    \[
+    80 - 2Q_M = 30 \implies 2Q_M = 50 \implies Q_M = \mathbf{25\text{ thousand doses}}
+    \]
+
+    \item \textbf{Find Efficient Quantity ($Q^*$) Where $MSB = MC$:}
+    \[
+    100 - 2Q^* = 30 \implies 2Q^* = 70 \implies Q^* = \mathbf{35\text{ thousand doses}}
+    \]
+
+    \item \textbf{Compute the Optimal Pigouvian Subsidy ($s^*$):}
+    \[
+    s^* = MSB - MPB = (100 - 2Q) - (80 - 2Q) = \mathbf{\$20\text{ per dose}}
+    \]
+\end{enumerate}
+\textbf{Conclusion:} A $\$20$ per-dose subsidy lowers the out-of-pocket price to $\$10$, expanding vaccinations from $25{,}000$ to the socially optimal $35{,}000$ doses.
+
+% -----------------------------------------------------------------------------
+% Section 10.3: Public Goods, Common Resources, and the Free-Rider Problem
+% -----------------------------------------------------------------------------
+\section{Public Goods, Common Resources, and the Free-Rider Problem}
+
+\subsection*{1. Conceptual Introduction}
+Economists classify all goods in society using two physical questions: (1) Is the good \textbf{excludable} (can sellers prevent non-payers from using it)? and (2) Is the good \textbf{rival in consumption} (does one person's use reduce the amount available for others)?
+
+Crossing these two traits creates a four-quadrant classification matrix:
+\begin{itemize}
+    \item \textbf{Private Goods (Excludable \& Rival):} Coffee, laptops, and sneakers. Private markets supply these efficiently.
+    \item \textbf{Club Goods (Excludable \& Non-Rival):} Streaming services, toll roads without congestion, and private Wi-Fi.
+    \item \textbf{Public Goods (Non-Excludable \& Non-Rival):} National defense, municipal storm sirens, and basic scientific knowledge. Because nobody can be excluded once provided, individuals face a temptation to enjoy the benefit without paying—known as the \textbf{free-rider problem}—causing private markets to underprovide public goods unless funded through taxation.
+    \item \textbf{Common Resources (Non-Excludable \& Rival):} Open-ocean fisheries, clean air, and congested public highways. Because anyone can access the resource for free yet each user depletes what remains for others, individuals overuse common resources—a market failure known as the \textbf{Tragedy of the Commons}.
+\end{itemize}
+
+\subsection*{2. Visual Representation}
+Figure~\ref{fig:public_goods_matrix} organizes the four economic categories of goods by excludability and rivalry, and contrasts private horizontal demand summation against public-good vertical willingness-to-pay summation.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.0]
+    % 2x2 Matrix from (0,0) to (8.4,4.2)
+    \draw[very thick, SlateBlue] (0,0) rectangle (8.4,4.2);
+    \draw[thick, SlateBlue] (4.2,0) -- (4.2,4.2);
+    \draw[thick, SlateBlue] (0,2.1) -- (8.4,2.1);
+
+    % Column Headers
+    \node[font=\bfseries\color{SlateBlue}] at (2.1,4.55) {Rival in Consumption};
+    \node[font=\bfseries\color{SlateBlue}] at (6.3,4.55) {Non-Rival in Consumption};
+
+    % Row Headers
+    \node[font=\bfseries\color{Terracotta}, align=right] at (-1.2,3.15) {Excludable};
+    \node[font=\bfseries\color{Terracotta}, align=right] at (-1.2,1.05) {Non-Excludable};
+
+    % Top-Left: Private Goods
+    \node[align=center, font=\small] at (2.1,3.15) {\textbf{Private Goods}\\(Coffee, Clothing, Laptops)\\\emph{Efficient via Free Markets}};
+
+    % Top-Right: Club Goods
+    \node[align=center, font=\small] at (6.3,3.15) {\textbf{Club Goods}\\(Streaming, Toll Bridges)\\\emph{Natural Monopoly / Pricing}};
+
+    % Bottom-Left: Common Resources
+    \fill[LightTerracotta] (0.05,0.05) rectangle (4.15,2.05);
+    \node[align=center, font=\small] at (2.1,1.05) {\textbf{\color{Terracotta}Common Resources}\\(Ocean Fish, Congested Roads)\\\emph{Tragedy of the Commons}};
+
+    % Bottom-Right: Public Goods
+    \fill[LightSlate] (4.25,0.05) rectangle (8.35,2.05);
+    \node[align=center, font=\small] at (6.3,1.05) {\textbf{\color{SlateBlue}Public Goods}\\(National Defense, Sirens)\\\emph{Free-Rider Problem}};
+\end{tikzpicture}
+\caption{The Four Economic Categories of Goods. Non-excludability creates two distinct market failures: underprovision of non-rival \textbf{Public Goods} (free riding) and overexploitation of rival \textbf{Common Resources} (Tragedy of the Commons).}
+\label{fig:public_goods_matrix}
+\end{figure}
+
+\subsection*{3. Real-World Application: Pacific Salmon Fisheries and Catch Shares}
+Open-ocean fisheries are classic common resources: every fishing boat captures the full revenue of the fish it hauls in, while ignoring the external depletion cost imposed on future breeding stocks. Regulated \textbf{Individual Transferable Quotas (ITQs)} assign enforceable property rights over sustainable catch limits, preventing fishery collapse.
+
+\subsection*{4. Mathematical Foundation (Algebra Level)}
+Because a public good is non-rival (everyone consumes the same quantity $Q$), total \textbf{Marginal Social Benefit ($MSB$)} sums individual marginal willingness to pay \textbf{vertically}:
+\begin{equation}
+MSB(Q) = MB_1(Q) + MB_2(Q) + \dots + MB_N(Q) = MC(Q)
+\end{equation}
+
+\noindent\textbf{Worked Problem:}
+Two neighboring towns, Oakville and Pinehurst, share a coastal tsunami warning siren network. Oakville's marginal benefit is $MB_1 = 50 - Q$, and Pinehurst's marginal benefit is $MB_2 = 30 - Q$, where $Q$ is the number of sirens installed. The marginal cost of installing each siren is $MC = \$40$.
+\begin{enumerate}
+    \item Determine how many sirens either town would buy acting alone.
+    \item Compute the socially optimal number of sirens $Q^*$ by summing marginal benefits vertically.
+\end{enumerate}
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Check Individual Provision ($MB_i = MC$):}
+    \begin{itemize}
+        \item Oakville alone: $50 - Q_1 = 40 \implies Q_1 = \mathbf{10\text{ sirens}}$.
+        \item Pinehurst alone: $30 - Q_2 = 40 \implies Q_2 = \mathbf{0\text{ sirens}}$ (since its maximum willingness to pay $\$30 < \$40$).
+    \end{itemize}
+
+    \item \textbf{Sum Marginal Benefits Vertically ($MSB = MB_1 + MB_2$) and Set Equal to $MC$:}
+    \[
+    MSB(Q) = (50 - Q) + (30 - Q) = 80 - 2Q
+    \]
+    Set $MSB = MC$:
+    \[
+    80 - 2Q^* = 40 \implies 2Q^* = 40 \implies Q^* = \mathbf{20\text{ sirens}}
+    \]
+\end{enumerate}
+\textbf{Conclusion:} Acting independently, the towns install at most $10$ sirens; pooling their joint valuation yields the socially optimal $20$ sirens.
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=\textbf{Optional Advanced Section: Samuelson Condition for Public Goods}]
+\small
+\emph{Note for Economics Majors and Quantitative Students:}
+For $N$ consumers with utility functions $U_i(x_i, G)$ over private good $x_i$ and non-rival public good $G$, Pareto efficiency requires the \textbf{Samuelson Condition}: the sum of Marginal Rates of Substitution across all citizens must equal the Marginal Rate of Transformation:
+\[
+\sum_{i=1}^{N} MRS_{G, x}^i = MRT_{G, x}
+\]
+Unlike private goods (where $MRS^1 = MRS^2 = MRT$), public goods sum marginal valuations across the entire population because every citizen consumes the same unit of $G$ simultaneously.
+\end{tcolorbox}
 
 \end{document}

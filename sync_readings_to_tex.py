@@ -13,7 +13,10 @@ Benchmark:
 
 from pathlib import Path
 import re
+import shutil
+import subprocess
 import sys
+import tempfile
 
 ROOT = Path(__file__).resolve().parent
 
@@ -194,23 +197,547 @@ Demand $\downarrow$, Supply $\uparrow$ & Unambiguously Falls ($\downarrow$) & Am
 """),
 
     (4, "ch04_surplus.tex", "ch04_surplus.qmd", "Chapter 4: Consumer and Producer Surplus, Market Efficiency, and Welfare", r"""
-\section{Surplus Metrics}
-Consumer Surplus ($CS$) is the area under inverse demand above market price:
-\begin{equation}
-CS = \int_0^{Q^*} [P(q) - P^*] \, dq = \frac{1}{2} Q^* (P_{\text{choke}} - P^*)
-\end{equation}
-Producer Surplus ($PS$) is the area above inverse supply below market price:
-\begin{equation}
-PS = \int_0^{Q^*} [P^* - MC(q)] \, dq = \frac{1}{2} Q^* (P^* - P_{\text{min}})
-\end{equation}
-Total Surplus ($TS = CS + PS$) is maximized at competitive market equilibrium where $MSB = MSC$.
 
-\section{Deadweight Loss of Taxation}
-An excise tax $t$ creates a tax wedge $P_b - P_s = t$. Deadweight loss follows Harberger's formulation:
+% -----------------------------------------------------------------------------
+% Section 4.1: Consumer Surplus and Willingness to Pay
+% -----------------------------------------------------------------------------
+\section{Consumer Surplus and Marginal Willingness to Pay}
+
+\subsection*{1. Conceptual Introduction}
+Have you ever walked into a store prepared to spend $\$50$ on a pair of shoes, only to find them on sale for $\$30$? If so, you walked out with the shoes \emph{and} an extra $\$20$ in your pocket that you were completely willing to part with. In economics, that $\$20$ gain is called your \textbf{Consumer Surplus ($CS$)}. Every shopper enters the market with a personal maximum price in mind—the highest dollar amount they would pay before walking away empty-handed. Economists call this boundary your \textbf{willingness to pay (WTP)}. Whenever the actual market price is lower than what you were willing to pay, you capture a net financial and psychological win.
+
+In a market, buyers purchase goods one unit at a time. The very first buyers—or the first few items purchased—usually have the highest personal value to consumers (what economists sometimes call ``early buyers'' or intramarginal units). For instance, your first cup of coffee in the morning might be worth $\$8$ to you, but the café only charges $\$4$, giving you $\$4$ in surplus. Your second cup might be worth $\$5$, giving you $\$1$ in surplus. By the time you consider a third cup, its value to you might drop to exactly $\$4$. For that final unit, your willingness to pay matches the market price, yielding zero extra surplus. If price rose to $\$4.01$, you simply would not buy it.
+
+When we add up the surplus enjoyed by every single customer in the entire market, we get \textbf{Total Consumer Surplus}. It represents the total dollar value of happiness, savings, and satisfaction that consumers walk away with over and above what they had to pay. When prices drop—thanks to new technology, cheaper shipping, or increased competition—consumer surplus expands, leaving households with more money left over to spend on other goals like tuition, healthcare, or savings.
+
+\subsection*{2. Visual Representation}
+Figure~\ref{fig:consumer_surplus} graphs consumer surplus on a standard market diagram. 
+
+\begin{tcolorbox}[colback=yellow!10!white,colframe=orange!80!black,title=\textbf{Graphing Tip: Why is Price on the Vertical Y-Axis?}]
+In high school algebra, you usually put the independent variable on the horizontal $x$-axis and the dependent variable on the vertical $y$-axis ($y = f(x)$). In economics, by historical tradition dating back to Alfred Marshall in 1890, we place \textbf{Price ($P$)} on the vertical axis and \textbf{Quantity ($Q$)} on the horizontal axis. When looking at a demand equation like $P = 100 - 2Q$, to find the top vertical intercept (the \textbf{choke price} where nobody buys anything), simply plug in $Q = 0$, giving $P = \$100$.
+\end{tcolorbox}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.1]
+    % Axes
+    \draw[->, thick] (0,0) -- (6,0) node[below] {Quantity ($Q$)};
+    \draw[->, thick] (0,0) -- (0,5.5) node[left] {Price ($P$, \$)};
+    \node[below left] at (0,0) {$0$};
+    
+    % Demand curve: P = 100 - 2Q. Scales: Q=20 is x=2, P=100 is y=5. P=60 is y=3.
+    % Line from (0,5) to (5,0)
+    \draw[thick, color=blue!80!black] (0,5) -- (5,0) node[right] {Demand ($P = 100 - 2Q$)};
+    \node[left] at (0,5) {$P_{\text{choke}} = \$100$};
+    
+    % Market Price and Quantity
+    \draw[dashed] (0,3) node[left] {$P^* = \$60$} -- (2,3);
+    \draw[dashed] (2,0) node[below] {$Q^* = 20$} -- (2,3);
+    
+    % Shaded Consumer Surplus Triangle
+    \fill[blue!20, opacity=0.7] (0,3) -- (2,3) -- (0,5) -- cycle;
+    \node at (0.7,3.7) {\textbf{CS = \$400}};
+    
+    % Equilibrium Node
+    \filldraw[black] (2,3) circle (2pt) node[right=3pt] {$E^*(20, \$60)$};
+\end{tikzpicture}
+\caption{Consumer Surplus on the Linear Demand Plane. Consumer surplus is the shaded blue triangle located below the demand curve and above the $\$60$ market price line.}
+\label{fig:consumer_surplus}
+\end{figure}
+
+\subsection*{3. Real-World Application: Airline Dynamic Pricing and Flight Upgrades}
+Imagine a college student flying home for Thanksgiving break versus a business consultant booking a flight to close a critical $\$100,000$ client deal. 
+\begin{itemize}
+    \item The \textbf{consultant} has an urgent deadline. Their company's maximum willingness to pay for a last-minute seat is \textbf{\$900}.
+    \item The \textbf{student} has a tight budget. Their personal maximum willingness to pay is \textbf{\$400}.
+\end{itemize}
+When both go online, the airline lists the standard coach fare at \textbf{\$350}. Both travelers buy a ticket at that exact price, but look at the difference in their net surplus:
+\[
+\text{Consultant's Surplus} = \$900 - \$350 = \mathbf{\$550}
+\]
+\[
+\text{Student's Surplus} = \$400 - \$350 = \mathbf{\$50}
+\]
+Both sit in identical seats drinking the same tomato juice, but the consultant captures $\$550$ in surplus while the student captures $\$50$. This real-world difference explains why airlines work so hard with algorithms to separate travelers and charge higher fares to business passengers whenever possible.
+
+\subsection*{4. Mathematical Foundation (Algebra Level)}
+Because the demand curve in our example is a straight line, the area of Consumer Surplus forms a simple right-angled triangle. You do not need any advanced calculus—just basic high school geometry:
 \begin{equation}
-DWL = \frac{1}{2} \times t \times (Q^* - Q_t)
+\text{Consumer Surplus } (CS) = \frac{1}{2} \times \text{Base} \times \text{Height}
 \end{equation}
-The relative tax incidence ratio depends on elasticities: $\frac{\Delta P_b}{\Delta P_s} = \frac{\varepsilon_s}{|\varepsilon_d|}$.
+Where:
+\begin{itemize}
+    \item $\text{Base} = Q^*$ (The quantity of units bought at the market price).
+    \item $\text{Height} = P_{\text{choke}} - P^*$ (The vertical gap between the highest walk-away price on the demand curve and the actual price paid).
+\end{itemize}
+
+\noindent\textbf{Worked Problem:}
+A campus bookstore sells portable battery chargers according to the demand equation:
+\[
+P = 100 - 2Q
+\]
+If the market price settles at $P^* = \$60$, calculate the total Consumer Surplus enjoyed by students.
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Find the Choke Price ($P_{\text{choke}}$):} The choke price is the vertical intercept where quantity demanded drops to zero ($Q = 0$). Plug $0$ in for $Q$:
+    \[
+    P_{\text{choke}} = 100 - 2(0) = \$100
+    \]
+    \emph{Meaning: If the store charged $\$100$ or more, zero students would buy a charger.}
+    
+    \item \textbf{Solve for the Quantity Bought ($Q^*$):} Plug the market price of $\$60$ into the demand equation and solve for $Q$:
+    \[
+    60 = 100 - 2Q
+    \]
+    Subtract $100$ from both sides:
+    \[
+    -40 = -2Q
+    \]
+    Divide both sides by $-2$:
+    \[
+    Q^* = 20\text{ chargers}
+    \]
+    \emph{Meaning: At a price of $\$60$, students purchase 20 chargers.}
+    
+    \item \textbf{Find the Height of the Surplus Triangle:}
+    \[
+    \text{Height} = P_{\text{choke}} - P^* = \$100 - \$60 = \$40
+    \]
+    
+    \item \textbf{Calculate the Area of the Consumer Surplus Triangle:}
+    \[
+    CS = \frac{1}{2} \times \text{Base} \times \text{Height} = \frac{1}{2} \times 20 \times \$40 = 10 \times \$40 = \mathbf{\$400}
+    \]
+\end{enumerate}
+\textbf{Conclusion:} Students receive a total net economic benefit of \textbf{\$400} beyond what they paid for the chargers.
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=\textbf{Optional Advanced Section: Calculus Extension}]
+\small
+\emph{Note for Economics Majors and Quantitative Students:} 
+When demand curves are curved rather than straight lines ($P = P(q)$), the area is found by taking the definite integral of marginal willingness to pay minus the market price from 0 to $Q^*$:
+\[
+CS = \int_{0}^{Q^*} \left[ P(q) - P^* \right] dq
+\]
+For our linear equation $P(q) = 100 - 2q$ with $Q^* = 20$ and $P^* = 60$:
+\[
+CS = \int_{0}^{20} (100 - 2q - 60)\,dq = \int_{0}^{20} (40 - 2q)\,dq = \left[ 40q - q^2 \right]_{0}^{20} = (40(20) - 20^2) - 0 = 800 - 400 = \mathbf{\$400}
+\]
+Notice that elementary triangle geometry and calculus yield the exact same $\$400$ result.
+\end{tcolorbox}
+
+% -----------------------------------------------------------------------------
+% Section 4.2: Producer Surplus and Marginal Cost
+% -----------------------------------------------------------------------------
+\section{Producer Surplus and Marginal Cost}
+
+\subsection*{1. Conceptual Introduction}
+Just as consumers gain surplus by paying less than their maximum valuation, sellers gain surplus by selling goods for more than it cost to make them. Every business owner has a minimum price they must receive before they agree to produce and sell an additional unit. Economists call this threshold their \textbf{willingness to accept (WTA)}, which directly equals the \textbf{marginal cost ($MC$)} of producing that extra item.
+
+\textbf{Producer Surplus ($PS$)} is the net operating gain earned by firms. It is the gap between the money a firm collects at the market price and the minimum cost required to produce those items:
+\begin{equation}
+PS = \text{Total Revenue Received} - \text{Total Variable Cost of Production}
+\end{equation}
+A vital point for business and economics students is that \textbf{producer surplus is not the same thing as total accounting profit}. Profit subtracts all costs, including fixed overhead like building rent, machinery leases, and insurance ($\text{Profit} = \text{Revenue} - \text{Variable Costs} - \text{Fixed Costs}$). Producer surplus only looks at operating revenue minus the direct, day-to-day variable costs of making the product ($PS = \text{Revenue} - \text{Variable Costs}$). That operating surplus is the cash flow a firm uses to pay its fixed rent and earn an eventual profit.
+
+Because supply curves slope upward (due to diminishing returns and rising production costs), earlier units can be produced very cheaply, generating large operating surplus. The very last unit produced breaks even on operating costs ($P^* = MC$).
+
+\subsection*{2. Visual Representation}
+Figure~\ref{fig:producer_surplus} depicts Producer Surplus as the red shaded triangle located above the supply curve and below the market price line.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.1]
+    % Axes
+    \draw[->, thick] (0,0) -- (6,0) node[below] {Quantity ($Q$)};
+    \draw[->, thick] (0,0) -- (0,5.5) node[left] {Price ($P$, \$)};
+    \node[below left] at (0,0) {$0$};
+    
+    % Supply curve: P = 20 + 2Q. Scales: Q=20 is x=2, P=20 is y=1. P=60 is y=3.
+    % Line from (0,1) to (4.5,5.5)
+    \draw[thick, color=red!80!black] (0,1) node[left] {$P_{\text{min}} = \$20$} -- (4.25,5.25) node[right] {Supply ($P = 20 + 2Q$)};
+    
+    % Market Price and Quantity
+    \draw[dashed] (0,3) node[left] {$P^* = \$60$} -- (2,3);
+    \draw[dashed] (2,0) node[below] {$Q^* = 20$} -- (2,3);
+    
+    % Shaded Producer Surplus Triangle
+    \fill[red!20, opacity=0.7] (0,1) -- (2,3) -- (0,3) -- cycle;
+    \node at (0.7,2.3) {\textbf{PS = \$400}};
+    
+    % Equilibrium Node
+    \filldraw[black] (2,3) circle (2pt) node[below right=3pt] {$E^*(20, \$60)$};
+\end{tikzpicture}
+\caption{Producer Surplus on the Linear Supply Plane. Producer surplus is the shaded red triangle located above the supply curve and below the $\$60$ market price line.}
+\label{fig:producer_surplus}
+\end{figure}
+
+\subsection*{3. Real-World Application: Coffee Shops and Morning Espresso Sales}
+Consider an independent café in San Francisco selling cold brew coffee for \textbf{\$5.00} a cup. 
+\begin{itemize}
+    \item The direct variable cost (coffee beans, filtered water, compostable cup, and milk) for the barista to brew the first batch of cups is only about \textbf{\$1.50 per cup}.
+    \item On those early cups, the coffee shop earns a producer surplus of:
+    \[
+    \text{Surplus per Cup} = \$5.00 - \$1.50 = \mathbf{\$3.50}
+    \]
+\end{itemize}
+As the morning rush peaks, the café has to hire extra staff and run grinders continuously at higher overtime expense, pushing the marginal cost of the 300th cup up to \textbf{\$4.50}. Even on that late cup, the café still captures $\$0.50$ in surplus. 
+
+Across 300 cups, the accumulated producer surplus might total $\$600$ for the morning. Does the owner pocket all $\$600$ as pure profit? No—they must use that $\$600$ producer surplus to pay fixed bills like the $\$4,000$ monthly shop rent, electric utilities, and insurance. Whatever is left over after paying fixed costs is their economic profit.
+
+\subsection*{4. Mathematical Foundation (Algebra Level)}
+For a linear supply curve, Producer Surplus ($PS$) is calculated as the area of a right-angled triangle:
+\begin{equation}
+\text{Producer Surplus } (PS) = \frac{1}{2} \times \text{Base} \times \text{Height}
+\end{equation}
+Where:
+\begin{itemize}
+    \item $\text{Base} = Q^*$ (The quantity sold in the market).
+    \item $\text{Height} = P^* - P_{\text{min}}$ (The difference between the market price received and the minimum threshold price at the bottom of the supply curve).
+\end{itemize}
+
+\noindent\textbf{Worked Problem:}
+A group of student tutoring services has an aggregate supply curve given by:
+\[
+P = 20 + 2Q
+\]
+If the equilibrium tutoring wage settles at $P^* = \$60$ per session, compute the total Producer Surplus earned by the student tutors.
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Find the Minimum Supply Price ($P_{\text{min}}$):} Plug $Q = 0$ into the supply curve:
+    \[
+    P_{\text{min}} = 20 + 2(0) = \$20
+    \]
+    \emph{Meaning: Below $\$20$, no tutor is willing to work a session.}
+    
+    \item \textbf{Solve for the Quantity Supplied ($Q^*$):} Set the market price equal to the supply equation:
+    \[
+    60 = 20 + 2Q \implies 40 = 2Q \implies Q^* = 20\text{ sessions}
+    \]
+    
+    \item \textbf{Calculate the Height of the Triangle:}
+    \[
+    \text{Height} = P^* - P_{\text{min}} = \$60 - \$20 = \$40
+    \]
+    
+    \item \textbf{Compute the Total Producer Surplus Area:}
+    \[
+    PS = \frac{1}{2} \times \text{Base} \times \text{Height} = \frac{1}{2} \times 20 \times \$40 = 10 \times \$40 = \mathbf{\$400}
+    \]
+\end{enumerate}
+\textbf{Conclusion:} The student tutors earn a collective operating surplus of \textbf{\$400} above their minimum hourly opportunity costs.
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=\textbf{Optional Advanced Section: Calculus Extension}]
+\small
+\emph{Note for Economics Majors:} 
+For continuous, non-linear marginal cost curves $MC(q)$, Producer Surplus is the integral of the market price minus marginal cost from 0 to $Q^*$:
+\[
+PS = \int_{0}^{Q^*} \left[ P^* - MC(q) \right] dq = \int_{0}^{20} (60 - (20 + 2q))\,dq = \int_{0}^{20} (40 - 2q)\,dq = \left[ 40q - q^2 \right]_{0}^{20} = \mathbf{\$400}
+\]
+\end{tcolorbox}
+
+% -----------------------------------------------------------------------------
+% Section 4.3: Allocative Efficiency and Social Welfare
+% -----------------------------------------------------------------------------
+\section{Allocative Efficiency and Price Controls}
+
+\subsection*{1. Conceptual Introduction}
+When we combine both sides of the market, we arrive at the total economic gain created by voluntary trade, known as \textbf{Total Social Surplus ($TS$)}:
+\begin{equation}
+\text{Total Social Surplus} = \text{Consumer Surplus} + \text{Producer Surplus}
+\end{equation}
+Notice something remarkable about this equation: the market price itself actually cancels out! Price simply determines how the economic pie is divided between buyers and sellers. If the price goes up, buyers get less surplus and sellers get more; if the price goes down, buyers get more and sellers get less. But the \emph{overall size} of the pie depends entirely on how many mutually beneficial trades are allowed to happen.
+
+A competitive market in equilibrium achieves what economists call \textbf{allocative efficiency}. At the point where the supply and demand curves cross, the marginal benefit to society matches the marginal cost of producing the good ($MB = MC$). Every buyer who values the good at more than it costs to make gets one, and no resources are wasted making products that people don't value. Economists call this condition \textbf{Pareto efficiency}: at this exact output level, you cannot make one person better off without making someone else worse off.
+
+When governments try to dictate prices by law—such as imposing a legal maximum price (\textbf{price ceiling})—the market cannot reach this balance. If the ceiling is set below the natural equilibrium price, two things happen: sellers produce fewer units because low prices do not cover their costs, while buyers rush to purchase more because it is cheap. This creates an immediate physical \textbf{shortage}. More importantly, trades that both buyers and sellers wanted to make are legally blocked, shrinking the total economic pie and creating a permanent loss to society called \textbf{deadweight loss}.
+
+\subsection*{2. Visual Representation}
+Figure~\ref{fig:market_efficiency} shows the market in natural balance, maximizing the total economic pie to $\$800$. Figure~\ref{fig:price_ceiling} shows what happens when the government imposes a price ceiling at $\$40$.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.1]
+    % Axes
+    \draw[->, thick] (0,0) -- (6,0) node[below] {Quantity ($Q$)};
+    \draw[->, thick] (0,0) -- (0,5.5) node[left] {Price ($P$, \$)};
+    \node[below left] at (0,0) {$0$};
+    
+    % Curves
+    \draw[thick, color=blue!80!black] (0,5) -- (5,0) node[right] {Demand};
+    \draw[thick, color=red!80!black] (0,1) -- (4.25,5.25) node[right] {Supply};
+    
+    % Equilibrium dashed lines
+    \draw[dashed] (0,3) node[left] {$P^* = \$60$} -- (2,3);
+    \draw[dashed] (2,0) node[below] {$Q^* = 20$} -- (2,3);
+    
+    % Shaded Areas
+    \fill[blue!25, opacity=0.7] (0,3) -- (2,3) -- (0,5) -- cycle;
+    \node at (0.7,3.7) {\textbf{CS = \$400}};
+    
+    \fill[red!25, opacity=0.7] (0,1) -- (2,3) -- (0,3) -- cycle;
+    \node at (0.7,2.3) {\textbf{PS = \$400}};
+    
+    \filldraw[black] (2,3) circle (2pt) node[right=3pt] {$E^*(20, \$60)$};
+    \node[right] at (3.0,4.7) {\textbf{Total Surplus = \$800 (Maximized)}};
+\end{tikzpicture}
+\caption{Maximized Social Surplus in a Free Market. At equilibrium $E^*(20, \$60)$, Total Social Surplus is $\$400 + \$400 = \$800$, and no trades are wasted.}
+\label{fig:market_efficiency}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.1]
+    % Axes
+    \draw[->, thick] (0,0) -- (6,0) node[below] {Quantity ($Q$)};
+    \draw[->, thick] (0,0) -- (0,5.5) node[left] {Price ($P$, \$)};
+    \node[below left] at (0,0) {$0$};
+    
+    % Curves: Demand P = 100 - 2Q, Supply P = 20 + 2Q
+    \draw[thick, color=blue!80!black] (0,5) -- (5,0) node[right] {Demand};
+    \draw[thick, color=red!80!black] (0,1) -- (4.25,5.25) node[right] {Supply};
+    
+    % Price Ceiling at P_cap = $40 (y = 2.0). 
+    % On Supply: 40 = 20 + 2Q => Qs = 10 (x = 1.0).
+    % On Demand: 40 = 100 - 2Q => Qd = 30 (x = 3.0).
+    % At Q = 10 on Demand: P = 100 - 2(10) = $80 (y = 4.0).
+    \draw[thick, color=purple, line width=1.5pt] (0,2) -- (4.5,2) node[right] {Price Ceiling ($\$40$)};
+    \draw[dashed] (0,2) node[left] {$\bar{P} = \$40$} -- (1,2);
+    \draw[dashed] (1,0) node[below] {$Q_s = 10$} -- (1,4);
+    \draw[dashed] (3,0) node[below] {$Q_d = 30$} -- (3,2);
+    
+    % Shortage bracket on horizontal axis
+    \draw[<->, thick, color=purple] (1,0.5) -- node[above] {Shortage: 20 units} (3,0.5);
+    
+    % Deadweight Loss Triangle between Q=10 and Q=20
+    % Coordinates: (1,2) on Supply, (1,4) on Demand, (2,3) Equilibrium
+    \fill[orange!40, opacity=0.8] (1,2) -- (1,4) -- (2,3) -- cycle;
+    \node at (1.45,3.0) {\textbf{DWL}};
+    
+    % Pre-ceiling equilibrium reference
+    \filldraw[gray] (2,3) circle (1.5pt) node[right=2pt] {\small $E^*(20, \$60)$};
+\end{tikzpicture}
+\caption{The Impact of a Binding Price Ceiling. Capping the price at $\$40$ causes quantity supplied to collapse to $10$ while quantity demanded jumps to $30$, creating a shortage of $20$ units and an orange Deadweight Loss triangle of lost trades.}
+\label{fig:price_ceiling}
+\end{figure}
+
+\subsection*{3. Real-World Application: Rent Control in San Francisco and New York}
+In expensive housing markets like San Francisco and New York City, local governments often cap how much landlords can raise apartment rents each year. The compassionate goal is simple: keep current residents from being priced out of their neighborhoods.
+
+However, consider the economic consequences over time:
+\begin{itemize}
+    \item \textbf{Supply Collapses:} Landlords faced with capped rents cannot cover rising maintenance, plumbing, and property tax costs. Some convert apartments into luxury condos, while developers stop building modest rental apartments altogether.
+    \item \textbf{Demand Surges:} Low capped rents encourage people to stay in huge apartments alone or move in from outside the city.
+    \item \textbf{The Result:} A severe \textbf{housing shortage}. College students and young workers searching for an apartment face lines around the block, application lotteries, and expensive broker finder fees. While incumbent tenants lucky enough to have a rent-controlled lease benefit, many others are locked out completely—an exact demonstration of deadweight loss and shortages in action.
+\end{itemize}
+
+\subsection*{4. Mathematical Foundation (Algebra Level)}
+Let's analyze the exact numbers when the government imposes a price ceiling of $\bar{P} = \$40$ on our battery charger market ($P_d = 100 - 2Q$ and $P_s = 20 + 2Q$).
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Calculate Quantity Supplied ($Q_s$) under the Ceiling:}
+    Plug $P = \$40$ into the supply equation:
+    \[
+    40 = 20 + 2Q_s \implies 20 = 2Q_s \implies Q_s = \mathbf{10\text{ units}}
+    \]
+    \emph{Result: Sellers only produce 10 chargers because $\$40$ barely covers their costs.}
+    
+    \item \textbf{Calculate Quantity Demanded ($Q_d$) under the Ceiling:}
+    Plug $P = \$40$ into the demand equation:
+    \[
+    40 = 100 - 2Q_d \implies 2Q_d = 60 \implies Q_d = \mathbf{30\text{ units}}
+    \]
+    \emph{Result: At the bargain price of $\$40$, students line up wanting 30 chargers.}
+    
+    \item \textbf{Calculate the Physical Shortage:}
+    \[
+    \text{Shortage} = Q_d - Q_s = 30 - 10 = \mathbf{20\text{ units}}
+    \]
+    
+    \item \textbf{Identify the Actual Number of Transactions:}
+    Because it takes two willing parties to make a deal, the number of units actually bought and sold is limited by whoever produces the least:
+    \[
+    Q_{\text{actual}} = \min(Q_s, Q_d) = \min(10, 30) = \mathbf{10\text{ units}}
+    \]
+    
+    \item \textbf{Calculate the Value of the 10th Unit to Consumers:}
+    What was the 10th charger worth to students? Plug $Q = 10$ into the demand curve:
+    \[
+    P = 100 - 2(10) = \$80
+    \]
+    
+    \item \textbf{Calculate Deadweight Loss ($DWL$):}
+    The market dropped from producing 20 units down to 10 units. Trades for units 11 through 20 were completely eliminated. The lost value forms the orange triangle in Figure~\ref{fig:price_ceiling}:
+    \[
+    \text{Base of DWL Triangle} = \text{Vertical Gap at } Q=10 = \$80 - \$40 = \$40
+    \]
+    \[
+    \text{Height of DWL Triangle} = Q^* - Q_s = 20 - 10 = 10\text{ units}
+    \]
+    \[
+    DWL = \frac{1}{2} \times \text{Base} \times \text{Height} = \frac{1}{2} \times \$40 \times 10 = \mathbf{\$200}
+    \]
+\end{enumerate}
+\textbf{Conclusion:} The price ceiling destroyed \textbf{\$200} in social surplus that both students and producers would have shared if trade had not been blocked.
+
+\begin{tcolorbox}[colback=gray!5!white,colframe=gray!75!black,title=\textbf{Optional Advanced Section: Social Planner Maximization}]
+\small
+\emph{Note for Economics Majors:} 
+A benevolent social planner chooses total output $Q$ to maximize total surplus:
+\[
+\max_Q W(Q) = \int_{0}^{Q} \left[ P_d(q) - P_s(q) \right] dq
+\]
+Taking the first derivative with respect to $Q$ and setting it to 0:
+\[
+\frac{dW}{dQ} = P_d(Q) - P_s(Q) = 0 \implies P_d(Q^*) = P_s(Q^*)
+\]
+This proves mathematically that social welfare is strictly maximized where supply meets demand. Any artificial intervention that forces $Q \neq Q^*$ mathematically guarantees $W(Q) < W(Q^*)$.
+\end{tcolorbox}
+
+% -----------------------------------------------------------------------------
+% Section 4.4: Market Distortions: Excise Taxes and Deadweight Loss
+% -----------------------------------------------------------------------------
+\section{Market Distortions: Taxes, Wedges, and Deadweight Loss}
+
+\subsection*{1. Conceptual Introduction}
+Governments need revenue to fund essential public goods like highways, libraries, and public colleges. One of the most common ways they raise money is by levying an \textbf{excise tax}—a flat dollar tax per unit sold, such as a $\$1.00$ tax on a pack of cigarettes or a $\$0.50$ tax per gallon of gasoline.
+
+When a tax is enacted, it drives a physical \textbf{tax wedge} between what the buyer pays and what the seller actually gets to keep:
+\begin{equation}
+P_{\text{buyer}} - P_{\text{seller}} = t
+\end{equation}
+A widespread misconception among the general public is that politicians can decide who pays a tax simply by writing it into law. If politicians say ``the oil company must pay this $\$0.50$ tax,'' people assume the oil company bears 100\% of the cost. In economics, this is completely false. The legal rule is called \textbf{statutory incidence}, but the true financial burden is called \textbf{economic incidence}. As you will see below, \textbf{it makes zero difference whether the tax is legally placed on the buyer or the seller}—the final prices paid, prices received, and quantity sold are 100\% mathematically identical!
+
+Because the tax raises the price buyers pay and lowers the price sellers keep, fewer total transactions take place ($Q_t < Q^*$). The government successfully collects revenue, but the lost trades that never happened generate \textbf{Deadweight Loss ($DWL$)}. Furthermore, as the tax rate increases, deadweight loss does not grow in a straight line—it explodes with the square of the tax rate ($DWL \propto t^2$). This principle, known as the \textbf{Quadratic Excess Burden Theorem}, means that doubling a tax rate actually \emph{quadruples} the wasted welfare in the economy!
+
+\subsection*{2. Visual Representation}
+Figure~\ref{fig:tax_wedge} illustrates a tax wedge of $t = \$12$ placed on our charger market. 
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.1]
+    % Axes
+    \draw[->, thick] (0,0) -- (6,0) node[below] {Quantity ($Q$)};
+    \draw[->, thick] (0,0) -- (0,5.5) node[left] {Price ($P$, \$)};
+    \node[below left] at (0,0) {$0$};
+    
+    % Curves: Demand P = 100 - 2Q, Supply P = 20 + 2Q
+    % Free market equilibrium: Q=20 (x=2), P=60 (y=3)
+    \draw[thick, color=blue!80!black] (0,5) -- (5,0) node[right] {Demand};
+    \draw[thick, color=red!80!black] (0,1) -- (4.25,5.25) node[right] {Supply};
+    
+    % Pre-tax equilibrium dashed
+    \draw[dashed, gray] (2,0) node[below] {$Q^* = 20$} -- (2,3);
+    
+    % Post-tax prices: Qt = 17 (x = 1.7), Pb = $66 (y = 3.3), Ps = $54 (y = 2.7)
+    \draw[dashed] (0,3.3) node[left] {$P_b = \$66$} -- (1.7,3.3);
+    \draw[dashed] (0,2.7) node[left] {$P_s = \$54$} -- (1.7,2.7);
+    \draw[dashed] (1.7,0) node[below] {$Q_t = 17$} -- (1.7,3.3);
+    
+    % Tax wedge vertical arrow
+    \draw[thick, <->] (1.7,2.7) -- node[left] {$t = \$12$} (1.7,3.3);
+    
+    % Government Revenue Rectangle: width = 1.7, height = 3.3 - 2.7 = 0.6
+    \fill[orange!30, opacity=0.7] (0,2.7) rectangle (1.7,3.3);
+    \node at (0.85,3.0) {\textbf{Tax Rev = \$204}};
+    
+    % Deadweight Loss Triangle: (1.7, 2.7) to (1.7, 3.3) to (2.0, 3.0)
+    \fill[red!40, opacity=0.8] (1.7,2.7) -- (1.7,3.3) -- (2,3) -- cycle;
+    \node at (2.45,3.0) {\textbf{DWL = \$18}};
+\end{tikzpicture}
+\caption{The Anatomy of an Excise Tax. A $\$12$ tax contracts market quantity from 20 to 17. The government collects $\$204$ in revenue (the orange box), while $\$18$ in social welfare is permanently destroyed as deadweight loss (the red triangle).}
+\label{fig:tax_wedge}
+\end{figure}
+
+\subsection*{3. Real-World Application: California Gasoline Excise Taxes}
+Every time drivers in California fill their fuel tanks, they pay approximately \textbf{\$0.54 per gallon} in state excise taxes, plus federal taxes and environmental fees. 
+\begin{itemize}
+    \item \textbf{Where does the money go?} The orange rectangle in Figure~\ref{fig:tax_wedge} represents the billions of dollars flowing directly into state coffers to pave roads, fix highway bridges, and fund regional transit like BART and Caltrain.
+    \item \textbf{Where is the deadweight loss?} Because gas costs more, some families cancel a weekend road trip, small contractors drive fewer delivery routes, and some commuters spend extra hours on slower buses. The loss in satisfaction and economic productivity from those foregone trips represents the red triangle: deadweight loss that nobody captures.
+\end{itemize}
+
+\subsection*{4. Mathematical Foundation (Algebra Level)}
+
+\begin{tcolorbox}[colback=green!10!white,colframe=green!60!black,title=\textbf{Key Concept: Statutory Neutrality (Who Pays Doesn't Matter!)}]
+Suppose the government passes a $\$12$ tax on our chargers. Look at what happens under the two legal options:
+\begin{itemize}
+    \item \textbf{Case A (Tax collected from sellers):} Sellers must pay $\$12$ per charger to the government, so their required price increases by $\$12$:
+    \[
+    P_s^{\text{new}} = (20 + 2Q) + 12 = 32 + 2Q
+    \]
+    Set equal to Demand: $100 - 2Q = 32 + 2Q \implies 68 = 4Q \implies \mathbf{Q_t = 17}$. 
+    Buyers pay $P_b = 100 - 2(17) = \mathbf{\$66}$. Sellers keep $P_s = 66 - 12 = \mathbf{\$54}$.
+    
+    \item \textbf{Case B (Tax collected from buyers):} Buyers must hand $\$12$ to the government at the checkout register, so their willingness to pay the store drops by $\$12$:
+    \[
+    P_d^{\text{new}} = (100 - 2Q) - 12 = 88 - 2Q
+    \]
+    Set equal to original Supply: $88 - 2Q = 20 + 2Q \implies 68 = 4Q \implies \mathbf{Q_t = 17}$.
+    Store receives $P_s = 20 + 2(17) = \mathbf{\$54}$. Buyer pays $P_b = 54 + 12 = \mathbf{\$66}$.
+\end{itemize}
+\textbf{The Takeaway:} Regardless of who physically writes the check to the government, the outcome is 100\% identical: \textbf{buyers pay \$66, sellers keep \$54, and output is 17 units}.
+\end{tcolorbox}
+
+\noindent\textbf{Worked Problem: Computing Government Revenue and Deadweight Loss}
+Using our charger market where $P_d = 100 - 2Q$, $P_s = 20 + 2Q$, and tax $t = \$12$:
+
+\noindent\textbf{Step-by-Step Breakdown:}
+\begin{enumerate}
+    \item \textbf{Find the Pre-Tax Baseline ($Q^*, P^*$):}
+    Unregulated equilibrium occurred at $Q^* = 20$ units and $P^* = \$60$.
+    
+    \item \textbf{Determine Post-Tax Volume ($Q_t$):}
+    From our statutory proof above, $Q_t = \mathbf{17\text{ chargers}}$.
+    
+    \item \textbf{Determine the Prices Paid and Received:}
+    \[
+    P_b = 100 - 2(17) = \mathbf{\$66\text{ (paid by buyer)}}
+    \]
+    \[
+    P_s = 20 + 2(17) = \mathbf{\$54\text{ (kept by seller)}}
+    \]
+    Notice that the $\$12$ tax was split evenly: buyers pay $\$6$ more ($66 - 60 = 6$) and sellers receive $\$6$ less ($60 - 54 = 6$) because the demand and supply curves have identical steepness (both have slopes with magnitude 2).
+    
+    \item \textbf{Calculate Output Contraction ($\Delta Q$):}
+    \[
+    \Delta Q = Q^* - Q_t = 20 - 17 = \mathbf{3\text{ chargers}}
+    \]
+    \emph{Meaning: 3 students and 3 sellers were priced out of doing business together.}
+    
+    \item \textbf{Calculate Government Tax Revenue ($T_{\text{rev}}$):}
+    Multiply the per-unit tax by the number of units actually sold:
+    \[
+    T_{\text{rev}} = \text{Tax per unit} \times Q_t = \$12 \times 17 = \mathbf{\$204}
+    \]
+    
+    \item \textbf{Calculate Deadweight Loss ($DWL$):}
+    The lost trades form the red Harberger triangle with base equal to the tax wedge ($t = \$12$) and height equal to the lost units ($\Delta Q = 3$):
+    \[
+    DWL = \frac{1}{2} \times \text{Base} \times \text{Height} = \frac{1}{2} \times t \times \Delta Q = \frac{1}{2} \times \$12 \times 3 = 6 \times 3 = \mathbf{\$18}
+    \]
+\end{enumerate}
+\textbf{Conclusion:} The government successfully raises \textbf{\$204} in tax revenue, but causes \textbf{\$18} of economic value to be permanently lost to society.
+
+\begin{tcolorbox}[colback=orange!5!white,colframe=orange!75!black,title=\textbf{Optional Advanced Section: The Quadratic Excess Burden Theorem}]
+\small
+\emph{Note for Quantitative Students:}
+Why do economists caution so strongly against high tax rates? Let linear demand have slope $-b$ and supply have slope $d$. The output reduction is $\Delta Q = \frac{t}{b + d}$. Plugging this into the Harberger triangle formula yields:
+\[
+DWL(t) = \frac{1}{2} \times t \times \Delta Q = \frac{1}{2} t \left( \frac{t}{b + d} \right) = \frac{t^2}{2(b + d)}
+\]
+Differentiating with respect to the tax rate $t$:
+\[
+\frac{d(DWL)}{dt} = \frac{t}{b + d} > 0, \quad \frac{d^2(DWL)}{dt^2} = \frac{1}{b + d} > 0
+\]
+Because the second derivative is strictly positive, \textbf{deadweight loss grows with the square of the tax rate ($t^2$)}. 
+\begin{itemize}
+    \item If tax is $t = \$12$, $DWL = \frac{12^2}{2(2+2)} = \frac{144}{8} = \mathbf{\$18}$.
+    \item If tax doubles to $t = \$24$, $DWL = \frac{24^2}{8} = \frac{576}{8} = \mathbf{\$72}$.
+\end{itemize}
+Doubling the tax from $\$12$ to $\$24$ did not double the deadweight loss—it \textbf{quadrupled} it from $\$18$ to $\$72$!
+\end{tcolorbox}
 """),
 
     (5, "ch05_elasticity.tex", "ch05_elasticity.qmd", "Chapter 5: Elasticity: Responsiveness of Demand and Supply", r"""
@@ -608,48 +1135,175 @@ Answers: (1) Imports were produced abroad and must be removed from domestic prod
 
     (5, "ch05_unemployment_inflation.tex", "ch05_unemployment_inflation.qmd", "Chapter 5: Employment, Unemployment Metrics, and the Price Level", r"""
 \section{Learning Outcomes and Key Terms}
-Students should calculate labor-market rates, interpret what the unemployment rate does and does not measure, and relate cyclical unemployment to output gaps without confusing correlation with causation. These objectives support MA-1 and C2002-1. Key terms include employed, unemployed, labor force, participation rate, U-3, underemployment, natural rate, and output gap.
+By the end of this chapter, students should be able to classify people in the Bureau of Labor Statistics (BLS) household-survey framework; calculate labor-force participation, employment-population, U-3, and U-6 rates; interpret unemployment and vacancy movements over the business cycle; estimate an illustrative output loss with Okun's law; and distinguish nominal wage growth from changes in real purchasing power. These goals support MA-1 and C2002-1. Key terms include civilian noninstitutional population, labor force, not in the labor force, marginally attached, underemployment, U-3, U-6, Beveridge curve, potential output, CPI, and real wage.
 
-\section{How a Household Enters the Labor Statistics}
-The Bureau of Labor Statistics classifies people in the civilian noninstitutional population age 16 and older using a household survey. A person is employed if they did paid work or had a job from which they were temporarily absent. A person is unemployed if they had no job, were available for work, and actively looked for work in the previous four weeks, or were on temporary layoff under the survey rules. Everyone else is not in the labor force. These are operational definitions for consistent measurement, not judgments about whether someone needs a job.
+\section{Part 1: The BLS Population Map}
+\subsection{Bring It Home: One Person, One Survey Week}
+Imagine that a worker's restaurant closes for renovations during the BLS survey reference week. The worker did no paid work that week, is available to return, and has not searched elsewhere because the employer expects the temporary layoff to end. Another person worked a paid shift for a delivery platform, even though the work was only a few hours. A third person wants a job but stopped searching after repeated rejections. These people may all describe themselves as needing more work, but the household survey classifies them differently using consistent rules.
 
-The labor force is the employed plus the unemployed. A discouraged worker who wants a job but stopped searching is not counted as unemployed under U-3; they are outside the labor force. A person working part time for economic reasons is counted as employed even if they want full-time work. Broader BLS measures include additional forms of labor underutilization.
-
-\section{Rates and Their Denominators}
-The unemployment rate uses the labor force, not the entire population. The labor-force participation rate and employment-population ratio answer different questions:
-\begin{align}
-LF &= E+U, \\
-u &= \frac{U}{LF}\times 100\%, \\
-LFPR &= \frac{LF}{P}\times 100\%, \\
-EPOP &= \frac{E}{P}\times 100\%.
-\end{align}
-Here $E$ is employment, $U$ is unemployment, and $P$ is the civilian noninstitutional population age 16 and older. Rates can move for different reasons. If people stop searching, the unemployment rate may fall even if employment does not rise; the participation rate can reveal that denominator change.
-
-\section{Graph Description: Cycles and the Natural Rate}
-On a time-series graph, put months or quarters on the horizontal axis and the unemployment rate on the vertical axis. Recessions often coincide with a rise in unemployment, followed by a gradual decline during recovery. The natural rate is not a fixed number written into the data; it is an estimated benchmark reflecting frictional and structural unemployment at a given time. The cyclical component is the gap between actual and estimated natural unemployment, and estimates are uncertain.
-
-Okun's law summarizes a historical tendency for output to be below potential when unemployment is above its sustainable benchmark. A commonly used rough relation is:
+The starting population is the civilian noninstitutional population (CNIP) age 16 and older, denoted $P$. The BLS partitions it into people in the labor force and people not in the labor force:
 \begin{equation}
-\frac{Y-Y^*}{Y^*}\approx -\beta(u-u^*), \qquad \beta>0.
+P = LF + NILF, \qquad LF = E + U.
 \end{equation}
-The coefficient varies by period and specification. This relationship is a useful model, not a fixed engineering law or proof that unemployment alone caused an output change.
+Here $E$ is employed, $U$ is unemployed, $LF$ is the labor force, and $NILF$ is not in the labor force. A person is employed if they did any work for pay or profit during the reference week, worked without pay in a family business under the survey threshold, or had a job but were temporarily absent. A person is unemployed if they had no job, were available for work, and actively searched in the prior four weeks; people on temporary layoff are treated under a specific exception. Everyone else in $P$ is classified as not in the labor force.
 
-\begin{examplecase}{FRED Data: Reading the U-3 Series}
-FRED's UNRATE series is the BLS U-3 unemployment rate: percent, seasonally adjusted, monthly. The October 2026 observation is 4.1 percent. A single monthly rate is a snapshot, not a complete account of job quality, hours desired, discouraged workers, or the causes of a change. Pair it with labor-force participation and employment measures when interpreting a cycle.
+\subsection{Graph Description: The BLS Classification Tree}
+Picture a flowchart rather than a graph with a behavioral curve. At the top is the full rectangle $P$. A vertical split separates $LF$ on the left from $NILF$ on the right. The $LF$ rectangle splits again into $E$ and $U$. Every person belongs to exactly one leaf of this tree for the survey classification. The categories describe survey status, not a person's worth, effort, or need for income.
+
+\subsection{Work It Out: Rates Have Different Denominators}
+Suppose a hypothetical local population has $P=1{,}000$, with $E=600$, $U=40$, and therefore $NILF=360$. First add employed and unemployed people to find the labor force:
+\begin{align}
+LF &= E+U = 600+40=640,\\
+u_3 &= \frac{U}{LF}\times 100\% = \frac{40}{640}\times100\%=6.25\%,\\
+LFPR &= \frac{LF}{P}\times100\% = \frac{640}{1{,}000}\times100\%=64\%,\\
+EPOP &= \frac{E}{P}\times100\% = \frac{600}{1{,}000}\times100\%=60\%.
+\end{align}
+The unemployment rate is not the share of the entire population without a job. Its denominator is the labor force. The participation rate asks what share of the population is working or actively seeking work; the employment-population ratio asks what share is employed.
+
+\begin{tcolorbox}[colback=yellow!10!white,colframe=orange!80!black,title=\textbf{Clear It Up: A Falling U-3 Rate Can Hide a Falling Labor Force}]
+If unemployed people stop searching, they generally move from $U$ to $NILF$. That lowers both the numerator and denominator of U-3 and can make the rate fall without any new hiring. Check $LFPR$ and $EPOP$ alongside unemployment before concluding that job conditions improved.
+\end{tcolorbox}
+
+\section{Part 2: U-3, U-6, and the Gig Economy}
+\subsection{The Headline Rate and Broader Underutilization}
+U-3 is the official unemployment rate: unemployed people as a share of the civilian labor force. It is useful, comparable, and deliberately narrow. It does not count people who want a job but have not searched recently, and it counts a person working part time as employed even if that person wants full-time hours.
+
+U-6 is a broader BLS measure of labor underutilization. It includes the unemployed, people marginally attached to the labor force, and people employed part time for economic reasons. Marginally attached people want and are available for work, searched sometime in the prior 12 months, but did not search during the most recent four weeks. Discouraged workers are one subset of the marginally attached. U-6's denominator adds the marginally attached to the labor force, so the numerator and denominator must be expanded together:
+\begin{equation}
+U\text{-}6 =
+\frac{U + M + PT_{econ}}{LF + M}\times100\%,
+\end{equation}
+where $M$ is marginally attached people and $PT_{econ}$ is employed part-time for economic reasons.
+
+\subsection{Bring It Home: A Platform Worker Wants More Hours}
+A courier completes several paid deliveries during the reference week and wants a stable, full-time schedule. Under the household-survey concept, the courier is employed because they performed paid work; being a gig worker does not by itself make someone unemployed. If the courier is working part time for economic reasons and wants full-time hours, they may be included in the U-6 numerator but not in U-3's unemployed count. Another courier who did no work, wants a job, is available, and searched within the last four weeks may be unemployed. A worker who stopped searching may be marginally attached, rather than unemployed under U-3.
+
+The distinction is about measured labor utilization, not whether a gig job is good or bad. The survey classification alone does not reveal earnings volatility, benefits, schedule control, job security, or whether the worker prefers independent contracting. Those are important dimensions of job quality, but they require additional data.
+
+\subsection{Work It Out: Compare U-3 and U-6}
+Continue the hypothetical example with $LF=640$ and $U=40$. Suppose $M=20$ people are marginally attached and $PT_{econ}=30$ employed people want full-time work but can only find part-time hours. Then:
+\begin{align}
+U\text{-}3 &= \frac{40}{640}\times100\%=6.25\%,\\
+U\text{-}6 &= \frac{40+20+30}{640+20}\times100\%
+=\frac{90}{660}\times100\%\approx13.64\%.
+\end{align}
+These are illustrative counts, not a current estimate for any city or month. The gap between the measures shows that the headline rate omits forms of underutilization; it does not mean U-3 is incorrectly calculated.
+
+\begin{examplecase}{FRED Data: Compare Measures, Not Just Headlines}
+FRED distributes official BLS series including UNRATE (U-3), U6RATE (U-6), CIVPART (labor-force participation rate), and EMRATIO (employment-population ratio). These are seasonally adjusted monthly percentage series. Plotting them together can show whether a change in U-3 coincides with movement in broader underutilization or participation. The rates have different definitions and denominators; their difference is informative, not an arithmetic error.
 \end{examplecase}
 
-\begin{coreprinciple}
-\boxheader{SlateBlue}{Clear It Up: Unemployment Is a Stock; Separations and Hires Are Flows}
-The number unemployed at a point in time is a stock. New job losses, hires, exits, and entries are flows that change the stock over a period. A falling unemployment stock can result from hiring, labor-force exits, or both, so check the related flows and rates before drawing a conclusion.
-\end{coreprinciple}
+\section{Part 3: Vacancies, Unemployment, and Output Slack}
+\subsection{The Beveridge Curve}
+The Beveridge curve describes the usual inverse relationship between the unemployment rate and the job-vacancy rate. In a Cartesian diagram, place unemployment $u$ (percent) on the horizontal axis and vacancies $v$ (percent) on the vertical axis. A movement down and left is consistent with a stronger matching environment: vacancies rise as unemployment falls. A movement up and right is consistent with weaker labor demand: vacancies fall as unemployment rises. This is a descriptive relationship, not a mechanical law.
+
+The curve can shift. Improved matching, geographic mobility, or training can move the relationship inward, allowing more hires for a given vacancy rate. Mismatch between workers' skills and open jobs, search frictions, or slower matching can shift it outward. A point on the curve is an observed combination; a shift is a change in the relationship itself.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=0.65cm,y=0.48cm]
+  \draw[->] (0,0) -- (10,0) node[below right] {Unemployment rate, $u$ (\%)};
+  \draw[->] (0,0) -- (0,10) node[above left] {Vacancy rate, $v$ (\%)};
+  \foreach \x in {2,4,6,8} {
+    \draw (\x,0.12) -- (\x,-0.12) node[below=3pt] {\x};
+  }
+  \foreach \y in {2,4,6,8} {
+    \draw (0.12,\y) -- (-0.12,\y) node[left=3pt] {\y};
+  }
+  \draw[thick,blue] (1.2,8.6) .. controls (2.1,5.2) and (4.4,2.4) .. (8.5,1.2);
+  \draw[thick,dashed,red] (2.0,9.0) .. controls (3.4,6.6) and (5.8,4.4) .. (8.8,3.2);
+  \node[blue,anchor=west] at (5.7,1.9) {Beveridge curve};
+  \node[red,anchor=west] at (6.2,4.6) {outward shift};
+  \fill (3.0,4.1) circle (2pt);
+  \node[anchor=south east] at (3.0,4.1) {A};
+\end{tikzpicture}
+\caption{A downward-sloping Beveridge relationship and an outward shift associated with weaker matching. Curves and endpoints are shown within the labeled 0--10 percent plotting range.}
+\label{fig:beveridge-curve}
+\end{figure}
+
+\subsection{Okun's Law: From an Unemployment Gap to an Output Gap}
+Okun's law summarizes a regularity: when unemployment is above its sustainable or natural benchmark, real output tends to be below potential. A simplified gap form is:
+\begin{equation}
+\frac{Y-Y^*}{Y^*}\approx -\beta(u-u^*), \qquad \beta>0,
+\end{equation}
+where $Y$ is real output, $Y^*$ is potential output, $u$ and $u^*$ are measured in percentage points, and $\beta$ is an estimated coefficient. The relationship varies by period and specification. It does not prove that unemployment alone caused a particular output loss.
+
+\subsection{Work It Out: An Illustrative \$1.0 Trillion Output Shortfall}
+Assume potential real GDP is $Y^*=\$25.0$ trillion in a chosen base-year dollar measure, actual unemployment is $u=6\%$, the estimated benchmark is $u^*=4\%$, and an illustrative Okun coefficient is $\beta=2$. First find the unemployment gap: $u-u^*=2$ percentage points. Then estimate the output gap:
+\begin{align}
+\frac{Y-Y^*}{Y^*} &\approx -2(2\%)=-4\%,\\
+Y^*-Y &\approx 0.04\times \$25.0\text{ trillion}
+=\$1.0\text{ trillion}.
+\end{align}
+The estimated shortfall is \$1.0 trillion of real output relative to the assumed potential level. This is a model-based illustration, not a reported current loss. Potential GDP and $\beta$ are estimates, and the result depends on the units and period used.
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=\textbf{Optional Advanced: Markov Job-Finding and Separation Flows}]
+\small
+In a two-state model, let $s$ be the period separation probability from employment to unemployment and $f$ the job-finding probability from unemployment to employment. At steady state, inflows to unemployment equal outflows: $s(1-u)=fu$. Solving gives:
+\[
+u^*=\frac{s}{s+f}.
+\]
+This result assumes a stable two-state population, constant transition probabilities, and no labor-force entry or exit. It makes the stock-flow logic explicit: a higher separation rate raises steady-state unemployment, while a higher job-finding rate lowers it.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=gray!5!white,colframe=gray!75!black,title=\textbf{Optional Advanced: State-Space Slack and Growth-Rate Okun Relations}]
+\small
+Potential output $Y_t^*$ and the natural unemployment rate $u_t^*$ are not directly observed. A state-space approach treats them as latent states inferred from noisy observations. Output slack can be represented as $x_t=\ln Y_t-\ln Y_t^*$, approximately the percentage output gap for small differences; labor slack can be represented as $u_t-u_t^*$. Their estimated paths depend on the model and can be revised as new observations arrive.
+
+An alternative growth-difference form is $\Delta u_t\approx-\kappa(g_{Y,t}-g_{Y,t}^*)$, where $g_{Y,t}$ is real output growth, $g_{Y,t}^*$ is potential growth, and $\kappa>0$ is an estimated response coefficient. Growth above potential tends to reduce unemployment; growth below potential tends to raise it. This is an empirical approximation, not an identity.
+\end{tcolorbox}
+
+\section{Part 4: CPI Inflation and Real-Wage Purchasing Power}
+\subsection{A Price Index and the Cost of a Basket}
+The Consumer Price Index (CPI) tracks price changes for a representative consumer basket under the BLS methodology. Inflation over a period is the percentage change in the index:
+\begin{equation}
+\pi_t=\frac{CPI_t-CPI_{t-1}}{CPI_{t-1}}\times100\%.
+\end{equation}
+The CPI is an index, not a dollar price and not a perfect measure of every household's cost of living. Households have different spending patterns, and the index summarizes an average basket using a defined method.
+
+\subsection{Nominal Wages and Real Purchasing Power}
+A nominal wage is measured in current dollars. A real wage adjusts for the price level and indicates how much of a reference-period basket that wage can buy:
+\begin{equation}
+W^{real}_t=\frac{W^{nom}_t}{CPI_t}\times100,
+\end{equation}
+when the CPI is normalized to 100 in the chosen reference period. If a nominal wage rises more slowly than the CPI, its purchasing power falls even though the dollar wage increased.
+
+\subsection{Work It Out: A Raise That Does Not Keep Pace with Prices}
+Suppose an hourly wage rises from \$20.00 to \$20.80, a 4\% increase. Over the same period, the CPI rises from 300 to 315, a 5\% increase. Express the new wage in the initial period's purchasing power:
+\begin{align}
+W^{real}_0 &= \frac{\$20.00}{300}\times100=\$6.667,\\
+W^{real}_1 &= \frac{\$20.80}{315}\times100\approx \$6.603.
+\end{align}
+The real wage changes by approximately $(6.603/6.667)-1=-0.95\%$. The worker receives 80 cents more per hour in nominal terms, but the CPI basket costs more, so purchasing power falls slightly.
+
+\begin{tcolorbox}[colback=yellow!10!white,colframe=orange!80!black,title=\textbf{Clear It Up: Nominal Raise Does Not Guarantee a Real Raise}]
+Compare growth rates, not dollar changes alone. When nominal wage growth is below inflation, real wage growth is negative. When the two rates are close, the approximation $g_{real}\approx g_W-\pi$ is useful, but exact compounding gives a slightly different result.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=green!5!white,colframe=green!60!black,title=\textbf{Optional Advanced: Exact Fisher Compounding for Real Wages}]
+\small
+The exact relation between nominal wage growth $g_W$, inflation $\pi$, and real wage growth $g_{real}$ is:
+\[
+1+g_{real}=\frac{1+g_W}{1+\pi},
+\qquad
+g_{real}=\frac{1+g_W}{1+\pi}-1.
+\]
+For $g_W=0.04$ and $\pi=0.05$, exact real growth is $1.04/1.05-1\approx-0.00952$, or about $-0.95\%$. The subtraction approximation gives $4\%-5\%=-1\%$. The difference is small here but matters when rates are large.
+\end{tcolorbox}
+
+\begin{examplecase}{FRED Data: Track Inflation and Real-Wage Context}
+FRED series CPIAUCSL is the seasonally adjusted U.S. all-items CPI for all urban consumers, reported monthly as an index with 1982--84=100. UNRATE and U6RATE report U-3 and U-6, while CIVPART and EMRATIO provide participation and employment-population context. To study purchasing power, compare nominal wage growth with CPI inflation over matching dates and frequencies; do not divide a wage by an index without stating the chosen base convention.
+\end{examplecase}
 
 \section{Check Your Understanding}
 \begin{enumerate}
-  \item A person wants work, is available, but has not searched in the past four weeks. How is that person classified in U-3?
-  \item If $E=160$, $U=10$, and $P=200$, calculate the unemployment rate and participation rate.
-  \item Why might a falling unemployment rate fail to show that employment increased?
+  \item In the BLS partition, where is a person who wants work but has not searched in the past four weeks? What additional condition could make them marginally attached?
+  \item With $LF=800$, $U=48$, $M=16$, and $PT_{econ}=32$, calculate U-3 and U-6.
+  \item On the Beveridge diagram, what do an inward shift and a movement down-left represent?
+  \item If $Y^*=\$20$ trillion, $u-u^*=1.5$ percentage points, and $\beta=2$, estimate the output gap and shortfall.
+  \item A nominal wage rises 3\% while CPI inflation is 6\%. Is real wage growth positive or negative? Use the exact relation to estimate it.
 \end{enumerate}
-Answers: (1) Not in the labor force, under the stated facts. (2) $u=10/170\times100\%=5.9\%$; $LFPR=170/200\times100\%=85\%$. (3) People may have left the labor force, reducing the denominator.
+Answers: (1) NILF; if they want a job, are available, searched in the prior 12 months, and not in the prior four weeks, they may be marginally attached. (2) U-3 $=48/800=6\%$; U-6 $=(48+16+32)/(800+16)=96/816\approx11.76\%$. (3) An inward shift indicates improved matching; down-left is a movement along the curve as vacancies rise and unemployment falls. (4) Output gap $\approx-3\%$ and shortfall $\$0.6$ trillion. (5) Negative: $1.03/1.06-1\approx-2.83\%$.
 """),
 
     (6, "ch06_savings_investment_financial_system.tex", "ch06_savings_investment_financial_system.qmd", "Chapter 6: Saving, Investment Spending, and the Financial System", r"""
@@ -948,9 +1602,145 @@ Answers: (1) $NX=S-I=-50$, a deficit in the simplified model. (2) The dollar app
 # 2. MARKDOWN / QUARTO SANITIZER
 # =============================================================================
 
-def tex_to_qmd(tex_body: str, title: str) -> str:
+def tex_argument(text: str, command: str) -> str:
+  command_start = text.find(command)
+  if command_start < 0:
+    return ""
+  opening = command_start + len(command)
+  while opening < len(text) and text[opening].isspace():
+    opening += 1
+  if opening >= len(text) or text[opening] != "{":
+    return ""
+
+  depth = 1
+  position = opening + 1
+  while position < len(text):
+    character = text[position]
+    if character == "\\":
+      position += 2
+      continue
+    if character == "{":
+      depth += 1
+    elif character == "}":
+      depth -= 1
+      if depth == 0:
+        return text[opening + 1:position]
+    position += 1
+  return ""
+
+
+def replace_tex_command(text: str, command: str, wrapper: str) -> str:
+  result = []
+  cursor = 0
+  while True:
+    command_start = text.find(command, cursor)
+    if command_start < 0:
+      result.append(text[cursor:])
+      break
+
+    opening = command_start + len(command)
+    while opening < len(text) and text[opening].isspace():
+      opening += 1
+    if opening >= len(text) or text[opening] != "{":
+      result.append(text[cursor:command_start + len(command)])
+      cursor = command_start + len(command)
+      continue
+
+    depth = 1
+    position = opening + 1
+    while position < len(text):
+      if text[position] == "\\":
+        position += 2
+        continue
+      if text[position] == "{":
+        depth += 1
+      elif text[position] == "}":
+        depth -= 1
+        if depth == 0:
+          break
+      position += 1
+    if depth:
+      result.append(text[cursor:])
+      break
+
+    inner = replace_tex_command(text[opening + 1:position], command, wrapper)
+    result.extend((text[cursor:command_start], wrapper.format(inner)))
+    cursor = position + 1
+  return "".join(result)
+
+
+def tex_caption_to_alt(caption: str) -> str:
+  caption_alt = replace_tex_command(caption, r"\textbf", "{}")
+  caption_alt = replace_tex_command(caption_alt, r"\emph", "{}")
+  caption_alt = replace_tex_command(caption_alt, r"\textit", "{}")
+  caption_alt = re.sub(r"(?<!\\)\$(.*?)(?<!\\)\$", r"\1", caption_alt, flags=re.DOTALL)
+  caption_alt = caption_alt.replace(r"\&", "&").replace(r"\$", "$")
+  caption_alt = re.sub(r"\s+", " ", caption_alt).strip()
+  return caption_alt.replace('"', "'")
+
+
+def tikz_to_svg(tikz: str, output_path: Path) -> None:
+  latex = shutil.which("latex")
+  dvisvgm = shutil.which("dvisvgm")
+  if not latex or not dvisvgm:
+    raise RuntimeError("latex and dvisvgm are required to render TikZ figures for Quarto.")
+  tikz_settings = ROOT / "shared" / "tikz-settings.tex"
+  if not tikz_settings.is_file():
+    raise FileNotFoundError(f"Shared TikZ settings not found: {tikz_settings}")
+
+  document = r"""\documentclass[tikz,border=3pt]{standalone}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\definecolor{SlateBlue}{HTML}{1E293B}
+\definecolor{Terracotta}{HTML}{C2410C}
+\definecolor{ForestGreen}{HTML}{15803D}
+\definecolor{LightSlate}{HTML}{F8FAFC}
+\definecolor{BorderGray}{HTML}{CBD5E1}
+\definecolor{LightTerracotta}{HTML}{FFF7ED}
+\definecolor{CourseBlue}{HTML}{0072B2}
+\definecolor{CourseOrange}{HTML}{D55E00}
+\definecolor{CourseTeal}{HTML}{009E73}
+\definecolor{CoursePurple}{HTML}{CC79A7}
+\definecolor{CourseAmber}{HTML}{E69F00}
+\input{tikz-settings.tex}
+\begin{document}
+""" + tikz + r"""
+\end{document}
+"""
+  output_path.parent.mkdir(parents=True, exist_ok=True)
+  with tempfile.TemporaryDirectory(prefix="econ-tikz-") as temp_name:
+    temp_dir = Path(temp_name)
+    shutil.copyfile(tikz_settings, temp_dir / "tikz-settings.tex")
+    tex_path = temp_dir / "figure.tex"
+    tex_path.write_text(document, encoding="utf-8")
+    compilation = subprocess.run(
+      [latex, "-halt-on-error", "-interaction=nonstopmode", tex_path.name],
+      cwd=temp_dir,
+      capture_output=True,
+      text=True,
+      check=False,
+    )
+    if compilation.returncode:
+      raise RuntimeError(f"TikZ figure failed to compile:\n{compilation.stdout[-1200:]}")
+
+    svg_path = temp_dir / "figure.svg"
+    conversion = subprocess.run(
+      [dvisvgm, "--page=1", "--bbox=min", "--no-fonts", f"--output={svg_path}", str(temp_dir / "figure.dvi")],
+      cwd=temp_dir,
+      capture_output=True,
+      text=True,
+      check=False,
+    )
+    if conversion.returncode or not svg_path.is_file():
+      raise RuntimeError(f"TikZ figure failed to convert to SVG:\n{conversion.stderr[-1200:]}")
+    shutil.copyfile(svg_path, output_path)
+
+
+def tex_to_qmd(tex_body: str, title: str, qmd_dir: Path) -> str:
     body = tex_body
     body = re.sub(r"\\documentclass.*?\\begin\{document\}", "", body, flags=re.DOTALL)
+    for command in (r"\title", r"\author", r"\date"):
+        body = replace_tex_command(body, command, "")
     body = re.sub(r"\\end\{document\}", "", body)
     body = re.sub(r"\\maketitle", "", body)
     body = re.sub(r"\\tableofcontents", "", body)
@@ -959,9 +1749,70 @@ def tex_to_qmd(tex_body: str, title: str) -> str:
     body = re.sub(r"\\hrule", "", body)
 
     body = re.sub(r"\\begin\{abstract\}(.*?)\\end\{abstract\}", r"> \1\n", body, flags=re.DOTALL)
-    body = re.sub(r"\\section\*?\{(.*?)\}", r"## \1", body)
-    body = re.sub(r"\\subsection\*?\{(.*?)\}", r"### \1", body)
-    body = re.sub(r"\\subsubsection\*?\{(.*?)\}", r"#### \1", body)
+
+    body = re.sub(
+        r"\\begin\{equation\}(.*?)\\end\{equation\}",
+        lambda match: f"\n\n$$\n{match.group(1).strip()}\n$$\n\n",
+        body,
+        flags=re.DOTALL,
+    )
+    body = re.sub(
+        r"\\\[(.*?)\\\]",
+        lambda match: f"\n\n$$\n{match.group(1).strip()}\n$$\n\n",
+        body,
+        flags=re.DOTALL,
+    )
+    body = body.replace(r"\(", "$").replace(r"\)", "$")
+
+    if r"\begin{figure}" in body:
+      figure_references = {}
+      figure_pattern = re.compile(r"\\begin\{figure\}(?:\[[^\]]*\])?(.*?)\\end\{figure\}", re.DOTALL)
+      figure_slug = re.sub(r"[^a-z0-9]+", "_", title.lower()).strip("_")
+
+      def convert_figure(match):
+        figure_number = len(figure_references) + 1
+        figure = match.group(0)
+        tikz_match = re.search(r"\\begin\{tikzpicture\}.*?\\end\{tikzpicture\}", figure, re.DOTALL)
+        caption = tex_argument(figure, r"\caption")
+        caption_alt = tex_caption_to_alt(caption)
+        label = re.search(r"\\label\{([^}]+)\}", figure)
+        if label:
+          figure_references[label.group(1)] = figure_number
+        if not tikz_match:
+          return f"\n\n**Figure {figure_number}.** {caption}\n\n" if caption else "\n\n"
+
+        filename = f"{figure_slug}_figure_{figure_number:02d}.svg"
+        asset_path = ROOT / "shared" / "figures" / filename
+        tikz_to_svg(tikz_match.group(0), asset_path)
+        web_asset_path = qmd_dir / "figures" / filename
+        web_asset_path.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(asset_path, web_asset_path)
+        relative_path = f"figures/{filename}"
+        return f'\n\n![Figure {figure_number}. {caption}]({relative_path}){{fig-alt="{caption_alt}"}}\n\n'
+
+      body = figure_pattern.sub(convert_figure, body)
+      for label, figure_number in figure_references.items():
+        body = re.sub(rf"Figure~\\ref\{{{re.escape(label)}\}}", f"Figure {figure_number}", body)
+        body = re.sub(rf"\\ref\{{{re.escape(label)}\}}", str(figure_number), body)
+
+    body = re.sub(r"(?m)^[ \t]*%[^\n]*(?:\n|$)", "", body)
+
+    tcolorbox_pattern = re.compile(r"\\begin\{tcolorbox\}\[(.*?)\](.*?)\\end\{tcolorbox\}", re.DOTALL)
+
+    def convert_tcolorbox(match):
+      options, content = match.groups()
+      box_title = tex_argument(options, r"\textbf") or "Key Concept"
+      box_title = box_title.replace('"', "'")
+      return f'\n\n::: {{.callout-note title="{box_title}"}}\n{content}\n:::\n\n'
+
+    body = tcolorbox_pattern.sub(convert_tcolorbox, body)
+    body = re.sub(r"\\small\b", "", body)
+    body = re.sub(r"\\section\*\{(.*?)\}", r"## \1 {.unnumbered}", body)
+    body = re.sub(r"\\section\{(.*?)\}", r"## \1", body)
+    body = re.sub(r"\\subsection\*\{(.*?)\}", r"### \1 {.unnumbered}", body)
+    body = re.sub(r"\\subsection\{(.*?)\}", r"### \1", body)
+    body = re.sub(r"\\subsubsection\*\{(.*?)\}", r"#### \1 {.unnumbered}", body)
+    body = re.sub(r"\\subsubsection\{(.*?)\}", r"#### \1", body)
 
     body = re.sub(
         r"\\begin\{examplecase\}\{(.*?)\}(.*?)\\end\{examplecase\}",
@@ -976,8 +1827,11 @@ def tex_to_qmd(tex_body: str, title: str) -> str:
         flags=re.DOTALL
     )
 
-    body = re.sub(r"\\textbf\{(.*?)\}", r"**\1**", body)
-    body = re.sub(r"\\textit\{(.*?)\}", r"*\1*", body)
+    body = replace_tex_command(body, r"\textbf", "**{}**")
+    body = replace_tex_command(body, r"\textit", "*{}*")
+    body = replace_tex_command(body, r"\emph", "*{}*")
+    body = replace_tex_command(body, r"\url", "<{}>")
+    body = re.sub(r"\\noindent\b", "", body)
     body = re.sub(r"\\begin\{itemize\}", "", body)
     body = re.sub(r"\\end\{itemize\}", "", body)
     body = re.sub(r"\\begin\{enumerate\}", "", body)
@@ -985,8 +1839,6 @@ def tex_to_qmd(tex_body: str, title: str) -> str:
     body = re.sub(r"\\item\[(.*?)\]", r"\1 ", body)
     body = re.sub(r"\\item", r"* ", body)
     body = re.sub(r"\\&", "&", body)
-    body = re.sub(r"\\\$", "$", body)
-    body = re.sub(r"\\%", "%", body)
     body = re.sub(r"---", "—", body)
     body = re.sub(r"--", "–", body)
 
@@ -1000,9 +1852,11 @@ def tex_to_qmd(tex_body: str, title: str) -> str:
 def build_standalone_tex(title: str, course_name: str, body: str) -> str:
     latex_title = title.replace("&", r"\&")
     title_command = chr(92) + "title"
+    tcolorbox_package = r"\usepackage{tcolorbox}" if r"\begin{tcolorbox}" in body else ""
     return rf"""\documentclass[11pt,letterpaper]{{article}}
 \input{{../../shared/preamble.tex}}
 \input{{../../shared/tikz-settings.tex}}
+  {tcolorbox_package}
 
 \begin{{document}}
 
@@ -1027,6 +1881,24 @@ This chapter provides a rigorous, pedagogical treatment of {latex_title}, benchm
 \end{{document}}
 """
 
+
+def sync_chapter_from_tex(
+    tex_dir: Path,
+    qmd_dir: Path,
+    tex_filename: str,
+    qmd_filename: str,
+    title: str,
+) -> None:
+    tex_path = tex_dir / tex_filename
+    if not tex_path.is_file():
+        raise FileNotFoundError(f"Canonical LaTeX chapter not found: {tex_path}")
+
+    qmd_content = tex_to_qmd(tex_path.read_text(encoding="utf-8"), title, qmd_dir)
+    qmd_path = qmd_dir / qmd_filename
+    qmd_path.write_text(qmd_content, encoding="utf-8")
+    print(f"  -> [OK] Canonical TeX -> Quarto: {tex_path.relative_to(ROOT)} -> {qmd_path.relative_to(ROOT)}")
+
+
 # =============================================================================
 # 3. EXECUTION PIPELINE
 # =============================================================================
@@ -1044,6 +1916,10 @@ def sync():
     # 1. Sync Microeconomics (14 Chapters)
     print("\n[1/2] Processing Microeconomics (14 Chapters)...")
     for num, tex_f, qmd_f, title, body in MICRO_CHAPTERS:
+        if num == 1:
+            sync_chapter_from_tex(MICRO_TEX_DIR, MICRO_QMD_DIR, tex_f, qmd_f, title)
+            continue
+
         tex_path = MICRO_TEX_DIR / tex_f
         tex_content = build_standalone_tex(title, "Principles of Microeconomics Curriculum", body)
         tex_path.write_text(tex_content, encoding="utf-8")
@@ -1053,13 +1929,17 @@ def sync():
             (MICRO_TEX_DIR / "ch06_competition.tex").write_text(tex_content, encoding="utf-8")
         
         qmd_path = MICRO_QMD_DIR / qmd_f
-        qmd_content = tex_to_qmd(body, title)
+        qmd_content = tex_to_qmd(body, title, MICRO_QMD_DIR)
         qmd_path.write_text(qmd_content, encoding="utf-8")
         print(f"  -> [OK] Micro Ch.{num:02d}: {tex_f} and {qmd_f}")
 
     # 2. Sync Macroeconomics (12 Chapters)
     print("\n[2/2] Processing Macroeconomics (12 Chapters)...")
     for num, tex_f, qmd_f, title, body in MACRO_CHAPTERS:
+        if num == 1:
+            sync_chapter_from_tex(MACRO_TEX_DIR, MACRO_QMD_DIR, tex_f, qmd_f, title)
+            continue
+
         tex_path = MACRO_TEX_DIR / tex_f
         tex_content = build_standalone_tex(title, "Principles of Macroeconomics Curriculum", body)
         tex_path.write_text(tex_content, encoding="utf-8")
@@ -1069,7 +1949,7 @@ def sync():
             (MACRO_TEX_DIR / "ch02_ppf.tex").write_text(tex_content, encoding="utf-8")
         
         qmd_path = MACRO_QMD_DIR / qmd_f
-        qmd_content = tex_to_qmd(body, title)
+        qmd_content = tex_to_qmd(body, title, MACRO_QMD_DIR)
         qmd_path.write_text(qmd_content, encoding="utf-8")
         print(f"  -> [OK] Macro Ch.{num:02d}: {tex_f} and {qmd_f}")
 
