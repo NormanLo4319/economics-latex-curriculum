@@ -1,7 +1,7 @@
 \documentclass[11pt,letterpaper]{article}
 \input{../../shared/preamble.tex}
 \input{../../shared/tikz-settings.tex}
-\usepackage{tcolorbox}
+  
 
 \begin{document}
 
@@ -21,188 +21,42 @@ This chapter provides a rigorous, pedagogical treatment of Chapter 6: Saving, In
 \hrule
 \vspace{1.5em}
 
-% -----------------------------------------------------------------------------
-% Section 6.1: National Saving Identities and Capital Flows
-% -----------------------------------------------------------------------------
-\section{National Saving Identities and Capital Flows}
+\section{Learning Outcomes and Key Terms}
+Students should distinguish saving from wealth, apply the national saving identity, and use the loanable-funds model to explain how saving and investment plans respond to real interest rates. These objectives support MA-2 and MA-3 and prepare students for C2002-2. Key terms include private saving, public saving, national saving, investment, loanable funds, real interest rate, deficit, and capital inflow.
 
-\subsection*{1. Conceptual Introduction}
-In everyday conversation, people often say they are "investing" when they buy shares of Apple stock or deposit money into a mutual fund. In macroeconomics, that terminology is strictly separated:
-\begin{itemize}
-    \item \textbf{Saving:} Income that is not spent on current consumption or taxes—a \textbf{flow} measured per year that adds to a household's accumulated \textbf{stock} of wealth.
-    \item \textbf{Investment ($I$):} Physical spending on newly produced factories, machinery, software, new residential housing, and business inventories—the engine that expands the economy's future capital stock.
-\end{itemize}
+\section{Saving Is a Flow; Wealth Is a Stock}
+A household that saves part of this month's income adds to its assets, but saving itself is measured over a period. Wealth is the value of assets held at a point in time. Likewise, investment in macroeconomics is spending on newly produced capital goods and inventories during a period; it is not the purchase of an existing stock certificate. Keeping stocks and flows separate prevents a common accounting error.
 
-The financial system—banks, bond markets, and stock exchanges—acts as the bridge channeling household and government saving into business investment. To see how saving and investment connect mathematically, start with the expenditure identity $Y = C + I + G + NX$ and subtract $C$ and $G$ from both sides:
+\section{National Saving and the Open-Economy Identity}
+Start with the expenditure identity $Y=C+I+G+NX$. Rearranging gives $Y-C-G=I+NX$. National saving is $S=Y-C-G$, so in the simplified model $S=I+NX$. If net exports are used as the current-account proxy, then $S-I=NX$: saving above domestic investment corresponds to net lending abroad, while investment above saving is matched by net borrowing from abroad. In full balance-of-payments accounts, the current account includes net primary income and transfers as well as goods and services.
+
+With taxes $T$ and disposable income $Y-T$, private saving is $S_p=Y-T-C$ and public saving is $S_g=T-G$. National saving adds the two:
 \begin{equation}
-Y - C - G = I + NX
+S=S_p+S_g=(Y-T-C)+(T-G)=Y-C-G, \qquad S-I=NX \quad\text{(simplified model)}.
 \end{equation}
-The left-hand side ($Y - C - G$) is total income remaining after household consumption and government purchases—defined as \textbf{National Saving ($S$)}. Inserting net taxes $T$ splits National Saving into two components:
-\begin{equation}
-S = \underbrace{(Y - T - C)}_{\text{Private Saving } (S_p)} + \underbrace{(T - G)}_{\text{Public Saving } (S_g)} = Y - C - G
-\end{equation}
-When tax revenues exceed government spending ($T > G$), the government runs a \textbf{budget surplus} and adds to national saving; when $T < G$, the government runs a \textbf{budget deficit} ($S_g < 0$) and subtracts from national saving. In a closed economy ($NX = 0$), National Saving must identically equal Investment ($S = I$). In an open economy, $S - I = NX$: a nation that invests more than it saves ($I > S$) finances the gap through net foreign capital inflows ($NX < 0$).
+In a closed economy, $NX=0$ and planned national saving equals investment in the accounting identity. The identity does not guarantee that desired saving and planned investment are equal at every interest rate; prices, output, and financial markets adjust toward consistency.
 
-\subsection*{2. Visual Representation}
-Figure~\ref{fig:saving_investment_bridge} illustrates how Private Saving ($S_p$), Public Saving ($S_g$), and Net Capital Inflows ($-NX$) pool together inside the financial system to fund Gross Private Domestic Investment ($I$).
+\section{Loanable Funds: Graph and Mechanism}
+Put the quantity of loanable funds on the horizontal axis and the real interest rate on the vertical axis. Planned saving is drawn as a supply of funds, often rising with the real return. Planned investment is a demand for funds, often falling as borrowing becomes more expensive. Their intersection is the model's equilibrium real rate and quantity. A shift in saving or investment plans moves one curve; a change in the interest rate is a movement along a curve. This is a market model, not a literal inventory of all bank deposits.
 
-\begin{tcolorbox}[colback=yellow!10!white,colframe=orange!80!black,title=\textbf{Clear It Up: Saving Is a Flow; Wealth Is a Stock}]
-Think of a bathtub. The water pouring out of the faucet each minute is \textbf{saving} (a flow measured per unit of time), while the total gallons of water sitting inside the tub at 8:00 PM is \textbf{wealth} (a stock measured at a specific instant). Similarly, an annual federal budget deficit is a flow of new borrowing during one fiscal year, whereas the national debt is the accumulated stock of past borrowing.
-\end{tcolorbox}
+\section{Deficits, Interest Rates, and Crowding Out}
+If government purchases rise while taxes and private saving behavior are fixed, public saving falls. In a closed-economy loanable-funds model, the saving supply can shift left, raising the equilibrium real interest rate and reducing some private investment. This is the crowding-out mechanism. Its size depends on conditions: monetary policy, spare capacity, household saving responses, international capital flows, and the central bank's reaction can change the outcome. A deficit does not mechanically imply a one-for-one decline in private investment.
 
-\begin{figure}[htbp]
-\centering
-\begin{tikzpicture}[scale=1.0]
-    % Source Boxes on Left
-    \node[draw=SlateBlue, very thick, fill=LightSlate, rounded corners, minimum width=3.4cm, minimum height=1.0cm, align=center, font=\footnotesize] (sp) at (0,3.2) {\textbf{Private Saving ($S_p$)}\\$Y - T - C$};
-    \node[draw=Terracotta, very thick, fill=LightTerracotta, rounded corners, minimum width=3.4cm, minimum height=1.0cm, align=center, font=\footnotesize] (sg) at (0,1.6) {\textbf{Public Saving ($S_g$)}\\$T - G$ (Surplus/Deficit)};
-    \node[draw=purple, very thick, fill=white, rounded corners, minimum width=3.4cm, minimum height=1.0cm, align=center, font=\footnotesize] (ki) at (0,0) {\textbf{Net Capital Inflow}\\$-NX = M - X$};
+\begin{examplecase}{FRED Data: Gross Private Domestic Investment}
+FRED series GPDI reports gross private domestic investment in billions of current dollars at a seasonally adjusted annual rate, quarterly. It includes fixed investment and inventory change. It is a nominal expenditure flow, not a capital stock and not a direct measure of productive capacity. To study physical investment growth across time, compare an appropriate real series and account for revisions and price changes.
+\end{examplecase}
 
-    % Central Financial System Hub
-    \node[draw=ForestGreen, very thick, fill=white, rounded corners, minimum width=2.8cm, minimum height=2.6cm, align=center, font=\small] (fin) at (4.6,1.6) {\textbf{Financial}\\\textbf{System}\\(Banks, Bonds,\\Equities)};
+\begin{coreprinciple}
+\boxheader{SlateBlue}{Clear It Up: The Identity Is Not a Causal Claim}
+The accounting relation $S-I=NX$ in the simplified model must hold ex post. It does not by itself tell us whether saving caused investment, investment caused income and saving, or foreign flows adjusted. Use a behavioral model and evidence to discuss causation.
+\end{coreprinciple}
 
-    % Destination Box on Right
-    \node[draw=SlateBlue, very thick, fill=LightSlate, rounded corners, minimum width=3.4cm, minimum height=1.4cm, align=center, font=\footnotesize] (inv) at (9.2,1.6) {\textbf{Physical Investment ($I$)}\\Factories, Equipment,\\New Housing};
-
-    % Arrows
-    \draw[->, very thick, SlateBlue] (sp.east) -- (fin.west);
-    \draw[->, very thick, Terracotta] (sg.east) -- (fin.west);
-    \draw[->, very thick, purple] (ki.east) -- (fin.west);
-    \draw[->, very thick, ForestGreen] (fin.east) -- (inv.west);
-\end{tikzpicture}
-\caption{The Macroeconomic Saving-Investment Channel. Domestic investment ($I$) is funded by the sum of private saving ($S_p$), public saving ($S_g$), and net capital inflows from abroad ($-NX$).}
-\label{fig:saving_investment_bridge}
-\end{figure}
-
-\subsection*{3. Real-World Application: FRED Gross Private Domestic Investment (`GPDI`)}
-Macroeconomists monitor business capital formation using St. Louis Fed FRED series `GPDI` (Gross Private Domestic Investment, quarterly, seasonally adjusted annual rate). Because `GPDI` fluctuates far more sharply than consumer spending during recessions, tracking business fixed investment and inventory swings provides an early warning signal of business-cycle turning points.
-
-\subsection*{4. Mathematical Foundation (Algebra Level)}
-The closed- and open-economy saving identities are:
-\begin{equation}
-S_p = Y - T - C, \qquad S_g = T - G, \qquad S = S_p + S_g = I + NX
-\end{equation}
-
-\noindent\textbf{Worked Problem:}
-In a closed economy ($NX = 0$), total output is $Y = \$18{,}000\text{ billion}$, household consumption is $C = \$12{,}400\text{ billion}$, net taxes are $T = \$3{,}200\text{ billion}$, and government purchases are $G = \$3{,}600\text{ billion}$. Compute Private Saving ($S_p$), Public Saving ($S_g$), National Saving ($S$), and Private Investment ($I$).
-
-\noindent\textbf{Step-by-Step Breakdown:}
+\section{Check Your Understanding}
 \begin{enumerate}
-    \item \textbf{Compute Private Saving ($S_p = Y - T - C$):}
-    \[
-    S_p = \$18{,}000 - \$3{,}200 - \$12{,}400 = \mathbf{\$2{,}400\text{ billion}}
-    \]
-
-    \item \textbf{Compute Public Saving ($S_g = T - G$):}
-    \[
-    S_g = \$3{,}200 - \$3{,}600 = \mathbf{-\$400\text{ billion}\ (\text{a budget deficit of } \$400\text{B})}
-    \]
-
-    \item \textbf{Compute National Saving ($S$) and Investment ($I$):}
-    \[
-    S = S_p + S_g = \$2{,}400 + (-\$400) = \mathbf{\$2{,}000\text{ billion}}
-    \]
-    Since $NX = 0$, Investment equals National Saving: $I = \mathbf{\$2{,}000\text{ billion}}$.
+  \item If $Y=1{,}000$, $C=650$, and $G=200$, calculate national saving.
+  \item If national saving is 150 and investment is 180, what is $NX$ in the simplified open-economy identity?
+  \item Is buying an existing share of a company macroeconomic investment? Why or why not?
 \end{enumerate}
-\textbf{Conclusion:} The government's $\$400\text{ billion}$ budget deficit absorbs $\$400\text{ billion}$ of private saving, leaving $\$2{,}000\text{ billion}$ available for physical business investment.
-
-% -----------------------------------------------------------------------------
-% Section 6.2: The Market for Loanable Funds and Crowding Out
-% -----------------------------------------------------------------------------
-\section{The Market for Loanable Funds and Crowding Out}
-
-\subsection*{1. Conceptual Introduction}
-To understand how real interest rates ($r$) coordinate desired saving and planned investment, macroeconomists construct the \textbf{Market for Loanable Funds}. In this market:
-\begin{itemize}
-    \item \textbf{Supply of Loanable Funds ($S_{\text{LF}}$):} Comes from national saving ($S_p + S_g$). Because a higher real interest rate rewards savers with greater future purchasing power, the supply of loanable funds slopes upward.
-    \item \textbf{Demand for Loanable Funds ($D_{\text{LF}}$):} Comes from households and firms borrowing to build new factories, buy equipment, or construct homes. Because a higher real interest rate makes borrowing more expensive, fewer investment projects pass the profitability hurdle, so the demand for loanable funds slopes downward.
-\end{itemize}
-
-Equilibrium occurs at the real interest rate $r^*$ where $S_{\text{LF}} = D_{\text{LF}}$. This framework explains a crucial fiscal trade-off known as \textbf{crowding out}: if the government increases spending or cuts taxes without reducing outlays, public saving falls ($S_g \downarrow$), shifting the supply of loanable funds \textbf{leftward}. That leftward shift drives the equilibrium real interest rate $r^*$ upward—raising borrowing costs and \textbf{crowding out} private business investment!
-
-\subsection*{2. Visual Representation}
-Figure~\ref{fig:loanable_funds_crowding_out} shows how a government budget deficit shifts the supply of loanable funds leftward from $S_{\text{LF1}}$ to $S_{\text{LF2}}$, raising the real interest rate from $r_1^*$ to $r_2^*$ and reducing private investment from $I_1^*$ to $I_2^*$.
-
-\begin{figure}[htbp]
-\centering
-\begin{tikzpicture}[scale=1.05]
-    % Axes
-    \draw[->, thick] (0,0) -- (6.2,0) node[below] {Loanable Funds ($Q_{\text{LF}}$, \$ Billions)};
-    \draw[->, thick] (0,0) -- (0,5.2) node[left] {Real Interest Rate ($r$, $\%$)};
-    \node[below left] at (0,0) {$0$};
-
-    % Demand for Loanable Funds (Investment): r = 10 - 0.002Q -> (0,5.0) to (5.0,0) [1 unit x = 1000B, 1 unit y = 2%]
-    \draw[very thick, color=blue!80!black] (0,5.0) -- (5.0,0) node[below right] {$D_{\text{LF}}$ (Investment)};
-
-    % Initial Supply S_LF1: r = 1 + 0.002Q -> (0,0.5) to (4.5,5.0)
-    \draw[very thick, color=ForestGreen] (0,0.5) -- (4.5,5.0) node[right] {$S_{\text{LF1}}$};
-
-    % Deficit-shifted Supply S_LF2: r = 3 + 0.002Q -> (0,1.5) to (3.5,5.0)
-    \draw[very thick, color=Terracotta] (0,1.5) -- (3.5,5.0) node[above] {$S_{\text{LF2}}$ (Budget Deficit)};
-
-    % E1: 10 - 0.002Q = 1 + 0.002Q -> Q1 = 2250 (x=2.25), r1 = 5.5% (y=2.75)
-    \draw[dashed] (0,2.75) node[left] {$r_1^* = 5.5\%$} -- (2.25,2.75);
-    \draw[dashed] (2.25,0) node[below, font=\footnotesize] {$I_1^*$} -- (2.25,2.75);
-    \filldraw[ForestGreen] (2.25,2.75) circle (2.2pt);
-
-    % E2: 10 - 0.002Q = 3 + 0.002Q -> Q2 = 1750 (x=1.75), r2 = 6.5% (y=3.25)
-    \draw[dashed] (0,3.25) node[left] {$r_2^* = 6.5\%$} -- (1.75,3.25);
-    \draw[dashed] (1.75,0) node[below, font=\footnotesize] {$I_2^*$} -- (1.75,3.25);
-    \filldraw[Terracotta] (1.75,3.25) circle (2.2pt);
-
-    % Crowding out bracket
-    \draw[<->, thick, color=purple] (1.75,0.6) -- node[above, font=\scriptsize\bfseries] {Crowded Out} (2.25,0.6);
-\end{tikzpicture}
-\caption{Budget Deficits and Crowding Out in the Loanable Funds Market. A larger government deficit reduces national saving, shifting $S_{\text{LF1}}$ leftward to $S_{\text{LF2}}$. The equilibrium real interest rate rises from $5.5\%$ to $6.5\%$, crowding out private investment from $I_1^*$ to $I_2^*$.}
-\label{fig:loanable_funds_crowding_out}
-\end{figure}
-
-\subsection*{3. Real-World Application: Investment Tax Credits vs. Deficit-Financed Spending}
-When Congress enacts an \textbf{investment tax credit} (subsidizing firms that purchase new clean-energy equipment or factory robots), the demand for loanable funds shifts rightward—raising both the equilibrium real interest rate and total physical investment. By contrast, deficit-financed transfer spending shifts the supply of loanable funds leftward, raising interest rates while reducing private investment.
-
-\subsection*{4. Mathematical Foundation (Algebra Level)}
-Equilibrium in the loanable funds market solves $S_{\text{LF}}(r^*) = D_{\text{LF}}(r^*)$:
-\begin{equation}
-S_p(r^*) + S_g = I(r^*)
-\end{equation}
-
-\noindent\textbf{Worked Problem:}
-In a closed economy, Private Saving is $S_p = 1{,}000 + 200r$, Investment Demand is $I = 3{,}000 - 200r$, and initially the government runs a balanced budget ($S_g = T - G = 0$), where $r$ is the real interest rate in percentage points (e.g., $r = 5$ means $5\%$) and quantities are in billions of dollars.
-\begin{enumerate}
-    \item Find the initial equilibrium real interest rate $r_1^*$ and equilibrium investment $I_1^*$.
-    \item Suppose the government increases spending without raising taxes, creating a budget deficit of $\$400\text{ billion}$ ($S_g = -400$). Find the new real interest rate $r_2^*$, new investment $I_2^*$, and exact dollar amount of private investment crowded out.
-\end{enumerate}
-
-\noindent\textbf{Step-by-Step Breakdown:}
-\begin{enumerate}
-    \item \textbf{Solve for Initial Equilibrium ($S_p + S_g = I$ with $S_g = 0$):}
-    \[
-    1{,}000 + 200r_1^* = 3{,}000 - 200r_1^* \implies 400r_1^* = 2{,}000 \implies r_1^* = \mathbf{5.0\%}
-    \]
-    \[
-    I_1^* = 3{,}000 - 200(5.0) = \mathbf{\$2{,}000\text{ billion}}
-    \]
-
-    \item \textbf{Recompute Equilibrium After $\$400\text{B}$ Deficit ($S_g = -400$):}
-    National saving becomes $S_{\text{LF2}} = (1{,}000 + 200r) - 400 = 600 + 200r$. Set equal to Investment Demand:
-    \[
-    600 + 200r_2^* = 3{,}000 - 200r_2^* \implies 400r_2^* = 2{,}400 \implies r_2^* = \mathbf{6.0\%}
-    \]
-    \[
-    I_2^* = 3{,}000 - 200(6.0) = \mathbf{\$1{,}800\text{ billion}}
-    \]
-
-    \item \textbf{Calculate Crowded-Out Private Investment:}
-    \[
-    \text{Crowding Out} = I_1^* - I_2^* = \$2{,}000\text{B} - \$1{,}800\text{B} = \mathbf{\$200\text{ billion}}
-    \]
-\end{enumerate}
-\textbf{Conclusion:} A $\$400\text{ billion}$ budget deficit drives the real interest rate up by $1.0$ percentage point (to $6.0\%$) and crowds out $\$200\text{ billion}$ of private investment (while higher interest rates induce households to save $\$200\text{ billion}$ more).
-
-\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=\textbf{Optional Advanced Section: Ricardian Equivalence Theorem}]
-\small
-\emph{Note for Economics Majors and Quantitative Students:}
-Economist Robert Barro formalized \textbf{Ricardian Equivalence}: if forward-looking households recognize that a debt-financed tax cut today ($\Delta T < 0$) implies higher future taxes with present value $-\Delta T$ to repay the government bonds, households may save $100\%$ of the tax cut ($\Delta S_p = -\Delta S_g$), leaving National Saving $S = S_p + S_g$, the real interest rate $r^*$, and investment $I^*$ unchanged. Liquidity constraints and finite horizons limit full Ricardian equivalence in practice.
-\end{tcolorbox}
+Answers: (1) $S=Y-C-G=150$. (2) $NX=S-I=-30$, a deficit in the simplified model. (3) No; it transfers ownership of an existing financial asset rather than purchasing newly produced capital.
 
 \end{document}
