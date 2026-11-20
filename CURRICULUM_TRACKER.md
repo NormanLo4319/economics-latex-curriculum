@@ -11,9 +11,9 @@
 
 | Sprint | Ch | Stem | Reading (`.tex`) | Web (`.qmd`) | Quiz v2 (50Q) | QTI (`.zip`) | Notes |
 | :-: | :-: | :--- | :-: | :-: | :-: | :-: | :--- |
-| S1 | 01 | `ch01_principles` | `[~]` | `[x]` | `[ ]` | `[ ]` | Minor BIH/WIO polish; legacy quiz |
-| S1 | 02 | `ch02_ppf` | `[~]` | `[ ]` | `[ ]` | `[ ]` | Expanded 434L; audit + web sync |
-| S1 | 03 | `ch03_supply_demand` | `[ ]` | `[ ]` | `[ ]` | `[ ]` | Restored 362L; audit + upgrade |
+| S1 | 01 | `ch01_principles` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
+| S1 | 02 | `ch02_ppf` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
+| S1 | 03 | `ch03_supply_demand` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
 | S2 | 04 | `ch04_surplus` | `[x]` | `[x]` | `[ ]` | `[ ]` | Flagship reading; check GDrive v2 qbank |
 | S2 | 05 | `ch05_elasticity` | `[ ]` | `[ ]` | `[ ]` | `[ ]` | Restored 685L; audit + web sync |
 | S3 | 06 | `ch06_costs_production` | `[x]` | `[ ]` | `[ ]` | `[ ]` | Audited reading restored; re-sync `.qmd`; **missing quiz** |

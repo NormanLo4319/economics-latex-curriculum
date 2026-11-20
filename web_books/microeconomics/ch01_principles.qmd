@@ -7,7 +7,7 @@ format:
 ---
 
 >
-This chapter provides a rigorous, pedagogical treatment of Chapter 1: Foundations of Microeconomic Analysis & Core Principles, benchmarked to standard principles curriculum.
+This chapter introduces the core foundations of microeconomic analysis: scarcity and opportunity cost, marginal decision-making and incentives, and economic modeling under *ceteris paribus*. Each section builds from plain-English intuition to coordinate geometry, algebra-first problem solving, and an optional calculus extension.
 
 ## Scarcity, Choice, and Opportunity Cost
 
@@ -18,24 +18,27 @@ Whenever you choose one option, you automatically give up the next best alternat
 
 Understanding opportunity cost transforms how rational people evaluate decisions. A decision is only worthwhile if its total benefit exceeds its full economic cost—not merely its cash price. At the same time, rational decision-makers must ignore **sunk costs**: historical expenses that have already been paid and cannot be recovered regardless of what choice you make today. Letting unrecoverable past spending trap you into bad future choices is known as the **sunk cost fallacy**.
 
-### Visual Representation {.unnumbered}
-Figure 1 illustrates scarcity and opportunity cost on a simple linear budget constraint for a college student dividing a fixed weekly budget of $\$60$ between campus lunches ($\$12$ each) and commuter transit passes ($\$6$ each).
-
 ::: {.callout-note title="Clear It Up: Sunk Costs Are Not Opportunity Costs"}
 
 Suppose you pay $\$80$ for a non-refundable concert ticket, and on the night of the show a severe winter storm hits. Driving to the arena risks a car accident and three hours in freezing traffic. The $\$80$ ticket price is a **sunk cost**—whether you stay home in a warm blanket or drive through the blizzard, that $\$80$ is gone forever. Your true opportunity cost of going to the concert tonight is your safety and three hours of warm study time, not the $\$80$ you already spent last month.
 
 :::
 
-![Figure 1. Scarcity and Opportunity Cost on a Budget Line. Moving from bundle $A$ to bundle $B$ gains $1$ additional campus lunch by sacrificing $2$ transit day-passes, illustrating a constant opportunity cost of $2$ passes per lunch.](figures/chapter_1_foundations_of_microeconomic_analysis_core_principles_figure_01.svg){fig-alt="Scarcity and Opportunity Cost on a Budget Line. Moving from bundle A to bundle B gains 1 additional campus lunch by sacrificing 2 transit day-passes, illustrating a constant opportunity cost of 2 passes per lunch."}
+### Visual Representation {.unnumbered}
+Figure 1 illustrates scarcity and opportunity cost on a simple linear budget constraint for a college student dividing a fixed weekly budget of $\$60$ between campus lunches ($\$12$ each) and commuter transit day-passes ($\$6$ each). This two-good diagram relies on three simplifying assumptions: income is fixed at $\$60$, unit prices remain constant regardless of quantity purchased, and the student spends the entire budget.
 
-### Real-World Application: The True Cost of a College Degree {.unnumbered}
-When families look at the cost of attending a four-year public university, they usually focus on the bursar's bill: tuition, campus fees, and textbooks. Yet for most full-time undergraduates, the largest single cost of higher education never appears on an invoice.
+![Figure 1. Scarcity and Opportunity Cost on a Budget Line. Moving from bundle $A(2,6)$ to bundle $B(3,4)$ gains $1$ additional campus lunch by sacrificing $2$ transit day-passes, illustrating a constant opportunity cost of $2$ passes per lunch. Point $U(4,6)$ costs $\$84 > \$60$ and is unaffordable.](figures/chapter_1_foundations_of_microeconomic_analysis_core_principles_figure_01.svg){fig-alt="Scarcity and Opportunity Cost on a Budget Line. Moving from bundle A(2,6) to bundle B(3,4) gains 1 additional campus lunch by sacrificing 2 transit day-passes, illustrating a constant opportunity cost of 2 passes per lunch. Point U(4,6) costs $84 > $60 and is unaffordable."}
 
-*  **Explicit Costs:** Suppose annual tuition, fees, and books total $\$11{,}000$ per year. (Note that room and board are generally excluded if you would have paid similar rent and grocery bills even while working full-time.)
+::: {.callout-note title="Bring It Home: The True Economic Cost of a College Degree"}
+
+When families evaluate the cost of attending a four-year public university, they usually focus on the bursar's bill: tuition, campus fees, and textbooks. Yet for most full-time undergraduates, the largest single cost of higher education never appears on an invoice.
+
+*  **Explicit Costs:** Suppose annual tuition, fees, and books total $\$11{,}000$ per year. (Room and board are excluded here under the simplifying assumption that the student would pay similar rent and grocery bills even while working full-time.)
 *  **Implicit Costs:** By attending classes full-time instead of working an entry-level full-time job paying $\$38{,}000$ per year, the student foregoes $\$38{,}000$ in annual wages.
 
-Adding both components together gives an illustrative annual economic opportunity cost of $\$11{,}000 + \$38{,}000 = \mathbf{\$49{,}000}$. Assuming these amounts remain constant for four years, the total is $\$196{,}000$. Actual costs depend on tuition, financial aid, living arrangements, work hours, and the wages a student could otherwise earn. The model predicts that lower available wages can reduce the opportunity cost of full-time schooling, all else equal; it does not imply enrollment rises in every recession.
+Adding both components gives an illustrative annual economic opportunity cost of $\$11{,}000 + \$38{,}000 = \mathbf{\$49{,}000}$. Assuming these amounts remain constant for four years, the total is $\$196{,}000$. Actual costs depend on tuition, financial aid, living arrangements, work hours, and the wages a student could otherwise earn. The model predicts that lower available wages reduce the opportunity cost of full-time schooling, all else equal; it does not imply enrollment rises in every recession.
+
+:::
 
 ### Mathematical Foundation (Algebra Level) {.unnumbered}
 Total Economic Cost sums explicit monetary outlays and implicit opportunity costs:
@@ -44,16 +47,20 @@ $$
 \text{Total Economic Cost} = \text{Explicit Costs} + \text{Implicit Costs}
 $$
 
-Similarly, when comparing two goods $X$ and $Y$ along a linear budget constraint $P_x X + P_y Y = I$, the opportunity cost of one unit of Good $X$ is the price ratio:
+Along a linear budget constraint $P_x X + P_y Y = I$, solving for $Y$ gives the slope-intercept form $Y = \frac{I}{P_y} - \frac{P_x}{P_y}X$. The vertical intercept $\frac{I}{P_y}$ is the maximum affordable quantity of $Y$, and the magnitude of the slope is the constant opportunity cost of one unit of Good $X$:
 
 $$
 \text{Opportunity Cost of } 1 \text{ unit of } X = \left|\frac{\Delta Y}{\Delta X}\right| = \frac{P_x}{P_y}
 $$
 
-**Worked Problem:**
-Maya currently works as a graphic designer earning $\$65{,}000$ per year. She is considering quitting her job to launch her own independent design studio. In her first year, she expects to pay $\$18{,}000$ for studio rent, $\$7{,}000$ for software and equipment leases, and $\$15{,}000$ for marketing and supplies. Additionally, she must withdraw $\$20{,}000$ from a personal savings account that was earning $5\%$ annual interest to cover startup cash needs. Calculate Maya's explicit costs, implicit costs, and total economic cost for Year 1.
+In Figure 1, $12X + 6Y = 60$ rearranges to $Y = 10 - 2X$, so each additional lunch costs $\frac{\$12}{\$6} = 2$ transit day-passes.
 
-**Step-by-Step Breakdown:**
+::: {.callout-note title="Work It Out: Calculating Economic vs. Accounting Cost"}
+
+**Problem:** Maya currently works as a graphic designer earning $\$65{,}000$ per year. She is considering quitting her job to launch her own independent design studio. In her first year, she expects to pay $\$18{,}000$ for studio rent, $\$7{,}000$ for software and equipment leases, and $\$15{,}000$ for marketing and supplies. Additionally, she must move $\$20{,}000$ out of a personal savings account that was earning $5\%$ annual interest to hold as refundable studio deposits and working capital (recovered if she closes the business). Calculate Maya's explicit costs, implicit costs, and total economic cost for Year 1.
+
+\medskip
+**Step-by-Step Solution:**
 
 *  **Sum All Explicit Out-of-Pocket Costs:**
 Add the direct monetary payments required to run the studio:
@@ -63,7 +70,7 @@ $$
 $$
 
 *  **Calculate Implicit Foregone Interest:**
-Multiply the $\$20{,}000$ withdrawn from savings by the $5\%$ annual interest rate:
+Because the $\$20{,}000$ deposit/working-capital principal is recoverable, only the foregone interest is an annual economic cost:
 
 $$
 \text{Foregone Interest} = \$20{,}000 \times 0.05 = \$1{,}000
@@ -84,27 +91,51 @@ $$
 
 **Conclusion:** Even if Maya's studio brings in $\$80{,}000$ in client revenue—giving her an accounting profit of $\$80{,}000 - \$40{,}000 = \$40{,}000$—she would suffer an *economic loss* of $\$80{,}000 - \$106{,}000 = -\$26{,}000$ compared to keeping her salaried job.
 
+:::
+
+::: {.callout-note title="Optional Advanced Section: Calculus of Opportunity Cost and Slopes"}
+
+*Note for Economics Majors and Quantitative Students:*
+For any smooth trade-off frontier $Y = f(X)$, the instantaneous (marginal) opportunity cost of Good $X$ in terms of Good $Y$ is the absolute value of the first derivative, $\left|\frac{dY}{dX}\right|$. For the linear budget constraint $P_x X + P_y Y = I$ with fixed prices and income, differentiating implicitly yields:
+
+$$
+P_x\,dX + P_y\,dY = 0 \implies \frac{dY}{dX} = -\frac{P_x}{P_y}
+$$
+
+Because $\frac{d^2 Y}{dX^2} = 0$, the opportunity cost $\frac{P_x}{P_y}$ is constant at every bundle along the line. By contrast, when resources are specialized (as on a bowed-out Production Possibilities Frontier in Chapter 2), $\frac{dY}{dX} < 0$ and $\frac{d^2 Y}{dX^2} < 0$, so marginal opportunity cost $\left|\frac{dY}{dX}\right|$ rises as $X$ expands.
+
+:::
+
 ## Marginal Decision-Making and Incentives
 
 ### Conceptual Introduction {.unnumbered}
-Most real-world economic decisions are not "all-or-nothing" ultimatums. A student rarely chooses between studying zero hours or 24 hours straight; they decide whether to study *one more hour* tonight. A coffee shop does not decide between brewing zero cups or one million cups; it decides whether to stay open *one extra hour* in the evening. Economists analyze these incremental adjustments through **marginal analysis**, comparing the **marginal benefit ($MB$)** of one additional unit of an activity against its **marginal cost ($MC$)**.
+Most real-world economic decisions are not ``all-or-nothing'' ultimatums. A student rarely chooses between studying zero hours or 24 hours straight; they decide whether to study *one more hour* tonight. A coffee shop does not decide between brewing zero cups or one million cups; it decides whether to stay open *one extra hour* in the evening. Economists analyze these incremental adjustments through **marginal analysis**, comparing the **marginal benefit ($MB$)** of one additional unit of an activity against its **marginal cost ($MC$)**.
 
 The basic rule is straightforward: as long as the extra benefit of one more unit exceeds its extra cost ($MB > MC$), expanding the activity increases net benefit. If the extra cost is greater ($MC > MB$), scale back. For a smooth, interior choice, net benefit is maximized where $MB=MC$; with indivisible choices, compare successive units and stop before the next unit whose marginal cost exceeds its marginal benefit.
 
 Because rational agents weigh marginal benefits against marginal costs, changing either side of that ledger predictably alters human behavior. Economists call any reward or penalty that shifts $MB$ or $MC$ an **incentive**. When policymakers introduce taxes, subsidies, fines, or regulations, people respond to the new incentives—sometimes in clever, unintended ways that backfire against the policy's original goal.
 
+::: {.callout-note title="Clear It Up: Marginal Cost Is Not Average Cost"}
+
+Students frequently confuse **average cost** (total cost divided by total units produced) with **marginal cost** (the extra cost of adding *one more* unit). Average cost spreads already-committed fixed expenses across all units, whereas marginal cost isolates only the new resources required for the next unit. When deciding whether to expand an activity by one unit, compare marginal benefit to *marginal* cost—not average cost.
+
+:::
+
 ### Visual Representation {.unnumbered}
-Figure 2 uses hypothetical linear schedules, measured in the same illustrative value units, to show a downward-sloping Marginal Benefit curve intersecting an upward-sloping Marginal Cost curve at $H^* = 4$ study hours.
+Figure 2 illustrates marginal optimization using hypothetical linear schedules measured in dollar-equivalent value per hour (\$/hr), holding exam difficulty and prior preparation constant (*ceteris paribus*). Assuming study time $H$ is continuously divisible, the downward-sloping Marginal Benefit curve intersects the upward-sloping Marginal Cost curve at $H^* = 4$ study hours.
 
-![Figure 2. Marginal Optimization Rule. Under the illustrative schedules, marginal benefit and cost intersect at $H^*=4$, where both equal $8$ common value units. At $H=2$, $MB>MC$; beyond the intersection, $MC>MB$.](figures/chapter_1_foundations_of_microeconomic_analysis_core_principles_figure_02.svg){fig-alt="Marginal Optimization Rule. Under the illustrative schedules, marginal benefit and cost intersect at H^*=4, where both equal 8 common value units. At H=2, MB>MC; beyond the intersection, MC>MB."}
+![Figure 2. Marginal Optimization Rule. Under the illustrative linear schedules, marginal benefit ($MB = 20 - 3H$) and marginal cost ($MC = 2H$) intersect at $H^* = 4$ hours, where both equal $\$8/\text{hr}$. At $H = 2$, $MB (\$14) > MC (\$4)$; beyond $H^* = 4$, $MC > MB$.](figures/chapter_1_foundations_of_microeconomic_analysis_core_principles_figure_02.svg){fig-alt="Marginal Optimization Rule. Under the illustrative linear schedules, marginal benefit (MB = 20 - 3H) and marginal cost (MC = 2H) intersect at H^* = 4 hours, where both equal $8/\text{hr}. At H = 2, MB ($14) > MC ($4); beyond H^* = 4, MC > MB."}
 
-### Real-World Application: Seatbelt Laws and the Peltzman Effect {.unnumbered}
+::: {.callout-note title="Bring It Home: Seatbelt Laws and the Peltzman Effect"}
+
 Beginning January 1, 1968, federal safety standards required new U.S. passenger cars to have seat belts. The goal was to improve safety. Economist Sam Peltzman (1975) argued that drivers might respond to some safety improvements by taking greater risks:
 
 *  By making car crashes far more survivable for the driver, safety equipment lowered the *marginal cost* to a driver of speeding or braking late.
 *  If drivers perceive lower personal risk, some may drive faster or more aggressively, offsetting part of the safety benefit and shifting risk toward people outside the vehicle.
 
 This proposed behavioral response is often called the **Peltzman effect**. It is a hypothesis about incentives, not a claim that seat belts generally increase fatalities; the size and distribution of any response depend on evidence and context.
+
+:::
 
 ### Mathematical Foundation (Algebra Level) {.unnumbered}
 Marginal Benefit and Marginal Cost measure the change in total benefit ($TB$) and total cost ($TC$) from a one-unit increase in quantity ($\Delta Q = 1$):
@@ -117,10 +148,14 @@ MC &= \frac{\Delta TC}{\Delta Q}, \\
 \end{aligned}
 $$
 
-**Worked Problem:**
-A regional airline operates a 150-seat flight from San Francisco to Seattle. Total fixed and fuel costs for the flight equal $\$15{,}000$, which works out to an *average cost* of $\$15{,}000 / 150 = \$100$ per seat. Ten minutes before boarding closes, 12 seats remain empty. Adding one standby passenger requires only $\$15$ in extra jet fuel, cabin snacks, and baggage handling. A standby passenger offers to pay $\$65$ for a ticket. Should the airline sell the seat?
+Applying this rule to Figure 2, setting $MB = MC$ gives $20 - 3H = 2H \implies 5H = 20 \implies H^* = 4$ hours, with $MB = MC = 2(4) = \$8/\text{hr}$.
 
-**Step-by-Step Breakdown:**
+::: {.callout-note title="Work It Out: Pricing a Last-Minute Standby Airline Seat"}
+
+**Problem:** A regional airline operates a 150-seat flight from San Francisco to Seattle. Total fixed and fuel costs for the flight equal $\$15{,}000$, which works out to an *average cost* of $\$15{,}000 / 150 = \$100$ per seat. Ten minutes before boarding closes, 12 seats remain empty. Adding one standby passenger requires only $\$15$ in extra jet fuel, cabin snacks, and baggage handling. A standby passenger offers to pay $\$65$ for a ticket. Assuming selling this standby ticket does not displace or cannibalize any full-fare passengers, should the airline sell the seat?
+
+\medskip
+**Step-by-Step Solution:**
 
 *  **Identify Sunk Costs vs. Marginal Cost ($MC$):**
 The $\$15{,}000$ cost to fly the plane is already committed regardless of whether the empty seat is filled. The incremental cost of boarding one additional passenger is:
@@ -145,6 +180,8 @@ $$
 
 **Conclusion:** Yes—the airline should sell the seat. Although the $\$65$ fare is below the $\$100$ average cost per seat, it exceeds the $\$15$ incremental cost and adds $\$50$ to profit.
 
+:::
+
 ::: {.callout-note title="Optional Advanced Section: Calculus of Net Benefit Maximization"}
 
 *Note for Economics Majors and Quantitative Students:*
@@ -154,7 +191,7 @@ $$
 \frac{d(NB)}{dQ} = \frac{d(TB)}{dQ} - \frac{d(TC)}{dQ} = 0 \implies MB(Q^*) = MC(Q^*)
 $$
 
-The second-order sufficient condition for a maximum requires $\frac{d^2(NB)}{dQ^2} = \frac{d(MB)}{dQ} - \frac{d(MC)}{dQ} < 0$, which holds whenever $MB$ slopes downward and $MC$ slopes upward.
+The second-order sufficient condition for a maximum requires $\frac{d^2(NB)}{dQ^2} = \frac{d(MB)}{dQ} - \frac{d(MC)}{dQ} < 0$, which holds whenever $MC$ crosses $MB$ from below (such as downward-sloping $MB$ and upward-sloping $MC$). In Figure 2, integrating $MB = 20 - 3H$ and $MC = 2H$ from zero gives $TB(H) = 20H - 1.5H^2$ and $TC(H) = H^2$, so $NB(H) = 20H - 2.5H^2$. Setting $\frac{d(NB)}{dH} = 20 - 5H = 0$ confirms $H^* = 4$, $\frac{d^2(NB)}{dH^2} = -5 < 0$, and maximum net benefit $NB(4) = 20(4) - 2.5(16) = \$40$ (equal to the triangle area $\frac{1}{2} \times 4 \times \$20 = \$40$).
 
 :::
 
@@ -163,25 +200,34 @@ The second-order sufficient condition for a maximum requires $\frac{d^2(NB)}{dQ^
 ### Conceptual Introduction {.unnumbered}
 The real economy involves millions of consumers, firms, prices, weather events, and policy changes interacting simultaneously. To make sense of this complexity without getting lost in irrelevant detail, economists build simplified analytical maps called **economic models**. Just as a subway map omits every tree and storefront so you can clearly trace train routes, an economic model strips away secondary noise to isolate how one specific variable affects another.
 
-To test a single cause-and-effect link cleanly, economists rely on the foundational assumption of ***ceteris paribus***—a Latin phrase meaning *"all other things held constant."* When an economist states that a lower price increases the quantity of coffee demanded *ceteris paribus*, they mean quantity rises assuming consumer income, weather, competitor prices, and tastes remain frozen. Without *ceteris paribus*, it is impossible to tell whether coffee sales rose because of a price discount or because a winter cold snap hit the city.
+To test a single cause-and-effect link cleanly, economists rely on the foundational assumption of ***ceteris paribus***—a Latin phrase meaning *``all other things held constant.''* When an economist states that a lower price increases the quantity of coffee demanded *ceteris paribus*, they mean quantity rises assuming consumer income, weather, competitor prices, and tastes remain frozen. Without *ceteris paribus*, it is impossible to tell whether coffee sales rose because of a price discount or because a winter cold snap hit the city.
 
 Finally, rigorous economic analysis separates two distinct types of statements:
 
-*  **Positive Economics:** Testable statements about *what is* or *what may happen* if a policy changes (e.g., *"A minimum-wage increase may affect teen restaurant employment"*). The direction and size of any effect are empirical questions.
-*  **Normative Economics:** Value judgments and opinions about *what ought to be* (e.g., *"The government should raise the minimum wage to reduce poverty"*). Normative claims depend on ethical priorities and cannot be settled by data alone.
+*  **Positive Economics:** Testable statements about *what is* or *what may happen* if a policy changes (e.g., *``A minimum-wage increase may affect teen restaurant employment''*). The direction and size of any effect are empirical questions.
+*  **Normative Economics:** Value judgments and opinions about *what ought to be* (e.g., *``The government should raise the minimum wage to reduce poverty''*). Normative claims depend on ethical priorities and cannot be settled by data alone.
+
+::: {.callout-note title="Clear It Up: Positive Does Not Mean ``True,'' and Correlation Is Not Causation"}
+
+Two methodological traps trip up introductory students. First, a **positive** statement does not have to be factually correct—claiming *``Raising tuition always increases college enrollment''* is a positive statement because it can be tested and refuted with data, whereas *``Tuition should be free''* is normative. Second, observing two variables move together (**correlation**) does not prove one causes the other: if ice cream sales and swimming accidents rise together in July, warm summer weather—an omitted third variable—drives both.
+
+:::
 
 ### Visual Representation {.unnumbered}
-Figure 3 maps the economy's core interactions using the **Circular Flow Diagram**, illustrating how households and firms exchange goods, services, factors of production, and dollars across two interconnected markets.
+Figure 3 maps the economy's core interactions using a simplified two-sector **Circular Flow Diagram**. To isolate the fundamental exchange between households and firms, this baseline model intentionally abstracts away from government taxation and spending, financial intermediaries, and international trade.
 
 ![Figure 3. The Circular Flow Model. Solid outer arrows trace dollar flows (consumer spending becoming firm revenue, and factor payments becoming household income), while dashed inner arrows trace physical goods and productive inputs.](figures/chapter_1_foundations_of_microeconomic_analysis_core_principles_figure_03.svg){fig-alt="The Circular Flow Model. Solid outer arrows trace dollar flows (consumer spending becoming firm revenue, and factor payments becoming household income), while dashed inner arrows trace physical goods and productive inputs."}
 
-### Real-World Application: Separating Micro from Macro in Housing Policy {.unnumbered}
+::: {.callout-note title="Bring It Home: Separating Micro from Macro in Housing Policy"}
+
 Economics divides into two complementary lenses:
 
-*  **Microeconomics** examines individual markets, households, and firms—such as how a city's zoning law affects apartment rents in San Francisco or how Uber drivers respond to surge pricing.
+*  **Microeconomics** examines individual markets, households, and firms—such as how a city's zoning law affects apartment rents in San Francisco or how rideshare drivers respond to surge pricing.
 *  **Macroeconomics** examines the economy as a whole—such as national GDP growth, Federal Reserve interest-rate policy, and U.S. unemployment rates.
 
-For example, a study of higher mortgage rates might ask how home construction changes nationally, while a study of a local housing market might ask how individual buyers adjust between owning and renting. These are questions a model can organize; establishing causation requires evidence beyond the model itself.
+For example, a macroeconomic study of higher mortgage rates might ask how home construction changes nationally, while a microeconomic study of a local housing market might ask how individual buyers adjust between owning and renting. These are questions a model can organize; establishing causation requires empirical evidence beyond the model itself.
+
+:::
 
 ### Mathematical Foundation (Algebra Level) {.unnumbered}
 A linear model isolates a dependent variable $Y$ as a function of an explanatory variable $X$, holding all other determinants fixed inside the intercept $a$:
@@ -190,8 +236,9 @@ $$
 Y = a + bX \qquad (\text{holding all non-}X\text{ factors constant})
 $$
 
-**Worked Problem:**
-Suppose a city's monthly transit ridership $R$ (in thousands of rides) depends on the subway fare $F$ (in dollars) and average local gasoline prices $G$ (in dollars per gallon) according to the model:
+::: {.callout-note title="Work It Out: Applying *Ceteris Paribus* to Public Transit Ridership"}
+
+**Problem:** Suppose a city's monthly transit ridership $R$ (in thousands of rides) depends linearly on the subway fare $F$ (in dollars) and average local gasoline prices $G$ (in dollars per gallon) according to the illustrative model:
 
 $$
 R = 120 - 15F + 10G
@@ -199,7 +246,15 @@ $$
 
 Using *ceteris paribus*, calculate monthly ridership when the fare is $F = \$2.00$ and gas is $G = \$4.00$, and find the pure effect of raising the fare to $F = \$3.00$ while holding gas prices constant.
 
-**Step-by-Step Breakdown:**
+\medskip
+**Step-by-Step Solution:**
+
+*  **Freeze the Non-Fare Variable ($G = \$4.00$):**
+Holding $G = 4.00$ constant collapses the model into the single-variable linear form $R = a + bF$:
+
+$$
+R = 120 + 10(4.00) - 15F = 160 - 15F
+$$
 
 *  **Compute Baseline Ridership ($F = \$2.00$, $G = \$4.00$):**
 
@@ -221,15 +276,34 @@ R_2 &= 120 - 15(3.00) + 10(4.00) \\
 \end{aligned}
 $$
 
-*  **Isolate the Causal Effect of the Fare Hike:**
+*  **Isolate the *Ceteris Paribus* Effect of the Fare Hike:**
 
 $$
 \Delta R = R_2 - R_1 = 115 - 130 = \mathbf{-15\text{ thousand rides}}
 $$
 
-**Conclusion:** Holding gasoline prices constant, each $\$1.00$ increase in subway fare reduces monthly transit ridership by $15{,}000$ rides.
+**Conclusion:** Holding gasoline prices constant within this model, each $\$1.00$ increase in subway fare reduces monthly transit ridership by $15{,}000$ rides.
+
+:::
+
+::: {.callout-note title="Optional Advanced Section: Partial Derivatives as Formal *Ceteris Paribus*"}
+
+*Note for Economics Majors and Quantitative Students:*
+In multivariable calculus, the *ceteris paribus* assumption is formalized by the **partial derivative**, which differentiates a function with respect to one explanatory variable while treating all other variables as constants. For the transit ridership model $R(F, G) = 120 - 15F + 10G$:
+
+$$
+\frac{\partial R}{\partial F} = -15 \qquad \text{and} \qquad \frac{\partial R}{\partial G} = +10
+$$
+
+When both fare and gas price change simultaneously, the total differential separates their individual contributions:
+
+$$
+dR = \frac{\partial R}{\partial F}\,dF + \frac{\partial R}{\partial G}\,dG = -15\,dF + 10\,dG
+$$
+
+:::
 
 ### Selected References {.unnumbered}
 
-*  National Highway Traffic Safety Administration. “Seat Belts in New Passenger Cars” (interpretation 11695JEG; requirement effective January 1, 1968). <https://www.nhtsa.gov/interpretations/11695jeg>
-*  Peltzman, Sam. 1975. “The Effects of Automobile Safety Regulation.” *Journal of Political Economy* 83(4): 677–725. <https://doi.org/10.1086/260352>
+*  National Highway Traffic Safety Administration. ``Seat Belts in New Passenger Cars'' (interpretation 11695JEG; requirement effective January 1, 1968). <https://www.nhtsa.gov/interpretations/11695jeg>
+*  Peltzman, Sam. 1975. ``The Effects of Automobile Safety Regulation.'' *Journal of Political Economy* 83(4): 677–725. <https://doi.org/10.1086/260352>
