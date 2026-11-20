@@ -1,0 +1,57 @@
+---
+title: "Chapter 12: Monetary Policy"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+>
+This capstone chapter models the demand for money, interest rate determination under the Federal Reserve's post-2020 ample-reserves operating regime, the short-run monetary transmission mechanism to Aggregate Demand ($AD\text{–}AS$), and long-run monetary neutrality.
+
+## Learning Outcomes and Key Terms
+Students should explain the opportunity cost of holding money and shifts in the money demand curve ($MD$); describe how the Federal Reserve steers overnight interest rates using administered rates (IORB, ON RRP, Discount Window) in an ample-reserves regime; trace a policy-rate change through interest-sensitive spending to Aggregate Demand ($AD\text{–}AS$), output, and inflation; evaluate a Taylor-type policy rule and the Effective Lower Bound; and prove why money is neutral in the long run. These objectives support MA-6 and C2002-3. Key terms include demand for money, opportunity cost of liquidity, federal funds rate, target range, IORB, overnight reverse repurchase facility (ON RRP), discount window, transmission mechanism, Taylor-type rule, effective lower bound, and monetary neutrality.
+
+## 12.1 The Demand for Money
+### Opportunity Cost of Liquidity and Money Demand Shifters {.unnumbered}
+Households and firms hold liquid money (currency and checking deposits) to facilitate daily transactions, sacrificing the interest return available on less liquid bonds or money market accounts. Because higher short-term nominal interest rates raise the opportunity cost of holding liquid cash, the money demand curve ($MD$) slopes downward against the nominal interest rate. Changes in the aggregate price level, real GDP, banking and payment technology (such as digital wallets and instant transfers), and financial institutions shift $MD$.
+
+## 12.2 Money, Interest Rates, and the Ample-Reserves Regime
+### From the Policy Decision to Market Rates {.unnumbered}
+The Federal Open Market Committee (FOMC) sets a target range for the federal funds rate. In the post-2020 ample-reserves operating framework, administered rates—especially Interest on Reserve Balances (**IORB**) and the Overnight Reverse Repurchase Facility (**ON RRP**)—establish a floor on overnight market rates, while the **Discount Window** offers collateralized lending as an upper ceiling and liquidity backstop. Under abundant reserves, changes in administered rates shift the flat reserve-supply floor directly rather than relying on scarce-reserve open-market operations.
+
+::: {.callout-tip title="FRED Data: Effective Federal Funds Rate"}
+
+FRED's \texttt{FEDFUNDS} series is the monthly average of daily effective federal funds rates, in percent and not seasonally adjusted. It is an observed market rate influenced by FOMC administered-rate implementation, not the FOMC target range itself.
+
+:::
+
+## 12.3 Monetary Policy and Aggregate Demand
+### The Transmission Mechanism and Policy Rule Benchmark {.unnumbered}
+If the FOMC tightens monetary policy by raising its administered rates, short-term market rates rise, longer-term borrowing costs adjust upward, and households and firms delay durable consumption and capital investment—shifting Aggregate Demand ($AD$) leftward to cool an inflationary gap. Conversely, expansionary rate cuts lower borrowing costs and shift $AD$ rightward to close a recessionary gap, subject to recognition and transmission lags.
+
+A Taylor-type rule summarizes how a central bank responds to deviations of inflation and output from target levels:
+
+$$
+i_t = r^* + \pi_t + \alpha(\pi_t - \pi^*) + \beta\left(\frac{Y_t - Y_t^*}{Y_t^*}\right),
+$$
+
+where $i_t$ is a nominal policy rate, $r^*$ is an equilibrium real-rate benchmark, $\pi_t$ is inflation, $\pi^*$ is the inflation objective, and $(Y_t - Y_t^*)/Y_t^*$ is the percentage output gap. When nominal short-term rates hit the Effective Lower Bound (ELB), the Federal Reserve can deploy forward guidance and large-scale asset purchases to ease broader financial conditions.
+
+::: {.callout-note title="Clear It Up: The Fed Controls a Policy Instrument, Not GDP"}
+
+The central bank steers short-term policy rates and financial conditions, but output and inflation also respond to fiscal policy, supply shocks, global markets, and private expectations. A policy-rate change is not a one-for-one mechanical change in real GDP.
+
+:::
+
+## 12.4 Money, Output, and Prices in the Long Run
+### Long-Run Monetary Neutrality {.unnumbered}
+While an expansionary monetary policy raises real output ($Y > Y^*$) in the short run when nominal wages and prices are sticky, tightening labor and input markets eventually push nominal wages upward, shifting $SRAS$ leftward until output returns to potential ($Y^*$) on the vertical $LRAS$ curve. In the long run, changes in the money supply alter the aggregate price level proportionally without changing real GDP, unemployment, or the equilibrium real interest rate—a fundamental property known as **monetary neutrality**.
+
+## Check Your Understanding
+
+*  Why does the money demand curve ($MD$) slope downward with respect to the nominal interest rate?
+*  Why is \texttt{FEDFUNDS} not identical to the FOMC target range, and how do IORB and ON RRP keep overnight rates inside that range?
+*  Trace how an expansionary monetary policy affects real output and the price level in the short run versus the long run under monetary neutrality.
+
+Answers: (1) A higher nominal interest rate increases the opportunity cost of holding non-interest-bearing or low-yield liquid money instead of interest-bearing assets. (2) \texttt{FEDFUNDS} is the observed market-clearing effective rate; IORB and ON RRP set an arbitrage floor so banks and money funds will not lend overnight below the Fed's administered rates. (3) In the short run, lower rates shift $AD$ right, raising both $Y$ and $P$; in the long run, rising nominal wages shift $SRAS$ left back to $Y^*$, leaving real output unchanged and the price level permanently higher.

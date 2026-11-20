@@ -1,0 +1,173 @@
+% Figure 3: Closed vs. Open Economy Comparison
+% Macroeconomics Chapter 6
+% Side-by-side comparison showing how trade deficits affect national saving
+
+\documentclass[tikz,border=5pt]{standalone}
+\usepackage{pgfplots}
+\usepackage{amssymb}
+\pgfplotsset{compat=1.18}
+
+% Define Okabe-Ito colorblind-safe palette
+\definecolor{CourseBlue}{HTML}{0072B2}        % Saving (Deep Blue)
+\definecolor{CourseOrange}{HTML}{D55E00}      % Investment (Vermilion-Orange)
+\definecolor{CourseTeal}{HTML}{009E73}        % Closed loop (Bluish-Green)
+\definecolor{CoursePurple}{HTML}{CC79A7}      % Trade deficit (Reddish-Purple)
+\definecolor{CourseAmber}{HTML}{E69F00}       % Highlight (Warm Amber)
+\definecolor{CourseSlate}{HTML}{1E293B}       % Axes, grids, labels (Dark Slate)
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1.0]
+  
+  % === CLOSED ECONOMY (LEFT PANEL) ===
+  
+  \node[color=CourseSlate, font=\small\bfseries] at (2.5, 8.0) {
+    Closed Economy
+  };
+  
+  \node[color=CourseSlate, font=\tiny] at (2.5, 7.65) {
+    ($Y = C + I + G$)
+  };
+  
+  % Closed economy boxes and flows
+  
+  % Total = $1,000B
+  \draw[fill=white, draw=CourseSlate, line width=0.5pt] (0.5, 6.5) rectangle (4.5, 7.2);
+  \node[color=CourseSlate, font=\small] at (2.5, 6.85) {
+    Total Income: $Y = \$1,000\text{B}$
+  };
+  
+  % Consumption box
+  \draw[fill=CourseBlue, draw=CourseSlate, line width=0.5pt, opacity=0.7] (0.5, 5.5) rectangle (3.0, 6.2);
+  \node[color=CourseSlate, font=\small\bfseries] at (1.75, 5.85) {
+    $C = \$650\text{B}$
+  };
+  \draw[->, line width=1pt, color=CourseSlate] (2.5, 7.2) -- (1.75, 6.2);
+  
+  % Government box
+  \draw[fill=CourseTeal, draw=CourseSlate, line width=0.5pt, opacity=0.7] (3.2, 5.5) rectangle (4.5, 6.2);
+  \node[color=CourseSlate, font=\small\bfseries] at (3.85, 5.85) {
+    $G = \$200\text{B}$
+  };
+  \draw[->, line width=1pt, color=CourseSlate] (2.5, 7.2) -- (3.85, 6.2);
+  
+  % Saving box (derived)
+  \draw[fill=CourseOrange, draw=CourseSlate, line width=1pt, opacity=0.7] (1.75, 4.2) rectangle (3.75, 4.9);
+  \node[color=CourseSlate, font=\small\bfseries] at (2.75, 4.55) {
+    $S = Y - C - G = \$150\text{B}$
+  };
+  \draw[->, line width=1.5pt, color=CourseOrange] (2.0, 5.5) -- (2.0, 4.9);
+  \draw[->, line width=1.5pt, color=CourseOrange] (3.5, 5.5) -- (3.5, 4.9);
+  \node[color=CourseOrange, font=\small] at (1.3, 5.2) {
+    $S$
+  };
+  
+  % Investment box
+  \draw[fill=CourseAmber, draw=CourseSlate, line width=1pt, opacity=0.7] (1.75, 3.2) rectangle (3.75, 3.9);
+  \node[color=CourseSlate, font=\small\bfseries] at (2.75, 3.55) {
+    $I = \$150\text{B}$
+  };
+  \draw[<->, line width=1.5pt, color=CourseSlate, dash pattern=on 2pt off 2pt] (2.75, 4.2) -- (2.75, 3.9);
+  \node[color=CourseSlate, font=\small] at (3.1, 4.05) {
+    $S = I$
+  };
+  
+  % Closed economy identity box
+  \draw[fill=white, draw=CourseSlate, line width=1pt, rounded corners=3pt] (0.5, 2.0) rectangle (4.5, 2.7);
+  \node[color=CourseSlate, font=\small, text width=3.5cm, align=center] at (2.5, 2.35) {
+    \textbf{Closed Economy Identity:}\\
+    $S = I$
+  };
+  \node[color=CourseSlate, font=\tiny, text width=3.5cm, align=center] at (2.5, 2.05) {
+    All saving must fund domestic investment
+  };
+  
+  % === OPEN ECONOMY (RIGHT PANEL) ===
+  
+  \node[color=CourseSlate, font=\small\bfseries] at (7.5, 8.0) {
+    Open Economy
+  };
+  
+  \node[color=CourseSlate, font=\tiny] at (7.5, 7.65) {
+    ($Y = C + I + G + NX$)
+  };
+  
+  % Total = $1,000B
+  \draw[fill=white, draw=CourseSlate, line width=0.5pt] (5.5, 6.5) rectangle (9.5, 7.2);
+  \node[color=CourseSlate, font=\small] at (7.5, 6.85) {
+    Total Income: $Y = \$1,000\text{B}$
+  };
+  
+  % Consumption box
+  \draw[fill=CourseBlue, draw=CourseSlate, line width=0.5pt, opacity=0.7] (5.5, 5.5) rectangle (8.0, 6.2);
+  \node[color=CourseSlate, font=\small\bfseries] at (6.75, 5.85) {
+    $C = \$650\text{B}$
+  };
+  \draw[->, line width=1pt, color=CourseSlate] (7.5, 7.2) -- (6.75, 6.2);
+  
+  % Government box
+  \draw[fill=CourseTeal, draw=CourseSlate, line width=0.5pt, opacity=0.7] (8.2, 5.5) rectangle (9.5, 6.2);
+  \node[color=CourseSlate, font=\small\bfseries] at (8.85, 5.85) {
+    $G = \$200\text{B}$
+  };
+  \draw[->, line width=1pt, color=CourseSlate] (7.5, 7.2) -- (8.85, 6.2);
+  
+  % Saving box (same as closed)
+  \draw[fill=CourseOrange, draw=CourseSlate, line width=1pt, opacity=0.7] (6.75, 4.2) rectangle (8.75, 4.9);
+  \node[color=CourseSlate, font=\small\bfseries] at (7.75, 4.55) {
+    $S = Y - C - G = \$150\text{B}$
+  };
+  \draw[->, line width=1.5pt, color=CourseOrange] (7.0, 5.5) -- (7.0, 4.9);
+  \draw[->, line width=1.5pt, color=CourseOrange] (8.5, 5.5) -- (8.5, 4.9);
+  \node[color=CourseOrange, font=\small] at (6.3, 5.2) {
+    $S$
+  };
+  
+  % Investment box (higher in open economy)
+  \draw[fill=CourseAmber, draw=CourseSlate, line width=1pt, opacity=0.7] (6.75, 3.2) rectangle (8.75, 3.9);
+  \node[color=CourseSlate, font=\small\bfseries] at (7.75, 3.55) {
+    $I = \$180\text{B}$
+  };
+  
+  % Capital inflow box
+  \draw[fill=CoursePurple, draw=CourseSlate, line width=1pt, opacity=0.7] (6.75, 2.3) rectangle (8.75, 3.0);
+  \node[color=CourseSlate, font=\small\bfseries] at (7.75, 2.65) {
+    Capital Inflow: $\$30\text{B}$
+  };
+  \node[color=CourseSlate, font=\tiny] at (7.75, 2.4) {
+    ($-NX = \$30\text{B}$, trade deficit)
+  };
+  
+  % Identity flow
+  \draw[<-, line width=1.5pt, color=CourseOrange] (7.3, 4.2) -- (7.3, 3.9);
+  \draw[<-, line width=1.5pt, color=CoursePurple] (8.2, 4.2) -- (8.2, 3.0);
+  
+  % Open economy identity box
+  \draw[fill=white, draw=CourseSlate, line width=1pt, rounded corners=3pt] (5.5, 0.9) rectangle (9.5, 2.0);
+  \node[color=CourseSlate, font=\small, text width=3.5cm, align=center] at (7.5, 1.6) {
+    \textbf{Open Economy Identity:}\\
+    $S = I + NX$
+  };
+  \node[color=CourseSlate, font=\tiny, text width=3.5cm, align=center] at (7.5, 1.0) {
+    Trade deficit $(NX < 0)$ attracts foreign capital:\\
+    $I > S$ due to capital inflow
+  };
+  
+  % === CENTRAL ANNOTATION ===
+  
+  \draw[<->, line width=1.5pt, color=CourseSlate] (4.6, 3.55) -- (5.4, 3.55);
+  \node[color=CourseSlate, font=\small\bfseries] at (5.0, 3.85) {
+    Capital inflow
+  };
+  
+  % === MAIN CAPTION ===
+  
+  \node[color=CourseSlate, font=\small, text width=10cm, anchor=north, align=center] at (5.0, -0.5) {
+    \textbf{Key Insight:} In a closed economy, saving must equal investment. In an open economy,\\
+    trade deficits (negative $NX$) allow domestic investment to exceed saving by attracting\\
+    foreign capital. This capital inflow offsets the trade deficit: $S = I + NX$.
+  };
+  
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,59 @@
+---
+title: "Chapter 4: Aggregate Output"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+>
+This chapter combines the macroeconomic big picture with national income and product accounting. It examines business cycles, long-run economic growth, and international balances alongside the Expenditure, Value-Added, and Income (GDI) measures of Gross Domestic Product (GDP), distinguishing Nominal GDP from Real GDP.
+
+## Learning Outcomes and Key Terms
+Students should interpret national accounts across the Expenditure ($Y = C + I + G + NX$), Production (Value-Added), and Income (GDI) views; distinguish Nominal GDP from Real GDP; identify phases of the business cycle; explain the drivers of long-run economic growth; and interpret international trade balances. These objectives support MA-1, MA-2, and C2002-1. Key terms include aggregate output, final good, intermediate good, value added, consumption, investment, government purchases, net exports, nominal GDP, real GDP, business cycle, expansion, recession, long-run growth, and international balance.
+
+## The Macroeconomic Big Picture: Cycles, Growth, and International Balances
+### Business Cycles and Long-Run Economic Growth {.unnumbered}
+Aggregate output fluctuates over the short run in **business cycles**—alternating periods of **expansion** (rising output and employment) and **recession** (broad-based declines in output and employment between a peak and a trough). Across decades, however, living standards depend on **long-run economic growth**: the sustained upward trend in potential real GDP per capita driven by physical capital deepening, human capital, and technological progress.
+
+### International Balances in an Open Economy {.unnumbered}
+In an open economy, domestic output interacts with global markets through exports ($X$) and imports ($M$). Net exports ($NX = X - M$) measure the trade balance: a trade surplus ($NX > 0$) means domestic output exceeds domestic spending and the nation is a net lender abroad, whereas a trade deficit ($NX < 0$) means domestic spending exceeds domestic output and is financed by net capital inflows from abroad.
+
+## What GDP Counts: A Chip in a Computer
+Imagine a processor sold to a computer maker and then installed in a new laptop. Counting the processor's full sale and the laptop's full sale would count some production twice. National accounts avoid this by counting final output or summing each firm's value added. The processor maker contributes the value of its output minus intermediate inputs; the computer maker contributes the laptop's value minus purchased components. GDP measures the market value of final goods and services produced within a country's borders during a period, not the value of every financial transaction or every useful activity.
+
+GDP excludes purchases of existing assets, such as a used home, because that production occurred earlier. It also excludes transfers such as Social Security benefits from government purchases: transfers redistribute income but are not direct purchases of current output. Newly produced residential construction is counted as investment, while a household's purchase of the same house from another household is an asset transfer.
+
+## Three Equivalent Accounting Views of the National Accounts
+The expenditure approach adds spending on final domestic production:
+
+$$
+Y = C + I + G + NX, \qquad NX = X - M.
+$$
+
+$C$ is household consumption, $I$ is gross private domestic investment (including inventory change and new residential construction), $G$ is government purchases of goods and services, and $NX$ is exports minus imports. Imports are subtracted because they may already be included in $C$, $I$, or $G$ but were produced abroad.
+
+The production or value-added approach sums each producer's value added, avoiding double counting. The income approach sums incomes generated in domestic production, including compensation of employees, proprietors' income, rental income, corporate profits, net interest, taxes on production and imports less subsidies, and consumption of fixed capital. GDP and gross domestic income (GDI) should be equal in principle because one producer's output is another party's expenditure and income; measured estimates can differ because of data sources and timing. The statistical discrepancy records that difference rather than implying two different economies.
+
+## Nominal GDP vs. Real GDP
+Nominal GDP values current production at current-period prices. If both quantities and prices rise, nominal GDP can rise even when physical output does not. Real GDP values production using constant base-year prices or a chain-type quantity index designed to remove price changes and isolate true physical output growth. (Measuring changes in the overall price level via the GDP Deflator, CPI, and PPI is developed in Chapter 5.)
+
+::: {.callout-tip title="FRED Data: Current-Dollar and Chained-Dollar GDP"}
+
+FRED's \texttt{GDP} series reports Gross Domestic Product in billions of current dollars at a seasonally adjusted annual rate, quarterly. \texttt{GDPC1} reports real GDP in billions of chained 2017 dollars at a seasonally adjusted annual rate, quarterly. Compare output growth over time using \texttt{GDPC1}, and do not read chained-dollar levels as current-dollar spending.
+
+:::
+
+::: {.callout-note title="Clear It Up: Investment Is Not a Stock Purchase"}
+
+In GDP accounting, investment ($I$) means newly produced capital goods, new residential structures, and inventory accumulation. Buying an existing share of stock is a financial transaction, not current production, so it is not counted as $I$ in GDP.
+
+:::
+
+## Check Your Understanding
+
+*  Why are imported goods subtracted in $NX$ even though consumers and firms buy them?
+*  Distinguish short-run business cycle fluctuations from long-run economic growth.
+*  Why does counting a final laptop and every component's full sale overstate aggregate output?
+
+Answers: (1) Imports were produced abroad and must be removed so $Y$ reflects only domestic production. (2) Business cycles are short-run swings around trend output, whereas long-run growth expands productive capacity ($Y^*$) over decades. (3) It double-counts intermediate production; use final market value or sum value added at each stage.

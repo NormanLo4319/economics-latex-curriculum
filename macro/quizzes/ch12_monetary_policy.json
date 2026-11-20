@@ -1,0 +1,3052 @@
+{
+  "schema_version": "2.0",
+  "course": "Principles of Macroeconomics",
+  "chapter_id": "macro_ch12",
+  "file_stem": "ch12_monetary_policy",
+  "title": "Monetary Policy",
+  "benchmark": "Krugman & Wells (Macroeconomics) & SFSU/CCSF Principles SSOT (Spring 2027)",
+  "seeding_formula": "seed = hash(student_id + question_id)",
+  "points_per_question": 1,
+  "questions_count": 50,
+  "tier_distribution": {
+    "tier_1": 13,
+    "tier_2": 12,
+    "tier_3": 13,
+    "tier_4": 12
+  },
+  "questions": [
+    {
+      "id": "CH12_MON_T1_01",
+      "chapter": 12,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Demand for Money ($MD$)",
+      "clo_alignment": [
+        "LO1"
+      ],
+      "title": "Opportunity Cost of Holding Money",
+      "prompt_template": "Why does the demand for money curve ($MD$) slope downward with respect to the short-term nominal interest rate ($i$)?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about what you give up when you keep extra cash in a zero-interest checking account instead of buying a short-term bond."
+        },
+        {
+          "tier": 2,
+          "text": "Compare the foregone interest yield at a high nominal interest rate versus a low nominal interest rate."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "A higher nominal interest rate increases the opportunity cost of holding liquid cash or non-interest-bearing checking balances instead of interest-bearing assets such as Treasury bills.",
+          "is_correct": true,
+          "feedback": "Correct! A higher nominal interest rate increases the opportunity cost of holding liquid cash or non-interest-bearing checking balances instead of interest-bearing assets such as Treasury bills."
+        },
+        {
+          "id": "opt_b",
+          "text": "A higher nominal interest rate increases the physical cost of printing paper currency at the U.S. Mint.",
+          "is_correct": false,
+          "feedback": "Incorrect: The downward slope of $MD$ reflects financial opportunity cost (foregone interest), not the physical production cost of currency."
+        },
+        {
+          "id": "opt_c",
+          "text": "A higher nominal interest rate directly lowers real GDP, reducing household transaction needs.",
+          "is_correct": false,
+          "feedback": "Incorrect: Higher interest rates reduce quantity of money demanded via a movement along $MD$, whereas real GDP is a shift factor of $MD$."
+        },
+        {
+          "id": "opt_d",
+          "text": "A higher nominal interest rate eliminates the need for a medium of exchange in retail trade.",
+          "is_correct": false,
+          "feedback": "Incorrect: Interest rates change the opportunity cost of holding idle cash balances; they do not eliminate money's medium-of-exchange role."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T1_02",
+      "chapter": 12,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Demand for Money ($MD$)",
+      "clo_alignment": [
+        "LO1"
+      ],
+      "title": "Liquidity vs. Yield Trade-Off",
+      "prompt_template": "In macroeconomic models of money demand, which statement best captures the trade-off between holding money and holding interest-bearing bonds?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Contrast how quickly you can spend a checking balance or cash versus a bond."
+        },
+        {
+          "tier": 2,
+          "text": "Higher liquidity makes transactions easier, while higher interest compensates for tying up funds."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Money offers superior liquidity for immediate transactions, whereas short-term bonds generally offer higher interest returns with lower immediate spending liquidity.",
+          "is_correct": true,
+          "feedback": "Correct! Money offers superior liquidity for immediate transactions, whereas short-term bonds generally offer higher interest returns with lower immediate spending liquidity."
+        },
+        {
+          "id": "opt_b",
+          "text": "Short-term Treasury bills are always more liquid for paying groceries than cash in a checking account.",
+          "is_correct": false,
+          "feedback": "Incorrect: Checking balances and cash provide immediate payment liquidity, whereas bonds typically must be converted into cash first."
+        },
+        {
+          "id": "opt_c",
+          "text": "Money provides higher interest income than bonds because currency is backed by interest payments.",
+          "is_correct": false,
+          "feedback": "Incorrect: Physical currency pays zero nominal interest, which is why holding it sacrifices interest return."
+        },
+        {
+          "id": "opt_d",
+          "text": "Households never hold money when nominal interest rates are positive because liquidity has zero value.",
+          "is_correct": false,
+          "feedback": "Incorrect: Even at positive interest rates, households and firms hold positive transaction balances to avoid payment friction."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T1_03",
+      "chapter": 12,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Ample-Reserves Regime",
+      "clo_alignment": [
+        "LO2"
+      ],
+      "title": "Federal Reserve Ample-Reserves Operating Regime",
+      "prompt_template": "Under the Federal Reserve's post-2020 ample-reserves operating regime, how does the FOMC primarily steer the federal funds rate into its target range?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall why open-market reserve shifts have little effect when banks already hold trillions of dollars in reserves."
+        },
+        {
+          "tier": 2,
+          "text": "Look for the administered rates (IORB and ON RRP) that anchor overnight market rates."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "By adjusting administered interest rates—principally Interest on Reserve Balances (IORB) and the Overnight Reverse Repurchase (ON RRP) offering rate—while commercial banks hold abundant reserves.",
+          "is_correct": true,
+          "feedback": "Correct! By adjusting administered interest rates—principally Interest on Reserve Balances (IORB) and the Overnight Reverse Repurchase (ON RRP) offering rate—while commercial banks hold abundant reserves."
+        },
+        {
+          "id": "opt_b",
+          "text": "By conducting daily open-market sales to drive reserve balances down to zero along a steep reserve demand curve.",
+          "is_correct": false,
+          "feedback": "Incorrect: Under ample reserves, reserve supply sits on the flat portion of the reserve demand curve, so small reserve changes do not move overnight rates."
+        },
+        {
+          "id": "opt_c",
+          "text": "By legally mandating that every commercial bank charge the exact midpoint of the target range on all mortgages.",
+          "is_correct": false,
+          "feedback": "Incorrect: The FOMC sets a target range for the overnight federal funds rate; retail loan and mortgage rates are market-determined and reflect credit risk, maturity, and expectations."
+        },
+        {
+          "id": "opt_d",
+          "text": "By raising the statutory required reserve ratio above 25% whenever inflation rises.",
+          "is_correct": false,
+          "feedback": "Incorrect: Reserve requirements in the United States were reduced to 0% in March 2020, and administered rates rather than reserve ratios steer policy."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T1_04",
+      "chapter": 12,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Ample-Reserves Regime",
+      "clo_alignment": [
+        "LO2"
+      ],
+      "title": "Role of Interest on Reserve Balances (IORB)",
+      "prompt_template": "What is Interest on Reserve Balances (IORB) in the Federal Reserve's modern implementation framework?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Identify who holds reserve balances at a Federal Reserve Bank and what rate the Fed pays on them."
+        },
+        {
+          "tier": 2,
+          "text": "IORB is a central bank administered rate on depository institutions' reserve balances."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The interest rate the Federal Reserve pays depository institutions on reserve balances held in their accounts at Federal Reserve Banks, acting as a key anchor/floor for overnight interbank lending.",
+          "is_correct": true,
+          "feedback": "Correct! The interest rate the Federal Reserve pays depository institutions on reserve balances held in their accounts at Federal Reserve Banks, acting as a key anchor/floor for overnight interbank lending."
+        },
+        {
+          "id": "opt_b",
+          "text": "The interest rate commercial banks pay households on 30-year fixed-rate mortgages.",
+          "is_correct": false,
+          "feedback": "Incorrect: IORB applies to reserve balances held by eligible depository institutions at the Fed, not consumer mortgages."
+        },
+        {
+          "id": "opt_c",
+          "text": "The penalty fee charged to the U.S. Treasury whenever the federal budget deficit exceeds $1 trillion.",
+          "is_correct": false,
+          "feedback": "Incorrect: IORB is a monetary policy administered rate paid on bank reserves, unrelated to fiscal deficit penalties."
+        },
+        {
+          "id": "opt_d",
+          "text": "The annual percentage growth rate of the Consumer Price Index (CPIAUCSL).",
+          "is_correct": false,
+          "feedback": "Incorrect: CPIAUCSL measures consumer price levels, whereas IORB is a central bank administered interest rate."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T1_05",
+      "chapter": 12,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Ample-Reserves Regime",
+      "clo_alignment": [
+        "LO2"
+      ],
+      "title": "Overnight Reverse Repurchase Facility (ON RRP)",
+      "prompt_template": "How does the Overnight Reverse Repurchase Agreement (ON RRP) facility support rate control in an ample-reserves regime?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Not all money market participants have reserve accounts at the Fed and earn IORB directly."
+        },
+        {
+          "tier": 2,
+          "text": "Consider how non-bank cash lenders (like money market funds) avoid lending below the Fed's floor rate."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "It provides a broad set of eligible non-bank counterparties (such as money market mutual funds and government-sponsored enterprises) with an overnight investment option at an administered rate, reinforcing a floor under short-term market rates.",
+          "is_correct": true,
+          "feedback": "Correct! It provides a broad set of eligible non-bank counterparties (such as money market mutual funds and government-sponsored enterprises) with an overnight investment option at an administered rate, reinforcing a floor under short-term market rates."
+        },
+        {
+          "id": "opt_b",
+          "text": "It forces commercial banks to borrow exclusively from foreign central banks at the end of every business day.",
+          "is_correct": false,
+          "feedback": "Incorrect: ON RRP is an overnight reverse repo facility for eligible counterparties with the New York Fed, not forced foreign central bank borrowing."
+        },
+        {
+          "id": "opt_c",
+          "text": "It permanently eliminates all fluctuations in long-term corporate bond yields.",
+          "is_correct": false,
+          "feedback": "Incorrect: ON RRP targets overnight money market rates and supports rate control; long-term yields still fluctuate with growth, inflation expectations, and risk premiums."
+        },
+        {
+          "id": "opt_d",
+          "text": "It replaces the Federal Open Market Committee (FOMC) as the body that votes on monetary policy.",
+          "is_correct": false,
+          "feedback": "Incorrect: The FOMC sets monetary policy and administered rate settings; ON RRP is an operational implementation facility."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T1_06",
+      "chapter": 12,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Ample-Reserves Regime",
+      "clo_alignment": [
+        "LO2"
+      ],
+      "title": "Discount Window and Liquidity Backstop",
+      "prompt_template": "In the modern Federal Reserve framework, what role does the Discount Window play?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about what happens when a bank faces an unexpected overnight liquidity shortage and needs collateralized reserves."
+        },
+        {
+          "tier": 2,
+          "text": "The Discount Window provides collateralized credit as a liquidity backstop."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "It serves as a standing collateralized lending facility and liquidity backstop for eligible depository institutions, acting as an upper rate ceiling / safety valve against funding squeezes.",
+          "is_correct": true,
+          "feedback": "Correct! It serves as a standing collateralized lending facility and liquidity backstop for eligible depository institutions, acting as an upper rate ceiling / safety valve against funding squeezes."
+        },
+        {
+          "id": "opt_b",
+          "text": "It is a retail storefront where households exchange old paper bills for newly minted gold coins.",
+          "is_correct": false,
+          "feedback": "Incorrect: The Discount Window is a central bank lending facility for eligible depository institutions, not a retail currency exchange."
+        },
+        {
+          "id": "opt_c",
+          "text": "It sets a mandatory maximum cap of 1% on all credit card interest rates nationwide.",
+          "is_correct": false,
+          "feedback": "Incorrect: The Discount Window governs discount lending to eligible institutions; it does not cap consumer credit card rates."
+        },
+        {
+          "id": "opt_d",
+          "text": "It automatically taxes excess bank reserves whenever inflation is below 2%.",
+          "is_correct": false,
+          "feedback": "Incorrect: The Discount Window lends reserves against collateral at the primary credit (discount) rate; it does not tax reserves."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T1_07",
+      "chapter": 12,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "FRED Data & Policy Rates",
+      "clo_alignment": [
+        "LO2",
+        "LO4"
+      ],
+      "title": "FEDFUNDS vs. FOMC Target Range",
+      "prompt_template": "Why is FRED's FEDFUNDS series not identical to the FOMC's announced federal funds target range?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Check both the frequency/averaging and the distinction between a policy target and an observed market average."
+        },
+        {
+          "tier": 2,
+          "text": "FEDFUNDS is a monthly average of daily effective market rates, not the target range itself."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "FEDFUNDS is the observed monthly average of daily effective federal funds market rates (in percent, not seasonally adjusted), whereas the FOMC sets a policy target range.",
+          "is_correct": true,
+          "feedback": "Correct! FEDFUNDS is the observed monthly average of daily effective federal funds market rates (in percent, not seasonally adjusted), whereas the FOMC sets a policy target range."
+        },
+        {
+          "id": "opt_b",
+          "text": "FEDFUNDS measures the quarterly percentage change in real GDP (GDPC1).",
+          "is_correct": false,
+          "feedback": "Incorrect: Real GDP is tracked by series such as GDPC1, whereas FEDFUNDS reports the effective federal funds interest rate."
+        },
+        {
+          "id": "opt_c",
+          "text": "The FOMC sets a single exact penny price on physical currency rather than an interest rate range.",
+          "is_correct": false,
+          "feedback": "Incorrect: The FOMC sets a target range for the overnight federal funds rate, while FEDFUNDS reflects realized effective market trades averaged over the month."
+        },
+        {
+          "id": "opt_d",
+          "text": "FEDFUNDS is seasonally adjusted consumer price inflation expressed in billions of dollars.",
+          "is_correct": false,
+          "feedback": "Incorrect: FEDFUNDS is an interest rate in percent (not seasonally adjusted), not a dollar price index or money stock."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T1_08",
+      "chapter": 12,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Monetary Transmission & AD-AS",
+      "clo_alignment": [
+        "LO3"
+      ],
+      "title": "Contractionary Monetary Policy Stance",
+      "prompt_template": "When the Federal Reserve tightens monetary policy by raising its administered rates, what is the primary short-run effect on Aggregate Demand ($AD$) and output?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Trace the chain from higher policy rates to borrowing costs, investment/durable spending, and $AD$."
+        },
+        {
+          "tier": 2,
+          "text": "Tighter monetary policy raises borrowing costs and shifts $AD$ to the left."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Short-term and broader borrowing costs tend to rise, reducing interest-sensitive spending (such as investment and durable consumption) and shifting $AD$ leftward over time, cooling output and inflation pressure.",
+          "is_correct": true,
+          "feedback": "Correct! Short-term and broader borrowing costs tend to rise, reducing interest-sensitive spending (such as investment and durable consumption) and shifting $AD$ leftward over time, cooling output and inflation pressure."
+        },
+        {
+          "id": "opt_b",
+          "text": "Borrowing costs fall immediately to zero, shifting Short-Run Aggregate Supply ($SRAS$) rightward.",
+          "is_correct": false,
+          "feedback": "Incorrect: Raising administered rates tightens policy and pushes interest rates up rather than down, and it transmits primarily through spending ($AD$) rather than an immediate rightward $SRAS$ shift."
+        },
+        {
+          "id": "opt_c",
+          "text": "Aggregate Demand shifts rightward because higher interest rates make households feel wealthier.",
+          "is_correct": false,
+          "feedback": "Incorrect: Higher interest rates raise borrowing costs and tend to restrain interest-sensitive spending, shifting $AD$ leftward rather than rightward."
+        },
+        {
+          "id": "opt_d",
+          "text": "The federal funds rate hike causes a direct movement along a fixed $AD$ curve caused solely by a change in $CPIAUCSL$.",
+          "is_correct": false,
+          "feedback": "Incorrect: A monetary policy rate change shifts the $AD$ curve (through interest-sensitive spending and financial conditions), whereas a movement along $AD$ is triggered by a change in the aggregate price level."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T1_09",
+      "chapter": 12,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Monetary Transmission & AD-AS",
+      "clo_alignment": [
+        "LO3"
+      ],
+      "title": "Expansionary Monetary Policy During a Recessionary Gap",
+      "prompt_template": "Suppose an economy is in a recessionary gap ($Y < Y^*$). How does an expansionary monetary policy-rate cut work to close the gap in the short run?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Start at a recessionary gap ($Y < Y^*$) and ask how lower interest rates affect borrowing and planned spending."
+        },
+        {
+          "tier": 2,
+          "text": "Lower borrowing costs stimulate interest-sensitive spending, shifting $AD$ rightward."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Lower policy rates help reduce short-term and broader borrowing costs, encouraging interest-sensitive investment and consumption so $AD$ shifts rightward toward potential output ($Y^*$).",
+          "is_correct": true,
+          "feedback": "Correct! Lower policy rates help reduce short-term and broader borrowing costs, encouraging interest-sensitive investment and consumption so $AD$ shifts rightward toward potential output ($Y^*$)."
+        },
+        {
+          "id": "opt_b",
+          "text": "Lower policy rates shift the vertical Long-Run Aggregate Supply ($LRAS$) curve permanently to the left.",
+          "is_correct": false,
+          "feedback": "Incorrect: $LRAS$ reflects long-run productive capacity (potential output $Y^*$), not short-run demand stimulus from rate cuts."
+        },
+        {
+          "id": "opt_c",
+          "text": "Lower policy rates immediately force nominal wages to double so $SRAS$ shifts leftward.",
+          "is_correct": false,
+          "feedback": "Incorrect: Rate cuts lower borrowing costs to stimulate spending ($AD$ right); wage-driven $SRAS$ leftward shifts occur when an overheated economy pushes $Y > Y^*$."
+        },
+        {
+          "id": "opt_d",
+          "text": "Lower policy rates eliminate all recognition and transmission lags so GDP jumps instantaneously in the same day.",
+          "is_correct": false,
+          "feedback": "Incorrect: Monetary policy operates through financial markets and spending decisions with variable and uncertain lags."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T1_10",
+      "chapter": 12,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Policy Rules & ELB",
+      "clo_alignment": [
+        "LO3"
+      ],
+      "title": "Benchmark Role of a Taylor-Type Rule",
+      "prompt_template": "Why do macroeconomists treat a Taylor-type rule as a policy benchmark rather than a rigid mechanical law that the FOMC must follow blindly?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Ask how well policymakers can observe $r^*$ and $Y_t^*$ in real time when data are revised and shocks hit."
+        },
+        {
+          "tier": 2,
+          "text": "Parameter uncertainty and broader macroeconomic risks make a Taylor rule a benchmark guide rather than a strict rule."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because estimates of key inputs like potential output ($Y_t^*$) and the equilibrium real rate ($r^*$) are uncertain, and policymakers must weigh multiple shocks, financial risks, and lag uncertainties.",
+          "is_correct": true,
+          "feedback": "Correct! Because estimates of key inputs like potential output ($Y_t^*$) and the equilibrium real rate ($r^*$) are uncertain, and policymakers must weigh multiple shocks, financial risks, and lag uncertainties."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because a Taylor-type rule never depends on inflation or output deviations from target.",
+          "is_correct": false,
+          "feedback": "Incorrect: Standard Taylor-type rules explicitly respond to inflation deviations ($\\pi_t - \\pi^*$) and output gaps ($(Y_t - Y_t^*)/Y_t^*$)."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because nominal interest rates can never fall below 10% under any circumstance.",
+          "is_correct": false,
+          "feedback": "Incorrect: Central banks have set policy rates well below 10%, down toward the Effective Lower Bound."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because fiscal policy and supply shocks have zero effect on output or inflation whenever a Taylor rule is mentioned.",
+          "is_correct": false,
+          "feedback": "Incorrect: Output and inflation are influenced by fiscal policy, supply shocks, expectations, and global conditions alongside monetary policy."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T1_11",
+      "chapter": 12,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Policy Rules & ELB",
+      "clo_alignment": [
+        "LO3"
+      ],
+      "title": "Effective Lower Bound (ELB) and Unconventional Tools",
+      "prompt_template": "When a central bank's nominal short-term policy rate reaches the Effective Lower Bound (ELB), which tools can the Federal Reserve use to ease financial conditions further?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "When overnight rates cannot be cut much further below zero, how does the Fed influence longer-term rates and expectations?"
+        },
+        {
+          "tier": 2,
+          "text": "Forward guidance and large-scale asset purchases operate through expectations and longer-term financial conditions."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Forward guidance about the future path of policy rates and large-scale asset purchases (such as longer-term Treasury and agency MBS purchases) to lower longer-term yields and ease financial conditions.",
+          "is_correct": true,
+          "feedback": "Correct! Forward guidance about the future path of policy rates and large-scale asset purchases (such as longer-term Treasury and agency MBS purchases) to lower longer-term yields and ease financial conditions."
+        },
+        {
+          "id": "opt_b",
+          "text": "Setting a negative 50% tax on all household savings accounts via the FOMC.",
+          "is_correct": false,
+          "feedback": "Incorrect: The FOMC does not set household tax rates; Congress and fiscal authorities legislate taxes."
+        },
+        {
+          "id": "opt_c",
+          "text": "Ordering commercial banks to raise mortgage rates to 25% to stimulate borrowing.",
+          "is_correct": false,
+          "feedback": "Incorrect: Raising interest rates tightens financial conditions rather than easing them."
+        },
+        {
+          "id": "opt_d",
+          "text": "Abolishing potential output ($Y^*$) so any level of spending counts as full employment.",
+          "is_correct": false,
+          "feedback": "Incorrect: Potential output is a real economic concept determined by resources and technology, not abolished by central bank policy."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T1_12",
+      "chapter": 12,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Long-Run Monetary Neutrality",
+      "clo_alignment": [
+        "LO4"
+      ],
+      "title": "Meaning of Long-Run Monetary Neutrality",
+      "prompt_template": "What does long-run monetary neutrality state?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Separate nominal variables (like the price level) from real variables (like real GDP and the real interest rate) after prices adjust."
+        },
+        {
+          "tier": 2,
+          "text": "Neutrality means real output is unaffected in the long run while nominal prices adjust."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "In the long run, once wages and prices have adjusted, a change in the money supply changes the aggregate price level proportionally without permanently changing real GDP, employment, or the equilibrium real interest rate.",
+          "is_correct": true,
+          "feedback": "Correct! In the long run, once wages and prices have adjusted, a change in the money supply changes the aggregate price level proportionally without permanently changing real GDP, employment, or the equilibrium real interest rate."
+        },
+        {
+          "id": "opt_b",
+          "text": "In the long run, doubling the money supply doubles real output ($Y^*$) while keeping the price level constant.",
+          "is_correct": false,
+          "feedback": "Incorrect: Under monetary neutrality, real output returns to potential ($Y^*$) and the price level rises rather than real output permanently expanding."
+        },
+        {
+          "id": "opt_c",
+          "text": "Monetary policy has zero effect on nominal interest rates or inflation even in the short run.",
+          "is_correct": false,
+          "feedback": "Incorrect: Monetary policy affects interest rates, spending, output, and inflation over cyclical horizons; neutrality is a long-run property once nominal adjustments complete."
+        },
+        {
+          "id": "opt_d",
+          "text": "Money neutrality means physical cash has no legal value in everyday transactions.",
+          "is_correct": false,
+          "feedback": "Incorrect: Fiat money is widely accepted in exchange; neutrality refers to real variables being invariant to permanent money/price-level changes in the long run."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T1_13",
+      "chapter": 12,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Monetary Transmission & AD-AS",
+      "clo_alignment": [
+        "LO3",
+        "LO4"
+      ],
+      "title": "Fed Controls a Policy Instrument, Not GDP",
+      "prompt_template": "Why is it a mistake to claim that the Federal Reserve directly 'controls real GDP' in the same way it sets its administered rates?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Distinguish an operational instrument/rate target from broader macroeconomic outcomes."
+        },
+        {
+          "tier": 2,
+          "text": "The Fed influences financial conditions and spending indirectly, while many other forces shape GDP."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because the Fed steers short-term policy rates and financial conditions, while actual real GDP and inflation also depend on fiscal policy, supply shocks, expectations, global markets, and transmission lags.",
+          "is_correct": true,
+          "feedback": "Correct! Because the Fed steers short-term policy rates and financial conditions, while actual real GDP and inflation also depend on fiscal policy, supply shocks, expectations, global markets, and transmission lags."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because the Federal Reserve does not set administered rates or a federal funds target range.",
+          "is_correct": false,
+          "feedback": "Incorrect: The FOMC explicitly sets a target range for the federal funds rate and sets administered rates such as IORB and ON RRP."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because changes in interest rates never affect investment or consumer borrowing.",
+          "is_correct": false,
+          "feedback": "Incorrect: Interest-sensitive spending such as investment and durable goods responds to borrowing rates, though not mechanically or instantaneously."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because real GDP is always fixed at zero whenever the FOMC holds a meeting.",
+          "is_correct": false,
+          "feedback": "Incorrect: Real GDP fluctuates across business cycles and grows over time."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T2_01",
+      "chapter": 12,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Demand for Money ($MD$)",
+      "clo_alignment": [
+        "LO1"
+      ],
+      "title": "Movement Along MD vs. Shift of MD",
+      "prompt_template": "On a money demand diagram with the nominal interest rate ($i$) on the vertical axis and quantity of money ($M$) on the horizontal axis, what happens when the central bank raises $i$ from $i_0$ to $i_1$ (holding real GDP and the price level constant)?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Check whether the nominal interest rate is already on the vertical axis of the money demand graph."
+        },
+        {
+          "tier": 2,
+          "text": "When the variable on the vertical axis changes and shift factors are held fixed, you move along the curve."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "A movement upward and to the left along the existing money demand curve ($MD$), reducing the quantity of money demanded.",
+          "is_correct": true,
+          "feedback": "Correct! A movement upward and to the left along the existing money demand curve ($MD$), reducing the quantity of money demanded."
+        },
+        {
+          "id": "opt_b",
+          "text": "A rightward shift of the entire $MD$ curve caused by higher real output.",
+          "is_correct": false,
+          "feedback": "Incorrect: A change in the own interest rate along the vertical axis causes a movement along $MD$, not a curve shift."
+        },
+        {
+          "id": "opt_c",
+          "text": "A leftward shift of the entire $MD$ curve caused by a fall in the price level.",
+          "is_correct": false,
+          "feedback": "Incorrect: Real GDP and the price level are held constant here; changing $i$ moves along $MD$."
+        },
+        {
+          "id": "opt_d",
+          "text": "A vertical upward shift of the $LRAS$ curve at potential output.",
+          "is_correct": false,
+          "feedback": "Incorrect: $LRAS$ is plotted in $AD\text{--}AS$ space ($P$ vs. $Y$), not on the money demand graph ($i$ vs. $M$)."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T2_02",
+      "chapter": 12,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Demand for Money ($MD$)",
+      "clo_alignment": [
+        "LO1"
+      ],
+      "title": "Higher Real GDP Shifts Money Demand Rightward",
+      "prompt_template": "On a money demand graph ($i$ on the vertical axis, quantity of money on the horizontal axis), how does an expansion in real GDP ($Y$) affect the money demand curve at any given nominal interest rate?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Ask how more economic transactions in the economy affect how much liquid money households and firms want to hold at a given interest rate."
+        },
+        {
+          "tier": 2,
+          "text": "More transaction activity at a given interest rate shifts $MD$ to the right."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "It shifts the money demand curve ($MD$) rightward because higher real transaction volume increases desired money holdings at each interest rate.",
+          "is_correct": true,
+          "feedback": "Correct! It shifts the money demand curve ($MD$) rightward because higher real transaction volume increases desired money holdings at each interest rate."
+        },
+        {
+          "id": "opt_b",
+          "text": "It shifts the money demand curve ($MD$) leftward because higher income makes cash obsolete.",
+          "is_correct": false,
+          "feedback": "Incorrect: Higher real income and transaction activity increase demand for transaction balances, shifting $MD$ rightward."
+        },
+        {
+          "id": "opt_c",
+          "text": "It causes a downward movement along a fixed $MD$ curve with no curve shift.",
+          "is_correct": false,
+          "feedback": "Incorrect: Real GDP is a non-rate shifter of money demand, so it shifts the curve rather than moving along a fixed curve."
+        },
+        {
+          "id": "opt_d",
+          "text": "It makes the money demand curve completely horizontal at a zero interest rate.",
+          "is_correct": false,
+          "feedback": "Incorrect: Higher real GDP translates the downward-sloping $MD$ curve rightward rather than flattening it horizontally."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T2_03",
+      "chapter": 12,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Demand for Money ($MD$)",
+      "clo_alignment": [
+        "LO1"
+      ],
+      "title": "Higher Aggregate Price Level Shifts Money Demand Rightward",
+      "prompt_template": "Suppose the aggregate price level rises while the nominal interest rate ($i$) and real GDP are unchanged. How does this appear on a standard money demand graph ($i$ vs. nominal money balances)?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about how many dollars you need in your wallet or checking account when everyday prices are higher."
+        },
+        {
+          "tier": 2,
+          "text": "Higher price levels increase desired nominal money balances at a given interest rate, shifting $MD$ right."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The nominal money demand curve shifts rightward because households and firms need more nominal dollars to carry out the same real transactions at higher prices.",
+          "is_correct": true,
+          "feedback": "Correct! The nominal money demand curve shifts rightward because households and firms need more nominal dollars to carry out the same real transactions at higher prices."
+        },
+        {
+          "id": "opt_b",
+          "text": "The nominal money demand curve shifts leftward because higher prices reduce the dollar cost of purchases.",
+          "is_correct": false,
+          "feedback": "Incorrect: Higher prices mean each transaction requires more dollars, increasing nominal money demand at a given interest rate."
+        },
+        {
+          "id": "opt_c",
+          "text": "It causes a movement upward along the curve with no shift in nominal money demand.",
+          "is_correct": false,
+          "feedback": "Incorrect: The aggregate price level is a shift factor for nominal money demand, not the vertical-axis interest rate."
+        },
+        {
+          "id": "opt_d",
+          "text": "It shifts the reserve supply floor downward below the ON RRP rate.",
+          "is_correct": false,
+          "feedback": "Incorrect: A higher price level shifts money demand, not the Fed's administered floor rate."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T2_04",
+      "chapter": 12,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Demand for Money ($MD$)",
+      "clo_alignment": [
+        "LO1"
+      ],
+      "title": "Faster Digital Payment Technology Shifts MD Leftward",
+      "prompt_template": "Suppose widespread instant-payment apps and digital transfers make it faster and cheaper to move funds out of interest-bearing accounts only when needed. How does this shift the money demand curve ($MD$)?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "If you can transfer money in seconds at low cost, do you need to keep as much idle cash sitting in low- or zero-yield balances?"
+        },
+        {
+          "tier": 2,
+          "text": "Lower transaction friction in managing cash reduces money demand at each interest rate, shifting $MD$ left."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "It shifts $MD$ leftward because households and firms can economize on idle liquid money balances at any given interest rate.",
+          "is_correct": true,
+          "feedback": "Correct! It shifts $MD$ leftward because households and firms can economize on idle liquid money balances at any given interest rate."
+        },
+        {
+          "id": "opt_b",
+          "text": "It shifts $MD$ rightward because digital apps require holding larger idle cash balances.",
+          "is_correct": false,
+          "feedback": "Incorrect: Payment innovations that lower the cost/friction of shifting funds reduce desired cash balances at a given rate, shifting $MD$ left."
+        },
+        {
+          "id": "opt_c",
+          "text": "It rotates the $MD$ curve to slope upward against the nominal interest rate.",
+          "is_correct": false,
+          "feedback": "Incorrect: Higher interest rates still raise the opportunity cost of holding money, so $MD$ remains downward-sloping."
+        },
+        {
+          "id": "opt_d",
+          "text": "It shifts the $LRAS$ curve leftward.",
+          "is_correct": false,
+          "feedback": "Incorrect: Payment technology affects money holding efficiency, not a leftward shift of long-run aggregate supply."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T2_05",
+      "chapter": 12,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Ample-Reserves Regime",
+      "clo_alignment": [
+        "LO2"
+      ],
+      "title": "Flat Reserve Supply in the Ample-Reserves Corridor",
+      "prompt_template": "In the reserve market diagram for an ample-reserves regime (overnight interest rate on the vertical axis, reserve balances on the horizontal axis), what does the reserve supply curve look like around the equilibrium reserve level?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Picture where the vertical reserve supply line meets reserve demand when reserves are abundant rather than scarce."
+        },
+        {
+          "tier": 2,
+          "text": "Under ample reserves, the intersection occurs on the flat floor region governed by administered rates."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "It is vertical at the supply of reserves and intersects the reserve demand curve along its flat (horizontal) ample-reserves segment anchored near the Fed's administered floor rates.",
+          "is_correct": true,
+          "feedback": "Correct! It is vertical at the supply of reserves and intersects the reserve demand curve along its flat (horizontal) ample-reserves segment anchored near the Fed's administered floor rates."
+        },
+        {
+          "id": "opt_b",
+          "text": "It slopes steeply upward like a scarce-reserve textbook graph where tiny reserve changes swing rates by several percentage points.",
+          "is_correct": false,
+          "feedback": "Incorrect: When reserves are ample, reserve demand is flat around the administered floor, so small reserve shifts barely move overnight rates."
+        },
+        {
+          "id": "opt_c",
+          "text": "It slopes downward from left to right because banks demand fewer reserves at lower rates.",
+          "is_correct": false,
+          "feedback": "Incorrect: Reserve supply is determined by central bank/liquidity operations and is vertical at a given reserve quantity, while reserve demand is downward-sloping/flat."
+        },
+        {
+          "id": "opt_d",
+          "text": "It is horizontal at the consumer inflation rate ($\\pi_t$).",
+          "is_correct": false,
+          "feedback": "Incorrect: The reserve market vertical axis measures the overnight interest rate, not the inflation rate."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T2_06",
+      "chapter": 12,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Ample-Reserves Regime",
+      "clo_alignment": [
+        "LO2"
+      ],
+      "title": "Raising Administered Rates Shifts the Corridor Upward",
+      "prompt_template": "In the ample-reserves corridor graph, suppose the Federal Reserve raises both IORB and the ON RRP offering rate by 50 basis points. How does this change the diagram?",
+      "parameters": {
+        "hike_bps": {
+          "type": "choice",
+          "values": [
+            25,
+            50,
+            75
+          ]
+        }
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Check what happens to outside lending options when the Fed raises the rate paid on reserves (IORB) and ON RRP."
+        },
+        {
+          "tier": 2,
+          "text": "Banks and money funds demand higher overnight rates when the Fed's administered floor rates rise."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "It shifts the administered rate floor (and corridor) upward by 50 basis points, pulling overnight money market rates upward with it.",
+          "is_correct": true,
+          "feedback": "Correct! It shifts the administered rate floor (and corridor) upward by 50 basis points, pulling overnight money market rates upward with it."
+        },
+        {
+          "id": "opt_b",
+          "text": "It shifts the administered rate floor downward while keeping overnight market rates fixed at zero.",
+          "is_correct": false,
+          "feedback": "Incorrect: Raising IORB and ON RRP raises the floor under overnight rates, pulling market rates higher rather than lower."
+        },
+        {
+          "id": "opt_c",
+          "text": "It leaves the floor unchanged and only shifts the $LRAS$ curve to the right.",
+          "is_correct": false,
+          "feedback": "Incorrect: Raising IORB and ON RRP directly raises the administered floor in the overnight money market."
+        },
+        {
+          "id": "opt_d",
+          "text": "It causes the reserve demand curve to slope upward.",
+          "is_correct": false,
+          "feedback": "Incorrect: Raising administered rates shifts the floor/corridor upward; it does not invert the downward/flat slope of reserve demand."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T2_07",
+      "chapter": 12,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Ample-Reserves Regime",
+      "clo_alignment": [
+        "LO2"
+      ],
+      "title": "Effective Federal Funds Rate Inside the Corridor",
+      "prompt_template": "On a reserve-corridor diagram where the Discount Rate sits at the top, IORB is near the top/middle of the target range, and ON RRP forms the bottom sub-floor, where does the effective federal funds rate (`FEDFUNDS`) typically trade?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare the overnight market rate to the ON RRP floor below and IORB/Discount rates above."
+        },
+        {
+          "tier": 2,
+          "text": "Arbitrage keeps the effective federal funds rate aligned with the FOMC target range and administered rates."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Inside the FOMC's target range—above the ON RRP floor and typically near or slightly below IORB—as arbitrage prevents overnight trades far outside the administered bounds.",
+          "is_correct": true,
+          "feedback": "Correct! Inside the FOMC's target range—above the ON RRP floor and typically near or slightly below IORB—as arbitrage prevents overnight trades far outside the administered bounds."
+        },
+        {
+          "id": "opt_b",
+          "text": "Above the Discount Rate ceiling at all times during normal ample-reserves operations.",
+          "is_correct": false,
+          "feedback": "Incorrect: Eligible institutions can borrow at the Discount Window rather than paying far above it in normal operations."
+        },
+        {
+          "id": "opt_c",
+          "text": "Below the ON RRP sub-floor by several percentage points even when counterparties have ON RRP access.",
+          "is_correct": false,
+          "feedback": "Incorrect: Eligible counterparties with access to ON RRP will not lend overnight for meaningfully less than the ON RRP rate."
+        },
+        {
+          "id": "opt_d",
+          "text": "On the horizontal axis measuring real GDP in trillions of dollars.",
+          "is_correct": false,
+          "feedback": "Incorrect: Interest rates are measured on the vertical axis, not on the horizontal reserve/output axis."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T2_08",
+      "chapter": 12,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Monetary Transmission & AD-AS",
+      "clo_alignment": [
+        "LO3"
+      ],
+      "title": "Tightening Policy Shifts AD Leftward in AD-AS",
+      "prompt_template": "In an $AD\text{--}SRAS\text{--}LRAS$ diagram (price level on the vertical axis, real GDP $Y$ on the horizontal axis), what is the short-run graphical effect of contractionary monetary policy?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Determine whether higher interest rates reduce or increase planned spending at a given price level."
+        },
+        {
+          "tier": 2,
+          "text": "Lower interest-sensitive spending at each price level shifts $AD$ to the left."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The $AD$ curve shifts leftward, reducing short-run equilibrium real GDP and putting downward pressure on the price level along a given $SRAS$ curve.",
+          "is_correct": true,
+          "feedback": "Correct! The $AD$ curve shifts leftward, reducing short-run equilibrium real GDP and putting downward pressure on the price level along a given $SRAS$ curve."
+        },
+        {
+          "id": "opt_b",
+          "text": "The $AD$ curve shifts rightward, raising short-run real GDP above potential output.",
+          "is_correct": false,
+          "feedback": "Incorrect: Tighter monetary policy raises borrowing costs and reduces interest-sensitive spending, shifting $AD$ leftward rather than rightward."
+        },
+        {
+          "id": "opt_c",
+          "text": "The $LRAS$ curve shifts rightward while $AD$ stays fixed.",
+          "is_correct": false,
+          "feedback": "Incorrect: Contractionary monetary policy reduces demand ($AD$ shifts left) in the short run; it does not shift $LRAS$ rightward."
+        },
+        {
+          "id": "opt_d",
+          "text": "The economy moves downward along a fixed $AD$ curve because the central bank lowered the price level directly.",
+          "is_correct": false,
+          "feedback": "Incorrect: Monetary policy shifts $AD$ via interest rates and spending; a movement along $AD$ is caused by a change in the aggregate price level."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T2_09",
+      "chapter": 12,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Monetary Transmission & AD-AS",
+      "clo_alignment": [
+        "LO3"
+      ],
+      "title": "Easing Policy Closes a Recessionary Gap",
+      "prompt_template": "Suppose an economy starts in a recessionary gap with short-run equilibrium output $Y_0 < Y^*$ at price level $P_0$. Graphically, how does an expansionary monetary rate cut move the short-run $AD\text{--}AS$ equilibrium?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Follow the rightward shift of $AD$ along an upward-sloping $SRAS$ curve."
+        },
+        {
+          "tier": 2,
+          "text": "A rightward shift of $AD$ along $SRAS$ increases $Y$ toward $Y^*$ and raises $P$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "It shifts $AD$ rightward from $AD_0$ to $AD_1$, moving equilibrium from $(Y_0, P_0)$ to a higher output level closer to or at $Y^*$ with a higher price level $P_1$ along $SRAS$.",
+          "is_correct": true,
+          "feedback": "Correct! It shifts $AD$ rightward from $AD_0$ to $AD_1$, moving equilibrium from $(Y_0, P_0)$ to a higher output level closer to or at $Y^*$ with a higher price level $P_1$ along $SRAS$."
+        },
+        {
+          "id": "opt_b",
+          "text": "It shifts $AD$ leftward from $AD_0$ to $AD_1$, pushing output further below $Y^*$.",
+          "is_correct": false,
+          "feedback": "Incorrect: Expansionary policy lowers interest rates to boost spending, shifting $AD$ rightward rather than leftward."
+        },
+        {
+          "id": "opt_c",
+          "text": "It shifts $SRAS$ leftward to $Y_0$, locking in lower output permanently.",
+          "is_correct": false,
+          "feedback": "Incorrect: Expansionary demand policy shifts $AD$ right; a leftward $SRAS$ shift lowers output and raises prices."
+        },
+        {
+          "id": "opt_d",
+          "text": "It moves the economy along $LRAS$ without changing output or prices.",
+          "is_correct": false,
+          "feedback": "Incorrect: In the short run along an upward-sloping $SRAS$ curve, a rightward $AD$ shift raises both real output $Y$ and the price level $P$."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T2_10",
+      "chapter": 12,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Long-Run Monetary Neutrality",
+      "clo_alignment": [
+        "LO4"
+      ],
+      "title": "Short-Run Boom to Long-Run Neutrality in AD-AS",
+      "prompt_template": "Starting from long-run equilibrium at $(Y^*, P_0)$, suppose expansionary monetary policy shifts $AD$ rightward to $AD_1$ in the short run. Graphically, how does the economy return to potential output $Y^*$ in the long run?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Trace what happens to wages and $SRAS$ when actual output temporarily exceeds potential output ($Y > Y^*$)."
+        },
+        {
+          "tier": 2,
+          "text": "Higher input costs shift $SRAS$ left until equilibrium returns to the vertical $LRAS$ curve at $Y^*$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Higher output and tight input markets push nominal wages and input costs up over time, shifting $SRAS$ leftward until it intersects $AD_1$ on the vertical $LRAS$ line at $(Y^*, P_2)$ with $P_2 > P_1 > P_0$.",
+          "is_correct": true,
+          "feedback": "Correct! Higher output and tight input markets push nominal wages and input costs up over time, shifting $SRAS$ leftward until it intersects $AD_1$ on the vertical $LRAS$ line at $(Y^*, P_2)$ with $P_2 > P_1 > P_0$."
+        },
+        {
+          "id": "opt_b",
+          "text": "The $LRAS$ curve shifts rightward to meet $AD_1$ at the higher output level permanently.",
+          "is_correct": false,
+          "feedback": "Incorrect: Monetary expansion does not permanently increase potential output $Y^*$ along the long-run neutral path."
+        },
+        {
+          "id": "opt_c",
+          "text": "The $AD_1$ curve automatically shifts back to $AD_0$ while $SRAS$ remains unchanged.",
+          "is_correct": false,
+          "feedback": "Incorrect: Long-run self-correction in the $AD\text{--}AS$ model works through nominal wage/cost adjustment shifting $SRAS$, leaving $AD_1$ in place."
+        },
+        {
+          "id": "opt_d",
+          "text": "The price level falls below $P_0$ while output stays above $Y^*$ forever.",
+          "is_correct": false,
+          "feedback": "Incorrect: Above potential output, rising input costs push prices higher and bring output back to $Y^*$."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T2_11",
+      "chapter": 12,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Long-Run Monetary Neutrality",
+      "clo_alignment": [
+        "LO4"
+      ],
+      "title": "Permanent Money Growth and Long-Run Price Level",
+      "prompt_template": "In an $AD\text{--}AS$ diagram, if a permanent increase in the money supply shifts $AD$ rightward in the long run while $LRAS$ stays at $Y^*$, what is the long-run graphical outcome?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Look at where the new $AD$ curve intersects the vertical $LRAS$ curve at $Y^*$."
+        },
+        {
+          "tier": 2,
+          "text": "Long-run equilibrium lies on the vertical $LRAS$ curve at $Y^*$, with a higher price level."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Real output returns to the vertical $LRAS$ line at $Y^*$, while the equilibrium aggregate price level rises permanently.",
+          "is_correct": true,
+          "feedback": "Correct! Real output returns to the vertical $LRAS$ line at $Y^*$, while the equilibrium aggregate price level rises permanently."
+        },
+        {
+          "id": "opt_b",
+          "text": "Both real GDP and the price level fall permanently below their initial levels.",
+          "is_correct": false,
+          "feedback": "Incorrect: A permanent monetary expansion raises the long-run price level rather than lowering output and prices."
+        },
+        {
+          "id": "opt_c",
+          "text": "Real GDP permanently rises above $Y^*$ while the price level stays constant.",
+          "is_correct": false,
+          "feedback": "Incorrect: Output cannot permanently stay above potential output $Y^*$ once nominal wages and prices adjust."
+        },
+        {
+          "id": "opt_d",
+          "text": "The $AD$ curve becomes vertical at $Y^*$ while $LRAS$ becomes horizontal.",
+          "is_correct": false,
+          "feedback": "Incorrect: In the standard $AD\text{--}AS$ model, $AD$ slopes downward and $LRAS$ is vertical at potential output $Y^*$."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T2_12",
+      "chapter": 12,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Monetary Transmission & AD-AS",
+      "clo_alignment": [
+        "LO3"
+      ],
+      "title": "Supply Shock vs. Monetary Demand Shift on AD-AS",
+      "prompt_template": "Graphically, how does an adverse supply shock (such as a surge in energy and input costs) differ from a contractionary monetary policy shock in the short run?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Identify which curve shifts for a cost/supply shock versus a monetary spending/rate shock."
+        },
+        {
+          "tier": 2,
+          "text": "Supply shocks shift $SRAS$; monetary policy shifts $AD$ in the short run."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "An adverse supply shock shifts $SRAS$ leftward (raising the price level while lowering output), whereas contractionary monetary policy shifts $AD$ leftward (lowering both output and downward price pressure along $SRAS$).",
+          "is_correct": true,
+          "feedback": "Correct! An adverse supply shock shifts $SRAS$ leftward (raising the price level while lowering output), whereas contractionary monetary policy shifts $AD$ leftward (lowering both output and downward price pressure along $SRAS$)."
+        },
+        {
+          "id": "opt_b",
+          "text": "An adverse supply shock shifts $AD$ rightward, whereas monetary tightening shifts $LRAS$ leftward.",
+          "is_correct": false,
+          "feedback": "Incorrect: Supply shocks affect aggregate supply ($SRAS$), while monetary policy shifts $AD$ in the short run."
+        },
+        {
+          "id": "opt_c",
+          "text": "Both shocks shift $AD$ leftward with identical effects on inflation.",
+          "is_correct": false,
+          "feedback": "Incorrect: Supply shocks shift $SRAS$ left and push prices up, whereas monetary tightening shifts $AD$ left and eases demand-driven price pressure."
+        },
+        {
+          "id": "opt_d",
+          "text": "Neither shock changes real GDP in the short run.",
+          "is_correct": false,
+          "feedback": "Incorrect: Both a leftward $SRAS$ shift and a leftward $AD$ shift reduce short-run real GDP below its prior level."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T3_01",
+      "chapter": 12,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Demand for Money ($MD$)",
+      "clo_alignment": [
+        "LO1",
+        "LO2"
+      ],
+      "title": "Equilibrium Nominal Interest Rate from Money Demand and Supply",
+      "prompt_template": "Suppose nominal money demand is given by $M^d = {a} - {b}i$ (in billions of dollars, where $i$ is the nominal interest rate in percent), and the central bank fixes nominal money supply at $M^s = {m_bar}$ billion. Solve for the equilibrium nominal interest rate $i^*$ (in percent).",
+      "parameters": {
+        "a": {
+          "type": "choice",
+          "values": [
+            100,
+            120,
+            140
+          ],
+          "default": 120
+        },
+        "b": {
+          "type": "choice",
+          "values": [
+            10,
+            20
+          ],
+          "default": 10
+        },
+        "m_bar": {
+          "type": "choice",
+          "values": [
+            40,
+            60,
+            80
+          ],
+          "default": 60
+        }
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Set money demanded equal to money supplied: ${a} - {b}i^* = {m_bar}$."
+        },
+        {
+          "tier": 2,
+          "text": "Subtract ${a}$ from both sides to get $-{b}i^* = {m_bar} - {a}$, then divide by $-{b}$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "6%",
+          "is_correct": true,
+          "feedback": "Correct! Setting $M^d = M^s$ gives ${a} - {b}i^* = {m_bar}$, so $i^* = ({a} - {m_bar}) / {b}$.",
+          "formula": "({a} - {m_bar}) / {b}"
+        },
+        {
+          "id": "opt_b",
+          "text": "18%",
+          "is_correct": false,
+          "feedback": "Incorrect: You added $M^s$ to the intercept instead of subtracting ${a}$ when isolating $-{b}i^*$.",
+          "formula": "({a} + {m_bar}) / {b}"
+        },
+        {
+          "id": "opt_c",
+          "text": "-6%",
+          "is_correct": false,
+          "feedback": "Incorrect: Watch the minus sign—dividing $({m_bar} - {a})$ by $-{b}$ flips the sign to $({a} - {m_bar}) / {b}$.",
+          "formula": "({m_bar} - {a}) / {b}"
+        },
+        {
+          "id": "opt_d",
+          "text": "5%",
+          "is_correct": false,
+          "feedback": "Incorrect: You multiplied $M^s$ by ${b}$ instead of subtracting $M^s$ from ${a}$ and dividing by ${b}$.",
+          "formula": "{m_bar} * {b} / {a}"
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T3_02",
+      "chapter": 12,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Demand for Money ($MD$)",
+      "clo_alignment": [
+        "LO1",
+        "LO2"
+      ],
+      "title": "Equilibrium Rate After a Rightward Money Demand Shift",
+      "prompt_template": "Initially, nominal money demand is $M^d_0 = {a} - {b}i$ and money supply is $M^s = {m_bar}$ (in billions, with $i$ in percent). Higher nominal transaction volume shifts money demand rightward by ${shift}$ billion to $M^d_1 = ({a} + {shift}) - {b}i$, while $M^s$ remains ${m_bar}$. Find the new equilibrium nominal interest rate $i_1^*$ (in percent).",
+      "parameters": {
+        "a": {
+          "type": "choice",
+          "values": [
+            100,
+            120
+          ],
+          "default": 100
+        },
+        "shift": {
+          "type": "choice",
+          "values": [
+            10,
+            20
+          ],
+          "default": 20
+        },
+        "b": {
+          "type": "choice",
+          "values": [
+            10,
+            20
+          ],
+          "default": 10
+        },
+        "m_bar": {
+          "type": "choice",
+          "values": [
+            60,
+            80
+          ],
+          "default": 60
+        }
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "First form the new money demand intercept: ${a} + {shift}$."
+        },
+        {
+          "tier": 2,
+          "text": "Set $({a} + {shift}) - {b}i_1^* = {m_bar}$ and solve for $i_1^*$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "6%",
+          "is_correct": true,
+          "feedback": "Correct! With new intercept $({a} + {shift})$, $i_1^* = (({a} + {shift}) - {m_bar}) / {b}$.",
+          "formula": "(({a} + {shift}) - {m_bar}) / {b}"
+        },
+        {
+          "id": "opt_b",
+          "text": "2%",
+          "is_correct": false,
+          "feedback": "Incorrect: A rightward shift in money demand increases the intercept by $+{shift}$, rather than subtracting ${shift}$.",
+          "formula": "(({a} - {shift}) - {m_bar}) / {b}"
+        },
+        {
+          "id": "opt_c",
+          "text": "4%",
+          "is_correct": false,
+          "feedback": "Incorrect: This is the initial interest rate before the ${shift}$-billion rightward shift in money demand.",
+          "formula": "({a} - {m_bar}) / {b}"
+        },
+        {
+          "id": "opt_d",
+          "text": "18%",
+          "is_correct": false,
+          "feedback": "Incorrect: You added $M^s$ instead of subtracting $M^s$ from money demand when setting $M^d_1 = M^s$.",
+          "formula": "(({a} + {shift}) + {m_bar}) / {b}"
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T3_03",
+      "chapter": 12,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Demand for Money ($MD$)",
+      "clo_alignment": [
+        "LO1",
+        "LO2"
+      ],
+      "title": "Change in Equilibrium Interest Rate from a Money Supply Change",
+      "prompt_template": "Suppose nominal money demand is $M^d = 150 - {b}i$ ($i$ in percent), and money supply increases by $\\Delta M^s = +{dm}$ billion while $M^d$ does not shift. By how many percentage points does the equilibrium interest rate change ($\\Delta i^*$)? Enter a negative number for a decrease.",
+      "parameters": {
+        "b": {
+          "type": "choice",
+          "values": [
+            10,
+            20
+          ],
+          "default": 10
+        },
+        "dm": {
+          "type": "choice",
+          "values": [
+            10,
+            20,
+            40
+          ],
+          "default": 20
+        }
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Since $\\Delta M^d = -b\\Delta i^*$ and $\\Delta M^d = \\Delta M^s$, we have $-b\\Delta i^* = \\Delta M^s$."
+        },
+        {
+          "tier": 2,
+          "text": "Divide $+{dm}$ by $-{b}$ to find $\\Delta i^*$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "-2 percentage points",
+          "is_correct": true,
+          "feedback": "Correct! Because $-{b}\\Delta i^* = +{dm}$, $\\Delta i^* = -{dm}/{b}$ percentage points.",
+          "formula": "-{dm} / {b}"
+        },
+        {
+          "id": "opt_b",
+          "text": "+2 percentage points",
+          "is_correct": false,
+          "feedback": "Incorrect: An increase in money supply lowers the equilibrium interest rate along a downward-sloping $MD$ curve, so $\\Delta i^*$ is negative.",
+          "formula": "+{dm} / {b}"
+        },
+        {
+          "id": "opt_c",
+          "text": "-200 percentage points",
+          "is_correct": false,
+          "feedback": "Incorrect: To solve $-{b}\\Delta i^* = \\Delta M^s$, divide by ${b}$ rather than multiplying by ${b}$.",
+          "formula": "-{dm} * {b}"
+        },
+        {
+          "id": "opt_d",
+          "text": "-1 percentage points",
+          "is_correct": false,
+          "feedback": "Incorrect: You divided by $2b$ instead of dividing $\\Delta M^s = +{dm}$ by ${b}$.",
+          "formula": "-{dm} / (2 * {b})"
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T3_04",
+      "chapter": 12,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Ample-Reserves Regime",
+      "clo_alignment": [
+        "LO2"
+      ],
+      "title": "Administered Rate Spread Between IORB and ON RRP",
+      "prompt_template": "In an ample-reserves operating regime, suppose the Federal Reserve sets Interest on Reserve Balances at $\\text{IORB} = {iorb}\\%$ and the Overnight Reverse Repurchase offering rate at $\\text{ON RRP} = {on_rrp}\\%$. What is the spread $\\text{IORB} - \\text{ON RRP}$ (in percentage points)?",
+      "parameters": {
+        "iorb": {
+          "type": "choice",
+          "values": [
+            4.9,
+            5.15,
+            5.4
+          ],
+          "default": 5.4
+        },
+        "on_rrp": {
+          "type": "choice",
+          "values": [
+            4.8,
+            5.05,
+            5.3
+          ],
+          "default": 5.3
+        }
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Subtract the lower administered rate ($\\text{ON RRP}$) from the higher administered rate ($\\text{IORB}$)."
+        },
+        {
+          "tier": 2,
+          "text": "Compute ${iorb} - {on_rrp}$ carefully to two decimal places."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "0.10 percentage points",
+          "is_correct": true,
+          "feedback": "Correct! The spread between IORB and ON RRP is ${iorb} - {on_rrp}$ percentage points.",
+          "formula": "{iorb} - {on_rrp}"
+        },
+        {
+          "id": "opt_b",
+          "text": "10.70 percentage points",
+          "is_correct": false,
+          "feedback": "Incorrect: The spread between two rates is their difference ($\\text{IORB} - \\text{ON RRP}$), not their sum.",
+          "formula": "{iorb} + {on_rrp}"
+        },
+        {
+          "id": "opt_c",
+          "text": "5.35 percentage points",
+          "is_correct": false,
+          "feedback": "Incorrect: This computes the midpoint average of the two rates rather than the spread between them.",
+          "formula": "({iorb} + {on_rrp}) / 2"
+        },
+        {
+          "id": "opt_d",
+          "text": "-0.10 percentage points",
+          "is_correct": false,
+          "feedback": "Incorrect: Subtracting IORB from ON RRP gives the negative of the positive spread $\\text{IORB} - \\text{ON RRP}$.",
+          "formula": "{on_rrp} - {iorb}"
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T3_05",
+      "chapter": 12,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "FRED Data & Policy Rates",
+      "clo_alignment": [
+        "LO2",
+        "LO4"
+      ],
+      "title": "Midpoint of an FOMC Federal Funds Target Range",
+      "prompt_template": "Suppose the FOMC sets a target range for the federal funds rate from ${low}\\%$ to ${high}\\%$. What is the midpoint of this target range (in percent)?",
+      "parameters": {
+        "low": {
+          "type": "choice",
+          "values": [
+            2.0,
+            4.5,
+            5.0
+          ],
+          "default": 5.0
+        },
+        "high": {
+          "type": "choice",
+          "values": [
+            2.5,
+            5.0,
+            5.5
+          ],
+          "default": 5.5
+        }
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "The midpoint of a range $[\\text{Low}, \\text{High}]$ is the average of its two endpoints: $(\\text{Low} + \\text{High}) / 2$."
+        },
+        {
+          "tier": 2,
+          "text": "Add ${low}$ and ${high}$, then divide by $2$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "5.25%",
+          "is_correct": true,
+          "feedback": "Correct! The midpoint is $({low} + {high}) / 2$ percent.",
+          "formula": "({low} + {high}) / 2"
+        },
+        {
+          "id": "opt_b",
+          "text": "0.50%",
+          "is_correct": false,
+          "feedback": "Incorrect: ${high} - {low}$ measures the width of the target range, not its midpoint.",
+          "formula": "{high} - {low}"
+        },
+        {
+          "id": "opt_c",
+          "text": "10.50%",
+          "is_correct": false,
+          "feedback": "Incorrect: You added the two endpoints without dividing by $2$ to find the midpoint.",
+          "formula": "{low} + {high}"
+        },
+        {
+          "id": "opt_d",
+          "text": "5.00%",
+          "is_correct": false,
+          "feedback": "Incorrect: The midpoint averages the lower and upper bounds: $({low} + {high}) / 2$.",
+          "formula": "{low}"
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T3_06",
+      "chapter": 12,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "FRED Data & Policy Rates",
+      "clo_alignment": [
+        "LO2",
+        "LO4"
+      ],
+      "title": "Comparing Observed FEDFUNDS Against Target Midpoint",
+      "prompt_template": "In a given month, FRED's effective federal funds rate (`FEDFUNDS`) averages ${fedfunds}\\%$, while the FOMC's target range has a midpoint of ${mid}\\%$. How many percentage points above or below the target midpoint is `FEDFUNDS` ($\\text{FEDFUNDS} - \\text{Midpoint}$)?",
+      "parameters": {
+        "fedfunds": {
+          "type": "choice",
+          "values": [
+            0.08,
+            2.33,
+            5.33
+          ],
+          "default": 5.33
+        },
+        "mid": {
+          "type": "choice",
+          "values": [
+            0.125,
+            2.375,
+            5.375
+          ],
+          "default": 5.375
+        }
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Subtract the target midpoint from the observed `FEDFUNDS` rate: ${fedfunds} - {mid}$."
+        },
+        {
+          "tier": 2,
+          "text": "Keep the sign so positive values indicate above midpoint and negative values indicate below midpoint."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "-0.045 percentage points",
+          "is_correct": true,
+          "feedback": "Correct! $\\text{FEDFUNDS} - \\text{Midpoint} = {fedfunds} - {mid}$ percentage points.",
+          "formula": "{fedfunds} - {mid}"
+        },
+        {
+          "id": "opt_b",
+          "text": "+0.045 percentage points",
+          "is_correct": false,
+          "feedback": "Incorrect: You reversed the subtraction order ($\\text{Midpoint} - \\text{FEDFUNDS}$), flipping the sign.",
+          "formula": "{mid} - {fedfunds}"
+        },
+        {
+          "id": "opt_c",
+          "text": "10.705 percentage points",
+          "is_correct": false,
+          "feedback": "Incorrect: The difference between the effective rate and the midpoint is subtraction, not addition.",
+          "formula": "{fedfunds} + {mid}"
+        },
+        {
+          "id": "opt_d",
+          "text": "-0.540 percentage points",
+          "is_correct": false,
+          "feedback": "Incorrect: `FEDFUNDS` is already reported as an annualized rate in percent; multiplying by $12$ is incorrect.",
+          "formula": "({fedfunds} - {mid}) * 12"
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T3_07",
+      "chapter": 12,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Policy Rules & ELB",
+      "clo_alignment": [
+        "LO3"
+      ],
+      "title": "Computing the Benchmark Taylor-Type Policy Rate",
+      "prompt_template": "Using the benchmark Taylor-type rule $i_t = r^* + \\pi_t + 0.5(\\pi_t - \\pi^*) + 0.5\\left(\\frac{Y_t - Y_t^*}{Y_t^*}\\right)$ (with all rates and the percentage output gap in percent), suppose $r^* = {r_star}\\%$, current inflation is $\\pi_t = {pi_t}\\%$, the inflation target is $\\pi^* = 2.0\\%$, and the percentage output gap is $\\frac{Y_t - Y_t^*}{Y_t^*} = {gap}\\%$. Calculate the prescribed nominal policy rate $i_t$ (in percent).",
+      "parameters": {
+        "r_star": {
+          "type": "choice",
+          "values": [
+            2.0
+          ],
+          "default": 2.0
+        },
+        "pi_t": {
+          "type": "choice",
+          "values": [
+            3.0,
+            5.0
+          ],
+          "default": 5.0
+        },
+        "gap": {
+          "type": "choice",
+          "values": [
+            2.0,
+            4.0
+          ],
+          "default": 2.0
+        }
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compute the inflation gap term $0.5 \\times ({pi_t} - 2.0)$ and the output gap term $0.5 \\times ({gap})$."
+        },
+        {
+          "tier": 2,
+          "text": "Sum all four terms: ${r_star} + {pi_t} + 0.5({pi_t} - 2.0) + 0.5({gap})$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "9.50%",
+          "is_correct": true,
+          "feedback": "Correct! $i_t = {r_star} + {pi_t} + 0.5({pi_t} - 2.0) + 0.5({gap})$.",
+          "formula": "{r_star} + {pi_t} + 0.5*({pi_t} - 2.0) + 0.5*{gap}"
+        },
+        {
+          "id": "opt_b",
+          "text": "12.00%",
+          "is_correct": false,
+          "feedback": "Incorrect: You omitted the $0.5$ weight on both the inflation gap and the output gap.",
+          "formula": "{r_star} + {pi_t} + ({pi_t} - 2.0) + {gap}"
+        },
+        {
+          "id": "opt_c",
+          "text": "4.50%",
+          "is_correct": false,
+          "feedback": "Incorrect: You omitted current inflation $\\pi_t$ from the Taylor rule formula $i_t = r^* + \\pi_t + \\dots$.",
+          "formula": "{r_star} + 0.5*({pi_t} - 2.0) + 0.5*{gap}"
+        },
+        {
+          "id": "opt_d",
+          "text": "11.50%",
+          "is_correct": false,
+          "feedback": "Incorrect: The output-gap weight in this benchmark specification is $0.5$, not $1.5$.",
+          "formula": "{r_star} + {pi_t} + 0.5*({pi_t} - 2.0) + 1.5*{gap}"
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T3_08",
+      "chapter": 12,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Policy Rules & ELB",
+      "clo_alignment": [
+        "LO3"
+      ],
+      "title": "Taylor Rule Subject to a Zero Effective Lower Bound",
+      "prompt_template": "Suppose a central bank follows $i_t^{\\text{raw}} = {r_star} + \\pi_t + 0.5(\\pi_t - 2.0) + 0.5\\left(\\frac{Y_t - Y_t^*}{Y_t^*}\\right)$, subject to an Effective Lower Bound of $0.0\\%$ so $i_t = \\max(0.0, i_t^{\\text{raw}})$. Given $r^* = {r_star}\\%$, $\\pi_t = {pi_t}\\%$, and output gap $= {gap}\\%$, what is the policy rate $i_t$ (in percent)?",
+      "parameters": {
+        "r_star": {
+          "type": "choice",
+          "values": [
+            1.0
+          ],
+          "default": 1.0
+        },
+        "pi_t": {
+          "type": "choice",
+          "values": [
+            1.0
+          ],
+          "default": 1.0
+        },
+        "gap": {
+          "type": "choice",
+          "values": [
+            -4.0,
+            -2.0,
+            0.0
+          ],
+          "default": -4.0
+        }
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "First compute $i_t^{\\text{raw}} = {r_star} + {pi_t} + 0.5({pi_t} - 2.0) + 0.5({gap})$."
+        },
+        {
+          "tier": 2,
+          "text": "Then apply the floor $\\max(0.0, i_t^{\\text{raw}})$ so the rate does not fall below $0.0\\%$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "0.00%",
+          "is_correct": true,
+          "feedback": "Correct! Applying $\\max(0.0, i_t^{\\text{raw}})$ enforces the $0.0\\%$ Effective Lower Bound.",
+          "formula": "max(0.0, {r_star} + {pi_t} + 0.5*({pi_t} - 2.0) + 0.5*{gap})"
+        },
+        {
+          "id": "opt_b",
+          "text": "-1.50%",
+          "is_correct": false,
+          "feedback": "Incorrect: You subtracted an extra $1.0$ percentage point from the Taylor rule rate.",
+          "formula": "{r_star} + {pi_t} + 0.5*({pi_t} - 2.0) + 0.5*{gap} - 1.0"
+        },
+        {
+          "id": "opt_c",
+          "text": "-3.00%",
+          "is_correct": false,
+          "feedback": "Incorrect: You omitted the $0.5$ responsiveness weights on the inflation and output gaps.",
+          "formula": "{r_star} + {pi_t} + ({pi_t} - 2.0) + {gap}"
+        },
+        {
+          "id": "opt_d",
+          "text": "2.00%",
+          "is_correct": false,
+          "feedback": "Incorrect: The ELB in this problem is $0.0\\%$, not $2.0\\%$.",
+          "formula": "2.0"
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T3_09",
+      "chapter": 12,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Monetary Transmission & AD-AS",
+      "clo_alignment": [
+        "LO3"
+      ],
+      "title": "Short-Run AD Shift from Interest-Sensitive Spending",
+      "prompt_template": "Suppose an expansionary monetary policy lowers borrowing rates, directly increasing planned interest-sensitive spending ($I + C$) by $\\Delta AE_{\\text{direct}} = \\${dae}$ billion at a given price level. If the spending multiplier is $k = {k}$, by how many billion dollars does Aggregate Demand shift rightward at that price level ($\\Delta Y_{AD}$)?",
+      "parameters": {
+        "dae": {
+          "type": "choice",
+          "values": [
+            50,
+            100
+          ],
+          "default": 50
+        },
+        "k": {
+          "type": "choice",
+          "values": [
+            2.0,
+            2.5,
+            4.0
+          ],
+          "default": 4.0
+        }
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Multiply the direct change in planned spending ($\\Delta AE_{\\text{direct}}$) by the multiplier $k$."
+        },
+        {
+          "tier": 2,
+          "text": "Compute ${dae} \\times {k}$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$200 billion",
+          "is_correct": true,
+          "feedback": "Correct! $\\Delta Y_{AD} = k \\times \\Delta AE_{\\text{direct}} = {k} \\times \\${dae}\\text{B}$.",
+          "formula": "{k} * {dae}"
+        },
+        {
+          "id": "opt_b",
+          "text": "$54 billion",
+          "is_correct": false,
+          "feedback": "Incorrect: Multiplier effects multiply the initial spending change by $k$; they do not simply add $k$.",
+          "formula": "{dae} + {k}"
+        },
+        {
+          "id": "opt_c",
+          "text": "$12.5 billion",
+          "is_correct": false,
+          "feedback": "Incorrect: Because $k > 1$, the total demand shift multiplies $\\Delta AE_{\\text{direct}}$ by $k$ rather than dividing by $k$.",
+          "formula": "{dae} / {k}"
+        },
+        {
+          "id": "opt_d",
+          "text": "$50 billion",
+          "is_correct": false,
+          "feedback": "Incorrect: $\\${dae}\\text{B}$ is only the initial spending injection before induced consumption rounds.",
+          "formula": "{dae}"
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T3_10",
+      "chapter": 12,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Monetary Transmission & AD-AS",
+      "clo_alignment": [
+        "LO3"
+      ],
+      "title": "Percentage Output Gap for Monetary Policy Evaluation",
+      "prompt_template": "Suppose actual real GDP is $Y_t = \\${y_act}$ billion and potential real GDP is $Y_t^* = \\$20{,}000$ billion. Compute the percentage output gap $\\left(\\frac{Y_t - Y_t^*}{Y_t^*}\\right) \\times 100$ (in percent; negative indicates a recessionary gap).",
+      "parameters": {
+        "y_act": {
+          "type": "choice",
+          "values": [
+            19000,
+            19500,
+            20500,
+            21000
+          ],
+          "default": 19000
+        }
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Subtract potential output ($20{,}000$) from actual output (${y_act}$)."
+        },
+        {
+          "tier": 2,
+          "text": "Divide that difference by $20{,}000$ and multiply by $100$ to get percent."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "-5%",
+          "is_correct": true,
+          "feedback": "Correct! $(({y_act} - 20000) / 20000) \\times 100$ gives the percentage output gap.",
+          "formula": "(({y_act} - 20000) / 20000) * 100"
+        },
+        {
+          "id": "opt_b",
+          "text": "-5.26%",
+          "is_correct": false,
+          "feedback": "Incorrect: The standard percentage output gap divides $(Y_t - Y_t^*)$ by potential output $Y_t^* = 20{,}000$, not by $Y_t$.",
+          "formula": "(({y_act} - 20000) / {y_act}) * 100"
+        },
+        {
+          "id": "opt_c",
+          "text": "+5%",
+          "is_correct": false,
+          "feedback": "Incorrect: Watch the sign—$(Y_t - Y_t^*)$ is negative during a recessionary gap ($Y_t < Y_t^*$) and positive during an expansionary gap.",
+          "formula": "((20000 - {y_act}) / 20000) * 100"
+        },
+        {
+          "id": "opt_d",
+          "text": "$-1,000 billion",
+          "is_correct": false,
+          "feedback": "Incorrect: This gives the dollar output gap rather than the percentage output gap.",
+          "formula": "{y_act} - 20000"
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T3_11",
+      "chapter": 12,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Long-Run Monetary Neutrality",
+      "clo_alignment": [
+        "LO4"
+      ],
+      "title": "Calculating Income Velocity of Money from $M \\cdot V = P \\cdot Y$",
+      "prompt_template": "In the Quantity Theory identity $M \\cdot V = P \\cdot Y$, suppose nominal money supply is $M = \\${m_val}$ billion, the aggregate price index is $P = 2$, and real output is $Y = \\$10{,}000$ billion (so nominal GDP is $P \\cdot Y = \\$20{,}000$ billion). Calculate the income velocity of money $V$.",
+      "parameters": {
+        "m_val": {
+          "type": "choice",
+          "values": [
+            4000,
+            5000,
+            8000
+          ],
+          "default": 4000
+        }
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Rearrange $M \\cdot V = P \\cdot Y$ to solve for velocity: $V = (P \\cdot Y) / M$."
+        },
+        {
+          "tier": 2,
+          "text": "Divide $\\$20{,}000$ billion by $\\${m_val}$ billion."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "5",
+          "is_correct": true,
+          "feedback": "Correct! $V = (P \\cdot Y) / M = 20{,}000 / {m_val}$.",
+          "formula": "20000 / {m_val}"
+        },
+        {
+          "id": "opt_b",
+          "text": "0.2",
+          "is_correct": false,
+          "feedback": "Incorrect: You computed $M / (P \\cdot Y)$ instead of dividing nominal GDP $(P \\cdot Y)$ by money stock $M$.",
+          "formula": "{m_val} / 20000"
+        },
+        {
+          "id": "opt_c",
+          "text": "0.8",
+          "is_correct": false,
+          "feedback": "Incorrect: Velocity is nominal GDP divided by the money supply, not $(M \\times P) / Y$.",
+          "formula": "({m_val} * 2) / 10000"
+        },
+        {
+          "id": "opt_d",
+          "text": "16,000",
+          "is_correct": false,
+          "feedback": "Incorrect: Velocity is a ratio of nominal GDP to money stock, not a difference.",
+          "formula": "20000 - {m_val}"
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T3_12",
+      "chapter": 12,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Long-Run Monetary Neutrality",
+      "clo_alignment": [
+        "LO4"
+      ],
+      "title": "Long-Run Inflation Rate Under Monetary Neutrality",
+      "prompt_template": "Under long-run monetary neutrality and constant velocity ($\\Delta\\% V = 0$), suppose the money supply (`M2SL`) grows permanently at ${g_m}\\%$ per year while potential real GDP (`GDPC1` at full employment) grows at $2.0\\%$ per year. What is the long-run annual inflation rate of the price level (`CPIAUCSL`) in percent?",
+      "parameters": {
+        "g_m": {
+          "type": "choice",
+          "values": [
+            5.0,
+            6.0,
+            8.0
+          ],
+          "default": 6.0
+        }
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Using the growth-rate form of the quantity equation: $\\Delta\\% M + \\Delta\\% V \\approx \\Delta\\% P + \\Delta\\% Y$."
+        },
+        {
+          "tier": 2,
+          "text": "With $\\Delta\\% V = 0$, solve for inflation: $\\pi = \\Delta\\% P = {g_m}\\% - 2.0\\%$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "4.0%",
+          "is_correct": true,
+          "feedback": "Correct! With $\\Delta\\% V = 0$ and real output growth of $2.0\\%$, long-run inflation is ${g_m} - 2.0$ percent.",
+          "formula": "{g_m} - 2.0"
+        },
+        {
+          "id": "opt_b",
+          "text": "6.0%",
+          "is_correct": false,
+          "feedback": "Incorrect: Because real output grows at $2.0\\%$ per year, part of money growth is absorbed by real growth; $\\pi = \\Delta\\% M - \\Delta\\% Y$.",
+          "formula": "{g_m}"
+        },
+        {
+          "id": "opt_c",
+          "text": "8.0%",
+          "is_correct": false,
+          "feedback": "Incorrect: Real output growth reduces inflation pressure for a given money growth rate, so you subtract $2.0\\%$ rather than adding it.",
+          "formula": "{g_m} + 2.0"
+        },
+        {
+          "id": "opt_d",
+          "text": "3.0%",
+          "is_correct": false,
+          "feedback": "Incorrect: Inflation equals money growth minus real output growth ($\\Delta\\% M - \\Delta\\% Y$), not half of money growth.",
+          "formula": "{g_m} / 2"
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T3_13",
+      "chapter": 12,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Monetary Transmission & AD-AS",
+      "clo_alignment": [
+        "LO3",
+        "LO4"
+      ],
+      "title": "Nominal Interest Rate from Real Rate and Expected Inflation",
+      "prompt_template": "Suppose the equilibrium real interest rate is $r^* = {r_real}\\%$ and expected inflation is $\\pi^e = {pi_e}\\%$. Using the Fisher relationship $i \\approx r^* + \\pi^e$, what nominal interest rate (in percent) corresponds to this real return and inflation expectation?",
+      "parameters": {
+        "r_real": {
+          "type": "choice",
+          "values": [
+            1.5,
+            2.0,
+            2.5
+          ],
+          "default": 2.0
+        },
+        "pi_e": {
+          "type": "choice",
+          "values": [
+            2.0,
+            3.0,
+            4.0
+          ],
+          "default": 3.0
+        }
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "From $r \\approx i - \\pi^e$, solve for the nominal rate: $i \\approx r^* + \\pi^e$."
+        },
+        {
+          "tier": 2,
+          "text": "Add ${r_real}\\%$ and ${pi_e}\\%$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "5.0%",
+          "is_correct": true,
+          "feedback": "Correct! $i \\approx r^* + \\pi^e = {r_real} + {pi_e}$ percent.",
+          "formula": "{r_real} + {pi_e}"
+        },
+        {
+          "id": "opt_b",
+          "text": "1.0%",
+          "is_correct": false,
+          "feedback": "Incorrect: The nominal rate equals the real rate plus expected inflation ($r^* + \\pi^e$), not expected inflation minus the real rate.",
+          "formula": "{pi_e} - {r_real}"
+        },
+        {
+          "id": "opt_c",
+          "text": "-1.0%",
+          "is_correct": false,
+          "feedback": "Incorrect: $r - \\pi^e$ gives the ex-post/real rate adjustment, whereas nominal interest adds expected inflation to the real rate.",
+          "formula": "{r_real} - {pi_e}"
+        },
+        {
+          "id": "opt_d",
+          "text": "6.0%",
+          "is_correct": false,
+          "feedback": "Incorrect: The Fisher relation is additive ($r^* + \\pi^e$), not multiplicative.",
+          "formula": "{r_real} * {pi_e}"
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T4_01",
+      "chapter": 12,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "FRED Data & Policy Rates",
+      "clo_alignment": [
+        "LO2",
+        "LO4"
+      ],
+      "title": "Interpreting FEDFUNDS vs. CPIAUCSL in 2022–2024",
+      "prompt_template": "An analyst examining FRED data notices that `CPIAUCSL` inflation peaked in mid-2022 while `FEDFUNDS` continued rising into 2023 and remained elevated into 2024. Which conclusion is most consistent with monetary transmission theory?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about recognition, decision, and transmission lags between FOMC rate hikes and inflation/output responses."
+        },
+        {
+          "tier": 2,
+          "text": "Policy rate changes affect spending and inflation gradually rather than instantaneously."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Monetary policy acts with lags and responds to persistent inflation dynamics and financial conditions, so short-run inflation can peak before the full demand and disinflationary effects of rate hikes materialize.",
+          "is_correct": true,
+          "feedback": "Correct! Monetary policy acts with lags and responds to persistent inflation dynamics and financial conditions, so short-run inflation can peak before the full demand and disinflationary effects of rate hikes materialize."
+        },
+        {
+          "id": "opt_b",
+          "text": "A higher `FEDFUNDS` rate always causes `CPIAUCSL` to jump higher permanently because higher interest rates are a direct cost of production.",
+          "is_correct": false,
+          "feedback": "Incorrect: While interest costs affect specific financing expenses, tighter monetary policy works primarily by cooling aggregate demand and inflation pressure over time."
+        },
+        {
+          "id": "opt_c",
+          "text": "Once `FEDFUNDS` rises, real GDP falls to zero within one week.",
+          "is_correct": false,
+          "feedback": "Incorrect: Monetary transmission operates over quarters rather than instantaneously freezing all output."
+        },
+        {
+          "id": "opt_d",
+          "text": "`FEDFUNDS` is measured in billions of dollars while `CPIAUCSL` is measured in basis points.",
+          "is_correct": false,
+          "feedback": "Incorrect: `FEDFUNDS` is an interest rate in percent, and `CPIAUCSL` is a Consumer Price Index level."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T4_02",
+      "chapter": 12,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "FRED Data & Policy Rates",
+      "clo_alignment": [
+        "LO2",
+        "LO4"
+      ],
+      "title": "Using M2SL, FEDFUNDS, and CPIAUCSL Together",
+      "prompt_template": "Why should an empirical macroeconomist pair `M2SL` (money stock) with `FEDFUNDS` and `CPIAUCSL` rather than relying solely on money growth to predict short-run inflation?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Consider what happens if households shift funds between assets or if supply shocks hit while money growth changes."
+        },
+        {
+          "tier": 2,
+          "text": "Short-run inflation depends on aggregate demand and supply dynamics alongside monetary conditions."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because money demand shifts with interest rates, real income, and payment technology—and velocity can change—so short-run inflation also reflects aggregate demand, supply shocks, and expectations.",
+          "is_correct": true,
+          "feedback": "Correct! Because money demand shifts with interest rates, real income, and payment technology—and velocity can change—so short-run inflation also reflects aggregate demand, supply shocks, and expectations."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because `M2SL` is always negative during economic expansions.",
+          "is_correct": false,
+          "feedback": "Incorrect: `M2SL` measures the positive stock of M2 money balances in billions of dollars."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because `CPIAUCSL` is an interest rate set directly by commercial banks.",
+          "is_correct": false,
+          "feedback": "Incorrect: `CPIAUCSL` is the BLS Consumer Price Index for All Urban Consumers, not a bank interest rate."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because `FEDFUNDS` measures the total market value of all U.S. real estate.",
+          "is_correct": false,
+          "feedback": "Incorrect: `FEDFUNDS` measures the effective federal funds interest rate, not real estate valuation."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T4_03",
+      "chapter": 12,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Ample-Reserves Regime",
+      "clo_alignment": [
+        "LO2",
+        "LO3"
+      ],
+      "title": "Why Textbook Scarce-Reserve Multipliers Mislead on Modern Fed Policy",
+      "prompt_template": "A student argues: 'Because the Fed raised its policy rate in an ample-reserves regime, it must have forced banks to slash lending using a tiny reserve multiplier.' How should you critique this claim?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Check the distinction between a scarce-reserve reserve-supply intersection and modern ample-reserves rate control."
+        },
+        {
+          "tier": 2,
+          "text": "Modern implementation relies on administered rates and ample reserves rather than reserve-scarcity rationing."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "In an ample-reserves framework, the Fed steers overnight rates via administered rates (IORB, ON RRP, Discount Window) along a flat ample-reserves floor; lending depends on credit demand, capital, liquidity, and interest rates rather than a mechanical reserve-scarcity multiplier.",
+          "is_correct": true,
+          "feedback": "Correct! In an ample-reserves framework, the Fed steers overnight rates via administered rates (IORB, ON RRP, Discount Window) along a flat ample-reserves floor; lending depends on credit demand, capital, liquidity, and interest rates rather than a mechanical reserve-scarcity multiplier."
+        },
+        {
+          "id": "opt_b",
+          "text": "The student is completely right because the Fed has no administered rates in an ample-reserves regime.",
+          "is_correct": false,
+          "feedback": "Incorrect: Administered rates (IORB, ON RRP, and the Discount Window) are central to the ample-reserves framework."
+        },
+        {
+          "id": "opt_c",
+          "text": "The student is wrong only because the Fed never changes interest rates after 2008.",
+          "is_correct": false,
+          "feedback": "Incorrect: The FOMC actively adjusts interest rates across tightening and easing cycles."
+        },
+        {
+          "id": "opt_d",
+          "text": "The student is right because banks cannot hold any reserves above zero under ample reserves.",
+          "is_correct": false,
+          "feedback": "Incorrect: Under ample reserves, banks hold large balances of reserves."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T4_04",
+      "chapter": 12,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Monetary Transmission & AD-AS",
+      "clo_alignment": [
+        "LO3"
+      ],
+      "title": "Interest-Sensitive Sectors in the Transmission Mechanism",
+      "prompt_template": "When the FOMC raises the federal funds target range, which components of aggregate spending are typically among the first to feel tighter financial conditions?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Ask which household and business purchases rely heavily on loans, mortgages, or financing costs."
+        },
+        {
+          "tier": 2,
+          "text": "Higher borrowing rates raise financing costs for housing, durables, and business investment."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Interest-sensitive business fixed investment (such as equipment and commercial construction) and interest-sensitive household spending (such as housing and durable goods).",
+          "is_correct": true,
+          "feedback": "Correct! Interest-sensitive business fixed investment (such as equipment and commercial construction) and interest-sensitive household spending (such as housing and durable goods)."
+        },
+        {
+          "id": "opt_b",
+          "text": "Automatic statutory changes in the U.S. Constitution.",
+          "is_correct": false,
+          "feedback": "Incorrect: Interest rate adjustments do not alter constitutional text."
+        },
+        {
+          "id": "opt_c",
+          "text": "Exogenous weather patterns over agricultural regions.",
+          "is_correct": false,
+          "feedback": "Incorrect: Weather is an exogenous natural factor, not an interest-sensitive spending channel."
+        },
+        {
+          "id": "opt_d",
+          "text": "The definition of the vertical axis in a demand-and-supply diagram.",
+          "is_correct": false,
+          "feedback": "Incorrect: Axis labels are modeling conventions, not spending categories."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T4_05",
+      "chapter": 12,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Monetary Transmission & AD-AS",
+      "clo_alignment": [
+        "LO3"
+      ],
+      "title": "Offsetting Fiscal Expansion During Fed Tightening",
+      "prompt_template": "Suppose the FOMC raises interest rates to cool an overheating economy ($Y > Y^*$), while Congress simultaneously passes a large deficit-financed spending increase. What is the key policy lesson?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare two forces pushing $AD$ in opposite directions at the same time."
+        },
+        {
+          "tier": 2,
+          "text": "When fiscal policy boosts demand while monetary policy restrains it, net $AD$ reflects both forces."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Aggregate demand reflects the combined pull of monetary policy, fiscal policy, expectations, and external shocks, so offsetting fiscal stimulus can make monetary tightening require higher rates or take longer to cool demand.",
+          "is_correct": true,
+          "feedback": "Correct! Aggregate demand reflects the combined pull of monetary policy, fiscal policy, expectations, and external shocks, so offsetting fiscal stimulus can make monetary tightening require higher rates or take longer to cool demand."
+        },
+        {
+          "id": "opt_b",
+          "text": "Fiscal policy automatically cancels out the law of demand in every individual retail market.",
+          "is_correct": false,
+          "feedback": "Incorrect: Fiscal policy affects aggregate demand, not the microeconomic law of demand."
+        },
+        {
+          "id": "opt_c",
+          "text": "Monetary policy becomes infinitely fast and exact whenever fiscal deficits rise.",
+          "is_correct": false,
+          "feedback": "Incorrect: Lags and uncertainty remain even when fiscal policy is active."
+        },
+        {
+          "id": "opt_d",
+          "text": "Potential output ($Y^*$) becomes equal to zero.",
+          "is_correct": false,
+          "feedback": "Incorrect: Fiscal and monetary interactions do not reduce potential output to zero."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T4_06",
+      "chapter": 12,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Policy Rules & ELB",
+      "clo_alignment": [
+        "LO3"
+      ],
+      "title": "Uncertain r* and Output Gap Estimates in Taylor Rules",
+      "prompt_template": "Two central bank economists apply the same Taylor-type rule formula to the same inflation reading, yet recommend different policy rates because one estimates $r^*$ to be $1.0\\%$ higher than the other. Why does this happen in practice?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Can anyone directly observe the true equilibrium real interest rate $r^*$ on a single day's market quote?"
+        },
+        {
+          "tier": 2,
+          "text": "Because $r^*$ and $Y_t^*$ are estimated rather than directly observed, benchmark rates vary with parameter estimates."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because the equilibrium real interest rate ($r^*$) and potential output ($Y_t^*$) are unobservable latent benchmarks that must be estimated with uncertainty.",
+          "is_correct": true,
+          "feedback": "Correct! Because the equilibrium real interest rate ($r^*$) and potential output ($Y_t^*$) are unobservable latent benchmarks that must be estimated with uncertainty."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because addition is no longer valid when calculating interest rates.",
+          "is_correct": false,
+          "feedback": "Incorrect: The arithmetic is straightforward once inputs are chosen; the disagreement lies in estimating unobservable benchmarks like $r^*$."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because $r^*$ is legally fixed at $0.0\\%$ by international treaty.",
+          "is_correct": false,
+          "feedback": "Incorrect: There is no statutory or treaty requirement fixing $r^*$ at $0.0\\%$."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because inflation ($\\pi_t$) drops out of the Taylor rule whenever $r^*$ is positive.",
+          "is_correct": false,
+          "feedback": "Incorrect: Current inflation $\\pi_t$ and the inflation gap $(\\pi_t - \\pi^*)$ remain in the rule."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T4_07",
+      "chapter": 12,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Policy Rules & ELB",
+      "clo_alignment": [
+        "LO3"
+      ],
+      "title": "Limitations of Monetary Policy at the Effective Lower Bound",
+      "prompt_template": "Why might monetary policy face greater friction near the Effective Lower Bound (ELB) during a severe downturn than during a standard cyclical slowdown?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about what happens when the standard overnight rate tool runs up against its lower bound."
+        },
+        {
+          "tier": 2,
+          "text": "Near the ELB, conventional rate cuts are constrained and policy relies more on expectations and asset purchases."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because short-term nominal policy rates cannot be cut deeply below zero without inducing cash/arbitrage frictions, requiring reliance on forward guidance and asset purchases whose effects on expectations and long-term rates can be more gradual or uncertain.",
+          "is_correct": true,
+          "feedback": "Correct! Because short-term nominal policy rates cannot be cut deeply below zero without inducing cash/arbitrage frictions, requiring reliance on forward guidance and asset purchases whose effects on expectations and long-term rates can be more gradual or uncertain."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because at the ELB, inflation is automatically guaranteed to be 20% per year.",
+          "is_correct": false,
+          "feedback": "Incorrect: Severe downturns near the ELB typically feature low inflation or disinflationary pressure, not 20% inflation."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because commercial banks are prohibited from holding any assets at the ELB.",
+          "is_correct": false,
+          "feedback": "Incorrect: Banks continue holding reserves, loans, and securities near the ELB."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because the output gap is always positive when rates approach the ELB.",
+          "is_correct": false,
+          "feedback": "Incorrect: Central banks typically cut rates toward the ELB during weak demand or recessionary gaps."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T4_08",
+      "chapter": 12,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Long-Run Monetary Neutrality",
+      "clo_alignment": [
+        "LO4"
+      ],
+      "title": "Short-Run Non-Neutrality vs. Long-Run Neutrality",
+      "prompt_template": "How do economists reconcile the fact that monetary policy affects real output in the short run with the principle of long-run monetary neutrality?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Contrast sticky nominal wages/prices in the short run with full nominal adjustment in the long run."
+        },
+        {
+          "tier": 2,
+          "text": "Nominal stickiness creates short-run real effects; full adjustment restores real output to potential in the long run."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "In the short run, sticky wages and prices or gradual adjustments allow spending changes to move real output ($Y$), whereas in the long run nominal wages and prices adjust to clear markets at potential output ($Y^*$).",
+          "is_correct": true,
+          "feedback": "Correct! In the short run, sticky wages and prices or gradual adjustments allow spending changes to move real output ($Y$), whereas in the long run nominal wages and prices adjust to clear markets at potential output ($Y^*$)."
+        },
+        {
+          "id": "opt_b",
+          "text": "Long-run neutrality assumes prices never change, while short-run non-neutrality assumes prices change every second.",
+          "is_correct": false,
+          "feedback": "Incorrect: Long-run neutrality allows nominal prices to adjust proportionally to money changes once real adjustments settle."
+        },
+        {
+          "id": "opt_c",
+          "text": "Short-run non-neutrality applies only to gold coins, while long-run neutrality applies only to barter.",
+          "is_correct": false,
+          "feedback": "Incorrect: Both concepts apply to modern fiat monetary economies."
+        },
+        {
+          "id": "opt_d",
+          "text": "There is no difference between short-run and long-run effects in macroeconomics.",
+          "is_correct": false,
+          "feedback": "Incorrect: Distinguishing short-run nominal stickiness from long-run adjustment is central to $AD\text{--}AS$ and monetary analysis."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T4_09",
+      "chapter": 12,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Long-Run Monetary Neutrality",
+      "clo_alignment": [
+        "LO4"
+      ],
+      "title": "Distributional and Transition Costs Despite Long-Run Neutrality",
+      "prompt_template": "Even if money is neutral in the long run, why do policymakers still care deeply about avoiding high and volatile inflation?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Consider why 'neutral in the long run' does not mean 'costless along the way' or 'distortion-free'."
+        },
+        {
+          "tier": 2,
+          "text": "Price instability creates real frictions, planning uncertainty, and adjustment costs even when real GDP returns to $Y^*$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because inflation distorts relative price signals, erodes fixed nominal purchasing power, complicates long-term planning, and creates transition and stabilization costs when bringing inflation back down.",
+          "is_correct": true,
+          "feedback": "Correct! Because inflation distorts relative price signals, erodes fixed nominal purchasing power, complicates long-term planning, and creates transition and stabilization costs when bringing inflation back down."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because long-run neutrality proves inflation never changes any nominal prices.",
+          "is_correct": false,
+          "feedback": "Incorrect: Under monetary neutrality, a sustained monetary expansion raises the aggregate price level."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because high inflation automatically doubles real potential output ($Y^*$) every year.",
+          "is_correct": false,
+          "feedback": "Incorrect: Inflation does not permanently expand productive capacity $Y^*$."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because central banks have no mandate regarding price stability.",
+          "is_correct": false,
+          "feedback": "Incorrect: Price stability is a core pillar of the Federal Reserve's dual mandate."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T4_10",
+      "chapter": 12,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Ample-Reserves Regime",
+      "clo_alignment": [
+        "LO2"
+      ],
+      "title": "Why Floor-System Arbitrage Keeps Overnight Rates Near Target",
+      "prompt_template": "Suppose a money market fund or bank has excess overnight cash to lend and the Fed's ON RRP rate is 5.3%. Why will that lender generally be reluctant to lend overnight to a private counterparty at a rate far below 5.3% (assuming eligible access and comparable credit/collateral risk)?",
+      "parameters": {
+        "on_rrp_ex": {
+          "type": "choice",
+          "values": [
+            4.8,
+            5.05,
+            5.3
+          ]
+        }
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Ask what a cash lender gives up by accepting a lower overnight return than the Fed's ON RRP facility."
+        },
+        {
+          "tier": 2,
+          "text": "Outside arbitrage options at administered rates keep overnight market rates anchored near the floor."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because lending below the risk-free administered floor rate sacrifices yield relative to the central bank facility, creating arbitrage pressure that supports market rates near the floor.",
+          "is_correct": true,
+          "feedback": "Correct! Because lending below the risk-free administered floor rate sacrifices yield relative to the central bank facility, creating arbitrage pressure that supports market rates near the floor."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because private borrowers legally pay double the ON RRP rate on every overnight loan.",
+          "is_correct": false,
+          "feedback": "Incorrect: Market overnight rates are determined by market trading and arbitrage against administered rates, not a statutory double-rate rule."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because ON RRP lowers the real GDP potential ceiling to zero.",
+          "is_correct": false,
+          "feedback": "Incorrect: ON RRP is an overnight money market facility, not a determinant of potential output."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because reserve balances cannot be transferred electronically.",
+          "is_correct": false,
+          "feedback": "Incorrect: Reserve balances and overnight money market settlements are electronic."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T4_11",
+      "chapter": 12,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Monetary Transmission & AD-AS",
+      "clo_alignment": [
+        "LO3",
+        "LO4"
+      ],
+      "title": "Diagnosing an Inflationary Gap vs. Cost-Push Inflation",
+      "prompt_template": "Suppose `CPIAUCSL` inflation is rising alongside strong real GDP above potential ($Y_t > Y_t^*$) and a tight labor market. How does a central bank using a Taylor-type benchmark typically respond?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Check the signs of $(\\pi_t - \\pi^*)$ and $(Y_t - Y_t^*)/Y_t^*$ in the Taylor rule when demand is overheating."
+        },
+        {
+          "tier": 2,
+          "text": "Positive inflation and output gaps call for higher policy rates to restrain aggregate demand."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "A positive inflation gap ($\\pi_t > \\pi^*$) and positive output gap ($Y_t > Y_t^*$) point toward a higher nominal policy rate to cool excess aggregate demand and bring inflation back toward target.",
+          "is_correct": true,
+          "feedback": "Correct! A positive inflation gap ($\\pi_t > \\pi^*$) and positive output gap ($Y_t > Y_t^*$) point toward a higher nominal policy rate to cool excess aggregate demand and bring inflation back toward target."
+        },
+        {
+          "id": "opt_b",
+          "text": "By cutting nominal interest rates to zero and expanding fiscal deficits simultaneously.",
+          "is_correct": false,
+          "feedback": "Incorrect: Cutting rates when demand is already overheating with $Y_t > Y_t^*$ and $\\pi_t > \\pi^*$ would add further demand pressure."
+        },
+        {
+          "id": "opt_c",
+          "text": "By declaring that a positive output gap means real GDP is below potential.",
+          "is_correct": false,
+          "feedback": "Incorrect: A positive output gap ($Y_t > Y_t^*$) means actual output exceeds potential output."
+        },
+        {
+          "id": "opt_d",
+          "text": "By setting the nominal interest rate equal to negative 50%.",
+          "is_correct": false,
+          "feedback": "Incorrect: A positive inflation and output gap calls for monetary restraint (higher policy rate), not deep stimulus."
+        }
+      ]
+    },
+    {
+      "id": "CH12_MON_T4_12",
+      "chapter": 12,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Long-Run Monetary Neutrality",
+      "clo_alignment": [
+        "LO4"
+      ],
+      "title": "Evaluating a One-Time Money Injection vs. Sustained Money Growth",
+      "prompt_template": "Using the $AD\text{--}AS$ framework and FRED indicators (`M2SL`, `CPIAUCSL`, `GDPC1`), what is the key difference between a one-time monetary injection and sustained rapid money growth over many years?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare a single shift in demand followed by wage adjustment against ongoing monetary expansion."
+        },
+        {
+          "tier": 2,
+          "text": "One-time shocks cause transitional adjustment, while ongoing money growth relative to real output drives persistent inflation."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "A one-time monetary shock shifts $AD$ once—raising output and prices in the short run before $SRAS$ adjusts back toward $Y^*$—whereas sustained rapid money growth persistently drives up nominal demand and long-run inflation (`CPIAUCSL`) once real output is near potential.",
+          "is_correct": true,
+          "feedback": "Correct! A one-time monetary shock shifts $AD$ once—raising output and prices in the short run before $SRAS$ adjusts back toward $Y^*$—whereas sustained rapid money growth persistently drives up nominal demand and long-run inflation (`CPIAUCSL`) once real output is near potential."
+        },
+        {
+          "id": "opt_b",
+          "text": "A one-time money shock permanently raises real GDP every year, whereas sustained money growth leaves `CPIAUCSL` unchanged.",
+          "is_correct": false,
+          "feedback": "Incorrect: Real output cannot grow permanently above potential $Y^*$ via money growth alone, and sustained excess money growth drives inflation higher."
+        },
+        {
+          "id": "opt_c",
+          "text": "Sustained money growth lowers `CPIAUCSL` toward zero permanently without affecting nominal spending.",
+          "is_correct": false,
+          "feedback": "Incorrect: Sustained money growth above real output growth puts upward pressure on the price level over time."
+        },
+        {
+          "id": "opt_d",
+          "text": "Neither a one-time shock nor sustained money growth has any relationship to `M2SL` or `CPIAUCSL`.",
+          "is_correct": false,
+          "feedback": "Incorrect: `M2SL` tracks M2 money stock and `CPIAUCSL` tracks consumer prices."
+        }
+      ]
+    }
+  ]
+}

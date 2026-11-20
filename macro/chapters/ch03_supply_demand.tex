@@ -1,14 +1,10 @@
-% Review status: Technical and pedagogical fixes applied; instructor review pending (2026-11-15).
 \documentclass[11pt,letterpaper]{article}
 \input{../../shared/preamble.tex}
 \input{../../shared/tikz-settings.tex}
-\usepackage{tcolorbox}
-\definecolor{CourseBlue}{HTML}{0072B2}
-\definecolor{CourseTeal}{HTML}{009E73}
 
 \begin{document}
 
-\title{\Huge\bfseries\color{SlateBlue} Chapter 3: Supply and Demand: Macroeconomic Foundations}
+\title{\Huge\bfseries\color{SlateBlue} Chapter 3: Supply, Demand, and Market Equilibrium}
 \author{\large Principles of Macroeconomics Curriculum}
 \date{2026}
 \maketitle
@@ -16,12 +12,8 @@
 \thispagestyle{plain}
 
 \begin{abstract}
-This chapter provides a rigorous, pedagogical treatment of Chapter 3: Supply and Demand: Macroeconomic Foundations, benchmarked to standard principles curriculum.
+This chapter develops the competitive supply-and-demand model for single-product markets. By deriving linear demand and supply schedules from underlying consumer valuation and marginal opportunity cost, we distinguish movements along fixed curves from shifts of entire curves, solve algebraically and geometrically for market-clearing equilibrium ($P^*, Q^*$), evaluate simultaneous dual-shock comparative statics, and analyze the market shortages and surpluses caused by binding price ceilings and price floors. Throughout this chapter, single-market nominal prices ($P$) are kept strictly distinct from economy-wide aggregate price indexes covered in Chapter 5.
 \end{abstract}
-
-\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=\textbf{Bring It Home: Is One Price Increase Inflation?}]
-Suppose the price of medical care rises faster than the prices of most other goods. Is that economy-wide inflation, or has medical care become more expensive relative to the overall basket? Compare the component price index with an all-items index before deciding.
-\end{tcolorbox}
 
 \tableofcontents
 \vspace{1.5em}
@@ -29,303 +21,453 @@ Suppose the price of medical care rises faster than the prices of most other goo
 \vspace{1.5em}
 
 % -----------------------------------------------------------------------------
-% Section 3.1: Relative Prices vs. The General Price Level
+% Learning Outcomes, Key Terms & Bring It Home Anchor
 % -----------------------------------------------------------------------------
-\section{Relative Prices vs. The General Price Level}
+\section*{Learning Outcomes and Key Terms}
+\addcontentsline{toc}{section}{Learning Outcomes and Key Terms}
 
-\subsection*{Conceptual Introduction}
-In microeconomics, supply and demand explain how the price of a single product—such as coffee, avocados, or apartment rent—adjusts to balance buyers and sellers in that specific market. When the price of a hospital visit or a carton of eggs rises while most other prices remain stable, economists call that a change in a \textbf{relative price}. Relative price changes are vital market signals: they tell consumers to economize on scarcer goods and tell producers where to direct resources.
-
-Macroeconomics, by contrast, focuses on the \textbf{general price level}—the overall average price of a broad basket of goods and services across the entire economy. A sustained, economy-wide upward climb in a broad price index is called \textbf{inflation} (while a sustained decline in the broad price level is \textbf{deflation}). A rise in the broad index means that a dollar buys less of its weighted basket on average; it does not require every category's price to rise. A local drought that raises lettuce prices, for example, changes lettuce's relative price even if the broad index is unchanged.
-
-\subsection*{Visual Representation}
-Figure~\ref{fig:relative_vs_general_prices} compares the all-items CPI with its medical-care component at two observation dates. Both series are rebased to 100 in May 2015; the points show the two observations, not the intervening monthly path.
-
-\begin{tcolorbox}[colback=yellow!10!white,colframe=orange!80!black,title=\textbf{Clear It Up: A One-Time Price Spike Is Not Ongoing Inflation}]
-If a temporary supply disruption pushes gasoline prices up by $15\%$ in one month and prices then stay flat at that higher level, the \emph{price level} is higher, but the \emph{inflation rate} (the percentage rate of change from month to month) returns to zero! Inflation measures the \textbf{speed} at which the broad price level is rising over time.
-\end{tcolorbox}
-
-\begin{figure}[htbp]
-\centering
-\begin{tikzpicture}[scale=1.05]
-    % Axes
-    \draw[->, thick, color=SlateBlue] (0,0) -- (6.2,0) node[below] {Observation date};
-    \draw[->, thick, color=SlateBlue] (0,0) -- (0,5.0) node[left] {Index (May 2015 = 100)};
-    \node[below left] at (0,0) {$(0,0)$};
-
-    \draw[dashed, gray] (0,1.5) node[left, black] {$100$} -- (5.8,1.5);
-    \draw[dashed, gray] (0,2.5) node[left, black] {$125$} -- (5.8,2.5);
-    \draw[dashed, gray] (0,3.5) node[left, black] {$150$} -- (5.8,3.5);
-
-    \node[below, align=center, font=\footnotesize] at (0.8,0) {May 2015\\base};
-    \node[below, align=center, font=\footnotesize] at (5.0,0) {October 2026};
-    \filldraw[SlateBlue] (0.8,1.5) circle (2.2pt);
-    \node[above left, font=\footnotesize] at (0.8,1.5) {Both: 100};
-
-    % The vertical scale is 25 index points per coordinate unit.
-    \draw[dashed, color=SlateBlue] (5.0,0) -- (5.0,3.1956);
-    \filldraw[CourseBlue] (5.0,3.1956) circle (2.4pt)
-        node[above right, font=\footnotesize\bfseries] {All-items: 142.39};
-    \filldraw[Terracotta] (5.0,2.8336) circle (2.4pt)
-        node[below right, font=\footnotesize\bfseries] {Medical care: 133.34};
-\end{tikzpicture}
-\caption{Two-observation comparison using FRED monthly CPI data. Medical care rose less than the all-items index between May 2015 and October 2026, so its price fell relative to the all-items basket over that interval.}
-\label{fig:relative_vs_general_prices}
-\end{figure}
-
-\subsection*{Real-World Application: FRED Medical Care (`CPIMEDSL`) vs. All-Items CPI (`CPIAUCSL`)}
-FRED's seasonally adjusted CPIAUCSL (all items) was 237.001 in May 2015 and 337.476 in October 2026; CPIMEDSL (medical care) was 446.743 and 595.675 on those same dates. Each series uses 1982--1984 = 100. First calculate the growth in each index:
-\[
-\begin{aligned}
-\text{All-items growth} &= \frac{337.476-237.001}{237.001}\times100\% = 42.39\%,\\
-\text{Medical-care growth} &= \frac{595.675-446.743}{446.743}\times100\% = 33.34\%.
-\end{aligned}
-\]
-To calculate the change in medical care's price relative to the all-items basket, compare the component-to-all-items ratio at the two dates:
-\[
-\left(\frac{595.675/337.476}{446.743/237.001}-1\right)\times100\%=-6.36\%.
-\]
-Thus, medical care's relative price fell by 6.36\% over these observations even though both price indexes rose. The all-items CPI represents an average urban-consumer basket, not every household's exact spending pattern.
-
-\subsection*{Mathematical Foundation (Algebra Level)}
-A price index compares the current dollar cost of a fixed market basket against its base-period cost, and the inflation rate ($\pi_t$) measures the percentage change in that index between periods $t-1$ and $t$:
-\begin{equation}
-\text{Price Index}_t = \frac{\text{Cost of Basket}_t}{\text{Cost of Basket}_{\text{base}}} \times 100, \qquad \pi_t = \frac{P_t - P_{t-1}}{P_{t-1}} \times 100\%
-\end{equation}
-
-\noindent\textbf{Worked Problem:}
-Suppose a simplified urban household basket costs $\$1{,}200$ in the base year (2024), rises to $\$1{,}260$ in 2025, and reaches $\$1{,}310.40$ in 2026. Compute the price index for 2024, 2025, and 2026, and calculate the annual inflation rate for 2025 and 2026.
-
-\noindent\textbf{Step-by-Step Breakdown:}
+Upon completing this chapter, students should be able to:
 \begin{enumerate}
-    \item \textbf{Compute the Price Index for Each Year (Base Year 2024 = 100):}
-    \[
-    P_{2024} = \frac{\$1{,}200}{\$1{,}200} \times 100 = \mathbf{100.0}
-    \]
-    \[
-    P_{2025} = \frac{\$1{,}260}{\$1{,}200} \times 100 = \mathbf{105.0}
-    \]
-    \[
-    P_{2026} = \frac{\$1{,}310.40}{\$1{,}200} \times 100 = \mathbf{109.2}
-    \]
-
-    \item \textbf{Calculate Annual Inflation Rates ($\pi_{2025}$ and $\pi_{2026}$):}
-    \[
-    \pi_{2025} = \frac{105.0 - 100.0}{100.0} \times 100\% = \mathbf{5.0\%}
-    \]
-    \[
-    \pi_{2026} = \frac{109.2 - 105.0}{105.0} \times 100\% = \frac{4.2}{105.0} \times 100\% = \mathbf{4.0\%}
-    \]
+  \item \textbf{Distinguish} a movement along a demand or supply curve (caused by a change in the good's own price) from a shift of the entire curve (caused by non-price determinants).
+  \item \textbf{Solve} linear demand and supply equations for market-clearing equilibrium price and quantity ($P^*, Q^*$) and verify disequilibrium surpluses or shortages at non-clearing prices.
+  \item \textbf{Predict} how single shocks and simultaneous dual shocks to demand and supply alter equilibrium price and quantity, identifying when one outcome is indeterminate.
+  \item \textbf{Evaluate} the effects of binding versus non-binding price ceilings and price floors on quantities traded, shortages, and surpluses.
 \end{enumerate}
-\textbf{Conclusion:} Notice that while the price level continued rising in 2026 (from $105.0$ to $109.2$), the inflation rate slowed from $5.0\%$ to $4.0\%$—a process economists call \textbf{disinflation} (slower positive inflation, not falling prices).
 
-% -----------------------------------------------------------------------------
-% Section 3.2: Nominal vs. Real Values and Purchasing Power
-% -----------------------------------------------------------------------------
-\section{Nominal vs. Real Values and Purchasing Power}
+\noindent\textbf{Key Terms:} competitive market, Law of Demand, quantity demanded, demand curve, substitution effect, income effect, normal good, inferior good, substitutes, complements, Law of Supply, quantity supplied, supply curve, market equilibrium ($P^*, Q^*$), surplus, shortage, price ceiling, price floor, relative price.
 
-\subsection*{Conceptual Introduction}
-Because inflation changes the measuring stick of money over time, comparing raw dollar figures across different decades is misleading. A $\$50{,}000$ salary in 1990 bought far more housing, groceries, and tuition than a $\$50{,}000$ salary buys today. To make valid comparisons across time, macroeconomists strictly separate \textbf{nominal values} (measured in current, unadjusted dollars of the period) from \textbf{real values} (adjusted for price-level changes to reflect true \textbf{purchasing power} in constant base-period dollars).
+\begin{coreprinciple}
+\boxheader{SlateBlue}{Clear It Up: Single-Market Price ($P$) vs. Aggregate Price Level}
+In Chapter 3, $P$ denotes the market-determined nominal price of a \emph{single} good or service (such as a pound of roasted coffee, a gallon of gasoline, or a one-bedroom apartment lease). It is \textbf{not} the economy-wide aggregate price level, which is a unitless index measuring overall price changes across a representative basket of thousands of goods and services (covered in Chapter 5: \emph{Inflation and Deflation}).
+\end{coreprinciple}
 
-The same distinction governs wages and interest rates:
+\begin{examplecase}{Bring It Home: Why Did Egg Prices Spike While Apartment Shortages Persisted?}
+When avian flu outbreaks swept U.S. poultry farms, retail egg prices surged within weeks—and then gradually fell back as flocks recovered and grocery shelves remained stocked. By contrast, in cities with strict municipal rent-control ordinances capping monthly apartment rents below market-clearing levels, listed rents stayed low on paper while thousands of prospective tenants faced multi-year waitlists and unreturned applications. Both outcomes obey the same supply-and-demand mechanics: flexible prices eliminate shortages by rationing scarce supply, whereas legal price caps block price adjustment and turn scarcity into persistent queues.
+\end{examplecase}
+
+% =============================================================================
+% SECTION 3.1: Demand and Consumer Valuation
+% =============================================================================
+\section{Demand and Consumer Valuation}
+
+\subsection*{1. Conceptual Introduction}
+A \textbf{competitive market} brings together many buyers and sellers of a standardized good or service so that no single buyer or seller can dictate the market price. On the buyer side, \textbf{quantity demanded ($Q_d$)} is the total amount of a good that consumers are willing and able to purchase at a specific price during a given period, holding all other factors constant (\emph{ceteris paribus}). The \textbf{Law of Demand} states that, \emph{ceteris paribus}, there is an inverse relationship between a good's own price and its quantity demanded: when the price rises, quantity demanded falls; when the price falls, quantity demanded rises.
+
+Two behavioral mechanisms explain why demand curves slope downward. First, the \textbf{substitution effect} occurs because a higher own price makes the good more expensive relative to alternative goods, prompting buyers to switch toward cheaper substitutes. Second, the \textbf{income effect} occurs because a higher price erodes the purchasing power of a household's fixed nominal income, reducing the quantity of goods it can afford to buy. Together, these forces ensure that lower prices attract new buyers and induce existing buyers to purchase more units.
+
+Crucially, economists separate two visually distinct changes on a demand diagram. A change in the good's \emph{own price} causes a \textbf{movement along} a fixed demand curve—termed a \emph{change in quantity demanded}. By contrast, a change in any non-price determinant alters the quantity buyers want at \emph{every} possible price, producing a horizontal \textbf{shift of the entire demand curve}—termed a \emph{change in demand}. The five primary non-price demand shifters are:
 \begin{itemize}
-    \item \textbf{Real Wage:} Measures how many goods and services a worker's paycheck can actually purchase. If your nominal hourly wage rises by $3\%$ while consumer prices rise by $5\%$, your real wage falls by roughly $2\%$.
-    \item \textbf{Real Interest Rate ($r$):} Measures the true purchasing-power return earned by savers or paid by borrowers after subtracting inflation ($\pi$) from the stated \textbf{nominal interest rate ($i$)}—summarized by the \textbf{Fisher Equation}: $r \approx i - \pi$.
+  \item \textbf{Consumer Income:} Higher income shifts demand rightward for \emph{normal goods} (such as restaurant dining or airline travel) and leftward for \emph{inferior goods} (such as instant noodles or intercity bus tickets).
+  \item \textbf{Prices of Related Goods:} A price hike for a \emph{substitute} (e.g., tea) shifts demand for the primary good (e.g., coffee) rightward; a price hike for a \emph{complement} (e.g., espresso machines) shifts coffee demand leftward.
+  \item \textbf{Tastes and Preferences:} Changes in health findings, seasonal habits, or cultural trends shift demand at every price.
+  \item \textbf{Buyer Expectations:} Anticipating higher future prices or tighter future availability accelerates current buying, shifting current demand rightward.
+  \item \textbf{Market Size (Number of Buyers):} Population growth or demographic expansion scales up total market quantity demanded at each price.
 \end{itemize}
 
-    \begin{tcolorbox}[colback=yellow!10!white,colframe=orange!80!black,title=\textbf{Clear It Up: A Nominal Raise Can Be a Real Pay Cut}]
-    A larger paycheck in dollars does not guarantee more purchasing power. Compare the percentage change in nominal pay with the percentage change in the price index; if prices rise faster, the real wage falls.
-    \end{tcolorbox}
-
-\subsection*{Visual Representation}
-Figure~\ref{fig:nominal_vs_real_wage} contrasts a rising nominal wage index against a flat or declining real wage index when price-level inflation outpaces paycheck growth.
+\subsection*{2. Visual Representation}
+Figure~\ref{fig:demand_shift_vs_movement} contrasts a movement along the initial demand curve $D_1$ (from point $A$ to point $B$ when own price falls from $\$20$ to $\$15$) against a rightward shift of the entire demand curve from $D_1$ to $D_2$ (from point $A$ to point $C$ when higher household income raises quantity demanded at the unchanged price of $\$20$).
 
 \begin{figure}[htbp]
 \centering
-\begin{tikzpicture}[scale=1.05]
-    % Axes
-    \draw[->, thick] (0,0) -- (6.2,0) node[below] {Time (Years)};
-    \draw[->, thick] (0,0) -- (0,5.0) node[left] {Wage Index (Base = 100)};
-    \node[below left] at (0,0) {$(0,0)$};
+\begin{tikzpicture}[scale=1.02]
+  % Axes: x = Q (0 to 700 -> 1 unit = 100 units, max 7.0); y = P (0 to $35 -> 1 unit = $5, max 7.0)
+  \draw[->, >=Stealth, thick, color=SlateBlue] (0,0) -- (7.6,0) node[below] {Quantity ($Q$, units/week)};
+  \draw[->, >=Stealth, thick, color=SlateBlue] (0,0) -- (0,7.5) node[left] {Price ($P$, \$/unit)};
+  \node[below left, color=SlateBlue] at (0,0) {$0$};
 
-    \draw[dashed, gray] (0,2.2) node[left, black] {$100$} -- (5.8,2.2);
+  % D1: P = 30 - 0.05Q -> intercepts (0,6.0) and (6.0,0)
+  \draw[very thick, color=CourseBlue] (0,6.0) -- (6.0,0);
+  \node[left, font=\footnotesize] at (0,6.0) {$\$30$};
+  \node[below, font=\footnotesize] at (6.0,0) {$600$};
+  \node[below left, font=\small\bfseries, color=CourseBlue, fill=white, inner sep=1.5pt] at (4.85,1.25) {$D_1$};
 
-    % Nominal Wage climbs steadily: (0,2.2) to (5.5,4.2)
-    \draw[very thick, color=SlateBlue] (0,2.2) -- (5.5,4.2) node[right, font=\footnotesize\bfseries] {Nominal Wage ($W_{\text{nom}}$)};
+  % D2: P = 35 - 0.05Q -> intercepts (0,7.0) and (7.0,0)
+  \draw[very thick, dashed, color=CourseTeal] (0,7.0) -- (7.0,0);
+  \node[left, font=\footnotesize] at (0,7.0) {$\$35$};
+  \node[below, font=\footnotesize] at (7.0,0) {$700$};
+  \node[above right, font=\small\bfseries, color=CourseTeal, fill=white, inner sep=1.5pt] at (5.35,1.75) {$D_2$ (Demand Shift)};
 
-    % Price Level climbs faster: (0,2.2) to (5.5,4.7)
-    \draw[thick, dashed, color=Terracotta] (0,2.2) -- (5.5,4.7) node[right, font=\footnotesize\bfseries] {Price Level ($P$)};
+  % Point A (Q=200 -> x=2.0, P=$20 -> y=4.0)
+  \draw[dotted, thick, color=SlateBlue] (0,4.0) node[left, font=\footnotesize] {$\$20$} -- (3.0,4.0);
+  \draw[dotted, thick, color=SlateBlue] (2.0,4.0) -- (2.0,0) node[below, font=\footnotesize] {$200$};
+  \filldraw[CourseBlue] (2.0,4.0) circle (2.5pt) node[above right, font=\footnotesize\bfseries, color=CourseBlue, fill=white, inner sep=1pt] {$A(200, \$20)$};
 
-    % Real Wage erodes slightly: (0,2.2) to (5.5,1.8)
-    \draw[very thick, color=CourseTeal] (0,2.2) -- (5.5,1.8) node[right, font=\footnotesize\bfseries] {Real Wage ($W_{\text{real}}$)};
+  % Point B (Q=300 -> x=3.0, P=$15 -> y=3.0) - Movement along D1
+  \draw[dotted, thick, color=SlateBlue] (0,3.0) node[left, font=\footnotesize] {$\$15$} -- (3.0,3.0) -- (3.0,0) node[below, font=\footnotesize] {$300$};
+  \filldraw[CourseOrange] (3.0,3.0) circle (2.5pt) node[below left, font=\footnotesize\bfseries, color=CourseOrange, fill=white, inner sep=1pt] {$B(300, \$15)$};
+
+  % Point C (Q=300 -> x=3.0, P=$20 -> y=4.0) - Shift to D2
+  \filldraw[CourseTeal] (3.0,4.0) circle (2.5pt) node[above right, font=\footnotesize\bfseries, color=CourseTeal, fill=white, inner sep=1pt] {$C(300, \$20)$};
+
+  % Arrows illustrating movement vs shift
+  \draw[->, >=Stealth, thick, color=CourseOrange] (2.15,3.75) -- (2.82,3.08);
+  \draw[->, >=Stealth, thick, color=CourseTeal] (2.25,4.0) -- (2.82,4.0);
 \end{tikzpicture}
-\caption{Nominal Wages vs. Real Purchasing Power. Even when a worker's nominal wage increases steadily over time, if the broad price level rises faster than nominal pay, the worker's real purchasing power declines.}
-\label{fig:nominal_vs_real_wage}
+\caption{Movement Along vs. Shift of Demand. Lowering own price from $\$20$ to $\$15$ moves buyers along $D_1$ from $A$ to $B$ ($+100$ units in quantity demanded). Rising income shifts the entire curve from $D_1$ to $D_2$, moving buyers from $A$ to $C$ ($+100$ units at the unchanged price of $\$20$).}
+\label{fig:demand_shift_vs_movement}
 \end{figure}
 
-\subsection*{Real-World Application: Minimum Wage Purchasing Power Across Decades}
-For covered nonexempt employees, the U.S. federal minimum wage has been $\$7.25$ per hour since July 24, 2009. If the nominal rate stays fixed while the CPI rises, its purchasing power falls. This illustrates why minimum-wage comparisons should distinguish the stated dollar amount from its real value.
+\subsection*{3. Real-World Application}
+\begin{examplecase}{Streaming Subscriptions, Price Hikes, and Bundle Substitutes}
+When a major video-streaming platform raises its ad-free monthly subscription price from $\$15$ to $\$20$, existing subscribers cut back or downgrade tiers—a classic upward movement along the platform's demand curve. However, when rival platforms simultaneously launch lower-priced ad-supported bundles or live sports packages, the primary platform experiences a leftward \emph{shift} of its demand curve: even if it holds its price steady at $\$20$, fewer households subscribe because the price of close substitutes has fallen.
+\end{examplecase}
 
-\subsection*{Mathematical Foundation (Algebra Level)}
-To convert any nominal dollar amount $X_t^{\text{nominal}}$ into constant base-period purchasing power ($X_t^{\text{real}}$):
+\subsection*{4. Mathematical Foundation}
+Under a linear demand specification, direct demand expresses quantity demanded as a function of price ($Q_d = a - bP$, where $a > 0$ is the horizontal intercept and $-b < 0$ is the responsiveness of quantity to price). Because economists plot price on the vertical axis and quantity on the horizontal axis, solving for $P$ yields the \textbf{inverse demand equation}:
 \begin{equation}
-X_t^{\text{real}} = X_t^{\text{nominal}} \times \frac{P_{\text{base}}}{P_t}, \qquad r \approx i - \pi
+Q_d = a - bP \iff P = \frac{a}{b} - \frac{1}{b}Q_d
 \end{equation}
+where $\frac{a}{b}$ is the \textbf{choke price} (the vertical intercept at which $Q_d = 0$) and $-\frac{1}{b}$ is the visual slope of the plotted demand line.
 
-\noindent\textbf{Worked Problem:}
-Suppose a paralegal's nominal salary was $\$52{,}000$ in May 2015 and $\$68{,}000$ in October 2026. For these months, CPIAUCSL was $P_{2015}=237.001$ and $P_{2026}=337.476$.
+\paragraph{Worked Problem 3.1 (Horizontal Summation, Inverse Demand, and Demand Shifts).}
+Suppose a local specialty coffee market consists of two identical consumer groups, each with individual demand $q_d = 300 - 10P$ (in bags per week).
 \begin{enumerate}
-    \item Express the 2026 salary in constant 2015 dollars to determine whether the paralegal's real purchasing power increased or decreased.
-    \item Calculate the percentage change in real salary between 2015 and 2026.
+  \item \textbf{Step 1 — Aggregate Market Demand ($Q_d$):} Sum quantities across both groups at each price $P$:
+  $$Q_d = q_{d,1} + q_{d,2} = (300 - 10P) + (300 - 10P) = 600 - 20P.$$
+  \item \textbf{Step 2 — Inverse Demand & Choke Price:} Rearrange $Q_d = 600 - 20P$ to isolate $P$:
+  $$20P = 600 - Q_d \implies P = \frac{600}{20} - \frac{1}{20}Q_d = 30 - 0.05Q_d.$$
+  Setting $Q_d = 0$ gives a choke price of $P = \$30$ per bag.
+  \item \textbf{Step 3 — Movement Along $D_1$ vs. Shift to $D_2$:} At $P = \$20$, initial quantity demanded is $Q_d = 600 - 20(20) = 200$ bags (Point $A$). If price falls to $P = \$15$, quantity demanded moves along $D_1$ to $Q_d = 600 - 20(15) = 300$ bags (Point $B$). If higher consumer income increases demand by $100$ bags at every price, the new demand curve is $Q_d' = 700 - 20P \iff P = 35 - 0.05Q_d'$, raising quantity demanded at $P = \$20$ to $Q_d' = 700 - 20(20) = 300$ bags (Point $C$).
 \end{enumerate}
 
-\noindent\textbf{Step-by-Step Breakdown:}
-\begin{enumerate}
-    \item \textbf{Deflate the 2026 Nominal Salary into 2015 Base Dollars:}
-    \[
-    \text{Salary}_{2026}^{\text{real (May 2015 \$)}} = \$68{,}000 \times \frac{237.001}{337.476} \approx \mathbf{\$47{,}754.71}
-    \]
+\begin{coreprinciple}
+\boxheader{SlateBlue}{Optional Advanced Calculus Extension: Partial Derivatives of Demand}
+For general differentiable demand $Q_d = D(P, I, P_y)$, holding income $I$ and related-good prices $P_y$ constant isolates the partial derivative with respect to own price:
+$$\frac{\partial Q_d}{\partial P} = -b < 0 \quad (\text{Law of Demand}).$$
+A change in $P$ traces $\Delta Q_d \approx \frac{\partial Q_d}{\partial P}\Delta P$ along a fixed curve, whereas changes in $I$ or $P_y$ shift the curve by $\frac{\partial Q_d}{\partial I} > 0$ (normal good) or $\frac{\partial Q_d}{\partial I} < 0$ (inferior good).
+\end{coreprinciple}
 
-    \item \textbf{Compute the Percentage Change in Real Purchasing Power:}
-    \[
-        \%\Delta \text{Real Salary} = \frac{\$47{,}754.71 - \$52{,}000}{\$52{,}000} \times 100\% = \frac{-\$4{,}245.29}{\$52{,}000} \times 100\% \approx \mathbf{-8.16\%}
-    \]
-\end{enumerate}
-    \textbf{Conclusion:} The hypothetical nominal salary rose by 30.77\%, while CPIAUCSL rose by 42.39\%. After adjusting for prices, purchasing power fell by 8.16\%.
+% =============================================================================
+% SECTION 3.2: Supply and Marginal Opportunity Cost
+% =============================================================================
+\section{Supply and Marginal Opportunity Cost}
 
-% -----------------------------------------------------------------------------
-% Section 3.3: Market Clearing and Sticky Wages in a Labor Market
-% -----------------------------------------------------------------------------
-\section{Market Clearing and Sticky Wages in a Labor Market}
+\subsection*{1. Conceptual Introduction}
+On the seller side of a competitive market, \textbf{quantity supplied ($Q_s$)} is the total amount of a good that producers are willing and able to sell at a given price during a specified period, \emph{ceteris paribus}. The \textbf{Law of Supply} establishes a positive relationship between a good's own price and quantity supplied: when the market price rises, quantity supplied rises; when the market price falls, quantity supplied falls.
 
-\subsection*{Conceptual Introduction}
-In a labor market, firms demand labor and workers supply it. The wage coordinates their plans: at a wage where labor demanded equals labor supplied, the simple competitive model clears. In practice, nominal wages may adjust slowly because of contracts, pay-review schedules, or workplace policies.
+This upward slope reflects rising \textbf{marginal opportunity cost}. In the short run, firms operate with fixed plant capacity, equipment, or land. As producers expand output by hiring additional workers or running machines longer hours, diminishing marginal productivity sets in—each additional unit of output requires more variable inputs than the unit before it. Consequently, firms will only expand production if a higher market price compensates them for the higher incremental cost of producing those marginal units.
 
-If labor demand falls while the nominal wage is temporarily fixed above the new market-clearing wage, firms want fewer workers than households want to supply. In this simplified model, employment is limited by the short side of the market, so the gap is excess labor supply. It is an illustration of one possible adjustment mechanism, not a complete account of unemployment.
-
-When wages are flexible in this model, the wage can move toward a new labor-market equilibrium. That result does not imply that all unemployment disappears in the real economy, nor does the labor-market diagram by itself determine potential GDP. Search frictions, skills, institutions, and the link from employment to output are outside this model; this section is not an aggregate-demand/aggregate-supply analysis.
-
-\subsection*{Visual Representation}
-Figure~\ref{fig:sticky_vs_flexible_macro} uses the labor-market quantities in the worked problem. Coordinates use $x=L/40$ and $y=W/10$ for legibility; labels give labor in millions and wage dollars per hour.
-
-\begin{figure}[htbp]
-\centering
-\begin{tikzpicture}[scale=1.05]
-    \draw[->, thick, color=SlateBlue] (0,0) -- (4.5,0) node[below] {Labor ($L$, millions of workers)};
-    \draw[->, thick, color=SlateBlue] (0,0) -- (0,5.5) node[left] {Nominal wage ($W$, dollars/hour)};
-    \node[below left] at (0,0) {$(0,0)$};
-
-    % With x=L/40 and y=W/10, the curves reproduce the worked schedules.
-    \draw[very thick, color=Terracotta] (0.5,0) -- (3.0,5.0) node[above right] {$L_s$};
-    \draw[thick, dashed, color=CourseBlue] (0,5.0) -- (4.0,1.0) node[right] {$L_{d,1}$};
-    \draw[very thick, color=CourseTeal] (0,3.5) -- (3.5,0) node[below right] {$L_{d,2}$};
-
-    % Initial equilibrium: L=80, W=$30; post-shock equilibrium: L=60, W=$20.
-    \draw[dashed, color=SlateBlue] (0,3.0) node[left] {$W_1^*=\$30$} -- (2.0,3.0);
-    \draw[dashed, color=SlateBlue] (2.0,0) node[below] {$L_1^*=80$} -- (2.0,3.0);
-    \filldraw[black] (2.0,3.0) circle (2.2pt) node[above right] {$E_1$};
-
-    \draw[dashed, color=SlateBlue] (0,2.0) node[left] {$W_2^*=\$20$} -- (1.5,2.0);
-    \draw[dashed, color=SlateBlue] (1.5,0) node[below] {$L_2^*=60$} -- (1.5,2.0);
-    \filldraw[CourseTeal] (1.5,2.0) circle (2.2pt) node[above right] {$E_2$};
-
-    % At the fixed wage of $30, demand is 20 and supply is 80 million workers.
-    \draw[dashed, color=SlateBlue] (0.5,0) node[below] {$L_d=20$} -- (0.5,3.0);
-    \draw[dashed, color=SlateBlue] (2.0,0) -- (2.0,3.0);
-    \draw[<->, dashed, thick, color=SlateBlue] (0.5,3.3) -- node[above, font=\scriptsize\bfseries, fill=white] {Excess labor supply} (2.0,3.3);
-\end{tikzpicture}
-\caption{A leftward labor-demand shift lowers the model's flexible-wage equilibrium from $(L,W)=(80,\$30)$ to $(60,\$20)$. If the wage stays at $\$30$, labor demanded is 20 million while labor supplied is 80 million; the gap is excess labor supply in this stylized model.}
-\label{fig:sticky_vs_flexible_macro}
-\end{figure}
-
-\subsection*{Real-World Application: Downward Nominal Wage Rigidity}
-Federal Reserve research documents downward nominal wage rigidity, but also finds that some continuing workers receive nominal wage cuts. Wage freezes, pay cuts, reduced hiring, and layoffs are possible adjustment margins; this example isolates only the fixed-wage case and should not be read as a universal description of recession behavior.
-
-\subsection*{Mathematical Foundation (Algebra Level)}
-At a fixed nominal wage $\bar{W}$, employment in the simplified labor-market model is limited by the short side:
-\begin{equation}
-L_{\text{employed}} = \min\left(L_d(\bar{W}), \; L_s(\bar{W})\right)
-\end{equation}
-If labor supplied exceeds labor demanded, the difference is excess labor supply in this model; it is not automatically an official unemployment statistic.
-
-\noindent\textbf{Worked Problem:}
-In a hypothetical labor market, labor demand is $L_d = 200 - 4W$ and labor supply is $L_s = 20 + 2W$, with quantities in millions of workers and $W$ in dollars per hour. A recession shifts labor demand left to $L_d^{\text{new}} = 140 - 4W$.
-\begin{enumerate}
-    \item Compute employment and excess labor supply if the nominal wage remains fixed at $\$30$.
-    \item Find the new flexible-wage equilibrium $(W_2^*, L_2^*)$ in this model.
-\end{enumerate}
-
-\noindent\textbf{Step-by-Step Breakdown:}
-\begin{enumerate}
-    \item \textbf{Evaluate the Fixed-Wage Outcome at $W=\$30$:}
-    \[
-    \begin{aligned}
-    L_d^{\text{new}}(30) &= 140 - 4(30) = 140 - 120 = 20\text{ million},\\
-    L_s(30) &= 20 + 2(30) = 20 + 60 = 80\text{ million}.
-    \end{aligned}
-    \]
-    Employment is the smaller quantity, $20$ million. Excess labor supply is $80-20=\mathbf{60\text{ million}}$ in this hypothetical model.
-
-    \item \textbf{Solve for the Flexible-Wage Equilibrium ($L_d^{\text{new}} = L_s$):}
-    \[
-    \begin{aligned}
-    140 - 4W_2^* &= 20 + 2W_2^*\\
-    120 &= 6W_2^*\\
-    W_2^* &= \$20.
-    \end{aligned}
-    \]
-    Substitute the wage into either schedule:
-    \[
-    L_2^* = 20 + 2(20) = \mathbf{60\text{ million}}.
-    \]
-\end{enumerate}
-\textbf{Conclusion:} Employment is 20 million at the fixed wage and 60 million at the flexible-wage equilibrium in this simplified model. The 60-million gap is excess labor supply, not a measured unemployment count.
-
-\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=\textbf{Optional Advanced Section: Exact vs. Approximate Fisher Equation}]
-\small
-\emph{Note for Economics Majors and Quantitative Students:} Using decimal rates, the Fisher relation is $1+i=(1+r)(1+\pi)$. Solving for the exact real rate gives:
-\[
-r = \frac{i - \pi}{1 + \pi}
-\]
-For an expected real return, use expected inflation; realized inflation gives an ex-post real return. When inflation is small, $r \approx i-\pi$ is a useful approximation.
-\end{tcolorbox}
-
-\section*{Bring It Home: Read the Price Signal}
-Return to the opening question. Comparing the medical-care index with the all-items index shows whether medical care became more or less expensive relative to the broad basket. A nominal wage or salary comparison answers a different question: how much the money amount changed. Deflating it by an appropriate price index estimates how its purchasing power changed.
-
-\section*{Practice Questions}
-\begin{enumerate}
-    \item A price index rises from 100 to 105 in one year and then to 109.2 the next year. Which statement is correct?
-    \begin{itemize}
-        \item[A.] Inflation is 5\% in the first year and 4\% in the second; this is disinflation. \textbf{Correct:} The second annual rate is lower but remains positive.
-        \item[B.] Inflation is 5\% in both years. \textbf{Incorrect:} The second rate is $(109.2-105)/105 \times 100\%=4\%$.
-        \item[C.] Prices fell by 4\% in the second year. \textbf{Incorrect:} The index rose from 105 to 109.2; inflation slowed but stayed positive.
-        \item[D.] The price level fell by 1\%. \textbf{Incorrect:} This confuses the change in the inflation rate with the change in the price index.
-    \end{itemize}
-
-    \item From May 2015 to October 2026, CPIAUCSL rose from 237.001 to 337.476 while CPIMEDSL rose from 446.743 to 595.675. What happened to medical care's price relative to the all-items basket?
-    \begin{itemize}
-        \item[A.] It rose by 9.05 percentage points. \textbf{Incorrect:} This subtracts the two growth rates but does not calculate the change in the component-to-all-items price ratio.
-        \item[B.] It fell by about 6.36\%. \textbf{Correct:} The ratio $(CPIMEDSL/CPIAUCSL)$ fell by this percentage between the observations.
-        \item[C.] It rose by 33.34\%. \textbf{Incorrect:} That is medical care's own index growth, not its relative-price change.
-        \item[D.] It did not change because both indexes increased. \textbf{Incorrect:} The indexes grew at different rates.
-    \end{itemize}
-
-    \item In the labor-market example, labor demand after a recession is $L_d=140-4W$, supply is $L_s=20+2W$, and the wage is fixed at $\$30$. What does the model imply?
-    \begin{itemize}
-        \item[A.] Employment is 80 million and excess labor supply is zero. \textbf{Incorrect:} It uses labor supplied as employment even though firms demand only 20 million workers.
-        \item[B.] Employment is 20 million and excess labor supply is 60 million. \textbf{Correct:} Demand is 20 million and supply is 80 million; employment is the short side.
-        \item[C.] Employment is 60 million and excess labor supply is 20 million. \textbf{Incorrect:} These values do not equal the model's quantities at $W=\$30$.
-        \item[D.] The model proves that measured unemployment is 60 million. \textbf{Incorrect:} It gives a hypothetical excess-supply gap, not an official unemployment statistic.
-    \end{itemize}
-\end{enumerate}
-
-\section*{Sources}
+Just as on the demand side, a change in the good's \emph{own price} induces a \textbf{movement along} a fixed supply curve (a \emph{change in quantity supplied}), whereas a change in underlying production conditions \textbf{shifts the entire supply curve} (a \emph{change in supply}). The five primary non-price supply shifters are:
 \begin{itemize}
-    \item Federal Reserve Bank of St. Louis, FRED. CPIAUCSL: Consumer Price Index for All Urban Consumers: All Items. \url{https://fred.stlouisfed.org/series/CPIAUCSL}
-    \item Federal Reserve Bank of St. Louis, FRED. CPIMEDSL: Consumer Price Index for All Urban Consumers: Medical Care. \url{https://fred.stlouisfed.org/series/CPIMEDSL}
-    \item U.S. Department of Labor. “Minimum Wage.” \href{https://www.dol.gov/agencies/whd/minimum-wage}{DOL minimum-wage guidance}.
-    \item Fallick, Bruce C., Daniel Villar Vallenas, and William L. Wascher. “Downward Nominal Wage Rigidity in the United States During and After the Great Recession.” Finance and Economics Discussion Series 2016-001r1, Board of Governors of the Federal Reserve System. \href{https://www.federalreserve.gov/econres/feds/files/2016001r1pap.pdf}{FEDS 2016-001r1 paper}.
+  \item \textbf{Input Prices:} Higher wages, raw material costs, or electricity rates raise marginal production cost at every output level, shifting supply leftward.
+  \item \textbf{Technology and Productivity:} Process innovations or automation lower per-unit production costs, shifting supply rightward.
+  \item \textbf{Government Taxes and Subsidies:} A per-unit excise tax acts like an extra input cost and shifts supply leftward (vertically upward by the tax $t$); a production subsidy lowers net marginal cost and shifts supply rightward.
+  \item \textbf{Producer Expectations:} If storable-goods producers expect higher prices next month, they may hold back inventory today, shifting current supply leftward.
+  \item \textbf{Number of Active Producers:} Entry of new firms expands total market supply rightward; firm exits shift market supply leftward.
 \end{itemize}
+
+\subsection*{2. Visual Representation}
+Figure~\ref{fig:supply_shift_vs_movement} illustrates a movement along the initial supply curve $S_1$ (from point $A$ to point $B$ when own price increases from $\$14$ to $\$19$) versus a rightward shift of the entire supply curve from $S_1$ to $S_2$ (from point $A$ to point $C$ when lower input prices expand output at the unchanged price of $\$14$).
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.02]
+  % Axes: x = Q (0 to 350 -> 1 unit = 50 units, max 7.0); y = P (0 to $25 -> 1 unit = $5, max 5.0)
+  \draw[->, >=Stealth, thick, color=SlateBlue] (0,0) -- (7.6,0) node[below] {Quantity ($Q$, units/week)};
+  \draw[->, >=Stealth, thick, color=SlateBlue] (0,0) -- (0,5.6) node[left] {Price ($P$, \$/unit)};
+  \node[below left, color=SlateBlue] at (0,0) {$0$};
+
+  % S1: P = 4 + 0.05Q -> at Q=0, P=4 (y=0.8); at Q=300 (x=6.0), P=19 (y=3.8); at Q=340 (x=6.8), P=21 (y=4.2)
+  \draw[very thick, color=CourseOrange] (0,0.8) -- (6.8,4.2);
+  \node[left, font=\footnotesize] at (0,0.8) {$\$4$};
+  \node[above left, font=\small\bfseries, color=CourseOrange, fill=white, inner sep=1.5pt] at (6.5,4.15) {$S_1$};
+
+  % S2: P = 1 + 0.05Q -> at Q=0, P=1 (y=0.2); at Q=340 (x=6.8), P=18 (y=3.6)
+  \draw[very thick, dashed, color=CourseTeal] (0,0.2) -- (6.8,3.6);
+  \node[left, font=\footnotesize] at (0,0.2) {$\$1$};
+  \node[below right, font=\small\bfseries, color=CourseTeal, fill=white, inner sep=1.5pt] at (6.3,3.2) {$S_2$ (Supply Shift)};
+
+  % Point A (Q=200 -> x=4.0, P=$14 -> y=2.8)
+  \draw[dotted, thick, color=SlateBlue] (0,2.8) node[left, font=\footnotesize] {$\$14$} -- (5.2,2.8);
+  \draw[dotted, thick, color=SlateBlue] (4.0,2.8) -- (4.0,0) node[below, font=\footnotesize] {$200$};
+  \filldraw[CourseOrange] (4.0,2.8) circle (2.5pt) node[above left, font=\footnotesize\bfseries, color=CourseOrange, fill=white, inner sep=1pt] {$A(200, \$14)$};
+
+  % Point B (Q=300 -> x=6.0, P=$19 -> y=3.8) - Movement along S1
+  \draw[dotted, thick, color=SlateBlue] (0,3.8) node[left, font=\footnotesize] {$\$19$} -- (6.0,3.8) -- (6.0,0) node[below, font=\footnotesize] {$300$};
+  \filldraw[CourseBlue] (6.0,3.8) circle (2.5pt) node[above left, font=\footnotesize\bfseries, color=CourseBlue, fill=white, inner sep=1pt] {$B(300, \$19)$};
+
+  % Point C (Q=260 -> x=5.2, P=$14 -> y=2.8) - Shift to S2
+  \draw[dotted, thick, color=SlateBlue] (5.2,2.8) -- (5.2,0) node[below, font=\footnotesize] {$260$};
+  \filldraw[CourseTeal] (5.2,2.8) circle (2.5pt) node[below right, font=\footnotesize\bfseries, color=CourseTeal, fill=white, inner sep=1pt] {$C(260, \$14)$};
+
+  % Arrows
+  \draw[->, >=Stealth, thick, color=CourseBlue] (4.2,2.95) -- (5.8,3.75);
+  \draw[->, >=Stealth, thick, color=CourseTeal] (4.25,2.8) -- (4.98,2.8);
+\end{tikzpicture}
+\caption{Movement Along vs. Shift of Supply. A price increase from $\$14$ to $\$19$ induces producers to move upward along $S_1$ from $A$ to $B$ ($+100$ units). Lower input prices shift the entire curve from $S_1$ to $S_2$, expanding output from $A$ to $C$ ($+60$ units at the unchanged price of $\$14$).}
+\label{fig:supply_shift_vs_movement}
+\end{figure}
+
+\subsection*{3. Real-World Application}
+\begin{examplecase}{Utility-Scale Solar Panels and Polysilicon Input Costs}
+Over the past decade, improved wafer-slicing technology and declining refined polysilicon prices dramatically reduced the marginal cost of manufacturing photovoltaic solar modules. Rather than merely moving along an old supply curve, global solar manufacturers shifted their entire supply curve outward—delivering substantially larger megawatt capacity at every market price per watt. Conversely, when freight bottlenecks or critical-mineral tariffs raise component costs, the supply curve shifts leftward, requiring higher prices to sustain the same shipment volume.
+\end{examplecase}
+
+\subsection*{4. Mathematical Foundation}
+Linear direct supply expresses quantity supplied as a function of price ($Q_s = c + dP$, where $d > 0$). Inverting the equation expresses the minimum supply price (marginal opportunity cost) as a function of quantity:
+\begin{equation}
+Q_s = c + dP \iff P = -\frac{c}{d} + \frac{1}{d}Q_s
+\end{equation}
+where $-\frac{c}{d}$ is the vertical intercept (shutdown reservation price) and $\frac{1}{d} > 0$ is the visual slope of the plotted supply curve.
+
+\paragraph{Worked Problem 3.2 (Inverse Supply, Movement Along, and Supply Shifts).}
+Suppose regional specialty coffee roasters have direct supply $Q_s = -80 + 20P$ (in bags per week).
+\begin{enumerate}
+  \item \textbf{Step 1 — Inverse Supply & Reservation Price:} Solve $Q_s = -80 + 20P$ for $P$:
+  $$20P = 80 + Q_s \implies P = \frac{80}{20} + \frac{1}{20}Q_s = 4 + 0.05Q_s.$$
+  Setting $Q_s = 0$ shows roasters require at least $P = \$4$ per bag before supplying positive output.
+  \item \textbf{Step 2 — Movement Along $S_1$:} At $P = \$14$, quantity supplied is $Q_s = -80 + 20(14) = 200$ bags (Point $A$). If price rises to $P = \$19$, quantity supplied moves along $S_1$ to $Q_s = -80 + 20(19) = 300$ bags (Point $B$).
+  \item \textbf{Step 3 — Supply Shift ($S_1 \to S_2$):} Suppose lower green-bean import tariffs reduce marginal cost by $\$3$ per bag, shifting the inverse supply curve down by $\$3$ to $P = 1 + 0.05Q_s' \iff Q_s' = -20 + 20P$. At $P = \$14$, roasters now supply $Q_s' = -20 + 20(14) = 260$ bags (Point $C$).
+\end{enumerate}
+
+\begin{coreprinciple}
+\boxheader{SlateBlue}{Optional Advanced Calculus Extension: Marginal Cost and Slope Duality}
+In competitive production theory, a price-taking firm's short-run supply curve coincides with its rising marginal cost schedule above average variable cost, $P = MC(Q_s) = \frac{dTC}{dQ_s}$. By the Inverse Function Theorem, if $Q_s = S(P)$ is strictly increasing ($\frac{dQ_s}{dP} = d > 0$), then the slope of the plotted inverse supply curve is the reciprocal of price responsiveness:
+$$\frac{dP}{dQ_s} = \frac{1}{dQ_s / dP} = \frac{1}{d} > 0.$$
+\end{coreprinciple}
+
+% =============================================================================
+% SECTION 3.3: Market Equilibrium and Simultaneous Dual Shocks
+% =============================================================================
+\section{Market Equilibrium and Simultaneous Dual Shocks}
+
+\subsection*{1. Conceptual Introduction}
+A competitive market reaches \textbf{market equilibrium} at the unique price $P^*$ where the quantity consumers want to buy exactly equals the quantity producers want to sell: $Q_d(P^*) = Q_s(P^*) = Q^*$. At the coordinate pair $(Q^*, P^*)$, the plans of buyers and sellers are mutually compatible, leaving neither unfulfilled orders nor unwanted inventory accumulation.
+
+When the prevailing market price deviates from $P^*$, automatic price-discovery forces push the market back toward equilibrium. If the price sits \emph{above} $P^*$, quantity supplied exceeds quantity demanded, creating a \textbf{surplus} (excess supply). Unsold inventory piles up in warehouses, motivating sellers to cut prices to attract buyers; as price falls, quantity demanded expands and quantity supplied contracts until the surplus vanishes at $P^*$. Conversely, if the price sits \emph{below} $P^*$, quantity demanded exceeds quantity supplied, creating a \textbf{shortage} (excess demand). Frustrated buyers bid higher prices and sellers raise quotes; as price rises, quantity demanded contracts and quantity supplied expands until the shortage clears at $P^*$.
+
+When an external event shifts \emph{one} curve while the other stays fixed, both $P^*$ and $Q^*$ move in unambiguous directions. However, when two independent shocks shift demand and supply \textbf{simultaneously}, one equilibrium outcome moves unambiguously while the other becomes \textbf{indeterminate (ambiguous)} unless we know the exact relative magnitudes of the two shifts.
+
+\subsection*{2. Visual Representation}
+Figure~\ref{fig:market_equilibrium_and_shocks} displays initial market equilibrium $E_1(200, \$20)$ at the intersection of $D_1$ and $S_1$, alongside a simultaneous rightward demand shift ($D_1 \to D_2$) and leftward supply shift ($S_1 \to S_2$) that drives the equilibrium price unambiguously higher to $P^{**} = \$24$ at $E_2(230, \$24)$.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.02]
+  % Axes: x = Q (0 to 500 -> 1 unit = 100 units, max 5.5); y = P (0 to $35 -> 1 unit = $5, max 7.2)
+  \draw[->, >=Stealth, thick, color=SlateBlue] (0,0) -- (6.2,0) node[below] {Quantity ($Q$, units/week)};
+  \draw[->, >=Stealth, thick, color=SlateBlue] (0,0) -- (0,7.5) node[left] {Price ($P$, \$/unit)};
+  \node[below left, color=SlateBlue] at (0,0) {$0$};
+
+  % D1: Q_d = 500 - 15P -> P = 33.33 - Q/15. At Q=0, P=33.33 (y=6.67); at Q=500 (x=5.0), P=0
+  \draw[very thick, color=CourseBlue] (0,6.67) -- (5.0,0);
+  \node[below left, font=\small\bfseries, color=CourseBlue, fill=white, inner sep=1pt] at (4.5,0.75) {$D_1$};
+
+  % D2: Q_d' = 590 - 15P -> at Q=50 (x=0.5), P=36 (y=7.2); at Q=500 (x=5.0), P=6 (y=1.2)
+  \draw[very thick, dashed, color=CourseTeal] (0.5,7.2) -- (5.0,1.2);
+  \node[above right, font=\small\bfseries, color=CourseTeal, fill=white, inner sep=1pt] at (4.35,2.05) {$D_2$};
+
+  % S1: Q_s = -100 + 15P -> P = 6.67 + Q/15. At Q=0, P=6.67 (y=1.33); at Q=400 (x=4.0), P=33.33 (y=6.67)
+  \draw[very thick, color=CourseOrange] (0,1.33) -- (4.0,6.67);
+  \node[above left, font=\small\bfseries, color=CourseOrange, fill=white, inner sep=1pt] at (3.7,6.25) {$S_1$};
+
+  % S2: Q_s' = -130 + 15P -> P = 8.67 + Q/15. At Q=0, P=8.67 (y=1.73); at Q=380 (x=3.8), P=34 (y=6.8)
+  \draw[very thick, dashed, color=Terracotta] (0,1.73) -- (3.8,6.8);
+  \node[above left, font=\small\bfseries, color=Terracotta, fill=white, inner sep=1pt] at (3.1,6.05) {$S_2$};
+
+  % Equilibrium E1 (Q*=200 -> x=2.0, P*=$20 -> y=4.0)
+  \draw[dotted, thick, color=SlateBlue] (0,4.0) node[left, font=\footnotesize] {$\$20$} -- (2.0,4.0) -- (2.0,0) node[below, font=\footnotesize] {$200$};
+  \filldraw[SlateBlue] (2.0,4.0) circle (2.6pt) node[below right, font=\footnotesize\bfseries, color=SlateBlue, fill=white, inner sep=1pt] {$E_1(200, \$20)$};
+
+  % Equilibrium E2 (Q**=230 -> x=2.3, P**=$24 -> y=4.8)
+  \draw[dotted, thick, color=SlateBlue] (0,4.8) node[left, font=\footnotesize] {$\$24$} -- (2.3,4.8) -- (2.3,0) node[below, font=\footnotesize] {$230$};
+  \filldraw[CourseTeal] (2.3,4.8) circle (2.6pt) node[above right, font=\footnotesize\bfseries, color=CourseTeal, fill=white, inner sep=1pt] {$E_2(230, \$24)$};
+\end{tikzpicture}
+\caption{Market Equilibrium and Simultaneous Dual Shifts. Initial equilibrium occurs at $E_1(200, \$20)$. When demand shifts right ($D_1 \to D_2$) while supply shifts left ($S_1 \to S_2$), equilibrium price rises unambiguously to $P^{**} = \$24$, whereas the net change in $Q^{**}$ depends on which curve shifts further.}
+\label{fig:market_equilibrium_and_shocks}
+\end{figure}
+
+Table~\ref{tab:dual_shocks} summarizes all four simultaneous dual-shift combinations in competitive markets.
+
+\begin{table}[htbp]
+\centering
+\caption{Comparative Statics Matrix for Simultaneous Demand and Supply Shifts}
+\label{tab:dual_shocks}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Simultaneous Dual Shock} & \textbf{Equilibrium Price ($P^*$)} & \textbf{Equilibrium Quantity ($Q^*$)} \\
+\hline
+Demand $\uparrow$ and Supply $\uparrow$ & Ambiguous ($?$) & Unambiguously Rises ($\uparrow$) \\
+Demand $\downarrow$ and Supply $\downarrow$ & Ambiguous ($?$) & Unambiguously Falls ($\downarrow$) \\
+Demand $\uparrow$ and Supply $\downarrow$ & Unambiguously Rises ($\uparrow$) & Ambiguous ($?$) \\
+Demand $\downarrow$ and Supply $\uparrow$ & Unambiguously Falls ($\downarrow$) & Ambiguous ($?$) \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection*{3. Real-World Application}
+\begin{examplecase}{Global Airfare Dynamics: Summer Travel Rebound vs. Jet Fuel Shocks}
+During peak summer travel seasons, surging household vacation bookings shift airline ticket demand sharply rightward ($D \uparrow$). When that travel boom coincides with higher aviation jet-fuel prices or aircraft delivery delays that shift seat capacity leftward ($S \downarrow$), both shocks push ticket prices upward—explaining why average airfares jump decisively even when total passenger volume rises in some hubs and stagnates in others.
+\end{examplecase}
+
+\subsection*{4. Mathematical Foundation}
+To solve a linear market system algebraically, equate direct demand and direct supply ($Q_d = Q_s$), solve for $P^*$, and substitute $P^*$ back into either schedule to verify $Q^*$:
+\begin{equation}
+a - bP^* = c + dP^* \implies (b + d)P^* = a - c \implies P^* = \frac{a - c}{b + d}
+\end{equation}
+
+\paragraph{Worked Problem 3.3 (Baseline Equilibrium, Disequilibrium Checks, and Dual Shocks).}
+Consider a regional market for roasted coffee beans governed by $Q_d = 500 - 15P$ and $Q_s = -100 + 15P$.
+\begin{enumerate}
+  \item \textbf{Step 1 — Market-Clearing Equilibrium ($P^*, Q^*$):} Set $Q_d = Q_s$:
+  $$500 - 15P^* = -100 + 15P^* \implies 30P^* = 600 \implies P^* = \$20.$$
+  Substitute $P^* = \$20$ into both schedules to confirm equality:
+  $$Q_d = 500 - 15(20) = 200 \text{ bags}, \qquad Q_s = -100 + 15(20) = 200 \text{ bags} \implies Q^* = 200.$$
+  \item \textbf{Step 2 — Disequilibrium Verification:}
+  \begin{itemize}
+    \item At $P = \$24 > P^*$: $Q_d = 500 - 15(24) = 140$ and $Q_s = -100 + 15(24) = 260$, leaving a \textbf{surplus} of $260 - 140 = 120$ bags that pressures price downward.
+    \item At $P = \$16 < P^*$: $Q_d = 500 - 15(16) = 260$ and $Q_s = -100 + 15(16) = 140$, leaving a \textbf{shortage} of $260 - 140 = 120$ bags that bids price upward.
+  \end{itemize}
+  \item \textbf{Step 3 — Simultaneous Dual Shock ($D \uparrow$ and $S \downarrow$):} Suppose higher consumer incomes increase demand by $90$ bags at every price ($Q_d' = 590 - 15P$) while higher shipping costs reduce supply by $30$ bags at every price ($Q_s' = -130 + 15P$). Setting $Q_d' = Q_s'$:
+  $$590 - 15P^{**} = -130 + 15P^{**} \implies 30P^{**} = 720 \implies P^{**} = \$24,$$
+  $$Q^{**} = 590 - 15(24) = 590 - 360 = 230 \text{ bags}.$$
+  Price rises unambiguously from $\$20$ to $\$24$, while quantity increases from $200$ to $230$ bags only because the rightward demand shift ($+90$) outweighed the leftward supply shift ($-30$).
+\end{enumerate}
+
+\begin{coreprinciple}
+\boxheader{SlateBlue}{Optional Advanced Calculus Extension: Comparative Statics of Equilibrium}
+Differentiating the general equilibrium identity $D(P^*, \alpha) - S(P^*, \beta) = 0$ with respect to a positive demand shift parameter $\alpha$ ($\frac{\partial D}{\partial \alpha} > 0$) via the Implicit Function Theorem yields:
+$$\frac{dP^*}{d\alpha} = \frac{\partial D / \partial \alpha}{\frac{\partial S}{\partial P} - \frac{\partial D}{\partial P}} = \frac{\partial D / \partial \alpha}{d + b} > 0, \qquad \frac{dQ^*}{d\alpha} = \frac{d \cdot (\partial D / \partial \alpha)}{d + b} > 0.$$
+Notice that steeper curves (smaller $b$ and $d$) amplify equilibrium price swings for any given demand shock.
+\end{coreprinciple}
+
+% =============================================================================
+% SECTION 3.4: Price Controls — Ceilings and Floors
+% =============================================================================
+\section{Price Controls: Ceilings and Floors}
+
+\subsection*{1. Conceptual Introduction}
+Even when a competitive market clears smoothly at $(Q^*, P^*)$, policymakers sometimes intervene when they judge the equilibrium price to be unfairly high for buyers or unsustainably low for sellers. Legal restrictions on how high or low a market price may go are called \textbf{price controls}, which take two forms:
+\begin{itemize}
+  \item A \textbf{price ceiling} is a legal \emph{maximum} price sellers are permitted to charge (such as municipal rent-control caps or emergency anti-price-gouging limits).
+  \item A \textbf{price floor} is a legal \emph{minimum} price buyers are required to pay (such as statutory minimum wages or agricultural crop price supports).
+\end{itemize}
+
+Whether a price control alters market outcomes depends entirely on where it is set relative to the equilibrium price $P^*$. A price ceiling set \emph{above} $P^*$ ($P_c > P^*$) or a price floor set \emph{below} $P^*$ ($P_f < P^*$) is \textbf{non-binding}: the market naturally settles at $P^*$ without violating the law. By contrast, a \textbf{binding price ceiling} set below equilibrium ($P_c < P^*$) prevents price from rising to clear excess demand, creating a persistent \textbf{shortage} ($Q_d(P_c) > Q_s(P_c)$) and restricting actual market trades to the short side of the market, $Q_{\text{traded}} = Q_s(P_c)$. Conversely, a \textbf{binding price floor} set above equilibrium ($P_f > P^*$) prevents price from falling to clear excess supply, creating a persistent \textbf{surplus} ($Q_s(P_f) > Q_d(P_f)$) and restricting actual trades to $Q_{\text{traded}} = Q_d(P_f)$.
+
+Because prices can no longer ration scarce goods or clear excess supply under binding controls, costly non-price rationing emerges. Binding ceilings generate long waiting lines, landlord or seller discrimination, declining product maintenance and quality, and black-market side payments. Binding floors generate unsold stockpiles (requiring government surplus purchases in agriculture) or involuntary queuing for scarce openings (such as unfilled job applicants when minimum wages exceed market-clearing entry wages).
+
+\subsection*{2. Visual Representation}
+Figure~\ref{fig:price_controls} illustrates a binding price ceiling at $P_c = \$15 < P^*$ (left panel, generating a $150$-unit shortage) and a binding price floor at $P_f = \$24 > P^*$ (right panel, generating a $120$-unit surplus) in the benchmark market ($P^* = \$20, Q^* = 200$).
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=0.88]
+  % ==================== PANEL A: PRICE CEILING ====================
+  \begin{scope}[xshift=0cm]
+    \draw[->, >=Stealth, thick, color=SlateBlue] (0,0) -- (5.6,0) node[below] {$Q$};
+    \draw[->, >=Stealth, thick, color=SlateBlue] (0,0) -- (0,6.8) node[left] {$P$};
+    \node[below left, color=SlateBlue] at (0,0) {$0$};
+    \node[above, font=\small\bfseries, color=SlateBlue] at (2.8,6.7) {Panel A: Binding Price Ceiling ($P_c < P^*$)};
+
+    % D: P = 33.33 - Q/15 (x: 1 unit = 100 units; y: 1 unit = $5)
+    \draw[very thick, color=CourseBlue] (0,6.67) -- (5.0,0) node[above right, font=\footnotesize\bfseries] {$D$};
+    % S: P = 6.67 + Q/15
+    \draw[very thick, color=CourseOrange] (0,1.33) -- (4.0,6.67) node[above right, font=\footnotesize\bfseries] {$S$};
+
+    % Equilibrium (200, $20) -> (2.0, 4.0)
+    \draw[dotted, thick, color=SlateBlue] (0,4.0) node[left, font=\footnotesize] {$\$20$} -- (2.0,4.0) -- (2.0,0) node[below, font=\footnotesize] {$200$};
+    \filldraw[SlateBlue] (2.0,4.0) circle (2.2pt);
+
+    % Binding Ceiling Pc = $15 -> y = 3.0; Qs = 125 (x=1.25), Qd = 275 (x=2.75)
+    \draw[very thick, dashed, color=Terracotta] (0,3.0) node[left, font=\footnotesize\bfseries, color=Terracotta] {$P_c=\$15$} -- (4.6,3.0);
+    \draw[dotted, thick, color=Terracotta] (1.25,3.0) -- (1.25,0) node[below, font=\footnotesize] {$125$};
+    \draw[dotted, thick, color=Terracotta] (2.75,3.0) -- (2.75,0) node[below, font=\footnotesize] {$275$};
+    \filldraw[Terracotta] (1.25,3.0) circle (2.2pt);
+    \filldraw[Terracotta] (2.75,3.0) circle (2.2pt);
+
+    % Shortage bracket
+    \draw[<->, >=Stealth, thick, color=Terracotta] (1.25,2.45) -- (2.75,2.45) node[midway, below, font=\footnotesize\bfseries, fill=white, inner sep=1pt] {Shortage $= 150$};
+  \end{scope}
+
+  % ==================== PANEL B: PRICE FLOOR ====================
+  \begin{scope}[xshift=7.6cm]
+    \draw[->, >=Stealth, thick, color=SlateBlue] (0,0) -- (5.6,0) node[below] {$Q$};
+    \draw[->, >=Stealth, thick, color=SlateBlue] (0,0) -- (0,6.8) node[left] {$P$};
+    \node[below left, color=SlateBlue] at (0,0) {$0$};
+    \node[above, font=\small\bfseries, color=SlateBlue] at (2.8,6.7) {Panel B: Binding Price Floor ($P_f > P^*$)};
+
+    % D and S
+    \draw[very thick, color=CourseBlue] (0,6.67) -- (5.0,0) node[above right, font=\footnotesize\bfseries] {$D$};
+    \draw[very thick, color=CourseOrange] (0,1.33) -- (4.0,6.67) node[above right, font=\footnotesize\bfseries] {$S$};
+
+    % Equilibrium (200, $20) -> (2.0, 4.0)
+    \draw[dotted, thick, color=SlateBlue] (0,4.0) node[left, font=\footnotesize] {$\$20$} -- (2.0,4.0) -- (2.0,0) node[below, font=\footnotesize] {$200$};
+    \filldraw[SlateBlue] (2.0,4.0) circle (2.2pt);
+
+    % Binding Floor Pf = $24 -> y = 4.8; Qd = 140 (x=1.40), Qs = 260 (x=2.60)
+    \draw[very thick, dashed, color=CourseTeal] (0,4.8) node[left, font=\footnotesize\bfseries, color=CourseTeal] {$P_f=\$24$} -- (4.6,4.8);
+    \draw[dotted, thick, color=CourseTeal] (1.40,4.8) -- (1.40,0) node[below, font=\footnotesize] {$140$};
+    \draw[dotted, thick, color=CourseTeal] (2.60,4.8) -- (2.60,0) node[below, font=\footnotesize] {$260$};
+    \filldraw[CourseTeal] (1.40,4.8) circle (2.2pt);
+    \filldraw[CourseTeal] (2.60,4.8) circle (2.2pt);
+
+    % Surplus bracket
+    \draw[<->, >=Stealth, thick, color=CourseTeal] (1.40,5.35) -- (2.60,5.35) node[midway, above, font=\footnotesize\bfseries, fill=white, inner sep=1pt] {Surplus $= 120$};
+  \end{scope}
+\end{tikzpicture}
+\caption{Binding Price Controls. In Panel A, a binding price ceiling ($P_c = \$15 < \$20$) reduces quantity supplied to $125$ while raising quantity demanded to $275$, creating a $150$-unit shortage. In Panel B, a binding price floor ($P_f = \$24 > \$20$) reduces quantity demanded to $140$ while raising quantity supplied to $260$, creating a $120$-unit surplus.}
+\label{fig:price_controls}
+\end{figure}
+
+\subsection*{3. Real-World Application}
+\begin{examplecase}{Municipal Rent Control vs. Agricultural Commodity Floors}
+In high-cost coastal cities such as San Francisco and New York, strict rent-stabilization caps hold controlled apartment rents below market-clearing levels. While incumbent tenants in controlled units pay lower monthly rent, the binding ceiling discourages new apartment construction and incentivizes landlords to convert rentals into owner-occupied condominiums—shrinking available rental supply ($Q_s$) while attracting more applicants ($Q_d$). Conversely, historical U.S. dairy and grain price floors set minimum commodity prices above equilibrium, obligating federal agencies to purchase and store millions of tons of surplus cheese, butter, and grain that consumers declined to buy at the elevated floor price.
+\end{examplecase}
+
+\subsection*{4. Mathematical Foundation}
+For any regulated price $\bar{P}$, actual quantity exchanged is constrained by the short side of the market, $Q_{\text{traded}} = \min\{Q_d(\bar{P}), Q_s(\bar{P})\}$, while the resulting market imbalance is measured by:
+\begin{equation}
+\text{Shortage} = Q_d(P_c) - Q_s(P_c) \quad (P_c < P^*), \qquad \text{Surplus} = Q_s(P_f) - Q_d(P_f) \quad (P_f > P^*).
+\end{equation}
+
+\paragraph{Worked Problem 3.4 (Calculating Shortages and Surpluses Under Price Controls).}
+Using the coffee market equations $Q_d = 500 - 15P$ and $Q_s = -100 + 15P$ (where $P^* = \$20$ and $Q^* = 200$):
+\begin{enumerate}
+  \item \textbf{Part A — Binding Price Ceiling ($P_c = \$15 < P^*$):}
+  \begin{align*}
+    Q_d(15) &= 500 - 15(15) = 500 - 225 = 275 \text{ bags}, \\
+    Q_s(15) &= -100 + 15(15) = -100 + 225 = 125 \text{ bags}.
+  \end{align*}
+  Only $Q_{\text{traded}} = \min(275, 125) = 125$ bags are sold, creating a persistent \textbf{shortage} of $275 - 125 = 150$ bags. (If the ceiling were set at $\$25 > P^*$, it would be non-binding and the market would remain at $P^* = \$20, Q^* = 200$.)
+  \item \textbf{Part B — Binding Price Floor ($P_f = \$24 > P^*$):}
+  \begin{align*}
+    Q_d(24) &= 500 - 15(24) = 500 - 360 = 140 \text{ bags}, \\
+    Q_s(24) &= -100 + 15(24) = -100 + 360 = 260 \text{ bags}.
+  \end{align*}
+  Only $Q_{\text{traded}} = \min(140, 260) = 140$ bags are purchased by private buyers, creating a persistent \textbf{surplus} of $260 - 140 = 120$ bags. (If the floor were set at $\$16 < P^*$, it would be non-binding.)
+\end{enumerate}
+
+\begin{coreprinciple}
+\boxheader{SlateBlue}{Optional Advanced Calculus Extension: Excess Demand Sensitivity}
+Define the excess demand function $ED(P) \equiv Q_d(P) - Q_s(P)$. At equilibrium, $ED(P^*) = 0$. Differentiating with respect to $P$ gives:
+$$\frac{d\,ED(P)}{dP} = \frac{dQ_d}{dP} - \frac{dQ_s}{dP} = -b - d = -(b + d) < 0.$$
+By a first-order Taylor expansion around $P^*$, any binding price cap $P_c = P^* - \Delta P$ generates a shortage of $\Delta Q_{\text{shortage}} = (b + d)\Delta P$, confirming that flatter, more price-elastic curves (larger $b + d$) magnify shortages and surpluses for any given price distortion $\Delta P$.
+\end{coreprinciple}
+
+% =============================================================================
+% Closing Bring It Home & Check Your Understanding
+% =============================================================================
+\begin{examplecase}{Bring It Home: Closing Resolution}
+Returning to our opening contrast between avian-flu egg price spikes and rent-controlled apartments: in the egg market, a leftward supply shift ($S \downarrow$) pushed equilibrium price upward along a downward-sloping demand curve, rationing scarce cartons to buyers with the highest willingness to pay while incentivizing farmers to rebuild flocks. In rent-controlled housing, a binding price ceiling ($P_c < P^*$) froze nominal rent below equilibrium, preventing price from rationing apartments and turning scarcity into a chronic shortage ($Q_d > Q_s$) allocated through waitlists, lotteries, and personal connections.
+\end{examplecase}
+
+\section{Check Your Understanding}
+\begin{enumerate}
+  \item Explain the geometric and economic difference between a \emph{change in demand} and a \emph{change in quantity demanded}.
+  \item Suppose the market for commuter transit passes is given by $Q_d = 240 - 4P$ and $Q_s = -60 + 6P$. Solve for market-clearing equilibrium $(P^*, Q^*)$.
+  \item Using the transit pass equations in Question 2, determine whether a price ceiling of $P_c = \$25$ is binding or non-binding, and calculate the resulting shortage or surplus.
+  \item Suppose electric-scooter sharing becomes much cheaper (a substitute for commuter transit passes) at the exact same time that transit fuel costs fall. Predict the direction of change in $P^*$ and $Q^*$ for commuter transit passes.
+  \item Why must we keep the nominal single-market price $P$ in Chapter 3 conceptually separate from the economy-wide aggregate price level covered in Chapter 5?
+\end{enumerate}
+
+\paragraph{Worked Solutions:}
+\begin{enumerate}
+  \item A \textbf{change in quantity demanded} is a movement along a fixed demand curve caused strictly by a change in the good's own price. A \textbf{change in demand} is a horizontal shift of the entire demand curve caused by a change in a non-price determinant (income, prices of related goods, tastes, expectations, or number of buyers).
+  \item Set $Q_d = Q_s$: $240 - 4P^* = -60 + 6P^* \implies 10P^* = 300 \implies P^* = \$30$. Substituting back gives $Q^* = 240 - 4(30) = 120$ passes.
+  \item Because $P_c = \$25 < P^* = \$30$, the price ceiling is \textbf{binding}. At $P_c = \$25$, $Q_d = 240 - 4(25) = 140$ and $Q_s = -60 + 6(25) = 90$, creating a persistent \textbf{shortage} of $140 - 90 = 50$ passes.
+  \item Cheaper scooter sharing shifts transit pass demand leftward ($D \downarrow$), while lower fuel costs shift transit pass supply rightward ($S \uparrow$). From Table~\ref{tab:dual_shocks}, $D \downarrow$ and $S \uparrow$ cause equilibrium price $P^*$ to \textbf{fall unambiguously}, while equilibrium quantity $Q^*$ is \textbf{ambiguous} without knowing the relative sizes of the two shifts.
+  \item Single-market price $P$ measures the dollar price of one specific product in isolation (holding other prices constant), whereas the aggregate price level in Chapter 5 is a unitless price index (such as the CPI or GDP Deflator) measuring economy-wide average price changes across a representative basket of goods and services.
+\end{enumerate}
 
 \end{document}

@@ -11,14 +11,14 @@ This chapter provides a rigorous, pedagogical treatment of Chapter 4: Consumer a
 
 ## Consumer Surplus and Marginal Willingness to Pay
 
-### Conceptual Introduction {.unnumbered}
+### 1. Conceptual Introduction {.unnumbered}
 Have you ever walked into a store prepared to spend $\$50$ on a pair of shoes, only to find them on sale for $\$30$? If so, you walked out with the shoes *and* an extra $\$20$ in your pocket that you were completely willing to part with. In economics, that $\$20$ gain is called your **Consumer Surplus ($CS$)**. Every shopper enters the market with a personal maximum price in mind—the highest dollar amount they would pay before walking away empty-handed. Economists call this boundary your **willingness to pay (WTP)**. Whenever the actual market price is lower than what you were willing to pay, you capture a net financial and psychological win.
 
 In a market, buyers purchase goods one unit at a time. The very first buyers—or the first few items purchased—usually have the highest personal value to consumers (what economists sometimes call ``early buyers'' or intramarginal units). For instance, your first cup of coffee in the morning might be worth $\$8$ to you, but the café only charges $\$4$, giving you $\$4$ in surplus. Your second cup might be worth $\$5$, giving you $\$1$ in surplus. By the time you consider a third cup, its value to you might drop to exactly $\$4$. For that final unit, your willingness to pay matches the market price, yielding zero extra surplus. If price rose to $\$4.01$, you simply would not buy it.
 
 When we add up the surplus enjoyed by every single customer in the entire market, we get **Total Consumer Surplus**. It represents the total dollar value of happiness, savings, and satisfaction that consumers walk away with over and above what they had to pay. When prices drop—thanks to new technology, cheaper shipping, or increased competition—consumer surplus expands, leaving households with more money left over to spend on other goals like tuition, healthcare, or savings.
 
-### Visual Representation {.unnumbered}
+### 2. Visual Representation {.unnumbered}
 Figure 1 graphs consumer surplus on a standard market diagram.
 
 ::: {.callout-note title="Graphing Tip: Why is Price on the Vertical Y-Axis?"}
@@ -27,9 +27,9 @@ In high school algebra, you usually put the independent variable on the horizont
 
 :::
 
-![Figure 1. Consumer Surplus at Equilibrium. The blue region lies below demand and above the $\$60$ market price; at $Q^*=20$, its area is $\$400$.](figures/chapter_4_consumer_and_producer_surplus_market_efficiency_and_welfare_figure_01.svg){fig-alt="Consumer Surplus at Equilibrium. The blue region lies below demand and above the $60 market price; at Q^*=20, its area is $400."}
+![Figure 1. Consumer Surplus on the Linear Demand Plane. Consumer surplus is the shaded blue triangle located below the demand curve and above the $\$60$ market price line.](figures/chapter_4_consumer_and_producer_surplus_market_efficiency_and_welfare_figure_01.svg){fig-alt="Consumer Surplus on the Linear Demand Plane. Consumer surplus is the shaded blue triangle located below the demand curve and above the $60 market price line."}
 
-### Real-World Application: Airline Dynamic Pricing and Flight Upgrades {.unnumbered}
+### 3. Real-World Application: Airline Dynamic Pricing and Flight Upgrades {.unnumbered}
 Imagine a college student flying home for Thanksgiving break versus a business consultant booking a flight to close a critical $\$100,000$ client deal.
 
 *  The **consultant** has an urgent deadline. Their company's maximum willingness to pay for a last-minute seat is **\$900**.
@@ -47,7 +47,7 @@ $$
 
 Both sit in identical seats drinking the same tomato juice, but the consultant captures $\$550$ in surplus while the student captures $\$50$. This real-world difference explains why airlines work so hard with algorithms to separate travelers and charge higher fares to business passengers whenever possible.
 
-### Mathematical Foundation (Algebra Level) {.unnumbered}
+### 4. Mathematical Foundation (Algebra Level) {.unnumbered}
 Because the demand curve in our example is a straight line, the area of Consumer Surplus forms a simple right-angled triangle. You do not need any advanced calculus—just basic high school geometry:
 
 $$
@@ -133,7 +133,7 @@ Notice that elementary triangle geometry and calculus yield the exact same $\$40
 
 ## Producer Surplus and Marginal Cost
 
-### Conceptual Introduction {.unnumbered}
+### 1. Conceptual Introduction {.unnumbered}
 Just as consumers gain surplus by paying less than their maximum valuation, sellers gain surplus by selling goods for more than it cost to make them. Every business owner has a minimum price they must receive before they agree to produce and sell an additional unit. Economists call this threshold their **willingness to accept (WTA)**, which directly equals the **marginal cost ($MC$)** of producing that extra item.
 
 **Producer Surplus ($PS$)** is the net operating gain earned by firms. It is the gap between the money a firm collects at the market price and the minimum cost required to produce those items:
@@ -146,12 +146,12 @@ A vital point for business and economics students is that **producer surplus is 
 
 Because supply curves slope upward (due to diminishing returns and rising production costs), earlier units can be produced very cheaply, generating large operating surplus. The very last unit produced breaks even on operating costs ($P^* = MC$).
 
-### Visual Representation {.unnumbered}
-Figure 2 depicts Producer Surplus as the orange shaded triangle located above the supply curve and below the market price line.
+### 2. Visual Representation {.unnumbered}
+Figure 2 depicts Producer Surplus as the red shaded triangle located above the supply curve and below the market price line.
 
-![Figure 2. Producer Surplus at Equilibrium. The orange region lies above supply and below the $\$60$ market price; at $Q^*=20$, its area is $\$400$.](figures/chapter_4_consumer_and_producer_surplus_market_efficiency_and_welfare_figure_02.svg){fig-alt="Producer Surplus at Equilibrium. The orange region lies above supply and below the $60 market price; at Q^*=20, its area is $400."}
+![Figure 2. Producer Surplus on the Linear Supply Plane. Producer surplus is the shaded red triangle located above the supply curve and below the $\$60$ market price line.](figures/chapter_4_consumer_and_producer_surplus_market_efficiency_and_welfare_figure_02.svg){fig-alt="Producer Surplus on the Linear Supply Plane. Producer surplus is the shaded red triangle located above the supply curve and below the $60 market price line."}
 
-### Real-World Application: Coffee Shops and Morning Espresso Sales {.unnumbered}
+### 3. Real-World Application: Coffee Shops and Morning Espresso Sales {.unnumbered}
 Consider an independent café in San Francisco selling cold brew coffee for **\$5.00** a cup.
 
 *  The direct variable cost (coffee beans, filtered water, compostable cup, and milk) for the barista to brew the first batch of cups is only about **\$1.50 per cup**.
@@ -165,7 +165,7 @@ As the morning rush peaks, the café has to hire extra staff and run grinders co
 
 Across 300 cups, the accumulated producer surplus might total $\$600$ for the morning. Does the owner pocket all $\$600$ as pure profit? No—they must use that $\$600$ producer surplus to pay fixed bills like the $\$4,000$ monthly shop rent, electric utilities, and insurance. Whatever is left over after paying fixed costs is their economic profit.
 
-### Mathematical Foundation (Algebra Level) {.unnumbered}
+### 4. Mathematical Foundation (Algebra Level) {.unnumbered}
 For a linear supply curve, Producer Surplus ($PS$) is calculated as the area of a right-angled triangle:
 
 $$
@@ -229,7 +229,7 @@ $$
 
 ## Allocative Efficiency and Price Controls
 
-### Conceptual Introduction {.unnumbered}
+### 1. Conceptual Introduction {.unnumbered}
 When we combine both sides of the market, we arrive at the total economic gain created by voluntary trade, known as **Total Social Surplus ($TS$)**:
 
 $$
@@ -242,14 +242,14 @@ A competitive market in equilibrium achieves what economists call **allocative e
 
 When governments try to dictate prices by law—such as imposing a legal maximum price (**price ceiling**)—the market cannot reach this balance. If the ceiling is set below the natural equilibrium price, two things happen: sellers produce fewer units because low prices do not cover their costs, while buyers rush to purchase more because it is cheap. This creates an immediate physical **shortage**. More importantly, trades that both buyers and sellers wanted to make are legally blocked, shrinking the total economic pie and creating a permanent loss to society called **deadweight loss**.
 
-### Visual Representation {.unnumbered}
+### 2. Visual Representation {.unnumbered}
 Figure 3 shows the market in natural balance, maximizing the total economic pie to $\$800$. Figure 4 shows what happens when the government imposes a price ceiling at $\$40$.
 
-![Figure 3. Maximized Social Surplus in a Free Market. At $E^*(20,\$60)$, consumer surplus and producer surplus each equal $\$400$, for total surplus of $\$800$.](figures/chapter_4_consumer_and_producer_surplus_market_efficiency_and_welfare_figure_03.svg){fig-alt="Maximized Social Surplus in a Free Market. At E^*(20,$60), consumer surplus and producer surplus each equal $400, for total surplus of $800."}
+![Figure 3. Maximized Social Surplus in a Free Market. At equilibrium $E^*(20, \$60)$, Total Social Surplus is $\$400 + \$400 = \$800$, and no trades are wasted.](figures/chapter_4_consumer_and_producer_surplus_market_efficiency_and_welfare_figure_03.svg){fig-alt="Maximized Social Surplus in a Free Market. At equilibrium E^*(20, $60), Total Social Surplus is $400 + $400 = $800, and no trades are wasted."}
 
-![Figure 4. The Impact of a Binding Price Ceiling. At $\$40$, quantity supplied is $10$ and quantity demanded is $30$, so the shortage is $20$ units. The purple triangle marks the lost gains from trade.](figures/chapter_4_consumer_and_producer_surplus_market_efficiency_and_welfare_figure_04.svg){fig-alt="The Impact of a Binding Price Ceiling. At $40, quantity supplied is 10 and quantity demanded is 30, so the shortage is 20 units. The purple triangle marks the lost gains from trade."}
+![Figure 4. The Impact of a Binding Price Ceiling. Capping the price at $\$40$ causes quantity supplied to collapse to $10$ while quantity demanded jumps to $30$, creating a shortage of $20$ units and an orange Deadweight Loss triangle of lost trades.](figures/chapter_4_consumer_and_producer_surplus_market_efficiency_and_welfare_figure_04.svg){fig-alt="The Impact of a Binding Price Ceiling. Capping the price at $40 causes quantity supplied to collapse to 10 while quantity demanded jumps to 30, creating a shortage of 20 units and an orange Deadweight Loss triangle of lost trades."}
 
-### Real-World Application: Rent Control in San Francisco and New York {.unnumbered}
+### 3. Real-World Application: Rent Control in San Francisco and New York {.unnumbered}
 In expensive housing markets like San Francisco and New York City, local governments often cap how much landlords can raise apartment rents each year. The compassionate goal is simple: keep current residents from being priced out of their neighborhoods.
 
 However, consider the economic consequences over time:
@@ -258,7 +258,7 @@ However, consider the economic consequences over time:
 *  **Demand Surges:** Low capped rents encourage people to stay in huge apartments alone or move in from outside the city.
 *  **The Result:** A severe **housing shortage**. College students and young workers searching for an apartment face lines around the block, application lotteries, and expensive broker finder fees. While incumbent tenants lucky enough to have a rent-controlled lease benefit, many others are locked out completely—an exact demonstration of deadweight loss and shortages in action.
 
-### Mathematical Foundation (Algebra Level) {.unnumbered}
+### 4. Mathematical Foundation (Algebra Level) {.unnumbered}
 Let's analyze the exact numbers when the government imposes a price ceiling of $\bar{P} = \$40$ on our battery charger market ($P_d = 100 - 2Q$ and $P_s = 20 + 2Q$).
 
 **Step-by-Step Breakdown:**
@@ -302,7 +302,7 @@ P = 100 - 2(10) = \$80
 $$
 
 *  **Calculate Deadweight Loss ($DWL$):**
-The market dropped from producing 20 units down to 10 units. Trades for units 11 through 20 were completely eliminated. The lost value forms the purple triangle in Figure 4:
+The market dropped from producing 20 units down to 10 units. Trades for units 11 through 20 were completely eliminated. The lost value forms the orange triangle in Figure 4:
 
 $$
 \text{Base of DWL Triangle} = \text{Vertical Gap at } Q=10 = \$80 - \$40 = \$40
@@ -339,7 +339,7 @@ This proves mathematically that social welfare is strictly maximized where suppl
 
 ## Market Distortions: Taxes, Wedges, and Deadweight Loss
 
-### Conceptual Introduction {.unnumbered}
+### 1. Conceptual Introduction {.unnumbered}
 Governments need revenue to fund essential public goods like highways, libraries, and public colleges. One of the most common ways they raise money is by levying an **excise tax**—a flat dollar tax per unit sold, such as a $\$1.00$ tax on a pack of cigarettes or a $\$0.50$ tax per gallon of gasoline.
 
 When a tax is enacted, it drives a physical **tax wedge** between what the buyer pays and what the seller actually gets to keep:
@@ -352,18 +352,18 @@ A widespread misconception among the general public is that politicians can deci
 
 Because the tax raises the price buyers pay and lowers the price sellers keep, fewer total transactions take place ($Q_t < Q^*$). The government successfully collects revenue, but the lost trades that never happened generate **Deadweight Loss ($DWL$)**. Furthermore, as the tax rate increases, deadweight loss does not grow in a straight line—it explodes with the square of the tax rate ($DWL \propto t^2$). This principle, known as the **Quadratic Excess Burden Theorem**, means that doubling a tax rate actually *quadruples* the wasted welfare in the economy!
 
-### Visual Representation {.unnumbered}
+### 2. Visual Representation {.unnumbered}
 Figure 5 illustrates a tax wedge of $t = \$12$ placed on our charger market.
 
-![Figure 5. The Anatomy of an Excise Tax. A $\$12$ tax lowers quantity from $20$ to $17$, with buyers paying $\$66$ and sellers receiving $\$54$. The amber rectangle is $\$204$ in tax revenue; the purple triangle is $\$18$ in deadweight loss.](figures/chapter_4_consumer_and_producer_surplus_market_efficiency_and_welfare_figure_05.svg){fig-alt="The Anatomy of an Excise Tax. A $12 tax lowers quantity from 20 to 17, with buyers paying $66 and sellers receiving $54. The amber rectangle is $204 in tax revenue; the purple triangle is $18 in deadweight loss."}
+![Figure 5. The Anatomy of an Excise Tax. A $\$12$ tax contracts market quantity from 20 to 17. The government collects $\$204$ in revenue (the orange box), while $\$18$ in social welfare is permanently destroyed as deadweight loss (the red triangle).](figures/chapter_4_consumer_and_producer_surplus_market_efficiency_and_welfare_figure_05.svg){fig-alt="The Anatomy of an Excise Tax. A $12 tax contracts market quantity from 20 to 17. The government collects $204 in revenue (the orange box), while $18 in social welfare is permanently destroyed as deadweight loss (the red triangle)."}
 
-### Real-World Application: California Gasoline Excise Taxes {.unnumbered}
+### 3. Real-World Application: California Gasoline Excise Taxes {.unnumbered}
 Every time drivers in California fill their fuel tanks, they pay approximately **\$0.54 per gallon** in state excise taxes, plus federal taxes and environmental fees.
 
-*  **Where does the money go?** The amber rectangle in Figure 5 represents the billions of dollars flowing directly into state coffers to pave roads, fix highway bridges, and fund regional transit like BART and Caltrain.
-*  **Where is the deadweight loss?** Because gas costs more, some families cancel a weekend road trip, small contractors drive fewer delivery routes, and some commuters spend extra hours on slower buses. The loss in satisfaction and economic productivity from those foregone trips represents the purple triangle: deadweight loss that nobody captures.
+*  **Where does the money go?** The orange rectangle in Figure 5 represents the billions of dollars flowing directly into state coffers to pave roads, fix highway bridges, and fund regional transit like BART and Caltrain.
+*  **Where is the deadweight loss?** Because gas costs more, some families cancel a weekend road trip, small contractors drive fewer delivery routes, and some commuters spend extra hours on slower buses. The loss in satisfaction and economic productivity from those foregone trips represents the red triangle: deadweight loss that nobody captures.
 
-### Mathematical Foundation (Algebra Level) {.unnumbered}
+### 4. Mathematical Foundation (Algebra Level) {.unnumbered}
 
 ::: {.callout-note title="Key Concept: Statutory Neutrality (Who Pays Doesn't Matter!)"}
 
@@ -430,7 +430,7 @@ T_{\text{rev}} = \text{Tax per unit} \times Q_t = \$12 \times 17 = \mathbf{\$204
 $$
 
 *  **Calculate Deadweight Loss ($DWL$):**
-The lost trades form the purple Harberger triangle with base equal to the tax wedge ($t = \$12$) and height equal to the lost units ($\Delta Q = 3$):
+The lost trades form the red Harberger triangle with base equal to the tax wedge ($t = \$12$) and height equal to the lost units ($\Delta Q = 3$):
 
 $$
 DWL = \frac{1}{2} \times \text{Base} \times \text{Height} = \frac{1}{2} \times t \times \Delta Q = \frac{1}{2} \times \$12 \times 3 = 6 \times 3 = \mathbf{\$18}

@@ -1,0 +1,513 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[a4paper, margin=2.2cm]{geometry}
+\usepackage{fontspec}
+\usepackage[english, bidi=basic, provide=*]{babel}
+\babelprovide[import, onchar=ids fonts]{english}
+\babelfont{rm}{Noto Sans}
+
+\usepackage{amsmath, amssymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, calc, patterns}
+\usepackage[hidelinks]{hyperref}
+
+% Okabe-Ito Colorblind-Safe Palette
+\definecolor{oiOrange}{RGB}{230, 159, 0}
+\definecolor{oiSkyBlue}{RGB}{86, 180, 233}
+\definecolor{oiGreen}{RGB}{0, 158, 115}
+\definecolor{oiYellow}{RGB}{240, 228, 66}
+\definecolor{oiBlue}{RGB}{0, 114, 178}
+\definecolor{oiVermilion}{RGB}{213, 94, 0}
+\definecolor{oiPurple}{RGB}{204, 121, 167}
+\definecolor{oiGray}{RGB}{110, 110, 110}
+\definecolor{boxTintBlue}{RGB}{242, 247, 252}
+\definecolor{boxTintAmber}{RGB}{253, 248, 238}
+\definecolor{boxTintGreen}{RGB}{241, 250, 246}
+\definecolor{boxTintGray}{RGB}{246, 247, 249}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+
+% Pedagogical Callout Environments (Safe framebox/parbox architecture)
+\newenvironment{pedbox}[3]{%
+  \par\vspace{0.6em}\noindent
+  \fcolorbox{#1}{#2}{%
+    \begin{minipage}{\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax}
+      \textbf{\textcolor{#1}{#3}}\par\vspace{0.3em}
+}{%
+    \end{minipage}%
+  }\par\vspace{0.6em}
+}
+
+\begin{document}
+
+% =====================================================================
+% CHAPTER HEADER & LEARNING OBJECTIVES
+% =====================================================================
+\begin{center}
+  {\small\textbf{\textcolor{oiBlue}{MACROECONOMICS $\cdot$ MODULE MA-6 $\cdot$ COURSE CODE C2002-3}}}\\[0.35em]
+  {\LARGE\textbf{Chapter 12: Monetary Policy}}\\[0.35em]
+  {\normalsize\textit{Money Demand, the Ample-Reserves Corridor, Aggregate Demand Transmission, and Long-Run Neutrality}}
+\end{center}
+\vspace{0.3em}
+\hrule
+\vspace{0.8em}
+
+\begin{pedbox}{oiBlue}{boxTintBlue}{Chapter Learning Objectives}
+After completing this chapter, you will be able to:
+\begin{enumerate}[leftmargin=1.4em, itemsep=0.25em]
+  \item \textbf{Explain the Demand for Money:} Distinguish between the transactions, precautionary, and speculative motives for holding money, and identify how changes in nominal interest rates, real income, and the price level affect the money demand curve.
+  \item \textbf{Analyze the Ample-Reserves Operating Regime:} Explain how the Federal Reserve sets the federal funds rate within an administered-rate corridor using Interest on Reserve Balances (\texttt{IORB}), the Overnight Reverse Repurchase Agreement (\texttt{ON RRP}) facility, and the Discount Rate.
+  \item \textbf{Trace Monetary Policy Transmission:} Model how changes in policy interest rates alter investment and consumption, shift Aggregate Demand ($AD$), close output gaps, and operate under Taylor-type policy rules and the Effective Lower Bound (\texttt{ELB}).
+  \item \textbf{Evaluate Long-Run Monetary Neutrality:} Use the Quantity Theory of Money to demonstrate why sustained changes in the money supply affect nominal prices and inflation in the long run without permanently altering potential real GDP ($Y^*$).
+\end{enumerate}
+\end{pedbox}
+
+\begin{pedbox}{oiOrange}{boxTintAmber}{Bring It Home: Why Did Borrowing Costs Surge Between 2022 and 2024?}
+In early 2021, a thirty-year fixed-rate mortgage in the United States carried an interest rate below $3\%$, and annual consumer price inflation was just beginning to climb above the Federal Reserve's $2\%$ target. By mid-2022, inflation measured by the Consumer Price Index (\texttt{CPIAUCSL}) reached $9.1\%$---its highest reading in four decades. Over sixteen months, the Federal Reserve raised its target range for the federal funds rate (\texttt{FEDFUNDS}) eleven times, lifting it from near $0\%$ to $5.25\%$--$5.50\%$.
+
+Unlike in prior decades, the Federal Reserve did not have to drain hundreds of billions of dollars of bank reserves just to nudge overnight rates upward; commercial banks already held trillions of dollars in reserves. How does a central bank raise interest rates across an entire economy when the banking system is flush with liquidity? And once those higher rates take hold, how do they cool inflation without triggering a severe recession? Answering these questions requires tracing the full chain of modern monetary policy.
+\end{pedbox}
+
+% =====================================================================
+% SECTION 12.1: THE DEMAND FOR MONEY
+% =====================================================================
+\section{The Demand for Money}
+
+\subsection{Conceptual Introduction}
+In everyday speech, people say they ``want more money'' when they actually mean they want higher income or greater wealth. In macroeconomics, the \textbf{demand for money} ($MD$) has a much more specific meaning: it is the portion of total financial wealth that households and firms choose to hold in liquid monetary assets---currency in circulation and checkable bank deposits---rather than in less liquid, interest-bearing assets such as Treasury bills, corporate bonds, or equity shares.
+
+Choosing how much money to hold involves a fundamental trade-off between \textbf{liquidity} and \textbf{opportunity cost}. Money is immediately accepted for settling transactions without conversion fees or price risk, whereas bonds must be sold or matured before their proceeds can be spent. However, cash pays zero nominal interest, and checking accounts typically pay minimal interest compared to short-term government securities. Consequently, the nominal interest rate ($i$) on non-monetary assets represents the opportunity cost of holding money. When $i$ rises, holding cash becomes more expensive in terms of forgone interest income, prompting households and firms to economize on cash balances and shift funds into interest-bearing accounts.
+
+Economists group the reasons people hold money into three classic motives:
+\begin{itemize}[leftmargin=1.4em, itemsep=0.25em]
+  \item \textbf{Transactions Motive:} Households and businesses hold money to bridge the timing gap between receiving income (such as biweekly paychecks) and paying routine expenses (groceries, rent, payroll). Higher nominal spending requires larger transaction balances.
+  \item \textbf{Precautionary Motive:} Individuals and firms maintain liquid reserves as a buffer against unexpected expenses, medical emergencies, or sudden delays in customer payments.
+  \item \textbf{Speculative (Portfolio) Motive:} Investors hold money as a safe, zero-duration store of value when bond prices are expected to fall (i.e., when market interest rates are expected to rise) or when financial market volatility spikes.
+\end{itemize}
+
+Because the quantity of money demanded falls as the nominal interest rate rises (holding real income and the price level constant), the money demand curve slopes downward. By contrast, an increase in \textbf{real GDP} ($Y$) increases the volume of transactions in the economy and shifts the entire $MD$ curve to the right. Similarly, an increase in the \textbf{aggregate price level} ($P$) means each basket of goods requires more dollars to purchase, shifting the nominal $MD$ curve to the right in proportion to the price increase.
+
+\subsection{Visual Representation}
+Figure~\ref{fig:money_demand} illustrates the downward-sloping money demand schedule and the distinction between a movement along the curve versus a shift of the curve. At a lower nominal interest rate ($i_2 < i_1$), the opportunity cost of liquidity falls, causing the quantity of money demanded to increase along $MD_1$ from $M_1$ to $M_2$. Conversely, if real GDP rises or the price level increases, households need more money at every interest rate, shifting the entire schedule rightward from $MD_1$ to $MD_2$.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.0]
+  % Axes
+  \draw[->, thick] (0,0) -- (7.4,0) node[right] {\small Quantity of Money ($M$)};
+  \draw[->, thick] (0,0) -- (0,5.2) node[above] {\small Nominal Interest Rate ($i$)};
+  \node[below left] at (0,0) {\small $(0,0)$};
+
+  % MD1 Curve
+  \draw[very thick, oiBlue] (1.1,4.6) -- (5.0,0.8) node[below right] {\small $MD_1(Y_1, P_1)$};
+
+  % MD2 Shifted Curve
+  \draw[very thick, oiVermilion] (2.5,4.6) -- (6.4,0.8) node[below right] {\small $MD_2(Y_2, P_2)$};
+
+  % Equilibrium points along MD1
+  \coordinate (A) at (2.1, 3.62);
+  \coordinate (B) at (3.7, 2.06);
+  \coordinate (C) at (3.5, 3.62);
+
+  % Dashed drop-lines
+  \draw[dashed, oiGray] (0,3.62) node[left, black] {\small $i_1$} -- (C);
+  \draw[dashed, oiGray] (2.1,3.62) -- (2.1,0) node[below, black] {\small $M_1$};
+  \draw[dashed, oiGray] (3.5,3.62) -- (3.5,0) node[below, black] {\small $M_3$};
+
+  \draw[dashed, oiGray] (0,2.06) node[left, black] {\small $i_2$} -- (B) -- (3.7,0) node[below, black] {\small $M_2$};
+
+  % Points
+  \fill[oiBlue] (A) circle (2.5pt) node[above right, black] {\small $A$};
+  \fill[oiBlue] (B) circle (2.5pt) node[above right, black] {\small $B$};
+  \fill[oiVermilion] (C) circle (2.5pt) node[above right, black] {\small $C$};
+
+  % Shift arrow
+  \draw[->, thick, oiVermilion] (2.25, 3.85) -- (3.35, 3.85) node[midway, above] {\scriptsize $\Delta Y > 0$ or $\Delta P > 0$};
+\end{tikzpicture}
+\caption{\textbf{The Demand for Money ($MD$).} A decrease in the nominal interest rate from $i_1$ to $i_2$ causes a downward movement along $MD_1$ from point $A$ to point $B$. An increase in real income ($Y$) or the aggregate price level ($P$) shifts the entire curve rightward from $MD_1$ to $MD_2$, raising money demand from $M_1$ to $M_3$ at interest rate $i_1$.}
+\label{fig:money_demand}
+\end{figure}
+
+\subsection{Real-World Application}
+Financial technology continually reshapes the transactions demand for money. During the late twentieth century, the widespread adoption of Automated Teller Machines (ATMs), credit cards, and money market mutual funds allowed households to keep smaller average checking balances for any given level of income, shifting the $MD$ curve to the left. Conversely, during episodes of acute financial uncertainty---such as March 2020 at the onset of the COVID-19 pandemic---both households and corporations aggressively drew down credit lines and accumulated liquid bank deposits (`M2SL` rose by more than $25\%$ year-over-year), representing a dramatic rightward shift in precautionary and speculative money demand.
+
+\subsection{Mathematical Foundation}
+In linear algebraic form, nominal money demand ($MD$) is proportional to nominal GDP ($P \times Y$) and negatively related to the nominal interest rate ($i$, expressed in percentage points):
+\begin{equation}
+  MD = P \cdot (k Y - h i)
+  \label{eq:money_demand}
+\end{equation}
+where $k > 0$ measures the sensitivity of real money demand to real income $Y$, and $h > 0$ measures the sensitivity of real money demand to the nominal interest rate $i$. Dividing both sides by the price level $P$ yields \textbf{real money demand} ($MD/P = kY - hi$).
+
+\begin{pedbox}{oiGreen}{boxTintGreen}{Work It Out: Calculating Nominal and Real Money Demand}
+\textbf{Problem:} Suppose an economy has a price level $P = 1.20$, real GDP $Y = \$20{,}000\text{ billion}$, income sensitivity $k = 0.25$, and interest sensitivity $h = 300$ (where $i$ is entered in percentage points, e.g., $i = 4$ for $4\%$).
+\begin{enumerate}[leftmargin=1.4em, itemsep=0.2em]
+  \item Calculate nominal money demand ($MD$) and real money demand ($MD/P$) when the nominal interest rate is $i = 4\%$.
+  \item Suppose the Federal Reserve raises interest rates so that $i$ increases to $6\%$, while $P$ and $Y$ remain unchanged. Find the new nominal money demand.
+\end{enumerate}
+
+\textbf{Step-by-Step Solution:}
+\begin{enumerate}[leftmargin=1.4em, itemsep=0.2em]
+  \item \textbf{Initial Equilibrium ($i = 4$):} Substitute $k = 0.25$, $Y = 20{,}000$, $h = 300$, and $i = 4$ into the real money demand expression:
+  \[
+    \frac{MD}{P} = (0.25 \times 20{,}000) - (300 \times 4) = 5{,}000 - 1{,}200 = \$3{,}800\text{ billion (in real terms)}
+  \]
+  Multiply by the price level $P = 1.20$ to find nominal money demand:
+  \[
+    MD = 1.20 \times 3{,}800 = \$4{,}560\text{ billion}
+  \]
+  \item \textbf{Effect of Higher Interest Rate ($i = 6$):} Recompute real money demand at $i = 6$:
+  \[
+    \frac{MD'}{P} = (0.25 \times 20{,}000) - (300 \times 6) = 5{,}000 - 1{,}800 = \$3{,}200\text{ billion}
+  \]
+  Multiply by $P = 1.20$:
+  \[
+    MD' = 1.20 \times 3{,}200 = \$3{,}840\text{ billion}
+  \]
+  Raising the nominal interest rate by $2$ percentage points reduces nominal money demand by $\$4{,}560 - \$3{,}840 = \$720\text{ billion}$, illustrating a movement upward and to the left along the $MD$ curve.
+\end{enumerate}
+\end{pedbox}
+
+% =====================================================================
+% SECTION 12.2: MONETARY POLICY IMPLEMENTATION IN AN AMPLE-RESERVES REGIME
+% =====================================================================
+\section{Monetary Policy Implementation in an Ample-Reserves Regime}
+
+\subsection{Conceptual Introduction}
+To steer interest rates across the entire economy, the Federal Reserve targets the \textbf{federal funds rate} (\texttt{FEDFUNDS})---the overnight interest rate at which commercial banks lend reserve balances held at the Federal Reserve to one another on an uncollateralized basis. Before 2008, bank reserves were scarce, so the Federal Reserve adjusted the federal funds rate by conducting daily open market operations to slightly expand or shrink the supply of reserves along the steep portion of the bank reserve demand curve.
+
+Following the 2008 financial crisis and the 2020 pandemic response, large-scale asset purchases expanded total reserve balances in the U.S. banking system from roughly $\$10\text{ billion}$ to more than $\$3\text{ trillion}$. In this modern \textbf{ample-reserves regime}, banks hold far more reserves than needed to meet payment clearing or regulatory liquidity buffers. Consequently, small day-to-day changes in reserve supply no longer move the federal funds rate. Instead, the Federal Reserve controls the federal funds rate directly through an \textbf{administered-rate corridor} built on three key policy rates:
+\begin{enumerate}[leftmargin=1.4em, itemsep=0.25em]
+  \item \textbf{Interest on Reserve Balances (\texttt{IORB}):} The interest rate the Federal Reserve pays commercial banks on balances kept in their master accounts at regional Federal Reserve Banks. Because any eligible bank can earn the risk-free \texttt{IORB} rate overnight simply by leaving funds at the Fed, no bank will lend reserves in the federal funds market for less than \texttt{IORB}. Thus, \texttt{IORB} acts as the primary anchor (reservation rate) for the federal funds rate.
+  \item \textbf{Overnight Reverse Repurchase Agreement (\texttt{ON RRP}) Facility Rate:} Non-bank financial institutions---such as money market mutual funds and government-sponsored enterprises (GSEs)---cannot earn \texttt{IORB}. Without an alternative floor, these institutions might lend cash to banks below \texttt{IORB}, pulling the federal funds rate down. The \texttt{ON RRP} facility allows eligible non-banks to lend cash overnight to the Federal Reserve against Treasury collateral at a fixed administered rate set slightly below \texttt{IORB}, creating a firm sub-floor for overnight money market rates.
+  \item \textbf{Discount Rate (Primary Credit Rate):} The interest rate at which the Federal Reserve lends reserves directly to sound commercial banks through the Discount Window. Because no bank needs to pay another bank more than the rate charged by the Fed, the Discount Rate forms the ceiling of the interest rate corridor.
+\end{enumerate}
+
+\begin{pedbox}{oiPurple}{boxTintGray}{Clear It Up: Scarce Reserves vs. Ample Reserves}
+Older textbooks often describe monetary policy as adjusting the reserve ratio or conducting small open market operations to shift a vertical reserve supply curve along a downward-sloping reserve demand curve. Since March 2020, statutory reserve requirements in the United States have been set to $0\%$, and the banking system operates with ample reserves. In an ample-reserves regime, the reserve demand curve is flat at the \texttt{IORB} floor, so the Federal Reserve raises or lowers the federal funds rate simply by raising or lowering its administered rates (\texttt{IORB}, \texttt{ON RRP}, and the Discount Rate) in tandem---without needing to shrink or expand the money supply on a daily basis.
+\end{pedbox}
+
+\subsection{Visual Representation}
+Figure~\ref{fig:ample_reserves} depicts the market for bank reserves in an ample-reserves regime. The reserve demand curve ($D_R$) slopes downward at very low levels of reserves (the scarce-reserves region), where banks scramble for liquidity and bid rates up toward the Discount Rate ceiling. However, once reserves become abundant, $D_R$ flattens out along the \texttt{IORB} rate (with the \texttt{ON RRP} rate just underneath as a sub-floor). Because the vertical reserve supply curve ($S_R$) intersects $D_R$ on its flat horizontal segment, shifting $S_R$ moderately left or right leaves the equilibrium federal funds rate ($i_{ff}^*$) unchanged at \texttt{IORB}. To tighten policy, the Fed raises the entire corridor (\texttt{Discount Rate}, \texttt{IORB}, and \texttt{ON RRP}), shifting the flat portion of $D_R$ upward.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.0]
+  % Axes
+  \draw[->, thick] (0,0) -- (8.2,0) node[right] {\small Quantity of Reserves ($R$)};
+  \draw[->, thick] (0,0) -- (0,5.2) node[above] {\small Federal Funds Rate ($i_{ff}$)};
+  \node[below left] at (0,0) {\small $(0,0)$};
+
+  % Corridor Ceiling (Discount Rate)
+  \draw[dashed, oiVermilion, thick] (0,4.5) node[left, black] {\small Discount Rate} -- (7.6,4.5);
+
+  % ON RRP Sub-floor
+  \draw[dotted, oiGreen, thick] (0,1.75) node[left, black] {\small \texttt{ON RRP}} -- (7.6,1.75);
+
+  % Reserve Demand Curve (Downward sloping then flat at IORB)
+  \draw[very thick, oiBlue] (0.5,4.5) .. controls (1.1,3.0) and (1.7,2.2) .. (2.6,2.15) -- (7.6,2.15) node[right] {\small $D_R$};
+  \node[left] at (0,2.15) {\small \texttt{IORB}};
+  \draw[dashed, oiGray] (0,2.15) -- (2.6,2.15);
+
+  % Reserve Supply Curves in Ample Region
+  \draw[very thick, oiOrange] (4.8,0) node[below, black] {\small $R_1$} -- (4.8,4.9) node[above, black] {\small $S_{R1}$};
+  \draw[very thick, oiSkyBlue] (6.3,0) node[below, black] {\small $R_2$} -- (6.3,4.9) node[above, black] {\small $S_{R2}$};
+
+  % Equilibrium markers
+  \fill[oiVermilion] (4.8,2.15) circle (2.6pt) node[above right, black] {\small $E_1$};
+  \fill[oiVermilion] (6.3,2.15) circle (2.6pt) node[above right, black] {\small $E_2$};
+
+  % Bracket annotation for Ample Region
+  \draw[<->, thick, oiGray] (2.7,0.65) -- (7.5,0.65) node[midway, above] {\scriptsize Ample-Reserves Region ($i_{ff}^* \approx \text{IORB}$)};
+\end{tikzpicture}
+\caption{\textbf{The Market for Bank Reserves in an Ample-Reserves Regime.} Reserve supply curves $S_{R1}$ and $S_{R2}$ intersect the flat portion of the reserve demand curve $D_R$, anchoring the equilibrium federal funds rate at \texttt{IORB} (between the \texttt{ON RRP} sub-floor and the Discount Rate ceiling).}
+\label{fig:ample_reserves}
+\end{figure}
+
+\subsection{Real-World Application}
+\begin{pedbox}{oiBlue}{boxTintBlue}{FRED Data Spotlight: Tracking the Policy Corridor (\texttt{FEDFUNDS})}
+Empirical data from Federal Reserve Economic Data (FRED) vividly demonstrates how the corridor system functions in practice. During the Federal Reserve's 2022--2023 tightening cycle, the Federal Open Market Committee (FOMC) raised its target range for the federal funds rate (\texttt{FEDFUNDS}) from $0.00\%$--$0.25\%$ in February 2022 to $5.25\%$--$5.50\%$ by July 2023. At each meeting, the Fed adjusted its administered rates in lockstep: for example, when the target range stood at $5.25\%$--$5.50\%$, \texttt{IORB} was set at $5.40\%$, the \texttt{ON RRP} offering rate at $5.30\%$, and the Primary Credit (Discount) Rate at $5.50\%$. Throughout this entire period, the effective federal funds rate (\texttt{FEDFUNDS}) tracked at $5.33\%$---locked inside the administered corridor even while the Fed gradually reduced its securities holdings (Quantitative Tightening).
+\end{pedbox}
+
+\subsection{Mathematical Foundation}
+In an ample-reserves corridor, arbitrage by commercial banks and non-bank money market funds bounds the effective federal funds rate ($i_{ff}$) strictly between the \texttt{ON RRP} sub-floor and the Discount Rate ceiling ($i_{\text{disc}}$), with a small institutional spread ($s$) below \texttt{IORB} reflecting FDIC deposit insurance fees and balance-sheet costs paid by banks when borrowing from non-banks:
+\begin{equation}
+  i_{\text{ON RRP}} \le i_{ff} = i_{\text{IORB}} - s \le i_{\text{disc}}
+  \label{eq:corridor}
+\end{equation}
+Suppose the FOMC sets a target range of $[i_{\text{lower}}, i_{\text{upper}}]$ with width $0.25\text{ percentage points}$ ($25\text{ basis points}$). Typically, the Fed sets $i_{\text{ON RRP}} = i_{\text{lower}} + 0.05\%$, $i_{\text{IORB}} = i_{\text{lower}} + 0.15\%$, and $i_{\text{disc}} = i_{\text{upper}}$. If the market spread is $s = 0.07\%$, then $i_{ff} = (i_{\text{lower}} + 0.15\%) - 0.07\% = i_{\text{lower}} + 0.08\%$, placing the market rate cleanly inside the target range.
+
+% =====================================================================
+% SECTION 12.3: MONETARY POLICY TRANSMISSION, TAYLOR RULES, AND THE ELB
+% =====================================================================
+\section{Monetary Policy Transmission, Taylor Rules, and the ELB}
+
+\subsection{Conceptual Introduction}
+Changing the overnight federal funds rate affects households and businesses through the \textbf{monetary policy transmission mechanism}. When the FOMC lowers its policy rate (\textbf{expansionary monetary policy}), short-term money market rates fall, which in turn reduces yields on Treasury notes, corporate bonds, auto loans, and mortgages. Lower real interest rates ($r = i - \pi^e$) stimulate aggregate expenditure through four channels:
+\begin{enumerate}[leftmargin=1.4em, itemsep=0.25em]
+  \item \textbf{Business Fixed Investment ($I$):} Lower borrowing costs raise the net present value of new factories, machinery, and software projects, increasing investment spending.
+  \item \textbf{Residential Investment and Consumer Durables ($C$):} Lower mortgage and auto loan rates encourage households to purchase new homes, vehicles, and appliances.
+  \item \textbf{Wealth and Asset-Price Channel:} Lower discount rates lift equity and housing prices, increasing household net worth and boosting consumption spending.
+  \item \textbf{Exchange-Rate Channel:} Lower domestic interest rates relative to foreign rates reduce capital inflows, depreciating the domestic currency and making exports more competitive ($NX$ rises).
+\end{enumerate}
+
+Together, higher $C$, $I$, and $NX$ shift the \textbf{Aggregate Demand ($AD$)} curve to the right, raising real GDP ($Y$) and the price level in the short run. Conversely, \textbf{contractionary monetary policy} (raising the policy rate) increases borrowing costs, dampens $C$, $I$, and $NX$, and shifts $AD$ to the left to cool an overheating, inflationary economy.
+
+To make policy systematic and predictable, central banks frequently benchmark their decisions against a \textbf{Taylor-type monetary policy rule}. Proposed by economist John B. Taylor, this rule links the target nominal federal funds rate ($i_t$) to the neutral real interest rate ($r^*$), current inflation ($\pi_t$), the \textbf{inflation gap} ($\pi_t - \pi^*$), and the \textbf{output gap} ($\frac{Y_t - Y_t^*}{Y_t^*} \times 100$):
+\begin{equation}
+  i_t = r^* + \pi_t + \alpha(\pi_t - \pi^*) + \beta\left(\frac{Y_t - Y_t^*}{Y_t^*} \times 100\right)
+  \label{eq:taylor_rule}
+\end{equation}
+A crucial stability condition known as the \textbf{Taylor Principle} requires $\alpha > 0$: whenever inflation rises by $1$ percentage point above target, the central bank must raise the nominal policy rate by \emph{more} than $1$ percentage point ($1 + \alpha > 1$) so that the \emph{real} interest rate rises and cools aggregate demand.
+
+However, during severe recessions, the Taylor rule may prescribe a negative nominal interest rate ($i_t < 0$). Because investors can always hold physical currency yielding $0\%$, nominal interest rates cannot be pushed substantially below zero---a constraint called the \textbf{Effective Lower Bound (\texttt{ELB})}. When pinned at the \texttt{ELB}, central banks deploy unconventional tools: \textbf{forward guidance} (committing to keep policy rates low for an extended horizon to lower long-term expectations) and \textbf{Quantitative Easing (\texttt{QE})} (purchasing long-term Treasury and mortgage-backed securities to directly compress long-term yields and term premiums).
+
+\subsection{Visual Representation}
+Figure~\ref{fig:ad_as_transmission} illustrates contractionary monetary policy used to close an inflationary gap. Initially, the economy operates at point $E_1$, where $AD_1$ intersects Short-Run Aggregate Supply ($SRAS_1$) at output $Y_1 > Y^*$ and elevated price level $P_1$. By raising the federal funds rate, the Federal Reserve reduces interest-sensitive spending ($C$ and $I$), shifting $AD_1$ leftward to $AD_2$. The economy moves along $SRAS_1$ to point $E_2$, restoring potential output $Y^*$ and moderating the price level from $P_1$ to $P_2$.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.0]
+  % Axes
+  \draw[->, thick] (0,0) -- (7.6,0) node[right] {\small Real GDP ($Y$)};
+  \draw[->, thick] (0,0) -- (0,5.2) node[above] {\small Price Level ($P$)};
+  \node[below left] at (0,0) {\small $(0,0)$};
+
+  % LRAS at Y*
+  \draw[very thick, oiGreen] (3.6,0) node[below, black] {\small $Y^*$} -- (3.6,4.8) node[above, black] {\small $LRAS$};
+
+  % SRAS1
+  \draw[very thick, oiOrange] (1.1,1.1) -- (6.3,4.4) node[right, black] {\small $SRAS_1$};
+
+  % AD1 and AD2
+  \draw[very thick, oiBlue] (1.9,4.5) -- (6.5,1.2) node[below right, black] {\small $AD_1$};
+  \draw[very thick, oiVermilion] (0.9,4.0) -- (5.5,0.7) node[below right, black] {\small $AD_2$};
+
+  % Equilibrium E1 (AD1 & SRAS1)
+  \coordinate (E1) at (4.58, 3.31);
+  % Equilibrium E2 (AD2 & SRAS1 & LRAS)
+  \coordinate (E2) at (3.6, 2.68);
+
+  % Dashed drop-lines
+  \draw[dashed, oiGray] (0,3.31) node[left, black] {\small $P_1$} -- (E1) -- (4.58,0) node[below, black] {\small $Y_1$};
+  \draw[dashed, oiGray] (0,2.68) node[left, black] {\small $P_2$} -- (E2);
+
+  % Points
+  \fill[oiBlue] (E1) circle (2.6pt) node[above right, black] {\small $E_1$};
+  \fill[oiVermilion] (E2) circle (2.6pt) node[left, black] {\small $E_2$};
+
+  % Shift arrow
+  \draw[->, thick, oiVermilion] (3.2,3.58) -- (2.3,3.02) node[midway, above left] {\scriptsize Contractionary Policy ($\Delta i > 0$)};
+\end{tikzpicture}
+\caption{\textbf{Contractionary Monetary Policy in the $AD\text{--}AS$ Model.} Raising the policy interest rate reduces investment and consumption, shifting $AD_1$ leftward to $AD_2$ and closing the inflationary gap ($Y_1 - Y^*$) at point $E_2$.}
+\label{fig:ad_as_transmission}
+\end{figure}
+
+\subsection{Real-World Application}
+During the 2008--2009 Great Recession and again in March 2020, the FOMC cut its target federal funds rate to $0.00\%$--$0.25\%$, hitting the Effective Lower Bound. Standard Taylor rules prescribed policy rates near $-3\%$ to $-4\%$. Because the Fed could not push \texttt{FEDFUNDS} into deep negative territory, it implemented multiple rounds of Quantitative Easing---purchasing trillions of dollars of long-term U.S. Treasury bonds and agency mortgage-backed securities---and issued explicit forward guidance tying future rate hikes to concrete labor-market and inflation thresholds. This lowered $30$-year mortgage rates and corporate bond yields even while the overnight rate remained at zero.
+
+\subsection{Mathematical Foundation}
+We can quantify both the Taylor rule rate setting and its transmission to aggregate demand using two compact equations:
+\begin{enumerate}[leftmargin=1.4em, itemsep=0.2em]
+  \item \textbf{Taylor Rule:} $i_t = r^* + \pi_t + \alpha(\pi_t - \pi^*) + \beta\left(\frac{Y_t - Y_t^*}{Y_t^*} \times 100\right)$, where standard benchmark weights are $\alpha = 0.5$ and $\beta = 0.5$.
+  \item \textbf{Aggregate Demand Output Response:} $\Delta Y = m_e \cdot (-b \cdot \Delta r)$, where $b > 0$ is the interest sensitivity of planned investment (in billions of dollars per percentage point change in the real interest rate $r$) and $m_e = \frac{1}{1 - MPC}$ is the spending multiplier.
+\end{enumerate}
+
+\begin{pedbox}{oiGreen}{boxTintGreen}{Work It Out: Applying the Taylor Rule and Closing an Inflationary Gap}
+\textbf{Part A (Taylor Rule):} Suppose the neutral real interest rate is $r^* = 2.0\%$, the Fed's inflation target is $\pi^* = 2.0\%$, current inflation is $\pi_t = 4.0\%$, real GDP is $Y_t = \$20{,}400\text{ billion}$, and potential GDP is $Y_t^* = \$20{,}000\text{ billion}$. Using $\alpha = 0.5$ and $\beta = 0.5$, compute the Taylor-rule target nominal federal funds rate $i_t$ and the implied real interest rate $r_t = i_t - \pi_t$.
+
+\textbf{Solution to Part A:}
+\begin{enumerate}[leftmargin=1.4em, itemsep=0.15em]
+  \item Compute the inflation gap: $\pi_t - \pi^* = 4.0\% - 2.0\% = +2.0\%$.
+  \item Compute the percentage output gap: $\frac{20{,}400 - 20{,}000}{20{,}000} \times 100 = \frac{400}{20{,}000} \times 100 = +2.0\%$.
+  \item Substitute into Equation~\eqref{eq:taylor_rule}:
+  \[
+    i_t = 2.0\% + 4.0\% + 0.5(2.0\%) + 0.5(2.0\%) = 6.0\% + 1.0\% + 1.0\% = 8.0\%
+  \]
+  The implied real interest rate is $r_t = 8.0\% - 4.0\% = 4.0\%$, which is $2.0$ percentage points above the neutral real rate $r^* = 2.0\%$.
+\end{enumerate}
+
+\textbf{Part B (Closing the Output Gap):} Suppose the marginal propensity to consume is $MPC = 0.75$ (so the expenditure multiplier is $m_e = \frac{1}{1 - 0.75} = 4$) and every $1$-percentage-point increase in the real interest rate reduces planned investment by $\$50\text{ billion}$ ($b = 50$). By how many percentage points must the Fed raise the real interest rate ($\Delta r$) to eliminate the $+\$400\text{ billion}$ inflationary gap ($\Delta Y = -\$400\text{ billion}$)?
+
+\textbf{Solution to Part B:}
+Set $\Delta Y = m_e \cdot (-b \cdot \Delta r)$ equal to $-\$400\text{ billion}$:
+\[
+  -400 = 4 \cdot (-50 \cdot \Delta r) \implies -400 = -200 \cdot \Delta r \implies \Delta r = +2.0\text{ percentage points}
+\]
+Raising the real interest rate by $2.0$ percentage points reduces initial investment by $\$100\text{ billion}$, which through the multiplier of $4$ reduces aggregate demand by $\$400\text{ billion}$ and returns real GDP to $Y^* = \$20{,}000\text{ billion}$.
+\end{pedbox}
+
+% =====================================================================
+% SECTION 12.4: LONG-RUN MONETARY NEUTRALITY AND INFLATION
+% =====================================================================
+\section{Long-Run Monetary Neutrality and Inflation}
+
+\subsection{Conceptual Introduction}
+While monetary policy exerts powerful effects on real output and employment in the short run (when nominal wages and prices are sticky), macroeconomists draw a sharp distinction between short-run dynamics and long-run equilibrium. In the long run, nominal wages, input contracts, and product prices adjust fully to clear labor and goods markets, anchoring real GDP at its supply-determined potential level ($Y^*$), which depends on labor, physical capital, human capital, and technology---not on the supply of paper currency or bank reserves.
+
+This foundational principle is called the \textbf{long-run neutrality of money}: a permanent change in the level of the money supply changes all nominal variables (the aggregate price level, nominal wages, and nominal GDP) in exact proportion, while leaving real variables (real GDP, real wages, employment, and the natural rate of unemployment) unchanged.
+
+To organize this relationship, economists use the \textbf{Equation of Exchange}:
+\begin{equation}
+  M \times V = P \times Y
+  \label{eq:quantity_theory}
+\end{equation}
+where $M$ is the money supply (such as \texttt{M2SL}), $V$ is the \textbf{income velocity of money} (the average number of times a dollar is spent on final goods and services in a year), $P$ is the aggregate price level, and $Y$ is real GDP. By definition, $M \times V$ equals total nominal spending, which must equal nominal GDP ($P \times Y$). Converting Equation~\eqref{eq:quantity_theory} into percentage growth rates yields the \textbf{Quantity Theory of Money} in dynamic form:
+\begin{equation}
+  \%\Delta M + \%\Delta V \approx \%\Delta P + \%\Delta Y
+  \label{eq:quantity_growth}
+\end{equation}
+If velocity is stable in the long run ($\%\Delta V \approx 0$) and real GDP grows at its potential trend rate ($\%\Delta Y = \%\Delta Y^*$), then sustained inflation ($\%\Delta P = \pi$) is governed by the excess of money supply growth over real output growth: $\pi \approx \%\Delta M - \%\Delta Y^*$.
+
+\subsection{Visual Representation}
+Figure~\ref{fig:neutrality} demonstrates long-run monetary neutrality in the $AD\text{--}AS$ framework. Starting at long-run equilibrium $E_1$ ($Y^*, P_1$), an expansionary increase in the money supply shifts $AD_1$ rightward to $AD_2$. In the short run, sticky wages allow real output to rise to $Y_2$ at price level $P_2$ (point $E_2$). However, with unemployment below its natural rate, workers demand higher nominal wages and firms face rising input costs, shifting $SRAS_1$ upward and to the left to $SRAS_2$. The economy settles at point $E_3$, where real GDP has returned to $Y^*$ and the entire long-run effect of the monetary expansion is reflected in a permanently higher price level ($P_3 > P_1$).
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=1.0]
+  % Axes
+  \draw[->, thick] (0,0) -- (7.6,0) node[right] {\small Real GDP ($Y$)};
+  \draw[->, thick] (0,0) -- (0,5.4) node[above] {\small Price Level ($P$)};
+  \node[below left] at (0,0) {\small $(0,0)$};
+
+  % LRAS at Y*
+  \draw[very thick, oiGreen] (3.4,0) node[below, black] {\small $Y^*$} -- (3.4,5.0) node[above, black] {\small $LRAS$};
+
+  % SRAS1 and SRAS2
+  \draw[very thick, oiOrange] (1.0,0.8) -- (6.2,3.8) node[right, black] {\small $SRAS_1$};
+  \draw[very thick, oiPurple] (1.0,2.2) -- (6.2,5.2) node[right, black] {\small $SRAS_2$};
+
+  % AD1 and AD2
+  \draw[very thick, oiBlue] (1.2,3.8) -- (5.8,0.6) node[below right, black] {\small $AD_1$};
+  \draw[very thick, oiVermilion] (2.2,4.6) -- (6.8,1.4) node[below right, black] {\small $AD_2$};
+
+  % Equilibrium points
+  \coordinate (E1) at (3.4, 2.27);
+  \coordinate (E2) at (4.35, 3.11);
+  \coordinate (E3) at (3.4, 3.77);
+
+  % Dashed drop-lines
+  \draw[dashed, oiGray] (0,2.27) node[left, black] {\small $P_1$} -- (E1);
+  \draw[dashed, oiGray] (0,3.11) node[left, black] {\small $P_2$} -- (E2) -- (4.35,0) node[below, black] {\small $Y_2$};
+  \draw[dashed, oiGray] (0,3.77) node[left, black] {\small $P_3$} -- (E3);
+
+  % Points
+  \fill[oiBlue] (E1) circle (2.6pt) node[left, black] {\small $E_1$};
+  \fill[oiVermilion] (E2) circle (2.6pt) node[right, black] {\small $E_2$};
+  \fill[oiGreen] (E3) circle (2.6pt) node[left, black] {\small $E_3$};
+\end{tikzpicture}
+\caption{\textbf{Long-Run Monetary Neutrality.} A monetary expansion shifts $AD_1$ to $AD_2$, lifting output temporarily to $Y_2$ at $E_2$. Rising nominal wages subsequently shift $SRAS_1$ to $SRAS_2$, returning output to $Y^*$ at $E_3$ with a proportionally higher price level $P_3$.}
+\label{fig:neutrality}
+\end{figure}
+
+\subsection{Real-World Application}
+\begin{pedbox}{oiBlue}{boxTintBlue}{FRED Data Spotlight: Money Growth (\texttt{M2SL}) and Inflation (\texttt{CPIAUCSL})}
+Comparing the FRED series for the broad money supply (\texttt{M2SL}) and the Consumer Price Index (\texttt{CPIAUCSL}) illustrates both the power and the nuance of the Quantity Theory of Money:
+\begin{itemize}[leftmargin=1.4em, itemsep=0.2em]
+  \item \textbf{Multi-Decade Evidence:} Across countries and across multi-decade periods in the United States (such as the Great Inflation of 1965--1982 versus the Great Moderation of 1985--2007), sustained double-digit inflation never occurs without sustained rapid growth in \texttt{M2SL} far exceeding real GDP growth.
+  \item \textbf{Short-Run Velocity Shifts:} Over shorter horizons of one to two years, velocity ($V$) is not strictly constant. Between February 2020 and February 2022, \texttt{M2SL} surged by roughly $40\%$ (from $\$15.5\text{ trillion}$ to $\$21.7\text{ trillion}$). Initially, in 2020, \texttt{CPIAUCSL} inflation remained low near $1.4\%$ because precautionary saving caused velocity ($V$) to plunge. Once lockdowns ended and supply chains tightened in 2021--2022, spending normalized and \texttt{CPIAUCSL} inflation surged to $9.1\%$, confirming that excessive money growth eventually feeds into the price level.
+\end{itemize}
+\end{pedbox}
+
+\subsection{Mathematical Foundation}
+Using the Quantity Theory identity $M \times V = P \times Y$, we can solve directly for the price level ($P = \frac{M \cdot V}{Y}$) or the long-run inflation rate ($\pi = \%\Delta P$):
+\begin{equation}
+  \%\Delta P \approx \%\Delta M + \%\Delta V - \%\Delta Y
+  \label{eq:inflation_qtm}
+\end{equation}
+
+\begin{pedbox}{oiGreen}{boxTintGreen}{Work It Out: Quantity Theory of Money and Long-Run Inflation}
+\textbf{Problem:} Suppose an economy has a money supply $M = \$4{,}000\text{ billion}$, velocity $V = 5$, and potential real GDP $Y^* = \$10{,}000\text{ billion}$.
+\begin{enumerate}[leftmargin=1.4em, itemsep=0.2em]
+  \item Calculate nominal GDP ($P \times Y^*$) and the initial aggregate price level ($P$).
+  \item Suppose the central bank increases the money supply by $10\%$ (to $M' = \$4{,}400\text{ billion}$), while velocity remains $V = 5$ and potential output remains $Y^* = \$10{,}000\text{ billion}$ in the long run. Find the new long-run price level $P'$ and the percentage change in $P$.
+  \item Now suppose instead that over a decade, potential real GDP grows at $2.5\%$ per year, velocity declines at $0.5\%$ per year, and the central bank targets $2.0\%$ annual inflation. At what annual rate should the money supply grow ($\%\Delta M$)?
+\end{enumerate}
+
+\textbf{Step-by-Step Solution:}
+\begin{enumerate}[leftmargin=1.4em, itemsep=0.2em]
+  \item \textbf{Initial Price Level:}
+  \[
+    P \times Y^* = M \times V = 4{,}000 \times 5 = \$20{,}000\text{ billion}
+  \]
+  Dividing by $Y^* = \$10{,}000\text{ billion}$ yields:
+  \[
+    P = \frac{20{,}000}{10{,}000} = 2.00
+  \]
+  \item \textbf{Long-Run Neutrality Check:} With $M' = \$4{,}400\text{ billion}$, $V = 5$, and $Y^* = \$10{,}000\text{ billion}$:
+  \[
+    P' = \frac{4{,}400 \times 5}{10{,}000} = \frac{22{,}000}{10{,}000} = 2.20
+  \]
+  The price level rises from $2.00$ to $2.20$, which is $\frac{2.20 - 2.00}{2.00} \times 100 = +10\%$, matching the $+10\%$ increase in $M$ with zero permanent change in $Y^*$.
+  \item \textbf{Target Money Growth Rate:} Rearranging Equation~\eqref{eq:inflation_qtm} for $\%\Delta M$:
+  \[
+    \%\Delta M \approx \%\Delta P + \%\Delta Y^* - \%\Delta V = 2.0\% + 2.5\% - (-0.5\%) = 5.0\%\text{ per year}
+  \]
+\end{enumerate}
+\end{pedbox}
+
+\begin{pedbox}{oiPurple}{boxTintGray}{Advanced Extensions: Continuous-Time Quantity Theory and Money Demand Semi-Elasticity}
+In advanced macroeconomic modeling, real money demand is frequently written in semi-logarithmic (Cagan) form:
+\[
+  \ln\left(\frac{M}{P}\right) = \phi \ln Y - \eta i
+\]
+where $\phi > 0$ is the income elasticity of money demand and $\eta = -\frac{\partial \ln(M/P)}{\partial i} > 0$ is the \textbf{interest semi-elasticity of money demand} (the percentage drop in real money balances caused by a $1$-percentage-point increase in the nominal interest rate $i$). Differentiating with respect to time $t$ and setting $\frac{d \ln X}{dt} = g_X$ yields the exact continuous-time inflation equation:
+\[
+  \pi_t = g_{M,t} - \phi g_{Y,t} + \eta \frac{di_t}{dt}
+\]
+In a steady state where the nominal interest rate is constant ($\frac{di_t}{dt} = 0$) and $\phi = 1$, this reduces identically to the discrete-time Quantity Theory result $\pi = g_M - g_{Y^*}$. During hyperinflations, however, accelerating inflation raises $i_t$ ($\frac{di_t}{dt} > 0$), triggering a flight from currency that pushes $\pi_t$ even higher than money growth $g_{M,t}$.
+\end{pedbox}
+
+% =====================================================================
+% CHAPTER SUMMARY & KEY FORMULAS
+% =====================================================================
+\section{Chapter Summary and Key Equations}
+
+\begin{table}[htbp]
+\centering
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\textwidth}{>{\bfseries}l X}
+\toprule
+Concept & Core Principle / Governing Equation \\
+\midrule
+Money Demand ($MD$) & Downward-sloping in the nominal interest rate $i$; shifts right with higher real GDP ($Y$) or price level ($P$): $MD = P(kY - hi)$. \\
+Ample-Reserves Corridor & The Fed anchors \texttt{FEDFUNDS} via administered rates: $i_{\text{ON RRP}} \le i_{ff} = i_{\text{IORB}} - s \le i_{\text{disc}}$. \\
+Monetary Transmission & Lowering $i$ reduces real borrowing costs $r$, stimulating $C$, $I$, and $NX$, shifting $AD$ right, and closing recessionary gaps. \\
+Taylor-Type Policy Rule & $i_t = r^* + \pi_t + \alpha(\pi_t - \pi^*) + \beta\left(\frac{Y_t - Y_t^*}{Y_t^*} \times 100\right)$, obeying the Taylor Principle ($\alpha > 0$). \\
+Effective Lower Bound & When $i_t$ hits $0\%$, central banks use forward guidance and Quantitative Easing (\texttt{QE}) to lower long-term yields. \\
+Quantity Theory \& Neutrality & $M \times V = P \times Y \implies \%\Delta P \approx \%\Delta M + \%\Delta V - \%\Delta Y^*$; money is neutral with respect to $Y^*$ in the long run. \\
+\bottomrule
+\end{tabularx}
+\caption{Summary of Core Monetary Policy Relationships}
+\end{table}
+
+% =====================================================================
+% CHECK YOUR UNDERSTANDING (ASSESSMENT CHECKPOINT)
+% =====================================================================
+\section{Check Your Understanding}
+
+\begin{enumerate}[leftmargin=1.4em, itemsep=0.45em]
+  \item \textbf{Money Demand Movements vs. Shifts:} Explain why an increase in the nominal interest rate causes a movement along the money demand curve, whereas an increase in real GDP shifts the entire curve to the right.
+  \item \textbf{Ample-Reserves Mechanics:} Why does an open market purchase of $\$50\text{ billion}$ in Treasury bills fail to lower the federal funds rate when the banking system is already operating in an ample-reserves regime? Which specific policy rates must the Federal Reserve change instead?
+  \item \textbf{Taylor Rule Calculation:} Suppose $r^* = 1.5\%$, $\pi^* = 2.0\%$, $\alpha = 0.5$, and $\beta = 0.5$. If current inflation is $\pi_t = 3.0\%$ and real GDP is $4.0\%$ \emph{below} potential GDP ($\frac{Y_t - Y_t^*}{Y_t^*} \times 100 = -4.0\%$), what nominal federal funds rate does the Taylor rule prescribe?
+  \item \textbf{Output Gap Transmission:} Using the model $\Delta Y = m_e \cdot (-b \cdot \Delta r)$, suppose $MPC = 0.80$ and $b = 40$ (in billions of dollars per percentage point). If the economy faces a recessionary gap of $-\$600\text{ billion}$, by how many percentage points must the Federal Reserve reduce the real interest rate to restore potential output?
+  \item \textbf{Long-Run Monetary Neutrality:} If velocity is constant ($\%\Delta V = 0$), potential real GDP grows at $3\%$ per year, and the central bank permanently increases money supply growth from $5\%$ per year to $9\%$ per year, what happens to the long-run inflation rate and long-run real GDP growth?
+\end{enumerate}
+
+\vspace{0.4em}
+\begin{pedbox}{oiBlue}{boxTintBlue}{Selected Solutions to Check Your Understanding}
+\begin{enumerate}[leftmargin=1.4em, itemsep=0.25em]
+  \item The nominal interest rate $i$ is on the vertical axis of the money market diagram and measures the opportunity cost of holding cash; changing $i$ moves the economy along a given $MD$ schedule. Real GDP ($Y$) is an external shift variable: higher $Y$ increases transaction volume at \emph{every} interest rate, shifting $MD$ rightward.
+  \item In an ample-reserves regime, reserve supply already intersects the flat horizontal portion of reserve demand anchored at \texttt{IORB}, so adding $\$50\text{ billion}$ of reserves leaves the equilibrium rate unchanged at \texttt{IORB}. To lower the federal funds rate, the Fed must lower its administered rates (\texttt{IORB}, \texttt{ON RRP}, and the Discount Rate).
+  \item $i_t = 1.5\% + 3.0\% + 0.5(3.0\% - 2.0\%) + 0.5(-4.0\%) = 4.5\% + 0.5\% - 2.0\% = 3.0\%$.
+  \item The multiplier is $m_e = \frac{1}{1 - 0.80} = 5$. Setting $+600 = 5 \cdot (-40 \cdot \Delta r) = -200 \cdot \Delta r$ gives $\Delta r = -3.0\text{ percentage points}$.
+  \item Long-run inflation rises by $4$ percentage points (from $5\% - 3\% = 2\%$ per year to $9\% - 3\% = 6\%$ per year), while long-run real GDP growth remains unchanged at $3\%$ per year due to long-run monetary neutrality.
+\end{enumerate}
+\end{pedbox}
+
+\end{document}

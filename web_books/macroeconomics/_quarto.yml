@@ -20,19 +20,19 @@ book:
         - ch01_principles.qmd
         - ch02_macro_ppf.qmd
         - ch03_supply_demand.qmd
-        - ch04_gdp_accounting.qmd
-        - ch05_unemployment_inflation.qmd
+        - ch04_aggregate_output.qmd
+        - ch05_inflation_deflation.qmd
+        - ch06_unemployment.qmd
     - part: "Long-Run Growth & Financial Systems"
       chapters:
-        - ch06_savings_investment_financial_system.qmd
-        - ch07_aggregate_expenditure_multiplier.qmd
+        - ch07_savings_investment_financial_system.qmd
     - part: "Short-Run Fluctuations & Stabilization"
       chapters:
-        - ch08_aggregate_demand_aggregate_supply.qmd
-        - ch09_fiscal_policy.qmd
-        - ch10_money_banking_fed.qmd
-        - ch11_monetary_policy.qmd
-        - ch12_open_economy_macroeconomics.qmd
+        - ch08_aggregate_expenditure_multiplier.qmd
+        - ch09_aggregate_demand_aggregate_supply.qmd
+        - ch10_fiscal_policy.qmd
+        - ch11_money_banking_fed.qmd
+        - ch12_monetary_policy.qmd
 
 format:
   html:

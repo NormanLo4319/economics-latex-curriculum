@@ -1,0 +1,86 @@
+---
+title: "Chapter 7: Saving, Investment Spending, and the Financial System"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+>
+This chapter provides a rigorous, pedagogical treatment of Chapter 7: Saving, Investment Spending, and the Financial System, benchmarked to Krugman and Wells. It distinguishes saving flows from wealth stocks, derives the closed- and open-economy national saving identities, models equilibrium in the loanable-funds market, and evaluates crowding out.
+
+## Learning Outcomes and Key Terms
+Students should distinguish saving from wealth, apply the national saving identity, and use the loanable-funds model to explain how saving and investment plans respond to real interest rates. These objectives support MA-2 and MA-3 and prepare students for C2002-2. Key terms include private saving, public saving, national saving, investment, loanable funds, real interest rate, deficit, crowding out, and capital inflow.
+
+## Saving Is a Flow; Wealth Is a Stock
+### Conceptual Introduction {.unnumbered}
+\label{sec:saving-flow-wealth-stock}
+When you receive a paycheck and decide to put some of it in a savings account, you are saving. Saving is the **flow** of income not spent over a period (a week, month, or year). By contrast, wealth is the **stock** of assets you hold at a specific point in time. This distinction matters because confusing flows and stocks is a common source of error in macroeconomic accounting. A household that saves \$500 this month adds to its wealth, but the saving itself is a flow: it accumulates wealth over time. Likewise, in macroeconomics, **investment** refers to spending on newly produced capital goods (buildings, equipment, software) and inventory additions during a period. It does not refer to buying an existing house (which is an asset transfer, not new capital creation) or purchasing a stock certificate (which transfers ownership of an existing firm).
+
+### Real-World Application: The U.S. Personal Savings Rate {.unnumbered}
+During the 2008 financial crisis, U.S. household saving jumped from 2\% of disposable income to above 6\%, as consumers faced falling home values and stock portfolios and rebuilt their wealth buffers. By 2024, after a decade of recovery, the U.S. personal savings rate had settled around 4\% (FRED: \texttt{PSAVERT}). Tracking whether households are building or depleting wealth (the stock) requires tracking saving flows quarter by quarter.
+
+### Mathematical Foundation: Defining Saving and Wealth {.unnumbered}
+If disposable income in a given period is $Y_d$ and consumption spending is $C$, then saving $S$ is $S = Y_d - C$, and ending wealth is $W_{\text{end}} = W_0 + S$. For example, if a household starts with \$100,000 in savings, earns \$60,000 in disposable income, and spends \$55,000, saving during the year is $S = \$5,000$ and ending wealth is $W = \$105,000$.
+
+**Figure 1.** **Annual Saving (Flow) vs. Cumulative Wealth (Stock).** The bars show annual saving flows each year (\$5k, \$10k, \$8k, \$7k, \$9k). The line traces cumulative wealth, which accumulates from year to year (\$5k, \$15k, \$23k, \$30k, \$39k).
+
+## National Saving and the Open-Economy Identity
+### The Expenditure Identity and National Saving {.unnumbered}
+Start with the expenditure identity $Y = C + I + G + NX$. Rearranging gives $Y - C - G = I + NX$. With taxes $T$, private saving is $S_p = Y - T - C$ and public saving is $S_g = T - G$. National saving adds the two:
+
+$$
+S = S_p + S_g = (Y - T - C) + (T - G) = Y - C - G, \qquad S - I = NX \quad\text{(simplified model)}.
+$$
+
+In a closed economy, $NX = 0$ and national saving equals domestic investment ($S = I$). In an open economy, when investment exceeds saving ($S < I$), net exports are negative ($NX < 0$) and the nation borrows from abroad via net capital inflows.
+
+### Worked Example: Calculating National Saving and Net Exports {.unnumbered}
+Suppose an economy has $Y = 1{,}000$ billion dollars, $C = 650$ billion, and $G = 200$ billion. National saving is $S = 1{,}000 - 650 - 200 = 150$ billion dollars. If domestic investment is $I = 180$ billion, the open-economy identity $S = I + NX$ implies $NX = 150 - 180 = -30$ billion dollars (a \$30 billion trade deficit financed by net foreign capital inflows).
+
+**Figure 2.** **Composition of GDP ($Y = C + I + G + NX$).** National saving $S = Y - C - G$ represents output not consumed by households or spent by government.
+
+**Figure 3.** **Closed vs. Open Economy Accounting.** Closed economy ($S = I$) vs. open economy ($S = I + NX$).
+
+## Loanable Funds: Graph and Mechanism
+### Visual Representation: The Loanable-Funds Equilibrium {.unnumbered}
+In the loanable-funds market, savers supply funds (upward-sloping supply curve $S$) and borrowers demand funds for investment (downward-sloping demand curve $I$). The equilibrium real interest rate $r^*$ equates quantity supplied with quantity demanded.
+
+**Figure 4.** **Loanable Funds Market Equilibrium.** Supply $r = 0.5 + 0.025Q$ intersects demand $r = 6.8 - 0.02Q$ at $Q^* = 140$ billion dollars and $r^* = 4\%$.
+
+### Mathematical Foundation: Equilibrium in Loanable Funds {.unnumbered}
+Suppose $S = 1 + 0.05Y$ and $I = 100 - 10r$. When $Y = 1{,}000$, $S = 51$ billion. Setting $51 = 100 - 10r^*$ yields $10r^* = 49 \Rightarrow r^* = 4.9\%$ at $Q^* = 51$ billion.
+
+::: {.callout-note title="[Advanced: For Economics Majors] Intertemporal Optimization"}
+
+Households choose consumption today ($C_1$) and tomorrow ($C_2$) to maximize $\mathcal{L} = u(C_1) + \beta u(C_2) + \lambda\left(Y_1 - C_1 + \frac{Y_2 - C_2}{1+r}\right)$, yielding $MRS = \frac{1+r}{\beta}$. A higher real interest rate rewards saving and encourages households to defer current consumption.
+
+:::
+
+## Deficits, Interest Rates, and Crowding Out
+### Worked Example: Quantifying Crowding Out {.unnumbered}
+When a government runs a budget deficit ($G > T$), public saving falls, shifting the supply of loanable funds leftward and raising the equilibrium real interest rate $r^*$, which reduces private investment—a mechanism called **crowding out**. Suppose initially $S = 150$ and $I = 300 - 50r$, yielding $r_1^* = 3\%$ and $I_1^* = 150$ billion. If a \$50 billion deficit reduces national saving to $S' = 100$, the new equilibrium is $100 = 300 - 50r_2^* \Rightarrow r_2^* = 4\%$ and $I_2^* = 100$ billion. In practice, monetary accommodation, economic slack, and foreign capital inflows make empirical crowding out partial rather than strictly one-for-one.
+
+**Figure 5.** **Crowding Out in the Loanable Funds Market.** A leftward supply shift raises $r^*$ from $4\%$ to $4.25\%$ and reduces equilibrium investment from $\$140\text{B}$ to $\$130\text{B}$.
+
+**Figure 6.** **Three Scenarios of Crowding Out Magnitude.** Complete crowding out, partial crowding out, and monetary accommodation.
+
+::: {.callout-tip title="FRED Data: Gross Private Domestic Investment and Real Rates"}
+
+FRED series \texttt{GPDI} reports gross private domestic investment in billions of current dollars, \texttt{TGDEF} reports net government saving, and \texttt{DGS10} / \texttt{DFII10} track nominal and TIPS real 10-year Treasury yields.
+
+:::
+
+::: {.callout-note title="Clear It Up: The Identity Is Not a Causal Claim"}
+
+The accounting relation $S - I = NX$ holds ex post by definition, but it does not establish whether saving caused investment or foreign capital inflows drove the trade deficit. Use behavioral models and empirical evidence to reason about causation.
+
+:::
+
+## Check Your Understanding
+
+*  If $Y = 1{,}000$, $C = 650$, and $G = 200$, calculate national saving.
+*  If national saving is $150$ and investment is $180$, what is $NX$ in the simplified open-economy identity?
+*  Why is empirical crowding out typically partial rather than one-for-one?
+
+Answers: (1) $S = 1{,}000 - 650 - 200 = 150$ billion dollars. (2) $NX = 150 - 180 = -30$ billion dollars. (3) Higher interest rates induce additional private saving, foreign capital inflows help finance deficits, and central banks may accommodate downturns.

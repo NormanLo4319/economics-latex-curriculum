@@ -26,14 +26,14 @@ This chapter provides a rigorous, pedagogical treatment of Chapter 4: Consumer a
 % -----------------------------------------------------------------------------
 \section{Consumer Surplus and Marginal Willingness to Pay}
 
-\subsection*{Conceptual Introduction}
+\subsection*{1. Conceptual Introduction}
 Have you ever walked into a store prepared to spend $\$50$ on a pair of shoes, only to find them on sale for $\$30$? If so, you walked out with the shoes \emph{and} an extra $\$20$ in your pocket that you were completely willing to part with. In economics, that $\$20$ gain is called your \textbf{Consumer Surplus ($CS$)}. Every shopper enters the market with a personal maximum price in mind—the highest dollar amount they would pay before walking away empty-handed. Economists call this boundary your \textbf{willingness to pay (WTP)}. Whenever the actual market price is lower than what you were willing to pay, you capture a net financial and psychological win.
 
 In a market, buyers purchase goods one unit at a time. The very first buyers—or the first few items purchased—usually have the highest personal value to consumers (what economists sometimes call ``early buyers'' or intramarginal units). For instance, your first cup of coffee in the morning might be worth $\$8$ to you, but the café only charges $\$4$, giving you $\$4$ in surplus. Your second cup might be worth $\$5$, giving you $\$1$ in surplus. By the time you consider a third cup, its value to you might drop to exactly $\$4$. For that final unit, your willingness to pay matches the market price, yielding zero extra surplus. If price rose to $\$4.01$, you simply would not buy it.
 
 When we add up the surplus enjoyed by every single customer in the entire market, we get \textbf{Total Consumer Surplus}. It represents the total dollar value of happiness, savings, and satisfaction that consumers walk away with over and above what they had to pay. When prices drop—thanks to new technology, cheaper shipping, or increased competition—consumer surplus expands, leaving households with more money left over to spend on other goals like tuition, healthcare, or savings.
 
-\subsection*{Visual Representation}
+\subsection*{2. Visual Representation}
 Figure~\ref{fig:consumer_surplus} graphs consumer surplus on a standard market diagram. 
 
 \begin{tcolorbox}[colback=yellow!10!white,colframe=orange!80!black,title=\textbf{Graphing Tip: Why is Price on the Vertical Y-Axis?}]
@@ -43,32 +43,32 @@ In high school algebra, you usually put the independent variable on the horizont
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[scale=1.1]
-    \fill[CourseBlue, fill opacity=0.18] (0,3) -- (2,3) -- (0,5) -- cycle;
-    \draw[econ axis] (0,0) -- (6.5,0);
-    \draw[econ axis] (0,0) -- (0,6);
-    \node[anchor=north west, font=\small, text=SlateBlue] at (6.5,-0.05) {Quantity ($Q$)};
-    \node[anchor=south east, font=\small, text=SlateBlue] at (-0.05,6) {Price ($P$)};
-    \node[below left, fill=white, inner sep=1pt] at (0,0) {$0$};
-
-    \draw[dashed, thin, color=SlateBlue] (0,3) -- (2,3);
-    \draw[dashed, thin, color=SlateBlue] (2,0) -- (2,3);
-    \node[anchor=east, fill=white, inner sep=1pt] at (-0.08,3) {$P^*=\$60$};
-    \node[anchor=north, fill=white, inner sep=1pt] at (2,-0.08) {$Q^*=20$};
-
-    \draw[very thick, color=CourseBlue] (0,5) -- (5,0);
-    \node[anchor=east, fill=white, inner sep=1pt] at (-0.08,5.08) {$P_{\text{choke}}=\$100$};
-    \node[anchor=west, fill=white, inner sep=1pt] at (5.08,0.4) {Demand};
-
-    \node[fill=white, fill opacity=0.92, text opacity=1, inner sep=1.5pt] at (0.72,3.72) {\textbf{CS = \$400}};
-    \fill[SlateBlue] (2,3) circle (2pt);
-    \draw[densely dashed, thin, color=SlateBlue] (2.3,3.58) -- (2.02,3.04);
-    \node[anchor=south west, fill=white, inner sep=1pt] at (2.3,3.58) {$E^*$};
+    % Axes
+    \draw[->, thick] (0,0) -- (6,0) node[below] {Quantity ($Q$)};
+    \draw[->, thick] (0,0) -- (0,5.5) node[left] {Price ($P$, \$)};
+    \node[below left] at (0,0) {$0$};
+    
+    % Demand curve: P = 100 - 2Q. Scales: Q=20 is x=2, P=100 is y=5. P=60 is y=3.
+    % Line from (0,5) to (5,0)
+    \draw[thick, color=blue!80!black] (0,5) -- (5,0) node[right] {Demand ($P = 100 - 2Q$)};
+    \node[left] at (0,5) {$P_{\text{choke}} = \$100$};
+    
+    % Market Price and Quantity
+    \draw[dashed] (0,3) node[left] {$P^* = \$60$} -- (2,3);
+    \draw[dashed] (2,0) node[below] {$Q^* = 20$} -- (2,3);
+    
+    % Shaded Consumer Surplus Triangle
+    \fill[blue!20, opacity=0.7] (0,3) -- (2,3) -- (0,5) -- cycle;
+    \node at (0.7,3.7) {\textbf{CS = \$400}};
+    
+    % Equilibrium Node
+    \filldraw[black] (2,3) circle (2pt) node[right=3pt] {$E^*(20, \$60)$};
 \end{tikzpicture}
-\caption{Consumer Surplus at Equilibrium. The blue region lies below demand and above the $\$60$ market price; at $Q^*=20$, its area is $\$400$.}
+\caption{Consumer Surplus on the Linear Demand Plane. Consumer surplus is the shaded blue triangle located below the demand curve and above the $\$60$ market price line.}
 \label{fig:consumer_surplus}
 \end{figure}
 
-\subsection*{Real-World Application: Airline Dynamic Pricing and Flight Upgrades}
+\subsection*{3. Real-World Application: Airline Dynamic Pricing and Flight Upgrades}
 Imagine a college student flying home for Thanksgiving break versus a business consultant booking a flight to close a critical $\$100,000$ client deal. 
 \begin{itemize}
     \item The \textbf{consultant} has an urgent deadline. Their company's maximum willingness to pay for a last-minute seat is \textbf{\$900}.
@@ -83,7 +83,7 @@ When both go online, the airline lists the standard coach fare at \textbf{\$350}
 \]
 Both sit in identical seats drinking the same tomato juice, but the consultant captures $\$550$ in surplus while the student captures $\$50$. This real-world difference explains why airlines work so hard with algorithms to separate travelers and charge higher fares to business passengers whenever possible.
 
-\subsection*{Mathematical Foundation (Algebra Level)}
+\subsection*{4. Mathematical Foundation (Algebra Level)}
 Because the demand curve in our example is a straight line, the area of Consumer Surplus forms a simple right-angled triangle. You do not need any advanced calculus—just basic high school geometry:
 \begin{equation}
 \text{Consumer Surplus } (CS) = \frac{1}{2} \times \text{Base} \times \text{Height}
@@ -154,7 +154,7 @@ Notice that elementary triangle geometry and calculus yield the exact same $\$40
 % -----------------------------------------------------------------------------
 \section{Producer Surplus and Marginal Cost}
 
-\subsection*{Conceptual Introduction}
+\subsection*{1. Conceptual Introduction}
 Just as consumers gain surplus by paying less than their maximum valuation, sellers gain surplus by selling goods for more than it cost to make them. Every business owner has a minimum price they must receive before they agree to produce and sell an additional unit. Economists call this threshold their \textbf{willingness to accept (WTA)}, which directly equals the \textbf{marginal cost ($MC$)} of producing that extra item.
 
 \textbf{Producer Surplus ($PS$)} is the net operating gain earned by firms. It is the gap between the money a firm collects at the market price and the minimum cost required to produce those items:
@@ -165,38 +165,37 @@ A vital point for business and economics students is that \textbf{producer surpl
 
 Because supply curves slope upward (due to diminishing returns and rising production costs), earlier units can be produced very cheaply, generating large operating surplus. The very last unit produced breaks even on operating costs ($P^* = MC$).
 
-\subsection*{Visual Representation}
-Figure~\ref{fig:producer_surplus} depicts Producer Surplus as the orange shaded triangle located above the supply curve and below the market price line.
+\subsection*{2. Visual Representation}
+Figure~\ref{fig:producer_surplus} depicts Producer Surplus as the red shaded triangle located above the supply curve and below the market price line.
 
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[scale=1.1]
-    \fill[CourseOrange, fill opacity=0.18] (0,1) -- (2,3) -- (0,3) -- cycle;
-    \draw[econ axis] (0,0) -- (6.5,0);
-    \draw[econ axis] (0,0) -- (0,6);
-    \node[anchor=north west, font=\small, text=SlateBlue] at (6.5,-0.05) {Quantity ($Q$)};
-    \node[anchor=south east, font=\small, text=SlateBlue] at (-0.05,6) {Price ($P$)};
-    \node[below left, fill=white, inner sep=1pt] at (0,0) {$0$};
-
-    \draw[dashed, thin, color=SlateBlue] (0,3) -- (2,3);
-    \draw[dashed, thin, color=SlateBlue] (2,0) -- (2,3);
-    \node[anchor=east, fill=white, inner sep=1pt] at (-0.08,3) {$P^*=\$60$};
-    \node[anchor=north, fill=white, inner sep=1pt] at (2,-0.08) {$Q^*=20$};
-
-    \draw[very thick, color=CourseOrange] (0,1) -- (4.5,5.5);
-    \node[anchor=east, fill=white, inner sep=1pt] at (-0.08,1) {$P_{\min}=\$20$};
-    \node[anchor=west, fill=white, inner sep=1pt] at (4.55,5.55) {Supply};
-
-    \node[fill=white, fill opacity=0.92, text opacity=1, inner sep=1.5pt] at (0.72,2.28) {\textbf{PS = \$400}};
-    \fill[SlateBlue] (2,3) circle (2pt);
-    \draw[densely dashed, thin, color=SlateBlue] (2.32,2.55) -- (2.02,2.96);
-    \node[anchor=north west, fill=white, inner sep=1pt] at (2.32,2.55) {$E^*$};
+    % Axes
+    \draw[->, thick] (0,0) -- (6,0) node[below] {Quantity ($Q$)};
+    \draw[->, thick] (0,0) -- (0,5.5) node[left] {Price ($P$, \$)};
+    \node[below left] at (0,0) {$0$};
+    
+    % Supply curve: P = 20 + 2Q. Scales: Q=20 is x=2, P=20 is y=1. P=60 is y=3.
+    % Line from (0,1) to (4.5,5.5)
+    \draw[thick, color=red!80!black] (0,1) node[left] {$P_{\text{min}} = \$20$} -- (4.25,5.25) node[right] {Supply ($P = 20 + 2Q$)};
+    
+    % Market Price and Quantity
+    \draw[dashed] (0,3) node[left] {$P^* = \$60$} -- (2,3);
+    \draw[dashed] (2,0) node[below] {$Q^* = 20$} -- (2,3);
+    
+    % Shaded Producer Surplus Triangle
+    \fill[red!20, opacity=0.7] (0,1) -- (2,3) -- (0,3) -- cycle;
+    \node at (0.7,2.3) {\textbf{PS = \$400}};
+    
+    % Equilibrium Node
+    \filldraw[black] (2,3) circle (2pt) node[below right=3pt] {$E^*(20, \$60)$};
 \end{tikzpicture}
-\caption{Producer Surplus at Equilibrium. The orange region lies above supply and below the $\$60$ market price; at $Q^*=20$, its area is $\$400$.}
+\caption{Producer Surplus on the Linear Supply Plane. Producer surplus is the shaded red triangle located above the supply curve and below the $\$60$ market price line.}
 \label{fig:producer_surplus}
 \end{figure}
 
-\subsection*{Real-World Application: Coffee Shops and Morning Espresso Sales}
+\subsection*{3. Real-World Application: Coffee Shops and Morning Espresso Sales}
 Consider an independent café in San Francisco selling cold brew coffee for \textbf{\$5.00} a cup. 
 \begin{itemize}
     \item The direct variable cost (coffee beans, filtered water, compostable cup, and milk) for the barista to brew the first batch of cups is only about \textbf{\$1.50 per cup}.
@@ -209,7 +208,7 @@ As the morning rush peaks, the café has to hire extra staff and run grinders co
 
 Across 300 cups, the accumulated producer surplus might total $\$600$ for the morning. Does the owner pocket all $\$600$ as pure profit? No—they must use that $\$600$ producer surplus to pay fixed bills like the $\$4,000$ monthly shop rent, electric utilities, and insurance. Whatever is left over after paying fixed costs is their economic profit.
 
-\subsection*{Mathematical Foundation (Algebra Level)}
+\subsection*{4. Mathematical Foundation (Algebra Level)}
 For a linear supply curve, Producer Surplus ($PS$) is calculated as the area of a right-angled triangle:
 \begin{equation}
 \text{Producer Surplus } (PS) = \frac{1}{2} \times \text{Base} \times \text{Height}
@@ -266,7 +265,7 @@ PS = \int_{0}^{Q^*} \left[ P^* - MC(q) \right] dq = \int_{0}^{20} (60 - (20 + 2q
 % -----------------------------------------------------------------------------
 \section{Allocative Efficiency and Price Controls}
 
-\subsection*{Conceptual Introduction}
+\subsection*{1. Conceptual Introduction}
 When we combine both sides of the market, we arrive at the total economic gain created by voluntary trade, known as \textbf{Total Social Surplus ($TS$)}:
 \begin{equation}
 \text{Total Social Surplus} = \text{Consumer Surplus} + \text{Producer Surplus}
@@ -277,78 +276,76 @@ A competitive market in equilibrium achieves what economists call \textbf{alloca
 
 When governments try to dictate prices by law—such as imposing a legal maximum price (\textbf{price ceiling})—the market cannot reach this balance. If the ceiling is set below the natural equilibrium price, two things happen: sellers produce fewer units because low prices do not cover their costs, while buyers rush to purchase more because it is cheap. This creates an immediate physical \textbf{shortage}. More importantly, trades that both buyers and sellers wanted to make are legally blocked, shrinking the total economic pie and creating a permanent loss to society called \textbf{deadweight loss}.
 
-\subsection*{Visual Representation}
+\subsection*{2. Visual Representation}
 Figure~\ref{fig:market_efficiency} shows the market in natural balance, maximizing the total economic pie to $\$800$. Figure~\ref{fig:price_ceiling} shows what happens when the government imposes a price ceiling at $\$40$.
 
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[scale=1.1]
-    \fill[CourseBlue, fill opacity=0.18] (0,3) -- (2,3) -- (0,5) -- cycle;
-    \fill[CourseOrange, fill opacity=0.18] (0,1) -- (2,3) -- (0,3) -- cycle;
-    \draw[econ axis] (0,0) -- (6.5,0);
-    \draw[econ axis] (0,0) -- (0,6);
-    \node[anchor=north west, font=\small, text=SlateBlue] at (6.5,-0.05) {Quantity ($Q$)};
-    \node[anchor=south east, font=\small, text=SlateBlue] at (-0.05,6) {Price ($P$)};
-    \node[below left, fill=white, inner sep=1pt] at (0,0) {$0$};
-
-    \draw[dashed, thin, color=SlateBlue] (0,3) -- (2,3);
-    \draw[dashed, thin, color=SlateBlue] (2,0) -- (2,3);
-    \node[anchor=east, fill=white, inner sep=1pt] at (-0.08,3) {$P^*=\$60$};
-    \node[anchor=north, fill=white, inner sep=1pt] at (2,-0.08) {$Q^*=20$};
-
-    \draw[very thick, color=CourseBlue] (0,5) -- (5,0);
-    \draw[very thick, color=CourseOrange] (0,1) -- (4.5,5.5);
-    \node[anchor=west, fill=white, inner sep=1pt] at (5.08,0.4) {Demand};
-    \node[anchor=west, fill=white, inner sep=1pt] at (4.55,5.55) {Supply};
-
-    \node[fill=white, fill opacity=0.92, text opacity=1, inner sep=1.5pt] at (0.72,3.72) {\textbf{CS = \$400}};
-    \node[fill=white, fill opacity=0.92, text opacity=1, inner sep=1.5pt] at (0.72,2.28) {\textbf{PS = \$400}};
-    \node[anchor=west, fill=white, inner sep=1pt] at (3.25,4.95) {\textbf{Total surplus = \$800}};
-    \fill[SlateBlue] (2,3) circle (2pt);
-    \draw[densely dashed, thin, color=SlateBlue] (2.3,3.58) -- (2.02,3.04);
-    \node[anchor=south west, fill=white, inner sep=1pt] at (2.3,3.58) {$E^*$};
+    % Axes
+    \draw[->, thick] (0,0) -- (6,0) node[below] {Quantity ($Q$)};
+    \draw[->, thick] (0,0) -- (0,5.5) node[left] {Price ($P$, \$)};
+    \node[below left] at (0,0) {$0$};
+    
+    % Curves
+    \draw[thick, color=blue!80!black] (0,5) -- (5,0) node[right] {Demand};
+    \draw[thick, color=red!80!black] (0,1) -- (4.25,5.25) node[right] {Supply};
+    
+    % Equilibrium dashed lines
+    \draw[dashed] (0,3) node[left] {$P^* = \$60$} -- (2,3);
+    \draw[dashed] (2,0) node[below] {$Q^* = 20$} -- (2,3);
+    
+    % Shaded Areas
+    \fill[blue!25, opacity=0.7] (0,3) -- (2,3) -- (0,5) -- cycle;
+    \node at (0.7,3.7) {\textbf{CS = \$400}};
+    
+    \fill[red!25, opacity=0.7] (0,1) -- (2,3) -- (0,3) -- cycle;
+    \node at (0.7,2.3) {\textbf{PS = \$400}};
+    
+    \filldraw[black] (2,3) circle (2pt) node[right=3pt] {$E^*(20, \$60)$};
+    \node[right] at (3.0,4.7) {\textbf{Total Surplus = \$800 (Maximized)}};
 \end{tikzpicture}
-\caption{Maximized Social Surplus in a Free Market. At $E^*(20,\$60)$, consumer surplus and producer surplus each equal $\$400$, for total surplus of $\$800$.}
+\caption{Maximized Social Surplus in a Free Market. At equilibrium $E^*(20, \$60)$, Total Social Surplus is $\$400 + \$400 = \$800$, and no trades are wasted.}
 \label{fig:market_efficiency}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[scale=1.1]
-    \fill[CoursePurple, fill opacity=0.24] (1,2) -- (1,4) -- (2,3) -- cycle;
-    \draw[econ axis] (0,0) -- (6.5,0);
-    \draw[econ axis] (0,0) -- (0,6);
-    \node[anchor=north west, font=\small, text=SlateBlue] at (6.5,-0.05) {Quantity ($Q$)};
-    \node[anchor=south east, font=\small, text=SlateBlue] at (-0.05,6) {Price ($P$)};
-    \node[below left, fill=white, inner sep=1pt] at (0,0) {$0$};
-
-    \draw[dashed, thin, color=SlateBlue] (0,2) -- (1,2);
-    \draw[dashed, thin, color=SlateBlue] (1,0) -- (1,4);
-    \draw[dashed, thin, color=SlateBlue] (3,0) -- (3,2);
-    \node[anchor=east, fill=white, inner sep=1pt] at (-0.08,2) {$\bar{P}=\$40$};
-    \node[anchor=north, fill=white, inner sep=1pt] at (1,-0.12) {$Q_s=10$};
-    \node[anchor=north, fill=white, inner sep=1pt] at (3,-0.12) {$Q_d=30$};
-
-    \draw[very thick, color=CourseBlue] (0,5) -- (5,0);
-    \draw[very thick, color=CourseOrange] (0,1) -- (4.5,5.5);
-    \node[anchor=west, fill=white, inner sep=1pt] at (5.08,0.4) {Demand};
-    \node[anchor=west, fill=white, inner sep=1pt] at (4.55,5.55) {Supply};
-
-    \draw[very thick, color=CoursePurple] (0,2) -- (4.35,2);
-    \node[anchor=south west, fill=white, inner sep=1pt] at (4.35,2.02) {Price ceiling ($\$40$)};
-    \draw[densely dashed, thin, <->, color=SlateBlue] (1,0.62) -- (3,0.62);
-    \node[fill=white, inner sep=1pt] at (2,0.9) {Shortage: 20 units};
-    \node[fill=white, fill opacity=0.92, text opacity=1, inner sep=1.5pt] at (1.42,3) {\textbf{DWL}};
-
-    \fill[SlateBlue] (2,3) circle (1.8pt);
-    \draw[densely dashed, thin, color=SlateBlue] (2.35,3.68) -- (2.02,3.04);
-    \node[anchor=south west, fill=white, inner sep=1pt] at (2.35,3.68) {$E^*$};
+    % Axes
+    \draw[->, thick] (0,0) -- (6,0) node[below] {Quantity ($Q$)};
+    \draw[->, thick] (0,0) -- (0,5.5) node[left] {Price ($P$, \$)};
+    \node[below left] at (0,0) {$0$};
+    
+    % Curves: Demand P = 100 - 2Q, Supply P = 20 + 2Q
+    \draw[thick, color=blue!80!black] (0,5) -- (5,0) node[right] {Demand};
+    \draw[thick, color=red!80!black] (0,1) -- (4.25,5.25) node[right] {Supply};
+    
+    % Price Ceiling at P_cap = $40 (y = 2.0). 
+    % On Supply: 40 = 20 + 2Q => Qs = 10 (x = 1.0).
+    % On Demand: 40 = 100 - 2Q => Qd = 30 (x = 3.0).
+    % At Q = 10 on Demand: P = 100 - 2(10) = $80 (y = 4.0).
+    \draw[thick, color=purple, line width=1.5pt] (0,2) -- (4.5,2) node[right] {Price Ceiling ($\$40$)};
+    \draw[dashed] (0,2) node[left] {$\bar{P} = \$40$} -- (1,2);
+    \draw[dashed] (1,0) node[below] {$Q_s = 10$} -- (1,4);
+    \draw[dashed] (3,0) node[below] {$Q_d = 30$} -- (3,2);
+    
+    % Shortage bracket on horizontal axis
+    \draw[<->, thick, color=purple] (1,0.5) -- node[above] {Shortage: 20 units} (3,0.5);
+    
+    % Deadweight Loss Triangle between Q=10 and Q=20
+    % Coordinates: (1,2) on Supply, (1,4) on Demand, (2,3) Equilibrium
+    \fill[orange!40, opacity=0.8] (1,2) -- (1,4) -- (2,3) -- cycle;
+    \node at (1.45,3.0) {\textbf{DWL}};
+    
+    % Pre-ceiling equilibrium reference
+    \filldraw[gray] (2,3) circle (1.5pt) node[right=2pt] {\small $E^*(20, \$60)$};
 \end{tikzpicture}
-\caption{The Impact of a Binding Price Ceiling. At $\$40$, quantity supplied is $10$ and quantity demanded is $30$, so the shortage is $20$ units. The purple triangle marks the lost gains from trade.}
+\caption{The Impact of a Binding Price Ceiling. Capping the price at $\$40$ causes quantity supplied to collapse to $10$ while quantity demanded jumps to $30$, creating a shortage of $20$ units and an orange Deadweight Loss triangle of lost trades.}
 \label{fig:price_ceiling}
 \end{figure}
 
-\subsection*{Real-World Application: Rent Control in San Francisco and New York}
+\subsection*{3. Real-World Application: Rent Control in San Francisco and New York}
 In expensive housing markets like San Francisco and New York City, local governments often cap how much landlords can raise apartment rents each year. The compassionate goal is simple: keep current residents from being priced out of their neighborhoods.
 
 However, consider the economic consequences over time:
@@ -358,7 +355,7 @@ However, consider the economic consequences over time:
     \item \textbf{The Result:} A severe \textbf{housing shortage}. College students and young workers searching for an apartment face lines around the block, application lotteries, and expensive broker finder fees. While incumbent tenants lucky enough to have a rent-controlled lease benefit, many others are locked out completely—an exact demonstration of deadweight loss and shortages in action.
 \end{itemize}
 
-\subsection*{Mathematical Foundation (Algebra Level)}
+\subsection*{4. Mathematical Foundation (Algebra Level)}
 Let's analyze the exact numbers when the government imposes a price ceiling of $\bar{P} = \$40$ on our battery charger market ($P_d = 100 - 2Q$ and $P_s = 20 + 2Q$).
 
 \noindent\textbf{Step-by-Step Breakdown:}
@@ -395,7 +392,7 @@ Let's analyze the exact numbers when the government imposes a price ceiling of $
     \]
     
     \item \textbf{Calculate Deadweight Loss ($DWL$):}
-    The market dropped from producing 20 units down to 10 units. Trades for units 11 through 20 were completely eliminated. The lost value forms the purple triangle in Figure~\ref{fig:price_ceiling}:
+    The market dropped from producing 20 units down to 10 units. Trades for units 11 through 20 were completely eliminated. The lost value forms the orange triangle in Figure~\ref{fig:price_ceiling}:
     \[
     \text{Base of DWL Triangle} = \text{Vertical Gap at } Q=10 = \$80 - \$40 = \$40
     \]
@@ -427,7 +424,7 @@ This proves mathematically that social welfare is strictly maximized where suppl
 % -----------------------------------------------------------------------------
 \section{Market Distortions: Taxes, Wedges, and Deadweight Loss}
 
-\subsection*{Conceptual Introduction}
+\subsection*{1. Conceptual Introduction}
 Governments need revenue to fund essential public goods like highways, libraries, and public colleges. One of the most common ways they raise money is by levying an \textbf{excise tax}—a flat dollar tax per unit sold, such as a $\$1.00$ tax on a pack of cigarettes or a $\$0.50$ tax per gallon of gasoline.
 
 When a tax is enacted, it drives a physical \textbf{tax wedge} between what the buyer pays and what the seller actually gets to keep:
@@ -438,51 +435,53 @@ A widespread misconception among the general public is that politicians can deci
 
 Because the tax raises the price buyers pay and lowers the price sellers keep, fewer total transactions take place ($Q_t < Q^*$). The government successfully collects revenue, but the lost trades that never happened generate \textbf{Deadweight Loss ($DWL$)}. Furthermore, as the tax rate increases, deadweight loss does not grow in a straight line—it explodes with the square of the tax rate ($DWL \propto t^2$). This principle, known as the \textbf{Quadratic Excess Burden Theorem}, means that doubling a tax rate actually \emph{quadruples} the wasted welfare in the economy!
 
-\subsection*{Visual Representation}
+\subsection*{2. Visual Representation}
 Figure~\ref{fig:tax_wedge} illustrates a tax wedge of $t = \$12$ placed on our charger market. 
 
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[scale=1.1]
-    \fill[CourseAmber, fill opacity=0.28] (0,2.7) rectangle (1.7,3.3);
-    \fill[CoursePurple, fill opacity=0.24] (1.7,2.7) -- (1.7,3.3) -- (2,3) -- cycle;
-    \draw[econ axis] (0,0) -- (6.5,0);
-    \draw[econ axis] (0,0) -- (0,6);
-    \node[anchor=north west, font=\small, text=SlateBlue] at (6.5,-0.05) {Quantity ($Q$)};
-    \node[anchor=south east, font=\small, text=SlateBlue] at (-0.05,6) {Price ($P$)};
-    \node[below left, fill=white, inner sep=1pt] at (0,0) {$0$};
-
-    \draw[dashed, thin, color=SlateBlue] (2,0) -- (2,3);
-    \draw[dashed, thin, color=SlateBlue] (0,3.3) -- (1.7,3.3);
-    \draw[dashed, thin, color=SlateBlue] (0,2.7) -- (1.7,2.7);
-    \draw[dashed, thin, color=SlateBlue] (1.7,0) -- (1.7,3.3);
-    \node[anchor=east, fill=white, inner sep=1pt] at (-0.08,3.3) {$P_b=\$66$};
-    \node[anchor=east, fill=white, inner sep=1pt] at (-0.08,2.7) {$P_s=\$54$};
-    \node[anchor=north, fill=white, inner sep=1pt] at (1.7,-0.12) {$Q_t=17$};
-    \node[anchor=north, fill=white, inner sep=1pt] at (2,-0.72) {$Q^*=20$};
-
-    \draw[very thick, color=CourseBlue] (0,5) -- (5,0);
-    \draw[very thick, color=CourseOrange] (0,1) -- (4.5,5.5);
-    \node[anchor=west, fill=white, inner sep=1pt] at (5.08,0.4) {Demand};
-    \node[anchor=west, fill=white, inner sep=1pt] at (4.55,5.55) {Supply};
-
-    \draw[thick, <->, color=SlateBlue] (1.7,2.72) -- (1.7,3.28);
-    \fill[SlateBlue] (2,3) circle (1.8pt);
-    \draw[densely dashed, thin, color=SlateBlue] (2.38,4) -- (2.03,3.04);
-    \node[anchor=south west, fill=white, inner sep=1pt] at (2.38,4) {$E^*$};
+    % Axes
+    \draw[->, thick] (0,0) -- (6,0) node[below] {Quantity ($Q$)};
+    \draw[->, thick] (0,0) -- (0,5.5) node[left] {Price ($P$, \$)};
+    \node[below left] at (0,0) {$0$};
+    
+    % Curves: Demand P = 100 - 2Q, Supply P = 20 + 2Q
+    % Free market equilibrium: Q=20 (x=2), P=60 (y=3)
+    \draw[thick, color=blue!80!black] (0,5) -- (5,0) node[right] {Demand};
+    \draw[thick, color=red!80!black] (0,1) -- (4.25,5.25) node[right] {Supply};
+    
+    % Pre-tax equilibrium dashed
+    \draw[dashed, gray] (2,0) node[below] {$Q^* = 20$} -- (2,3);
+    
+    % Post-tax prices: Qt = 17 (x = 1.7), Pb = $66 (y = 3.3), Ps = $54 (y = 2.7)
+    \draw[dashed] (0,3.3) node[left] {$P_b = \$66$} -- (1.7,3.3);
+    \draw[dashed] (0,2.7) node[left] {$P_s = \$54$} -- (1.7,2.7);
+    \draw[dashed] (1.7,0) node[below] {$Q_t = 17$} -- (1.7,3.3);
+    
+    % Tax wedge vertical arrow
+    \draw[thick, <->] (1.7,2.7) -- node[left] {$t = \$12$} (1.7,3.3);
+    
+    % Government Revenue Rectangle: width = 1.7, height = 3.3 - 2.7 = 0.6
+    \fill[orange!30, opacity=0.7] (0,2.7) rectangle (1.7,3.3);
+    \node at (0.85,3.0) {\textbf{Tax Rev = \$204}};
+    
+    % Deadweight Loss Triangle: (1.7, 2.7) to (1.7, 3.3) to (2.0, 3.0)
+    \fill[red!40, opacity=0.8] (1.7,2.7) -- (1.7,3.3) -- (2,3) -- cycle;
+    \node at (2.45,3.0) {\textbf{DWL = \$18}};
 \end{tikzpicture}
-\caption{The Anatomy of an Excise Tax. A $\$12$ tax lowers quantity from $20$ to $17$, with buyers paying $\$66$ and sellers receiving $\$54$. The amber rectangle is $\$204$ in tax revenue; the purple triangle is $\$18$ in deadweight loss.}
+\caption{The Anatomy of an Excise Tax. A $\$12$ tax contracts market quantity from 20 to 17. The government collects $\$204$ in revenue (the orange box), while $\$18$ in social welfare is permanently destroyed as deadweight loss (the red triangle).}
 \label{fig:tax_wedge}
 \end{figure}
 
-\subsection*{Real-World Application: California Gasoline Excise Taxes}
+\subsection*{3. Real-World Application: California Gasoline Excise Taxes}
 Every time drivers in California fill their fuel tanks, they pay approximately \textbf{\$0.54 per gallon} in state excise taxes, plus federal taxes and environmental fees. 
 \begin{itemize}
-    \item \textbf{Where does the money go?} The amber rectangle in Figure~\ref{fig:tax_wedge} represents the billions of dollars flowing directly into state coffers to pave roads, fix highway bridges, and fund regional transit like BART and Caltrain.
-    \item \textbf{Where is the deadweight loss?} Because gas costs more, some families cancel a weekend road trip, small contractors drive fewer delivery routes, and some commuters spend extra hours on slower buses. The loss in satisfaction and economic productivity from those foregone trips represents the purple triangle: deadweight loss that nobody captures.
+    \item \textbf{Where does the money go?} The orange rectangle in Figure~\ref{fig:tax_wedge} represents the billions of dollars flowing directly into state coffers to pave roads, fix highway bridges, and fund regional transit like BART and Caltrain.
+    \item \textbf{Where is the deadweight loss?} Because gas costs more, some families cancel a weekend road trip, small contractors drive fewer delivery routes, and some commuters spend extra hours on slower buses. The loss in satisfaction and economic productivity from those foregone trips represents the red triangle: deadweight loss that nobody captures.
 \end{itemize}
 
-\subsection*{Mathematical Foundation (Algebra Level)}
+\subsection*{4. Mathematical Foundation (Algebra Level)}
 
 \begin{tcolorbox}[colback=green!10!white,colframe=green!60!black,title=\textbf{Key Concept: Statutory Neutrality (Who Pays Doesn't Matter!)}]
 Suppose the government passes a $\$12$ tax on our chargers. Look at what happens under the two legal options:
@@ -537,7 +536,7 @@ Using our charger market where $P_d = 100 - 2Q$, $P_s = 20 + 2Q$, and tax $t = \
     \]
     
     \item \textbf{Calculate Deadweight Loss ($DWL$):}
-    The lost trades form the purple Harberger triangle with base equal to the tax wedge ($t = \$12$) and height equal to the lost units ($\Delta Q = 3$):
+    The lost trades form the red Harberger triangle with base equal to the tax wedge ($t = \$12$) and height equal to the lost units ($\Delta Q = 3$):
     \[
     DWL = \frac{1}{2} \times \text{Base} \times \text{Height} = \frac{1}{2} \times t \times \Delta Q = \frac{1}{2} \times \$12 \times 3 = 6 \times 3 = \mathbf{\$18}
     \]

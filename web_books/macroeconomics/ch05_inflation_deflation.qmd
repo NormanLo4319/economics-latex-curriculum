@@ -1,0 +1,92 @@
+---
+title: "Chapter 5: Inflation and Deflation"
+format:
+  html:
+    math:
+      method: mathjax
+---
+
+>
+This chapter examines how economists measure the aggregate price level using market baskets and price indexes (CPI, PPI, and the GDP Implicit Price Deflator), calculate national inflation and deflation rates, adjust nominal values into real purchasing power, and evaluate real interest rates via the Fisher Equation.
+
+## Learning Outcomes and Key Terms
+By the end of this chapter, students should be able to construct a market-basket price index; compute national inflation, disinflation, and deflation rates; compare the CPI, PPI, and GDP Implicit Price Deflator; identify upward biases in the CPI; and distinguish nominal wage and interest growth from changes in real purchasing power. These goals support MA-1 and C2002-1. Key terms include aggregate price level, market basket, Consumer Price Index (CPI), Producer Price Index (PPI), GDP deflator, inflation rate, deflation, disinflation, substitution bias, real wage, and Fisher equation.
+
+## Market Baskets and Price Indexes
+### Constructing a Price Index {.unnumbered}
+Unlike single-product market prices ($P$) studied in Chapter 3, the **aggregate price level** is an index measure summarizing overall prices across a standardized **market basket** of goods and services relative to a chosen base period ($\text{Index}_{\text{base}} = 100$):
+
+$$
+\text{CPI}_t = \frac{\text{Cost of Market Basket}_t}{\text{Cost of Market Basket}_0} \times 100, \qquad
+\text{GDP Deflator}_t = \frac{\text{Nominal GDP}_t}{\text{Real GDP}_t} \times 100.
+$$
+
+The Consumer Price Index (CPI) tracks prices paid by urban consumers (including imported consumer goods), the Producer Price Index (PPI) tracks wholesale prices received by domestic producers, and the GDP Implicit Price Deflator reflects price changes across all domestically produced final goods and services ($C, I, G, X$).
+
+## Calculating National Inflation and Deflation
+### Inflation, Disinflation, and Deflation {.unnumbered}
+The national inflation rate $\pi_t$ is the percentage rate of change in the aggregate price index from period $t-1$ to period $t$:
+
+$$
+\pi_t = \frac{P_t - P_{t-1}}{P_{t-1}} \times 100\%.
+$$
+
+When $\pi_t > 0$, the economy experiences **inflation** (a rising aggregate price level and falling dollar purchasing power). When $\pi_t > 0$ but is smaller than in the prior period (for example, falling from $6\%$ to $3\%$), the economy experiences **disinflation**. When $\pi_t < 0$, the aggregate price level falls outright—a condition called **deflation**.
+
+### Worked Basket and Inflation Calculation {.unnumbered}
+Suppose a representative market basket costs $\$500$ in the base year ($t=0$), $\$550$ in Year 1, and $\$539$ in Year 2:
+\begin{align}
+\text{CPI}_0 &= \frac{500}{500} \times 100 = 100.0, \\
+\text{CPI}_1 &= \frac{550}{500} \times 100 = 110.0 \quad \Longrightarrow \quad \pi_1 = \frac{110.0 - 100.0}{100.0} \times 100\% = +10.0\% \text{ (inflation)}, \\
+\text{CPI}_2 &= \frac{539}{500} \times 100 = 107.8 \quad \Longrightarrow \quad \pi_2 = \frac{107.8 - 110.0}{110.0} \times 100\% = -2.0\% \text{ (deflation)}.
+\end{align}
+
+## Nominal Values, Real Purchasing Power, and the Fisher Equation
+### Nominal Wages and Real Purchasing Power {.unnumbered}
+A nominal wage is measured in current dollars. A real wage adjusts for the price level and indicates how much of a reference-period basket that wage can buy:
+
+$$
+W^{\text{real}}_t = \frac{W^{\text{nom}}_t}{\text{CPI}_t} \times 100,
+$$
+
+when the CPI is normalized to 100 in the chosen reference period. If a nominal wage rises more slowly than the CPI, its purchasing power falls even though the dollar wage increased.
+
+### Work It Out: A Raise That Does Not Keep Pace with Prices {.unnumbered}
+Suppose an hourly wage rises from $\$20.00$ to $\$20.80$, a $4\%$ increase. Over the same period, the CPI rises from 300 to 315, a $5\%$ increase. Express the new wage in the initial period's purchasing power:
+\begin{align}
+W^{\text{real}}_0 &= \frac{\$20.00}{300} \times 100 = \$6.667, \\
+W^{\text{real}}_1 &= \frac{\$20.80}{315} \times 100 \approx \$6.603.
+\end{align}
+The real wage changes by approximately $(6.603/6.667) - 1 = -0.95\%$. The worker receives 80 cents more per hour in nominal terms, but the CPI basket costs more, so purchasing power falls slightly.
+
+::: {.callout-note title="Clear It Up: Nominal Raise Does Not Guarantee a Real Raise"}
+
+Compare growth rates, not dollar changes alone. When nominal wage growth is below inflation, real wage growth is negative. Similarly, the real interest rate satisfies the Fisher approximation $r \approx i - \pi^e$: unexpected inflation redistributes purchasing power from lenders to borrowers.
+
+:::
+
+::: {.callout-note title="Optional Advanced: Exact Fisher Compounding for Real Wages and Rates"}
+
+The exact relation between nominal wage growth $g_W$, inflation $\pi$, and real wage growth $g_{\text{real}}$ is:
+
+$$
+1 + g_{\text{real}} = \frac{1 + g_W}{1 + \pi}, \qquad g_{\text{real}} = \frac{1 + g_W}{1 + \pi} - 1.
+$$
+
+For $g_W = 0.04$ and $\pi = 0.05$, exact real growth is $1.04/1.05 - 1 \approx -0.00952$, or about $-0.95\%$. Analogously, the exact real interest rate satisfies $1 + r = \frac{1 + i}{1 + \pi^e}$.
+
+:::
+
+::: {.callout-tip title="FRED Data: CPI and PPI Price Indexes"}
+
+FRED series \texttt{CPIAUCSL} is the seasonally adjusted U.S. all-items CPI for all urban consumers, reported monthly as an index with 1982–84=100, and \texttt{PPIACO} tracks the all-commodities Producer Price Index. Because the CPI uses fixed short-run basket weights, substitution bias, quality improvements, and new product introductions cause it to overstate true cost-of-living increases by roughly $0.5$ to $1.0$ percentage points per year.
+
+:::
+
+## Check Your Understanding
+
+*  Distinguish inflation, disinflation, and deflation using numerical values of $\pi_t$.
+*  A nominal wage rises $3\%$ while CPI inflation is $6\%$. Is real wage growth positive or negative? Use the exact Fisher relation to estimate it.
+*  How does the GDP Implicit Price Deflator differ from the CPI in basket coverage?
+
+Answers: (1) Inflation: $\pi_t > 0$; disinflation: $\pi_t > 0$ but lower than $\pi_{t-1}$; deflation: $\pi_t < 0$. (2) Negative: $1.03/1.06 - 1 \approx -2.83\%$. (3) The GDP Deflator covers all domestically produced final goods and services ($C, I, G, X$) with changing weights, whereas the CPI covers a fixed urban consumer basket that includes imported consumer goods.

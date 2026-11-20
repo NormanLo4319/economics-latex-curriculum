@@ -1,0 +1,485 @@
+\documentclass[11pt,letterpaper]{article}
+\input{../../shared/preamble.tex}
+\input{../../shared/tikz-settings.tex}
+
+% Self-contained Okabe-Ito colorblind-safe palette definitions
+\definecolor{oiSlate}{HTML}{1E293B}
+\definecolor{oiBlue}{HTML}{0072B2}
+\definecolor{oiOrange}{HTML}{D55E00}
+\definecolor{oiGreen}{HTML}{009E73}
+\definecolor{oiPurple}{HTML}{CC79A7}
+\definecolor{oiAmber}{HTML}{D97706}
+
+\begin{document}
+
+\title{\Huge\bfseries\color{SlateBlue} Chapter 8: Income, Expenditure, and the Keynesian Cross}
+\author{\large Principles of Macroeconomics Curriculum}
+\date{2026}
+\maketitle
+
+\thispagestyle{plain}
+
+\begin{abstract}
+This chapter develops the short-run income--expenditure model (the Keynesian cross), benchmarked to Krugman and Wells. It derives the aggregate consumption and saving functions, distinguishes planned investment from unplanned inventory accumulation, solves for short-run macroeconomic equilibrium where output equals planned aggregate expenditure ($Y = AE_{\text{planned}}$), and quantifies the autonomous spending, lump-sum tax, balanced-budget, and leakage-damped multipliers.
+\end{abstract}
+
+\tableofcontents
+\vspace{1.5em}
+\hrule
+\vspace{1.5em}
+
+% =====================================================================
+% SECTION 1: LEARNING OUTCOMES, KEY TERMS & BRING IT HOME ANCHOR
+% =====================================================================
+\section{Learning Outcomes, Key Terms, and Core Dilemma}
+
+\subsection*{Learning Outcomes}
+After completing this chapter, students should be able to:
+\begin{enumerate}
+    \item Construct the aggregate consumption function ($C = C_0 + cY_D$) and saving schedule ($S = -C_0 + (1-c)Y_D$), and relate the marginal propensity to consume ($MPC$) to the marginal propensity to save ($MPS$).
+    \item Distinguish planned investment spending ($I_{\text{planned}}$) from unplanned inventory investment ($I_{\text{unplanned}}$) and explain how inventory adjustments drive short-run output toward equilibrium.
+    \item Identify short-run macroeconomic equilibrium on a 45-degree Keynesian cross diagram ($Y^* = AE_{\text{planned}}$) and solve for $Y^*$ algebraically.
+    \item Calculate and compare the autonomous spending multiplier ($k_G$), the lump-sum tax multiplier ($k_T$), and the balanced-budget multiplier ($k_{BB}$).
+    \item Explain how proportional income taxes ($t$), marginal propensity to import ($m$), price-level changes, and interest-rate crowding out dampen the real-world multiplier.
+\end{enumerate}
+\noindent\textit{Curriculum Alignment:} Supports Course Learning Objectives \textbf{MA-3} and \textbf{C2002-2}.
+
+\subsection*{Key Terms}
+\textbf{Autonomous consumption ($C_0$)}, \textbf{disposable income ($Y_D$)}, \textbf{marginal propensity to consume ($MPC$)}, \textbf{marginal propensity to save ($MPS$)}, \textbf{planned investment spending ($I_{\text{planned}}$)}, \textbf{unplanned inventory investment ($I_{\text{unplanned}}$)}, \textbf{planned aggregate expenditure ($AE_{\text{planned}}$)}, \textbf{Keynesian cross}, \textbf{autonomous spending multiplier ($k_G$)}, \textbf{lump-sum tax multiplier ($k_T$)}, \textbf{balanced-budget multiplier ($k_{BB}$)}, and \textbf{automatic stabilizers}.
+
+\begin{coreprinciple}
+\boxheader{SlateBlue}{Bring It Home: Why Does a \$100 Billion Fiscal Package Move GDP by More—or Less—Than \$100 Billion?}
+During an economic downturn, policymakers routinely debate two competing stimulus designs: direct government purchases of goods and infrastructure ($\Delta G > 0$) versus lump-sum tax rebates sent directly to households ($\Delta T < 0$). Because one person's spending becomes another person's income, an initial injection of spending triggers multiple rounds of induced household consumption. Yet households save part of any tax rebate rather than spending every dollar immediately, and leakages into taxes and imports shrink each successive round. By the end of this chapter, you will be able to prove algebraically and graphically why a \$1 increase in government purchases raises equilibrium GDP by more than a \$1 tax cut, and why a balanced-budget expansion ($\Delta G = \Delta T$) still expands short-run output.
+\end{coreprinciple}
+
+% =====================================================================
+% SECTION 2: THE CONSUMPTION FUNCTION, SAVING SCHEDULE & INVESTMENT
+% =====================================================================
+\section{The Consumption Function, Saving Schedule, and Planned Investment}
+
+\subsection*{Conceptual Introduction}
+Consumer spending ($C$) accounts for roughly two-thirds of total U.S. Gross Domestic Product, making household spending behavior the primary engine of short-run aggregate expenditure. Economists model aggregate consumption as a function of \textbf{disposable income} ($Y_D = Y - T$), the income households retain after paying net taxes ($T$, defined as taxes minus government transfer payments). Even if a household's current disposable income dropped to zero, it would still need to buy food, shelter, and utilities by drawing down past savings or borrowing; this baseline spending independent of current income is called \textbf{autonomous consumption} ($C_0 > 0$).
+
+As disposable income rises, households increase their consumption, but by less than dollar-for-dollar because they allocate part of each additional dollar to saving. The fraction of an additional dollar of disposable income that households spend on consumption is the \textbf{marginal propensity to consume} ($MPC = \Delta C / \Delta Y_D$), while the fraction saved is the \textbf{marginal propensity to save} ($MPS = \Delta S / \Delta Y_D$). Because every extra dollar of disposable income must be either consumed or saved ($\Delta Y_D = \Delta C + \Delta S$), the two marginal propensities always sum to one: $MPC + MPS = 1$.
+
+Unlike consumer spending, which rises systematically with current disposable income, \textbf{planned investment spending} ($I_{\text{planned}}$)—firms' intended purchases of new machinery, commercial structures, software, and planned inventory additions—depends primarily on expected future profitability, capacity utilization, and the real interest rate. In the baseline Keynesian cross model, we treat planned investment ($I_{\text{planned}}$), government purchases ($G$), lump-sum taxes ($T$), and net exports ($NX$) as exogenous (autonomous) variables in the short run, allowing us to isolate how income-induced consumption drives macroeconomic equilibrium.
+
+\subsection*{Visual Representation: The Aggregate Consumption Function}
+Figure~\ref{fig:ch8-consumption-function} plots aggregate consumption ($C$) on the vertical axis against disposable income ($Y_D$) on the horizontal axis. The dashed $45^\circ$ line represents all points where consumption equals disposable income ($C = Y_D$, meaning household saving is zero).
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[scale=0.95]
+    % Axes
+    \draw[->, thick, oiSlate] (0,0) -- (8.8,0) node[right, font=\small\bfseries] {Disposable Income ($Y_D$, \$B)};
+    \draw[->, thick, oiSlate] (0,0) -- (0,7.2) node[above, font=\small\bfseries] {Consumption ($C$, \$B)};
+    \node[below left, font=\small, oiSlate] at (0,0) {$(0,0)$};
+
+    % Grid lines
+    \draw[very thin, gray!20] (0,0) grid (8.2,6.8);
+
+    % Shaded Dis-saving and Positive Saving regions
+    \fill[oiOrange!12] (0,0) -- (0,1.2) -- (6.0,6.0) -- cycle;
+    \fill[oiGreen!12] (6.0,6.0) -- (8.0,6.8) -- (8.0,8.0) -- (6.0,6.0) -- cycle;
+
+    % 45-degree reference line (C = Y_D)
+    \draw[dashed, thick, oiSlate] (0,0) -- (7.0,7.0) node[above right, font=\small] {$45^\circ$ Line ($C = Y_D$)};
+
+    % Consumption Function: C = 100 + 0.8 Y_D (scaled: 1 unit = $100B, so C0 = 1.2 visually clear, slope = 0.8 -> intersection at Y_D = 6.0)
+    \draw[ultra thick, oiBlue] (0,1.2) -- (8.2,7.76) node[right, font=\small\bfseries] {$C = C_0 + cY_D$};
+
+    % Autonomous Consumption intercept
+    \fill[oiBlue] (0,1.2) circle (2.5pt);
+    \node[left, font=\small, oiBlue] at (0,1.2) {$C_0 = 100$};
+
+    % Break-even point (C = Y_D = 500)
+    \fill[oiPurple] (6.0,6.0) circle (3pt);
+    \draw[dashed, thin, oiPurple] (6.0,6.0) -- (6.0,0) node[below, font=\small] {$Y_D = 500$};
+    \draw[dashed, thin, oiPurple] (6.0,6.0) -- (0,6.0) node[left, font=\small] {$500$};
+    \node[above left, font=\footnotesize\bfseries, oiPurple] at (5.9,6.1) {Break-Even ($S = 0$)};
+
+    % Region annotations
+    \node[font=\footnotesize\bfseries, oiOrange, align=center] at (2.1,2.4) {Dis-saving\\($S < 0$)};
+    \node[font=\footnotesize\bfseries, oiGreen, align=center] at (7.3,6.4) {Saving\\($S > 0$)};
+
+    % Slope triangle
+    \draw[thick, oiSlate] (3.0,3.6) -- (5.0,3.6) node[midway, below, font=\footnotesize] {$\Delta Y_D$};
+    \draw[thick, oiSlate] (5.0,3.6) -- (5.0,5.2) node[midway, right, font=\footnotesize] {$\Delta C = c\,\Delta Y_D$};
+\end{tikzpicture}
+\caption{\textbf{The Aggregate Consumption Function and Saving Regions.} The consumption line $C = C_0 + cY_D$ has vertical intercept $C_0$ and slope $c = MPC < 1$. To the left of the break-even intersection with the $45^\circ$ line, $C > Y_D$ and households dis-save ($S < 0$); to the right, $Y_D > C$ and household saving is positive ($S = Y_D - C > 0$).}
+\label{fig:ch8-consumption-function}
+\end{figure}
+
+\subsection*{Real-World Application: U.S. Disposable Income and Pandemic Stimulus Saving}
+Empirical data from the Bureau of Economic Analysis (BEA) illustrate both the stability of the consumption function in normal times and how temporary shocks shift saving behavior. In 2020 and 2021, federal fiscal relief programs boosted real disposable personal income (FRED: \texttt{DSPIC96}) while pandemic lockdowns restricted spending on in-person services. As a result, the U.S. personal saving rate (FRED: \texttt{PSAVERT}) surged from roughly 7\% in late 2019 to over 30\% in April 2020, building more than \$2 trillion in excess household savings. Once restrictions lifted in 2022--2024, households drew down those buffers, keeping real personal consumption expenditures (FRED: \texttt{PCECC96}) resilient even as interest rates rose.
+
+\subsection*{Mathematical Foundation: Consumption and Saving Equations}
+Assuming a linear behavioral relationship, the aggregate consumption and saving functions are written as:
+\begin{align}
+C &= C_0 + c\,Y_D = C_0 + c(Y - T), \qquad 0 < c < 1, \label{eq:ch8-consumption} \\
+S_{\text{private}} &= Y_D - C = Y_D - \bigl(C_0 + c\,Y_D\bigr) = -C_0 + (1 - c)Y_D, \label{eq:ch8-saving}
+\end{align}
+where $c = MPC$ is the marginal propensity to consume and $s = 1 - c = MPS$ is the marginal propensity to save.
+
+\begin{examplecase}{Work It Out: Deriving Consumption and Saving Schedules}
+Suppose aggregate autonomous consumption is $C_0 = \$100\text{ billion}$ and households spend $80\%$ of each additional dollar of disposable income ($c = MPC = 0.80$).
+\begin{enumerate}
+    \item \textbf{Marginal Propensity to Save:} $MPS = 1 - MPC = 1 - 0.80 = 0.20$.
+    \item \textbf{Consumption and Saving Functions:}
+    \[
+    C = 100 + 0.80\,Y_D, \qquad S_{\text{private}} = -100 + 0.20\,Y_D.
+    \]
+    \item \textbf{Break-Even Disposable Income ($S_{\text{private}} = 0$):} Set $C = Y_D$:
+    \[
+    Y_D = 100 + 0.80\,Y_D \implies 0.20\,Y_D = 100 \implies Y_D^{\text{break-even}} = \$500\text{ billion}.
+    \]
+    \item \textbf{Evaluation at $Y_D = \$1{,}250\text{ billion}$:}
+    \[
+    C = 100 + 0.80(1{,}250) = 100 + 1{,}000 = \$1{,}100\text{ billion}, \qquad S_{\text{private}} = 1{,}250 - 1{,}100 = \$150\text{ billion}.
+    \]
+\end{enumerate}
+\end{examplecase}
+
+\begin{coreprinciple}
+\boxheader{SlateBlue}{Clear It Up: The Paradox of Thrift}
+For an individual household, increasing saving by cutting spending builds personal wealth. In a recessionary economy with sticky prices, however, if \emph{all} households simultaneously try to save more by reducing autonomous consumption ($C_0 \downarrow$), aggregate expenditure falls, firms cut production, and national income ($Y$) contracts. Because saving also depends on income ($S = -C_0 + sY_D$), the resulting drop in $Y$ can leave aggregate saving unchanged or even lower—a macroeconomic coordination failure John Maynard Keynes termed the \textbf{paradox of thrift}.
+\end{coreprinciple}
+
+% =====================================================================
+% SECTION 3: PLANNED AGGREGATE EXPENDITURE & THE KEYNESIAN CROSS
+% =====================================================================
+\section{Planned Aggregate Expenditure and the 45-Degree Keynesian Cross}
+
+\subsection*{Conceptual Introduction}
+In the short run, many firms face menu costs, multi-quarter wage contracts, and sticky catalog prices. Rather than immediately slashing prices whenever weekly sales dip, firms adjust production quantities and manage buffer stocks of goods. \textbf{Planned aggregate expenditure} ($AE_{\text{planned}}$) is the total amount of spending that households, firms, the government, and foreign buyers plan to make on domestically produced final goods and services:
+\begin{equation}
+AE_{\text{planned}} = C + I_{\text{planned}} + G + NX.
+\end{equation}
+Because firms produce output ($Y$) before knowing exact customer demand, actual total investment ($I$) equals planned investment plus \textbf{unplanned inventory investment} ($I_{\text{unplanned}}$):
+\begin{equation}
+Y = C + I + G + NX = C + \bigl(I_{\text{planned}} + I_{\text{unplanned}}\bigr) + G + NX = AE_{\text{planned}} + I_{\text{unplanned}}.
+\end{equation}
+
+Rearranging this national accounting identity yields the fundamental adjustment law of the Keynesian cross:
+\begin{equation}
+I_{\text{unplanned}} = Y - AE_{\text{planned}}.
+\end{equation}
+When real GDP exceeds planned spending ($Y > AE_{\text{planned}}$), unsold goods pile up in warehouses ($I_{\text{unplanned}} > 0$), prompting firms to cut factory orders and lay off workers until output falls back to $Y^*$. Conversely, when planned spending exceeds current production ($Y < AE_{\text{planned}}$), shelves empty faster than anticipated ($I_{\text{unplanned}} < 0$), motivating firms to expand production and hire workers. Short-run macroeconomic equilibrium occurs exclusively at $Y^*$, where actual output equals planned aggregate expenditure and unplanned inventory investment is zero ($I_{\text{unplanned}} = 0$).
+
+\subsection*{Visual Representation: The 45-Degree Keynesian Cross}
+Figure~\ref{fig:ch8-keynesian-cross} illustrates short-run equilibrium using the \textbf{Keynesian cross}. The $45^\circ$ reference line maps all points where output equals planned expenditure ($AE = Y$), while the upward-sloping $AE_{\text{planned}}$ line starts at autonomous expenditure $A_0$ and rises with slope $MPC$.
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[scale=0.95]
+    % Axes
+    \draw[->, thick, oiSlate] (0,0) -- (9.0,0) node[right, font=\small\bfseries] {Real GDP / Output ($Y$, \$B)};
+    \draw[->, thick, oiSlate] (0,0) -- (0,7.5) node[above, font=\small\bfseries] {Planned Expenditure ($AE_{\text{planned}}$, \$B)};
+    \node[below left, font=\small, oiSlate] at (0,0) {$(0,0)$};
+
+    % Grid
+    \draw[very thin, gray!20] (0,0) grid (8.4,7.0);
+
+    % 45-degree line (AE = Y)
+    \draw[dashed, thick, oiSlate] (0,0) -- (7.2,7.2) node[above right, font=\small] {$45^\circ$ Line ($AE = Y$)};
+
+    % AE_planned line: A0 = 260 (scaled 1 unit = $250B -> 1.04; better: 1 unit = $250B, Y* = 1300 -> 5.2, A0 = 260 -> 1.04, slope = 0.8)
+    % Check: 1.04 + 0.8 * 5.2 = 1.04 + 4.16 = 5.20! Exact intersection at (5.2, 5.2)!
+    \draw[ultra thick, oiBlue] (0,1.04) -- (8.0,7.44) node[right, font=\small\bfseries] {$AE_{\text{planned}} = 260 + 0.8Y$};
+
+    % Autonomous expenditure intercept
+    \fill[oiBlue] (0,1.04) circle (2.5pt);
+    \node[left, font=\small, oiBlue] at (0,1.04) {$A_0 = 260$};
+
+    % Equilibrium E* at (5.2, 5.2) -> Y* = 1,300
+    \fill[oiGreen] (5.2,5.2) circle (3.2pt);
+    \draw[dashed, thick, oiGreen] (5.2,5.2) -- (5.2,0) node[below, font=\small\bfseries] {$Y^* = 1{,}300$};
+    \draw[dashed, thick, oiGreen] (5.2,5.2) -- (0,5.2) node[left, font=\small\bfseries] {$1{,}300$};
+    \node[above left, font=\small\bfseries, oiGreen] at (5.1,5.3) {$E^*$};
+
+    % Unplanned inventory depletion at Y = 1,000 (x = 4.0: 45-deg = 4.0, AE = 1.04 + 3.2 = 4.24)
+    \draw[<->, very thick, oiOrange] (3.2,3.2) -- (3.2,3.60);
+    \node[above left, font=\footnotesize\bfseries, oiOrange, align=center] at (3.2,3.75) {$I_{\text{unplanned}} < 0$\\(Output $\uparrow$)};
+
+    % Unplanned inventory accumulation at Y = 1,600 (x = 6.4: 45-deg = 6.4, AE = 1.04 + 5.12 = 6.16)
+    \draw[<->, very thick, oiPurple] (7.2,6.80) -- (7.2,7.20);
+    \node[below right, font=\footnotesize\bfseries, oiPurple, align=center] at (7.2,6.65) {$I_{\text{unplanned}} > 0$\\(Output $\downarrow$)};
+\end{tikzpicture}
+\caption{\textbf{Short-Run Equilibrium in the 45-Degree Keynesian Cross.} Equilibrium occurs at point $E^*$, where $AE_{\text{planned}} = 260 + 0.8Y$ intersects the $45^\circ$ line at $Y^* = \$1{,}300\text{ billion}$. Below $Y^*$, $AE_{\text{planned}} > Y$ causes unplanned inventory depletion ($I_{\text{unplanned}} < 0$), inducing firms to expand production; above $Y^*$, $Y > AE_{\text{planned}}$ causes unplanned inventory accumulation ($I_{\text{unplanned}} > 0$), inducing output cuts.}
+\label{fig:ch8-keynesian-cross}
+\end{figure}
+
+\subsection*{Real-World Application: Retail Inventory Overhangs and Production Adjustments}
+The inventory-adjustment mechanism is directly observable in quarterly National Income and Product Accounts (NIPA). Following supply-chain bottlenecks in 2021, major U.S. retailers over-ordered merchandise just as consumer demand rotated from physical goods back toward travel and dining. By mid-2022, bloated warehouse stocks—tracked in FRED series \texttt{CBI} (Change in Private Inventories) alongside real GDP (\texttt{GDPC1})—forced retailers to slash new factory orders and discount existing stock. That inventory correction temporarily dragged down U.S. manufacturing output until inventory-to-sales ratios returned to equilibrium.
+
+\subsection*{Mathematical Foundation: Solving for Equilibrium Output ($Y^*$)}
+Substitute the behavioral consumption function $C = C_0 + c(Y - T)$ and exogenous spending components ($I_{\text{planned}}, G, NX$) into $AE_{\text{planned}}$:
+\begin{equation}
+AE_{\text{planned}} = \underbrace{\bigl(C_0 - c\,T + I_{\text{planned}} + G + NX\bigr)}_{\text{Autonomous Expenditure } (A_0)} + c\,Y = A_0 + c\,Y.
+\end{equation}
+Setting $Y = AE_{\text{planned}}$ and solving for equilibrium output $Y^*$:
+\begin{align}
+Y^* &= A_0 + c\,Y^* \nonumber \\
+(1 - c)Y^* &= A_0 \nonumber \\
+Y^* &= \frac{1}{1 - c}\,A_0 = \frac{1}{1 - c}\bigl(C_0 - c\,T + I_{\text{planned}} + G + NX\bigr). \label{eq:ch8-equilibrium}
+\end{align}
+
+\begin{examplecase}{Work It Out: Baseline Keynesian Cross Equilibrium and Inventory Table}
+Suppose a closed economy ($NX = 0$) has parameters in billions of dollars: $C_0 = 100$, $c = 0.8$, $T = 50$, $I_{\text{planned}} = 120$, and $G = 80$.
+\begin{enumerate}
+    \item \textbf{Construct Planned Aggregate Expenditure:}
+    \[
+    AE_{\text{planned}} = 100 + 0.8(Y - 50) + 120 + 80 = 100 + 0.8Y - 40 + 200 = 260 + 0.8Y.
+    \]
+    Here, autonomous aggregate expenditure is $A_0 = \$260\text{ billion}$.
+    \item \textbf{Solve for Short-Run Equilibrium Output ($Y^*$):}
+    \[
+    Y^* = 260 + 0.8Y^* \implies 0.2Y^* = 260 \implies Y^* = \frac{260}{0.2} = \$1{,}300\text{ billion}.
+    \]
+    \item \textbf{Verify Inventory Adjustment Across Output Levels:}
+\end{enumerate}
+\begin{center}
+\begin{tabular}{cccccl}
+\hline
+\textbf{Output ($Y$)} & \textbf{Consumption ($C$)} & \textbf{$I_{\text{planned}} + G$} & \textbf{$AE_{\text{planned}}$} & \textbf{$I_{\text{unplanned}} = Y - AE_{\text{planned}}$} & \textbf{Firm Production Response} \\
+\hline
+\$1,000 & \$860 & \$200 & \$1,060 & $-\$60$ (Depletion) & Expand output ($Y \uparrow$) \\
+\textbf{\$1,300} & \textbf{\$1,100} & \textbf{\$200} & \textbf{\$1,300} & \textbf{\$0 (Equilibrium)} & \textbf{Maintain output ($Y^*$)} \\
+\$1,600 & \$1,340 & \$200 & \$1,540 & $+\$60$ (Accumulation) & Cut output ($Y \downarrow$) \\
+\hline
+\end{tabular}
+\end{center}
+\end{examplecase}
+
+% =====================================================================
+% SECTION 4: AUTONOMOUS, TAX, AND BALANCED-BUDGET MULTIPLIERS
+% =====================================================================
+\section{The Autonomous Spending, Lump-Sum Tax, and Balanced-Budget Multipliers}
+
+\subsection*{Conceptual Introduction}
+When any component of autonomous expenditure ($C_0$, $I_{\text{planned}}$, $G$, or $NX$) rises by $\Delta A_0$, equilibrium real GDP increases by a multiple of that initial shock. Suppose the government purchases $\Delta G = \$20\text{ billion}$ in new transit equipment. In Round 1, transit workers and suppliers earn $\$20\text{ billion}$ in new income ($\Delta Y_1 = \$20\text{ billion}$). With $MPC = 0.8$, those workers spend $0.8 \times \$20\text{ billion} = \$16\text{ billion}$ on groceries, housing, and services in Round 2, generating $\$16\text{ billion}$ of income for a second wave of producers, who in turn spend $0.8 \times \$16\text{ billion} = \$12.8\text{ billion}$ in Round 3, and so on.
+
+By contrast, consider a lump-sum tax cut of $\Delta T = -\$20\text{ billion}$. In Round 1, government purchases do not rise directly; instead, households receive $\$20\text{ billion}$ in extra disposable income. Because households save $20\%$ ($MPS = 0.2$) and spend only $80\%$ ($MPC = 0.8$), first-round aggregate expenditure rises by only $-MPC \times \Delta T = -0.8(-\$20\text{ billion}) = +\$16\text{ billion}$ rather than $+\$20\text{ billion}$. Consequently, the \textbf{lump-sum tax multiplier} ($k_T$) is smaller in absolute magnitude than the \textbf{autonomous spending multiplier} ($k_G$).
+
+This asymmetry produces a remarkable corollary: if the government increases purchases by $\Delta G = +\$20\text{ billion}$ and simultaneously finances the entire expenditure by raising lump-sum taxes by $\Delta T = +\$20\text{ billion}$ (leaving the budget deficit unchanged), aggregate expenditure still increases on net. The $+\$20\text{ billion}$ direct injection from $\Delta G$ outweighs the $-\$16\text{ billion}$ first-round consumption reduction from $\Delta T$, yielding a net expansion of $\Delta Y^* = +\$20\text{ billion}$—meaning the \textbf{balanced-budget multiplier} ($k_{BB}$) equals exactly $1.0$ in the baseline lump-sum tax model.
+
+\subsection*{Visual Representation: Multiplier Shift in the Keynesian Cross}
+Figure~\ref{fig:ch8-multiplier-shift} shows how an autonomous spending increase of $\Delta G = \$20\text{ billion}$ shifts the $AE_{\text{planned}}$ schedule vertically upward from $AE_1 = 260 + 0.8Y$ to $AE_2 = 280 + 0.8Y$, moving equilibrium along the $45^\circ$ line from $E_1^*$ ($Y_1^* = \$1{,}300\text{ billion}$) to $E_2^*$ ($Y_2^* = \$1{,}400\text{ billion}$).
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[scale=0.95]
+    % Axes
+    \draw[->, thick, oiSlate] (0,0) -- (9.0,0) node[right, font=\small\bfseries] {Real GDP / Output ($Y$, \$B)};
+    \draw[->, thick, oiSlate] (0,0) -- (0,7.5) node[above, font=\small\bfseries] {Planned Expenditure ($AE_{\text{planned}}$, \$B)};
+    \node[below left, font=\small, oiSlate] at (0,0) {$(0,0)$};
+
+    % Grid
+    \draw[very thin, gray!20] (0,0) grid (8.4,7.0);
+
+    % 45-degree line
+    \draw[dashed, thick, oiSlate] (0,0) -- (7.2,7.2) node[above right, font=\small] {$45^\circ$ Line ($AE = Y$)};
+
+    % Scale: 1 unit = $250B.
+    % AE1: A0 = 260 -> 1.04, slope = 0.8, Y1* = 1300 -> 5.20
+    % AE2: A0 = 280 -> 1.12 (exaggerated slightly visually to 1.36 -> Y2* = 6.80 so shift is crisp and readable, labeled accurately with economic values)
+    \draw[thick, oiBlue] (0,1.04) -- (8.0,7.44) node[right, font=\small] {$AE_1 = 260 + 0.8Y$};
+    \draw[ultra thick, oiOrange] (0,1.36) -- (7.6,7.44) node[above left, font=\small\bfseries] {$AE_2 = 280 + 0.8Y$};
+
+    % Vertical shift arrow (Delta G = +20)
+    \draw[->, very thick, oiOrange] (2.5,3.04) -- (2.5,3.36);
+    \node[left, font=\footnotesize\bfseries, oiOrange] at (2.45,3.25) {$\Delta G = +20$};
+
+    % Equilibrium E1* at (5.2, 5.2)
+    \fill[oiBlue] (5.2,5.2) circle (3pt);
+    \draw[dashed, thin, oiBlue] (5.2,5.2) -- (5.2,0) node[below, font=\small] {$Y_1^* = 1{,}300$};
+    \node[below right, font=\small\bfseries, oiBlue] at (5.2,5.15) {$E_1^*$};
+
+    % Equilibrium E2* at (6.8, 6.8)
+    \fill[oiOrange] (6.8,6.8) circle (3.2pt);
+    \draw[dashed, thick, oiOrange] (6.8,6.8) -- (6.8,0) node[below, font=\small\bfseries] {$Y_2^* = 1{,}400$};
+    \node[above left, font=\small\bfseries, oiOrange] at (6.75,6.85) {$E_2^*$};
+
+    % Horizontal multiplier bracket (Delta Y* = +100)
+    \draw[->, ultra thick, oiGreen] (5.2,0.55) -- (6.8,0.55) node[midway, above, font=\footnotesize\bfseries, oiGreen] {$\Delta Y^* = k_G \Delta G = +100$};
+\end{tikzpicture}
+\caption{\textbf{The Autonomous Spending Multiplier in the Keynesian Cross.} An autonomous increase in government purchases of $\Delta G = \$20\text{ billion}$ shifts the expenditure line vertically upward by $\$20\text{ billion}$. Because $MPC = 0.8$, induced consumption rounds amplify the shock by $k_G = 1/(1 - 0.8) = 5$, raising equilibrium output by $\Delta Y^* = \$100\text{ billion}$ (from $\$1{,}300\text{ billion}$ to $\$1{,}400\text{ billion}$).}
+\label{fig:ch8-multiplier-shift}
+\end{figure}
+
+\subsection*{Real-World Application: Direct Infrastructure Spending vs. Lump-Sum Tax Rebates}
+When Congress designed the American Recovery and Reinvestment Act of 2009 and the 2020--2021 fiscal relief packages, economists at the Congressional Budget Office (CBO) explicitly applied differential multipliers across policy instruments. Direct federal purchases and infrastructure grants ($\Delta G$) entered aggregate expenditure immediately at $100\%$ of their dollar value, whereas one-time lump-sum tax rebates ($\Delta T < 0$) had lower first-round bang-for-the-buck because households saved a substantial portion—or used rebates to pay down credit card balances—rather than spending the full transfer immediately.
+
+\subsection*{Mathematical Foundation: Comparing the Three Baseline Multipliers}
+Taking first differences of Equation~\eqref{eq:ch8-equilibrium} while holding $c$ constant yields the three canonical multipliers of the baseline closed economy:
+\begin{align}
+k_G &= \frac{\Delta Y^*}{\Delta G} = \frac{1}{1 - c} = \frac{1}{MPS}, \label{eq:ch8-kg} \\
+k_T &= \frac{\Delta Y^*}{\Delta T} = \frac{-c}{1 - c} = -\frac{MPC}{MPS}, \label{eq:ch8-kt} \\
+k_{BB} &= k_G + k_T = \frac{1}{1 - c} + \frac{-c}{1 - c} = \frac{1 - c}{1 - c} = 1. \label{eq:ch8-kbb}
+\end{align}
+
+\begin{examplecase}{Work It Out: Calculating $\Delta Y^*$ Under Three Fiscal Policies}
+Continue with the baseline economy from Section 3 ($C_0 = 100$, $c = 0.8$, $T = 50$, $I_{\text{planned}} = 120$, $G = 80$, initial $Y_1^* = \$1{,}300\text{ billion}$):
+\begin{enumerate}
+    \item \textbf{Policy A — Autonomous Government Purchases Increase ($\Delta G = +\$20\text{ billion}$):}
+    \[
+    k_G = \frac{1}{1 - 0.8} = \frac{1}{0.2} = 5.0 \implies \Delta Y^* = 5.0 \times (+\$20\text{ billion}) = +\$100\text{ billion}.
+    \]
+    New equilibrium output is $Y_2^* = 1{,}300 + 100 = \$1{,}400\text{ billion}$.
+    \item \textbf{Policy B — Lump-Sum Tax Cut ($\Delta T = -\$20\text{ billion}$, holding $G = 80$):}
+    \[
+    k_T = \frac{-0.8}{1 - 0.8} = \frac{-0.8}{0.2} = -4.0 \implies \Delta Y^* = (-4.0) \times (-\$20\text{ billion}) = +\$80\text{ billion}.
+    \]
+    New equilibrium output is $Y_2^* = 1{,}300 + 80 = \$1{,}380\text{ billion}$—$\$20\text{ billion}$ less than under Policy A because households save $0.2 \times \$20\text{ billion} = \$4\text{ billion}$ of the tax cut in Round 1.
+    \item \textbf{Policy C — Balanced-Budget Expansion ($\Delta G = +\$20\text{ billion}$ and $\Delta T = +\$20\text{ billion}$):}
+    \[
+    \Delta Y^* = k_G\,\Delta G + k_T\,\Delta T = 5.0(20) + (-4.0)(20) = 100 - 80 = +\$20\text{ billion}.
+    \]
+    Equilibrium output rises by exactly the size of the balanced-budget expansion ($Y_2^* = \$1{,}320\text{ billion}$), confirming $k_{BB} = 1.0$.
+\end{enumerate}
+\end{examplecase}
+
+\begin{coreprinciple}
+\boxheader{SlateBlue}{[Advanced: For Economics Majors] Infinite Geometric Series and Comparative Statics}
+The autonomous spending multiplier is the sum of an infinite geometric series of induced consumption rounds. For an autonomous injection $\Delta A_0$ and constant marginal propensity to consume $c \in (0,1)$:
+\[
+\Delta Y^* = \Delta A_0 + c\,\Delta A_0 + c^2\,\Delta A_0 + c^3\,\Delta A_0 + \cdots = \Delta A_0 \sum_{n=0}^{\infty} c^n = \frac{1}{1 - c}\,\Delta A_0.
+\]
+Equivalently, applying implicit differentiation to $Y^* = C_0 + c(Y^* - T) + I_{\text{planned}} + G + NX$ yields the exact comparative-static partial derivatives:
+\[
+\frac{\partial Y^*}{\partial G} = \frac{1}{1 - c} > 0, \qquad \frac{\partial Y^*}{\partial T} = \frac{-c}{1 - c} < 0, \qquad \left.\frac{dY^*}{dG}\right|_{dT = dG} = \frac{\partial Y^*}{\partial G} + \frac{\partial Y^*}{\partial T} = 1.
+\]
+\end{coreprinciple}
+
+% =====================================================================
+% SECTION 5: LEAKAGES, AUTOMATIC STABILIZERS & REAL-WORLD DAMPENERS
+% =====================================================================
+\section{Leakages, Automatic Stabilizers, and Real-World Multiplier Dampeners}
+
+\subsection*{Conceptual Introduction}
+In our simplified baseline model ($k_G = 1/(1 - c)$), private saving was the only leakage from the domestic spending stream. In modern open economies, two additional income-sensitive leakages siphon purchasing power out of each spending round: \textbf{proportional income taxes} ($T = T_0 + tY$, where $t$ is the marginal income tax rate) and \textbf{induced imports} ($IM = IM_0 + mY$, where $m$ is the marginal propensity to import). Every additional dollar of national income ($Y$) now generates less than $c$ dollars of domestic spending because households pay $t$ in taxes before consuming out of after-tax income, and spend $m$ on foreign-produced goods rather than domestic output.
+
+Because proportional taxes and imports reduce the slope of the $AE_{\text{planned}}$ line from $c$ to $c(1 - t) - m$, they flatten the expenditure schedule and shrink the expenditure multiplier. While a smaller multiplier reduces the potency of discretionary stimulus, it simultaneously acts as an \textbf{automatic stabilizer}: when a recession hits and national income falls, tax liabilities automatically drop and import spending falls, cushioning disposable income and preventing a steep downward spiral without requiring new legislation from Congress.
+
+Beyond tax and import leakages, three macroeconomic channels further dampen the real-world multiplier compared to the fixed-price Keynesian cross benchmark: (1) rising aggregate demand pushes up the aggregate price level when the economy nears full capacity, eroding real purchasing power; (2) higher nominal income increases money demand and interest rates, partially crowding out interest-sensitive private investment; and (3) households often smooth consumption based on permanent income rather than reacting solely to temporary income fluctuations.
+
+\subsection*{Visual Representation: How Leakages Flatten the Expenditure Line}
+Figure~\ref{fig:ch8-leakages-flatter} compares the steep simple $AE_{\text{planned}}$ curve (slope $c = 0.8$, multiplier $k = 5.0$) against a flatter open-economy $AE_{\text{planned}}$ curve incorporating proportional taxes ($t = 0.25$) and imports ($m = 0.10$), where the marginal propensity to spend on domestic output falls to $c(1 - t) - m = 0.50$ and the multiplier drops to $k = 2.0$.
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[scale=0.95]
+    % Axes
+    \draw[->, thick, oiSlate] (0,0) -- (9.0,0) node[right, font=\small\bfseries] {Real GDP / Output ($Y$, \$B)};
+    \draw[->, thick, oiSlate] (0,0) -- (0,7.5) node[above, font=\small\bfseries] {Planned Expenditure ($AE_{\text{planned}}$, \$B)};
+    \node[below left, font=\small, oiSlate] at (0,0) {$(0,0)$};
+
+    % Grid
+    \draw[very thin, gray!20] (0,0) grid (8.4,7.0);
+
+    % 45-degree line
+    \draw[dashed, thick, oiSlate] (0,0) -- (7.2,7.2) node[above right, font=\small] {$45^\circ$ Line ($AE = Y$)};
+
+    % Simple AE line (slope 0.8) intersecting at (4.5, 4.5) -> intercept = 4.5 - 3.6 = 0.9
+    \draw[ultra thick, oiBlue] (0,0.9) -- (7.8,7.14) node[right, font=\small] {Simple $AE$ (slope $c = 0.8$, $k = 5$)};
+
+    % Flatter Damped AE line (slope 0.5) intersecting at same initial Y1* = 4.5 -> intercept = 4.5 - 2.25 = 2.25
+    \draw[ultra thick, oiGreen] (0,2.25) -- (8.2,6.35) node[right, font=\small\bfseries] {Damped $AE$ (slope $0.5$, $k = 2$)};
+
+    % Initial common equilibrium E1* at (4.5, 4.5)
+    \fill[oiSlate] (4.5,4.5) circle (3pt);
+    \draw[dashed, thin, oiSlate] (4.5,4.5) -- (4.5,0) node[below, font=\small] {$Y_1^*$};
+    \node[above left, font=\small\bfseries, oiSlate] at (4.45,4.55) {$E_1^*$};
+
+    % Shifted Damped AE line (+Delta G = 0.6 visually) -> new intersection: 2.85 + 0.5Y = Y -> Y2* = 5.7
+    \draw[dashed, thick, oiOrange] (0,2.85) -- (8.2,6.95) node[above left, font=\small] {$AE'_{\text{damped}}$ ($+\Delta G$)};
+    \fill[oiOrange] (5.7,5.7) circle (3pt);
+    \draw[dashed, thin, oiOrange] (5.7,5.7) -- (5.7,0) node[below, font=\small] {$Y_{2,\text{damped}}^*$};
+
+    % Annotation box
+    \node[draw=oiGreen, fill=oiGreen!8, rounded corners, font=\footnotesize, align=left, inner sep=6pt] at (2.3,6.1) {\textbf{Leakages Flatten $AE$:}\\Taxes ($t$) and imports ($m$)\\reduce slope to $c(1-t)-m$,\\moderating output swings.};
+\end{tikzpicture}
+\caption{\textbf{Tax and Import Leakages Flatten the Expenditure Schedule.} Incorporating proportional income taxes ($t$) and induced imports ($m$) lowers the slope of $AE_{\text{planned}}$ from $c$ to $c(1-t)-m$. A flatter expenditure line shrinks the multiplier from $5.0$ to $2.0$, automatically dampening cyclical output volatility.}
+\label{fig:ch8-leakages-flatter}
+\end{figure}
+
+\subsection*{Real-World Application: U.S. Automatic Stabilizers in Recessions}
+In the U.S. federal budget, progressive personal income taxes, corporate profit taxes, and state--federal Unemployment Insurance (UI) operate automatically without waiting for Congressional votes. During economic contractions—such as the 2008--2009 Great Recession and the 2020 COVID-19 downturn—federal tax receipts fell automatically while UI benefit outlays (tracked in FRED series \texttt{W068RCQ027SBEA} and reflected in federal net saving \texttt{TGDEF}) rose immediately as layoffs occurred. These built-in stabilizers offset roughly 15\% to 25\% of initial GDP shocks before any discretionary stimulus bill was signed.
+
+\begin{examplecase}{FRED Data: Realized GDP Is Not Planned Expenditure}
+FRED series \texttt{GDPC1} reports quarterly U.S. real Gross Domestic Product in billions of chained 2017 dollars at a seasonally adjusted annual rate. Because \texttt{GDPC1} measures \emph{realized} output ($Y = AE_{\text{planned}} + I_{\text{unplanned}}$), a raw quarter-to-quarter change in \texttt{GDPC1} reflects both planned spending shifts and unintended inventory swings, as well as simultaneous changes in interest rates, prices, and expectations. Empirical macroeconomists therefore identify fiscal multipliers using plausibly exogenous policy shocks—such as military procurement shifts or state-level formula grants—rather than dividing $\Delta\texttt{GDPC1}$ by raw budget changes.
+\end{examplecase}
+
+\subsection*{Mathematical Foundation: The Open-Economy Tax-Damped Multiplier}
+Let net taxes be $T = T_0 + t\,Y$ and imports be $IM = IM_0 + m\,Y$, while exports remain exogenous ($EX = EX_0$). Planned aggregate expenditure becomes:
+\begin{align}
+AE_{\text{planned}} &= C_0 + c(Y - T_0 - t\,Y) + I_{\text{planned}} + G + EX_0 - (IM_0 + m\,Y) \nonumber \\
+&= \underbrace{\bigl(C_0 - c\,T_0 + I_{\text{planned}} + G + EX_0 - IM_0\bigr)}_{\text{Autonomous Expenditure } (A_0)} + \bigl[c(1 - t) - m\bigr]Y.
+\end{align}
+Setting $Y^* = AE_{\text{planned}}$ and solving for $Y^*$ gives the leakage-damped multiplier:
+\begin{equation}
+Y^* = \frac{1}{1 - c(1 - t) + m}\,A_0 \quad \Longrightarrow \quad k_{\text{damped}} = \frac{1}{1 - c(1 - t) + m}. \label{eq:ch8-damped-multiplier}
+\end{equation}
+
+\begin{examplecase}{Work It Out: Quantifying the Multiplier with Taxes and Imports}
+Suppose $c = 0.80$, the marginal income tax rate is $t = 0.25$, and the marginal propensity to import is $m = 0.10$.
+\begin{enumerate}
+    \item \textbf{Compute the Domestic Marginal Propensity to Spend:}
+    \[
+    c(1 - t) - m = 0.80(1 - 0.25) - 0.10 = 0.80(0.75) - 0.10 = 0.60 - 0.10 = 0.50.
+    \]
+    Out of every additional $\$1.00$ of national income, $\$0.25$ goes to taxes, $\$0.15$ goes to private saving ($0.20 \times \$0.75$), and $\$0.10$ goes to imports—leaving $\$0.50$ of induced domestic spending.
+    \item \textbf{Compute the Leakage-Damped Multiplier:}
+    \[
+    k_{\text{damped}} = \frac{1}{1 - 0.50} = \frac{1}{0.50} = 2.0.
+    \]
+    \item \textbf{Output Impact of $\Delta G = +\$20\text{ billion}$:}
+    \[
+    \Delta Y^* = 2.0 \times (+\$20\text{ billion}) = +\$40\text{ billion},
+    \]
+    compared to $+\$100\text{ billion}$ in the closed-economy lump-sum tax benchmark.
+\end{enumerate}
+\end{examplecase}
+
+\begin{coreprinciple}
+\boxheader{SlateBlue}{Clear It Up: A Multiplier Is Conditional, Not a Universal Constant}
+The algebraic multiplier depends strictly on model assumptions regarding sticky prices, idle productive capacity, tax structures, trade openness, and central bank interest-rate responses. During a deep recession with high unemployment and near-zero interest rates, multipliers tend to be larger; near full employment, supply bottlenecks and higher interest rates crowd out private spending, pushing the effective multiplier closer to zero.
+\end{coreprinciple}
+
+% =====================================================================
+% SECTION 6: BRING IT HOME SYNTHESIS & CHECK YOUR UNDERSTANDING
+% =====================================================================
+\section{Chapter Summary and Check Your Understanding}
+
+\begin{coreprinciple}
+\boxheader{SlateBlue}{Bring It Home: Designing Effective Stabilization Policy}
+Returning to our opening policy dilemma: the Keynesian cross demonstrates that fiscal policy operates through a chain of income-induced consumption rounds, making direct government purchases ($k_G = \frac{1}{1-c}$) more potent dollar-for-dollar than lump-sum tax cuts ($k_T = \frac{-c}{1-c}$) because households save a fraction of tax rebates immediately. Even a balanced-budget expansion ($\Delta G = \Delta T$) expands short-run output with a multiplier of $1.0$. In real-world economies, however, proportional income taxes, import leakages, rising prices, and interest-rate crowding out dampen the multiplier—while simultaneously serving as automatic stabilizers that cushion recessions without legislative delay.
+\end{coreprinciple}
+
+\subsection*{Check Your Understanding}
+\begin{enumerate}
+    \item \textbf{(Conceptual — Inventory Adjustment)} Suppose real GDP is currently $\$1{,}500\text{ billion}$ while planned aggregate expenditure is $\$1{,}420\text{ billion}$. Calculate unplanned inventory investment ($I_{\text{unplanned}}$) and explain how firms will adjust production over the coming quarters.
+    \item \textbf{(Analytical — Consumption and Saving)} If aggregate autonomous consumption is $C_0 = \$120\text{ billion}$ and $MPS = 0.25$, write the consumption and saving functions in terms of disposable income ($Y_D$), and find the break-even level of disposable income where $S_{\text{private}} = 0$.
+    \item \textbf{(Numerical — Comparing Fiscal Multipliers)} In a closed economy with lump-sum taxes and $MPC = 0.75$:
+    \begin{enumerate}
+        \item Calculate the autonomous government-purchases multiplier ($k_G$) and the lump-sum tax multiplier ($k_T$).
+        \item Compare the change in equilibrium GDP ($\Delta Y^*$) from a $\$40\text{ billion}$ increase in $G$ versus a $\$40\text{ billion}$ cut in $T$.
+        \item What is $\Delta Y^*$ if the government increases $G$ by $\$40\text{ billion}$ and raises lump-sum taxes $T$ by $\$40\text{ billion}$ simultaneously?
+    \end{enumerate}
+    \item \textbf{(Open-Economy Application — Leakage-Damped Multiplier)} Suppose $c = 0.75$, the marginal income tax rate is $t = 0.20$, and the marginal propensity to import is $m = 0.10$. Calculate the leakage-damped multiplier and determine how much equilibrium GDP rises when exports increase autonomously by $\Delta EX_0 = +\$30\text{ billion}$.
+\end{enumerate}
+
+\subsection*{Solutions to Check Your Understanding}
+\begin{enumerate}
+    \item $I_{\text{unplanned}} = Y - AE_{\text{planned}} = 1{,}500 - 1{,}420 = +\$80\text{ billion}$. Because production exceeds planned sales, unsold goods accumulate in inventories, prompting firms to cut orders and reduce output until $Y$ falls to $Y^*$.
+    \item Since $MPC = 1 - MPS = 1 - 0.25 = 0.75$, the functions are $C = 120 + 0.75\,Y_D$ and $S_{\text{private}} = -120 + 0.25\,Y_D$. Setting $S_{\text{private}} = 0$ gives $0.25\,Y_D = 120 \implies Y_D^{\text{break-even}} = \$480\text{ billion}$.
+    \item With $MPC = 0.75$ and $MPS = 0.25$:
+    \begin{enumerate}
+        \item $k_G = \frac{1}{1 - 0.75} = 4.0$, and $k_T = \frac{-0.75}{1 - 0.75} = -3.0$.
+        \item For $\Delta G = +\$40\text{ billion}$: $\Delta Y^* = 4.0 \times 40 = +\$160\text{ billion}$. For $\Delta T = -\$40\text{ billion}$: $\Delta Y^* = (-3.0) \times (-40) = +\$120\text{ billion}$.
+        \item For $\Delta G = \Delta T = +\$40\text{ billion}$: $\Delta Y^* = 160 - 120 = +\$40\text{ billion}$ ($k_{BB} = 1.0$).
+    \end{enumerate}
+    \item The domestic marginal propensity to spend is $c(1 - t) - m = 0.75(1 - 0.20) - 0.10 = 0.60 - 0.10 = 0.50$. Thus $k_{\text{damped}} = \frac{1}{1 - 0.50} = 2.0$, and an autonomous export increase of $\Delta EX_0 = +\$30\text{ billion}$ raises equilibrium output by $\Delta Y^* = 2.0 \times 30 = +\$60\text{ billion}$.
+\end{enumerate}
+
+\end{document}

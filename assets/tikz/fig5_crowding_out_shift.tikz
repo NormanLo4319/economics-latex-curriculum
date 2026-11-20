@@ -1,0 +1,256 @@
+% Figure 5: Crowding Out - Fiscal Deficit Shifts Supply
+% Macroeconomics Chapter 6
+% Shows how government deficit reduces private saving (shifts supply left),
+% raises interest rate, and crowds out investment
+
+\documentclass[tikz,border=5pt]{standalone}
+\usepackage{pgfplots}
+\usepackage{amssymb}
+\pgfplotsset{compat=1.18}
+
+% Define Okabe-Ito colorblind-safe palette
+\definecolor{CourseBlue}{HTML}{0072B2}        % Demand, baseline (Deep Blue)
+\definecolor{CourseOrange}{HTML}{D55E00}      % Supply initial (Vermilion-Orange)
+\definecolor{CourseTeal}{HTML}{009E73}        % Supply shifted (Bluish-Green)
+\definecolor{CoursePurple}{HTML}{CC79A7}      % Accent (Reddish-Purple)
+\definecolor{CourseAmber}{HTML}{E69F00}       % Highlight (Warm Amber)
+\definecolor{CourseSlate}{HTML}{1E293B}       % Axes, grids, labels (Dark Slate)
+
+\begin{document}
+
+\begin{tikzpicture}
+  \begin{axis}[
+    width=11cm,
+    height=8cm,
+    xmin=0, xmax=300,
+    ymin=0, ymax=8,
+    xlabel={Quantity of Loanable Funds (\$B)},
+    ylabel={Real Interest Rate, $r$ (\%)},
+    xlabel style={font=\small, color=CourseSlate},
+    ylabel style={font=\small, color=CourseSlate},
+    tick label style={font=\small, color=CourseSlate},
+    axis line style={color=CourseSlate, line width=0.5pt},
+    grid=major,
+    grid style={solid, color=CourseSlate, opacity=0.4, line width=0.5pt},
+    major grid style={dash pattern=on 1pt off 1pt},
+    xtick={0, 50, 100, 150, 200, 250, 300},
+    ytick={0, 1, 2, 3, 4, 5, 6, 7, 8},
+    minor tick num=0,
+    title={Fiscal Deficit and Crowding Out in the Loanable Funds Market},
+    title style={font=\small\bfseries, color=CourseSlate},
+    ]
+    
+    % Initial Supply curve: r = 0.5 + 0.025Q (before deficit)
+    \addplot[
+      color=CourseOrange,
+      line width=2pt,
+      smooth,
+      domain=0:300,
+      samples=100
+    ] {0.5 + 0.025*x};
+    
+    % Initial supply curve label
+    \node[color=CourseOrange, font=\small, anchor=west] at (280, 7.5) {
+      $S_1$: Initial Supply
+    };
+    
+    % Shifted Supply curve: r = 0.9 + 0.025Q (with deficit)
+    \addplot[
+      color=CourseTeal,
+      line width=2pt,
+      smooth,
+      dash pattern=on 3pt off 3pt,
+      domain=0:300,
+      samples=100
+    ] {0.9 + 0.025*x};
+    
+    % Shifted supply curve label
+    \node[color=CourseTeal, font=\small, anchor=west] at (200, 6.0) {
+      $S_2$: Supply After Deficit
+    };
+    
+    % Demand curve: r = 6.8 - 0.02Q (unchanged)
+    \addplot[
+      color=CourseBlue,
+      line width=2pt,
+      smooth,
+      domain=0:300,
+      samples=100
+    ] {6.8 - 0.02*x};
+    
+    % Demand curve label
+    \node[color=CourseBlue, font=\small, anchor=west] at (280, 1.0) {
+      $D$: Demand (Unchanged)
+    };
+    
+    % Initial Equilibrium point E1
+    \addplot[color=CourseOrange, mark=o, mark size=4pt, mark options={solid}] coordinates {(140, 4)};
+    
+    % New Equilibrium point E2
+    \addplot[color=CourseTeal, mark=o, mark size=4pt, mark options={solid}] coordinates {(130, 4.25)};
+    
+    % Vertical dashed guide line from E1 to x-axis
+    \addplot[
+      color=CourseSlate,
+      line width=0.5pt,
+      dash pattern=on 2pt off 2pt,
+      forget plot
+    ] coordinates {(140, 0) (140, 4)};
+    
+    % Horizontal dashed guide line from E1 to y-axis
+    \addplot[
+      color=CourseSlate,
+      line width=0.5pt,
+      dash pattern=on 2pt off 2pt,
+      forget plot
+    ] coordinates {(0, 4) (140, 4)};
+    
+    % Vertical dashed guide line from E2 to x-axis
+    \addplot[
+      color=CourseSlate,
+      line width=0.5pt,
+      dash pattern=on 2pt off 2pt,
+      forget plot
+    ] coordinates {(130, 0) (130, 4.25)};
+    
+    % Horizontal dashed guide line from E2 to y-axis
+    \addplot[
+      color=CourseSlate,
+      line width=0.5pt,
+      dash pattern=on 2pt off 2pt,
+      forget plot
+    ] coordinates {(0, 4.25) (130, 4.25)};
+    
+  \end{axis}
+  
+  % E1 label (Initial Equilibrium)
+  \node[
+    color=CourseOrange,
+    font=\small\bfseries,
+    anchor=south west,
+    xshift=5pt,
+    yshift=5pt
+  ] at (4.5, 5.86) {
+    $E_1^*$
+  };
+  
+  % E2 label (New Equilibrium)
+  \node[
+    color=CourseTeal,
+    font=\small\bfseries,
+    anchor=south east,
+    xshift=-5pt,
+    yshift=5pt
+  ] at (4.1, 6.05) {
+    $E_2^*$
+  };
+  
+  % x-axis labels for equilibrium quantities
+  \node[
+    color=CourseOrange,
+    font=\small,
+    anchor=north,
+    yshift=-3pt
+  ] at (4.5, -0.65) {
+    $Q_1^*=140\,\mathrm{B}$
+  };
+  
+  \node[
+    color=CourseTeal,
+    font=\small,
+    anchor=north,
+    yshift=-3pt
+  ] at (4.1, -1.0) {
+    $Q_2^*=130\,\mathrm{B}$
+  };
+  
+  % y-axis labels for equilibrium rates
+  \node[
+    color=CourseOrange,
+    font=\small,
+    anchor=east,
+    xshift=-3pt
+  ] at (-0.4, 5.86) {
+    $r_1^*=4\%$
+  };
+  
+  \node[
+    color=CourseTeal,
+    font=\small,
+    anchor=east,
+    xshift=-3pt
+  ] at (-0.65, 6.05) {
+    $r_2^*=4.25\%$
+  };
+  
+  % Shift annotation bracket and labels
+  % Bracket showing quantity reduction
+  \draw[
+    color=CoursePurple,
+    line width=1pt,
+    decorate,
+    decoration={brace, mirror, raise=5pt}
+  ] (4.1, -1.5) -- (4.5, -1.5);
+  
+  \node[
+    color=CoursePurple,
+    font=\small,
+    anchor=north,
+    yshift=-5pt
+  ] at (4.3, -1.5) {
+    $\Delta Q = 10\,\mathrm{B}$ (crowding out)
+  };
+  
+  % Bracket showing rate increase
+  \draw[
+    color=CoursePurple,
+    line width=1pt,
+    decorate,
+    decoration={brace, raise=5pt}
+  ] (-1.5, 5.86) -- (-1.5, 6.05);
+  
+  \node[
+    color=CoursePurple,
+    font=\small,
+    anchor=east,
+    xshift=-8pt
+  ] at (-1.5, 5.955) {
+    $\Delta r = 0.25\%$
+  };
+  
+\end{tikzpicture}
+
+% Callout box explaining mechanism
+\begin{tikzpicture}[remember picture, overlay]
+  
+  % Main callout box
+  \draw[
+    fill=white,
+    draw=CourseSlate,
+    line width=1.5pt,
+    rounded corners=4pt,
+    opacity=0.95
+  ] (1.5, -4.5) rectangle (8.5, -2.0);
+  
+  % Callout text
+  \node[
+    anchor=north west,
+    text width=6.5cm,
+    font=\small,
+    color=CourseSlate,
+    inner sep=0.3cm
+  ] at (1.7, -2.3) {
+    \textbf{Mechanism of Crowding Out:}
+    \begin{itemize}
+      \item Government budget deficit $\Rightarrow$ Gov. borrows in loanable funds market
+      \item National saving falls: $S = Y - C - G$; deficit reduces net supply
+      \item Supply curve shifts \textit{left} from $S_1$ to $S_2$
+      \item Interest rate rises: $r^* \uparrow$ from 4\% to 4.25\%
+      \item Higher rates discourage private borrowing: $I \downarrow$ by approximately 10B
+      \item Government spending partially crowds out private investment
+    \end{itemize}
+  };
+  
+\end{tikzpicture}
+
+\end{document}

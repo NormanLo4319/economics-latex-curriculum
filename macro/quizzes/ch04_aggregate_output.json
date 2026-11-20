@@ -1,0 +1,3123 @@
+{
+  "schema_version": "2.0",
+  "course": "Principles of Macroeconomics",
+  "chapter_id": "macro_ch04",
+  "file_stem": "ch04_aggregate_output",
+  "title": "Aggregate Output, NIPA Accounting, Cycles, Growth & Real vs. Nominal GDP",
+  "benchmark": "Krugman & Wells (Macroeconomics) & SFSU/CCSF Principles SSOT (Spring 2027)",
+  "seeding_formula": "seed = hash(student_id + question_id)",
+  "points_per_question": 1,
+  "questions_count": 50,
+  "tier_distribution": {
+    "tier_1": 13,
+    "tier_2": 13,
+    "tier_3": 12,
+    "tier_4": 12
+  },
+  "questions": [
+    {
+      "id": "MACRO_CH04_T1_01",
+      "chapter": 4,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "GDP Boundaries & Value Added",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Avoiding Double Counting via Value Added",
+      "prompt_template": "Why does summing each firm's value added across a production chain equal the market value of the final good without double counting?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for GDP Boundaries & Value Added."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for GDP Boundaries & Value Added."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Each firm's value added subtracts purchased intermediate input costs from its gross output, preventing intermediate components from being counted multiple times.",
+          "is_correct": true,
+          "feedback": "Correct. Summing value added across domestic production stages equals the market value of final output while eliminating intermediate double counting."
+        },
+        {
+          "id": "opt_b",
+          "text": "Value added multiplies each firm's sales by the CPI inflation rate to adjust for price changes.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Value Added vs. Inflation): Value added removes intermediate input costs to measure current output, whereas adjusting for price changes defines Real GDP."
+        },
+        {
+          "id": "opt_c",
+          "text": "Value added includes purchases of used goods and financial stocks so total asset wealth enters GDP.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Asset Transfers in GDP): GDP measures current production of final goods and services, excluding resales of existing assets and financial trades."
+        },
+        {
+          "id": "opt_d",
+          "text": "Value added adds Social Security transfer payments to firm revenues.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Transfers as Production): Transfer payments redistribute income without paying for newly produced output and are excluded from GDP."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T1_02",
+      "chapter": 4,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "GDP Boundaries & Value Added",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Final Goods vs. Intermediate Goods",
+      "prompt_template": "In national income accounting, how is a processor chip sold by a chipmaker to a laptop manufacturer classified when the finished laptop is sold to a household in the same year?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for GDP Boundaries & Value Added."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for GDP Boundaries & Value Added."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "As an intermediate good whose value is already embedded in the final laptop's market price, so it is not counted separately in final sales.",
+          "is_correct": true,
+          "feedback": "Correct. Chips used up inside laptops sold in the same period are intermediate inputs; counting both separately would double-count the chip."
+        },
+        {
+          "id": "opt_b",
+          "text": "As a final good counted once when sold to the laptop maker and a second time when the laptop is sold.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Double Counting): Counting both transactions overstates GDP by counting the same intermediate input twice."
+        },
+        {
+          "id": "opt_c",
+          "text": "As a government purchase (G) because semiconductors support modern technology.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Misclassifying Private Inputs as G): G covers final goods and services purchased by government entities, not private intermediate inputs."
+        },
+        {
+          "id": "opt_d",
+          "text": "As a financial investment excluded from all national accounts.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Intermediate vs. Financial): A physical chip is a manufactured input, not a financial security."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T1_03",
+      "chapter": 4,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "GDP Boundaries & Value Added",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Geographic Borders: GDP vs. GNP",
+      "prompt_template": "A Japanese automaker operates an assembly plant in Kentucky, while a U.S. automaker operates a plant in Mexico. Under geographic GDP accounting, where does output from the Kentucky plant count?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for GDP Boundaries & Value Added."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for GDP Boundaries & Value Added."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "In U.S. GDP, because GDP measures production occurring within a country's geographic borders regardless of foreign ownership.",
+          "is_correct": true,
+          "feedback": "Correct. GDP is territorial/geographic: production inside U.S. borders enters U.S. GDP, whereas output inside Mexico enters Mexican GDP."
+        },
+        {
+          "id": "opt_b",
+          "text": "In Japanese GDP because the parent corporation is headquartered in Japan.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ownership vs. Borders): Tracking output by ownership rather than domestic borders describes GNP concepts rather than territorial GDP."
+        },
+        {
+          "id": "opt_c",
+          "text": "Nowhere in GDP because cross-border corporate ownership cancels out the output.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zeroing Out Cross-Border FDI): Foreign-owned plants inside U.S. borders produce real domestic output counted in U.S. GDP."
+        },
+        {
+          "id": "opt_d",
+          "text": "Only in Net Exports (NX) as an imported vehicle.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Domestic Assembly vs. Import): A vehicle assembled inside the United States is domestically produced output, not an import."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T1_04",
+      "chapter": 4,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "GDP Boundaries & Value Added",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Current Production Rule: Used Goods & Transfers",
+      "prompt_template": "Why does current-year GDP exclude the resale of a 15-year-old car between two households and exclude unemployment insurance checks paid by the government?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for GDP Boundaries & Value Added."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for GDP Boundaries & Value Added."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The used car was produced in an earlier period, and unemployment checks are transfer payments that redistribute income without purchasing current output.",
+          "is_correct": true,
+          "feedback": "Correct. Both transactions fail the current-production-of-final-output rule (though any current brokerage/realtor service fee is counted)."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because both are intermediate goods used to manufacture new automobiles.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Intermediate Misclassification): Neither a used car nor a transfer check is an intermediate industrial input."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because used cars and transfer payments are counted in Net Exports instead of C or G.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (NX Misclassification): Foreign trade balance NX does not absorb excluded domestic transfers or past production."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because GDP only counts cash transactions under $1,000.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Transaction Size Myth): GDP has no dollar-size threshold; it excludes non-current production and transfers regardless of dollar amount."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T1_05",
+      "chapter": 4,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Expenditure Approach Components",
+      "clo_alignment": [
+        "MA-1",
+        "MA-2"
+      ],
+      "title": "Defining Gross Private Domestic Investment (I)",
+      "prompt_template": "In the expenditure identity Y = C + I + G + NX, which items belong inside Gross Private Domestic Investment (I)?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Expenditure Approach Components."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Expenditure Approach Components."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Newly produced business equipment and structures, new residential housing construction, and changes in business inventories.",
+          "is_correct": true,
+          "feedback": "Correct. In NIPA accounting, I captures newly produced capital goods, new homes, and inventory changes—never financial stock or bond purchases."
+        },
+        {
+          "id": "opt_b",
+          "text": "Household purchases of corporate stocks, mutual funds, and U.S. Treasury bonds.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Financial vs. Economic Investment): Buying financial securities transfers existing claims and does not create new physical capital in GDP."
+        },
+        {
+          "id": "opt_c",
+          "text": "Social Security checks, Medicare benefits, and interest on the national debt.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Transfers & Debt Service as I): Transfers and interest payments are not private physical capital formation."
+        },
+        {
+          "id": "opt_d",
+          "text": "Household spending on restaurant meals, groceries, and streaming subscriptions.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (C vs. I): Routine household purchases of consumer goods and services belong in Consumption (C), not Investment (I)."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T1_06",
+      "chapter": 4,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Expenditure Approach Components",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Why Imports Are Subtracted in Net Exports",
+      "prompt_template": "Why does the expenditure equation Y = C + I + G + NX subtract imports (M) when computing net exports?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Expenditure Approach Components."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Expenditure Approach Components."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because spending on imported goods may already be included inside C, I, or G, so subtracting M removes foreign-produced output so Y measures domestic production.",
+          "is_correct": true,
+          "feedback": "Correct. Subtracting M offsets imported items embedded in domestic spending components so GDP reflects goods and services produced domestically."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because imported goods have negative market prices in domestic retail stores.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Negative Price Myth): Imported goods carry positive market prices; M is subtracted to remove foreign production from domestic Y."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because the government taxes all imports at 100% of their value.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Tariff Myth): Subtracting M in NIPA is an accounting identity adjustment, not a 100% tariff assumption."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because imports represent unsold inventory stored abroad.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inventory Myth): Imports are goods/services produced abroad and brought into the domestic economy."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T1_07",
+      "chapter": 4,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Income Approach & GDI",
+      "clo_alignment": [
+        "MA-1",
+        "MA-2"
+      ],
+      "title": "Equivalence of GDP and Gross Domestic Income (GDI)",
+      "prompt_template": "Why should Gross Domestic Product (GDP) and Gross Domestic Income (GDI) be equal in principle in national income accounting?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Income Approach & GDI."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Income Approach & GDI."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Every dollar spent on final output becomes revenue for producers and is distributed as factor incomes, indirect business taxes, or depreciation.",
+          "is_correct": true,
+          "feedback": "Correct. Expenditure, value added, and income represent three views of the same flow of current economic activity."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because the Federal Reserve prints money equal to GDI every quarter.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Money Printing Myth): GDI equivalence comes from double-entry income-expenditure accounting, not central bank money creation."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because imports always equal zero in every open economy.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Closed-Economy Assumption): GDP equals GDI even when exports and imports are non-zero."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because Nominal GDP and Real GDP are always identical in every year.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Nominal vs. Real Identity): Nominal and Real GDP differ whenever prices change away from the base year."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T1_08",
+      "chapter": 4,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Income Approach & GDI",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Role of the BEA Statistical Discrepancy",
+      "prompt_template": "In published BEA national accounts, measured GDP and measured GDI sometimes differ slightly. How should an economist interpret the statistical discrepancy?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Income Approach & GDI."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Income Approach & GDI."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "As a small accounting difference arising from separate data sources and timing across expenditure and income surveys, rather than two different economies.",
+          "is_correct": true,
+          "feedback": "Correct. Because expenditure and income estimates draw on distinct surveys and tax filings, the statistical discrepancy bridges measured differences."
+        },
+        {
+          "id": "opt_b",
+          "text": "As proof that half of the economy's output is fake or illegally manufactured.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Illegitimate Output Myth): A statistical discrepancy reflects survey/timing differences in measurement, not fictitious output."
+        },
+        {
+          "id": "opt_c",
+          "text": "As the exact measure of the annual federal budget deficit.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Fiscal Deficit Confusion): The federal budget deficit compares government revenues to outlays, not GDP minus GDI."
+        },
+        {
+          "id": "opt_d",
+          "text": "As the economy's current unemployment rate.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Unemployment Confusion): The unemployment rate measures labor-force joblessness, not NIPA measurement differences."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T1_09",
+      "chapter": 4,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Business Cycles & Long-Run Growth",
+      "clo_alignment": [
+        "MA-2",
+        "C2002-1"
+      ],
+      "title": "Business Cycles vs. Long-Run Economic Growth",
+      "prompt_template": "How does a short-run business cycle differ from long-run economic growth?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Business Cycles & Long-Run Growth."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Business Cycles & Long-Run Growth."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Business cycles are short-run fluctuations in output and employment through expansions and recessions, whereas long-run growth is the sustained upward trend in potential real GDP per capita.",
+          "is_correct": true,
+          "feedback": "Correct. Cyclical swings occur around the long-run trend, which expands over decades through capital deepening, human capital, and productivity."
+        },
+        {
+          "id": "opt_b",
+          "text": "Business cycles last centuries, whereas long-run growth lasts only a single calendar month.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Time-Horizon Inversion): The horizons are reversed—business cycles are short-run swings, while long-run growth spans decades."
+        },
+        {
+          "id": "opt_c",
+          "text": "Business cycles only occur in closed economies, while long-run growth only occurs when NX = 0.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Openness Myth): Both business cycles and long-run growth occur in open economies with non-zero trade balances."
+        },
+        {
+          "id": "opt_d",
+          "text": "Long-run growth measures inflation, whereas business cycles measure population size.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Variable Confusion): Long-run growth tracks real output capacity per person, not inflation alone."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T1_10",
+      "chapter": 4,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "International Trade Balances",
+      "clo_alignment": [
+        "MA-2"
+      ],
+      "title": "Trade Surplus vs. Trade Deficit",
+      "prompt_template": "In an open economy, what does a trade deficit (NX < 0) mean for domestic output relative to domestic spending?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for International Trade Balances."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for International Trade Balances."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Domestic spending on goods and services exceeds domestic output, with the difference financed by net capital inflows from abroad.",
+          "is_correct": true,
+          "feedback": "Correct. When NX = X - M < 0, imports exceed exports and foreign saving/capital inflows help finance domestic spending above production."
+        },
+        {
+          "id": "opt_b",
+          "text": "Domestic output exceeds domestic spending and the nation is a net lender abroad.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Surplus vs. Deficit): Output exceeding spending with net lending abroad characterizes a trade surplus (NX > 0), not a deficit."
+        },
+        {
+          "id": "opt_c",
+          "text": "Exports equal zero and the country is completely isolated from global trade.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Autarky Myth): A trade deficit means imports exceed exports, not that exports are zero."
+        },
+        {
+          "id": "opt_d",
+          "text": "Inflation is automatically negative in every quarter.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Trade Balance vs. Deflation): NX < 0 is a trade balance condition, not a direct measure of price deflation."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T1_11",
+      "chapter": 4,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Nominal vs. Real GDP",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Isolating Physical Output with Real GDP",
+      "prompt_template": "Why do macroeconomists rely on Real GDP rather than Nominal GDP to track whether an economy is producing more goods and services over time?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Nominal vs. Real GDP."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Nominal vs. Real GDP."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Real GDP values output using constant base-year prices (or chain-weighted quantity indexes), stripping out price changes so growth reflects physical output changes.",
+          "is_correct": true,
+          "feedback": "Correct. Holding prices constant prevents inflation from inflating apparent output growth."
+        },
+        {
+          "id": "opt_b",
+          "text": "Real GDP multiplies current quantities by higher future prices to boost growth figures.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Future Price Myth): Real GDP holds prices fixed at base-year or chained reference weights, never future prices."
+        },
+        {
+          "id": "opt_c",
+          "text": "Nominal GDP excludes services and only counts physical manufacturing.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Goods-Only Myth): Both Nominal and Real GDP cover final goods and services."
+        },
+        {
+          "id": "opt_d",
+          "text": "Real GDP is measured only in foreign currencies.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Currency Myth): U.S. Real GDP is reported in U.S. dollars (such as chained 2017 dollars in GDPC1)."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T1_12",
+      "chapter": 4,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "GDP Boundaries & Well-Being",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Why GDP Is Not a Complete Measure of Well-Being",
+      "prompt_template": "Which of the following is omitted from GDP even though it affects household living standards and well-being?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for GDP Boundaries & Well-Being."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for GDP Boundaries & Well-Being."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Unpaid household work (such as unpaid childcare or home cooking), leisure time, and environmental quality.",
+          "is_correct": true,
+          "feedback": "Correct. GDP tracks market production within borders, not non-market household production, leisure, or environmental externalities."
+        },
+        {
+          "id": "opt_b",
+          "text": "Newly constructed residential homes and commercial office buildings.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Residential Investment Inclusion): Newly built homes are counted in GDP under gross private domestic investment (I)."
+        },
+        {
+          "id": "opt_c",
+          "text": "Final healthcare services and retail grocery sales.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Market Final Output Inclusion): Market purchases of final goods and services are included in C."
+        },
+        {
+          "id": "opt_d",
+          "text": "Government purchases of public education and highway infrastructure.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Government Purchases Inclusion): Government purchases of final goods and services are included in G."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T1_13",
+      "chapter": 4,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Business Cycle Turning Points",
+      "clo_alignment": [
+        "MA-2"
+      ],
+      "title": "Peak and Trough in a Business Cycle",
+      "prompt_template": "In business cycle terminology, what occurs between a peak and a trough?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Business Cycle Turning Points."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Business Cycle Turning Points."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "A recession—a period of broad-based declines in aggregate output, employment, and economic activity.",
+          "is_correct": true,
+          "feedback": "Correct. Activity rises during an expansion up to a peak, contracts during a recession down to a trough, and expands again afterward."
+        },
+        {
+          "id": "opt_b",
+          "text": "An expansion—a period of rising output and falling unemployment.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Expansion vs. Recession): Between a peak and a trough, output contracts in a recession; expansion runs from trough to peak."
+        },
+        {
+          "id": "opt_c",
+          "text": "Long-run secular stagnation with zero price changes forever.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Cycle Phase Confusion): The phase between peak and trough is specifically a recession."
+        },
+        {
+          "id": "opt_d",
+          "text": "A permanent elimination of potential output.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Potential Output Myth): A recession pushes actual output below potential output (Y < Y*) temporarily rather than erasing long-run capacity."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T2_01",
+      "chapter": 4,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Business Cycles & Potential GDP Graph",
+      "clo_alignment": [
+        "MA-2",
+        "C2002-1"
+      ],
+      "title": "Recessionary Gap Below the Y* Trend Line",
+      "prompt_template": "On a business-cycle graph with Time on the horizontal axis and Real GDP (Y) and Potential Real GDP (Y*) on the vertical axis, actual Y lies below the Y* trend line during a recession. What does this vertical gap show?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Business Cycles & Potential GDP Graph."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Business Cycles & Potential GDP Graph."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "A recessionary output gap (Y < Y*), indicating unused labor and capital capacity below normal full-employment output.",
+          "is_correct": true,
+          "feedback": "Correct. When actual Real GDP lies below the Potential Real GDP trend line, the economy has a negative output gap with slack resources."
+        },
+        {
+          "id": "opt_b",
+          "text": "An inflationary overheating gap where factories operate unsustainably above long-run capacity.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Gap Sign Inversion): Output above Y* is an overheating/inflationary gap (Y > Y*), whereas below Y* is a recessionary gap."
+        },
+        {
+          "id": "opt_c",
+          "text": "A trade surplus (NX > 0) automatically equal to the vertical distance.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Output Gap vs. Trade Balance): The vertical gap between Y and Y* measures domestic output slack, not net exports."
+        },
+        {
+          "id": "opt_d",
+          "text": "A base-year error in calculating Nominal GDP.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Accounting Error Myth): A cyclical gap below Y* reflects real economic slack, not a arithmetic mistake."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T2_02",
+      "chapter": 4,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Business Cycles & Potential GDP Graph",
+      "clo_alignment": [
+        "MA-2",
+        "C2002-1"
+      ],
+      "title": "Upward Slope of Potential Real GDP (Y*)",
+      "prompt_template": "In a multi-decade macroeconomic chart, why is the long-run Potential Real GDP line (Y*) drawn sloping upward over time?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Business Cycles & Potential GDP Graph."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Business Cycles & Potential GDP Graph."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because long-run economic growth expands productive capacity over time via capital deepening, human capital, and technological progress.",
+          "is_correct": true,
+          "feedback": "Correct. Even as short-run output fluctuates around it, the secular trend Y* rises over decades as resources and productivity grow."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because inflation automatically pushes real capacity upward every year even with zero productivity or capital growth.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inflation vs. Real Capacity): Real potential output Y* reflects physical/human capital and technology, not nominal price inflation."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because imports always exceed exports by a growing margin.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Trade Deficit Myth): Rising Y* reflects domestic productive capacity growth, not a growing trade deficit."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because business cycles never have troughs.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Cycle Absence Myth): Troughs still occur during recessions, even though the long-run trend slopes upward."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T2_03",
+      "chapter": 4,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Value-Added Supply Chain Diagram",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Reading a Three-Stage Value-Added Diagram",
+      "prompt_template": "In a three-stage supply chain diagram (Stage 1 Wafer: $100 sale, $0 inputs; Stage 2 Chip: $350 sale, $100 inputs; Stage 3 Laptop: $1,000 sale, $350 inputs), how does the diagram show that final GDP equals $1,000?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Value-Added Supply Chain Diagram."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Value-Added Supply Chain Diagram."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Each stage's value added box ($100 + $250 + $650) sums directly to $1,000, matching the final retail laptop price without summing gross sales ($1,450).",
+          "is_correct": true,
+          "feedback": "Correct. Adding gross sales ($100 + $350 + $1,000 = $1,450) double-counts intermediate inputs, whereas summing value added equals $1,000."
+        },
+        {
+          "id": "opt_b",
+          "text": "By adding gross sales across all three stages ($100 + $350 + $1,000 = $1,450) and dividing by 3.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Averaging Gross Sales): Averaging gross sales is not how national accounts avoid double counting; value added subtracts intermediate inputs at each stage."
+        },
+        {
+          "id": "opt_c",
+          "text": "By counting only Stage 1's $100 wafer sale and ignoring retail assembly.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ignoring Later Value Added): Stage 2 and Stage 3 add substantial value ($250 and $650) that must be included."
+        },
+        {
+          "id": "opt_d",
+          "text": "By subtracting final retail sales from intermediate input costs.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Reversing Subtraction): Value added is output minus intermediate inputs, not inputs minus final output."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T2_04",
+      "chapter": 4,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Three-Way NIPA Circular Flow Diagram",
+      "clo_alignment": [
+        "MA-1",
+        "MA-2"
+      ],
+      "title": "Equivalence Across Expenditure, Production, and Income",
+      "prompt_template": "In a three-node NIPA circular flow diagram linking Production (Value Added), Expenditure (C + I + G + NX), and Income (GDI), what do the bidirectional equivalence links represent?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Three-Way NIPA Circular Flow Diagram."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Three-Way NIPA Circular Flow Diagram."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Output produced equals spending on final domestic output and equals income/charges generated in producing that output.",
+          "is_correct": true,
+          "feedback": "Correct. The three approaches measure the same economic flow from production, expenditure, and income perspectives."
+        },
+        {
+          "id": "opt_b",
+          "text": "That households never consume goods and firms never pay wages.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Circular Flow Misreading): Households earn factor income and purchase consumption goods, while firms pay factor incomes from sales revenue."
+        },
+        {
+          "id": "opt_c",
+          "text": "That exports must always equal government spending (X = G).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Component Equality Myth): Individual components like X and G do not have to be equal; the aggregate totals match."
+        },
+        {
+          "id": "opt_d",
+          "text": "That Nominal GDP equals Real GDP in every period.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Nominal vs. Real Confusion): NIPA equivalence holds across accounting approaches, not between current-price and constant-price GDP."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T2_05",
+      "chapter": 4,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Nominal vs. Real GDP Bar Chart",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Decomposing Nominal GDP Growth into Real Growth and Price Inflation",
+      "prompt_template": "In a two-year bar chart where Year 1 is the base year, Nominal GDP rises from $10,000 to $13,600 (+36.0%) while Base-Year Real GDP rises from $10,000 to $11,232 (+12.32%). What does the gap between the two Year 2 bars represent?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Nominal vs. Real GDP Bar Chart."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Nominal vs. Real GDP Bar Chart."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The portion of the nominal spending increase driven by higher prices rather than higher physical quantities.",
+          "is_correct": true,
+          "feedback": "Correct. Because Real GDP holds prices constant at Year 1 levels, the difference between Nominal GDP and Real GDP in Year 2 reflects price changes."
+        },
+        {
+          "id": "opt_b",
+          "text": "Unrecorded exports that were omitted from Year 2.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Omitted Exports Myth): The gap between Nominal and Real GDP reflects price changes, not missing export data."
+        },
+        {
+          "id": "opt_c",
+          "text": "A drop in physical output below Year 1 levels.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Output Drop Myth): Real GDP rose from $10,000 to $11,232 (+12.32%), so physical output increased."
+        },
+        {
+          "id": "opt_d",
+          "text": "Government transfer payments added into Real GDP.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Transfers in Real GDP): Government transfers are excluded from GDP in both nominal and real terms."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T2_06",
+      "chapter": 4,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Base-Year Equality on Real vs. Nominal Chart",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Why Nominal GDP and Real GDP Intersect in the Base Year",
+      "prompt_template": "On a chart comparing Nominal GDP and Base-Year Real GDP over time, why do the two series have the exact same value in the chosen base year?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Base-Year Equality on Real vs. Nominal Chart."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Base-Year Equality on Real vs. Nominal Chart."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because in the base year, current-period prices are identical to base-year prices (P_t = P_0 for every good).",
+          "is_correct": true,
+          "feedback": "Correct. Since prices in the base year equal base-year prices, sum(P_0 * Q_0) equals sum(P_0 * Q_0) by definition."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because inflation is always 100% in the base year.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Base-Year Inflation Myth): Base-year equality comes from P_t = P_0, not 100% inflation."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because quantities produced are always zero in the base year.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero Quantity Myth): Output is positive in the base year; prices simply serve as the reference weights."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because net exports are forced to equal zero in the base year.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (NX Myth): NX does not have to be zero for Nominal and Real GDP to match in the base year."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T2_07",
+      "chapter": 4,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Open-Economy Trade Balance & Spending",
+      "clo_alignment": [
+        "MA-2"
+      ],
+      "title": "Graphical & Accounting Link Between Spending, Output, and NX",
+      "prompt_template": "Using the identity Y = C + I + G + NX, if domestic expenditure (C + I + G) is greater than domestic output (Y), what must be true about Net Exports (NX)?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Open-Economy Trade Balance & Spending."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Open-Economy Trade Balance & Spending."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Net exports must be negative (NX < 0, a trade deficit), meaning imports exceed exports (M > X).",
+          "is_correct": true,
+          "feedback": "Correct. Rearranging Y = C + I + G + NX gives NX = Y - (C + I + G); when domestic spending C + I + G exceeds Y, NX < 0."
+        },
+        {
+          "id": "opt_b",
+          "text": "Net exports must be positive (NX > 0, a trade surplus).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Sign Error on NX): When domestic spending exceeds domestic output, NX is negative, not positive."
+        },
+        {
+          "id": "opt_c",
+          "text": "Investment (I) must equal zero.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero I Myth): Positive or negative NX does not require I = 0."
+        },
+        {
+          "id": "opt_d",
+          "text": "Government purchases (G) must exceed consumption (C).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (G vs. C Myth): NX < 0 depends on total domestic spending relative to Y, not G > C."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T2_08",
+      "chapter": 4,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Consumption vs. Investment Share in Y",
+      "clo_alignment": [
+        "MA-1",
+        "MA-2"
+      ],
+      "title": "Interpreting Expenditure Shares of GDP",
+      "prompt_template": "In typical U.S. national accounts breakdowns, which expenditure component generally accounts for the largest share of GDP (around two-thirds), compared with investment (I) and government purchases (G)?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Consumption vs. Investment Share in Y."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Consumption vs. Investment Share in Y."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Personal Consumption Expenditures (C) is the largest expenditure component, whereas investment (I) is smaller in share but much more volatile over business cycles.",
+          "is_correct": true,
+          "feedback": "Correct. Household consumption is the largest component of Y, while business and residential investment swings sharply during expansions and recessions."
+        },
+        {
+          "id": "opt_b",
+          "text": "Net Exports (NX) is the largest component and is always larger than C.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (NX Share Myth): NX is typically a much smaller fraction of GDP (and often negative in the U.S.), far smaller than C."
+        },
+        {
+          "id": "opt_c",
+          "text": "Government transfer payments inside G make up over 90% of GDP.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Transfers & Share Myth): Transfers are excluded from G, and C is the largest component of GDP."
+        },
+        {
+          "id": "opt_d",
+          "text": "Depreciation is the largest expenditure component in Y = C + I + G + NX.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Depreciation vs. Expenditure): Depreciation is an income/capital-stock concept, not an expenditure category in Y = C + I + G + NX."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T2_09",
+      "chapter": 4,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Inventory Investment in GDP",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "How Unsold Goods Affect Investment (I) and GDP",
+      "prompt_template": "Suppose a firm produces $500,000 of new furniture in Year 1, sells $420,000 to consumers, and adds $80,000 to unsold warehouse inventory. How does this affect Year 1 GDP?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Inventory Investment in GDP."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Inventory Investment in GDP."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Year 1 GDP increases by $500,000 ($420,000 in C plus $80,000 in inventory investment inside I), reflecting all current production.",
+          "is_correct": true,
+          "feedback": "Correct. GDP measures current production, not just current sales; additions to inventory count as investment (I) in the year produced."
+        },
+        {
+          "id": "opt_b",
+          "text": "Year 1 GDP increases by only $420,000 because the $80,000 was not sold to a consumer.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Sales vs. Production): Unsold current output enters inventory investment (I) so GDP captures total production."
+        },
+        {
+          "id": "opt_c",
+          "text": "Year 1 GDP increases by $580,000 by counting the $80,000 inventory twice.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Double Counting Inventory): Inventory change equals production minus sales ($80,000), not an extra $160,000."
+        },
+        {
+          "id": "opt_d",
+          "text": "Year 1 GDP decreases by $80,000 because inventory piled up.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inventory Sign Myth): A positive change in inventories (+$80,000) adds to I and GDP; inventory decumulation subtracts from I."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T2_10",
+      "chapter": 4,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Subsequent Sale of Inventory",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Selling Inventory Produced in an Earlier Period",
+      "prompt_template": "Continuing the furniture example, suppose in Year 2 the firm produces no new furniture but sells the $80,000 of inventory produced in Year 1 to households. How does this affect Year 2 GDP?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Subsequent Sale of Inventory."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Subsequent Sale of Inventory."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Year 2 GDP changes by $0: consumption (C) rises by +$80,000, while inventory investment inside I falls by -$80,000 because the goods were produced in Year 1.",
+          "is_correct": true,
+          "feedback": "Correct. Selling past inventory raises C by +$80,000 and reduces inventory change in I by -$80,000, leaving Year 2 production unchanged."
+        },
+        {
+          "id": "opt_b",
+          "text": "Year 2 GDP rises by +$80,000 because consumers paid $80,000 in Year 2.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Counting Past Output Twice): The furniture was produced in Year 1; counting it again in Year 2 GDP would double-count output."
+        },
+        {
+          "id": "opt_c",
+          "text": "Year 2 GDP falls by -$80,000 because inventory declined.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ignoring Offsetting C): The -$80,000 drop in inventory investment is offset by +$80,000 in consumption spending (C)."
+        },
+        {
+          "id": "opt_d",
+          "text": "Year 2 GDP rises by +$160,000.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Adding Both C and Inventory): C increases while inventory change is negative (-$80,000), netting to zero."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T2_11",
+      "chapter": 4,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Price Increases with Constant Quantities",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Graphical Effect of Pure Inflation on Nominal vs. Real GDP",
+      "prompt_template": "Suppose physical quantities of all goods in an economy are completely unchanged from Year 1 to Year 2, but every price doubles. How do Nominal GDP and Base-Year Real GDP behave?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Price Increases with Constant Quantities."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Price Increases with Constant Quantities."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Nominal GDP doubles (+100%), while Base-Year Real GDP remains completely flat (0% growth).",
+          "is_correct": true,
+          "feedback": "Correct. Because Real GDP holds base-year prices constant, doubling prices with unchanged quantities leaves Real GDP unchanged."
+        },
+        {
+          "id": "opt_b",
+          "text": "Both Nominal GDP and Base-Year Real GDP double (+100%).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Real GDP Inflated by Prices): Base-year Real GDP holds prices fixed, so pure price inflation does not raise Real GDP."
+        },
+        {
+          "id": "opt_c",
+          "text": "Nominal GDP stays flat (0%) while Real GDP doubles (+100%).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Reversing Nominal and Real): Nominal GDP uses current prices and rises with inflation; Real GDP holds prices fixed."
+        },
+        {
+          "id": "opt_d",
+          "text": "Both Nominal GDP and Real GDP fall to zero.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zeroing Output Myth): Higher prices do not reduce physical output to zero."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T2_12",
+      "chapter": 4,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Physical Output Growth with Constant Prices",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Graphical Effect of Pure Quantity Growth with Constant Prices",
+      "prompt_template": "Suppose all prices remain unchanged from Year 1 to Year 2, while physical quantities of every final good rise by 5%. How do Nominal GDP and Base-Year Real GDP change?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Physical Output Growth with Constant Prices."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Physical Output Growth with Constant Prices."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Both Nominal GDP and Base-Year Real GDP rise by 5% because quantities increased by 5% with zero price change.",
+          "is_correct": true,
+          "feedback": "Correct. When prices do not change, current prices equal base-year prices, so Nominal GDP and Real GDP grow at the same 5% rate."
+        },
+        {
+          "id": "opt_b",
+          "text": "Real GDP rises by 5% while Nominal GDP falls by 5%.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Opposite Movement Myth): Higher quantities at unchanged prices raise both nominal dollar spending and real output."
+        },
+        {
+          "id": "opt_c",
+          "text": "Nominal GDP rises by 5% while Real GDP stays at 0%.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ignoring Quantity Growth): Real GDP increases whenever physical quantities produced expand."
+        },
+        {
+          "id": "opt_d",
+          "text": "Neither Nominal nor Real GDP changes because prices were constant.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Price-Only Myth): Output changes whenever physical quantities change, even if prices are steady."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T2_13",
+      "chapter": 4,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Expansion vs. Recessionary Trajectory",
+      "clo_alignment": [
+        "MA-2"
+      ],
+      "title": "Identifying Expansion After a Trough",
+      "prompt_template": "On a time-series plot of Real GDP, a trough occurs in Quarter 2 and output rises steadily across Quarters 3, 4, and 5. Which business cycle phase is underway in Quarters 3–5?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Expansion vs. Recessionary Trajectory."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Expansion vs. Recessionary Trajectory."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "An expansion—a period of rising aggregate output and employment following a trough.",
+          "is_correct": true,
+          "feedback": "Correct. The upward climb from a trough toward the next peak defines an expansion."
+        },
+        {
+          "id": "opt_b",
+          "text": "A recession—a period of broad-based economic contraction.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Contraction vs. Expansion): Rising output after a trough is an expansion, not a recession."
+        },
+        {
+          "id": "opt_c",
+          "text": "A statistical discrepancy.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Phase vs. Accounting Term): Expansion is a business cycle phase, not a NIPA statistical discrepancy."
+        },
+        {
+          "id": "opt_d",
+          "text": "Zero economic activity.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Stagnation Myth): Rising Real GDP indicates expanding economic output."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T3_01",
+      "chapter": 4,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Expenditure GDP & Net Exports",
+      "clo_alignment": [
+        "MA-1",
+        "MA-2"
+      ],
+      "title": "Computing NX and Expenditure GDP (Y)",
+      "prompt_template": "An economy has C = ${{C}}B, I = ${{I}}B, G = ${{G}}B, Exports X = ${{X}}B, and Imports M = ${{M}}B. Compute (1) Net Exports (NX) and (2) total Expenditure GDP (Y).",
+      "parameters": {
+        "C": {
+          "type": "integer",
+          "min": 10000,
+          "max": 18000,
+          "step": 200,
+          "default": 16500
+        },
+        "I": {
+          "type": "integer",
+          "min": 2400,
+          "max": 5000,
+          "step": 200,
+          "default": 4400
+        },
+        "G": {
+          "type": "integer",
+          "min": 2600,
+          "max": 5000,
+          "step": 200,
+          "default": 4600
+        },
+        "X": {
+          "type": "integer",
+          "min": 1500,
+          "max": 3500,
+          "step": 100,
+          "default": 2900
+        },
+        "M": {
+          "type": "integer",
+          "min": 1800,
+          "max": 4200,
+          "step": 100,
+          "default": 3600
+        },
+        "seed_rule": "All parameters are clean integers yielding exact integer NX and Y."
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0.01
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Write down the exact formula from Section 4 of Chapter 4 before substituting numerical values."
+        },
+        {
+          "tier": 2,
+          "text": "Check sign conventions (subtracting imports M, excluding transfers/used assets) and divide by the initial/base-year value for percentage changes."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "NX = X - M; Y = C + I + G + NX (default: NX = -$700B, Y = $24,800B)",
+          "is_correct": true,
+          "feedback": "Correct. Verified exact integer/terminating-decimal evaluation: NX = X - M; Y = C + I + G + NX (default: NX = -$700B, Y = $24,800B)."
+        },
+        {
+          "id": "opt_b",
+          "text": "NX = X + M; Y = C + I + G + (X + M).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Adding Imports): Imports are produced abroad and must be subtracted (X - M), not added."
+        },
+        {
+          "id": "opt_c",
+          "text": "Y = C + I + G only (ignoring X and M).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Omitting NX): Open-economy GDP must include net exports NX = X - M."
+        },
+        {
+          "id": "opt_d",
+          "text": "Y = C + I - G + NX.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Subtracting G): Government purchases of final goods and services are added (+G), not subtracted."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T3_02",
+      "chapter": 4,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Multi-Stage Value Added",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Calculating Total Value Added Across Three Stages",
+      "prompt_template": "Firm A (mining/wafer) sells raw output for ${{sale_a}} with ${{inp_a}} intermediate inputs. Firm B (components) buys Firm A's output and sells components for ${{sale_b}}. Firm C (final assembly) buys Firm B's output and sells final goods for ${{sale_c}}. Compute total value added across all three firms.",
+      "parameters": {
+        "sale_a": {
+          "type": "integer",
+          "min": 50,
+          "max": 300,
+          "step": 25,
+          "default": 100
+        },
+        "inp_a": {
+          "type": "integer",
+          "min": 0,
+          "max": 0,
+          "step": 0,
+          "default": 0
+        },
+        "sale_b": {
+          "type": "integer",
+          "min": 200,
+          "max": 600,
+          "step": 50,
+          "default": 350
+        },
+        "sale_c": {
+          "type": "integer",
+          "min": 700,
+          "max": 1500,
+          "step": 100,
+          "default": 1000
+        },
+        "seed_rule": "Integer sales and intermediate costs yield exact integer value added at each stage."
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0.01
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Write down the exact formula from Section 4 of Chapter 4 before substituting numerical values."
+        },
+        {
+          "tier": 2,
+          "text": "Check sign conventions (subtracting imports M, excluding transfers/used assets) and divide by the initial/base-year value for percentage changes."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Total Value Added = (sale_a - inp_a) + (sale_b - sale_a) + (sale_c - sale_b) = sale_c (default: $100 + $250 + $650 = $1,000)",
+          "is_correct": true,
+          "feedback": "Correct. Verified exact integer/terminating-decimal evaluation: Total Value Added = (sale_a - inp_a) + (sale_b - sale_a) + (sale_c - sale_b) = sale_c (default: $100 + $250 + $650 = $1,000)."
+        },
+        {
+          "id": "opt_b",
+          "text": "Total Value Added = sale_a + sale_b + sale_c (summing gross sales).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Double Counting Gross Sales): Summing gross sales counts intermediate goods multiple times."
+        },
+        {
+          "id": "opt_c",
+          "text": "Total Value Added = sale_c - sale_b (counting only the final assembler's margin).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Dropping Earlier Value Added): Earlier firms also create value added within the domestic supply chain."
+        },
+        {
+          "id": "opt_d",
+          "text": "Total Value Added = sale_b - sale_a.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Partial Chain): This captures only Stage 2's value added, omitting Stages 1 and 3."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T3_03",
+      "chapter": 4,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Income Approach (GDI)",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Computing Gross Domestic Income (GDI)",
+      "prompt_template": "An economy records Employee Compensation = ${{comp}}B, Proprietors' Income = ${{prop}}B, Rental Income = ${{rent}}B, Corporate Profits = ${{prof}}B, Net Interest = ${{intr}}B, Indirect Taxes Less Subsidies = ${{tax_net}}B, and Depreciation = ${{depr}}B. Compute total GDI.",
+      "parameters": {
+        "comp": {
+          "type": "integer",
+          "min": 8000,
+          "max": 16000,
+          "step": 200,
+          "default": 14200
+        },
+        "prop": {
+          "type": "integer",
+          "min": 1000,
+          "max": 2600,
+          "step": 50,
+          "default": 1850
+        },
+        "rent": {
+          "type": "integer",
+          "min": 500,
+          "max": 1500,
+          "step": 50,
+          "default": 950
+        },
+        "prof": {
+          "type": "integer",
+          "min": 1500,
+          "max": 4000,
+          "step": 100,
+          "default": 3100
+        },
+        "intr": {
+          "type": "integer",
+          "min": 300,
+          "max": 1200,
+          "step": 50,
+          "default": 650
+        },
+        "tax_net": {
+          "type": "integer",
+          "min": 800,
+          "max": 2400,
+          "step": 50,
+          "default": 1650
+        },
+        "depr": {
+          "type": "integer",
+          "min": 1500,
+          "max": 3500,
+          "step": 100,
+          "default": 2400
+        },
+        "seed_rule": "Clean integer income components yield exact integer GDI."
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0.01
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Write down the exact formula from Section 4 of Chapter 4 before substituting numerical values."
+        },
+        {
+          "tier": 2,
+          "text": "Check sign conventions (subtracting imports M, excluding transfers/used assets) and divide by the initial/base-year value for percentage changes."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "GDI = comp + prop + rent + prof + intr + tax_net + depr (default: $24,800B)",
+          "is_correct": true,
+          "feedback": "Correct. Verified exact integer/terminating-decimal evaluation: GDI = comp + prop + rent + prof + intr + tax_net + depr (default: $24,800B)."
+        },
+        {
+          "id": "opt_b",
+          "text": "GDI = comp + prop + rent + prof + intr (omitting indirect business taxes and depreciation).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Omitting Non-Factor NIPA Rows): GDI includes indirect taxes less subsidies and consumption of fixed capital (depreciation)."
+        },
+        {
+          "id": "opt_c",
+          "text": "GDI = comp - prof + rent + intr + tax_net + depr.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Subtracting Corporate Profits): Corporate profits are part of income generated in production and must be added."
+        },
+        {
+          "id": "opt_d",
+          "text": "GDI = comp + prop + rent + prof + intr - depr.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Subtracting Depreciation): Depreciation is added in the income approach to match gross domestic output."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T3_04",
+      "chapter": 4,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Boundary Filtering in Expenditure GDP",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Excluding Transfers and Used Asset Sales from GDP",
+      "prompt_template": "Suppose C = ${{C}}B, I = ${{I}}B, G = ${{G}}B, X = ${{X}}B, and M = ${{M}}B, and the economy also has ${{xfer}}B in Social Security transfers and ${{used_home}}B in used home sales. Compute Expenditure GDP (Y).",
+      "parameters": {
+        "C": {
+          "type": "integer",
+          "min": 10000,
+          "max": 16000,
+          "step": 400,
+          "default": 12400
+        },
+        "I": {
+          "type": "integer",
+          "min": 2400,
+          "max": 4400,
+          "step": 200,
+          "default": 3200
+        },
+        "G": {
+          "type": "integer",
+          "min": 2800,
+          "max": 4800,
+          "step": 200,
+          "default": 3800
+        },
+        "X": {
+          "type": "integer",
+          "min": 1600,
+          "max": 3000,
+          "step": 100,
+          "default": 2100
+        },
+        "M": {
+          "type": "integer",
+          "min": 1800,
+          "max": 3400,
+          "step": 100,
+          "default": 2500
+        },
+        "xfer": {
+          "type": "integer",
+          "min": 800,
+          "max": 2000,
+          "step": 200,
+          "default": 1400
+        },
+        "used_home": {
+          "type": "integer",
+          "min": 500,
+          "max": 1500,
+          "step": 250,
+          "default": 950
+        },
+        "seed_rule": "Integer parameters guarantee exact integer NX and Y."
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0.01
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Write down the exact formula from Section 4 of Chapter 4 before substituting numerical values."
+        },
+        {
+          "tier": 2,
+          "text": "Check sign conventions (subtracting imports M, excluding transfers/used assets) and divide by the initial/base-year value for percentage changes."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Y = C + I + G + (X - M), excluding transfers and used home resales (default: NX = -$400B, Y = $19,000B)",
+          "is_correct": true,
+          "feedback": "Correct. Verified exact integer/terminating-decimal evaluation: Y = C + I + G + (X - M), excluding transfers and used home resales (default: NX = -$400B, Y = $19,000B)."
+        },
+        {
+          "id": "opt_b",
+          "text": "Y = C + I + G + (X - M) + xfer + used_home.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Including Transfers & Used Homes): Transfer payments and resales of existing homes do not represent current production and are excluded."
+        },
+        {
+          "id": "opt_c",
+          "text": "Y = C + I + G + (X + M) + xfer.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Adding Imports and Transfers): Both adding M and including transfers violate NIPA definitions."
+        },
+        {
+          "id": "opt_d",
+          "text": "Y = C + I + G + (X - M) + used_home.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Including Used Home Resales): Existing home resales were already counted when originally constructed."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T3_05",
+      "chapter": 4,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Nominal vs. Real GDP (Single Good)",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Computing Nominal GDP, Real GDP, and Real Output Growth",
+      "prompt_template": "An economy produces only electric bikes. In Year 1 (Base Year), output is {{q1}} bikes at ${{p1}} each. In Year 2, output is {{q2}} bikes at ${{p2}} each. Compute Year 2 Nominal GDP, Year 2 Real GDP, and Real GDP growth (%).",
+      "parameters": {
+        "q1": {
+          "type": "integer",
+          "min": 800,
+          "max": 1600,
+          "step": 100,
+          "default": 1000
+        },
+        "p1": {
+          "type": "integer",
+          "min": 1000,
+          "max": 2500,
+          "step": 100,
+          "default": 1500
+        },
+        "q2": {
+          "type": "integer",
+          "min": 900,
+          "max": 2000,
+          "step": 100,
+          "default": 1100
+        },
+        "p2": {
+          "type": "integer",
+          "min": 1200,
+          "max": 3000,
+          "step": 100,
+          "default": 1800
+        },
+        "seed_rule": "Multiples of 100 produce exact integer dollar totals and clean terminating percentages."
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0.01
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Write down the exact formula from Section 4 of Chapter 4 before substituting numerical values."
+        },
+        {
+          "tier": 2,
+          "text": "Check sign conventions (subtracting imports M, excluding transfers/used assets) and divide by the initial/base-year value for percentage changes."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Nom_2 = p2*q2; Real_2 = p1*q2; Real Growth = ((Real_2 - Real_1)/Real_1)*100% (default: $1,980,000; $1,650,000; +10.0%)",
+          "is_correct": true,
+          "feedback": "Correct. Verified exact integer/terminating-decimal evaluation: Nom_2 = p2*q2; Real_2 = p1*q2; Real Growth = ((Real_2 - Real_1)/Real_1)*100% (default: $1,980,000; $1,650,000; +10.0%)."
+        },
+        {
+          "id": "opt_b",
+          "text": "Real_2 = p2 * q2 (using Year 2 prices for Real GDP).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Current Prices in Real GDP): Real GDP holds prices fixed at the Year 1 base price p1."
+        },
+        {
+          "id": "opt_c",
+          "text": "Real Growth = ((p2*q2 - p1*q1)/(p1*q1))*100% (using nominal change as real growth).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Nominal Growth Confused with Real Growth): Nominal change includes price inflation as well as physical output growth."
+        },
+        {
+          "id": "opt_d",
+          "text": "Real_2 = p1 * q1 (keeping Year 1 quantity).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Stale Quantity): Year 2 Real GDP must multiply base price p1 by Year 2 quantity q2."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T3_06",
+      "chapter": 4,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Nominal vs. Real GDP (Two Goods)",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Two-Good Nominal GDP and Constant-Base-Year Real GDP",
+      "prompt_template": "A two-good economy produces Laptops and Coffee. In Year 1 (Base Year): {{q_lap1}} laptops at ${{p_lap1}} and {{q_cof1}} coffees at ${{p_cof1}}. In Year 2: {{q_lap2}} laptops at ${{p_lap2}} and {{q_cof2}} coffees at ${{p_cof2}}. Compute Year 2 Nominal GDP and Year 2 Real GDP.",
+      "parameters": {
+        "p_lap1": {
+          "type": "integer",
+          "min": 600,
+          "max": 1200,
+          "step": 100,
+          "default": 800
+        },
+        "q_lap1": {
+          "type": "integer",
+          "min": 10,
+          "max": 30,
+          "step": 5,
+          "default": 10
+        },
+        "p_cof1": {
+          "type": "integer",
+          "min": 2,
+          "max": 8,
+          "step": 1,
+          "default": 4
+        },
+        "q_cof1": {
+          "type": "integer",
+          "min": 200,
+          "max": 800,
+          "step": 100,
+          "default": 500
+        },
+        "p_lap2": {
+          "type": "integer",
+          "min": 700,
+          "max": 1400,
+          "step": 100,
+          "default": 900
+        },
+        "q_lap2": {
+          "type": "integer",
+          "min": 12,
+          "max": 35,
+          "step": 2,
+          "default": 12
+        },
+        "p_cof2": {
+          "type": "integer",
+          "min": 3,
+          "max": 10,
+          "step": 1,
+          "default": 5
+        },
+        "q_cof2": {
+          "type": "integer",
+          "min": 250,
+          "max": 900,
+          "step": 50,
+          "default": 600
+        },
+        "seed_rule": "Integer prices and quantities yield exact integer Nominal and Real GDP values."
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0.01
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Write down the exact formula from Section 4 of Chapter 4 before substituting numerical values."
+        },
+        {
+          "tier": 2,
+          "text": "Check sign conventions (subtracting imports M, excluding transfers/used assets) and divide by the initial/base-year value for percentage changes."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Nom_2 = P_lap2*Q_lap2 + P_cof2*Q_cof2; Real_2 = P_lap1*Q_lap2 + P_cof1*Q_cof2 (default: $13,800; $12,000)",
+          "is_correct": true,
+          "feedback": "Correct. Verified exact integer/terminating-decimal evaluation: Nom_2 = P_lap2*Q_lap2 + P_cof2*Q_cof2; Real_2 = P_lap1*Q_lap2 + P_cof1*Q_cof2 (default: $13,800; $12,000)."
+        },
+        {
+          "id": "opt_b",
+          "text": "Real_2 = P_lap1*Q_lap1 + P_cof1*Q_cof1 (Year 1 GDP).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Repeating Base-Year GDP): Year 2 Real GDP updates quantities to Year 2 levels (Q_lap2, Q_cof2)."
+        },
+        {
+          "id": "opt_c",
+          "text": "Nom_2 = P_lap1*Q_lap2 + P_cof1*Q_cof2.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Swapping Nominal and Real): Nominal GDP uses current Year 2 prices (P_lap2, P_cof2)."
+        },
+        {
+          "id": "opt_d",
+          "text": "Real_2 = (P_lap1 + P_lap2)*Q_lap2.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Summing Prices Across Years): Real GDP evaluates Year 2 quantities at a single base year's prices, not summed prices."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T3_07",
+      "chapter": 4,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Output Gap Calculation",
+      "clo_alignment": [
+        "MA-2",
+        "C2002-1"
+      ],
+      "title": "Computing Dollar and Percentage Output Gaps",
+      "prompt_template": "An economy has Potential Real GDP Y* = ${{y_star}}B and actual Real GDP Y = ${{y_act}}B. Compute (1) the dollar output gap (Y - Y*) and (2) the percentage output gap ((Y - Y*) / Y*) * 100%.",
+      "parameters": {
+        "y_star": {
+          "type": "integer",
+          "min": 10000,
+          "max": 30000,
+          "step": 1000,
+          "default": 25000
+        },
+        "y_act": {
+          "type": "integer",
+          "min": 9000,
+          "max": 31000,
+          "step": 500,
+          "default": 24250
+        },
+        "seed_rule": "Multiples of $500 and $1,000 produce exact terminating decimals."
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0.01
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Write down the exact formula from Section 4 of Chapter 4 before substituting numerical values."
+        },
+        {
+          "tier": 2,
+          "text": "Check sign conventions (subtracting imports M, excluding transfers/used assets) and divide by the initial/base-year value for percentage changes."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Dollar Gap = Y - Y*; Pct Gap = ((Y - Y*)/Y*)*100% (default: -$750B, -3.0%)",
+          "is_correct": true,
+          "feedback": "Correct. Verified exact integer/terminating-decimal evaluation: Dollar Gap = Y - Y*; Pct Gap = ((Y - Y*)/Y*)*100% (default: -$750B, -3.0%)."
+        },
+        {
+          "id": "opt_b",
+          "text": "Dollar Gap = Y* - Y (reversing subtraction order).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inverted Gap Sign): A recessionary gap has Y < Y*, so Y - Y* is negative."
+        },
+        {
+          "id": "opt_c",
+          "text": "Pct Gap = ((Y - Y*) / Y) * 100% (dividing by actual Y instead of potential Y*).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Wrong Denominator): Standard output gap percentage divides by Potential Real GDP (Y*), not actual Y."
+        },
+        {
+          "id": "opt_d",
+          "text": "Pct Gap = Y - Y* without multiplying by 100%.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Unit Error): Percentage gap expresses the ratio relative to Y* as a percentage."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T3_08",
+      "chapter": 4,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Net Exports & Trade Balance",
+      "clo_alignment": [
+        "MA-2"
+      ],
+      "title": "Computing Net Exports (NX) from Exports and Imports",
+      "prompt_template": "A country exports ${{exp}}B of goods and services and imports ${{imp}}B of goods and services. Calculate Net Exports (NX = X - M).",
+      "parameters": {
+        "exp": {
+          "type": "integer",
+          "min": 1000,
+          "max": 5000,
+          "step": 100,
+          "default": 3100
+        },
+        "imp": {
+          "type": "integer",
+          "min": 1000,
+          "max": 5000,
+          "step": 100,
+          "default": 3850
+        },
+        "seed_rule": "Integer exports and imports yield exact integer NX."
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0.01
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Write down the exact formula from Section 4 of Chapter 4 before substituting numerical values."
+        },
+        {
+          "tier": 2,
+          "text": "Check sign conventions (subtracting imports M, excluding transfers/used assets) and divide by the initial/base-year value for percentage changes."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "NX = X - M (default: $3,100B - $3,850B = -$750B)",
+          "is_correct": true,
+          "feedback": "Correct. Verified exact integer/terminating-decimal evaluation: NX = X - M (default: $3,100B - $3,850B = -$750B)."
+        },
+        {
+          "id": "opt_b",
+          "text": "NX = X + M.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Adding Imports): NX subtracts imports from exports, never adds them."
+        },
+        {
+          "id": "opt_c",
+          "text": "NX = M - X.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Reversed Trade Sign): NX is exports minus imports (X - M), so an import surplus gives NX < 0."
+        },
+        {
+          "id": "opt_d",
+          "text": "NX = (X + M) / 2.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Averaging X and M): Net exports is the difference X - M, not the average of X and M."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T3_09",
+      "chapter": 4,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Missing GDI Component via Equivalence",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Solving for Corporate Profits When GDP = GDI",
+      "prompt_template": "Expenditure GDP is Y = ${{gdp}}B and statistical discrepancy is $0B. Income components excluding Corporate Profits sum to ${{other_inc}}B. Compute Corporate Profits.",
+      "parameters": {
+        "gdp": {
+          "type": "integer",
+          "min": 15000,
+          "max": 30000,
+          "step": 500,
+          "default": 24800
+        },
+        "other_inc": {
+          "type": "integer",
+          "min": 12000,
+          "max": 26000,
+          "step": 500,
+          "default": 21700
+        },
+        "seed_rule": "Constraint other_inc < gdp with step 500 yields exact integer Corporate Profits."
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0.01
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Write down the exact formula from Section 4 of Chapter 4 before substituting numerical values."
+        },
+        {
+          "tier": 2,
+          "text": "Check sign conventions (subtracting imports M, excluding transfers/used assets) and divide by the initial/base-year value for percentage changes."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Corporate Profits = GDP - other_inc (default: $24,800B - $21,700B = $3,100B)",
+          "is_correct": true,
+          "feedback": "Correct. Verified exact integer/terminating-decimal evaluation: Corporate Profits = GDP - other_inc (default: $24,800B - $21,700B = $3,100B)."
+        },
+        {
+          "id": "opt_b",
+          "text": "Corporate Profits = GDP + other_inc.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Adding Instead of Subtracting): Because GDI equals GDP, missing one component means subtracting the remaining components from total GDP."
+        },
+        {
+          "id": "opt_c",
+          "text": "Corporate Profits = other_inc - GDP.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Reversed Subtraction): Total GDP is the sum of all income components, so other_inc is smaller than GDP."
+        },
+        {
+          "id": "opt_d",
+          "text": "Corporate Profits = GDP / other_inc.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ratio Error): Income components sum additively to GDI, not multiplicatively or as a ratio."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T3_10",
+      "chapter": 4,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Solving for Missing Expenditure Component",
+      "clo_alignment": [
+        "MA-1",
+        "MA-2"
+      ],
+      "title": "Solving for Government Purchases (G) from NIPA Identity",
+      "prompt_template": "An economy has total output Y = ${{gdp}}B, C = ${{C}}B, I = ${{I}}B, X = ${{X}}B, and M = ${{M}}B. Solve for Government Purchases (G).",
+      "parameters": {
+        "C": {
+          "type": "integer",
+          "min": 10000,
+          "max": 16000,
+          "step": 500,
+          "default": 12400
+        },
+        "I": {
+          "type": "integer",
+          "min": 2000,
+          "max": 4500,
+          "step": 500,
+          "default": 3200
+        },
+        "X": {
+          "type": "integer",
+          "min": 1500,
+          "max": 3000,
+          "step": 500,
+          "default": 2000
+        },
+        "M": {
+          "type": "integer",
+          "min": 1500,
+          "max": 3500,
+          "step": 500,
+          "default": 2500
+        },
+        "G_true": {
+          "type": "integer",
+          "min": 2500,
+          "max": 5000,
+          "step": 500,
+          "default": 3900
+        },
+        "seed_rule": "Y is defined consistently as C + I + G_true + (X - M) so G_true is an exact integer."
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0.01
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Write down the exact formula from Section 4 of Chapter 4 before substituting numerical values."
+        },
+        {
+          "tier": 2,
+          "text": "Check sign conventions (subtracting imports M, excluding transfers/used assets) and divide by the initial/base-year value for percentage changes."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "G = Y - C - I - (X - M) (default: $3,900B)",
+          "is_correct": true,
+          "feedback": "Correct. Verified exact integer/terminating-decimal evaluation: G = Y - C - I - (X - M) (default: $3,900B)."
+        },
+        {
+          "id": "opt_b",
+          "text": "G = Y + C + I + (X - M).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Adding C and I Instead of Subtracting): To isolate G from Y = C + I + G + NX, C, I, and NX must be subtracted from Y."
+        },
+        {
+          "id": "opt_c",
+          "text": "G = Y - C - I - (X + M).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Sign Error on NX): Subtracting NX = X - M subtracts (X - M), which adds M back rather than subtracting M."
+        },
+        {
+          "id": "opt_d",
+          "text": "G = C + I - X + M.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Omitting Y): You must start from total Y before subtracting C, I, and NX."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T3_11",
+      "chapter": 4,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Real GDP Growth Rate Calculation",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Calculating Real GDP Growth Between Two Years",
+      "prompt_template": "In Year 1, Base-Year Real GDP is ${{real_1}}B. In Year 2, Base-Year Real GDP rises to ${{real_2}}B. Compute the percentage growth rate of Real GDP.",
+      "parameters": {
+        "real_1": {
+          "type": "integer",
+          "min": 10000,
+          "max": 25000,
+          "step": 500,
+          "default": 20000
+        },
+        "real_2": {
+          "type": "integer",
+          "min": 10500,
+          "max": 27000,
+          "step": 500,
+          "default": 20600
+        },
+        "seed_rule": "Multiples of $500 and $20,000 produce exact terminating percentage growth rates."
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0.01
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Write down the exact formula from Section 4 of Chapter 4 before substituting numerical values."
+        },
+        {
+          "tier": 2,
+          "text": "Check sign conventions (subtracting imports M, excluding transfers/used assets) and divide by the initial/base-year value for percentage changes."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Real GDP Growth = ((Real_2 - Real_1) / Real_1) * 100% (default: +3.0%)",
+          "is_correct": true,
+          "feedback": "Correct. Verified exact integer/terminating-decimal evaluation: Real GDP Growth = ((Real_2 - Real_1) / Real_1) * 100% (default: +3.0%)."
+        },
+        {
+          "id": "opt_b",
+          "text": "Real Growth = ((real_2 - real_1) / real_2) * 100% (dividing by Year 2 instead of Year 1).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Wrong Base Denominator): Percentage growth from Year 1 to Year 2 divides by initial Year 1 Real GDP, not Year 2."
+        },
+        {
+          "id": "opt_c",
+          "text": "Real Growth = real_2 - real_1 (reporting dollar change without dividing by Real_1).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Dollar Difference vs. Percent): Subtracting levels gives dollar change, not percentage growth."
+        },
+        {
+          "id": "opt_d",
+          "text": "Real Growth = (real_2 / real_1) * 100% (forgetting to subtract 1).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Index Ratio vs. Growth Rate): Multiplying real_2/real_1 by 100% gives 103%, which must subtract 100% to get +3% growth."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T3_12",
+      "chapter": 4,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Realtor Commission vs. Used Home Sale",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Counting Current Brokerage Fees While Excluding Used Asset Price",
+      "prompt_template": "A household buys an existing home for ${{home_price}} (built 25 years ago) and pays a real estate agent a commission equal to {{comm_pct}}% of the home price. How much does this transaction add to current-year GDP?",
+      "parameters": {
+        "home_price": {
+          "type": "integer",
+          "min": 400000,
+          "max": 1000000,
+          "step": 100000,
+          "default": 500000
+        },
+        "comm_pct": {
+          "type": "integer",
+          "min": 2,
+          "max": 6,
+          "step": 1,
+          "default": 5
+        },
+        "seed_rule": "Integer home price and commission percentage yield an exact integer GDP addition."
+      },
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0.01
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Write down the exact formula from Section 4 of Chapter 4 before substituting numerical values."
+        },
+        {
+          "tier": 2,
+          "text": "Check sign conventions (subtracting imports M, excluding transfers/used assets) and divide by the initial/base-year value for percentage changes."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "GDP Added = home_price * (comm_pct / 100) (default: $500,000 * 0.05 = $25,000)",
+          "is_correct": true,
+          "feedback": "Correct. Verified exact integer/terminating-decimal evaluation: GDP Added = home_price * (comm_pct / 100) (default: $500,000 * 0.05 = $25,000)."
+        },
+        {
+          "id": "opt_b",
+          "text": "GDP Added = home_price + home_price*(comm_pct/100) (counting the used house price too).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Counting Used Home Value): The existing house was produced in an earlier year and is excluded from current GDP; only the current brokerage service is counted."
+        },
+        {
+          "id": "opt_c",
+          "text": "GDP Added = $0 (excluding the agent's commission too).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Excluding Current Services): Real estate brokerage provides a current service in the present year and is included in GDP."
+        },
+        {
+          "id": "opt_d",
+          "text": "GDP Added = home_price.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Treating Used Home as New Construction): Only newly constructed homes enter investment (I); resales of existing homes do not."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T4_01",
+      "chapter": 4,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "FRED GDP vs. GDPC1 Interpretation",
+      "clo_alignment": [
+        "MA-1",
+        "MA-2",
+        "C2002-1"
+      ],
+      "title": "Using FRED GDP and GDPC1 Properly in Empirical Analysis",
+      "prompt_template": "When analyzing quarterly U.S. national output using St. Louis Fed FRED series GDP (billions of current dollars, SAAR) and GDPC1 (billions of chained 2017 dollars, SAAR), which approach is analytically sound?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for FRED GDP vs. GDPC1 Interpretation."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for FRED GDP vs. GDPC1 Interpretation."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Compute real output growth and recessionary contractions from GDPC1, and do not read chained-dollar levels as current-dollar spending.",
+          "is_correct": true,
+          "feedback": "Correct. GDPC1 removes price changes over time using chained 2017 reference weights, whereas GDP reflects current-dollar nominal expenditure."
+        },
+        {
+          "id": "opt_b",
+          "text": "Use unadjusted current-dollar GDP to measure real output growth because nominal dollars always equal physical quantities.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Nominal Bias): Current-dollar GDP reflects both price changes and quantity changes, so it can overstate physical output growth during inflation."
+        },
+        {
+          "id": "opt_c",
+          "text": "Treat GDPC1 dollar figures as exact current-year out-of-pocket household spending.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Chained-Dollar Level Misreading): GDPC1 is real output anchored to chained 2017 dollars, not current-dollar nominal expenditure."
+        },
+        {
+          "id": "opt_d",
+          "text": "Assume FRED series are never revised after initial quarterly release.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Revision Myth): BEA national accounts series like GDP and GDPC1 are routinely revised as fuller survey and tax data arrive."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T4_02",
+      "chapter": 4,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Headline Nominal Surge vs. Living Standards",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Evaluating a Headline Jump in Nominal GDP",
+      "prompt_template": "A country's Nominal GDP rises by 9% over a year while Real GDP rises by only 1.5%. What should a policymaker conclude about physical output versus price changes?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Headline Nominal Surge vs. Living Standards."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Headline Nominal Surge vs. Living Standards."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Most of the 9% nominal increase came from higher prices rather than a 9% expansion in physical goods and services, as physical output grew by only 1.5%.",
+          "is_correct": true,
+          "feedback": "Correct. Comparing Nominal GDP growth against Real GDP growth separates price inflation from real output expansion."
+        },
+        {
+          "id": "opt_b",
+          "text": "Physical output rose by 9% and prices fell by 7.5%.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Sign & Magnitude Error): Real GDP rose by only 1.5%, while higher prices accounted for the bulk of the nominal increase."
+        },
+        {
+          "id": "opt_c",
+          "text": "The economy is in a deep recession because Nominal GDP rose.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Nominal Growth Misinterpretation): Rising nominal output with positive 1.5% real growth does not by itself define a recession."
+        },
+        {
+          "id": "opt_d",
+          "text": "Net exports must be greater than 9% of GDP.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (NX Inference Error): Nominal vs. Real GDP growth measures price vs. quantity changes, not the NX share of GDP."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T4_03",
+      "chapter": 4,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Global Supply Chains & Net Exports",
+      "clo_alignment": [
+        "MA-1",
+        "MA-2"
+      ],
+      "title": "Assembling Imported Components into Final Goods",
+      "prompt_template": "Suppose a domestic firm imports $300 of foreign components, adds $700 of domestic value added, and sells the finished product domestically for $1,000. How does this affect domestic GDP?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Global Supply Chains & Net Exports."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Global Supply Chains & Net Exports."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Domestic GDP increases by $700: final domestic spending rises by +$1,000, but imports (M) rise by +$300, reducing NX by -$300 for a net +$700 domestic contribution.",
+          "is_correct": true,
+          "feedback": "Correct. Only the $700 of value added created inside domestic borders counts in domestic GDP; the $300 imported input is netted out via -M."
+        },
+        {
+          "id": "opt_b",
+          "text": "Domestic GDP increases by the full $1,000 retail sale without subtracting the $300 import.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ignoring Import Subtraction): Failing to subtract the $300 import overstates domestic GDP by counting foreign value added as domestic output."
+        },
+        {
+          "id": "opt_c",
+          "text": "Domestic GDP decreases by -$300 because imports occurred.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ignoring Domestic Value Added): The firm added $700 of domestic value added, outweighing the -$300 import subtraction."
+        },
+        {
+          "id": "opt_d",
+          "text": "Domestic GDP is unchanged ($0) because the final good was sold domestically.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero Domestic Value Myth): Domestic assembly and engineering generated $700 of domestic value added."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T4_04",
+      "chapter": 4,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Fiscal Transfers vs. Government Purchases",
+      "clo_alignment": [
+        "MA-1",
+        "MA-2"
+      ],
+      "title": "Policy Evaluation: Expanding Transfer Checks vs. Public Infrastructure",
+      "prompt_template": "Compare two fiscal policies of equal dollar cost: (Policy A) expanding cash transfer payments to households versus (Policy B) government purchases (G) of new public transit and grid upgrades. How do they enter GDP initially?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Fiscal Transfers vs. Government Purchases."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Fiscal Transfers vs. Government Purchases."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Policy B enters GDP directly through government purchases (G), whereas cash transfers in Policy A are excluded from G and only affect GDP indirectly if recipients spend them on current output.",
+          "is_correct": true,
+          "feedback": "Correct. Government purchases (G) directly buy current goods and services, whereas transfer payments merely redistribute income."
+        },
+        {
+          "id": "opt_b",
+          "text": "Both policies add identically and directly to government purchases (G) dollar for dollar.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Transfers Equal to G): Transfer payments are explicitly excluded from G in national income accounting."
+        },
+        {
+          "id": "opt_c",
+          "text": "Policy A adds directly to G while Policy B is excluded from GDP.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Reversing G and Transfers): Government purchases of final goods/services are included in G; transfers are excluded."
+        },
+        {
+          "id": "opt_d",
+          "text": "Neither policy ever affects consumption (C) or GDP.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero Spending Effect Myth): Spending out of transfers can raise C, and G directly enters Y = C + I + G + NX."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T4_05",
+      "chapter": 4,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Trade Deficit & Capital Inflows",
+      "clo_alignment": [
+        "MA-2"
+      ],
+      "title": "Financing a Trade Deficit in an Open Economy",
+      "prompt_template": "A nation runs a persistent trade deficit (NX < 0) over several years. What economic relationship connects its trade deficit to international capital flows?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Trade Deficit & Capital Inflows."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Trade Deficit & Capital Inflows."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because domestic spending exceeds domestic output (C + I + G > Y), the country imports more than it exports and finances the shortfall through net capital inflows from abroad.",
+          "is_correct": true,
+          "feedback": "Correct. In an open economy, a trade deficit corresponds to domestic spending exceeding domestic output and net capital inflows financing the difference."
+        },
+        {
+          "id": "opt_b",
+          "text": "A trade deficit means the country exports far more than it imports and sends net capital outflows abroad.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Surplus vs. Deficit Capital Flow): Net lending/capital outflows abroad correspond to a trade surplus (NX > 0), not a deficit."
+        },
+        {
+          "id": "opt_c",
+          "text": "A trade deficit proves that domestic workers produce zero final goods.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero Production Myth): Countries with trade deficits still produce large volumes of domestic goods and services."
+        },
+        {
+          "id": "opt_d",
+          "text": "A trade deficit automatically eliminates all business cycles.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Cycle Elimination Myth): Open economies with trade deficits still experience expansions and recessions."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T4_06",
+      "chapter": 4,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "GDP and Non-Market Household Care",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Policy Limits of GDP When Evaluating Care & Household Work",
+      "prompt_template": "If a household previously had one member provide unpaid childcare at home and later hires a licensed daycare center for the same care, what happens to measured GDP?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for GDP and Non-Market Household Care."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for GDP and Non-Market Household Care."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Measured GDP rises by the daycare fees paid because a previously unpaid non-market activity shifts into a priced market service—even if actual childcare hours are unchanged.",
+          "is_correct": true,
+          "feedback": "Correct. This illustrates a key boundary feature of GDP: shifting activity from unpaid home production into paid market transactions raises measured GDP."
+        },
+        {
+          "id": "opt_b",
+          "text": "Measured GDP falls because childcare is a household activity.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Marketization Sign Error): Paid daycare services are market transactions that increase GDP, not decrease it."
+        },
+        {
+          "id": "opt_c",
+          "text": "Measured GDP is unaffected because the child receives the same care.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Well-Being vs. Market Output): GDP measures market transactions, so moving from unpaid care to paid daycare increases measured GDP."
+        },
+        {
+          "id": "opt_d",
+          "text": "Measured GDP increases by the value of the child's future lifetime earnings.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Future Earnings Myth): GDP measures current-period market value of output, not discounted future lifetime wages."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T4_07",
+      "chapter": 4,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Reconciling GDP and GDI Around Turning Points",
+      "clo_alignment": [
+        "MA-1",
+        "MA-2"
+      ],
+      "title": "Why Analysts Check Both GDP and GDI",
+      "prompt_template": "Near a potential business cycle turning point, quarterly GDP growth and quarterly GDI growth sometimes tell slightly different stories before revisions. Why do macroeconomists monitor both?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Reconciling GDP and GDI Around Turning Points."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Reconciling GDP and GDI Around Turning Points."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because GDP and GDI rely on different source data and timing, tracking both (and their average) helps filter out measurement noise around turning points.",
+          "is_correct": true,
+          "feedback": "Correct. Combining expenditure-side GDP and income-side GDI reduces single-source survey or timing noise."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because GDP measures prices while GDI measures population growth.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Variable Confusion): Both GDP and GDI measure aggregate economic output/income in nominal or real terms."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because GDI ignores wages and corporate profits.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Omitting Core Income): Wages and corporate profits are central components of GDI."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because a non-zero difference between GDP and GDI means the currency has collapsed.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Currency Collapse Myth): Minor differences between measured GDP and GDI are normal statistical discrepancies."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T4_08",
+      "chapter": 4,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Long-Run Growth vs. Short-Run Stimulus",
+      "clo_alignment": [
+        "MA-2",
+        "C2002-1"
+      ],
+      "title": "Distinguishing Short-Run Recovery from Long-Run Growth",
+      "prompt_template": "A country is in a recession with actual Real GDP below Potential Real GDP (Y < Y*). A policy analyst argues that boosting demand will both close the current recessionary gap and permanently raise long-run potential growth decades later. How should an economist evaluate this?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Long-Run Growth vs. Short-Run Stimulus."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Long-Run Growth vs. Short-Run Stimulus."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Closing a recessionary gap restores output toward existing Y* in the short run, whereas sustained long-run growth over decades requires capital deepening, human capital, and technological progress that raise Y* itself.",
+          "is_correct": true,
+          "feedback": "Correct. Short-run demand stabilization addresses cyclical slack (Y < Y*), while secular growth in Y* depends on productivity and capital accumulation."
+        },
+        {
+          "id": "opt_b",
+          "text": "Short-run demand changes are the only driver of long-run potential output Y* over decades, with no role for capital or technology.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ignoring Supply-Side Long-Run Drivers): Long-run growth in Y* depends on capital deepening, human capital, and technological progress."
+        },
+        {
+          "id": "opt_c",
+          "text": "A recessionary gap means actual output Y is permanently greater than Y*.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Gap Direction Error): A recessionary gap occurs when actual output Y is below potential Y*."
+        },
+        {
+          "id": "opt_d",
+          "text": "Long-run potential growth only happens when imports exceed exports.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Trade Deficit Growth Myth): Long-run growth is driven by productivity and factor accumulation, not a trade deficit."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T4_09",
+      "chapter": 4,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Used Car vs. New Car Sale",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Comparing New Vehicle Production and Used Car Resale",
+      "prompt_template": "Compare two transactions in 2026: (1) a dealership sells a newly manufactured 2026 car for $35,000, and (2) a used-car dealer sells a 2018 car for $18,000. How does each enter 2026 GDP?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Used Car vs. New Car Sale."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Used Car vs. New Car Sale."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The new 2026 car enters 2026 GDP (under C or I), while the $18,000 resale of the 2018 car is excluded from 2026 GDP because it was produced in 2018.",
+          "is_correct": true,
+          "feedback": "Correct. GDP counts newly produced goods in the current period, excluding resales of older goods already counted when built."
+        },
+        {
+          "id": "opt_b",
+          "text": "Both the $35,000 new car and the $18,000 used car count in full in 2026 GDP.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Counting Used Car Value): Counting the used car's full price violates the current-production rule."
+        },
+        {
+          "id": "opt_c",
+          "text": "Neither car counts in 2026 GDP because dealers are intermediaries.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Excluding New Final Output): Newly produced final vehicles sold in 2026 are part of current output."
+        },
+        {
+          "id": "opt_d",
+          "text": "The $18,000 used car is subtracted from 2026 GDP as a negative export.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Used Car as Negative NX): Domestic resales of used goods are not foreign imports."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T4_10",
+      "chapter": 4,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Inflation Distorting Nominal Comparisons",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Why Comparing Nominal GDP Across High-Inflation Decades Misleads",
+      "prompt_template": "Suppose an economist compares Nominal GDP in Year 1 with Nominal GDP ten years later after cumulative prices have risen substantially. What error occurs if Nominal GDP is treated as a measure of living standards?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Inflation Distorting Nominal Comparisons."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Inflation Distorting Nominal Comparisons."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Higher prices inflate Nominal GDP even when physical goods and services per person grew far less—or even stagnated.",
+          "is_correct": true,
+          "feedback": "Correct. Nominal GDP mixes price increases with quantity changes, making Real GDP (or Real GDP per capita) essential for comparing output over time."
+        },
+        {
+          "id": "opt_b",
+          "text": "Higher prices automatically force firms to produce twice as many physical units.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Price-Induced Output Myth): Higher prices do not automatically double physical output."
+        },
+        {
+          "id": "opt_c",
+          "text": "Nominal GDP automatically subtracts inflation before being reported.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Deflated Nominal Myth): Nominal GDP uses current-period prices and is not adjusted for price changes."
+        },
+        {
+          "id": "opt_d",
+          "text": "Price changes only affect imports and never affect domestic Nominal GDP.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Domestic Price Immunity Myth): Domestic price changes directly affect the dollar value of domestic production."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T4_11",
+      "chapter": 4,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Residential Construction vs. Existing Home",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Housing Construction vs. Existing Home Purchase in NIPA",
+      "prompt_template": "Why does building a brand-new apartment complex count in current GDP under investment (I), whereas buying an existing condominium from a prior owner does not?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Residential Construction vs. Existing Home."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Residential Construction vs. Existing Home."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Building the new apartment complex creates new physical capital/structures during the current period, whereas buying an existing condo merely transfers ownership of an asset built earlier.",
+          "is_correct": true,
+          "feedback": "Correct. Newly produced residential construction is counted as investment (I), whereas existing asset transfers are excluded."
+        },
+        {
+          "id": "opt_b",
+          "text": "Existing condominium purchases count in I while new construction is excluded.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Reversing New vs. Existing): New construction adds to current output (I); existing resales do not."
+        },
+        {
+          "id": "opt_c",
+          "text": "Both count in Government Purchases (G) regardless of who builds or buys them.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Private Housing as G): Private residential construction belongs in private investment (I), not G."
+        },
+        {
+          "id": "opt_d",
+          "text": "Neither counts in GDP because housing is a financial asset.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Housing as Pure Finance): New residential construction is real physical production included in GDP."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH04_T4_12",
+      "chapter": 4,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Choosing Base Year for Real GDP",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Effect of Changing the Base Year on Real GDP Levels vs. Growth",
+      "prompt_template": "When a national statistical agency shifts the base year used to compute constant-dollar Real GDP from Year 1 to Year 2, what happens to Real GDP levels versus real output growth rates?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the core NIPA and macroeconomic principle for Choosing Base Year for Real GDP."
+        },
+        {
+          "tier": 2,
+          "text": "Check the boundary rules (final vs. intermediate, domestic vs. foreign, current vs. past/transfer, and real vs. nominal) for Choosing Base Year for Real GDP."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Dollar levels of Real GDP rescale to the new base year's price weights, while the underlying economic story of real output expansion/contraction remains anchored to physical quantities (with chain-weighting avoiding arbitrary base-year shifts in growth rates).",
+          "is_correct": true,
+          "feedback": "Correct. Changing the reference/base year changes the dollar scale of constant-dollar levels, while real growth tracks physical output changes."
+        },
+        {
+          "id": "opt_b",
+          "text": "Changing the base year changes historical recessions into booms.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Cycle Inversion Myth): Base-year scaling changes dollar units/weights, not whether output contracted in a recession."
+        },
+        {
+          "id": "opt_c",
+          "text": "Base-year selection only matters when GDP equals zero.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero GDP Myth): Base-year prices scale valuation across all positive output levels."
+        },
+        {
+          "id": "opt_d",
+          "text": "Real GDP is completely independent of prices even in the base year.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Price-Free Valuation Myth): GDP aggregates diverse goods into dollar value using prices."
+        }
+      ]
+    }
+  ]
+}

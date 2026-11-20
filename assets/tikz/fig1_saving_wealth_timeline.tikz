@@ -1,0 +1,141 @@
+% Figure 1: Saving vs. Wealth Timeline
+% Macroeconomics Chapter 6
+% Bars showing annual saving flows vs. line showing cumulative wealth stock
+
+\documentclass[tikz,border=5pt]{standalone}
+\usepackage{pgfplots}
+\usepackage{amssymb}
+\pgfplotsset{compat=1.18}
+
+% Define Okabe-Ito colorblind-safe palette
+\definecolor{CourseBlue}{HTML}{0072B2}        % Saving bars (Deep Blue)
+\definecolor{CourseOrange}{HTML}{D55E00}      % (Vermilion-Orange, unused here)
+\definecolor{CourseTeal}{HTML}{009E73}        % Wealth line (Bluish-Green)
+\definecolor{CoursePurple}{HTML}{CC79A7}      % (Reddish-Purple, unused)
+\definecolor{CourseAmber}{HTML}{E69F00}       % (Warm Amber, unused)
+\definecolor{CourseSlate}{HTML}{1E293B}       % Axes, grids, labels (Dark Slate)
+
+\begin{document}
+
+\begin{tikzpicture}
+  \begin{axis}[
+    width=11cm,
+    height=7cm,
+    xmin=-0.5, xmax=4.5,
+    ymin=0, ymax=45,
+    xlabel={Year},
+    ylabel={Amount (\$thousands)},
+    xlabel style={font=\small, color=CourseSlate},
+    ylabel style={font=\small, color=CourseSlate},
+    tick label style={font=\small, color=CourseSlate},
+    axis line style={color=CourseSlate, line width=0.5pt},
+    grid=major,
+    grid style={solid, color=CourseSlate, opacity=0.4, line width=0.5pt},
+    major grid style={dash pattern=on 1pt off 1pt},
+    xtick={0, 1, 2, 3, 4},
+    ytick={0, 5, 10, 15, 20, 25, 30, 35, 40, 45},
+    minor tick num=0,
+    title={Annual Saving (Flow) vs. Cumulative Wealth (Stock)},
+    title style={font=\small\bfseries, color=CourseSlate},
+    ]
+    
+    % Saving bars: Y0=5, Y1=10, Y2=8, Y3=7, Y4=9 (thousands)
+    \addplot[
+      color=CourseBlue,
+      fill=CourseBlue,
+      bar width=0.6,
+      opacity=0.7,
+      forget plot
+    ] coordinates {
+      (0, 5)
+      (1, 10)
+      (2, 8)
+      (3, 7)
+      (4, 9)
+    };
+    
+    % Bar labels (annual saving amounts)
+    \node[color=CourseBlue, font=\small\bfseries, anchor=south] at (0, 5.5) {
+      \$5k
+    };
+    \node[color=CourseBlue, font=\small\bfseries, anchor=south] at (1, 10.5) {
+      \$10k
+    };
+    \node[color=CourseBlue, font=\small\bfseries, anchor=south] at (2, 8.5) {
+      \$8k
+    };
+    \node[color=CourseBlue, font=\small\bfseries, anchor=south] at (3, 7.5) {
+      \$7k
+    };
+    \node[color=CourseBlue, font=\small\bfseries, anchor=south] at (4, 9.5) {
+      \$9k
+    };
+    
+    % Wealth line: cumulative (5, 15, 23, 30, 39)
+    \addplot[
+      color=CourseTeal,
+      line width=2.5pt,
+      smooth,
+      mark=o,
+      mark size=4pt,
+      mark options={solid, fill=CourseTeal}
+    ] coordinates {
+      (0, 5)
+      (1, 15)
+      (2, 23)
+      (3, 30)
+      (4, 39)
+    };
+    
+    % Wealth line label
+    \node[color=CourseTeal, font=\small, anchor=west] at (3.5, 40) {
+      Cumulative Wealth Stock
+    };
+    
+    % Wealth amount annotations
+    \node[color=CourseTeal, font=\small\bfseries, anchor=south west] at (0.1, 5.5) {
+      \$5k
+    };
+    \node[color=CourseTeal, font=\small\bfseries, anchor=west] at (1.2, 15.5) {
+      \$15k
+    };
+    \node[color=CourseTeal, font=\small\bfseries, anchor=west] at (2.2, 23.5) {
+      \$23k
+    };
+    \node[color=CourseTeal, font=\small\bfseries, anchor=west] at (3.2, 30.5) {
+      \$30k
+    };
+    \node[color=CourseTeal, font=\small\bfseries, anchor=west] at (4.1, 39.5) {
+      \$39k
+    };
+    
+  \end{axis}
+  
+  % Legend
+  \draw[fill=CourseBlue, draw=CourseSlate, line width=0.5pt] (8.0, 6.3) rectangle (8.3, 6.6);
+  \node[color=CourseSlate, font=\small, anchor=west] at (8.5, 6.45) {
+    Annual Saving (Flow)
+  };
+  
+  \draw[color=CourseTeal, line width=2.5pt] (8.0, 7.0) -- (8.3, 7.0);
+  \draw[color=CourseTeal, fill=CourseTeal, line width=0pt] (8.15, 7.0) circle (2pt);
+  \node[color=CourseSlate, font=\small, anchor=west] at (8.5, 7.0) {
+    Cumulative Wealth (Stock)
+  };
+  
+  % Caption box
+  \node[
+    color=CourseSlate,
+    font=\small,
+    text width=10cm,
+    anchor=north,
+    align=left
+  ] at (5.5, -1.0) {
+    \textbf{Key Insight:} Saving is a \textit{flow}—the amount set aside each year. Wealth is a \textit{stock}—the accumulated\\
+    total of all past saving. Each year, annual saving adds to the existing wealth stock. By Year 4,\\
+    total accumulated wealth reaches \$39k through the cumulative flow of saving.
+  };
+  
+\end{tikzpicture}
+
+\end{document}

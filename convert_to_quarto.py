@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generate Quarto chapters and SVG figures from canonical LaTeX sources."""
 
+import argparse
 import re
 import sys
 from pathlib import Path
@@ -9,8 +10,8 @@ import sync_readings_to_tex
 
 ROOT = Path(__file__).resolve().parent
 MAPPINGS = (
-    (ROOT / "micro" / "chapters", ROOT / "web_books" / "microeconomics"),
-    (ROOT / "macro" / "chapters", ROOT / "web_books" / "macroeconomics"),
+    ("micro", ROOT / "micro" / "chapters", ROOT / "web_books" / "microeconomics"),
+    ("macro", ROOT / "macro" / "chapters", ROOT / "web_books" / "macroeconomics"),
 )
 
 
@@ -35,20 +36,36 @@ def latex_to_qmd(src_file: Path, dest_file: Path) -> None:
     print(f"[OK] Converted {src_file.name} -> {dest_file.name}")
 
 
-def main(chapter1_only: bool = False) -> int:
-    for src_dir, target_dir in MAPPINGS:
+def main(chapter1_only: bool = False, chapters: list[str] | None = None) -> int:
+    targets = set(chapters or [])
+    matched = set()
+    for course, src_dir, target_dir in MAPPINGS:
         if not src_dir.exists():
             continue
         for tex_path in sorted(src_dir.glob("*.tex")):
+            slug = f"{course}/{tex_path.stem}"
             if chapter1_only and tex_path.stem != "ch01_principles":
                 continue
+            if targets and slug not in targets and tex_path.stem not in targets:
+                continue
+            matched.add(slug)
+            matched.add(tex_path.stem)
             qmd_path = target_dir / (tex_path.stem + ".qmd")
             latex_to_qmd(tex_path, qmd_path)
+    missing = [t for t in targets if t not in matched]
+    if missing:
+        raise SystemExit(f"Chapter(s) not found: {', '.join(missing)}")
     return 0
 
 
 if __name__ == "__main__":
-    arguments = sys.argv[1:]
-    if arguments not in ([], ["--chapter1-only"]):
-        raise SystemExit("Usage: python convert_to_quarto.py [--chapter1-only]")
-    raise SystemExit(main(chapter1_only=arguments == ["--chapter1-only"]))
+    parser = argparse.ArgumentParser(description="Convert canonical LaTeX chapters to Quarto .qmd files.")
+    parser.add_argument("--chapter1-only", action="store_true", help="Convert only Micro and Macro Chapter 1.")
+    parser.add_argument(
+        "--chapter",
+        action="append",
+        dest="chapters",
+        help="Target specific chapter(s), e.g. --chapter micro/ch06_costs_production",
+    )
+    args = parser.parse_args()
+    raise SystemExit(main(chapter1_only=args.chapter1_only, chapters=args.chapters))

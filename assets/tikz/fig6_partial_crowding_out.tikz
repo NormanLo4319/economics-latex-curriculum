@@ -1,0 +1,231 @@
+% Figure 6: Partial Crowding Out - Bar Chart Comparison
+% Macroeconomics Chapter 6
+% Three scenarios showing degrees of crowding out in different contexts
+
+\documentclass[tikz,border=5pt]{standalone}
+\usepackage{pgfplots}
+\usepackage{amssymb}
+\usetikzlibrary{patterns}
+\pgfplotsset{compat=1.18}
+
+% Define Okabe-Ito colorblind-safe palette
+\definecolor{CourseBlue}{HTML}{0072B2}        % Scenario A (Deep Blue)
+\definecolor{CourseOrange}{HTML}{D55E00}      % Scenario A bars (Vermilion-Orange)
+\definecolor{CourseTeal}{HTML}{009E73}        % Scenario B (Bluish-Green)
+\definecolor{CoursePurple}{HTML}{CC79A7}      % Scenario C (Reddish-Purple)
+\definecolor{CourseAmber}{HTML}{E69F00}       % (Warm Amber, unused)
+\definecolor{CourseSlate}{HTML}{1E293B}       % Axes, grids, labels (Dark Slate)
+
+\begin{document}
+
+\begin{tikzpicture}
+  \begin{axis}[
+    width=12cm,
+    height=7cm,
+    xmin=-0.5, xmax=3.5,
+    ymin=0, ymax=250,
+    xlabel={Scenario},
+    ylabel={Private Investment (\$B)},
+    xlabel style={font=\small, color=CourseSlate},
+    ylabel style={font=\small, color=CourseSlate},
+    tick label style={font=\small, color=CourseSlate},
+    axis line style={color=CourseSlate, line width=0.5pt},
+    grid=major,
+    grid style={solid, color=CourseSlate, opacity=0.4, line width=0.5pt},
+    major grid style={dash pattern=on 1pt off 1pt},
+    xtick={0, 1, 2},
+    xticklabels={
+      {Scenario A: Complete\\(1:1 crowding out)},
+      {Scenario B: Partial\\(0.6:1, monetary policy)},
+      {Scenario C: Open Economy\\(0.3:1, capital inflow)}
+    },
+    ytick={0, 50, 100, 150, 200, 250},
+    minor tick num=0,
+    title={Empirical Degrees of Crowding Out},
+    title style={font=\small\bfseries, color=CourseSlate},
+    ]
+    
+    % Scenario A: Complete Crowding Out (1:1)
+    % Before: I = $200B
+    \addplot[
+      color=CourseOrange,
+      fill=CourseOrange,
+      bar width=0.35,
+      opacity=0.9,
+      forget plot
+    ] coordinates {
+      (0, 200)
+    };
+    
+    % After: I = $100B (dropped by $100B)
+    \addplot[
+      color=CourseOrange,
+      fill=CourseOrange,
+      bar width=0.35,
+      opacity=0.4,
+      pattern=crosshatch,
+      forget plot
+    ] coordinates {
+      (0, 100)
+    };
+    
+    % Scenario B: Partial Crowding Out (0.6:1)
+    % Before: I = $200B
+    \addplot[
+      color=CourseTeal,
+      fill=CourseTeal,
+      bar width=0.35,
+      opacity=0.9,
+      forget plot
+    ] coordinates {
+      (1, 200)
+    };
+    
+    % After: I = $140B (dropped by $60B)
+    \addplot[
+      color=CourseTeal,
+      fill=CourseTeal,
+      bar width=0.35,
+      opacity=0.4,
+      pattern=crosshatch,
+      forget plot
+    ] coordinates {
+      (1, 140)
+    };
+    
+    % Scenario C: Open Economy (0.3:1)
+    % Before: I = $200B
+    \addplot[
+      color=CoursePurple,
+      fill=CoursePurple,
+      bar width=0.35,
+      opacity=0.9,
+      forget plot
+    ] coordinates {
+      (2, 200)
+    };
+    
+    % After: I = $170B (dropped by $30B)
+    \addplot[
+      color=CoursePurple,
+      fill=CoursePurple,
+      bar width=0.35,
+      opacity=0.4,
+      pattern=crosshatch,
+      forget plot
+    ] coordinates {
+      (2, 170)
+    };
+    
+  \end{axis}
+  
+  % Scenario A annotations
+  \node[color=CourseOrange, font=\small\bfseries, anchor=south] at (1.5, 205) {
+    Before
+  };
+  \node[color=CourseOrange, font=\small\bfseries, anchor=south] at (1.5, 105) {
+    After
+  };
+  \node[color=CourseOrange, font=\small\bfseries, anchor=north] at (1.5, 95) {
+    $\Delta I = -\$100\text{B}$
+  };
+  \node[color=CourseOrange, font=\tiny, anchor=north] at (1.5, 85) {
+    $\Delta I / \Delta G = 1.0$
+  };
+  
+  % Scenario B annotations
+  \node[color=CourseTeal, font=\small\bfseries, anchor=south] at (3.5, 205) {
+    Before
+  };
+  \node[color=CourseTeal, font=\small\bfseries, anchor=south] at (3.5, 145) {
+    After
+  };
+  \node[color=CourseTeal, font=\small\bfseries, anchor=north] at (3.5, 135) {
+    $\Delta I = -\$60\text{B}$
+  };
+  \node[color=CourseTeal, font=\tiny, anchor=north] at (3.5, 125) {
+    $\Delta I / \Delta G = 0.6$
+  };
+  
+  % Scenario C annotations
+  \node[color=CoursePurple, font=\small\bfseries, anchor=south] at (5.5, 205) {
+    Before
+  };
+  \node[color=CoursePurple, font=\small\bfseries, anchor=south] at (5.5, 175) {
+    After
+  };
+  \node[color=CoursePurple, font=\small\bfseries, anchor=north] at (5.5, 165) {
+    $\Delta I = -\$30\text{B}$
+  };
+  \node[color=CoursePurple, font=\tiny, anchor=north] at (5.5, 155) {
+    $\Delta I / \Delta G = 0.3$
+  };
+  
+\end{tikzpicture}
+
+% Explanation boxes
+\begin{tikzpicture}[remember picture, overlay]
+  
+  % Box 1: Scenario A explanation
+  \draw[
+    fill=CourseOrange,
+    draw=CourseSlate,
+    line width=1pt,
+    rounded corners=3pt,
+    opacity=0.95
+  ] (0.2, -4.0) rectangle (3.3, -2.2);
+  
+  \node[
+    anchor=north west,
+    text width=2.8cm,
+    font=\tiny,
+    color=CourseSlate,
+    inner sep=0.2cm
+  ] at (0.4, -2.4) {
+    \textbf{Complete Crowding Out:}
+    Government deficit reduces private saving by exactly the amount of the deficit. For every \$1 increase in government spending, private I falls by \$1.
+  };
+  
+  % Box 2: Scenario B explanation
+  \draw[
+    fill=CourseTeal,
+    draw=CourseSlate,
+    line width=1pt,
+    rounded corners=3pt,
+    opacity=0.95
+  ] (3.6, -4.0) rectangle (6.7, -2.2);
+  
+  \node[
+    anchor=north west,
+    text width=2.8cm,
+    font=\tiny,
+    color=CourseSlate,
+    inner sep=0.2cm
+  ] at (3.8, -2.4) {
+    \textbf{Partial Crowding Out:}
+    Central banks may lower rates to offset deficit. Spare capacity allows some investment to be interest-insensitive. Empirically, \$1 govt spending reduces I by only \$0.60.
+  };
+  
+  % Box 3: Scenario C explanation
+  \draw[
+    fill=CoursePurple,
+    draw=CourseSlate,
+    line width=1pt,
+    rounded corners=3pt,
+    opacity=0.95
+  ] (7.0, -4.0) rectangle (10.1, -2.2);
+  
+  \node[
+    anchor=north west,
+    text width=2.8cm,
+    font=\tiny,
+    color=CourseSlate,
+    inner sep=0.2cm
+  ] at (7.2, -2.4) {
+    \textbf{Open Economy:}
+    Trade deficit attracts foreign capital inflow. Government deficit is partially financed from abroad. Private I falls minimally (only \$0.30 per \$1 govt spending).
+  };
+  
+\end{tikzpicture}
+
+\end{document}

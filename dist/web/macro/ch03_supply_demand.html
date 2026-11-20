@@ -111,7 +111,6 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
@@ -360,7 +359,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch05_unemployment_inflation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Unemployment and Inflation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Employment, Unemployment Metrics, and the Price Level</span></span></a>
   </div>
 </li>
       </ul>
@@ -433,30 +432,11 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#relative-prices-vs.-the-general-price-level" id="toc-relative-prices-vs.-the-general-price-level" class="nav-link active" data-scroll-target="#relative-prices-vs.-the-general-price-level"><span class="header-section-number">3.1</span> Relative Prices vs.&nbsp;The General Price Level</a>
-  <ul class="collapse">
-  <li><a href="#conceptual-introduction" id="toc-conceptual-introduction" class="nav-link" data-scroll-target="#conceptual-introduction">Conceptual Introduction</a></li>
-  <li><a href="#visual-representation" id="toc-visual-representation" class="nav-link" data-scroll-target="#visual-representation">Visual Representation</a></li>
-  <li><a href="#real-world-application-fred-medical-care-cpimedsl-vs.-all-items-cpi-cpiaucsl" id="toc-real-world-application-fred-medical-care-cpimedsl-vs.-all-items-cpi-cpiaucsl" class="nav-link" data-scroll-target="#real-world-application-fred-medical-care-cpimedsl-vs.-all-items-cpi-cpiaucsl">Real-World Application: FRED Medical Care (<code>CPIMEDSL</code>) vs.&nbsp;All-Items CPI (<code>CPIAUCSL</code>)</a></li>
-  <li><a href="#mathematical-foundation-algebra-level" id="toc-mathematical-foundation-algebra-level" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level">Mathematical Foundation (Algebra Level)</a></li>
-  </ul></li>
-  <li><a href="#nominal-vs.-real-values-and-purchasing-power" id="toc-nominal-vs.-real-values-and-purchasing-power" class="nav-link" data-scroll-target="#nominal-vs.-real-values-and-purchasing-power"><span class="header-section-number">3.2</span> Nominal vs.&nbsp;Real Values and Purchasing Power</a>
-  <ul class="collapse">
-  <li><a href="#conceptual-introduction-1" id="toc-conceptual-introduction-1" class="nav-link" data-scroll-target="#conceptual-introduction-1">Conceptual Introduction</a></li>
-  <li><a href="#visual-representation-1" id="toc-visual-representation-1" class="nav-link" data-scroll-target="#visual-representation-1">Visual Representation</a></li>
-  <li><a href="#real-world-application-minimum-wage-purchasing-power-across-decades" id="toc-real-world-application-minimum-wage-purchasing-power-across-decades" class="nav-link" data-scroll-target="#real-world-application-minimum-wage-purchasing-power-across-decades">Real-World Application: Minimum Wage Purchasing Power Across Decades</a></li>
-  <li><a href="#mathematical-foundation-algebra-level-1" id="toc-mathematical-foundation-algebra-level-1" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-1">Mathematical Foundation (Algebra Level)</a></li>
-  </ul></li>
-  <li><a href="#market-clearing-and-sticky-wages-in-a-labor-market" id="toc-market-clearing-and-sticky-wages-in-a-labor-market" class="nav-link" data-scroll-target="#market-clearing-and-sticky-wages-in-a-labor-market"><span class="header-section-number">3.3</span> Market Clearing and Sticky Wages in a Labor Market</a>
-  <ul class="collapse">
-  <li><a href="#conceptual-introduction-2" id="toc-conceptual-introduction-2" class="nav-link" data-scroll-target="#conceptual-introduction-2">Conceptual Introduction</a></li>
-  <li><a href="#visual-representation-2" id="toc-visual-representation-2" class="nav-link" data-scroll-target="#visual-representation-2">Visual Representation</a></li>
-  <li><a href="#real-world-application-downward-nominal-wage-rigidity" id="toc-real-world-application-downward-nominal-wage-rigidity" class="nav-link" data-scroll-target="#real-world-application-downward-nominal-wage-rigidity">Real-World Application: Downward Nominal Wage Rigidity</a></li>
-  <li><a href="#mathematical-foundation-algebra-level-2" id="toc-mathematical-foundation-algebra-level-2" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-2">Mathematical Foundation (Algebra Level)</a></li>
-  </ul></li>
-  <li><a href="#bring-it-home-read-the-price-signal" id="toc-bring-it-home-read-the-price-signal" class="nav-link" data-scroll-target="#bring-it-home-read-the-price-signal">Bring It Home: Read the Price Signal</a></li>
-  <li><a href="#practice-questions" id="toc-practice-questions" class="nav-link" data-scroll-target="#practice-questions">Practice Questions</a></li>
-  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources">Sources</a></li>
+  <li><a href="#learning-outcomes-and-key-terms" id="toc-learning-outcomes-and-key-terms" class="nav-link active" data-scroll-target="#learning-outcomes-and-key-terms"><span class="header-section-number">3.1</span> Learning Outcomes and Key Terms</a></li>
+  <li><a href="#one-price-changes-or-the-price-level-changes" id="toc-one-price-changes-or-the-price-level-changes" class="nav-link" data-scroll-target="#one-price-changes-or-the-price-level-changes"><span class="header-section-number">3.2</span> One Price Changes, or the Price Level Changes?</a></li>
+  <li><a href="#graph-description-relative-price-and-a-broad-index" id="toc-graph-description-relative-price-and-a-broad-index" class="nav-link" data-scroll-target="#graph-description-relative-price-and-a-broad-index"><span class="header-section-number">3.3</span> Graph Description: Relative Price and a Broad Index</a></li>
+  <li><a href="#price-indexes-inflation-and-real-values" id="toc-price-indexes-inflation-and-real-values" class="nav-link" data-scroll-target="#price-indexes-inflation-and-real-values"><span class="header-section-number">3.4</span> Price Indexes, Inflation, and Real Values</a></li>
+  <li><a href="#check-your-understanding" id="toc-check-your-understanding" class="nav-link" data-scroll-target="#check-your-understanding"><span class="header-section-number">3.5</span> Check Your Understanding</a></li>
   </ul>
 </nav>
     </div>
@@ -486,282 +466,66 @@ window.Quarto = {
 <blockquote class="blockquote">
 <p>This chapter provides a rigorous, pedagogical treatment of Chapter 3: Supply and Demand: Macroeconomic Foundations, benchmarked to standard principles curriculum.</p>
 </blockquote>
+<section id="learning-outcomes-and-key-terms" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="learning-outcomes-and-key-terms"><span class="header-section-number">3.1</span> Learning Outcomes and Key Terms</h2>
+<p>Students should distinguish a change in one market’s relative price from a sustained change in the general price level, calculate a simple inflation rate, and explain how nominal values differ from real values. These objectives support MA-1 and C2002-1. Key terms include relative price, price index, inflation, nominal value, real value, and purchasing power.</p>
+</section>
+<section id="one-price-changes-or-the-price-level-changes" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="one-price-changes-or-the-price-level-changes"><span class="header-section-number">3.2</span> One Price Changes, or the Price Level Changes?</h2>
+<p>Suppose the price of a hospital visit rises while prices of most other goods are stable. That is a change in a relative price: medical care has become more expensive compared with the rest of the consumption basket. A family may respond by using insurance, choosing another provider, or postponing care. The change guides choices and reallocates resources in that market, but by itself it is not economy-wide inflation.</p>
+<p>Inflation is a sustained increase in a broad price index. It reduces the purchasing power of a nominal dollar if the dollar amount does not rise with prices. A one-time increase in a single price may contribute to an index, but it does not establish that the general price level is accelerating. Similarly, a temporary price-level increase is not the same thing as an ongoing inflation rate.</p>
+</section>
+<section id="graph-description-relative-price-and-a-broad-index" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="graph-description-relative-price-and-a-broad-index"><span class="header-section-number">3.3</span> Graph Description: Relative Price and a Broad Index</h2>
+<p>To compare price movements over time, put time on the horizontal axis and index values on the vertical axis. Set both series to 100 in a chosen base month. One line tracks the price index for a particular category, such as medical care; the other tracks the all-items CPI. If the medical-care line rises faster, its relative price has increased over that interval. If both rise at the same rate, the relative price is roughly unchanged even though nominal prices have risen. Indexing the series makes proportional changes comparable; it does not put different baskets on the same dollar scale.</p>
+<p>The economic distinction is between a movement in one component’s price and a change in the overall index. A demand or supply shift in one product market changes that market’s equilibrium price; economy-wide inflation requires broad price changes and a sustained process, not a relabeling of one relative-price shock.</p>
+</section>
+<section id="price-indexes-inflation-and-real-values" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="price-indexes-inflation-and-real-values"><span class="header-section-number">3.4</span> Price Indexes, Inflation, and Real Values</h2>
+<p>A price index compares the cost of a defined basket in one period with its cost in a reference period. The percentage inflation rate between periods <span class="math inline">\(t-1\)</span> and <span class="math inline">\(t\)</span> is:</p>
+<p><span class="math display">\[
+\pi_t=\frac{P_t-P_{t-1}}{P_{t-1}}\times 100\%.
+\]</span></p>
+<p>To express a nominal amount in the purchasing power of a selected base period, rescale it by the ratio of the base-period index to the current index:</p>
+<p><span class="math display">\[
+X^{\text{real, base}}_t=X^{\text{nominal}}_t\frac{P_{\text{base}}}{P_t}.
+\]</span></p>
+<p>When the index base is 100, this is commonly written as nominal value times <span class="math inline">\(100/P_t\)</span>. Real values answer a purchasing-power question; nominal values answer how many current dollars changed hands. Neither measure is universally preferable: use the one suited to the question.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>FRED Data: Medical Care and the CPI
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>FRED series CPIAUCSL is the all-items Consumer Price Index for All Urban Consumers: U.S. City Average, monthly and seasonally adjusted, with 1982-1984=100. CPIMEDSL is the corresponding medical-care index with the same base and frequency. Comparing their percentage changes can illustrate how a component’s price movement differs from the overall basket. The CPI reflects a weighted urban-consumer basket, not every household’s exact spending pattern; the comparison is descriptive and does not by itself identify why prices changed.</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Bring It Home: Is One Price Increase Inflation?
+<span class="screen-reader-only">Note</span>Clear It Up: A Price Increase Is Not Automatically Inflation
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Suppose the price of medical care rises faster than the prices of most other goods. Is that economy-wide inflation, or has medical care become more expensive relative to the overall basket? Compare the component price index with an all-items index before deciding.</p>
+<p>A rise in one product’s price changes that product’s relative price. Inflation refers to a sustained rise in a broad price index. Also keep nominal and real values distinct: a nominal wage can rise while its real purchasing power falls if the price level rises faster.</p>
 </div>
-</div>
-<section id="relative-prices-vs.-the-general-price-level" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="relative-prices-vs.-the-general-price-level"><span class="header-section-number">3.1</span> Relative Prices vs.&nbsp;The General Price Level</h2>
-<section id="conceptual-introduction" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction">Conceptual Introduction</h3>
-<p>In microeconomics, supply and demand explain how the price of a single product—such as coffee, avocados, or apartment rent—adjusts to balance buyers and sellers in that specific market. When the price of a hospital visit or a carton of eggs rises while most other prices remain stable, economists call that a change in a <strong>relative price</strong>. Relative price changes are vital market signals: they tell consumers to economize on scarcer goods and tell producers where to direct resources.</p>
-<p>Macroeconomics, by contrast, focuses on the <strong>general price level</strong>—the overall average price of a broad basket of goods and services across the entire economy. A sustained, economy-wide upward climb in a broad price index is called <strong>inflation</strong> (while a sustained decline in the broad price level is <strong>deflation</strong>). A rise in the broad index means that a dollar buys less of its weighted basket on average; it does not require every category’s price to rise. A local drought that raises lettuce prices, for example, changes lettuce’s relative price even if the broad index is unchanged.</p>
-</section>
-<section id="visual-representation" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="visual-representation">Visual Representation</h3>
-<p>Figure 1 compares the all-items CPI with its medical-care component at two observation dates. Both series are rebased to 100 in May 2015; the points show the two observations, not the intervening monthly path.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Clear It Up: A One-Time Price Spike Is Not Ongoing Inflation
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If a temporary supply disruption pushes gasoline prices up by <span class="math inline">\(15\%\)</span> in one month and prices then stay flat at that higher level, the <em>price level</em> is higher, but the <em>inflation rate</em> (the percentage rate of change from month to month) returns to zero! Inflation measures the <strong>speed</strong> at which the broad price level is rising over time.</p>
-</div>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figures/chapter_3_supply_and_demand_macroeconomic_foundations_figure_01.svg" class="img-fluid figure-img" alt="Two-observation comparison using FRED monthly CPI data. Medical care rose less than the all-items index between May 2015 and October 2026, so its price fell relative to the all-items basket over that interval."></p>
-<figcaption>Figure 1. Two-observation comparison using FRED monthly CPI data. Medical care rose less than the all-items index between May 2015 and October 2026, so its price fell relative to the all-items basket over that interval.</figcaption>
-</figure>
 </div>
 </section>
-<section id="real-world-application-fred-medical-care-cpimedsl-vs.-all-items-cpi-cpiaucsl" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="real-world-application-fred-medical-care-cpimedsl-vs.-all-items-cpi-cpiaucsl">Real-World Application: FRED Medical Care (<code>CPIMEDSL</code>) vs.&nbsp;All-Items CPI (<code>CPIAUCSL</code>)</h3>
-<p>FRED’s seasonally adjusted CPIAUCSL (all items) was 237.001 in May 2015 and 337.476 in October 2026; CPIMEDSL (medical care) was 446.743 and 595.675 on those same dates. Each series uses 1982–1984 = 100. First calculate the growth in each index:</p>
-<p><span class="math display">\[
-\begin{aligned}
-\text{All-items growth} &amp;= \frac{337.476-237.001}{237.001}\times100\% = 42.39\%,\\
-\text{Medical-care growth} &amp;= \frac{595.675-446.743}{446.743}\times100\% = 33.34\%.
-\end{aligned}
-\]</span></p>
-<p>To calculate the change in medical care’s price relative to the all-items basket, compare the component-to-all-items ratio at the two dates:</p>
-<p><span class="math display">\[
-\left(\frac{595.675/337.476}{446.743/237.001}-1\right)\times100\%=-6.36\%.
-\]</span></p>
-<p>Thus, medical care’s relative price fell by 6.36% over these observations even though both price indexes rose. The all-items CPI represents an average urban-consumer basket, not every household’s exact spending pattern.</p>
-</section>
-<section id="mathematical-foundation-algebra-level" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level">Mathematical Foundation (Algebra Level)</h3>
-<p>A price index compares the current dollar cost of a fixed market basket against its base-period cost, and the inflation rate (<span class="math inline">\(\pi_t\)</span>) measures the percentage change in that index between periods <span class="math inline">\(t-1\)</span> and <span class="math inline">\(t\)</span>:</p>
-<p><span class="math display">\[
-\text{Price Index}_t = \frac{\text{Cost of Basket}_t}{\text{Cost of Basket}_{\text{base}}} \times 100, \qquad \pi_t = \frac{P_t - P_{t-1}}{P_{t-1}} \times 100\%
-\]</span></p>
-<p><strong>Worked Problem:</strong> Suppose a simplified urban household basket costs <span class="math inline">\(\$1{,}200\)</span> in the base year (2024), rises to <span class="math inline">\(\$1{,}260\)</span> in 2025, and reaches <span class="math inline">\(\$1{,}310.40\)</span> in 2026. Compute the price index for 2024, 2025, and 2026, and calculate the annual inflation rate for 2025 and 2026.</p>
-<p><strong>Step-by-Step Breakdown:</strong></p>
+<section id="check-your-understanding" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="check-your-understanding"><span class="header-section-number">3.5</span> Check Your Understanding</h2>
 <ul>
-<li><strong>Compute the Price Index for Each Year (Base Year 2024 = 100):</strong></li>
+<li>If a nominal wage rises by 3 percent while the relevant price index rises by 5 percent, what happens approximately to its purchasing power?</li>
+<li>Why is a rise in the price of one service not sufficient evidence of economy-wide inflation?</li>
+<li>What does rebasing two indexes to 100 help compare, and what does it not make identical?</li>
 </ul>
-<p><span class="math display">\[
-P_{2024} = \frac{\$1{,}200}{\$1{,}200} \times 100 = \mathbf{100.0}
-\]</span></p>
-<p><span class="math display">\[
-P_{2025} = \frac{\$1{,}260}{\$1{,}200} \times 100 = \mathbf{105.0}
-\]</span></p>
-<p><span class="math display">\[
-P_{2026} = \frac{\$1{,}310.40}{\$1{,}200} \times 100 = \mathbf{109.2}
-\]</span></p>
-<ul>
-<li><strong>Calculate Annual Inflation Rates (<span class="math inline">\(\pi_{2025}\)</span> and <span class="math inline">\(\pi_{2026}\)</span>):</strong></li>
-</ul>
-<p><span class="math display">\[
-\pi_{2025} = \frac{105.0 - 100.0}{100.0} \times 100\% = \mathbf{5.0\%}
-\]</span></p>
-<p><span class="math display">\[
-\pi_{2026} = \frac{109.2 - 105.0}{105.0} \times 100\% = \frac{4.2}{105.0} \times 100\% = \mathbf{4.0\%}
-\]</span></p>
-<p><strong>Conclusion:</strong> Notice that while the price level continued rising in 2026 (from <span class="math inline">\(105.0\)</span> to <span class="math inline">\(109.2\)</span>), the inflation rate slowed from <span class="math inline">\(5.0\%\)</span> to <span class="math inline">\(4.0\%\)</span>—a process economists call <strong>disinflation</strong> (slower positive inflation, not falling prices).</p>
-</section>
-</section>
-<section id="nominal-vs.-real-values-and-purchasing-power" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="nominal-vs.-real-values-and-purchasing-power"><span class="header-section-number">3.2</span> Nominal vs.&nbsp;Real Values and Purchasing Power</h2>
-<section id="conceptual-introduction-1" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-1">Conceptual Introduction</h3>
-<p>Because inflation changes the measuring stick of money over time, comparing raw dollar figures across different decades is misleading. A <span class="math inline">\(\$50{,}000\)</span> salary in 1990 bought far more housing, groceries, and tuition than a <span class="math inline">\(\$50{,}000\)</span> salary buys today. To make valid comparisons across time, macroeconomists strictly separate <strong>nominal values</strong> (measured in current, unadjusted dollars of the period) from <strong>real values</strong> (adjusted for price-level changes to reflect true <strong>purchasing power</strong> in constant base-period dollars).</p>
-<p>The same distinction governs wages and interest rates:</p>
-<ul>
-<li><strong>Real Wage:</strong> Measures how many goods and services a worker’s paycheck can actually purchase. If your nominal hourly wage rises by <span class="math inline">\(3\%\)</span> while consumer prices rise by <span class="math inline">\(5\%\)</span>, your real wage falls by roughly <span class="math inline">\(2\%\)</span>.</li>
-<li><strong>Real Interest Rate (<span class="math inline">\(r\)</span>):</strong> Measures the true purchasing-power return earned by savers or paid by borrowers after subtracting inflation (<span class="math inline">\(\pi\)</span>) from the stated <strong>nominal interest rate (<span class="math inline">\(i\)</span>)</strong>—summarized by the <strong>Fisher Equation</strong>: <span class="math inline">\(r \approx i - \pi\)</span>.</li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Clear It Up: A Nominal Raise Can Be a Real Pay Cut
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>A larger paycheck in dollars does not guarantee more purchasing power. Compare the percentage change in nominal pay with the percentage change in the price index; if prices rise faster, the real wage falls.</p>
-</div>
-</div>
-</section>
-<section id="visual-representation-1" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="visual-representation-1">Visual Representation</h3>
-<p>Figure 2 contrasts a rising nominal wage index against a flat or declining real wage index when price-level inflation outpaces paycheck growth.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figures/chapter_3_supply_and_demand_macroeconomic_foundations_figure_02.svg" class="img-fluid figure-img" alt="Nominal Wages vs. Real Purchasing Power. Even when a worker's nominal wage increases steadily over time, if the broad price level rises faster than nominal pay, the worker's real purchasing power declines."></p>
-<figcaption>Figure 2. Nominal Wages vs.&nbsp;Real Purchasing Power. Even when a worker’s nominal wage increases steadily over time, if the broad price level rises faster than nominal pay, the worker’s real purchasing power declines.</figcaption>
-</figure>
-</div>
-</section>
-<section id="real-world-application-minimum-wage-purchasing-power-across-decades" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="real-world-application-minimum-wage-purchasing-power-across-decades">Real-World Application: Minimum Wage Purchasing Power Across Decades</h3>
-<p>For covered nonexempt employees, the U.S. federal minimum wage has been <span class="math inline">\(\$7.25\)</span> per hour since July 24, 2009. If the nominal rate stays fixed while the CPI rises, its purchasing power falls. This illustrates why minimum-wage comparisons should distinguish the stated dollar amount from its real value.</p>
-</section>
-<section id="mathematical-foundation-algebra-level-1" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-1">Mathematical Foundation (Algebra Level)</h3>
-<p>To convert any nominal dollar amount <span class="math inline">\(X_t^{\text{nominal}}\)</span> into constant base-period purchasing power (<span class="math inline">\(X_t^{\text{real}}\)</span>):</p>
-<p><span class="math display">\[
-X_t^{\text{real}} = X_t^{\text{nominal}} \times \frac{P_{\text{base}}}{P_t}, \qquad r \approx i - \pi
-\]</span></p>
-<p><strong>Worked Problem:</strong> Suppose a paralegal’s nominal salary was <span class="math inline">\(\$52{,}000\)</span> in May 2015 and <span class="math inline">\(\$68{,}000\)</span> in October 2026. For these months, CPIAUCSL was <span class="math inline">\(P_{2015}=237.001\)</span> and <span class="math inline">\(P_{2026}=337.476\)</span>.</p>
-<ul>
-<li>Express the 2026 salary in constant 2015 dollars to determine whether the paralegal’s real purchasing power increased or decreased.</li>
-<li>Calculate the percentage change in real salary between 2015 and 2026.</li>
-</ul>
-<p><strong>Step-by-Step Breakdown:</strong></p>
-<ul>
-<li><strong>Deflate the 2026 Nominal Salary into 2015 Base Dollars:</strong></li>
-</ul>
-<p><span class="math display">\[
-\text{Salary}_{2026}^{\text{real (May 2015 \$)}} = \$68{,}000 \times \frac{237.001}{337.476} \approx \mathbf{\$47{,}754.71}
-\]</span></p>
-<ul>
-<li><strong>Compute the Percentage Change in Real Purchasing Power:</strong></li>
-</ul>
-<p><span class="math display">\[
-\%\Delta \text{Real Salary} = \frac{\$47{,}754.71 - \$52{,}000}{\$52{,}000} \times 100\% = \frac{-\$4{,}245.29}{\$52{,}000} \times 100\% \approx \mathbf{-8.16\%}
-\]</span></p>
-<p><strong>Conclusion:</strong> The hypothetical nominal salary rose by 30.77%, while CPIAUCSL rose by 42.39%. After adjusting for prices, purchasing power fell by 8.16%.</p>
-</section>
-</section>
-<section id="market-clearing-and-sticky-wages-in-a-labor-market" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="market-clearing-and-sticky-wages-in-a-labor-market"><span class="header-section-number">3.3</span> Market Clearing and Sticky Wages in a Labor Market</h2>
-<section id="conceptual-introduction-2" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-2">Conceptual Introduction</h3>
-<p>In a labor market, firms demand labor and workers supply it. The wage coordinates their plans: at a wage where labor demanded equals labor supplied, the simple competitive model clears. In practice, nominal wages may adjust slowly because of contracts, pay-review schedules, or workplace policies.</p>
-<p>If labor demand falls while the nominal wage is temporarily fixed above the new market-clearing wage, firms want fewer workers than households want to supply. In this simplified model, employment is limited by the short side of the market, so the gap is excess labor supply. It is an illustration of one possible adjustment mechanism, not a complete account of unemployment.</p>
-<p>When wages are flexible in this model, the wage can move toward a new labor-market equilibrium. That result does not imply that all unemployment disappears in the real economy, nor does the labor-market diagram by itself determine potential GDP. Search frictions, skills, institutions, and the link from employment to output are outside this model; this section is not an aggregate-demand/aggregate-supply analysis.</p>
-</section>
-<section id="visual-representation-2" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="visual-representation-2">Visual Representation</h3>
-<p>Figure 3 uses the labor-market quantities in the worked problem. Coordinates use <span class="math inline">\(x=L/40\)</span> and <span class="math inline">\(y=W/10\)</span> for legibility; labels give labor in millions and wage dollars per hour.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figures/chapter_3_supply_and_demand_macroeconomic_foundations_figure_03.svg" class="img-fluid figure-img" alt="A leftward labor-demand shift lowers the model's flexible-wage equilibrium from (L,W)=(80,$30) to (60,$20). If the wage stays at $30, labor demanded is 20 million while labor supplied is 80 million; the gap is excess labor supply in this stylized model."></p>
-<figcaption>Figure 3. A leftward labor-demand shift lowers the model’s flexible-wage equilibrium from <span class="math inline">\((L,W)=(80,\$30)\)</span> to <span class="math inline">\((60,\$20)\)</span>. If the wage stays at <span class="math inline">\(\$30\)</span>, labor demanded is 20 million while labor supplied is 80 million; the gap is excess labor supply in this stylized model.</figcaption>
-</figure>
-</div>
-</section>
-<section id="real-world-application-downward-nominal-wage-rigidity" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="real-world-application-downward-nominal-wage-rigidity">Real-World Application: Downward Nominal Wage Rigidity</h3>
-<p>Federal Reserve research documents downward nominal wage rigidity, but also finds that some continuing workers receive nominal wage cuts. Wage freezes, pay cuts, reduced hiring, and layoffs are possible adjustment margins; this example isolates only the fixed-wage case and should not be read as a universal description of recession behavior.</p>
-</section>
-<section id="mathematical-foundation-algebra-level-2" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-2">Mathematical Foundation (Algebra Level)</h3>
-<p>At a fixed nominal wage <span class="math inline">\(\bar{W}\)</span>, employment in the simplified labor-market model is limited by the short side:</p>
-<p><span class="math display">\[
-L_{\text{employed}} = \min\left(L_d(\bar{W}), \; L_s(\bar{W})\right)
-\]</span></p>
-<p>If labor supplied exceeds labor demanded, the difference is excess labor supply in this model; it is not automatically an official unemployment statistic.</p>
-<p><strong>Worked Problem:</strong> In a hypothetical labor market, labor demand is <span class="math inline">\(L_d = 200 - 4W\)</span> and labor supply is <span class="math inline">\(L_s = 20 + 2W\)</span>, with quantities in millions of workers and <span class="math inline">\(W\)</span> in dollars per hour. A recession shifts labor demand left to <span class="math inline">\(L_d^{\text{new}} = 140 - 4W\)</span>.</p>
-<ul>
-<li>Compute employment and excess labor supply if the nominal wage remains fixed at <span class="math inline">\(\$30\)</span>.</li>
-<li>Find the new flexible-wage equilibrium <span class="math inline">\((W_2^*, L_2^*)\)</span> in this model.</li>
-</ul>
-<p><strong>Step-by-Step Breakdown:</strong></p>
-<ul>
-<li><strong>Evaluate the Fixed-Wage Outcome at <span class="math inline">\(W=\$30\)</span>:</strong></li>
-</ul>
-<p><span class="math display">\[
-\begin{aligned}
-L_d^{\text{new}}(30) &amp;= 140 - 4(30) = 140 - 120 = 20\text{ million},\\
-L_s(30) &amp;= 20 + 2(30) = 20 + 60 = 80\text{ million}.
-\end{aligned}
-\]</span></p>
-<p>Employment is the smaller quantity, <span class="math inline">\(20\)</span> million. Excess labor supply is <span class="math inline">\(80-20=\mathbf{60\text{ million}}\)</span> in this hypothetical model.</p>
-<ul>
-<li><strong>Solve for the Flexible-Wage Equilibrium (<span class="math inline">\(L_d^{\text{new}} = L_s\)</span>):</strong></li>
-</ul>
-<p><span class="math display">\[
-\begin{aligned}
-140 - 4W_2^* &amp;= 20 + 2W_2^*\\
-120 &amp;= 6W_2^*\\
-W_2^* &amp;= \$20.
-\end{aligned}
-\]</span></p>
-<p>Substitute the wage into either schedule:</p>
-<p><span class="math display">\[
-L_2^* = 20 + 2(20) = \mathbf{60\text{ million}}.
-\]</span></p>
-<p><strong>Conclusion:</strong> Employment is 20 million at the fixed wage and 60 million at the flexible-wage equilibrium in this simplified model. The 60-million gap is excess labor supply, not a measured unemployment count.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Optional Advanced Section: Exact vs.&nbsp;Approximate Fisher Equation
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><em>Note for Economics Majors and Quantitative Students:</em> Using decimal rates, the Fisher relation is <span class="math inline">\(1+i=(1+r)(1+\pi)\)</span>. Solving for the exact real rate gives:</p>
-<p><span class="math display">\[
-r = \frac{i - \pi}{1 + \pi}
-\]</span></p>
-<p>For an expected real return, use expected inflation; realized inflation gives an ex-post real return. When inflation is small, <span class="math inline">\(r \approx i-\pi\)</span> is a useful approximation.</p>
-</div>
-</div>
-</section>
-</section>
-<section id="bring-it-home-read-the-price-signal" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="bring-it-home-read-the-price-signal">Bring It Home: Read the Price Signal</h2>
-<p>Return to the opening question. Comparing the medical-care index with the all-items index shows whether medical care became more or less expensive relative to the broad basket. A nominal wage or salary comparison answers a different question: how much the money amount changed. Deflating it by an appropriate price index estimates how its purchasing power changed.</p>
-</section>
-<section id="practice-questions" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="practice-questions">Practice Questions</h2>
-<ul>
-<li>A price index rises from 100 to 105 in one year and then to 109.2 the next year. Which statement is correct?</li>
-</ul>
-<ol type="A">
-<li>Inflation is 5% in the first year and 4% in the second; this is disinflation. <strong>Correct:</strong> The second annual rate is lower but remains positive.</li>
-<li>Inflation is 5% in both years. <strong>Incorrect:</strong> The second rate is <span class="math inline">\((109.2-105)/105 \times 100\%=4\%\)</span>.</li>
-<li>Prices fell by 4% in the second year. <strong>Incorrect:</strong> The index rose from 105 to 109.2; inflation slowed but stayed positive.</li>
-<li>The price level fell by 1%. <strong>Incorrect:</strong> This confuses the change in the inflation rate with the change in the price index.</li>
-</ol>
-<ul>
-<li>From May 2015 to October 2026, CPIAUCSL rose from 237.001 to 337.476 while CPIMEDSL rose from 446.743 to 595.675. What happened to medical care’s price relative to the all-items basket?</li>
-</ul>
-<ol type="A">
-<li>It rose by 9.05 percentage points. <strong>Incorrect:</strong> This subtracts the two growth rates but does not calculate the change in the component-to-all-items price ratio.</li>
-<li>It fell by about 6.36%. <strong>Correct:</strong> The ratio <span class="math inline">\((CPIMEDSL/CPIAUCSL)\)</span> fell by this percentage between the observations.</li>
-<li>It rose by 33.34%. <strong>Incorrect:</strong> That is medical care’s own index growth, not its relative-price change.</li>
-<li>It did not change because both indexes increased. <strong>Incorrect:</strong> The indexes grew at different rates.</li>
-</ol>
-<ul>
-<li>In the labor-market example, labor demand after a recession is <span class="math inline">\(L_d=140-4W\)</span>, supply is <span class="math inline">\(L_s=20+2W\)</span>, and the wage is fixed at <span class="math inline">\(\$30\)</span>. What does the model imply?</li>
-</ul>
-<ol type="A">
-<li>Employment is 80 million and excess labor supply is zero. <strong>Incorrect:</strong> It uses labor supplied as employment even though firms demand only 20 million workers.</li>
-<li>Employment is 20 million and excess labor supply is 60 million. <strong>Correct:</strong> Demand is 20 million and supply is 80 million; employment is the short side.</li>
-<li>Employment is 60 million and excess labor supply is 20 million. <strong>Incorrect:</strong> These values do not equal the model’s quantities at <span class="math inline">\(W=\$30\)</span>.</li>
-<li>The model proves that measured unemployment is 60 million. <strong>Incorrect:</strong> It gives a hypothetical excess-supply gap, not an official unemployment statistic.</li>
-</ol>
-</section>
-<section id="sources" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="sources">Sources</h2>
-<ul>
-<li>Federal Reserve Bank of St.&nbsp;Louis, FRED. CPIAUCSL: Consumer Price Index for All Urban Consumers: All Items. <a href="https://fred.stlouisfed.org/series/CPIAUCSL" class="uri">https://fred.stlouisfed.org/series/CPIAUCSL</a></li>
-<li>Federal Reserve Bank of St.&nbsp;Louis, FRED. CPIMEDSL: Consumer Price Index for All Urban Consumers: Medical Care. <a href="https://fred.stlouisfed.org/series/CPIMEDSL" class="uri">https://fred.stlouisfed.org/series/CPIMEDSL</a></li>
-<li>U.S. Department of Labor. “Minimum Wage.” .</li>
-<li>Fallick, Bruce C., Daniel Villar Vallenas, and William L. Wascher. “Downward Nominal Wage Rigidity in the United States During and After the Great Recession.” Finance and Economics Discussion Series 2016-001r1, Board of Governors of the Federal Reserve System. .</li>
-</ul>
+<p>Answers: (1) Real purchasing power falls by roughly 2 percent, using the small-change approximation. (2) It may be a relative-price change confined to that market. (3) It compares proportional changes; it does not make the baskets or dollar costs identical.</p>
 
 
 

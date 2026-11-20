@@ -1,0 +1,125 @@
+% Figure 2: GDP Identity Decomposition (Y = C + I + G + NX)
+% Macroeconomics Chapter 6
+% Stacked bar chart showing GDP components for 2024
+
+\documentclass[tikz,border=5pt]{standalone}
+\usepackage{pgfplots}
+\usepackage{amssymb}
+\pgfplotsset{compat=1.18}
+
+% Define Okabe-Ito colorblind-safe palette
+\definecolor{CourseBlue}{HTML}{0072B2}        % Consumption (Deep Blue)
+\definecolor{CourseOrange}{HTML}{D55E00}      % Investment (Vermilion-Orange)
+\definecolor{CourseTeal}{HTML}{009E73}        % Government (Bluish-Green)
+\definecolor{CoursePurple}{HTML}{CC79A7}      % Net Exports (Reddish-Purple)
+\definecolor{CourseAmber}{HTML}{E69F00}       % Highlight (Warm Amber)
+\definecolor{CourseSlate}{HTML}{1E293B}       % Axes, grids, labels (Dark Slate)
+
+\begin{document}
+
+\begin{tikzpicture}
+  % Create a manual stacked horizontal bar chart
+  
+  % Draw axes
+  \draw[line width=0.5pt, color=CourseSlate] (0,0) -- (10,0);  % x-axis
+  \draw[line width=0.5pt, color=CourseSlate] (0,0) -- (0,1.5);  % y-axis
+  
+  % x-axis label (bottom)
+  \node[color=CourseSlate, font=\small, anchor=north] at (5, -0.3) {
+    GDP Components (2024, Annualized Quarterly, BEA)
+  };
+  
+  % y-axis label (left) - simplified for horizontal layout
+  \node[color=CourseSlate, font=\small, anchor=east, rotate=90] at (-0.5, 0.75) {
+    Components
+  };
+  
+  % Total GDP scale: $27,000B
+  % Conversion factor: 10cm / 27000B = 0.000370 cm/B
+  
+  % C (Consumption): $19,350B = 7.185 cm
+  \draw[fill=CourseBlue, draw=CourseSlate, line width=0.5pt] (0, 0.3) rectangle (7.185, 0.9);
+  \node[color=CourseBlue, font=\small\bfseries, anchor=center] at (3.59, 0.6) {
+    $C = \$19,350\text{B}$ (71.7\%)
+  };
+  
+  % I (Investment): $4,320B = 1.600 cm
+  \draw[fill=CourseOrange, draw=CourseSlate, line width=0.5pt] (7.185, 0.3) rectangle (8.785, 0.9);
+  \node[color=CourseOrange, font=\small\bfseries, anchor=center] at (8.0, 0.6) {
+    $I$
+  };
+  
+  % G (Government): $5,000B = 1.852 cm
+  \draw[fill=CourseTeal, draw=CourseSlate, line width=0.5pt] (8.785, 0.3) rectangle (10.637, 0.9);
+  \node[color=CourseTeal, font=\small\bfseries, anchor=center] at (9.7, 0.6) {
+    $G$
+  };
+  
+  % NX (Net Exports): -$1,670B, shown as negative offset below
+  % We'll show this as a separate indication
+  \draw[fill=CoursePurple, draw=CourseSlate, line width=0.5pt, opacity=0.7] (0, -0.1) rectangle (0.618, 0.2);
+  \node[color=CoursePurple, font=\small\bfseries, anchor=center] at (0.3, -0.3) {
+    $NX = -\$1,670\text{B}$
+  };
+  
+  % Title
+  \node[color=CourseSlate, font=\small\bfseries, anchor=south] at (5, 1.4) {
+    GDP Identity Decomposition: $Y = C + I + G + NX$
+  };
+  
+  % Key values and legend
+  \node[color=CourseSlate, font=\small, anchor=west] at (0, 1.8) {
+    \textbf{2024 Data (Annualized):}
+  };
+  
+  \node[color=CourseSlate, font=\small, anchor=west] at (0, 2.0) {
+    $Y = \$27,000\text{B}$
+  };
+  
+  % Legend
+  \draw[fill=CourseBlue, draw=CourseSlate, line width=0.5pt] (5.5, 1.75) rectangle (5.8, 2.05);
+  \node[color=CourseSlate, font=\small, anchor=west] at (6.0, 1.9) {
+    Consumption ($C$)
+  };
+  
+  \draw[fill=CourseOrange, draw=CourseSlate, line width=0.5pt] (5.5, 2.15) rectangle (5.8, 2.45);
+  \node[color=CourseSlate, font=\small, anchor=west] at (6.0, 2.3) {
+    Investment ($I$)
+  };
+  
+  \draw[fill=CourseTeal, draw=CourseSlate, line width=0.5pt] (5.5, 2.55) rectangle (5.8, 2.85);
+  \node[color=CourseSlate, font=\small, anchor=west] at (6.0, 2.7) {
+    Government ($G$)
+  };
+  
+  \draw[fill=CoursePurple, draw=CourseSlate, line width=0.5pt] (5.5, 2.95) rectangle (5.8, 3.25);
+  \node[color=CourseSlate, font=\small, anchor=west] at (6.0, 3.1) {
+    Net Exports ($NX$)
+  };
+  
+  % Verification box
+  \node[color=CourseSlate, font=\small, anchor=west, text width=8cm] at (0, 3.8) {
+    \textbf{Accounting Identity Check:}
+  };
+  
+  \node[color=CourseSlate, font=\small, anchor=west, text width=8cm] at (0, 4.1) {
+    $Y = C + I + G + NX$
+  };
+  
+  \node[color=CourseSlate, font=\small, anchor=west, text width=8cm] at (0, 4.3) {
+    $\$27,000\text{B} = \$19,350 + \$4,320 + \$5,000 - \$1,670$ \checkmark
+  };
+  
+  % Key insight
+  \node[color=CourseAmber, font=\small\bfseries, anchor=west, text width=8cm] at (0, 4.7) {
+    \textbf{National Saving:} $S = Y - C - G = \$27,000 - \$19,350 - \$5,000 = \$2,650\text{B}$
+  };
+  
+  % Source line
+  \node[color=CourseSlate, font=\tiny, anchor=west] at (0, 5.0) {
+    Source: U.S. Bureau of Economic Analysis, 2024 (Hypothetical annualized quarterly data for pedagogical illustration)
+  };
+  
+\end{tikzpicture}
+
+\end{document}

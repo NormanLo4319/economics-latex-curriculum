@@ -1,0 +1,619 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[a4paper, margin=2.2cm]{geometry}
+\usepackage{fontspec}
+\usepackage[english, bidi=basic, provide=*]{babel}
+\babelprovide[import, onchar=ids fonts]{english}
+\babelfont{rm}{Noto Sans}
+\usepackage{amsmath, amssymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric}
+\usepackage[most]{tcolorbox}
+
+% Okabe-Ito Colorblind-Safe Palette & Semantic Accents
+\definecolor{CourseBlue}{HTML}{0072B2}
+\definecolor{CourseOrange}{HTML}{D55E00}
+\definecolor{CourseTeal}{HTML}{009E73}
+\definecolor{CoursePurple}{HTML}{CC79A7}
+\definecolor{CourseYellow}{HTML}{E69F00}
+\definecolor{SlateBlue}{HTML}{334155}
+\definecolor{Terracotta}{HTML}{C2410C}
+\definecolor{LightTint}{HTML}{F8FAFC}
+\definecolor{WarmTint}{HTML}{FFF7ED}
+\definecolor{TealTint}{HTML}{F0FDF4}
+
+% Standardized Pedagogical Callout Environments
+\newcommand{\boxheader}[2]{\textbf{\textcolor{#1}{#2}}\par\smallskip}
+
+\newtcolorbox{coreprinciple}{
+  enhanced,
+  breakable,
+  colback=WarmTint,
+  colframe=Terracotta,
+  boxrule=0.8pt,
+  leftrule=3.5pt,
+  arc=2pt,
+  left=10pt, right=10pt, top=8pt, bottom=8pt,
+  before skip=12pt, after skip=12pt
+}
+
+\newtcolorbox{casestudy}{
+  enhanced,
+  breakable,
+  colback=LightTint,
+  colframe=SlateBlue,
+  boxrule=0.8pt,
+  leftrule=3.5pt,
+  arc=2pt,
+  left=10pt, right=10pt, top=8pt, bottom=8pt,
+  before skip=12pt, after skip=12pt
+}
+
+\newtcolorbox{takeaways}{
+  enhanced,
+  breakable,
+  colback=TealTint,
+  colframe=CourseTeal,
+  boxrule=0.8pt,
+  leftrule=3.5pt,
+  arc=2pt,
+  left=10pt, right=10pt, top=8pt, bottom=8pt,
+  before skip=12pt, after skip=12pt
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\usepackage[colorlinks=true, linkcolor=CourseBlue, urlcolor=CourseBlue]{hyperref}
+
+\begin{document}
+
+% Chapter Masthead
+{\color{CourseBlue}\rule{\linewidth}{2pt}}
+\vspace{4pt}
+{\small\bfseries\color{SlateBlue} CHAPTER 6 \quad|\quad MACROECONOMIC INDICATORS AND LABOR DYNAMICS}\par
+{\LARGE\bfseries\color{SlateBlue} Unemployment, Labor Market Structure, and Cyclical Slack}\par
+\vspace{2pt}
+{\color{CourseBlue}\rule{\linewidth}{0.8pt}}
+\vspace{6pt}
+
+\begin{casestudy}
+\boxheader{SlateBlue}{Chapter Learning Objectives}
+After completing this chapter, you will be able to:
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt, topsep=2pt]
+  \item Partition the Civilian Noninstitutional Population into employed, unemployed, and not-in-the-labor-force subgroups using Bureau of Labor Statistics (BLS) Current Population Survey criteria.
+  \item Compute and contrast the headline unemployment rate (U-3), the broad labor underutilization rate (U-6), the labor force participation rate, and the employment-to-population ratio.
+  \item Distinguish frictional, structural, and cyclical unemployment, explain how wage rigidities generate structural joblessness, and analyze the determinants of the natural rate of unemployment ($u^*$).
+  \item Interpret movements along versus shifts of the Beveridge Curve and quantify cyclical output gaps using Okun's Law.
+\end{itemize}
+\end{casestudy}
+
+% ==============================================================================
+\section{The BLS Household Survey and Labor Market Partition}
+% ==============================================================================
+
+\subsection{Conceptual Introduction}
+Assessing the health of the macroeconomy requires measuring not only how much output an economy produces, but also how effectively it utilizes its human resources. In the United States, official labor market statistics derive primarily from the Current Population Survey (CPS), a monthly household survey of roughly $60{,}000$ eligible households conducted by the U.S. Census Bureau for the Bureau of Labor Statistics (BLS). Rather than asking whether a respondent feels employed or desires a job, the CPS classifies individuals through a strict, hierarchical sequence of behavioral questions covering a specific reference week (usually the calendar week containing the 12th day of the month). This objective behavioral standard ensures consistent measurement across business cycles and demographic groups.
+
+The survey begins with the \textbf{Civilian Noninstitutional Population ($P$ or $\text{CNIP}$)}, which encompasses all U.S. residents aged 16 and older who are not serving on active duty in the Armed Forces and are not residing in institutions such as correctional facilities, nursing homes, or residential psychiatric hospitals. Within this base population, respondents are partitioned into three mutually exclusive and collectively exhaustive categories: \textbf{Employed ($E$)}, \textbf{Unemployed ($U$)}, and \textbf{Not in the Labor Force ($\text{NILF}$)}.
+
+To be counted as \textbf{employed ($E$)}, an individual must have worked at least one hour for pay or profit during the reference week, worked at least 15 unpaid hours in a family-operated enterprise, or held a job from which they were temporarily absent due to illness, vacation, weather, industrial dispute, or parental leave. To be counted as \textbf{unemployed ($U$)}, a person must simultaneously satisfy three conditions: (1) have no employment during the reference week, (2) be currently available to start work (except for temporary illness), and (3) have engaged in \textit{active job search}—such as submitting applications, interviewing, contacting employers, or answering job advertisements—within the preceding four weeks. Workers on temporary layoff awaiting recall are also counted in $U$ even without active search. Anyone in the civilian noninstitutional population who is neither employed nor actively searching is classified as \textbf{not in the labor force ($\text{NILF}$)}, including full-time students, retirees, homemakers, and individuals who have stopped looking for work.
+
+Alongside the CPS household survey, the BLS conducts the \textbf{Current Employment Statistics (CES) Establishment Survey}, which samples roughly $122{,}000$ businesses and government agencies covering approximately $666{,}000$ worksites. While the CPS measures the \textit{unemployment rate} and demographic labor force status by surveying households (counting self-employed, agricultural, and unpaid family workers), the CES measures \textit{nonfarm payroll employment}, average weekly hours, and average hourly earnings by surveying employer payrolls. Because a worker holding two jobs appears once in CPS employment ($E$) but twice on CES establishment payrolls, the two surveys provide complementary lenses on labor market momentum.
+
+\subsection{Visual Representation}
+Figure~\ref{fig:bls_tree} illustrates the hierarchical BLS classification tree applied to our flagship benchmark economy, where the Civilian Noninstitutional Population equals $200.0\text{ million}$. Notice how the labor force ($120.0\text{ million}$) forms the core active market, while $\text{NILF}$ ($80.0\text{ million}$) contains critical subgroups—specifically marginally attached and discouraged workers—that lie on the boundary of labor market participation.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+  >=Stealth,
+  node distance=1.1cm and 0.6cm,
+  box/.style={
+    rectangle, rounded corners=3pt, draw=#1, fill=#1!8,
+    line width=1pt, align=center, font=\small, inner sep=6pt
+  },
+  subbox/.style={
+    rectangle, rounded corners=2pt, draw=#1, fill=white,
+    line width=0.8pt, dashed, align=center, font=\footnotesize, inner sep=5pt
+  }
+]
+  % Level 1: CNIP
+  \node[box=SlateBlue, minimum width=6.2cm] (cnip) {
+    \textbf{Civilian Noninstitutional Population ($\text{CNIP}$)}\\[2pt]
+    Age $16+$, non-military, non-institutionalized: $P = 200.0\text{M}$
+  };
+
+  % Level 2: Labor Force vs NILF
+  \node[box=CourseBlue, below left=1.1cm and -0.4cm of cnip, minimum width=5.6cm] (lf) {
+    \textbf{Labor Force ($\text{LF} = E + U$)}\\[2pt]
+    $\text{LF} = 120.0\text{M}$ \quad ($\text{LFPR} = 60.0\%$)
+  };
+
+  \node[box=CoursePurple, below right=1.1cm and -0.4cm of cnip, minimum width=5.6cm] (nilf) {
+    \textbf{Not in Labor Force ($\text{NILF}$)}\\[2pt]
+    $\text{NILF} = 80.0\text{M}$ \quad ($40.0\%$ of $\text{CNIP}$)
+  };
+
+  % Level 3 under LF: Employed vs Unemployed
+  \node[box=CourseTeal, below left=1.1cm and -1.7cm of lf, minimum width=3.2cm] (emp) {
+    \textbf{Employed ($E$)}\\[2pt]
+    $E = 114.0\text{M}$\\
+    {\scriptsize Incl. $PT_{\text{econ}} = 5.0\text{M}$}
+  };
+
+  \node[box=CourseOrange, below right=1.1cm and -1.7cm of lf, minimum width=3.2cm] (unemp) {
+    \textbf{Unemployed ($U$)}\\[2pt]
+    $U = 6.0\text{M}$\\
+    {\scriptsize $\text{U-3} = 5.00\%$}
+  };
+
+  % Level 3 under NILF: Marginally Attached & Other
+  \node[subbox=CoursePurple, below left=1.1cm and -1.7cm of nilf, minimum width=3.4cm] (marg) {
+    \textbf{Marginally Attached ($M$)}\\[2pt]
+    $M = 3.0\text{M}$\\
+    {\scriptsize Incl. Discouraged $D = 1.2\text{M}$}
+  };
+
+  \node[subbox=SlateBlue, below right=1.1cm and -1.7cm of nilf, minimum width=3.2cm] (other) {
+    \textbf{Other $\text{NILF}$}\\[2pt]
+    $77.0\text{M}$\\
+    {\scriptsize Retirees, students, etc.}
+  };
+
+  % Edges
+  \draw[->, line width=1pt, color=SlateBlue] (cnip.south) -- ++(0,-0.45) -| (lf.north);
+  \draw[->, line width=1pt, color=SlateBlue] (cnip.south) -- ++(0,-0.45) -| (nilf.north);
+
+  \draw[->, line width=1pt, color=CourseBlue] (lf.south) -- ++(0,-0.45) -| (emp.north);
+  \draw[->, line width=1pt, color=CourseBlue] (lf.south) -- ++(0,-0.45) -| (unemp.north);
+
+  \draw[->, line width=0.9pt, dashed, color=CoursePurple] (nilf.south) -- ++(0,-0.45) -| (marg.north);
+  \draw[->, line width=0.9pt, dashed, color=CoursePurple] (nilf.south) -- ++(0,-0.45) -| (other.north);
+\end{tikzpicture}
+\caption{BLS Household Survey Population Partition and Flagship Quantitative Baseline.}
+\label{fig:bls_tree}
+\end{figure}
+
+\subsection{Real-World Application}
+Tracking both the headline unemployment rate (\texttt{UNRATE}) and participation indicators in the Federal Reserve Economic Data (FRED) repository reveals structural shifts that the unemployment rate alone cannot capture. Specifically, macroeconomists pair \texttt{UNRATE} with two demographic engagement ratios: the \textbf{Labor Force Participation Rate (\texttt{CIVPART})} and the \textbf{Employment-to-Population Ratio (\texttt{EMRATIO})}.
+
+Between 2000 and 2015, the U.S. \texttt{CIVPART} declined steadily from roughly $67.3\%$ to $62.4\%$, driven primarily by the aging of the Baby Boom cohort into retirement alongside lower participation among younger workers pursuing higher education. During the onset of the COVID-19 shock in April 2020, \texttt{CIVPART} plunged by $3.1$ percentage points in a single month as lockdowns prevented millions of displaced workers from conducting active job searches, temporarily classifying them as $\text{NILF}$ rather than unemployed. Consequently, economists monitor \texttt{EMRATIO}—the share of the entire working-age population actively holding a job—as well as \textbf{Prime-Age EPOP} (ages 25--54, \texttt{LNS12300060}) as robust cross-checks that strip out population aging and shifts between $U$ and $\text{NILF}$.
+
+\begin{table}[htbp]
+\centering
+\caption{Comparison of the BLS Household Survey (CPS) and Establishment Survey (CES).}
+\label{tab:cps_vs_ces}
+\small
+\begin{tabularx}{\linewidth}{@{} l X X @{}}
+\toprule
+\textbf{Dimension} & \textbf{CPS (Household Survey)} & \textbf{CES (Establishment / Payroll Survey)} \\
+\midrule
+\textbf{Primary Unit} & Households ($\approx 60{,}000$ monthly) & Nonfarm business \& government payrolls \\
+\textbf{Key Indicators} & $\text{U-3}$ through $\text{U-6}$, $\text{LFPR}$, $\text{EPOP}$ & Nonfarm payroll jobs, hours, hourly wages \\
+\textbf{Self-Employed \& Farm} & Included in total employment ($E$) & Excluded from nonfarm payroll counts \\
+\textbf{Multiple Jobholders} & Counted once (person-based measure) & Counted at each job (job-based measure) \\
+\textbf{Unpaid Absences} & Counted as employed if job-attached & Excluded if unpaid for entire pay period \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{coreprinciple}
+\boxheader{Terracotta}{Clear It Up: Why Discouraged Workers Lower the Headline Unemployment Rate}
+A common misconception is that when an unemployed worker gives up searching for a job out of frustration, the headline unemployment rate rises. In fact, the exact opposite occurs. Because an individual must actively search within the past four weeks to remain in $U$, ceasing job search moves the worker out of both the numerator ($U$) and the denominator ($\text{LF} = E + U$) of $\text{U-3} = U / \text{LF}$. Since $U < \text{LF}$, subtracting the same positive number from both numerator and denominator strictly \emph{reduces} the fraction. Thus, a wave of discouragement during a prolonged recession artificially depresses the headline unemployment rate even though labor market conditions have deteriorated.
+\end{coreprinciple}
+
+\subsection{Mathematical Foundation}
+Let $P$ denote the Civilian Noninstitutional Population, $E$ total employment, $U$ total unemployment, and $\text{NILF}$ those not in the labor force. The fundamental population accounting identities are:
+\begin{align}
+  \text{LF} &= E + U \label{eq:lf_identity} \\
+  P &= \text{LF} + \text{NILF} = E + U + \text{NILF} \label{eq:cnip_identity}
+\end{align}
+From these aggregates, three core headline labor market rates are defined:
+\begin{align}
+  \text{Headline Unemployment Rate (U-3)} &= \frac{U}{\text{LF}} \times 100 = \frac{U}{E + U} \times 100 \label{eq:u3} \\
+  \text{Labor Force Participation Rate (LFPR)} &= \frac{\text{LF}}{P} \times 100 = \frac{E + U}{P} \times 100 \label{eq:lfpr} \\
+  \text{Employment-to-Population Ratio (EPOP)} &= \frac{E}{P} \times 100 \label{eq:epop}
+\end{align}
+Notice that these three indicators are algebraically linked through the identity $\text{EPOP} = \text{LFPR} \times (1 - \text{U-3})$.
+
+\textbf{Flagship Baseline Calculation.} Using our benchmark economy ($P = 200.0\text{M}$, $E = 114.0\text{M}$, $U = 6.0\text{M}$, and $\text{NILF} = 80.0\text{M}$):
+\[
+  \text{LF} = 114.0 + 6.0 = 120.0\text{M}
+\]
+\[
+  \text{U-3} = \frac{6.0}{120.0} \times 100 = 5.00\%, \qquad
+  \text{LFPR} = \frac{120.0}{200.0} \times 100 = 60.00\%, \qquad
+  \text{EPOP} = \frac{114.0}{200.0} \times 100 = 57.00\%
+\]
+
+% ==============================================================================
+\section{Measuring Underutilization: Headline U-3 vs. Broad U-6}
+% ==============================================================================
+
+\subsection{Conceptual Introduction}
+While the headline U-3 rate serves as the standard benchmark for joblessness, it treats employment as a binary state: working just one hour per week for pay places a person in $E$, regardless of whether they seek a full-time career. Similarly, U-3 excludes individuals on the periphery of the labor market who want to work and have searched recently, even if they did not search during the specific four-week CPS window. During economic downturns, firms often cut employee hours before laying off staff (intensive-margin adjustment), while long-term jobless workers temporarily pause active applications. Relying solely on U-3 therefore understates total labor slack.
+
+To capture hidden underemployment and latent labor supply, the BLS publishes six alternative measures of labor underutilization, labeled U-1 through U-6. As summarized in Table~\ref{tab:bls_u1_u6}, these measures progress systematically from narrow indicators of long-term joblessness (U-1) and job losers (U-2) to the official headline rate (U-3), and finally to broad measures incorporating discouraged workers (U-4), all marginally attached workers (U-5), and involuntary part-time workers (U-6).
+
+\begin{table}[htbp]
+\centering
+\caption{BLS Alternative Measures of Labor Underutilization (U-1 through U-6).}
+\label{tab:bls_u1_u6}
+\small
+\begin{tabularx}{\linewidth}{@{} l X l @{}}
+\toprule
+\textbf{Measure} & \textbf{BLS Definition} & \textbf{Formula} \\
+\midrule
+\textbf{U-1} & Persons unemployed 15 weeks or longer, as a percent of $\text{LF}$ & $U_{\ge 15\text{w}} / \text{LF}$ \\
+\textbf{U-2} & Job losers and persons who completed temporary jobs, as a percent of $\text{LF}$ & $U_{\text{losers}} / \text{LF}$ \\
+\textbf{U-3} & \textbf{Official headline unemployment rate:} total unemployed as a percent of $\text{LF}$ & $U / \text{LF}$ \\
+\textbf{U-4} & Total unemployed plus discouraged workers ($D$), as a percent of $\text{LF} + D$ & $(U + D) / (\text{LF} + D)$ \\
+\textbf{U-5} & Total unemployed plus all marginally attached workers ($M$), as a percent of $\text{LF} + M$ & $(U + M) / (\text{LF} + M)$ \\
+\textbf{U-6} & \textbf{Broad underutilization:} total unemployed, plus $M$, plus $PT_{\text{econ}}$ & $(U + M + PT_{\text{econ}}) / (\text{LF} + M)$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The broadest measure, \textbf{U-6}, expands U-3 by incorporating two critical groups:
+\begin{enumerate}[leftmargin=1.5em, itemsep=3pt]
+  \item \textbf{Marginally Attached Workers ($M$):} Persons currently classified as $\text{NILF}$ who want and are available for a job and have actively looked for work sometime in the past 12 months, though not in the past four weeks. A key subset of $M$ is \textbf{Discouraged Workers ($D$)}, who cite labor-market reasons—such as believing no jobs are available in their line of work or lacking required schooling—for not searching recently. Other marginally attached workers cite non-market barriers such as childcare or transportation constraints.
+  \item \textbf{Persons Employed Part-Time for Economic Reasons ($PT_{\text{econ}}$):} Also termed \textit{involuntary part-time workers}, these are individuals working fewer than 35 hours per week who prefer full-time employment and are available for full-time hours, but whose hours were reduced due to slack business conditions or inability to find a full-time position.
+\end{enumerate}
+
+\subsection{Visual Representation}
+Figure~\ref{fig:u3_u6_bars} contrasts the composition of U-3 and U-6 in our flagship baseline economy. Moving from U-3 to U-6 expands the numerator from $6.0\text{M}$ to $14.0\text{M}$ by adding marginally attached workers ($3.0\text{M}$) and involuntary part-time workers ($5.0\text{M}$). Because marginally attached workers are drawn from $\text{NILF}$, they must simultaneously be added to the denominator so that the rate remains a consistent proportion of the expanded labor pool ($\text{LF} + M = 123.0\text{M}$).
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+  font=\small,
+  bar/.style={draw=SlateBlue, line width=0.8pt}
+]
+  % Title labels
+  \node[anchor=west, font=\bfseries\color{SlateBlue}] at (0, 3.8) {Numerator Comparison (Underutilized Workers, Millions)};
+
+  % U-3 Numerator Bar (6.0M -> scale 0.65 cm per million)
+  \node[anchor=east, font=\bfseries\color{CourseOrange}] at (-0.2, 3.0) {U-3 Numerator};
+  \fill[CourseOrange!80] (0, 2.65) rectangle (3.9, 3.35);
+  \draw[bar] (0, 2.65) rectangle (3.9, 3.35);
+  \node[white, font=\footnotesize\bfseries] at (1.95, 3.0) {$U = 6.0\text{M}$};
+
+  % U-6 Numerator Stacked Bar (6.0M + 3.0M + 5.0M = 14.0M)
+  \node[anchor=east, font=\bfseries\color{SlateBlue}] at (-0.2, 1.9) {U-6 Numerator};
+  \fill[CourseOrange!80] (0, 1.55) rectangle (3.9, 2.25);
+  \fill[CoursePurple!80] (3.9, 1.55) rectangle (5.85, 2.25);
+  \fill[CourseBlue!80]   (5.85, 1.55) rectangle (9.1, 2.25);
+  \draw[bar] (0, 1.55) rectangle (9.1, 2.25);
+  \draw[SlateBlue, line width=0.8pt] (3.9, 1.55) -- (3.9, 2.25);
+  \draw[SlateBlue, line width=0.8pt] (5.85, 1.55) -- (5.85, 2.25);
+
+  \node[white, font=\footnotesize\bfseries] at (1.95, 1.9) {$U = 6.0\text{M}$};
+  \node[white, font=\footnotesize\bfseries] at (4.875, 1.9) {$M = 3.0\text{M}$};
+  \node[white, font=\footnotesize\bfseries] at (7.475, 1.9) {$PT_{\text{econ}} = 5.0\text{M}$};
+  \node[anchor=west, font=\footnotesize\bfseries\color{SlateBlue}] at (9.25, 1.9) {Total $= 14.0\text{M}$};
+
+  % Divider line
+  \draw[SlateBlue!40, dashed] (-2.6, 1.15) -- (11.5, 1.15);
+
+  % Denominator & Resulting Rate Summary Box
+  \node[anchor=west, font=\bfseries\color{SlateBlue}] at (0, 0.75) {Denominator Adjustment \& Resulting Rates};
+
+  \node[anchor=west, font=\footnotesize] at (0, 0.15) {
+    $\bullet$ \textbf{U-3 Denominator:} $\text{LF} = 120.0\text{M} \quad \Longrightarrow \quad \text{U-3} = \dfrac{6.0}{120.0} = \mathbf{5.00\%}$
+  };
+  \node[anchor=west, font=\footnotesize] at (0, -0.55) {
+    $\bullet$ \textbf{U-6 Denominator:} $\text{LF} + M = 120.0 + 3.0 = 123.0\text{M} \quad \Longrightarrow \quad \text{U-6} = \dfrac{6.0 + 3.0 + 5.0}{120.0 + 3.0} = \dfrac{14.0}{123.0} = \mathbf{11.38\%}$
+  };
+\end{tikzpicture}
+\caption{Decomposition of Numerators, Denominators, and Rates for U-3 versus U-6.}
+\label{fig:u3_u6_bars}
+\end{figure}
+
+\subsection{Real-World Application}
+The spread between U-6 (\texttt{U6RATE}) and U-3 (\texttt{UNRATE}) acts as a sensitive barometer of labor-market intensity and work-hour rationing. Following the 2007--2009 Great Recession, U-3 peaked at $10.0\%$ in October 2009, while U-6 surged to $17.1\%$—a spread of $7.1$ percentage points—reflecting millions of retail, construction, and service employees whose schedules were cut to part-time and a historic wave of long-term discouraged workers. By contrast, during the tight labor market of 2022--2023, U-3 fell to $3.4\%$ and U-6 dropped to $6.5\%$, compressing the spread to just $3.1$ percentage points as firms converted part-time roles into full-time schedules to retain staff.
+
+In modern labor markets featuring flexible scheduling and independent platform work, involuntary part-time employment remains structurally sensitive to aggregate demand. Note a critical classification rule: workers who choose part-time schedules voluntarily—such as students, semi-retirees, or caregivers preferring 20 hours per week—are classified as \textit{part-time for noneconomic reasons} and are \textbf{not} included in $PT_{\text{econ}}$ or U-6. Likewise, because discouraged workers ($D$) are already a subset of marginally attached workers ($M$), adding both $M$ and $D$ into the U-6 numerator would double-count discouraged workers.
+
+\subsection{Mathematical Foundation}
+Formally, let $M$ denote all marginally attached workers (with $D \subseteq M$ representing discouraged workers) and let $PT_{\text{econ}}$ denote persons employed part-time for economic reasons. The broad underutilization rate U-6 is defined as:
+\begin{equation}
+  \text{U-6} = \frac{U + M + PT_{\text{econ}}}{\text{LF} + M} \times 100
+  \label{eq:u6}
+\end{equation}
+Notice why $PT_{\text{econ}}$ is added \emph{only} to the numerator whereas $M$ is added to \emph{both} numerator and denominator:
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt]
+  \item $PT_{\text{econ}}$ workers are already employed ($PT_{\text{econ}} \subset E \subset \text{LF}$), so they are already counted inside $\text{LF}$ in the denominator.
+  \item $M$ workers are classified as $\text{NILF}$ ($M \subset \text{NILF}$), so they are excluded from $\text{LF}$ and must be added to the denominator so that U-6 remains bounded between $0\%$ and $100\%$.
+\end{itemize}
+
+\textbf{Flagship Baseline Calculation.} Using $U = 6.0\text{M}$, $\text{LF} = 120.0\text{M}$, $M = 3.0\text{M}$ (of which $D = 1.2\text{M}$ are discouraged), and $PT_{\text{econ}} = 5.0\text{M}$:
+\[
+  \text{U-6} = \frac{6.0 + 3.0 + 5.0}{120.0 + 3.0} \times 100 = \frac{14.0}{123.0} \times 100 \approx 11.38\%
+\]
+The underutilization spread in the baseline economy is $\text{U-6} - \text{U-3} = 11.38\% - 5.00\% = 6.38\text{ percentage points}$.
+
+% ==============================================================================
+\section{Types of Unemployment, Institutional Rigidities, and the Natural Rate ($u^*$)}
+% ==============================================================================
+
+\subsection{Conceptual Introduction}
+Even in a booming economy operating at full capacity, the unemployment rate never falls to zero. Economists decompose observed unemployment ($u$) into three distinct components based on underlying economic causes:
+\begin{enumerate}[leftmargin=1.5em, itemsep=3pt]
+  \item \textbf{Frictional Unemployment ($u_f$):} Short-term unemployment arising from the normal process of matching heterogeneous workers with heterogeneous job openings. Imperfect information, geographic mobility, recent graduation, and career transitions mean that workers and firms require time to search, interview, and negotiate offers. Frictional unemployment is largely voluntary and efficiency-enhancing because better matches raise long-run productivity.
+  \item \textbf{Structural Unemployment ($u_s$):} Persistent unemployment resulting from a mismatch between the skills, occupational credentials, or geographic locations of job seekers and the requirements of available vacancies, or from \textit{institutional wage rigidities} that hold real wages above the market-clearing equilibrium. Unlike frictional search, structurally unemployed workers face a genuine shortage of jobs at prevailing wages.
+  \item \textbf{Cyclical Unemployment ($u_c$):} The deviation of actual unemployment from the economy's long-run sustainable benchmark, driven by short-run fluctuations in aggregate demand across the business cycle. During recessions, falling aggregate spending reduces labor demand across industries ($u_c > 0$); during economic expansions, tight labor markets push actual unemployment below its normal level ($u_c < 0$).
+\end{enumerate}
+
+The sum of frictional and structural unemployment defines the \textbf{Natural Rate of Unemployment ($u^*$)}, also referred to in monetary policy analysis as the \textbf{Non-Accelerating Inflation Rate of Unemployment (NAIRU)}. When $u = u^*$, cyclical unemployment is zero ($u_c = 0$) and the economy is producing at its sustainable potential output ($Y = Y^*$).
+
+\subsection{Visual Representation}
+Figure~\ref{fig:wage_rigidity} illustrates how institutional and behavioral wage rigidities generate structural unemployment in an aggregate labor market. At the market-clearing real wage $(W/P)^*$, labor demand $L_D$ equals labor supply $L_S$ at employment $L^*$. When a binding wage floor—such as a statutory minimum wage, collective bargaining agreement, or efficiency wage—holds the real wage at $(W/P)_{\text{floor}} > (W/P)^*$, firms reduce hiring to $L_D$ while more workers seek jobs at $L_S$, creating persistent structural joblessness equal to $L_S - L_D$.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+  >=Stealth,
+  font=\small
+]
+  % Axes
+  \draw[->, line width=1.1pt, color=SlateBlue] (0,0) -- (7.6,0) node[right, font=\footnotesize\bfseries] {Quantity of Labor ($L$)};
+  \draw[->, line width=1.1pt, color=SlateBlue] (0,0) -- (0,5.2) node[above, font=\footnotesize\bfseries] {Real Wage ($W/P$)};
+
+  % Labor Supply and Labor Demand Curves
+  \draw[line width=1.4pt, color=CourseBlue] (0.9, 4.4) -- (6.6, 0.8) node[right, font=\footnotesize\bfseries] {$L_D$};
+  \draw[line width=1.4pt, color=CourseTeal] (0.9, 0.8) -- (6.6, 4.4) node[right, font=\footnotesize\bfseries] {$L_S$};
+
+  % Market-Clearing Equilibrium (intersection at x=3.75, y=2.6)
+  \draw[dashed, color=SlateBlue!70] (0, 2.6) node[left, font=\footnotesize, color=SlateBlue] {$(W/P)^*$} -- (3.75, 2.6) -- (3.75, 0) node[below, font=\footnotesize, color=SlateBlue] {$L^*$};
+  \fill[SlateBlue] (3.75, 2.6) circle (2.2pt);
+
+  % Binding Wage Floor at y = 3.55
+  % On L_D: 3.55 = 4.4 - (3.6/5.7)*(x - 0.9) => x = 0.9 + (0.85 * 5.7 / 3.6) = 2.25
+  % On L_S: 3.55 = 0.8 + (3.6/5.7)*(x - 0.9) => x = 0.9 + (2.75 * 5.7 / 3.6) = 5.25
+  \draw[line width=1.2pt, color=CourseOrange] (0, 3.55) node[left, font=\footnotesize\bfseries, color=CourseOrange] {$(W/P)_{\text{floor}}$} -- (6.8, 3.55);
+
+  % Vertical projections for L_D and L_S
+  \draw[dashed, color=CourseOrange] (2.25, 3.55) -- (2.25, 0) node[below, font=\footnotesize, color=CourseOrange] {$L_D$};
+  \draw[dashed, color=CourseOrange] (5.25, 3.55) -- (5.25, 0) node[below, font=\footnotesize, color=CourseOrange] {$L_S$};
+  \fill[CourseOrange] (2.25, 3.55) circle (2.2pt);
+  \fill[CourseOrange] (5.25, 3.55) circle (2.2pt);
+
+  % Bracket for Structural Unemployment
+  \draw[<->, line width=1.1pt, color=CourseOrange] (2.25, 3.85) -- (5.25, 3.85)
+    node[midway, above, font=\footnotesize\bfseries, color=CourseOrange] {Structural Unemployment ($L_S - L_D$)};
+\end{tikzpicture}
+\caption{Wage Rigidity and Structural Unemployment Above the Market-Clearing Real Wage.}
+\label{fig:wage_rigidity}
+\end{figure}
+
+\subsection{Real-World Application}
+Three primary institutional and microeconomic mechanisms prevent real wages from falling to clear excess labor supply, thereby shaping the natural rate $u^*$:
+\begin{itemize}[leftmargin=1.5em, itemsep=3pt]
+  \item \textbf{Minimum Wage Laws:} Statutory wage floors bind primarily for younger, less-experienced, or entry-level workers whose marginal revenue product lies below the mandated wage. While modest increases often have small employment effects in concentrated local labor markets, steep wage floors above local equilibrium productivity expand $L_S - L_D$.
+  \item \textbf{Collective Bargaining and Union Contracts:} Labor unions negotiate multi-year wage scales and benefit packages above competitive spot-market levels. Insiders who retain positions earn higher compensation, while outsiders queue for scarce union openings.
+  \item \textbf{Efficiency Wages:} Even without government mandates or unions, firms voluntarily pay above-market wages to boost worker morale, reduce costly turnover, attract higher-ability applicants, and deter shirking when effort is costly to monitor (as in the Shapiro--Stiglitz shirking model or Akerlof's gift-exchange framework).
+\end{itemize}
+Alongside wage rigidities, the design of \textbf{Unemployment Insurance (UI)} and demographic composition influence $u^*$. Generous UI replacement rates cushion household consumption during job transitions and allow workers to hold out for better skill matches, but they also lower the opportunity cost of remaining unemployed, slightly lengthening average search spells and raising $u_f$. Demographics also shift $u^*$ slowly over decades: younger workers exhibit higher job-separation rates ($s$) as they sample careers, so the aging of the U.S. workforce since the 1980s exerted downward secular pressure on $u^*$, partially offsetting structural skill-mismatch shocks from automation and global trade.
+
+\subsection{Mathematical Foundation}
+Observed unemployment decomposes additively into its natural and cyclical components:
+\begin{align}
+  u &= u_f + u_s + u_c \label{eq:u_decomp} \\
+  u^* &= u_f + u_s \label{eq:natural_rate} \\
+  u_c &= u - u^* \label{eq:cyclical_u}
+\end{align}
+When $u > u^*$, the labor market exhibits positive cyclical unemployment ($u_c > 0$), signaling economic slack. When $u < u^*$, cyclical unemployment is negative ($u_c < 0$), signaling an overheated labor market where employers bid up wages to fill vacancies.
+
+\begin{casestudy}
+\boxheader{SlateBlue}{Optional Advanced Box: Steady-State Labor Flows and the Markov Natural Rate}
+In dynamic search-and-matching models, the natural rate of unemployment emerges from continuous gross flows between employment ($E$) and unemployment ($U$). Let $s \in (0,1)$ denote the monthly \textit{job separation rate} (the fraction of employed workers who lose or leave their jobs each month) and $f \in (0,1)$ denote the monthly \textit{job finding rate} (the fraction of unemployed workers who find a job each month). Assuming a constant labor force $\text{LF} = E + U$, the change in unemployment is:
+\[
+  \Delta U = s E - f U = s(\text{LF} - U) - f U
+\]
+In steady state ($\Delta U = 0$), inflows into unemployment equal outflows from unemployment ($s E = f U$). Dividing both sides by $\text{LF}$ and solving for $u^* = U / \text{LF}$ yields the fundamental Markov steady-state identity:
+\[
+  u^* = \frac{s}{s + f}
+\]
+For example, if $s = 0.015$ ($1.5\%$ of employed workers separate each month) and $f = 0.30$ ($30\%$ of unemployed workers find jobs each month), the steady-state natural rate is $u^* = \frac{0.015}{0.015 + 0.30} = \frac{0.015}{0.315} \approx 4.76\%$. Policies that improve job-matching platforms raise $f$ and lower $u^*$, whereas structural shocks that accelerate plant closures raise $s$ and push $u^*$ upward.
+\end{casestudy}
+
+% ==============================================================================
+\section{The Beveridge Curve and Okun's Law}
+% ==============================================================================
+
+\subsection{Conceptual Introduction}
+To diagnose whether rising unemployment stems from a temporary shortfall in aggregate demand or a deeper breakdown in labor-market matching, macroeconomists rely on two empirical pillars: the \textbf{Beveridge Curve} and \textbf{Okun's Law}.
+
+The \textbf{Beveridge Curve} maps the inverse empirical relationship between the \textbf{job vacancy rate ($v$)}—measured by the BLS Job Openings and Labor Turnover Survey (JOLTS) as unfilled job openings divided by employment plus openings—and the \textbf{unemployment rate ($u$)}. During an economic boom, firms post abundant vacancies while few workers remain unemployed (high $v$, low $u$). During a recession, firms freeze hiring and lay off staff, causing vacancies to collapse as unemployment climbs (low $v$, high $u$). Crucially, business-cycle fluctuations generate \textit{movements along} a stable Beveridge Curve, whereas changes in matching efficiency—such as geographic immobility, skill obsolescence, or shifts in remote-work preferences—cause the entire curve to \textit{shift} inward or outward.
+
+\textbf{Okun's Law} connects the labor market directly to the goods market by quantifying the inverse relationship between cyclical unemployment ($u - u^*$) and the percentage \textbf{output gap} $\left(\frac{Y - Y^*}{Y^*}\right)$, where $Y$ is actual real GDP and $Y^*$ is potential real GDP. Because idle workers produce zero output and recessions also reduce average hours worked and capital utilization, every $1\text{-percentage-point}$ rise in unemployment above $u^*$ corresponds to a roughly $2\%$ shortfall in real GDP below potential.
+
+\subsection{Visual Representation}
+Figure~\ref{fig:beveridge_okun} presents both relationships side by side in standardized graphical form: Panel~(a) contrasts a cyclical movement along the Beveridge Curve ($A \to B$) with an outward structural shift ($A \to C$), while Panel~(b) depicts the downward-sloping Okun's Law locus linking labor market slack to the real GDP output gap.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+  >=Stealth,
+  font=\small
+]
+  % Panel (a): Beveridge Curve
+  \begin{scope}[shift={(0,0)}]
+    \node[font=\bfseries\color{SlateBlue}] at (2.8, 4.9) {(a) The Beveridge Curve};
+    \draw[->, line width=1pt, color=SlateBlue] (0,0) -- (5.8,0) node[below, font=\footnotesize\bfseries] {Unemployment Rate ($u$)};
+    \draw[->, line width=1pt, color=SlateBlue] (0,0) -- (0,4.4) node[left, font=\footnotesize\bfseries, align=right] {Vacancy\\Rate ($v$)};
+
+    % Initial Beveridge Curve BC_0: v = 4.2 / (x + 0.6)
+    \draw[line width=1.4pt, color=CourseBlue, domain=0.65:4.9, samples=60]
+      plot (\x, {4.2 / (\x + 0.6)}) node[right, font=\footnotesize\bfseries] {$BC_0$};
+
+    % Shifted Beveridge Curve BC_1: v = 5.8 / (x + 0.4)
+    \draw[line width=1.4pt, dashed, color=CourseOrange, domain=1.15:5.1, samples=60]
+      plot (\x, {5.8 / (\x + 0.4)}) node[right, font=\footnotesize\bfseries] {$BC_1$};
+
+    % Points A (Boom/Normal), B (Recession along BC_0), C (Matching mismatch on BC_1)
+    % A: x=1.5 -> v = 4.2/2.1 = 2.0
+    % B: x=3.6 -> v = 4.2/4.2 = 1.0
+    % C: x=2.5 -> v = 5.8/2.9 = 2.0
+    \fill[CourseBlue] (1.5, 2.0) circle (2.4pt) node[above right, font=\footnotesize\bfseries] {$A$};
+    \fill[CourseTeal] (3.6, 1.0) circle (2.4pt) node[above right, font=\footnotesize\bfseries] {$B$};
+    \fill[CourseOrange] (2.5, 2.0) circle (2.4pt) node[above right, font=\footnotesize\bfseries] {$C$};
+
+    % Arrows showing movement vs shift
+    \draw[->, line width=0.9pt, color=CourseTeal] (1.65, 1.85) to[bend right=15] (3.45, 1.08);
+    \node[font=\scriptsize, color=CourseTeal, align=center] at (2.2, 0.85) {Recession\\(along $BC_0$)};
+
+    \draw[->, line width=0.9pt, color=CourseOrange] (1.65, 2.0) -- (2.35, 2.0);
+    \node[font=\scriptsize, color=CourseOrange, align=center] at (2.15, 2.65) {Outward shift\\(lower matching)};
+  \end{scope}
+
+  % Panel (b): Okun's Law
+  \begin{scope}[shift={(7.4,0)}]
+    \node[font=\bfseries\color{SlateBlue}] at (2.8, 4.9) {(b) Okun's Law Output Gap};
+    % Axes centered horizontally at y=2.2 (zero output gap)
+    \draw[->, line width=1pt, color=SlateBlue] (0, 2.2) -- (5.8, 2.2) node[below, font=\footnotesize\bfseries] {Cyclical Slack ($u - u^*$)};
+    \draw[->, line width=1pt, color=SlateBlue] (2.8, 0) -- (2.8, 4.4) node[above, font=\footnotesize\bfseries] {Output Gap $\left(\frac{Y - Y^*}{Y^*}\right)$};
+
+    % Okun Line: slope = -0.65 passing through (2.8, 2.2)
+    \draw[line width=1.4pt, color=CoursePurple] (0.6, 3.63) -- (5.1, 0.705)
+      node[below right, font=\footnotesize\bfseries] {$\text{Slope} = -\beta$};
+
+    % Origin point (u = u*, Y = Y*)
+    \fill[SlateBlue] (2.8, 2.2) circle (2.4pt);
+    \node[above right, font=\scriptsize, color=SlateBlue] at (2.8, 2.25) {$(0,\, 0)$};
+
+    % Recessionary Slack Point: x = 4.3 (u - u* = +1.5%), y = 2.2 - 0.65*1.5 = 1.225 (-3.0% gap)
+    \draw[dashed, color=CourseOrange] (4.3, 2.2) node[above, font=\scriptsize, color=CourseOrange] {$+1.5\%$} -- (4.3, 1.225) -- (2.8, 1.225) node[left, font=\scriptsize, color=CourseOrange] {$-3.0\%$};
+    \fill[CourseOrange] (4.3, 1.225) circle (2.4pt);
+  \end{scope}
+\end{tikzpicture}
+\caption{Cyclical Movements vs. Structural Shifts on the Beveridge Curve and Okun's Law.}
+\label{fig:beveridge_okun}
+\end{figure}
+
+\subsection{Real-World Application}
+The U.S. labor market between 2020 and 2024 provides a textbook demonstration of an outward shift and subsequent inward normalization of the Beveridge Curve. During the rapid post-pandemic recovery in 2021--2022, JOLTS job openings surged past $12.0\text{ million}$ (a vacancy rate exceeding $7\%$) even while unemployment remained near $3.6\%$ to $4.0\%$—shifting the curve sharply outward to $BC_1$. Rapid sectoral reallocation from in-person hospitality toward logistics, healthcare, and remote technology, combined with geographic dispersion from remote work, created intense matching frictions. Between 2022 and 2024, Federal Reserve monetary tightening cooled excess labor demand; remarkably, the vacancy rate fell back toward $4.5\%$ while unemployment rose only modestly, tracing a steep path back inward toward $BC_0$ without triggering a severe recession.
+
+Historically, Okun's Law has also reliably tracked major U.S. business cycles. During the 1982 recession, unemployment peaked at $10.8\%$ against an estimated natural rate near $6.0\%$ ($u - u^* \approx +4.8\%$), coinciding with a severe real GDP gap approaching $-9\%$. Similarly, during the Great Recession of 2009, unemployment reached $10.0\%$ against $u^* \approx 4.8\%$, implying an output gap of roughly $-10\%$ and trillions of dollars in forgone national income.
+
+\subsection{Mathematical Foundation}
+In level-gap form, \textbf{Okun's Law} states that the percentage deviation of actual real GDP ($Y$) from potential real GDP ($Y^*$) is proportional to the cyclical unemployment gap ($u - u^*$):
+\begin{equation}
+  \frac{Y - Y^*}{Y^*} = -\beta (u - u^*)
+  \label{eq:okun_gap}
+\end{equation}
+where $\beta > 0$ is the Okun coefficient (empirically $\beta \approx 2.0$ for the United States). Multiplying both sides by $Y^*$ yields the dollar output shortfall:
+\begin{equation}
+  Y - Y^* = -\beta (u - u^*) Y^*
+  \label{eq:okun_dollar}
+\end{equation}
+Notice why $\beta > 1$: a $1\%$ decline in employment does not merely lower output by $1\%$; it is accompanied by reduced overtime hours, lower labor force participation, and underutilized factory capacity, amplifying the total GDP loss to roughly $2\%$.
+
+\textbf{Flagship Baseline Calculation.} Suppose potential output is $Y^* = \$25.0\text{ trillion}$, the natural rate of unemployment is $u^* = 4.50\%$, the actual unemployment rate is $u = 6.50\%$, and the Okun coefficient is $\beta = 2.0$. Substituting into Equations~\eqref{eq:okun_gap} and~\eqref{eq:okun_dollar}:
+\[
+  \frac{Y - Y^*}{Y^*} = -2.0 \times (0.065 - 0.045) = -2.0 \times 0.020 = -0.040 = -4.00\%
+\]
+\[
+  Y - Y^* = -0.040 \times \$25.0\text{ trillion} = -\$1.0\text{ trillion}
+\]
+Actual real GDP equals $Y = \$24.0\text{ trillion}$, representing a cyclical output shortfall of $\$1.0\text{ trillion}$.
+
+\begin{casestudy}
+\boxheader{SlateBlue}{Optional Advanced Box: Dynamic Growth-Rate Form and State-Space Slack}
+When potential output $Y^*$ and the natural rate $u^*$ are unobserved directly, econometricians estimate Okun's Law in first-difference (growth-rate) form:
+\[
+  g_Y - g_{Y^*} = -\beta \Delta u
+\]
+where $g_Y = \Delta Y / Y$ is actual real GDP growth, $g_{Y^*}$ is trend potential GDP growth (typically $2.0\%$ to $2.5\%$ per year in mature economies), and $\Delta u = u_t - u_{t-1}$ is the annual percentage-point change in unemployment. Thus, if potential GDP grows at $2.2\%$ per year and $\beta = 2.0$, real GDP must grow at $2.2\%$ merely to keep the unemployment rate constant ($\Delta u = 0$); achieving a $1.0\text{-percentage-point}$ reduction in unemployment ($\Delta u = -1.0\%$) requires real GDP growth of $2.2\% + 2.0\% = 4.2\%$. In modern central-bank state-space models (such as Laubach--Williams and Congressional Budget Office filters), unobserved $u_t^*$ and $Y_t^*$ are jointly inferred by combining Okun's Law with a Phillips Curve linking $u_t - u_t^*$ to core inflation.
+\end{casestudy}
+
+% ==============================================================================
+\section*{Chapter Summary and Practice}
+% ==============================================================================
+
+\begin{takeaways}
+\boxheader{CourseTeal}{Key Takeaways}
+\begin{itemize}[leftmargin=1.4em, itemsep=3pt, topsep=2pt]
+  \item \textbf{BLS Population Partition:} The Civilian Noninstitutional Population ($P$) divides into Employed ($E$), Unemployed ($U$, requiring no job, availability, and active search within 4 weeks), and Not in the Labor Force ($\text{NILF}$). Headline rates are $\text{U-3} = U / (E+U)$, $\text{LFPR} = (E+U)/P$, and $\text{EPOP} = E/P$.
+  \item \textbf{Discouraged Workers and U-6:} Because discouraged workers stop searching actively, they exit both $U$ and $\text{LF}$, lowering U-3. Broad underutilization $\text{U-6} = (U + M + PT_{\text{econ}}) / (\text{LF} + M)$ restores marginally attached workers ($M$) and involuntary part-time workers ($PT_{\text{econ}}$).
+  \item \textbf{Natural Rate ($u^*$):} Total unemployment decomposes into frictional ($u_f$), structural ($u_s$, driven by skill mismatch and binding wage floors above equilibrium), and cyclical ($u_c = u - u^*$). At $u = u^*$, cyclical unemployment is zero and output equals potential ($Y = Y^*$).
+  \item \textbf{Beveridge Curve and Okun's Law:} Demand shocks move the economy along the downward-sloping $(u, v)$ Beveridge Curve, whereas matching efficiency shocks shift the curve. Okun's Law links cyclical slack to output via $\frac{Y - Y^*}{Y^*} = -\beta(u - u^*)$.
+\end{itemize}
+\end{takeaways}
+
+\subsection*{Check Your Understanding}
+\begin{enumerate}[leftmargin=1.5em, itemsep=6pt]
+  \item \textbf{BLS Classification and Rates:} An economy has a Civilian Noninstitutional Population of $P = 250.0\text{ million}$, of whom $142.5\text{ million}$ are employed and $7.5\text{ million}$ are unemployed. Among those not in the labor force, $4.0\text{ million}$ are marginally attached (including $1.5\text{ million}$ discouraged workers), while $6.0\text{ million}$ of the employed are working part-time for economic reasons. Compute: (a) the Labor Force ($\text{LF}$), (b) $\text{LFPR}$, (c) $\text{EPOP}$, (d) headline $\text{U-3}$, and (e) broad $\text{U-6}$.
+  \item \textbf{Labor Force Exit Dynamics:} Starting from the baseline economy in Question~1, suppose $1.5\text{ million}$ unemployed workers become discouraged and stop searching for jobs, while employment remains unchanged at $142.5\text{ million}$. Calculate the new $\text{U-3}$ rate and explain why the direction of change can mislead casual observers.
+  \item \textbf{Wage Floors and Steady-State Flows:} (a) Using a labor supply and demand framework, explain how an increase in a binding minimum wage affects employment, labor force participation, and structural unemployment. (b) In a dynamic labor market with a monthly separation rate of $s = 1.2\%$ and a monthly job-finding rate of $f = 22.8\%$, compute the steady-state natural rate of unemployment $u^*$.
+  \item \textbf{Beveridge Curve and Okun's Law:} Suppose an economy has potential real GDP $Y^* = \$28.0\text{ trillion}$, a natural rate of unemployment $u^* = 4.2\%$, an actual unemployment rate $u = 5.7\%$, and an Okun coefficient $\beta = 2.0$. (a) Calculate the percentage output gap and the dollar shortfall $Y - Y^*$. (b) If job vacancies simultaneously fell sharply while unemployment rose from $4.2\%$ to $5.7\%$, did the economy experience a movement along the Beveridge Curve or an outward shift? Explain.
+  \item \textbf{Growth-Rate Okun's Law:} Suppose trend potential GDP growth in an economy is $g_{Y^*} = 2.4\%$ per year and the Okun coefficient is $\beta = 2.0$. (a) If actual real GDP grows by $1.4\%$ over the year, by how many percentage points does the unemployment rate change ($\Delta u$)? (b) What real GDP growth rate is required to reduce the unemployment rate by $0.75\text{ percentage points}$ over a single year?
+  \item \textbf{CPS vs. CES Divergence:} During the early stages of an economic recovery, analysts observe that nonfarm payroll employment (CES) increases by $250{,}000$ jobs while the household survey unemployment rate (U-3) simultaneously rises from $5.2\%$ to $5.4\%$. Explain how both statistics can be accurate at the same time.
+\end{enumerate}
+
+\subsection*{Worked Solutions}
+\begin{enumerate}[leftmargin=1.5em, itemsep=6pt]
+  \item \textbf{BLS Classification and Rates:}
+  \begin{itemize}[leftmargin=1.2em, itemsep=2pt]
+    \item[(a)] $\text{LF} = E + U = 142.5 + 7.5 = 150.0\text{ million}$.
+    \item[(b)] $\text{LFPR} = \frac{\text{LF}}{P} \times 100 = \frac{150.0}{250.0} \times 100 = 60.00\%$.
+    \item[(c)] $\text{EPOP} = \frac{E}{P} \times 100 = \frac{142.5}{250.0} \times 100 = 57.00\%$.
+    \item[(d)] $\text{U-3} = \frac{U}{\text{LF}} \times 100 = \frac{7.5}{150.0} \times 100 = 5.00\%$.
+    \item[(e)] Note that discouraged workers ($1.5\text{M}$) are already counted inside $M = 4.0\text{M}$, so they are not added separately:
+    \[
+      \text{U-6} = \frac{U + M + PT_{\text{econ}}}{\text{LF} + M} \times 100 = \frac{7.5 + 4.0 + 6.0}{150.0 + 4.0} \times 100 = \frac{17.5}{154.0} \times 100 \approx 11.36\%.
+    \]
+  \end{itemize}
+
+  \item \textbf{Labor Force Exit Dynamics:}
+  When $1.5\text{ million}$ unemployed workers stop searching, they leave both $U$ and $\text{LF}$:
+  \[
+    U_{\text{new}} = 7.5 - 1.5 = 6.0\text{ million}, \qquad \text{LF}_{\text{new}} = 142.5 + 6.0 = 148.5\text{ million}
+  \]
+  \[
+    \text{U-3}_{\text{new}} = \frac{6.0}{148.5} \times 100 \approx 4.04\%
+  \]
+  Headline $\text{U-3}$ falls by $0.96\text{ percentage points}$ (from $5.00\%$ to $4.04\%$) even though zero jobs were created, because the numerator fell proportionally faster than the denominator. Meanwhile, $\text{U-6}$ remains unchanged at $11.36\%$ because those $1.5\text{ million}$ workers simply shifted from $U$ to $M$.
+
+  \item \textbf{Wage Floors and Steady-State Flows:}
+  \begin{itemize}[leftmargin=1.2em, itemsep=2pt]
+    \item[(a)] Raising a binding wage floor further above $(W/P)^*$ moves firms up along the downward-sloping labor demand curve $L_D$ (reducing employment) and attracts additional job seekers up along the upward-sloping labor supply curve $L_S$ (increasing labor force participation). Both effects widen the structural surplus $L_S - L_D$.
+    \item[(b)] Using the Markov steady-state flow equation with $s = 0.012$ and $f = 0.228$:
+    \[
+      u^* = \frac{s}{s + f} = \frac{0.012}{0.012 + 0.228} = \frac{0.012}{0.240} = 0.050 = 5.00\%.
+    \]
+  \end{itemize}
+
+  \item \textbf{Beveridge Curve and Okun's Law:}
+  \begin{itemize}[leftmargin=1.2em, itemsep=2pt]
+    \item[(a)] Cyclical unemployment is $u - u^* = 5.7\% - 4.2\% = +1.5\%$. Applying Okun's Law:
+    \[
+      \frac{Y - Y^*}{Y^*} = -2.0 \times 0.015 = -0.030 = -3.00\%
+    \]
+    \[
+      Y - Y^* = -0.030 \times \$28.0\text{ trillion} = -\$0.84\text{ trillion}\;(-\$840\text{ billion}).
+    \]
+    \item[(b)] A simultaneous drop in job vacancies and rise in unemployment represents a downward-right \textbf{movement along} the existing Beveridge Curve, driven by a negative aggregate demand shock rather than a structural deterioration in matching efficiency.
+  \end{itemize}
+
+  \item \textbf{Growth-Rate Okun's Law:}
+  \begin{itemize}[leftmargin=1.2em, itemsep=2pt]
+    \item[(a)] Using $g_Y - g_{Y^*} = -\beta \Delta u$ with $g_Y = 1.4\%$, $g_{Y^*} = 2.4\%$, and $\beta = 2.0$:
+    \[
+      1.4\% - 2.4\% = -2.0 \Delta u \implies -1.0\% = -2.0 \Delta u \implies \Delta u = +0.50\text{ percentage points}.
+    \]
+    Because output grew more slowly than potential trend growth, unemployment rises by $0.50\text{ percentage points}$.
+    \item[(b)] Setting $\Delta u = -0.75\%$:
+    \[
+      g_Y = g_{Y^*} - \beta \Delta u = 2.4\% - 2.0(-0.75\%) = 2.4\% + 1.5\% = 3.90\%.
+    \]
+  \end{itemize}
+
+  \item \textbf{CPS vs. CES Divergence:}
+  First, an improving job market frequently draws previously discouraged or marginally attached workers back into active job search ($\text{NILF} \to U$). Because these re-entrants are counted in $U$ before securing an offer, $\text{U-3} = U / (E + U)$ can temporarily tick upward even as hiring expands. Second, if existing workers take on second jobs, CES establishment payrolls record each new position while CPS household employment counts each individual only once.
+\end{enumerate}
+
+\end{document}
