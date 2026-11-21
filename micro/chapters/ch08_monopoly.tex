@@ -7,13 +7,13 @@
 
 \title{\Huge\bfseries\color{SlateBlue} Chapter 8: Monopoly, Market Power, and Price Discrimination}
 \author{\large Principles of Microeconomics Curriculum}
-\date{2026}
+\date{Spring 2027}
 \maketitle
 
 \thispagestyle{plain}
 
 \begin{abstract}
-This chapter provides a rigorous, pedagogical treatment of Chapter 8: Monopoly, Market Power, and Price Discrimination, benchmarked to standard principles curriculum.
+This chapter develops the economic theory of pure monopoly, market power, and price discrimination aligned with the Eric Chiang \emph{Microeconomics} principles benchmark. Students examine how barriers to entry create and sustain monopolies, why a single-price monopolist's marginal revenue lies strictly below market demand, how profit maximization ($MR = MC$) reduces output and creates deadweight loss relative to perfect competition, how regulators address natural monopolies, and how first-, second-, and third-degree price discrimination reshape profits and social welfare.
 \end{abstract}
 
 \tableofcontents
@@ -21,272 +21,442 @@ This chapter provides a rigorous, pedagogical treatment of Chapter 8: Monopoly, 
 \hrule
 \vspace{1.5em}
 
-% -----------------------------------------------------------------------------
-% Section 8.1: Barriers to Entry and Monopoly Revenue Mechanics
-% -----------------------------------------------------------------------------
 \section{Barriers to Entry and Monopoly Revenue Mechanics}
 
-\subsection*{1. Conceptual Introduction}
-At the opposite extreme from perfect competition stands a \textbf{pure monopoly}: a market with a single seller offering a unique product with no close substitutes, protected from new rivals by insurmountable \textbf{barriers to entry}. Without entry barriers, high profits would quickly attract competitors and erode the monopoly. Entry barriers arise from four primary sources: (1) \textbf{exclusive control of a key resource}, (2) \textbf{government-created legal monopolies} such as patents and copyrights, (3) \textbf{network effects} (where a platform grows more valuable as more users join), and (4) \textbf{natural monopoly}, where massive fixed infrastructure costs cause Long-Run Average Total Cost ($LRATC$) to decline continuously across the entire market demand, making one large firm cheaper than two smaller competitors.
+\subsection*{Conceptual Introduction}
+Imagine being the only coffee kiosk allowed inside an airport terminal after security, or the only pharmaceutical company legally permitted to manufacture a newly approved medication. At the opposite extreme from perfect competition stands a \textbf{pure monopoly}: a market with a single seller offering a unique product with no close substitutes, protected from new rivals by insurmountable \textbf{barriers to entry}. Without entry barriers, high economic profits would quickly attract competing firms and erode the monopoly's market power.
 
-Because a single-price monopolist \emph{is} the entire industry, it faces the downward-sloping market demand curve. Unlike a competitive price taker, a monopolist cannot sell extra units at a fixed price: to sell one more unit, it must lower its price—and under single pricing, that lower price applies to \emph{all} units sold. Every additional sale therefore triggers two effects on revenue: an \textbf{output effect} ($+P$, gaining revenue from the new unit) and a \textbf{price effect} ($-Q \cdot |\Delta P|$, losing revenue on all prior units that now sell for less). Consequently, a monopolist's \textbf{Marginal Revenue ($MR$) always lies strictly below its demand curve ($MR < P$)}.
+Barriers to entry arise from four primary sources:
+\begin{enumerate}
+    \item \textbf{Exclusive control of a key resource:} A single firm owns or controls an essential input needed for production.
+    \item \textbf{Government-created legal monopolies:} Patents, copyrights, and exclusive public franchises legally restrict competitors from copying a product or serving a territory.
+    \item \textbf{Network effects:} A platform or service becomes more valuable to each user as more people join, making it difficult for smaller entrants to draw users away.
+    \item \textbf{Natural monopoly (economies of scale):} Massive fixed infrastructure costs cause Long-Run Average Total Cost ($LRATC$) to decline continuously across the entire relevant range of market demand, so one large firm can supply the entire market at lower average cost than two or more smaller competitors.
+\end{enumerate}
 
-\subsection*{2. Visual Representation}
-Figure~\ref{fig:monopoly_mr_demand} illustrates why a linear demand curve $P = a - bQ$ generates a Marginal Revenue curve $MR = a - 2bQ$ that starts at the same vertical choke price $a$ but falls twice as steeply, crossing the horizontal axis at half the choke quantity.
+Because a single-price monopolist \emph{is} the entire industry, it faces the downward-sloping market demand curve rather than a horizontal price line. Unlike a competitive price taker, a monopolist cannot sell extra units at a fixed market price. To sell one additional unit, it must lower its price---and under single pricing, that lower price applies to \emph{all} units sold. Every additional sale therefore triggers two opposing effects on Total Revenue ($TR = P \times Q$):
+\begin{itemize}
+    \item \textbf{Output effect ($+P$):} Selling one more unit adds the new unit's price to total revenue.
+    \item \textbf{Price effect ($-Q \cdot |\Delta P|$):} Lowering the price reduces revenue earned on all previous units that could have been sold at the higher price.
+\end{itemize}
+Because the price effect is negative for every unit beyond the first, a single-price monopolist's \textbf{Marginal Revenue ($MR$) always lies strictly below its demand curve ($MR < P$)} for all positive quantities ($Q > 0$).
+
+\begin{examplecase}{Bring It Home: Regional Electric Grids and Pharmaceutical Patents}
+Two everyday industries illustrate why societies both regulate and intentionally create monopolies. A municipal water or electric distribution grid exemplifies a \textbf{natural monopoly}: stringing two competing sets of high-voltage power lines or water mains down every neighborhood street would waste billions in duplicate fixed capital, so one regulated utility serves the region at lower average cost. By contrast, a biotech firm granted a 20-year U.S.\ utility patent on a breakthrough therapy enjoys a temporary \textbf{legal monopoly}. Policymakers accept higher patent-protected prices during the patent window as a deliberate trade-off to incentivize risky research and development that might never occur if rivals could copy the formula immediately.
+\end{examplecase}
+
+\subsection*{Visual Representation}
+Figure~\ref{fig:monopoly_mr_demand} illustrates why a linear inverse demand curve $P = a - bQ$ generates a Marginal Revenue curve $MR = a - 2bQ$ that starts at the same vertical choke price $a$ but falls twice as steeply, crossing the horizontal axis at exactly half the choke quantity.
 
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[scale=1.05]
     % Axes
-    \draw[->, thick] (0,0) -- (6.0,0) node[below] {Quantity ($Q$)};
-    \draw[->, thick] (0,0) -- (0,5.2) node[left] {Price / Revenue (\$)};
-    \node[below left] at (0,0) {$0$};
+    \draw[econ axis] (0,0) -- (6.0,0) node[right, font=\small] {Quantity ($Q$)};
+    \draw[econ axis] (0,0) -- (0,5.6) node[above, font=\small] {Price, $MR$ (\$/unit)};
+    \node[below left, font=\small] at (0,0) {$0$};
 
-    % Demand: P = 100 - 2Q -> (0,5) to (5,0)
-    \draw[very thick, color=blue!80!black] (0,5.0) node[left] {$\$100$} -- (5.0,0) node[below] {$50$};
-    \node[right, color=blue!80!black] at (3.2,2.1) {$D$ ($P = 100 - 2Q$)};
+    % Demand: P = 100 - 2Q -> (0,5) to (5,0) [1 unit x = 10 Q, 1 unit y = $20]
+    \draw[very thick, color=CourseBlue] (0,5.0) node[left, font=\small, color=SlateBlue] {$\$100$} -- (5.0,0) node[below, font=\small, color=SlateBlue] {$50$};
+    \node[above right, font=\small\bfseries, color=CourseBlue] at (3.25,1.8) {$D$ ($P = 100 - 2Q$)};
 
     % MR: P = 100 - 4Q -> (0,5) to (2.5,0)
-    \draw[very thick, color=purple] (0,5.0) -- (2.5,0) node[below] {$25$};
-    \node[left, color=purple] at (1.3,2.2) {$MR = 100 - 4Q$};
+    \draw[very thick, color=CoursePurple] (0,5.0) -- (2.5,0) node[below, font=\small, color=SlateBlue] {$25$};
+    \node[font=\footnotesize\bfseries, color=CoursePurple, align=left] at (0.85,1.35) {$MR =$\\$100 - 4Q$};
 
-    % Elastic vs Inelastic annotation
-    \draw[dashed, gray] (2.5,0) -- (2.5,2.5);
-    \node[font=\scriptsize\bfseries, color=ForestGreen] at (1.25,4.3) {Elastic ($MR > 0$)};
-    \node[font=\scriptsize\bfseries, color=Terracotta] at (3.75,0.6) {Inelastic ($MR < 0$)};
+    % Unit-elastic midpoint: Q = 25 (x=2.5), P = $50 (y=2.5)
+    \draw[dashed, color=SlateBlue!70] (0,2.5) node[left, font=\small, color=SlateBlue] {$\$50$} -- (2.5,2.5) -- (2.5,0);
+    \filldraw[color=SlateBlue] (2.5,2.5) circle (2.2pt);
+    \node[above right, font=\footnotesize, color=SlateBlue] at (2.55,2.6) {Unit elastic ($|\varepsilon_d| = 1$)};
+
+    % Elastic vs Inelastic braces cleanly below x-axis
+    \draw[decorate, decoration={brace, amplitude=5pt, mirror}, thick, color=CourseTeal] (0.05,-0.65) -- (2.45,-0.65)
+        node[midway, below=6pt, font=\scriptsize\bfseries, color=CourseTeal] {Elastic ($|\varepsilon_d| > 1,\, MR > 0$)};
+    \draw[decorate, decoration={brace, amplitude=5pt, mirror}, thick, color=CourseOrange] (2.55,-0.65) -- (4.95,-0.65)
+        node[midway, below=6pt, font=\scriptsize\bfseries, color=CourseOrange] {Inelastic ($|\varepsilon_d| < 1,\, MR < 0$)};
 \end{tikzpicture}
-\caption{Monopoly Demand and Marginal Revenue. For linear inverse demand $P = 100 - 2Q$, Marginal Revenue has the same vertical intercept ($\$100$) and twice the downward slope ($MR = 100 - 4Q$). A profit-maximizing monopolist always operates on the elastic upper half where $MR > 0$.}
+\caption{Monopoly Demand and Marginal Revenue. For linear inverse demand $P = 100 - 2Q$, Marginal Revenue shares the vertical choke intercept ($\$100$) and falls twice as steeply ($MR = 100 - 4Q$), reaching zero at the midpoint quantity $Q = 25$ where demand is unit elastic ($P = \$50$).}
 \label{fig:monopoly_mr_demand}
 \end{figure}
 
-\subsection*{3. Real-World Application: Regional Electric Utilities and Pharmaceutical Patents}
-A municipal water or electric distribution grid exemplifies a \textbf{natural monopoly}: stringing two competing sets of high-voltage power lines down every neighborhood street would waste billions in duplicate fixed capital, so one regulated utility serves the region at lower average cost. By contrast, a biotech firm holding a 20-year patent on a breakthrough gene therapy enjoys a \textbf{legal monopoly} designed to reward risky R\&D investments.
+\begin{tcolorbox}[colback=CourseAmber!10!white,colframe=CourseOrange,title=\textbf{Clear It Up: Why a Monopolist Never Operates on the Inelastic Portion of Demand}]
+Students often assume a monopolist wants demand to be inelastic so it can raise prices freely. In fact, a profit-maximizing monopolist with non-negative marginal cost ($MC \ge 0$) \textbf{never} produces in the inelastic range ($Q > 25$ in Figure~\ref{fig:monopoly_mr_demand}). In that region, $MR < 0$: cutting output by one unit both \emph{increases} total revenue and \emph{reduces} total cost, strictly raising profit until the firm moves back into the elastic upper half of demand where $MR > 0$.
+\end{tcolorbox}
 
-\subsection*{4. Mathematical Foundation (Algebra Level)}
-Given a linear inverse demand curve $P(Q) = a - bQ$, Total Revenue is $TR = (a - bQ)Q = aQ - bQ^2$, and Marginal Revenue has twice the slope:
+\subsection*{Mathematical Foundation (Algebra Level)}
+Assuming a linear inverse market demand curve $P(Q) = a - bQ$ (with $a > 0$ and $b > 0$) and single pricing across all buyers, Total Revenue is $TR = P \cdot Q = aQ - bQ^2$, and Marginal Revenue shares the intercept $a$ with twice the slope:
 \begin{equation}
 MR(Q) = a - 2bQ
 \end{equation}
+Setting $MR(Q) = 0$ shows that total revenue is maximized at the midpoint quantity $Q = \frac{a}{2b}$, which is exactly half the horizontal choke quantity $Q_{\text{choke}} = \frac{a}{b}$.
 
-\noindent\textbf{Worked Problem:}
-A patented medical diagnostic device faces inverse market demand $P = 120 - 3Q$, where $P$ is price in dollars and $Q$ is units sold per week.
+\begin{tcolorbox}[colback=CourseTeal!6!white,colframe=CourseTeal,title=\textbf{Work It Out: Marginal Revenue, Output Effect, and Price Effect}]
+\noindent\textbf{Problem:}
+A patented medical diagnostic device faces linear inverse market demand $P = 120 - 3Q$, where $P$ is price in dollars and $Q$ is units sold per week.
 \begin{enumerate}
     \item Write the Marginal Revenue equation $MR(Q)$.
-    \item Calculate $P$, $TR$, and $MR$ when output increases from $Q = 10$ to $Q = 11$ units, separating the output effect from the price effect.
+    \item Complete a discrete revenue schedule for $Q = 9, 10, 11, 12$ and decompose the revenue change from $Q = 10$ to $Q = 11$ into its output effect and price effect.
 \end{enumerate}
 
-\noindent\textbf{Step-by-Step Breakdown:}
+\noindent\textbf{Step-by-Step Solution:}
 \begin{enumerate}
     \item \textbf{Write the Marginal Revenue Equation:}
-    Double the slope coefficient ($2 \times 3 = 6$):
+    Keep the vertical intercept ($120$) and double the slope coefficient ($2 \times 3 = 6$):
     \[
     MR(Q) = \mathbf{120 - 6Q}
     \]
 
-    \item \textbf{Compare $TR$ at $Q = 10$ vs. $Q = 11$:}
+    \item \textbf{Compute Price, Total Revenue, and Discrete Marginal Revenue ($\Delta TR$):}
+    \begin{center}
+    \small
+    \begin{tabular}{@{}rrrr@{}}
+    \toprule
+    Quantity ($Q$) & Price ($P = 120 - 3Q$) & Total Revenue ($TR = P \times Q$) & Discrete $MR$ ($\Delta TR$) \\
+    \midrule
+    $9$  & $\$93$ & $\$837$   & --- \\
+    $10$ & $\$90$ & $\$900$   & $+\$63$ \\
+    $11$ & $\$87$ & $\$957$   & $+\$57$ \\
+    $12$ & $\$84$ & $\$1{,}008$ & $+\$51$ \\
+    \bottomrule
+    \end{tabular}
+    \end{center}
+    Moving from $Q = 10$ to $Q = 11$ increases Total Revenue by $\Delta TR = \$957 - \$900 = \mathbf{+\$57}$ (matching the continuous formula evaluated at the midpoint $Q = 10.5$: $MR(10.5) = 120 - 6(10.5) = \$57$). This net gain equals:
     \begin{itemize}
-        \item At $Q = 10$: $P_{10} = 120 - 3(10) = \$90 \implies TR_{10} = \$90 \times 10 = \$900$.
-        \item At $Q = 11$: $P_{11} = 120 - 3(11) = \$87 \implies TR_{11} = \$87 \times 11 = \$957$.
+        \item \textbf{Output effect:} $+\$87$ earned from selling the 11th unit.
+        \item \textbf{Price effect:} $-10\text{ prior units} \times \$3\text{ discount} = -\$30$ lost on earlier units.
+        \item \textbf{Net Marginal Revenue:} $\$87 - \$30 = \mathbf{+\$57}$.
     \end{itemize}
-    Discrete marginal revenue is $\Delta TR = \$957 - \$900 = \mathbf{+\$57}$, equal to the \textbf{output effect} ($+\$87$ from the 11th unit) minus the \textbf{price effect} ($10\text{ prior units} \times \$3\text{ discount} = -\$30$).
 \end{enumerate}
-\textbf{Conclusion:} Because selling the 11th unit requires discounting all 10 prior units by $\$3$, Marginal Revenue ($\$57$) is $\$30$ lower than the market price ($\$87$).
+\textbf{Takeaway:} Because selling the 11th unit requires discounting all 10 prior units by $\$3$, discrete Marginal Revenue ($\$57$) sits $\$30$ below the market price ($\$87$).
+\end{tcolorbox}
 
-% -----------------------------------------------------------------------------
-% Section 8.2: Monopoly Profit Maximization and Deadweight Loss
-% -----------------------------------------------------------------------------
+\begin{tcolorbox}[colback=CourseBlue!6!white,colframe=CourseBlue,title=\textbf{Optional Advanced Calculus: Deriving the Output and Price Effects}]
+\small
+\emph{Note for Economics Majors and Quantitative Students:}
+For any differentiable inverse demand function $P(Q)$ with $P'(Q) < 0$, Total Revenue is $TR(Q) = P(Q)\cdot Q$. Differentiating with respect to $Q$ via the product rule yields:
+\[
+MR(Q) = \frac{d(TR)}{dQ} = \underbrace{P(Q)}_{\text{Output effect}\,(>0)} + \underbrace{Q\,\frac{dP}{dQ}}_{\text{Price effect}\,(<0)} < P(Q) \quad \text{for all } Q > 0.
+\]
+For the linear case $P(Q) = a - bQ$, we have $\frac{dP}{dQ} = -b$, so $MR(Q) = (a - bQ) + Q(-b) = a - 2bQ$.
+\end{tcolorbox}
+
 \section{Monopoly Profit Maximization and Deadweight Loss}
 
-\subsection*{1. Conceptual Introduction}
-Like every firm, a single-price monopolist maximizes economic profit by following a strict two-step rule:
+\subsection*{Conceptual Introduction}
+Like every profit-maximizing firm, a single-price monopolist expands output as long as the extra revenue from an additional unit exceeds its extra cost ($MR > MC$) and stops when the two are equal. Finding the monopoly outcome therefore follows a strict two-step rule:
 \begin{enumerate}
     \item \textbf{Choose Quantity ($Q_M$):} Produce the output level where Marginal Revenue equals Marginal Cost ($MR = MC$).
     \item \textbf{Choose Price ($P_M$):} Move vertically up from $Q_M$ to the \textbf{demand curve} to read the highest price consumers are willing to pay for that quantity.
 \end{enumerate}
-Because $MR < P$, setting $MR = MC$ guarantees that the monopolist charges a price strictly above marginal cost ($P_M > MC$) and restricts output strictly below the socially efficient competitive level ($Q_M < Q_C$). Those missing trades—where consumers value the good at more than it costs to make ($MB > MC$), yet the monopolist refuses to produce in order to keep prices high—generate permanent \textbf{Deadweight Loss ($DWL$)}.
+Because $MR < P$, setting $MR = MC$ guarantees that the monopolist charges a price strictly above marginal cost ($P_M > MC$) and restricts output strictly below the socially efficient competitive quantity ($Q_M < Q_C$, where $P = MC$). Those missing units between $Q_M$ and $Q_C$ represent mutually beneficial trades where consumers value the good more than it costs society to produce ($MB > MC$), yet the monopolist withholds them to keep prices elevated. The lost surplus from these unproduced units is \textbf{Deadweight Loss ($DWL$)}.
 
-\subsection*{2. Visual Representation}
-Figure~\ref{fig:monopoly_welfare} shows the monopolist's profit-maximizing choice $(Q_M, P_M)$, the shaded green economic profit rectangle, and the orange deadweight loss triangle relative to the competitive benchmark $(Q_C, P_C)$.
+When a firm is a \textbf{natural monopoly}, breaking it into smaller competitors would push everyone up onto higher average costs. Policymakers instead rely on public regulation, facing a classic policy dilemma:
+\begin{itemize}
+    \item \textbf{Marginal-Cost Pricing ($P = MC$):} Restores allocative efficiency ($DWL = \$0$), but because $LRATC$ is still falling, $MC < ATC$---so the utility suffers an economic loss and requires a taxpayer subsidy to stay open.
+    \item \textbf{Average-Cost (Fair-Return) Pricing ($P = ATC$):} Allows the utility to break even ($\pi = \$0$) without a subsidy while cutting prices and shrinking deadweight loss substantially compared to unregulated monopoly.
+\end{itemize}
 
-\begin{tcolorbox}[colback=yellow!10!white,colframe=orange!80!black,title=\textbf{Clear It Up: Never Read the Monopoly Price from the $MR = MC$ Intersection!}]
-A classic exam mistake is reading the vertical height of the $MR = MC$ intersection as the monopoly price. The $MR = MC$ crossing \emph{only} determines the profit-maximizing \textbf{quantity} ($Q_M$). Once you find $Q_M$ on the horizontal axis, you must travel straight up to the \textbf{Demand curve} to find the price ($P_M$) consumers actually pay!
+\begin{examplecase}{Bring It Home: Hospital MRI Scanners and Natural Monopoly Regulation}
+Consider a hypothetical regional hospital operating an advanced MRI scanner with $\$900{,}000$ in annual fixed equipment and staffing costs and a constant $\$100$ marginal cost per scan. At $3{,}000$ scans per year, Average Total Cost is $\$900{,}000 / 3{,}000 + \$100 = \$400$ per scan; at $9{,}000$ scans per year, $ATC$ drops to $\$900{,}000 / 9{,}000 + \$100 = \$200$ per scan. Spreading large fixed costs over higher volume continuously lowers $ATC$---the hallmark of natural monopoly. If the hospital faces no nearby rival and prices where $MR = MC$, patients face a markup well above $\$100$ and medically valuable scans go unperformed. Conversely, forcing the hospital to charge marginal cost ($\$100$) would leave the entire $\$900{,}000$ fixed cost uncovered, illustrating why regulators often use fair-return pricing ($P = ATC$) or two-part tariffs instead.
+\end{examplecase}
+
+\subsection*{Visual Representation}
+Figure~\ref{fig:monopoly_welfare} plots the single-price monopoly equilibrium $(Q_M, P_M)$ against the competitive benchmark $(Q_C, P_C)$ under constant marginal cost $MC = ATC = \$20$, decomposing total potential social surplus into Consumer Surplus, Monopoly Profit, and Deadweight Loss.
+
+\begin{tcolorbox}[colback=CourseAmber!10!white,colframe=CourseOrange,title=\textbf{Clear It Up: Two Classic Monopoly Misconceptions}]
+\begin{enumerate}
+    \item \textbf{Never read the monopoly price from the $MR = MC$ crossing:} The $MR = MC$ intersection \emph{only} determines the profit-maximizing \textbf{quantity} ($Q_M$). Once you locate $Q_M$ on the horizontal axis, move straight up to the \textbf{Demand curve} to read the price ($P_M$) buyers actually pay.
+    \item \textbf{Monopoly does not guarantee positive economic profit:} Being the sole seller lets a firm choose the best point on the demand curve, not ignore costs. If market demand is weak and $P_M < ATC$ at $Q_M$, even a pure monopolist suffers an economic loss (and shuts down in the short run if $P_M < AVC$).
+\end{enumerate}
 \end{tcolorbox}
 
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[scale=1.05]
+    % Shaded welfare regions drawn FIRST so lines stay crisp
+    % Consumer Surplus: (0,3) -- (0,5) -- (2,3)
+    \fill[CourseBlue!15] (0,3.0) -- (0,5.0) -- (2.0,3.0) -- cycle;
+    % Monopoly Profit Box: (0,1) to (2,3)
+    \fill[CourseTeal!20] (0,1.0) rectangle (2.0,3.0);
+    % DWL Triangle: (2,1) -- (2,3) -- (4,1)
+    \fill[CourseOrange!28] (2.0,1.0) -- (2.0,3.0) -- (4.0,1.0) -- cycle;
+
     % Axes
-    \draw[->, thick] (0,0) -- (6.0,0) node[below] {Quantity ($Q$)};
-    \draw[->, thick] (0,0) -- (0,5.2) node[left] {Price / Cost (\$)};
-    \node[below left] at (0,0) {$0$};
+    \draw[econ axis] (0,0) -- (6.2,0) node[right, font=\small] {Quantity ($Q$)};
+    \draw[econ axis] (0,0) -- (0,5.6) node[above, font=\small] {Price, Cost (\$/unit)};
+    \node[below left, font=\small] at (0,0) {$0$};
 
     % Demand: P = 100 - 2Q -> (0,5) to (5,0)
-    \draw[very thick, color=blue!80!black] (0,5.0) -- (5.0,0) node[below right] {$D$};
+    \draw[very thick, color=CourseBlue] (0,5.0) node[left, font=\small, color=SlateBlue] {$\$100$} -- (5.0,0) node[below, font=\small, color=SlateBlue] {$50$};
+    \node[above right, font=\small\bfseries, color=CourseBlue] at (4.9,0.25) {$D$};
+
     % MR: P = 100 - 4Q -> (0,5) to (2.5,0)
-    \draw[very thick, color=purple] (0,5.0) -- (2.5,0) node[below] {$MR$};
+    \draw[very thick, color=CoursePurple] (0,5.0) -- (2.5,0);
+    \node[above right, font=\small\bfseries, color=CoursePurple] at (2.42,0.18) {$MR$};
+
     % Constant MC = ATC = $20 -> y = 1.0
-    \draw[very thick, color=Terracotta] (0,1.0) -- (5.5,1.0) node[right] {$MC = ATC$};
+    \draw[very thick, color=Terracotta] (0,1.0) -- (5.6,1.0) node[right, font=\small\bfseries, color=Terracotta] {$MC = ATC$};
+    \node[left, font=\small, color=SlateBlue] at (0,1.0) {$P_C = \$20$};
 
-    % Monopoly Q_M = 20 (x=2.0), P_M = $60 (y=3.0)
-    \draw[dashed] (0,3.0) node[left] {$P_M = \$60$} -- (2.0,3.0);
-    \draw[dashed] (2.0,0) node[below] {$Q_M = 20$} -- (2.0,3.0);
-    \filldraw[black] (2.0,3.0) circle (2.2pt);
+    % Orthogonal equilibrium drop-lines
+    \draw[dashed, color=SlateBlue!80] (0,3.0) node[left, font=\small, color=SlateBlue] {$P_M = \$60$} -- (2.0,3.0) -- (2.0,0) node[below, font=\small, color=SlateBlue] {$Q_M = 20$};
+    \draw[dashed, color=SlateBlue!70] (4.0,0) node[below, font=\small, color=SlateBlue] {$Q_C = 40$} -- (4.0,1.0);
 
-    % Competitive Q_C = 40 (x=4.0), P_C = $20 (y=1.0)
-    \draw[dashed, gray] (4.0,0) node[below, black] {$Q_C = 40$} -- (4.0,1.0);
-    \node[left] at (0,1.0) {$\$20$};
+    % Key equilibrium markers
+    \filldraw[color=SlateBlue] (2.0,3.0) circle (2.3pt) node[above right, font=\footnotesize\bfseries, color=SlateBlue] {$E_M$};
+    \filldraw[fill=white, draw=SlateBlue, thick] (2.0,1.0) circle (2.3pt);
+    \filldraw[color=SlateBlue] (4.0,1.0) circle (2.3pt) node[above right, font=\footnotesize\bfseries, color=SlateBlue] {$E_C$};
 
-    % Monopoly Profit Box: (0,1) to (2,3)
-    \fill[ForestGreen!25, opacity=0.8] (0,1.0) rectangle (2.0,3.0);
-    \node[font=\footnotesize\bfseries, color=ForestGreen!90!black] at (1.0,2.0) {Profit = $\$800$};
+    % Clean non-overlapping region labels
+    \node[font=\scriptsize\bfseries, color=CourseBlue!90!black, align=left] (cs) at (3.65,4.25) {Consumer Surplus\\($CS_M = \$400$)};
+    \draw[->, >=Stealth, thin, color=CourseBlue] (cs.west) -- (1.05,3.55);
 
-    % DWL Triangle: (2,1) to (2,3) to (4,1)
-    \fill[orange!40, opacity=0.85] (2.0,1.0) -- (2.0,3.0) -- (4.0,1.0) -- cycle;
-    \node[font=\footnotesize\bfseries] at (2.65,1.65) {DWL = $\$400$};
+    \node[font=\scriptsize\bfseries, color=ForestGreen!90!black, align=center] at (0.78,1.75) {Profit\\$\$800$};
+
+    \node[font=\scriptsize\bfseries, color=CourseOrange!90!black, align=left] (dwl) at (4.45,2.55) {Deadweight Loss\\($DWL = \$400$)};
+    \draw[->, >=Stealth, thin, color=CourseOrange] (dwl.south west) -- (2.72,1.62);
 \end{tikzpicture}
-\caption{Monopoly Profit and Deadweight Loss. Equating $MR = MC$ sets output at $Q_M = 20$, and reading up to the demand curve gives $P_M = \$60$. The monopolist earns $\$800$ in profit (green rectangle) while destroying $\$400$ in social surplus (orange triangle).}
+\caption{Monopoly Profit and Deadweight Loss. Equating $MR = MC$ (open circle) sets output at $Q_M = 20$, and reading up to demand gives $P_M = \$60$ ($E_M$). Relative to the competitive benchmark $E_C$ ($Q_C = 40, P_C = \$20$), the monopolist captures $\$800$ in economic profit (teal rectangle), leaves $\$400$ in Consumer Surplus (blue triangle), and creates $\$400$ in Deadweight Loss (orange triangle).}
 \label{fig:monopoly_welfare}
 \end{figure}
 
-\subsection*{3. Real-World Application: Hospital Scanner Pricing and Scale Economies}
-Consider a regional hospital operating an advanced MRI scanner with $\$900{,}000$ in annual fixed equipment and staffing costs and $\$100$ marginal cost per scan. At $3{,}000$ scans per year, Average Total Cost is $\$900{,}000/3{,}000 + \$100 = \$400$ per scan; at $9{,}000$ scans, $ATC$ drops to $\$200$ per scan. Spreading fixed costs lowers $ATC$, yet if the hospital faces few local substitutes, pricing where $MR = MC$ still generates a markup above marginal cost and deadweight loss from deferred scans.
-
-\subsection*{4. Mathematical Foundation (Algebra Level)}
-With linear inverse demand $P = a - bQ$ and constant marginal cost $MC = c$ (and zero fixed cost):
+\subsection*{Mathematical Foundation (Algebra Level)}
+Assuming linear inverse demand $P = a - bQ$, constant marginal cost $MC = c$ (with $0 \le c < a$), and zero fixed cost ($ATC = MC = c$):
 \begin{equation}
-MR = MC \implies a - 2bQ_M = c \implies Q_M = \frac{a - c}{2b}, \qquad DWL = \frac{1}{2}(Q_C - Q_M)(P_M - MC)
+MR = MC \implies a - 2bQ_M = c \implies Q_M = \frac{a - c}{2b}, \qquad Q_C = \frac{a - c}{b} = 2Q_M
+\end{equation}
+Notice that with linear demand and constant marginal cost, a single-price monopolist always cuts output to \emph{exactly half} of the competitive output. The Harberger deadweight loss triangle is:
+\begin{equation}
+DWL = \frac{1}{2}(Q_C - Q_M)(P_M - MC)
 \end{equation}
 
-\noindent\textbf{Worked Problem:}
-Using the linear monopoly model plotted in Figure~\ref{fig:monopoly_welfare}, suppose inverse demand is $P = 100 - 2Q$, Marginal Revenue is $MR = 100 - 4Q$, and Marginal Cost is constant at $MC = \$20$ (with zero fixed cost). Compute $Q_M$, $P_M$, monopoly profit $\pi_M$, competitive output $Q_C$, and Deadweight Loss ($DWL$).
+\begin{tcolorbox}[colback=CourseTeal!6!white,colframe=CourseTeal,title=\textbf{Work It Out: Monopoly Equilibrium, Profit, Surplus, and Deadweight Loss}]
+\noindent\textbf{Problem:}
+Using the linear monopoly model plotted in Figure~\ref{fig:monopoly_welfare}, suppose inverse market demand is $P = 100 - 2Q$, Marginal Revenue is $MR = 100 - 4Q$, and Marginal Cost is constant at $MC = \$20$ (with zero fixed cost, so $ATC = \$20$). Compute $Q_M$, $P_M$, monopoly economic profit $\pi_M$, monopoly Consumer Surplus $CS_M$, the competitive benchmark $(Q_C, P_C, CS_C)$, and Deadweight Loss ($DWL$).
 
-\noindent\textbf{Step-by-Step Breakdown:}
+\noindent\textbf{Step-by-Step Solution:}
 \begin{enumerate}
     \item \textbf{Solve for Monopoly Output ($Q_M$) and Price ($P_M$):}
     Set $MR = MC$:
     \[
     100 - 4Q_M = 20 \implies 4Q_M = 80 \implies Q_M = \mathbf{20\text{ units}}
     \]
-    Plug $Q_M = 20$ into the demand curve:
+    Substitute $Q_M = 20$ into the inverse demand curve:
     \[
     P_M = 100 - 2(20) = \mathbf{\$60}
     \]
 
-    \item \textbf{Compute Monopoly Economic Profit ($\pi_M$):}
+    \item \textbf{Compute Monopoly Profit ($\pi_M$) and Consumer Surplus ($CS_M$):}
     \[
-    \pi_M = (P_M - MC) \times Q_M = (\$60 - \$20) \times 20 = \$40 \times 20 = \mathbf{\$800}
+    \pi_M = (P_M - ATC) \times Q_M = (\$60 - \$20) \times 20 = \$40 \times 20 = \mathbf{\$800}
+    \]
+    \[
+    CS_M = \frac{1}{2} \times Q_M \times (a - P_M) = \frac{1}{2} \times 20 \times (\$100 - \$60) = \mathbf{\$400}
     \]
 
-    \item \textbf{Find the Competitive Benchmark ($Q_C$) and Deadweight Loss ($DWL$):}
+    \item \textbf{Find the Competitive Benchmark ($Q_C, P_C, CS_C$) and Deadweight Loss ($DWL$):}
     Set $P = MC$:
     \[
-    100 - 2Q_C = 20 \implies 2Q_C = 80 \implies Q_C = \mathbf{40\text{ units}}
+    100 - 2Q_C = 20 \implies 2Q_C = 80 \implies Q_C = \mathbf{40\text{ units}}, \qquad P_C = \mathbf{\$20}
     \]
-    Compute the Harberger deadweight loss triangle:
+    Under constant $MC = \$20$, competitive Producer Surplus is $\$0$, so total competitive surplus equals Consumer Surplus:
+    \[
+    CS_C = \frac{1}{2} \times 40 \times (\$100 - \$20) = \mathbf{\$1{,}600}
+    \]
+    Compute the Deadweight Loss triangle:
     \[
     DWL = \frac{1}{2} \times (40 - 20) \times (\$60 - \$20) = \frac{1}{2} \times 20 \times \$40 = \mathbf{\$400}
     \]
 \end{enumerate}
-\textbf{Conclusion:} The monopolist cuts output in half (from $40$ to $20$), triples the price (from $\$20$ to $\$60$), earns $\$800$ in profit, and creates $\$400$ in deadweight loss.
+\textbf{Surplus Conservation Check:} $CS_M + \pi_M + DWL = \$400 + \$800 + \$400 = \$1{,}600 = CS_C$. Compared to perfect competition, monopoly cuts output in half (from $40$ to $20$), triples the price (from $\$20$ to $\$60$), transfers $\$800$ of consumer surplus into monopoly profit, and destroys $\$400$ in deadweight loss.
+\end{tcolorbox}
 
-% -----------------------------------------------------------------------------
-% Section 8.3: Price Discrimination and Welfare
-% -----------------------------------------------------------------------------
+\begin{tcolorbox}[colback=CourseBlue!6!white,colframe=CourseBlue,title=\textbf{Optional Advanced Calculus: Profit Optimization and Welfare Integrals}]
+\small
+\emph{Note for Economics Majors and Quantitative Students:}
+The monopolist solves $\max_{Q \ge 0} \pi(Q) = TR(Q) - TC(Q)$. At an interior maximum:
+\[
+\text{FOC: } \pi'(Q) = MR(Q) - MC(Q) = 0 \implies MR(Q_M) = MC(Q_M), \qquad \text{SOC: } \pi''(Q_M) = MR'(Q_M) - MC'(Q_M) < 0.
+\]
+The second-order condition requires $MC$ to intersect $MR$ from below. In our linear example, $\pi''(Q) = -4 - 0 = -4 < 0$, confirming a unique global maximum. Total deadweight loss is the definite integral of net marginal social benefit over the unproduced units:
+\[
+DWL = \int_{Q_M}^{Q_C} \big[P(Q) - MC(Q)\big]\,dQ = \int_{20}^{40} \big[(100 - 2Q) - 20\big]\,dQ = \Big[80Q - Q^2\Big]_{20}^{40} = 1{,}600 - 1{,}200 = \$400.
+\]
+\end{tcolorbox}
+
 \section{Price Discrimination and Market Power}
 
-\subsection*{1. Conceptual Introduction}
-So far, we have assumed the monopolist charges every customer the exact same price. Yet firms with market power can often earn far higher profits by practicing \textbf{price discrimination}—selling the exact same product to different customers at different prices not justified by cost differences. Successful price discrimination requires three conditions: (1) the firm must possess \textbf{market power} (a downward-sloping demand curve), (2) the firm must be able to segment buyers by \textbf{willingness to pay (elasticity)}, and (3) the firm must prevent \textbf{arbitrage} (resale between low-price and high-price buyers).
+\subsection*{Conceptual Introduction}
+So far, we have assumed the monopolist charges every buyer the exact same price. Yet firms with market power can often earn higher profits---and sometimes expand market access---by practicing \textbf{price discrimination}: selling the exact same good or service to different customers at different prices not justified by cost differences. Successful price discrimination requires three conditions:
+\begin{enumerate}
+    \item \textbf{Market power:} The firm must face a downward-sloping demand curve (not be a competitive price taker).
+    \item \textbf{Market segmentation:} The firm must be able to separate buyers according to their willingness to pay (price elasticity of demand).
+    \item \textbf{Prevention of arbitrage:} Buyers who receive a lower price must be unable to resell the product profitably to buyers charged a higher price.
+\end{enumerate}
 
 Economists classify price discrimination into three degrees:
 \begin{itemize}
-    \item \textbf{First-Degree (Perfect) Price Discrimination:} Charging every individual buyer their exact maximum willingness to pay. Remarkably, output expands all the way to the competitive level ($Q_C$) and \textbf{Deadweight Loss drops to zero}—but the monopolist captures $100\%$ of Total Social Surplus ($CS = \$0$).
-    \item \textbf{Second-Degree Price Discrimination:} Offering quantity discounts or tiered menus (such as bulk warehouse packs or airline cabin classes) so buyers self-select based on usage.
-    \item \textbf{Third-Degree Price Discrimination:} Dividing customers into observable demographic or behavioral groups—charging a higher price to the group with \textbf{inelastic demand} and a lower price to the group with \textbf{elastic demand} (such as student and senior movie discounts).
+    \item \textbf{First-Degree (Perfect) Price Discrimination:} Charging every individual buyer their exact maximum willingness to pay. Because the firm no longer has to discount prior units to make another sale, $MR = P$. Output expands all the way to the competitive level ($Q_C$) and \textbf{Deadweight Loss falls to zero}---but the monopolist captures $100\%$ of Total Social Surplus ($CS = \$0$).
+    \item \textbf{Second-Degree Price Discrimination:} Offering quantity discounts or tiered product menus (such as bulk warehouse packs or airline cabin classes) so customers self-select based on usage or preferences.
+    \item \textbf{Third-Degree Price Discrimination:} Dividing customers into observable groups (such as verified students, seniors, or business travelers) and charging a higher price to the group with \textbf{less elastic (more price-insensitive) demand} and a lower price to the group with \textbf{more elastic (more price-sensitive) demand}.
 \end{itemize}
 
-\subsection*{2. Visual Representation}
-Figure~\ref{fig:price_discrimination} compares a single-price monopoly against a third-degree price-discriminating firm charging higher prices to inelastic business travelers and lower prices to elastic leisure students.
+\begin{center}
+\small
+\begin{tabular}{@{}llll@{}}
+\toprule
+Market Outcome & Perfect Competition & Single-Price Monopoly & Perfect Price Discrimination \\
+\midrule
+Pricing Rule & $P = MC$ & $P_M > MR = MC$ & Each unit sold at buyer's WTP \\
+Output Level & $Q_C$ (efficient) & $Q_M < Q_C$ (restricted) & $Q_C$ (efficient) \\
+Consumer Surplus & Maximized & Reduced & $\$0$ (fully captured by firm) \\
+Deadweight Loss & $\$0$ & Positive ($DWL > 0$) & $\$0$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{examplecase}{Bring It Home: Software \texttt{.edu} Discounts and Airline Saturday-Night Stays}
+Software companies such as Adobe and Microsoft require verified \texttt{.edu} email credentials to unlock steep academic discounts while charging full commercial rates to corporate teams. Account-level license binding prevents arbitrage (students cannot legally resell their subscription to an enterprise). Similarly, airlines separate time-sensitive business travelers (less elastic demand) from flexible leisure travelers (more elastic demand) through advance-purchase rules, non-refundable fares, and weekend-stay pricing---all while flying both passengers on the exact same aircraft.
+\end{examplecase}
+
+\subsection*{Visual Representation}
+Figure~\ref{fig:price_discrimination} illustrates third-degree price discrimination for a campus theater with constant $MC = \$4$ per ticket, equating $MR_i = MC$ separately for the less elastic general public and more elastic student segments.
 
 \begin{figure}[htbp]
 \centering
-\begin{tikzpicture}[scale=1.0]
-    % Left Panel: Inelastic Group (Business Travelers)
+\begin{tikzpicture}[scale=0.92]
+    % Scale: 1 unit x = 4 tickets, 1 unit y = $5
+    % Left Panel: General Public (Less Elastic): P1 = 28 - 2Q1 -> y = 5.6 - 1.6x, MR1: y = 5.6 - 3.2x, MC: y = 0.8
+    % Equilibrium: Q1* = 6 (x=1.5), P1* = $16 (y=3.2), Profit = $72
     \begin{scope}[xshift=0cm]
-        \draw[->, thick] (0,0) -- (4.8,0) node[below] {$Q_{\text{biz}}$};
-        \draw[->, thick] (0,0) -- (0,5.0) node[left] {Price (\$)};
-        \node[below left] at (0,0) {$0$};
+        % Profit shading drawn first
+        \fill[CourseTeal!20] (0,0.8) rectangle (1.5,3.2);
 
-        \draw[very thick, color=blue!80!black] (0,4.8) -- (3.2,0) node[below] {$D_{\text{biz}}$};
-        \draw[thick, dashed, color=purple] (0,4.8) -- (1.6,0) node[below] {$MR_{\text{biz}}$};
-        \draw[very thick, color=Terracotta] (0,1.0) -- (4.5,1.0) node[right] {$MC$};
+        \draw[econ axis] (0,0) -- (4.4,0) node[right, font=\small] {$Q_1$};
+        \draw[econ axis] (0,0) -- (0,6.1) node[above, font=\small] {Price (\$/ticket)};
+        \node[below left, font=\small] at (0,0) {$0$};
 
-        % MR = MC at x = 1.27 -> P_biz = 4.8 - 1.5*(1.27) = 2.90
-        \draw[dashed] (0,2.90) node[left] {$P_{\text{biz}}$} -- (1.27,2.90);
-        \draw[dashed] (1.27,0) -- (1.27,2.90);
-        \filldraw[black] (1.27,2.90) circle (2pt);
-        \node[above] at (2.4,4.9) {\textbf{(a) Inelastic Segment}};
+        \draw[very thick, color=CourseBlue] (0,5.6) node[left, font=\small, color=SlateBlue] {$\$28$} -- (3.5,0) node[below, font=\small, color=SlateBlue] {$14$};
+        \node[above right, font=\small\bfseries, color=CourseBlue] at (2.8,1.25) {$D_1$};
+
+        \draw[very thick, dashed, color=CoursePurple] (0,5.6) -- (1.75,0);
+        \node[right, font=\footnotesize\bfseries, color=CoursePurple] at (1.75,0.35) {$MR_1$};
+
+        \draw[very thick, color=Terracotta] (0,0.8) -- (4.1,0.8) node[right, font=\small\bfseries, color=Terracotta] {$MC$};
+        \node[left, font=\small, color=SlateBlue] at (0,0.8) {$\$4$};
+
+        % Orthogonal drop-lines and markers
+        \draw[dashed, color=SlateBlue!80] (0,3.2) node[left, font=\small, color=SlateBlue] {$P_1^* = \$16$} -- (1.5,3.2) -- (1.5,0) node[below, font=\small, color=SlateBlue] {$Q_1^* = 6$};
+        \filldraw[color=SlateBlue] (1.5,3.2) circle (2.2pt);
+        \filldraw[fill=white, draw=SlateBlue, thick] (1.5,0.8) circle (2.2pt);
+
+        \node[font=\scriptsize\bfseries, color=ForestGreen!90!black, align=center] at (0.58,1.65) {Profit\\$\$72$};
+        \node[font=\small\bfseries, color=SlateBlue] at (2.1,6.65) {(a) General Public (Less Elastic)};
     \end{scope}
 
-    % Right Panel: Elastic Group (Students)
-    \begin{scope}[xshift=6.4cm]
-        \draw[->, thick] (0,0) -- (5.0,0) node[below] {$Q_{\text{stu}}$};
-        \draw[->, thick] (0,0) -- (0,5.0) node[left] {Price (\$)};
-        \node[below left] at (0,0) {$0$};
+    % Right Panel: Students (More Elastic): P2 = 16 - Q2 -> y = 3.2 - 0.8x, MR2: y = 3.2 - 1.6x, MC: y = 0.8
+    % Equilibrium: Q2* = 6 (x=1.5), P2* = $10 (y=2.0), Profit = $36
+    \begin{scope}[xshift=7.1cm]
+        % Profit shading drawn first
+        \fill[CourseTeal!20] (0,0.8) rectangle (1.5,2.0);
 
-        \draw[very thick, color=ForestGreen] (0,2.8) -- (4.8,0) node[below] {$D_{\text{stu}}$};
-        \draw[thick, dashed, color=purple] (0,2.8) -- (2.4,0) node[below] {$MR_{\text{stu}}$};
-        \draw[very thick, color=Terracotta] (0,1.0) -- (4.8,1.0) node[right] {$MC$};
+        \draw[econ axis] (0,0) -- (4.7,0) node[right, font=\small] {$Q_2$};
+        \draw[econ axis] (0,0) -- (0,6.1) node[above, font=\small] {Price (\$/ticket)};
+        \node[below left, font=\small] at (0,0) {$0$};
 
-        % MR = MC at x = 1.54 -> P_stu = 2.8 - 0.583*(1.54) = 1.90
-        \draw[dashed] (0,1.90) node[left] {$P_{\text{stu}}$} -- (1.54,1.90);
-        \draw[dashed] (1.54,0) -- (1.54,1.90);
-        \filldraw[black] (1.54,1.90) circle (2pt);
-        \node[above] at (2.5,4.9) {\textbf{(b) Elastic Segment}};
+        \draw[very thick, color=ForestGreen] (0,3.2) node[left, font=\small, color=SlateBlue] {$\$16$} -- (4.0,0) node[below, font=\small, color=SlateBlue] {$16$};
+        \node[above right, font=\small\bfseries, color=ForestGreen] at (3.1,0.95) {$D_2$};
+
+        \draw[very thick, dashed, color=CoursePurple] (0,3.2) -- (2.0,0);
+        \node[right, font=\footnotesize\bfseries, color=CoursePurple] at (1.98,0.35) {$MR_2$};
+
+        \draw[very thick, color=Terracotta] (0,0.8) -- (4.4,0.8) node[right, font=\small\bfseries, color=Terracotta] {$MC$};
+        \node[left, font=\small, color=SlateBlue] at (0,0.8) {$\$4$};
+
+        % Orthogonal drop-lines and markers
+        \draw[dashed, color=SlateBlue!80] (0,2.0) node[left, font=\small, color=SlateBlue] {$P_2^* = \$10$} -- (1.5,2.0) -- (1.5,0) node[below, font=\small, color=SlateBlue] {$Q_2^* = 6$};
+        \filldraw[color=SlateBlue] (1.5,2.0) circle (2.2pt);
+        \filldraw[fill=white, draw=SlateBlue, thick] (1.5,0.8) circle (2.2pt);
+
+        \node[font=\scriptsize\bfseries, color=ForestGreen!90!black, align=center] at (0.58,1.35) {Profit\\$\$36$};
+        \node[font=\small\bfseries, color=SlateBlue] at (2.2,6.65) {(b) Students (More Elastic)};
     \end{scope}
 \end{tikzpicture}
-\caption{Third-Degree Price Discrimination. Setting $MR_i = MC$ in each separated market segment yields a higher price ($P_{\text{biz}}$) for buyers with inelastic demand and a discounted price ($P_{\text{stu}}$) for price-sensitive buyers with elastic demand.}
+\caption{Third-Degree Price Discrimination. Setting $MR_i = MC$ (open circles) independently in each separated segment yields a higher price ($P_1^* = \$16$) for the less elastic general public and a discounted price ($P_2^* = \$10$) for more price-sensitive students, generating $\$72 + \$36 = \$108$ in combined economic profit.}
 \label{fig:price_discrimination}
 \end{figure}
 
-\subsection*{3. Real-World Application: Software Student Discounts and Airline Saturday-Night Stays}
-Software companies like Adobe and Microsoft verify `.edu` email addresses (preventing resale/arbitrage) to offer Creative Cloud and Office suites at steep discounts to college students while charging full corporate rates to businesses—expanding access to students who would otherwise be priced out while increasing total firm profit.
+\begin{tcolorbox}[colback=CourseAmber!10!white,colframe=CourseOrange,title=\textbf{Clear It Up: Does Price Discrimination Always Harm Consumers?}]
+Not necessarily. First, remember that with $MC > 0$, a profit-maximizing firm still operates on the \emph{elastic} region ($|\varepsilon_d| > 1$) of \emph{both} segments---one segment is simply \textbf{less elastic} than the other. Second, while price discrimination raises prices for less elastic buyers and transfers surplus to the firm, it lowers prices for more elastic buyers (such as students or seniors). Whenever discounts bring previously priced-out buyers into the market, total output expands and Deadweight Loss can fall.
+\end{tcolorbox}
 
-\subsection*{4. Mathematical Foundation (Algebra Level)}
-Under third-degree price discrimination, the firm sets $MR_1 = MC$ in Segment 1 and $MR_2 = MC$ in Segment 2 independently:
+\subsection*{Mathematical Foundation (Algebra Level)}
+Under third-degree price discrimination with constant marginal cost $MC$ and no resale between segments, the firm maximizes total profit by equating Marginal Revenue to Marginal Cost separately in each market:
 \begin{equation}
 MR_1(Q_1^*) = MC, \qquad MR_2(Q_2^*) = MC
 \end{equation}
 
-\noindent\textbf{Worked Problem:}
-A campus theater has a constant Marginal Cost of $MC = \$4$ per ticket and separates buyers into two groups with verified IDs:
+\begin{tcolorbox}[colback=CourseTeal!6!white,colframe=CourseTeal,title=\textbf{Work It Out: Third-Degree Price Discrimination at a Campus Theater}]
+\noindent\textbf{Problem:}
+A campus theater faces a constant Marginal Cost of $MC = \$4$ per ticket (with zero fixed cost) and uses photo IDs to prevent resale between two linear demand segments (plotted in Figure~\ref{fig:price_discrimination}):
 \begin{itemize}
     \item \textbf{General Public:} $P_1 = 28 - 2Q_1 \implies MR_1 = 28 - 4Q_1$
     \item \textbf{Students:} $P_2 = 16 - Q_2 \implies MR_2 = 16 - 2Q_2$
 \end{itemize}
-Calculate the profit-maximizing price and ticket quantity for each group.
-
-\noindent\textbf{Step-by-Step Breakdown:}
 \begin{enumerate}
-    \item \textbf{General Public Segment ($MR_1 = MC$):}
-    \[
-    28 - 4Q_1 = 4 \implies 4Q_1 = 24 \implies Q_1^* = \mathbf{6\text{ tickets}}, \qquad P_1^* = 28 - 2(6) = \mathbf{\$16}
-    \]
-
-    \item \textbf{Student Segment ($MR_2 = MC$):}
-    \[
-    16 - 2Q_2 = 4 \implies 2Q_2 = 12 \implies Q_2^* = \mathbf{6\text{ tickets}}, \qquad P_2^* = 16 - 6 = \mathbf{\$10}
-    \]
+    \item Find the profit-maximizing price, quantity, and profit for each segment under third-degree price discrimination.
+    \item Compare total profit under price discrimination against charging a single uniform price to both groups.
 \end{enumerate}
-\textbf{Conclusion:} The theater charges $\$16$ to the general public and $\$10$ to students, maximizing profit across both segments.
 
-\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=\textbf{Optional Advanced Section: The Lerner Index of Market Power}]
+\noindent\textbf{Step-by-Step Solution:}
+\begin{enumerate}
+    \item \textbf{Segmented Pricing ($MR_i = MC$):}
+    \begin{itemize}
+        \item \textbf{General Public ($MR_1 = 4$):}
+        \[
+        28 - 4Q_1 = 4 \implies 4Q_1 = 24 \implies Q_1^* = \mathbf{6\text{ tickets}}, \qquad P_1^* = 28 - 2(6) = \mathbf{\$16}
+        \]
+        Segment 1 profit: $\pi_1 = (\$16 - \$4) \times 6 = \mathbf{\$72}$.
+        \item \textbf{Students ($MR_2 = 4$):}
+        \[
+        16 - 2Q_2 = 4 \implies 2Q_2 = 12 \implies Q_2^* = \mathbf{6\text{ tickets}}, \qquad P_2^* = 16 - 6 = \mathbf{\$10}
+        \]
+        Segment 2 profit: $\pi_2 = (\$10 - \$4) \times 6 = \mathbf{\$36}$.
+    \end{itemize}
+    Combined price-discriminating output is $Q_{\text{PD}} = 6 + 6 = \mathbf{12\text{ tickets}}$, and total profit is $\pi_{\text{PD}} = \$72 + \$36 = \mathbf{\$108}$.
+
+    \item \textbf{Single-Price Benchmark ($P \le \$16$):}
+    Solving each demand curve for quantity gives $Q_1 = 14 - 0.5P$ and $Q_2 = 16 - P$. Summing horizontally yields combined demand $Q = 30 - 1.5P$, or inverse demand $P = 20 - \frac{2}{3}Q$, with $MR = 20 - \frac{4}{3}Q$. Setting $MR = 4$:
+    \[
+    20 - \frac{4}{3}Q_{\text{SP}} = 4 \implies \frac{4}{3}Q_{\text{SP}} = 16 \implies Q_{\text{SP}} = \mathbf{12\text{ tickets}}, \qquad P_{\text{SP}} = 20 - \frac{2}{3}(12) = \mathbf{\$12}
+    \]
+    At $P_{\text{SP}} = \$12$, the theater sells $Q_1 = 8$ general-public tickets and $Q_2 = 4$ student tickets, earning $\pi_{\text{SP}} = (\$12 - \$4) \times 12 = \mathbf{\$96}$ (serving only the general public at $\$16$ would earn just $\$72$).
+\end{enumerate}
+\textbf{Takeaway:} Price discrimination raises the general-public price from $\$12$ to $\$16$, cuts the student price from $\$12$ to $\$10$, expands student attendance from $4$ to $6$ tickets, and increases theater profit by $\$108 - \$96 = \mathbf{+\$12}$ ($+12.5\%$).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=CourseBlue!6!white,colframe=CourseBlue,title=\textbf{Optional Advanced Calculus: The Lerner Index and Inverse-Elasticity Pricing}]
 \small
 \emph{Note for Economics Majors and Quantitative Students:}
-Using $MR = P\left(1 - \frac{1}{|\varepsilon_d|}\right)$ and setting $MR = MC$ yields the \textbf{Lerner Index ($L$)}, which measures percentage markup power as the inverse of demand elasticity:
+Factoring $P$ from $MR = P + Q\frac{dP}{dQ}$ and substituting the point price elasticity of demand $\varepsilon_d = \frac{dQ}{dP}\frac{P}{Q} < 0$ yields the Amoroso--Robinson relation:
 \[
-L = \frac{P - MC}{P} = \frac{1}{|\varepsilon_d|}
+MR = P\left(1 + \frac{Q}{P}\frac{dP}{dQ}\right) = P\left(1 - \frac{1}{|\varepsilon_d|}\right).
 \]
-In perfect competition ($|\varepsilon_d| \to \infty$), $L = 0$ and $P = MC$. As demand becomes less elastic, monopoly markup power $L$ increases.
+Setting $MR = MC$ gives the \textbf{Lerner Index ($L$)} of market power:
+\[
+L = \frac{P - MC}{P} = \frac{1}{|\varepsilon_d|}.
+\]
+In perfect competition ($|\varepsilon_d| \to \infty$), $L = 0$ and $P = MC$. Under third-degree price discrimination, equating $MR_1 = MR_2 = MC$ implies $L_i = \frac{P_i - MC}{P_i} = \frac{1}{|\varepsilon_i|}$ in each segment. In our campus theater problem, $|\varepsilon_1| = \frac{1}{2}\cdot\frac{16}{6} = \frac{4}{3} \approx 1.33$ gives $L_1 = \frac{16-4}{16} = 0.75$, while $|\varepsilon_2| = 1\cdot\frac{10}{6} = \frac{5}{3} \approx 1.67$ gives $L_2 = \frac{10-4}{10} = 0.60$---confirming that both segments lie on the elastic range ($|\varepsilon_i| > 1$) and the less elastic segment carries the larger percentage markup.
 \end{tcolorbox}
+
+\begin{takeaways}
+\boxheader{SlateBlue}{Chapter 8 Key Takeaways}
+\begin{itemize}
+    \item \textbf{Barriers Sustain Monopoly:} Pure monopoly persists only when resource control, legal patents/copyrights, network effects, or natural-monopoly scale economies block entry.
+    \item \textbf{$MR < P$ Under Single Pricing:} Because selling an extra unit requires discounting all prior units, Marginal Revenue falls below demand ($MR = a - 2bQ$ for linear demand $P = a - bQ$) and a monopolist operates where demand is elastic ($|\varepsilon_d| > 1$).
+    \item \textbf{Monopoly Welfare Cost:} Setting $MR = MC$ and reading $P_M$ off the demand curve leads to $P_M > MC$ and $Q_M < Q_C$, transferring surplus to the firm and creating Deadweight Loss ($DWL$).
+    \item \textbf{Price Discrimination:} When a firm has market power, can segment buyers by elasticity, and can prevent arbitrage, charging higher markups to less elastic buyers ($L_i = 1/|\varepsilon_i|$) raises profits and can expand output toward $Q_C$.
+\end{itemize}
+\end{takeaways}
 
 \end{document}

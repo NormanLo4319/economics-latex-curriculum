@@ -1,0 +1,2748 @@
+{
+  "schema_version": "2.0",
+  "course": "Principles of Microeconomics",
+  "chapter_id": "micro_ch06",
+  "file_stem": "ch06_costs_production",
+  "title": "Chapter 6: The Theory of the Firm: Production and Cost Curves",
+  "benchmark": "Eric Chiang, Microeconomics (Principles SSOT, Spring 2027)",
+  "seeding_formula": "seed = hash(student_id + question_id)",
+  "points_per_question": 1,
+  "questions_count": 50,
+  "tier_distribution": {
+    "tier_1": 13,
+    "tier_2": 13,
+    "tier_3": 12,
+    "tier_4": 12
+  },
+  "questions": [
+    {
+      "id": "MICRO_CH06_T1_01",
+      "chapter": 6,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Production Function",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Defining the Firm's Production Function",
+      "prompt_template": "In microeconomic theory, what does a firm's production function describe?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on whether a production function connects physical inputs and outputs or dollar revenues and prices."
+        },
+        {
+          "tier": 2,
+          "text": "Remember that a production function represents technical efficiency—the maximum output achievable from given combinations of inputs."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The technological relationship between physical inputs hired (such as labor and capital) and the maximum quantity of output produced.",
+          "is_correct": true,
+          "feedback": "Correct. A production function maps physical quantities of inputs like labor (L) and capital (K) to the maximum physical output (Q) a firm can generate."
+        },
+        {
+          "id": "opt_b",
+          "text": "The accounting schedule that converts a firm's monthly sales revenue into net after-tax profit.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Financial vs. Technological Confusion): Revenue and net profit depend on market prices and accounting rules, whereas the production function strictly relates physical inputs to physical output."
+        },
+        {
+          "id": "opt_c",
+          "text": "The minimum quantity of output a firm must sell in order to pay off its fixed building lease.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Break-Even Confusion): Covering fixed costs is a financial break-even concept, not the technological mapping between inputs and maximum output."
+        },
+        {
+          "id": "opt_d",
+          "text": "The market demand curve showing how much consumers will buy at each price the firm sets.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Demand-Side Substitution): Market demand reflects buyer willingness to pay, whereas the production function captures the firm's internal engineering and production process."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T1_02",
+      "chapter": 6,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Short Run vs. Long Run",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Distinguishing the Short Run from the Long Run",
+      "prompt_template": "How do economists distinguish the short run from the long run in the theory of the firm?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about input flexibility rather than a fixed number of days, months, or years on a calendar."
+        },
+        {
+          "tier": 2,
+          "text": "Ask whether at least one productive input (such as factory size or heavy machinery) is fixed during the planning horizon."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The short run always lasts less than one calendar year, while the long run always exceeds one year.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Calendar-Time Fallacy): Economic time horizons are defined by input adjustability, not arbitrary calendar lengths—a software startup may adjust all inputs in weeks, while a utility takes years."
+        },
+        {
+          "id": "opt_b",
+          "text": "In the short run at least one input is fixed, whereas in the long run all inputs are variable.",
+          "is_correct": true,
+          "feedback": "Correct. The short run is defined by the presence of at least one fixed input (such as capital or floor space), while the long run allows the firm to vary every input or exit the industry."
+        },
+        {
+          "id": "opt_c",
+          "text": "In the short run all costs are fixed, whereas in the long run all costs are sunk and unrecoverable.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (All-Fixed Fallacy): Even in the short run, firms incur variable costs such as hourly wages and raw materials; fixed inputs do not make all costs fixed."
+        },
+        {
+          "id": "opt_d",
+          "text": "In the short run a firm can only adjust physical capital, whereas in the long run it can only adjust hourly labor.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Reversed Input Flexibility): Hourly labor is typically the variable input adjusted in the short run, while physical capital and plant size are fixed until the long run."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T1_03",
+      "chapter": 6,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Fixed vs. Variable Inputs",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Classifying Short-Run Inputs in a Bakery",
+      "prompt_template": "An artisan bakery signs a two-year lease on its storefront and commercial deck ovens, while hiring part-time bakers and buying flour as daily orders fluctuate. In the short run, which classification is accurate?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Identify which resources cannot be changed immediately when daily loaf production rises or falls."
+        },
+        {
+          "tier": 2,
+          "text": "Fixed inputs remain constant regardless of daily output; variable inputs scale up or down with production."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Flour and part-time bakers are fixed inputs, while the storefront and ovens are variable inputs.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Input-Role Reversal): Ingredients and hourly labor change directly with output (variable), whereas leased space and heavy ovens cannot be altered overnight (fixed)."
+        },
+        {
+          "id": "opt_b",
+          "text": "All four resources are fixed inputs because the bakery must use them to bake bread.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Necessity-Equals-Fixity Fallacy): Being essential to production does not make an input fixed; variable inputs like flour and labor are essential yet adjust with quantity."
+        },
+        {
+          "id": "opt_c",
+          "text": "The storefront lease and commercial ovens are fixed inputs, while flour and part-time bakers are variable inputs.",
+          "is_correct": true,
+          "feedback": "Correct. In the short run, building space and major equipment represent fixed capital, whereas ingredients and hourly labor are variable inputs adjusted to change output."
+        },
+        {
+          "id": "opt_d",
+          "text": "All four resources are variable inputs because the bakery pays money for each of them every month.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Recurring-Payment Fallacy): Paying a monthly bill does not make an input variable; a lease payment is fixed because it does not vary with the number of loaves baked."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T1_04",
+      "chapter": 6,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Law of Diminishing Marginal Product",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Core Statement of the Law of Diminishing Marginal Product",
+      "prompt_template": "Which statement accurately defines the Law of Diminishing Marginal Product?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on what happens when a firm adds more of a variable input to a fixed amount of another input."
+        },
+        {
+          "tier": 2,
+          "text": "Pay attention to whether the law refers to the extra output from the last worker (MP_L) or total output (Q) becoming negative immediately."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "As a firm expands all inputs proportionally in the long run, per-unit production costs must eventually fall.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Short-Run vs. Long-Run Confusion): Scaling all inputs proportionally describes long-run returns to scale, not the short-run Law of Diminishing Marginal Product."
+        },
+        {
+          "id": "opt_b",
+          "text": "Hiring any additional worker after the first worker always reduces a firm's total output.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Immediate Negative-Returns Fallacy): Early workers often increase marginal product via specialization, and even when marginal product declines it typically stays positive so total output still rises."
+        },
+        {
+          "id": "opt_c",
+          "text": "As successive workers are hired, each newly hired worker is inherently less skilled than the workers hired before them.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Worker-Quality Fallacy): Diminishing marginal product occurs even when all workers are identically skilled because each worker has less fixed capital (machines or workspace) to work with."
+        },
+        {
+          "id": "opt_d",
+          "text": "As successive units of a variable input are added to a fixed input, the marginal product of the variable input eventually declines.",
+          "is_correct": true,
+          "feedback": "Correct. With at least one input fixed in the short run, adding more units of a variable input like labor eventually yields smaller and smaller incremental additions to total output."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T1_05",
+      "chapter": 6,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Specialization and Productivity",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Why Marginal Product Initially Rises Before Declining",
+      "prompt_template": "Why does the Marginal Product of Labor (MP_L) typically rise for the first few workers hired in a small café before eventually falling?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about how tasks are divided when going from one worker doing everything to two or three workers sharing distinct stations."
+        },
+        {
+          "tier": 2,
+          "text": "Contrast the productivity gain from division of labor with the eventual bottleneck of limited equipment and counter space."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Early workers can specialize in distinct tasks (orders, prep, espresso machine), raising MP_L until crowding around fixed equipment sets in.",
+          "is_correct": true,
+          "feedback": "Correct. Division of labor and specialization boost incremental output for the first few hires, after which fixed counter and machine capacity causes crowding and diminishing marginal product."
+        },
+        {
+          "id": "opt_b",
+          "text": "The café's fixed capital automatically doubles every time a new barista is added to the shift.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Violating Short-Run Fixity): By definition, fixed capital (espresso machines and counter space) remains constant in the short run."
+        },
+        {
+          "id": "opt_c",
+          "text": "Hourly wages fall for the first few workers and then rise sharply once the café becomes busy.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Price vs. Physical Productivity Confusion): MP_L measures physical output per extra worker (Delta Q / Delta L) and depends on technology and capital constraints, not wage rates."
+        },
+        {
+          "id": "opt_d",
+          "text": "Total fixed costs rise with early workers, which forces Average Product to fall below zero.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Cost-Output Mechanism Confusion): Fixed costs do not change with worker count, and specialization initially raises—not lowers—productivity."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T1_06",
+      "chapter": 6,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Short-Run Total, Fixed, and Variable Costs",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Short-Run Costs When Output Equals Zero",
+      "prompt_template": "If a firm operating in the short run temporarily shuts down production and produces Q = 0 units, what is true about its short-run costs?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Separate overhead obligations that must be paid regardless of output from input expenses tied directly to producing units."
+        },
+        {
+          "tier": 2,
+          "text": "Apply the identity TC = FC + VC at Q = 0."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Total Cost equals zero because no goods are being manufactured.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-Output Zero-Cost Fallacy): Producing zero units eliminates variable costs, but the firm must still pay short-run fixed overhead such as rent and equipment leases."
+        },
+        {
+          "id": "opt_b",
+          "text": "Variable Cost equals zero, and Total Cost equals Fixed Cost.",
+          "is_correct": true,
+          "feedback": "Correct. At Q = 0, the firm uses no variable inputs (VC = 0), so TC = FC + 0 = FC."
+        },
+        {
+          "id": "opt_c",
+          "text": "Fixed Cost equals zero, and Total Cost equals Variable Cost.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Fixed-Variable Reversal): Variable cost—not fixed cost—drops to zero when production halts; fixed contractual obligations remain."
+        },
+        {
+          "id": "opt_d",
+          "text": "Both Fixed Cost and Variable Cost remain strictly positive and equal to one another.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Residual Variable Cost Fallacy): Variable costs are tied directly to production volume, so they fall to exactly zero when Q = 0."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T1_07",
+      "chapter": 6,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Marginal Cost Definition",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Why Fixed Costs Do Not Affect Marginal Cost",
+      "prompt_template": "Why does Marginal Cost equal both Delta TC / Delta Q and Delta VC / Delta Q in the short run?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall the definition TC = FC + VC and check what happens to each term when Q increases by one unit."
+        },
+        {
+          "tier": 2,
+          "text": "Since FC is constant across all output levels in the short run, what is Delta FC?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because Fixed Cost is always smaller than Variable Cost at every positive output level.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Magnitude Assumption Fallacy): Fixed costs can be far larger than variable costs (as in aviation or semiconductors), yet they still drop out of marginal cost because their change is zero."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because economists ignore rent and lease payments when calculating Total Cost.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Omission Fallacy): Fixed costs are fully included in TC and ATC; they vanish from MC strictly because Delta FC = 0, not because they are ignored."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because Fixed Cost does not change as output varies (Delta FC = 0), so any change in Total Cost comes entirely from Variable Cost.",
+          "is_correct": true,
+          "feedback": "Correct. Since TC = FC + VC and FC is constant in the short run, Delta TC = Delta FC + Delta VC = 0 + Delta VC = Delta VC."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because Average Fixed Cost is constant at all output levels in the short run.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (AFC-Constancy Fallacy): Total Fixed Cost (FC) is constant, whereas Average Fixed Cost (AFC = FC / Q) declines continuously as output expands."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T1_08",
+      "chapter": 6,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Average Fixed Cost",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Behavior of Average Fixed Cost as Output Expands",
+      "prompt_template": "As a firm expands short-run output Q from 1 unit upward, how does Average Fixed Cost (AFC) behave?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Write out the formula AFC = FC / Q and examine what happens to the numerator and denominator as Q grows."
+        },
+        {
+          "tier": 2,
+          "text": "Think about 'spreading overhead' over a larger number of units."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "It remains completely flat because Fixed Cost never changes with output.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Total-vs-Average Confusion): Total Fixed Cost (FC) is constant, but dividing that constant numerator by a rising Q forces AFC strictly downward."
+        },
+        {
+          "id": "opt_b",
+          "text": "It follows a U-shape because diminishing marginal product eventually drives up fixed overhead per unit.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Applying Diminishing Returns to AFC): Diminishing marginal product makes AVC and ATC U-shaped via rising variable costs, but it never causes AFC to turn upward."
+        },
+        {
+          "id": "opt_c",
+          "text": "It rises steadily as more units share the same factory building.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inverted Fraction Fallacy): Spreading a fixed dollar amount over more units reduces—not increases—the fixed cost allocated to each unit."
+        },
+        {
+          "id": "opt_d",
+          "text": "It declines continuously because the fixed numerator FC is divided by an ever-larger quantity Q.",
+          "is_correct": true,
+          "feedback": "Correct. Because FC is constant and Q rises in the denominator, AFC = FC / Q falls strictly and approaches zero as output grows large."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T1_09",
+      "chapter": 6,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Production-Cost Duality",
+      "clo_alignment": [
+        "MI-1",
+        "MI-2"
+      ],
+      "title": "Inverse Link Between Marginal Product and Marginal Cost",
+      "prompt_template": "Assuming a firm hires labor at a constant hourly wage rate w, how is Marginal Cost (MC) linked to the Marginal Product of Labor (MP_L)?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall the short-run production-cost identity connecting MC, w, and MP_L."
+        },
+        {
+          "tier": 2,
+          "text": "When an extra worker adds fewer units of output (MP_L falls), does each additional unit cost more or less in labor?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "MC = w / MP_L, so when diminishing marginal product causes MP_L to fall, MC must rise.",
+          "is_correct": true,
+          "feedback": "Correct. Each extra worker costs w and produces MP_L units, so the marginal cost per unit is w / MP_L; falling productivity directly drives MC upward."
+        },
+        {
+          "id": "opt_b",
+          "text": "MC = w * MP_L, so when diminishing marginal product causes MP_L to fall, MC must also fall.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Multiplicative Formula Fallacy): Multiplying wage by output per worker yields nonsensical units ($ * units/worker); dividing w by MP_L gives dollars per unit."
+        },
+        {
+          "id": "opt_c",
+          "text": "MC = MP_L / w, so higher wages automatically reduce Marginal Cost.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inverted Ratio Fallacy): Higher wages increase—not decrease—the cost of producing extra units; w must be in the numerator, not the denominator."
+        },
+        {
+          "id": "opt_d",
+          "text": "MC is completely independent of MP_L because production is measured in physical units while costs are measured in dollars.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Decoupled Production-Cost Fallacy): Dollar cost curves are the direct mirror image of physical productivity multiplied by input prices."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T1_10",
+      "chapter": 6,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Marginal-Average Relationship",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "The GPA Analogy for Marginal and Average Costs",
+      "prompt_template": "Just as a semester grade affects a student's cumulative GPA, what happens to Average Total Cost (ATC) whenever Marginal Cost (MC) is strictly less than ATC?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare the cost of producing one more unit (MC) to the current average cost of all prior units (ATC)."
+        },
+        {
+          "tier": 2,
+          "text": "Think about what happens to a 3.40 GPA if your next class grade is 2.90—even if 2.90 is higher than your previous semester's 2.50."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "ATC must be rising because MC is always pulling average costs upward.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Direction Reversal): When the marginal value sits below the average, it pulls the average downward, not upward."
+        },
+        {
+          "id": "opt_b",
+          "text": "ATC must be falling because adding a cheaper-than-average unit pulls the overall average down.",
+          "is_correct": true,
+          "feedback": "Correct. Regardless of whether MC itself is rising or falling, as long as MC < ATC, the next unit costs less than the existing average and drags ATC downward."
+        },
+        {
+          "id": "opt_c",
+          "text": "ATC stays constant until MC drops all the way to zero.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-Threshold Fallacy): ATC stops falling and turns upward where MC equals ATC, not where MC equals zero."
+        },
+        {
+          "id": "opt_d",
+          "text": "ATC rises if MC is rising and falls only if MC is also falling.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Slope-Matching Fallacy): The direction of ATC depends on whether MC is above or below ATC, not on whether MC itself is sloping up or down."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T1_11",
+      "chapter": 6,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Long-Run Average Total Cost (LRATC)",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Constructing the LRATC Envelope Curve",
+      "prompt_template": "What does the Long-Run Average Total Cost (LRATC) curve represent for a firm planning its future operations?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Remember that in the long run, the firm is not locked into a single factory size."
+        },
+        {
+          "tier": 2,
+          "text": "Think about how a firm selects among small, medium, and large short-run ATC curves for any target output level."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The sum of all short-run average total cost curves across every factory the firm could possibly build.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Summation Fallacy): A firm selects one optimal plant size for a given output rather than summing costs across mutually exclusive plant sizes."
+        },
+        {
+          "id": "opt_b",
+          "text": "The short-run average variable cost curve shifted upward by a constant percentage for inflation.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inflation-Adjustment Fallacy): LRATC reflects plant-scale optimization across all inputs, not an inflation adjustment to AVC."
+        },
+        {
+          "id": "opt_c",
+          "text": "The envelope tracing the lowest achievable per-unit cost at every output level when the firm can choose its optimal plant size.",
+          "is_correct": true,
+          "feedback": "Correct. Because all inputs are variable in the long run, the firm picks the plant size whose SRATC is lowest for each quantity Q, forming the lower envelope LRATC."
+        },
+        {
+          "id": "opt_d",
+          "text": "The average cost of operating the largest technologically feasible factory at every output level.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Biggest-Is-Best Fallacy): At low output levels, a massive plant carries huge overhead and higher per-unit costs than a smaller plant."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T1_12",
+      "chapter": 6,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Economies and Diseconomies of Scale",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Sources of Economies of Scale vs. Diseconomies of Scale",
+      "prompt_template": "Which pair accurately matches a primary source of economies of scale and a primary source of diseconomies of scale?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Ask what drives per-unit costs down as a firm scales up all inputs, versus what drives per-unit costs up once an organization becomes massive."
+        },
+        {
+          "tier": 2,
+          "text": "Avoid confusing short-run fixed-capital crowding with long-run organizational scale effects."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Economies of scale: fixed factory rent; Diseconomies of scale: rising raw material prices in competitive markets.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Short-Run & Input-Price Confusion): Fixed factory rent is a short-run concept (spreading AFC), whereas long-run economies of scale arise when all inputs vary."
+        },
+        {
+          "id": "opt_b",
+          "text": "Economies of scale: managerial bloat; Diseconomies of scale: worker specialization and automated assembly lines.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Reversed Scale Drivers): Managerial bloat drives costs up (diseconomies), while specialization and automation drive costs down (economies)."
+        },
+        {
+          "id": "opt_c",
+          "text": "Economies of scale: crowding around fixed machinery; Diseconomies of scale: bulk purchasing discounts.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Mixed Horizon & Reversed Sign): Crowding around fixed machinery causes short-run diminishing marginal product, while bulk discounts generate economies of scale."
+        },
+        {
+          "id": "opt_d",
+          "text": "Economies of scale: worker specialization, bulk input discounts, and automated machinery; Diseconomies of scale: bureaucracy, communication breakdowns, and managerial bloat.",
+          "is_correct": true,
+          "feedback": "Correct. Scaling up initially reduces LRATC through specialization, bulk purchasing, and capital automation, whereas excessive organizational size creates coordination failures and managerial bloat that raise LRATC."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T1_13",
+      "chapter": 6,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Minimum Efficient Scale (MES)",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Defining Minimum Efficient Scale (Q_MES)",
+      "prompt_template": "What is Minimum Efficient Scale (Q_MES) on a firm's Long-Run Average Total Cost curve?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Look at the transition from economies of scale (downward-sloping LRATC) to constant returns to scale (flat minimum of LRATC)."
+        },
+        {
+          "tier": 2,
+          "text": "Identify the smallest output quantity that fully captures available economies of scale."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The smallest level of output at which Long-Run Average Total Cost (LRATC) reaches its lowest possible value.",
+          "is_correct": true,
+          "feedback": "Correct. Q_MES marks the minimum output necessary for a firm to exhaust economies of scale and achieve the lowest attainable long-run per-unit cost."
+        },
+        {
+          "id": "opt_b",
+          "text": "The largest level of output a firm can physically produce before Total Product begins to decline.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Physical-Maximum Fallacy): Maximum physical output in the short run ignores input costs and does not define long-run cost efficiency."
+        },
+        {
+          "id": "opt_c",
+          "text": "The output level at which Average Fixed Cost drops to exactly zero.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Asymptote Fallacy): For any positive fixed cost, AFC = FC / Q never reaches zero at any finite output level."
+        },
+        {
+          "id": "opt_d",
+          "text": "The output level at which short-run Marginal Cost equals zero.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-MC Fallacy): Cost efficiency minimizes average cost (LRATC), not marginal cost, and MC is typically positive at efficient scale."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T2_01",
+      "chapter": 6,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Total Product and Marginal Product Geometry",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Interpreting the Inflection Point on the Total Product Curve",
+      "prompt_template": "On the stacked short-run production diagram (with Total Product TP above Marginal Product MP_L), what occurs directly beneath the inflection point of the S-shaped TP(L) curve at L_1?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Remember that Marginal Product is the slope of the Total Product curve."
+        },
+        {
+          "tier": 2,
+          "text": "At an inflection point where TP switches from getting steeper to getting flatter, what happens to its slope?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Marginal Product equals zero and crosses the horizontal axis.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Peak-vs-Inflection Confusion): MP_L hits zero directly beneath the peak (maximum) of TP, not beneath its inflection point."
+        },
+        {
+          "id": "opt_b",
+          "text": "Marginal Product reaches its maximum value, after which diminishing marginal product begins.",
+          "is_correct": true,
+          "feedback": "Correct. Up to L_1, TP rises at an increasing rate (slope MP_L rises); at the inflection point L_1, the slope peaks, and beyond L_1 diminishing marginal product causes MP_L to fall."
+        },
+        {
+          "id": "opt_c",
+          "text": "Average Product reaches its minimum value and begins rising steeply.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Curve-Shape Reversal): AP_L is inverted U-shaped (not U-shaped) and reaches its peak to the right of L_1 (at L_2), where MP_L intersects AP_L."
+        },
+        {
+          "id": "opt_d",
+          "text": "Total Output drops abruptly to zero because the factory is completely full.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Total-vs-Marginal Confusion): Beyond L_1, Total Output continues rising—just at a slower pace—as long as MP_L remains positive."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T2_02",
+      "chapter": 6,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Peak Total Product and Zero Marginal Product",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Relating Maximum Total Product to Marginal Product",
+      "prompt_template": "In the short-run production diagram, when the Total Product curve TP(L) reaches its highest peak and begins sloping downward to the right, what is happening on the MP_L curve below it?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Link the slope of TP(L)—rising, flat at the peak, then falling—to the sign of MP_L."
+        },
+        {
+          "tier": 2,
+          "text": "Check whether MP_L is positive, zero, or negative at the exact peak and immediately to its right."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "MP_L reaches its peak at the same labor level and stays strictly positive afterward.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Conflating Peak TP with Peak MP_L): MP_L peaks much earlier at the inflection point L_1; by the time TP peaks, MP_L has already fallen all the way to zero."
+        },
+        {
+          "id": "opt_b",
+          "text": "MP_L intersects AP_L from below while both curves slope upward.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Wrong Intersection Point): MP_L intersects AP_L from above at L_2 (peak AP_L), well before TP reaches its maximum."
+        },
+        {
+          "id": "opt_c",
+          "text": "MP_L equals zero at the peak of TP and becomes negative where TP slopes downward.",
+          "is_correct": true,
+          "feedback": "Correct. When an additional worker adds zero output (MP_L = 0), TP is maximized; hiring further causes severe crowding so MP_L < 0 and TP actually declines."
+        },
+        {
+          "id": "opt_d",
+          "text": "MP_L becomes flat and horizontal at a positive constant value.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Constant-Returns Assumption): A flat, positive MP_L would produce a straight upward-sloping TP line, not a peak followed by a decline."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T2_03",
+      "chapter": 6,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "MP_L and AP_L Intersection",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Where Marginal Product Intersects Average Product",
+      "prompt_template": "Looking at the lower panel of the short-run production curves (MP_L and AP_L plotted against Labor L), where does the MP_L curve intersect the AP_L curve?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Apply the marginal-average rule: when MP_L > AP_L, AP_L rises; when MP_L < AP_L, AP_L falls."
+        },
+        {
+          "tier": 2,
+          "text": "Check whether MP_L crosses AP_L from above or below, and what happens to AP_L at that exact labor quantity L_2."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "At the exact maximum of MP_L (L_1), while AP_L is still below its peak.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Peak-MP_L Misplacement): At L_1, MP_L is strictly above AP_L, so AP_L is still being pulled upward and has not yet reached its peak."
+        },
+        {
+          "id": "opt_b",
+          "text": "At the horizontal axis where both MP_L and AP_L equal zero.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-Intersection Fallacy): As long as Total Product Q > 0, AP_L = Q / L stays strictly positive even when MP_L hits zero."
+        },
+        {
+          "id": "opt_c",
+          "text": "From below at the minimum point of AP_L.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Cost-Curve Transfer Error): Marginal Cost crosses ATC from below at its minimum, but productivity curves are inverted U-shaped so MP_L crosses AP_L from above at its maximum."
+        },
+        {
+          "id": "opt_d",
+          "text": "From above at the exact maximum point of AP_L (L_2).",
+          "is_correct": true,
+          "feedback": "Correct. To the left of L_2, MP_L > AP_L pulls AP_L upward; to the right of L_2, MP_L < AP_L pulls AP_L downward, so MP_L crosses AP_L from above at peak AP_L."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T2_04",
+      "chapter": 6,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Region of Diminishing Marginal Product",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Identifying Diminishing Marginal Product While Output Still Rises",
+      "prompt_template": "On the production graph between L_1 (peak of MP_L) and L_max (where MP_L hits zero), how are Total Product (TP) and Marginal Product (MP_L) moving?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Distinguish between a curve being positive versus sloping downward."
+        },
+        {
+          "tier": 2,
+          "text": "Check whether TP rises or falls when MP_L is positive but decreasing."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "TP is still rising at a decreasing rate while MP_L is positive but sloping downward.",
+          "is_correct": true,
+          "feedback": "Correct. Between L_1 and L_max, diminishing marginal product is underway (MP_L falls), yet each additional worker still contributes positive extra output (MP_L > 0), so TP keeps rising more slowly."
+        },
+        {
+          "id": "opt_b",
+          "text": "Both TP and MP_L are falling simultaneously throughout this entire region.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Negative-vs-Diminishing Returns Confusion): TP only falls when MP_L becomes negative (beyond L_max); falling positive MP_L means TP rises at a slower rate."
+        },
+        {
+          "id": "opt_c",
+          "text": "TP is rising at an increasing rate while MP_L is falling toward zero.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Slope Contradiction): Rising at an increasing rate requires a steeper slope (rising MP_L), which only happens before L_1."
+        },
+        {
+          "id": "opt_d",
+          "text": "TP is completely flat while MP_L declines from its peak to zero.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Flat-TP Fallacy): A flat TP curve implies a slope of zero (MP_L = 0), not a positive, declining MP_L."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T2_05",
+      "chapter": 6,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Short-Run Cost Curve Geometry",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Vertical Distance Between ATC and AVC Curves",
+      "prompt_template": "On a graph of short-run per-unit cost curves, what does the vertical distance between the ATC curve and the AVC curve represent, and how does it change as Q increases?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Rearrange the identity ATC = AFC + AVC to solve for ATC - AVC."
+        },
+        {
+          "tier": 2,
+          "text": "Recall how AFC behaves as Q increases along the horizontal axis."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "It represents Marginal Cost (MC), and it widens steadily as output expands.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (MC-Gap Fallacy): MC is the slope of TC, not the vertical gap between ATC and AVC."
+        },
+        {
+          "id": "opt_b",
+          "text": "It represents Average Fixed Cost (AFC), and it narrows continuously as output expands.",
+          "is_correct": true,
+          "feedback": "Correct. Since ATC - AVC = AFC = FC / Q, the vertical gap between ATC and AVC equals AFC and shrinks progressively as fixed costs are spread over more units."
+        },
+        {
+          "id": "opt_c",
+          "text": "It represents Total Fixed Cost (FC), and it remains a constant vertical height at every quantity Q.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Parallel-Curves Fallacy): Total FC is constant, but on a per-unit graph the gap is AFC = FC / Q, so ATC and AVC converge rather than staying parallel."
+        },
+        {
+          "id": "opt_d",
+          "text": "It represents Average Fixed Cost (AFC), and it reaches zero at the minimum point of ATC.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Touching-Curves Fallacy): As long as FC > 0, AFC remains strictly positive at all finite Q, so ATC always stays strictly above AVC."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T2_06",
+      "chapter": 6,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Minimum AVC vs. Minimum ATC",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Why Minimum AVC Occurs at a Smaller Output Than Minimum ATC",
+      "prompt_template": "In the standard short-run per-unit cost diagram, the minimum point of AVC occurs to the left of (at a smaller quantity than) the minimum point of ATC. Why does this geometric ordering always hold when FC > 0?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Remember that ATC = AVC + AFC, so changes in ATC combine the upward pull of rising AVC and the downward pull of falling AFC."
+        },
+        {
+          "tier": 2,
+          "text": "Ask what happens to ATC immediately to the right of minimum AVC, where AVC is barely rising while AFC is still falling."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because Marginal Cost slopes downward between minimum AVC and minimum ATC.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Downward-MC Fallacy): MC is already sloping upward when it crosses AVC from below and continues rising to cross ATC."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because Variable Cost stops increasing once the firm passes minimum AVC.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Flat-VC Fallacy): Beyond minimum AVC, diminishing returns make VC rise even faster per additional unit."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because immediately beyond minimum AVC, the continuing decline in AFC outweighs the slight initial rise in AVC, pulling ATC downward a bit longer.",
+          "is_correct": true,
+          "feedback": "Correct. Because ATC = AVC + AFC, even after AVC starts inching upward, falling AFC keeps MC below ATC for an interval, so ATC bottoms out at a larger Q than AVC."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because Fixed Costs increase with output once the firm produces past minimum AVC.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Rising-FC Fallacy): Fixed costs never vary with short-run output; AFC falls throughout."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T2_07",
+      "chapter": 6,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "MC Intersections on Short-Run Cost Graph",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Reading Marginal Cost Crossings on a Cost Diagram",
+      "prompt_template": "Suppose a short-run cost diagram shows an upward-sloping Marginal Cost (MC) curve intersecting a U-shaped AVC curve at Q = 24 and a U-shaped ATC curve at Q = 32. Which graphical property must hold between Q = 24 and Q = 32?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Check whether MC sits above or below AVC, and above or below ATC, in the interval between Q = 24 and Q = 32."
+        },
+        {
+          "tier": 2,
+          "text": "Apply the marginal-average rule separately to AVC and ATC."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Both AVC and ATC are falling across this interval.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ignoring AVC Crossing): Once Q exceeds 24, MC > AVC, so AVC must already be rising rather than falling."
+        },
+        {
+          "id": "opt_b",
+          "text": "Both AVC and ATC are rising across this interval.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ignoring ATC Crossing): Between Q = 24 and Q = 32, MC is still below ATC, so ATC is still being pulled downward."
+        },
+        {
+          "id": "opt_c",
+          "text": "AVC is falling while ATC is rising across this interval.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Reversed Curve Slopes): Because MC lies above AVC and below ATC in this range, AVC rises while ATC falls—not the reverse."
+        },
+        {
+          "id": "opt_d",
+          "text": "AVC is rising while ATC is still falling across this interval.",
+          "is_correct": true,
+          "feedback": "Correct. Between Q = 24 (min AVC) and Q = 32 (min ATC), MC lies strictly above AVC (pulling AVC up) and strictly below ATC (pulling ATC down)."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T2_08",
+      "chapter": 6,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Comparative Statics: Fixed Cost Shift",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Graphical Impact of a Rent Increase on Short-Run Cost Curves",
+      "prompt_template": "A landlord raises a bakery's monthly storefront rent by $500, while flour prices and hourly baker wages remain unchanged. How do the bakery's short-run cost curves shift?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Determine whether storefront rent is a Fixed Cost (FC) or a Variable Cost (VC)."
+        },
+        {
+          "tier": 2,
+          "text": "Recall which curves depend on FC (AFC, ATC) and which depend exclusively on VC (AVC, MC)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "AFC and ATC shift upward, while AVC and MC remain completely unchanged.",
+          "is_correct": true,
+          "feedback": "Correct. Rent is a fixed cost, so AFC = FC / Q and ATC = AFC + AVC shift upward at every Q, whereas AVC and MC = Delta VC / Delta Q do not depend on FC and do not shift."
+        },
+        {
+          "id": "opt_b",
+          "text": "MC, AVC, AFC, and ATC all shift upward by the exact same dollar amount.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Universal-Shift Fallacy): Fixed costs do not enter VC or MC, and even for AFC and ATC the vertical shift ($500 / Q) shrinks as Q increases."
+        },
+        {
+          "id": "opt_c",
+          "text": "MC and ATC shift upward, while AFC and AVC remain unchanged.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Fixed-Cost-in-MC Fallacy): Because Delta FC = 0 when output changes, higher fixed rent never shifts MC, while it directly shifts AFC upward."
+        },
+        {
+          "id": "opt_d",
+          "text": "Only AFC shifts upward; ATC remains unchanged because MC did not move.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Disconnected-ATC Fallacy): Since ATC = AFC + AVC, any upward shift in AFC must shift ATC upward by the exact same vertical distance at every Q."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T2_09",
+      "chapter": 6,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Comparative Statics: Variable Input Price Shift",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Graphical Impact of Higher Hourly Wages on Short-Run Cost Curves",
+      "prompt_template": "If the hourly wage rate (w) paid to production workers increases while factory rent and equipment leases stay constant, how do the firm's short-run cost curves shift?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Classify hourly wages as a variable cost and apply MC = w / MP_L."
+        },
+        {
+          "tier": 2,
+          "text": "Check every curve: AFC, AVC, ATC, and MC."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Only MC shifts upward; AVC, AFC, and ATC stay in place.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Isolated-MC Fallacy): Higher wages raise total variable cost at every positive output, shifting AVC and ATC upward alongside MC."
+        },
+        {
+          "id": "opt_b",
+          "text": "MC, AVC, and ATC all shift upward, while AFC remains unchanged.",
+          "is_correct": true,
+          "feedback": "Correct. Higher wages increase variable cost at every positive Q (shifting MC = w / MP_L, AVC, and ATC upward), while fixed rent and leases—and thus AFC—are unaffected."
+        },
+        {
+          "id": "opt_c",
+          "text": "AFC and ATC shift upward, while MC and AVC remain unchanged.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Wage-as-Fixed-Cost Fallacy): Hourly production labor is a variable input, not a fixed overhead expense."
+        },
+        {
+          "id": "opt_d",
+          "text": "MC, AVC, AFC, and ATC all shift downward because workers become more productive.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Conflating Wage Hike with Productivity): A higher wage rate raises cost per unit for any given MP_L; it does not shift physical production technology."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T2_10",
+      "chapter": 6,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Comparative Statics: Productivity Breakthrough",
+      "clo_alignment": [
+        "MI-1",
+        "MI-2"
+      ],
+      "title": "Effect of Higher Labor Productivity on Short-Run Cost Curves",
+      "prompt_template": "Suppose new workflow software allows every worker at a print shop to produce 25% more posters per hour (raising MP_L at every labor level) without changing the hourly wage w or fixed press leases. How do the MC and AVC curves shift?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Use the inverse relationship MC = w / MP_L."
+        },
+        {
+          "tier": 2,
+          "text": "When MP_L rises at every level of labor while w stays fixed, what happens to the cost of producing each poster?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Both MC and AVC shift upward because workers are handling more posters.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Direct-Proportionality Fallacy): Higher productivity means fewer labor hours are needed per poster, which lowers—not raises—MC and AVC."
+        },
+        {
+          "id": "opt_b",
+          "text": "MC shifts downward, but AVC shifts upward because Total Product increased.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Divergent MC-AVC Fallacy): If every unit requires less variable labor time to produce, average variable cost per unit falls along with marginal cost."
+        },
+        {
+          "id": "opt_c",
+          "text": "Both MC and AVC shift downward (pulling ATC downward as well), while AFC at each output Q remains unchanged.",
+          "is_correct": true,
+          "feedback": "Correct. Higher MP_L at a constant wage directly lowers MC = w / MP_L and reduces the variable labor cost per unit (AVC), shifting MC, AVC, and ATC downward while FC/Q stays fixed."
+        },
+        {
+          "id": "opt_d",
+          "text": "Only AFC shifts downward; MC and AVC stay unchanged because the hourly wage w did not change.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Wage-Only Cost Fallacy): Variable cost per unit depends on both input price (w) and physical productivity (MP_L); raising MP_L lowers MC and AVC even at constant w."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T2_11",
+      "chapter": 6,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "LRATC Envelope Tangency Geometry",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Interpreting Short-Run Plant Curves Along the LRATC Envelope",
+      "prompt_template": "In the Long-Run Average Total Cost diagram showing three plant sizes (SRATC_small, SRATC_medium, SRATC_large) enveloped by a U-shaped LRATC curve, where is SRATC_small tangent to the downward-sloping portion of LRATC?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Visualize a U-shaped SRATC_small curve resting on top of a downward-sloping LRATC curve."
+        },
+        {
+          "tier": 2,
+          "text": "Can a curve with a horizontal tangent (at its minimum) be tangent to a downward-sloping curve?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "To the right of SRATC_small's minimum, where SRATC_small slopes upward.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Slope-Sign Mismatch): A curve sloping upward cannot be tangent to a downward-sloping LRATC envelope; it would cross below LRATC."
+        },
+        {
+          "id": "opt_b",
+          "text": "At the exact minimum point of SRATC_small, where its slope is zero.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Minimum-Tangency Fallacy): Only the plant size at Q_MES (SRATC_medium) touches LRATC at its exact minimum; in the economies-of-scale range, tangency occurs where both curves slope downward."
+        },
+        {
+          "id": "opt_c",
+          "text": "SRATC_small never touches LRATC because small plants are always inefficient in the long run.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Always-Inefficient Fallacy): For sufficiently low output levels, the small plant achieves lower per-unit cost than larger plants and forms the LRATC envelope."
+        },
+        {
+          "id": "opt_d",
+          "text": "To the left of SRATC_small's minimum, along the downward-sloping portion of SRATC_small.",
+          "is_correct": true,
+          "feedback": "Correct. Because two tangent curves must share the same slope, SRATC_small touches the downward-sloping economies-of-scale region of LRATC to the left of SRATC_small's minimum."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T2_12",
+      "chapter": 6,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Reading Scale Regimes from LRATC",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Identifying Returns to Scale from the Slope of LRATC",
+      "prompt_template": "A firm's LRATC curve slopes downward from Q = 0 to Q = 5,000, is flat from Q = 5,000 to Q = 12,000, and slopes upward beyond Q = 12,000. Which statement accurately reads this diagram?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Match each slope segment (downward, flat, upward) to economies of scale, constant returns to scale, and diseconomies of scale."
+        },
+        {
+          "tier": 2,
+          "text": "Remember that Minimum Efficient Scale (Q_MES) is the smallest quantity where LRATC hits its floor."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The firm experiences economies of scale up to Q = 5,000 (which is Q_MES), constant returns to scale from 5,000 to 12,000, and diseconomies of scale beyond 12,000.",
+          "is_correct": true,
+          "feedback": "Correct. Downward-sloping LRATC marks economies of scale, Q = 5,000 is the smallest output reaching minimum LRATC (Q_MES), the flat range is constant returns to scale, and upward-sloping LRATC marks diseconomies of scale."
+        },
+        {
+          "id": "opt_b",
+          "text": "The firm's Minimum Efficient Scale is Q = 12,000, and it experiences diminishing marginal product between 5,000 and 12,000.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Maximum-vs-Minimum Efficient Scale): Q = 5,000 (not 12,000) is the smallest output minimizing LRATC, and diminishing marginal product is a short-run phenomenon."
+        },
+        {
+          "id": "opt_c",
+          "text": "The firm experiences diseconomies of scale up to Q = 5,000 and economies of scale beyond Q = 12,000.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Reversed Scale Labels): Falling per-unit cost is economies of scale, whereas rising per-unit cost beyond Q = 12,000 is diseconomies of scale."
+        },
+        {
+          "id": "opt_d",
+          "text": "The firm cannot operate profitably anywhere between Q = 5,000 and Q = 12,000 because LRATC is flat.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Flat-Means-Unprofitable Fallacy): A flat LRATC bottom represents the lowest possible long-run per-unit cost (constant returns to scale), not zero profit."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T2_13",
+      "chapter": 6,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Slope of ATC and Calculus Identity",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Interpreting the Slope Equation d(ATC)/dQ = (MC - ATC) / Q",
+      "prompt_template": "Using the mathematical identity for the slope of Average Total Cost, d(ATC)/dQ = (MC(Q) - ATC(Q)) / Q for Q > 0, what does a positive value of d(ATC)/dQ indicate graphically?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Check what sign (MC - ATC) must have when the fraction (MC - ATC) / Q is greater than zero (given Q > 0)."
+        },
+        {
+          "tier": 2,
+          "text": "Translate the inequality between MC and ATC into their relative vertical positions on the cost diagram."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The MC curve lies below the ATC curve, pulling ATC downward.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Sign Reversal): If MC < ATC, then (MC - ATC) / Q < 0, meaning ATC has a negative slope and is falling."
+        },
+        {
+          "id": "opt_b",
+          "text": "The MC curve lies above the ATC curve, pulling ATC upward.",
+          "is_correct": true,
+          "feedback": "Correct. Since Q > 0, d(ATC)/dQ > 0 holds if and only if MC(Q) > ATC(Q), meaning the MC curve sits above ATC and pulls ATC upward."
+        },
+        {
+          "id": "opt_c",
+          "text": "The MC curve is intersecting ATC at its exact minimum point.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-vs-Positive Slope Confusion): At the minimum point of ATC, the slope d(ATC)/dQ equals zero (MC = ATC), not a positive number."
+        },
+        {
+          "id": "opt_d",
+          "text": "Average Fixed Cost is positive and rising with output.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (AFC-Slope Confusion): AFC is always falling for Q > 0; ATC slopes upward strictly because MC exceeds ATC."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T3_01",
+      "chapter": 6,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Calculating MP_L and AP_L",
+      "clo_alignment": [
+        "MI-1",
+        "MI-4"
+      ],
+      "title": "Computing Marginal and Average Product for the 4th Worker",
+      "prompt_template": "A print shop with fixed presses observes the following daily poster output as it hires technicians: L = 0 -> Q = 0; L = 1 -> Q = 24; L = 2 -> Q = 60; L = 3 -> Q = 90; L = 4 -> Q = 112. What are the Marginal Product (MP_L) and Average Product (AP_L) of the 4th technician?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Use MP_L = Delta Q / Delta L between L = 3 and L = 4, and AP_L = Q / L at L = 4."
+        },
+        {
+          "tier": 2,
+          "text": "Compute MP_4 = (112 - 90) / (4 - 3) and AP_4 = 112 / 4."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "MP_4 = 28 posters; AP_4 = 22 posters",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Swapped Definitions): You computed both numbers accurately (22 and 28) but swapped MP_L = Delta Q / Delta L with AP_L = Q / L."
+        },
+        {
+          "id": "opt_b",
+          "text": "MP_4 = 30 posters; AP_4 = 30 posters",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Wrong Row Reference): 30 and 30 are the marginal and average products for the 3rd worker (90 - 60 = 30; 90 / 3 = 30), not the 4th worker."
+        },
+        {
+          "id": "opt_c",
+          "text": "MP_4 = 22 posters; AP_4 = 28 posters",
+          "is_correct": true,
+          "feedback": "Correct. MP_4 = (112 - 90) / (4 - 3) = 22 posters, and AP_4 = 112 / 4 = 28 posters."
+        },
+        {
+          "id": "opt_d",
+          "text": "MP_4 = 28 posters; AP_4 = 28 posters",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Equating Marginal with Average): Dividing total output 112 by 4 gives AP_4 = 28, whereas MP_4 measures only the extra output added by the 4th worker (112 - 90 = 22)."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T3_02",
+      "chapter": 6,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Diminishing Marginal Product Threshold",
+      "clo_alignment": [
+        "MI-1",
+        "MI-4"
+      ],
+      "title": "Pinpointing Diminishing Marginal Product and Peak Average Product",
+      "prompt_template": "A campus sandwich shop with two commercial panini presses observes hourly output: L = 0 -> Q = 0; L = 1 -> Q = 20; L = 2 -> Q = 50; L = 3 -> Q = 84; L = 4 -> Q = 112; L = 5 -> Q = 130. With which worker does diminishing marginal product begin, and what is the shop's maximum Average Product of Labor (AP_L)?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compute MP_L = Delta Q / Delta L for every worker from L = 1 to L = 5 and spot the first worker whose MP_L is smaller than the prior worker's MP_L."
+        },
+        {
+          "tier": 2,
+          "text": "Then compute AP_L = Q / L for each worker (20, 25, 28, 28, 26) to locate peak AP_L."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Worker 3; maximum AP_L = 34 sandwiches per worker",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Peak-MP_L Confusion): Worker 3 achieves peak MP_L (34 > 30), so diminishing returns have not started yet, and 34 is peak MP_L rather than peak AP_L."
+        },
+        {
+          "id": "opt_b",
+          "text": "Worker 5; maximum AP_L = 26 sandwiches per worker",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Using AP_L Decline): AP_L first falls at Worker 5 (from 28 to 26), but diminishing marginal product is defined by MP_L falling, which starts earlier at Worker 4 (28 < 34)."
+        },
+        {
+          "id": "opt_c",
+          "text": "Worker 4; maximum AP_L = 34 sandwiches per worker",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Reporting Peak MP_L as Peak AP_L): Diminishing marginal product correctly begins with Worker 4, but 34 is the maximum Marginal Product—maximum AP_L is 112 / 4 = 28."
+        },
+        {
+          "id": "opt_d",
+          "text": "Worker 4; maximum AP_L = 28 sandwiches per worker",
+          "is_correct": true,
+          "feedback": "Correct. Marginal products are 20, 30, 34, 28, and 18, so diminishing marginal product begins with Worker 4 (28 < 34), where MP_4 = AP_4 = 28 marks peak Average Product."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T3_03",
+      "chapter": 6,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Short-Run Cost Calculations",
+      "clo_alignment": [
+        "MI-2",
+        "MI-4"
+      ],
+      "title": "Computing TC, AFC, AVC, and ATC for an Artisan Bakery",
+      "prompt_template": "An artisan bakery pays daily fixed rent and oven lease costs of FC = $240. When it produces Q = 40 sourdough loaves, its total variable cost is VC = $360. What are TC, AFC, AVC, and ATC at Q = 40 loaves?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Start with TC = FC + VC, then divide FC, VC, and TC each by Q = 40."
+        },
+        {
+          "tier": 2,
+          "text": "Verify your arithmetic with the identity ATC = AFC + AVC."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "TC = $600; AFC = $6.00; AVC = $9.00; ATC = $15.00",
+          "is_correct": true,
+          "feedback": "Correct. TC = $240 + $360 = $600; AFC = $240 / 40 = $6.00; AVC = $360 / 40 = $9.00; and ATC = $600 / 40 = $6.00 + $9.00 = $15.00."
+        },
+        {
+          "id": "opt_b",
+          "text": "TC = $360; AFC = $6.00; AVC = $9.00; ATC = $9.00",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Omitting Fixed Cost from Total Cost): Leaving FC out of TC sets TC equal to VC ($360) and understates ATC by AFC ($6.00)."
+        },
+        {
+          "id": "opt_c",
+          "text": "TC = $600; AFC = $9.00; AVC = $6.00; ATC = $15.00",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Swapped FC and VC): You reversed fixed cost ($240) and variable cost ($360) when dividing by Q = 40."
+        },
+        {
+          "id": "opt_d",
+          "text": "TC = $600; AFC = $6.00; AVC = $9.00; ATC = $3.00",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Subtracting Average Costs): Average Total Cost is the sum AFC + AVC ($6.00 + $9.00 = $15.00), not the difference AVC - AFC."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T3_04",
+      "chapter": 6,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Recovering Fixed Cost from Averages",
+      "clo_alignment": [
+        "MI-2",
+        "MI-4"
+      ],
+      "title": "Finding Total Fixed Cost from ATC and AVC",
+      "prompt_template": "A small coffee roastery produces Q = 25 bags of beans per day. At this output level, Average Total Cost is ATC = $18.00 per bag and Average Variable Cost is AVC = $12.00 per bag. What is the roastery's Total Fixed Cost (FC)?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "First find Average Fixed Cost using AFC = ATC - AVC."
+        },
+        {
+          "tier": 2,
+          "text": "Remember that FC = AFC * Q (or equivalently TC - VC)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$6.00",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Stopping at Per-Unit AFC): $18.00 - $12.00 = $6.00 is Average Fixed Cost per bag; you must multiply by Q = 25 bags to recover Total Fixed Cost."
+        },
+        {
+          "id": "opt_b",
+          "text": "$150.00",
+          "is_correct": true,
+          "feedback": "Correct. AFC = $18.00 - $12.00 = $6.00 per bag, so Total Fixed Cost is FC = $6.00 * 25 = $150.00."
+        },
+        {
+          "id": "opt_c",
+          "text": "$300.00",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Computing Variable Cost): Multiplying AVC ($12.00) by Q (25) gives Total Variable Cost ($300.00), not Total Fixed Cost."
+        },
+        {
+          "id": "opt_d",
+          "text": "$450.00",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Computing Total Cost): Multiplying ATC ($18.00) by Q (25) gives Total Cost ($450.00), which includes both fixed and variable costs."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T3_05",
+      "chapter": 6,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Marginal Cost Across Output Jumps",
+      "clo_alignment": [
+        "MI-2",
+        "MI-4"
+      ],
+      "title": "Calculating Marginal Cost When Quantity Jumps by 10 Units",
+      "prompt_template": "A bakery has daily fixed costs of FC = $200. At Q = 20 loaves, its total variable cost is VC = $220. When output expands to Q = 30 loaves, its total variable cost rises to VC = $370. What is the Marginal Cost (MC) per loaf between 20 and 30 loaves?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compute TC at Q = 20 and Q = 30 (or use Delta VC directly), then divide by Delta Q."
+        },
+        {
+          "tier": 2,
+          "text": "Check that Delta Q = 30 - 20 = 10 loaves, not 1 loaf."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$150.00 per loaf",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Forgetting to Divide by Delta Q): $150 is the total change in cost for all 10 additional loaves; you must divide by Delta Q = 10 to get per-unit MC."
+        },
+        {
+          "id": "opt_b",
+          "text": "$19.00 per loaf",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Computing ATC Instead of MC): Dividing TC_30 ($570) by Q = 30 yields Average Total Cost ($19.00), not Marginal Cost."
+        },
+        {
+          "id": "opt_c",
+          "text": "$15.00 per loaf",
+          "is_correct": true,
+          "feedback": "Correct. TC rises from $420 to $570 (Delta TC = Delta VC = $150) over Delta Q = 10 loaves, so MC = $150 / 10 = $15.00 per loaf."
+        },
+        {
+          "id": "opt_d",
+          "text": "$35.00 per loaf",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Adding Fixed Cost into Delta TC): Fixed cost ($200) does not change between Q = 20 and Q = 30, so adding $200 to $150 before dividing by 10 overstates MC."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T3_06",
+      "chapter": 6,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Marginal Cost from Wage and MP_L",
+      "clo_alignment": [
+        "MI-1",
+        "MI-2",
+        "MI-4"
+      ],
+      "title": "Deriving Marginal Cost from Wage Rate and Marginal Product",
+      "prompt_template": "A print shop pays every technician a constant hourly wage of w = $32. Hiring the 3rd technician raises total output from 50 posters per hour to 58 posters per hour while fixed press costs remain unchanged. What is the Marginal Cost (MC) per additional poster for the 3rd technician?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "First calculate the 3rd technician's Marginal Product of Labor: MP_L = Delta Q / Delta L."
+        },
+        {
+          "tier": 2,
+          "text": "Then apply the production-cost identity MC = w / MP_L."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$0.25 per poster",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inverted Productivity Ratio): Computing MP_L / w = 8 / 32 yields posters per dollar (0.25) rather than dollars per poster."
+        },
+        {
+          "id": "opt_b",
+          "text": "$12.00 per poster",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Using Total Wage Bill): Dividing the total wage bill of all 3 workers (3 * $32 = $96) by MP_L = 8 overstates MC; only the incremental wage ($32) of the 3rd worker enters Delta VC."
+        },
+        {
+          "id": "opt_c",
+          "text": "$256.00 per poster",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Multiplying Instead of Dividing): Multiplying w * MP_L = $32 * 8 misapplies the formula; each worker's $32 wage is spread across the 8 extra posters they produce."
+        },
+        {
+          "id": "opt_d",
+          "text": "$4.00 per poster",
+          "is_correct": true,
+          "feedback": "Correct. MP_3 = 58 - 50 = 8 posters per hour, so MC = w / MP_L = $32 / 8 = $4.00 per poster."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T3_07",
+      "chapter": 6,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Reconstructing Costs from Marginal Cost",
+      "clo_alignment": [
+        "MI-2",
+        "MI-4"
+      ],
+      "title": "Computing ATC from Fixed Cost and Unit Marginal Costs",
+      "prompt_template": "A boutique bicycle workshop has daily fixed costs of FC = $120. Its marginal costs for producing the first four bicycles are MC_1 = $40, MC_2 = $30, MC_3 = $50, and MC_4 = $60. What is the workshop's Average Total Cost (ATC) when it produces Q = 4 bicycles?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Sum the marginal costs of units 1 through 4 to obtain Total Variable Cost (VC_4)."
+        },
+        {
+          "tier": 2,
+          "text": "Add FC = $120 to get TC_4, then divide by Q = 4."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$75.00 per bicycle",
+          "is_correct": true,
+          "feedback": "Correct. VC_4 = $40 + $30 + $50 + $60 = $180, so TC_4 = $120 + $180 = $300, and ATC_4 = $300 / 4 = $75.00."
+        },
+        {
+          "id": "opt_b",
+          "text": "$45.00 per bicycle",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Omitting Fixed Costs): Dividing VC_4 ($180) by 4 gives Average Variable Cost ($45.00), leaving out AFC = $120 / 4 = $30.00."
+        },
+        {
+          "id": "opt_c",
+          "text": "$60.00 per bicycle",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Equating MC with ATC): $60.00 is solely the marginal cost of the 4th bicycle (MC_4), not the average total cost across all 4 bicycles."
+        },
+        {
+          "id": "opt_d",
+          "text": "$300.00 per bicycle",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Total-vs-Average Confusion): $300.00 is Total Cost (TC_4) for all 4 bicycles combined; you must divide by Q = 4 to obtain ATC."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T3_08",
+      "chapter": 6,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Computing MC from an AVC Schedule",
+      "clo_alignment": [
+        "MI-2",
+        "MI-4"
+      ],
+      "title": "Recovering Marginal Cost from Average Variable Cost Data",
+      "prompt_template": "A small electronics assembler has fixed costs of FC = $100. At Q = 10 circuit boards, Average Variable Cost is AVC = $12.00. When output expands to Q = 15 circuit boards, Average Variable Cost rises to AVC = $14.00. What is the Marginal Cost (MC) per circuit board between Q = 10 and Q = 15?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Convert each AVC back into Total Variable Cost using VC = AVC * Q."
+        },
+        {
+          "tier": 2,
+          "text": "Then compute MC = (VC_15 - VC_10) / (15 - 10)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$2.00 per circuit board",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Subtracting Averages Directly): Taking $14.00 - $12.00 measures Delta AVC, ignoring that higher AVC applies across all 15 boards—not just the extra units."
+        },
+        {
+          "id": "opt_b",
+          "text": "$18.00 per circuit board",
+          "is_correct": true,
+          "feedback": "Correct. VC_10 = 10 * $12 = $120 and VC_15 = 15 * $14 = $210, so Delta VC = $90 across Delta Q = 5 boards, giving MC = $90 / 5 = $18.00."
+        },
+        {
+          "id": "opt_c",
+          "text": "$0.40 per circuit board",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Dividing Delta AVC by Delta Q): Dividing ($14 - $12) by 5 computes Delta AVC / Delta Q rather than Delta VC / Delta Q."
+        },
+        {
+          "id": "opt_d",
+          "text": "$90.00 per circuit board",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Forgetting to Divide by Delta Q): $90.00 is the total variable cost increase for all 5 additional boards; divide by Delta Q = 5 to find per-unit MC."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T3_09",
+      "chapter": 6,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Minimizing Average Total Cost Algebraically",
+      "clo_alignment": [
+        "MI-2",
+        "MI-4"
+      ],
+      "title": "Finding Minimum ATC Where MC Equals ATC",
+      "prompt_template": "A manufacturing firm has short-run Total Cost TC(Q) = 200 + 10Q + 2Q^2 and Marginal Cost MC(Q) = 10 + 4Q. Using the minimum-cost condition MC(Q) = ATC(Q), at what output level Q does Average Total Cost reach its minimum, and what is that minimum ATC?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Write ATC(Q) = TC(Q) / Q = 200/Q + 10 + 2Q, then set MC(Q) = ATC(Q)."
+        },
+        {
+          "tier": 2,
+          "text": "Solve 10 + 4Q = 200/Q + 10 + 2Q for Q, then substitute Q back into ATC(Q) (or MC(Q))."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Q = 10 units; minimum ATC = $30.00",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Evaluating AVC Instead of ATC): You found the right quantity Q = 10, but $30.00 = 10 + 2(10) is AVC(10)—it omits AFC(10) = 200 / 10 = $20.00."
+        },
+        {
+          "id": "opt_b",
+          "text": "Q = 10 units; minimum ATC = $500.00",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Evaluating TC Instead of ATC): At Q = 10, $500.00 is Total Cost TC(10) = 200 + 100 + 200; divide by Q = 10 to get per-unit ATC."
+        },
+        {
+          "id": "opt_c",
+          "text": "Q = 10 units; minimum ATC = $50.00",
+          "is_correct": true,
+          "feedback": "Correct. Setting 10 + 4Q = 200/Q + 10 + 2Q yields 2Q = 200/Q, so Q^2 = 100 and Q = 10. Evaluating ATC(10) = 200/10 + 10 + 2(10) = $50.00 (matching MC(10) = $50.00)."
+        },
+        {
+          "id": "opt_d",
+          "text": "Q = 50 units; minimum ATC = $114.00",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Square-Root Algebra Error): Solving Q^2 = 100 requires taking the square root (Q = 10), not dividing 100 by 2 to get 50."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T3_10",
+      "chapter": 6,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Long-Run Returns to Scale Calculation",
+      "clo_alignment": [
+        "MI-3",
+        "MI-4"
+      ],
+      "title": "Measuring Economies of Scale for a Solar-Panel Manufacturer",
+      "prompt_template": "A solar-panel manufacturer increases all inputs (factory floor space, robots, and technicians) by 50%, raising long-run total cost from $400,000 to $600,000. Annual output rises from 20,000 panels to 37,500 panels. What are the initial and expanded LRATC per panel, and which scale regime is the firm experiencing?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compute LRATC_1 = $400,000 / 20,000 and LRATC_2 = $600,000 / 37,500."
+        },
+        {
+          "tier": 2,
+          "text": "Compare %Delta Q = (37,500 - 20,000) / 20,000 = +87.5% against the +50% increase in all inputs."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "LRATC_1 = $20.00, LRATC_2 = $16.00; diseconomies of scale",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Rising Total Cost Confusion): Total cost always rises when a firm expands all inputs, but because per-unit LRATC fell from $20.00 to $16.00, the firm enjoys economies of scale."
+        },
+        {
+          "id": "opt_b",
+          "text": "LRATC_1 = $20.00, LRATC_2 = $30.00; diseconomies of scale",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Stale Denominator Error): Dividing the new total cost ($600,000) by the old output (20,000) ignores that output expanded to 37,500 panels."
+        },
+        {
+          "id": "opt_c",
+          "text": "LRATC_1 = $20.00, LRATC_2 = $20.00; constant returns to scale",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Assumed Proportional Output): Output grew by 87.5%—far faster than the 50% input increase—so LRATC does not remain flat at $20.00."
+        },
+        {
+          "id": "opt_d",
+          "text": "LRATC_1 = $20.00, LRATC_2 = $16.00; economies of scale",
+          "is_correct": true,
+          "feedback": "Correct. LRATC falls from $400,000 / 20,000 = $20.00 to $600,000 / 37,500 = $16.00 because output grew by 87.5% (> 50% input growth), confirming economies of scale."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T3_11",
+      "chapter": 6,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Quantifying Diseconomies of Scale",
+      "clo_alignment": [
+        "MI-3",
+        "MI-4"
+      ],
+      "title": "Calculating Per-Unit Cost Growth Under Diseconomies of Scale",
+      "prompt_template": "A logistics company doubles all of its warehouses, trucks, and staff (+100% in all inputs), doubling long-run total cost from $800,000 to $1,600,000. Because of coordination bottlenecks, annual shipments increase from 40,000 to 64,000 units. How much did LRATC change per shipment, and by what percentage did output grow?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Calculate LRATC_1 = $800,000 / 40,000 and LRATC_2 = $1,600,000 / 64,000, then take LRATC_2 - LRATC_1."
+        },
+        {
+          "tier": 2,
+          "text": "Compute %Delta Q using the initial output (40,000) as the base: (64,000 - 40,000) / 40,000."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "LRATC rose by $5.00 per shipment; output grew by 60%",
+          "is_correct": true,
+          "feedback": "Correct. LRATC rose from $20.00 to $25.00 (+$5.00), and output grew by (64,000 - 40,000) / 40,000 = +60% (< 100% input growth), demonstrating diseconomies of scale."
+        },
+        {
+          "id": "opt_b",
+          "text": "LRATC rose by $5.00 per shipment; output grew by 37.5%",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Wrong Percentage Base): Dividing Delta Q (24,000) by the new output (64,000) yields 37.5%; percentage growth must divide by the initial output (40,000)."
+        },
+        {
+          "id": "opt_c",
+          "text": "LRATC rose by $20.00 per shipment; output grew by 60%",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Unupdated Output Denominator): Dividing $1,600,000 by the old 40,000 shipments gives $40.00 (+$20.00), ignoring the expanded 64,000-unit volume."
+        },
+        {
+          "id": "opt_d",
+          "text": "LRATC fell by $5.00 per shipment; output grew by 60%",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Reversed Cost Direction): Because output grew slower than total cost (+60% < +100%), per-unit cost increased from $20.00 to $25.00 rather than falling."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T3_12",
+      "chapter": 6,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Long-Run Plant Size Selection",
+      "clo_alignment": [
+        "MI-3",
+        "MI-4"
+      ],
+      "title": "Selecting the Cost-Minimizing Plant Size on the LRATC Envelope",
+      "prompt_template": "A regional bakery chain plans to produce Q = 100 crates of bread per day in the long run and evaluates three plant sizes: Small (FC = $400, VC = $1,600), Medium (FC = $900, VC = $800), and Large (FC = $1,500, VC = $500). Which plant size lies on the LRATC envelope at Q = 100, and what is its LRATC per crate?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compute TC = FC + VC and SRATC = TC / 100 for all three plant sizes."
+        },
+        {
+          "tier": 2,
+          "text": "Remember that LRATC selects the plant with the lowest Total (and Average Total) Cost at Q = 100."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Small plant; LRATC = $4.00 per crate",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Minimizing Fixed Cost Only): Picking the plant with lowest FC ignores its high variable cost ($1,600); its true SRATC is $2,000 / 100 = $20.00."
+        },
+        {
+          "id": "opt_b",
+          "text": "Medium plant; LRATC = $17.00 per crate",
+          "is_correct": true,
+          "feedback": "Correct. At Q = 100, SRATC is $20.00 for Small ($2,000 / 100), $17.00 for Medium ($1,700 / 100), and $20.00 for Large ($2,000 / 100), so the Medium plant minimizes LRATC at $17.00."
+        },
+        {
+          "id": "opt_c",
+          "text": "Large plant; LRATC = $5.00 per crate",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Minimizing Variable Cost Only): $5.00 is merely AVC ($500 / 100) for the Large plant; including its $1,500 fixed overhead raises SRATC to $20.00."
+        },
+        {
+          "id": "opt_d",
+          "text": "Large plant; LRATC = $20.00 per crate",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Biggest-Plant Bias): At Q = 100, the Large plant is underutilized with $1,500 in fixed overhead, costing $3.00 more per crate than the Medium plant."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T4_01",
+      "chapter": 6,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Short-Run Production Bottlenecks",
+      "clo_alignment": [
+        "MI-1",
+        "MI-4"
+      ],
+      "title": "Diagnosing Kitchen Crowding at a Campus Sandwich Shop",
+      "prompt_template": "At a campus sandwich shop equipped with two commercial panini presses, hiring Workers 5 and 6 yields only 8 to 10 extra sandwiches per hour compared to 35 extra sandwiches added by Worker 2. The manager blames declining hiring standards and plans to replace Workers 5 and 6 with equally experienced staff. How would an economist evaluate this diagnosis?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Ask whether the drop in MP_L comes from worker skill differences or from fixed physical capital."
+        },
+        {
+          "tier": 2,
+          "text": "Contrast a short-run staffing swap against a long-run capital expansion."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The manager is right: replacing Workers 5 and 6 with identical skill levels will restore MP_L to 35 sandwiches per hour.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Worker-Quality Misattribution): Swapping equally skilled workers does not relieve the physical bottleneck of two fixed panini presses."
+        },
+        {
+          "id": "opt_b",
+          "text": "The shop is experiencing long-run diseconomies of scale, so it must shut down one panini press to raise productivity.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Mislabeling Short-Run Bottleneck as Diseconomies): Removing a press shrinks fixed capital further and worsens crowding; this is short-run diminishing marginal product, not diseconomies of scale."
+        },
+        {
+          "id": "opt_c",
+          "text": "The drop reflects the Law of Diminishing Marginal Product caused by crowding around two fixed presses; raising MP_L requires adding capital (more presses/counter space) in the long run.",
+          "is_correct": true,
+          "feedback": "Correct. Even identically skilled workers face diminishing marginal product when crowded around fixed capital; overcoming the bottleneck requires expanding fixed inputs in the long run."
+        },
+        {
+          "id": "opt_d",
+          "text": "The shop has reached negative marginal product, meaning Total Output is falling whenever more than two workers are on shift.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Confusing Positive Declining MP with Negative MP): Adding 8–10 sandwiches per hour is still positive marginal product, so total output is rising—just more slowly."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T4_02",
+      "chapter": 6,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Fixed Overhead in Commercial Aviation",
+      "clo_alignment": [
+        "MI-2",
+        "MI-4"
+      ],
+      "title": "Spreading Overhead and Load Factors in Commercial Airlines",
+      "prompt_template": "An airline pays high fixed costs per flight (aircraft lease, hangar maintenance, and pilot salaries) whether a jetliner carries 40 passengers or 180 passengers. Why do airlines aggressively discount unsold seats close to departure to push load factors toward aircraft capacity?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare the effect of filling empty seats on Total Fixed Cost (FC) versus Average Fixed Cost (AFC) and Average Total Cost (ATC)."
+        },
+        {
+          "tier": 2,
+          "text": "Consider how small the extra variable cost of one additional passenger is relative to fixed flight overhead."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Filling more seats eliminates the airline's aircraft lease and pilot salary obligations.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Eliminating Fixed Costs): Carrying more passengers never reduces Total Fixed Cost (FC); it only reduces Fixed Cost *per passenger* (AFC)."
+        },
+        {
+          "id": "opt_b",
+          "text": "Filling more seats shifts the Marginal Cost curve downward below zero.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Negative-MC Fallacy): Each passenger adds a small positive variable cost (fuel burn, catering, baggage handling), so MC stays positive."
+        },
+        {
+          "id": "opt_c",
+          "text": "Filling more seats converts fixed costs into variable costs, reducing Total Cost.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Cost-Reclassification Fallacy): Higher output adds variable cost and raises Total Cost slightly, even as per-unit Average Total Cost drops sharply."
+        },
+        {
+          "id": "opt_d",
+          "text": "Spreading massive fixed flight overhead across more passengers sharply reduces AFC and pulls ATC down toward the aircraft's most efficient scale.",
+          "is_correct": true,
+          "feedback": "Correct. Because FC is fixed per flight while variable cost per extra passenger is modest, filling seats dramatically lowers AFC = FC / Q and brings ATC toward MES for that aircraft."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T4_03",
+      "chapter": 6,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Economies of Scale and Industry Structure",
+      "clo_alignment": [
+        "MI-3",
+        "MI-4"
+      ],
+      "title": "Semiconductor Fabrication Plants vs. Local Coffee Shops",
+      "prompt_template": "Leading-edge semiconductor fabrication plants cost over $15 billion to construct, leaving only a handful of global manufacturers (such as TSMC, Samsung, and Intel), whereas hundreds of independent coffee shops coexist competitively in a single city. How does Chapter 6's long-run cost framework explain this contrast?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare Minimum Efficient Scale (Q_MES) relative to total market demand in each industry."
+        },
+        {
+          "tier": 2,
+          "text": "Trace the slope of LRATC for an industry with massive upfront capital outlays versus one with modest equipment requirements."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Semiconductor fabs have a huge Q_MES due to steep economies of scale over millions of wafers, whereas coffee shops reach Q_MES at a very small daily output.",
+          "is_correct": true,
+          "feedback": "Correct. Steeply falling LRATC over enormous wafer volumes means only a few massive chipmakers can operate near Q_MES, while coffee shops exhaust economies of scale at modest volume."
+        },
+        {
+          "id": "opt_b",
+          "text": "Coffee shops face zero fixed costs in the short run, whereas semiconductor fabs face zero variable costs.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-Cost Extremism): Coffee shops still pay rent and espresso-machine leases (FC > 0), and chip fabs pay huge electricity, chemical, and engineering bills (VC > 0)."
+        },
+        {
+          "id": "opt_c",
+          "text": "Semiconductor fabs operate in the diseconomies-of-scale range immediately after opening, while coffee shops experience endless economies of scale.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inverted Scale Structure): Endless economies of scale in coffee would produce a single monopoly café per city; the opposite scale pattern explains observed market structure."
+        },
+        {
+          "id": "opt_d",
+          "text": "Semiconductor fabs are exempt from the Law of Diminishing Marginal Product in the short run.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Law-Exemption Fallacy): Even a $15 billion fab faces short-run diminishing marginal product if too many technicians crowd fixed lithography tools."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T4_04",
+      "chapter": 6,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Tax Policy and Cost Curves",
+      "clo_alignment": [
+        "MI-2",
+        "MI-4"
+      ],
+      "title": "Flat Annual Business License Fee vs. Per-Unit Excise Tax",
+      "prompt_template": "A city council debates two ways to raise revenue from local bakeries: (Option 1) a flat $1,200 annual business license fee independent of sales volume, or (Option 2) a $0.50 excise tax per loaf baked. How do the two policies differ in their impact on a bakery's short-run Marginal Cost (MC) and Average Total Cost (ATC)?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Classify Option 1 as a Fixed Cost change and Option 2 as a Variable Cost change."
+        },
+        {
+          "tier": 2,
+          "text": "Recall which cost changes shift MC versus shifting only AFC and ATC."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Both policies shift MC and ATC upward by identical vertical amounts because both raise total taxes paid.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Lump-Sum-Shifts-MC Fallacy): Only taxes that vary with output (Option 2) alter Delta TC / Delta Q; a flat license fee leaves MC completely untouched."
+        },
+        {
+          "id": "opt_b",
+          "text": "Option 1 raises AFC and ATC without shifting MC, whereas Option 2 shifts MC, AVC, and ATC upward by $0.50 per loaf.",
+          "is_correct": true,
+          "feedback": "Correct. A flat license fee is a fixed cost (raising AFC and ATC while Delta FC = 0 leaves MC unchanged), whereas a per-unit tax adds $0.50 to every loaf's variable and marginal cost."
+        },
+        {
+          "id": "opt_c",
+          "text": "Option 1 shifts MC upward by $1,200, whereas Option 2 leaves MC unchanged because $0.50 is small.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Size-Over-Structure Fallacy): Whether a cost enters MC depends on whether it varies with Q, not on the dollar size of the tax."
+        },
+        {
+          "id": "opt_d",
+          "text": "Neither policy affects ATC because taxes are transfers to the government rather than physical production inputs.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Excluding-Taxes-from-Firm-Cost Fallacy): From the firm's cost perspective, mandatory license fees and excise taxes directly increase dollar costs and shift ATC upward."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T4_05",
+      "chapter": 6,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Labor Market Policy and Firm Costs",
+      "clo_alignment": [
+        "MI-2",
+        "MI-4"
+      ],
+      "title": "Impact of a Minimum Wage Increase on Short-Run Cost Structure",
+      "prompt_template": "When a state raises the statutory minimum wage for hourly restaurant workers (holding kitchen equipment, lease agreements, and worker productivity constant), how does this policy shock affect a restaurant's short-run cost curves and minimum-ATC quantity?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Treat hourly restaurant wages as a variable input price w in MC = w / MP_L."
+        },
+        {
+          "tier": 2,
+          "text": "Check which curves shift upward (MC, AVC, ATC) and which curve does not move (AFC)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "AFC shifts upward while MC and AVC remain unchanged because the wage applies to all staff.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Treating Wages as Fixed Overhead): Hourly labor scales with shifts and output, making it a variable cost rather than a fixed cost."
+        },
+        {
+          "id": "opt_b",
+          "text": "MC shifts downward while ATC shifts upward because higher wages improve kitchen space.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Contradictory Cost Shift): Holding MP_L constant, a higher wage rate w strictly increases MC = w / MP_L."
+        },
+        {
+          "id": "opt_c",
+          "text": "MC, AVC, and ATC all shift upward while AFC stays unchanged; fixed overhead per meal is unaffected at any given output level.",
+          "is_correct": true,
+          "feedback": "Correct. A higher hourly wage raises variable costs per unit of output (shifting MC, AVC, and ATC upward), whereas fixed rent and equipment leases (and thus AFC) do not change."
+        },
+        {
+          "id": "opt_d",
+          "text": "Only the Long-Run Average Total Cost curve shifts; short-run curves cannot move because labor is fixed in the short run.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Fixed-Labor Fallacy): Labor is the canonical *variable* input in the short run, so wage changes immediately shift short-run MC, AVC, and ATC."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T4_06",
+      "chapter": 6,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Short-Run vs. Long-Run Conceptual Synthesis",
+      "clo_alignment": [
+        "MI-1",
+        "MI-3",
+        "MI-4"
+      ],
+      "title": "Critiquing a Manager's Confusion of Diminishing Returns and Diseconomies of Scale",
+      "prompt_template": "After adding a sixth baker to a cramped single-oven bakery caused per-loaf cost to spike, the owner declares: 'This proves our company suffers from diseconomies of scale, so opening a larger two-oven facility would only raise our cost per loaf even further.' What is the fundamental flaw in the owner's reasoning?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Identify whether adding a sixth baker to one fixed oven is a short-run movement or a long-run expansion of all inputs."
+        },
+        {
+          "tier": 2,
+          "text": "Distinguish short-run diminishing marginal product from long-run diseconomies of scale."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The owner forgot that fixed costs always rise faster than variable costs when hiring bakers.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Irrelevant Cost Claim): Hiring bakers increases variable costs, not fixed costs; the error is confusing time horizons."
+        },
+        {
+          "id": "opt_b",
+          "text": "The owner ignored that Marginal Cost must always fall whenever a sixth worker is hired.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ignoring Crowding): Crowding around one oven genuinely causes MC to rise in the short run; the owner's error is misdiagnosing the cause as long-run diseconomies."
+        },
+        {
+          "id": "opt_c",
+          "text": "The owner failed to realize that diseconomies of scale can only happen in heavy manufacturing, never in food service.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Industry-Exclusion Fallacy): Large restaurant chains can eventually experience managerial diseconomies of scale, but crowding in one kitchen is not evidence of it."
+        },
+        {
+          "id": "opt_d",
+          "text": "The cost spike inside one cramped kitchen reflects short-run diminishing marginal product with fixed capital—not long-run diseconomies of scale; moving to a larger two-oven plant could actually capture economies of scale and lower ATC.",
+          "is_correct": true,
+          "feedback": "Correct. Short-run diminishing returns stem from a fixed oven constraint; expanding all inputs to a larger plant moves the firm along its LRATC curve, where economies of scale may lower per-loaf cost."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T4_07",
+      "chapter": 6,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Evaluating Operational Hiring Claims",
+      "clo_alignment": [
+        "MI-1",
+        "MI-4"
+      ],
+      "title": "Should a Firm Always Stop Hiring the Moment MP_L Starts Falling?",
+      "prompt_template": "A print-shop supervisor argues: 'Once diminishing marginal product begins with Worker 3, we should never hire Worker 3 or Worker 4 because adding workers beyond peak MP_L reduces total poster output and guarantees losses.' Why is this claim economically flawed?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare MP_L falling (while still positive) against MP_L turning negative."
+        },
+        {
+          "tier": 2,
+          "text": "Remember that whether hiring Worker 3 is worthwhile depends on comparing extra revenue against Marginal Cost, not simply whether MP_L is below its peak."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "When MP_L begins falling but remains positive, Total Product still rises—and hiring extra workers can still be profitable as long as the revenue from their extra posters covers their rising Marginal Cost.",
+          "is_correct": true,
+          "feedback": "Correct. Diminishing marginal product does not mean negative output; Worker 3 still adds positive output (e.g., 35 posters in the print-shop schedule), which may easily be worth the extra wage cost."
+        },
+        {
+          "id": "opt_b",
+          "text": "Hiring Worker 3 always lowers Marginal Cost because Average Product is still rising.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inverse-Link Error): Once MP_L falls, MC = w / MP_L begins rising immediately—even before AP_L turns down."
+        },
+        {
+          "id": "opt_c",
+          "text": "Total Product is maximized at the exact labor level where MP_L reaches its peak.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Peak-MP_L = Peak-TP Fallacy): Total Product continues increasing past peak MP_L and is maximized only where MP_L reaches zero."
+        },
+        {
+          "id": "opt_d",
+          "text": "Average Fixed Cost starts rising once MP_L falls, forcing the firm to hire more workers to stay open.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Rising-AFC Fallacy): AFC declines continuously whenever output expands and never turns upward."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T4_08",
+      "chapter": 6,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Strategic Plant-Size Choice Under Demand Uncertainty",
+      "clo_alignment": [
+        "MI-3",
+        "MI-4"
+      ],
+      "title": "Small Flexible Plant vs. Large Automated Plant Below MES",
+      "prompt_template": "A startup solar-panel maker expects to sell only 15,000 panels per year for the next three years, well below the 100,000-panel Minimum Efficient Scale (Q_MES) of a fully automated megafactory. Why might the startup rationally build a smaller, less automated plant with higher variable costs per panel?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare SRATC_small against SRATC_large at a low output quantity far to the left of Q_MES."
+        },
+        {
+          "tier": 2,
+          "text": "Remember that a massive automated plant carries huge fixed overhead that drives up AFC when volume is low."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because a smaller plant always has lower Marginal Cost at every output level than an automated plant.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Reversed MC Structure): Automated factories typically have lower variable and marginal costs per unit once built, but much higher fixed overhead."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because at low volume (15,000 panels), the megafactory's massive fixed overhead creates prohibitive AFC, so the smaller plant achieves a lower SRATC on the LRATC envelope.",
+          "is_correct": true,
+          "feedback": "Correct. Operating a large plant far below its designed capacity spreads enormous fixed costs over few units; at Q = 15,000, the smaller plant's SRATC sits below the megafactory's SRATC."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because choosing a smaller plant eliminates the Law of Diminishing Marginal Product.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Eliminating-Diminishing-Returns Fallacy): Every plant size experiences diminishing marginal product in the short run once its fixed capital gets crowded."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because the megafactory has zero economies of scale at 100,000 panels.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ignoring Capacity Utilization): The megafactory has strong economies of scale *at* 100,000 panels, just not when operated at 15% capacity."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T4_09",
+      "chapter": 6,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Post-Merger Diseconomies of Scale",
+      "clo_alignment": [
+        "MI-3",
+        "MI-4"
+      ],
+      "title": "Why Corporate Mergers Can Sometimes Raise Long-Run Per-Unit Costs",
+      "prompt_template": "Two already-giant national freight carriers merge, expecting bulk fuel discounts to lower their costs. Two years later, however, total long-run operating costs have doubled while combined freight volume rose by only 75%, pushing LRATC upward. What economic phenomenon best explains this outcome?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare input/cost growth (+100%) against output growth (+75%)."
+        },
+        {
+          "tier": 2,
+          "text": "Recall the long-run organizational forces that cause LRATC to slope upward past constant returns to scale."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Short-run diminishing marginal product caused by fixed highway infrastructure.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Horizon Mismatch): Over a two-year post-merger integration where all firm inputs doubled, rising LRATC reflects long-run scale effects rather than a single fixed short-run input."
+        },
+        {
+          "id": "opt_b",
+          "text": "Constant returns to scale because freight volume still grew by 75%.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Positive-Growth-Equals-CRS Fallacy): Constant returns require output to grow by the *same* percentage as inputs (+100%), keeping LRATC flat."
+        },
+        {
+          "id": "opt_c",
+          "text": "Long-run diseconomies of scale, where managerial bloat, layered bureaucracy, and coordination breakdowns outweighed bulk purchasing savings.",
+          "is_correct": true,
+          "feedback": "Correct. When output grows more slowly than all inputs (+75% < +100%), LRATC rises—a classic case of diseconomies of scale driven by organizational complexity and communication breakdowns."
+        },
+        {
+          "id": "opt_d",
+          "text": "Rising Average Fixed Cost because the merged firm delivers more packages.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (AFC-Direction Error): Spreading fixed costs over higher volume lowers AFC; rising per-unit cost after doubling all inputs reflects diseconomies of scale."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T4_10",
+      "chapter": 6,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Incremental Decision-Making and Marginal Cost",
+      "clo_alignment": [
+        "MI-2",
+        "MI-4"
+      ],
+      "title": "Why Marginal Cost Governs Incremental Output Decisions",
+      "prompt_template": "An artisan bakery has already signed its monthly lease (FC = $200/day) and currently bakes 20 loaves at ATC = $19.00 per loaf. A local café offers to buy 10 extra loaves today for $15.00 each, and the bakery calculates that Marginal Cost for loaves 21 through 30 is $13.00 per loaf. Should the bakery accept the order?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare the extra revenue per loaf ($15.00) against the extra cost per loaf (MC = $13.00), rather than against current ATC ($19.00)."
+        },
+        {
+          "tier": 2,
+          "text": "Ask whether accepting the order changes daily Fixed Cost ($200)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "No, because $15.00 is below the bakery's current Average Total Cost of $19.00, so each extra loaf loses $4.00.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Average-Cost Decision Fallacy): Current ATC includes fixed rent that must be paid regardless; comparing price to ATC ignores that the extra loaves only cost $13.00 each to bake."
+        },
+        {
+          "id": "opt_b",
+          "text": "No, because producing 30 loaves will force the bakery to pay an extra $200 in daily fixed rent.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Variable-Fixed-Cost Fallacy): Short-run fixed rent does not increase when daily output expands from 20 to 30 loaves."
+        },
+        {
+          "id": "opt_c",
+          "text": "Yes, because producing 10 more loaves lowers Marginal Cost to zero.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-MC Fallacy): Marginal Cost is $13.00 per loaf—not zero—yet the order is still worthwhile because $15.00 exceeds $13.00."
+        },
+        {
+          "id": "opt_d",
+          "text": "Yes, because the $15.00 price exceeds the $13.00 Marginal Cost, adding $20.00 to daily profit (or reducing losses by $20.00) while fixed rent remains unchanged.",
+          "is_correct": true,
+          "feedback": "Correct. Incremental decisions compare marginal benefit ($15/loaf) to marginal cost ($13/loaf); because fixed costs are unaffected, accepting the order improves the bottom line by ($15 - $13) * 10 = $20."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T4_11",
+      "chapter": 6,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Resolving Rising MC with Falling ATC",
+      "clo_alignment": [
+        "MI-2",
+        "MI-4"
+      ],
+      "title": "Diagnosing an Apparent Paradox: Rising MC Alongside Falling ATC",
+      "prompt_template": "In the bakery's daily cost schedule, Marginal Cost rises from $8.00 per loaf (between 10 and 20 loaves) to $13.00 per loaf (between 20 and 30 loaves), yet Average Total Cost falls from $19.00 to $17.00 over the exact same expansion. A student claims the accounting table must contain an arithmetic error. How do you resolve this apparent paradox?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare the new Marginal Cost ($13.00) against the prior Average Total Cost ($19.00), not against the earlier Marginal Cost ($8.00)."
+        },
+        {
+          "tier": 2,
+          "text": "Apply the cumulative GPA analogy from Section 6.2."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "There is no error: even though MC is rising (from $8 to $13), MC ($13) is still below ATC ($19), so the extra loaves are cheaper than the existing average and continue pulling ATC downward.",
+          "is_correct": true,
+          "feedback": "Correct. Just as earning a 3.20 after a 2.80 raises your semester grade yet still pulls down a 3.60 cumulative GPA, a rising MC that remains below ATC still pulls ATC downward."
+        },
+        {
+          "id": "opt_b",
+          "text": "The table contains an error because ATC can only fall when MC is also falling.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Slope-Matching Fallacy): ATC falls whenever MC < ATC, regardless of whether MC itself is rising or falling."
+        },
+        {
+          "id": "opt_c",
+          "text": "There is no error because fixed costs must have fallen between 20 and 30 loaves.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Changing-FC Fallacy): Total fixed cost stays constant at $200; it is AFC falling (and MC < ATC) that brings ATC down from $19 to $17."
+        },
+        {
+          "id": "opt_d",
+          "text": "The table contains an error because MC must always exceed ATC once diminishing marginal product begins.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Immediate-Crossover Fallacy): Diminishing returns cause MC to start rising well before MC climbs high enough to cross above ATC."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH06_T4_12",
+      "chapter": 6,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Short-Run vs. Long-Run Response to Permanent Demand Growth",
+      "clo_alignment": [
+        "MI-2",
+        "MI-3",
+        "MI-4"
+      ],
+      "title": "Adjusting Production Capacity After a Permanent Surge in Demand",
+      "prompt_template": "A regional bakery operating a small plant experiences a permanent doubling of customer demand. Initially, its per-loaf cost spikes as it pushes overtime shifts inside its existing small bakery; two years later, after building a larger regional facility, its per-loaf cost drops below its original pre-surge level. How do the short-run and long-run cost curves capture this two-stage adjustment?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Distinguish moving along a fixed SRATC_small curve in the short run from transitioning to a new SRATC_medium curve along the LRATC envelope in the long run."
+        },
+        {
+          "tier": 2,
+          "text": "Check why per-loaf cost first rose (short-run crowding) and later fell below the original level (economies of scale)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "In the short run the firm slid down its LRATC curve, and in the long run it suffered diminishing marginal product.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Reversed Horizon Dynamics): Moving along LRATC requires changing plant size (long run), while short-run overtime crowding triggers diminishing marginal product."
+        },
+        {
+          "id": "opt_b",
+          "text": "In the short run the firm moved up the rising portion of SRATC_small due to fixed-capital crowding; in the long run it built a larger plant along the downward-sloping economies-of-scale portion of LRATC.",
+          "is_correct": true,
+          "feedback": "Correct. Locked into its small plant initially, the firm moved rightward up SRATC_small (higher ATC); in the long run, scaling all inputs to a larger plant captured economies of scale and lowered per-unit cost along LRATC."
+        },
+        {
+          "id": "opt_c",
+          "text": "The initial cost spike proves the bakery experienced diseconomies of scale, and the later cost drop occurred because the bakery eliminated all variable costs.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Mislabeling & Zero-VC Fallacy): Short-run crowding is diminishing marginal product, not diseconomies of scale, and a larger bakery still pays variable costs for ingredients and labor."
+        },
+        {
+          "id": "opt_d",
+          "text": "Both stages occurred along the exact same SRATC_small curve as Average Fixed Cost rose and then fell.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Single-Curve Fallacy): Building a larger regional facility changes fixed capital and shifts the firm onto a completely different SRATC curve, and AFC never rises with higher output."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2734 @@
+{
+  "schema_version": "2.0",
+  "course": "Principles of Microeconomics",
+  "chapter_id": "micro_ch11",
+  "file_stem": "ch11_consumer_choice",
+  "title": "Chapter 11: Consumer Choice Theory: Utility and Indifference Curves",
+  "benchmark": "Eric Chiang, Microeconomics (Principles SSOT, Spring 2027)",
+  "seeding_formula": "seed = hash(student_id + question_id)",
+  "points_per_question": 1,
+  "questions_count": 50,
+  "tier_distribution": {
+    "tier_1": 13,
+    "tier_2": 13,
+    "tier_3": 12,
+    "tier_4": 12
+  },
+  "questions": [
+    {
+      "id": "MICRO_CH11_T1_01",
+      "chapter": 11,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Budget Constraint Foundations & Model Assumptions",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Separating Affordability from Preferences in Consumer Choice",
+      "prompt_template": "In the baseline two-good consumer choice model, what role does the budget constraint play, and which core simplifying assumptions define it?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about the two distinct ingredients economists combine to model household spending decisions."
+        },
+        {
+          "tier": 2,
+          "text": "Recall the three explicit ceteris paribus assumptions in Section 11.1: two goods, fixed income with no saving or borrowing, and prices taken as given."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "It defines all bundles a consumer can afford given a fixed nominal income (with no saving or borrowing) and fixed market prices, separating affordability from preferences.",
+          "is_correct": true,
+          "feedback": "Correct. Consumer choice theory deliberately separates what a consumer can afford (the budget constraint, assuming two goods, fixed income with no saving/borrowing, and given prices) from what the consumer wants (preferences)."
+        },
+        {
+          "id": "opt_b",
+          "text": "It ranks all bundles by consumer satisfaction, assuming the consumer can freely borrow to purchase any desired quantity of both goods.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Preferences-Constraint Conflation): Ranking satisfaction is the job of indifference curves, not the budget constraint, and the baseline budget model assumes fixed income with no saving or borrowing."
+        },
+        {
+          "id": "opt_c",
+          "text": "It maps how market prices adjust when an individual consumer buys more of Good X, assuming the consumer has market power over sellers.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Price-Maker Assumption): The baseline consumer choice model treats the household as a price taker facing fixed market prices Px and Py."
+        },
+        {
+          "id": "opt_d",
+          "text": "It shows the single bundle that maximizes utility regardless of consumer tastes, because prices alone determine optimal consumption.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Price-Only Optimization): The budget line only identifies affordable combinations; without preferences (indifference curves or marginal utility), it cannot pinpoint which affordable bundle maximizes utility."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T1_02",
+      "chapter": 11,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Budget Set vs. Budget Line",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Distinguishing Points Inside, On, and Outside the Budget Line",
+      "prompt_template": "How do economists classify a consumption bundle (X, Y) that satisfies Px * X + Py * Y < I?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare the total cost of the bundle (Px * X + Py * Y) against the consumer's available income I."
+        },
+        {
+          "tier": 2,
+          "text": "The budget line represents exact exhaustion (= I), whereas the budget set includes all bundles on or inside the line (<= I)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "It is unattainable because spending falls short of the consumer's minimum income requirement.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inequality Reversal): Spending less than income (Px * X + Py * Y < I) means the consumer has leftover dollars—the bundle is affordable, not unattainable."
+        },
+        {
+          "id": "opt_b",
+          "text": "It lies strictly inside the affordable budget set, meaning the consumer can buy it without exhausting their entire income.",
+          "is_correct": true,
+          "feedback": "Correct. Every bundle satisfying Px * X + Py * Y <= I belongs to the affordable budget set; strict inequality (< I) places the bundle strictly inside the budget line with unspent income remaining."
+        },
+        {
+          "id": "opt_c",
+          "text": "It lies directly on the budget line and must be the consumer's utility-maximizing optimum.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Boundary Confusion): Points on the budget line satisfy exact equality (Px * X + Py * Y = I), and even boundary points are not automatically optimal unless tangency holds."
+        },
+        {
+          "id": "opt_d",
+          "text": "It lies outside the budget set and becomes affordable only if the price of Good X increases.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Unattainable-Set Error): Bundles outside the budget set satisfy Px * X + Py * Y > I, and a higher price of Good X shrinks rather than expands affordability."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T1_03",
+      "chapter": 11,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Relative Prices and Budget Line Slope",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Economic Interpretation of the Budget Line Slope",
+      "prompt_template": "What does the slope of a budget line, equal to -Px / Py, measure economically?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Rewrite Px * X + Py * Y = I in slope-intercept form with Y on the vertical axis and X on the horizontal axis."
+        },
+        {
+          "tier": 2,
+          "text": "In Y = (I / Py) - (Px / Py) * X, the coefficient on X tells you how much Y changes when X rises by 1 unit."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The consumer's total purchasing power in dollars across both goods combined.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Intercept-Slope Confusion): Total purchasing power in units of each good is captured by the axis intercepts (I / Px and I / Py), whereas the slope captures the trade-off ratio between prices."
+        },
+        {
+          "id": "opt_b",
+          "text": "The rate at which the consumer's total utility increases when income rises by one dollar.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Utility-Price Conflation): The budget line depends strictly on market prices and income, not on utility or consumer tastes."
+        },
+        {
+          "id": "opt_c",
+          "text": "The relative price of Good X—specifically, the exact opportunity cost of buying one additional unit of Good X in terms of forgone units of Good Y.",
+          "is_correct": true,
+          "feedback": "Correct. Because Y = (I / Py) - (Px / Py) * X, increasing X by 1 unit forces the consumer to give up Px / Py units of Y to stay within the fixed budget."
+        },
+        {
+          "id": "opt_d",
+          "text": "The number of units of Good X a consumer must give up to purchase one additional unit of Good Y.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inverted Opportunity Cost): Forgone units of X per additional unit of Y equals Py / Px, which is the reciprocal of the budget line's absolute slope Px / Py."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T1_04",
+      "chapter": 11,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Total Utility, Marginal Utility, and Diminishing Marginal Utility",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Behavior of Total Utility Under Diminishing Marginal Utility",
+      "prompt_template": "According to the Law of Diminishing Marginal Utility, if a student consumes additional slices of pizza within one sitting and marginal utility is falling but still strictly positive (MU > 0), what happens to total utility (TU)?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall the definition MU = ΔTU / ΔQ: what does the sign of MU tell you about the direction of TU?"
+        },
+        {
+          "tier": 2,
+          "text": "Distinguish between a number being positive (MU > 0) and a number getting smaller over successive units."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Total utility must decrease because each slice brings less satisfaction than the previous slice.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Falling MU = Falling TU): A declining positive increment still adds to the cumulative sum; TU only falls when MU becomes negative."
+        },
+        {
+          "id": "opt_b",
+          "text": "Total utility remains constant because diminishing marginal utility cancels out the extra slice.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-Addition Misconception): Total utility stays constant only when MU = 0, not when MU is positive and declining."
+        },
+        {
+          "id": "opt_c",
+          "text": "Total utility rises at an increasing rate because the student is consuming more total slices.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Increasing-Rate Confusion): Rising at an increasing rate requires rising MU; when MU is positive but falling, TU rises at a decreasing rate."
+        },
+        {
+          "id": "opt_d",
+          "text": "Total utility continues to increase, but at a decreasing rate, because each additional slice still adds positive satisfaction.",
+          "is_correct": true,
+          "feedback": "Correct. Since MU = ΔTU / ΔQ > 0, each extra slice raises cumulative satisfaction (TU), while diminishing MU means the size of each added step gets smaller."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T1_05",
+      "chapter": 11,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Ordinal vs. Cardinal Utility",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Meaning of Ordinal Utility in Modern Microeconomics",
+      "prompt_template": "Why does modern microeconomics treat utility as an ordinal concept rather than a cardinal measurement?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about whether economists have an objective 'satisfaction thermometer' that works identically across different people."
+        },
+        {
+          "tier": 2,
+          "text": "Compare 'ranking order' (1st, 2nd, 3rd) against 'cardinal magnitude' (measuring exact units of intensity)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because utility numbers only rank bundles from least preferred to most preferred for an individual; satisfaction cannot be measured on an objective interpersonal scale.",
+          "is_correct": true,
+          "feedback": "Correct. Ordinal utility preserves preference rankings without claiming that a bundle with U = 100 produces objectively twice the pleasure of U = 50 or can be compared across different people."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because consumers cannot tell whether they prefer one bundle over another unless prices are known first.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Price-Dependent Preferences): Preferences are defined independently of prices; ordinal utility assumes consumers can consistently rank bundles before consulting prices."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because utility must always be measured in exact dollar amounts equal to a household's monthly income.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Dollar-Utility Equating): Income is measured in dollars, whereas ordinal utility represents subjective preference rankings, not dollar expenditures."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because ordinal rankings prove that every consumer experiences identical marginal utility from the first unit of a good.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Interpersonal Comparison Error): Ordinal utility explicitly rejects interpersonal comparisons of satisfaction levels across different individuals."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T1_06",
+      "chapter": 11,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Properties of Indifference Curves",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Why Two Indifference Curves Can Never Intersect",
+      "prompt_template": "Under well-behaved preferences (transitivity and non-satiation, where more is preferred to less), why is it logically impossible for two different indifference curves of the same consumer to cross?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Imagine two curves crossing at point C, with point A on one curve containing strictly more X and more Y than point B on the other curve."
+        },
+        {
+          "tier": 2,
+          "text": "If the consumer is indifferent between A and C, and also indifferent between C and B, what does transitivity imply about A versus B?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because crossing curves would imply that the consumer's budget line is upward sloping.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Budget-Preference Mix-Up): Indifference curves reflect preferences alone and do not depend on the slope of the budget line."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because an intersection would force the consumer to be indifferent between a bundle with more of both goods and a bundle with less of both goods, contradicting transitivity and non-satiation.",
+          "is_correct": true,
+          "feedback": "Correct. If two curves share an intersection bundle C, then by transitivity a bundle A on the higher curve (containing more of both goods than bundle B on the lower curve) would have to yield the exact same utility as B—violating non-satiation."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because indifference curves are always straight parallel lines with identical constant slopes.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Linear-Curve Assumption): Well-behaved indifference curves are bowed inward (convex), not straight lines, and their non-crossing property comes from transitivity and non-satiation."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because a consumer can only ever afford bundles that lie on a single indifference curve.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Single-Curve Affordability): A budget line typically intersects many lower indifference curves while being tangent to the highest reachable curve."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T1_07",
+      "chapter": 11,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Marginal Rate of Substitution and Convexity",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Economic Meaning of Diminishing MRS and Convex Indifference Curves",
+      "prompt_template": "What does the inward-bowed (convex) shape of a standard indifference curve represent economically?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Observe how the steepness (slope magnitude) of a bowed-inward indifference curve changes as you move from left to right."
+        },
+        {
+          "tier": 2,
+          "text": "Connect the flattening slope to the consumer's willingness to give up Good Y (vertical axis) to obtain one extra unit of Good X (horizontal axis)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Increasing marginal utility, meaning the consumer values each extra unit of Good X more than the previous unit.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Increasing-MU Inversion): Convexity is associated with diminishing willingness to trade Y for X, not increasing marginal utility of X."
+        },
+        {
+          "id": "opt_b",
+          "text": "A constant relative price ratio Px / Py across all levels of consumption.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Budget-Slope Substitution): Constant relative prices explain why the budget line is straight, not why an indifference curve is bowed inward."
+        },
+        {
+          "id": "opt_c",
+          "text": "Diminishing Marginal Rate of Substitution (MRS_XY): as a consumer obtains more of Good X relative to Good Y, they are willing to give up fewer units of Good Y for one additional unit of Good X.",
+          "is_correct": true,
+          "feedback": "Correct. Moving downward and rightward along a convex indifference curve flattens the slope, reflecting diminishing MRS_XY—consumers prefer balanced bundles over extremes."
+        },
+        {
+          "id": "opt_d",
+          "text": "That Good X and Good Y are perfect complements that can only be consumed in a fixed ratio.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Perfect-Complements Confusion): Perfect complements produce L-shaped right-angle indifference curves rather than smooth, strictly convex curves."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T1_08",
+      "chapter": 11,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Equimarginal Principle",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Statement of the Utility-Maximizing Equimarginal Rule",
+      "prompt_template": "At an interior utility-maximizing optimum (consuming positive amounts of both goods while exhausting income), what condition must the consumer satisfy?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Ask yourself: if the last dollar spent on Good X gave more satisfaction than the last dollar spent on Good Y, could you still improve your total utility?"
+        },
+        {
+          "tier": 2,
+          "text": "Rewrite the tangency condition MUx / MUy = Px / Py so that all X terms are on one side and all Y terms are on the other."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Total utility from Good X must equal total utility from Good Y (TUx = TUy).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Total-Utility Equating): Optimization occurs at the margin; equalizing total utilities across two goods does not maximize total satisfaction."
+        },
+        {
+          "id": "opt_b",
+          "text": "Total spending on Good X must equal total spending on Good Y (Px * X = Py * Y) for every utility function.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Equal-Expenditure Overgeneralization): While symmetric Cobb-Douglas (U = X * Y) happens to split spending 50/50, general preferences do not require equal dollar spending on every good."
+        },
+        {
+          "id": "opt_c",
+          "text": "The price of Good X must equal the price of Good Y (Px = Py).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Price-Equality Misconception): Market prices are taken as given by the consumer and rarely equal one another."
+        },
+        {
+          "id": "opt_d",
+          "text": "The marginal utility per dollar spent on the last unit of Good X must equal the marginal utility per dollar spent on the last unit of Good Y (MUx / Px = MUy / Py).",
+          "is_correct": true,
+          "feedback": "Correct. The equimarginal rule ensures no reallocation of a single dollar between goods can raise total utility, which algebraically matches tangency MRS_XY = MUx / MUy = Px / Py."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T1_09",
+      "chapter": 11,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Common Misconception: MUx = MUy vs. MUx/Px = MUy/Py",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Why Utility Maximization Does Not Require MUx = MUy",
+      "prompt_template": "A commuter buys a $4 latte yielding 32 utils of marginal utility and a $2 bagel yielding 16 utils of marginal utility. Why is the commuter already satisfying the equimarginal condition even though MU_latte is twice MU_bagel?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Calculate how many utils the commuter gets per dollar spent on the latte and per dollar spent on the bagel."
+        },
+        {
+          "tier": 2,
+          "text": "Compare MU_latte / P_latte with MU_bagel / P_bagel rather than comparing 32 and 16 directly."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because both goods deliver the exact same marginal utility per dollar (8 utils per dollar), and optimal choice compares MU / P rather than raw MU alone.",
+          "is_correct": true,
+          "feedback": "Correct. Dividing by price gives 32 / $4 = 8 utils per dollar for the latte and 16 / $2 = 8 utils per dollar for the bagel; raw MUx = MUy ignores differences in unit prices."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because a latte is a normal good while a bagel is an inferior good, so their marginal utilities cannot be compared.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Good-Type Irrelevance): The equimarginal rule MUx / Px = MUy / Py applies to both normal and inferior goods at an interior optimum."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because consumers only maximize utility when the higher-priced good yields half the marginal utility of the cheaper good.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inverted Price Scaling): A good that costs twice as much must deliver twice as much marginal utility—not half—to deliver equal marginal utility per dollar."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because the consumer has violated the Law of Diminishing Marginal Utility by getting 32 utils from coffee.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Level-vs-Slope Confusion): Diminishing MU means MU falls as quantity rises for the same good; it says nothing about whether one good's raw MU exceeds another's."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T1_10",
+      "chapter": 11,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Substitution Effect of a Price Change",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Sign and Definition of the Pure Substitution Effect",
+      "prompt_template": "Which statement accurately characterizes the pure substitution effect when the price of Good X changes?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall what is held constant when isolating the pure substitution effect along an indifference map."
+        },
+        {
+          "tier": 2,
+          "text": "Because indifference curves are convex, moving to a flatter slope along U1 always increases X regardless of whether X is normal or inferior."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "It measures the change in quantity demanded caused solely by higher or lower real purchasing power while holding relative prices constant.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Income-Substitution Reversal): Holding relative prices constant while changing purchasing power defines the income effect, not the substitution effect."
+        },
+        {
+          "id": "opt_b",
+          "text": "It isolates the consumer's response to the change in relative prices while holding utility (real purchasing power) constant, and it always moves in the opposite direction of the price change.",
+          "is_correct": true,
+          "feedback": "Correct. Along the original indifference curve (constant utility), a lower relative price of Good X always induces substitution toward Good X (Px ↓ => X_sub ↑), and a higher price induces substitution away (Px ↑ => X_sub ↓)."
+        },
+        {
+          "id": "opt_c",
+          "text": "It moves in the opposite direction of a price change for normal goods, but moves in the same direction as a price change for inferior goods.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inferior-Good SE Myth): Even for inferior and Giffen goods, the pure substitution effect is ALWAYS negative (opposite to the price change); only the income effect changes sign."
+        },
+        {
+          "id": "opt_d",
+          "text": "It occurs only when a consumer's nominal money income changes at the same time as the price of Good X.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Nominal-Income Confusion): The substitution effect occurs whenever a relative price changes, even when nominal money income I is completely unchanged."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T1_11",
+      "chapter": 11,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Income Effect for Normal vs. Inferior Goods",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "How the Income Effect Differs Between Normal and Inferior Goods",
+      "prompt_template": "When the price of Good X falls, how does the income effect interact with the substitution effect for a normal good versus an inferior good?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "First determine whether a drop in Px makes the consumer feel richer or poorer in real purchasing power."
+        },
+        {
+          "tier": 2,
+          "text": "Then apply the definitions of normal goods (demand rises with real income) and inferior goods (demand falls with real income)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "For both normal and inferior goods, the income effect reduces quantity demanded because lower prices reduce consumer income.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Purchasing-Power Inversion): A price drop increases—rather than decreases—a household's real purchasing power."
+        },
+        {
+          "id": "opt_b",
+          "text": "For a normal good, the income effect offsets the substitution effect; for an inferior good, the income effect reinforces the substitution effect.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Normal-Inferior Sign Swap): Higher real purchasing power raises demand for normal goods (reinforcing the positive SE of a price drop) and lowers demand for inferior goods (offsetting SE)."
+        },
+        {
+          "id": "opt_c",
+          "text": "For a normal good, higher real purchasing power raises quantity demanded (reinforcing the substitution effect); for an inferior good, higher real purchasing power lowers quantity demanded (partially offsetting the substitution effect).",
+          "is_correct": true,
+          "feedback": "Correct. A price drop expands real purchasing power: consumers buy more of a normal good (IE > 0, reinforcing SE > 0) and less of an inferior good (IE < 0, opposing SE > 0)."
+        },
+        {
+          "id": "opt_d",
+          "text": "For a normal good, the income effect is always zero; only inferior goods experience an income effect.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-IE Fallacy): Any good whose demand responds to changes in purchasing power—normal or inferior—experiences a nonzero income effect."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T1_12",
+      "chapter": 11,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Giffen Goods and the Law of Demand",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Defining Conditions of a Giffen Good",
+      "prompt_template": "Under what exact theoretical conditions does a good qualify as a Giffen good?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall the two opposing effects of a price increase on an inferior good."
+        },
+        {
+          "tier": 2,
+          "text": "For quantity demanded to rise when price rises, which effect must be larger in magnitude than the other?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "It is a luxury normal good whose demand increases when income rises rapidly.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Luxury-Giffen Confusion): Luxury goods are normal goods, for which income and substitution effects reinforce each other to guarantee downward-sloping demand."
+        },
+        {
+          "id": "opt_b",
+          "text": "It is any inferior good, because every inferior good automatically has an upward-sloping demand curve.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (All-Inferior-Are-Giffen Error): For almost all inferior goods, the negative substitution effect still outweighs the opposing income effect, keeping the demand curve downward sloping."
+        },
+        {
+          "id": "opt_c",
+          "text": "It is a good with a positive substitution effect that reinforces a positive income effect when price rises.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Positive-SE Fallacy): Under convex preferences, the substitution effect of a price rise is never positive; a Giffen good arises from the income effect dominating a negative substitution effect."
+        },
+        {
+          "id": "opt_d",
+          "text": "It is a strongly inferior staple that takes up such a large share of a low-income household's budget that the income effect outweighs the substitution effect, causing a price increase to raise quantity demanded.",
+          "is_correct": true,
+          "feedback": "Correct. A Giffen good requires both inferiority and a massive budget share so that the perverse income effect overpowers the always-negative substitution effect."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T1_13",
+      "chapter": 11,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Lagrangian Optimization and Marginal Utility of Income",
+      "clo_alignment": [
+        "MI-2",
+        "MI-3"
+      ],
+      "title": "Economic Interpretation of the Lagrange Multiplier (λ)",
+      "prompt_template": "In the constrained utility maximization problem L = U(X, Y) + λ(I - Px * X - Py * Y), where first-order conditions yield MUx / Px = MUy / Py = λ, what does λ measure economically?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Check the units of the ratio MUx / Px: the numerator is in utils per unit of X, and the denominator is in dollars per unit of X."
+        },
+        {
+          "tier": 2,
+          "text": "When units of X cancel out in (utils / unit of X) ÷ (dollars / unit of X), what units remain?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The marginal utility of income—the additional utility the consumer gains from receiving one extra dollar of budget, spent optimally.",
+          "is_correct": true,
+          "feedback": "Correct. At the optimum, λ equals MUx / Px = MUy / Py, measuring the exact extra utils obtained per additional dollar of income."
+        },
+        {
+          "id": "opt_b",
+          "text": "The relative price ratio Px / Py between Good X and Good Y.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Price-Ratio Conflation): The relative price ratio equals MUx / MUy, whereas λ equals MUx / Px (utils per dollar, not units of Y per unit of X)."
+        },
+        {
+          "id": "opt_c",
+          "text": "The consumer's total utility divided by total units of Good X consumed.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Average-Utility Confusion): λ measures marginal utility per marginal dollar of income, not average utility per unit of a good."
+        },
+        {
+          "id": "opt_d",
+          "text": "The exact dollar cost of switching from Good X to Good Y along an indifference curve.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Units-of-Measurement Error): λ is measured in utils per dollar, not in dollars."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T2_01",
+      "chapter": 11,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Budget Line Shifts from Income Changes",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Graphical Effect of Higher Income at Constant Prices",
+      "prompt_template": "Holding the prices of campus meals (Px) and transit trips (Py) constant, how does an increase in a student's monthly income from I1 to I2 transform the budget line?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Inspect the slope-intercept formula Y = (I / Py) - (Px / Py) * X when I rises while Px and Py stay fixed."
+        },
+        {
+          "tier": 2,
+          "text": "Check whether the slope (-Px / Py) changes and whether both intercepts (I / Px and I / Py) move."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "It pivots outward along the horizontal axis while keeping the vertical intercept anchored at I1 / Py.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Shift-vs-Pivot Confusion): An outward pivot around one fixed intercept is caused by a drop in one good's price, not by a change in income."
+        },
+        {
+          "id": "opt_b",
+          "text": "It shifts outward in parallel, increasing both intercepts proportionally while leaving the slope (-Px / Py) unchanged.",
+          "is_correct": true,
+          "feedback": "Correct. Higher income raises both I / Px and I / Py by the same proportion while keeping relative prices (-Px / Py) identical, producing a parallel outward shift."
+        },
+        {
+          "id": "opt_c",
+          "text": "It shifts inward in parallel because higher income raises the opportunity cost of both goods.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Direction-of-Shift Error): Higher income expands the affordable budget set outward rather than shrinking it inward, and relative prices do not change."
+        },
+        {
+          "id": "opt_d",
+          "text": "It becomes steeper while rotating around the midpoint of the original budget line.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Slope-Change Misconception): Because neither Px nor Py changed, the slope -Px / Py remains completely unchanged."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T2_02",
+      "chapter": 11,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Budget Line Pivot from a Fall in Px",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Graphical Effect of a Price Reduction in Good X",
+      "prompt_template": "On a graph with Good X (meals) on the horizontal axis and Good Y (transit trips) on the vertical axis, what happens to the budget line when Px falls while income I and Py remain constant?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compute what happens to I / Px, I / Py, and the absolute slope Px / Py when Px gets smaller."
+        },
+        {
+          "tier": 2,
+          "text": "Remember: the intercept for the good whose price did NOT change acts as the hinge (anchor) of the pivot."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The entire budget line shifts outward in parallel, raising both the X-intercept and the Y-intercept.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Parallel-Shift Misapplication): Because neither I nor Py changed, the maximum affordable quantity of Y (I / Py) cannot rise."
+        },
+        {
+          "id": "opt_b",
+          "text": "The budget line pivots inward along the horizontal axis and becomes steeper.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Price-Direction Reversal): A lower price of X allows the consumer to buy MORE X (higher I / Px), pivoting outward and making the line flatter."
+        },
+        {
+          "id": "opt_c",
+          "text": "The budget line pivots outward along the horizontal axis around the fixed vertical intercept I / Py, becoming flatter.",
+          "is_correct": true,
+          "feedback": "Correct. Lowering Px raises the horizontal intercept I / Px, leaves the vertical intercept I / Py anchored, and reduces the absolute slope Px / Py (making the line flatter)."
+        },
+        {
+          "id": "opt_d",
+          "text": "The budget line pivots outward along the vertical axis around the fixed horizontal intercept I / Px, becoming steeper.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Axis-Swap Error): A change in Px alters the horizontal intercept I / Px while keeping the vertical intercept I / Py fixed."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T2_03",
+      "chapter": 11,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Budget Line Pivot from a Rise in Py",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Graphical Effect of a Price Increase in Good Y",
+      "prompt_template": "With Good X on the horizontal axis and Good Y on the vertical axis, suppose Py increases while I and Px stay fixed. How does the budget line move?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Check which intercept contains Py and how increasing the denominator Py affects the fraction Px / Py."
+        },
+        {
+          "tier": 2,
+          "text": "When the vertical intercept drops while the horizontal intercept stays put, does the line get steeper or flatter?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "It shifts inward in parallel, reducing both the horizontal and vertical intercepts.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Parallel-Shift Confusion): Since I and Px are unchanged, the maximum affordable quantity of Good X (I / Px) stays anchored."
+        },
+        {
+          "id": "opt_b",
+          "text": "It pivots outward along the vertical axis and becomes steeper.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Price-Increase Direction Error): A higher Py reduces maximum affordable Y (I / Py), pivoting the vertical intercept downward (inward), not upward."
+        },
+        {
+          "id": "opt_c",
+          "text": "It pivots inward along the horizontal axis around the fixed vertical intercept I / Py.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Wrong-Axis Pivot): Changing Py moves the vertical Y-intercept (I / Py) while anchoring the horizontal X-intercept (I / Px)."
+        },
+        {
+          "id": "opt_d",
+          "text": "It pivots inward (downward) along the vertical axis around the fixed horizontal intercept I / Px, making the line flatter.",
+          "is_correct": true,
+          "feedback": "Correct. A higher Py lowers the vertical intercept I / Py, keeps the horizontal intercept I / Px anchored, and shrinks the absolute slope Px / Py (making Good X relatively cheaper in terms of Y)."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T2_04",
+      "chapter": 11,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Homogeneity of the Budget Constraint (No Money Illusion)",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Effect of Simultaneously Doubling Income and Both Prices",
+      "prompt_template": "Suppose a student's nominal income I, the price of Good X (Px), and the price of Good Y (Py) all simultaneously double. What happens to the budget line on an (X, Y) graph?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Plug 2I, 2Px, and 2Py into the formulas for X-intercept, Y-intercept, and slope."
+        },
+        {
+          "tier": 2,
+          "text": "Simplify (2I) / (2Px), (2I) / (2Py), and -(2Px) / (2Py)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The budget line does not move at all—both intercepts and the slope remain completely unchanged.",
+          "is_correct": true,
+          "feedback": "Correct. Doubling numerator and denominator cancels out in I / Px, I / Py, and -Px / Py, leaving both real purchasing power and relative prices identical."
+        },
+        {
+          "id": "opt_b",
+          "text": "The budget line shifts outward in parallel because nominal income doubled.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Money Illusion): Focusing only on higher nominal income ignores that both prices doubled simultaneously, leaving real purchasing power unchanged."
+        },
+        {
+          "id": "opt_c",
+          "text": "The budget line shifts inward in parallel because both prices doubled.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Price-Only Focus): Focusing only on higher prices ignores that nominal income doubled by the exact same factor."
+        },
+        {
+          "id": "opt_d",
+          "text": "The budget line keeps the same intercepts but becomes twice as steep.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Slope-Doubling Error): The slope is -(2Px) / (2Py) = -Px / Py; the factor of 2 cancels out."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T2_05",
+      "chapter": 11,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Indifference Curve Tangency and Optimality",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Comparing Tangent, Non-Tangent Affordable, and Unattainable Curves",
+      "prompt_template": "In a standard indifference-curve diagram (such as Figure 11.2), budget line BL intersects indifference curve U1 at point A, is tangent to indifference curve U2 at point E*, and lies entirely below indifference curve U3. Which statement correctly compares these three curves?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Remember the consumer's goal: reach the highest indifference curve that still touches the affordable budget set."
+        },
+        {
+          "tier": 2,
+          "text": "Compare affordability and utility ranking across U1 (crossed), U2 (tangent), and U3 (above the budget line)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Bundle A maximizes utility because the budget line crosses U1 cleanly rather than merely touching it.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Crossing-Over-Tangency Error): Whenever a budget line cuts through an indifference curve, moving along the budget line reaches strictly higher indifference curves."
+        },
+        {
+          "id": "opt_b",
+          "text": "Bundle E* on U2 is the unique utility-maximizing choice: U1 yields lower utility than E*, while every bundle on U3 lies outside the affordable budget set.",
+          "is_correct": true,
+          "feedback": "Correct. Tangency at E* puts the consumer on the highest reachable indifference curve (U2), strictly beating affordable non-tangent bundles on U1 while U3 is unaffordable."
+        },
+        {
+          "id": "opt_c",
+          "text": "The consumer will choose a bundle on U3 because higher indifference curves always represent preferred bundles.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ignoring the Budget Constraint): Although bundles on U3 are more preferred, they violate Px * X + Py * Y <= I and cannot be purchased."
+        },
+        {
+          "id": "opt_d",
+          "text": "Bundles A and E* give the exact same utility because both exhaust the consumer's entire budget.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Equal-Spending = Equal-Utility Myth): Exhausting the same dollar budget does not guarantee equal utility; E* sits on a higher indifference curve (U2 > U1)."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T2_06",
+      "chapter": 11,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Disequilibrium Adjustment When MRS > Px / Py",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Reallocating Consumption When the Indifference Curve Is Steeper Than the Budget Line",
+      "prompt_template": "At an affordable bundle A on the budget line (in the upper-left region where X is scarce and Y is abundant), the indifference curve is steeper than the budget line, meaning MRS_XY > Px / Py. How should the consumer move along the budget line to increase utility?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Rewrite MRS_XY > Px / Py using MRS_XY = MUx / MUy to compare MUx / Px against MUy / Py."
+        },
+        {
+          "tier": 2,
+          "text": "If MUx / Px > MUy / Py, which good gives more satisfaction per dollar, and how does buying more of it affect MRS_XY?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Move upward and leftward along the budget line by buying less X and more Y.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Wrong-Direction Adjustment): Moving upward-left increases MRS_XY even further away from Px / Py and drops the consumer onto lower indifference curves."
+        },
+        {
+          "id": "opt_b",
+          "text": "Stay at bundle A because MRS_XY > Px / Py means the consumer is getting surplus satisfaction.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inequality-as-Optimum Error): Whenever MRS_XY does not equal Px / Py at an interior point, reallocation can strictly raise utility."
+        },
+        {
+          "id": "opt_c",
+          "text": "Move downward and rightward along the budget line by buying more X and less Y until MRS_XY falls to equal Px / Py.",
+          "is_correct": true,
+          "feedback": "Correct. Because MUx / Px > MUy / Py, each dollar shifted from Y into X adds more utility than it sacrifices; moving downward-right lowers MRS_XY until tangency is reached."
+        },
+        {
+          "id": "opt_d",
+          "text": "Shift the budget line outward by raising personal income until the budget line matches the slope at A.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Endogenous-Income Error): In consumer choice theory, income I and prices are fixed; the consumer adjusts quantities along the given budget line."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T2_07",
+      "chapter": 11,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Disequilibrium Adjustment When MRS < Px / Py",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Reallocating Consumption When the Indifference Curve Is Flatter Than the Budget Line",
+      "prompt_template": "At an affordable bundle B in the lower-right portion of the budget line, the indifference curve is flatter than the budget line (MRS_XY < Px / Py). Which direction of movement along the budget line raises utility?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Convert MRS_XY < Px / Py into marginal utility per dollar: MUx / Px < MUy / Py."
+        },
+        {
+          "tier": 2,
+          "text": "With Y delivering higher marginal utility per dollar than X, which direction along the budget line gives you more Y and less X?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Move downward and rightward (more X, less Y) to flatten the indifference curve even more.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Divergent Adjustment): Buying even more X lowers MRS_XY further below Px / Py, moving to lower indifference curves."
+        },
+        {
+          "id": "opt_b",
+          "text": "Reduce consumption of both X and Y to move inside the budget set.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Wasted-Budget Fallacy): Under non-satiation, throwing away unspent income reduces utility instead of raising it."
+        },
+        {
+          "id": "opt_c",
+          "text": "Remain at bundle B because a flatter indifference curve guarantees maximum utility.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Flatter-Is-Better Myth): Utility is maximized only where the indifference curve slope matches the budget line slope (tangency), not where it is flattest."
+        },
+        {
+          "id": "opt_d",
+          "text": "Move upward and leftward along the budget line by buying less X and more Y until MRS_XY rises to equal Px / Py.",
+          "is_correct": true,
+          "feedback": "Correct. MRS_XY < Px / Py implies MUx / Px < MUy / Py, so shifting dollars out of X and into Y increases total utility and steepens MRS_XY until tangency is achieved."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T2_08",
+      "chapter": 11,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Indifference Curve Geometry and Constant MRS",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Graphical Shape When Marginal Rate of Substitution Is Constant",
+      "prompt_template": "If a consumer were always willing to trade exactly 2 units of Good Y for 1 unit of Good X regardless of how much of either good they already owned (constant MRS_XY = 2), how would their indifference curves look on an (X, Y) graph?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Remember the geometric relationship between MRS_XY and the slope of an indifference curve."
+        },
+        {
+          "tier": 2,
+          "text": "What kind of curve has the exact same slope (-2) at every single point?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Downward-sloping straight lines with a constant slope of -2.",
+          "is_correct": true,
+          "feedback": "Correct. Because the slope of an indifference curve equals -MRS_XY, a constant MRS of 2 produces straight downward-sloping lines (perfect substitutes) rather than bowed-inward curves."
+        },
+        {
+          "id": "opt_b",
+          "text": "Bowed inward (strictly convex to the origin) with a slope that flattens as X rises.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Automatic-Convexity Assumption): Strictly convex curves require a diminishing MRS, whereas here MRS is explicitly constant."
+        },
+        {
+          "id": "opt_c",
+          "text": "Upward-sloping straight lines with a constant slope of +2.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Sign-of-Slope Error): Trading away Y to get more X while holding utility constant means ΔY / ΔX = -2, not +2."
+        },
+        {
+          "id": "opt_d",
+          "text": "L-shaped right-angle curves with vertices along the ray Y = 2X.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Substitutes-Complements Confusion): L-shaped curves represent perfect complements consumed in fixed proportions, not constant-MRS perfect substitutes."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T2_09",
+      "chapter": 11,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Constructing the Compensated Budget Line (BL_c)",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Graphical Properties of the Hicksian Compensated Budget Line",
+      "prompt_template": "In a Hicksian decomposition diagram (Figure 11.3) analyzing a drop in Px from BL1 to BL2, how is the dashed hypothetical compensated budget line BL_c drawn?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Ask what two things must be true at the intermediate point Ec: which relative price applies, and which utility level is held fixed?"
+        },
+        {
+          "tier": 2,
+          "text": "Relative price determines the slope (parallel to BL2), and constant utility determines which indifference curve BL_c touches (U1)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Parallel to the original budget line BL1 and tangent to the new higher indifference curve U2.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Wrong-Curve/Wrong-Slope Pairing): That reverses the Hicksian construction; to isolate SE along U1, BL_c must reflect the NEW relative prices (parallel to BL2) while holding utility at the ORIGINAL level U1."
+        },
+        {
+          "id": "opt_b",
+          "text": "Parallel to the new budget line BL2 (reflecting the new price ratio) and tangent to the original indifference curve U1 (holding utility constant).",
+          "is_correct": true,
+          "feedback": "Correct. Drawing BL_c parallel to BL2 imposes the new relative price while sliding it inward until tangent to U1 removes the gain in real purchasing power, isolating the pure substitution point Ec."
+        },
+        {
+          "id": "opt_c",
+          "text": "With the same vertical intercept as BL1 and BL2, passing directly through the original optimum E1.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Uncompensated-Pivot Confusion): Keeping the same vertical intercept as BL1 and BL2 would just reproduce BL2 rather than compensating income back to U1."
+        },
+        {
+          "id": "opt_d",
+          "text": "Perpendicular to both BL1 and BL2 and passing through the origin.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Geometric Misconception): Budget lines always slope downward at the price ratio -Px / Py and never pass through the origin for positive income."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T2_10",
+      "chapter": 11,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Graphical Hicksian Decomposition for a Normal Good",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Ordering of X1, Xc, and X2 After a Price Drop for a Normal Good",
+      "prompt_template": "In Figure 11.3, when the price of a normal good X falls, the consumer moves from initial optimum E1 (quantity X1) to compensated bundle Ec (quantity Xc) and finally to new optimum E2 (quantity X2). Which horizontal ordering of quantities is shown on the X-axis?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Trace the two steps horizontally along the X-axis: first from E1 to Ec along U1, then from Ec to E2 onto U2."
+        },
+        {
+          "tier": 2,
+          "text": "For a normal good when Px falls, both steps move in the positive (rightward) direction."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "X2 < Xc < X1, because both effects reduce consumption of X.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Price-Rise Reversal): A price DROP increases consumption of a normal good via both SE and IE, shifting X rightward rather than leftward."
+        },
+        {
+          "id": "opt_b",
+          "text": "X1 < X2 < Xc, because the income effect pulls quantity demanded back toward X1.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inferior-Good Pattern): X1 < X2 < Xc describes an ordinary inferior good where IE opposes SE, not a normal good."
+        },
+        {
+          "id": "opt_c",
+          "text": "X1 < Xc < X2, because the substitution effect (X1 to Xc) increases X and the normal-good income effect (Xc to X2) increases X even further.",
+          "is_correct": true,
+          "feedback": "Correct. For a price decrease on a normal good, both the substitution effect (E1 -> Ec) and the outward shift from BL_c to BL2 (Ec -> E2) push X rightward, yielding X1 < Xc < X2."
+        },
+        {
+          "id": "opt_d",
+          "text": "Xc < X1 < X2, because the substitution effect decreases X while the income effect increases X.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Wrong-Sign SE): The substitution effect of a price drop is ALWAYS positive (Xc > X1), never negative."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T2_11",
+      "chapter": 11,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Graphical Hicksian Decomposition for an Ordinary Inferior Good",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Ordering of X1, Xc, and X2 After a Price Drop for a Non-Giffen Inferior Good",
+      "prompt_template": "Suppose Good X is an ordinary (non-Giffen) inferior good and its price Px falls. On a Hicksian decomposition graph, where does the final quantity X2 lie relative to initial quantity X1 and compensated quantity Xc?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Determine the direction of SE (E1 -> Ec) and IE (Ec -> E2) separately when Px falls for an inferior good."
+        },
+        {
+          "tier": 2,
+          "text": "Remember: 'ordinary (non-Giffen)' means the total effect still obeys the Law of Demand (X2 > X1), even though IE opposes SE."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "X2 lies to the right of Xc (X1 < Xc < X2) because higher purchasing power boosts consumption of inferior goods.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Normal-Good Confusion): Higher real purchasing power reduces—not increases—consumption of an inferior good, pulling X2 to the left of Xc."
+        },
+        {
+          "id": "opt_b",
+          "text": "X2 lies to the left of X1 (X2 < X1 < Xc) because any inferior good violates the Law of Demand.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Giffen-Overgeneralization): X2 < X1 occurs only for a Giffen good; for an ordinary non-Giffen inferior good, SE still dominates IE so X2 > X1."
+        },
+        {
+          "id": "opt_c",
+          "text": "X2 equals X1 exactly because substitution and income effects always cancel out for inferior goods.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Exact-Cancellation Myth): Exact cancellation is a knife-edge coincidence; for ordinary inferior goods, the positive SE exceeds the negative IE."
+        },
+        {
+          "id": "opt_d",
+          "text": "X2 lies strictly between X1 and Xc (X1 < X2 < Xc): the substitution effect pushes X rightward to Xc, and the smaller negative income effect pulls X partly back to X2.",
+          "is_correct": true,
+          "feedback": "Correct. When Px falls for a non-Giffen inferior good, SE > 0 moves X from X1 to Xc, IE < 0 moves X leftward from Xc to X2, and |SE| > |IE| keeps X2 > X1."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T2_12",
+      "chapter": 11,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Deriving the Individual Demand Curve",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Tracing the Individual Demand Curve from Budget Line Pivots",
+      "prompt_template": "How does the indifference-curve model graphically derive a consumer's individual demand curve for Good X?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about which single variable changes along a demand curve and which variables are held fixed (ceteris paribus)."
+        },
+        {
+          "tier": 2,
+          "text": "On the indifference map, changing only Px pivots the budget line and generates a new tangency X* at each price level."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "By varying Px while holding income I, Py, and preferences constant, recording the optimal tangency quantity X* at each price, and plotting those (Px, X*) pairs.",
+          "is_correct": true,
+          "feedback": "Correct. Pivoting the budget line outward/inward as Px changes yields a sequence of tangency bundles; transferring each (Px, X*) pair to a price-quantity graph traces out the individual demand curve."
+        },
+        {
+          "id": "opt_b",
+          "text": "By shifting the budget line outward in parallel as income I rises while holding Px and Py fixed, and plotting (I, X*).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Engel-vs-Demand Confusion): Holding prices fixed and varying income traces an income-consumption relationship (Engel curve), not a demand curve."
+        },
+        {
+          "id": "opt_c",
+          "text": "By copying a single indifference curve directly onto a price-quantity graph.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Curve-Identity Error): An indifference curve plots (X, Y) combinations of equal utility, whereas a demand curve plots optimal quantity X* against price Px across changing utility levels."
+        },
+        {
+          "id": "opt_d",
+          "text": "By shifting preferences (indifference curves) while keeping the budget line fixed at a single price ratio.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ceteris-Paribus Violation): Deriving a demand curve requires holding consumer preferences constant while varying the own price Px."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T2_13",
+      "chapter": 11,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Graphical Comparison: Price Subsidy vs. Cash Stipend",
+      "clo_alignment": [
+        "MI-1",
+        "MI-4"
+      ],
+      "title": "Why an Equal-Cost Cash Line Passes Through the Subsidy Optimum",
+      "prompt_template": "In the university affordability comparison (a 50% campus meal-plan discount versus an unrestricted cash stipend of the exact same dollar cost), how do the two post-policy budget lines compare graphically?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Check whether the subsidy bundle (X_sub, Y_sub) is affordable when the student receives the exact subsidy cost in cash."
+        },
+        {
+          "tier": 2,
+          "text": "Since the cash line has the steeper original slope -Px/Py while the indifference curve at (X_sub, Y_sub) is tangent to the flatter subsidized slope, the cash line cuts through the indifference curve!"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The cash budget line lies entirely below the meal-subsidy budget line because the cash policy keeps meal prices high.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Price-Only Focus): Although meals stay at $4 under cash, the cash line passes through the subsidy bundle and extends ABOVE the subsidy line for bundles with more transit trips."
+        },
+        {
+          "id": "opt_b",
+          "text": "The cash budget line shifts outward in parallel and passes right through the student's subsidy bundle (where it is steeper than the pivoted subsidy line), allowing the student to move upward-left onto a higher indifference curve.",
+          "is_correct": true,
+          "feedback": "Correct. Because the cash transfer equals the exact dollar subsidy paid at the subsidy bundle, the student can still afford that bundle under cash—and because the original price line is steeper than the indifference curve at that point, moving toward more transit trips reaches a strictly higher indifference curve."
+        },
+        {
+          "id": "opt_c",
+          "text": "Both policies produce the exact same pivoted budget line, so the student chooses the same bundle under either policy.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Identical-Constraint Error): A meal subsidy pivots the budget line (changing relative prices), whereas unrestricted cash shifts it outward in parallel (preserving relative prices)."
+        },
+        {
+          "id": "opt_d",
+          "text": "The meal-subsidy line shifts outward in parallel while the cash stipend pivots the line along the transit axis.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Policy-Geometry Reversal): Cash causes the parallel shift; a single-good price subsidy causes the pivot along that good's axis."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T3_01",
+      "chapter": 11,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Budget Line Intercepts and Slope-Intercept Form",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Calculating Budget Intercepts and Equation",
+      "prompt_template": "A student has a monthly budget of I = $160 to spend on museum tickets (X) priced at Px = $10 each and hardcover books (Y) priced at Py = $20 each. What are the horizontal intercept (X_max), vertical intercept (Y_max), and slope-intercept budget equation (Y as a function of X)?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compute X_max = I / Px and Y_max = I / Py first, then solve 10X + 20Y = 160 for Y."
+        },
+        {
+          "tier": 2,
+          "text": "Divide every term of 20Y = 160 - 10X by 20 to read off the vertical intercept and negative slope."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "X_max = 16 tickets, Y_max = 8 books, and Y = 8 - 2.00X.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inverted Slope Ratio): You correctly found the intercepts (160 / 10 = 16 and 160 / 20 = 8), but computed the slope as -Py / Px = -20 / 10 = -2.00 instead of -Px / Py = -10 / 20 = -0.50."
+        },
+        {
+          "id": "opt_b",
+          "text": "X_max = 8 tickets, Y_max = 16 books, and Y = 16 - 0.50X.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Swapped Intercepts): You divided income by the wrong price for each axis; X_max = I / Px = 160 / 10 = 16 and Y_max = I / Py = 160 / 20 = 8."
+        },
+        {
+          "id": "opt_c",
+          "text": "X_max = 16 tickets, Y_max = 8 books, and Y = 8 - 0.50X.",
+          "is_correct": true,
+          "feedback": "Correct. X_max = 160 / 10 = 16, Y_max = 160 / 20 = 8, and slope = -Px / Py = -10 / 20 = -0.50, giving Y = 8 - 0.50X."
+        },
+        {
+          "id": "opt_d",
+          "text": "X_max = 16 tickets, Y_max = 8 books, and Y = 8 + 0.50X.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Sign Error on Slope): Buying more X requires giving up Y along a fixed budget, so the slope must be negative (-0.50), not positive (+0.50)."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T3_02",
+      "chapter": 11,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Quantitative Price Pivot and Opportunity Cost",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Recomputing Horizontal Intercept and Relative Price After a Price Drop",
+      "prompt_template": "A commuter allocates I = $200 per month between concert passes (X, initially Px1 = $25) and transit cards (Y, Py = $20). A student promotion cuts concert pass prices to Px2 = $10 while I and Py stay fixed. What are the new horizontal intercept (X_max) and the new opportunity cost of one concert pass in terms of transit cards?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Use the new price Px2 = $10 in both X_max = I / Px2 and opportunity cost = Px2 / Py."
+        },
+        {
+          "tier": 2,
+          "text": "Check your units: ($10 per pass) / ($20 per transit card) gives transit cards forgone per pass."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "New X_max = 20 passes; opportunity cost = 2.00 transit cards per pass.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inverted Price Ratio): X_max = 200 / 10 = 20 is right, but the opportunity cost of 1 unit of X is Px2 / Py = 10 / 20 = 0.50 cards, not Py / Px2 = 20 / 10 = 2.00."
+        },
+        {
+          "id": "opt_b",
+          "text": "New X_max = 20 passes; opportunity cost = 1.25 transit cards per pass.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Stale Slope Error): 25 / 20 = 1.25 was the OLD opportunity cost before the discount; after Px falls to $10, the new opportunity cost is 10 / 20 = 0.50."
+        },
+        {
+          "id": "opt_c",
+          "text": "New X_max = 10 passes; opportunity cost = 0.50 transit cards per pass.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Vertical-Intercept Substitution): 200 / 20 = 10 is the unchanged vertical intercept Y_max, not the new horizontal intercept X_max = 200 / 10 = 20."
+        },
+        {
+          "id": "opt_d",
+          "text": "New X_max = 20 passes; opportunity cost = 0.50 transit cards per pass.",
+          "is_correct": true,
+          "feedback": "Correct. After the discount, X_max = $200 / $10 = 20 passes, and each $10 pass costs $10 / $20 = 0.50 transit cards (down from 1.25)."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T3_03",
+      "chapter": 11,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Budget Exhaustion Calculation",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Solving for Quantity Y on a Given Budget Line",
+      "prompt_template": "A student has an income of I = $96 to spend on campus lunches (Px = $6) and bus rides (Py = $4). If the student buys 6 campus lunches and exhausts the entire $96 budget, how many bus rides can they purchase?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Substitute X = 6 into the budget equation 6X + 4Y = 96."
+        },
+        {
+          "tier": 2,
+          "text": "Subtract total lunch spending ($36) from $96, then divide the remaining dollars by the price of a bus ride ($4)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "15 bus rides",
+          "is_correct": true,
+          "feedback": "Correct. Six lunches cost $6 * 6 = $36, leaving $96 - $36 = $60 for bus rides; at $4 per ride, $60 / $4 = 15 bus rides."
+        },
+        {
+          "id": "opt_b",
+          "text": "12 bus rides",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Swapped Prices): Applying $4 to lunches ($24) and dividing the remaining $72 by $6 gives 12; always multiply X by Px ($6) and divide remaining dollars by Py ($4)."
+        },
+        {
+          "id": "opt_c",
+          "text": "24 bus rides",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ignoring Good X Expenditure): $96 / $4 = 24 is the vertical intercept when zero lunches are bought; you must first subtract the $36 spent on 6 lunches."
+        },
+        {
+          "id": "opt_d",
+          "text": "10 bus rides",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Dividing Remaining Dollars by Px): You correctly found $60 remaining, but divided by Px = $6 instead of Py = $4."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T3_04",
+      "chapter": 11,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Marginal Utility and Marginal Utility per Dollar",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Computing MU and MU / P from a Total Utility Schedule",
+      "prompt_template": "A student's Total Utility (TU) from eating pizza slices priced at $3 per slice is: 1 slice = 30 utils, 2 slices = 54 utils, 3 slices = 72 utils, 4 slices = 84 utils, and 5 slices = 90 utils. What are the Marginal Utility (MU) and Marginal Utility per dollar (MU / P) of the 4th slice?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Use the marginal utility formula MU_4 = TU_4 - TU_3."
+        },
+        {
+          "tier": 2,
+          "text": "Once you find MU_4, divide that increment by the $3 price per slice to obtain utils per dollar."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "MU = 21 utils; MU / P = 7 utils per dollar.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Average-vs-Marginal Utility): 84 / 4 = 21 is Average Utility (TU / Q), not Marginal Utility (TU_4 - TU_3 = 84 - 72 = 12)."
+        },
+        {
+          "id": "opt_b",
+          "text": "MU = 12 utils; MU / P = 4 utils per dollar.",
+          "is_correct": true,
+          "feedback": "Correct. MU of the 4th slice equals TU_4 - TU_3 = 84 - 72 = 12 utils, and dividing by the $3 price yields MU / P = 12 / 3 = 4 utils per dollar."
+        },
+        {
+          "id": "opt_c",
+          "text": "MU = 84 utils; MU / P = 28 utils per dollar.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Total-vs-Marginal Utility): 84 is the cumulative Total Utility of all 4 slices combined, not the incremental satisfaction of the 4th slice alone."
+        },
+        {
+          "id": "opt_d",
+          "text": "MU = 12 utils; MU / P = 36 utils per dollar.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Multiplying Instead of Dividing by Price): You correctly found MU = 12, but multiplied 12 * $3 = 36 instead of dividing 12 / $3 = 4."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T3_05",
+      "chapter": 11,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Discrete Utility Maximization Schedule",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Finding the Optimal Bundle from a Discrete Utility Schedule",
+      "prompt_template": "A student has I = $18 to spend on smoothies (Ps = $4) and granola bars (Pg = $2). Smoothies yield Total Utility: Q=1 -> 48, Q=2 -> 84, Q=3 -> 108, Q=4 -> 120. Granola bars yield Total Utility: Q=1 -> 30, Q=2 -> 50, Q=3 -> 62, Q=4 -> 68. Which bundle maximizes total utility?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compute MU and MU / P for every quantity of both goods, then spend dollars sequentially on whichever next unit gives the highest MU / P."
+        },
+        {
+          "tier": 2,
+          "text": "Verify that your final bundle both exhausts all $18 and satisfies MU_s / $4 = MU_g / $2."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "2 smoothies and 2 granola bars (TU = 134 utils).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Unspent Budget): Buying 2 smoothies ($8) and 2 granola bars ($4) spends only $12 of the $18 budget, leaving $6 on the table that could buy 1 more of each."
+        },
+        {
+          "id": "opt_b",
+          "text": "4 smoothies and 1 granola bar (TU = 150 utils).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Raw-MU Chasing): Although $4(4) + $2(1) = $18 exhausts the budget, at (4, 1) MU_s / Ps = 12 / 4 = 3 while MU_g / Pg = 30 / 2 = 15 (and the 2nd granola bar gives 10 utils/$), so shifting dollars to granola raises TU."
+        },
+        {
+          "id": "opt_c",
+          "text": "3 smoothies and 3 granola bars (TU = 170 utils).",
+          "is_correct": true,
+          "feedback": "Correct. At 3 smoothies and 3 granola bars, spending is $4(3) + $2(3) = $18, MU_s / Ps = 24 / 4 = 6 equals MU_g / Pg = 12 / 2 = 6, and total utility reaches its maximum of 108 + 62 = 170 utils."
+        },
+        {
+          "id": "opt_d",
+          "text": "3 smoothies and 2 granola bars (TU = 158 utils).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Incomplete Budget Exhaustion): Spending $4(3) + $2(2) = $16 leaves $2 unspent, enough to buy the 3rd granola bar and add 12 more utils."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T3_06",
+      "chapter": 11,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Applying the Equimarginal Rule Algebraically",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Solving for Required Marginal Utility at an Interior Optimum",
+      "prompt_template": "At a consumer's utility-maximizing bundle, Good X costs Px = $8, Good Y costs Py = $4, and the marginal utility of the last unit of Good Y is MUy = 20 utils. What must MUx equal at this optimum, and what is the common marginal utility per dollar?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Start by finding the marginal utility per dollar of Good Y: MUy / Py."
+        },
+        {
+          "tier": 2,
+          "text": "Set MUx / Px equal to MUy / Py and multiply both sides by Px = $8."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "MUx = 20 utils; 2.5 utils per dollar on Good X.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Raw MUx = MUy Fallacy): Setting MUx = MUy ignores that Good X costs twice as much as Good Y; equalizing raw MU leaves MUx / Px = 2.5 < 5 = MUy / Py."
+        },
+        {
+          "id": "opt_b",
+          "text": "MUx = 10 utils; 1.25 utils per dollar on Good X.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inverted Price Scaling): Computing 20 * (4 / 8) = 10 divides by 2 instead of multiplying by 2; a good costing twice as much must yield twice the marginal utility."
+        },
+        {
+          "id": "opt_c",
+          "text": "MUx = 24 utils; 3.0 utils per dollar on Good X.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Additive Price-Difference Error): Adding the $4 price difference (20 + 4 = 24) confuses additive differences with the multiplicative ratio MUx / Px = MUy / Py."
+        },
+        {
+          "id": "opt_d",
+          "text": "MUx = 40 utils; 5 utils per dollar on both goods.",
+          "is_correct": true,
+          "feedback": "Correct. First compute MUy / Py = 20 / $4 = 5 utils per dollar. Setting MUx / $8 = 5 gives MUx = 40 utils."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T3_07",
+      "chapter": 11,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Computing MRS and Diagnosing Non-Tangent Bundles",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Evaluating MRS vs. Relative Price at an Affordable Bundle",
+      "prompt_template": "A consumer with utility U(X, Y) = X * Y (so MUx = Y and MUy = X) has income I = $100 and faces prices Px = $4 and Py = $2. At the affordable bundle B(5, 40), what is MRS_XY, and how should the consumer adjust spending?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compute MRS_XY = MUx / MUy = Y / X at (5, 40), and compare it with the market price ratio Px / Py."
+        },
+        {
+          "tier": 2,
+          "text": "If MRS_XY > Px / Py, the consumer is willing to give up more Y for 1 unit of X than the market charges."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "MRS_XY = 8.0 > Px / Py = 2.0; the consumer should buy more X and less Y.",
+          "is_correct": true,
+          "feedback": "Correct. MRS_XY = MUx / MUy = Y / X = 40 / 5 = 8.0, which exceeds the price ratio Px / Py = 4 / 2 = 2.0 (equivalently MUx / Px = 10 > 2.5 = MUy / Py), so shifting dollars from Y into X raises utility."
+        },
+        {
+          "id": "opt_b",
+          "text": "MRS_XY = 8.0 > Px / Py = 2.0; the consumer should buy less X and more Y.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Reversed Adjustment Direction): You calculated MRS_XY = 8.0 accurately, but when MRS_XY > Px / Py the consumer values an extra unit of X more than the market requires and should buy MORE X, not less."
+        },
+        {
+          "id": "opt_c",
+          "text": "MRS_XY = 0.125 < Px / Py = 2.0; the consumer should buy less X and more Y.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inverted MRS Formula): Computing X / Y = 5 / 40 = 0.125 inverts MRS_XY = MUx / MUy = Y / X."
+        },
+        {
+          "id": "opt_d",
+          "text": "MRS_XY = 0.125 < Px / Py = 2.0; the consumer should buy more X and less Y.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inverted MRS + Reversed Rule): Both the MRS ratio (X / Y instead of Y / X) and the direction of adjustment for MRS < Px / Py are reversed."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T3_08",
+      "chapter": 11,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Algebraic Utility Maximization (Symmetric Cobb-Douglas)",
+      "clo_alignment": [
+        "MI-2",
+        "MI-3"
+      ],
+      "title": "Solving for Optimal Bundle (X*, Y*) with U(X, Y) = X * Y",
+      "prompt_template": "A consumer has income I = $120, faces prices Px = $6 and Py = $4, and has utility function U(X, Y) = X * Y (with MUx = Y and MUy = X). What are the utility-maximizing quantities (X*, Y*) and maximum utility U*?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Write the tangency equation MUx / MUy = Px / Py as Y / X = 6 / 4, then express Y in terms of X."
+        },
+        {
+          "tier": 2,
+          "text": "Substitute Y = 1.5X into the budget constraint 6X + 4Y = 120 to solve for X*, then find Y* and U* = X* * Y*."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "X* = 15, Y* = 10, and U* = 150.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Swapped Coordinates): Plugging (15, 10) into the budget gives $6(15) + $4(10) = $130 > $120, which is unaffordable; Y / X = 6 / 4 = 1.5 implies Y* must be larger than X*."
+        },
+        {
+          "id": "opt_b",
+          "text": "X* = 10, Y* = 15, and U* = 150.",
+          "is_correct": true,
+          "feedback": "Correct. Tangency gives Y / X = 6 / 4 = 1.5 => Y = 1.5X. Substituting into 6X + 4(1.5X) = 120 yields 12X = 120 => X* = 10, Y* = 15, and U* = 10 * 15 = 150."
+        },
+        {
+          "id": "opt_c",
+          "text": "X* = 12, Y* = 12, and U* = 144.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (MUx = MUy Equating): Setting Y = X yields 6X + 4X = 120 => (12, 12), which exhausts the budget but ignores prices and achieves only U = 144 < 150."
+        },
+        {
+          "id": "opt_d",
+          "text": "X* = 20, Y* = 30, and U* = 600.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Simultaneous-Intercept Error): 20 = 120 / 6 and 30 = 120 / 4 are the two axis intercepts; buying both simultaneously costs $240, double the consumer's budget."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T3_09",
+      "chapter": 11,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Algebraic Utility Maximization (Asymmetric Preferences)",
+      "clo_alignment": [
+        "MI-2",
+        "MI-3"
+      ],
+      "title": "Solving for Optimal Bundle with Asymmetric Marginal Utilities",
+      "prompt_template": "A consumer has budget I = $90 to spend on Good X (Px = $6) and Good Y (Py = $5), with preferences yielding MUx = 2XY and MUy = X^2 (so MRS_XY = MUx / MUy = 2Y / X). What is the utility-maximizing bundle (X*, Y*)?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Set MRS_XY = 2Y / X equal to the price ratio Px / Py = 6 / 5 and solve for Y as a multiple of X."
+        },
+        {
+          "tier": 2,
+          "text": "Substitute Y = 0.6X into 6X + 5Y = 90, combine like terms in X, and check that 6X* + 5Y* = 90."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "X* = 7.5, Y* = 9",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Forced 50/50 Budget Split): Splitting $90 evenly ($45 on each good) drops the factor of 2 in MRS_XY = 2Y / X, which requires spending twice as much on X as on Y."
+        },
+        {
+          "id": "opt_b",
+          "text": "X* = 5, Y* = 12",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inverted Weight Factor): Putting the factor of 2 in the denominator (Y / 2X = 6 / 5) reverses the budget shares to 1/3 on X and 2/3 on Y instead of 2/3 on X and 1/3 on Y."
+        },
+        {
+          "id": "opt_c",
+          "text": "X* = 10, Y* = 6",
+          "is_correct": true,
+          "feedback": "Correct. Tangency gives 2Y / X = 6 / 5 => Y = 0.6X. Substituting into 6X + 5(0.6X) = 90 yields 9X = 90 => X* = 10 and Y* = 6 (exhausting $60 + $30 = $90)."
+        },
+        {
+          "id": "opt_d",
+          "text": "X* = 15, Y* = 18",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Intercept-Bundle Error): 15 = 90 / 6 and 18 = 90 / 5 are the maximum individual intercepts; purchasing both costs $180, violating the $90 budget."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T3_10",
+      "chapter": 11,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Exact Hicksian Substitution and Income Effects Calculation",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Decomposing a Price Drop into Exact Substitution and Income Effects",
+      "prompt_template": "A consumer with U(X, Y) = X * Y (MUx = Y, MUy = X), income I = $80, and Py = $4 initially faces Px1 = $8 and chooses X1 = 5, Y1 = 10 (U1 = 50). If Px falls to Px2 = $2, the new optimum is X2 = 20, Y2 = 10. Using the compensated bundle Ec that keeps U1 = 50 at the new price ratio, what are the exact Substitution Effect (SE) and Income Effect (IE) on Good X?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "At the compensated bundle Ec, two equations hold simultaneously: Yc / Xc = Px2 / Py = 2 / 4 and Xc * Yc = U1 = 50."
+        },
+        {
+          "tier": 2,
+          "text": "Solve Xc * (0.5Xc) = 50 for Xc, then compute SE = Xc - X1 and IE = X2 - Xc."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "SE = +10 units; IE = +5 units.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Swapped SE and IE): With Xc = 10, SE = Xc - X1 = 10 - 5 = +5 and IE = X2 - Xc = 20 - 10 = +10; swapping them reverses the two effects."
+        },
+        {
+          "id": "opt_b",
+          "text": "SE = +15 units; IE = 0 units.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ignoring the Income Effect): +15 is the TOTAL change (20 - 5); because X is a normal good under U = XY, higher real purchasing power drives a positive income effect."
+        },
+        {
+          "id": "opt_c",
+          "text": "SE = +5 units; IE = +15 units.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Double-Counting SE in IE): Using X2 - X1 = +15 for IE instead of X2 - Xc = +10 double-counts the substitution effect, making SE + IE = +20 rather than +15."
+        },
+        {
+          "id": "opt_d",
+          "text": "SE = +5 units; IE = +10 units.",
+          "is_correct": true,
+          "feedback": "Correct. At the new price ratio, Yc / Xc = 2 / 4 = 0.5 => Yc = 0.5Xc. Keeping U1 = 50 gives Xc(0.5Xc) = 50 => Xc^2 = 100 => Xc = 10. Thus SE = 10 - 5 = +5 and IE = 20 - 10 = +10 (summing to +15)."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T3_11",
+      "chapter": 11,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Quantitative Policy Comparison: Price Subsidy vs. Cash Transfer",
+      "clo_alignment": [
+        "MI-3",
+        "MI-4"
+      ],
+      "title": "Comparing Fiscal Cost and Student Utility Under a 50% Subsidy vs. Cash",
+      "prompt_template": "A student with U(X, Y) = X * Y has baseline income I = $80 and faces Px = $8 (meals) and Py = $4 (transit). Under Policy A, a 50% meal subsidy lowers Px to $4, and the student buys X_sub = 10 meals and Y_sub = 10 transit trips. Under Policy B, the university gives the student an unrestricted cash transfer equal to Policy A's exact total fiscal cost (at original prices Px = $8, Py = $4). What is the fiscal cost of Policy A, and how does utility under Policy A compare to Policy B?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "First compute fiscal cost as (per-unit subsidy) * (post-subsidy quantity X_sub), then add that dollar amount to baseline income $80."
+        },
+        {
+          "tier": 2,
+          "text": "Solve the cash-transfer tangency (Y / X = 8 / 4 = 2) with 8X + 4Y = 120, then compare X_cash * Y_cash against 10 * 10 = 100."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Fiscal cost = $40; U_subsidy = 100 vs. U_cash = 112.5 (cash yields strictly higher utility).",
+          "is_correct": true,
+          "feedback": "Correct. Policy A subsidizes $4 per meal on 10 meals, costing $40, with U_sub = 10 * 10 = 100. Giving $40 in cash raises income to $120 at (Px = $8, Py = $4), yielding X_cash = 7.5, Y_cash = 15, and U_cash = 7.5 * 15 = 112.5 > 100."
+        },
+        {
+          "id": "opt_b",
+          "text": "Fiscal cost = $40; U_subsidy = 100 vs. U_cash = 100 (identical utility because both policies cost $40).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Equal-Cost = Equal-Utility Assumption): Identical dollar cost does not produce identical utility; cash removes the relative-price distortion, allowing the student to reach U = 112.5 > 100."
+        },
+        {
+          "id": "opt_c",
+          "text": "Fiscal cost = $20; U_subsidy = 100 vs. U_cash = 78.125 (subsidy yields higher utility).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Pre-Subsidy Quantity Costing): Multiplying the $4 subsidy by the baseline quantity X1 = 5 understates fiscal cost ($20); the university must subsidize all 10 meals purchased under Policy A ($40)."
+        },
+        {
+          "id": "opt_d",
+          "text": "Fiscal cost = $40; U_subsidy = 150 vs. U_cash = 112.5 (subsidy yields higher utility).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Subsidy-Utility Miscalculation): At X_sub = 10 and Y_sub = 10, U_sub = 10 * 10 = 100 (not 150); an equal-cost cash transfer cannot yield strictly lower utility than a single-good price subsidy."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T3_12",
+      "chapter": 11,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Lagrange Multiplier / Marginal Utility of Income Calculation",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Calculating the Marginal Utility of Income (λ) at the Optimum",
+      "prompt_template": "A consumer maximizes U(X, Y) = X * Y (so MUx = Y and MUy = X) subject to income I = $100 and prices Px = $5 and Py = $2. What is the value of the Lagrange multiplier λ (the marginal utility of income, in utils per dollar) at the consumer's optimal bundle?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "First find the optimal bundle (X*, Y*) using Y / X = 5 / 2 and 5X + 2Y = 100."
+        },
+        {
+          "tier": 2,
+          "text": "Then plug X* and Y* into λ = MUx / Px = Y* / 5 (and verify it equals MUy / Py = X* / 2)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "λ = 2.5 utils per dollar",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Price-Ratio Substitution): 5 / 2 = 2.5 is the relative price ratio Px / Py (and MRS_XY), not the marginal utility of income λ = MUx / Px."
+        },
+        {
+          "id": "opt_b",
+          "text": "λ = 5 utils per dollar",
+          "is_correct": true,
+          "feedback": "Correct. Solving Y / X = 5 / 2 => Y = 2.5X with 5X + 2(2.5X) = 100 gives X* = 10 and Y* = 25. Thus MUx = 25 and MUy = 10, so λ = MUx / Px = 25 / 5 = 5 (matching MUy / Py = 10 / 2 = 5) utils per dollar."
+        },
+        {
+          "id": "opt_c",
+          "text": "λ = 10 utils per dollar",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Forgetting to Divide MUy by Py): 10 equals MUy = X* before dividing by Py = $2; dividing by $2 yields λ = 5 utils per dollar."
+        },
+        {
+          "id": "opt_d",
+          "text": "λ = 25 utils per dollar",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Forgetting to Divide MUx by Px): 25 equals MUx = Y* before dividing by Px = $5; dividing by $5 yields λ = 5 utils per dollar."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T4_01",
+      "chapter": 11,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Policy Evaluation: Cash Stipends vs. Price Subsidies",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "Economic Reason Unrestricted Cash Dominates an Equal-Cost Price Subsidy",
+      "prompt_template": "In the chapter's university affordability case, why does an unrestricted $30 cash stipend generate strictly higher student utility than a 50% campus meal-plan discount that costs the university the exact same $30?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare the marginal rate of substitution (MRS) at the subsidy optimum against the true unsubsidized relative price ($4 / $3)."
+        },
+        {
+          "tier": 2,
+          "text": "At the subsidy optimum, the student's last subsidized meal is worth only $2 of transit to them even though it costs society $4 to provide."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because the cash stipend lowers the relative price of both meals and transit trips simultaneously.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Price-Distortion Misattribution): Cash leaves all market prices unchanged; its advantage is precisely that it does NOT distort relative prices."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because students value $30 in cash more than $30 worth of meals even if they would have spent all $30 on meals anyway.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Overstated Dominance): If a student's cash-transfer optimum happened to involve the exact same meal consumption as the subsidy, utility would not strictly exceed the subsidy—the gain arises from adjusting away from the price-distorted bundle."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because the cash stipend expands real purchasing power without distorting relative prices, letting the student allocate dollars across meals and transit according to their true marginal valuations rather than overconsuming subsidized meals.",
+          "is_correct": true,
+          "feedback": "Correct. A 50% meal discount artificially lowers the relative price of meals, inducing extra meal consumption whose marginal value is below the true $4 resource cost; cash allows the student to trade away those lower-value meals for higher-value transit trips."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because the meal-plan discount only generates a substitution effect and produces zero income effect.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-IE Fallacy): A 50% price cut creates both a substitution effect and a substantial positive income effect; the inefficiency comes from the price distortion, not the absence of an income effect."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T4_02",
+      "chapter": 11,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Policy Trade-Offs: Consumer Sovereignty vs. Targeted Subsidies",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "When Policymakers Might Still Choose a Targeted Meal Subsidy Over Cash",
+      "prompt_template": "Given that an unrestricted $30 cash stipend gives a student higher utility than an equal-cost 50% campus meal discount, why might a university administrator still deliberately choose the meal-plan discount?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Contrast two possible institutional goals: maximizing student utility versus maximizing the number of nutritious meals eaten on campus."
+        },
+        {
+          "tier": 2,
+          "text": "Notice how X_subsidy = 15 meals exceeds X_cash = 11.25 meals in the chapter's worked comparison."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because a price subsidy always has a lower administrative cost per dollar than direct cash transfers.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Administrative-Cost Generalization): Targeted price discounts often require monitoring, eligibility cards, and vendor tracking; the primary microeconomic rationale is steering consumption, not lower admin cost."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because economic theory proves students never spend unrestricted cash on food.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-Food-Spending Claim): As shown in the chapter (X_cash rises from 7.5 to 11.25 meals), students still spend part of a cash stipend on normal goods like meals—just less than under a meal-only price cut."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because the meal-plan discount prevents diminishing marginal utility from setting in on campus meals.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Preference-Alteration Error): Subsidies alter the budget line, not the underlying Law of Diminishing Marginal Utility."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because the university's policy goal may be specifically to boost on-campus nutrition (paternalistic or spillover objective) rather than maximizing students' unconstrained utility across all goods.",
+          "is_correct": true,
+          "feedback": "Correct. While unrestricted cash maximizes student utility per fiscal dollar (consumer sovereignty), a targeted subsidy leverages the substitution effect to steer consumption specifically toward campus meals—accepting a trade-off in student utility."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T4_03",
+      "chapter": 11,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Empirical Application: Gasoline Price Spikes",
+      "clo_alignment": [
+        "MI-3",
+        "MI-4"
+      ],
+      "title": "Separating Substitution and Income Effects During a Gasoline Price Jump",
+      "prompt_template": "When retail gasoline jumps from $3.50 to $5.50 per gallon, commuters respond both by carpooling or taking public transit and by cutting back on dining out and weekend travel. How does consumer choice theory classify these two responses?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Ask which behavior responds directly to fuel becoming pricier relative to transit, and which reflects having fewer leftover dollars in the monthly budget."
+        },
+        {
+          "tier": 2,
+          "text": "Remember that the income effect spills over onto other normal goods in the household's budget."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Switching to carpooling or transit reflects the substitution effect of higher relative fuel prices, while cutting back on dining out and weekend travel reflects the income effect of lower real purchasing power.",
+          "is_correct": true,
+          "feedback": "Correct. Higher relative gasoline prices push commuters toward cheaper transport substitutes (SE), while higher fuel bills shrink discretionary purchasing power for other normal goods like dining out (IE)."
+        },
+        {
+          "id": "opt_b",
+          "text": "Switching to carpooling reflects the income effect, while cutting back on dining out reflects the substitution effect.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (SE-IE Channel Reversal): Replacing expensive driving with transit responds directly to the relative price change (SE), whereas trimming unrelated discretionary spending reflects reduced real income (IE)."
+        },
+        {
+          "id": "opt_c",
+          "text": "Both responses are purely substitution effects because the commuter's nominal paycheck did not change.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Nominal-vs-Real Income Error): Even with an unchanged nominal paycheck, a $2/gallon fuel spike lowers REAL purchasing power, creating a real income effect."
+        },
+        {
+          "id": "opt_d",
+          "text": "Both responses prove that gasoline is an inferior good for urban commuters.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inferior-Good Misclassification): Reducing gasoline use and dining out when fuel prices spike is standard behavior for normal goods, not evidence of inferiority."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T4_04",
+      "chapter": 11,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Policy Analysis: Tax-and-Rebate Carbon / Fuel Policy",
+      "clo_alignment": [
+        "MI-3",
+        "MI-4"
+      ],
+      "title": "Predicted Impact of a Gasoline Tax Paired with an Exact Lump-Sum Rebate",
+      "prompt_template": "Suppose policymakers impose a $1.00-per-gallon tax on gasoline and simultaneously mail every driver an unrestricted lump-sum cash rebate just large enough so that each driver can still afford their exact pre-tax consumption bundle. What does consumer choice theory predict will happen to gasoline consumption?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Draw the new steeper budget line passing right through the consumer's original tangency bundle E1."
+        },
+        {
+          "tier": 2,
+          "text": "Because the new line is steeper than the original indifference curve at E1, which direction along the new budget line reaches higher utility?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Gasoline consumption will stay completely unchanged because the driver can still afford the exact same bundle as before.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Affordability-Implies-Same-Choice Error): Being able to afford the old bundle does not mean it remains optimal; the tax steepened the budget line, breaking tangency at the old bundle."
+        },
+        {
+          "id": "opt_b",
+          "text": "Gasoline consumption will fall because the tax raises the relative price of gasoline, triggering a pure substitution effect away from gasoline even though purchasing power is compensated.",
+          "is_correct": true,
+          "feedback": "Correct. Passing the steeper post-tax budget line through the old bundle eliminates the income loss while leaving MRS < Px_new / Py, inducing drivers to substitute away from gasoline onto a higher indifference curve with less fuel."
+        },
+        {
+          "id": "opt_c",
+          "text": "Gasoline consumption will rise because drivers view the lump-sum rebate as bonus income to spend on driving.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ignoring the Substitution Effect): The rebate only restores the ability to afford the old bundle—it does not raise net purchasing power enough to overcome the negative substitution effect of higher fuel prices."
+        },
+        {
+          "id": "opt_d",
+          "text": "Gasoline consumption will drop to zero immediately for every household.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Corner-Solution Overstatement): Under strictly convex preferences, a moderate price hike moves drivers to an interior bundle with less gasoline, not automatically zero."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T4_05",
+      "chapter": 11,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Inferior Goods: Income Shock vs. Own-Price Shock",
+      "clo_alignment": [
+        "MI-3",
+        "MI-4"
+      ],
+      "title": "Contrasting an Economic Downturn Against a Price Cut for an Inferior Good",
+      "prompt_template": "Budget instant ramen is an ordinary (non-Giffen) inferior good for college students. How does student consumption of instant ramen respond to (1) a drop in student income during a recession versus (2) a 30% price discount on instant ramen?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Evaluate the two shocks separately: shock (1) is a pure income drop; shock (2) is a price drop combining SE and IE."
+        },
+        {
+          "tier": 2,
+          "text": "Remember that for an ordinary non-Giffen inferior good, the Law of Demand still holds."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Consumption falls in both cases because inferior goods always move opposite to favorable economic changes.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Own-Price Confusion): A 30% price discount triggers a strong positive substitution effect that outweighs the smaller negative income effect, raising quantity demanded."
+        },
+        {
+          "id": "opt_b",
+          "text": "Consumption falls during the recession and rises when the price drops.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Normal-Good Response Applied to Inferior Good): For an inferior good, lower income during a recession INCREASES demand rather than reducing it."
+        },
+        {
+          "id": "opt_c",
+          "text": "Consumption rises during the recession (lower income raises demand for an inferior good) AND rises during the 30% price discount (the positive substitution effect outweighs the smaller negative income effect).",
+          "is_correct": true,
+          "feedback": "Correct. Lower income directly boosts demand for an inferior good, while a price cut raises quantity demanded because for any ordinary (non-Giffen) inferior good, |SE| > |IE|."
+        },
+        {
+          "id": "opt_d",
+          "text": "Consumption rises during the recession, but falls during the 30% price discount because the income effect always dominates for inferior goods.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (All-Inferior-Are-Giffen Error): The income effect dominates only in the rare Giffen case; the prompt specifies an ordinary (non-Giffen) inferior good."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T4_06",
+      "chapter": 11,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Empirical Rarity of Giffen Goods",
+      "clo_alignment": [
+        "MI-3",
+        "MI-4"
+      ],
+      "title": "Why Giffen Goods Are Virtually Absent in High-Income Economies",
+      "prompt_template": "Why do economists observe virtually no Giffen goods in modern high-income economies, even though many everyday products (such as generic store-brand staples) are inferior goods?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about the two conditions required for a Giffen good in Section 11.3: inferiority AND budget share."
+        },
+        {
+          "tier": 2,
+          "text": "Look at the Slutsky income-effect term -X * (∂X / ∂I): what happens to its magnitude when spending on X is a tiny share of income?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because consumers in high-income economies do not experience diminishing marginal utility.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (DMU Denial): Diminishing marginal utility applies across all income levels and is not what prevents Giffen behavior."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because the substitution effect is zero in modern economies due to brand loyalty.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-SE Reversal): If SE were zero, an inferior good would be MORE likely—not less likely—to exhibit Giffen behavior."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because modern governments prohibit prices of inferior goods from ever rising.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Institutional Myth): Prices of inferior goods fluctuate freely in market economies; the absence of Giffen behavior stems from household budget shares."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because any single inferior staple represents too small a share of a typical household's total budget for its income effect to overpower the negative substitution effect.",
+          "is_correct": true,
+          "feedback": "Correct. In the Slutsky equation, the income effect scales with quantity/budget share (-X * ∂X/∂I); when a staple accounts for only a tiny fraction of household spending, the income effect is far too weak to overturn the negative substitution effect."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T4_07",
+      "chapter": 11,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Corner Solutions and the Equimarginal Rule in Grocery Shopping",
+      "clo_alignment": [
+        "MI-2",
+        "MI-4"
+      ],
+      "title": "Why a Rational Shopper Might Buy Zero $12 Organic Berries",
+      "prompt_template": "Suppose a shopper genuinely enjoys $12 organic berries more per carton than $3 bunches of bananas, yet buys several bunches of bananas and zero cartons of organic berries. How does the equimarginal framework explain this rational corner solution?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare the ratio MU / P for the first carton of $12 berries against the last bunch of $3 bananas."
+        },
+        {
+          "tier": 2,
+          "text": "How many times higher must MU_berries be than MU_bananas for a dollar spent on berries to match a dollar spent on bananas?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Even for the very first carton, MU_berries / $12 is still strictly less than MU_bananas / $3 at the shopper's chosen banana quantity, so every dollar yields more satisfaction on bananas.",
+          "is_correct": true,
+          "feedback": "Correct. Berries must deliver more than four times the marginal utility of bananas to justify four times the price; if MU_berries / $12 < MU_bananas / $3 even at Q_berries = 1, buying zero berries maximizes utility."
+        },
+        {
+          "id": "opt_b",
+          "text": "The shopper is acting irrationally because rational utility maximization always requires buying positive quantities of every liked good.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Interior-Only Myth): Utility maximization allows corner solutions whenever one good's MU / P remains below another's even at the first unit."
+        },
+        {
+          "id": "opt_c",
+          "text": "Organic berries must have negative marginal utility for this shopper.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Negative-MU Assumption): A good can have high positive MU and still not be purchased if its price is so high that MU / P is beaten by alternatives."
+        },
+        {
+          "id": "opt_d",
+          "text": "The shopper's indifference curves must be upward sloping because they bought zero berries.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Preference-Violation Error): Standard downward-sloping convex indifference curves easily yield corner solutions when the budget line is steeper or flatter than every curve along an axis."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T4_08",
+      "chapter": 11,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Tax Incidence on the Budget Line: Broad Sales Tax vs. Income Tax",
+      "clo_alignment": [
+        "MI-1",
+        "MI-4"
+      ],
+      "title": "Comparing a Uniform Ad Valorem Tax on All Goods to a Proportional Income Tax",
+      "prompt_template": "In the two-good model with no saving or borrowing, suppose the government imposes a uniform 20% sales tax on BOTH Good X and Good Y (raising prices to 1.20Px and 1.20Py). How does this tax alter the consumer's budget line compared with a single-good tax on Good X alone?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Write the post-tax budget equation 1.20Px * X + 1.20Py * Y = I and divide both sides by 1.20."
+        },
+        {
+          "tier": 2,
+          "text": "Check what happens to the slope -(1.20Px) / (1.20Py) and to both intercepts."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "It pivots the budget line inward along the X-axis only, distorting relative prices just like a single-good tax.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Single-Good Pivot Confusion): Because BOTH prices rise by the exact same 20% factor, the ratio (1.20Px) / (1.20Py) = Px / Py does not change."
+        },
+        {
+          "id": "opt_b",
+          "text": "It shifts the budget line inward in parallel without distorting the relative price Px / Py, acting just like an equivalent reduction in nominal income.",
+          "is_correct": true,
+          "feedback": "Correct. Dividing 1.20Px * X + 1.20Py * Y = I by 1.20 yields Px * X + Py * Y = I / 1.20, preserving the exact slope -Px / Py while shifting the budget line inward in parallel."
+        },
+        {
+          "id": "opt_c",
+          "text": "It leaves the budget line unchanged because taxing both goods cancels out the purchasing-power loss.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Cancellation Error): While the 1.20 factor cancels in the slope, it reduces both intercepts to I / (1.20Px) and I / (1.20Py), shrinking real purchasing power."
+        },
+        {
+          "id": "opt_d",
+          "text": "It rotates the budget line outward because tax revenue increases total market prices.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Direction-of-Tax Error): Higher after-tax prices shrink the consumer's affordable budget set inward, not outward."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T4_09",
+      "chapter": 11,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Nonlinear Pricing: Flat Discount vs. Buy-One-Get-One-Half-Off",
+      "clo_alignment": [
+        "MI-1",
+        "MI-4"
+      ],
+      "title": "How Quantity Discounts Reshape Marginal Incentives Along a Budget Constraint",
+      "prompt_template": "A campus bookstore considers two promotions on $20 notebooks (Good X): (1) a flat 25% discount ($15 per notebook on all units), or (2) 'Buy 1 at $20, get the 2nd at 50% off ($10).' Both promotions charge $30 total for 2 notebooks. How do their budget-line slopes differ for a student deciding whether to buy 1 notebook versus 2 notebooks?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare the marginal dollar cost of the 1st notebook and the 2nd notebook under each pricing structure."
+        },
+        {
+          "tier": 2,
+          "text": "Recall that a higher marginal price produces a steeper budget-line segment, while a lower marginal price produces a flatter segment."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Both promotions create the exact same straight budget line because 2 notebooks cost $30 under either offer.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Average-vs-Marginal Price Confusion): Although the average price of 2 notebooks is $15 under both offers, the marginal price of the 1st unit ($20 vs. $15) and the 2nd unit ($10 vs. $15) differ sharply."
+        },
+        {
+          "id": "opt_b",
+          "text": "The flat 25% discount creates a steeper slope after the first notebook than the BOGO 50%-off promotion, making a 2nd notebook relatively more expensive at the margin under the BOGO offer.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Slope-Magnitude Reversal): A $10 marginal price on the 2nd notebook under BOGO is LOWER (flatter slope) than the $15 marginal price under the flat discount."
+        },
+        {
+          "id": "opt_c",
+          "text": "The flat 25% discount lowers the marginal price on the very first notebook ($15), whereas the BOGO offer keeps the budget line steeper on the first unit ($20) and then kinks flatter on the second unit ($10), strongly incentivizing 1-notebook buyers to add a 2nd.",
+          "is_correct": true,
+          "feedback": "Correct. BOGO 50%-off creates a kinked budget constraint: a higher marginal relative price on unit 1 ($20) followed by a sharply lower marginal relative price on unit 2 ($10), creating a stronger marginal pull from 1 to 2 units."
+        },
+        {
+          "id": "opt_d",
+          "text": "Neither promotion changes the slope of the budget line because the student's income I did not change.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Income-Only Slope Myth): The slope of the budget line is governed by marginal relative prices (-Px / Py), which both discounts directly alter."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T4_10",
+      "chapter": 11,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Ordinal Utility and Policy Limits on Interpersonal Comparisons",
+      "clo_alignment": [
+        "MI-2",
+        "MI-4"
+      ],
+      "title": "Why Ordinal Utility Prevents Purely Scientific Interpersonal Utility Sums",
+      "prompt_template": "During a public debate over redistributing $100 from a high-income household to a low-income household, a commentator claims: 'Because of diminishing marginal utility, we can mathematically prove that total societal utils increase by an exact number.' Why does modern ordinal utility theory caution against claiming an exact mathematical proof of total societal utils?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall the distinction between ordinal rankings and cardinal measurements introduced in Section 11.2."
+        },
+        {
+          "tier": 2,
+          "text": "Ask whether multiplying Person A's utility numbers by 10 changes Person A's choices—and what it would do to a naive sum U_A + U_B."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because diminishing marginal utility applies only to food, never to money income.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Scope-Restriction Error): While diminishing MU can apply to income for an individual, the deeper problem is comparing subjective utility scales across two different people."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because low-income households always have lower marginal utility of income than high-income households.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Unsupported Cardinal Claim): Claiming one person's MU is lower than another's makes the exact same interpersonal cardinal assumption that ordinal utility rejects."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because transferring $100 always lowers the recipient's total utility due to the income effect.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Non-Satiation Violation): Receiving $100 expands the recipient's budget set and raises their utility under non-satiation."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because utility is ordinal—utility numbers only rank bundles within one person's preferences and cannot be measured on a shared cardinal thermometer or summed objectively across different people without normative value judgments.",
+          "is_correct": true,
+          "feedback": "Correct. Ordinal utility cannot objectively weigh one person's lost satisfaction against another person's gained satisfaction; redistribution debates inherently combine economic trade-offs with explicit normative equity judgments."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T4_11",
+      "chapter": 11,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Diminishing Marginal Utility at an All-You-Can-Eat Dining Hall",
+      "clo_alignment": [
+        "MI-2",
+        "MI-4"
+      ],
+      "title": "Optimal Consumption When Marginal Price Equals Zero",
+      "prompt_template": "Compare a student paying $4 per plate at a campus café versus paying a fixed $12 entry fee at an all-you-can-eat dining hall where every additional plate has a marginal price of $0. What does marginal-utility theory predict about consumption inside the all-you-can-eat hall?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Once you have already paid the $12 entry fee, what is the marginal cost of taking one more plate of food?"
+        },
+        {
+          "tier": 2,
+          "text": "Apply the rule: keep consuming additional units as long as marginal benefit (MU) exceeds marginal cost ($0)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Once inside, the $12 fee is sunk and the marginal price of an extra plate is $0, so the student keeps eating until marginal utility approaches zero (where total utility peaks), consuming more than under $4-per-plate pricing.",
+          "is_correct": true,
+          "feedback": "Correct. Under per-plate pricing, the student stops where MU / $4 equals the marginal utility per dollar of other goods (MU > 0); at a $0 marginal price, any plate with MU > 0 adds net satisfaction, pushing consumption to MU = 0."
+        },
+        {
+          "id": "opt_b",
+          "text": "The student will eat until marginal utility becomes strongly negative so that they 'get their money's worth' out of the $12 entry fee.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Sunk-Cost Fallacy): Eating past MU = 0 into MU < 0 reduces total utility; a rational consumer ignores the sunk $12 fee and stops where MU reaches 0."
+        },
+        {
+          "id": "opt_c",
+          "text": "The student will eat the exact same number of plates under both pricing plans because preferences did not change.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ignoring Relative Prices): Consumption depends on both preferences and marginal price; dropping marginal price from $4 to $0 triggers a strong movement along the consumer's demand curve."
+        },
+        {
+          "id": "opt_d",
+          "text": "The student will eat fewer plates at the all-you-can-eat hall because the $12 upfront fee reduces their income more than $4 per plate.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ignoring Zero Marginal Price): Even with the $12 entry fee, facing a $0 marginal price eliminates the opportunity cost of additional plates, driving higher consumption per visit."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH11_T4_12",
+      "chapter": 11,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "In-Kind Vouchers vs. Cash Raises: Inframarginal vs. Extramarginal Consumers",
+      "clo_alignment": [
+        "MI-1",
+        "MI-4"
+      ],
+      "title": "Predicting Who Loses Utility Under a Dedicated Transit Voucher vs. Cash",
+      "prompt_template": "An employer offers commuters a dedicated $100/month transit-only voucher (cannot be resold or spent on other goods) instead of an unrestricted $100/month cash raise. Consider Commuter A, who would spend $160/month on transit with a $100 cash raise, and Commuter B, who would spend only $40/month on transit with a $100 cash raise. How does the voucher affect each commuter's utility compared to the $100 cash raise?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Ask for each commuter: if they received $100 in cash instead, would they already spend at least $100 on transit?"
+        },
+        {
+          "tier": 2,
+          "text": "If a commuter already spends more than $100 on transit, a $100 transit voucher frees up $100 of their own cash to spend anywhere."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Both Commuter A and Commuter B are strictly worse off under the transit voucher than under the $100 cash raise.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Overgeneralizing In-Kind Distortion): Because Commuter A already wants to spend $160 > $100 on transit, the $100 voucher simply frees up $100 of their own cash for other goods, leaving Commuter A just as well off as cash."
+        },
+        {
+          "id": "opt_b",
+          "text": "Commuter A achieves the exact same utility as under the $100 cash raise (the voucher frees up $100 of their own transit budget), whereas Commuter B is constrained at the kink and strictly worse off than under cash.",
+          "is_correct": true,
+          "feedback": "Correct. For inframarginal Commuter A ($160 > $100), the $100 voucher is equivalent to cash; for extramarginal Commuter B ($40 < $100), the voucher forces $100 of transit consumption when B would prefer $60 of other goods, lowering utility."
+        },
+        {
+          "id": "opt_c",
+          "text": "Commuter B achieves higher utility under the voucher than under cash because the voucher forces healthy transit habits.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Restricting Choice Raises Utility): Narrowing a consumer's affordable set (preventing them from spending $60 of the $100 on non-transit goods) can never raise their utility above unrestricted cash."
+        },
+        {
+          "id": "opt_d",
+          "text": "Commuter A is strictly worse off under the voucher while Commuter B is unaffected.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inframarginal-Extramarginal Reversal): It is Commuter B—whose desired transit spending ($40) is below the $100 voucher—who is constrained and made strictly worse off."
+        }
+      ]
+    }
+  ]
+}

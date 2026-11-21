@@ -41,7 +41,8 @@ $$
 
 In this model's equilibrium, planned saving equals planned investment ($S=I_p$). The setup illustrates a short-run possibility rather than a universal response.
 
-**Worked Problem:**
+::: {.callout-note title="Work It Out: Equilibrium Income and the Paradox of Thrift"}
+
 Suppose a closed economy has planned business investment fixed at $I_p = \$200\text{ billion}$, and households initially consume according to $C = 100 + 0.75Y$ (so initial saving is $S = -100 + 0.25Y$).
 
 *  Find initial equilibrium national income $Y_1^*$ and confirm that equilibrium saving equals $\$200\text{ billion}$.
@@ -72,6 +73,21 @@ $$
 
 **Conclusion:** Under the stated assumptions, the $\$50$ billion reduction in autonomous consumption lowers equilibrium income by $\$200$ billion (from $\$1{,}200$ billion to $\$1{,}000$ billion), while equilibrium saving remains $\$200$ billion. This is the paradox-of-thrift result for this model.
 
+:::
+
+::: {.callout-note title="Optional Advanced Section: Comparative Statics of the Paradox of Thrift"}
+
+*Note for Economics Majors and Quantitative Students:*
+Solving the equilibrium condition $-C_0 + (1 - c)Y^* = I_p$ for $Y^*$ gives $Y^* = \frac{C_0 + I_p}{1 - c}$, where $0 < c < 1$. Differentiating with respect to autonomous consumption $C_0$ (holding $I_p$ and $c$ fixed) yields:
+
+$$
+\frac{dY^*}{dC_0} = \frac{1}{1 - c} > 0, \qquad \frac{dS^*}{dC_0} = -1 + (1 - c)\frac{dY^*}{dC_0} = -1 + (1 - c)\frac{1}{1 - c} = 0.
+$$
+
+With $c = 0.75$, the spending multiplier is $\frac{1}{1 - 0.75} = 4$, confirming that a $-\$50\text{ billion}$ shift in $C_0$ changes equilibrium income by $4(-\$50\text{ billion}) = -\$200\text{ billion}$ while leaving equilibrium saving unchanged ($\Delta S^* = 0$).
+
+:::
+
 ## The Expanded Circular Flow, Leakages, and Injections
 
 ### Conceptual Introduction {.unnumbered}
@@ -90,6 +106,12 @@ Three flows are called **leakages**: **private saving ($S$)**, **net taxes ($T$)
 $$
 S + T + M = I + G + X
 $$
+
+::: {.callout-note title="Clear It Up: Economic Investment ($I$) vs. Financial Investing"}
+
+In everyday conversation, ``investing'' often means buying stocks, bonds, or mutual funds. In macroeconomics, those purchases transfer ownership of existing financial assets and are classified as **saving ($S$)**. **Investment spending ($I$)** in the circular flow refers strictly to spending on newly produced physical capital—such as factories, machinery, software, new residential construction, and changes in business inventories.
+
+:::
 
 ### Visual Representation {.unnumbered}
 Figure 2 maps the expanded four-sector circular flow, distinguishing leakage channels ($S, T, M$) from injection channels ($I, G, X$) by both label and line style.
@@ -112,7 +134,8 @@ $$
 S + T + M = I + G + X \iff Y = C + I + G + (X - M)
 $$
 
-**Worked Problem:**
+::: {.callout-note title="Work It Out: Verifying Leakages, Injections, and National Income"}
+
 In a macroeconomic model of an open economy (in billions of dollars), household consumption is $C = \$900$, private saving is $S = \$250$, net taxes are $T = \$350$, government purchases are $G = \$400$, private investment is $I = \$300$, exports are $X = \$200$, and imports are $M = \$300$.
 
 *  Verify that total leakages equal total injections.
@@ -148,6 +171,8 @@ $$
 
 **Conclusion:** Both accounting views yield the exact same national income of $\$1{,}500\text{ billion}$.
 
+:::
+
 ## Business Cycles, Stabilization Policy, and Long-Run Growth
 
 ### Conceptual Introduction {.unnumbered}
@@ -173,7 +198,8 @@ $$
 \text{Output Gap } (\%) = \frac{Y - Y^*}{Y^*} \times 100\%
 $$
 
-**Worked Problem:**
+::: {.callout-note title="Work It Out: Measuring a Negative Output Gap"}
+
 For an illustrative calculation, suppose estimated Potential Real GDP is $Y^*=\$25.0$ trillion and actual Real GDP is $Y=\$24.2$ trillion. Compute the dollar output gap and the percentage output gap. Potential GDP is estimated rather than directly observed.
 
 **Step-by-Step Breakdown:**
@@ -191,6 +217,8 @@ $$
 $$
 
 **Conclusion:** In this example, actual output is $3.2\%$ below estimated potential output, a dollar gap of $\$800$ billion.
+
+:::
 
 ::: {.callout-note title="Optional Advanced Section: Hodrick-Prescott Trend Decomposition"}
 
@@ -210,8 +238,18 @@ For quarterly data, $\lambda=1{,}600$ is a widely used convention (Hodrick and P
 
 :::
 
+::: {.callout-tip title="Bring It Home: Connecting Individual Caution, Circular Flows, and Stabilization Policy"}
+
+Recall the opening question of this chapter: why can sensible individual decisions sometimes produce a painful economy-wide slowdown? The three tools built across Sections 1.1–1.3 work together to answer it:
+
+*  **Systemic Feedback (Section 1.1):** Because one person's spending is another person's income, a synchronized pullback in household spending ($C \downarrow$) can reduce business revenue, production, and payrolls when prices adjust slowly and productive capacity is idle.
+*  **Circular-Flow Balance (Section 1.2):** Higher private saving ($S \uparrow$) acts as a leakage out of the domestic spending stream unless offset by higher investment ($I$), government purchases ($G$), or exports ($X$).
+*  **Stabilization Policy (Section 1.3):** When actual Real GDP falls below Potential GDP ($Y < Y^*$, creating a negative output gap), policymakers can respond with countercyclical **fiscal policy** (adjusting government purchases or taxes) and **monetary policy** (the Federal Reserve adjusting its policy interest-rate stance under the post-2020 ample-reserves operating framework, explored in detail in Chapters 11 and 12) to support aggregate spending while preserving long-run growth.
+
+:::
+
 ### Selected References {.unnumbered}
 
-*  National Bureau of Economic Research. “Business Cycle Dating.” <https://www.nber.org/research/business-cycle-dating>
-*  Jones, Callum, Virgiliu Midrigan, and Thomas Philippon. 2022. “Household Leverage and the Recession.” *Econometrica* 90(5): 2471–2505. NBER Working Paper 16965. <https://www.nber.org/papers/w16965>
-*  Hodrick, Robert J., and Edward C. Prescott. 1997. “Postwar U.S. Business Cycles: An Empirical Investigation.” *Journal of Money, Credit and Banking* 29(1): 1–16. <https://doi.org/10.2307/2953682>
+*  National Bureau of Economic Research. ``Business Cycle Dating.'' <https://www.nber.org/research/business-cycle-dating>
+*  Jones, Callum, Virgiliu Midrigan, and Thomas Philippon. 2022. ``Household Leverage and the Recession.'' *Econometrica* 90(5): 2471–2505. NBER Working Paper 16965. <https://www.nber.org/papers/w16965>
+*  Hodrick, Robert J., and Edward C. Prescott. 1997. ``Postwar U.S. Business Cycles: An Empirical Investigation.'' *Journal of Money, Credit and Banking* 29(1): 1–16. <https://doi.org/10.2307/2953682>

@@ -14,17 +14,17 @@
 | S1 | 01 | `ch01_principles` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
 | S1 | 02 | `ch02_ppf` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
 | S1 | 03 | `ch03_supply_demand` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
-| S2 | 04 | `ch04_surplus` | `[x]` | `[x]` | `[ ]` | `[ ]` | Flagship reading; check GDrive v2 qbank |
-| S2 | 05 | `ch05_elasticity` | `[ ]` | `[ ]` | `[ ]` | `[ ]` | Restored 685L; audit + web sync |
-| S3 | 06 | `ch06_costs_production` | `[x]` | `[ ]` | `[ ]` | `[ ]` | Audited reading restored; re-sync `.qmd`; **missing quiz** |
-| S3 | 07 | `ch07_perfect_competition` | `[ ]` | `[ ]` | `[ ]` | `[ ]` | Restored 316L; audit + upgrade |
-| S3 | 08 | `ch08_monopoly` | `[ ]` | `[ ]` | `[ ]` | `[ ]` | Restored 292L; audit + upgrade |
-| S4 | 09 | `ch09_imperfect_competition_game_theory` | `[ ]` | `[ ]` | `[ ]` | `[ ]` | Restored 302L; audit + upgrade |
-| S4 | 10 | `ch10_externalities_public_goods` | `[ ]` | `[ ]` | `[ ]` | `[ ]` | Restored 286L; **missing quiz** |
-| S4 | 11 | `ch11_consumer_choice` | `[ ]` | `[ ]` | `[ ]` | `[ ]` | Restored 298L; **missing quiz** |
-| S5 | 12 | `ch12_factor_markets` | `[ ]` | `[ ]` | `[ ]` | `[ ]` | Restored 290L; audit + upgrade |
-| S5 | 13 | `ch13_asymmetric_information_risk` | `[ ]` | `[ ]` | `[ ]` | `[ ]` | Restored 282L; **missing quiz** |
-| S5 | 14 | `ch14_international_trade` | `[ ]` | `[ ]` | `[ ]` | `[ ]` | Restored 237L; audit + upgrade |
+| S2 | 04 | `ch04_surplus` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
+| S2 | 05 | `ch05_elasticity` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
+| S3 | 06 | `ch06_costs_production` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
+| S3 | 07 | `ch07_perfect_competition` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
+| S3 | 08 | `ch08_monopoly` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
+| S4 | 09 | `ch09_imperfect_competition_game_theory` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
+| S4 | 10 | `ch10_externalities_public_goods` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
+| S4 | 11 | `ch11_consumer_choice` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
+| S5 | 12 | `ch12_factor_markets` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
+| S5 | 13 | `ch13_asymmetric_information_risk` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
+| S5 | 14 | `ch14_international_trade` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
 
 ---
 
@@ -32,18 +32,18 @@
 
 | Sprint | Ch | Stem | Reading (`.tex`) | Web (`.qmd`) | Quiz v2 (50Q) | QTI (`.zip`) | Notes |
 | :-: | :-: | :--- | :-: | :-: | :-: | :-: | :--- |
-| S1 | 01 | `ch01_principles` | `[~]` | `[x]` | `[ ]` | `[ ]` | Minor BIH/WIO/Calc polish; legacy quiz |
-| S1 | 02 | `ch02_macro_ppf` | `[~]` | `[ ]` | `[ ]` | `[ ]` | 399L draft; add WIO + audit + web sync |
-| S1 | 03 | `ch03_supply_demand` | `[~]` | `[ ]` | `[ ]` | `[ ]` | 473L draft; single-market price check |
-| S2 | 04 | `ch04_aggregate_output` | `[~]` | `[ ]` | `[x]` | `[x]` | Quiz 50/50 PASS + QTI built; audit reading |
-| S2 | 05 | `ch05_inflation_deflation` | `[~]` | `[ ]` | `[~]` | `[ ]` | Quiz **20/50** v2 (add 30Q); audit reading |
-| S2 | 06 | `ch06_unemployment` | `[~]` | `[ ]` | `[ ]` | `[ ]` | 619L draft; rebuild quiz (remove old CPI mix) |
-| S3 | 07 | `ch07_savings_investment_financial_system` | `[~]` | `[ ]` | `[ ]` | `[ ]` | 633L draft; add Calc box + audit |
-| S3 | 08 | `ch08_aggregate_expenditure_multiplier` | `[~]` | `[ ]` | `[ ]` | `[ ]` | 485L draft; add Calc box + audit |
-| S4 | 09 | `ch09_aggregate_demand_aggregate_supply` | `[~]` | `[ ]` | `[ ]` | `[ ]` | 378L draft; full audit + web sync |
-| S4 | 10 | `ch10_fiscal_policy` | `[~]` | `[ ]` | `[ ]` | `[ ]` | 565L draft; full audit + web sync |
-| S5 | 11 | `ch11_money_banking_fed` | `[~]` | `[ ]` | `[ ]` | `[ ]` | 614L draft; verify post-2020 ample reserves |
-| S5 | 12 | `ch12_monetary_policy` | `[~]` | `[ ]` | `[x]` | `[x]` | Quiz 50/50 PASS + QTI built; audit reading |
+| S1 | 01 | `ch01_principles` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
+| S1 | 02 | `ch02_macro_ppf` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
+| S1 | 03 | `ch03_supply_demand` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
+| S2 | 04 | `ch04_aggregate_output` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
+| S2 | 05 | `ch05_inflation_deflation` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
+| S2 | 06 | `ch06_unemployment` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
+| S3 | 07 | `ch07_savings_investment_financial_system` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
+| S3 | 08 | `ch08_aggregate_expenditure_multiplier` | `[x]` | `[~]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready (sync .qmd outside sandbox) |
+| S4 | 09 | `ch09_aggregate_demand_aggregate_supply` | `[x]` | `[~]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready (sync .qmd outside sandbox) |
+| S4 | 10 | `ch10_fiscal_policy` | `[x]` | `[x]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready |
+| S5 | 11 | `ch11_money_banking_fed` | `[x]` | `[~]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready (sync .qmd outside sandbox) |
+| S5 | 12 | `ch12_monetary_policy` | `[x]` | `[~]` | `[x]` | `[x]` | Audited + 50Q v2 + QTI ready (sync .qmd outside sandbox) |
 
 ---
 

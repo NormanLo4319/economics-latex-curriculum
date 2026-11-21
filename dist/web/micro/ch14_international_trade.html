@@ -444,19 +444,23 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#free-trade-welfare-mechanics" id="toc-free-trade-welfare-mechanics" class="nav-link active" data-scroll-target="#free-trade-welfare-mechanics"><span class="header-section-number">14.1</span> Free Trade Welfare Mechanics</a>
+  <li><a href="#comparative-advantage-and-free-trade-welfare-mechanics" id="toc-comparative-advantage-and-free-trade-welfare-mechanics" class="nav-link active" data-scroll-target="#comparative-advantage-and-free-trade-welfare-mechanics"><span class="header-section-number">14.1</span> Comparative Advantage and Free Trade Welfare Mechanics</a>
   <ul class="collapse">
-  <li><a href="#conceptual-introduction" id="toc-conceptual-introduction" class="nav-link" data-scroll-target="#conceptual-introduction">1. Conceptual Introduction</a></li>
-  <li><a href="#visual-representation" id="toc-visual-representation" class="nav-link" data-scroll-target="#visual-representation">2. Visual Representation</a></li>
-  <li><a href="#real-world-application-global-apparel-and-consumer-electronics-trade" id="toc-real-world-application-global-apparel-and-consumer-electronics-trade" class="nav-link" data-scroll-target="#real-world-application-global-apparel-and-consumer-electronics-trade">3. Real-World Application: Global Apparel and Consumer Electronics Trade</a></li>
-  <li><a href="#mathematical-foundation-algebra-level" id="toc-mathematical-foundation-algebra-level" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level">4. Mathematical Foundation (Algebra Level)</a></li>
+  <li><a href="#conceptual-introduction" id="toc-conceptual-introduction" class="nav-link" data-scroll-target="#conceptual-introduction">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation" id="toc-visual-representation" class="nav-link" data-scroll-target="#visual-representation">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-algebra-first" id="toc-mathematical-foundation-algebra-first" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-first">Mathematical Foundation (Algebra-First)</a></li>
   </ul></li>
   <li><a href="#tariffs-import-quotas-and-deadweight-loss" id="toc-tariffs-import-quotas-and-deadweight-loss" class="nav-link" data-scroll-target="#tariffs-import-quotas-and-deadweight-loss"><span class="header-section-number">14.2</span> Tariffs, Import Quotas, and Deadweight Loss</a>
   <ul class="collapse">
-  <li><a href="#conceptual-introduction-1" id="toc-conceptual-introduction-1" class="nav-link" data-scroll-target="#conceptual-introduction-1">1. Conceptual Introduction</a></li>
-  <li><a href="#visual-representation-1" id="toc-visual-representation-1" class="nav-link" data-scroll-target="#visual-representation-1">2. Visual Representation</a></li>
-  <li><a href="#real-world-application-solar-panel-and-steel-tariffs-in-downstream-industries" id="toc-real-world-application-solar-panel-and-steel-tariffs-in-downstream-industries" class="nav-link" data-scroll-target="#real-world-application-solar-panel-and-steel-tariffs-in-downstream-industries">3. Real-World Application: Solar Panel and Steel Tariffs in Downstream Industries</a></li>
-  <li><a href="#mathematical-foundation-algebra-level-1" id="toc-mathematical-foundation-algebra-level-1" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-1">4. Mathematical Foundation (Algebra Level)</a></li>
+  <li><a href="#conceptual-introduction-1" id="toc-conceptual-introduction-1" class="nav-link" data-scroll-target="#conceptual-introduction-1">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-1" id="toc-visual-representation-1" class="nav-link" data-scroll-target="#visual-representation-1">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-algebra-first-1" id="toc-mathematical-foundation-algebra-first-1" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-first-1">Mathematical Foundation (Algebra-First)</a></li>
+  </ul></li>
+  <li><a href="#arguments-for-protectionism-and-trade-policy-evaluation" id="toc-arguments-for-protectionism-and-trade-policy-evaluation" class="nav-link" data-scroll-target="#arguments-for-protectionism-and-trade-policy-evaluation"><span class="header-section-number">14.3</span> Arguments for Protectionism and Trade Policy Evaluation</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-2" id="toc-conceptual-introduction-2" class="nav-link" data-scroll-target="#conceptual-introduction-2">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-2" id="toc-visual-representation-2" class="nav-link" data-scroll-target="#visual-representation-2">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-algebra-first-2" id="toc-mathematical-foundation-algebra-first-2" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-first-2">Mathematical Foundation (Algebra-First)</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -485,54 +489,94 @@ window.Quarto = {
 
 
 <blockquote class="blockquote">
-<p>This chapter provides a rigorous, pedagogical treatment of Chapter 14: International Trade, Comparative Advantage, and Protectionism, benchmarked to standard principles curriculum.</p>
+<p>This chapter applies supply, demand, and welfare economics to international trade. Using the small open economy model, we trace how opening to trade creates net social surplus gains alongside sharp distributional splits between domestic consumers and producers, analyze the welfare transfers and deadweight losses of tariffs and import quotas, and evaluate classic arguments for trade protection.</p>
 </blockquote>
-<section id="free-trade-welfare-mechanics" class="level2" data-number="14.1">
-<h2 data-number="14.1" class="anchored" data-anchor-id="free-trade-welfare-mechanics"><span class="header-section-number">14.1</span> Free Trade Welfare Mechanics</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Bring It Home: Why Do Steel Tariffs Spark Fierce Debate Between Steelworkers and Automakers?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Whenever a government proposes a tariff on imported steel, two groups immediately take opposite sides. Domestic steel mills and factory workers argue that tariffs protect domestic manufacturing jobs and sustain vital industrial capacity. Meanwhile, downstream manufacturers—automakers, appliance makers, and construction firms—along with everyday households warn that tariffs act as a hidden tax that raises the cost of cars, buildings, and consumer goods. How can a single border tax feel like an economic lifeline to one group and a costly burden to millions of others? Throughout this chapter, we use consumer surplus, producer surplus, and deadweight loss to account for every dollar of gains, transfers, and permanent economic waste under free trade and protectionism.</p>
+</div>
+</div>
+<section id="comparative-advantage-and-free-trade-welfare-mechanics" class="level2" data-number="14.1">
+<h2 data-number="14.1" class="anchored" data-anchor-id="comparative-advantage-and-free-trade-welfare-mechanics"><span class="header-section-number">14.1</span> Comparative Advantage and Free Trade Welfare Mechanics</h2>
 <section id="conceptual-introduction" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction">1. Conceptual Introduction</h3>
-<p>In Chapter 2, we saw that specialization according to comparative advantage expands consumption beyond domestic production limits. Now we use supply, demand, and surplus analysis to pinpoint <em>who wins and who loses</em> inside a country when it opens its borders to international trade.</p>
-<p>To determine whether a small open economy becomes an importer or an exporter of a specific good, compare its <strong>autarky (no-trade) domestic equilibrium price (<span class="math inline">\(P_d\)</span>)</strong> against the prevailing <strong>world price (<span class="math inline">\(P_w\)</span>)</strong>:</p>
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction">Conceptual Introduction</h3>
+<p>In Chapter 2, we used the production possibilities frontier (PPF) to show that when countries specialize according to <strong>comparative advantage</strong>—producing goods at a lower domestic opportunity cost—and trade, total consumption can expand beyond domestic production limits. Now we bring comparative advantage into a single-market supply-and-demand framework to pinpoint <em>who wins and who loses</em> inside a country when it opens its borders to international trade. Throughout our core graphical and algebraic analysis, we assume a <strong>small open economy</strong> (the country is a price-taker in the world market and cannot alter the global price), linear domestic supply and demand curves, competitive markets, and zero transportation costs (<em>ceteris paribus</em>).</p>
+<p>To determine whether a small open economy becomes an importer or an exporter of a specific good, compare its <strong>autarky (no-trade) domestic equilibrium price (<span class="math inline">\(P_A\)</span>)</strong> against the prevailing <strong>world price (<span class="math inline">\(P_w\)</span>)</strong>:</p>
 <ul>
-<li><strong>Importing Country (<span class="math inline">\(P_w &lt; P_d\)</span>):</strong> Foreign producers have a comparative advantage and can supply the good cheaper than domestic firms. Under free trade, the domestic price drops to <span class="math inline">\(P_w\)</span>. Domestic consumers cheer—buying more at a lower price and capturing a massive expansion in <strong>Consumer Surplus (<span class="math inline">\(CS\)</span>)</strong>. Domestic producers hurt—cutting production and losing <strong>Producer Surplus (<span class="math inline">\(PS\)</span>)</strong>. However, the gain to consumers strictly exceeds the loss to domestic producers, creating a net gain in <strong>Total Social Surplus</strong>.</li>
-<li><strong>Exporting Country (<span class="math inline">\(P_w &gt; P_d\)</span>):</strong> Domestic producers have a comparative advantage and can sell abroad at a higher world price. Under free trade, the domestic price rises to <span class="math inline">\(P_w\)</span>. Domestic producers expand output and gain more Producer Surplus than domestic consumers lose in Consumer Surplus—once again increasing net Total Social Surplus.</li>
+<li><strong>Importing Country (<span class="math inline">\(P_w &lt; P_A\)</span>):</strong> Foreign producers have a comparative advantage and can supply the good at a lower opportunity cost than domestic firms. Under free trade, the domestic price drops from <span class="math inline">\(P_A\)</span> to <span class="math inline">\(P_w\)</span>. Domestic consumers benefit—buying more at a lower price and capturing a large expansion in <strong>Consumer Surplus (<span class="math inline">\(CS\)</span>)</strong>. Domestic producers are harmed—cutting production and losing <strong>Producer Surplus (<span class="math inline">\(PS\)</span>)</strong>. Crucially, the gain to consumers strictly exceeds the loss to domestic producers, creating a net gain in <strong>Total Social Surplus (<span class="math inline">\(TS = CS + PS\)</span>)</strong>.</li>
+<li><strong>Exporting Country (<span class="math inline">\(P_w &gt; P_A\)</span>):</strong> Domestic producers have a comparative advantage and can sell abroad at a higher world price. Under free trade, the domestic price rises from <span class="math inline">\(P_A\)</span> to <span class="math inline">\(P_w\)</span>. Domestic producers expand output and capture a gain in Producer Surplus that strictly exceeds the loss in Consumer Surplus suffered by domestic buyers—once again generating a positive net gain in Total Social Surplus.</li>
 </ul>
-<p>This sharp distributional split explains why trade policy is always politically contentious: the gains from free trade are spread thinly across millions of consumers (e.g., saving <span class="math inline">\(\$30\)</span> on a pair of shoes), whereas the losses are concentrated among specific domestic factories and workers who lobby intensely for protection.</p>
+<p>This sharp distributional split explains why trade policy is perpetually contentious in real-world markets such as global apparel, consumer electronics, and agricultural exports. When households buy smartphones, laptops, and clothing sourced from specialized global supply chains at lower world prices, the gains from free trade are spread thinly across millions of consumers (for example, saving <span class="math inline">\(\$30\)</span> on a pair of shoes). By contrast, the losses from import competition are concentrated among specific domestic factories and workers, giving import-competing industries a strong incentive to lobby for trade barriers even when free trade expands total national surplus.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Do Imports Subtract from National Welfare Because Domestic Producers Lose?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A common misconception is that exports are always <code>good'' for an economy while imports are</code>bad’’ because imports reduce domestic producer surplus in the competing industry. In welfare economics, <em>both</em> exporting and importing raise Total Social Surplus. When a country imports at <span class="math inline">\(P_w &lt; P_A\)</span>, domestic consumers gain more surplus than domestic producers lose (<span class="math inline">\(\Delta CS + \Delta PS = \Delta TS &gt; 0\)</span>), and domestic labor and capital are freed to move toward sectors where the country holds a comparative advantage.</p>
+</div>
+</div>
 </section>
 <section id="visual-representation" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="visual-representation">2. Visual Representation</h3>
-<p>Figure 1 illustrates an importing market where the world price <span class="math inline">\(P_w\)</span> lies below the autarky price <span class="math inline">\(P_d\)</span>, expanding total social surplus by the green shaded triangle.</p>
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation">Visual Representation</h3>
+<p>Figure 1 illustrates an importing market where the world price <span class="math inline">\(P_w = \$40\)</span> lies below the autarky price <span class="math inline">\(P_A = \$60\)</span>, expanding Total Social Surplus by the shaded teal triangle. Table~<span class="math inline">\(\ref{tab:free_trade_summary}\)</span> summarizes how both importing and exporting reshape domestic prices and surplus.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="figures/chapter_14_international_trade_comparative_advantage_and_protectionism_figure_01.svg" class="img-fluid figure-img" alt="Welfare Gains from Free Trade (Importing Case). When P_w = $40 < P_d = $60, domestic production falls to 10 and domestic consumption rises to 30, generating 20 units of imports and a net gain in Total Social Surplus (green triangle)."></p>
-<figcaption>Figure 1. Welfare Gains from Free Trade (Importing Case). When <span class="math inline">\(P_w = \$40 &lt; P_d = \$60\)</span>, domestic production falls to <span class="math inline">\(10\)</span> and domestic consumption rises to <span class="math inline">\(30\)</span>, generating <span class="math inline">\(20\)</span> units of imports and a net gain in Total Social Surplus (green triangle).</figcaption>
+<p><img src="figures/chapter_14_international_trade_comparative_advantage_and_protectionism_figure_01.svg" class="img-fluid figure-img" alt="Welfare Gains from Free Trade (Importing Case). When P_w = $40 < P_A = $60, domestic production falls from 20 to 10 tons and domestic consumption rises from 20 to 30 tons, generating 20 tons of imports and a net gain in Total Social Surplus (shaded teal triangle)."></p>
+<figcaption>Figure 1. Welfare Gains from Free Trade (Importing Case). When <span class="math inline">\(P_w = \$40 &lt; P_A = \$60\)</span>, domestic production falls from <span class="math inline">\(20\)</span> to <span class="math inline">\(10\)</span> tons and domestic consumption rises from <span class="math inline">\(20\)</span> to <span class="math inline">\(30\)</span> tons, generating <span class="math inline">\(20\)</span> tons of imports and a net gain in Total Social Surplus (shaded teal triangle).</figcaption>
 </figure>
 </div>
 </section>
-<section id="real-world-application-global-apparel-and-consumer-electronics-trade" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="real-world-application-global-apparel-and-consumer-electronics-trade">3. Real-World Application: Global Apparel and Consumer Electronics Trade</h3>
-<p>When U.S. retailers import smartphones, laptops, and apparel from specialized global supply chains at lower world prices, American households save thousands of dollars per year on everyday goods—expanding Consumer Surplus across the entire economy, even as domestic apparel manufacturing employment contracts.</p>
-</section>
-<section id="mathematical-foundation-algebra-level" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level">4. Mathematical Foundation (Algebra Level)</h3>
-<p>At world price <span class="math inline">\(P_w &lt; P_d\)</span>, import volume and net social surplus gain are:</p>
+<section id="mathematical-foundation-algebra-first" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-first">Mathematical Foundation (Algebra-First)</h3>
+<p>Assuming linear domestic demand and supply in a small open economy, trade volumes and net social surplus gains are computed directly using triangle areas:</p>
 <p><span class="math display">\[
-\text{Imports} = Q_d(P_w) - Q_s(P_w), \qquad \Delta TS_{\text{trade}} = \frac{1}{2} \times \text{Imports} \times (P_d - P_w)
+\text{Importing } (P_w &lt; P_A): \quad \text{Imports} = Q_d(P_w) - Q_s(P_w), \qquad \Delta TS_{\text{import}} = \frac{1}{2} \times \text{Imports} \times (P_A - P_w)
 \]</span></p>
-<p><strong>Worked Problem:</strong> In a small country’s market for steel, domestic inverse demand is <span class="math inline">\(P_d = 100 - 2Q\)</span> and domestic inverse supply is <span class="math inline">\(P_s = 20 + 2Q\)</span>.</p>
+<p><span class="math display">\[
+\text{Exporting } (P_w &gt; P_A): \quad \text{Exports} = Q_s(P_w) - Q_d(P_w), \qquad \Delta TS_{\text{export}} = \frac{1}{2} \times \text{Exports} \times (P_w - P_A)
+\]</span></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Work It Out 14.1: Free Trade Surplus in a Small Steel Market
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In a small open economy’s market for steel, domestic inverse demand is <span class="math inline">\(P = 100 - 2Q_d\)</span> and domestic inverse supply is <span class="math inline">\(P = 20 + 2Q_s\)</span>, where <span class="math inline">\(P\)</span> is measured in dollars per ton and <span class="math inline">\(Q\)</span> in tons.</p>
 <ul>
-<li>Find the autarky equilibrium price <span class="math inline">\(P_d^*\)</span> and quantity <span class="math inline">\(Q_d^*\)</span>.</li>
-<li>Suppose the country opens to free trade at a world price of <span class="math inline">\(P_w = \$40\)</span> per ton. Calculate domestic quantity supplied, domestic quantity demanded, import volume, and the net gain in Total Social Surplus (<span class="math inline">\(\Delta TS\)</span>).</li>
+<li>Find the autarky equilibrium price <span class="math inline">\(P_A\)</span>, quantity <span class="math inline">\(Q_A\)</span>, and autarky surplus (<span class="math inline">\(CS_A\)</span>, <span class="math inline">\(PS_A\)</span>, <span class="math inline">\(TS_A\)</span>).</li>
+<li>Suppose the country opens to free trade at a world price of <span class="math inline">\(P_w = \$40\)</span> per ton. Calculate domestic quantity supplied, domestic quantity demanded, import volume, <span class="math inline">\(\Delta CS\)</span>, <span class="math inline">\(\Delta PS\)</span>, and the net gain in Total Social Surplus (<span class="math inline">\(\Delta TS\)</span>).</li>
+<li><em>Exporting Check:</em> What would happen to trade volume and <span class="math inline">\(\Delta TS\)</span> if the world price were instead <span class="math inline">\(P_w = \$80\)</span> per ton?</li>
 </ul>
-<p><strong>Step-by-Step Breakdown:</strong></p>
+<p><strong>Step-by-Step Solution:</strong></p>
 <ul>
-<li><strong>Find Autarky Equilibrium (<span class="math inline">\(P_d^*, Q_d^*\)</span>):</strong> Set demand equal to supply:</li>
+<li><strong>Autarky Equilibrium (<span class="math inline">\(P_A, Q_A\)</span>) and Autarky Surplus:</strong> Set inverse demand equal to inverse supply (<span class="math inline">\(Q_d = Q_s = Q_A\)</span>):</li>
 </ul>
 <p><span class="math display">\[
-100 - 2Q = 20 + 2Q \implies 80 = 4Q \implies Q_d^* = \mathbf{20\text{ tons}}, \qquad P_d^* = 100 - 2(20) = \mathbf{\$60}
+100 - 2Q_A = 20 + 2Q_A \implies 80 = 4Q_A \implies Q_A = \mathbf{20\text{ tons}}, \qquad P_A = 100 - 2(20) = \mathbf{\$60}
+\]</span></p>
+<p>Using the vertical intercepts (<span class="math inline">\(\$100\)</span> for demand and <span class="math inline">\(\$20\)</span> for supply):</p>
+<p><span class="math display">\[
+CS_A = \frac{1}{2}(20)(\$100 - \$60) = \$400, \qquad PS_A = \frac{1}{2}(20)(\$60 - \$20) = \$400, \qquad TS_A = \mathbf{\$800}
 \]</span></p>
 <ul>
-<li><strong>Find Quantities and Imports at <span class="math inline">\(P_w = \$40\)</span>:</strong></li>
+<li><strong>Importing Equilibrium at <span class="math inline">\(P_w = \$40\)</span>:</strong></li>
 </ul>
 <p><span class="math display">\[
 40 = 20 + 2Q_s \implies 2Q_s = 20 \implies Q_s = \mathbf{10\text{ tons produced domestically}}
@@ -543,32 +587,68 @@ window.Quarto = {
 <p><span class="math display">\[
 \text{Imports} = Q_d - Q_s = 30 - 10 = \mathbf{20\text{ tons}}
 \]</span></p>
+<p>Compute free-trade Consumer and Producer Surplus:</p>
+<p><span class="math display">\[
+CS_{\text{trade}} = \frac{1}{2}(30)(\$100 - \$40) = \$900 \implies \Delta CS = \$900 - \$400 = \mathbf{+\$500}
+\]</span></p>
+<p><span class="math display">\[
+PS_{\text{trade}} = \frac{1}{2}(10)(\$40 - \$20) = \$100 \implies \Delta PS = \$100 - \$400 = \mathbf{-\$300}
+\]</span></p>
+<p>Verify Net Social Surplus Gain two ways:</p>
+<p><span class="math display">\[
+\Delta TS = \Delta CS + \Delta PS = +\$500 - \$300 = \mathbf{+\$200}
+\]</span></p>
+<p><span class="math display">\[
+\Delta TS = \frac{1}{2} \times \text{Imports} \times (P_A - P_w) = \frac{1}{2} \times 20 \times (\$60 - \$40) = 10 \times \$20 = \mathbf{+\$200}
+\]</span></p>
 <ul>
-<li><strong>Calculate Net Social Surplus Gain (<span class="math inline">\(\Delta TS\)</span>):</strong></li>
+<li><strong>Exporting Check at <span class="math inline">\(P_w = \$80\)</span>:</strong> Since <span class="math inline">\(P_w = \$80 &gt; P_A = \$60\)</span>, the country becomes an exporter:</li>
 </ul>
 <p><span class="math display">\[
-\Delta TS = \frac{1}{2} \times \text{Imports} \times (P_d^* - P_w) = \frac{1}{2} \times 20 \times (\$60 - \$40) = 10 \times \$20 = \mathbf{+\$200}
+80 = 20 + 2Q_s \implies Q_s = 30\text{ tons}, \qquad 80 = 100 - 2Q_d \implies Q_d = 10\text{ tons}
 \]</span></p>
-<p><strong>Conclusion:</strong> Opening to free trade generates <span class="math inline">\(20\)</span> tons of steel imports and increases national social welfare by <span class="math inline">\(+\$200\)</span>.</p>
+<p><span class="math display">\[
+\text{Exports} = Q_s - Q_d = 30 - 10 = \mathbf{20\text{ tons}}
+\]</span></p>
+<p>Here <span class="math inline">\(CS_{\text{exp}} = \frac{1}{2}(10)(100 - 80) = \$100\)</span> (<span class="math inline">\(\Delta CS = -\$300\)</span>) and <span class="math inline">\(PS_{\text{exp}} = \frac{1}{2}(30)(80 - 20) = \$900\)</span> (<span class="math inline">\(\Delta PS = +\$500\)</span>), yielding the exact same net gain <span class="math inline">\(\Delta TS = \frac{1}{2}(20)(\$80 - \$60) = \mathbf{+\$200}\)</span>.</p>
+<p><strong>Conclusion:</strong> Opening to free trade raises national social welfare by <span class="math inline">\(+\$200\)</span> whether the country imports at <span class="math inline">\(\$40\)</span> or exports at <span class="math inline">\(\$80\)</span>, though the domestic winners and losers flip between the two cases.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Calculus Extension: Integral Form of Gains from Trade
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> For general (possibly nonlinear) domestic demand <span class="math inline">\(Q_d(P)\)</span> and supply <span class="math inline">\(Q_s(P)\)</span>, welfare changes under importing (<span class="math inline">\(P_w &lt; P_A\)</span>) are exact definite integrals with respect to price:</p>
+<p><span class="math display">\[
+\Delta CS = \int_{P_w}^{P_A} Q_d(P)\,dP, \qquad \Delta PS = -\int_{P_w}^{P_A} Q_s(P)\,dP, \qquad \Delta TS = \int_{P_w}^{P_A} \bigl[Q_d(P) - Q_s(P)\bigr]\,dP.
+\]</span></p>
+<p>In our steel market, inverting the linear curves gives <span class="math inline">\(Q_d(P) = 50 - 0.5P\)</span> and <span class="math inline">\(Q_s(P) = 0.5P - 10\)</span>, so import demand is <span class="math inline">\(M(P) = Q_d(P) - Q_s(P) = 60 - P\)</span>. Integrating from <span class="math inline">\(P_w = 40\)</span> to <span class="math inline">\(P_A = 60\)</span> confirms our geometric triangle:</p>
+<p><span class="math display">\[
+\Delta TS = \int_{40}^{60} (60 - P)\,dP = \left[60P - \frac{1}{2}P^2\right]_{40}^{60} = (3{,}600 - 1{,}800) - (2{,}400 - 800) = 1{,}800 - 1{,}600 = +\$200.
+\]</span></p>
+</div>
+</div>
 </section>
 </section>
 <section id="tariffs-import-quotas-and-deadweight-loss" class="level2" data-number="14.2">
 <h2 data-number="14.2" class="anchored" data-anchor-id="tariffs-import-quotas-and-deadweight-loss"><span class="header-section-number">14.2</span> Tariffs, Import Quotas, and Deadweight Loss</h2>
 <section id="conceptual-introduction-1" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-1">1. Conceptual Introduction</h3>
-<p>To shield domestic industries from foreign competition, governments frequently impose trade barriers—most commonly a <strong>tariff</strong> (a per-unit tax levied on imported goods) or an <strong>import quota</strong> (a legal cap on the physical quantity of goods allowed into the country).</p>
-<p>When a small country levies a per-unit tariff <span class="math inline">\(t\)</span> on imports, the domestic market price rises from <span class="math inline">\(P_w\)</span> to <span class="math inline">\(P_w + t\)</span>. This price hike triggers four distinct welfare transfers, traditionally labeled Areas <span class="math inline">\(A, B, C,\)</span> and <span class="math inline">\(D\)</span>:</p>
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-1">Conceptual Introduction</h3>
+<p>To shield domestic industries from foreign competition, governments frequently impose trade barriers—most commonly a <strong>tariff</strong> (a per-unit or percentage tax levied on imported goods) or an <strong>import quota</strong> (a legal cap on the physical quantity of a good allowed to enter the country). In our small open economy benchmark, foreign supply at the world price <span class="math inline">\(P_w\)</span> is perfectly elastic, so imposing a per-unit tariff <span class="math inline">\(t\)</span> raises the domestic market price by the full amount of the tariff, from <span class="math inline">\(P_w\)</span> to <span class="math inline">\(P_t = P_w + t\)</span>.</p>
+<p>This price increase triggers four distinct welfare effects relative to free trade, traditionally labeled Areas <span class="math inline">\(A, B, C,\)</span> and <span class="math inline">\(D\)</span>:</p>
 <ul>
-<li><strong>Consumer Surplus Shrinks by <span class="math inline">\(-(A + B + C + D)\)</span>:</strong> Domestic buyers pay a higher price and buy fewer units.</li>
-<li><strong>Producer Surplus Expands by <span class="math inline">\(+A\)</span>:</strong> Domestic producers expand output at the protected higher price—a direct transfer from domestic consumers to domestic firms.</li>
-<li><strong>Government Tariff Revenue Equals <span class="math inline">\(+C = t \times \text{Imports}_{\text{tariff}}\)</span>:</strong> Collected on every imported unit that still crosses the border.</li>
-<li><strong>Deadweight Loss Equals <span class="math inline">\(-(B + D)\)</span>:</strong> Area <span class="math inline">\(B\)</span> represents <strong>production inefficiency</strong> (using high-cost domestic factories to produce units that could have been imported cheaply at <span class="math inline">\(P_w\)</span>), while Area <span class="math inline">\(D\)</span> represents <strong>consumption inefficiency</strong> (mutually beneficial trades blocked by the artificial price hike).</li>
+<li><strong>Consumer Surplus Shrinks by <span class="math inline">\(-(A + B + C + D)\)</span>:</strong> Domestic buyers pay a higher price (<span class="math inline">\(P_w + t\)</span>) and cut consumption from <span class="math inline">\(Q_{d1}\)</span> to <span class="math inline">\(Q_{d2}\)</span>.</li>
+<li><strong>Producer Surplus Expands by <span class="math inline">\(+A\)</span>:</strong> Protected by the higher domestic price, domestic producers expand output from <span class="math inline">\(Q_{s1}\)</span> to <span class="math inline">\(Q_{s2}\)</span>. Area <span class="math inline">\(A\)</span> is a direct transfer from domestic consumers to domestic firms.</li>
+<li><strong>Government Tariff Revenue Equals <span class="math inline">\(+C = t \times (Q_{d2} - Q_{s2})\)</span>:</strong> The domestic treasury collects <span class="math inline">\(t\)</span> dollars on every imported unit that still crosses the border.</li>
+<li><strong>Deadweight Loss Equals <span class="math inline">\(-(B + D)\)</span>:</strong> Area <span class="math inline">\(B\)</span> represents <strong>production inefficiency</strong> (using higher-cost domestic resources to produce units that could have been imported cheaply at <span class="math inline">\(P_w\)</span>), while Area <span class="math inline">\(D\)</span> represents <strong>consumption inefficiency</strong> (mutually beneficial trades lost when buyers whose willingness to pay exceeds <span class="math inline">\(P_w\)</span> are priced out at <span class="math inline">\(P_w + t\)</span>).</li>
 </ul>
-<p>An <strong>import quota</strong> restricting imports to the exact same volume raises the domestic price to <span class="math inline">\(P_w + t\)</span> and causes the exact same deadweight loss <span class="math inline">\((B + D)\)</span>—except Area <span class="math inline">\(C\)</span> goes to whoever holds the valuable <strong>import licenses</strong> (<strong>quota rents</strong>) rather than the domestic treasury!</p>
-</section>
-<section id="visual-representation-1" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="visual-representation-1">2. Visual Representation</h3>
-<p>Figure 2 illustrates the four welfare regions (<span class="math inline">\(A, B, C, D\)</span>) created when a tariff <span class="math inline">\(t = \$10\)</span> raises the domestic price from <span class="math inline">\(P_w = \$40\)</span> to <span class="math inline">\(P_w + t = \$50\)</span>.</p>
+<p>An <strong>import quota</strong> restricting imports to the exact same volume (<span class="math inline">\(Q_{d2} - Q_{s2}\)</span>) pushes the domestic price to the same level <span class="math inline">\(P_w + t\)</span> and causes the exact same deadweight loss <span class="math inline">\((B + D)\)</span>—with one critical difference. Instead of generating domestic tax revenue, Area <span class="math inline">\(C\)</span> becomes <strong>quota rents</strong> captured by whoever holds the valuable <strong>import licenses</strong>. If licenses are given away to foreign exporters (as under a voluntary export restraint), Area <span class="math inline">\(C\)</span> flows abroad, increasing the importing country’s net welfare loss from <span class="math inline">\(B + D\)</span> to <span class="math inline">\(B + C + D\)</span>. In practice, when tariffs or quotas raise the domestic price of intermediate inputs such as steel or solar panels, domestic producers capture Area <span class="math inline">\(A\)</span>, while downstream manufacturers—such as automakers, construction firms, and rooftop solar installers—face higher input costs that squeeze margins and raise retail prices.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -579,74 +659,207 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Unlike a domestic excise tax (which creates one Harberger triangle), a tariff creates <em>two</em> separate deadweight loss triangles: <strong>Triangle <span class="math inline">\(B\)</span></strong> wastes resources by expanding inefficient domestic production above <span class="math inline">\(P_w\)</span>, while <strong>Triangle <span class="math inline">\(D\)</span></strong> destroys consumer surplus by pricing buyers out of the market above <span class="math inline">\(P_w\)</span>.</p>
+<p>Unlike a domestic excise tax (which creates a single Harberger deadweight loss triangle), an import tariff creates <em>two</em> separate deadweight loss triangles. <strong>Triangle <span class="math inline">\(B\)</span></strong> wastes productive resources by pulling higher-cost domestic suppliers into production above <span class="math inline">\(P_w\)</span>, while <strong>Triangle <span class="math inline">\(D\)</span></strong> destroys consumer surplus by pricing out domestic buyers who value the good above <span class="math inline">\(P_w\)</span> but below <span class="math inline">\(P_w + t\)</span>.</p>
 </div>
 </div>
+</section>
+<section id="visual-representation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-1">Visual Representation</h3>
+<p>Figure 2 illustrates the four welfare regions (<span class="math inline">\(A, B, C, D\)</span>) created when a per-unit tariff of <span class="math inline">\(t = \$10\)</span> raises the domestic steel price from <span class="math inline">\(P_w = \$40\)</span> to <span class="math inline">\(P_w + t = \$50\)</span>. Table~<span class="math inline">\(\ref{tab:tariff_vs_quota}\)</span> compares the welfare incidence of a tariff against an equivalent import quota.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="figures/chapter_14_international_trade_comparative_advantage_and_protectionism_figure_02.svg" class="img-fluid figure-img" alt="Welfare Effects of an Import Tariff. A $10 tariff raises domestic price from $40 to $50, cutting imports from 20 to 10. Consumers lose A+B+C+D, domestic producers gain A, the government collects tariff revenue C, and society suffers deadweight loss B+D."></p>
-<figcaption>Figure 2. Welfare Effects of an Import Tariff. A <span class="math inline">\(\$10\)</span> tariff raises domestic price from <span class="math inline">\(\$40\)</span> to <span class="math inline">\(\$50\)</span>, cutting imports from <span class="math inline">\(20\)</span> to <span class="math inline">\(10\)</span>. Consumers lose <span class="math inline">\(A+B+C+D\)</span>, domestic producers gain <span class="math inline">\(A\)</span>, the government collects tariff revenue <span class="math inline">\(C\)</span>, and society suffers deadweight loss <span class="math inline">\(B+D\)</span>.</figcaption>
+<p><img src="figures/chapter_14_international_trade_comparative_advantage_and_protectionism_figure_02.svg" class="img-fluid figure-img" alt="Welfare Effects of an Import Tariff. A $10 per-unit tariff raises domestic price from $40 to $50, cutting imports from 20 to 10 tons. Consumers lose A+B+C+D, domestic producers gain A, the government collects tariff revenue C, and society suffers deadweight loss B+D."></p>
+<figcaption>Figure 2. Welfare Effects of an Import Tariff. A <span class="math inline">\(\$10\)</span> per-unit tariff raises domestic price from <span class="math inline">\(\$40\)</span> to <span class="math inline">\(\$50\)</span>, cutting imports from <span class="math inline">\(20\)</span> to <span class="math inline">\(10\)</span> tons. Consumers lose <span class="math inline">\(A+B+C+D\)</span>, domestic producers gain <span class="math inline">\(A\)</span>, the government collects tariff revenue <span class="math inline">\(C\)</span>, and society suffers deadweight loss <span class="math inline">\(B+D\)</span>.</figcaption>
 </figure>
 </div>
 </section>
-<section id="real-world-application-solar-panel-and-steel-tariffs-in-downstream-industries" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="real-world-application-solar-panel-and-steel-tariffs-in-downstream-industries">3. Real-World Application: Solar Panel and Steel Tariffs in Downstream Industries</h3>
-<p>When tariffs raise domestic steel or solar-panel prices by <span class="math inline">\(20\%\)</span>, domestic steel mills and panel assemblers gain Area <span class="math inline">\(A\)</span>, while downstream U.S. manufacturers—automakers, construction firms, and rooftop solar installers—face higher input costs, illustrating how protection for one sector imposes direct costs on consumers and downstream jobs.</p>
-</section>
-<section id="mathematical-foundation-algebra-level-1" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-1">4. Mathematical Foundation (Algebra Level)</h3>
-<p>Under a tariff <span class="math inline">\(t\)</span> raising domestic price to <span class="math inline">\(P_t = P_w + t\)</span>:</p>
+<section id="mathematical-foundation-algebra-first-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-first-1">Mathematical Foundation (Algebra-First)</h3>
+<p>Under a per-unit tariff <span class="math inline">\(t\)</span> raising the domestic price from <span class="math inline">\(P_w\)</span> to <span class="math inline">\(P_t = P_w + t\)</span>:</p>
 <p><span class="math display">\[
-\text{Tariff Revenue } (C) = t \times (Q_{d2} - Q_{s2}), \qquad DWL = B + D = \frac{1}{2} t (Q_{s2} - Q_{s1}) + \frac{1}{2} t (Q_{d1} - Q_{d2})
-\]</span></p>
-<p><strong>Worked Problem:</strong> Continuing our steel market (<span class="math inline">\(P_d = 100 - 2Q\)</span>, <span class="math inline">\(P_s = 20 + 2Q\)</span>, <span class="math inline">\(P_w = \$40\)</span>), suppose the government imposes a tariff of <span class="math inline">\(t = \$10\)</span> per ton, raising the domestic price to <span class="math inline">\(P_t = \$50\)</span>. Compute Areas <span class="math inline">\(A, B, C,\)</span> and <span class="math inline">\(D\)</span>, total Consumer Surplus loss, and net Deadweight Loss.</p>
-<p><strong>Step-by-Step Breakdown:</strong></p>
-<ul>
-<li><strong>Find Post-Tariff Domestic Supply (<span class="math inline">\(Q_{s2}\)</span>) and Demand (<span class="math inline">\(Q_{d2}\)</span>) at <span class="math inline">\(P_t = \$50\)</span>:</strong></li>
-</ul>
-<p><span class="math display">\[
-50 = 20 + 2Q_{s2} \implies Q_{s2} = \mathbf{15\text{ tons}}, \qquad 50 = 100 - 2Q_{d2} \implies Q_{d2} = \mathbf{25\text{ tons}}
-\]</span></p>
-<p>Post-tariff imports shrink from <span class="math inline">\(20\)</span> tons down to <span class="math inline">\(25 - 15 = \mathbf{10\text{ tons}}\)</span>.</p>
-<ul>
-<li><strong>Compute Producer Surplus Gain (Trapezoid <span class="math inline">\(A\)</span>):</strong></li>
-</ul>
-<p><span class="math display">\[
-\text{Area } A = \frac{Q_{s1} + Q_{s2}}{2} \times t = \frac{10 + 15}{2} \times \$10 = 12.5 \times \$10 = \mathbf{\$125}
-\]</span></p>
-<ul>
-<li><strong>Compute Government Tariff Revenue (Rectangle <span class="math inline">\(C\)</span>):</strong></li>
-</ul>
-<p><span class="math display">\[
-\text{Area } C = t \times \text{Imports}_{\text{tariff}} = \$10 \times 10 = \mathbf{\$100}
-\]</span></p>
-<ul>
-<li><strong>Compute Deadweight Loss Triangles (<span class="math inline">\(B\)</span> and <span class="math inline">\(D\)</span>):</strong></li>
-</ul>
-<p><span class="math display">\[
-\text{Area } B = \frac{1}{2} \times (15 - 10) \times \$10 = \mathbf{\$25}, \qquad \text{Area } D = \frac{1}{2} \times (30 - 25) \times \$10 = \mathbf{\$25}
+\text{Area } A = \frac{Q_{s1} + Q_{s2}}{2} \times t, \qquad \text{Tariff Revenue } (C) = t \times (Q_{d2} - Q_{s2})
 \]</span></p>
 <p><span class="math display">\[
-DWL = B + D = \$25 + \$25 = \mathbf{\$50}
+DWL = B + D = \frac{1}{2} t (Q_{s2} - Q_{s1}) + \frac{1}{2} t (Q_{d1} - Q_{d2}), \qquad \Delta CS = -(A + B + C + D)
 \]</span></p>
-<ul>
-<li><strong>Verify Total Consumer Surplus Loss:</strong></li>
-</ul>
-<p><span class="math display">\[
-\Delta CS = -(A + B + C + D) = -(\$125 + \$25 + \$100 + \$25) = \mathbf{-\$275}
-\]</span></p>
-<p><strong>Conclusion:</strong> Domestic consumers lose <span class="math inline">\(\$275\)</span> in surplus; <span class="math inline">\(\$125\)</span> transfers to domestic steel producers, <span class="math inline">\(\$100\)</span> goes to government tariff revenue, and <span class="math inline">\(\$50\)</span> is permanently destroyed as deadweight loss.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Optional Advanced Section: Optimal Tariff Argument for a Large Country
+<span class="screen-reader-only">Note</span>Work It Out 14.2: Welfare Impact of a $10 Steel Tariff vs.&nbsp;a 10-Ton Quota
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><em>Note for Economics Majors and Quantitative Students:</em> While a tariff always reduces national welfare for a <em>small</em> price-taking country (<span class="math inline">\(P_w\)</span> fixed), a <em>large</em> country whose import demand affects world prices can improve its terms of trade if a small tariff pushes <span class="math inline">\(P_w\)</span> downward by <span class="math inline">\(\Delta P_w\)</span>. Net welfare changes by <span class="math inline">\(\Delta W = (\Delta P_w \times M_t) - (B + D)\)</span>, which is positive only if foreign exporters absorb more of the tariff than domestic deadweight loss—and only assuming foreign governments do not retaliate with counter-tariffs.</p>
+<p>Continuing our steel market (<span class="math inline">\(P = 100 - 2Q_d\)</span>, <span class="math inline">\(P = 20 + 2Q_s\)</span>, <span class="math inline">\(P_w = \$40\)</span>), suppose the government imposes a per-unit tariff of <span class="math inline">\(t = \$10\)</span> per ton, raising the domestic price to <span class="math inline">\(P_t = \$50\)</span>.</p>
+<ul>
+<li>Compute post-tariff domestic supply (<span class="math inline">\(Q_{s2}\)</span>), domestic demand (<span class="math inline">\(Q_{d2}\)</span>), and post-tariff imports.</li>
+<li>Calculate Areas <span class="math inline">\(A, B, C,\)</span> and <span class="math inline">\(D\)</span>, total Consumer Surplus loss (<span class="math inline">\(\Delta CS\)</span>), and net Deadweight Loss (<span class="math inline">\(DWL\)</span>).</li>
+<li>How does net domestic welfare change if the government replaces the tariff with a <span class="math inline">\(10\)</span>-ton import quota and allocates import licenses free of charge to foreign exporters?</li>
+</ul>
+<p><strong>Step-by-Step Solution:</strong></p>
+<ul>
+<li><strong>Post-Tariff Quantities at <span class="math inline">\(P_t = \$50\)</span>:</strong></li>
+</ul>
+<p><span class="math display">\[
+50 = 20 + 2Q_{s2} \implies 2Q_{s2} = 30 \implies Q_{s2} = \mathbf{15\text{ tons}}
+\]</span></p>
+<p><span class="math display">\[
+50 = 100 - 2Q_{d2} \implies 2Q_{d2} = 50 \implies Q_{d2} = \mathbf{25\text{ tons}}
+\]</span></p>
+<p>Post-tariff imports fall from <span class="math inline">\(20\)</span> tons down to <span class="math inline">\(25 - 15 = \mathbf{10\text{ tons}}\)</span>.</p>
+<ul>
+<li><p><strong>Compute Areas <span class="math inline">\(A, B, C, D\)</span> and Verify <span class="math inline">\(\Delta CS\)</span>:</strong></p></li>
+<li><p><em>Producer Surplus Gain (Trapezoid <span class="math inline">\(A\)</span>):</em></p></li>
+</ul>
+<p><span class="math display">\[
+\text{Area } A = \frac{Q_{s1} + Q_{s2}}{2} \times t = \frac{10 + 15}{2} \times \$10 = 12.5 \times \$10 = \mathbf{\$125}
+\]</span></p>
+<ul>
+<li><em>Government Tariff Revenue (Rectangle <span class="math inline">\(C\)</span>):</em></li>
+</ul>
+<p><span class="math display">\[
+\text{Area } C = t \times \text{Imports}_{\text{tariff}} = \$10 \times 10 = \mathbf{\$100}
+\]</span></p>
+<ul>
+<li><em>Deadweight Loss Triangles (<span class="math inline">\(B\)</span> and <span class="math inline">\(D\)</span>):</em></li>
+</ul>
+<p><span class="math display">\[
+\text{Area } B = \frac{1}{2}(15 - 10)(\$10) = \mathbf{\$25}, \qquad \text{Area } D = \frac{1}{2}(30 - 25)(\$10) = \mathbf{\$25}
+\]</span></p>
+<p><span class="math display">\[
+DWL = B + D = \$25 + \$25 = \mathbf{\$50}
+\]</span></p>
+<ul>
+<li><em>Cross-Check Consumer Surplus Loss:</em> Summing all four areas gives <span class="math inline">\(\Delta CS = -(\$125 + \$25 + \$100 + \$25) = \mathbf{-\$275}\)</span>. Checking directly against the free-trade consumer surplus (<span class="math inline">\(CS_{\text{trade}} = \$900\)</span>):</li>
+</ul>
+<p><span class="math display">\[
+CS_{\text{tariff}} = \frac{1}{2}(25)(\$100 - \$50) = \$625 \implies \Delta CS = \$625 - \$900 = \mathbf{-\$275} \quad \checkmark
+\]</span></p>
+<ul>
+<li><strong>Equivalent 10-Ton Quota with Foreign License Holders:</strong> Capping imports at <span class="math inline">\(10\)</span> tons holds the domestic price at <span class="math inline">\(\$50\)</span> and generates the same <span class="math inline">\(\Delta CS = -\$275\)</span> and <span class="math inline">\(\Delta PS = +\$125\)</span>. However, Area <span class="math inline">\(C = \$100\)</span> is now captured by foreign exporters as quota rents instead of the domestic treasury, widening the domestic nation’s net welfare loss from <span class="math inline">\(\$50\)</span> to <span class="math inline">\(B + C + D = \mathbf{\$150}\)</span>.</li>
+</ul>
+<p><strong>Conclusion:</strong> Under the <span class="math inline">\(\$10\)</span> tariff, domestic consumers lose <span class="math inline">\(\$275\)</span>: <span class="math inline">\(\$125\)</span> transfers to domestic producers, <span class="math inline">\(\$100\)</span> goes to government revenue, and <span class="math inline">\(\$50\)</span> is permanently destroyed as deadweight loss.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Calculus Extension: Optimal Tariff for a Large Country
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> While a tariff always lowers national welfare for a <em>small</em> price-taking country (<span class="math inline">\(P_w\)</span> fixed), a <em>large</em> country whose import demand lowers the world price by <span class="math inline">\(\Delta P_w = P_{w0} - P_{w1} &gt; 0\)</span> gains a <strong>terms-of-trade improvement</strong> of <span class="math inline">\(\Delta P_w \times M_t\)</span>. Net national welfare changes by <span class="math inline">\(\Delta W = (\Delta P_w \times M_t) - (B + D)\)</span>. Maximizing national welfare by equating domestic marginal benefit <span class="math inline">\(P(M) = P_w(1 + \tau)\)</span> to the marginal import expenditure <span class="math inline">\(\frac{d}{dM}[P_w(M)M] = P_w\bigl(1 + \frac{1}{\varepsilon_s^*}\bigr)\)</span> yields the optimal <em>ad valorem</em> tariff rate:</p>
+<p><span class="math display">\[
+\tau^* = \frac{1}{\varepsilon_s^*}, \qquad \text{where } \varepsilon_s^* = \frac{dM}{dP_w}\frac{P_w}{M} &gt; 0 \text{ is the foreign export supply elasticity.}
+\]</span></p>
+<p>For a small open economy, <span class="math inline">\(\varepsilon_s^* \to \infty\)</span>, confirming <span class="math inline">\(\tau^* = 0\)</span>. Even for a large country, this formula assumes foreign trading partners do not retaliate with counter-tariffs—which in practice typically leaves both nations worse off.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="arguments-for-protectionism-and-trade-policy-evaluation" class="level2" data-number="14.3">
+<h2 data-number="14.3" class="anchored" data-anchor-id="arguments-for-protectionism-and-trade-policy-evaluation"><span class="header-section-number">14.3</span> Arguments for Protectionism and Trade Policy Evaluation</h2>
+<section id="conceptual-introduction-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-2">Conceptual Introduction</h3>
+<p>If tariffs and import quotas strictly reduce Total Social Surplus in a small open economy, why do governments routinely enact them? Beyond lobbying by concentrated producer groups, policymakers cite four primary arguments for trade protection, each carrying important economic trade-offs:</p>
+<ul>
+<li><strong>National Security:</strong> Preserving domestic production capacity in defense-critical sectors (such as specialty steel, semiconductors, or aerospace) reduces vulnerability during geopolitical disruptions. Economists caution, however, that industries routinely stretch the ``national security’’ label to secure protection even when stockpiling or allied sourcing is far cheaper.</li>
+<li><strong>Infant Industry:</strong> Temporarily shielding a young domestic industry may help firms achieve economies of scale and learning-by-doing until they can compete globally. In practice, governments struggle to pick future winners, and ``temporary’’ tariffs often become politically entrenched long after the industry matures.</li>
+<li><strong>Anti-Dumping (Unfair Competition):</strong> <strong>Dumping</strong> occurs when a foreign firm exports a product below its cost of production or below its home-market price. While tariffs can deter predatory pricing designed to drive domestic rivals out of business, anti-dumping complaints are frequently filed against foreign competitors that are simply more efficient.</li>
+<li><strong>Protecting Domestic Jobs and Wages:</strong> Import barriers can save visible jobs inside a protected factory, but they do not increase net economy-wide employment. Higher prices for protected inputs reduce demand and employment in downstream and export-oriented industries, often resulting in a very high <strong>consumer cost per job saved</strong>.</li>
+</ul>
+<p>To avoid destructive tit-for-tat tariff wars—a classic Prisoner’s Dilemma where unilateral protection leaves every trading partner worse off—nations participate in multilateral institutions such as the <strong>World Trade Organization (WTO)</strong> and regional free trade agreements (such as the <strong>USMCA</strong>). Economists also distinguish between <em>whether</em> to help displaced workers and <em>how</em> to help them: targeted domestic policies (such as worker retraining, relocation assistance, or direct production subsidies for genuinely strategic goods) avoid distorting consumer prices and impose far lower deadweight loss than broad border tariffs.</p>
+</section>
+<section id="visual-representation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-2">Visual Representation</h3>
+<p>Figure 3 decomposes the <span class="math inline">\(\$275\)</span> Consumer Surplus loss from our <span class="math inline">\(\$10\)</span> steel tariff and contrasts its <span class="math inline">\(\$50\)</span> deadweight loss against a <span class="math inline">\(\$10\)</span> per-ton domestic production subsidy that achieves the exact same <span class="math inline">\(+5\)</span>-ton increase in domestic steel output while cutting deadweight loss in half.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_14_international_trade_comparative_advantage_and_protectionism_figure_03.svg" class="img-fluid figure-img" alt="Policy Evaluation of the $10 Steel Tariff. Panel A decomposes the $275 consumer loss into producer transfers ($125), tariff revenue or quota rents ($100), and deadweight loss ($50). Panel B shows that a $10 domestic production subsidy achieves the exact same +5-ton domestic output increase while eliminating consumption deadweight loss (Triangle D), halving total deadweight loss to $25."></p>
+<figcaption>Figure 3. Policy Evaluation of the <span class="math inline">\(\$10\)</span> Steel Tariff. Panel A decomposes the <span class="math inline">\(\$275\)</span> consumer loss into producer transfers (<span class="math inline">\(\$125\)</span>), tariff revenue or quota rents (<span class="math inline">\(\$100\)</span>), and deadweight loss (<span class="math inline">\(\$50\)</span>). Panel B shows that a <span class="math inline">\(\$10\)</span> domestic production subsidy achieves the exact same <span class="math inline">\(+5\)</span>-ton domestic output increase while eliminating consumption deadweight loss (Triangle <span class="math inline">\(D\)</span>), halving total deadweight loss to <span class="math inline">\(\$25\)</span>.</figcaption>
+</figure>
+</div>
+</section>
+<section id="mathematical-foundation-algebra-first-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-first-2">Mathematical Foundation (Algebra-First)</h3>
+<p>To evaluate the economic efficiency of job-protection arguments, economists divide the consumer burden and deadweight loss of a trade barrier by the number of domestic jobs protected (<span class="math inline">\(\Delta L_{\text{protected}}\)</span>):</p>
+<p><span class="math display">\[
+\text{Consumer Cost per Job Protected} = \frac{|\Delta CS|}{\Delta L_{\text{protected}}}, \qquad \text{Deadweight Loss per Job Protected} = \frac{B + D}{\Delta L_{\text{protected}}}
+\]</span></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Work It Out 14.3: Calculating Consumer Cost per Job Protected
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose our steel market in Work It Out 14.2 is scaled to <strong>thousands of tons</strong> (<span class="math inline">\(P\)</span> remains in dollars per ton), so the <span class="math inline">\(\$10\)</span> per-unit tariff expands domestic production by <span class="math inline">\(\Delta Q_s = 5{,}000\)</span> tons, reduces Consumer Surplus by <span class="math inline">\(|\Delta CS| = \$275{,}000\)</span>, raises Producer Surplus by <span class="math inline">\(\$125{,}000\)</span>, generates <span class="math inline">\(\$100{,}000\)</span> in tariff revenue, and creates <span class="math inline">\(\$50{,}000\)</span> in deadweight loss. Assume, as a hypothetical illustration, that producing those extra <span class="math inline">\(5{,}000\)</span> tons preserves <span class="math inline">\(\Delta L_{\text{protected}} = 5\)</span> domestic steelworker jobs.</p>
+<ul>
+<li>Calculate the <strong>consumer cost per job protected</strong>.</li>
+<li>Calculate the <strong>producer surplus gain per job protected</strong> and the <strong>pure deadweight loss per job protected</strong>.</li>
+<li>Interpret why consumers pay substantially more per job than domestic steel producers receive.</li>
+</ul>
+<p><strong>Step-by-Step Solution:</strong></p>
+<ul>
+<li><strong>Consumer Cost per Job Protected:</strong></li>
+</ul>
+<p><span class="math display">\[
+\frac{|\Delta CS|}{\Delta L_{\text{protected}}} = \frac{\$275{,}000}{5\text{ jobs}} = \mathbf{\$55{,}000\text{ per job}}
+\]</span></p>
+<ul>
+<li><strong>Producer Surplus Gain and Deadweight Loss per Job Protected:</strong></li>
+</ul>
+<p><span class="math display">\[
+\text{Producer Surplus Gain per Job} = \frac{\$125{,}000}{5} = \mathbf{\$25{,}000\text{ per job}}
+\]</span></p>
+<p><span class="math display">\[
+\text{Deadweight Loss per Job} = \frac{\$50{,}000}{5} = \mathbf{\$10{,}000\text{ per job}}
+\]</span></p>
+<ul>
+<li><strong>Economic Interpretation:</strong> Consumers bear <span class="math inline">\(\$55{,}000\)</span> in higher steel costs for every protected job, yet only <span class="math inline">\(\$25{,}000\)</span> reaches domestic steel producers as surplus (while <span class="math inline">\(\$20{,}000\)</span> goes to tariff revenue and <span class="math inline">\(\$10{,}000\)</span> vanishes into deadweight loss). Moreover, if higher steel prices eliminate jobs in downstream industries such as auto manufacturing, the net domestic employment gain is even smaller.</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Calculus Extension: The Targeting Principle (Subsidy vs.&nbsp;Tariff)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> Suppose policymakers seek to raise domestic steel production from <span class="math inline">\(Q_{s1} = 10\)</span> to <span class="math inline">\(Q_{s2} = 15\)</span> tons for national security. Instead of a <span class="math inline">\(\$10\)</span> tariff, consider a direct domestic production subsidy of <span class="math inline">\(s = \$10\)</span> per ton. Domestic firms receive <span class="math inline">\(P_w + s = \$50\)</span> and produce <span class="math inline">\(15\)</span> tons (<span class="math inline">\(\Delta PS = +\$125\)</span>), while domestic consumers still pay <span class="math inline">\(P_w = \$40\)</span> and buy <span class="math inline">\(30\)</span> tons (<span class="math inline">\(\Delta CS = \$0\)</span>). Government subsidy expenditure is <span class="math inline">\(s \times Q_{s2} = \$10 \times 15 = \$150\)</span>, so net social surplus changes by:</p>
+<p><span class="math display">\[
+\Delta TS_{\text{subsidy}} = \Delta CS + \Delta PS - s Q_{s2} = 0 + \$125 - \$150 = -\$25 = -\text{Area } B.
+\]</span></p>
+<p>More generally, differentiating total surplus with respect to a tariff <span class="math inline">\(t\)</span> versus a production subsidy <span class="math inline">\(s\)</span> shows that marginal deadweight loss satisfies:</p>
+<p><span class="math display">\[
+\frac{d(DWL_{\text{tariff}})}{dt} = t\bigl[Q_s'(P_w + t) - Q_d'(P_w + t)\bigr] \;&gt;\; s\,Q_s'(P_w + s) = \frac{d(DWL_{\text{subsidy}})}{ds} \quad (\text{at } t = s &gt; 0, \text{ since } Q_d' &lt; 0).
+\]</span></p>
+<p>Because the subsidy directly targets the production goal without raising the consumer price, it eliminates consumption distortion Triangle <span class="math inline">\(D\)</span> and strictly dominates the tariff in welfare terms.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Bring It Home: Weighing Concentrated Producer Gains Against Dispersed Consumer Costs
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Returning to the debate between domestic steelworkers and automakers, our surplus framework reveals why trade disputes are so hard to resolve politically. A steel tariff delivers immediate, visible producer gains (Area <span class="math inline">\(A\)</span>) to domestic mills and their workforce, while spreading a larger consumer loss (<span class="math inline">\(A + B + C + D\)</span>) across millions of households and downstream manufacturers. Because society as a whole loses deadweight loss (<span class="math inline">\(B + D\)</span>)—and loses even more (<span class="math inline">\(B + C + D\)</span>) if an import quota hands quota rents to foreign exporters—economists generally recommend keeping trade open while supporting displaced workers directly through retraining and adjustment policies rather than restricting imports.</p>
 </div>
 </div>
 

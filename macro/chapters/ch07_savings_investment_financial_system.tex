@@ -45,7 +45,7 @@ Between 2023 and 2026, the U.S. federal government ran annual budget deficits ex
 % =============================================================================
 \section{Saving Flows, Wealth Stocks, and Macroeconomic Investment}
 
-\subsection*{1. Conceptual Introduction}
+\subsection*{Conceptual Introduction}
 \label{sec:saving-flow-wealth-stock}
 In everyday conversation, people use ``saving'' and ``wealth'' interchangeably, yet macroeconomics draws a strict boundary between a \textbf{flow} and a \textbf{stock}. \textbf{Saving ($S$)} is a flow variable: it measures the portion of current disposable income ($Y_d$) that a household, business, or government chooses not to spend on current consumption during a specific time interval, such as a month, quarter, or year. By contrast, \textbf{wealth ($W$)} is a stock variable: it measures the total net value of assets (bank deposits, bonds, equities, real estate, minus debts) owned at a single point in time. Positive saving acts like water flowing into a bathtub—each month of positive saving raises the water level of accumulated wealth, whereas negative saving (\textbf{dissaving}, when spending exceeds current income) drains the stock of wealth.
 
@@ -53,7 +53,7 @@ Understanding how wealth evolves also requires separating active saving flows fr
 
 Equally critical is the macroeconomic distinction between \textbf{physical investment ($I$)} and \textbf{financial investment}. In macroeconomic accounting (NIPA), investment refers exclusively to spending on newly produced physical capital goods—such as factory machinery, commercial buildings, software, cloud servers, and additions to business inventories—that expand the economy's future productive capacity. When an individual buys shares of an existing corporation on the New York Stock Exchange or purchases an existing suburban house, no new physical capital is created; ownership of an existing asset simply transfers from seller to buyer. In macroeconomics, buying stocks or bonds is household \emph{saving} (supplying funds to the financial system), whereas a firm using borrowed funds to build a new warehouse is \emph{investment}.
 
-\subsection*{2. Visual Representation}
+\subsection*{Visual Representation}
 Figure~\ref{fig:ch7-saving-wealth} illustrates the stock--flow relationship over a five-year horizon for a household starting with zero initial wealth ($W_0 = \$0$). Each vertical bar represents the annual saving flow ($S_t$), while the connected trajectory tracks cumulative end-of-year wealth ($W_t = \sum_{k=1}^{t} S_k$). Notice that even when the annual saving flow dips in Years 3 and 4, cumulative wealth continues rising because every positive flow adds to the existing stock.
 
 \begin{figure}[h!]
@@ -109,7 +109,7 @@ Figure~\ref{fig:ch7-saving-wealth} illustrates the stock--flow relationship over
   \label{fig:ch7-saving-wealth}
 \end{figure}
 
-\subsection*{3. Real-World Application: U.S. Household Saving Rate Swings}
+\subsection*{Real-World Application: U.S. Household Saving Rate Swings}
 The U.S. Bureau of Economic Analysis tracks household saving flows relative to disposable personal income through the \textbf{Personal Saving Rate} (FRED: \texttt{PSAVERT}). During the 2007--2009 Great Recession, collapsing home prices and equity values erased trillions of dollars in household wealth; in response, families cut discretionary consumption and raised their personal saving rate from roughly $2.5\%$ in 2007 to over $6\%$ by 2009 to rebuild depleted wealth buffers. A decade later, during the 2020 COVID-19 lockdowns, pandemic stimulus transfers combined with closed restaurants and travel restrictions pushed \texttt{PSAVERT} above $30\%$ in April 2020, creating a massive stock of ``excess savings'' that fueled consumer spending through 2022--2023 before the saving rate normalized near $4\%$--$5\%$ in 2024--2026.
 
 \begin{coreprinciple}
@@ -121,7 +121,7 @@ Students frequently lose points on exams by labeling stock or bond purchases as 
 \end{itemize}
 \end{coreprinciple}
 
-\subsection*{4. Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 Let disposable income in period $t$ be $Y_{d,t} = Y_t + TR_t - T_t$ (total income plus government transfers minus taxes) and household consumption spending be $C_t$. Household saving flow in period $t$ is:
 \begin{equation}
 S_t = Y_{d,t} - C_t
@@ -156,14 +156,14 @@ Integrating from $t = 0$ to $T$ yields $w(T) = w(0)e^{r_a T} + \int_0^T s(\tau)e
 % =============================================================================
 \section{National Saving and the Open-Economy Identity}
 
-\subsection*{1. Conceptual Introduction}
+\subsection*{Conceptual Introduction}
 To understand how an entire nation finances physical capital investment, we scale up from an individual household to the macroeconomy using the National Income and Product Accounts (NIPA) expenditure identity: $Y = C + I + G + NX$. In any economy, total output produced ($Y$) that is neither consumed by households ($C$) nor purchased by government agencies ($G$) represents output set aside from current consumption—which is the macroeconomic definition of \textbf{national saving ($S$)}.
 
 National saving is generated by two domestic sectors. \textbf{Private saving ($S_p$)} is the disposable income households and firms retain after paying net taxes ($T_{\text{net}} = T - TR$) and purchasing consumption goods: $S_p = Y - T_{\text{net}} - C$. \textbf{Public saving ($S_g$)} is the difference between government net tax revenue and government purchases of goods and services: $S_g = T_{\text{net}} - G$. When $T_{\text{net}} > G$, the government runs a \textbf{budget surplus} ($S_g > 0$) and adds to national saving; when $T_{\text{net}} < G$, the government runs a \textbf{budget deficit} ($S_g < 0$), reducing national saving.
 
 Linking national saving to domestic investment depends on whether the economy interacts financially with the rest of the world. In a \textbf{closed economy} ($NX = 0$), every dollar of domestic investment must be financed by domestic saving, yielding the closed-economy saving--investment identity $S = I$. In an \textbf{open economy}, domestic investment can exceed domestic national saving ($I > S$) if foreign savers lend funds to domestic borrowers. Because a trade deficit ($NX < 0$, meaning imports exceed exports) leaves foreign trading partners holding domestic currency that they reinvest in domestic bonds, stocks, and factories, \textbf{net capital inflow ($NCI$)} equals the negative of net exports ($NCI = -NX$), giving the open-economy funding identity $I = S_p + S_g + NCI$.
 
-\subsection*{2. Visual Representation}
+\subsection*{Visual Representation}
 Figure~\ref{fig:ch7-closed-open} compares how domestic physical investment ($I$) is financed under closed-economy versus open-economy accounting. In the left panel (Closed Economy), domestic investment equals national saving ($I = S_p + S_g$). In the right panel (Open Economy with a budget deficit $S_g < 0$ and a trade deficit $NX < 0$), positive net capital inflows ($NCI = -NX > 0$) supplement private saving to fund total domestic investment.
 
 \begin{figure}[h!]
@@ -205,7 +205,7 @@ Figure~\ref{fig:ch7-closed-open} compares how domestic physical investment ($I$)
   \label{fig:ch7-closed-open}
 \end{figure}
 
-\subsection*{3. Real-World Application: U.S. Twin Deficits and Foreign Capital Inflows}
+\subsection*{Real-World Application: U.S. Twin Deficits and Foreign Capital Inflows}
 In recent U.S. macroeconomic data, Gross Private Domestic Investment (FRED: \texttt{GPDI}) has consistently exceeded domestic national saving because Net Government Saving (FRED: \texttt{TGDEF}) has been deeply negative while private saving remains moderate. How does the United States sustain high domestic capital formation despite low net national saving? Foreign central banks, sovereign wealth funds, and international private investors purchase U.S. Treasury securities, corporate bonds, and equities—generating positive Net Capital Inflows ($NCI > 0$) that mirror the U.S. current account (trade) deficit ($NX < 0$).
 
 \begin{coreprinciple}
@@ -213,7 +213,7 @@ In recent U.S. macroeconomic data, Gross Private Domestic Investment (FRED: \tex
 The open-economy identity $S - I = NX$ (or $I = S + NCI$) holds \emph{ex post} by national accounting definition, just as $2 + 2 = 4$ is always true. However, an accounting identity alone does not tell us whether a fall in national saving \emph{caused} a trade deficit or whether strong foreign demand for U.S. assets drove capital inflows ($NCI > 0$) that appreciated the dollar and widened the trade deficit ($NX < 0$). Economists use behavioral models (such as the loanable-funds market) to establish causal mechanisms.
 \end{coreprinciple}
 
-\subsection*{4. Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 Starting from the aggregate expenditure identity $Y = C + I + G + NX$, subtract $C$ and $G$ from both sides:
 \begin{equation}
 Y - C - G = I + NX
@@ -250,7 +250,7 @@ Suppose an open economy has GDP of $Y = \$20{,}000\text{ billion}$, household co
 % =============================================================================
 \section{The Financial System: Assets, Intermediaries, and Core Tasks}
 
-\subsection*{1. Conceptual Introduction}
+\subsection*{Conceptual Introduction}
 National saving cannot automatically transform into factories, power grids, and software unless an institutional mechanism connects millions of small household savers with businesses seeking large sums for long-term capital projects. The \textbf{financial system} consists of the markets and institutions that channel funds from savers (lenders) to investors (borrowers). Savers supply funds by acquiring \textbf{financial assets}—paper or electronic claims that entitle the buyer to future income from the seller—including \textbf{loans} (direct debt contracts), \textbf{bonds} (tradeable IOUs promising fixed interest payments and principal repayment at maturity), \textbf{stocks} (shares of partial ownership in a corporation), and \textbf{bank deposits}.
 
 Rather than requiring every household to vet individual corporate borrowers directly, modern economies rely heavily on \textbf{financial intermediaries}—institutions that transform funds gathered from many individuals into financial assets. Major intermediaries include \textbf{commercial banks} (which accept liquid checking and savings deposits and originate business and mortgage loans), \textbf{mutual funds and exchange-traded funds (ETFs)} (which pool saver money to buy diversified portfolios of stocks and bonds), \textbf{pension funds} (which invest worker retirement contributions over multi-decade horizons), and \textbf{life insurance companies}.
@@ -262,7 +262,7 @@ Across all these institutions, a well-functioning financial system performs thre
   \item \textbf{Providing Liquidity:} Businesses need funds locked into machinery for years, whereas households want rapid access to cash for emergencies. Banks and secondary stock/bond markets provide \textbf{liquidity}—the ability to convert an asset into spendable cash quickly without significant loss of value.
 \end{enumerate}
 
-\subsection*{2. Visual Representation}
+\subsection*{Visual Representation}
 Figure~\ref{fig:ch7-financial-system} maps the architecture of the financial system, showing how household and foreign saving flows through both direct financial markets (stocks and bonds) and financial intermediaries (banks, mutual funds, pension funds) to finance business capital formation while performing the three core financial tasks.
 
 \begin{figure}[h!]
@@ -311,10 +311,10 @@ Figure~\ref{fig:ch7-financial-system} maps the architecture of the financial sys
   \label{fig:ch7-financial-system}
 \end{figure}
 
-\subsection*{3. Real-World Application: Index Funds and Liquidity Mismatch Risks}
+\subsection*{Real-World Application: Index Funds and Liquidity Mismatch Risks}
 Consider how retail index mutual funds and ETFs democratized diversification: for an expense ratio below $0.05\%$ per year, a first-time investor with $\$500$ can own fractional shares of 500 major U.S. corporations, achieving near-complete diversification of idiosyncratic firm risk at minimal transaction cost. Conversely, when financial intermediaries mismanage liquidity transformation, systemic fragility emerges. In March 2023, Silicon Valley Bank (SVB) held long-term fixed-rate Treasury bonds funded by uninsured, instantly withdrawable tech-startup deposits. When rising interest rates lowered the market value of SVB's long-term bonds and depositors triggered rapid digital withdrawals, SVB suffered an acute liquidity run—illustrating why bank capital and liquidity regulations are essential to financial stability.
 
-\subsection*{4. Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 Two foundational quantitative relationships govern financial assets:
 \begin{enumerate}
   \item \textbf{Inverse Relationship Between Bond Prices and Interest Rates:} For a one-year zero-coupon bond paying face value $F$ at maturity and selling today at market price $P_B$, the nominal yield (interest rate) $i$ is:
@@ -353,14 +353,14 @@ Differentiating with respect to $i$ yields $\frac{dP_B}{di} = -\frac{D_{\text{Ma
 % =============================================================================
 \section{The Market for Loanable Funds}
 
-\subsection*{1. Conceptual Introduction}
+\subsection*{Conceptual Introduction}
 Economists model how the financial system coordinates saving and investment using the \textbf{market for loanable funds}—a hypothetical market that brings together all savers who want to lend funds and all borrowers who want to finance investment spending. The ``price'' in this market is the \textbf{real interest rate ($r$)}, which measures the inflation-adjusted return earned by lenders and the inflation-adjusted cost paid by borrowers.
 
 The \textbf{demand for loanable funds ($I$)} comes from firms (and homebuyers) borrowing to finance physical investment projects, and it \textbf{slopes downward}. A firm undertakes a capital project only if its expected rate of return meets or exceeds the real interest rate ($r$). When $r$ is high (say, $7\%$), only highly profitable projects pass this hurdle, so the quantity of loanable funds demanded is low. When $r$ falls (say, to $3\%$), many additional warehouse, factory, and equipment projects become profitable, increasing the quantity of investment funds demanded. Any change in perceived business opportunities—such as a breakthrough in artificial intelligence or an investment tax credit—shifts the entire investment demand curve rightward.
 
 The \textbf{supply of loanable funds ($S$)} comes from national saving (private plus public saving) and net capital inflows, and it \textbf{slopes upward}. Households face an intertemporal trade-off between consuming today versus consuming in the future; a higher real interest rate raises the reward for deferring consumption, inducing households to save more and attracting foreign capital inflows. Changes in household thrift, tax incentives for retirement accounts (such as 401(k) or Roth IRA expansions), foreign capital flows, or government budget balances shift the supply curve of loanable funds. At the equilibrium real interest rate $r^*$, the quantity of loanable funds supplied exactly equals the quantity demanded ($Q_S(r^*) = Q_D(r^*) = Q^*$).
 
-\subsection*{2. Visual Representation}
+\subsection*{Visual Representation}
 Figure~\ref{fig:ch7-loanable-funds} depicts equilibrium in the market for loanable funds. The downward-sloping investment demand curve ($I$: $r = 8.0 - 0.03Q$) intersects the upward-sloping supply curve ($S$: $r = 1.0 + 0.02Q$) at point $E^*$, establishing an equilibrium real interest rate of $r^* = 3.8\%$ and equilibrium loanable funds of $Q^* = \$140\text{ billion}$. At any rate above equilibrium (such as $r = 5.0\%$), desired saving ($\$200\text{B}$) exceeds desired investment ($\$100\text{B}$), creating a $\$100\text{B}$ surplus of funds that drives $r$ down toward $3.8\%$.
 
 \begin{figure}[h!]
@@ -412,10 +412,10 @@ Figure~\ref{fig:ch7-loanable-funds} depicts equilibrium in the market for loanab
   \label{fig:ch7-loanable-funds}
 \end{figure}
 
-\subsection*{3. Real-World Application: Real Treasury Yields and Corporate Investment Hurdles}
+\subsection*{Real-World Application: Real Treasury Yields and Corporate Investment Hurdles}
 Financial analysts monitor the 10-Year Treasury Inflation-Indexed Security yield (FRED: \texttt{DFII10}) alongside the nominal 10-Year Treasury yield (FRED: \texttt{DGS10}) as a real-time barometer of the economy's benchmark real interest rate. Between 2020 and 2021, \texttt{DFII10} hovered near $-1.0\%$, encouraging aggressive corporate borrowing for warehouse expansion, residential construction, and software investment. By 2024--2026, as \texttt{DFII10} rose near $+1.8\%$ to $+2.1\%$, capital-intensive housing and commercial real estate projects faced much steeper borrowing hurdles, shifting private investment toward high-expected-return sectors such as artificial intelligence infrastructure and semiconductor manufacturing.
 
-\subsection*{4. Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 Let the supply of loanable funds ($Q_S$, in billions of dollars) and the investment demand for loanable funds ($Q_D$, in billions of dollars) be linear functions of the real interest rate $r$ (measured in percentage points):
 \begin{align}
 \text{Supply of Loanable Funds:} \quad & Q_S = -50 + 50r \qquad \left(\text{inverse: } r = 1.0 + 0.02Q_S\right) \\
@@ -452,14 +452,14 @@ When $r$ rises, the relative price of current consumption ($1+r$) increases, ind
 % =============================================================================
 \section{Government Budget Deficits, Interest Rates, and Crowding Out}
 
-\subsection*{1. Conceptual Introduction}
+\subsection*{Conceptual Introduction}
 Because national saving equals the sum of private saving and public saving ($S = S_p + S_g$), fiscal policy directly affects the supply of loanable funds. When the federal government increases spending ($G$) or cuts taxes ($T$) without offsetting revenue, its budget balance ($S_g = T_{\text{net}} - G$) moves into deficit ($S_g < 0$). Because the U.S. Treasury must issue government bonds to finance that deficit, it absorbs a share of private saving, shifting the \textbf{supply of loanable funds leftward} at every real interest rate.
 
 The leftward shift in loanable-funds supply creates a temporary shortage of funds at the initial real interest rate $r_1^*$, bidding the equilibrium real interest rate up to a higher level $r_2^* > r_1^*$. As borrowing becomes more expensive, private businesses cancel or scale back marginal investment projects, reducing private investment from $I_1^*$ to $I_2^*$. Economists call this negative side effect of government budget deficits \textbf{crowding out}: government borrowing drives up real interest rates and reduces private physical investment spending.
 
 Crucially, however, crowding out is typically \textbf{partial rather than one-for-one}. A $\$50\text{ billion}$ increase in the government budget deficit rarely reduces private investment by the full $\$50\text{ billion}$ for three reasons: (1) the higher real interest rate $r_2^*$ induces domestic households to save more along the upward-sloping supply curve, (2) higher U.S. real interest rates attract foreign capital inflows ($NCI$) from global savers, and (3) during a deep recession with idle factories and slack labor, increased government spending raises national income ($Y$), generating additional private saving and prompting the Federal Reserve to keep policy rates accommodative.
 
-\subsection*{2. Visual Representation}
+\subsection*{Visual Representation}
 Figure~\ref{fig:ch7-crowding-out} illustrates a $\$50\text{ billion}$ budget deficit shock using our baseline curves from Section~7.4. Initially, $S_0$ ($r = 1.0 + 0.02Q$) and $I$ ($r = 8.0 - 0.03Q$) intersect at $E_1(Q_1^* = \$140\text{B}, r_1^* = 3.8\%)$. A $\$50\text{ billion}$ deficit shifts supply leftward by $\$50\text{B}$ at every interest rate to $S_1$ ($r = 2.0 + 0.02Q$). Equilibrium moves to $E_2(Q_2^* = \$120\text{B}, r_2^* = 4.4\%)$: private investment falls by $\$20\text{B}$ (partial crowding out), while higher interest rates induce $+\$30\text{B}$ of additional private saving (from $\$140\text{B}$ to $\$170\text{B}$ along $S_0$) to absorb the remainder of the $\$50\text{B}$ deficit. Figure~\ref{fig:ch7-partial-crowding} contrasts complete crowding out (vertical supply), partial crowding out (upward-sloping supply), and recessionary/accommodative conditions (flat supply).
 
 \begin{figure}[h!]
@@ -562,7 +562,7 @@ Figure~\ref{fig:ch7-crowding-out} illustrates a $\$50\text{ billion}$ budget def
   \label{fig:ch7-partial-crowding}
 \end{figure}
 
-\subsection*{3. Real-World Application: U.S. Federal Deficits and Empirical Crowding Out}
+\subsection*{Real-World Application: U.S. Federal Deficits and Empirical Crowding Out}
 Empirical data from the Federal Reserve Bank of St. Louis allow economists to track fiscal deficits alongside real borrowing costs and private investment. Specifically, FRED series \texttt{FYFSD} measures the annual federal surplus or deficit, \texttt{TGDEF} reports net government saving across federal, state, and local governments, \texttt{GPDI} tracks gross private domestic investment, and \texttt{DFII10} measures the 10-year TIPS real interest rate. During the 2009 Great Recession, federal deficits surged above $\$1.4\text{ trillion}$ while \texttt{DFII10} fell below $1\%$, demonstrating Panel (c) of Figure~\ref{fig:ch7-partial-crowding}: economic slack and Federal Reserve accommodation prevented interest rate spikes. Conversely, during the full-employment expansion of 2023--2026, persistent structural deficits coincided with \texttt{DFII10} rising above $2\%$, illustrating classic partial crowding out under full capacity.
 
 \begin{coreprinciple}
@@ -570,7 +570,7 @@ Empirical data from the Federal Reserve Bank of St. Louis allow economists to tr
 In an open economy like the United States, a higher real interest rate $r_2^*$ does not just coax extra saving out of domestic households—it also attracts foreign investors seeking higher real returns on U.S. Treasury bonds. Those foreign capital inflows ($NCI > 0$) partially replenish the domestic pool of loanable funds, moderating the rise in $r^*$ and reducing domestic investment crowding out, though at the cost of a wider trade deficit ($NX < 0$) and higher future interest payments to foreign bondholders.
 \end{coreprinciple}
 
-\subsection*{4. Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 Let initial loanable-funds supply be $Q_{S,0} = -50 + 50r$ (where $S_g = 0$ initially) and investment demand be $Q_D = \frac{800 - 100r}{3}$. When the government runs a budget deficit of $\Delta D = \$50\text{ billion}$ ($S_g' = -\$50\text{B}$), total national saving shifts leftward by $\$50\text{B}$ at every interest rate:
 \begin{equation}
 Q_{S,1} = Q_{S,0} - \Delta D = (-50 + 50r) - 50 = -100 + 50r \qquad \left(\text{inverse: } r = 2.0 + 0.02Q_{S,1}\right)

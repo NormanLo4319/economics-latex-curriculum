@@ -47,10 +47,9 @@ After completing this chapter, students should be able to:
 \subsection*{Key Terms}
 \textbf{Autonomous consumption ($C_0$)}, \textbf{disposable income ($Y_D$)}, \textbf{marginal propensity to consume ($MPC$)}, \textbf{marginal propensity to save ($MPS$)}, \textbf{planned investment spending ($I_{\text{planned}}$)}, \textbf{unplanned inventory investment ($I_{\text{unplanned}}$)}, \textbf{planned aggregate expenditure ($AE_{\text{planned}}$)}, \textbf{Keynesian cross}, \textbf{autonomous spending multiplier ($k_G$)}, \textbf{lump-sum tax multiplier ($k_T$)}, \textbf{balanced-budget multiplier ($k_{BB}$)}, and \textbf{automatic stabilizers}.
 
-\begin{coreprinciple}
-\boxheader{SlateBlue}{Bring It Home: Why Does a \$100 Billion Fiscal Package Move GDP by More—or Less—Than \$100 Billion?}
+\begin{examplecase}{Bring It Home: Why Does a \$100 Billion Fiscal Package Move GDP by More—or Less—Than \$100 Billion?}
 During an economic downturn, policymakers routinely debate two competing stimulus designs: direct government purchases of goods and infrastructure ($\Delta G > 0$) versus lump-sum tax rebates sent directly to households ($\Delta T < 0$). Because one person's spending becomes another person's income, an initial injection of spending triggers multiple rounds of induced household consumption. Yet households save part of any tax rebate rather than spending every dollar immediately, and leakages into taxes and imports shrink each successive round. By the end of this chapter, you will be able to prove algebraically and graphically why a \$1 increase in government purchases raises equilibrium GDP by more than a \$1 tax cut, and why a balanced-budget expansion ($\Delta G = \Delta T$) still expands short-run output.
-\end{coreprinciple}
+\end{examplecase}
 
 % =====================================================================
 % SECTION 2: THE CONSUMPTION FUNCTION, SAVING SCHEDULE & INVESTMENT
@@ -72,20 +71,20 @@ Figure~\ref{fig:ch8-consumption-function} plots aggregate consumption ($C$) on t
 \begin{tikzpicture}[scale=0.95]
     % Axes
     \draw[->, thick, oiSlate] (0,0) -- (8.8,0) node[right, font=\small\bfseries] {Disposable Income ($Y_D$, \$B)};
-    \draw[->, thick, oiSlate] (0,0) -- (0,7.2) node[above, font=\small\bfseries] {Consumption ($C$, \$B)};
+    \draw[->, thick, oiSlate] (0,0) -- (0,8.2) node[above, font=\small\bfseries] {Consumption ($C$, \$B)};
     \node[below left, font=\small, oiSlate] at (0,0) {$(0,0)$};
 
     % Grid lines
-    \draw[very thin, gray!20] (0,0) grid (8.2,6.8);
+    \draw[very thin, gray!20] (0,0) grid (8.2,7.8);
 
-    % Shaded Dis-saving and Positive Saving regions
+    % Shaded Dis-saving and Positive Saving regions (exact intersection at (6.0,6.0); at x=7.8, C=7.44 and 45-deg=7.8)
     \fill[oiOrange!12] (0,0) -- (0,1.2) -- (6.0,6.0) -- cycle;
-    \fill[oiGreen!12] (6.0,6.0) -- (8.0,6.8) -- (8.0,8.0) -- (6.0,6.0) -- cycle;
+    \fill[oiGreen!15] (6.0,6.0) -- (7.8,7.44) -- (7.8,7.8) -- cycle;
 
     % 45-degree reference line (C = Y_D)
-    \draw[dashed, thick, oiSlate] (0,0) -- (7.0,7.0) node[above right, font=\small] {$45^\circ$ Line ($C = Y_D$)};
+    \draw[dashed, thick, oiSlate] (0,0) -- (7.8,7.8) node[above left, font=\small] {$45^\circ$ Line ($C = Y_D$)};
 
-    % Consumption Function: C = 100 + 0.8 Y_D (scaled: 1 unit = $100B, so C0 = 1.2 visually clear, slope = 0.8 -> intersection at Y_D = 6.0)
+    % Consumption Function: C = 100 + 0.8 Y_D (scaled: 1 unit = $83.33B, C0 = 1.2, slope = 0.8 -> intersection at Y_D = 6.0)
     \draw[ultra thick, oiBlue] (0,1.2) -- (8.2,7.76) node[right, font=\small\bfseries] {$C = C_0 + cY_D$};
 
     % Autonomous Consumption intercept
@@ -100,7 +99,8 @@ Figure~\ref{fig:ch8-consumption-function} plots aggregate consumption ($C$) on t
 
     % Region annotations
     \node[font=\footnotesize\bfseries, oiOrange, align=center] at (2.1,2.4) {Dis-saving\\($S < 0$)};
-    \node[font=\footnotesize\bfseries, oiGreen, align=center] at (7.3,6.4) {Saving\\($S > 0$)};
+    \node[font=\footnotesize\bfseries, oiGreen, align=center] (savlabel) at (7.5,5.8) {Saving\\($S > 0$)};
+    \draw[->, thick, oiGreen] (savlabel.north) -- (7.5,7.35);
 
     % Slope triangle
     \draw[thick, oiSlate] (3.0,3.6) -- (5.0,3.6) node[midway, below, font=\footnotesize] {$\Delta Y_D$};
@@ -278,13 +278,13 @@ Figure~\ref{fig:ch8-multiplier-shift} shows how an autonomous spending increase 
     \draw[very thin, gray!20] (0,0) grid (8.4,7.0);
 
     % 45-degree line
-    \draw[dashed, thick, oiSlate] (0,0) -- (7.2,7.2) node[above right, font=\small] {$45^\circ$ Line ($AE = Y$)};
+    \draw[dashed, thick, oiSlate] (0,0) -- (7.2,7.2) node[above left, font=\small] {$45^\circ$ Line ($AE = Y$)};
 
     % Scale: 1 unit = $250B.
     % AE1: A0 = 260 -> 1.04, slope = 0.8, Y1* = 1300 -> 5.20
     % AE2: A0 = 280 -> 1.12 (exaggerated slightly visually to 1.36 -> Y2* = 6.80 so shift is crisp and readable, labeled accurately with economic values)
-    \draw[thick, oiBlue] (0,1.04) -- (8.0,7.44) node[right, font=\small] {$AE_1 = 260 + 0.8Y$};
-    \draw[ultra thick, oiOrange] (0,1.36) -- (7.6,7.44) node[above left, font=\small\bfseries] {$AE_2 = 280 + 0.8Y$};
+    \draw[thick, oiBlue] (0,1.04) -- (7.8,7.28) node[below right, font=\small] {$AE_1 = 260 + 0.8Y$};
+    \draw[ultra thick, oiOrange] (0,1.36) -- (7.6,7.44) node[above right, font=\small\bfseries] {$AE_2 = 280 + 0.8Y$};
 
     % Vertical shift arrow (Delta G = +20)
     \draw[->, very thick, oiOrange] (2.5,3.04) -- (2.5,3.36);
@@ -293,11 +293,13 @@ Figure~\ref{fig:ch8-multiplier-shift} shows how an autonomous spending increase 
     % Equilibrium E1* at (5.2, 5.2)
     \fill[oiBlue] (5.2,5.2) circle (3pt);
     \draw[dashed, thin, oiBlue] (5.2,5.2) -- (5.2,0) node[below, font=\small] {$Y_1^* = 1{,}300$};
+    \draw[dashed, thin, oiBlue] (5.2,5.2) -- (0,5.2) node[left, font=\small] {$1{,}300$};
     \node[below right, font=\small\bfseries, oiBlue] at (5.2,5.15) {$E_1^*$};
 
     % Equilibrium E2* at (6.8, 6.8)
     \fill[oiOrange] (6.8,6.8) circle (3.2pt);
     \draw[dashed, thick, oiOrange] (6.8,6.8) -- (6.8,0) node[below, font=\small\bfseries] {$Y_2^* = 1{,}400$};
+    \draw[dashed, thick, oiOrange] (6.8,6.8) -- (0,6.8) node[left, font=\small\bfseries] {$1{,}400$};
     \node[above left, font=\small\bfseries, oiOrange] at (6.75,6.85) {$E_2^*$};
 
     % Horizontal multiplier bracket (Delta Y* = +100)
@@ -404,7 +406,7 @@ Figure~\ref{fig:ch8-leakages-flatter} compares the steep simple $AE_{\text{plann
 \end{figure}
 
 \subsection*{Real-World Application: U.S. Automatic Stabilizers in Recessions}
-In the U.S. federal budget, progressive personal income taxes, corporate profit taxes, and state--federal Unemployment Insurance (UI) operate automatically without waiting for Congressional votes. During economic contractions—such as the 2008--2009 Great Recession and the 2020 COVID-19 downturn—federal tax receipts fell automatically while UI benefit outlays (tracked in FRED series \texttt{W068RCQ027SBEA} and reflected in federal net saving \texttt{TGDEF}) rose immediately as layoffs occurred. These built-in stabilizers offset roughly 15\% to 25\% of initial GDP shocks before any discretionary stimulus bill was signed.
+In the U.S. federal budget, progressive personal income taxes, corporate profit taxes, and state--federal Unemployment Insurance (UI) operate automatically without waiting for Congressional votes. During economic contractions—such as the 2008--2009 Great Recession and the 2020 COVID-19 downturn—federal tax receipts fell automatically while UI benefit outlays (tracked in FRED series \texttt{W825RC1} and reflected in total government net saving \texttt{TGDEF}) rose immediately as layoffs occurred. These built-in stabilizers offset roughly 15\% to 25\% of initial GDP shocks before any discretionary stimulus bill was signed.
 
 \begin{examplecase}{FRED Data: Realized GDP Is Not Planned Expenditure}
 FRED series \texttt{GDPC1} reports quarterly U.S. real Gross Domestic Product in billions of chained 2017 dollars at a seasonally adjusted annual rate. Because \texttt{GDPC1} measures \emph{realized} output ($Y = AE_{\text{planned}} + I_{\text{unplanned}}$), a raw quarter-to-quarter change in \texttt{GDPC1} reflects both planned spending shifts and unintended inventory swings, as well as simultaneous changes in interest rates, prices, and expectations. Empirical macroeconomists therefore identify fiscal multipliers using plausibly exogenous policy shocks—such as military procurement shifts or state-level formula grants—rather than dividing $\Delta\texttt{GDPC1}$ by raw budget changes.
@@ -451,10 +453,9 @@ The algebraic multiplier depends strictly on model assumptions regarding sticky 
 % =====================================================================
 \section{Chapter Summary and Check Your Understanding}
 
-\begin{coreprinciple}
-\boxheader{SlateBlue}{Bring It Home: Designing Effective Stabilization Policy}
+\begin{examplecase}{Bring It Home: Designing Effective Stabilization Policy}
 Returning to our opening policy dilemma: the Keynesian cross demonstrates that fiscal policy operates through a chain of income-induced consumption rounds, making direct government purchases ($k_G = \frac{1}{1-c}$) more potent dollar-for-dollar than lump-sum tax cuts ($k_T = \frac{-c}{1-c}$) because households save a fraction of tax rebates immediately. Even a balanced-budget expansion ($\Delta G = \Delta T$) expands short-run output with a multiplier of $1.0$. In real-world economies, however, proportional income taxes, import leakages, rising prices, and interest-rate crowding out dampen the multiplier—while simultaneously serving as automatic stabilizers that cushion recessions without legislative delay.
-\end{coreprinciple}
+\end{examplecase}
 
 \subsection*{Check Your Understanding}
 \begin{enumerate}

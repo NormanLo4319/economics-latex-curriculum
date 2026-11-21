@@ -13,7 +13,7 @@
 \thispagestyle{plain}
 
 \begin{abstract}
-This chapter provides a rigorous, pedagogical treatment of Chapter 7: Perfect Competition and Long-Run Industry Equilibrium, benchmarked to standard principles curriculum.
+This chapter provides a rigorous, algebra-first treatment of perfect competition, benchmarked to Eric Chiang's \emph{Microeconomics}. It examines price-taking behavior and short-run profit maximization, short-run shutdown versus long-run exit decisions, and the dynamics of free entry and exit that drive competitive industries toward zero economic profit and full efficiency in the long run.
 \end{abstract}
 
 \tableofcontents
@@ -21,181 +21,235 @@ This chapter provides a rigorous, pedagogical treatment of Chapter 7: Perfect Co
 \hrule
 \vspace{1.5em}
 
+\begin{examplecase}{Bring It Home: Why Did the Food-Truck Boom Cool Down—While Some Trucks Kept Rolling Through Slow Winters?}
+Suppose a wave of gourmet taco trucks opens in a major U.S.\ city. Early operators sell out every afternoon and earn generous profits, inspiring dozens of new entrepreneurs to outfit trucks of their own. Within two years, street corners are crowded, lunch prices level off, and owners complain they are ``barely breaking even''—yet most trucks stay in business. Meanwhile, during a rainy winter month when daily revenue fails to cover monthly truck loans and commissary rent, some operators keep serving lunch while others park their trucks until spring. Why do early profits vanish so quickly in open markets, why does a money-losing truck sometimes stay open, and why would anyone remain in an industry earning ``zero economic profit''? By the end of this chapter, you will be able to answer all three questions using the competitive model.
+\end{examplecase}
+
 % -----------------------------------------------------------------------------
 % Section 7.1: Price-Taking Behavior and Short-Run Profit Maximization
 % -----------------------------------------------------------------------------
 \section{Price-Taking Behavior and Short-Run Profit Maximization}
 
-\subsection*{1. Conceptual Introduction}
-Economists begin studying market structures with \textbf{perfect competition}, an idealized benchmark defined by four strict conditions: (1) many small buyers and sellers, (2) identical (\textbf{homogeneous}) products across every firm, (3) perfect information about prices and quality, and (4) free entry and exit in the long run with zero barriers. Agricultural commodities like wheat, corn, and soybeans come closest to this model in practice.
+\subsection*{Conceptual Introduction}
+Imagine a family corn farm in Iowa ready to sell its autumn harvest at a local grain elevator. Even if the farm harvests tens of thousands of bushels, it represents a microscopic share of global grain production and cannot negotiate its own price—it sells at the prevailing commodity spot price. Economists model markets like this using \textbf{perfect competition}, an idealized benchmark defined by four strict assumptions: (1) many small buyers and sellers, (2) identical (\textbf{homogeneous}) products across every firm, (3) perfect information about prices and quality, and (4) free entry and exit in the long run with zero barriers. Agricultural commodities such as wheat, corn, and soybeans come closest to this benchmark in practice.
 
-Because each competitive firm supplies a tiny fraction of total market output and sells an identical product, an individual farmer has zero power to raise price above the going market rate—if they charge even one penny more, buyers switch instantly to neighbors. Consequently, every competitive firm is a \textbf{price taker} facing a perfectly horizontal demand curve at the market price $P^*$. Every additional unit sold adds exactly $P^*$ to revenue, meaning \textbf{Price equals Marginal Revenue and Average Revenue ($P = MR = AR$)}.
+Because each competitive firm supplies a tiny fraction of total market output and sells an identical product, an individual producer has zero power to raise price above the going market rate—if a farmer charges even one penny more, buyers switch instantly to neighboring sellers. Conversely, there is no reason to cut price below the market rate because the firm can already sell all it wishes at the going price. Consequently, every competitive firm is a \textbf{price taker} facing a perfectly elastic (horizontal) demand curve at the market equilibrium price $P^*$. Every additional unit sold adds exactly $P^*$ to Total Revenue ($TR = P^* \times q$), meaning \textbf{Price equals Marginal Revenue and Average Revenue ($P^* = MR = AR$)}.
 
-To maximize economic profit ($\pi = TR - TC$), a competitive firm expands output up to the exact point where Marginal Revenue equals Marginal Cost:
+To maximize economic profit ($\pi = TR - TC$), a competitive firm expands output one unit at a time as long as the extra revenue from selling another unit exceeds the extra cost of producing it ($MR > MC$). It stops at the exact quantity $q^*$ where Marginal Revenue equals Marginal Cost on the upward-sloping portion of the $MC$ curve:
 \begin{equation}
-P = MR = MC(q^*)
+P^* = MR = MC(q^*)
 \end{equation}
-Once optimal output $q^*$ is chosen, the firm's profit or loss per unit is the vertical gap between market price $P^*$ and Average Total Cost ($ATC$) at $q^*$: $\pi = (P^* - ATC) \times q^*$.
+Once optimal output $q^*$ is chosen, the firm's profit or loss per unit is the vertical gap between market price $P^*$ and Average Total Cost ($ATC$) at $q^*$, giving total economic profit $\pi = (P^* - ATC) \times q^*$. When global grain prices surge due to droughts elsewhere, an individual farmer's horizontal $P = MR$ line shifts upward, prompting the farmer to apply extra inputs and expand output along $MC$ to capture positive short-run economic profits.
 
-\subsection*{2. Visual Representation}
-Figure~\ref{fig:pc_short_run_profit} links the overall market supply-and-demand equilibrium (left) to an individual price-taking firm earning positive short-run economic profit (right).
+\begin{tcolorbox}[colback=LightTerracotta,colframe=CourseOrange,title=\textbf{Clear It Up: Market Demand Slopes Down, Yet the Firm's Demand Is Horizontal}]
+Students often wonder how market demand can obey the Law of Demand (sloping downward) while each competitive firm faces a flat demand curve. The resolution is scale: in the \emph{entire market}, lower prices are required to persuade consumers to buy millions of extra bushels. For a \emph{single small farm}, however, expanding output from $50$ to $100$ bushels is a drop in the ocean—too small to move the market price noticeably—so the individual firm takes $P^*$ as fixed.
+\end{tcolorbox}
+
+\subsection*{Visual Representation}
+Figure~\ref{fig:pc_short_run_profit} links the overall industry supply-and-demand equilibrium (left) to an individual price-taking firm earning positive short-run economic profit (right).
 
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[scale=1.0]
     % Left Panel: Market
     \begin{scope}[xshift=0cm]
-        \draw[->, thick] (0,0) -- (4.8,0) node[below] {Market $Q$};
-        \draw[->, thick] (0,0) -- (0,5.0) node[left] {Price ($P$, \$)};
-        \node[below left] at (0,0) {$0$};
+        \draw[->, >=Stealth, thick, color=SlateBlue] (0,0) -- (4.8,0) node[below, color=SlateBlue] {Market $Q$};
+        \draw[->, >=Stealth, thick, color=SlateBlue] (0,0) -- (0,5.0) node[left, color=SlateBlue] {Price ($P$, \$)};
+        \node[below left, color=SlateBlue] at (0,0) {$0$};
 
-        \draw[thick, color=blue!80!black] (0.5,4.5) -- (4.3,0.7) node[right] {$D$};
-        \draw[thick, color=red!80!black] (0.5,1.0) -- (4.3,4.5) node[right] {$S$};
+        % D: y = 5.0 - x; S: y = 0.7 + x -> Exact intersection at (2.15, 2.85)
+        \draw[very thick, color=CourseBlue] (0.5,4.5) -- (4.3,0.7) node[right] {$D$};
+        \draw[very thick, color=CourseOrange] (0.5,1.2) -- (4.0,4.7) node[right] {$S$};
 
-        \draw[dashed] (0,2.85) node[left] {$P^*$} -- (2.3,2.85);
-        \draw[dashed] (2.3,0) node[below] {$Q^*$} -- (2.3,2.85);
-        \filldraw[black] (2.3,2.85) circle (2pt);
-        \node[above] at (2.4,4.9) {\textbf{(a) Industry Market}};
+        \draw[dashed, color=SlateBlue] (0,2.85) node[left, color=SlateBlue] {$P^*$} -- (2.15,2.85);
+        \draw[dashed, color=SlateBlue] (2.15,0) node[below, color=SlateBlue] {$Q^*$} -- (2.15,2.85);
+        \filldraw[SlateBlue] (2.15,2.85) circle (2.2pt);
+        \node[above, color=SlateBlue] at (2.4,4.95) {\textbf{(a) Industry Market}};
     \end{scope}
 
     % Right Panel: Individual Firm
-    \begin{scope}[xshift=6.4cm]
-        \draw[->, thick] (0,0) -- (5.2,0) node[below] {Firm Output ($q$)};
-        \draw[->, thick] (0,0) -- (0,5.0) node[left] {Price / Cost (\$)};
-        \node[below left] at (0,0) {$0$};
+    \begin{scope}[xshift=6.5cm]
+        \draw[->, >=Stealth, thick, color=SlateBlue] (0,0) -- (5.0,0) node[below, color=SlateBlue] {Firm Output ($q$)};
+        \draw[->, >=Stealth, thick, color=SlateBlue] (0,0) -- (0,5.0) node[left, color=SlateBlue] {Price / Cost (\$)};
+        \node[below left, color=SlateBlue] at (0,0) {$0$};
+
+        % Exact profit box: q* = 2.6136, P* = 2.85, ATC(q*) = 1.8770
+        \fill[CourseTeal!22] (0,1.877) rectangle (2.614,2.85);
 
         % Horizontal Demand / MR at y = 2.85
-        \draw[very thick, color=blue!80!black] (0,2.85) -- (4.8,2.85) node[right, font=\footnotesize] {$P = MR$};
+        \draw[very thick, color=CourseBlue] (0,2.85) -- (4.35,2.85) node[right, font=\footnotesize] {$P^* = MR$};
+        \node[left, color=CourseBlue, font=\small] at (0,2.85) {$P^*$};
 
-        % ATC curve: min at x=2.2, y=1.8 -> 1.8 + 0.45*(x-2.2)^2
-        \draw[very thick, color=SlateBlue, domain=0.6:3.9, samples=50] plot (\x, {1.8 + 0.45*(\x-2.2)*(\x-2.2)}) node[right] {$ATC$};
+        % ATC curve: min at (2.2, 1.80) -> 1.80 + 0.45*(x-2.2)^2
+        \draw[very thick, color=SlateBlue, domain=0.7:3.9, samples=60] plot (\x, {1.80 + 0.45*(\x-2.2)*(\x-2.2)}) node[right] {$ATC$};
 
-        % MC curve: 1.8 + 0.45*(x-2.2)^2 + 0.9*x*(x-2.2) -> equals 2.85 around x=2.66
-        \draw[very thick, color=Terracotta, domain=0.8:3.4, samples=50] plot (\x, {1.8 + 0.45*(\x-2.2)*(\x-2.2) + 0.9*\x*(\x-2.2)}) node[above] {$MC$};
+        % Exact MC curve: 1.80 + 0.45*(x-2.2)^2 + 0.90*x*(x-2.2) -> crosses min ATC at (2.2, 1.80) and P*=2.85 at q*=2.6136
+        \draw[very thick, color=CourseOrange, domain=0.8:3.1, samples=60] plot (\x, {1.80 + 0.45*(\x-2.2)*(\x-2.2) + 0.90*\x*(\x-2.2)}) node[above] {$MC$};
 
-        % Profit rectangle at q* = 2.66: ATC(2.66) = 1.8 + 0.45*(0.46)^2 = 1.90
-        \fill[ForestGreen!25, opacity=0.8] (0,1.90) rectangle (2.66,2.85);
-        \node[font=\footnotesize\bfseries, color=ForestGreen!90!black] at (1.33,2.38) {Economic Profit ($\pi > 0$)};
+        % Orthogonal equilibrium drop-lines
+        \draw[dashed, color=SlateBlue] (0,1.877) node[left, font=\footnotesize, color=SlateBlue] {$ATC(q^*)$} -- (2.614,1.877);
+        \draw[dashed, color=SlateBlue] (2.614,0) node[below, color=SlateBlue] {$q^*$} -- (2.614,2.85);
+        \filldraw[SlateBlue] (2.614,2.85) circle (2.2pt);
+        \filldraw[SlateBlue] (2.614,1.877) circle (1.8pt);
 
-        \draw[dashed] (0,1.90) node[left, font=\footnotesize] {$ATC$} -- (2.66,1.90);
-        \draw[dashed] (2.66,0) node[below] {$q^*$} -- (2.66,2.85);
-        \filldraw[black] (2.66,2.85) circle (2pt);
-        \node[above] at (2.6,4.9) {\textbf{(b) Price-Taking Firm}};
+        % Collision-free profit label with subtle white backing
+        \node[font=\scriptsize\bfseries, color=ForestGreen!90!black, fill=white, fill opacity=0.88, text opacity=1, inner sep=1.5pt, rounded corners=1pt] at (1.58,2.46) {Profit ($\pi > 0$)};
+
+        \node[above, color=SlateBlue] at (2.5,4.95) {\textbf{(b) Price-Taking Firm}};
     \end{scope}
 \end{tikzpicture}
-\caption{Short-Run Profit Maximization under Perfect Competition. The market sets equilibrium price $P^*$ (left), establishing a horizontal $P = MR$ line for the individual firm (right). Producing $q^*$ where $P = MC$ generates positive economic profit shown by the green shaded box.}
+\caption{Short-Run Profit Maximization under Perfect Competition. Market supply and demand set equilibrium price $P^*$ (left), giving the individual price-taking firm a horizontal $P^* = MR$ line (right). Producing $q^*$ where $P^* = MC$ yields positive short-run economic profit equal to the shaded teal rectangle $(P^* - ATC(q^*)) \times q^*$.}
 \label{fig:pc_short_run_profit}
 \end{figure}
 
-\subsection*{3. Real-World Application: Midwest Corn Farmers and Global Grain Prices}
-A family corn farm in Iowa harvesting $150{,}000$ bushels cannot negotiate its own price with grain elevators—it sells at the daily Chicago Board of Trade spot price. When global grain prices surge due to droughts overseas, the farm's horizontal $P = MR$ line shifts upward, prompting the farmer to apply extra fertilizer and harvest every acre ($P = MC$) to capture positive economic profits.
-
-\subsection*{4. Mathematical Foundation (Algebra Level)}
-A competitive firm maximizes profit at $P = MC(q^*)$, earning total economic profit:
+\subsection*{Mathematical Foundation (Algebra Level)}
+Assuming the firm is a price taker with a rising Marginal Cost schedule and operates above its shutdown threshold ($P^* \ge \min AVC$), profit maximization occurs at $P^* = MC(q^*)$, generating total economic profit:
 \begin{equation}
-\pi = TR - TC = (P - ATC) \times q^*
+\pi = TR - TC = (P^* - ATC) \times q^*
 \end{equation}
 
-\noindent\textbf{Worked Problem:}
-A competitive blueberry grower faces a market price of $P = \$30$ per crate. The grower's Total Cost and Marginal Cost equations are:
+\begin{tcolorbox}[colback=LightSlate,colframe=SlateBlue,title=\textbf{Work It Out: Short-Run Profit Maximization for a Blueberry Grower}]
+\noindent\textbf{Problem:} An illustrative competitive blueberry grower faces a market price of $P^* = \$30$ per crate. The grower's Total Cost, Average Variable Cost, and Marginal Cost schedules are:
 \[
-TC(q) = 50 + 6q + 2q^2, \qquad MC(q) = 6 + 4q
+TC(q) = 48 + 6q + 2q^2, \qquad AVC(q) = 6 + 2q, \qquad MC(q) = 6 + 4q
 \]
 Find the profit-maximizing quantity of crates $q^*$, Average Total Cost at $q^*$, and total economic profit $\pi$.
 
-\noindent\textbf{Step-by-Step Breakdown:}
+\medskip
+\noindent\textbf{Step-by-Step Solution:}
 \begin{enumerate}
-    \item \textbf{Apply the Profit-Maximization Rule ($P = MC$):}
+    \item \textbf{Apply the Profit-Maximization Rule ($P^* = MC$):}
     Set market price equal to Marginal Cost and solve for $q^*$:
     \[
     30 = 6 + 4q^* \implies 24 = 4q^* \implies q^* = \mathbf{6\text{ crates}}
     \]
+    Check that the firm covers variable costs: at $q^* = 6$, $AVC(6) = 6 + 2(6) = \$18 < \$30$, so operating is profitable.
 
     \item \textbf{Calculate Total Cost ($TC$) and Average Total Cost ($ATC$) at $q^* = 6$:}
     \[
-    TC(6) = 50 + 6(6) + 2(6^2) = 50 + 36 + 72 = \$158
+    TC(6) = 48 + 6(6) + 2(6^2) = 48 + 36 + 72 = \$156
     \]
     \[
-    ATC(6) = \frac{\$158}{6} \approx \mathbf{\$26.33\text{ per crate}}
+    ATC(6) = \frac{\$156}{6} = \mathbf{\$26.00\text{ per crate}}
     \]
 
-    \item \textbf{Calculate Economic Profit ($\pi$):}
+    \item \textbf{Calculate Economic Profit ($\pi$) Two Ways:}
+    Using Total Revenue ($TR = \$30 \times 6 = \$180$) minus Total Cost:
     \[
-    \pi = TR - TC = (\$30 \times 6) - \$158 = \$180 - \$158 = \mathbf{+\$22}
+    \pi = TR - TC = \$180 - \$156 = \mathbf{+\$24}
+    \]
+    Cross-checking with the profit-rectangle formula:
+    \[
+    \pi = (P^* - ATC) \times q^* = (\$30 - \$26) \times 6 = \$4 \times 6 = \mathbf{+\$24}
     \]
 \end{enumerate}
-\textbf{Conclusion:} Producing $6$ crates maximizes profit at $+\$22$.
+\textbf{Conclusion:} Producing $6$ crates per period maximizes short-run economic profit at $+\$24$.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=LightSlate,colframe=CourseBlue,title=\textbf{Optional Advanced Section: Calculus Conditions for Profit Maximization}]
+\small
+\emph{Note for Economics Majors and Quantitative Students:}
+A competitive firm chooses $q \ge 0$ to maximize $\pi(q) = P^* q - TC(q)$. The first-order condition (FOC) requires:
+\[
+\frac{d\pi}{dq} = P^* - \frac{d(TC)}{dq} = P^* - MC(q) = 0 \implies P^* = MC(q^*)
+\]
+The second-order condition (SOC) for a local maximum requires:
+\[
+\frac{d^2\pi}{dq^2} = -\frac{d(MC)}{dq} < 0 \implies \frac{d(MC)}{dq} > 0
+\]
+Thus, profit is maximized only where $P^* = MC$ along the \emph{upward-sloping} segment of the Marginal Cost curve. For the blueberry grower above, $TC(q) = 48 + 6q + 2q^2$ yields $MC(q) = 6 + 4q$ and $MC'(q) = 4 > 0$, confirming that $q^* = 6$ is a unique global maximum.
+\end{tcolorbox}
 
 % -----------------------------------------------------------------------------
 % Section 7.2: Short-Run Shutdown vs. Long-Run Exit Rules
 % -----------------------------------------------------------------------------
 \section{Short-Run Shutdown vs. Long-Run Exit Rules}
 
-\subsection*{1. Conceptual Introduction}
-What should a competitive firm do when market prices drop so low that it loses money ($\pi < 0$)? Many students assume a money-losing business should immediately lock its doors. In economics, that instinct ignores the crucial difference between \textbf{sunk fixed costs} in the short run and \textbf{escapable fixed costs} in the long run:
+\subsection*{Conceptual Introduction}
+Consider an illustrative beachfront hotel in a seasonal tourist town that faces high fixed mortgage and insurance bills year-round. In November, off-peak room rates fall from $\$280$ to $\$95$ per night, far below the hotel's full average cost per room. Yet the variable cost of housekeeping and utilities for an occupied room is only $\$45$ per night. Because $P = \$95$ exceeds $AVC = \$45$, each occupied room contributes $\$50$ toward paying the unavoidable mortgage, so staying open loses less money than locking the doors for the autumn.
+
+Many students mistakenly assume that any money-losing business ($\pi < 0$) should immediately close. That intuition misses the crucial distinction between \textbf{sunk fixed costs} in the short run and \textbf{escapable fixed costs} in the long run:
 \begin{itemize}
-    \item \textbf{Short-Run Shutdown Rule ($P < \min AVC$):} In the short run, fixed costs (such as a signed building lease) must be paid even if output is zero. As long as the market price covers Average Variable Cost ($P \ge \min AVC$), every unit sold brings in enough cash to pay workers and materials \emph{plus} contribute something toward paying the rent. The firm should \textbf{keep operating at a loss} to minimize its deficit. Only if $P < \min AVC$ does operating lose even more money than shutting down.
-    \item \textbf{Long-Run Exit Rule ($P < \min ATC$):} In the long run, leases expire and all costs become variable. If price remains below minimum Average Total Cost ($P < \min ATC$), the firm cannot cover its full economic costs and will permanently \textbf{exit the industry}.
+    \item \textbf{Short-Run Shutdown Rule ($P < \min AVC$):} In the short run, fixed costs (such as a signed building lease or property mortgage) must be paid even when output is zero. As long as market price covers Average Variable Cost ($P \ge \min AVC$), every unit sold pays for its workers and materials \emph{plus} contributes cash toward fixed overhead. The firm should \textbf{keep operating at a loss} to minimize its deficit. Only when $P < \min AVC$ does operating lose even more money than shutting down.
+    \item \textbf{Long-Run Exit Rule ($P < \min ATC$):} In the long run, leases expire and all costs become variable and avoidable. If market price remains persistently below minimum Average Total Cost ($P < \min ATC$), the firm cannot cover its full economic costs and will permanently \textbf{exit the industry}.
 \end{itemize}
-Consequently, a competitive firm's \textbf{short-run supply curve} is simply the upward-sloping portion of its $MC$ curve lying above $\min AVC$.
+Consequently, a competitive firm supplies $q = 0$ whenever $P < \min AVC$ and produces along $P = MC$ whenever $P \ge \min AVC$. Therefore, the firm's \textbf{short-run supply curve} is the upward-sloping portion of its Marginal Cost curve lying at or above $\min AVC$.
 
-\subsection*{2. Visual Representation}
-Figure~\ref{fig:shutdown_exit} maps the three decision zones along a competitive firm's Marginal Cost curve: positive profit ($P > \min ATC$), loss-minimizing operation ($\min AVC \le P < \min ATC$), and immediate short-run shutdown ($P < \min AVC$).
-
-\begin{tcolorbox}[colback=yellow!10!white,colframe=orange!80!black,title=\textbf{Clear It Up: Shutdown Is Temporary; Exit Is Permanent}]
-A \textbf{shutdown} is a short-run decision to produce $q = 0$ today while still paying fixed overhead (like a ski resort closing in July while still paying property taxes). \textbf{Exit} is a long-run decision to leave the market completely and eliminate all fixed and variable costs.
+\begin{tcolorbox}[colback=LightTerracotta,colframe=CourseOrange,title=\textbf{Clear It Up: Shutdown Is Temporary; Exit Is Permanent}]
+A \textbf{shutdown} is a \emph{short-run} decision to produce $q = 0$ today while remaining in the industry and still paying fixed overhead (like a ski resort closing its lifts in July while continuing to pay property taxes and loan payments). \textbf{Exit} is a \emph{long-run} decision to leave the market permanently, terminate leases, sell equipment, and eliminate all fixed and variable costs.
 \end{tcolorbox}
+
+\subsection*{Visual Representation}
+Figure~\ref{fig:shutdown_exit} derives $AVC$, $ATC$, and $MC$ from a single consistent cubic cost structure so that $MC$ intersects both $AVC$ and $ATC$ at their exact mathematical minima, mapping the three short-run decision zones.
 
 \begin{figure}[htbp]
 \centering
-\begin{tikzpicture}[scale=1.05]
+\begin{tikzpicture}[scale=1.0]
     % Axes
-    \draw[->, thick] (0,0) -- (5.8,0) node[below] {Firm Output ($q$)};
-    \draw[->, thick] (0,0) -- (0,5.2) node[left] {Price / Cost (\$)};
-    \node[below left] at (0,0) {$0$};
+    \draw[->, >=Stealth, thick, color=SlateBlue] (0,0) -- (4.9,0) node[below, color=SlateBlue] {Firm Output ($q$)};
+    \draw[->, >=Stealth, thick, color=SlateBlue] (0,0) -- (0,5.0) node[left, color=SlateBlue] {Price / Cost (\$)};
+    \node[below left, color=SlateBlue] at (0,0) {$0$};
 
-    % AVC curve: 1.5 + 0.35*(x-2.2)^2 -> min at (2.2, 1.5)
-    \draw[very thick, color=ForestGreen, domain=0.5:4.5, samples=50] plot (\x, {1.5 + 0.35*(\x-2.2)*(\x-2.2)}) node[right] {$AVC$};
+    % Consistent Cubic Cost System:
+    % AVC(x) = 1.2 + 0.4*(x-2.0)^2 -> exact min at (2.0, 1.20)
+    % F = 4.5375 -> ATC(x) = 4.5375/x + 1.2 + 0.4*(x-2.0)^2 -> exact min at (2.75, 3.075)
+    % MC(x) = 1.2 + 0.4*(x-2.0)^2 + 0.8*x*(x-2.0) -> exact min at (1.333, 0.667), cuts min AVC at (2.0, 1.20) and min ATC at (2.75, 3.075)
 
-    % ATC curve: 2.6 + 0.35*(x-2.7)^2 -> min at (2.7, 2.6)
-    \draw[very thick, color=SlateBlue, domain=0.8:4.7, samples=50] plot (\x, {2.6 + 0.35*(\x-2.7)*(\x-2.7)}) node[right] {$ATC$};
+    % AVC curve
+    \draw[very thick, color=CourseTeal, domain=0.6:4.2, samples=60] plot (\x, {1.2 + 0.4*(\x-2.0)*(\x-2.0)}) node[right] {$AVC$};
 
-    % MC curve
-    \draw[very thick, color=Terracotta, domain=1.2:3.7, samples=50] plot (\x, {1.5 + 0.35*(\x-2.2)*(\x-2.2) + 0.7*\x*(\x-2.2)}) node[above] {$MC$ (Supply above $\min AVC$)};
+    % ATC curve
+    \draw[very thick, color=SlateBlue, domain=1.45:4.2, samples=60] plot (\x, {4.5375/\x + 1.2 + 0.4*(\x-2.0)*(\x-2.0)}) node[right] {$ATC$};
 
-    % Threshold lines
-    \draw[dashed, SlateBlue] (0,2.6) node[left] {$\min ATC$} -- (2.7,2.6);
-    \draw[dashed, ForestGreen] (0,1.5) node[left] {$\min AVC$} -- (2.2,1.5);
+    % MC curve below shutdown (dashed/lighter) and above shutdown (short-run supply)
+    \draw[thick, color=CourseOrange!55, domain=0.75:2.0, samples=30] plot (\x, {1.2 + 0.4*(\x-2.0)*(\x-2.0) + 0.8*\x*(\x-2.0)});
+    \draw[line width=1.8pt, color=CourseOrange, domain=2.0:3.15, samples=45] plot (\x, {1.2 + 0.4*(\x-2.0)*(\x-2.0) + 0.8*\x*(\x-2.0)}) node[above, align=center, font=\footnotesize\bfseries] {$MC$\\(SR Supply above $\min AVC$)};
 
-    % Zone annotations
-    \node[right, font=\footnotesize\bfseries, color=SlateBlue] at (3.6,4.0) {Profit Zone ($P > \min ATC$)};
-    \node[right, font=\footnotesize\bfseries, color=orange!80!black] at (3.6,2.05) {Operate at Loss ($\min AVC \le P < \min ATC$)};
-    \node[right, font=\footnotesize\bfseries, color=red!80!black] at (3.6,0.8) {Shutdown Zone ($P < \min AVC$)};
+    % Orthogonal threshold drop-lines
+    \draw[dashed, color=SlateBlue] (0,3.075) node[left, font=\footnotesize, color=SlateBlue] {$\min ATC$} -- (2.75,3.075) -- (2.75,0) node[below, font=\footnotesize, color=SlateBlue] {$q_{\text{BE}}$};
+    \draw[dashed, color=CourseTeal] (0,1.20) node[left, font=\footnotesize, color=CourseTeal] {$\min AVC$} -- (2.0,1.20) -- (2.0,0) node[below, font=\footnotesize, color=CourseTeal] {$q_{\text{SD}}$};
+
+    % Faint horizontal zone guides extending to the right callout column
+    \draw[dotted, color=SlateBlue!60] (2.75,3.075) -- (5.15,3.075);
+    \draw[dotted, color=CourseTeal!70] (2.0,1.20) -- (5.15,1.20);
+
+    % Exact intersection markers
+    \filldraw[SlateBlue] (2.75,3.075) circle (2.2pt);
+    \filldraw[CourseTeal] (2.0,1.20) circle (2.2pt);
+
+    % Right-hand Decision Zone Panel (strictly clear of all curves)
+    \draw[decorate, decoration={brace, amplitude=4pt}, thick, color=CourseBlue] (5.2,4.7) -- (5.2,3.15);
+    \node[right, font=\footnotesize, align=left, color=CourseBlue] at (5.38,3.92) {\textbf{Profit Zone}\\ $P > \min ATC$ ($\pi > 0$)};
+
+    \draw[decorate, decoration={brace, amplitude=4pt}, thick, color=CourseAmber] (5.2,3.00) -- (5.2,1.28);
+    \node[right, font=\footnotesize, align=left, color=CourseOrange] at (5.38,2.14) {\textbf{Operate at Loss}\\ $\min AVC \le P < \min ATC$};
+
+    \draw[decorate, decoration={brace, amplitude=4pt}, thick, color=CoursePurple] (5.2,1.12) -- (5.2,0.10);
+    \node[right, font=\footnotesize, align=left, color=CoursePurple] at (5.38,0.61) {\textbf{Shutdown Zone}\\ $P < \min AVC$ ($q = 0$)};
 \end{tikzpicture}
-\caption{Short-Run Shutdown and Long-Run Exit Thresholds. Below $\min AVC$, revenue fails to cover variable operating costs and the firm shuts down ($q=0$). Between $\min AVC$ and $\min ATC$, the firm operates at a loss to offset fixed costs.}
+\caption{Short-Run Shutdown and Long-Run Exit Thresholds. Marginal Cost ($MC$) cuts $AVC$ at the shutdown point $(q_{\text{SD}}, \min AVC)$ and cuts $ATC$ at the break-even point $(q_{\text{BE}}, \min ATC)$. The firm's short-run supply curve is the bold segment of $MC$ above $\min AVC$; below $\min AVC$, the firm shuts down ($q=0$).}
 \label{fig:shutdown_exit}
 \end{figure}
 
-\subsection*{3. Real-World Application: Seasonal Restaurants and Off-Peak Hotels}
-A beachfront hotel in a summer tourist town faces high fixed mortgage and insurance costs year-round. In November, room rates drop from $\$280$ to $\$95$ per night. Because the variable cost of housekeeping and utilities for an occupied room is only $\$45$ per night ($P = \$95 > AVC = \$45$), the hotel stays open through autumn—using the $\$50$ per-night operating surplus to help pay its mortgage rather than shutting down.
-
-\subsection*{4. Mathematical Foundation (Algebra Level)}
-Comparing total loss from operating ($\pi_{\text{operate}} = TR - VC - FC$) against total loss from shutting down ($\pi_{\text{shutdown}} = -FC$) proves:
+\subsection*{Mathematical Foundation (Algebra Level)}
+Assuming fixed cost $FC$ is sunk in the short run, comparing profit from operating ($\pi_{\text{operate}} = TR - VC - FC$) against profit from shutting down ($\pi_{\text{shutdown}} = -FC$) yields:
 \begin{equation}
-\pi_{\text{operate}} > \pi_{\text{shutdown}} \iff TR - VC - FC > -FC \iff TR > VC \iff P > AVC
+\pi_{\text{operate}} \ge \pi_{\text{shutdown}} \iff TR - VC - FC \ge -FC \iff TR \ge VC \iff P \ge AVC
 \end{equation}
+Because a firm only chooses an interior output where $P = MC$ on the rising segment of $MC$, operating beats shutting down whenever $P \ge \min AVC$.
 
-\noindent\textbf{Worked Problem:}
-A small print shop has daily fixed rent of $FC = \$300$. At its optimal output of $q^* = 50$ print jobs per day, its Total Variable Cost is $VC = \$400$ (so $AVC = \$8.00$ per job and $ATC = \$14.00$ per job). Suppose a recession pushes the market price down to $P = \$10.00$ per job. Calculate the shop's loss if it operates versus its loss if it shuts down, and determine the optimal short-run decision.
+\begin{tcolorbox}[colback=LightSlate,colframe=SlateBlue,title=\textbf{Work It Out: Short-Run Shutdown vs.\ Long-Run Exit for a Print Shop}]
+\noindent\textbf{Problem:} An illustrative small print shop pays daily fixed rent of $FC = \$300$. Suppose a downturn pushes the competitive market price down to $P = \$10.00$ per print job. At its profit-maximizing (loss-minimizing) output of $q^* = 50$ print jobs per day (where $P = MC = \$10.00$), its Total Variable Cost is $VC = \$400$, so $AVC = \$8.00$ per job and $ATC = \$14.00$ per job. Calculate the shop's daily loss if it operates versus its loss if it shuts down, and determine the optimal short-run and long-run decisions.
 
-\noindent\textbf{Step-by-Step Breakdown:}
+\medskip
+\noindent\textbf{Step-by-Step Solution:}
 \begin{enumerate}
     \item \textbf{Calculate Loss If the Shop Operates ($q^* = 50$):}
     \[
     TR = \$10.00 \times 50 = \$500, \qquad TC = FC + VC = \$300 + \$400 = \$700
     \]
     \[
-    \pi_{\text{operate}} = \$500 - \$700 = \mathbf{-\$200\text{ daily loss}}
+    \pi_{\text{operate}} = TR - TC = \$500 - \$700 = \mathbf{-\$200\text{ daily loss}}
     \]
 
     \item \textbf{Calculate Loss If the Shop Shuts Down ($q = 0$):}
@@ -204,93 +258,127 @@ A small print shop has daily fixed rent of $FC = \$300$. At its optimal output o
     \pi_{\text{shutdown}} = \$0 - \$300 = \mathbf{-\$300\text{ daily loss}}
     \]
 
-    \item \textbf{Compare Thresholds:}
-    Because $P\ (\$10.00) > AVC\ (\$8.00)$, operating generates $\$2.00$ per job toward rent, shrinking the loss by $\$100$. However, because $P\ (\$10.00) < ATC\ (\$14.00)$, the shop will exit if prices stay at $\$10.00$ when its lease expires.
+    \item \textbf{Compare Short-Run and Long-Run Thresholds:}
+    Because $P\ (\$10.00) > AVC\ (\$8.00)$, every print job contributes $\$2.00$ toward fixed rent, shrinking the daily loss by $\$2.00 \times 50 = \$100$ (from $-\$300$ to $-\$200$). However, because the shop still loses money even at its optimal output $q^* = 50$ ($P = \$10.00 < ATC = \$14.00$), the market price necessarily lies below $\min ATC$.
 \end{enumerate}
-\textbf{Conclusion:} The shop should **stay open in the short run** (losing $\$200$ instead of $\$300$), but **exit in the long run** unless market prices recover to at least $\$14.00$.
+\textbf{Conclusion:} The shop should \textbf{stay open in the short run} (losing $\$200$ instead of $\$300$), but \textbf{exit in the long run} when its lease expires unless market prices recover to at least $\min ATC$.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=LightSlate,colframe=CourseBlue,title=\textbf{Optional Advanced Section: Why $MC$ Cuts $AVC$ and $ATC$ at Their Minima}]
+\small
+\emph{Note for Economics Majors and Quantitative Students:}
+Applying the quotient rule to $AVC(q) = \frac{VC(q)}{q}$ gives:
+\[
+\frac{d(AVC)}{dq} = \frac{q \cdot \frac{d(VC)}{dq} - VC(q)}{q^2} = \frac{MC(q) - AVC(q)}{q}
+\]
+Setting $\frac{d(AVC)}{dq} = 0$ implies $MC(q) = AVC(q)$ at the exact minimum of $AVC$. By the identical derivation on $ATC(q) = \frac{TC(q)}{q}$, $\frac{d(ATC)}{dq} = \frac{MC(q) - ATC(q)}{q} = 0$ implies $MC(q) = ATC(q)$ at the exact minimum of $ATC$. Hence the short-run shutdown point $(q_{\text{SD}}, \min AVC)$ and long-run break-even point $(q_{\text{BE}}, \min ATC)$ always lie on the $MC$ curve.
+\end{tcolorbox}
 
 % -----------------------------------------------------------------------------
 % Section 7.3: Long-Run Industry Equilibrium and Zero Economic Profit
 % -----------------------------------------------------------------------------
 \section{Long-Run Industry Equilibrium and Zero Economic Profit}
 
-\subsection*{1. Conceptual Introduction}
-In the long run, \textbf{free entry and exit} act as an automatic self-correcting thermostat for perfectly competitive industries. Whenever existing firms earn positive economic profits ($\pi > 0$), entrepreneurs notice the above-normal returns and enter the market. New entrants shift the industry supply curve to the right, driving market price downward until economic profits shrink to zero. Conversely, if firms suffer economic losses ($\pi < 0$), struggling producers exit, shifting industry supply to the left and pushing prices back up until remaining firms break even.
+\subsection*{Conceptual Introduction}
+When craft breweries and gourmet food trucks surged in popularity, early operators earned substantial economic profits. Because startup barriers were modest, hundreds of new entrants opened across major cities within a few years—competing prices downward and dividing customer traffic until typical operators earned a normal return on their labor and equipment investment.
 
-Consequently, every perfectly competitive industry settles into a \textbf{long-run equilibrium} characterized by the triple equality:
+In the long run, \textbf{free entry and exit} act as an automatic self-correcting thermostat for perfectly competitive industries. Whenever existing firms earn positive economic profits ($\pi > 0$), entrepreneurs enter the market, shifting the short-run industry supply curve rightward and driving market price down until economic profits vanish. Conversely, if firms suffer economic losses ($\pi < 0$), producers exit when leases and equipment contracts expire, shifting industry supply leftward and pushing prices back up until remaining firms break even.
+
+Consequently, a perfectly competitive industry settles into a \textbf{long-run equilibrium} characterized by the triple equality:
 \begin{equation}
-P = MR = MC = \min ATC
+P_{\text{LR}} = MR = MC = \min ATC
 \end{equation}
-At this equilibrium, firms earn **zero economic profit**—meaning they earn a \textbf{normal accounting profit} that covers all explicit bills plus the owner's full implicit opportunity cost of time and invested capital. Moreover, because firms produce at the exact bottom of their $ATC$ curve ($P = \min ATC$) and price equals marginal social cost ($P = MC$), long-run competitive markets achieve both \textbf{productive efficiency} and \textbf{allocative efficiency} simultaneously.
+At this equilibrium, firms earn \textbf{zero economic profit}, meaning they earn a \textbf{normal accounting profit} covering all explicit bills plus the owner's full implicit opportunity cost of time and invested capital. Because each firm operates at the lowest possible average cost ($P_{\text{LR}} = \min ATC$) and produces the exact quantity where consumers' marginal willingness to pay equals marginal cost ($P_{\text{LR}} = MC$), long-run competitive equilibrium achieves both \textbf{productive efficiency} and \textbf{allocative efficiency}. In a \textbf{constant-cost industry} (where input prices do not change as the industry expands), the long-run industry supply curve ($S_{\text{LR}}$) is horizontal at $P_{\text{LR}} = \min ATC$; in an \textbf{increasing-cost industry} (where expansion bids up specialized input prices), $S_{\text{LR}}$ slopes upward, whereas in a \textbf{decreasing-cost industry} (where external economies lower input prices), $S_{\text{LR}}$ slopes downward.
 
-\subsection*{2. Visual Representation}
-Figure~\ref{fig:pc_long_run} shows how new entry shifts industry supply from $S_1$ to $S_2$, pushing market price down from $P_1$ to $P_{\text{LR}} = \min ATC$ where economic profit equals zero.
+\begin{tcolorbox}[colback=LightTerracotta,colframe=CourseOrange,title=\textbf{Clear It Up: Zero Economic Profit Does Not Mean Zero Accounting Profit}]
+``Zero economic profit'' sounds bleak only if you confuse \emph{economic} profit with \emph{accounting} profit. Suppose a food-truck owner earns $\$300{,}000$ in annual revenue, pays $\$210{,}000$ in explicit food, fuel, and permit costs, and could earn $\$80{,}000$ managing a restaurant plus $\$10{,}000$ in interest on invested savings. Her \textbf{accounting profit} is $+\$90{,}000$, while her \textbf{economic profit} is $\$90{,}000 - (\$80{,}000 + \$10{,}000) = \$0$. She is earning exactly her full opportunity cost—a healthy normal return—so she has no incentive to exit, and outsiders have no incentive to rush in.
+\end{tcolorbox}
+
+\subsection*{Visual Representation}
+Figure~\ref{fig:pc_long_run} illustrates long-run adjustment in a constant-cost competitive industry: positive profits at $P_1$ attract new firms, shifting industry supply from $S_1$ to $S_2$ until market price falls to $P_{\text{LR}} = \min ATC$, eliminating economic profit.
 
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[scale=1.0]
     % Left Panel: Industry Entry
     \begin{scope}[xshift=0cm]
-        \draw[->, thick] (0,0) -- (4.8,0) node[below] {Market $Q$};
-        \draw[->, thick] (0,0) -- (0,5.0) node[left] {Price ($P$, \$)};
-        \node[below left] at (0,0) {$0$};
+        \draw[->, >=Stealth, thick, color=SlateBlue] (0,0) -- (4.9,0) node[below, color=SlateBlue] {Market $Q$};
+        \draw[->, >=Stealth, thick, color=SlateBlue] (0,0) -- (0,5.0) node[left, color=SlateBlue] {Price ($P$, \$)};
+        \node[below left, color=SlateBlue] at (0,0) {$0$};
 
-        \draw[thick, color=blue!80!black] (0.5,4.5) -- (4.3,0.7) node[right] {$D$};
-        \draw[thick, dashed, color=gray] (0.5,1.4) -- (3.8,4.7) node[above] {$S_1$};
-        \draw[very thick, color=red!80!black] (1.3,0.6) -- (4.6,3.9) node[right] {$S_2$ (Entry)};
+        % D: y = 5.0 - x; S1: y = 0.9 + x -> E1=(2.05, 2.95); S2: y = x - 0.7 -> E2=(2.85, 2.15)
+        \draw[very thick, color=CourseBlue] (0.5,4.5) -- (4.3,0.7) node[right] {$D$};
+        \draw[thick, dashed, color=SlateBlue!65] (0.5,1.4) -- (3.8,4.7) node[above, color=SlateBlue] {$S_1$};
+        \draw[very thick, color=CourseOrange] (1.3,0.6) -- (4.5,3.8) node[right] {$S_2$};
 
-        \draw[dashed, gray] (0,2.95) node[left, black] {$P_1$} -- (2.05,2.95);
-        \draw[dashed] (0,2.15) node[left] {$P_{\text{LR}}$} -- (2.85,2.15);
-        \draw[dashed] (2.85,0) node[below] {$Q_{\text{LR}}$} -- (2.85,2.15);
-        \filldraw[black] (2.85,2.15) circle (2pt);
-        \node[above] at (2.4,4.9) {\textbf{(a) Industry Entry}};
+        % Entry shift arrow between S1 and S2
+        \draw[->, >=Stealth, thick, color=CourseTeal] (2.6,3.5) -- (3.9,3.5) node[midway, above, font=\scriptsize\bfseries] {Entry};
+
+        % Initial equilibrium E1 drop-lines
+        \draw[dashed, color=SlateBlue!55] (0,2.95) node[left, font=\footnotesize, color=SlateBlue] {$P_1$} -- (2.05,2.95) -- (2.05,0) node[below, font=\footnotesize, color=SlateBlue] {$Q_1$};
+        \filldraw[SlateBlue!70] (2.05,2.95) circle (1.8pt);
+
+        % Long-run equilibrium E2 drop-lines
+        \draw[dashed, color=SlateBlue] (0,2.15) node[left, font=\footnotesize, color=SlateBlue] {$P_{\text{LR}}$} -- (2.85,2.15) -- (2.85,0) node[below, font=\footnotesize, color=SlateBlue] {$Q_{\text{LR}}$};
+        \filldraw[SlateBlue] (2.85,2.15) circle (2.2pt);
+
+        \node[above, color=SlateBlue] at (2.4,4.95) {\textbf{(a) Industry Entry}};
     \end{scope}
 
     % Right Panel: Firm Long-Run Zero Profit
-    \begin{scope}[xshift=6.4cm]
-        \draw[->, thick] (0,0) -- (5.2,0) node[below] {Firm Output ($q$)};
-        \draw[->, thick] (0,0) -- (0,5.0) node[left] {Price / Cost (\$)};
-        \node[below left] at (0,0) {$0$};
+    \begin{scope}[xshift=6.6cm]
+        \draw[->, >=Stealth, thick, color=SlateBlue] (0,0) -- (5.0,0) node[below, color=SlateBlue] {Firm Output ($q$)};
+        \draw[->, >=Stealth, thick, color=SlateBlue] (0,0) -- (0,5.0) node[left, color=SlateBlue] {Price / Cost (\$)};
+        \node[below left, color=SlateBlue] at (0,0) {$0$};
 
-        % ATC min at x=2.3, y=2.15
-        \draw[very thick, color=SlateBlue, domain=0.7:4.0, samples=50] plot (\x, {2.15 + 0.45*(\x-2.3)*(\x-2.3)}) node[right] {$ATC$};
-        % MC crossing min ATC at (2.3, 2.15)
-        \draw[very thick, color=Terracotta, domain=1.0:3.3, samples=50] plot (\x, {2.15 + 0.45*(\x-2.3)*(\x-2.3) + 0.9*\x*(\x-2.3)}) node[above] {$MC$};
+        % Faint reference line for initial high price P1
+        \draw[dashed, color=SlateBlue!50] (0,2.95) node[left, font=\footnotesize, color=SlateBlue!80] {$P_1$} -- (4.15,2.95);
+        \draw[->, >=Stealth, thick, color=CourseTeal] (0.55,2.85) -- (0.55,2.25);
+
+        % ATC min at (2.3, 2.15) -> 2.15 + 0.45*(x-2.3)^2
+        \draw[very thick, color=SlateBlue, domain=0.8:3.9, samples=60] plot (\x, {2.15 + 0.45*(\x-2.3)*(\x-2.3)}) node[right] {$ATC$};
+        % Exact MC crossing min ATC at (2.3, 2.15)
+        \draw[very thick, color=CourseOrange, domain=1.0:3.1, samples=60] plot (\x, {2.15 + 0.45*(\x-2.3)*(\x-2.3) + 0.90*\x*(\x-2.3)}) node[above] {$MC$};
 
         % Long-run Price tangent to min ATC
-        \draw[very thick, color=blue!80!black] (0,2.15) -- (4.8,2.15) node[right, font=\footnotesize] {$P_{\text{LR}} = MR$};
+        \draw[very thick, color=CourseBlue] (0,2.15) -- (4.25,2.15) node[right, font=\footnotesize] {$P_{\text{LR}} = MR$};
+        \node[left, font=\footnotesize, color=CourseBlue] at (0,2.15) {$P_{\text{LR}}$};
 
-        \draw[dashed] (2.3,0) node[below] {$q_{\text{LR}}$} -- (2.3,2.15);
-        \filldraw[black] (2.3,2.15) circle (2.2pt) node[above left, font=\footnotesize] {$P = MC = \min ATC$};
-        \node[above] at (2.6,4.9) {\textbf{(b) Zero Economic Profit}};
+        % Orthogonal drop-line and tangency marker
+        \draw[dashed, color=SlateBlue] (2.3,0) node[below, color=SlateBlue] {$q_{\text{LR}}$} -- (2.3,2.15);
+        \filldraw[SlateBlue] (2.3,2.15) circle (2.3pt);
+
+        % Collision-free leader callout in open bottom-right whitespace
+        \draw[dotted, thick, color=SlateBlue] (2.35,2.08) -- (2.85,1.25);
+        \node[right, font=\scriptsize\bfseries, color=SlateBlue, align=left] at (2.85,1.15) {$P_{\text{LR}} = MC = \min ATC$\\($\pi = 0$)};
+
+        \node[above, color=SlateBlue] at (2.5,4.95) {\textbf{(b) Zero Economic Profit}};
     \end{scope}
 \end{tikzpicture}
-\caption{Long-Run Competitive Equilibrium. Positive profits at $P_1$ attract new firms, shifting market supply from $S_1$ to $S_2$ until price falls to $P_{\text{LR}} = \min ATC$, eliminating economic profit.}
+\caption{Long-Run Competitive Equilibrium. Positive short-run profits at $P_1$ attract new firms, shifting market supply rightward from $S_1$ to $S_2$ (left). Price falls until each firm's demand line is tangent to $\min ATC$ at $P_{\text{LR}}$ (right), eliminating economic profit and achieving productive and allocative efficiency.}
 \label{fig:pc_long_run}
 \end{figure}
 
-\subsection*{3. Real-World Application: Craft Breweries and Food Trucks}
-When gourmet food trucks surged in popularity, early operators earned high economic profits. Because startup barriers were low, hundreds of new food trucks entered major cities within a few years—competing prices down and splitting customer traffic until typical operators earned a normal return on their labor and truck investment.
-
-\subsection*{4. Mathematical Foundation (Algebra Level)}
-In long-run equilibrium, market price equals the minimum point of each identical firm's $ATC$ curve:
+\subsection*{Mathematical Foundation (Algebra Level)}
+Assuming a constant-cost industry with identical firms and free entry and exit, long-run market price equals each firm's minimum Average Total Cost, and the equilibrium number of firms $N^*$ divides total market demand by each firm's efficient scale $q_{\text{LR}}$:
 \begin{equation}
 P_{\text{LR}} = \min ATC, \qquad N^* = \frac{Q_{\text{market}}(P_{\text{LR}})}{q_{\text{LR}}}
 \end{equation}
-where $N^*$ is the equilibrium number of firms in the industry.
 
-\noindent\textbf{Worked Problem:}
-Every firm in a competitive lawn-care industry has identical costs with minimum Average Total Cost occurring at $q_{\text{LR}} = 25$ lawns per week and $\min ATC = \$40$ per lawn. Total market demand for lawn care in the city is $Q_d = 2{,}000 - 15P$. Find the long-run equilibrium price $P_{\text{LR}}$, total market quantity $Q_{\text{LR}}$, and equilibrium number of lawn-care firms $N^*$.
+\begin{tcolorbox}[colback=LightSlate,colframe=SlateBlue,title=\textbf{Work It Out: Long-Run Industry Equilibrium in Lawn Care}]
+\noindent\textbf{Problem:} Suppose a city's competitive lawn-care industry is a constant-cost market in which every firm has identical costs, with minimum Average Total Cost occurring at $q_{\text{LR}} = 25$ lawns per week and $\min ATC = \$40$ per lawn. Total weekly market demand for lawn care is linear: $Q_d = 2{,}000 - 15P$. Find the long-run equilibrium price $P_{\text{LR}}$, total market quantity $Q_{\text{LR}}$, and equilibrium number of lawn-care firms $N^*$.
 
-\noindent\textbf{Step-by-Step Breakdown:}
+\medskip
+\noindent\textbf{Step-by-Step Solution:}
 \begin{enumerate}
-    \item \textbf{Identify Long-Run Price ($P_{\text{LR}}$):}
-    Zero economic profit requires price to equal minimum Average Total Cost:
+    \item \textbf{Identify Long-Run Equilibrium Price ($P_{\text{LR}}$):}
+    Free entry and exit drive economic profit to zero, so price must equal minimum Average Total Cost:
     \[
     P_{\text{LR}} = \min ATC = \mathbf{\$40\text{ per lawn}}
     \]
 
-    \item \textbf{Calculate Total Market Quantity ($Q_{\text{LR}}$) at $P = \$40$:}
+    \item \textbf{Calculate Total Market Quantity ($Q_{\text{LR}}$) at $P_{\text{LR}} = \$40$:}
+    Substitute $P_{\text{LR}} = 40$ into the market demand equation:
     \[
     Q_{\text{LR}} = 2{,}000 - 15(40) = 2{,}000 - 600 = \mathbf{1{,}400\text{ lawns per week}}
     \]
@@ -298,19 +386,29 @@ Every firm in a competitive lawn-care industry has identical costs with minimum 
     \item \textbf{Calculate Equilibrium Number of Firms ($N^*$):}
     Divide total market output by each firm's efficient scale ($q_{\text{LR}} = 25$):
     \[
-    N^* = \frac{1{,}400}{25} = \mathbf{56\text{ firms}}
+    N^* = \frac{Q_{\text{LR}}}{q_{\text{LR}}} = \frac{1{,}400}{25} = \mathbf{56\text{ firms}}
     \]
 \end{enumerate}
-\textbf{Conclusion:} In long-run equilibrium, $56$ firms each service $25$ lawns per week at $\$40$ per lawn, earning zero economic profit.
+\textbf{Conclusion:} In long-run equilibrium, $56$ identical firms each service $25$ lawns per week at $\$40$ per lawn, earning zero economic profit (a normal accounting return).
+\end{tcolorbox}
 
-\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=\textbf{Optional Advanced Section: Calculus Derivation of Long-Run Supply}]
+\begin{tcolorbox}[colback=LightSlate,colframe=CourseBlue,title=\textbf{Optional Advanced Section: Calculus Derivation of Long-Run Supply}]
 \small
 \emph{Note for Economics Majors and Quantitative Students:}
-Suppose each firm has Total Cost $TC(q) = 100 + 20q + q^2$. Marginal Cost is $MC(q) = \frac{d(TC)}{dq} = 20 + 2q$, and Average Total Cost is $ATC(q) = \frac{100}{q} + 20 + q$. Setting $MC(q) = ATC(q)$:
+Suppose each firm in a constant-cost competitive industry has Total Cost $TC(q) = 100 + 20q + q^2$. Marginal Cost is $MC(q) = \frac{d(TC)}{dq} = 20 + 2q$, and Average Total Cost is $ATC(q) = \frac{100}{q} + 20 + q$. Setting $MC(q) = ATC(q)$ locates minimum $ATC$:
 \[
 20 + 2q = \frac{100}{q} + 20 + q \implies q = \frac{100}{q} \implies q^2 = 100 \implies q_{\text{LR}} = 10
 \]
-Substituting $q_{\text{LR}} = 10$ back into $MC(q)$ gives $P_{\text{LR}} = 20 + 2(10) = \$40$, establishing a horizontal long-run constant-cost industry supply curve at $P = \$40$.
+Substituting $q_{\text{LR}} = 10$ into $MC(q)$ (or $ATC(q)$) gives $P_{\text{LR}} = 20 + 2(10) = \$40$, establishing a horizontal long-run industry supply curve at $P_{\text{LR}} = \$40$.
 \end{tcolorbox}
+
+\begin{examplecase}{Bring It Home: Closing the Loop on the Food-Truck Market}
+We can now explain every puzzle from the chapter's opening food-truck story using the three competitive rules:
+\begin{enumerate}
+    \item \textbf{Why early profits vanished:} Low startup barriers allowed new trucks to enter whenever $P > \min ATC$, shifting market supply rightward until price settled at $P_{\text{LR}} = \min ATC$.
+    \item \textbf{Why some trucks kept serving through slow winters:} Truck loan payments and annual commissary leases are sunk short-run fixed costs. Any truck whose winter lunch price still exceeded its variable cost of ingredients and hourly staff ($P \ge \min AVC$) minimized its loss by staying open, whereas trucks with $P < \min AVC$ shut down temporarily until spring.
+    \item \textbf{Why owners stay at ``zero economic profit'':} Zero economic profit means truck owners are covering every explicit expense \emph{plus} earning a full normal return on their own time and invested capital—so staying in business is just as rewarding as their next-best alternative.
+\end{enumerate}
+\end{examplecase}
 
 \end{document}

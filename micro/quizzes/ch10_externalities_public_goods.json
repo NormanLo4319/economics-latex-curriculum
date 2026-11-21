@@ -1,0 +1,2724 @@
+{
+  "schema_version": "2.0",
+  "course": "Principles of Microeconomics",
+  "chapter_id": "micro_ch10",
+  "file_stem": "ch10_externalities_public_goods",
+  "title": "Chapter 10: Externalities, Public Goods, and Common Resources",
+  "benchmark": "Eric Chiang, Microeconomics (Principles SSOT, Spring 2027)",
+  "seeding_formula": "seed = hash(student_id + question_id)",
+  "points_per_question": 1,
+  "questions_count": 50,
+  "tier_distribution": {
+    "tier_1": 13,
+    "tier_2": 13,
+    "tier_3": 12,
+    "tier_4": 12
+  },
+  "questions": [
+    {
+      "id": "MICRO_CH10_T1_01",
+      "chapter": 10,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Externality Definition",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Defining an Economic Externality",
+      "prompt_template": "In microeconomics, what defines an externality in a market transaction?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on who bears the cost or receives the benefit and whether it is reflected in the market price."
+        },
+        {
+          "tier": 2,
+          "text": "An externality affects someone outside the buyer-seller exchange without compensation."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Any high production cost that forces a firm to raise its market price to buyers.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Private Cost Confusion): Production costs paid by the firm and passed on through market prices are internalized private costs, not externalities."
+        },
+        {
+          "id": "opt_b",
+          "text": "An uncompensated cost or benefit imposed on a third party outside the market transaction.",
+          "is_correct": true,
+          "feedback": "Correct. An externality occurs whenever production or consumption spills an unpriced cost or benefit onto bystanders who are neither the buyer nor the seller."
+        },
+        {
+          "id": "opt_c",
+          "text": "A government excise tax collected from sellers to fund general public infrastructure.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Policy vs. Market Failure): A tax is a policy instrument, not the underlying market failure itself."
+        },
+        {
+          "id": "opt_d",
+          "text": "A voluntary discount offered by a seller to attract price-sensitive consumers.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Priced Transaction Error): A discount occurs inside the voluntary buyer-seller exchange and involves no uncompensated third-party spillover."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T1_02",
+      "chapter": 10,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Negative Externalities & Social Cost",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Marginal Social Cost and Overproduction",
+      "prompt_template": "When production generates a negative externality such as industrial air pollution, how does Marginal Social Cost ($MSC$) relate to Marginal Private Cost ($MPC$), and what is the unregulated market outcome?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare the firm's private cost with the full cost borne by society, including bystanders."
+        },
+        {
+          "tier": 2,
+          "text": "Write $MSC$ as the sum of private and external marginal costs, then compare $MB = MPC$ with $MB = MSC$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$MSC = MPC + MEC$, and the unregulated market overproduces ($Q_M > Q^*$).",
+          "is_correct": true,
+          "feedback": "Correct. Adding Marginal External Cost ($MEC$) to $MPC$ gives $MSC > MPC$. Because unregulated firms ignore $MEC$ and produce where $MB = MPC$, market output exceeds the socially efficient level $Q^*$."
+        },
+        {
+          "id": "opt_b",
+          "text": "$MSC = MPC - MEC$, and the unregulated market overproduces ($Q_M > Q^*$).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Sign Reversal Error): External damages add to—rather than subtract from—the true social cost of production, so $MSC = MPC + MEC$."
+        },
+        {
+          "id": "opt_c",
+          "text": "$MSC = MPC + MEC$, and the unregulated market underproduces ($Q_M < Q^*$).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Quantity Direction Reversal): Because firms ignore external costs, their perceived marginal cost is artificially low, leading to overproduction ($Q_M > Q^*$), not underproduction."
+        },
+        {
+          "id": "opt_d",
+          "text": "$MSC = MPC$, because competitive market prices automatically incorporate third-party pollution damages.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Invisible Hand Overgeneralization): Competitive markets maximize social surplus only when all costs and benefits are priced; unpriced third-party harm drives a wedge between $MSC$ and $MPC$."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T1_03",
+      "chapter": 10,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Positive Externalities & Social Benefit",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Marginal Social Benefit and Underproduction",
+      "prompt_template": "Which statement accurately describes a market with a positive consumption externality, such as community vaccinations?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Ask whether third parties gain unpriced benefits when an individual consumes the good."
+        },
+        {
+          "tier": 2,
+          "text": "Relate $MSB$, $MPB$, and $MEB$, then compare unregulated $MPB = MC$ against efficient $MSB = MC$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$MSB = MPB - MEB$, causing the unregulated market to overproduce ($Q_M > Q^*$).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Sign Reversal Error): External benefits add to private benefits ($MSB = MPB + MEB$), and ignoring them leads to underproduction rather than overproduction."
+        },
+        {
+          "id": "opt_b",
+          "text": "$MSB = MPB + MEB$, causing the unregulated market to overproduce ($Q_M > Q^*$).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Overproduction Confusion): Overproduction occurs with negative externalities. When buyers ignore external benefits ($MEB$), too few units are purchased ($Q_M < Q^*$)."
+        },
+        {
+          "id": "opt_c",
+          "text": "$MSB = MPB + MEB$, causing the unregulated market to underproduce ($Q_M < Q^*$).",
+          "is_correct": true,
+          "feedback": "Correct. Because private buyers consider only $MPB$ and ignore the spillover $MEB$ enjoyed by others, the free market stops at $MPB = MC$, leaving mutually beneficial units unproduced ($Q_M < Q^*$)."
+        },
+        {
+          "id": "opt_d",
+          "text": "$MSB = MPB$, so competitive equilibrium already achieves $Q^*$ without any deadweight loss.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Externality Omission): A positive externality implies $MEB > 0$, creating a wedge between $MSB$ and $MPB$ and generating deadweight loss from foregone surplus."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T1_04",
+      "chapter": 10,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Socially Optimal Pollution",
+      "clo_alignment": [
+        "MI-1",
+        "MI-4"
+      ],
+      "title": "Why Socially Optimal Pollution Is Rarely Zero",
+      "prompt_template": "Why do economists conclude that the socially optimal level of industrial pollution is rarely zero?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall the marginal rule for social efficiency: compare marginal benefit against marginal social cost."
+        },
+        {
+          "tier": 2,
+          "text": "Think about what happens to valuable economic output if society forces emissions all the way to $Q = 0$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because small amounts of pollution never impose any marginal external cost on bystanders.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-Damage Assumption): Even low pollution levels can impose positive $MEC$; the key is comparing that marginal damage against the marginal benefit of the activity."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because firms refuse to comply with environmental regulations unless emissions stay at $Q_M$.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Compliance vs. Efficiency): Social optimality is defined by $MB = MSC$, not by firms' willingness to comply with regulation."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because eliminating pollution always creates zero economic benefit for society.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Benefit Dismissal): Reducing pollution yields substantial health and environmental benefits whenever $MSC > MB$; efficiency simply stops once $MB = MSC$."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because for initial units of vital production, marginal benefit exceeds marginal social cost ($MB > MSC$), so efficiency occurs where $MB = MSC$ at $Q^* > 0$.",
+          "is_correct": true,
+          "feedback": "Correct. Driving emissions to zero would eliminate essential production whose marginal benefit far exceeds the marginal harm of limited emissions; efficiency curbs only units where $MSC > MB$."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T1_05",
+      "chapter": 10,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Pigouvian Taxes",
+      "clo_alignment": [
+        "MI-1",
+        "MI-4"
+      ],
+      "title": "Internalizing External Costs via a Pigouvian Tax",
+      "prompt_template": "How does an optimal Pigouvian tax correct a negative production externality in a competitive market?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "What does it mean to 'internalize' an externality?"
+        },
+        {
+          "tier": 2,
+          "text": "Recall the exact formula linking the optimal corrective tax $t^*$ to Marginal External Cost."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "It bans production outright so that $Q^*$ equals zero.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-Pollution Fallacy): A Pigouvian tax does not prohibit production; it aligns private cost with social cost so output settles at $Q^*$ where $MB = MSC$."
+        },
+        {
+          "id": "opt_b",
+          "text": "It levies a per-unit tax equal to $MEC(Q^*)$ so firms face $MPC + t^* = MSC$ and voluntarily choose $Q^*$.",
+          "is_correct": true,
+          "feedback": "Correct. Setting $t^* = MEC(Q^*)$ internalizes the external damage into the firm's marginal decision, shifting private supply onto $MSC$ and restoring the socially efficient quantity $Q^*$."
+        },
+        {
+          "id": "opt_c",
+          "text": "It sets a price ceiling below $P_M$ so consumers pay less for polluting goods.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Price Control Confusion): Lowering the price of a polluting good would stimulate even greater consumption and worsen overproduction."
+        },
+        {
+          "id": "opt_d",
+          "text": "It sets a per-unit tax equal to Marginal Private Cost ($MPC$) so firm profit falls to zero.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Wrong Cost Base): The corrective tax must match the external harm $MEC(Q^*)$, not the firm's private production cost $MPC$."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T1_06",
+      "chapter": 10,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Pigouvian Subsidies",
+      "clo_alignment": [
+        "MI-1",
+        "MI-4"
+      ],
+      "title": "Correcting Positive Externalities with a Pigouvian Subsidy",
+      "prompt_template": "To restore social efficiency in a competitive market with a positive externality, at what level should regulators set a per-unit Pigouvian subsidy $s^*$?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think of the symmetric counterpart to a Pigouvian tax $t^* = MEC(Q^*)$."
+        },
+        {
+          "tier": 2,
+          "text": "What unpriced wedge separates $MSB$ from $MPB$ at the socially efficient quantity?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Equal to Marginal External Benefit evaluated at the socially efficient quantity: $s^* = MEB(Q^*)$.",
+          "is_correct": true,
+          "feedback": "Correct. Setting $s^* = MEB(Q^*)$ closes the exact gap between $MSB$ and $MPB$, expanding private consumption from $Q_M$ to $Q^*$."
+        },
+        {
+          "id": "opt_b",
+          "text": "Equal to Marginal Private Benefit evaluated at the unregulated quantity: $s^* = MPB(Q_M)$.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Private vs. External Benefit Confusion): Buyers already internalize $MPB$; subsidizing $MPB$ would overshoot $Q^*$ unless $MPB$ happened to equal $MEB$."
+        },
+        {
+          "id": "opt_c",
+          "text": "Equal to the full Marginal Cost of production ($s^* = MC$) so the good is always free.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Full-Subsidy Fallacy): Making a good free ($P_b = 0$) is efficient only if $MPB(Q^*) = 0$; otherwise, subsidizing the full $MC$ causes overconsumption beyond $Q^*$."
+        },
+        {
+          "id": "opt_d",
+          "text": "Equal to Marginal Social Benefit ($s^* = MSB(Q^*)$) to double buyer willingness to pay.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Double-Counting Private Benefit): Since $MSB = MPB + MEB$, subsidizing all of $MSB$ double-counts the private benefit buyers already receive and induces overproduction."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T1_07",
+      "chapter": 10,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Coase Theorem",
+      "clo_alignment": [
+        "MI-1",
+        "MI-4"
+      ],
+      "title": "Foundational Conditions of the Coase Theorem",
+      "prompt_template": "According to the Coase Theorem, under what two conditions will private parties bargain directly to the socially efficient outcome $Q^*$ regardless of who initially holds the property right?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall Ronald Coase's insight about private negotiation without government intervention."
+        },
+        {
+          "tier": 2,
+          "text": "Consider what parties must own legally and how costly it is to meet, negotiate, and enforce an agreement."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Equal incomes between both parties and a binding government price ceiling.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Irrelevant Assumptions): The Coase Theorem does not require equal wealth or price ceilings; price ceilings actually obstruct mutually beneficial bargaining."
+        },
+        {
+          "id": "opt_b",
+          "text": "Zero marginal external cost and a single monopoly producer.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (No-Externality Contradiction): If $MEC = 0$, there is no externality to bargain over in the first place."
+        },
+        {
+          "id": "opt_c",
+          "text": "Clearly defined property rights and low transaction costs.",
+          "is_correct": true,
+          "feedback": "Correct. When ownership is unambiguous and negotiation/enforcement costs are low, private bargaining captures all mutually beneficial trades and reaches $Q^*$ regardless of initial right assignment."
+        },
+        {
+          "id": "opt_d",
+          "text": "Strict command-and-control emissions quotas and public tax subsidies.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Government Intervention Confusion): The Coase Theorem explains when private bargaining achieves efficiency *without* government taxes or mandates."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T1_08",
+      "chapter": 10,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Cap-and-Trade & Equimarginal Principle",
+      "clo_alignment": [
+        "MI-1",
+        "MI-4"
+      ],
+      "title": "Cost Minimization Under Cap-and-Trade",
+      "prompt_template": "What mathematical condition characterizes the cost-minimizing allocation of pollution abatement across two firms under a cap-and-trade permit market?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about when a firm prefers to abate one more ton itself versus buying a permit."
+        },
+        {
+          "tier": 2,
+          "text": "Compare each firm's marginal abatement cost ($MAC_i$) to the market permit price $p_{\\text{permit}}$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Both firms reduce emissions by the exact same number of tons ($a_1 = a_2$).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Uniform Mandate Fallacy): Equal tonnage cuts minimize cost only if firms have identical $MAC$ curves; when costs differ, uniform mandates waste resources."
+        },
+        {
+          "id": "opt_b",
+          "text": "The firm with the higher marginal abatement cost cuts all emissions while the lower-cost firm buys permits.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Cost-Direction Reversal): Efficiency requires the *lower*-cost abater to cut more pollution and sell spare permits to the *higher*-cost abater."
+        },
+        {
+          "id": "opt_c",
+          "text": "Total abatement costs are equal across firms ($C_1(a_1) = C_2(a_2)$).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Total vs. Marginal Confusion): Cost minimization equalizes *marginal* abatement costs across firms, not total abatement expenditures."
+        },
+        {
+          "id": "opt_d",
+          "text": "Each firm's marginal abatement cost equals the permit price ($MAC_1(a_1^*) = MAC_2(a_2^*) = p_{\\text{permit}}$).",
+          "is_correct": true,
+          "feedback": "Correct. By the equimarginal principle, firms abate whenever $MAC_i < p_{\\text{permit}}$ and buy permits whenever $MAC_i > p_{\\text{permit}}$, equalizing marginal abatement costs at the lowest total cost."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T1_09",
+      "chapter": 10,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Excludability and Rivalry",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Distinguishing Excludability from Rivalry",
+      "prompt_template": "In economics, what is the difference between a good being 'excludable' and being 'rival in consumption'?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "One trait is about blocking non-payers; the other is about whether sharing depletes what remains."
+        },
+        {
+          "tier": 2,
+          "text": "Match 'excludable' to access/payment barriers and 'rival' to depletion of the physical unit."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Excludability means providers can prevent non-payers from using the good; rivalry means one person's consumption reduces the amount available for others.",
+          "is_correct": true,
+          "feedback": "Correct. Excludability concerns enforceable access control, whereas rivalry concerns whether simultaneous consumption diminishes availability for other users."
+        },
+        {
+          "id": "opt_b",
+          "text": "Excludability means one person's consumption depletes the good; rivalry means firms compete vigorously to sell the good.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Trait Swap & Colloquial Rivalry): This swaps the definition of rivalry onto excludability and confuses consumption rivalry with firm competition."
+        },
+        {
+          "id": "opt_c",
+          "text": "Excludability applies only to privately produced goods; rivalry applies only to government-provided services.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Provider-Identity Fallacy): Both traits describe physical characteristics of a good, regardless of whether the supplier is private or governmental."
+        },
+        {
+          "id": "opt_d",
+          "text": "Excludability means the good has zero marginal cost; rivalry means the good is too expensive for low-income households.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Cost/Affordability Confusion): Affordability and zero marginal cost do not define excludability or rivalry."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T1_10",
+      "chapter": 10,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Four-Quadrant Classification of Goods",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Identifying Club Goods",
+      "prompt_template": "A subscription streaming service and an uncongested toll bridge are both excludable yet non-rival in consumption. How do economists classify these goods?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall the 2×2 matrix crossing Excludable/Non-Excludable with Rival/Non-Rival."
+        },
+        {
+          "tier": 2,
+          "text": "Which quadrant sits in the top-right: Excludable and Non-Rival?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Pure private goods",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Rivalry Omission): Private goods (such as coffee or laptops) are both excludable *and* rival in consumption."
+        },
+        {
+          "id": "opt_b",
+          "text": "Club goods",
+          "is_correct": true,
+          "feedback": "Correct. Club goods are excludable (providers can require subscriptions or tolls) and non-rival (one extra viewer or uncongested driver does not diminish the service for others)."
+        },
+        {
+          "id": "opt_c",
+          "text": "Common resources",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Opposite Quadrant): Common resources are non-excludable and rival—the exact reverse of both traits."
+        },
+        {
+          "id": "opt_d",
+          "text": "Pure public goods",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Excludability Omission): Pure public goods are *non-excludable* as well as non-rival; because non-payers can be blocked here, these are club goods."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T1_11",
+      "chapter": 10,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Public Goods & Free-Rider Problem",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "The Free-Rider Problem in Public Goods",
+      "prompt_template": "Why do private markets systematically underprovide pure public goods such as coastal tsunami warning sirens or national defense?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Ask what happens when a provider cannot bar non-payers from enjoying a good once it exists."
+        },
+        {
+          "tier": 2,
+          "text": "Connect non-excludability to the individual incentive to withhold payment."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because public goods are rival in consumption, causing consumers to exhaust the stock immediately.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Common Resource Confusion): Rival depletion characterizes common resources (Tragedy of the Commons), whereas pure public goods are non-rival."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because consumers place zero marginal benefit on pure public goods.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-Valuation Fallacy): Consumers often place high value on sirens or defense; the failure is that they have an incentive to hide their willingness to pay and free ride."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because non-excludability creates a free-rider problem in which rational individuals enjoy the benefit without paying, leaving private providers unable to cover costs.",
+          "is_correct": true,
+          "feedback": "Correct. Since non-payers cannot be excluded once the public good is supplied, individuals rationally free ride, causing private voluntary funding to fall far short of $Q^*$."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because government regulations forbid private firms from building warning systems or conducting basic research.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Legal Prohibition Fallacy): The root cause of underprovision is economic—non-excludability and free riding—not a legal ban."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T1_12",
+      "chapter": 10,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Common Resources & Tragedy of the Commons",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "The Tragedy of the Commons",
+      "prompt_template": "Which combination of physical traits produces the Tragedy of the Commons—such as overfishing in open-ocean fisheries or severe congestion on free public highways?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about whether anyone can enter the fishery or highway for free, and whether each user reduces what remains for others."
+        },
+        {
+          "tier": 2,
+          "text": "Match 'anyone can use it' to non-excludability and 'each user depletes it' to rivalry."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Excludable and rival in consumption",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Private Good Misclassification): Excludable and rival goods are private goods, where market prices prevent uncompensated depletion."
+        },
+        {
+          "id": "opt_b",
+          "text": "Excludable and non-rival in consumption",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Club Good Misclassification): Excludable and non-rival goods are club goods, which face natural-monopoly pricing issues rather than overexploitation."
+        },
+        {
+          "id": "opt_c",
+          "text": "Non-excludable and non-rival in consumption",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Public Good Misclassification): Non-excludable and non-rival goods are pure public goods, which suffer from *underprovision* (free riding), not overexploitation."
+        },
+        {
+          "id": "opt_d",
+          "text": "Non-excludable and rival in consumption",
+          "is_correct": true,
+          "feedback": "Correct. Common resources are non-excludable (open access at zero price) and rival (one user's catch or road space diminishes availability for others), driving overexploitation."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T1_13",
+      "chapter": 10,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Economic Public Goods vs. Government Provision",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Economic Classification vs. Government Ownership",
+      "prompt_template": "Which of the following examples is a true economic public good (both non-excludable and non-rival), even though it may be supplied outside the government?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Remember: 'public good' in economics depends on physical traits, not on who supplies the good."
+        },
+        {
+          "tier": 2,
+          "text": "Check each option for both non-excludability (cannot block non-payers) and non-rivalry (one user does not deplete it)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "A state park that charges an admission fee at a gated entrance.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Government-Equals-Public-Good Fallacy): Because ticket gates exclude non-payers, a gated state park is excludable—not an economic public good—even though government operates it."
+        },
+        {
+          "id": "opt_b",
+          "text": "Privately written open-source software freely downloadable online, or free over-the-air radio broadcasts.",
+          "is_correct": true,
+          "feedback": "Correct. Anyone can access open-source software or unencrypted radio broadcasts (non-excludable), and one person's use does not diminish availability for others (non-rival)."
+        },
+        {
+          "id": "opt_c",
+          "text": "A municipal city bus that requires a fare card to board and has limited seating.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Government-Equals-Public-Good Fallacy): Fare enforcement makes a city bus excludable, and limited seats make it rival when crowded."
+        },
+        {
+          "id": "opt_d",
+          "text": "An open-ocean salmon stock harvested by private commercial fleets.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Rivalry Omission): Open-ocean salmon are non-excludable but *rival*—one boat's catch reduces fish left for others—making them a common resource, not a public good."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T2_01",
+      "chapter": 10,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Negative Externality Graph Geometry",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Vertical Gap Between MSC and MPC",
+      "prompt_template": "In a supply-and-demand diagram for a competitive market with a constant Marginal External Cost ($MEC = \\$10$ per unit), how is the Marginal Social Cost ($MSC$) curve positioned relative to the Marginal Private Cost ($MPC$) curve?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall $MSC(Q) = MPC(Q) + MEC$ with $MEC$ measured in dollars per unit on the vertical axis."
+        },
+        {
+          "tier": 2,
+          "text": "Adding a constant dollar amount at every quantity produces a parallel shift in which direction?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$MSC$ lies parallel and vertically above $MPC$ by exactly $\\$10$ at every quantity.",
+          "is_correct": true,
+          "feedback": "Correct. Because cost is plotted on the vertical axis and $MEC = \\$10$ is constant, adding $\\$10$ to $MPC(Q)$ shifts the curve vertically upward in parallel by $\\$10$."
+        },
+        {
+          "id": "opt_b",
+          "text": "$MSC$ lies parallel and vertically below $MPC$ by exactly $\\$10$ at every quantity.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Shift Direction Reversal): A downward shift would imply external costs *reduce* social cost; external damages increase social cost above private cost."
+        },
+        {
+          "id": "opt_c",
+          "text": "$MSC$ intersects $MPC$ at the vertical axis and diverges upward as quantity increases.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Constant vs. Increasing MEC Confusion): A shared intercept with a steeper slope occurs when $MEC(Q)$ rises linearly from zero with output, not when $MEC$ is constant at $\\$10$."
+        },
+        {
+          "id": "opt_d",
+          "text": "$MSC$ shifts horizontally to the right of $MPC$ by $10$ units at every price.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Axis Confusion): $MEC = \\$10$/unit is a vertical cost wedge (dollars/unit), and higher marginal costs shift supply *leftward*/upward, never rightward."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T2_02",
+      "chapter": 10,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Negative Externality Equilibrium Comparison",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Comparing Unregulated and Efficient Price and Quantity",
+      "prompt_template": "In a negative production externality diagram with downward-sloping $MB$ and upward-sloping $MPC$ and $MSC$, how does the unregulated market equilibrium $(Q_M, P_M)$ compare to the socially efficient equilibrium $(Q^*, P^*)$?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Locate $E_M$ where $MB = MPC$ and $E^*$ where $MB = MSC$."
+        },
+        {
+          "tier": 2,
+          "text": "Since $MSC$ lies above $MPC$, trace leftward and upward along the downward-sloping $MB$ curve from $E_M$ to $E^*$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$Q_M > Q^*$ and $P_M > P^*$.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Price Direction Error): Moving up along a downward-sloping demand ($MB$) curve to the smaller quantity $Q^*$ raises price, so $P^*$ is higher than $P_M$ ($P_M < P^*$)."
+        },
+        {
+          "id": "opt_b",
+          "text": "$Q_M < Q^*$ and $P_M > P^*$.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Positive Externality Swap): Underproduction ($Q_M < Q^*$) characterizes a positive externality, not a negative production externality."
+        },
+        {
+          "id": "opt_c",
+          "text": "$Q_M > Q^*$ and $P_M < P^*$.",
+          "is_correct": true,
+          "feedback": "Correct. Because firms ignore external costs, the unregulated market overproduces ($Q_M > Q^*$) at an artificially low market price ($P_M < P^*$)."
+        },
+        {
+          "id": "opt_d",
+          "text": "$Q_M < Q^*$ and $P_M < P^*$.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Demand Shift Confusion): A negative production externality moves equilibrium along $MB$ between $MPC$ and $MSC$, so price and quantity move in opposite directions."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T2_03",
+      "chapter": 10,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Deadweight Loss Triangle Geometry",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Locating the Negative Externality Deadweight Loss Triangle",
+      "prompt_template": "On a standard negative production externality graph ($MB$, $MPC$, and $MSC$), which geometric region represents the Deadweight Loss ($DWL$) caused by unregulated production at $Q_M$?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Identify which specific units destroy net social welfare: units where $MSC$ exceeds $MB$."
+        },
+        {
+          "tier": 2,
+          "text": "Look at the interval between $Q^*$ and $Q_M$ and identify the vertical boundary at $Q_M$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The triangle between $Q = 0$ and $Q^*$, bounded above by $MB$ and below by $MSC$.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Social Surplus vs. DWL Confusion): The area between $MB$ and $MSC$ from $0$ to $Q^*$ is the *positive* net social surplus generated by efficient production, not deadweight loss."
+        },
+        {
+          "id": "opt_b",
+          "text": "The triangle between $Q^*$ and $Q_M$, bounded above by $MSC$ and below by $MB$, pointing leftward to $E^*$.",
+          "is_correct": true,
+          "feedback": "Correct. On every overproduced unit from $Q^*$ to $Q_M$, true social cost $MSC$ exceeds social benefit $MB$; integrating $(MSC - MB)$ yields this triangle pointing toward $E^*$."
+        },
+        {
+          "id": "opt_c",
+          "text": "The parallelogram between $MPC$ and $MSC$ extending from $Q = 0$ all the way to $Q_M$.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Total External Cost vs. DWL Confusion): The full strip between $MPC$ and $MSC$ equals *total external cost*, most of which is outweighed by $MB > MSC$ on units $0$ to $Q^*$."
+        },
+        {
+          "id": "opt_d",
+          "text": "The triangle between $Q^*$ and $Q_M$, bounded above by $MB$ and below by $MPC$.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Wrong Boundary Curves): Between $Q^*$ and $Q_M$, $MB$ lies above $MPC$ (which is why private firms produce those units), but the welfare loss equals the gap between $MSC$ and $MB$."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T2_04",
+      "chapter": 10,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Variable Marginal External Cost Geometry",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Graphing an Increasing Marginal External Cost",
+      "prompt_template": "Suppose environmental damage accelerates as factory output expands, so Marginal External Cost rises proportionally with quantity ($MEC(Q) = cQ$ with $c > 0$). How does the $MSC$ curve compare graphically to the linear $MPC$ curve?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Evaluate $MSC(Q) = MPC(Q) + cQ$ at $Q = 0$ and check its slope relative to $MPC(Q)$."
+        },
+        {
+          "tier": 2,
+          "text": "At $Q = 0$, $MEC(0) = 0$; as $Q$ rises, what happens to the vertical distance $MSC(Q) - MPC(Q)$?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$MSC$ is parallel to $MPC$ and shifted vertically upward by $c$ dollars.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Constant-Shift Assumption): A parallel shift happens only when $MEC$ is constant; here $MEC = cQ$ grows with $Q$, changing the slope."
+        },
+        {
+          "id": "opt_b",
+          "text": "$MSC$ starts higher than $MPC$ at $Q = 0$ and flattens out to merge with $MPC$ at high quantities.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Slope-Direction Reversal): Because $MEC(Q) = cQ$ starts at $0$ and increases with $Q$, the two curves start together and *diverge*, rather than converging."
+        },
+        {
+          "id": "opt_c",
+          "text": "$MSC$ is identical to $MPC$ because marginal external cost is zero at $Q = 0$.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Intercept-Only Fallacy): Sharing a vertical intercept at $Q = 0$ does not make two curves identical when their slopes differ for all $Q > 0$."
+        },
+        {
+          "id": "opt_d",
+          "text": "$MSC$ shares the same vertical intercept as $MPC$ at $Q = 0$ but has a steeper upward slope, widening the vertical gap as $Q$ increases.",
+          "is_correct": true,
+          "feedback": "Correct. Since $MEC(0) = 0$ and $MEC(Q) = cQ$ increases with $Q$, $MSC$ starts at the same intercept as $MPC$ and rotates upward with a steeper slope."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T2_05",
+      "chapter": 10,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Positive Externality Graph Geometry",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Reading a Positive Consumption Externality Diagram",
+      "prompt_template": "In a diagram of a positive consumption externality (with constant $MEB > 0$ and horizontal $MC$), where do the $MSB$ curve and the Deadweight Loss triangle appear relative to $MPB$ and $Q_M$?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Add $MEB > 0$ vertically to $MPB$ to locate $MSB$."
+        },
+        {
+          "tier": 2,
+          "text": "Identify which unproduced units between $Q_M$ and $Q^*$ have $MSB > MC$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$MSB$ lies vertically above $MPB$ by $MEB$, and the DWL triangle lies between $Q_M$ and $Q^*$ bounded above by $MSB$ and below by $MC$, pointing rightward to $E^*$.",
+          "is_correct": true,
+          "feedback": "Correct. Because $MSB = MPB + MEB$, the social benefit curve shifts vertically upward; on missing units from $Q_M$ to $Q^*$, $MSB > MC$, forming a DWL triangle pointing right toward $E^*$."
+        },
+        {
+          "id": "opt_b",
+          "text": "$MSB$ lies vertically below $MPB$ by $MEB$, and the DWL triangle lies to the left of $Q_M$.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Shift Direction Reversal): External benefits raise social benefit above private benefit ($MSB > MPB$), shifting the curve upward and placing $Q^*$ to the right of $Q_M$."
+        },
+        {
+          "id": "opt_c",
+          "text": "$MSB$ lies vertically above $MPB$, and the DWL triangle lies to the right of $Q^*$ where $MC > MSB$.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Overproduction Region Error): Units beyond $Q^*$ are not produced in an unregulated positive-externality market; the welfare loss comes from *missing* units between $Q_M$ and $Q^*$."
+        },
+        {
+          "id": "opt_d",
+          "text": "$MSB$ coincides with $MPB$, while the $MC$ curve shifts downward by $MEB$.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Benefit vs. Cost Curve Mix-Up): A consumption spillover alters *Marginal Social Benefit*, not the physical production cost curve $MC$."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T2_06",
+      "chapter": 10,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Pigouvian Tax Graphical Mechanics",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Effect of an Optimal Pigouvian Tax on Supply and Equilibrium",
+      "prompt_template": "Starting from an unregulated negative-externality equilibrium $E_M(Q_M, P_M)$, what happens graphically when the government levies an optimal Pigouvian tax $t^* = MEC(Q^*)$ on producers?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Track how a per-unit tax on producers shifts the private supply curve $MPC$."
+        },
+        {
+          "tier": 2,
+          "text": "Observe where the post-tax private supply curve intersects $MB$ and what happens to the DWL triangle."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The $MB$ curve shifts downward by $t^*$, reducing both price and quantity.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Wrong Curve Shift): A statutory tax on producers shifts their marginal cost curve upward rather than shifting buyers' underlying marginal benefit curve."
+        },
+        {
+          "id": "opt_b",
+          "text": "Private marginal cost shifts upward from $MPC$ onto $MSC = MPC + t^*$, moving equilibrium up along $MB$ from $E_M$ to $E^*$ and eliminating DWL.",
+          "is_correct": true,
+          "feedback": "Correct. Adding $t^* = MEC(Q^*)$ to $MPC$ aligns private supply with $MSC$, moving the market along $MB$ to $E^*(Q^*, P^*)$ and driving deadweight loss to zero."
+        },
+        {
+          "id": "opt_c",
+          "text": "Both $MPC$ and $MSC$ shift upward by $t^*$, leaving the vertical wedge between them unchanged.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Double-Shifting Social Cost): A tax is a transfer from firms to the government, not a new physical resource cost, so $MSC$ does not shift—only private cost $MPC + t^*$ shifts up to meet $MSC$."
+        },
+        {
+          "id": "opt_d",
+          "text": "Private marginal cost shifts downward by $t^*$, increasing quantity beyond $Q_M$.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Tax vs. Subsidy Confusion): A tax raises private marginal cost (upward shift), whereas a subsidy lowers it."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T2_07",
+      "chapter": 10,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Pigouvian Tax Wedge & Revenue Box",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Reading Buyer Price, Seller Net Price, and Tax Revenue",
+      "prompt_template": "In a diagram showing an optimal Pigouvian tax $t^* = MEC$ levied on producers at the efficient quantity $Q^*$, how are the buyer price $P^*$, seller net price $P_s$, and total tax revenue represented?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "At $Q^*$, check the height of $MSC = MPC + t^*$ (on $MB$) versus the height of pre-tax $MPC$."
+        },
+        {
+          "tier": 2,
+          "text": "Tax revenue equals per-unit tax multiplied by taxed quantity: what rectangle has height $t^*$ and width $Q^*$?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Buyers pay $P_M$, sellers receive $P^*$, and tax revenue is the triangle between $Q^*$ and $Q_M$.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Triangle vs. Rectangle Confusion): Tax revenue is a rectangle ($t^* \\times Q^*$), not the DWL triangle, and buyers pay the higher post-tax price $P^*$."
+        },
+        {
+          "id": "opt_b",
+          "text": "Buyers and sellers both face $P^*$, and tax revenue equals $P^* \\times Q^*$.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Total Expenditure vs. Tax Revenue): $P^* \\times Q^*$ is total buyer spending; sellers remit $t^*$ per unit to the government and keep only $P_s = P^* - t^*$."
+        },
+        {
+          "id": "opt_c",
+          "text": "Buyers pay $P^*$, sellers receive $P_s = P^* - t^*$, and tax revenue is the rectangle of height $t^*$ and width $Q_M$.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Pre-Tax Quantity Error): Tax revenue is collected only on the units actually sold *after* the tax ($Q^*$), not the larger pre-tax quantity $Q_M$."
+        },
+        {
+          "id": "opt_d",
+          "text": "Buyers pay $P^*$ (on $MB$ at $Q^*$), sellers net $P_s = P^* - t^*$ (on pre-tax $MPC$ at $Q^*$), and tax revenue is the rectangle of width $Q^*$ and height $(P^* - P_s) = t^*$.",
+          "is_correct": true,
+          "feedback": "Correct. At $Q^*$, the tax creates a vertical wedge of height $t^*$ between buyer price $P^*$ and seller net price $P_s$, generating rectangular revenue $R = t^* \\times Q^*$."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T2_08",
+      "chapter": 10,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Pigouvian Subsidy Graphical Analysis",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Graphical Effect of a Pigouvian Subsidy with Constant Marginal Cost",
+      "prompt_template": "Consider a positive externality market with downward-sloping $MPB$, parallel $MSB = MPB + MEB$, and horizontal supply at constant $MC$. When the government provides an optimal Pigouvian subsidy $s^* = MEB$ per unit, what happens on the graph?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Check what price sellers must receive (constant $MC$) and what out-of-pocket price buyers pay ($P_b = MC - s^*$)."
+        },
+        {
+          "tier": 2,
+          "text": "Verify where $MPB(Q)$ equals $P_b = MC - s^*$ relative to $MSB(Q) = MC$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The out-of-pocket buyer price rises to $MC + s^*$, shrinking quantity below $Q_M$.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Subsidy Sign Error): A subsidy lowers—rather than raises—the buyer's effective price, expanding consumption from $Q_M$ to $Q^*$."
+        },
+        {
+          "id": "opt_b",
+          "text": "Both $MPB$ and $MSB$ shift upward by $s^*$, pushing quantity past $Q^*$ into overconsumption.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Double-Shifting Social Benefit): The subsidy transfers funds to internalize $MEB$ without altering true social benefit $MSB$; private demand rises onto $MSB$, stopping cleanly at $Q^*$."
+        },
+        {
+          "id": "opt_c",
+          "text": "The buyer's effective out-of-pocket price drops to $P_b = MC - s^*$ (equivalently shifting private demand up to $MSB$), moving output from $Q_M$ to $Q^*$ and eliminating the underproduction DWL triangle.",
+          "is_correct": true,
+          "feedback": "Correct. Lowering the buyer's net price by $s^* = MEB$ induces buyers to move down $MPB$ to $Q^*$ (where $MPB(Q^*) = MC - s^* \\iff MSB(Q^*) = MC$), capturing the entire DWL triangle."
+        },
+        {
+          "id": "opt_d",
+          "text": "Quantity remains stuck at $Q_M$ because horizontal $MC$ prevents suppliers from expanding output.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Supply Elasticity Misinterpretation): A horizontal $MC$ curve is *perfectly elastic*, meaning suppliers gladly expand output from $Q_M$ to $Q^*$ at constant unit cost $MC$."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T2_09",
+      "chapter": 10,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Over-Taxing Beyond the Optimal Pigouvian Rate",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Welfare Consequence of Setting a Corrective Tax Too High",
+      "prompt_template": "Suppose regulators overestimate environmental damages and levy a per-unit tax $t > MEC$ on a polluting industry. What does the supply-and-demand graph show at the resulting post-tax quantity $Q_{\\text{tax}}$?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare the shifted post-tax supply curve $MPC + t$ with the true $MSC = MPC + MEC$."
+        },
+        {
+          "tier": 2,
+          "text": "Ask whether $Q_{\\text{tax}}$ is greater than or less than $Q^*$, and compare $MB$ to $MSC$ on the lost units."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$MPC + t$ lies above $MSC$, reducing output below $Q^*$ ($Q_{\\text{tax}} < Q^*$) and creating a new DWL triangle from underproduction on units where $MB > MSC$.",
+          "is_correct": true,
+          "feedback": "Correct. Over-taxing pushes private marginal cost above true social cost, choking off socially beneficial units between $Q_{\\text{tax}}$ and $Q^*$ where $MB > MSC$."
+        },
+        {
+          "id": "opt_b",
+          "text": "$MPC + t$ lies above $MSC$, reducing output below $Q^*$ and further increasing total social surplus because less pollution is always better.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-Pollution Fallacy): Once output falls below $Q^*$, each foregone unit sacrifices more marginal benefit ($MB$) than the marginal social cost ($MSC$) saved, lowering net welfare."
+        },
+        {
+          "id": "opt_c",
+          "text": "$MPC + t$ lies below $MSC$, leaving residual overproduction between $Q^*$ and $Q_{\\text{tax}}$.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inequality Reversal): Residual overproduction occurs when a tax is set *too low* ($t < MEC$), not too high ($t > MEC$)."
+        },
+        {
+          "id": "opt_d",
+          "text": "Equilibrium remains fixed at $Q^*$ because markets cannot produce less than the socially efficient output.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Market-Floor Fallacy): Markets respond to private incentives ($MB = MPC + t$); excessive taxation easily drives output below $Q^*$."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T2_10",
+      "chapter": 10,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Vertical vs. Horizontal Demand Summation",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Aggregating Demand for Public Goods vs. Private Goods",
+      "prompt_template": "Graphically, why do economists sum individual marginal benefit curves vertically to obtain Marginal Social Benefit ($MSB$) for a pure public good, rather than summing horizontally as they do for a private good?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Ask which variable—price or quantity—is shared identically by every consumer of a non-rival good."
+        },
+        {
+          "tier": 2,
+          "text": "For a fixed quantity $Q$ of a public good, how do we find society's combined willingness to pay?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because every citizen pays the exact same market price and consumes a separate, mutually exclusive quantity of the public good.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Private-Good Rule Swap): Paying the same price while consuming separate quantities describes *private goods*, which require horizontal summation ($Q = Q_1 + Q_2$)."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because non-rivalry means every citizen consumes the exact same quantity $Q$ simultaneously, so society's total willingness to pay at each $Q$ equals the vertical sum of individual marginal benefits ($MB_1 + MB_2$).",
+          "is_correct": true,
+          "feedback": "Correct. Since one siren or defense shield protects everyone at once, holding $Q$ fixed and summing vertical heights ($MB_i$) captures the joint social value of that marginal unit."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because vertical summation ensures that the $MSB$ curve is always flatter than every individual $MB_i$ curve.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Slope Direction Error): Summing downward-sloping curves vertically *steepens* the combined curve (adding slopes) rather than flattening it."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because public goods are excludable, allowing firms to charge higher prices through vertical price discrimination.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Excludability Misclassification): Pure public goods are non-excludable, and vertical summation reflects non-rival simultaneous consumption rather than price discrimination."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T2_11",
+      "chapter": 10,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Kinked MSB Curve for Public Goods",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Explaining the Kink in a Two-Town Public-Good MSB Curve",
+      "prompt_template": "In a two-town public-good graph where Town 1 has $MB_1 = 50 - Q$ and Town 2 has $MB_2 = 30 - Q$ (with $MB_i \\ge 0$), why does the vertically summed $MSB$ curve exhibit a sharp kink at $Q = 30$?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Evaluate $MB_2 = 30 - Q$ at $Q = 30$ and check what happens for $Q > 30$."
+        },
+        {
+          "tier": 2,
+          "text": "Can Town 2's marginal willingness to pay become negative, or does it stop at $\\$0$?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because marginal cost $MC$ suddenly jumps upward at $Q = 30$.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Supply vs. Demand Confusion): The kink is a property of the *demand-side* $MSB$ schedule, completely independent of the $MC$ curve."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because Town 1 stops valuing additional units at $Q = 30$, leaving only Town 2 in the market.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Town-Identity Swap): Town 1's $MB_1 = 50 - Q$ is still $\\$20$ at $Q = 30$; it is *Town 2*'s marginal benefit ($30 - Q$) that reaches $\\$0$ at $Q = 30$."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because for $Q > 30$, Town 2's negative willingness to pay subtracts from Town 1's benefit and makes $MSB$ steeper.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Negative-WTP Fallacy): Non-negative marginal willingness to pay means Town 2 contributes $\\$0$—not a negative value—beyond $Q = 30$, so $MSB$ becomes *flatter*, not steeper."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because Town 2's marginal benefit reaches $\\$0$ at $Q = 30$ and cannot turn negative, so for $Q > 30$ the $MSB$ curve merges with $MB_1$ and becomes flatter.",
+          "is_correct": true,
+          "feedback": "Correct. For $0 \\le Q \\le 30$, both towns contribute ($MSB = 80 - 2Q$, slope $-2$); beyond $Q = 30$, $MB_2 = 0$, so $MSB = MB_1 = 50 - Q$ (slope $-1$), creating the kink at $(30, \\$20)$."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T2_12",
+      "chapter": 10,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Public Good Unilateral vs. Efficient Provision Graph",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Identifying Surplus Gains on a Public-Good Vertical Summation Graph",
+      "prompt_template": "On a two-town public-good graph with constant $MC$, Town 1 acts alone to provide $Q_1$ where $MB_1(Q_1) = MC$, while Town 2 free rides ($Q_2 = 0$). Which area on the graph measures the net social surplus gained by coordinating to move from $Q_1$ to $Q^*$ (where $MSB = MC$)?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare the height of $MSB$ against $MC$ on every added unit between $Q_1$ and $Q^*$."
+        },
+        {
+          "tier": 2,
+          "text": "Look for the triangle bounded above by $MSB$ and below by $MC$ over the interval $[Q_1, Q^*]$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The rectangle of height $MC$ and width $(Q^* - Q_1)$.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Total Cost vs. Net Surplus): $MC \\times (Q^* - Q_1)$ is the total resource *cost* of installing the extra units, ignoring the larger marginal social benefit $MSB$."
+        },
+        {
+          "id": "opt_b",
+          "text": "The triangle below $MB_1$ and above $MC$ from $Q = 0$ to $Q_1$.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Already-Captured Surplus): That region measures Town 1's unilateral private surplus already captured at $Q_1$, not the *additional* gain from moving to $Q^*$."
+        },
+        {
+          "id": "opt_c",
+          "text": "The triangle between $Q_1$ and $Q^*$, bounded above by $MSB$ and below by $MC$.",
+          "is_correct": true,
+          "feedback": "Correct. On each unit from $Q_1$ to $Q^*$, joint marginal social benefit $MSB$ exceeds $MC$, so the triangular area $\\frac{1}{2}(Q^* - Q_1)(MSB(Q_1) - MC)$ equals the recovered net social surplus."
+        },
+        {
+          "id": "opt_d",
+          "text": "The triangle between $Q_1$ and $Q^*$, bounded above by $MC$ and below by $MB_1$.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ignoring Town 2's Benefit): Measuring below $MC$ down to $MB_1$ captures only Town 1's private shortfall and omits Town 2's positive spillover benefit $MB_2$."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T2_13",
+      "chapter": 10,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Transitions Across the 2x2 Goods Matrix",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Moving Across Quadrants When Congestion Strikes a Free Highway",
+      "prompt_template": "On the four-quadrant goods classification matrix (Excludability vs. Rivalry), how does a free public highway shift when traffic increases from an empty midnight roadway to bumper-to-bumper rush hour?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Ask whether the highway's excludability changes (still free, no tolls) and whether rivalry changes when traffic jams form."
+        },
+        {
+          "tier": 2,
+          "text": "Trace the move from (Non-Excludable, Non-Rival) to (Non-Excludable, Rival)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "It shifts horizontally from a Public Good (non-excludable, non-rival) to a Common Resource (non-excludable, rival).",
+          "is_correct": true,
+          "feedback": "Correct. Without tolls, the road stays non-excludable, but rush-hour congestion makes road space rival—each added car slows everyone else—shifting it into the Common Resource quadrant."
+        },
+        {
+          "id": "opt_b",
+          "text": "It shifts vertically from a Public Good to a Club Good (excludable, non-rival).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Tolling vs. Congestion Confusion): Becoming a club good requires adding an exclusion mechanism (like tolls) while remaining uncongested; congestion changes *rivalry*, not excludability."
+        },
+        {
+          "id": "opt_c",
+          "text": "It shifts diagonally from a Public Good to a Private Good (excludable, rival).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Missing Exclusion Mechanism): Without tolls or gates, rush-hour drivers still cannot be excluded from entering the free highway, so it is a common resource rather than a private good."
+        },
+        {
+          "id": "opt_d",
+          "text": "It remains permanently in the Public Good quadrant because highways are built by the government.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Government-Identity Fallacy): Classification depends on physical rivalry and excludability—not government ownership—and severe congestion makes road capacity rival."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T3_01",
+      "chapter": 10,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Negative Externality Equilibrium Calculation",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Computing Socially Efficient Quantity and Price",
+      "prompt_template": "A competitive chemical market has linear marginal benefit $MB = 120 - 2Q$, marginal private cost $MPC = 20 + 2Q$, and a constant marginal external cost $MEC = \\$16$ per unit (assuming no consumption externalities). What are the socially efficient quantity $Q^*$ and price $P^*$?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "First construct Marginal Social Cost using $MSC = MPC + MEC$."
+        },
+        {
+          "tier": 2,
+          "text": "Set $MB = MSC$ to solve for $Q^*$, then substitute $Q^*$ into $MB$ (or $MSC$) to find $P^*$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$Q^* = 21$ units and $P^* = \\$78$",
+          "is_correct": true,
+          "feedback": "Correct. $MSC = (20 + 2Q) + 16 = 36 + 2Q$. Setting $120 - 2Q^* = 36 + 2Q^*$ gives $4Q^* = 84 \\implies Q^* = 21$ units, and $P^* = 120 - 2(21) = \\$78$."
+        },
+        {
+          "id": "opt_b",
+          "text": "$Q^* = 25$ units and $P^* = \\$70$",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ignored External Cost): Setting $MB = MPC$ ($120 - 2Q = 20 + 2Q$) yields the *unregulated* market equilibrium $(Q_M = 25, P_M = \\$70)$, not the socially efficient outcome."
+        },
+        {
+          "id": "opt_c",
+          "text": "$Q^* = 29$ units and $P^* = \\$62$",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Sign Reversal Error): Subtracting $MEC$ ($MPC - 16 = 4 + 2Q$) instead of adding it yields $4Q = 116 \\implies Q = 29$; external harm increases social cost."
+        },
+        {
+          "id": "opt_d",
+          "text": "$Q^* = 21$ units and $P^* = \\$62$",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Wrong Curve Substitution): $Q^* = 21$ is right, but substituting $21$ into $MPC$ ($20 + 42 = \\$62$) gives the pre-tax seller net price rather than the efficient market price $P^* = MB(21) = \\$78$."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T3_02",
+      "chapter": 10,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Negative Externality Deadweight Loss",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Calculating Deadweight Loss from Overproduction",
+      "prompt_template": "In a competitive market with linear curves $MB = 90 - Q$, $MPC = 10 + Q$, and constant $MEC = \\$12$ per unit (with no consumption externalities), what is the Deadweight Loss ($DWL$) caused by unregulated production?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compute both the unregulated quantity $Q_M$ (where $MB = MPC$) and the socially efficient quantity $Q^*$ (where $MB = MSC = MPC + 12$)."
+        },
+        {
+          "tier": 2,
+          "text": "Apply the triangle area formula $DWL = \\frac{1}{2} \\times (Q_M - Q^*) \\times MEC$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$\\$72$",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Omitted Triangle Factor): Multiplying $(Q_M - Q^*) \\times MEC = 6 \\times \\$12 = \\$72$ calculates a rectangle instead of a triangle; remember the $\\frac{1}{2}$ factor."
+        },
+        {
+          "id": "opt_b",
+          "text": "$\\$18$",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Double-Halving Error): Dividing $\\$72$ by $4$ instead of $2$ understates the area of the DWL triangle $\\frac{1}{2} \\times 6 \\times \\$12 = \\$36$."
+        },
+        {
+          "id": "opt_c",
+          "text": "$\\$36$",
+          "is_correct": true,
+          "feedback": "Correct. $Q_M = 40$ (from $90 - Q = 10 + Q$) and $Q^* = 34$ (from $90 - Q = 22 + Q$), so $DWL = \\frac{1}{2} \\times (40 - 34) \\times \\$12 = \\frac{1}{2} \\times 6 \\times \\$12 = \\$36$."
+        },
+        {
+          "id": "opt_d",
+          "text": "$\\$480$",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Total External Cost Confusion): Multiplying $Q_M \\times MEC = 40 \\times \\$12 = \\$480$ computes total external damages across all units rather than deadweight loss on the $6$ overproduced units."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T3_03",
+      "chapter": 10,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Pigouvian Tax Revenue & Net Seller Price",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Computing Seller Net Price and Pigouvian Tax Revenue",
+      "prompt_template": "A competitive market has $MB = 110 - Q$, $MPC = 30 + Q$, and a constant marginal external cost $MEC = \\$20$ per unit. If the government imposes the optimal Pigouvian tax $t^* = \\$20$ per unit on producers, what are the seller's net-of-tax price $P_s$ and total government tax revenue $R$?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Find the efficient post-tax equilibrium $(Q^*, P^*)$ where $MB = MSC = MPC + 20$."
+        },
+        {
+          "tier": 2,
+          "text": "Then compute $P_s = P^* - t^*$ and $R = t^* \\times Q^*$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$P_s = \\$70$ and $R = \\$800$",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Pre-Tax Equilibrium Error): Using unregulated $Q_M = 40$ and $P_M = \\$70$ ignores the output reduction caused by the tax; revenue must be computed at $Q^* = 30$."
+        },
+        {
+          "id": "opt_b",
+          "text": "$P_s = \\$60$ and $R = \\$600$",
+          "is_correct": true,
+          "feedback": "Correct. $MSC = 50 + Q$, so $110 - Q^* = 50 + Q^* \\implies Q^* = 30$ and $P^* = \\$80$. Sellers keep $P_s = \\$80 - \\$20 = \\$60$, and tax revenue is $R = \\$20 \\times 30 = \\$600$."
+        },
+        {
+          "id": "opt_c",
+          "text": "$P_s = \\$80$ and $R = \\$600$",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Buyer vs. Seller Price Confusion): $\\$80$ is the gross price paid by *buyers* ($P^*$); after remitting the $\\$20$ tax, sellers net only $P_s = \\$80 - \\$20 = \\$60$."
+        },
+        {
+          "id": "opt_d",
+          "text": "$P_s = \\$50$ and $R = \\$600$",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Subtracted Tax from Pre-Tax Price): Subtracting $\\$20$ from the unregulated price $P_M = \\$70$ yields $\\$50$, forgetting that the market price rises from $\\$70$ to $P^* = \\$80$ so buyers and sellers share the tax burden."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T3_04",
+      "chapter": 10,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Optimal Pigouvian Tax with Increasing MEC",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Evaluating $t^* = MEC(Q^*)$ When External Cost Rises with Output",
+      "prompt_template": "Suppose a competitive industry faces $MB = 100 - Q$, $MPC = 10 + Q$, and an increasing marginal external cost $MEC(Q) = 0.5Q$. What per-unit Pigouvian tax $t^*$ achieves the socially efficient output $Q^*$?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "First form $MSC(Q) = MPC(Q) + MEC(Q)$ and solve $MB(Q^*) = MSC(Q^*)$ for $Q^*$."
+        },
+        {
+          "tier": 2,
+          "text": "Remember the Pigouvian rule: evaluate $MEC(Q)$ at the socially efficient quantity $Q^*$, not at $Q_M$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$\\$22.50$ per unit",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Evaluated MEC at Unregulated Quantity): $Q_M = 45$ gives $MEC(45) = \\$22.50$, which over-taxes the industry; $t^*$ must be evaluated at $Q^* = 36$."
+        },
+        {
+          "id": "opt_b",
+          "text": "$\\$36.00$ per unit",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Quantity-Tax Swap): $36$ is the socially efficient *quantity* $Q^*$; you still need to plug $Q^* = 36$ into $MEC(Q) = 0.5Q$."
+        },
+        {
+          "id": "opt_c",
+          "text": "$\\$9.00$ per unit",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Slope Halving Error): Multiplying $Q^* = 36$ by $0.25$ instead of $0.5$ gives half the required corrective tax."
+        },
+        {
+          "id": "opt_d",
+          "text": "$\\$18.00$ per unit",
+          "is_correct": true,
+          "feedback": "Correct. $MSC = 10 + Q + 0.5Q = 10 + 1.5Q$. Setting $100 - Q^* = 10 + 1.5Q^*$ gives $2.5Q^* = 90 \\implies Q^* = 36$, so $t^* = MEC(36) = 0.5(36) = \\$18.00$ per unit."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T3_05",
+      "chapter": 10,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Positive Externality & Optimal Pigouvian Subsidy",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Computing Efficient Quantity, Subsidy Rate, and Buyer Price",
+      "prompt_template": "Suppose residential solar installations have linear marginal private benefit $MPB = 90 - 3Q$, marginal social benefit $MSB = 120 - 3Q$, and constant marginal cost $MC = \\$45$ (with $Q$ in thousands of units and no external production costs). What are the socially efficient quantity $Q^*$, optimal Pigouvian subsidy $s^*$, and buyer out-of-pocket price $P_b$?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Set $MSB = MC$ to find $Q^*$, and compute $s^* = MEB = MSB - MPB$."
+        },
+        {
+          "tier": 2,
+          "text": "Subtract the subsidy $s^*$ from the seller's constant cost $MC$ to find the buyer's net price $P_b$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$Q^* = 15$ thousand, $s^* = \\$30$, and $P_b = \\$15$",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Unregulated Quantity Error): Solving $MPB = MC$ ($90 - 3Q = 45$) yields the unregulated quantity $Q_M = 15$ thousand rather than $Q^* = 25$ thousand."
+        },
+        {
+          "id": "opt_b",
+          "text": "$Q^* = 25$ thousand, $s^* = \\$30$, and $P_b = \\$15$",
+          "is_correct": true,
+          "feedback": "Correct. Setting $120 - 3Q^* = 45$ gives $3Q^* = 75 \\implies Q^* = 25$ thousand. The optimal subsidy is $s^* = MSB - MPB = \\$30$, lowering the buyer's out-of-pocket price to $P_b = \\$45 - \\$30 = \\$15$ (matching $MPB(25) = 90 - 75 = \\$15$)."
+        },
+        {
+          "id": "opt_c",
+          "text": "$Q^* = 25$ thousand, $s^* = \\$30$, and $P_b = \\$75$",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Added Subsidy to Price): A subsidy *reduces* the buyer's out-of-pocket price ($\\$45 - \\$30 = \\$15$); adding $\\$30$ to $\\$45$ treats the subsidy like a tax."
+        },
+        {
+          "id": "opt_d",
+          "text": "$Q^* = 25$ thousand, $s^* = \\$15$, and $P_b = \\$30$",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Swapped Subsidy and Buyer Price): The external benefit wedge is $MSB - MPB = 120 - 90 = \\$30$ (so $s^* = \\$30$), leaving buyers to pay $P_b = \\$15$, not vice versa."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T3_06",
+      "chapter": 10,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Positive Externality DWL Avoided & Subsidy Outlay",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Quantifying Avoided Deadweight Loss and Total Subsidy Expenditure",
+      "prompt_template": "Community immunization doses have $MPB = 70 - Q$, a constant marginal external benefit $MEB = \\$14$ per dose, and a constant marginal cost $MC = \\$40$ per dose (where $Q$ is in thousands of doses). Under an optimal Pigouvian subsidy $s^* = \\$14$, what are the Deadweight Loss avoided and total public subsidy outlay?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "First solve $MPB = MC$ for $Q_M$ and $MSB = MPB + 14 = MC$ for $Q^*$."
+        },
+        {
+          "tier": 2,
+          "text": "Compute $DWL_{\\text{avoided}} = \\frac{1}{2}(Q^* - Q_M) \\times MEB$, and remember the subsidy is paid on *all* $Q^*$ doses."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "DWL avoided $= \\$196$ thousand; subsidy outlay $= \\$616$ thousand",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Omitted Triangle Factor): Multiplying $(44 - 30) \\times \\$14 = \\$196$ thousand omits the $\\frac{1}{2}$ factor in the DWL triangle."
+        },
+        {
+          "id": "opt_b",
+          "text": "DWL avoided $= \\$98$ thousand; subsidy outlay $= \\$420$ thousand",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Pre-Subsidy Quantity Error): Multiplying $\\$14 \\times 30$ thousand ($Q_M$) understates budget expenditure because the subsidy must be paid on the expanded quantity $Q^* = 44$ thousand."
+        },
+        {
+          "id": "opt_c",
+          "text": "DWL avoided $= \\$98$ thousand; subsidy outlay $= \\$616$ thousand",
+          "is_correct": true,
+          "feedback": "Correct. $Q_M = 30$ thousand and $Q^* = 44$ thousand (from $84 - Q^* = 40$). Thus $DWL_{\\text{avoided}} = \\frac{1}{2}(44 - 30)(\\$14) = \\$98$ thousand, and total outlay $= \\$14 \\times 44\\text{ thousand} = \\$616$ thousand."
+        },
+        {
+          "id": "opt_d",
+          "text": "DWL avoided $= \\$98$ thousand; subsidy outlay $= \\$196$ thousand",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Marginal-Units-Only Outlay Error): Multiplying $\\$14 \\times 14$ thousand pays the subsidy only on the newly added doses; a per-unit market subsidy applies to all $44$ thousand doses purchased."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T3_07",
+      "chapter": 10,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Cap-and-Trade Equimarginal Allocation",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Solving for Cost-Minimizing Abatement and Permit Price",
+      "prompt_template": "Two regulated factories must jointly reduce emissions by $45$ tons under a cap-and-trade program. Factory A's marginal abatement cost is $MAC_A = 2a_A$, and Factory B's is $MAC_B = 4a_B$ (in dollars per ton). What abatement quantities $(a_A^*, a_B^*)$ and market permit price $p_{\\text{permit}}$ minimize total abatement cost?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Apply the equimarginal condition $MAC_A = MAC_B$ to express $a_A$ in terms of $a_B$."
+        },
+        {
+          "tier": 2,
+          "text": "Substitute into the joint cap $a_A + a_B = 45$, then plug the solution into either $MAC$ equation for $p_{\\text{permit}}$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$a_A^* = 30$ tons, $a_B^* = 15$ tons, and $p_{\\text{permit}} = \\$60$/ton",
+          "is_correct": true,
+          "feedback": "Correct. Equating $2a_A = 4a_B$ gives $a_A = 2a_B$. Substituting into $2a_B + a_B = 45$ yields $a_B^* = 15$ tons, $a_A^* = 30$ tons, and $p_{\\text{permit}} = 2(30) = 4(15) = \\$60$/ton."
+        },
+        {
+          "id": "opt_b",
+          "text": "$a_A^* = 22.5$ tons, $a_B^* = 22.5$ tons, and $p_{\\text{permit}} = \\$67.50$/ton",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Uniform Mandate Split): Splitting the $45$-ton cap equally ignores the fact that Factory A can abate at half the marginal cost slope of Factory B."
+        },
+        {
+          "id": "opt_c",
+          "text": "$a_A^* = 15$ tons, $a_B^* = 30$ tons, and $p_{\\text{permit}} = \\$60$/ton",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Reversed Firm Assignments): Assigning the larger cut to higher-cost Factory B yields $MAC_A = \\$30 \\ne MAC_B = \\$120$, violating equimarginal efficiency."
+        },
+        {
+          "id": "opt_d",
+          "text": "$a_A^* = 30$ tons, $a_B^* = 15$ tons, and $p_{\\text{permit}} = \\$120$/ton",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Summed Marginal Costs): Adding $MAC_A + MAC_B = \\$60 + \\$60 = \\$120$ double-counts the permit price; at the optimum each firm's $MAC$ individually equals $p_{\\text{permit}} = \\$60$."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T3_08",
+      "chapter": 10,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Cap-and-Trade Cost Savings Calculation",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Computing Total Cost Savings: Cap-and-Trade vs. Uniform Mandate",
+      "prompt_template": "Two plants must jointly cut emissions by $24$ tons. Plant 1 has $MAC_1 = 2a_1$ and Plant 2 has $MAC_2 = 6a_2$ (so each plant's total abatement cost equals the triangle area $\\frac{1}{2} \\times a_i \\times MAC_i(a_i)$). How much total abatement cost does cap-and-trade save compared to a uniform mandate forcing each plant to cut $12$ tons?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "First calculate total uniform-mandate cost with $a_1 = 12$ and $a_2 = 12$ using triangle areas under each $MAC$ line."
+        },
+        {
+          "tier": 2,
+          "text": "Next solve $2a_1 = 6a_2$ with $a_1 + a_2 = 24$ for the cap-and-trade allocation, compute its total cost, and take the difference."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$\\$288$",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Omitted Triangle Factor): Computing $a_i \\times MAC_i(a_i)$ without the $\\frac{1}{2}$ factor doubles every abatement cost and doubles the true savings ($\\$144$)."
+        },
+        {
+          "id": "opt_b",
+          "text": "$\\$432$",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Total Cost Reported as Savings): $\\$432$ is the total abatement cost under cap-and-trade ($\\$324 + \\$108$), not the *savings* relative to the $\\$576$ uniform mandate."
+        },
+        {
+          "id": "opt_c",
+          "text": "$\\$72$",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Halved Savings Error): Dividing the true $\\$144$ cost savings by $2$ understates the efficiency gain from permit trading."
+        },
+        {
+          "id": "opt_d",
+          "text": "$\\$144$",
+          "is_correct": true,
+          "feedback": "Correct. Uniform mandate ($12$ tons each) costs $\\frac{1}{2}(12)(24) + \\frac{1}{2}(12)(72) = \\$144 + \\$432 = \\$576$. Cap-and-trade ($2a_1 = 6a_2 \\implies a_1^* = 18, a_2^* = 6, p = \\$36$) costs $\\frac{1}{2}(18)(36) + \\frac{1}{2}(6)(36) = \\$324 + \\$108 = \\$432$. Cost savings $= \\$576 - \\$432 = \\$144$."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T3_09",
+      "chapter": 10,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Coase Bargaining Range & Net Social Gain",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Calculating the Coasean Bargaining Range",
+      "prompt_template": "A workshop's late-night machinery imposes $\\$6,500$ in noise damages on an adjacent apartment owner. The workshop can eliminate the noise completely by installing a sound filter costing $\\$4,000$, or by shutting down at a profit loss of $\\$12,000$. Assuming zero transaction costs and that the workshop holds the legal right to operate without a filter, what lump-sum payment range from the apartment owner to the workshop makes both parties strictly better off, and what is the net social gain?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Identify the lowest-cost way to eliminate the noise (filter vs. shutdown)."
+        },
+        {
+          "tier": 2,
+          "text": "The workshop requires at least its abatement cost; the apartment owner will pay at most the damages avoided."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Payment between $\\$6,500$ and $\\$12,000$; net social gain $= \\$5,500$",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (High-Cost Option Error): Shutting down ($\\$12,000$) is inefficient because damages are only $\\$6,500$; the cheaper $\\$4,000$ filter makes abatement socially worthwhile."
+        },
+        {
+          "id": "opt_b",
+          "text": "Payment between $\\$4,000$ and $\\$6,500$; net social gain $= \\$2,500$",
+          "is_correct": true,
+          "feedback": "Correct. The workshop accepts any payment above its $\\$4,000$ filter cost, while the apartment owner pays any amount below the $\\$6,500$ damage avoided, generating a net social gain of $\\$6,500 - \\$4,000 = \\$2,500$."
+        },
+        {
+          "id": "opt_c",
+          "text": "Payment between $\\$2,500$ and $\\$4,000$; net social gain $= \\$2,500$",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Below-Cost Offer Error): Any payment below $\\$4,000$ fails to cover the workshop's filter expense, so the workshop would refuse the deal."
+        },
+        {
+          "id": "opt_d",
+          "text": "Payment between $\\$4,000$ and $\\$6,500$; net social gain $= \\$6,500$",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Gross vs. Net Benefit Error): $\\$6,500$ is the *gross* damage avoided; subtracting the $\\$4,000$ resource cost of the filter gives the *net* social gain of $\\$2,500$."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T3_10",
+      "chapter": 10,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Public Good Vertical Summation Calculation",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Solving for the Optimal Quantity of a Non-Rival Public Good",
+      "prompt_template": "Two coastal towns share a non-rival flood-alert sensor network. Town A's marginal benefit is $MB_A = 60 - Q$, and Town B's marginal benefit is $MB_B = 40 - Q$ (with $MB_i \\ge 0$). If the constant marginal cost of each sensor is $MC = \\$36$, what is the socially optimal number of sensors $Q^*$?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Sum the two marginal benefit equations vertically ($MSB = MB_A + MB_B$) on the interval where both are non-negative ($0 \\le Q \\le 40$)."
+        },
+        {
+          "tier": 2,
+          "text": "Set $MSB(Q^*) = MC = 36$ and verify that $Q^* \\le 40$ so both towns have $MB_i \\ge 0$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$Q^* = 24$ sensors",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Unilateral Provision Error): Solving $MB_A = 36$ ($60 - Q = 36$) gives $24$ sensors—what Town A would buy alone while ignoring Town B's marginal benefit."
+        },
+        {
+          "id": "opt_b",
+          "text": "$Q^* = 28$ sensors",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Horizontal Summation Fallacy): Summing individual quantities horizontally at $P = \\$36$ gives $Q_A(36) + Q_B(36) = 24 + 4 = 28$; non-rival public goods require *vertical* summation."
+        },
+        {
+          "id": "opt_c",
+          "text": "$Q^* = 32$ sensors",
+          "is_correct": true,
+          "feedback": "Correct. Vertically summing gives $MSB = (60 - Q) + (40 - Q) = 100 - 2Q$ for $0 \\le Q \\le 40$. Setting $100 - 2Q^* = 36$ yields $2Q^* = 64 \\implies Q^* = 32$ sensors (check: $MB_A(32) = \\$28$, $MB_B(32) = \\$8$, sum $= \\$36$)."
+        },
+        {
+          "id": "opt_d",
+          "text": "$Q^* = 64$ sensors",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Omitted Slope Summation): Adding intercepts ($60 + 40 = 100$) while forgetting to add the slopes ($-Q - Q = -2Q$) erroneously solves $100 - Q = 36 \\implies Q = 64$."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T3_11",
+      "chapter": 10,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Public Good Provision Beyond the MSB Kink",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Checking Non-Negative Willingness to Pay Past the Kink",
+      "prompt_template": "Two neighborhoods share non-rival park benches. Neighborhood 1 has $MB_1 = 70 - Q$, and Neighborhood 2 has $MB_2 = 20 - Q$ (with $MB_i \\ge 0$). If constant marginal cost is $MC = \\$30$ per bench, what is the socially optimal number of benches $Q^*$?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Check the height of $MSB = 90 - 2Q$ right at the kink $Q = 20$ where $MB_2$ hits $\\$0$."
+        },
+        {
+          "tier": 2,
+          "text": "Since $MSB(20) = \\$50 > \\$30$, the optimum lies on the lower segment ($Q > 20$) where $MB_2 = 0$ and $MSB = MB_1$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$Q^* = 30$ benches",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Negative Willingness-to-Pay Error): Blindly solving $90 - 2Q = 30$ yields $Q = 30$, where $MB_2(30) = -\\$10$; willingness to pay cannot be negative."
+        },
+        {
+          "id": "opt_b",
+          "text": "$Q^* = 20$ benches",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Kink-Stopping Error): At the kink $Q = 20$, Neighborhood 1 still values the next bench at $\\$50 > \\$30$, so stopping at $20$ forfeits net social surplus."
+        },
+        {
+          "id": "opt_c",
+          "text": "$Q^* = 60$ benches",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Omitted Slope Summation): Solving $90 - Q = 30$ adds intercepts without summing slopes and violates $MB_2 \\ge 0$."
+        },
+        {
+          "id": "opt_d",
+          "text": "$Q^* = 40$ benches",
+          "is_correct": true,
+          "feedback": "Correct. At the kink $Q = 20$, $MSB(20) = \\$50 > MC = \\$30$, so $Q^* > 20$. On that segment $MB_2 = 0$ and $MSB = MB_1 = 70 - Q$; setting $70 - Q^* = 30$ yields $Q^* = 40$ benches."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T3_12",
+      "chapter": 10,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Public Good Surplus Gain Calculation",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Calculating Net Social Surplus Gained from Collective Provision",
+      "prompt_template": "Two districts share a non-rival air-quality monitoring network. District 1 has $MB_1 = 60 - Q$, District 2 has $MB_2 = 36 - Q$ (with $MB_i \\ge 0$), and constant marginal cost is $MC = \\$40$ per monitor. Acting alone, District 1 buys $Q_1 = 20$ monitors and District 2 free rides ($Q_2 = 0$). How much additional net social surplus is gained by coordinating to reach the socially optimal quantity $Q^*$?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compute $Q^*$ from $MSB = 96 - 2Q = 40$ (valid for $Q \\le 36$), and evaluate $MSB$ at the unilateral quantity $Q_1 = 20$."
+        },
+        {
+          "tier": 2,
+          "text": "Calculate the area of the surplus-gain triangle: $\\frac{1}{2} \\times (Q^* - Q_1) \\times (MSB(Q_1) - MC)$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$\\$64$",
+          "is_correct": true,
+          "feedback": "Correct. Setting $96 - 2Q^* = 40$ gives $Q^* = 28$ monitors. At $Q_1 = 20$, $MSB(20) = 96 - 40 = \\$56$, so the net surplus gain is $\\frac{1}{2} \\times (28 - 20) \\times (\\$56 - \\$40) = \\frac{1}{2} \\times 8 \\times \\$16 = \\$64$."
+        },
+        {
+          "id": "opt_b",
+          "text": "$\\$128$",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Omitted Triangle Factor): Multiplying $(28 - 20) \\times (\\$56 - \\$40) = \\$128$ computes a rectangle instead of the surplus-gain triangle."
+        },
+        {
+          "id": "opt_c",
+          "text": "$\\$320$",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Total Cost vs. Net Surplus): Multiplying $8$ extra monitors by $MC = \\$40$ equals the total *cost* of expansion ($\\$320$), not the net welfare gain above cost."
+        },
+        {
+          "id": "opt_d",
+          "text": "$\\$160$",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Wrong Triangle Height): Using $MC = \\$40$ instead of the net marginal benefit gap $MSB(20) - MC = \\$16$ yields $\\frac{1}{2} \\times 8 \\times \\$40 = \\$160$."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T4_01",
+      "chapter": 10,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Urban Congestion Pricing Policy",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "Evaluating Peak-Hour Dynamic Bridge Tolls",
+      "prompt_template": "A metropolitan transit agency proposes replacing a flat all-day bridge toll with dynamic congestion pricing that charges higher tolls during weekday rush hours and very low tolls at midnight. How does economic theory evaluate this design?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about how the Marginal External Cost ($MEC$) of an additional car varies between rush hour and midnight."
+        },
+        {
+          "tier": 2,
+          "text": "Match the Pigouvian principle $t^* = MEC(Q^*)$ to time-varying traffic congestion."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "It is inefficient because a flat toll keeps marginal private cost identical at all hours of the day.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Constant-Externality Assumption): Congestion $MEC$ is near zero on an empty midnight bridge and very high during rush hour, so a flat toll misprices both periods."
+        },
+        {
+          "id": "opt_b",
+          "text": "It is inefficient because any toll on a public bridge creates deadweight loss by discouraging travel.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Distortion-Free Market Fallacy): During rush hour, an unpriced bridge suffers from over-congestion ($MSC > MB$); a corrective toll *reduces* deadweight loss."
+        },
+        {
+          "id": "opt_c",
+          "text": "It moves closer to Pigouvian efficiency because each driver's marginal external delay ($MEC$) is large during peak hours and near zero off-peak.",
+          "is_correct": true,
+          "feedback": "Correct. Dynamic tolls align the price of road space with time-varying $MEC$, inducing drivers with flexible schedules to shift off-peak while preserving capacity for high-value rush-hour trips."
+        },
+        {
+          "id": "opt_d",
+          "text": "It is unnecessary because commuters already pay for their own gasoline and travel time.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Private vs. Social Cost Omission): Drivers internalize their *own* fuel and time ($MPC$), but ignore the cumulative delay and idling emissions they impose on thousands of trailing drivers ($MEC$)."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T4_02",
+      "chapter": 10,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Empirical Carbon Emissions Data vs. Social Cost of Carbon",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "Interpreting FRED Carbon Emissions Series in Policy Design",
+      "prompt_template": "An economist retrieves the St. Louis Fed FRED series `EMISSCO2TOTVTTTOUSA` (annual U.S. energy-related carbon dioxide emissions compiled by the U.S. EIA, measured in million metric tons of $\\text{CO}_2$). Why is this series alone insufficient to calculate the optimal Pigouvian carbon tax rate $t^*$?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Check the units of `EMISSCO2TOTVTTTOUSA` versus the units required for $t^* = MEC(Q^*)$."
+        },
+        {
+          "tier": 2,
+          "text": "Distinguish physical emissions quantities from the dollar marginal external damage per ton."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because carbon dioxide emissions are a positive externality that requires a subsidy rather than a tax.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Externality Sign Error): Greenhouse gas emissions impose unpriced climate damages ($MEC > 0$), making them a negative externality."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because `EMISSCO2TOTVTTTOUSA` measures physical emissions volume (million metric tons), whereas setting $t^* = MEC(Q^*)$ also requires estimating the dollar marginal external damage per ton (the social cost of carbon).",
+          "is_correct": true,
+          "feedback": "Correct. Physical emissions data track quantity ($Q$), not marginal monetary harm per ton ($MEC$); calculating $t^*$ requires pairing physical data with estimates of the social cost of carbon."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because physical $\\text{CO}_2$ emissions data can only be used for Coase bargaining, never for Pigouvian taxation.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Instrument Mismatch): Global climate emissions involve billions of dispersed parties with prohibitive transaction costs, making Coase bargaining infeasible and Pigouvian pricing/cap-and-trade the primary tools."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because Pigouvian taxes depend solely on firms' private marginal costs ($MPC$) and ignore external damages.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Wrong Tax Formula): By definition, a Pigouvian tax equals Marginal External Cost at the optimum ($t^* = MEC(Q^*)$), not $MPC$."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T4_03",
+      "chapter": 10,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Welfare Effects of Corrective vs. Distortionary Taxes",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "Pigouvian Taxes vs. Taxes in Distortion-Free Markets",
+      "prompt_template": "A student argues: 'In Chapter 4 we proved that every per-unit excise tax creates deadweight loss, so taxing industrial sulfur emissions must reduce total social welfare.' What is the flaw in this argument?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare the pre-tax market outcome in a distortion-free market ($MB = MC = MSC$) with a negative-externality market ($MB = MPC < MSC$)."
+        },
+        {
+          "tier": 2,
+          "text": "Ask what happens to units eliminated by the tax when $MSC > MB$."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Chapter 4 assumed no externalities ($MPC = MSC$); when $MSC > MPC$, a Pigouvian tax up to $MEC(Q^*)$ eliminates overproduced units where $MSC > MB$, thereby *increasing* net social welfare.",
+          "is_correct": true,
+          "feedback": "Correct. Taxing an undistorted market destroys trades with $MB > MC$, creating DWL; taxing a negative externality stops trades with $MSC > MB$, *eliminating* DWL while raising revenue."
+        },
+        {
+          "id": "opt_b",
+          "text": "Excise taxes never create deadweight loss in competitive markets when the government spends the tax revenue.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Revenue-Eliminates-DWL Fallacy): In an undistorted market, tax revenue is a transfer and does not recover the surplus lost on foregone mutually beneficial trades."
+        },
+        {
+          "id": "opt_c",
+          "text": "Sulfur taxes avoid deadweight loss only because producers cannot pass any part of a Pigouvian tax onto buyers.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Incidence Confusion): Buyers and sellers typically share a Pigouvian tax ($P^*$ rises and $P_s$ falls); the welfare gain comes from curbing units where $MSC > MB$, not from tax incidence."
+        },
+        {
+          "id": "opt_d",
+          "text": "The student is right: Pigouvian taxes always reduce total social welfare, but governments use them solely to raise budget revenue.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Corrective Benefit Omission): A properly set Pigouvian tax unambiguously *increases* total social surplus by removing the negative-externality DWL triangle."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T4_04",
+      "chapter": 10,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Cap-and-Trade vs. Command-and-Control Policy",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "Evaluating California's Cap-and-Trade Cost Advantage",
+      "prompt_template": "Why does a cap-and-trade system like California's greenhouse gas program achieve a statewide emissions target at lower total cost than a command-and-control mandate requiring every power plant and refinery to cut emissions by the same percentage?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Consider how marginal abatement costs ($MAC$) vary across older refineries, newer gas plants, and industrial facilities."
+        },
+        {
+          "tier": 2,
+          "text": "Trace who abates more and who buys allowances when permits can be traded."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because cap-and-trade lets firms ignore the statewide emissions cap whenever abatement is expensive.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Cap Misunderstanding): Total permits issued are strictly capped at the statewide target; trading redistributes *who* abates without relaxing total emissions."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because command-and-control mandates always force total emissions to zero, whereas cap-and-trade allows positive emissions.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Target Confusion): Both policies can be set to the exact same total emissions reduction (e.g., $30$ tons); the cost difference arises from *how* abatement is allocated across firms."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because trading permits eliminates all marginal abatement costs for high-cost facilities without requiring anyone else to abate.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Free-Lunch Fallacy): High-cost firms pay for permits, and the sellers of those permits must perform extra abatement so total emissions still fall by the full cap."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because permit trading channels greater abatement to facilities with lower marginal abatement costs ($MAC$) and allows high-$MAC$ facilities to buy permits instead, equalizing $MAC$ across the economy.",
+          "is_correct": true,
+          "feedback": "Correct. Allowing permits to trade exploits differences in $MAC$ across heterogeneous plants, meeting the exact same emissions cap at minimum total resource cost."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T4_05",
+      "chapter": 10,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Coase Theorem: Efficiency vs. Distribution",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "Property Rights Assignment: Efficiency vs. Income Distribution",
+      "prompt_template": "A small paper mill discharges effluent into a private pond owned by a single commercial trout farm, and both owners can negotiate with virtually zero transaction costs. If a court shifts the legal property right from the mill (right to discharge) to the trout farm (right to clean water), what does the Coase Theorem predict?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Separate two distinct outcomes: (1) the physical level of pollution $Q^*$, and (2) which party pays the other."
+        },
+        {
+          "tier": 2,
+          "text": "Under low transaction costs, does changing who holds the legal right alter $Q^*$ or only wealth distribution?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Pollution drops to zero immediately, and total social surplus falls because the mill must shut down.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (No-Bargaining Assumption): Even if the trout farm holds the right to clean water, the mill can pay the farm for permission to emit up to $Q^*$ whenever the mill's profit gain exceeds the farm's marginal damage."
+        },
+        {
+          "id": "opt_b",
+          "text": "The socially efficient pollution level $Q^*$ remains unchanged, but income distribution shifts in favor of the trout farm (which now receives compensation instead of paying the mill).",
+          "is_correct": true,
+          "feedback": "Correct. Under clearly defined rights and low transaction costs, Coase bargaining reaches the same efficient $Q^*$ regardless of initial assignment, while ownership determines who pays whom."
+        },
+        {
+          "id": "opt_c",
+          "text": "Both the efficient pollution level $Q^*$ and the income distribution between the two owners remain completely identical.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Distribution-Invariance Fallacy): Initial property rights strongly affect *income distribution* (who compensates whom), even though the efficient output $Q^*$ is invariant."
+        },
+        {
+          "id": "opt_d",
+          "text": "Private bargaining breaks down because courts cannot enforce private agreements once property rights change.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Misreading Legal Clarity): A clear court ruling *establishes* the well-defined property right needed for Coase bargaining to proceed smoothly."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T4_06",
+      "chapter": 10,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Limits of the Coase Theorem",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "Why Coase Bargaining Fails for Regional Smog and Climate Emissions",
+      "prompt_template": "Why can private Coase bargaining readily resolve a noise dispute between two neighboring businesses, yet fail to solve metropolitan smog or global greenhouse gas emissions?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Check the two foundational prerequisites of the Coase Theorem against a problem involving millions of emitters and residents."
+        },
+        {
+          "tier": 2,
+          "text": "Consider negotiation costs, identifying every affected party, and holdout or free-rider incentives."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because regional smog and carbon emissions have zero marginal external cost ($MEC = 0$).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-Damage Error): Both urban smog and climate emissions impose substantial, well-documented external costs."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because the Coase Theorem applies only to positive externalities, never to negative externalities.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Scope Misconception): The Coase Theorem applies to both negative and positive externalities whenever property rights are clear and transaction costs are low."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because coordinating millions of dispersed emitters and residents creates prohibitive transaction costs, undefined ambient air rights, and severe holdout/free-rider barriers.",
+          "is_correct": true,
+          "feedback": "Correct. When huge numbers of dispersed people are affected, organizing, negotiating, and enforcing private bargains becomes prohibitively costly, motivating public corrective tools like Pigouvian taxes or cap-and-trade."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because private businesses are legally prohibited from paying compensation to local residents.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Legal-Ban Fallacy): The barrier is economic (transaction costs and collective-action problems), not a blanket legal ban on private settlements."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T4_07",
+      "chapter": 10,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Heterogeneity in Marginal Abatement Costs",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "When Does Cap-and-Trade Deliver the Largest Efficiency Advantage?",
+      "prompt_template": "Compare two industries facing an identical mandatory emissions cut: Industry X consists of firms with nearly identical marginal abatement cost ($MAC$) curves, while Industry Y consists of firms with wildly different $MAC$ curves. Where does switching from a uniform mandate to cap-and-trade yield the larger total cost savings?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Ask how much permit trading occurs when every firm already has the exact same $MAC$ at the uniform cut."
+        },
+        {
+          "tier": 2,
+          "text": "Connect gains from permit trade to the spread between firms' marginal abatement costs."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Industry Y, because wider differences in $MAC$ across firms create larger gains from shifting abatement toward low-cost firms via permit trading.",
+          "is_correct": true,
+          "feedback": "Correct. When $MAC$ curves are identical (Industry X), a uniform cut already satisfies $MAC_1 = MAC_2$ and leaves no gains from trade; greater heterogeneity (Industry Y) unlocks larger cost savings."
+        },
+        {
+          "id": "opt_b",
+          "text": "Industry X, because identical firms find it easiest to agree on a single market permit price.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Homogeneity Misconception): If all firms have identical $MAC$ curves, a uniform mandate already achieves the equimarginal optimum, so permit trading generates zero cost savings."
+        },
+        {
+          "id": "opt_c",
+          "text": "Both industries experience identical percentage cost savings regardless of $MAC$ differences.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-Sensitivity Fallacy): Cost savings under cap-and-trade stem directly from reallocating abatement from high-$MAC$ to low-$MAC$ firms."
+        },
+        {
+          "id": "opt_d",
+          "text": "Neither industry saves costs under cap-and-trade because paying for permits raises total compliance expenditure.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Transfer vs. Resource Cost Confusion): Permit payments between firms are transfers; society's true resource cost is the sum of physical abatement costs, which falls strictly in Industry Y."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T4_08",
+      "chapter": 10,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Positive Externality Policy: Basic Research & Vaccines",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "Public Funding for Basic Scientific Research",
+      "prompt_template": "Private biotech firms invest heavily in patentable late-stage drugs, yet routinely underinvest in foundational basic scientific research whose open discoveries benefit competitors and society broadly. Which economic principle explains this gap and its standard policy remedy?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Evaluate whether basic scientific discoveries generate unpriced spillovers ($MEB > 0$) and non-excludable benefits."
+        },
+        {
+          "tier": 2,
+          "text": "Match underinvestment driven by $MSB > MPB$ to the appropriate corrective instrument."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Basic research creates a negative externality ($MSC > MPC$), so governments should levy a Pigouvian tax on university laboratories.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Externality Sign Reversal): Open scientific discoveries generate positive spillover benefits ($MEB > 0$), so taxing them would worsen underprovision."
+        },
+        {
+          "id": "opt_b",
+          "text": "Basic research generates large positive externalities ($MSB > MPB$) and public-good spillovers that private firms cannot fully capture, justifying public research grants or Pigouvian R&D subsidies.",
+          "is_correct": true,
+          "feedback": "Correct. Because private firms weigh only their capturable private return ($MPB$) and ignore industry-wide spillovers ($MEB$), public grants and subsidies move investment closer to $Q^*$."
+        },
+        {
+          "id": "opt_c",
+          "text": "Basic research is a rival common resource, so governments should cap the number of scientific papers published each year.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Common Resource Misclassification): Scientific knowledge is *non-rival* (one researcher using a theorem does not deplete it for others), so capping output would destroy social value."
+        },
+        {
+          "id": "opt_d",
+          "text": "Private firms underinvest solely because basic research has zero marginal private benefit ($MPB = 0$) and zero marginal social benefit ($MSB = 0$).",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-Benefit Fallacy): Basic research often yields massive $MSB$; the market failure arises because the discovering firm captures only a fraction of $MSB$ as private profit."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T4_09",
+      "chapter": 10,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Catch Shares (ITQs) in Open-Ocean Fisheries",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "How Individual Transferable Quotas Solve Overfishing",
+      "prompt_template": "How do Individual Transferable Quotas (ITQs)—also called catch shares—address the Tragedy of the Commons in Pacific salmon and other coastal fisheries?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall why open-access fleets race to harvest fish today even at the expense of future breeding stocks."
+        },
+        {
+          "tier": 2,
+          "text": "Ask how capping total catch and granting enforceable, tradable shares transforms a fisher's private incentive."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "They make ocean fish non-rival in consumption so every fleet can harvest unlimited quantities simultaneously.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Physical-Trait Fallacy): No policy can make a harvested fish non-rival; ITQs work by restricting open access (creating enforceable property rights), not by changing fish biology."
+        },
+        {
+          "id": "opt_b",
+          "text": "They subsidize larger fishing trawlers so vessels can catch fish faster before the season closes.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Race-to-Fish Aggravation): Subsidizing vessel capacity intensifies the race to fish and accelerates stock collapse."
+        },
+        {
+          "id": "opt_c",
+          "text": "They ban all commercial fishing permanently so the socially optimal harvest equals zero.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-Harvest Fallacy): Catch shares maintain a positive, biologically sustainable seasonal harvest rather than banning fishing altogether."
+        },
+        {
+          "id": "opt_d",
+          "text": "They cap total sustainable seasonal catch and grant enforceable, tradable shares, eliminating the race to fish and giving quota holders a direct financial stake in protecting future spawning stocks.",
+          "is_correct": true,
+          "feedback": "Correct. By converting open-access fishing into enforceable, tradable shares of a sustainable cap, ITQs align fishers' long-term asset values with healthy breeding populations."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T4_10",
+      "chapter": 10,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Elinor Ostrom & Polycentric Commons Governance",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "Ostrom's Institutional Solutions to the Tragedy of the Commons",
+      "prompt_template": "Before Nobel laureate Elinor Ostrom's empirical research, many analysts assumed common resources could be saved only through centralized government control or full private ownership. What key finding did Ostrom document across real-world local fisheries, irrigation networks, and pastures?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall the third institutional pathway highlighted in Section 10.3's Bring It Home case study."
+        },
+        {
+          "tier": 2,
+          "text": "Look for the three community-level governance features Ostrom identified."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Local communities automatically preserve common resources without any rules, monitoring, or enforcement.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Rule-Free Optimism): Ostrom explicitly showed that successful self-governance relies on structured institutions—boundaries, monitoring, and sanctions—not uncoordinated goodwill."
+        },
+        {
+          "id": "opt_b",
+          "text": "Common resources never suffer from overexploitation unless multinational corporations enter the market.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Scale-Only Misconception): Unregulated open-access incentives can deplete local commons among small users just as easily as large ones when governance rules are absent."
+        },
+        {
+          "id": "opt_c",
+          "text": "Local communities frequently avoid the Tragedy of the Commons without centralized privatization by establishing clear community boundaries, mutual monitoring, and graduated sanctions for rule-breakers.",
+          "is_correct": true,
+          "feedback": "Correct. Ostrom demonstrated that self-governing user communities can sustain common-pool resources effectively through clear membership boundaries, local monitoring, and escalating penalties."
+        },
+        {
+          "id": "opt_d",
+          "text": "The only sustainable solution is levying a uniform federal Pigouvian tax identical across every local watershed.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Top-Down Exclusivity): Ostrom's core contribution was showing that locally tailored community governance can succeed where uniform top-down mandates fail."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T4_11",
+      "chapter": 10,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Technology, Excludability, and Club Goods",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "Policy Trade-Off When Technology Adds Excludability",
+      "prompt_template": "Suppose a city installs automated electronic license-plate readers on an uncongested express bridge, converting it from a free road into a tolled club good. What new economic trade-off arises once a non-rival good becomes excludable?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Check the two traits of a club good: excludable (can charge a price) and non-rival (marginal cost of an extra user is near zero)."
+        },
+        {
+          "tier": 2,
+          "text": "What happens to social efficiency if the operator sets a high toll ($P > MC \\approx 0$) on an *uncongested* bridge?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Exclusion helps finance high fixed construction costs, but charging a positive price above near-zero uncongested marginal cost excludes some users whose marginal benefit exceeds social cost, creating natural-monopoly pricing challenges.",
+          "is_correct": true,
+          "feedback": "Correct. Adding excludability solves free-riding and funds fixed costs, yet any toll above $MC \\approx 0$ on an uncongested bridge turns away drivers with $MB > 0$, illustrating the classic club-good/natural-monopoly trade-off."
+        },
+        {
+          "id": "opt_b",
+          "text": "Exclusion immediately makes the bridge rival in consumption, causing the Tragedy of the Commons.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Excludability vs. Rivalry Mix-Up): Electronic tolling changes *excludability*, not physical rivalry; an uncongested bridge remains non-rival."
+        },
+        {
+          "id": "opt_c",
+          "text": "Exclusion guarantees perfectly competitive efficiency with zero deadweight loss at any toll the operator chooses.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Unconditional Efficiency Error): Because uncongested $MC \\approx 0$, a monopoly toll set strictly above zero creates underutilization deadweight loss."
+        },
+        {
+          "id": "opt_d",
+          "text": "Exclusion worsens the free-rider problem by allowing more non-payers to cross the bridge.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Effect Reversal): Automated tolling *reduces* free riding by enforcing payment from users."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH10_T4_12",
+      "chapter": 10,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Integrated Market-Failure Policy Portfolio",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "Matching Distinct Market Failures to Targeted Public Policies",
+      "prompt_template": "A coastal city faces three simultaneous challenges: (1) funding a non-excludable tsunami siren network, (2) curbing rush-hour traffic jams on its free bay bridge, and (3) boosting low community flu-vaccination rates. Which policy portfolio correctly matches each market failure to its textbook economic remedy?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Classify each challenge first: pure public good, common resource/negative externality, and positive externality."
+        },
+        {
+          "tier": 2,
+          "text": "Pair pure public good -> collective tax funding; congestion -> peak-hour Pigouvian toll; positive externality -> Pigouvian subsidy."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "(1) Rely on voluntary user fees for sirens, (2) subsidize rush-hour bridge drivers, and (3) tax flu vaccines.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inverted Incentives): Voluntary fees fail for public goods (free riders), subsidies worsen rush-hour congestion, and taxing vaccines worsens underconsumption."
+        },
+        {
+          "id": "opt_b",
+          "text": "(1) Issue tradable siren permits, (2) fund free rush-hour bridge crossings via general taxes, and (3) impose a price ceiling on vaccines.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Mismatched Instruments): Permits cap negative externalities rather than funding public goods, free rush-hour crossings worsen congestion, and price ceilings can create shortages."
+        },
+        {
+          "id": "opt_c",
+          "text": "(1) Use Coase bargaining among all coastal residents, (2) cap total annual bridge crossings at zero, and (3) privatize herd immunity.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Infeasible Extremes): Coase bargaining fails across thousands of residents due to transaction costs, zero bridge crossings ignores $MB > MSC$, and herd immunity is non-excludable."
+        },
+        {
+          "id": "opt_d",
+          "text": "(1) Finance tsunami sirens collectively through taxation, (2) apply peak-hour congestion tolls on the bridge, and (3) offer a Pigouvian subsidy for flu vaccinations.",
+          "is_correct": true,
+          "feedback": "Correct. Collective tax funding overcomes public-good free riding (1), peak-hour Pigouvian tolls internalize congestion $MEC$ (2), and Pigouvian subsidies internalize vaccination $MEB$ (3)."
+        }
+      ]
+    }
+  ]
+}

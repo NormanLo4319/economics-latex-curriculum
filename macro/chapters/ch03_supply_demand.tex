@@ -50,7 +50,7 @@ When avian flu outbreaks swept U.S. poultry farms, retail egg prices surged with
 % =============================================================================
 \section{Demand and Consumer Valuation}
 
-\subsection*{1. Conceptual Introduction}
+\subsection*{Conceptual Introduction}
 A \textbf{competitive market} brings together many buyers and sellers of a standardized good or service so that no single buyer or seller can dictate the market price. On the buyer side, \textbf{quantity demanded ($Q_d$)} is the total amount of a good that consumers are willing and able to purchase at a specific price during a given period, holding all other factors constant (\emph{ceteris paribus}). The \textbf{Law of Demand} states that, \emph{ceteris paribus}, there is an inverse relationship between a good's own price and its quantity demanded: when the price rises, quantity demanded falls; when the price falls, quantity demanded rises.
 
 Two behavioral mechanisms explain why demand curves slope downward. First, the \textbf{substitution effect} occurs because a higher own price makes the good more expensive relative to alternative goods, prompting buyers to switch toward cheaper substitutes. Second, the \textbf{income effect} occurs because a higher price erodes the purchasing power of a household's fixed nominal income, reducing the quantity of goods it can afford to buy. Together, these forces ensure that lower prices attract new buyers and induce existing buyers to purchase more units.
@@ -64,7 +64,12 @@ Crucially, economists separate two visually distinct changes on a demand diagram
   \item \textbf{Market Size (Number of Buyers):} Population growth or demographic expansion scales up total market quantity demanded at each price.
 \end{itemize}
 
-\subsection*{2. Visual Representation}
+\begin{coreprinciple}
+\boxheader{CourseOrange}{Clear It Up: Never Say ``Higher Price Decreases Demand''}
+A common exam error is stating that a rise in a good's own price ``shifts demand left.'' A change in own price \emph{never} shifts the demand curve; it causes a movement along a fixed demand curve (a decrease in \textbf{quantity demanded}). Only a change in a non-price determinant (income, related-good prices, tastes, expectations, or number of buyers) shifts the entire demand curve.
+\end{coreprinciple}
+
+\subsection*{Visual Representation}
 Figure~\ref{fig:demand_shift_vs_movement} contrasts a movement along the initial demand curve $D_1$ (from point $A$ to point $B$ when own price falls from $\$20$ to $\$15$) against a rightward shift of the entire demand curve from $D_1$ to $D_2$ (from point $A$ to point $C$ when higher household income raises quantity demanded at the unchanged price of $\$20$).
 
 \begin{figure}[htbp]
@@ -90,13 +95,14 @@ Figure~\ref{fig:demand_shift_vs_movement} contrasts a movement along the initial
   % Point A (Q=200 -> x=2.0, P=$20 -> y=4.0)
   \draw[dotted, thick, color=SlateBlue] (0,4.0) node[left, font=\footnotesize] {$\$20$} -- (3.0,4.0);
   \draw[dotted, thick, color=SlateBlue] (2.0,4.0) -- (2.0,0) node[below, font=\footnotesize] {$200$};
-  \filldraw[CourseBlue] (2.0,4.0) circle (2.5pt) node[above right, font=\footnotesize\bfseries, color=CourseBlue, fill=white, inner sep=1pt] {$A(200, \$20)$};
+  \filldraw[CourseBlue] (2.0,4.0) circle (2.5pt) node[below left, font=\footnotesize\bfseries, color=CourseBlue, fill=white, inner sep=1pt] {$A(200, \$20)$};
 
   % Point B (Q=300 -> x=3.0, P=$15 -> y=3.0) - Movement along D1
   \draw[dotted, thick, color=SlateBlue] (0,3.0) node[left, font=\footnotesize] {$\$15$} -- (3.0,3.0) -- (3.0,0) node[below, font=\footnotesize] {$300$};
   \filldraw[CourseOrange] (3.0,3.0) circle (2.5pt) node[below left, font=\footnotesize\bfseries, color=CourseOrange, fill=white, inner sep=1pt] {$B(300, \$15)$};
 
   % Point C (Q=300 -> x=3.0, P=$20 -> y=4.0) - Shift to D2
+  \draw[dotted, thick, color=SlateBlue] (3.0,4.0) -- (3.0,3.0);
   \filldraw[CourseTeal] (3.0,4.0) circle (2.5pt) node[above right, font=\footnotesize\bfseries, color=CourseTeal, fill=white, inner sep=1pt] {$C(300, \$20)$};
 
   % Arrows illustrating movement vs shift
@@ -107,12 +113,12 @@ Figure~\ref{fig:demand_shift_vs_movement} contrasts a movement along the initial
 \label{fig:demand_shift_vs_movement}
 \end{figure}
 
-\subsection*{3. Real-World Application}
+\subsection*{Real-World Application}
 \begin{examplecase}{Streaming Subscriptions, Price Hikes, and Bundle Substitutes}
 When a major video-streaming platform raises its ad-free monthly subscription price from $\$15$ to $\$20$, existing subscribers cut back or downgrade tiers—a classic upward movement along the platform's demand curve. However, when rival platforms simultaneously launch lower-priced ad-supported bundles or live sports packages, the primary platform experiences a leftward \emph{shift} of its demand curve: even if it holds its price steady at $\$20$, fewer households subscribe because the price of close substitutes has fallen.
 \end{examplecase}
 
-\subsection*{4. Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 Under a linear demand specification, direct demand expresses quantity demanded as a function of price ($Q_d = a - bP$, where $a > 0$ is the horizontal intercept and $-b < 0$ is the responsiveness of quantity to price). Because economists plot price on the vertical axis and quantity on the horizontal axis, solving for $P$ yields the \textbf{inverse demand equation}:
 \begin{equation}
 Q_d = a - bP \iff P = \frac{a}{b} - \frac{1}{b}Q_d
@@ -124,7 +130,7 @@ Suppose a local specialty coffee market consists of two identical consumer group
 \begin{enumerate}
   \item \textbf{Step 1 — Aggregate Market Demand ($Q_d$):} Sum quantities across both groups at each price $P$:
   $$Q_d = q_{d,1} + q_{d,2} = (300 - 10P) + (300 - 10P) = 600 - 20P.$$
-  \item \textbf{Step 2 — Inverse Demand & Choke Price:} Rearrange $Q_d = 600 - 20P$ to isolate $P$:
+  \item \textbf{Step 2 — Inverse Demand \& Choke Price:} Rearrange $Q_d = 600 - 20P$ to isolate $P$:
   $$20P = 600 - Q_d \implies P = \frac{600}{20} - \frac{1}{20}Q_d = 30 - 0.05Q_d.$$
   Setting $Q_d = 0$ gives a choke price of $P = \$30$ per bag.
   \item \textbf{Step 3 — Movement Along $D_1$ vs. Shift to $D_2$:} At $P = \$20$, initial quantity demanded is $Q_d = 600 - 20(20) = 200$ bags (Point $A$). If price falls to $P = \$15$, quantity demanded moves along $D_1$ to $Q_d = 600 - 20(15) = 300$ bags (Point $B$). If higher consumer income increases demand by $100$ bags at every price, the new demand curve is $Q_d' = 700 - 20P \iff P = 35 - 0.05Q_d'$, raising quantity demanded at $P = \$20$ to $Q_d' = 700 - 20(20) = 300$ bags (Point $C$).
@@ -142,7 +148,7 @@ A change in $P$ traces $\Delta Q_d \approx \frac{\partial Q_d}{\partial P}\Delta
 % =============================================================================
 \section{Supply and Marginal Opportunity Cost}
 
-\subsection*{1. Conceptual Introduction}
+\subsection*{Conceptual Introduction}
 On the seller side of a competitive market, \textbf{quantity supplied ($Q_s$)} is the total amount of a good that producers are willing and able to sell at a given price during a specified period, \emph{ceteris paribus}. The \textbf{Law of Supply} establishes a positive relationship between a good's own price and quantity supplied: when the market price rises, quantity supplied rises; when the market price falls, quantity supplied falls.
 
 This upward slope reflects rising \textbf{marginal opportunity cost}. In the short run, firms operate with fixed plant capacity, equipment, or land. As producers expand output by hiring additional workers or running machines longer hours, diminishing marginal productivity sets in—each additional unit of output requires more variable inputs than the unit before it. Consequently, firms will only expand production if a higher market price compensates them for the higher incremental cost of producing those marginal units.
@@ -156,7 +162,7 @@ Just as on the demand side, a change in the good's \emph{own price} induces a \t
   \item \textbf{Number of Active Producers:} Entry of new firms expands total market supply rightward; firm exits shift market supply leftward.
 \end{itemize}
 
-\subsection*{2. Visual Representation}
+\subsection*{Visual Representation}
 Figure~\ref{fig:supply_shift_vs_movement} illustrates a movement along the initial supply curve $S_1$ (from point $A$ to point $B$ when own price increases from $\$14$ to $\$19$) versus a rightward shift of the entire supply curve from $S_1$ to $S_2$ (from point $A$ to point $C$ when lower input prices expand output at the unchanged price of $\$14$).
 
 \begin{figure}[htbp]
@@ -198,12 +204,12 @@ Figure~\ref{fig:supply_shift_vs_movement} illustrates a movement along the initi
 \label{fig:supply_shift_vs_movement}
 \end{figure}
 
-\subsection*{3. Real-World Application}
+\subsection*{Real-World Application}
 \begin{examplecase}{Utility-Scale Solar Panels and Polysilicon Input Costs}
 Over the past decade, improved wafer-slicing technology and declining refined polysilicon prices dramatically reduced the marginal cost of manufacturing photovoltaic solar modules. Rather than merely moving along an old supply curve, global solar manufacturers shifted their entire supply curve outward—delivering substantially larger megawatt capacity at every market price per watt. Conversely, when freight bottlenecks or critical-mineral tariffs raise component costs, the supply curve shifts leftward, requiring higher prices to sustain the same shipment volume.
 \end{examplecase}
 
-\subsection*{4. Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 Linear direct supply expresses quantity supplied as a function of price ($Q_s = c + dP$, where $d > 0$). Inverting the equation expresses the minimum supply price (marginal opportunity cost) as a function of quantity:
 \begin{equation}
 Q_s = c + dP \iff P = -\frac{c}{d} + \frac{1}{d}Q_s
@@ -213,7 +219,7 @@ where $-\frac{c}{d}$ is the vertical intercept (shutdown reservation price) and 
 \paragraph{Worked Problem 3.2 (Inverse Supply, Movement Along, and Supply Shifts).}
 Suppose regional specialty coffee roasters have direct supply $Q_s = -80 + 20P$ (in bags per week).
 \begin{enumerate}
-  \item \textbf{Step 1 — Inverse Supply & Reservation Price:} Solve $Q_s = -80 + 20P$ for $P$:
+  \item \textbf{Step 1 — Inverse Supply \& Reservation Price:} Solve $Q_s = -80 + 20P$ for $P$:
   $$20P = 80 + Q_s \implies P = \frac{80}{20} + \frac{1}{20}Q_s = 4 + 0.05Q_s.$$
   Setting $Q_s = 0$ shows roasters require at least $P = \$4$ per bag before supplying positive output.
   \item \textbf{Step 2 — Movement Along $S_1$:} At $P = \$14$, quantity supplied is $Q_s = -80 + 20(14) = 200$ bags (Point $A$). If price rises to $P = \$19$, quantity supplied moves along $S_1$ to $Q_s = -80 + 20(19) = 300$ bags (Point $B$).
@@ -231,14 +237,14 @@ $$\frac{dP}{dQ_s} = \frac{1}{dQ_s / dP} = \frac{1}{d} > 0.$$
 % =============================================================================
 \section{Market Equilibrium and Simultaneous Dual Shocks}
 
-\subsection*{1. Conceptual Introduction}
+\subsection*{Conceptual Introduction}
 A competitive market reaches \textbf{market equilibrium} at the unique price $P^*$ where the quantity consumers want to buy exactly equals the quantity producers want to sell: $Q_d(P^*) = Q_s(P^*) = Q^*$. At the coordinate pair $(Q^*, P^*)$, the plans of buyers and sellers are mutually compatible, leaving neither unfulfilled orders nor unwanted inventory accumulation.
 
 When the prevailing market price deviates from $P^*$, automatic price-discovery forces push the market back toward equilibrium. If the price sits \emph{above} $P^*$, quantity supplied exceeds quantity demanded, creating a \textbf{surplus} (excess supply). Unsold inventory piles up in warehouses, motivating sellers to cut prices to attract buyers; as price falls, quantity demanded expands and quantity supplied contracts until the surplus vanishes at $P^*$. Conversely, if the price sits \emph{below} $P^*$, quantity demanded exceeds quantity supplied, creating a \textbf{shortage} (excess demand). Frustrated buyers bid higher prices and sellers raise quotes; as price rises, quantity demanded contracts and quantity supplied expands until the shortage clears at $P^*$.
 
 When an external event shifts \emph{one} curve while the other stays fixed, both $P^*$ and $Q^*$ move in unambiguous directions. However, when two independent shocks shift demand and supply \textbf{simultaneously}, one equilibrium outcome moves unambiguously while the other becomes \textbf{indeterminate (ambiguous)} unless we know the exact relative magnitudes of the two shifts.
 
-\subsection*{2. Visual Representation}
+\subsection*{Visual Representation}
 Figure~\ref{fig:market_equilibrium_and_shocks} displays initial market equilibrium $E_1(200, \$20)$ at the intersection of $D_1$ and $S_1$, alongside a simultaneous rightward demand shift ($D_1 \to D_2$) and leftward supply shift ($S_1 \to S_2$) that drives the equilibrium price unambiguously higher to $P^{**} = \$24$ at $E_2(230, \$24)$.
 
 \begin{figure}[htbp]
@@ -266,11 +272,11 @@ Figure~\ref{fig:market_equilibrium_and_shocks} displays initial market equilibri
   \node[above left, font=\small\bfseries, color=Terracotta, fill=white, inner sep=1pt] at (3.1,6.05) {$S_2$};
 
   % Equilibrium E1 (Q*=200 -> x=2.0, P*=$20 -> y=4.0)
-  \draw[dotted, thick, color=SlateBlue] (0,4.0) node[left, font=\footnotesize] {$\$20$} -- (2.0,4.0) -- (2.0,0) node[below, font=\footnotesize] {$200$};
+  \draw[dotted, thick, color=SlateBlue] (0,4.0) node[left, font=\footnotesize] {$\$20$} -- (2.0,4.0) -- (2.0,0) node[below, xshift=-3pt, font=\footnotesize] {$200$};
   \filldraw[SlateBlue] (2.0,4.0) circle (2.6pt) node[below right, font=\footnotesize\bfseries, color=SlateBlue, fill=white, inner sep=1pt] {$E_1(200, \$20)$};
 
   % Equilibrium E2 (Q**=230 -> x=2.3, P**=$24 -> y=4.8)
-  \draw[dotted, thick, color=SlateBlue] (0,4.8) node[left, font=\footnotesize] {$\$24$} -- (2.3,4.8) -- (2.3,0) node[below, font=\footnotesize] {$230$};
+  \draw[dotted, thick, color=SlateBlue] (0,4.8) node[left, font=\footnotesize] {$\$24$} -- (2.3,4.8) -- (2.3,0) node[below, xshift=4pt, font=\footnotesize] {$230$};
   \filldraw[CourseTeal] (2.3,4.8) circle (2.6pt) node[above right, font=\footnotesize\bfseries, color=CourseTeal, fill=white, inner sep=1pt] {$E_2(230, \$24)$};
 \end{tikzpicture}
 \caption{Market Equilibrium and Simultaneous Dual Shifts. Initial equilibrium occurs at $E_1(200, \$20)$. When demand shifts right ($D_1 \to D_2$) while supply shifts left ($S_1 \to S_2$), equilibrium price rises unambiguously to $P^{**} = \$24$, whereas the net change in $Q^{**}$ depends on which curve shifts further.}
@@ -295,12 +301,12 @@ Demand $\downarrow$ and Supply $\uparrow$ & Unambiguously Falls ($\downarrow$) &
 \end{tabular}
 \end{table}
 
-\subsection*{3. Real-World Application}
+\subsection*{Real-World Application}
 \begin{examplecase}{Global Airfare Dynamics: Summer Travel Rebound vs. Jet Fuel Shocks}
 During peak summer travel seasons, surging household vacation bookings shift airline ticket demand sharply rightward ($D \uparrow$). When that travel boom coincides with higher aviation jet-fuel prices or aircraft delivery delays that shift seat capacity leftward ($S \downarrow$), both shocks push ticket prices upward—explaining why average airfares jump decisively even when total passenger volume rises in some hubs and stagnates in others.
 \end{examplecase}
 
-\subsection*{4. Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 To solve a linear market system algebraically, equate direct demand and direct supply ($Q_d = Q_s$), solve for $P^*$, and substitute $P^*$ back into either schedule to verify $Q^*$:
 \begin{equation}
 a - bP^* = c + dP^* \implies (b + d)P^* = a - c \implies P^* = \frac{a - c}{b + d}
@@ -336,7 +342,7 @@ Notice that steeper curves (smaller $b$ and $d$) amplify equilibrium price swing
 % =============================================================================
 \section{Price Controls: Ceilings and Floors}
 
-\subsection*{1. Conceptual Introduction}
+\subsection*{Conceptual Introduction}
 Even when a competitive market clears smoothly at $(Q^*, P^*)$, policymakers sometimes intervene when they judge the equilibrium price to be unfairly high for buyers or unsustainably low for sellers. Legal restrictions on how high or low a market price may go are called \textbf{price controls}, which take two forms:
 \begin{itemize}
   \item A \textbf{price ceiling} is a legal \emph{maximum} price sellers are permitted to charge (such as municipal rent-control caps or emergency anti-price-gouging limits).
@@ -347,7 +353,7 @@ Whether a price control alters market outcomes depends entirely on where it is s
 
 Because prices can no longer ration scarce goods or clear excess supply under binding controls, costly non-price rationing emerges. Binding ceilings generate long waiting lines, landlord or seller discrimination, declining product maintenance and quality, and black-market side payments. Binding floors generate unsold stockpiles (requiring government surplus purchases in agriculture) or involuntary queuing for scarce openings (such as unfilled job applicants when minimum wages exceed market-clearing entry wages).
 
-\subsection*{2. Visual Representation}
+\subsection*{Visual Representation}
 Figure~\ref{fig:price_controls} illustrates a binding price ceiling at $P_c = \$15 < P^*$ (left panel, generating a $150$-unit shortage) and a binding price floor at $P_f = \$24 > P^*$ (right panel, generating a $120$-unit surplus) in the benchmark market ($P^* = \$20, Q^* = 200$).
 
 \begin{figure}[htbp]
@@ -410,12 +416,12 @@ Figure~\ref{fig:price_controls} illustrates a binding price ceiling at $P_c = \$
 \label{fig:price_controls}
 \end{figure}
 
-\subsection*{3. Real-World Application}
+\subsection*{Real-World Application}
 \begin{examplecase}{Municipal Rent Control vs. Agricultural Commodity Floors}
 In high-cost coastal cities such as San Francisco and New York, strict rent-stabilization caps hold controlled apartment rents below market-clearing levels. While incumbent tenants in controlled units pay lower monthly rent, the binding ceiling discourages new apartment construction and incentivizes landlords to convert rentals into owner-occupied condominiums—shrinking available rental supply ($Q_s$) while attracting more applicants ($Q_d$). Conversely, historical U.S. dairy and grain price floors set minimum commodity prices above equilibrium, obligating federal agencies to purchase and store millions of tons of surplus cheese, butter, and grain that consumers declined to buy at the elevated floor price.
 \end{examplecase}
 
-\subsection*{4. Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 For any regulated price $\bar{P}$, actual quantity exchanged is constrained by the short side of the market, $Q_{\text{traded}} = \min\{Q_d(\bar{P}), Q_s(\bar{P})\}$, while the resulting market imbalance is measured by:
 \begin{equation}
 \text{Shortage} = Q_d(P_c) - Q_s(P_c) \quad (P_c < P^*), \qquad \text{Surplus} = Q_s(P_f) - Q_d(P_f) \quad (P_f > P^*).
@@ -443,6 +449,23 @@ Using the coffee market equations $Q_d = 500 - 15P$ and $Q_s = -100 + 15P$ (wher
 Define the excess demand function $ED(P) \equiv Q_d(P) - Q_s(P)$. At equilibrium, $ED(P^*) = 0$. Differentiating with respect to $P$ gives:
 $$\frac{d\,ED(P)}{dP} = \frac{dQ_d}{dP} - \frac{dQ_s}{dP} = -b - d = -(b + d) < 0.$$
 By a first-order Taylor expansion around $P^*$, any binding price cap $P_c = P^* - \Delta P$ generates a shortage of $\Delta Q_{\text{shortage}} = (b + d)\Delta P$, confirming that flatter, more price-elastic curves (larger $b + d$) magnify shortages and surpluses for any given price distortion $\Delta P$.
+\end{coreprinciple}
+
+\begin{coreprinciple}
+\boxheader{CourseTeal}{Work It Out: Dual Shocks and a Binding Price Ceiling in Campus Bike Rentals}
+Suppose a university campus bike-share market initially has daily demand $Q_d = 400 - 10P$ and daily supply $Q_s = -80 + 20P$, where $P$ is the daily rental price in dollars and $Q$ is daily bike rentals.
+\begin{enumerate}
+  \item \textbf{Find initial equilibrium ($P^*, Q^*$):} Set $Q_d = Q_s$:
+  $$400 - 10P^* = -80 + 20P^* \implies 30P^* = 480 \implies P^* = \$16.$$
+  Substituting $P^* = \$16$ into either schedule gives $Q^* = 400 - 10(16) = 240$ rentals/day (check: $-80 + 20(16) = 240$).
+  \item \textbf{Evaluate a simultaneous dual shock:} At the start of fall term, higher student enrollment increases demand by $90$ rentals at every price ($Q_d' = 490 - 10P$) while higher maintenance costs reduce supply by $30$ rentals at every price ($Q_s' = -110 + 20P$). Setting $Q_d' = Q_s'$:
+  $$490 - 10P^{**} = -110 + 20P^{**} \implies 30P^{**} = 600 \implies P^{**} = \$20,$$
+  $$Q^{**} = 490 - 10(20) = 290 \text{ rentals/day} \quad (\text{check: } -110 + 20(20) = 290).$$
+  Consistent with Table~\ref{tab:dual_shocks}, $D \uparrow$ and $S \downarrow$ raise equilibrium price unambiguously from $\$16$ to $\$20$.
+  \item \textbf{Assess a campus price cap ($P_c = \$15$):} Because $P_c = \$15 < P^{**} = \$20$, the ceiling is \textbf{binding}. At $P_c = \$15$:
+  $$Q_d'(15) = 490 - 10(15) = 340, \qquad Q_s'(15) = -110 + 20(15) = 190.$$
+  Actual rentals fall to the short side of the market, $Q_{\text{traded}} = \min(340, 190) = 190$ rentals/day, leaving a persistent \textbf{shortage} of $340 - 190 = 150$ rentals/day.
+\end{enumerate}
 \end{coreprinciple}
 
 % =============================================================================

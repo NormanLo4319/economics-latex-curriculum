@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>5&nbsp; Chapter 5: Inflation and Deflation – Principles of Macroeconomics</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./ch06_unemployment.html" rel="next">
+<link href="./ch04_aggregate_output.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-b0c96519c90a771772bf82a68799d4d3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-61fcf912b4e8d6eab4e5da6abe9960ca.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-b0c96519c90a771772bf82a68799d4d3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455).
+    // Not run on load: stylesheets are set before first paint there, and
+    // scrolling would undo the scroll to a URL fragment (#14973).
+    // The one pixel nudge keeps the reader where they were.
+    const refreshSafariScrollbar = () => {
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        const scrollY = window.scrollY;
+        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
+        setTimeout(() => {
+          window.scrollTo(0, scrollY);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      refreshSafariScrollbar();
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch01_principles.html">Macroeconomic Foundations &amp; Measurement</a></li><li class="breadcrumb-item"><a href="./ch05_inflation_deflation.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Inflation and Deflation</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Principles of Macroeconomics</a> 
+        <div class="sidebar-tools-main">
+  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Macroeconomic Foundations &amp; Measurement</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch01_principles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Chapter 1: First Principles of Economics &amp; Macroeconomic Systems</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch02_macro_ppf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 2: The Macroeconomic Production Possibilities Frontier &amp; Capital Deepening</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch03_supply_demand.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Chapter 3: Supply, Demand, and Market Equilibrium</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch04_aggregate_output.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Chapter 4: Aggregate Output</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch05_inflation_deflation.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Inflation and Deflation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch06_unemployment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ch06 Unemployment</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Long-Run Growth &amp; Financial Systems</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch07_savings_investment_financial_system.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chapter 7: Saving, Investment Spending, and the Financial System</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Short-Run Fluctuations &amp; Stabilization</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch08_aggregate_expenditure_multiplier.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Chapter 8: Income, Expenditure, and the Keynesian Cross</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch09_aggregate_demand_aggregate_supply.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Chapter 9: Aggregate Demand and Aggregate Supply (AD–AS)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch10_fiscal_policy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Chapter 10: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch11_money_banking_fed.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Ch11 Money Banking Fed</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch12_monetary_policy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Ch12 Monetary Policy</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-outcomes-and-key-terms" id="toc-learning-outcomes-and-key-terms" class="nav-link active" data-scroll-target="#learning-outcomes-and-key-terms">Learning Outcomes and Key Terms</a></li>
+  <li><a href="#market-baskets-price-indexes-and-cpi-upward-biases" id="toc-market-baskets-price-indexes-and-cpi-upward-biases" class="nav-link" data-scroll-target="#market-baskets-price-indexes-and-cpi-upward-biases"><span class="header-section-number">5.1</span> Market Baskets, Price Indexes, and CPI Upward Biases</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction" id="toc-conceptual-introduction" class="nav-link" data-scroll-target="#conceptual-introduction">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation" id="toc-visual-representation" class="nav-link" data-scroll-target="#visual-representation">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation" id="toc-mathematical-foundation" class="nav-link" data-scroll-target="#mathematical-foundation">Mathematical Foundation</a></li>
+  </ul></li>
+  <li><a href="#calculating-national-inflation-disinflation-and-deflation" id="toc-calculating-national-inflation-disinflation-and-deflation" class="nav-link" data-scroll-target="#calculating-national-inflation-disinflation-and-deflation"><span class="header-section-number">5.2</span> Calculating National Inflation, Disinflation, and Deflation</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-1" id="toc-conceptual-introduction-1" class="nav-link" data-scroll-target="#conceptual-introduction-1">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-1" id="toc-visual-representation-1" class="nav-link" data-scroll-target="#visual-representation-1">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-1" id="toc-mathematical-foundation-1" class="nav-link" data-scroll-target="#mathematical-foundation-1">Mathematical Foundation</a></li>
+  </ul></li>
+  <li><a href="#real-purchasing-power-indexation-and-costs-of-inflation" id="toc-real-purchasing-power-indexation-and-costs-of-inflation" class="nav-link" data-scroll-target="#real-purchasing-power-indexation-and-costs-of-inflation"><span class="header-section-number">5.3</span> Real Purchasing Power, Indexation, and Costs of Inflation</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-2" id="toc-conceptual-introduction-2" class="nav-link" data-scroll-target="#conceptual-introduction-2">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-2" id="toc-visual-representation-2" class="nav-link" data-scroll-target="#visual-representation-2">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-2" id="toc-mathematical-foundation-2" class="nav-link" data-scroll-target="#mathematical-foundation-2">Mathematical Foundation</a></li>
+  </ul></li>
+  <li><a href="#real-vs.-nominal-interest-rates-and-the-fisher-equation" id="toc-real-vs.-nominal-interest-rates-and-the-fisher-equation" class="nav-link" data-scroll-target="#real-vs.-nominal-interest-rates-and-the-fisher-equation"><span class="header-section-number">5.4</span> Real vs.&nbsp;Nominal Interest Rates and the Fisher Equation</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-3" id="toc-conceptual-introduction-3" class="nav-link" data-scroll-target="#conceptual-introduction-3">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-3" id="toc-visual-representation-3" class="nav-link" data-scroll-target="#visual-representation-3">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-3" id="toc-mathematical-foundation-3" class="nav-link" data-scroll-target="#mathematical-foundation-3">Mathematical Foundation</a></li>
+  </ul></li>
+  <li><a href="#check-your-understanding" id="toc-check-your-understanding" class="nav-link" data-scroll-target="#check-your-understanding">Check Your Understanding</a>
+  <ul class="collapse">
+  <li><a href="#worked-solutions" id="toc-worked-solutions" class="nav-link" data-scroll-target="#worked-solutions">Worked Solutions</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch01_principles.html">Macroeconomic Foundations &amp; Measurement</a></li><li class="breadcrumb-item"><a href="./ch05_inflation_deflation.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Inflation and Deflation</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Inflation and Deflation</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p>This chapter examines how macroeconomists measure the economy-wide aggregate price level using market baskets and price indexes (the Consumer Price Index, Producer Price Index, and GDP Implicit Price Deflator), compute national inflation, disinflation, and deflation rates, diagnose upward measurement biases in fixed-basket indexes, adjust nominal dollar figures into real purchasing power, and evaluate real interest rates and wealth redistribution via the Fisher Equation.</p>
+</blockquote>
+<section id="learning-outcomes-and-key-terms" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="learning-outcomes-and-key-terms">Learning Outcomes and Key Terms</h2>
+<p>Upon completing this chapter, students should be able to (supporting Course Learning Objectives <strong>MA-1</strong> and <strong>C2002-1</strong>):</p>
+<ul>
+<li><strong>Construct</strong> a market-basket price index and contrast the scope and weighting methods of the Consumer Price Index (), Producer Price Index (), and GDP Implicit Price Deflator.</li>
+<li><strong>Identify</strong> the three primary upward biases in fixed-weight consumer price indexes (substitution bias, quality/new-product bias, and outlet substitution bias) and explain why they overstate true cost-of-living changes.</li>
+<li><strong>Compute</strong> national inflation, disinflation, and deflation rates (<span class="math inline">\(\pi_t\)</span>) from aggregate price index series and evaluate the economic costs of price-level instability.</li>
+<li><strong>Convert</strong> nominal wages and nominal interest rates into real purchasing power using index deflation and the Fisher Equation (<span class="math inline">\(r = i - \pi^e\)</span>), distinguishing expected from realized real returns.</li>
+</ul>
+<p><strong>Key Terms:</strong> aggregate price level, market basket, base period, Consumer Price Index (CPI), Producer Price Index (PPI), GDP Implicit Price Deflator, substitution bias, quality bias, new-product bias, inflation rate (<span class="math inline">\(\pi_t\)</span>), disinflation, deflation, shoe-leather costs, menu costs, unit-of-account costs, indexation, cost-of-living adjustment (COLA), nominal wage, real wage, nominal interest rate (<span class="math inline">\(i\)</span>), real interest rate (<span class="math inline">\(r\)</span>), Fisher equation.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Bring It Home: Why a 4% Raise Can Leave You Poorer at the Grocery Store
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose you graduate, start a full-time job earning <span class="math inline">\(\$20.00\)</span> per hour, and celebrate a year later when your manager awards you a <span class="math inline">\(4\%\)</span> raise to <span class="math inline">\(\$20.80\)</span> per hour. Your paycheck has eighty extra cents for every hour you work. Yet when you pay rent, buy groceries, and cover utilities, your bank balance feels tighter than it did a year earlier. How can a larger dollar paycheck buy fewer goods and services? The answer lies in distinguishing <em>single-market nominal prices</em> (studied in Chapter 3) from changes in the <em>economy-wide aggregate price level</em>. When broad consumer prices rise by <span class="math inline">\(5\%\)</span> while your dollar wage rises by <span class="math inline">\(4\%\)</span>, your real purchasing power actually falls. Understanding how economists track the aggregate price level—and why both rapid inflation and outright deflation disrupt saving, borrowing, and wages—gives households and policymakers the tools needed to see past dollar illusions.</p>
+</div>
+</div>
+</section>
+<section id="market-baskets-price-indexes-and-cpi-upward-biases" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="market-baskets-price-indexes-and-cpi-upward-biases"><span class="header-section-number">5.1</span> Market Baskets, Price Indexes, and CPI Upward Biases</h2>
+<section id="conceptual-introduction" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction">Conceptual Introduction</h3>
+<p>In Chapter 3, we analyzed how supply and demand determine the equilibrium price <span class="math inline">\(P^*\)</span> of a single good, such as coffee or apartments. Across an entire macroeconomy, however, millions of individual prices rise and fall simultaneously at different speeds. To summarize whether the overall cost of living is rising or falling, economists construct a single summary statistic called the <strong>aggregate price level</strong>—an index number measuring the weighted average price of a standardized collection of goods and services relative to a chosen <strong>base period</strong> (where the index is normalized to <span class="math inline">\(100\)</span>).</p>
+<p>Because different economic groups buy and sell different bundles of goods, statistical agencies maintain three complementary price indexes. The <strong>Consumer Price Index (CPI)</strong>, published monthly by the U.S.&nbsp;Bureau of Labor Statistics (BLS), tracks the retail cost of a fixed <strong>market basket</strong> of housing, food, transportation, medical care, energy, and apparel purchased by typical urban households—including imported consumer goods. The <strong>Producer Price Index (PPI)</strong> measures average wholesale selling prices received by domestic producers for raw materials, intermediate inputs, and finished goods; because producer input costs often pass through to retail shelves later, the PPI serves as an early warning indicator of consumer inflation. By contrast, the <strong>GDP Implicit Price Deflator</strong> (derived from the National Income and Product Accounts introduced in Chapter 4) measures price changes across <em>all</em> domestically produced final goods and services (<span class="math inline">\(C, I, G, X\)</span>), excluding imports and updating its expenditure weights automatically every quarter.</p>
+<p>These structural differences directly affect how households, businesses, and governments allocate resources. Social Security benefits, federal income tax brackets, and union wage contracts are indexed to the CPI, whereas macroeconomic growth adjustments rely on the GDP Deflator. Moreover, because the standard CPI holds base-period basket quantities fixed in the short run, it tends to overstate true increases in the cost of living—a systematic upward drift that affects public budget outlays and real wage measurements across the economy.</p>
+</section>
+<section id="visual-representation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation">Visual Representation</h3>
+<p>Figure 1 compares the economic coverage, weighting structure, and import treatment across the three primary U.S.&nbsp;aggregate price indexes.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_5_inflation_and_deflation_figure_01.svg" class="img-fluid figure-img" alt="Comparing the Three Aggregate Price Indexes. The CPI tracks a fixed basket of urban consumer purchases (including imported consumer goods), the PPI tracks domestic wholesale producer prices, and the GDP Deflator covers all current domestically produced final goods and services (C, I, G, X)."></p>
+<figcaption>Figure 1. Comparing the Three Aggregate Price Indexes. The CPI tracks a fixed basket of urban consumer purchases (including imported consumer goods), the PPI tracks domestic wholesale producer prices, and the GDP Deflator covers all current domestically produced final goods and services (<span class="math inline">\(C, I, G, X\)</span>).</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Why Does the CPI Overstate True Cost-of-Living Increases?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Because the standard CPI tracks the cost of purchasing a <em>fixed</em> basket of goods, economists estimate that it overstates true increases in the cost of living by roughly <span class="math inline">\(0.5\)</span> to <span class="math inline">\(1.0\)</span> percentage points per year due to three well-documented biases:</p>
+<ul>
+<li><strong>Substitution Bias:</strong> When the price of beef jumps while chicken stays cheap, households substitute toward chicken. A fixed-weight index assumes consumers keep buying the exact same expensive bundle, overstating the welfare loss.</li>
+<li><strong>Quality and New-Product Bias:</strong> When a new smartphone or laptop costs <span class="math inline">\(\$50\)</span> more than last year’s model but delivers twice the battery life, camera resolution, and speed, part of the price tag reflects higher product quality rather than pure inflation. Similarly, brand-new inventions enter the fixed basket with a lag, missing steep early price declines.</li>
+<li><strong>Outlet Substitution Bias:</strong> Consumers shift purchases toward discount warehouse clubs and online retailers when retail prices rise, lowering actual prices paid relative to traditional store surveys.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="mathematical-foundation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation">Mathematical Foundation</h3>
+<p>To construct a fixed-basket price index such as the CPI, multiply the fixed base-period quantities (<span class="math inline">\(Q_{j,0}\)</span>) of each item <span class="math inline">\(j = 1, \dots, k\)</span> in the market basket by current-period prices (<span class="math inline">\(P_{j,t}\)</span>), divide by the base-period cost of that identical basket, and multiply by <span class="math inline">\(100\)</span>:</p>
+<p><span class="math display">\[
+\text{Cost of Market Basket}_t = \sum_{j=1}^{k} P_{j,t} \cdot Q_{j,0}, \qquad
+\text{CPI}_t = \frac{\text{Cost of Market Basket}_t}{\text{Cost of Market Basket}_0} \times 100.
+\]</span></p>
+<p>By construction, in the base period (<span class="math inline">\(t = 0\)</span>), <span class="math inline">\(\text{CPI}_0 = \frac{\text{Cost}_0}{\text{Cost}_0} \times 100 = 100.0\)</span>. By contrast, the <strong>GDP Implicit Price Deflator</strong> uses current-period quantities (<span class="math inline">\(Q_{j,t}\)</span>) and equals the ratio of Nominal GDP to Real GDP multiplied by <span class="math inline">\(100\)</span>:</p>
+<p><span class="math display">\[
+\text{GDP Deflator}_t = \frac{\text{Nominal GDP}_t}{\text{Real GDP}_t} \times 100 = \frac{\sum_{j=1}^{k} P_{j,t} \cdot Q_{j,t}}{\sum_{j=1}^{k} P_{j,0} \cdot Q_{j,t}} \times 100.
+\]</span></p>
+<p>Suppose an urban household market basket consists of <span class="math inline">\(10\)</span> units of housing/utilities and <span class="math inline">\(50\)</span> units of groceries. In the base year (<span class="math inline">\(t = 0\)</span>), housing costs <span class="math inline">\(\$30\)</span> per unit and groceries cost <span class="math inline">\(\$4\)</span> per unit.</p>
+<ul>
+<li><strong>Compute the Base-Year Market Basket Cost (<span class="math inline">\(t = 0\)</span>):</strong> <span class="math display">\[\text{Cost of Market Basket}_0 = (\$30 \times 10) + (\$4 \times 50) = \$300 + \$200 = \$500\]</span> <span class="math display">\[\text{CPI}_0 = \frac{\$500}{\$500} \times 100 = 100.0\]</span></li>
+<li><strong>Compute Year 1 CPI when Basket Cost Rises to <span class="math inline">\(\$550\)</span>:</strong> Suppose in Year 1 (<span class="math inline">\(t = 1\)</span>), housing rises to <span class="math inline">\(\$33\)</span> per unit and groceries rise to <span class="math inline">\(\$4.40\)</span> per unit, bringing the fixed-basket cost to <span class="math inline">\((\$33 \times 10) + (\$4.40 \times 50) = \$330 + \$220 = \$550\)</span>: <span class="math display">\[\text{CPI}_1 = \frac{\$550}{\$500} \times 100 = 110.0\]</span></li>
+<li><strong>Compute Year 2 CPI when Basket Cost Falls to <span class="math inline">\(\$539\)</span>:</strong> Suppose in Year 2 (<span class="math inline">\(t = 2\)</span>), lower energy and food prices reduce the basket cost to <span class="math inline">\(\$539\)</span>: <span class="math display">\[\text{CPI}_2 = \frac{\$539}{\$500} \times 100 = 107.8\]</span></li>
+<li><strong>Compare with a GDP Deflator Calculation:</strong> Separately, if an economy produces Nominal GDP of <span class="math inline">\(\$27{,}500\text{ billion}\)</span> and Real GDP of <span class="math inline">\(\$25{,}000\text{ billion}\)</span> in Year 1, its GDP Implicit Price Deflator is: <span class="math display">\[\text{GDP Deflator}_1 = \frac{\$27{,}500\text{B}}{\$25{,}000\text{B}} \times 100 = 110.0\]</span></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>FRED Data: Tracking Consumer and Producer Price Indexes (\texttt{CPIAUCSL
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>and )} In empirical macroeconomic analysis using Federal Reserve Economic Data (FRED), two canonical monthly series anchor price-level monitoring:</p>
+<ul>
+<li>: Reports the seasonally adjusted <strong>Consumer Price Index for All Urban Consumers: All Items in U.S.&nbsp;City Average</strong>, indexed so that the average level across <span class="math inline">\(1982\text{–}1984 = 100\)</span>.</li>
+<li>: Reports the <strong>Producer Price Index by Commodity: All Commodities</strong>, indexed to <span class="math inline">\(1982 = 100\)</span>.</li>
+</ul>
+<p>During the 2021–2022 global supply-chain bottleneck and energy surge, accelerated sharply several months before peaked, illustrating how wholesale commodity and freight price increases propagate along supply chains into retail consumer prices. Conversely, when imported consumer electronics or foreign crude oil fall in price, registers the relief directly because consumer imports sit inside the urban household basket, whereas the GDP Deflator excludes imported goods.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="calculating-national-inflation-disinflation-and-deflation" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="calculating-national-inflation-disinflation-and-deflation"><span class="header-section-number">5.2</span> Calculating National Inflation, Disinflation, and Deflation</h2>
+<section id="conceptual-introduction-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-1">Conceptual Introduction</h3>
+<p>Once economists have an aggregate price index series (<span class="math inline">\(P_0, P_1, P_2, \dots\)</span>), they measure the speed of economy-wide price changes through the <strong>inflation rate (<span class="math inline">\(\pi_t\)</span>)</strong>—the percentage rate of change in the aggregate price level from one period (<span class="math inline">\(t-1\)</span>) to the next (<span class="math inline">\(t\)</span>). Notice the crucial distinction between the <em>price level</em> (an index number such as <span class="math inline">\(\text{CPI} = 110.0\)</span> or <span class="math inline">\(315.0\)</span>) and the <em>inflation rate</em> (a percentage growth rate per year, such as <span class="math inline">\(+10.0\%\)</span> or <span class="math inline">\(+3.2\%\)</span>).</p>
+<p>Economists classify aggregate price dynamics into three distinct regimes based on the sign and trajectory of <span class="math inline">\(\pi_t\)</span>:</p>
+<ul>
+<li><strong>Inflation (<span class="math inline">\(\pi_t &gt; 0\)</span>):</strong> A sustained increase in the aggregate price level, which erodes the purchasing power of each dollar.</li>
+<li><strong>Disinflation (<span class="math inline">\(\pi_t &gt; 0\)</span>, with <span class="math inline">\(\pi_t &lt; \pi_{t-1}\)</span>):</strong> A <em>slowdown</em> in the rate of inflation—for example, annual inflation cooling from <span class="math inline">\(6.0\%\)</span> to <span class="math inline">\(3.0\%\)</span>. During disinflation, the aggregate price level is <em>still rising</em>, just at a slower pace than before.</li>
+<li><strong>Deflation (<span class="math inline">\(\pi_t &lt; 0\)</span>):</strong> An outright decline in the aggregate price level, meaning average prices fall below their prior-period levels and the inflation rate turns negative.</li>
+</ul>
+<p>Both high inflation and outright deflation distort economic decision-making and resource allocation. High, volatile inflation obscures relative price signals (making it hard for firms and shoppers to tell whether a price hike reflects higher demand or general inflation) and imposes real resource costs. Conversely, economy-wide deflation is dangerous because wages and debt contracts are denominated in fixed nominal dollars: falling prices raise the real burden of household and corporate debt, prompting borrowers to slash spending and firms to freeze hiring—a self-reinforcing contractionary spiral known as <strong>debt deflation</strong>.</p>
+</section>
+<section id="visual-representation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-1">Visual Representation</h3>
+<p>Figure 2 plots the hypothetical market-basket CPI trajectory from Work It Out 5.1 alongside a multi-period inflation rate path, visually separating rising prices during <em>inflation</em> and <em>disinflation</em> from falling prices during <em>deflation</em>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_5_inflation_and_deflation_figure_02.svg" class="img-fluid figure-img" alt="Aggregate Price Levels vs. Inflation Regimes. Left: An index rise from 100.0 to 110.0 corresponds to +10.0% inflation, whereas a drop from 110.0 to 107.8 corresponds to -2.0% deflation. Right: Disinflation occurs when \pi_t declines toward 0% while remaining positive."></p>
+<figcaption>Figure 2. Aggregate Price Levels vs.&nbsp;Inflation Regimes. Left: An index rise from <span class="math inline">\(100.0\)</span> to <span class="math inline">\(110.0\)</span> corresponds to <span class="math inline">\(+10.0\%\)</span> inflation, whereas a drop from <span class="math inline">\(110.0\)</span> to <span class="math inline">\(107.8\)</span> corresponds to <span class="math inline">\(-2.0\%\)</span> deflation. Right: Disinflation occurs when <span class="math inline">\(\pi_t\)</span> declines toward <span class="math inline">\(0\%\)</span> while remaining positive.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Disinflation Is Not Deflation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Students frequently confuse <strong>disinflation</strong> with <strong>deflation</strong> when reading economic news. If headline CPI inflation falls from <span class="math inline">\(6.0\%\)</span> in Year 1 to <span class="math inline">\(3.0\%\)</span> in Year 2, the economy is experiencing <em>disinflation</em>, not deflation: average consumer prices still increased by <span class="math inline">\(3.0\%\)</span> over Year 2, so the price index is higher than ever—it simply climbed less rapidly than in Year 1. Average prices fall below prior levels only when <span class="math inline">\(\pi_t &lt; 0\)</span> (<em>deflation</em>).</p>
+</div>
+</div>
+</section>
+<section id="mathematical-foundation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-1">Mathematical Foundation</h3>
+<p>Let <span class="math inline">\(P_t\)</span> denote the value of an aggregate price index (such as the CPI or GDP Deflator) in period <span class="math inline">\(t\)</span>, and let <span class="math inline">\(P_{t-1}\)</span> denote its value in the immediately preceding period. The percentage inflation rate <span class="math inline">\(\pi_t\)</span> is:</p>
+<p><span class="math display">\[
+\pi_t = \frac{P_t - P_{t-1}}{P_{t-1}} \times 100\% = \left(\frac{P_t}{P_{t-1}} - 1\right) \times 100\%.
+\]</span></p>
+<p>Notice that the denominator is always the <em>prior period’s</em> index (<span class="math inline">\(P_{t-1}\)</span>), not the base-year index (<span class="math inline">\(100.0\)</span>), unless <span class="math inline">\(t - 1\)</span> happens to be the base year.</p>
+<p>Using the market-basket CPI series from Work It Out 5.1—where the basket costs <span class="math inline">\(\$500\)</span> in Year 0 (<span class="math inline">\(t = 0\)</span>), <span class="math inline">\(\$550\)</span> in Year 1 (<span class="math inline">\(t = 1\)</span>), and <span class="math inline">\(\$539\)</span> in Year 2 (<span class="math inline">\(t = 2\)</span>)—compute the annual inflation rate for each year:</p>
+<ul>
+<li><strong>Year 1 Inflation Rate (<span class="math inline">\(\pi_1\)</span>, from Year 0 to Year 1):</strong> With <span class="math inline">\(\text{CPI}_0 = 100.0\)</span> and <span class="math inline">\(\text{CPI}_1 = 110.0\)</span>: <span class="math display">\[\pi_1 = \frac{\text{CPI}_1 - \text{CPI}_0}{\text{CPI}_0} \times 100\% = \frac{110.0 - 100.0}{100.0} \times 100\% = \frac{10.0}{100.0} \times 100\% = +10.0\%.\]</span> Because <span class="math inline">\(\pi_1 &gt; 0\)</span>, the economy experiences <strong>inflation</strong> of <span class="math inline">\(10.0\%\)</span>.</li>
+<li><strong>Year 2 Inflation Rate (<span class="math inline">\(\pi_2\)</span>, from Year 1 to Year 2):</strong> With <span class="math inline">\(\text{CPI}_1 = 110.0\)</span> and <span class="math inline">\(\text{CPI}_2 = 107.8\)</span>: <span class="math display">\[\pi_2 = \frac{\text{CPI}_2 - \text{CPI}_1}{\text{CPI}_1} \times 100\% = \frac{107.8 - 110.0}{110.0} \times 100\% = \frac{-2.2}{110.0} \times 100\% = -2.0\%.\]</span> Because <span class="math inline">\(\pi_2 &lt; 0\)</span>, the economy experiences outright <strong>deflation</strong> of <span class="math inline">\(2.0\%\)</span>. <em>(Note: A common algebra error is dividing <span class="math inline">\(-2.2\)</span> by the Year 0 base index <span class="math inline">\(100.0\)</span> instead of Year 1’s index <span class="math inline">\(110.0\)</span>, which would falsely yield <span class="math inline">\(-2.2\%\)</span>.)</em></li>
+<li><strong>Contrast with a Disinflation Scenario:</strong> If instead the Year 2 basket cost had risen to <span class="math inline">\(\$577.50\)</span> (<span class="math inline">\(\text{CPI}_2 = \frac{577.50}{500} \times 100 = 115.5\)</span>), then: <span class="math display">\[\pi_2^{\text{alt}} = \frac{115.5 - 110.0}{110.0} \times 100\% = \frac{5.5}{110.0} \times 100\% = +5.0\%.\]</span> Here <span class="math inline">\(\pi_2^{\text{alt}} = +5.0\% &lt; \pi_1 = +10.0\%\)</span>, representing <strong>disinflation</strong> (inflation slowed by <span class="math inline">\(5.0\)</span> percentage points, even though prices still rose <span class="math inline">\(5.0\%\)</span>).</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>U.S. Post-Pandemic Disinflation (2022–2024) vs.&nbsp;Japan’s Lost Decades of Deflation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Between 2021 and mid-2022, U.S.&nbsp;year-over-year CPI inflation () surged above <span class="math inline">\(8\%\)</span>, driven by pandemic supply-chain disruptions, fiscal stimulus, and energy price shocks. Over 2023 and 2024, tighter monetary policy and healing supply chains brought annual U.S.&nbsp;inflation back down toward <span class="math inline">\(3\%\)</span>—a textbook episode of <strong>disinflation</strong> in which the price level stabilized at a higher plateau rather than returning to 2019 prices. By contrast, following the burst of its asset-price bubble in the early 1990s, Japan experienced prolonged <strong>deflation</strong> (<span class="math inline">\(\pi_t &lt; 0\)</span>) across much of the late 1990s and 2000s. Expecting prices to be even lower next year, Japanese households postponed durable purchases and corporations delayed capital investment, illustrating why central banks target a low, positive inflation rate (typically <span class="math inline">\(2\%\)</span>) rather than <span class="math inline">\(0\%\)</span> or negative inflation.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="real-purchasing-power-indexation-and-costs-of-inflation" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="real-purchasing-power-indexation-and-costs-of-inflation"><span class="header-section-number">5.3</span> Real Purchasing Power, Indexation, and Costs of Inflation</h2>
+<section id="conceptual-introduction-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-2">Conceptual Introduction</h3>
+<p>Because dollars are merely measuring rods whose purchasing power shrinks during inflation, economists separate <strong>nominal variables</strong> (measured in current-period dollars, such as a <span class="math inline">\(\$20.80\)</span> hourly wage) from <strong>real variables</strong> (adjusted for changes in the aggregate price level to measure actual purchasing power over physical goods and services). If every wage, pension, and price doubled overnight, real purchasing power would be unchanged—a property known as <strong>money neutrality</strong> in the long run.</p>
+<p>In the short run, however, wages, tax thresholds, and contracts adjust unevenly, creating three distinct resource costs when inflation is elevated or unanticipated:</p>
+<ul>
+<li><strong>Shoe-Leather Costs:</strong> High inflation erodes the purchasing power of cash sitting in non-interest-bearing wallets or low-interest checking accounts, forcing households and firms to spend extra time and effort (“wearing out shoe leather”) making frequent trips to the bank or shifting funds between interest-bearing assets and cash.</li>
+<li><strong>Menu Costs:</strong> Businesses must spend real resources—printing new restaurant menus, re-tagging retail shelves, updating digital catalogs, and renegotiating supplier quotes—every time they adjust nominal prices.</li>
+<li><strong>Unit-of-Account Costs:</strong> Inflation makes the dollar a shrinking yardstick over time, distorting accounting profits, capital gains taxes, and long-term business planning. For example, if an asset rises <span class="math inline">\(10\%\)</span> in nominal value solely because of <span class="math inline">\(10\%\)</span> inflation, the investor earned zero real gain yet may still owe capital gains taxes on the illusory nominal profit.</li>
+</ul>
+<p>To shield households from unintended purchasing-power erosion, governments and private contracts use automatic <strong>indexation</strong>—tying dollar payments directly to a published price index. For example, U.S.&nbsp;Social Security retirement benefits receive an annual <strong>cost-of-living adjustment (COLA)</strong> tied to the Consumer Price Index, and federal income tax brackets are indexed annually to prevent <em>bracket creep</em> (being pushed into a higher marginal tax rate solely because nominal income rose with inflation).</p>
+</section>
+<section id="visual-representation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-2">Visual Representation</h3>
+<p>Figure 3 illustrates the hourly wage example from our chapter opening: although the worker’s nominal hourly wage rises <span class="math inline">\(+4.0\%\)</span> from <span class="math inline">\(\$20.00\)</span> to <span class="math inline">\(\$20.80\)</span>, consumer prices rise <span class="math inline">\(+5.0\%\)</span> (<span class="math inline">\(\text{CPI}\)</span> from <span class="math inline">\(300\)</span> to <span class="math inline">\(315\)</span>), reducing the worker’s real wage in base-period dollars from <span class="math inline">\(\$6.667\)</span> to <span class="math inline">\(\$6.603\)</span> (<span class="math inline">\(-0.95\%\)</span>).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_5_inflation_and_deflation_figure_03.svg" class="img-fluid figure-img" alt="Nominal Wage Growth vs. Real Purchasing Power. Even though the worker's nominal wage rises 4.0% (from $20.00 to $20.80), a 5.0% jump in the CPI (from 300 to 315) reduces real purchasing power by 0.95%."></p>
+<figcaption>Figure 3. Nominal Wage Growth vs.&nbsp;Real Purchasing Power. Even though the worker’s nominal wage rises <span class="math inline">\(4.0\%\)</span> (from <span class="math inline">\(\$20.00\)</span> to <span class="math inline">\(\$20.80\)</span>), a <span class="math inline">\(5.0\%\)</span> jump in the CPI (from <span class="math inline">\(300\)</span> to <span class="math inline">\(315\)</span>) reduces real purchasing power by <span class="math inline">\(0.95\%\)</span>.</figcaption>
+</figure>
+</div>
+</section>
+<section id="mathematical-foundation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-2">Mathematical Foundation</h3>
+<p>To convert any nominal dollar amount <span class="math inline">\(X_t^{\text{nom}}\)</span> (such as a wage, salary, or historical price) into constant base-period purchasing power (<span class="math inline">\(X_t^{\text{real}}\)</span>), divide by period <span class="math inline">\(t\)</span>’s price index and multiply by <span class="math inline">\(100\)</span>:</p>
+<p><span class="math display">\[
+W_t^{\text{real}} = \frac{W_t^{\text{nom}}}{\text{CPI}_t} \times 100.
+\]</span></p>
+<p>More generally, to compare a dollar figure from historical period <span class="math inline">\(A\)</span> in the purchasing power of target period <span class="math inline">\(B\)</span>:</p>
+<p><span class="math display">\[
+\text{Value in Period } B \text{ Dollars} = \text{Nominal Value}_A \times \frac{\text{CPI}_B}{\text{CPI}_A}.
+\]</span></p>
+<p>Suppose a worker’s nominal hourly wage rises from <span class="math inline">\(\$20.00\)</span> in Period 0 to <span class="math inline">\(\$20.80\)</span> in Period 1, while the CPI rises from <span class="math inline">\(300\)</span> in Period 0 to <span class="math inline">\(315\)</span> in Period 1.</p>
+<ul>
+<li><strong>Compute Nominal Wage Growth (<span class="math inline">\(g_W\)</span>) and Inflation (<span class="math inline">\(\pi\)</span>):</strong> <span class="math display">\[g_W = \frac{\$20.80 - \$20.00}{\$20.00} \times 100\% = \frac{\$0.80}{\$20.00} \times 100\% = +4.0\%,\]</span> <span class="math display">\[\pi = \frac{315 - 300}{300} \times 100\% = \frac{15}{300} \times 100\% = +5.0\%.\]</span></li>
+<li><strong>Compute Real Wages in Constant Base-Period Dollars (<span class="math inline">\(\text{CPI}_{\text{base}} = 100\)</span>):</strong> <span class="math display">\[W_0^{\text{real}} = \frac{\$20.00}{300} \times 100 \approx \$6.667 \text{ per hour},\]</span> <span class="math display">\[W_1^{\text{real}} = \frac{\$20.80}{315} \times 100 \approx \$6.603 \text{ per hour}.\]</span></li>
+<li><strong>Compute the Percentage Change in Real Purchasing Power (retaining full precision):</strong> <span class="math display">\[g_{\text{real}} = \frac{W_1^{\text{real}} - W_0^{\text{real}}}{W_0^{\text{real}}} \times 100\% = \left(\frac{20.80 / 315}{20.00 / 300} - 1\right) \times 100\% = \left(\frac{1.04}{1.05} - 1\right) \times 100\% \approx -0.95\%.\]</span> Because nominal wage growth (<span class="math inline">\(+4.0\%\)</span>) trailed CPI inflation (<span class="math inline">\(+5.0\%\)</span>), the worker’s real hourly purchasing power declined by approximately <span class="math inline">\(0.95\%\)</span>.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Social Security COLAs, Minimum Wage Erosion, and Historical Comparisons
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Deflating nominal dollar values into constant-dollar purchasing power allows economists to compare living standards across decades or evaluate whether statutory benefits keep pace with inflation. For instance, if the federal minimum wage remains fixed at <span class="math inline">\(\$7.25\)</span> per hour in nominal terms while the CPI rises over fifteen years, the real purchasing power of that statutory wage floor falls steadily every single year. Conversely, because Social Security benefits are legally indexed to the CPI, recipients receive an automatic annual Cost-of-Living Adjustment (such as the <span class="math inline">\(8.7\%\)</span> COLA in 2023 following 2022 inflation) designed to preserve real purchasing power—though upward CPI substitution bias means full CPI indexation slightly overcompensates for true cost-of-living changes.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="real-vs.-nominal-interest-rates-and-the-fisher-equation" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="real-vs.-nominal-interest-rates-and-the-fisher-equation"><span class="header-section-number">5.4</span> Real vs.&nbsp;Nominal Interest Rates and the Fisher Equation</h2>
+<section id="conceptual-introduction-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-3">Conceptual Introduction</h3>
+<p>Just as workers care about how many groceries their wages can buy, savers and borrowers care about how much purchasing power a loan repays. When you deposit money in a savings account or take out a fixed-rate auto loan, the bank quotes a <strong>nominal interest rate (<span class="math inline">\(i\)</span>)</strong>—the annual percentage return measured in current dollars without adjusting for inflation. However, if prices rise while the loan is outstanding, the dollars repaid at maturity buy fewer goods than the dollars originally lent.</p>
+<p>To measure the true gain in purchasing power earned by a lender (and the true real cost paid by a borrower), economist Irving Fisher established the distinction between the nominal interest rate (<span class="math inline">\(i\)</span>) and the <strong>real interest rate (<span class="math inline">\(r\)</span>)</strong>—the nominal interest rate adjusted for inflation. Because inflation over the life of a loan is unknown at the moment a loan contract is signed, lenders and borrowers negotiate the nominal rate <span class="math inline">\(i\)</span> based on their <strong>expected inflation rate (<span class="math inline">\(\pi^e\)</span>)</strong>, targeting a desired expected real return <span class="math inline">\(r^e = i - \pi^e\)</span> (a relationship known as the <strong>Fisher Effect</strong>: higher expected inflation pushes nominal interest rates upward one-for-one).</p>
+<p>Once the loan period concludes and <strong>actual inflation (<span class="math inline">\(\pi\)</span>)</strong> is observed, the <strong>realized real interest rate</strong> is <span class="math inline">\(r_{\text{actual}} = i - \pi\)</span>. Whenever actual inflation differs from expected inflation, fixed-rate debt contracts arbitrarily redistribute real wealth between creditors and debtors:</p>
+<ul>
+<li><strong>Unexpectedly High Inflation (<span class="math inline">\(\pi &gt; \pi^e\)</span>):</strong> Realized real interest rates fall below expected real rates (<span class="math inline">\(r_{\text{actual}} &lt; r^e\)</span>). <strong>Borrowers win</strong> because they repay their fixed-dollar debts with cheaper, less valuable dollars; <strong>lenders lose</strong> purchasing power.</li>
+<li><strong>Unexpectedly Low Inflation or Deflation (<span class="math inline">\(\pi &lt; \pi^e\)</span>):</strong> Realized real interest rates rise above expected real rates (<span class="math inline">\(r_{\text{actual}} &gt; r^e\)</span>). <strong>Lenders win</strong> because repaid dollars buy more goods than anticipated; <strong>borrowers lose</strong> because the real burden of debt repayment increases.</li>
+</ul>
+</section>
+<section id="visual-representation-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-3">Visual Representation</h3>
+<p>Figure 4 decomposes a <span class="math inline">\(7.0\%\)</span> fixed nominal loan rate (<span class="math inline">\(i = 7.0\%\)</span>) under <span class="math inline">\(3.0\%\)</span> expected inflation (<span class="math inline">\(\pi^e = 3.0\%\)</span>, yielding <span class="math inline">\(r^e = 4.0\%\)</span>) and contrasts what happens when actual inflation surges unexpectedly to <span class="math inline">\(\pi = 6.0\%\)</span>, compressing the lender’s realized real return to <span class="math inline">\(r_{\text{actual}} = 1.0\%\)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_5_inflation_and_deflation_figure_04.svg" class="img-fluid figure-img" alt="The Fisher Equation and Unexpected Inflation Redistribution. On a 7.0% fixed-rate loan priced for 3.0% expected inflation (r^e = 4.0%), an unexpected inflation surge to 6.0% transfers 3.0 percentage points of real purchasing power from the lender to the borrower (r_{\text{actual}} = 1.0%)."></p>
+<figcaption>Figure 4. The Fisher Equation and Unexpected Inflation Redistribution. On a <span class="math inline">\(7.0\%\)</span> fixed-rate loan priced for <span class="math inline">\(3.0\%\)</span> expected inflation (<span class="math inline">\(r^e = 4.0\%\)</span>), an unexpected inflation surge to <span class="math inline">\(6.0\%\)</span> transfers <span class="math inline">\(3.0\)</span> percentage points of real purchasing power from the lender to the borrower (<span class="math inline">\(r_{\text{actual}} = 1.0\%\)</span>).</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Can the Real Interest Rate Be Negative?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Yes. While nominal interest rates on ordinary bank loans and deposits rarely fall below zero (because savers can hold physical currency yielding <span class="math inline">\(0\%\)</span>), the <strong>real interest rate</strong> (<span class="math inline">\(r = i - \pi\)</span>) turns negative whenever inflation exceeds the nominal interest rate (<span class="math inline">\(\pi &gt; i\)</span>). For example, if a savings account pays <span class="math inline">\(i = 2.0\%\)</span> nominal interest while consumer prices rise by <span class="math inline">\(\pi = 5.0\%\)</span>, your account balance grows by <span class="math inline">\(2.0\%\)</span> in dollars, but those dollars buy <span class="math inline">\(3.0\%\)</span> fewer goods (<span class="math inline">\(r \approx 2.0\% - 5.0\% = -3.0\%\)</span>).</p>
+</div>
+</div>
+</section>
+<section id="mathematical-foundation-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-3">Mathematical Foundation</h3>
+<p>For moderate inflation and interest rates, the <strong>linear Fisher Equation</strong> relates the nominal interest rate (<span class="math inline">\(i\)</span>), expected or realized real interest rate (<span class="math inline">\(r\)</span>), and expected or actual inflation rate (<span class="math inline">\(\pi^e\)</span> or <span class="math inline">\(\pi\)</span>):</p>
+<p><span class="math display">\[
+i = r^e + \pi^e \quad \Longleftrightarrow \quad r^e = i - \pi^e \quad (\text{expected}), \qquad r_{\text{actual}} = i - \pi \quad (\text{realized}).
+\]</span></p>
+<p>A credit union and a small business agree on a one-year fixed-rate loan of <span class="math inline">\(\$10{,}000\)</span> at a nominal interest rate of <span class="math inline">\(i = 7.0\%\)</span>. At the time the contract is signed, both parties expect annual inflation to be <span class="math inline">\(\pi^e = 3.0\%\)</span>.</p>
+<ul>
+<li><strong>Compute the Expected Real Interest Rate (<span class="math inline">\(r^e\)</span>):</strong> <span class="math display">\[r^e = i - \pi^e = 7.0\% - 3.0\% = 4.0\%.\]</span> Both lender and borrower anticipate that the credit union will gain <span class="math inline">\(4.0\%\)</span> in real purchasing power over the year.</li>
+<li><strong>Compute the Realized Real Interest Rate (<span class="math inline">\(r_{\text{actual}}\)</span>) if Actual Inflation Hits <span class="math inline">\(\pi = 6.0\%\)</span>:</strong> <span class="math display">\[r_{\text{actual}} = i - \pi = 7.0\% - 6.0\% = 1.0\%.\]</span></li>
+<li><strong>Identify Who Gained and Who Lost from the Inflation Surprise:</strong> Because actual inflation (<span class="math inline">\(\pi = 6.0\%\)</span>) exceeded expected inflation (<span class="math inline">\(\pi^e = 3.0\%\)</span>) by <span class="math inline">\(3.0\)</span> percentage points, the lender’s realized real return fell from <span class="math inline">\(4.0\%\)</span> to <span class="math inline">\(1.0\%\)</span>, transferring <span class="math inline">\(3.0\%\)</span> of real purchasing power (<span class="math inline">\(\$300\)</span> on a <span class="math inline">\(\$10{,}000\)</span> loan) from the credit union to the small-business borrower.</li>
+<li><strong>Compute the Realized Real Interest Rate if Unexpected Disinflation Drops <span class="math inline">\(\pi\)</span> to <span class="math inline">\(1.0\%\)</span>:</strong> <span class="math display">\[r_{\text{actual}}^{\text{low}} = 7.0\% - 1.0\% = 6.0\%.\]</span> Here realized inflation was <span class="math inline">\(2.0\)</span> percentage points <em>lower</em> than expected, raising the lender’s real return to <span class="math inline">\(6.0\%\)</span> and hurting the borrower.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Fixed-Rate Mortgages and Treasury Inflation-Protected Securities (TIPS)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In the United States, millions of homeowners hold <span class="math inline">\(30\)</span>-year fixed-rate mortgages locked in at nominal rates between <span class="math inline">\(3.0\%\)</span> and <span class="math inline">\(4.0\%\)</span> during 2020–2021. When U.S.&nbsp;inflation subsequently exceeded <span class="math inline">\(4\%\)</span> to <span class="math inline">\(8\%\)</span> in 2021–2023, those borrowers experienced negative realized real mortgage rates (<span class="math inline">\(r_{\text{actual}} = i - \pi &lt; 0\)</span>), substantially reducing the real purchasing-power burden of their monthly mortgage payments while eroding the real returns of mortgage bondholders. To protect savers against unexpected inflation, the U.S.&nbsp;Treasury issues <strong>Treasury Inflation-Protected Securities (TIPS)</strong>, whose principal value adjusts automatically with the CPI (), guaranteeing investors a fixed real return regardless of future inflation surprises.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="check-your-understanding" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="check-your-understanding">Check Your Understanding</h2>
+<ul>
+<li><p><strong>Price Index Coverage &amp; Biases:</strong></p></li>
+<li><p>Suppose the price of imported European olive oil and imported Japanese automobiles jumps sharply, while prices of all domestically produced U.S.&nbsp;goods stay constant. Which index rises more: the U.S.&nbsp;CPI or the U.S.&nbsp;GDP Implicit Price Deflator? Explain why in one sentence.</p></li>
+<li><p>Explain how <em>substitution bias</em> and <em>quality/new-product bias</em> cause a fixed-basket CPI to overstate true cost-of-living increases.</p></li>
+<li><p><strong>Inflation, Disinflation, and Deflation:</strong> Suppose an economy’s CPI is <span class="math inline">\(200.0\)</span> in Year 1, <span class="math inline">\(216.0\)</span> in Year 2, <span class="math inline">\(222.48\)</span> in Year 3, and <span class="math inline">\(218.03\)</span> in Year 4.</p></li>
+<li><p>Calculate the annual inflation rate for Year 2, Year 3, and Year 4.</p></li>
+<li><p>Classify each year (Year 2, Year 3, Year 4) as experiencing <em>inflation</em>, <em>disinflation</em>, or <em>deflation</em>.</p></li>
+<li><p><strong>Real Wages and the Fisher Equation:</strong></p></li>
+<li><p>A worker’s nominal hourly wage rises by <span class="math inline">\(3.0\%\)</span> while CPI inflation is <span class="math inline">\(6.0\%\)</span>. Use the exact multiplicative relation <span class="math inline">\(1 + g_{\text{real}} = \frac{1 + g_W}{1 + \pi}\)</span> to compute exact real wage growth.</p></li>
+<li><p>A bank issues a fixed-rate loan at a nominal interest rate of <span class="math inline">\(i = 6.5\%\)</span> when expected inflation is <span class="math inline">\(\pi^e = 2.5\%\)</span>. What is the expected real interest rate <span class="math inline">\(r^e\)</span>? If actual inflation turns out to be <span class="math inline">\(\pi = 5.0\%\)</span>, what is the realized real interest rate <span class="math inline">\(r_{\text{actual}}\)</span>, and who benefits from the surprise?</p></li>
+</ul>
+<section id="worked-solutions" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="worked-solutions">Worked Solutions</h3>
+<ul>
+<li><strong>(a) U.S.&nbsp;CPI rises more:</strong> The CPI tracks a basket of urban consumer purchases that includes imported consumer goods, whereas the GDP Deflator measures only domestically produced final goods and services (<span class="math inline">\(C, I, G, X\)</span>) and excludes imports. <strong>(b)</strong> Substitution bias occurs because fixed base-year weights ignore consumers switching away from items whose relative prices rise fastest; quality/new-product bias occurs because fixed-basket surveys treat higher prices for improved technology/quality as pure price inflation and incorporate new products after their initial steep price drops.</li>
+<li><strong>(a)</strong> Year 2: <span class="math inline">\(\pi_2 = \frac{216.0 - 200.0}{200.0} \times 100\% = +8.0\%\)</span>; Year 3: <span class="math inline">\(\pi_3 = \frac{222.48 - 216.0}{216.0} \times 100\% = +3.0\%\)</span>; Year 4: <span class="math inline">\(\pi_4 = \frac{218.03 - 222.48}{222.48} \times 100\% \approx -2.0\%\)</span>. <strong>(b)</strong> Year 2 experiences <strong>inflation</strong> (<span class="math inline">\(+8.0\%\)</span>); Year 3 experiences <strong>disinflation</strong> (<span class="math inline">\(+3.0\% &lt; +8.0\%\)</span>, prices still rising but more slowly); Year 4 experiences <strong>deflation</strong> (<span class="math inline">\(-2.0\% &lt; 0\)</span>).</li>
+<li><strong>(a)</strong> <span class="math inline">\(1 + g_{\text{real}} = \frac{1.03}{1.06} \approx 0.9717 \implies g_{\text{real}} \approx -2.83\%\)</span> (real purchasing power falls by <span class="math inline">\(2.83\%\)</span>). <strong>(b)</strong> Expected real interest rate: <span class="math inline">\(r^e = 6.5\% - 2.5\% = 4.0\%\)</span>. Realized real interest rate: <span class="math inline">\(r_{\text{actual}} = 6.5\% - 5.0\% = 1.5\%\)</span> (or exact: <span class="math inline">\(\frac{0.065 - 0.05}{1.05} \approx 1.43\%\)</span>). Because actual inflation (<span class="math inline">\(5.0\%\)</span>) exceeded expected inflation (<span class="math inline">\(2.5\%\)</span>), the <strong>borrower</strong> benefits at the expense of the lender.</li>
+</ul>
+
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const toggle = window.document.createElement('button');
+      toggle.type = "button";
+      toggle.setAttribute("role", "switch");
+      toggle.setAttribute("aria-checked", "false");
+      toggle.classList.add('top-right');
+      toggle.classList.add('quarto-color-scheme-toggle');
+      toggle.setAttribute("aria-label", "Toggle dark mode");
+      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      toggle.appendChild(i);
+      // Put the toggle in a landmark of its own, so that landmark navigation
+      // can reach it.
+      //
+      // The container is always a fresh direct child of body, and the toggle is
+      // never moved into page furniture that the theme or the author controls.
+      // The toggle is positioned against the page, so any ancestor that
+      // establishes a containing block captures it: a positioned element or a
+      // grid for position: absolute, and transform, filter, will-change or
+      // contain for position: fixed. A direct child of body has none of these
+      // to inherit, and the shift when one appears is silent and visual.
+      //
+      // ARIA says a document should have at most one banner, and axe reports a
+      // duplicate whether or not the banners carry distinct labels. So use a
+      // header when the page has no banner yet, and a named region otherwise.
+      //
+      // A header is a banner wherever it sits, unless it is inside sectioning
+      // content, so this cannot just look at the children of body: a custom
+      // page layout wraps the title block header in a plain div. An explicit
+      // role="banner" always counts.
+      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
+      const hasBanner = Array.from(
+        window.document.querySelectorAll('header:not([role]), [role="banner"]')
+      ).some(function(el) {
+        return el.hasAttribute("role") || el.closest(sectioning) === null;
+      });
+      const container = window.document.createElement(hasBanner ? "div" : "header");
+      if (hasBanner) {
+        container.setAttribute("role", "region");
+        container.setAttribute("aria-label", "Toggle dark mode");
+      }
+      container.classList.add('quarto-color-scheme-toggle-container');
+      container.appendChild(toggle);
+      window.document.body.appendChild(container);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="./ch04_aggregate_output.html" class="pagination-link" aria-label="Chapter 4: Aggregate Output">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Chapter 4: Aggregate Output</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ch06_unemployment.html" class="pagination-link" aria-label="Ch06 Unemployment">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ch06 Unemployment</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

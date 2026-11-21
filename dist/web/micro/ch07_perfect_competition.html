@@ -445,8 +445,24 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#price-taking-equilibrium" id="toc-price-taking-equilibrium" class="nav-link active" data-scroll-target="#price-taking-equilibrium"><span class="header-section-number">7.1</span> Price-Taking Equilibrium</a></li>
-  <li><a href="#shutdown-and-exit-rules" id="toc-shutdown-and-exit-rules" class="nav-link" data-scroll-target="#shutdown-and-exit-rules"><span class="header-section-number">7.2</span> Shutdown and Exit Rules</a></li>
+  <li><a href="#price-taking-behavior-and-short-run-profit-maximization" id="toc-price-taking-behavior-and-short-run-profit-maximization" class="nav-link active" data-scroll-target="#price-taking-behavior-and-short-run-profit-maximization"><span class="header-section-number">7.1</span> Price-Taking Behavior and Short-Run Profit Maximization</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction" id="toc-conceptual-introduction" class="nav-link" data-scroll-target="#conceptual-introduction">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation" id="toc-visual-representation" class="nav-link" data-scroll-target="#visual-representation">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-algebra-level" id="toc-mathematical-foundation-algebra-level" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level">Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#short-run-shutdown-vs.-long-run-exit-rules" id="toc-short-run-shutdown-vs.-long-run-exit-rules" class="nav-link" data-scroll-target="#short-run-shutdown-vs.-long-run-exit-rules"><span class="header-section-number">7.2</span> Short-Run Shutdown vs.&nbsp;Long-Run Exit Rules</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-1" id="toc-conceptual-introduction-1" class="nav-link" data-scroll-target="#conceptual-introduction-1">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-1" id="toc-visual-representation-1" class="nav-link" data-scroll-target="#visual-representation-1">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-1" id="toc-mathematical-foundation-algebra-level-1" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-1">Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#long-run-industry-equilibrium-and-zero-economic-profit" id="toc-long-run-industry-equilibrium-and-zero-economic-profit" class="nav-link" data-scroll-target="#long-run-industry-equilibrium-and-zero-economic-profit"><span class="header-section-number">7.3</span> Long-Run Industry Equilibrium and Zero Economic Profit</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-2" id="toc-conceptual-introduction-2" class="nav-link" data-scroll-target="#conceptual-introduction-2">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-2" id="toc-visual-representation-2" class="nav-link" data-scroll-target="#visual-representation-2">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-2" id="toc-mathematical-foundation-algebra-level-2" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-2">Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -473,20 +489,338 @@ window.Quarto = {
 </header>
 
 
-<section id="price-taking-equilibrium" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="price-taking-equilibrium"><span class="header-section-number">7.1</span> Price-Taking Equilibrium</h2>
-<p>Competitive firms face a horizontal demand curve at market price <span class="math inline">\(P = MR = AR\)</span>. The profit-maximizing condition is <span class="math inline">\(P = MC(q^*)\)</span>.</p>
+<blockquote class="blockquote">
+<p>This chapter provides a rigorous, algebra-first treatment of perfect competition, benchmarked to Eric Chiang’s <em>Microeconomics</em>. It examines price-taking behavior and short-run profit maximization, short-run shutdown versus long-run exit decisions, and the dynamics of free entry and exit that drive competitive industries toward zero economic profit and full efficiency in the long run.</p>
+</blockquote>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Bring It Home: Why Did the Food-Truck Boom Cool Down—While Some Trucks Kept Rolling Through Slow Winters?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose a wave of gourmet taco trucks opens in a major U.S.&nbsp;city. Early operators sell out every afternoon and earn generous profits, inspiring dozens of new entrepreneurs to outfit trucks of their own. Within two years, street corners are crowded, lunch prices level off, and owners complain they are <code>barely breaking even''—yet most trucks stay in business. Meanwhile, during a rainy winter month when daily revenue fails to cover monthly truck loans and commissary rent, some operators keep serving lunch while others park their trucks until spring. Why do early profits vanish so quickly in open markets, why does a money-losing truck sometimes stay open, and why would anyone remain in an industry earning</code>zero economic profit’’? By the end of this chapter, you will be able to answer all three questions using the competitive model.</p>
+</div>
+</div>
+<section id="price-taking-behavior-and-short-run-profit-maximization" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="price-taking-behavior-and-short-run-profit-maximization"><span class="header-section-number">7.1</span> Price-Taking Behavior and Short-Run Profit Maximization</h2>
+<section id="conceptual-introduction" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction">Conceptual Introduction</h3>
+<p>Imagine a family corn farm in Iowa ready to sell its autumn harvest at a local grain elevator. Even if the farm harvests tens of thousands of bushels, it represents a microscopic share of global grain production and cannot negotiate its own price—it sells at the prevailing commodity spot price. Economists model markets like this using <strong>perfect competition</strong>, an idealized benchmark defined by four strict assumptions: (1) many small buyers and sellers, (2) identical (<strong>homogeneous</strong>) products across every firm, (3) perfect information about prices and quality, and (4) free entry and exit in the long run with zero barriers. Agricultural commodities such as wheat, corn, and soybeans come closest to this benchmark in practice.</p>
+<p>Because each competitive firm supplies a tiny fraction of total market output and sells an identical product, an individual producer has zero power to raise price above the going market rate—if a farmer charges even one penny more, buyers switch instantly to neighboring sellers. Conversely, there is no reason to cut price below the market rate because the firm can already sell all it wishes at the going price. Consequently, every competitive firm is a <strong>price taker</strong> facing a perfectly elastic (horizontal) demand curve at the market equilibrium price <span class="math inline">\(P^*\)</span>. Every additional unit sold adds exactly <span class="math inline">\(P^*\)</span> to Total Revenue (<span class="math inline">\(TR = P^* \times q\)</span>), meaning <strong>Price equals Marginal Revenue and Average Revenue (<span class="math inline">\(P^* = MR = AR\)</span>)</strong>.</p>
+<p>To maximize economic profit (<span class="math inline">\(\pi = TR - TC\)</span>), a competitive firm expands output one unit at a time as long as the extra revenue from selling another unit exceeds the extra cost of producing it (<span class="math inline">\(MR &gt; MC\)</span>). It stops at the exact quantity <span class="math inline">\(q^*\)</span> where Marginal Revenue equals Marginal Cost on the upward-sloping portion of the <span class="math inline">\(MC\)</span> curve:</p>
+<p><span class="math display">\[
+P^* = MR = MC(q^*)
+\]</span></p>
+<p>Once optimal output <span class="math inline">\(q^*\)</span> is chosen, the firm’s profit or loss per unit is the vertical gap between market price <span class="math inline">\(P^*\)</span> and Average Total Cost (<span class="math inline">\(ATC\)</span>) at <span class="math inline">\(q^*\)</span>, giving total economic profit <span class="math inline">\(\pi = (P^* - ATC) \times q^*\)</span>. When global grain prices surge due to droughts elsewhere, an individual farmer’s horizontal <span class="math inline">\(P = MR\)</span> line shifts upward, prompting the farmer to apply extra inputs and expand output along <span class="math inline">\(MC\)</span> to capture positive short-run economic profits.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Market Demand Slopes Down, Yet the Firm’s Demand Is Horizontal
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Students often wonder how market demand can obey the Law of Demand (sloping downward) while each competitive firm faces a flat demand curve. The resolution is scale: in the <em>entire market</em>, lower prices are required to persuade consumers to buy millions of extra bushels. For a <em>single small farm</em>, however, expanding output from <span class="math inline">\(50\)</span> to <span class="math inline">\(100\)</span> bushels is a drop in the ocean—too small to move the market price noticeably—so the individual firm takes <span class="math inline">\(P^*\)</span> as fixed.</p>
+</div>
+</div>
 </section>
-<section id="shutdown-and-exit-rules" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="shutdown-and-exit-rules"><span class="header-section-number">7.2</span> Shutdown and Exit Rules</h2>
+<section id="visual-representation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation">Visual Representation</h3>
+<p>Figure 1 links the overall industry supply-and-demand equilibrium (left) to an individual price-taking firm earning positive short-run economic profit (right).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_7_perfect_competition_and_long_run_industry_equilibrium_figure_01.svg" class="img-fluid figure-img" alt="Short-Run Profit Maximization under Perfect Competition. Market supply and demand set equilibrium price P^* (left), giving the individual price-taking firm a horizontal P^* = MR line (right). Producing q^* where P^* = MC yields positive short-run economic profit equal to the shaded teal rectangle (P^* - ATC(q^*)) \times q^*."></p>
+<figcaption>Figure 1. Short-Run Profit Maximization under Perfect Competition. Market supply and demand set equilibrium price <span class="math inline">\(P^*\)</span> (left), giving the individual price-taking firm a horizontal <span class="math inline">\(P^* = MR\)</span> line (right). Producing <span class="math inline">\(q^*\)</span> where <span class="math inline">\(P^* = MC\)</span> yields positive short-run economic profit equal to the shaded teal rectangle <span class="math inline">\((P^* - ATC(q^*)) \times q^*\)</span>.</figcaption>
+</figure>
+</div>
+</section>
+<section id="mathematical-foundation-algebra-level" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level">Mathematical Foundation (Algebra Level)</h3>
+<p>Assuming the firm is a price taker with a rising Marginal Cost schedule and operates above its shutdown threshold (<span class="math inline">\(P^* \ge \min AVC\)</span>), profit maximization occurs at <span class="math inline">\(P^* = MC(q^*)\)</span>, generating total economic profit:</p>
+<p><span class="math display">\[
+\pi = TR - TC = (P^* - ATC) \times q^*
+\]</span></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Work It Out: Short-Run Profit Maximization for a Blueberry Grower
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problem:</strong> An illustrative competitive blueberry grower faces a market price of <span class="math inline">\(P^* = \$30\)</span> per crate. The grower’s Total Cost, Average Variable Cost, and Marginal Cost schedules are:</p>
+<p><span class="math display">\[
+TC(q) = 48 + 6q + 2q^2, \qquad AVC(q) = 6 + 2q, \qquad MC(q) = 6 + 4q
+\]</span></p>
+<p>Find the profit-maximizing quantity of crates <span class="math inline">\(q^*\)</span>, Average Total Cost at <span class="math inline">\(q^*\)</span>, and total economic profit <span class="math inline">\(\pi\)</span>.</p>
+<p><strong>Step-by-Step Solution:</strong></p>
 <ul>
-<li><strong>Short-Run Shutdown:</strong> Produce if <span class="math inline">\(P \ge \min AVC\)</span>; halt if <span class="math inline">\(P &lt; \min AVC\)</span>.</li>
-<li><strong>Long-Run Exit:</strong> Remain in market if <span class="math inline">\(P \ge \min ATC\)</span>; exit if <span class="math inline">\(P &lt; \min ATC\)</span>.</li>
+<li><strong>Apply the Profit-Maximization Rule (<span class="math inline">\(P^* = MC\)</span>):</strong> Set market price equal to Marginal Cost and solve for <span class="math inline">\(q^*\)</span>:</li>
 </ul>
-<p>In long-run equilibrium, free entry and exit enforce zero economic profit: <span class="math inline">\(P = MR = MC = \min ATC\)</span>.</p>
+<p><span class="math display">\[
+30 = 6 + 4q^* \implies 24 = 4q^* \implies q^* = \mathbf{6\text{ crates}}
+\]</span></p>
+<p>Check that the firm covers variable costs: at <span class="math inline">\(q^* = 6\)</span>, <span class="math inline">\(AVC(6) = 6 + 2(6) = \$18 &lt; \$30\)</span>, so operating is profitable.</p>
+<ul>
+<li><strong>Calculate Total Cost (<span class="math inline">\(TC\)</span>) and Average Total Cost (<span class="math inline">\(ATC\)</span>) at <span class="math inline">\(q^* = 6\)</span>:</strong></li>
+</ul>
+<p><span class="math display">\[
+TC(6) = 48 + 6(6) + 2(6^2) = 48 + 36 + 72 = \$156
+\]</span></p>
+<p><span class="math display">\[
+ATC(6) = \frac{\$156}{6} = \mathbf{\$26.00\text{ per crate}}
+\]</span></p>
+<ul>
+<li><strong>Calculate Economic Profit (<span class="math inline">\(\pi\)</span>) Two Ways:</strong> Using Total Revenue (<span class="math inline">\(TR = \$30 \times 6 = \$180\)</span>) minus Total Cost:</li>
+</ul>
+<p><span class="math display">\[
+\pi = TR - TC = \$180 - \$156 = \mathbf{+\$24}
+\]</span></p>
+<p>Cross-checking with the profit-rectangle formula:</p>
+<p><span class="math display">\[
+\pi = (P^* - ATC) \times q^* = (\$30 - \$26) \times 6 = \$4 \times 6 = \mathbf{+\$24}
+\]</span></p>
+<p><strong>Conclusion:</strong> Producing <span class="math inline">\(6\)</span> crates per period maximizes short-run economic profit at <span class="math inline">\(+\$24\)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Calculus Conditions for Profit Maximization
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> A competitive firm chooses <span class="math inline">\(q \ge 0\)</span> to maximize <span class="math inline">\(\pi(q) = P^* q - TC(q)\)</span>. The first-order condition (FOC) requires:</p>
+<p><span class="math display">\[
+\frac{d\pi}{dq} = P^* - \frac{d(TC)}{dq} = P^* - MC(q) = 0 \implies P^* = MC(q^*)
+\]</span></p>
+<p>The second-order condition (SOC) for a local maximum requires:</p>
+<p><span class="math display">\[
+\frac{d^2\pi}{dq^2} = -\frac{d(MC)}{dq} &lt; 0 \implies \frac{d(MC)}{dq} &gt; 0
+\]</span></p>
+<p>Thus, profit is maximized only where <span class="math inline">\(P^* = MC\)</span> along the <em>upward-sloping</em> segment of the Marginal Cost curve. For the blueberry grower above, <span class="math inline">\(TC(q) = 48 + 6q + 2q^2\)</span> yields <span class="math inline">\(MC(q) = 6 + 4q\)</span> and <span class="math inline">\(MC'(q) = 4 &gt; 0\)</span>, confirming that <span class="math inline">\(q^* = 6\)</span> is a unique global maximum.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="short-run-shutdown-vs.-long-run-exit-rules" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="short-run-shutdown-vs.-long-run-exit-rules"><span class="header-section-number">7.2</span> Short-Run Shutdown vs.&nbsp;Long-Run Exit Rules</h2>
+<section id="conceptual-introduction-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-1">Conceptual Introduction</h3>
+<p>Consider an illustrative beachfront hotel in a seasonal tourist town that faces high fixed mortgage and insurance bills year-round. In November, off-peak room rates fall from <span class="math inline">\(\$280\)</span> to <span class="math inline">\(\$95\)</span> per night, far below the hotel’s full average cost per room. Yet the variable cost of housekeeping and utilities for an occupied room is only <span class="math inline">\(\$45\)</span> per night. Because <span class="math inline">\(P = \$95\)</span> exceeds <span class="math inline">\(AVC = \$45\)</span>, each occupied room contributes <span class="math inline">\(\$50\)</span> toward paying the unavoidable mortgage, so staying open loses less money than locking the doors for the autumn.</p>
+<p>Many students mistakenly assume that any money-losing business (<span class="math inline">\(\pi &lt; 0\)</span>) should immediately close. That intuition misses the crucial distinction between <strong>sunk fixed costs</strong> in the short run and <strong>escapable fixed costs</strong> in the long run:</p>
+<ul>
+<li><strong>Short-Run Shutdown Rule (<span class="math inline">\(P &lt; \min AVC\)</span>):</strong> In the short run, fixed costs (such as a signed building lease or property mortgage) must be paid even when output is zero. As long as market price covers Average Variable Cost (<span class="math inline">\(P \ge \min AVC\)</span>), every unit sold pays for its workers and materials <em>plus</em> contributes cash toward fixed overhead. The firm should <strong>keep operating at a loss</strong> to minimize its deficit. Only when <span class="math inline">\(P &lt; \min AVC\)</span> does operating lose even more money than shutting down.</li>
+<li><strong>Long-Run Exit Rule (<span class="math inline">\(P &lt; \min ATC\)</span>):</strong> In the long run, leases expire and all costs become variable and avoidable. If market price remains persistently below minimum Average Total Cost (<span class="math inline">\(P &lt; \min ATC\)</span>), the firm cannot cover its full economic costs and will permanently <strong>exit the industry</strong>.</li>
+</ul>
+<p>Consequently, a competitive firm supplies <span class="math inline">\(q = 0\)</span> whenever <span class="math inline">\(P &lt; \min AVC\)</span> and produces along <span class="math inline">\(P = MC\)</span> whenever <span class="math inline">\(P \ge \min AVC\)</span>. Therefore, the firm’s <strong>short-run supply curve</strong> is the upward-sloping portion of its Marginal Cost curve lying at or above <span class="math inline">\(\min AVC\)</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Shutdown Is Temporary; Exit Is Permanent
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A <strong>shutdown</strong> is a <em>short-run</em> decision to produce <span class="math inline">\(q = 0\)</span> today while remaining in the industry and still paying fixed overhead (like a ski resort closing its lifts in July while continuing to pay property taxes and loan payments). <strong>Exit</strong> is a <em>long-run</em> decision to leave the market permanently, terminate leases, sell equipment, and eliminate all fixed and variable costs.</p>
+</div>
+</div>
+</section>
+<section id="visual-representation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-1">Visual Representation</h3>
+<p>Figure 2 derives <span class="math inline">\(AVC\)</span>, <span class="math inline">\(ATC\)</span>, and <span class="math inline">\(MC\)</span> from a single consistent cubic cost structure so that <span class="math inline">\(MC\)</span> intersects both <span class="math inline">\(AVC\)</span> and <span class="math inline">\(ATC\)</span> at their exact mathematical minima, mapping the three short-run decision zones.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_7_perfect_competition_and_long_run_industry_equilibrium_figure_02.svg" class="img-fluid figure-img" alt="Short-Run Shutdown and Long-Run Exit Thresholds. Marginal Cost (MC) cuts AVC at the shutdown point (q_{\text{SD}}, \min AVC) and cuts ATC at the break-even point (q_{\text{BE}}, \min ATC). The firm's short-run supply curve is the bold segment of MC above \min AVC; below \min AVC, the firm shuts down (q=0)."></p>
+<figcaption>Figure 2. Short-Run Shutdown and Long-Run Exit Thresholds. Marginal Cost (<span class="math inline">\(MC\)</span>) cuts <span class="math inline">\(AVC\)</span> at the shutdown point <span class="math inline">\((q_{\text{SD}}, \min AVC)\)</span> and cuts <span class="math inline">\(ATC\)</span> at the break-even point <span class="math inline">\((q_{\text{BE}}, \min ATC)\)</span>. The firm’s short-run supply curve is the bold segment of <span class="math inline">\(MC\)</span> above <span class="math inline">\(\min AVC\)</span>; below <span class="math inline">\(\min AVC\)</span>, the firm shuts down (<span class="math inline">\(q=0\)</span>).</figcaption>
+</figure>
+</div>
+</section>
+<section id="mathematical-foundation-algebra-level-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-1">Mathematical Foundation (Algebra Level)</h3>
+<p>Assuming fixed cost <span class="math inline">\(FC\)</span> is sunk in the short run, comparing profit from operating (<span class="math inline">\(\pi_{\text{operate}} = TR - VC - FC\)</span>) against profit from shutting down (<span class="math inline">\(\pi_{\text{shutdown}} = -FC\)</span>) yields:</p>
+<p><span class="math display">\[
+\pi_{\text{operate}} \ge \pi_{\text{shutdown}} \iff TR - VC - FC \ge -FC \iff TR \ge VC \iff P \ge AVC
+\]</span></p>
+<p>Because a firm only chooses an interior output where <span class="math inline">\(P = MC\)</span> on the rising segment of <span class="math inline">\(MC\)</span>, operating beats shutting down whenever <span class="math inline">\(P \ge \min AVC\)</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Work It Out: Short-Run Shutdown vs.&nbsp;Long-Run Exit for a Print Shop
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problem:</strong> An illustrative small print shop pays daily fixed rent of <span class="math inline">\(FC = \$300\)</span>. Suppose a downturn pushes the competitive market price down to <span class="math inline">\(P = \$10.00\)</span> per print job. At its profit-maximizing (loss-minimizing) output of <span class="math inline">\(q^* = 50\)</span> print jobs per day (where <span class="math inline">\(P = MC = \$10.00\)</span>), its Total Variable Cost is <span class="math inline">\(VC = \$400\)</span>, so <span class="math inline">\(AVC = \$8.00\)</span> per job and <span class="math inline">\(ATC = \$14.00\)</span> per job. Calculate the shop’s daily loss if it operates versus its loss if it shuts down, and determine the optimal short-run and long-run decisions.</p>
+<p><strong>Step-by-Step Solution:</strong></p>
+<ul>
+<li><strong>Calculate Loss If the Shop Operates (<span class="math inline">\(q^* = 50\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+TR = \$10.00 \times 50 = \$500, \qquad TC = FC + VC = \$300 + \$400 = \$700
+\]</span></p>
+<p><span class="math display">\[
+\pi_{\text{operate}} = TR - TC = \$500 - \$700 = \mathbf{-\$200\text{ daily loss}}
+\]</span></p>
+<ul>
+<li><strong>Calculate Loss If the Shop Shuts Down (<span class="math inline">\(q = 0\)</span>):</strong> Revenue is <span class="math inline">\(\$0\)</span> and variable cost is <span class="math inline">\(\$0\)</span>, leaving the fixed rent unpaid:</li>
+</ul>
+<p><span class="math display">\[
+\pi_{\text{shutdown}} = \$0 - \$300 = \mathbf{-\$300\text{ daily loss}}
+\]</span></p>
+<ul>
+<li><strong>Compare Short-Run and Long-Run Thresholds:</strong> Because <span class="math inline">\(P\ (\$10.00) &gt; AVC\ (\$8.00)\)</span>, every print job contributes <span class="math inline">\(\$2.00\)</span> toward fixed rent, shrinking the daily loss by <span class="math inline">\(\$2.00 \times 50 = \$100\)</span> (from <span class="math inline">\(-\$300\)</span> to <span class="math inline">\(-\$200\)</span>). However, because the shop still loses money even at its optimal output <span class="math inline">\(q^* = 50\)</span> (<span class="math inline">\(P = \$10.00 &lt; ATC = \$14.00\)</span>), the market price necessarily lies below <span class="math inline">\(\min ATC\)</span>.</li>
+</ul>
+<p><strong>Conclusion:</strong> The shop should <strong>stay open in the short run</strong> (losing <span class="math inline">\(\$200\)</span> instead of <span class="math inline">\(\$300\)</span>), but <strong>exit in the long run</strong> when its lease expires unless market prices recover to at least <span class="math inline">\(\min ATC\)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Why <span class="math inline">\(MC\)</span> Cuts <span class="math inline">\(AVC\)</span> and <span class="math inline">\(ATC\)</span> at Their Minima
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> Applying the quotient rule to <span class="math inline">\(AVC(q) = \frac{VC(q)}{q}\)</span> gives:</p>
+<p><span class="math display">\[
+\frac{d(AVC)}{dq} = \frac{q \cdot \frac{d(VC)}{dq} - VC(q)}{q^2} = \frac{MC(q) - AVC(q)}{q}
+\]</span></p>
+<p>Setting <span class="math inline">\(\frac{d(AVC)}{dq} = 0\)</span> implies <span class="math inline">\(MC(q) = AVC(q)\)</span> at the exact minimum of <span class="math inline">\(AVC\)</span>. By the identical derivation on <span class="math inline">\(ATC(q) = \frac{TC(q)}{q}\)</span>, <span class="math inline">\(\frac{d(ATC)}{dq} = \frac{MC(q) - ATC(q)}{q} = 0\)</span> implies <span class="math inline">\(MC(q) = ATC(q)\)</span> at the exact minimum of <span class="math inline">\(ATC\)</span>. Hence the short-run shutdown point <span class="math inline">\((q_{\text{SD}}, \min AVC)\)</span> and long-run break-even point <span class="math inline">\((q_{\text{BE}}, \min ATC)\)</span> always lie on the <span class="math inline">\(MC\)</span> curve.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="long-run-industry-equilibrium-and-zero-economic-profit" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="long-run-industry-equilibrium-and-zero-economic-profit"><span class="header-section-number">7.3</span> Long-Run Industry Equilibrium and Zero Economic Profit</h2>
+<section id="conceptual-introduction-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-2">Conceptual Introduction</h3>
+<p>When craft breweries and gourmet food trucks surged in popularity, early operators earned substantial economic profits. Because startup barriers were modest, hundreds of new entrants opened across major cities within a few years—competing prices downward and dividing customer traffic until typical operators earned a normal return on their labor and equipment investment.</p>
+<p>In the long run, <strong>free entry and exit</strong> act as an automatic self-correcting thermostat for perfectly competitive industries. Whenever existing firms earn positive economic profits (<span class="math inline">\(\pi &gt; 0\)</span>), entrepreneurs enter the market, shifting the short-run industry supply curve rightward and driving market price down until economic profits vanish. Conversely, if firms suffer economic losses (<span class="math inline">\(\pi &lt; 0\)</span>), producers exit when leases and equipment contracts expire, shifting industry supply leftward and pushing prices back up until remaining firms break even.</p>
+<p>Consequently, a perfectly competitive industry settles into a <strong>long-run equilibrium</strong> characterized by the triple equality:</p>
+<p><span class="math display">\[
+P_{\text{LR}} = MR = MC = \min ATC
+\]</span></p>
+<p>At this equilibrium, firms earn <strong>zero economic profit</strong>, meaning they earn a <strong>normal accounting profit</strong> covering all explicit bills plus the owner’s full implicit opportunity cost of time and invested capital. Because each firm operates at the lowest possible average cost (<span class="math inline">\(P_{\text{LR}} = \min ATC\)</span>) and produces the exact quantity where consumers’ marginal willingness to pay equals marginal cost (<span class="math inline">\(P_{\text{LR}} = MC\)</span>), long-run competitive equilibrium achieves both <strong>productive efficiency</strong> and <strong>allocative efficiency</strong>. In a <strong>constant-cost industry</strong> (where input prices do not change as the industry expands), the long-run industry supply curve (<span class="math inline">\(S_{\text{LR}}\)</span>) is horizontal at <span class="math inline">\(P_{\text{LR}} = \min ATC\)</span>; in an <strong>increasing-cost industry</strong> (where expansion bids up specialized input prices), <span class="math inline">\(S_{\text{LR}}\)</span> slopes upward, whereas in a <strong>decreasing-cost industry</strong> (where external economies lower input prices), <span class="math inline">\(S_{\text{LR}}\)</span> slopes downward.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Zero Economic Profit Does Not Mean Zero Accounting Profit
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>``Zero economic profit’’ sounds bleak only if you confuse <em>economic</em> profit with <em>accounting</em> profit. Suppose a food-truck owner earns <span class="math inline">\(\$300{,}000\)</span> in annual revenue, pays <span class="math inline">\(\$210{,}000\)</span> in explicit food, fuel, and permit costs, and could earn <span class="math inline">\(\$80{,}000\)</span> managing a restaurant plus <span class="math inline">\(\$10{,}000\)</span> in interest on invested savings. Her <strong>accounting profit</strong> is <span class="math inline">\(+\$90{,}000\)</span>, while her <strong>economic profit</strong> is <span class="math inline">\(\$90{,}000 - (\$80{,}000 + \$10{,}000) = \$0\)</span>. She is earning exactly her full opportunity cost—a healthy normal return—so she has no incentive to exit, and outsiders have no incentive to rush in.</p>
+</div>
+</div>
+</section>
+<section id="visual-representation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-2">Visual Representation</h3>
+<p>Figure 3 illustrates long-run adjustment in a constant-cost competitive industry: positive profits at <span class="math inline">\(P_1\)</span> attract new firms, shifting industry supply from <span class="math inline">\(S_1\)</span> to <span class="math inline">\(S_2\)</span> until market price falls to <span class="math inline">\(P_{\text{LR}} = \min ATC\)</span>, eliminating economic profit.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_7_perfect_competition_and_long_run_industry_equilibrium_figure_03.svg" class="img-fluid figure-img" alt="Long-Run Competitive Equilibrium. Positive short-run profits at P_1 attract new firms, shifting market supply rightward from S_1 to S_2 (left). Price falls until each firm's demand line is tangent to \min ATC at P_{\text{LR}} (right), eliminating economic profit and achieving productive and allocative efficiency."></p>
+<figcaption>Figure 3. Long-Run Competitive Equilibrium. Positive short-run profits at <span class="math inline">\(P_1\)</span> attract new firms, shifting market supply rightward from <span class="math inline">\(S_1\)</span> to <span class="math inline">\(S_2\)</span> (left). Price falls until each firm’s demand line is tangent to <span class="math inline">\(\min ATC\)</span> at <span class="math inline">\(P_{\text{LR}}\)</span> (right), eliminating economic profit and achieving productive and allocative efficiency.</figcaption>
+</figure>
+</div>
+</section>
+<section id="mathematical-foundation-algebra-level-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-2">Mathematical Foundation (Algebra Level)</h3>
+<p>Assuming a constant-cost industry with identical firms and free entry and exit, long-run market price equals each firm’s minimum Average Total Cost, and the equilibrium number of firms <span class="math inline">\(N^*\)</span> divides total market demand by each firm’s efficient scale <span class="math inline">\(q_{\text{LR}}\)</span>:</p>
+<p><span class="math display">\[
+P_{\text{LR}} = \min ATC, \qquad N^* = \frac{Q_{\text{market}}(P_{\text{LR}})}{q_{\text{LR}}}
+\]</span></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Work It Out: Long-Run Industry Equilibrium in Lawn Care
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problem:</strong> Suppose a city’s competitive lawn-care industry is a constant-cost market in which every firm has identical costs, with minimum Average Total Cost occurring at <span class="math inline">\(q_{\text{LR}} = 25\)</span> lawns per week and <span class="math inline">\(\min ATC = \$40\)</span> per lawn. Total weekly market demand for lawn care is linear: <span class="math inline">\(Q_d = 2{,}000 - 15P\)</span>. Find the long-run equilibrium price <span class="math inline">\(P_{\text{LR}}\)</span>, total market quantity <span class="math inline">\(Q_{\text{LR}}\)</span>, and equilibrium number of lawn-care firms <span class="math inline">\(N^*\)</span>.</p>
+<p><strong>Step-by-Step Solution:</strong></p>
+<ul>
+<li><strong>Identify Long-Run Equilibrium Price (<span class="math inline">\(P_{\text{LR}}\)</span>):</strong> Free entry and exit drive economic profit to zero, so price must equal minimum Average Total Cost:</li>
+</ul>
+<p><span class="math display">\[
+P_{\text{LR}} = \min ATC = \mathbf{\$40\text{ per lawn}}
+\]</span></p>
+<ul>
+<li><strong>Calculate Total Market Quantity (<span class="math inline">\(Q_{\text{LR}}\)</span>) at <span class="math inline">\(P_{\text{LR}} = \$40\)</span>:</strong> Substitute <span class="math inline">\(P_{\text{LR}} = 40\)</span> into the market demand equation:</li>
+</ul>
+<p><span class="math display">\[
+Q_{\text{LR}} = 2{,}000 - 15(40) = 2{,}000 - 600 = \mathbf{1{,}400\text{ lawns per week}}
+\]</span></p>
+<ul>
+<li><strong>Calculate Equilibrium Number of Firms (<span class="math inline">\(N^*\)</span>):</strong> Divide total market output by each firm’s efficient scale (<span class="math inline">\(q_{\text{LR}} = 25\)</span>):</li>
+</ul>
+<p><span class="math display">\[
+N^* = \frac{Q_{\text{LR}}}{q_{\text{LR}}} = \frac{1{,}400}{25} = \mathbf{56\text{ firms}}
+\]</span></p>
+<p><strong>Conclusion:</strong> In long-run equilibrium, <span class="math inline">\(56\)</span> identical firms each service <span class="math inline">\(25\)</span> lawns per week at <span class="math inline">\(\$40\)</span> per lawn, earning zero economic profit (a normal accounting return).</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Calculus Derivation of Long-Run Supply
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> Suppose each firm in a constant-cost competitive industry has Total Cost <span class="math inline">\(TC(q) = 100 + 20q + q^2\)</span>. Marginal Cost is <span class="math inline">\(MC(q) = \frac{d(TC)}{dq} = 20 + 2q\)</span>, and Average Total Cost is <span class="math inline">\(ATC(q) = \frac{100}{q} + 20 + q\)</span>. Setting <span class="math inline">\(MC(q) = ATC(q)\)</span> locates minimum <span class="math inline">\(ATC\)</span>:</p>
+<p><span class="math display">\[
+20 + 2q = \frac{100}{q} + 20 + q \implies q = \frac{100}{q} \implies q^2 = 100 \implies q_{\text{LR}} = 10
+\]</span></p>
+<p>Substituting <span class="math inline">\(q_{\text{LR}} = 10\)</span> into <span class="math inline">\(MC(q)\)</span> (or <span class="math inline">\(ATC(q)\)</span>) gives <span class="math inline">\(P_{\text{LR}} = 20 + 2(10) = \$40\)</span>, establishing a horizontal long-run industry supply curve at <span class="math inline">\(P_{\text{LR}} = \$40\)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Bring It Home: Closing the Loop on the Food-Truck Market
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We can now explain every puzzle from the chapter’s opening food-truck story using the three competitive rules:</p>
+<ul>
+<li><strong>Why early profits vanished:</strong> Low startup barriers allowed new trucks to enter whenever <span class="math inline">\(P &gt; \min ATC\)</span>, shifting market supply rightward until price settled at <span class="math inline">\(P_{\text{LR}} = \min ATC\)</span>.</li>
+<li><strong>Why some trucks kept serving through slow winters:</strong> Truck loan payments and annual commissary leases are sunk short-run fixed costs. Any truck whose winter lunch price still exceeded its variable cost of ingredients and hourly staff (<span class="math inline">\(P \ge \min AVC\)</span>) minimized its loss by staying open, whereas trucks with <span class="math inline">\(P &lt; \min AVC\)</span> shut down temporarily until spring.</li>
+<li><strong>Why owners stay at ``zero economic profit’’:</strong> Zero economic profit means truck owners are covering every explicit expense <em>plus</em> earning a full normal return on their own time and invested capital—so staying in business is just as rewarding as their next-best alternative.</li>
+</ul>
+</div>
+</div>
 
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

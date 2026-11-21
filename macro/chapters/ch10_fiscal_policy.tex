@@ -25,7 +25,7 @@ This chapter provides a rigorous, pedagogical treatment of \textbf{Chapter 10: F
 % ==============================================================================
 \section{Learning Outcomes, Key Terms, and Opening Hook}
 
-\subsection{Course Learning Outcomes}
+\subsection*{Course Learning Outcomes}
 Upon completing this chapter, students should be able to:
 \begin{enumerate}
     \item \textbf{Distinguish Fiscal Instruments:} Differentiate between discretionary fiscal policy (deliberate legislative changes in government purchases, transfers, and tax rates) and automatic stabilizers (built-in fiscal rules that adjust countercyclically without new legislation).
@@ -34,7 +34,7 @@ Upon completing this chapter, students should be able to:
     \item \textbf{Evaluate Deficits and Sovereign Debt:} Distinguish an annual budget deficit (a flow variable) from public debt (a stock variable), separate cyclical from structural deficits, and evaluate debt sustainability using the Debt-to-GDP ratio ($B/Y$).
 \end{enumerate}
 
-\subsection{Key Terms}
+\subsection*{Key Terms}
 \begin{itemize}[leftmargin=1.5em]
     \item \textbf{Fiscal Policy:} Deliberate changes in federal government purchases, transfer payments, and taxation designed to influence aggregate demand, employment, and price stability.
     \item \textbf{Expansionary Fiscal Policy:} Increases in government purchases ($G$), increases in transfer payments ($TR$), or cuts in taxes ($T$) intended to shift aggregate demand rightward and close a recessionary gap.
@@ -59,14 +59,14 @@ Comparing these two landmark interventions highlights the central trade-offs of 
 % ==============================================================================
 \section{Fiscal Policy in the AD--AS Model}
 
-\subsection{Conceptual Introduction}
+\subsection*{Conceptual Introduction}
 Fiscal policy refers to the federal government's use of taxation ($T$), transfer payments ($TR$), and direct purchases of goods and services ($G$) to stabilize the macroeconomy around potential output ($Y_p$). While state and local governments also tax and spend, most operate under balanced-budget rules that force them to cut spending or raise taxes when revenues fall during a downturn. Only the federal government possesses the borrowing capacity to run deliberate countercyclical deficits during recessions and surpluses during inflationary booms.
 
 The core mechanism operates through the expenditure identity $AD = C + I + G + NX$. Direct government purchases ($G$)---such as federal highway construction, defense equipment, or public health research---enter aggregate demand one-for-one at any given price level. By contrast, changes in personal taxes ($T$) and government transfers ($TR$, such as Social Security, Medicaid, and unemployment insurance) operate indirectly by altering household disposable income ($Y_D = Y - T + TR$), which in turn changes consumption spending ($C$).
 
 In the short run, when nominal wages and input prices are sticky, shifting the Aggregate Demand curve alters both real GDP ($Y$) and the aggregate price level ($P$). If an economy is trapped below potential GDP in a recessionary gap, expansionary fiscal policy lifts planned spending, encouraging firms to expand production and rehire laid-off workers. Conversely, if an overheating economy sits above potential GDP in an inflationary gap, contractionary fiscal policy cools excess demand and relieves upward pressure on prices.
 
-\subsection{Visual Representation}
+\subsection*{Visual Representation}
 
 \begin{figure}[htbp]
 \centering
@@ -77,39 +77,38 @@ In the short run, when nominal wages and input prices are sticky, shifting the A
         \draw[econ axis] (0,0) -- (0,5.2) node[above, econ label] {Price Level ($P$)};
         \node[below left, font=\footnotesize] at (0,0) {$(0,0)$};
 
-        % LRAS at Y_p = 4.2
-        \draw[very thick, color=SlateBlue] (4.2,0) -- (4.2,4.8) node[above, font=\small\bfseries] {$LRAS$};
-        \node[below, font=\footnotesize\bfseries, color=SlateBlue] at (4.2,-0.15) {$Y_p$};
+        % LRAS at Y_p = 4.00
+        \draw[very thick, color=SlateBlue] (4.00,0) -- (4.00,4.8) node[above, font=\small\bfseries] {$LRAS$};
+        \node[below, font=\footnotesize\bfseries, color=SlateBlue] at (4.00,-0.15) {$Y_p$};
 
-        % SRAS
-        \draw[very thick, color=CourseTeal] (0.8,0.8) -- (5.5,4.3) node[right, font=\small\bfseries] {$SRAS_1$};
+        % SRAS: y = 0.20 + 0.75x -> (0.8, 0.8) to (5.6, 4.4)
+        \draw[very thick, color=CourseTeal] (0.80,0.80) -- (5.60,4.40) node[right, font=\small\bfseries] {$SRAS_1$};
 
-        % AD1 and AD2
-        \draw[very thick, color=CourseOrange] (0.8,4.1) -- (4.3,1.2) node[right, font=\small\bfseries] {$AD_1$};
-        \draw[very thick, color=CourseBlue] (1.9,4.5) -- (5.4,1.6) node[right, font=\small\bfseries] {$AD_2$};
+        % AD1: y = 4.54 - 0.80x -> (0.8, 3.90) to (4.3, 1.10); passes through (2.80, 2.30)
+        \draw[very thick, color=CourseOrange] (0.80,3.90) -- (4.30,1.10) node[right, font=\small\bfseries] {$AD_1$};
+        % AD2: y = 6.40 - 0.80x -> (2.0, 4.80) to (5.5, 2.00); passes through (4.00, 3.20)
+        \draw[very thick, color=CourseBlue] (2.00,4.80) -- (5.50,2.00) node[right, font=\small\bfseries] {$AD_2$};
 
-        % Equilibria
-        % E1: intersection of SRAS (y = 0.745x + 0.204) and AD1 (y = -0.829x + 4.763) -> x=2.90, y=2.36
-        \coordinate (E1) at (2.90, 2.36);
-        % E2: at Yp = 4.2, SRAS y = 3.33
-        \coordinate (E2) at (4.20, 3.33);
+        % Exact equilibria
+        \coordinate (E1) at (2.80, 2.30);
+        \coordinate (E2) at (4.00, 3.20);
 
-        \draw[econ guide] (2.90,0) -- (E1) -- (0,2.36);
-        \draw[econ guide] (4.20,0) -- (E2) -- (0,3.33);
+        \draw[econ guide] (2.80,0) -- (E1) -- (0,2.30);
+        \draw[econ guide] (4.00,0) -- (E2) -- (0,3.20);
 
         \fill[CourseOrange] (E1) circle (2.5pt) node[below left, font=\footnotesize\bfseries] {$E_1$};
         \fill[CourseBlue] (E2) circle (2.5pt) node[above left, font=\footnotesize\bfseries] {$E_2$};
 
-        \node[below, font=\footnotesize, color=CourseOrange] at (2.90,-0.15) {$Y_1$};
-        \node[left, font=\footnotesize, color=CourseOrange] at (0,2.36) {$P_1$};
-        \node[left, font=\footnotesize, color=CourseBlue] at (0,3.33) {$P_2$};
+        \node[below, font=\footnotesize, color=CourseOrange] at (2.80,-0.15) {$Y_1$};
+        \node[left, font=\footnotesize, color=CourseOrange] at (0,2.30) {$P_1$};
+        \node[left, font=\footnotesize, color=CourseBlue] at (0,3.20) {$P_2$};
 
-        % Shift arrow
-        \draw[-{Stealth[length=2.5mm]}, thick, color=CourseBlue] (2.3,3.35) -- (3.25,3.35);
-        \node[above, font=\scriptsize\bfseries, color=CourseBlue] at (2.78,3.38) {$\Delta G > 0$ or $\Delta T < 0$};
+        % Shift arrow cleanly between AD1 and AD2 at y = 3.70
+        \draw[-{Stealth[length=2.5mm]}, thick, color=CourseBlue] (1.35,3.70) -- (3.05,3.70);
+        \node[above, font=\scriptsize\bfseries, color=CourseBlue] at (2.20,3.75) {$\Delta G > 0$ or $\Delta T < 0$};
 
         % Recessionary gap bracket
-        \draw[decorate, decoration={brace, amplitude=4pt, mirror}, thick, color=Terracotta] (2.90,-0.55) -- (4.20,-0.55)
+        \draw[decorate, decoration={brace, amplitude=4pt, mirror}, thick, color=Terracotta] (2.80,-0.55) -- (4.00,-0.55)
             node[midway, below=4pt, font=\scriptsize\bfseries, color=Terracotta] {Recessionary Gap};
 
         \node[font=\small\bfseries, color=SlateBlue] at (3.1, 5.45) {(a) Expansionary Fiscal Policy};
@@ -121,36 +120,36 @@ In the short run, when nominal wages and input prices are sticky, shifting the A
         \draw[econ axis] (0,0) -- (0,5.2) node[above, econ label] {Price Level ($P$)};
         \node[below left, font=\footnotesize] at (0,0) {$(0,0)$};
 
-        % LRAS at Y_p = 2.90
-        \draw[very thick, color=SlateBlue] (2.90,0) -- (2.90,4.8) node[above, font=\small\bfseries] {$LRAS$};
-        \node[below, font=\footnotesize\bfseries, color=SlateBlue] at (2.90,-0.15) {$Y_p$};
+        % LRAS at Y_p = 2.80
+        \draw[very thick, color=SlateBlue] (2.80,0) -- (2.80,4.8) node[above, font=\small\bfseries] {$LRAS$};
+        \node[below, font=\footnotesize\bfseries, color=SlateBlue] at (2.80,-0.15) {$Y_p$};
 
-        % SRAS
-        \draw[very thick, color=CourseTeal] (0.8,0.8) -- (5.5,4.3) node[right, font=\small\bfseries] {$SRAS_1$};
+        % SRAS: y = 0.20 + 0.75x
+        \draw[very thick, color=CourseTeal] (0.80,0.80) -- (5.60,4.40) node[right, font=\small\bfseries] {$SRAS_1$};
 
         % AD1 (high) and AD2 (cooled)
-        \draw[very thick, color=CourseOrange] (1.9,4.5) -- (5.4,1.6) node[right, font=\small\bfseries] {$AD_1$};
-        \draw[very thick, color=CourseBlue] (0.8,4.1) -- (4.3,1.2) node[right, font=\small\bfseries] {$AD_2$};
+        \draw[very thick, color=CourseOrange] (2.00,4.80) -- (5.50,2.00) node[right, font=\small\bfseries] {$AD_1$};
+        \draw[very thick, color=CourseBlue] (0.80,3.90) -- (4.30,1.10) node[right, font=\small\bfseries] {$AD_2$};
 
-        \coordinate (C1) at (4.20, 3.33);
-        \coordinate (C2) at (2.90, 2.36);
+        \coordinate (C1) at (4.00, 3.20);
+        \coordinate (C2) at (2.80, 2.30);
 
-        \draw[econ guide] (4.20,0) -- (C1) -- (0,3.33);
-        \draw[econ guide] (2.90,0) -- (C2) -- (0,2.36);
+        \draw[econ guide] (4.00,0) -- (C1) -- (0,3.20);
+        \draw[econ guide] (2.80,0) -- (C2) -- (0,2.30);
 
         \fill[CourseOrange] (C1) circle (2.5pt) node[above right, font=\footnotesize\bfseries] {$E_1$};
         \fill[CourseBlue] (C2) circle (2.5pt) node[above left, font=\footnotesize\bfseries] {$E_2$};
 
-        \node[below, font=\footnotesize, color=CourseOrange] at (4.20,-0.15) {$Y_1$};
-        \node[left, font=\footnotesize, color=CourseOrange] at (0,3.33) {$P_1$};
-        \node[left, font=\footnotesize, color=CourseBlue] at (0,2.36) {$P_2$};
+        \node[below, font=\footnotesize, color=CourseOrange] at (4.00,-0.15) {$Y_1$};
+        \node[left, font=\footnotesize, color=CourseOrange] at (0,3.20) {$P_1$};
+        \node[left, font=\footnotesize, color=CourseBlue] at (0,2.30) {$P_2$};
 
-        % Shift arrow
-        \draw[-{Stealth[length=2.5mm]}, thick, color=CourseBlue] (3.35,3.35) -- (2.4,3.35);
-        \node[above, font=\scriptsize\bfseries, color=CourseBlue] at (2.88,3.38) {$\Delta G < 0$ or $\Delta T > 0$};
+        % Shift arrow cleanly between AD1 and AD2 at y = 3.70
+        \draw[-{Stealth[length=2.5mm]}, thick, color=CourseBlue] (3.05,3.70) -- (1.35,3.70);
+        \node[above, font=\scriptsize\bfseries, color=CourseBlue] at (2.20,3.75) {$\Delta G < 0$ or $\Delta T > 0$};
 
         % Inflationary gap bracket
-        \draw[decorate, decoration={brace, amplitude=4pt, mirror}, thick, color=Terracotta] (2.90,-0.55) -- (4.20,-0.55)
+        \draw[decorate, decoration={brace, amplitude=4pt, mirror}, thick, color=Terracotta] (2.80,-0.55) -- (4.00,-0.55)
             node[midway, below=4pt, font=\scriptsize\bfseries, color=Terracotta] {Inflationary Gap};
 
         \node[font=\small\bfseries, color=SlateBlue] at (3.1, 5.45) {(b) Contractionary Fiscal Policy};
@@ -162,10 +161,7 @@ In the short run, when nominal wages and input prices are sticky, shifting the A
 
 Figure~\ref{fig:fiscal-adas} illustrates how fiscal policy targets short-run output gaps. Notice that when $SRAS_1$ slopes upward, an expansionary fiscal boost does not translate entirely into real output gains: part of the rightward demand shift is absorbed by a higher price level ($P_1 \rightarrow P_2$). The closer the economy operates to full capacity ($Y_p$), the steeper the effective supply curve becomes, meaning additional fiscal stimulus generates progressively more inflation and less real GDP growth.
 
-\subsection{Real-World Application}
-\textbf{Closing an Inflationary Gap vs. Avoiding Over-Stimulation:} Following the 2020--2021 pandemic recovery, U.S. real GDP rebounded rapidly above pre-pandemic trend projections while supply chains remained constrained. By mid-2021, the U.S. economy exhibited classic symptoms of an inflationary gap: job openings exceeded unemployed workers, and core inflation accelerated sharply. In such an environment, further expansionary fiscal policy pushes $AD$ further up the steep portion of $SRAS$, amplifying price pressures rather than real production. Conversely, during the 1968 Revenue and Expenditure Control Act, Congress enacted a temporary $10\%$ income tax surcharge specifically to shift $AD$ leftward and cool Vietnam-era demand-pull inflation.
-
-\subsection{Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 To measure the horizontal shift of the Aggregate Demand curve before price-level feedback occurs, economists decompose planned aggregate expenditure ($AE$) into autonomous components and induced consumption:
 \begin{equation}
 AE = C_0 + c(Y - T + TR) + I_p + G + NX_0
@@ -184,19 +180,22 @@ Y^* &= \frac{1}{1 - c}\left(C_0 + I_p + G + NX_0 - cT + cTR\right)
 The fiscal multiplier formulas measure the \emph{horizontal shift} of the $AD$ curve ($\Delta AD_{\text{horizontal}}$) at a constant price level. Because the $SRAS$ curve slopes upward in the short run, a rising price level reduces real wealth and raises interest rates, partially offsetting the initial demand shift. Consequently, when $SRAS$ is upward sloping, the actual short-run change in equilibrium output ($\Delta Y_{\text{SR}}$) is strictly smaller than the full Keynesian multiplier shift ($\Delta Y_{\text{SR}} < k_G \cdot \Delta G$).
 \end{coreprinciple}
 
+\subsection*{Real-World Application}
+\textbf{Closing an Inflationary Gap vs. Avoiding Over-Stimulation:} Following the 2020--2021 pandemic recovery, U.S. real GDP rebounded rapidly above pre-pandemic trend projections while supply chains remained constrained. By mid-2021, the U.S. economy exhibited classic symptoms of an inflationary gap: job openings exceeded unemployed workers, and core inflation accelerated sharply. In such an environment, further expansionary fiscal policy pushes $AD$ further up the steep portion of $SRAS$, amplifying price pressures rather than real production. Conversely, during the 1968 Revenue and Expenditure Control Act, Congress enacted a temporary $10\%$ income tax surcharge specifically to shift $AD$ leftward and cool Vietnam-era demand-pull inflation.
+
 % ==============================================================================
 % SECTION 3: FISCAL MULTIPLIERS (SPENDING, TRANSFERS, AND TAXES)
 % ==============================================================================
 \section{Fiscal Multipliers: Purchases, Transfers, and Taxes}
 
-\subsection{Conceptual Introduction}
+\subsection*{Conceptual Introduction}
 When the federal government spends $\$1\text{ billion}$ on a new transit corridor, total national income typically rises by more than $\$1\text{ billion}$. This amplification is the \textbf{multiplier effect}: the initial spending becomes income for construction workers, engineers, and steel suppliers, who then spend a fraction $c$ ($MPC$) of their new income on groceries, rent, and services, generating a cascade of secondary spending rounds.
 
 Crucially, however, different fiscal tools trigger different initial spending rounds. When the government purchases goods and services directly ($\Delta G$), $100\%$ of the outlay enters aggregate expenditure in Round 1. By contrast, when the government cuts lump-sum taxes ($\Delta T < 0$) or increases transfer payments ($\Delta TR > 0$), households first receive the funds as disposable income and save a fraction $(1 - c)$ ($MPS$) immediately. Only the consumed fraction $c$ enters Round 1 of aggregate spending.
 
 As a result, the government purchases multiplier ($k_G$) is strictly larger in absolute magnitude than both the tax multiplier ($k_T$) and the transfer multiplier ($k_{TR}$). Moreover, if the government increases purchases and taxes by the exact same dollar amount ($\Delta G = \Delta T$), the two effects do not cancel out; instead, they produce a net expansionary stimulus equal to the initial outlay.
 
-\subsection{Visual Representation}
+\subsection*{Visual Representation}
 Table~\ref{tab:multiplier-rounds} traces the round-by-round spending cascade for a $\$100\text{ billion}$ fiscal intervention when $MPC = 0.80$ ($MPS = 0.20$), contrasting direct government purchases ($\Delta G = +\$100\text{B}$) against a lump-sum tax cut ($\Delta T = -\$100\text{B}$).
 
 \begin{table}[htbp]
@@ -215,10 +214,7 @@ All Remaining Rounds & $+\$204.80\text{B}$ & $+\$163.84\text{B}$ \\ \midrule
 \end{tabular}
 \end{table}
 
-\subsection{Real-World Application}
-\textbf{Targeting High-MPC Households During Downturns:} In practice, the effective multiplier of a tax cut or transfer payment depends heavily on \emph{who} receives the funds. Empirical studies of the 2001 and 2008 tax rebates and the 2020--2021 Economic Impact Payments show that liquidity-constrained, lower-income households exhibit a high marginal propensity to consume ($c \approx 0.70\text{--}0.90$), spending stimulus checks rapidly on food, utilities, and rent. Higher-income households, who hold ample liquid savings, exhibit a much lower short-run $MPC$ ($c \approx 0.10\text{--}0.25$), saving most of a temporary tax rebate or using it to pay down debt. Consequently, phase-out income thresholds and targeted transfers such as SNAP (food assistance) and unemployment insurance generate substantially larger short-run demand multipliers than broad across-the-board tax rate reductions.
-
-\subsection{Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 Taking changes ($\Delta$) in our equilibrium output equation $Y^* = \frac{1}{1-c}(C_0 + I_p + G + NX_0 - cT + cTR)$ while holding $C_0$, $I_p$, and $NX_0$ constant gives the four core fiscal multipliers:
 \begin{align}
 k_G &= \frac{\Delta Y}{\Delta G} = \frac{1}{1 - c} \label{eq:kg} \\[4pt]
@@ -265,6 +261,9 @@ If Congress is required to keep the budget deficit unchanged ($\Delta G = \Delta
 \]
 \end{examplecase}
 
+\subsection*{Real-World Application}
+\textbf{Targeting High-MPC Households During Downturns:} In practice, the effective multiplier of a tax cut or transfer payment depends heavily on \emph{who} receives the funds. Empirical studies of the 2001 and 2008 tax rebates and the 2020--2021 Economic Impact Payments show that liquidity-constrained, lower-income households exhibit a high marginal propensity to consume ($c \approx 0.70\text{--}0.90$), spending stimulus checks rapidly on food, utilities, and rent. Higher-income households, who hold ample liquid savings, exhibit a much lower short-run $MPC$ ($c \approx 0.10\text{--}0.25$), saving most of a temporary tax rebate or using it to pay down debt. Consequently, phase-out income thresholds and targeted transfers such as SNAP (food assistance) and unemployment insurance generate substantially larger short-run demand multipliers than broad across-the-board tax rate reductions.
+
 \begin{takeaways}
 \boxheader{CoursePurple}{Optional Advanced Extension: Continuous Multipliers via Partial Derivatives}
 For students comfortable with differential calculus, let $Y^* = f(G, T, TR)$ be defined implicitly by the goods-market equilibrium condition:
@@ -279,7 +278,7 @@ Similarly, differentiating with respect to $T$ (holding $G, TR, I_p, NX_0$ const
 \[
 dY - c(dY - dT) = 0 \implies (1 - c)\,dY = -c\,dT \implies \frac{\partial Y^*}{\partial T} = -\frac{c}{1 - c}
 \]
-By Clairaut's theorem on linear combinations of partials, a simultaneous balanced-budget perturbation $dG = dT$ yields:
+Using the total differential of $Y^*(G, T)$, a simultaneous balanced-budget perturbation $dG = dT$ yields:
 \[
 dY = \frac{\partial Y^*}{\partial G}\,dG + \frac{\partial Y^*}{\partial T}\,dT = \left(\frac{1}{1-c} - \frac{c}{1-c}\right)dG = dG
 \]
@@ -290,7 +289,7 @@ dY = \frac{\partial Y^*}{\partial G}\,dG + \frac{\partial Y^*}{\partial T}\,dT =
 % ==============================================================================
 \section{Automatic Stabilizers, Lags, and Crowding Out}
 
-\subsection{Conceptual Introduction}
+\subsection*{Conceptual Introduction}
 Discretionary fiscal policy suffers from three unavoidable timing bottlenecks known as \textbf{policy lags}:
 \begin{enumerate}
     \item \textbf{Recognition Lag:} The time required for statistical agencies (such as the BEA and BLS) to collect and revise GDP and employment data so policymakers realize a recession or inflation surge has begun.
@@ -303,34 +302,10 @@ Because of these lags, poorly timed discretionary stimulus can arrive after the 
 
 Even when fiscal stimulus arrives on time, its net effect can be dampened by \textbf{crowding out}. When the federal government runs a budget deficit, the U.S. Treasury borrows in the loanable funds market by issuing Treasury securities. Increased demand for loanable funds pushes up the equilibrium real interest rate ($r$), which raises the cost of borrowing for businesses and households, reducing private investment ($I$) and durable-goods consumption.
 
-\subsection{Visual Representation}
+\subsection*{Visual Representation}
 
 \begin{figure}[htbp]
 \centering
-\begin{tikzpicture}[scale=0.92]
-    % --- PANEL A: AUTOMATIC STABILIZER (AE CURVE SLOPE) ---
-    \begin{scope}[shift={(0,0)}]
-        \draw[econ axis] (0,0) -- (6.0,0) node[right, econ label] {Real GDP ($Y$)};
-        \draw[econ axis] (0,0) -- (0,5.2) node[above, econ label] {Planned $AE$};
-        \node[below left, font=\footnotesize] at (0,0) {$(0,0)$};
-
-        % 45-degree line
-        \draw[dashed, thick, color=SlateBlue!75] (0,0) -- (4.8,4.8) node[above right, font=\footnotesize\bfseries] {$AE = Y$ ($45^\circ$)};
-
-        % Steep AE (Lump-sum tax: slope c = 0.8) -> y = 1.0 + 0.72x
-        \draw[very thick, color=CourseOrange] (0,1.0) -- (5.2,4.74) node[right, font=\footnotesize\bfseries] {$AE_{\text{lump-sum}}$};
-        % Flat AE (Proportional tax: slope c(1-t) = 0.52) -> y = 1.35 + 0.52x
-        \draw[very thick, color=CourseBlue] (0,1.35) -- (5.4,4.16) node[right, font=\footnotesize\bfseries] {$AE_{\text{prop. tax}}$};
-
-        % Intersection near (3.2, 3.2) -> actually:
-        % For y = 1.0 + 0.68x = x -> x = 3.125
-        % Let's place E* cleanly at (3.0, 3.0):
-        % Steep: y = 0.9 + 0.70x -> at x=3, y=3.0
-        % Flat: y = 1.5 + 0.50x -> at x=3, y=3.0
-        % Let's redraw cleanly!
-    \end{scope}
-\end{tikzpicture}
-\vspace{-2.5em}
 \begin{tikzpicture}[scale=0.95]
     % --- PANEL A: AUTOMATIC STABILIZER (CLEAN GEOMETRY) ---
     \begin{scope}[shift={(0,0)}]
@@ -373,13 +348,13 @@ Even when fiscal stimulus arrives on time, its net effect can be dampened by \te
 
         % Intersection D1 (y = -0.889x + 5.0) and S (y = 0.881x + 0.007): x=2.82, y=2.49
         \coordinate (LF1) at (2.82, 2.49);
-        % Intersection D2 (y = -0.886x + 6.27) and S: x=3.54, y=3.13
-        \coordinate (LF2) at (3.54, 3.13);
+        % Intersection D2 (y = -0.886x + 6.27) and S: x=3.55, y=3.13
+        \coordinate (LF2) at (3.55, 3.13);
         % Private investment at r2 on D1: 3.13 = -0.889x + 5.0 -> x = 2.10
         \coordinate (I2) at (2.10, 3.13);
 
         \draw[econ guide] (2.82,0) -- (LF1) -- (0,2.49);
-        \draw[econ guide] (3.54,0) -- (LF2) -- (0,3.13);
+        \draw[econ guide] (3.55,0) -- (LF2) -- (0,3.13);
         \draw[econ guide] (2.10,0) -- (I2);
 
         \fill[CourseBlue] (LF1) circle (2.5pt) node[below, font=\footnotesize\bfseries] {$E_1$};
@@ -390,7 +365,7 @@ Even when fiscal stimulus arrives on time, its net effect can be dampened by \te
         \node[left, font=\footnotesize, color=CourseOrange] at (0,3.13) {$r_2$};
         \node[below, font=\footnotesize, color=Terracotta] at (2.10,-0.15) {$I_2$};
         \node[below, font=\footnotesize, color=CourseBlue] at (2.82,-0.15) {$I_1$};
-        \node[below, font=\footnotesize, color=CourseOrange] at (3.54,-0.15) {$Q_2$};
+        \node[below, font=\footnotesize, color=CourseOrange] at (3.55,-0.15) {$Q_2$};
 
         % Crowding out bracket
         \draw[decorate, decoration={brace, amplitude=4pt, mirror}, thick, color=Terracotta] (2.10,-0.55) -- (2.82,-0.55)
@@ -407,10 +382,7 @@ Even when fiscal stimulus arrives on time, its net effect can be dampened by \te
 
 Figure~\ref{fig:stabilizers-crowding} displays both built-in moderation mechanisms. In Panel (a), flattening the $AE$ line reduces the horizontal output swing caused by any vertical shock to autonomous investment or exports. In Panel (b), crowding out explains why expansionary fiscal policy has its strongest impact during deep recessions (when private investment demand is weak and interest rates are near zero) and its weakest impact when the economy is near full employment and credit markets are tight.
 
-\subsection{Real-World Application}
-\textbf{Automatic Stabilizers During the 2020--2022 Business Cycle:} Even before Congress enacted discretionary stimulus in 2020, existing U.S. automatic stabilizers absorbed a substantial share of household income losses. As payroll employment dropped sharply in Q2 2020, federal income tax withholding fell automatically while regular state unemployment insurance claims surged. Later, during the rapid nominal wage and GDP expansion of 2021--2022, progressive federal income tax brackets automatically collected surging capital gains and income tax receipts while pandemic-era transfer outlays wound down, shrinking the federal deficit by more than half between FY 2021 and FY 2022 without requiring a single contractionary tax-hike bill.
-
-\subsection{Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 To model proportional income taxation as an automatic stabilizer, replace lump-sum taxes $T$ with a tax function $T = T_0 + tY$, where $T_0$ is autonomous taxes and $t \in (0,1)$ is the marginal income tax rate. Disposable income becomes:
 \begin{equation}
 Y_D = Y - (T_0 + tY) + TR = (1 - t)Y - T_0 + TR
@@ -439,12 +411,15 @@ Suppose $c = 0.80$.
 \end{enumerate}
 \end{examplecase}
 
+\subsection*{Real-World Application}
+\textbf{Automatic Stabilizers During the 2020--2022 Business Cycle:} Even before Congress enacted discretionary stimulus in 2020, existing U.S. automatic stabilizers absorbed a substantial share of household income losses. As payroll employment dropped sharply in Q2 2020, federal income tax withholding fell automatically while regular state unemployment insurance claims surged. Later, during the rapid nominal wage and GDP expansion of 2021--2022, progressive federal income tax brackets automatically collected surging capital gains and income tax receipts while pandemic-era transfer outlays wound down, shrinking the federal deficit by more than half between FY 2021 and FY 2022 without requiring a single contractionary tax-hike bill.
+
 % ==============================================================================
 % SECTION 5: BUDGET DEFICITS, SURPLUSES, AND SOVEREIGN DEBT
 % ==============================================================================
 \section{Budget Deficits, Surpluses, and Sovereign Debt}
 
-\subsection{Conceptual Introduction}
+\subsection*{Conceptual Introduction}
 Public debates frequently conflate the federal budget deficit with the national debt, yet they measure fundamentally different economic quantities. A \textbf{budget deficit} is a \emph{flow} variable measured over a single fiscal year (October 1 through September 30 for the U.S. federal government): it equals total government outlays ($G + TR + \text{net interest}$) minus total tax revenues ($T$). When revenues exceed outlays, the government runs a \textbf{budget surplus}. By contrast, \textbf{public debt} (sovereign debt) is a \emph{stock} variable representing the cumulative total of past deficits minus past surpluses at a specific date.
 
 Economists further separate the observed budget balance into two components:
@@ -454,7 +429,7 @@ Economists further separate the observed budget balance into two components:
 \end{itemize}
 Evaluating fiscal sustainability requires comparing public debt not to a household credit card, but to the economy's capacity to service interest payments---measured by the \textbf{Debt-to-GDP ratio ($B_t / Y_t$)}. Just as a household's mortgage burden depends on its annual income, a nation's debt burden depends on the size and growth rate of its nominal GDP.
 
-\subsection{Visual Representation}
+\subsection*{Visual Representation}
 Table~\ref{tab:deficit-decomposition} illustrates how the cyclical and structural components of the federal budget behave across phases of the business cycle.
 
 \begin{table}[htbp]
@@ -474,19 +449,11 @@ Expansion ($Y > Y_p$) & Inflationary Gap & Automatic Surplus & Masks underlying 
 Two primary St. Louis Fed (FRED) series allow students to track U.S. fiscal dynamics rigorously:
 \begin{itemize}
     \item \textbf{\texttt{FYFSD} (Federal Surplus or Deficit [-]):} Reports the annual unified federal budget balance in millions of dollars by fiscal year (not seasonally adjusted), where negative values indicate deficits. Because \texttt{FYFSD} is an annual fiscal-year flow, students must never divide it by a single quarter's GDP without annualizing or matching time periods.
-    \item \textbf{\texttt{GFDEGDQ188S} (Federal Debt: Total Public Debt as Percent of Gross Domestic Product):} Reports quarterly gross federal debt divided by annualized nominal GDP (percent, seasonally adjusted). Tracking \texttt{GFDEGDQ188S} shows how the U.S. Debt-to-GDP ratio fell steadily from over $118\%$ at the end of World War II in 1946 to roughly $31\%$ in 1981---even though nominal dollar debt rose---because nominal GDP growth outpaced debt accumulation.
+    \item \textbf{\texttt{GFDEGDQ188S} (Federal Debt: Total Public Debt as Percent of Gross Domestic Product):} Reports quarterly gross federal debt divided by annualized nominal GDP (percent, seasonally adjusted, available from 1966 onward). Alongside historical OMB budget records from the immediate postwar period, these data show how the U.S. Debt-to-GDP ratio fell steadily from over $118\%$ at the end of World War II in 1946 to roughly $31\%$ in 1981---even though nominal dollar debt rose---because nominal GDP growth outpaced debt accumulation.
 \end{itemize}
 \end{examplecase}
 
-\subsection{Real-World Application}
-\textbf{Post-WWII De-Leveraging vs. 21st-Century Structural Deficits:} Between 1946 and 1974, the U.S. federal government rarely ran large budget surpluses, yet the Debt-to-GDP ratio fell by nearly 85 percentage points because real GDP growth and moderate inflation expanded the denominator ($Y_t$) faster than the nominal interest rate ($r$) compounded the numerator ($B_t$). In contrast, when an aging population drives up mandatory entitlement outlays (Social Security and Medicare) while interest rates exceed the economy's long-run growth rate ($r > g$), structural primary deficits cause the Debt-to-GDP ratio to climb continuously unless tax revenues or spending trajectories are adjusted.
-
-\begin{coreprinciple}
-\boxheader{SlateBlue}{Clear It Up: Deficit Flow vs. Debt Stock}
-Running a smaller budget deficit (for example, shrinking the annual deficit from $\$1.8\text{ trillion}$ to $\$1.4\text{ trillion}$) does \emph{not} reduce the national debt. Because the deficit is still positive, the total stock of public debt still increases by $\$1.4\text{ trillion}$---it simply grows at a slower pace. Public debt falls in dollar terms only when the government runs a \textbf{budget surplus}.
-\end{coreprinciple}
-
-\subsection{Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 Let $B_{t-1}$ denote public debt at the end of year $t-1$, $r$ the nominal interest rate on government bonds, $G_t + TR_t$ non-interest (primary) outlays, and $T_t$ tax revenues. The government's intertemporal budget constraint is:
 \begin{equation}
 \text{Total Deficit}_t = \underbrace{(G_t + TR_t - T_t)}_{\text{Primary Deficit } (D_t)} + \underbrace{r B_{t-1}}_{\text{Interest Outlays}}
@@ -497,6 +464,11 @@ b_t = \left(\frac{1 + r}{1 + g}\right) b_{t-1} + d_t \implies \Delta b_t \approx
 \end{equation}
 where $d_t = D_t / Y_t$ is the primary deficit as a share of GDP. When $g > r$, a country can stabilize its Debt-to-GDP ratio ($\Delta b_t = 0$) even while running a modest primary deficit ($d_t = (g - r)b_{t-1} > 0$). When $r > g$, stabilizing the Debt-to-GDP ratio requires running a \textbf{primary budget surplus} ($d_t < 0$).
 
+\begin{coreprinciple}
+\boxheader{SlateBlue}{Clear It Up: Deficit Flow vs. Debt Stock}
+Running a smaller budget deficit (for example, shrinking the annual deficit from $\$1.8\text{ trillion}$ to $\$1.4\text{ trillion}$) does \emph{not} reduce the national debt. Because the deficit is still positive, the total stock of public debt still increases by $\$1.4\text{ trillion}$---it simply grows at a slower pace. Public debt falls in dollar terms only when the government runs a \textbf{budget surplus}.
+\end{coreprinciple}
+
 \begin{examplecase}{Work It Out: Stabilizing the Debt-to-GDP Ratio}
 Suppose a country enters the year with a Debt-to-GDP ratio of $b_{t-1} = 100\%$ ($1.00$), faces an average nominal interest rate on public debt of $r = 4.5\%$ ($0.045$), and experiences nominal GDP growth of $g = 3.0\%$ ($0.030$).
 
@@ -506,12 +478,15 @@ r - g = 0.045 - 0.030 = +0.015 \quad (1.5\% \text{ of GDP})
 \]
 
 \textbf{Step 2: Find the primary budget balance ($d_t$) required to keep $\Delta b_t = 0$.}
-Set $\Delta b_t = (r - g)b_{t-1} + d_t = 0$:
+Using the linear approximation $\Delta b_t \approx (r - g)b_{t-1} + d_t = 0$:
 \[
 0 = (0.015)(1.00) + d_t \implies d_t = -0.015 \quad (-1.5\% \text{ of GDP})
 \]
-Because $r > g$, the government must run a \textbf{primary budget surplus of $1.5\%$ of GDP} (collecting $1.5\%$ of GDP more in taxes than it spends on non-interest programs) simply to prevent its Debt-to-GDP ratio from rising above $100\%$.
+Because $r > g$, the government must run a \textbf{primary budget surplus of approximately $1.5\%$ of GDP} (collecting $1.5\%$ of GDP more in taxes than it spends on non-interest programs) simply to prevent its Debt-to-GDP ratio from rising above $100\%$.
 \end{examplecase}
+
+\subsection*{Real-World Application}
+\textbf{Post-WWII De-Leveraging vs. 21st-Century Structural Deficits:} Between 1946 and 1974, the U.S. federal government rarely ran large budget surpluses, yet the Debt-to-GDP ratio fell by nearly 85 percentage points because real GDP growth and moderate inflation expanded the denominator ($Y_t$) faster than the nominal interest rate ($r$) compounded the numerator ($B_t$). In contrast, when an aging population drives up mandatory entitlement outlays (Social Security and Medicare) while interest rates exceed the economy's long-run growth rate ($r > g$), structural primary deficits cause the Debt-to-GDP ratio to climb continuously unless tax revenues or spending trajectories are adjusted.
 
 \begin{takeaways}
 \boxheader{CoursePurple}{Optional Advanced Extension: Continuous-Time Debt Dynamics}
@@ -535,7 +510,7 @@ Setting $\dot{b}(t) = 0$ immediately recovers the steady-state fiscal solvency r
 Returning to our comparison of the 2009 ARRA and 2020 CARES Act packages, modern macroeconomists view discretionary stimulus and automatic stabilizers as complements rather than substitutes. During a sudden downturn, \textbf{automatic stabilizers} (unemployment insurance and progressive taxes) provide immediate, self-terminating support with zero legislative lag. If a recession proves deep and persistent, targeted \textbf{discretionary transfers} to liquidity-constrained households deliver rapid demand support, while high-multiplier \textbf{public infrastructure investments ($\Delta G$)} boost both short-run aggregate demand and long-run potential output ($LRAS$)---provided policymakers pair short-run stimulus with a credible medium-run fiscal framework that keeps the Debt-to-GDP ratio on a sustainable path.
 \end{examplecase}
 
-\subsection{Review Problems}
+\subsection*{Review Problems}
 \begin{enumerate}
     \item \textbf{Multiplier Comparison:} In a closed economy with lump-sum taxes and $MPC = 0.80$, compare the horizontal shift in aggregate demand resulting from (a) a $\$50\text{ billion}$ increase in government purchases, (b) a $\$50\text{ billion}$ cut in lump-sum taxes, and (c) a $\$50\text{ billion}$ increase in government purchases financed entirely by a $\$50\text{ billion}$ lump-sum tax increase.
     \item \textbf{Automatic Stabilizers:} Explain both intuitively and algebraically why raising the marginal income tax rate $t$ from $0$ to $0.20$ reduces the amplitude of business-cycle fluctuations when $c = 0.75$.
@@ -544,7 +519,7 @@ Returning to our comparison of the 2009 ARRA and 2020 CARES Act packages, modern
     \item \textbf{Debt-to-GDP Dynamics:} An economy has a Debt-to-GDP ratio of $80\%$, a nominal interest rate on debt of $r = 3.5\%$, and a nominal GDP growth rate of $g = 5.0\%$. Can this government run a primary budget deficit while still reducing its Debt-to-GDP ratio? Calculate the maximum primary deficit (as a $\%$ of GDP) consistent with a non-increasing Debt-to-GDP ratio.
 \end{enumerate}
 
-\subsection{Worked Solutions}
+\subsection*{Worked Solutions}
 \begin{enumerate}
     \item \textbf{Multiplier Comparison:} With $c = 0.80$:
     \begin{itemize}

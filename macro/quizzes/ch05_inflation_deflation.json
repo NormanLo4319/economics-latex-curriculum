@@ -4,15 +4,15 @@
   "chapter_id": "macro_ch05",
   "file_stem": "ch05_inflation_deflation",
   "title": "Chapter 5: Inflation and Deflation",
-  "benchmark": "Paul Krugman & Robin Wells, Macroeconomics & UC Berkeley Econ 2 Standards (GE Scaffolded)",
+  "benchmark": "Paul Krugman & Robin Wells, Macroeconomics (Principles SSOT, Spring 2027)",
   "seeding_formula": "seed = hash(student_id + question_id)",
   "points_per_question": 1,
-  "questions_count": 20,
+  "questions_count": 50,
   "tier_distribution": {
-    "tier_1": 5,
-    "tier_2": 4,
-    "tier_3": 6,
-    "tier_4": 5
+    "tier_1": 13,
+    "tier_2": 13,
+    "tier_3": 12,
+    "tier_4": 12
   },
   "questions": [
     {
@@ -287,6 +287,440 @@
       ]
     },
     {
+      "id": "MACRO_CH05_T1_06",
+      "chapter": 5,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Aggregate Price Level and Base Period Normalization",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Aggregate Price Level and Base Period Normalization",
+      "prompt_template": "What does a Consumer Price Index value of 100.0 in the base period indicate?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall how any market-basket price index is constructed relative to the chosen base period."
+        },
+        {
+          "tier": 2,
+          "text": "Substitute t = 0 into CPI_t = (Cost of Market Basket_t / Cost of Market Basket_0) * 100."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The cost of the fixed market basket in the base period equals itself, normalizing the index to 100.0 as a reference benchmark for comparing other periods.",
+          "is_correct": true,
+          "feedback": "Correct. By construction, dividing the base-period basket cost by itself and multiplying by 100 always yields 100.0, providing a clean reference benchmark."
+        },
+        {
+          "id": "opt_b",
+          "text": "The typical urban household spent exactly $100.00 on all goods and services during the base year.",
+          "is_correct": false,
+          "feedback": "Misconception (Index vs. Dollar Cost): A price index of 100.0 is a normalized ratio, not a literal $100 expenditure; the actual basket cost could be $500 or $50,000."
+        },
+        {
+          "id": "opt_c",
+          "text": "The economy experienced 100% inflation during the base year.",
+          "is_correct": false,
+          "feedback": "Misconception (Price Level vs. Inflation Rate): An index value of 100.0 measures the reference price level, not a 100% annual inflation rate."
+        },
+        {
+          "id": "opt_d",
+          "text": "Every individual good in the market basket had an identical retail price of $1.00 in the base period.",
+          "is_correct": false,
+          "feedback": "Misconception (Individual vs. Aggregate Prices): The aggregate price level summarizes a weighted average of many differently priced goods and services."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T1_07",
+      "chapter": 5,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Quality and New-Product Bias in the CPI",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Quality and New-Product Bias in the CPI",
+      "prompt_template": "How do unmeasured product quality improvements and the delayed introduction of newly invented goods bias the standard Consumer Price Index?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about what happens when a higher sticker price partly reflects superior performance rather than pure inflation."
+        },
+        {
+          "tier": 2,
+          "text": "Consider also what happens to the prices of newly invented electronics during their early years before they enter the fixed CPI basket."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "They bias the CPI upward, causing it to overstate true cost-of-living increases.",
+          "is_correct": true,
+          "feedback": "Correct. Treating quality-driven price increases as pure inflation and missing steep early price drops of new products both cause the fixed-basket CPI to overstate true inflation."
+        },
+        {
+          "id": "opt_b",
+          "text": "They bias the CPI downward, causing it to systematically understate true inflation.",
+          "is_correct": false,
+          "feedback": "Misconception (Reversed Bias Direction): Both quality/new-product bias and substitution bias push measured CPI inflation above true cost-of-living growth, not below it."
+        },
+        {
+          "id": "opt_c",
+          "text": "They cancel each other out exactly so that the fixed-basket CPI has zero measurement error.",
+          "is_correct": false,
+          "feedback": "Misconception (Canceling Biases): Both unmeasured quality gains and delayed inclusion of new products bias the CPI in the same upward direction."
+        },
+        {
+          "id": "opt_d",
+          "text": "They affect only the Producer Price Index (PPI) because consumer electronics are excluded from the CPI.",
+          "is_correct": false,
+          "feedback": "Misconception (CPI Coverage): Smartphones, laptops, and other consumer electronics are directly included in the urban household CPI basket."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T1_08",
+      "chapter": 5,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Outlet Substitution Bias in the CPI",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Outlet Substitution Bias in the CPI",
+      "prompt_template": "Which household shopping behavior creates 'outlet substitution bias' in the Consumer Price Index?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the word 'outlet'—where consumers shop rather than which specific food item they buy."
+        },
+        {
+          "tier": 2,
+          "text": "Think about how prices at discount warehouse clubs and online retailers compare to traditional brick-and-mortar retail stores."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Shoppers switch from traditional full-price stores to discount warehouse clubs and online retailers when prices rise, paying less than traditional store surveys record.",
+          "is_correct": true,
+          "feedback": "Correct. Outlet substitution bias arises when consumers move their purchases to lower-priced retail outlets faster than CPI store samples adjust."
+        },
+        {
+          "id": "opt_b",
+          "text": "Shoppers replace beef with chicken at the same neighborhood supermarket after beef prices spike.",
+          "is_correct": false,
+          "feedback": "Misconception (Product vs. Outlet Substitution): Switching from beef to chicken is commodity substitution bias, not outlet substitution bias."
+        },
+        {
+          "id": "opt_c",
+          "text": "Manufacturers replace domestic steel with imported aluminum to lower factory production costs.",
+          "is_correct": false,
+          "feedback": "Misconception (Producer Input Choice): Factory input substitution affects producer costs rather than household retail outlet sampling."
+        },
+        {
+          "id": "opt_d",
+          "text": "Consumers upgrade to a more expensive laptop that has double the memory and battery life.",
+          "is_correct": false,
+          "feedback": "Misconception (Quality Bias vs. Outlet Bias): Paying more for an improved product relates to quality bias, not switching retail outlets."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T1_09",
+      "chapter": 5,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Laspeyres, Paasche, and Chained CPI Weighting Formulas",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Laspeyres, Paasche, and Chained CPI Weighting Formulas",
+      "prompt_template": "How does the Chained Consumer Price Index (FRED: SUUR0000SA0) address the substitution bias built into a standard Laspeyres CPI?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall that a Laspeyres index holds base-period quantities fixed, whereas a Paasche index uses current-period quantities."
+        },
+        {
+          "tier": 2,
+          "text": "Think about how combining adjacent-period weights captures real-time consumer substitution across categories."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "It takes a geometric mean of adjacent-period Laspeyres and Paasche ratios to capture consumer substitution across categories in real time.",
+          "is_correct": true,
+          "feedback": "Correct. The Chained CPI uses a superlative formula combining adjacent-period base and current weights, mitigating the upward substitution bias of a fixed-weight Laspeyres index."
+        },
+        {
+          "id": "opt_b",
+          "text": "It permanently locks market-basket quantities at their 1982–1984 base-period levels forever.",
+          "is_correct": false,
+          "feedback": "Misconception (Fixed Laspeyres Weighting): Locking quantities permanently at base-period levels worsens substitution bias rather than correcting it."
+        },
+        {
+          "id": "opt_c",
+          "text": "It excludes all housing, food, and energy prices from the market basket to eliminate price volatility.",
+          "is_correct": false,
+          "feedback": "Misconception (Chained vs. Core CPI): Chaining refers to updating expenditure weights across periods, not dropping major spending categories."
+        },
+        {
+          "id": "opt_d",
+          "text": "It replaces retail consumer prices with wholesale commodity prices from the Producer Price Index.",
+          "is_correct": false,
+          "feedback": "Misconception (CPI vs. PPI): The Chained CPI still measures urban retail consumer prices, not wholesale producer selling prices."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T1_10",
+      "chapter": 5,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Shoe-Leather Costs of High Inflation",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Shoe-Leather Costs of High Inflation",
+      "prompt_template": "During episodes of high inflation, why do households and businesses incur 'shoe-leather costs'?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Consider what happens to the purchasing power of cash sitting idle in a wallet or zero-interest checking account when prices climb rapidly."
+        },
+        {
+          "tier": 2,
+          "text": "Think about the time and transaction effort required to keep cash balances as small as possible."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because rapid inflation erodes the purchasing power of cash, people expend extra time and effort making frequent trips to banks or transferring funds to minimize cash holdings.",
+          "is_correct": true,
+          "feedback": "Correct. Shoe-leather costs measure the real time, convenience, and transaction resources wasted trying to hold less currency as inflation taxes cash balances."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because inflation raises the price of leather footwear faster than the price of groceries and housing.",
+          "is_correct": false,
+          "feedback": "Misconception (Literal Interpretation): 'Shoe-leather' is a metaphor for the transaction effort of frequent bank trips, not a statement about footwear prices."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because restaurants and retailers must spend labor and printing supplies updating posted price lists.",
+          "is_correct": false,
+          "feedback": "Misconception (Menu Costs vs. Shoe-Leather Costs): Reprinting menus and changing posted price tags are menu costs, not shoe-leather costs."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because investors owe capital gains taxes on nominal asset appreciation that reflects zero real gain.",
+          "is_correct": false,
+          "feedback": "Misconception (Unit-of-Account vs. Shoe-Leather Costs): Tax distortions on illusory nominal gains are unit-of-account costs."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T1_11",
+      "chapter": 5,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Unit-of-Account Costs of Inflation",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Unit-of-Account Costs of Inflation",
+      "prompt_template": "Which situation best exemplifies a 'unit-of-account cost' of inflation?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall that money serves as a yardstick for measuring contracts, accounting profits, and taxable gains."
+        },
+        {
+          "tier": 2,
+          "text": "Ask what happens when inflation makes that dollar yardstick shrink over time."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "An asset's dollar price rises 10% solely due to 10% inflation, yet tax rules treat the nominal gain as taxable income even though the owner earned zero real gain.",
+          "is_correct": true,
+          "feedback": "Correct. Unit-of-account costs arise because inflation turns the dollar into a shrinking measuring rod, distorting accounting profits, capital gains taxes, and long-term planning."
+        },
+        {
+          "id": "opt_b",
+          "text": "A grocery store hires extra night-shift workers to replace paper shelf tags every week.",
+          "is_correct": false,
+          "feedback": "Misconception (Menu Costs): Spending labor and materials to change posted prices is a menu cost, not a unit-of-account cost."
+        },
+        {
+          "id": "opt_c",
+          "text": "A commuter visits the ATM three times a week instead of once a month to avoid holding idle cash.",
+          "is_correct": false,
+          "feedback": "Misconception (Shoe-Leather Costs): Extra trips to manage cash balances are shoe-leather costs."
+        },
+        {
+          "id": "opt_d",
+          "text": "A household switches from shopping at a local boutique to buying in bulk at a discount warehouse club.",
+          "is_correct": false,
+          "feedback": "Misconception (Outlet Substitution Bias): Switching retail stores is a CPI measurement bias rather than a unit-of-account cost."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T1_12",
+      "chapter": 5,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Indexation, COLAs, and Preventing Tax Bracket Creep",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Indexation, COLAs, and Preventing Tax Bracket Creep",
+      "prompt_template": "What is the primary purpose of indexing federal income tax brackets to the Consumer Price Index?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about what happens to a worker's nominal income if wages simply keep pace with inflation while tax bracket dollar thresholds stay frozen."
+        },
+        {
+          "tier": 2,
+          "text": "Recall the definition of 'bracket creep' from Section 5.3."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "To prevent bracket creep—ensuring households are not pushed into higher marginal tax brackets solely because nominal incomes rose with inflation while real incomes stayed flat.",
+          "is_correct": true,
+          "feedback": "Correct. Indexing tax brackets shifts dollar thresholds upward with the CPI so that inflation alone does not raise a household's effective marginal tax rate."
+        },
+        {
+          "id": "opt_b",
+          "text": "To guarantee that real interest rates on all bank savings accounts remain strictly positive.",
+          "is_correct": false,
+          "feedback": "Misconception (Tax Policy vs. Interest Rates): Tax-bracket indexation adjusts income tax thresholds, not commercial bank deposit rates."
+        },
+        {
+          "id": "opt_c",
+          "text": "To eliminate substitution bias and quality bias from the BLS calculation of the CPI.",
+          "is_correct": false,
+          "feedback": "Misconception (Indexation vs. Index Construction): Indexing taxes uses the published CPI; it does not alter how the BLS constructs the index."
+        },
+        {
+          "id": "opt_d",
+          "text": "To ensure that nominal wages automatically fall during periods of disinflation.",
+          "is_correct": false,
+          "feedback": "Misconception (Disinflation and Wages): Disinflation still involves rising prices, and tax-bracket indexation does not reduce nominal wages."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T1_13",
+      "chapter": 5,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Money Neutrality and Nominal vs. Real Variables",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Money Neutrality and Nominal vs. Real Variables",
+      "prompt_template": "Suppose every wage, pension, debt contract, and product price in an economy doubled overnight. According to the principle of long-run money neutrality, what would happen to households' real purchasing power?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Divide both the nominal wage and the aggregate price level by 2 (or multiply both by 2) in W_real = (W_nom / CPI) * 100."
+        },
+        {
+          "tier": 2,
+          "text": "Distinguish between dollar labels (nominal variables) and physical goods and services (real variables)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Real purchasing power would remain completely unchanged because every nominal income and every nominal price rose by the exact same proportion.",
+          "is_correct": true,
+          "feedback": "Correct. Under money neutrality, doubling all nominal dollar figures leaves relative prices and real purchasing power untouched."
+        },
+        {
+          "id": "opt_b",
+          "text": "Real purchasing power would double because every worker's paycheck contains twice as many dollars.",
+          "is_correct": false,
+          "feedback": "Misconception (Money Illusion): Focusing only on the doubled dollar paycheck ignores that all goods and services also cost twice as much."
+        },
+        {
+          "id": "opt_c",
+          "text": "Real purchasing power would fall by half because the aggregate price level doubled.",
+          "is_correct": false,
+          "feedback": "Misconception (Ignoring Nominal Income Adjustment): Real purchasing power falls by half only if nominal incomes stay fixed while prices double; here incomes also doubled."
+        },
+        {
+          "id": "opt_d",
+          "text": "Real purchasing power would fall to zero because the Consumer Price Index exceeded 100.",
+          "is_correct": false,
+          "feedback": "Misconception (Index Threshold Fallacy): An index above 100 simply reflects a higher nominal price level than the base year, not zero purchasing power."
+        }
+      ]
+    },
+    {
       "id": "MACRO_CH05_T2_01",
       "chapter": 5,
       "tier": 2,
@@ -504,6 +938,495 @@
       ]
     },
     {
+      "id": "MACRO_CH05_T2_05",
+      "chapter": 5,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Comparing CPI, PPI, and GDP Deflator Attributes (Figure 5.1)",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Comparing CPI, PPI, and GDP Deflator Attributes",
+      "prompt_template": "In a three-column comparison chart of U.S. aggregate price indexes (CPI, PPI, and GDP Price Deflator), which index sits in the column characterized by BOTH 'Imports: Excluded' and 'Weights: Current-period changing quantities'?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Eliminate the index that includes imported consumer goods first."
+        },
+        {
+          "tier": 2,
+          "text": "Between the two remaining indexes, recall which one is derived directly from Nominal GDP / Real GDP each quarter."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The GDP Implicit Price Deflator.",
+          "is_correct": true,
+          "feedback": "Correct. The GDP Deflator covers all current domestically produced final goods and services (C, I, G, X), excludes imports, and automatically updates its expenditure weights each period."
+        },
+        {
+          "id": "opt_b",
+          "text": "The Consumer Price Index (CPI).",
+          "is_correct": false,
+          "feedback": "Misconception (CPI Attributes): The standard CPI includes imported consumer goods and uses fixed short-run base-period basket weights."
+        },
+        {
+          "id": "opt_c",
+          "text": "The Producer Price Index (PPI).",
+          "is_correct": false,
+          "feedback": "Misconception (PPI Attributes): Although the PPI excludes imports, it tracks wholesale domestic producer prices rather than current-period final GDP weights across C, I, G, and X."
+        },
+        {
+          "id": "opt_d",
+          "text": "None of the three indexes excludes imported goods.",
+          "is_correct": false,
+          "feedback": "Misconception (Import Rules): Both the PPI and the GDP Deflator exclude imports because they measure domestic production."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T2_06",
+      "chapter": 5,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Identifying Disinflation on a Price-Index Level Graph",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Identifying Disinflation on a Price-Index Level Graph",
+      "prompt_template": "On a graph plotting the Consumer Price Index (vertical axis) against Years (horizontal axis), the plotted line rises steeply from 100.0 in Year 0 to 110.0 in Year 1 (+10.0%), and then continues sloping upward—but more gently—to 115.5 in Year 2. How is the Year 1 to Year 2 segment classified?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Check whether the CPI line is still sloping upward (prices rising) or sloping downward (prices falling)."
+        },
+        {
+          "tier": 2,
+          "text": "Compare the Year 2 percentage growth rate ((115.5 - 110.0)/110.0 = +5.0%) to Year 1's +10.0%."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Disinflation, because the price index is still rising (+5.0%), just at a slower annual rate than in Year 1 (+10.0%).",
+          "is_correct": true,
+          "feedback": "Correct. An upward-sloping CPI line with a flatter slope reflects positive but slower inflation—the exact graphical signature of disinflation."
+        },
+        {
+          "id": "opt_b",
+          "text": "Deflation, because the line became flatter in Year 2 than in Year 1.",
+          "is_correct": false,
+          "feedback": "Misconception (Flatter Positive Slope vs. Negative Slope): Deflation requires the CPI level line to slope downward (negative inflation), not merely flatten while still rising."
+        },
+        {
+          "id": "opt_c",
+          "text": "Accelerating inflation, because the Year 2 index value (115.5) is higher than Year 1's value (110.0).",
+          "is_correct": false,
+          "feedback": "Misconception (Higher Level vs. Faster Rate): A higher index level means prices rose, but the rate of increase slowed from +10.0% to +5.0%."
+        },
+        {
+          "id": "opt_d",
+          "text": "Price stability (0% inflation), because the price level rose by less than 10 points.",
+          "is_correct": false,
+          "feedback": "Misconception (Zero Inflation Condition): Zero inflation would appear as a completely horizontal (flat) line at 110.0."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T2_07",
+      "chapter": 5,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Crossing the Zero Line on an Inflation-Rate Chart",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Crossing the Zero Line on an Inflation-Rate Chart",
+      "prompt_template": "On a time-series diagram plotting the annual inflation rate pi_t on the vertical axis against Time on the horizontal axis, what exact graphical event signals that an economy has transitioned from disinflation into outright deflation?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall the sign of pi_t during disinflation versus deflation."
+        },
+        {
+          "tier": 2,
+          "text": "Look at the horizontal reference line at pi_t = 0%."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The plotted inflation-rate curve crosses below the horizontal 0% line into negative territory (pi_t < 0).",
+          "is_correct": true,
+          "feedback": "Correct. As long as the downward-sloping curve stays above 0%, the economy is in disinflation; crossing below 0% means the aggregate price level begins falling outright (deflation)."
+        },
+        {
+          "id": "opt_b",
+          "text": "The plotted inflation-rate curve reaches its peak and begins sloping downward while still above 0%.",
+          "is_correct": false,
+          "feedback": "Misconception (Peak vs. Zero Crossing): Turning downward above 0% marks the onset of disinflation, not deflation."
+        },
+        {
+          "id": "opt_c",
+          "text": "The plotted inflation-rate curve crosses below the central bank's 2.0% inflation target.",
+          "is_correct": false,
+          "feedback": "Misconception (Target vs. Zero Boundary): Inflation of +1.5% is below a 2.0% target, yet prices are still rising rather than deflating."
+        },
+        {
+          "id": "opt_d",
+          "text": "The plotted inflation-rate curve flattens out horizontally at +3.0%.",
+          "is_correct": false,
+          "feedback": "Misconception (Constant Positive Inflation): A flat line at +3.0% means steady 3.0% inflation, not deflation."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T2_08",
+      "chapter": 5,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Comparing Accelerating Inflation and Disinflation Segments on a Rate Chart",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Comparing Accelerating Inflation and Disinflation Segments on a Rate Chart",
+      "prompt_template": "On an inflation-rate chart (pi_t vs. Time), Segment A slopes upward from +2.0% to +6.0%, and Segment B slopes downward from +6.0% to +2.0%. Which statement accurately compares the aggregate price level across both segments?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Check whether pi_t is positive or negative during Segment A and during Segment B."
+        },
+        {
+          "tier": 2,
+          "text": "Remember that any positive inflation rate means the aggregate price level is increasing."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The aggregate price level rises throughout both Segment A and Segment B, accelerating during Segment A and slowing (disinflating) during Segment B.",
+          "is_correct": true,
+          "feedback": "Correct. Because pi_t > 0 in both segments, the price level climbs continuously—faster during Segment A and more slowly during Segment B."
+        },
+        {
+          "id": "opt_b",
+          "text": "The aggregate price level rises during Segment A and falls back to its starting level during Segment B.",
+          "is_correct": false,
+          "feedback": "Misconception (Symmetry Fallacy): Because Segment B remains above 0%, prices keep rising rather than returning to their earlier level."
+        },
+        {
+          "id": "opt_c",
+          "text": "The aggregate price level is lower at the end of Segment B than at the peak between Segments A and B.",
+          "is_correct": false,
+          "feedback": "Misconception (Rate Peak vs. Price-Level Peak): The price level continues rising after the inflation rate peaks as long as pi_t stays positive."
+        },
+        {
+          "id": "opt_d",
+          "text": "The aggregate price level is constant during Segment B because the inflation rate is falling.",
+          "is_correct": false,
+          "feedback": "Misconception (Falling Rate vs. Zero Rate): A falling positive rate still adds positive price increases each period."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T2_09",
+      "chapter": 5,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Reading a Dual-Series PPI vs. CPI Pipeline Chart",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Reading a Dual-Series PPI vs. CPI Pipeline Chart",
+      "prompt_template": "On a FRED time-series graph plotting annual percentage changes in PPIACO (Producer Price Index) and CPIAUCSL (Consumer Price Index) during a supply-chain disruption, the PPIACO curve spikes sharply and peaks several months before the CPIAUCSL curve peaks. What economic mechanism explains this visual lead-lag pattern?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about where wholesale commodities and factory inputs sit in the production chain relative to retail checkout prices."
+        },
+        {
+          "tier": 2,
+          "text": "Recall the pipeline role of the PPI from Section 5.1."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Wholesale commodity, freight, and producer input price increases occur earlier in the supply chain and gradually pass through into retail consumer prices.",
+          "is_correct": true,
+          "feedback": "Correct. Because PPI tracks wholesale prices received by domestic producers, surges in input and factory-gate costs typically show up in PPIACO before reaching retail shelves in CPIAUCSL."
+        },
+        {
+          "id": "opt_b",
+          "text": "The BLS publishes the CPI six months later than the PPI by law, creating an artificial calendar delay.",
+          "is_correct": false,
+          "feedback": "Misconception (Publication Lag): Both CPIAUCSL and PPIACO are published monthly on similar schedules; the lead-lag reflects supply-chain pass-through."
+        },
+        {
+          "id": "opt_c",
+          "text": "Consumers stop buying retail goods whenever the PPI rises, forcing retail prices to jump later.",
+          "is_correct": false,
+          "feedback": "Misconception (Demand Response): Lower consumer demand would put downward—not upward—pressure on retail prices."
+        },
+        {
+          "id": "opt_d",
+          "text": "The PPI includes imported consumer electronics while the CPI excludes them.",
+          "is_correct": false,
+          "feedback": "Misconception (Reversed Import Coverage): Imported consumer goods are included in the CPI and excluded from the PPI."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T2_10",
+      "chapter": 5,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Nominal vs. Real Wage Bar Chart Under Deflation",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Nominal vs. Real Wage Bar Chart Under Deflation",
+      "prompt_template": "In a side-by-side bar chart comparing Period 0 and Period 1, a worker's nominal hourly wage bar stays completely unchanged at $20.00 in both periods, yet the worker's real hourly wage bar (in constant base-period dollars) becomes visibly taller in Period 1. What must have happened to the Consumer Price Index between Period 0 and Period 1?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Use W_real = (W_nom / CPI) * 100 with W_nom held constant."
+        },
+        {
+          "tier": 2,
+          "text": "Ask how the denominator (CPI) must move for W_real to increase when the numerator (W_nom) is fixed."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The Consumer Price Index fell (deflation), increasing the real purchasing power of the unchanged $20.00 nominal wage.",
+          "is_correct": true,
+          "feedback": "Correct. With W_nom fixed at $20.00, W_real = ($20.00 / CPI) * 100 rises only if CPI decreases (pi < 0, deflation)."
+        },
+        {
+          "id": "opt_b",
+          "text": "The Consumer Price Index rose (inflation), lifting the real wage bar above the nominal wage bar.",
+          "is_correct": false,
+          "feedback": "Misconception (Inflation Direction): A higher CPI increases the denominator and shrinks the real wage bar."
+        },
+        {
+          "id": "opt_c",
+          "text": "The Consumer Price Index experienced disinflation, meaning prices rose more slowly than before.",
+          "is_correct": false,
+          "feedback": "Misconception (Disinflation vs. Deflation): During disinflation, the CPI is still rising, which would shrink—not raise—the real value of a fixed $20.00 nominal wage."
+        },
+        {
+          "id": "opt_d",
+          "text": "The Consumer Price Index stayed constant while the base year was renamed.",
+          "is_correct": false,
+          "feedback": "Misconception (Unchanged Price Level): If both nominal wages and the price level are unchanged, real purchasing power cannot rise."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T2_11",
+      "chapter": 5,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Nominal vs. Real Wage Bar Chart with Exact Inflation Matching",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Nominal vs. Real Wage Bar Chart with Exact Inflation Matching",
+      "prompt_template": "In a side-by-side wage comparison chart, the nominal wage bar grows by 5.0% from Period 0 to Period 1, while the real wage bar remains the exact same height in both periods. What does this visual pattern imply about CPI inflation over the period?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall the relationship 1 + g_real = (1 + g_W) / (1 + pi)."
+        },
+        {
+          "tier": 2,
+          "text": "If g_real = 0% and g_W = +5.0%, what must pi equal?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "CPI inflation was exactly 5.0%, fully offsetting the 5.0% nominal raise and leaving real purchasing power unchanged.",
+          "is_correct": true,
+          "feedback": "Correct. When nominal wage growth (+5.0%) equals CPI inflation (+5.0%), (1.05 / 1.05) - 1 = 0%, so the real wage bar stays flat."
+        },
+        {
+          "id": "opt_b",
+          "text": "CPI inflation was 0%, which is why the real wage bar did not move.",
+          "is_correct": false,
+          "feedback": "Misconception (Confusing Real Change with Inflation): If CPI inflation were 0% while nominal wages rose 5.0%, the real wage bar would also grow by 5.0%."
+        },
+        {
+          "id": "opt_c",
+          "text": "CPI inflation was 10.0%, twice as large as the nominal wage increase.",
+          "is_correct": false,
+          "feedback": "Misconception (Over-Erosion): If inflation were 10.0% against a 5.0% raise, the real wage bar would visibly shrink."
+        },
+        {
+          "id": "opt_d",
+          "text": "The economy experienced 5.0% deflation, canceling out the 5.0% nominal raise.",
+          "is_correct": false,
+          "feedback": "Misconception (Sign of Deflation): Deflation of 5.0% combined with a 5.0% nominal raise would boost the real wage bar by over 10%."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T2_12",
+      "chapter": 5,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Fisher Equation Bar Diagram Under Unexpected Disinflation",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Fisher Equation Bar Diagram Under Unexpected Disinflation",
+      "prompt_template": "On a horizontal bar diagram decomposing a fixed nominal loan rate of i = 7.0%, the ex-ante bar is split into a 4.0% expected real return (r^e) and 3.0% expected inflation (pi^e). If actual inflation drops unexpectedly to pi = 1.0%, how does the ex-post bar partition change?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Keep the total bar width fixed at i = 7.0%."
+        },
+        {
+          "tier": 2,
+          "text": "Shrink the actual inflation segment to 1.0% and measure the remaining width for the realized real return."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The inflation segment shrinks to 1.0% and the lender's realized real return expands to 6.0%, transferring 2.0 percentage points of real wealth from the borrower to the lender.",
+          "is_correct": true,
+          "feedback": "Correct. Because i stays fixed at 7.0%, r_actual = 7.0% - 1.0% = 6.0%, which is 2.0 percentage points higher than r^e = 4.0%—benefiting the lender at the borrower's expense."
+        },
+        {
+          "id": "opt_b",
+          "text": "The inflation segment shrinks to 1.0% and the total nominal rate bar shrinks to 5.0% so the borrower's real cost stays at 4.0%.",
+          "is_correct": false,
+          "feedback": "Misconception (Fixed-Rate Rigidity): On a fixed-rate loan, the nominal interest rate is locked at 7.0% and does not fall ex post when inflation slows."
+        },
+        {
+          "id": "opt_c",
+          "text": "The lender's realized real return falls to 2.0%, transferring 2.0 percentage points of real wealth from the lender to the borrower.",
+          "is_correct": false,
+          "feedback": "Misconception (Reversed Redistribution): Unexpectedly low inflation increases the real value of repaid dollars, helping lenders and hurting borrowers."
+        },
+        {
+          "id": "opt_d",
+          "text": "The realized real return rises to 8.0% because lower inflation adds 1.0% onto the 7.0% nominal rate.",
+          "is_correct": false,
+          "feedback": "Misconception (Sign Error): Positive 1.0% inflation still erodes 1.0% of the 7.0% nominal return (r_actual = 7.0% - 1.0% = 6.0%); only outright deflation (pi < 0) makes r exceed i."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T2_13",
+      "chapter": 5,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Fisher Equation Bar Diagram Showing a Negative Real Interest Rate",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Fisher Equation Bar Diagram Showing a Negative Real Interest Rate",
+      "prompt_template": "On a horizontal bar diagram of a fixed-rate loan with nominal interest rate i = 5.0%, the actual inflation erosion bar extends all the way to pi = 8.0%—exceeding the 5.0% nominal rate bar by 3.0 percentage points. What does this diagram visually depict?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compute r_actual = i - pi when i = 5.0% and pi = 8.0%."
+        },
+        {
+          "tier": 2,
+          "text": "Determine whether the lender gained or lost real purchasing power over the life of the loan."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "A negative realized real interest rate of r_actual = -3.0%, meaning the lender loses 3.0% in real purchasing power despite receiving 5.0% more dollars.",
+          "is_correct": true,
+          "feedback": "Correct. Whenever actual inflation (8.0%) exceeds the nominal interest rate (5.0%), the realized real rate turns negative (5.0% - 8.0% = -3.0%), eroding the lender's real wealth."
+        },
+        {
+          "id": "opt_b",
+          "text": "A realized real interest rate of +3.0%, because we always subtract the smaller number from the larger number.",
+          "is_correct": false,
+          "feedback": "Misconception (Absolute Value Error): The Fisher Equation is strictly r = i - pi; reversing the order hides the negative real return."
+        },
+        {
+          "id": "opt_c",
+          "text": "A realized real interest rate of 0.0%, because real interest rates are legally floored at zero.",
+          "is_correct": false,
+          "feedback": "Misconception (Zero Lower Bound Confusion): Real interest rates have no zero lower bound and frequently turn negative when inflation exceeds nominal rates."
+        },
+        {
+          "id": "opt_d",
+          "text": "A nominal interest rate of -3.0%, meaning the bank pays the borrower cash to take out the loan.",
+          "is_correct": false,
+          "feedback": "Misconception (Nominal vs. Real Rate): The nominal rate remains +5.0%; it is the real purchasing-power return that is -3.0%."
+        }
+      ]
+    },
+    {
       "id": "MACRO_CH05_T3_01",
       "chapter": 5,
       "tier": 3,
@@ -513,49 +1436,50 @@
         "MA-1"
       ],
       "title": "Constructing a Market-Basket CPI",
-      "prompt_template": "A representative urban market basket contains {{q_h}} units of housing and {{q_f}} units of food. In the base year (Year 0), housing costs ${{p_h0}} per unit and food costs ${{p_f0}} per unit. In Year 1, housing rises to ${{p_h1}} per unit and food rises to ${{p_f1}} per unit. What is the CPI in Year 1?",
+      "prompt_template": "A representative urban market basket contains 10 units of housing and 50 units of food. In the base year (Year 0), housing costs $30 per unit and food costs $4 per unit. In Year 1, housing rises to $33 per unit and food rises to $4.40 per unit. What is the CPI in Year 1?",
       "parameters": {
         "q_h": {
           "type": "integer",
+          "default": 10,
           "values": [
-            10,
-            20
+            10
           ]
         },
         "q_f": {
           "type": "integer",
+          "default": 50,
           "values": [
-            50,
-            40
+            50
           ]
         },
         "p_h0": {
           "type": "integer",
+          "default": 30,
           "values": [
             30
           ]
         },
         "p_f0": {
           "type": "integer",
+          "default": 4,
           "values": [
             4
           ]
         },
         "p_h1": {
           "type": "integer",
+          "default": 33,
           "values": [
-            33,
-            36
+            33
           ]
         },
         "p_f1": {
           "type": "number",
+          "default": 4.4,
           "values": [
-            4.4,
-            4.8
+            4.4
           ]
-        },
-        "constraint": "When q_h=10, q_f=50, p_h1=33, p_f1=4.4: Basket_0 = 500, Basket_1 = 550, CPI_1 = 110.0"
+        }
       },
       "evaluation": {
         "mode": "multiple_choice",
@@ -609,25 +1533,22 @@
         "MA-1"
       ],
       "title": "Computing the GDP Implicit Price Deflator",
-      "prompt_template": "In a given year, an economy produces Nominal GDP of ${{nom_gdp}} billion and Real GDP of ${{real_gdp}} billion. What is the economy's GDP Implicit Price Deflator?",
+      "prompt_template": "In a given year, an economy produces Nominal GDP of $27,500 billion and Real GDP of $25,000 billion. What is the economy's GDP Implicit Price Deflator?",
       "parameters": {
         "nom_gdp": {
           "type": "integer",
+          "default": 27500,
           "values": [
-            27500,
-            24000,
-            30000
+            27500
           ]
         },
         "real_gdp": {
           "type": "integer",
+          "default": 25000,
           "values": [
-            25000,
-            20000,
             25000
           ]
-        },
-        "constraint": "For nom_gdp=27500 and real_gdp=25000, GDP Deflator = (27500 / 25000) * 100 = 110.0"
+        }
       },
       "evaluation": {
         "mode": "multiple_choice",
@@ -687,19 +1608,22 @@
           "type": "number",
           "values": [
             100.0
-          ]
+          ],
+          "default": 100.0
         },
         "cpi_1": {
           "type": "number",
           "values": [
             110.0
-          ]
+          ],
+          "default": 110.0
         },
         "cpi_2": {
           "type": "number",
           "values": [
             107.8
-          ]
+          ],
+          "default": 107.8
         }
       },
       "evaluation": {
@@ -760,25 +1684,29 @@
           "type": "number",
           "values": [
             20.0
-          ]
+          ],
+          "default": 20.0
         },
         "w_1": {
           "type": "number",
           "values": [
             20.8
-          ]
+          ],
+          "default": 20.8
         },
         "cpi_0": {
           "type": "integer",
           "values": [
             300
-          ]
+          ],
+          "default": 300
         },
         "cpi_1": {
           "type": "integer",
           "values": [
             315
-          ]
+          ],
+          "default": 315
         }
       },
       "evaluation": {
@@ -840,19 +1768,22 @@
           "type": "number",
           "values": [
             7.0
-          ]
+          ],
+          "default": 7.0
         },
         "pi_e": {
           "type": "number",
           "values": [
             3.0
-          ]
+          ],
+          "default": 3.0
         },
         "pi_actual": {
           "type": "number",
           "values": [
             6.0
-          ]
+          ],
+          "default": 6.0
         }
       },
       "evaluation": {
@@ -913,13 +1844,15 @@
           "type": "number",
           "values": [
             0.03
-          ]
+          ],
+          "default": 0.03
         },
         "pi": {
           "type": "number",
           "values": [
             0.06
-          ]
+          ],
+          "default": 0.06
         }
       },
       "evaluation": {
@@ -961,6 +1894,332 @@
           "text": "+9.18%",
           "is_correct": false,
           "feedback": "Misconception (Multiplying Gross Factors): Computing (1.03 * 1.06) - 1 compounds inflation onto the raise instead of deflating by (1 + pi)."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T3_07",
+      "chapter": 5,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Multi-Year Market-Basket CPI and Disinflation Rate",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Multi-Year Market-Basket CPI and Disinflation Rate",
+      "prompt_template": "An urban market basket consists of 10 units of housing and 50 units of food. In the base year (Year 0), housing costs $60.00 per unit and food costs $8.00 per unit. In Year 1, prices rise to $66.00 for housing and $8.80 for food. In Year 2, prices rise to $69.30 for housing and $9.24 for food. What is the annual inflation rate in Year 2, and which regime does it represent?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "First compute Basket_0 = $1,000, Basket_1 = $1,100 (CPI_1 = 110.0), and Basket_2 = $1,155 (CPI_2 = 115.5)."
+        },
+        {
+          "tier": 2,
+          "text": "Then compute pi_2 = ((CPI_2 - CPI_1) / CPI_1) * 100% and compare it to Year 1's +10.0% rate."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "+5.0% (disinflation)",
+          "is_correct": true,
+          "feedback": "Correct. CPI_1 = 110.0 (+10.0% inflation) and CPI_2 = 115.5, so pi_2 = ((115.5 - 110.0) / 110.0) * 100% = (5.5 / 110.0) * 100% = +5.0%, which is disinflation because inflation slowed from 10.0% to 5.0%."
+        },
+        {
+          "id": "opt_b",
+          "text": "+5.5% (disinflation)",
+          "is_correct": false,
+          "feedback": "Misconception (Wrong Denominator): Subtracting 110.0 from 115.5 gives 5.5 index points; dividing by Year 0's base 100 instead of Year 1's 110.0 falsely yields +5.5%."
+        },
+        {
+          "id": "opt_c",
+          "text": "+15.5% (inflation)",
+          "is_correct": false,
+          "feedback": "Misconception (Cumulative vs. Annual Rate): +15.5% is the two-year cumulative price increase since Year 0, not the annual inflation rate in Year 2."
+        },
+        {
+          "id": "opt_d",
+          "text": "-5.0% (deflation)",
+          "is_correct": false,
+          "feedback": "Misconception (Confusing Disinflation with Deflation): The inflation rate dropped by 5.0 percentage points (from 10.0% to 5.0%), but prices still rose by +5.0% rather than falling."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T3_08",
+      "chapter": 5,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Solving for Real GDP Using the GDP Implicit Price Deflator",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Solving for Real GDP Using the GDP Implicit Price Deflator",
+      "prompt_template": "Suppose an economy reports Nominal GDP of $26,400 billion and a GDP Implicit Price Deflator of 120.0. What is the economy's Real GDP?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Start from GDP Deflator = (Nominal GDP / Real GDP) * 100 and solve algebraically for Real GDP."
+        },
+        {
+          "tier": 2,
+          "text": "Compute Real GDP = (Nominal GDP / GDP Deflator) * 100 = ($26,400 billion / 120.0) * 100."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$22,000 billion",
+          "is_correct": true,
+          "feedback": "Correct. Real GDP = ($26,400 billion / 120.0) * 100 = $220 billion * 100 = $22,000 billion."
+        },
+        {
+          "id": "opt_b",
+          "text": "$31,680 billion",
+          "is_correct": false,
+          "feedback": "Misconception (Multiplying Instead of Dividing): Multiplying Nominal GDP by 1.20 inflates the figure instead of deflating it to base-year prices."
+        },
+        {
+          "id": "opt_c",
+          "text": "$220 billion",
+          "is_correct": false,
+          "feedback": "Misconception (Omitting the Factor of 100): Dividing $26,400 billion by 120 without multiplying by 100 understates Real GDP by a factor of 100."
+        },
+        {
+          "id": "opt_d",
+          "text": "$26,280 billion",
+          "is_correct": false,
+          "feedback": "Misconception (Subtracting the Index): Subtracting the price index (120) directly from Nominal GDP ($26,400 billion) confuses index-ratio deflation with subtraction."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T3_09",
+      "chapter": 5,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Converting a Historical Salary into Current-Year Dollars",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Converting a Historical Salary into Current-Year Dollars",
+      "prompt_template": "In 1990, a newly hired analyst earned a nominal starting salary of $32,000 when the Consumer Price Index was 125.0. If the CPI in 2025 is 312.5, what nominal salary in 2025 provides the exact same real purchasing power as the 1990 salary?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Use the cross-period conversion formula: Value in Period B Dollars = Nominal Value_A * (CPI_B / CPI_A)."
+        },
+        {
+          "tier": 2,
+          "text": "Compute $32,000 * (312.5 / 125.0) by first simplifying the ratio 312.5 / 125.0 = 2.5."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$80,000",
+          "is_correct": true,
+          "feedback": "Correct. $32,000 * (312.5 / 125.0) = $32,000 * 2.5 = $80,000 in 2025 dollars."
+        },
+        {
+          "id": "opt_b",
+          "text": "$12,800",
+          "is_correct": false,
+          "feedback": "Misconception (Inverted CPI Ratio): Multiplying $32,000 by (125.0 / 312.5) converts 2025 dollars backward into 1990 dollars instead of forward."
+        },
+        {
+          "id": "opt_c",
+          "text": "$60,000",
+          "is_correct": false,
+          "feedback": "Misconception (Using Index Difference Instead of Ratio): Multiplying $32,000 by (312.5 - 125.0) / 100 = 1.875 omits the original base and miscalculates the price-level ratio."
+        },
+        {
+          "id": "opt_d",
+          "text": "$100,000",
+          "is_correct": false,
+          "feedback": "Misconception (Ignoring 1990 CPI): Multiplying $32,000 by (312.5 / 100) treats 1990 as if its CPI were 100.0 instead of 125.0."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T3_10",
+      "chapter": 5,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Real Hourly Wage Levels and Exact Real Wage Growth",
+      "clo_alignment": [
+        "MA-1"
+      ],
+      "title": "Real Hourly Wage Levels and Exact Real Wage Growth",
+      "prompt_template": "A technician's nominal hourly wage rises from $24.00 in Year 1 (when CPI = 120.0) to $30.00 in Year 2 (when CPI = 125.0). What is the technician's real hourly wage in Year 2 (in base-year dollars), and by what exact percentage did real purchasing power grow?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compute Year 1 real wage: ($24.00 / 120.0) * 100 = $20.00, and Year 2 real wage: ($30.00 / 125.0) * 100."
+        },
+        {
+          "tier": 2,
+          "text": "Then calculate the percentage change from Year 1's real wage to Year 2's real wage."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$24.00 per hour; real purchasing power grew by exactly 20.0%.",
+          "is_correct": true,
+          "feedback": "Correct. W_real_1 = ($24.00 / 120.0) * 100 = $20.00 and W_real_2 = ($30.00 / 125.0) * 100 = $24.00, so real wage growth = ($24.00 - $20.00) / $20.00 * 100% = +20.0%."
+        },
+        {
+          "id": "opt_b",
+          "text": "$25.00 per hour; real purchasing power grew by 25.0%.",
+          "is_correct": false,
+          "feedback": "Misconception (Deflating by Old CPI): Dividing $30.00 by Year 1's CPI (120.0) instead of Year 2's CPI (125.0) ignores the rise in consumer prices."
+        },
+        {
+          "id": "opt_c",
+          "text": "$24.00 per hour; real purchasing power grew by 25.0%.",
+          "is_correct": false,
+          "feedback": "Misconception (Reporting Nominal Growth): +25.0% is the nominal wage growth (($30 - $24)/$24), not the inflation-adjusted real wage growth (+20.0%)."
+        },
+        {
+          "id": "opt_d",
+          "text": "$24.00 per hour; real purchasing power grew by 15.0%.",
+          "is_correct": false,
+          "feedback": "Misconception (Subtracting Index Points): Subtracting 5 CPI index points from 20% confuses index-point differences with percentage inflation."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T3_11",
+      "chapter": 5,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Real Interest Rate and Dollar Wealth Redistribution Under Unexpected Disinflation",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Real Interest Rate and Dollar Wealth Redistribution Under Unexpected Disinflation",
+      "prompt_template": "A regional bank issues a one-year fixed-rate loan of $20,000 at a nominal interest rate of i = 6.5% when expected inflation is pi^e = 2.5%. Actual inflation turns out to be pi = 1.0%. Using the linear Fisher Equation, what is the realized real interest rate (r_actual), and how much real purchasing power is unexpectedly redistributed?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compute r^e = i - pi^e = 6.5% - 2.5% = 4.0% and r_actual = i - pi = 6.5% - 1.0%."
+        },
+        {
+          "tier": 2,
+          "text": "Multiply the unexpected real-rate gap (r_actual - r^e) by the $20,000 loan principal, and check who wins when actual inflation is lower than expected."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "r_actual = 5.5%; $300 in real purchasing power is transferred from the borrower to the lender.",
+          "is_correct": true,
+          "feedback": "Correct. r^e = 4.0% and r_actual = 6.5% - 1.0% = 5.5%. Because actual inflation was 1.5 percentage points lower than expected, 1.5% * $20,000 = $300 in real wealth transfers from borrower to lender."
+        },
+        {
+          "id": "opt_b",
+          "text": "r_actual = 5.5%; $300 in real purchasing power is transferred from the lender to the borrower.",
+          "is_correct": false,
+          "feedback": "Misconception (Reversed Redistribution): When actual inflation is lower than expected, repaid dollars buy more goods than anticipated, so the lender wins and the borrower loses."
+        },
+        {
+          "id": "opt_c",
+          "text": "r_actual = 4.0%; $0 in real purchasing power is redistributed.",
+          "is_correct": false,
+          "feedback": "Misconception (Ignoring Inflation Surprise): 4.0% was the expected real rate; because pi = 1.0% differed from pi^e = 2.5%, the realized real rate rose to 5.5%."
+        },
+        {
+          "id": "opt_d",
+          "text": "r_actual = 7.5%; $700 in real purchasing power is transferred from the borrower to the lender.",
+          "is_correct": false,
+          "feedback": "Misconception (Adding Inflation to Nominal Rate): Positive 1.0% inflation still subtracts from the nominal rate (6.5% - 1.0% = 5.5%), rather than adding to it."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T3_12",
+      "chapter": 5,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Exact Multiplicative Fisher Equation Under High Inflation",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Exact Multiplicative Fisher Equation Under High Inflation",
+      "prompt_template": "In a high-inflation economy, a one-year bond pays a nominal interest rate of i = 35.0% while actual inflation is pi = 25.0%. Using the exact multiplicative Fisher formula r = (i - pi) / (1 + pi), what is the exact realized real interest rate?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Convert percentages to decimals: i = 0.35 and pi = 0.25."
+        },
+        {
+          "tier": 2,
+          "text": "Substitute into r = (0.35 - 0.25) / (1 + 0.25) = 0.10 / 1.25."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "8.0%",
+          "is_correct": true,
+          "feedback": "Correct. r = (0.35 - 0.25) / (1 + 0.25) = 0.10 / 1.25 = 0.08, or exactly 8.0%—showing why the linear approximation (10.0%) becomes inaccurate at high inflation."
+        },
+        {
+          "id": "opt_b",
+          "text": "10.0%",
+          "is_correct": false,
+          "feedback": "Misconception (Linear Approximation Error): 35.0% - 25.0% = 10.0% ignores the denominator (1 + pi) = 1.25 required by the exact multiplicative Fisher formula."
+        },
+        {
+          "id": "opt_c",
+          "text": "12.5%",
+          "is_correct": false,
+          "feedback": "Misconception (Multiplying by 1 + pi): Multiplying (0.35 - 0.25) by 1.25 instead of dividing yields 12.5%."
+        },
+        {
+          "id": "opt_d",
+          "text": "60.0%",
+          "is_correct": false,
+          "feedback": "Misconception (Adding Nominal Rate and Inflation): Summing 35.0% + 25.0% adds inflation erosion onto the nominal return instead of deflating by it."
         }
       ]
     },
@@ -1236,6 +2495,391 @@
           "text": "The saver would have preserved more purchasing power by holding physical cash under a mattress (i = 0%).",
           "is_correct": false,
           "feedback": "Misconception (Opportunity Cost of Cash): Holding 0% physical cash yields r = 0% - 4.5% = -4.5%, which loses even more purchasing power than earning 1.5% nominal interest."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T4_06",
+      "chapter": 5,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Interpreting the 2022–2024 U.S. Disinflation Plateau",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Interpreting the 2022–2024 U.S. Disinflation Plateau",
+      "prompt_template": "After U.S. annual CPI inflation (CPIAUCSL) cooled from above 8% in mid-2022 to roughly 3% in 2024, many households remained frustrated that grocery and rent bills were still far above 2019 levels. Which macroeconomic distinction explains why disinflation did not return prices to 2019 levels?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Distinguish between a slowdown in the rate of price growth (disinflation) and a fall in the price level itself (deflation)."
+        },
+        {
+          "tier": 2,
+          "text": "Ask what +3% inflation does to the aggregate price level each year."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Cooling inflation from 8% to 3% was disinflation, not deflation: average consumer prices continued rising at 3% per year atop the elevated post-2022 price plateau.",
+          "is_correct": true,
+          "feedback": "Correct. Disinflation slows the speed at which prices climb but does not reverse prior price-level increases; returning to 2019 prices would require sustained deflation (pi < 0)."
+        },
+        {
+          "id": "opt_b",
+          "text": "The CPI measures only producer wholesale prices and fails to capture retail rent and grocery bills.",
+          "is_correct": false,
+          "feedback": "Misconception (CPI Scope): Housing/rent and groceries are core components of the urban consumer CPI basket."
+        },
+        {
+          "id": "opt_c",
+          "text": "Disinflation means prices fell by 5% each year, so household frustration must reflect money illusion.",
+          "is_correct": false,
+          "feedback": "Misconception (Confusing Disinflation with Deflation): Falling from 8% to 3% inflation means prices rose 3%, not that prices fell 5%."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because nominal wages automatically drop during disinflation, prices appear higher even when they actually fell.",
+          "is_correct": false,
+          "feedback": "Misconception (Disinflation Dynamics): Prices did not fall during 2023–2024 U.S. disinflation, and nominal wages do not automatically decline when inflation cools."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T4_07",
+      "chapter": 5,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Japan's Lost Decades of Deflation and Spending Delays",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Japan's Lost Decades of Deflation and Spending Delays",
+      "prompt_template": "Following the burst of its asset-price bubble in the early 1990s, Japan experienced prolonged deflation (pi_t < 0) across much of the late 1990s and 2000s. Why did expectations of continuing deflation weaken Japanese household consumption and business investment?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about what a rational shopper or firm does when they expect cars, appliances, and equipment to be cheaper next year."
+        },
+        {
+          "tier": 2,
+          "text": "Consider also how falling prices affect the real burden of existing fixed-dollar debts."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Expecting prices to be even lower next year encouraged households to postpone durable purchases and corporations to delay capital investment, while rising real debt burdens depressed spending further.",
+          "is_correct": true,
+          "feedback": "Correct. Expected deflation creates a powerful incentive to wait for lower future prices and increases the real burden of nominal debt (debt deflation), reinforcing economic stagnation."
+        },
+        {
+          "id": "opt_b",
+          "text": "Deflation caused severe shoe-leather costs as Japanese households rushed to spend physical cash before it lost purchasing power.",
+          "is_correct": false,
+          "feedback": "Misconception (Inflation vs. Deflation Incentives): Rushing to spend cash before it loses value occurs during high inflation, whereas deflation increases the real value of holding cash."
+        },
+        {
+          "id": "opt_c",
+          "text": "Deflation reduced the real interest rate on fixed-rate corporate loans below zero, discouraging banks from collecting payments.",
+          "is_correct": false,
+          "feedback": "Misconception (Deflation and Real Rates): Because r = i - pi, negative inflation (pi < 0) pushes the real interest rate above the nominal rate (r > i), raising real borrowing costs."
+        },
+        {
+          "id": "opt_d",
+          "text": "Deflation caused rapid tax bracket creep that pushed Japanese workers into higher marginal income tax brackets.",
+          "is_correct": false,
+          "feedback": "Misconception (Bracket Creep Direction): Bracket creep is caused by rising nominal incomes during inflation, not by falling prices during deflation."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T4_08",
+      "chapter": 5,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Real Purchasing-Power Erosion of an Unindexed Minimum Wage",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Real Purchasing-Power Erosion of an Unindexed Minimum Wage",
+      "prompt_template": "Suppose a statutory federal minimum wage remains fixed at $7.25 per hour in nominal terms for fifteen consecutive years while the Consumer Price Index rises every year. How does the real purchasing power of that statutory wage floor evolve over those fifteen years?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Inspect W_real = ($7.25 / CPI_t) * 100 as CPI_t grows year after year."
+        },
+        {
+          "tier": 2,
+          "text": "Compare an unindexed statutory wage floor with an indexed benefit such as Social Security."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Its real purchasing power declines steadily every single year because the fixed $7.25 nominal wage is divided by a continuously rising CPI.",
+          "is_correct": true,
+          "feedback": "Correct. Without automatic CPI indexation, positive inflation steadily erodes the real goods and services that a fixed nominal minimum wage can purchase."
+        },
+        {
+          "id": "opt_b",
+          "text": "Its real purchasing power stays constant because $7.25 per hour is written into federal law.",
+          "is_correct": false,
+          "feedback": "Misconception (Nominal vs. Real Rigidity): Statutory law fixes the nominal dollar figure ($7.25), not the real basket of goods it buys."
+        },
+        {
+          "id": "opt_c",
+          "text": "Its real purchasing power rises automatically whenever the economy experiences disinflation.",
+          "is_correct": false,
+          "feedback": "Misconception (Disinflation Still Erodes Fixed Wages): During disinflation, prices are still rising (pi > 0), so a fixed nominal wage continues losing real purchasing power, just more slowly."
+        },
+        {
+          "id": "opt_d",
+          "text": "Its real purchasing power rises by 0.5 to 1.0 percentage points per year due to CPI substitution bias.",
+          "is_correct": false,
+          "feedback": "Misconception (Bias vs. Indexation): CPI upward bias affects indexed contracts (like COLAs), not an unindexed $7.25 wage that receives no CPI adjustment at all."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T4_09",
+      "chapter": 5,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Capital Gains Taxes on Illusory Nominal Gains",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Capital Gains Taxes on Illusory Nominal Gains",
+      "prompt_template": "An investor buys shares of a stock for $10,000 and sells them one year later for $11,000 (+10.0% nominal return) during a year when CPI inflation is exactly 10.0%. If the tax code levies a 20% capital gains tax on the $1,000 nominal gain ($200 tax), what is the investor's true real after-tax outcome?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "First determine the investor's pre-tax real gain when both the asset price and consumer prices rose 10.0%."
+        },
+        {
+          "tier": 2,
+          "text": "Then consider the effect of paying $200 in taxes on that zero pre-tax real gain."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The investor earned zero real pre-tax gain, so paying $200 in tax on the illusory nominal gain leaves the investor with a negative real after-tax return—a textbook unit-of-account cost of inflation.",
+          "is_correct": true,
+          "feedback": "Correct. Because $11,000 buys the exact same basket of goods as $10,000 did a year earlier, taxing the $1,000 nominal gain leaves the investor with $10,800—less real purchasing power than they started with."
+        },
+        {
+          "id": "opt_b",
+          "text": "The investor earned a +8.0% real after-tax return because $800 of the $1,000 profit remained after taxes.",
+          "is_correct": false,
+          "feedback": "Misconception (Money Illusion in Investing): $800 is the nominal after-tax dollar increase; once adjusted for 10.0% inflation, $10,800 buys less than $10,000 did a year earlier."
+        },
+        {
+          "id": "opt_c",
+          "text": "The investor broke even in real terms because capital gains taxes are automatically refunded when inflation matches nominal returns.",
+          "is_correct": false,
+          "feedback": "Misconception (Unindexed Capital Gains): U.S. capital gains taxes are assessed on nominal dollar gains rather than inflation-adjusted real gains."
+        },
+        {
+          "id": "opt_d",
+          "text": "This scenario illustrates shoe-leather costs because the investor had to sell stock to pay taxes.",
+          "is_correct": false,
+          "feedback": "Misconception (Unit-of-Account vs. Shoe-Leather Costs): Taxing illusory nominal gains because the dollar yardstick shrank is a unit-of-account cost, not a shoe-leather cost."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T4_10",
+      "chapter": 5,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Domestic Capital Goods Price Surge: GDP Deflator vs. CPI",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Domestic Capital Goods Price Surge: GDP Deflator vs. CPI",
+      "prompt_template": "Suppose prices of domestically manufactured commercial airplanes and industrial factory machinery surge by 18%, while prices of all household consumer goods and services remain completely unchanged. How will the U.S. GDP Implicit Price Deflator and the U.S. CPI (CPIAUCSL) respond?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Identify which GDP expenditure component (C, I, G, or X) includes commercial airplanes and industrial machinery."
+        },
+        {
+          "tier": 2,
+          "text": "Ask whether typical urban households buy commercial airliners or factory machinery in their retail market basket."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The GDP Implicit Price Deflator rises because domestically produced business investment goods (I) are part of GDP, whereas the CPI stays unchanged because households do not purchase commercial airplanes or factory machinery.",
+          "is_correct": true,
+          "feedback": "Correct. The GDP Deflator covers all domestic final output (C, I, G, X), including business investment goods, whereas the CPI tracks only urban consumer retail purchases."
+        },
+        {
+          "id": "opt_b",
+          "text": "The CPI rises sharply while the GDP Deflator stays unchanged because industrial goods carry heavy fixed weights in the CPI.",
+          "is_correct": false,
+          "feedback": "Misconception (Reversed Index Scope): Commercial capital equipment belongs to investment (I) in the GDP Deflator, not to the urban consumer basket."
+        },
+        {
+          "id": "opt_c",
+          "text": "Both the GDP Deflator and the CPI stay unchanged because capital machinery is treated as an intermediate good excluded from GDP.",
+          "is_correct": false,
+          "feedback": "Misconception (Final Investment vs. Intermediate Goods): Newly produced capital equipment and commercial aircraft are final investment goods (I) included in GDP and its deflator."
+        },
+        {
+          "id": "opt_d",
+          "text": "Both indexes rise by the exact same 18% because every domestic price change passes identically into both indexes.",
+          "is_correct": false,
+          "feedback": "Misconception (Identical Weights): The two indexes differ in scope and weighting, so pure capital-goods price shocks move the GDP Deflator without directly moving the CPI."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T4_11",
+      "chapter": 5,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "The Fisher Effect on Newly Issued Bonds vs. Existing Fixed-Rate Bonds",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "The Fisher Effect on Newly Issued Bonds vs. Existing Fixed-Rate Bonds",
+      "prompt_template": "Suppose lenders and borrowers require an expected real interest rate of r^e = 3.0%, and expected annual inflation suddenly rises from pi^e = 2.0% to pi^e = 5.0%. According to the Fisher Effect, how does this shift affect the nominal interest rate on newly issued loans compared with existing fixed-rate loans?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Use i = r^e + pi^e to compute the nominal rate on newly issued loans before and after expected inflation rises."
+        },
+        {
+          "tier": 2,
+          "text": "Distinguish between new loan contracts negotiated today and old fixed-rate contracts signed in the past."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Nominal interest rates on newly issued loans rise one-for-one from 5.0% to 8.0%, whereas existing fixed-rate loans remain locked at their original 5.0% nominal rate.",
+          "is_correct": true,
+          "feedback": "Correct. Under the Fisher Effect, higher expected inflation (+3.0 percentage points) pushes new nominal rates up one-for-one (from 5.0% to 8.0%) to preserve r^e = 3.0%, while previously signed fixed-rate contracts cannot adjust."
+        },
+        {
+          "id": "opt_b",
+          "text": "Nominal interest rates on both newly issued loans and all existing fixed-rate loans automatically jump to 8.0%.",
+          "is_correct": false,
+          "feedback": "Misconception (Ex-Ante vs. Ex-Post Adjustment): Existing fixed-rate loans have legally locked nominal rates; only newly issued contracts incorporate the new inflation expectations."
+        },
+        {
+          "id": "opt_c",
+          "text": "Nominal interest rates on newly issued loans stay at 5.0%, forcing the expected real return on new loans down to 0.0% permanently.",
+          "is_correct": false,
+          "feedback": "Misconception (Ignoring the Fisher Effect): Lenders will not voluntarily issue new loans at 0% expected real return when they require 3.0%; they demand a higher nominal rate."
+        },
+        {
+          "id": "opt_d",
+          "text": "Nominal interest rates on newly issued loans fall from 5.0% to 2.0% because higher inflation reduces the value of money.",
+          "is_correct": false,
+          "feedback": "Misconception (Sign of Fisher Effect): Higher expected inflation raises—not lowers—nominal interest rates so lenders are compensated for expected purchasing-power erosion."
+        }
+      ]
+    },
+    {
+      "id": "MACRO_CH05_T4_12",
+      "chapter": 5,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Policy Trade-Offs of Switching from Standard CPI to Chained CPI",
+      "clo_alignment": [
+        "MA-1",
+        "C2002-1"
+      ],
+      "title": "Policy Trade-Offs of Switching from Standard CPI to Chained CPI",
+      "prompt_template": "Policymakers have periodically debated switching federal benefit COLAs from the standard fixed-weight CPI to the Chained CPI (SUUR0000SA0). Which statement accurately evaluates the economic and fiscal consequences of that switch?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall how the Chained CPI reduces upward substitution bias relative to the standard Laspeyres CPI."
+        },
+        {
+          "tier": 2,
+          "text": "Trace what slightly smaller annual percentage adjustments mean for federal budget outlays and constant-utility measurement."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because the Chained CPI accounts for consumer substitution and grows slightly more slowly than the standard CPI, switching reduces long-run federal benefit outlays while tracking true constant-utility living costs more accurately.",
+          "is_correct": true,
+          "feedback": "Correct. Accounting for substitution lowers measured inflation slightly compared to a fixed-weight Laspeyres index, reducing long-run federal COLA spending while aligning adjustments closer to true cost-of-living changes."
+        },
+        {
+          "id": "opt_b",
+          "text": "Switching to the Chained CPI would raise federal benefit outlays sharply because Chained CPI grows faster than the standard Laspeyres CPI.",
+          "is_correct": false,
+          "feedback": "Misconception (Direction of Substitution Bias): Because consumers substitute away from items whose prices rise fastest, Chained CPI grows slightly more slowly—not faster—than the standard fixed-weight CPI."
+        },
+        {
+          "id": "opt_c",
+          "text": "Switching to the Chained CPI would eliminate all inflation in the U.S. economy by preventing businesses from raising prices.",
+          "is_correct": false,
+          "feedback": "Misconception (Measurement vs. Price Setting): Changing the statistical index formula improves cost-of-living measurement; it does not directly control firm pricing behavior."
+        },
+        {
+          "id": "opt_d",
+          "text": "Switching to the Chained CPI would exclude imported consumer goods from benefit calculations because the Chained CPI is identical to the GDP Deflator.",
+          "is_correct": false,
+          "feedback": "Misconception (Chained CPI vs. GDP Deflator): The Chained CPI still tracks urban consumer purchases (including imports), unlike the GDP Deflator."
         }
       ]
     }

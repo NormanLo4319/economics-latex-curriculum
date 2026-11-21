@@ -45,14 +45,14 @@ In 1960, South Korea and Ghana had virtually identical real GDP per capita (roug
 % =============================================================================
 \section{Consumer vs. Capital Goods \& Intertemporal Trade-Offs}
 
-\subsection*{1. Conceptual Introduction}
+\subsection*{Conceptual Introduction}
 In microeconomics, the Production Possibilities Frontier illustrates how a society divides scarce resources between two specific products, such as wind turbines and cargo ships. In macroeconomics, we aggregate all national output into two broad categories that govern living standards across time: \textbf{Consumer Goods ($C$)} and \textbf{Capital Goods ($I$)}. Consumer goods—such as groceries, apparel, streaming subscriptions, and restaurant meals—deliver immediate comfort and satisfaction to households today, but once consumed they add nothing to the economy's future productive capacity. By contrast, capital goods—such as semiconductor fabrication equipment, hyperscale computing servers, electrical grid transformers, warehouses, and ports—are durable assets produced today so that workers can produce more goods and services tomorrow.
 
 Because total resources in any given year are finite, choosing a point along the macroeconomic PPF creates an \textbf{intertemporal trade-off} (a trade-off across time). Producing more consumer goods today requires diverting engineers, steel, electricity, and construction crews away from building capital goods. However, existing machinery, buildings, and software constantly wear out, break down, or become technologically obsolete—a process economists call \textbf{depreciation ($\delta K$)}, where $\delta$ is the annual depreciation rate and $K$ is the existing capital stock.
 
 Consequently, an economy's future productive capacity depends on \textbf{net investment ($\Delta K$)}, defined as gross capital goods production ($I$) minus depreciation ($\delta K$). If gross investment exceeds depreciation ($I > \delta K$), the capital stock grows ($\Delta K > 0$) and the future PPF shifts outward. If gross investment merely replaces worn-out equipment ($I = \delta K$), net investment is zero ($\Delta K = 0$) and the PPF stays stationary. If an economy consumes so heavily that gross investment falls short of depreciation ($I < \delta K$), its capital stock shrinks ($\Delta K < 0$) and the PPF actually contracts inward.
 
-\subsection*{2. Visual Representation}
+\subsection*{Visual Representation}
 Figure~\ref{fig:macro_ppf_intertemporal} illustrates a linear macroeconomic PPF contrasting Consumer Goods ($C$) on the horizontal axis against Gross Capital Goods Production ($I$) on the vertical axis. Both Country A (at High-Consumption Bundle $A$) and Country B (at High-Investment Bundle $B$) begin in 2026 on the same baseline frontier ($\text{PPF}_{2026}$), but Country B's higher capital investment shifts its 2036 frontier ($\text{PPF}_{2036,B}$) substantially further outward than Country A's ($\text{PPF}_{2036,A}$).
 
 \begin{figure}[htbp]
@@ -98,12 +98,11 @@ Figure~\ref{fig:macro_ppf_intertemporal} illustrates a linear macroeconomic PPF 
 \end{itemize}
 \end{coreprinciple}
 
-\subsection*{3. Real-World Application}
 \begin{examplecase}{The Power-Grid \& AI Data-Center Trade-Off}
 Modern hyperscale AI data centers and electrical grid modernization illustrate the intertemporal macroeconomic trade-off in real time. High-voltage grid transformers, electrical engineers, and construction crews cannot simultaneously build residential housing complexes and hyperscale compute facilities. Under a high-consumption regime, minimal net capital is added and aging bridges, transit systems, and power lines erode faster than they are replaced. By contrast, high-investment regimes—such as East Asian export economies during their industrialization waves or targeted grid and compute infrastructure buildouts—channel current output into durable assets that expand future national production capacity.
 \end{examplecase}
 
-\subsection*{4. Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 Along the linear macroeconomic PPF in Figure~\ref{fig:macro_ppf_intertemporal}, maximum Consumer Goods output is $C_{\max} = \$800\text{ billion}$ (when $I = \$0$) and maximum Capital Goods output is $I_{\max} = \$400\text{ billion}$ (when $C = \$0$). The slope of the frontier is $-\frac{400}{800} = -0.5$, yielding the linear PPF equation:
 \begin{equation}
 I = 400 - 0.5C
@@ -115,7 +114,7 @@ To track how capital goods production updates the nation's physical capital stoc
 \Delta K = I_1 - \delta K_1, \qquad K_2 = K_1 + I_1 - \delta K_1 = (1 - \delta)K_1 + I_1
 \end{equation}
 
-\paragraph{Worked Problem 2.1 (Linear Macro PPF & National Capital Accumulation).}
+\paragraph{Work It Out 2.1: Linear Macro PPF \& National Capital Accumulation.}
 \textbf{Part A (Moving Along the Linear PPF):} Using $I = 400 - 0.5C$:
 \begin{enumerate}
   \item \textbf{High-Consumption Bundle $A$ ($C = \$600\text{B}$):}
@@ -125,11 +124,11 @@ To track how capital goods production updates the nation's physical capital stoc
   $$I_B = 400 - 0.5(400) = 400 - 200 = \$200\text{ billion of capital goods} \quad (+\$100\text{B gain}).$$
 \end{enumerate}
 
-\noindent\textbf{Part B (Depreciation & Year 2 Capital Stock):} Suppose a nation begins Year 1 with $K_1 = \$10,000\text{ billion}$ in physical capital, an annual depreciation rate of $\delta = 6\%$ ($0.06$), and Year 1 gross investment of $I_1 = \$950\text{ billion}$:
+\noindent\textbf{Part B (Depreciation \& Year 2 Capital Stock):} Suppose a nation begins Year 1 with $K_1 = \$10,000\text{ billion}$ in physical capital, an annual depreciation rate of $\delta = 6\%$ ($0.06$), and Year 1 gross investment of $I_1 = \$950\text{ billion}$:
 \begin{enumerate}
   \item \textbf{Step 1 — Annual Capital Depreciation ($\delta K_1$):}
   $$\delta K_1 = 0.06 \times \$10,000\text{ billion} = \$600\text{ billion worn out in Year 1}.$$
-  \item \textbf{Step 2 — Net Investment ($\Delta K$) & Year 2 Stock ($K_2$):}
+  \item \textbf{Step 2 — Net Investment ($\Delta K$) \& Year 2 Stock ($K_2$):}
   $$\Delta K = \$950\text{B} - \$600\text{B} = +\$350\text{ billion} \implies K_2 = \$10,000\text{B} + \$350\text{B} = \$10,350\text{ billion}.$$
   \item \textbf{Step 3 — Break-Even Maintenance Threshold ($I_{\min}$):}
   To prevent the capital stock from shrinking ($\Delta K \ge 0$), gross investment must at least equal annual depreciation: $I_{\min} = \delta K_1 = \$600\text{ billion}$.
@@ -140,14 +139,14 @@ To track how capital goods production updates the nation's physical capital stoc
 % =============================================================================
 \section{Output Gaps vs. Secular Economic Growth}
 
-\subsection*{1. Conceptual Introduction}
+\subsection*{Conceptual Introduction}
 A central distinction in macroeconomics separates short-run \textbf{business cycle fluctuations} from long-run \textbf{secular economic growth}. In any single year, the macroeconomic PPF defines the economy's \textbf{Potential GDP ($Y^*$)}—the maximum sustainable level of real output the nation can produce when its labor force, factories, and technology operate at normal full-employment utilization. When the economy operates directly \emph{on} its PPF, actual real GDP equals Potential GDP ($Y = Y^*$).
 
 During an economic downturn or recession, however, aggregate spending drops, assembly lines run below capacity, and workers are laid off. Rather than destroying the physical PPF itself, a recession pushes the economy to an inefficient operating point \emph{inside} the frontier ($Y < Y^*$). Economists call this shortfall a \textbf{recessionary output gap}: the physical machinery, buildings, and skilled workers still exist, but they are temporarily idle. Conversely, during a short-lived demand surge, factories may run unsustainable overtime shifts and temporarily push output slightly beyond normal capacity ($Y > Y^*$), creating inflationary \textbf{overheating}.
 
 Recovering from a recession and achieving long-run economic growth therefore represent two fundamentally different movements on the macroeconomic PPF diagram. \textbf{Cyclical recovery} moves the economy from an interior point back outward \emph{toward} its existing frontier, closing the recessionary gap ($Y \to Y^*$). By contrast, \textbf{secular economic growth} shifts the entire frontier outward ($\text{PPF}_1 \to \text{PPF}_2$), raising Potential GDP ($Y^*_1 \to Y^*_2$) through capital deepening, human capital improvements, and \textbf{Total Factor Productivity ($A$)}, where $Y^* = A \cdot f(K, L^*)$.
 
-\subsection*{2. Visual Representation}
+\subsection*{Visual Representation}
 Figure~\ref{fig:gaps_vs_secular_growth} contrasts Stage 1—a short-run cyclical recovery moving from interior Recession Point $R$ back to full-capacity Point $E_1$ on $\text{PPF}_1$—with Stage 2—long-run secular growth expanding Potential GDP outward from $E_1$ on $\text{PPF}_1$ to $E_2$ on $\text{PPF}_2$.
 
 \begin{figure}[htbp]
@@ -199,19 +198,18 @@ Figure~\ref{fig:gaps_vs_secular_growth} contrasts Stage 1—a short-run cyclical
 \end{itemize}
 \end{coreprinciple}
 
-\subsection*{3. Real-World Application}
 \begin{examplecase}{U.S. Output Gaps: From the 2009–2015 Slump to the 2021–2022 Surge}
 Recent U.S. macroeconomic history illustrates both sides of Potential GDP. Following the 2008–2009 financial crisis and housing crash, the U.S. economy operated inside its PPF with a persistent negative output gap until 2015 as idle factories and unemployed workers were gradually reabsorbed. By contrast, during 2021–2022, rapid fiscal and monetary stimulus combined with reopening propelled aggregate spending temporarily above normal sustainable capacity ($Y > Y^*$), triggering acute supply-chain bottlenecks and inflation until growth moderated back toward the secular frontier path.
 \end{examplecase}
 
-\subsection*{4. Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 Economists measure the severity of a cyclical downturn or overheating episode using the \textbf{output gap}, defined as the dollar and percentage deviation of actual real GDP ($Y$) from Potential GDP ($Y^*$):
 \begin{equation}
 \text{Output Gap (\$)} = Y - Y^*, \qquad \text{Percentage Output Gap} = \frac{Y - Y^*}{Y^*} \times 100\%
 \end{equation}
 When $Y < Y^*$, the output gap is negative (\textbf{recessionary gap}), placing the economy inside its PPF.
 
-\paragraph{Worked Problem 2.2 (Quantifying Output Gaps \& Capacity Expansion).}
+\paragraph{Work It Out 2.2: Quantifying Output Gaps \& Capacity Expansion.}
 Suppose 2026 Potential GDP along $\text{PPF}_1$ is $Y^*_1 = \$25.0\text{ trillion}$. During a recession, actual real GDP drops to interior Point $R$ at $Y = \$24.0\text{ trillion}$, while long-run capital and Total Factor Productivity gains expand Potential GDP by $+3.0\%$ per year:
 \begin{enumerate}
   \item \textbf{Step 1 — Measure the Recessionary Output Gap:}
@@ -230,14 +228,14 @@ Suppose 2026 Potential GDP along $\text{PPF}_1$ is $Y^*_1 = \$25.0\text{ trillio
 % =============================================================================
 \section{Capital Deepening, Diminishing Returns \& The Rule of 70}
 
-\subsection*{1. Conceptual Introduction}
+\subsection*{Conceptual Introduction}
 What actually shifts the macroeconomic PPF outward year after year, raising real income per person? The single most important determinant of long-run living standards is \textbf{labor productivity ($y = Y/L$)}—the quantity of real goods and services produced per worker (or per hour worked). To make each worker more productive, an economy can increase the amount of physical capital (machinery, computers, tools) and human capital (education, technical training) available per worker—a process called \textbf{capital deepening ($k = K/L$)}. Giving a construction crew excavators instead of shovels, or equipping analysts with high-speed computing workstations, dramatically increases output per worker.
 
 However, capital deepening obeys a fundamental constraint: \textbf{diminishing marginal returns to capital}. Holding technology and worker skills constant, each successive dollar of physical capital per worker adds less incremental output than the dollar before it. Equipping a farmer with a first tractor multiplies grain output; adding a second tractor for the same farmer yields a smaller boost; adding a third tractor adds almost nothing. Because of diminishing returns, physical capital accumulation alone cannot sustain perpetual growth in per-capita output—eventually, extra machines generate too little extra output even to cover their own depreciation.
 
 How, then, do advanced economies achieve continuous growth in living standards over centuries? The answer is \textbf{Total Factor Productivity ($A$)}—technological innovation, scientific breakthroughs, software automation, and better organizational management that allow workers to produce more output from the \emph{exact same} stock of capital and labor. Because annual productivity growth compounds over decades, even seemingly tiny percentage differences in annual growth rates transform national wealth, a relationship captured cleanly by the \textbf{Rule of 70}.
 
-\subsection*{2. Visual Representation}
+\subsection*{Visual Representation}
 Figure~\ref{fig:capital_deepening_productivity} plots the per-worker production relationship between Capital per Worker ($k = K/L$) and Real Output per Worker ($y = Y/L$). Along the baseline curve $y_0(k)$, equal increases in output per worker ($\Delta y = +\$50\text{k}$) require progressively larger injections of capital per worker ($\Delta k = +\$75\text{k}$, then $+\$125\text{k}$), demonstrating diminishing marginal returns. Technological progress shifts the entire curve upward to $y_1(k)$, raising output per worker even without additional capital deepening.
 
 \begin{figure}[htbp]
@@ -293,12 +291,11 @@ Figure~\ref{fig:capital_deepening_productivity} plots the per-worker production 
 \end{itemize}
 \end{coreprinciple}
 
-\subsection*{3. Real-World Application}
 \begin{examplecase}{Growth Policy Levers: Education, R\&D, and Infrastructure}
 Public policy shapes long-run per-capita growth through three primary channels: (1) \textbf{public and higher education}, which deepens human capital and accelerates workers' adoption of new tools; (2) \textbf{research and development (R\&D) grants and patent protection}, which spur scientific breakthroughs that lift Total Factor Productivity ($A$); and (3) \textbf{ports, transit, and power-grid infrastructure}, which lower shipping and energy costs across every industry. Because annual gains compound over decades, policies that lift annual real GDP per capita growth by even $1.5$ percentage points transform national prosperity within a single human lifetime.
 \end{examplecase}
 
-\subsection*{4. Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 To measure capital deepening and long-run compound growth using high-school algebra, define capital per worker ($k$) and output per worker ($y$) as:
 \begin{equation}
 k = \frac{K}{L}, \qquad y = \frac{Y}{L}
@@ -313,7 +310,7 @@ For rapid mental comparisons, the \textbf{Rule of 70} estimates how many years i
 \end{equation}
 where $g$ is entered as a percentage value (for example, $g = 2.0$ for a $2.0\%$ annual growth rate).
 
-\paragraph{Worked Problem 2.3 (Capital Deepening & The Two-Country Growth Race: 2026–2096).}
+\paragraph{Work It Out 2.3: Capital Deepening \& The Two-Country Growth Race (2026--2096).}
 \textbf{Part A (Measuring Capital Deepening $k = K/L$):} Over a five-year period, an economy's physical capital stock grows from $K_0 = \$800\text{ billion}$ to $K_1 = \$1,050\text{ billion}$, while its workforce grows from $L_0 = 10.0\text{ million}$ to $L_1 = 10.5\text{ million}$ workers:
 \begin{enumerate}
   \item \textbf{Initial Capital per Worker ($k_0$):}

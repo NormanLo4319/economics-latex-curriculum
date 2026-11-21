@@ -1,0 +1,2719 @@
+{
+  "schema_version": "2.0",
+  "course": "Principles of Microeconomics",
+  "chapter_id": "micro_ch13",
+  "file_stem": "ch13_asymmetric_information_risk",
+  "title": "Chapter 13: Asymmetric Information, Risk, and Market Design",
+  "benchmark": "Eric Chiang, Microeconomics (Principles SSOT, Spring 2027)",
+  "seeding_formula": "seed = hash(student_id + question_id)",
+  "points_per_question": 1,
+  "questions_count": 50,
+  "tier_distribution": {
+    "tier_1": 13,
+    "tier_2": 13,
+    "tier_3": 12,
+    "tier_4": 12
+  },
+  "questions": [
+    {
+      "id": "MICRO_CH13_T1_01",
+      "chapter": 13,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Asymmetric Information",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Defining Asymmetric Information",
+      "prompt_template": "In microeconomics, what defines a market with asymmetric information?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about how knowledge is distributed between buyers and sellers in standard competitive markets versus markets for used cars or insurance."
+        },
+        {
+          "tier": 2,
+          "text": "Asymmetry refers to an imbalance in private knowledge about quality, risk, or actions—not an imbalance in the number of participants."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "A market where there are far more buyers than sellers, giving sellers monopoly pricing power.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Market Structure Confusion): Having fewer sellers than buyers describes market concentration or monopoly power, not asymmetric information."
+        },
+        {
+          "id": "opt_b",
+          "text": "A market in which one party to a transaction possesses relevant private knowledge that the other party cannot directly observe.",
+          "is_correct": true,
+          "feedback": "Correct. Asymmetric information occurs whenever one side of a market holds private information about product quality, risk type, or hidden actions that the other side cannot directly observe."
+        },
+        {
+          "id": "opt_c",
+          "text": "A market where both buyers and sellers face identical uncertainty about a future random event.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Symmetric Uncertainty Confusion): When both sides share the same incomplete information, uncertainty is symmetric rather than asymmetric."
+        },
+        {
+          "id": "opt_d",
+          "text": "A market in which government price controls prevent prices from adjusting to equilibrium.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Intervention Confusion): Price ceilings and floors are government interventions, whereas asymmetric information is an informational market failure."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T1_02",
+      "chapter": 13,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Adverse Selection",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Mechanism of Adverse Selection in Akerlof's Lemons Model",
+      "prompt_template": "In George Akerlof's 'Market for Lemons' model, why does asymmetric information cause a used-car market to unravel?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Consider how uninformed buyers price cars when they cannot tell reliable 'peaches' from defective 'lemons.'"
+        },
+        {
+          "tier": 2,
+          "text": "Ask which sellers stay in the market and which sellers withdraw when buyers offer only an average pooled price."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Uninformed buyers offer a single pooled price based on average quality, prompting owners of high-quality 'peaches' to exit and further lowering average quality.",
+          "is_correct": true,
+          "feedback": "Correct. When buyers pay only the average expected value, high-quality sellers whose reservation values exceed that pooled offer withdraw, pushing average quality and buyer offers even lower."
+        },
+        {
+          "id": "opt_b",
+          "text": "Owners of defective 'lemons' exit the market first because they fear buyers will discover the car's flaws after purchase.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Reversed Selection): Lemon owners actually benefit from pooled pricing because the pooled offer exceeds a lemon's value, so lemons remain while peaches exit."
+        },
+        {
+          "id": "opt_c",
+          "text": "Buyers refuse to purchase any used car unless the government sets a binding price ceiling at the average value.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Price Control Misconception): Unraveling occurs through voluntary market pricing and seller exit, not because of government price ceilings."
+        },
+        {
+          "id": "opt_d",
+          "text": "Sellers of high-quality cars drive carelessly after selling their vehicles, lowering the market price of all cars.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Moral Hazard Confusion): Post-contract careless behavior is moral hazard, whereas adverse selection is driven by pre-contract hidden quality."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T1_03",
+      "chapter": 13,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Adverse Selection vs. Moral Hazard",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Distinguishing Adverse Selection from Moral Hazard",
+      "prompt_template": "Which statement accurately distinguishes adverse selection from moral hazard?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Focus on the timeline of the contract: does the hidden information exist before or after the agreement is signed?"
+        },
+        {
+          "tier": 2,
+          "text": "Match 'hidden characteristics' and 'hidden actions' to the correct market failure."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Adverse selection occurs after a contract is signed due to hidden actions, while moral hazard occurs before signing due to hidden characteristics.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Timeline Reversal): This swaps the two definitions—adverse selection is pre-contract hidden characteristics, and moral hazard is post-contract hidden actions."
+        },
+        {
+          "id": "opt_b",
+          "text": "Adverse selection occurs only in used-car markets, while moral hazard occurs only in health insurance markets.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Domain Restriction Fallacy): Both failures arise across insurance, credit, labor, and product markets whenever private information exists."
+        },
+        {
+          "id": "opt_c",
+          "text": "Adverse selection arises before a contract is signed from hidden characteristics, whereas moral hazard arises after signing from hidden actions.",
+          "is_correct": true,
+          "feedback": "Correct. Keeping the timeline straight is essential: adverse selection reflects pre-contract private types (like health risk or car quality), while moral hazard reflects post-contract private behavior (like effort or precaution)."
+        },
+        {
+          "id": "opt_d",
+          "text": "Adverse selection involves intentional fraud by buyers, whereas moral hazard involves unintended accounting errors by sellers.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Fraud Misconception): Neither concept requires fraud or accounting errors; both reflect rational responses to private information and incentives."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T1_04",
+      "chapter": 13,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Signaling and Screening",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Signaling Versus Screening",
+      "prompt_template": "How does market signaling differ from market screening as a remedy for adverse selection?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Identify which side of the transaction initiates the action: the informed party or the uninformed party."
+        },
+        {
+          "tier": 2,
+          "text": "Warranties and degrees are initiated by the informed side; contract menus and credit checks are designed by the uninformed side."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Signaling is mandated by government regulators, whereas screening is always performed voluntarily by sellers.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Regulatory Misconception): Both signaling and screening are private market mechanisms, and screening is initiated by the uninformed party, not sellers."
+        },
+        {
+          "id": "opt_b",
+          "text": "Signaling eliminates moral hazard after a contract is signed, whereas screening eliminates diminishing marginal utility.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Mechanism Mismatch): Both signaling and screening primarily address adverse selection (hidden characteristics) prior to contracting."
+        },
+        {
+          "id": "opt_c",
+          "text": "Signaling is initiated by the uninformed party to test applicants, whereas screening is initiated by the informed party to reveal quality.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Party Reversal): This reverses who moves first—signaling is done by the informed party, while screening is designed by the uninformed party."
+        },
+        {
+          "id": "opt_d",
+          "text": "Signaling occurs when the informed party takes a costly credible action to reveal high quality, whereas screening occurs when the uninformed party designs contract options or tests to separate hidden types.",
+          "is_correct": true,
+          "feedback": "Correct. Informed sellers or workers signal their type (e.g., warranties, rigorous degrees), while uninformed insurers, lenders, or buyers screen (e.g., deductible menus, credit checks, inspections)."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T1_05",
+      "chapter": 13,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Signaling and Screening",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Credibility Requirement for a Separating Signal",
+      "prompt_template": "For a market signal—such as a multi-year factory warranty or a rigorous university degree—to credibly separate high-quality types from low-quality types, what condition must hold?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Ask why low-quality sellers or low-productivity workers do not simply copy the signal."
+        },
+        {
+          "tier": 2,
+          "text": "Compare the marginal cost of providing the signal for high types versus low types (the single-crossing condition)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The signal must be completely costless for every seller or applicant to obtain.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Cheap-Talk Fallacy): If a signal is costless for everyone, low types will imitate it freely, destroying its ability to separate types."
+        },
+        {
+          "id": "opt_b",
+          "text": "The signal must be significantly less costly for high-quality or high-productivity types to provide than for low-quality types.",
+          "is_correct": true,
+          "feedback": "Correct. Under the single-crossing condition, a signal separates types only when it is cheaper for high types than low types, making imitation unprofitable for low types."
+        },
+        {
+          "id": "opt_c",
+          "text": "The signal must cost more for high-quality types than for low-quality types so that only wealthy buyers notice it.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inverted Cost Condition): If the signal were costlier for high types, low types would adopt it more readily, preventing separation."
+        },
+        {
+          "id": "opt_d",
+          "text": "The signal must directly increase the physical durability of the product regardless of the seller's type.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Productivity-Only Fallacy): Even if a signal does not directly alter underlying quality, differential signaling costs still allow it to credibly reveal private type."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T1_06",
+      "chapter": 13,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Moral Hazard",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Core Mechanism of Moral Hazard",
+      "prompt_template": "Why does full insurance coverage create moral hazard?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about how insurance changes the out-of-pocket marginal cost of risky behavior or extra utilization."
+        },
+        {
+          "tier": 2,
+          "text": "Economics treats moral hazard as a response to incentives, not a statement about personal character."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "By shielding the insured from the full financial cost of their choices, coverage weakens their marginal incentive to take costly precautions or limit low-value utilization.",
+          "is_correct": true,
+          "feedback": "Correct. Moral hazard is a predictable behavioral response to a lower out-of-pocket marginal price once a contract is in place."
+        },
+        {
+          "id": "opt_b",
+          "text": "Insurance policies attract only dishonest customers who intend to commit insurance fraud from the start.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Character-Flaw Fallacy): Economists emphasize that moral hazard is about altered marginal incentives, not dishonesty or bad character."
+        },
+        {
+          "id": "opt_c",
+          "text": "Insured individuals cannot observe their own risk type until after they file a claim.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Self-Ignorance Fallacy): In moral hazard, the insured party knows their own actions; it is the insurer who cannot perfectly observe or verify them."
+        },
+        {
+          "id": "opt_d",
+          "text": "Insurance premiums force households to become risk loving rather than risk averse.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Preference Shift Fallacy): Moral hazard occurs even when underlying risk preferences remain unchanged—it is driven by altered marginal prices."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T1_07",
+      "chapter": 13,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Principal-Agent Problem",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Understanding the Principal-Agent Problem",
+      "prompt_template": "Which scenario best illustrates the principal-agent problem inside a firm?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Identify who the 'principal' (owner/employer) and the 'agent' (manager/worker) are, and whether effort is observable."
+        },
+        {
+          "tier": 2,
+          "text": "Look for a hidden-action conflict created by compensation that is independent of performance."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "A competitive firm cuts its product price to match a rival's discount.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Market Competition Confusion): Matching a rival's price is standard competitive behavior, not an internal hidden-action conflict."
+        },
+        {
+          "id": "opt_b",
+          "text": "A used-car buyer cannot tell whether a vehicle has hidden frame damage before purchasing it.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Adverse Selection Confusion): Hidden product quality before a sale is adverse selection, not an intra-firm principal-agent problem."
+        },
+        {
+          "id": "opt_c",
+          "text": "Shareholders hire a corporate executive whose daily effort cannot be perfectly monitored, and a pure flat salary gives the executive weak incentive to exert high effort.",
+          "is_correct": true,
+          "feedback": "Correct. In the principal-agent problem, the principal (shareholders) cannot fully observe the agent's (executive's) hidden actions, so flat pay fails to align incentives."
+        },
+        {
+          "id": "opt_d",
+          "text": "A household buys homeowner's insurance to protect against a catastrophic fire.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Risk-Aversion Purchase Confusion): Purchasing insurance reflects risk aversion, not a principal-agent misalignment inside a firm."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T1_08",
+      "chapter": 13,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Insurance Contract Design",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Deductibles, Co-payments, and Coinsurance",
+      "prompt_template": "In an insurance contract, how does a deductible differ from coinsurance?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall the formula for out-of-pocket payment: D + c(L - D)."
+        },
+        {
+          "tier": 2,
+          "text": "One term is a fixed initial dollar amount paid before coverage begins; the other is a percentage share paid on covered costs above that threshold."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "A deductible is a percentage of every medical bill, whereas coinsurance is a fixed annual lump sum paid before coverage begins.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Term Swap): This reverses the two terms—the deductible is the fixed initial dollar amount, and coinsurance is the percentage share above the deductible."
+        },
+        {
+          "id": "opt_b",
+          "text": "A deductible requires the policyholder to pay the first fixed dollar amount of a claim before coverage starts, whereas coinsurance requires paying a fixed percentage of covered costs above the deductible.",
+          "is_correct": true,
+          "feedback": "Correct. Under Out-of-Pocket = D + c(L - D), the insured pays the deductible D first and then pays the coinsurance fraction c of the remaining covered loss (L - D)."
+        },
+        {
+          "id": "opt_c",
+          "text": "A deductible is paid by the insurer to the policyholder, whereas coinsurance is a government subsidy for low-risk enrollees.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Payer Reversal): Both deductibles and coinsurance are cost-sharing amounts paid out of pocket by the policyholder."
+        },
+        {
+          "id": "opt_d",
+          "text": "A deductible applies only to routine doctor visits, whereas coinsurance applies only when a claim is below the deductible.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Threshold Misunderstanding): Coinsurance applies to covered losses *above* the deductible, not below it."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T1_09",
+      "chapter": 13,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Moral Hazard and Contract Design",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "The Risk-Sharing vs. Incentives Trade-Off",
+      "prompt_template": "Why is eliminating moral hazard completely by refusing to offer insurance generally NOT socially optimal?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Remember why risk-averse households buy insurance in the first place."
+        },
+        {
+          "tier": 2,
+          "text": "Contract design must balance two competing goals: preventing overutilization/carelessness and protecting households from severe financial shocks."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because moral hazard always increases total social surplus when patients visit doctors more frequently.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Surplus Misconception): Moral hazard overutilization creates deadweight loss because extra visits cost more than their marginal benefit (MC > MB)."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because without insurance, adverse selection would disappear completely in every market.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Irrelevant Mechanism): Removing insurance eliminates the market entirely rather than solving the risk-protection problem."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because insurance companies cannot apply the Law of Large Numbers unless deductibles are set to zero.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Pooling Fallacy): Insurers can pool risks regardless of deductible size; zero deductibles actually worsen moral hazard."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because removing insurance eliminates valuable risk sharing, leaving risk-averse households exposed to catastrophic financial shocks.",
+          "is_correct": true,
+          "feedback": "Correct. Optimal contract design balances the fundamental trade-off between risk sharing and incentives, using partial cost sharing (deductibles, coinsurance, out-of-pocket caps) rather than eliminating coverage."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T1_10",
+      "chapter": 13,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Risk Aversion and Expected Utility",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Diminishing Marginal Utility of Wealth and Risk Aversion",
+      "prompt_template": "Why does diminishing marginal utility of wealth imply that an individual is risk averse?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare the utility gained from winning $1,000 against the utility lost from losing $1,000."
+        },
+        {
+          "tier": 2,
+          "text": "Think about how a risk-averse person chooses between a fair gamble and its guaranteed expected value."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because each additional dollar adds less utility than a lost dollar subtracts, so the individual strictly prefers a guaranteed expected value over a risky gamble with the same average payoff.",
+          "is_correct": true,
+          "feedback": "Correct. With diminishing marginal utility of wealth (concave u(W)), losses hurt more in utility terms than equal-sized gains help, creating a strict preference for certainty over an equal-EV gamble."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because diminishing marginal utility means wealthier people receive negative total utility from earning extra income.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Marginal vs. Total Confusion): Diminishing marginal utility means u'(W) > 0 is decreasing (u''(W) < 0), not that total utility becomes negative or decreases."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because diminishing marginal utility causes expected dollar wealth to fall whenever probabilities are equal.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (EV Distortion Fallacy): Expected dollar value E[W] depends only on payoffs and probabilities, not on the shape of the utility function."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because risk-averse individuals always choose the outcome with the highest possible maximum payoff regardless of probability.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Risk-Loving Confusion): Focusing on the maximum possible upside describes risk-seeking behavior, not risk aversion."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T1_11",
+      "chapter": 13,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Risk Preferences",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Comparing Risk-Averse, Risk-Neutral, and Risk-Loving Agents",
+      "prompt_template": "How does a risk-neutral individual evaluate a risky gamble compared to receiving the gamble's expected dollar value with certainty?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall what a risk-neutral person cares about when comparing two prospects."
+        },
+        {
+          "tier": 2,
+          "text": "Ask whether their risk premium is positive, zero, or negative."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "They strictly prefer the guaranteed expected value and are willing to pay a positive risk premium to avoid the gamble.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Risk-Averse Description): Preferring certainty over an equal-EV gamble with a positive risk premium defines risk aversion."
+        },
+        {
+          "id": "opt_b",
+          "text": "They strictly prefer the risky gamble over the guaranteed expected value.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Risk-Loving Description): Strictly preferring the gamble over its guaranteed expected value defines a risk-loving individual."
+        },
+        {
+          "id": "opt_c",
+          "text": "They are indifferent between the gamble and the guaranteed expected value because they care only about average dollar payoffs.",
+          "is_correct": true,
+          "feedback": "Correct. A risk-neutral agent has constant marginal utility of wealth (linear u(W)), so EU = u(E[W]), CE = E[W], and their risk premium is zero."
+        },
+        {
+          "id": "opt_d",
+          "text": "They always reject any gamble that has a positive probability of loss, no matter how high the expected value.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Extreme Loss Avoidance): Rejecting all gambles regardless of expected value contradicts expected value maximization."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T1_12",
+      "chapter": 13,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Certainty Equivalent and Risk Premium",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Defining Certainty Equivalent and Risk Premium",
+      "prompt_template": "For a risk-averse individual facing a risky wealth prospect, what is the Certainty Equivalent (CE), and how does it relate to Expected Wealth (E[W])?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Check the defining equation: u(CE) = EU."
+        },
+        {
+          "tier": 2,
+          "text": "Remember that for a risk-averse person, the Risk Premium is RP = E[W] - CE > 0."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "CE is the probability-weighted average of wealth outcomes, and for a risk-averse person CE equals E[W].",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (EV/CE Conflation): The probability-weighted average of wealth is E[W]; CE equals E[W] only for a risk-neutral agent."
+        },
+        {
+          "id": "opt_b",
+          "text": "CE is the guaranteed dollar wealth that yields the same utility as the risky prospect (u(CE) = EU), and for a risk-averse person CE < E[W].",
+          "is_correct": true,
+          "feedback": "Correct. Because a risk-averse person dislikes risk, they are willing to accept a guaranteed wealth CE strictly below E[W]; the gap E[W] - CE is their positive risk premium."
+        },
+        {
+          "id": "opt_c",
+          "text": "CE is the maximum dollar loss possible in the worst state of the world, so CE always exceeds E[W].",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Worst-State Confusion): CE lies between the worst outcome and E[W] for a risk-averse person; it is neither the worst loss nor greater than E[W]."
+        },
+        {
+          "id": "opt_d",
+          "text": "CE is the expected utility measured in utils, and for a risk-averse person CE > E[W].",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Units & Sign Error): CE is measured in dollars (not utils), and CE > E[W] holds for a risk-loving person rather than a risk-averse person."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T1_13",
+      "chapter": 13,
+      "tier": 1,
+      "taxonomy": "Tier 1: Conceptual / Definitional",
+      "topic": "Actuarially Fair Insurance and Risk Pooling",
+      "clo_alignment": [
+        "MI-1"
+      ],
+      "title": "Actuarially Fair Premiums and the Law of Large Numbers",
+      "prompt_template": "What is an actuarially fair insurance policy, and what statistical principle enables insurers to offer predictable coverage across thousands of households?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare the policy's premium to the insured's expected dollar loss."
+        },
+        {
+          "tier": 2,
+          "text": "Recall how pooling many independent risks reduces randomness in average payouts."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "A policy whose premium equals the policyholder's total initial wealth, enabled by the single-crossing condition.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Definition Mismatch): An actuarially fair premium equals expected loss, not total wealth, and the single-crossing condition applies to signaling."
+        },
+        {
+          "id": "opt_b",
+          "text": "A policy whose premium equals the maximum possible claim payout, enabled by diminishing marginal utility.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Max-Loss Confusion): Paying the maximum possible claim would provide no risk transfer; actuarially fair pricing equals probability times loss."
+        },
+        {
+          "id": "opt_c",
+          "text": "A policy with zero deductible and zero co-payment, enabled by adverse selection.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Contract-Feature Confusion): Actuarial fairness refers to how the premium compares to expected payout, and adverse selection undermines—not enables—insurance markets."
+        },
+        {
+          "id": "opt_d",
+          "text": "A policy whose premium equals the expected dollar loss, with insurers relying on the Law of Large Numbers to pool independent risks and make average payouts predictable.",
+          "is_correct": true,
+          "feedback": "Correct. An actuarially fair premium equals expected loss, and the Law of Large Numbers allows insurers to diversify away randomness across many independent policyholders."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T2_01",
+      "chapter": 13,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Adverse Selection Insurance Diagram",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Why the Marginal Expected Cost Curve Slopes Downward",
+      "prompt_template": "In the competitive health insurance adverse selection diagram (with enrolled population share on the horizontal axis), why does the marginal expected cost curve (MC_risk) slope downward from left to right?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Check how enrollees are ordered along the horizontal axis in Figure 13.1."
+        },
+        {
+          "tier": 2,
+          "text": "Who has the highest willingness to pay for health insurance and enrolls first?"
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Enrollees are ordered from highest expected medical cost on the left to lowest expected medical cost on the right.",
+          "is_correct": true,
+          "feedback": "Correct. Because high-risk individuals value coverage most and enroll first, expanding enrollment rightward brings in progressively healthier, lower-cost enrollees, making MC_risk slope downward."
+        },
+        {
+          "id": "opt_b",
+          "text": "Hospitals experience economies of scale that lower the medical cost of every sick patient as more people buy insurance.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Economies of Scale Confusion): The downward slope reflects selection ordering of heterogeneous risk types, not hospital production economies of scale."
+        },
+        {
+          "id": "opt_c",
+          "text": "Health insurance reduces moral hazard as enrollment expands toward 100%.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Moral Hazard Mechanism Error): Expanding enrollment does not reduce moral hazard; the curve reflects each individual's pre-existing expected medical cost."
+        },
+        {
+          "id": "opt_d",
+          "text": "Willingness to pay is always upward sloping, forcing marginal cost to slope downward by symmetry.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Curve-Slope Confusion): Both WTP and MC_risk slope downward when enrollees are ordered from highest risk to lowest risk."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T2_02",
+      "chapter": 13,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Adverse Selection Insurance Diagram",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Relationship Between Average Pool Cost and Marginal Risk Cost",
+      "prompt_template": "In the adverse selection insurance diagram where MC_risk slopes downward, why does the break-even average cost curve (AC_pool) lie strictly above MC_risk at every positive enrollment share?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about the mathematical relationship between an average and a marginal value when the marginal value is falling."
+        },
+        {
+          "tier": 2,
+          "text": "Compare the expected cost of the marginal enrollee at share q to the infra-marginal enrollees to their left."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because insurers add a monopoly profit markup to AC_pool at every enrollment level.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Monopoly Markup Error): Even in a zero-profit competitive break-even market, AC_pool lies above MC_risk purely because of the composition of the risk pool."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because low-risk enrollees on the right have higher expected medical costs than high-risk enrollees on the left.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Axis Ordering Reversal): Enrollees on the left are the high-risk, high-cost individuals; enrollees on the right are healthier and cheaper."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because every infra-marginal enrollee to the left of q has a higher expected cost than the marginal enrollee at q, pulling the pool average above marginal cost.",
+          "is_correct": true,
+          "feedback": "Correct. Whenever marginal cost is strictly decreasing, averaging over all costlier infra-marginal enrollees guarantees AC_pool(q) > MC_risk(q) for all q > 0."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because AC_pool includes deadweight loss while MC_risk excludes administrative costs.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Accounting Error): AC_pool is simply the average expected claim cost of enrolled individuals; it does not include deadweight loss."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T2_03",
+      "chapter": 13,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Adverse Selection Insurance Diagram",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Socially Efficient Enrollment vs. Competitive Adverse Selection Equilibrium",
+      "prompt_template": "Suppose every risk-averse individual values health insurance above their own expected medical cost (WTP > MC_risk everywhere up to 100% enrollment). Where does the competitive pooled equilibrium (E_AS) occur on the graph, and how does it compare to the socially efficient enrollment?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "In a competitive pooled market, insurers must break even: price equals average pool cost (P = AC_pool)."
+        },
+        {
+          "tier": 2,
+          "text": "Compare the intersection of WTP and AC_pool with the socially efficient 100% enrollment level."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Competitive equilibrium occurs where WTP = MC_risk at 100% enrollment, achieving full social efficiency.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Symmetric-Information Assumption): WTP = MC_risk occurs only if insurers can observe individual risk and price each person separately; under pooled pricing, equilibrium requires WTP = AC_pool."
+        },
+        {
+          "id": "opt_b",
+          "text": "Competitive equilibrium occurs where WTP intersects AC_pool at an enrollment share strictly below 100%, leaving low-risk individuals inefficiently uninsured.",
+          "is_correct": true,
+          "feedback": "Correct. Because AC_pool lies above MC_risk, WTP intersects AC_pool to the left of 100% enrollment, leaving healthy consumers with WTP > MC_risk uninsured."
+        },
+        {
+          "id": "opt_c",
+          "text": "Competitive equilibrium occurs where AC_pool intersects MC_risk at 100% enrollment, causing over-insurance.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Curve Intersection Error): AC_pool and MC_risk meet only at q = 0, not at 100%, and adverse selection causes under-insurance rather than over-insurance."
+        },
+        {
+          "id": "opt_d",
+          "text": "Competitive equilibrium occurs where WTP = 0, driving premiums to zero.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-Price Fallacy): Insurers cannot break even at a zero premium when expected medical costs are positive."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T2_04",
+      "chapter": 13,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Adverse Selection Insurance Diagram",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Identifying Adverse Selection Deadweight Loss on the Graph",
+      "prompt_template": "In the adverse selection health insurance graph, which geometric region represents the deadweight loss caused by asymmetric information?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Deadweight loss measures the foregone social surplus on transactions that do not occur even though marginal benefit exceeds marginal cost."
+        },
+        {
+          "tier": 2,
+          "text": "Locate the uninsured population to the right of Q_eq and compare their WTP curve to their MC_risk curve."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The area between AC_pool and MC_risk for the insured population from 0 to Q_eq.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Insured-Region Error): For enrollees from 0 to Q_eq, insurance is actually traded; the gap between AC_pool and MC_risk reflects cross-subsidization, not foregone surplus."
+        },
+        {
+          "id": "opt_b",
+          "text": "The rectangle beneath the equilibrium premium P_eq from 0 to Q_eq.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Revenue-vs-DWL Confusion): P_eq times Q_eq represents total premium revenue collected by insurers, not deadweight loss."
+        },
+        {
+          "id": "opt_c",
+          "text": "The area above the WTP curve and below AC_pool for the uninsured population.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Wrong Cost Curve): Social surplus is measured using true marginal resource cost MC_risk, not average pool cost AC_pool."
+        },
+        {
+          "id": "opt_d",
+          "text": "The area between the WTP curve and the MC_risk curve across the uninsured population from Q_eq to 100%.",
+          "is_correct": true,
+          "feedback": "Correct. Every uninsured person between Q_eq and 100% values coverage above their own expected cost (WTP > MC_risk), so the area between WTP and MC_risk over that uninsured range is the lost social surplus (DWL)."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T2_05",
+      "chapter": 13,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Adverse Selection Unraveling",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Graphical Dynamics of Risk-Pool Unraveling",
+      "prompt_template": "Starting from 100% enrollment in Figure 13.1, the full-enrollment pooled break-even premium P_pool lies above the WTP of the healthiest individuals on the right. What movement occurs on the graph as those healthy enrollees exit?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Trace the enrollment share moving leftward from 100% along the AC_pool curve."
+        },
+        {
+          "tier": 2,
+          "text": "Ask what happens to the break-even average cost as lower-cost individuals drop out."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Enrollment moves leftward and upward along AC_pool as average pool cost rises, driving out more low-risk individuals until reaching E_AS where WTP = AC_pool.",
+          "is_correct": true,
+          "feedback": "Correct. As healthy enrollees exit, the remaining pool is sicker on average, so the break-even premium climbs leftward up AC_pool until settling at E_AS."
+        },
+        {
+          "id": "opt_b",
+          "text": "The AC_pool curve shifts downward because fewer total claims are paid by the insurer.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Total vs. Average Cost Confusion): Total claims fall when people exit, but *average* cost per remaining enrollee rises because the cheapest enrollees left."
+        },
+        {
+          "id": "opt_c",
+          "text": "Enrollment moves rightward along MC_risk until WTP equals P_pool.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Direction Reversal): Enrollment cannot exceed 100% (move rightward); when P_pool > WTP, enrollment shrinks leftward."
+        },
+        {
+          "id": "opt_d",
+          "text": "The WTP curve shifts downward to meet P_pool at 100% enrollment.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Curve-Shift vs. Movement Confusion): Healthy enrollees exiting does not alter individuals' underlying willingness to pay; it causes a movement along the existing curves."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T2_06",
+      "chapter": 13,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Adverse Selection Comparative Statics",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Effect of Higher Risk Aversion on Adverse Selection Equilibrium",
+      "prompt_template": "Suppose households in an insurance pool become more risk averse, shifting the WTP curve vertically upward at every enrollment share while MC_risk and AC_pool remain unchanged. How does the competitive adverse selection equilibrium E_AS change?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Draw a higher WTP curve intersecting the same downward-sloping AC_pool curve."
+        },
+        {
+          "tier": 2,
+          "text": "Check what happens to the intersection quantity Q_eq and the break-even premium P_eq."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Equilibrium enrollment Q_eq falls and the break-even premium P_eq rises.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Standard Supply-Curve Assumption): Unlike an upward-sloping supply curve, AC_pool slopes *downward* in an adverse selection pool, so higher WTP expands enrollment and lowers average cost."
+        },
+        {
+          "id": "opt_b",
+          "text": "Equilibrium enrollment Q_eq rises and the break-even premium P_eq rises.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Upward-Sloping Supply Fallacy): Moving rightward along a downward-sloping AC_pool curve brings in healthier enrollees, which *lowers* rather than raises the break-even premium."
+        },
+        {
+          "id": "opt_c",
+          "text": "Equilibrium enrollment Q_eq rises and the break-even premium P_eq falls because healthier enrollees join the pool.",
+          "is_correct": true,
+          "feedback": "Correct. Shifting WTP upward moves its intersection with downward-sloping AC_pool to the right and down: more low-risk individuals enroll, reducing average pool cost and shrinking adverse selection DWL."
+        },
+        {
+          "id": "opt_d",
+          "text": "Neither Q_eq nor P_eq changes because MC_risk is unchanged.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ignoring Demand): Equilibrium occurs at WTP = AC_pool, so shifting WTP directly changes both enrollment and break-even price."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T2_07",
+      "chapter": 13,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Moral Hazard in Healthcare",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Movement Along Demand Under a Co-payment",
+      "prompt_template": "In the healthcare moral hazard diagram (Figure 13.2), lowering a patient's out-of-pocket price from the true resource cost MC = $40 to a co-payment P_copay = $10 causes what graphical change?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall the distinction between a change in out-of-pocket price and a shift in the demand curve."
+        },
+        {
+          "tier": 2,
+          "text": "Check how quantity moves from Q* to Q_ins along D_care."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "A rightward shift of the demand curve D_care because insurance makes patients sicker.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Shift vs. Movement Confusion): Holding health status constant (ceteris paribus), a lower out-of-pocket price causes a movement down along D_care, not a shift of the curve."
+        },
+        {
+          "id": "opt_b",
+          "text": "A downward movement along the existing demand curve D_care from Q* = 30 to Q_ins = 45 visits.",
+          "is_correct": true,
+          "feedback": "Correct. Lowering the patient's out-of-pocket price from $40 to $10 induces a movement along D_care from the efficient quantity Q* = 30 to the insured quantity Q_ins = 45."
+        },
+        {
+          "id": "opt_c",
+          "text": "A downward shift of the true marginal resource cost curve MC from $40 to $10.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Price vs. Resource Cost Confusion): Insurance shifts who pays the bill, not the true resource cost of providing a medical visit (which remains MC = $40)."
+        },
+        {
+          "id": "opt_d",
+          "text": "A leftward movement along D_care because patients avoid doctors when co-payments exist.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Direction Reversal): Lowering the out-of-pocket price from $40 to $10 increases—not decreases—quantity demanded."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T2_08",
+      "chapter": 13,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Moral Hazard in Healthcare",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Locating the Moral Hazard Deadweight Loss Triangle",
+      "prompt_template": "In the healthcare moral hazard diagram with downward-sloping demand D_care, horizontal resource cost MC, and co-payment P_copay < MC, how is the moral hazard deadweight loss triangle bounded?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Look at the extra visits between Q* and Q_ins: for each of those visits, which is higher—MC or marginal benefit (D_care)?"
+        },
+        {
+          "tier": 2,
+          "text": "Identify the top edge, bottom edge, and right vertical edge of the shaded triangle in Figure 13.2."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Bounded above by MC, below by D_care, and on the right by the vertical line at Q_ins between Q* and Q_ins.",
+          "is_correct": true,
+          "feedback": "Correct. Between Q* and Q_ins, true resource cost MC lies above marginal benefit D_care; the area of this triangle equals 1/2 (Q_ins - Q*)(MC - P_copay)."
+        },
+        {
+          "id": "opt_b",
+          "text": "Bounded above by D_care, below by MC, and on the left by the vertical axis from 0 to Q*.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Consumer Surplus Confusion): The triangle above MC and below D_care from 0 to Q* is the socially efficient net surplus (consumer surplus at P = MC), not deadweight loss."
+        },
+        {
+          "id": "opt_c",
+          "text": "The rectangle between MC and P_copay from 0 to Q_ins.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Insurer-Payout Confusion): That rectangle represents total insurer payments on all Q_ins visits; most of that transfer is not deadweight loss."
+        },
+        {
+          "id": "opt_d",
+          "text": "Bounded above by D_care and below by P_copay from Q* to Q_ins.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Benefit-vs-Excess-Cost Error): The triangle below D_care and above P_copay is the patient's private surplus gain on the extra visits, whereas DWL is the excess of MC over D_care."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T2_09",
+      "chapter": 13,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Moral Hazard Comparative Statics",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Raising the Co-payment Toward Marginal Cost",
+      "prompt_template": "In Figure 13.2, if an insurer raises the per-visit co-payment from $10 to $25 while true marginal cost remains MC = $40, how do insured visits (Q_ins) and the moral hazard deadweight loss triangle change?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Move the dashed horizontal P_copay line upward from $10 toward $40."
+        },
+        {
+          "tier": 2,
+          "text": "Watch what happens to both the base (Q_ins - Q*) and the height (MC - P_copay) of the DWL triangle."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Q_ins increases and the moral hazard DWL triangle grows larger.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Direction Reversal): A higher out-of-pocket co-payment discourages low-value visits, reducing Q_ins and shrinking DWL."
+        },
+        {
+          "id": "opt_b",
+          "text": "Q_ins decreases, but the moral hazard DWL triangle stays the same size because MC did not change.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Static-Triangle Fallacy): Raising P_copay reduces both the vertical gap (MC - P_copay) and the horizontal excess quantity (Q_ins - Q*), shrinking the triangle substantially."
+        },
+        {
+          "id": "opt_c",
+          "text": "Q_ins decreases toward Q* and the moral hazard DWL triangle shrinks.",
+          "is_correct": true,
+          "feedback": "Correct. Raising P_copay moves patients up along D_care toward Q*, simultaneously narrowing both the base and height of the moral hazard DWL triangle."
+        },
+        {
+          "id": "opt_d",
+          "text": "Q_ins falls below Q*, creating an underutilization deadweight loss.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Overshooting Error): As long as P_copay ($25) remains below MC ($40), Q_ins still exceeds Q* rather than falling below it."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T2_10",
+      "chapter": 13,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Elasticity and Moral Hazard",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Demand Elasticity and Moral Hazard Deadweight Loss",
+      "prompt_template": "Comparing two medical services with the same marginal cost MC and the same efficient quantity Q*, one has a steep (price-inelastic) demand curve and the other has a flat (price-elastic) demand curve. If insurance lowers the out-of-pocket price to the same P_copay < MC for both, how do their moral hazard DWL triangles compare?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Draw a steep line and a flat line passing through the same efficient point (Q*, MC)."
+        },
+        {
+          "tier": 2,
+          "text": "Drop both lines down to P_copay and compare the resulting horizontal expansion (Q_ins - Q*)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The steep (inelastic) service has a larger moral hazard DWL because patients value it more urgently.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Urgency-vs-DWL Confusion): High urgency means quantity barely changes when price falls, so overutilization (Q_ins - Q*) and DWL are small."
+        },
+        {
+          "id": "opt_b",
+          "text": "Both services have the exact same moral hazard DWL because MC - P_copay is identical.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ignoring Quantity Base): Triangle area depends on both height (MC - P_copay) and base (Q_ins - Q*); the flatter curve has a much larger base."
+        },
+        {
+          "id": "opt_c",
+          "text": "The flat (elastic) service has zero moral hazard DWL because patients substitute away from care.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Direction Error): Price-elastic demand means patients expand quantity *more* when out-of-pocket price drops, increasing overutilization."
+        },
+        {
+          "id": "opt_d",
+          "text": "The flat (elastic) service generates a larger moral hazard DWL because the same price cut induces a much larger expansion in visits (Q_ins - Q*).",
+          "is_correct": true,
+          "feedback": "Correct. Because both triangles share the same height (MC - P_copay), the flatter (more price-elastic) demand curve produces a wider base (Q_ins - Q*) and therefore a larger moral hazard DWL."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T2_11",
+      "chapter": 13,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Concave Utility and Risk Aversion Graph",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Interpreting the Chord Below a Concave Utility Curve",
+      "prompt_template": "In Figure 13.3 (plotting utility u(W) against wealth W for a risk-averse individual facing a 50/50 gamble between W_1 and W_2), why does the straight dashed chord connecting (W_1, u(W_1)) and (W_2, u(W_2)) lie strictly below the curve u(W)?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about the geometric meaning of a strictly concave function (diminishing marginal utility)."
+        },
+        {
+          "tier": 2,
+          "text": "Compare the height of the chord at E[W] (which is EU) to the height of the curve at E[W] (which is u(E[W]))."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because the individual is risk loving and receives extra utility from the thrill of gambling.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Convexity Reversal): A risk-loving individual has a *convex* utility curve where the chord lies strictly *above* the curve."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because u(W) is strictly concave (diminishing marginal utility), so the gamble's expected utility EU lies strictly below the utility of certain expected wealth u(E[W]).",
+          "is_correct": true,
+          "feedback": "Correct. Strict concavity means any chord connecting two points on u(W) lies below the curve, visually proving that EU < u(E[W]) for a risk-averse agent."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because expected wealth E[W] is always smaller than W_1.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Range Error): E[W] is a weighted average strictly between W_1 and W_2."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because marginal utility of wealth is negative for all wealth levels above W_1.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Slope vs. Curvature Error): u(W) still slopes upward (u'(W) > 0); it is the *slope* that decreases (u''(W) < 0), not total utility."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T2_12",
+      "chapter": 13,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Concave Utility and Risk Aversion Graph",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Locating Certainty Equivalent and Risk Premium Graphically",
+      "prompt_template": "On the concave utility-of-wealth graph (Figure 13.3), how do you graphically locate the Certainty Equivalent (CE) and the Risk Premium (RP) once Expected Utility (EU) is found on the vertical axis?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Remember the defining equation u(CE) = EU: start at EU on the vertical axis and move horizontally to the utility curve u(W)."
+        },
+        {
+          "tier": 2,
+          "text": "Then compare the horizontal coordinate CE with E[W]."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Move horizontally from EU to the utility curve u(W) and drop down to the horizontal axis to find CE; the horizontal distance E[W] - CE is the Risk Premium.",
+          "is_correct": true,
+          "feedback": "Correct. Reading across from EU to u(W) finds the wealth level CE that delivers the exact same utility with certainty, and the horizontal gap E[W] - CE is the dollar Risk Premium."
+        },
+        {
+          "id": "opt_b",
+          "text": "Read the vertical distance between u(E[W]) and EU directly as the dollar Risk Premium.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Vertical vs. Horizontal Units): The vertical gap u(E[W]) - EU is measured in *utils*, whereas the Risk Premium is a *dollar* distance along the horizontal wealth axis (E[W] - CE)."
+        },
+        {
+          "id": "opt_c",
+          "text": "Move horizontally from u(E[W]) to the chord and drop down to find CE; the gap CE - E[W] is the Risk Premium.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Curve/Chord Swap): CE is found on the utility curve u(W) at height EU (not on the chord), and for a risk-averse agent CE lies to the left of E[W]."
+        },
+        {
+          "id": "opt_d",
+          "text": "Locate the midpoint between W_1 and W_2 on the horizontal axis; that midpoint is CE.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (EV/CE Confusion): For a 50/50 gamble, the midpoint between W_1 and W_2 is E[W], whereas CE lies strictly to the left of that midpoint."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T2_13",
+      "chapter": 13,
+      "tier": 2,
+      "taxonomy": "Tier 2: Graphical / Curve Shift Interpretation",
+      "topic": "Risk Preferences Geometry",
+      "clo_alignment": [
+        "MI-2"
+      ],
+      "title": "Utility Curve Shapes for Risk-Neutral and Risk-Loving Agents",
+      "prompt_template": "How would the utility-of-wealth graph in Figure 13.3 change if the individual were risk neutral instead of risk averse?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about how constant marginal utility of wealth looks on a graph of u(W) versus W."
+        },
+        {
+          "tier": 2,
+          "text": "Ask where the chord lies relative to u(W) when u(W) is a straight line."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "u(W) would bend upward (convex), placing the chord strictly above u(W) so that CE > E[W].",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Risk-Loving Shape): An upward-bending convex curve represents a risk-loving individual, not a risk-neutral individual."
+        },
+        {
+          "id": "opt_b",
+          "text": "u(W) would be horizontal, making utility completely independent of wealth.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-Slope Confusion): A risk-neutral person still prefers more wealth to less (u'(W) > 0); their marginal utility is *constant*, not zero."
+        },
+        {
+          "id": "opt_c",
+          "text": "u(W) would be an upward-sloping straight line, so the chord coincides with u(W), EU = u(E[W]), CE = E[W], and the Risk Premium is zero.",
+          "is_correct": true,
+          "feedback": "Correct. Constant marginal utility produces a linear u(W) curve: the gamble chord lies directly on the line, so EU = u(E[W]) and RP = E[W] - CE = 0."
+        },
+        {
+          "id": "opt_d",
+          "text": "u(W) would bend downward more steeply, increasing the horizontal distance E[W] - CE.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Stronger Risk Aversion): Greater downward concavity represents *stronger* risk aversion and a larger risk premium, not risk neutrality."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T3_01",
+      "chapter": 13,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Market for Lemons Calculation",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Computing Initial Pooled Willingness to Pay",
+      "prompt_template": "In a used-car market with risk-neutral buyers, 40% of cars are high-quality 'peaches' worth $15,000 to buyers, and 60% are low-quality 'lemons' worth $5,000 to buyers. If buyers cannot distinguish peaches from lemons and all cars are offered for sale, what is the maximum pooled price buyers are willing to pay?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Use the probability-weighted expected value formula: E[V] = p_H V_H + p_L V_L."
+        },
+        {
+          "tier": 2,
+          "text": "Multiply 0.40 by $15,000 and 0.60 by $5,000, then sum the two terms."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$10,000",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Unweighted Average Error): Taking ($15,000 + $5,000)/2 ignores the 40%/60% market shares and assumes an equal 50/50 split."
+        },
+        {
+          "id": "opt_b",
+          "text": "$9,000",
+          "is_correct": true,
+          "feedback": "Correct. E[V] = 0.40($15,000) + 0.60($5,000) = $6,000 + $3,000 = $9,000."
+        },
+        {
+          "id": "opt_c",
+          "text": "$11,000",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Swapped Weights Error): Weighting peaches by 60% and lemons by 40% gives 0.60($15,000) + 0.40($5,000) = $11,000."
+        },
+        {
+          "id": "opt_d",
+          "text": "$15,000",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Full-Information Valuation Error): Buyers will not pay $15,000 when 60% of the pool consists of $5,000 lemons."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T3_02",
+      "chapter": 13,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Market for Lemons Unraveling",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Equilibrium Price After Market Unraveling",
+      "prompt_template": "In a used-car market with risk-neutral buyers, 50% of cars are peaches worth $14,000 to buyers (and $11,500 to current owners), while 50% are lemons worth $7,000 to buyers (and $5,500 to current owners). Buyers cannot tell peaches from lemons before purchase. What is the final equilibrium price after unraveling?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "First compute the initial pooled offer E[V] = 0.50($14,000) + 0.50($7,000) and compare it to peach owners' $11,500 reservation value."
+        },
+        {
+          "tier": 2,
+          "text": "If peach owners withdraw, only lemons remain (p_L = 1), so buyers revise their maximum willingness to pay to V_L."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$7,000",
+          "is_correct": true,
+          "feedback": "Correct. The initial pooled offer is 0.50($14,000) + 0.50($7,000) = $10,500, which is below peach owners' $11,500 reservation value. Peaches exit, leaving 100% lemons, so buyers revise their maximum willingness to pay to $7,000."
+        },
+        {
+          "id": "opt_b",
+          "text": "$10,500",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Stopped Before Unraveling): $10,500 is the initial pooled offer, but because $10,500 < $11,500, peach owners withdraw and the market cannot clear at $10,500."
+        },
+        {
+          "id": "opt_c",
+          "text": "$5,500",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Seller Reservation Confusion): $5,500 is the lemon owners' minimum reservation value; risk-neutral competitive buyers are willing to pay up to $7,000 for a known lemon."
+        },
+        {
+          "id": "opt_d",
+          "text": "$6,250",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Arbitrary Midpoint Error): Averaging $7,000 and $5,500 ignores that buyers' maximum willingness to pay for remaining lemons is $7,000."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T3_03",
+      "chapter": 13,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Market for Lemons Threshold",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Minimum Share of Peaches to Prevent Unraveling",
+      "prompt_template": "In a used-car market with risk-neutral buyers, peaches are worth $16,000 to buyers and $13,000 to current owners, while lemons are worth $8,000 to buyers and $6,000 to current owners. What minimum percentage of cars must be peaches (p_H) for both peaches and lemons to trade in a pooled market?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Peaches stay in the market only if the pooled offer E[V] is at least the peach owner's reservation value ($13,000)."
+        },
+        {
+          "tier": 2,
+          "text": "Set p_H($16,000) + (1 - p_H)($8,000) >= $13,000 and solve for p_H."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "81.25%",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ignoring Lemon Value): Dividing $13,000 / $16,000 = 81.25% incorrectly assumes lemons are worth $0 to buyers."
+        },
+        {
+          "id": "opt_b",
+          "text": "37.5%",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Solved for Lemon Share): 37.5% is the maximum allowable share of *lemons* (1 - 0.625), not the minimum share of peaches."
+        },
+        {
+          "id": "opt_c",
+          "text": "62.5%",
+          "is_correct": true,
+          "feedback": "Correct. Setting $8,000 + $8,000 p_H >= $13,000 yields $8,000 p_H >= $5,000, so p_H >= 5,000 / 8,000 = 0.625 (62.5%)."
+        },
+        {
+          "id": "opt_d",
+          "text": "31.25%",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Wrong Denominator): Dividing ($13,000 - $8,000) by $16,000 instead of ($16,000 - $8,000) gives 5,000 / 16,000 = 31.25%."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T3_04",
+      "chapter": 13,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Continuous Adverse Selection Equilibrium",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Solving for Competitive Equilibrium Enrollment in an Insurance Pool",
+      "prompt_template": "In a competitive health insurance market with enrollment share q (from 0 to 100 percent), marginal expected cost is MC_risk(q) = 400 - 4q, average pool cost is AC_pool(q) = 400 - 2q, and willingness to pay is WTP(q) = 460 - 4q. What is the competitive adverse-selection equilibrium enrollment share (q_eq)?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "In a competitive pooled market with asymmetric information, insurers break even where WTP(q) = AC_pool(q)."
+        },
+        {
+          "tier": 2,
+          "text": "Set 460 - 4q = 400 - 2q and solve carefully for q."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "10%",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Sign Error Collecting Terms): Adding 4q + 2q = 6q instead of subtracting gives 6q = 60, or q = 10%."
+        },
+        {
+          "id": "opt_b",
+          "text": "65%",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Fixed Full-Pool Premium Error): Solving 460 - 4q = AC(100) = 200 gives q = 65%, ignoring that average cost rises as healthier enrollees exit."
+        },
+        {
+          "id": "opt_c",
+          "text": "100%",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Efficient vs. Equilibrium Confusion): 100% is the socially efficient enrollment (since WTP > MC_risk everywhere), not the competitive pooled equilibrium."
+        },
+        {
+          "id": "opt_d",
+          "text": "30%",
+          "is_correct": true,
+          "feedback": "Correct. Setting WTP(q) = AC_pool(q) gives 460 - 4q = 400 - 2q, so 60 = 2q and q_eq = 30% (at a break-even premium of $340)."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T3_05",
+      "chapter": 13,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Deductibles and Coinsurance",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Calculating Policyholder Out-of-Pocket Payment",
+      "prompt_template": "A health insurance policy has a $2,000 deductible and 25% coinsurance on covered expenses above the deductible. If the policyholder incurs a $12,000 covered medical loss, what is their total out-of-pocket payment?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Use Out-of-Pocket = D + c(L - D), where D = $2,000, c = 0.25, and L = $12,000."
+        },
+        {
+          "tier": 2,
+          "text": "Subtract the $2,000 deductible from $12,000 first before multiplying by 25%, then add the deductible back."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$5,000",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Double-Charging the Deductible): Computing $2,000 + 0.25($12,000) = $5,000 mistakenly applies coinsurance to the entire $12,000 loss instead of the $10,000 above the deductible."
+        },
+        {
+          "id": "opt_b",
+          "text": "$4,500",
+          "is_correct": true,
+          "feedback": "Correct. The loss above the deductible is $12,000 - $2,000 = $10,000. Out-of-pocket payment is $2,000 + 0.25($10,000) = $2,000 + $2,500 = $4,500."
+        },
+        {
+          "id": "opt_c",
+          "text": "$7,500",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Insurer Payout Confusion): $7,500 is the *insurer's* payout ($12,000 - $4,500), not the policyholder's out-of-pocket cost."
+        },
+        {
+          "id": "opt_d",
+          "text": "$2,500",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Omitted Deductible): 0.25($10,000) = $2,500 calculates only the coinsurance portion and forgets to add the $2,000 deductible."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T3_06",
+      "chapter": 13,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Deductibles and Coinsurance",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Calculating Insurer Payout on a Covered Claim",
+      "prompt_template": "A property insurance policy carries a $500 deductible and 20% coinsurance above the deductible. If a homeowner files an $8,500 covered claim, how much does the insurer pay?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Use Insurer Payout = (1 - c)(L - D), where c = 0.20, L = $8,500, and D = $500."
+        },
+        {
+          "tier": 2,
+          "text": "First find the covered loss above the deductible ($8,500 - $500 = $8,000), then multiply by the insurer's 80% share."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$6,400",
+          "is_correct": true,
+          "feedback": "Correct. Loss above the deductible is $8,500 - $500 = $8,000, and the insurer pays (1 - 0.20)($8,000) = 0.80($8,000) = $6,400."
+        },
+        {
+          "id": "opt_b",
+          "text": "$2,100",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Out-of-Pocket Confusion): $2,100 is the homeowner's out-of-pocket payment ($500 + 0.20 × $8,000), not the insurer's payout."
+        },
+        {
+          "id": "opt_c",
+          "text": "$6,800",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Ignored Deductible): Computing 0.80($8,500) = $6,800 forgets to subtract the $500 deductible before applying the insurer's 80% share."
+        },
+        {
+          "id": "opt_d",
+          "text": "$6,300",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Order-of-Operations Error): Computing 0.80($8,500) - $500 = $6,300 subtracts the deductible *after* applying coinsurance rather than before."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T3_07",
+      "chapter": 13,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Moral Hazard Deadweight Loss",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Computing Moral Hazard Deadweight Loss",
+      "prompt_template": "Suppose demand for medical visits is P = 120 - 3Q and the true marginal resource cost is MC = $60 per visit. If health insurance lowers a patient's out-of-pocket co-payment to P_copay = $15 per visit, what is the resulting moral hazard deadweight loss?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Find the efficient quantity Q* where 120 - 3Q* = 60, and the insured quantity Q_ins where 120 - 3Q_ins = 15."
+        },
+        {
+          "tier": 2,
+          "text": "Compute the area of the overutilization triangle: DWL_MH = (1/2)(Q_ins - Q*)(MC - P_copay)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$675.00",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Omitted 1/2 Factor): Computing (35 - 20)($60 - $15) = $675 calculates the area of a rectangle instead of a triangle."
+        },
+        {
+          "id": "opt_b",
+          "text": "$112.50",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Wrong Triangle Height): Using P_copay ($15) as the height instead of (MC - P_copay = $45) gives (1/2)(15)($15) = $112.50."
+        },
+        {
+          "id": "opt_c",
+          "text": "$337.50",
+          "is_correct": true,
+          "feedback": "Correct. Setting 120 - 3Q* = 60 gives Q* = 20, and 120 - 3Q_ins = 15 gives Q_ins = 35. Thus DWL_MH = (1/2)(35 - 20)($60 - $15) = (1/2)(15)($45) = $337.50."
+        },
+        {
+          "id": "opt_d",
+          "text": "$450.00",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Used Full MC as Height): Using MC ($60) instead of (MC - P_copay = $45) gives (1/2)(15)($60) = $450.00."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T3_08",
+      "chapter": 13,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Expected Value and Expected Loss",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Calculating Expected Wealth Without Insurance",
+      "prompt_template": "A household starts with $25,000 in wealth. Over the next year, there is a 15% probability of an $8,000 theft loss (leaving $17,000) and an 85% probability of no loss (leaving $25,000). What is the household's expected wealth E[W] without insurance?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Use E[W] = p_1 W_1 + p_2 W_2, or equivalently W_0 - Expected Loss."
+        },
+        {
+          "tier": 2,
+          "text": "Compute 0.15($17,000) + 0.85($25,000), or $25,000 - 0.15($8,000)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$21,000",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Unweighted Average Error): Taking ($17,000 + $25,000)/2 ignores the 15%/85% probabilities."
+        },
+        {
+          "id": "opt_b",
+          "text": "$18,200",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Swapped Probabilities): Computing 0.85($17,000) + 0.15($25,000) = $18,200 reverses the loss and no-loss probabilities."
+        },
+        {
+          "id": "opt_c",
+          "text": "$17,000",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Worst-Case Substitution): $17,000 is wealth if the loss occurs with 100% certainty, not expected wealth."
+        },
+        {
+          "id": "opt_d",
+          "text": "$23,800",
+          "is_correct": true,
+          "feedback": "Correct. Expected Loss = 0.15($8,000) = $1,200, so E[W] = $25,000 - $1,200 = $23,800 (equivalently, 0.15 × $17,000 + 0.85 × $25,000 = $2,550 + $21,250 = $23,800)."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T3_09",
+      "chapter": 13,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Expected Utility and Certainty Equivalent",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Solving for Certainty Equivalent with Square-Root Utility",
+      "prompt_template": "An individual has utility of wealth u(W) = sqrt(W) and faces a 50/50 gamble between ending up with $1,600 or $6,400. What is the individual's Certainty Equivalent (CE) for this gamble?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "First compute Expected Utility: EU = 0.50 × sqrt(1,600) + 0.50 × sqrt(6,400)."
+        },
+        {
+          "tier": 2,
+          "text": "Then solve sqrt(CE) = EU by squaring EU."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$4,000",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (EV/CE Conflation): $4,000 is the gamble's Expected Wealth E[W], which exceeds CE for a risk-averse individual."
+        },
+        {
+          "id": "opt_b",
+          "text": "$3,600",
+          "is_correct": true,
+          "feedback": "Correct. EU = 0.50(40) + 0.50(80) = 60 utils. Solving sqrt(CE) = 60 gives CE = 60^2 = $3,600."
+        },
+        {
+          "id": "opt_c",
+          "text": "$60",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Forgot to Invert Utility): 60 is Expected Utility measured in *utils*; converting back to dollars requires squaring 60 to get $3,600."
+        },
+        {
+          "id": "opt_d",
+          "text": "$1,600",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Subtracted Utilities Error): Computing (80 - 40)^2 = $1,600 subtracts utilities instead of averaging them."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T3_10",
+      "chapter": 13,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Risk Premium Calculation",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Calculating the Risk Premium",
+      "prompt_template": "A student has initial wealth W_0 = $10,000 and utility u(W) = sqrt(W). There is a 25% probability of a $6,400 loss (leaving $3,600) and a 75% probability of no loss (leaving $10,000). What is the student's Risk Premium (RP)?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compute E[W], EU, and CE = (EU)^2 step by step."
+        },
+        {
+          "tier": 2,
+          "text": "Remember that Risk Premium is RP = E[W] - CE (not W_0 - CE)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$300",
+          "is_correct": true,
+          "feedback": "Correct. E[W] = 0.25($3,600) + 0.75($10,000) = $8,400. EU = 0.25(60) + 0.75(100) = 90 utils, so CE = 90^2 = $8,100. Thus RP = $8,400 - $8,100 = $300."
+        },
+        {
+          "id": "opt_b",
+          "text": "$1,900",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Max Premium Confusion): $1,900 = $10,000 - $8,100 is the *maximum total insurance premium* (Expected Loss + RP), not the Risk Premium alone."
+        },
+        {
+          "id": "opt_c",
+          "text": "$1,600",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Expected Loss Confusion): $1,600 = 0.25($6,400) is the actuarially fair Expected Loss, not the Risk Premium."
+        },
+        {
+          "id": "opt_d",
+          "text": "$10",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Utility-Gap Error): Subtracting 100 - 90 = 10 compares utility values in utils rather than dollar wealth E[W] - CE."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T3_11",
+      "chapter": 13,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Maximum Insurance Premium",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Maximum Willingness to Pay for Full Insurance",
+      "prompt_template": "An entrepreneur has initial wealth W_0 = $14,400 and utility u(W) = sqrt(W). There is a 20% probability of an $8,000 equipment loss (leaving $6,400) and an 80% probability of no loss (leaving $14,400). What is the maximum premium the entrepreneur is willing to pay for full insurance?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Find EU = 0.20 × sqrt(6,400) + 0.80 × sqrt(14,400), then square EU to obtain CE."
+        },
+        {
+          "tier": 2,
+          "text": "Use Max Premium = W_0 - CE (which also equals Expected Loss + Risk Premium)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "$1,600",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Risk-Neutral Pricing Error): $1,600 = 0.20($8,000) is only the actuarially fair expected loss and omits the entrepreneur's $256 risk premium."
+        },
+        {
+          "id": "opt_b",
+          "text": "$256",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Risk-Premium-Only Error): $256 = $12,800 - $12,544 is the Risk Premium alone; full insurance also covers the $1,600 expected loss."
+        },
+        {
+          "id": "opt_c",
+          "text": "$1,856",
+          "is_correct": true,
+          "feedback": "Correct. EU = 0.20(80) + 0.80(120) = 16 + 96 = 112 utils, so CE = 112^2 = $12,544. Max Premium = W_0 - CE = $14,400 - $12,544 = $1,856 ($1,600 expected loss + $256 risk premium)."
+        },
+        {
+          "id": "opt_d",
+          "text": "$12,544",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Reported CE Instead of Premium): $12,544 is the Certainty Equivalent wealth remaining, not the maximum insurance premium W_0 - CE."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T3_12",
+      "chapter": 13,
+      "tier": 3,
+      "taxonomy": "Tier 3: Quantitative / Step-by-Step Calculation",
+      "topic": "Arrow-Pratt Risk Aversion",
+      "clo_alignment": [
+        "MI-3"
+      ],
+      "title": "Evaluating the Arrow-Pratt Coefficient of Absolute Risk Aversion",
+      "prompt_template": "For the square-root utility function u(W) = sqrt(W), the Arrow-Pratt Coefficient of Absolute Risk Aversion is A(W) = -u''(W)/u'(W) = 1/(2W). What is the value of A(W) at wealth W = $500?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Substitute W = 500 directly into A(W) = 1 / (2W)."
+        },
+        {
+          "tier": 2,
+          "text": "Be careful not to confuse A(W) with 1/W or with the relative risk aversion coefficient R(W) = 0.5."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "0.002",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Dropped Factor of 2): Computing 1/500 = 0.002 omits the factor of 2 in the denominator of A(W) = 1/(2W)."
+        },
+        {
+          "id": "opt_b",
+          "text": "0.001",
+          "is_correct": true,
+          "feedback": "Correct. Substituting W = 500 into A(W) = 1/(2W) gives 1/(2 × 500) = 1/1,000 = 0.001."
+        },
+        {
+          "id": "opt_c",
+          "text": "0.004",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inverted Factor of 2): Computing 2/500 = 0.004 multiplies by 2 instead of dividing by 2."
+        },
+        {
+          "id": "opt_d",
+          "text": "0.5",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Absolute vs. Relative Confusion): 0.5 is the Coefficient of *Relative* Risk Aversion R(W) = W · A(W), not Absolute Risk Aversion A(W)."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T4_01",
+      "chapter": 13,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Signaling in Used-Car Markets",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "Why Certified Pre-Owned Warranties Are Credible Signals",
+      "prompt_template": "Why does a dealership's 3-year factory powertrain warranty under a Certified Pre-Owned (CPO) program overcome adverse selection in used cars, whereas a private seller's verbal assurance that 'this car runs great' does not?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare the financial cost of making each claim for a 'peach' seller versus a 'lemon' seller."
+        },
+        {
+          "tier": 2,
+          "text": "Apply the single-crossing condition for credible signaling."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because verbal assurances are illegal under consumer protection laws, while warranties are mandatory on all used cars.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Legal Mandate Misconception): Warranties are voluntary market signals, not universal legal mandates."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because warranties eliminate the need for buyers to care about fuel economy or vehicle age.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Irrelevant Attribute): Warranties address hidden mechanical reliability, not observable traits like age."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because honoring a multi-year warranty is inexpensive on a reliable 'peach' but prohibitively costly on a defective 'lemon,' whereas cheap talk costs both types nothing.",
+          "is_correct": true,
+          "feedback": "Correct. The differential cost of honoring the warranty satisfies the single-crossing condition, making it profitable for high-quality dealers to signal and unprofitable for lemon sellers to imitate."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because warranties transfer moral hazard from the dealership to the automaker.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Mechanism Confusion): CPO warranties primarily solve pre-contract adverse selection by credibly revealing hidden vehicle quality."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T4_02",
+      "chapter": 13,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Signaling and Screening Synergy",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "Distinguishing Seller Signaling from Buyer Screening in Auto Sales",
+      "prompt_template": "A buyer purchasing a used car pays an independent mechanic for a pre-purchase inspection and pulls a vehicle history report, while the dealer offers a 2-year powertrain warranty. Which statement correctly classifies these actions?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Identify which party is informed (the dealer/seller) and which party is uninformed (the buyer)."
+        },
+        {
+          "tier": 2,
+          "text": "Actions by the informed party are signals; verification tests by the uninformed party are screening."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The dealer's warranty is signaling by the informed party, while the buyer's inspection and history report are screening by the uninformed party.",
+          "is_correct": true,
+          "feedback": "Correct. Signaling is initiated by the informed seller (warranty), whereas screening is initiated by the uninformed buyer (third-party inspection and history report)."
+        },
+        {
+          "id": "opt_b",
+          "text": "Both the inspection and the warranty are forms of moral hazard mitigation after the sale.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Timeline Confusion): Both actions occur *before* the sale to reveal hidden vehicle characteristics (adverse selection)."
+        },
+        {
+          "id": "opt_c",
+          "text": "The buyer's inspection is signaling, while the dealer's warranty is screening.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Party Reversal): This reverses signaling and screening—informed sellers signal and uninformed buyers screen."
+        },
+        {
+          "id": "opt_d",
+          "text": "Neither action reduces asymmetric information because both occur before the contract is signed.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Pre-Contract Error): Reducing adverse selection *requires* revealing hidden characteristics before money changes hands."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T4_03",
+      "chapter": 13,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Health Insurance Policy Design",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "Preventing Risk-Pool Unraveling Under Community Rating",
+      "prompt_template": "When policymakers prohibit health insurers from charging higher premiums to sicker applicants (requiring a single pooled premium), why do they often pair that rule with enrollment subsidies or participation incentives for healthy households?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall Figure 13.1: what happens at a single pooled break-even premium when healthy individuals have WTP < P_pool?"
+        },
+        {
+          "tier": 2,
+          "text": "Think about how keeping low-risk enrollees in the pool affects AC_pool for everyone."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "To raise the marginal resource cost of medical visits so that patients stop seeing doctors.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Moral Hazard Mechanism Confusion): Enrollment subsidies address who joins the risk pool (adverse selection), not per-visit marginal resource cost."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because without incentives to keep low-risk households enrolled, healthy people exit when P_pool exceeds their WTP, driving up average pool costs and unraveling the market.",
+          "is_correct": true,
+          "feedback": "Correct. Subsidies or mandates lower the effective price faced by low-risk households, keeping them in the risk pool, holding AC_pool down, and preventing an adverse-selection death spiral."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because healthy households are always risk loving and refuse insurance unless paid to enroll.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Risk-Preference Error): Healthy households can be risk averse and still exit if the pooled premium exceeds their own WTP (which is anchored to their low expected medical cost)."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because insurers earn higher monopoly profits when they are barred from risk rating.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Profit Misconception): Community rating without risk-pool stabilization threatens insurer solvency through adverse selection rather than creating monopoly profits."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T4_04",
+      "chapter": 13,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Screening via Contract Menus",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "How Deductible Menus Screen Hidden Risk Types",
+      "prompt_template": "An auto insurer cannot observe which new applicants are safe drivers and which are reckless drivers, so it offers two options: Plan 1 has a high premium and a $250 deductible, while Plan 2 has a much lower premium and a $2,000 deductible. How does this menu function as a screening device?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare how a low-risk driver (unlikely to crash) and a high-risk driver (likely to crash) value a lower deductible."
+        },
+        {
+          "tier": 2,
+          "text": "Remember that screening induces hidden types to self-select."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Reckless drivers choose the $2,000 deductible to hide their risk type from the insurer.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Self-Selection Error): Reckless drivers have a high probability of filing a claim, so accepting a $2,000 deductible is very costly for them compared to paying the higher premium for full coverage."
+        },
+        {
+          "id": "opt_b",
+          "text": "Safe drivers choose the $250 deductible because they are more likely to file frequent small claims.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Reversed Risk Probability): Safe drivers are *less* likely to file claims, making the lower premium with a higher deductible much more attractive to them."
+        },
+        {
+          "id": "opt_c",
+          "text": "Both groups choose the exact same plan, proving that screening cannot work in auto insurance.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Pooling Fallacy): A properly priced deductible menu separates types by exploiting their different expected claim probabilities."
+        },
+        {
+          "id": "opt_d",
+          "text": "Safe drivers self-select into the lower-premium, $2,000-deductible plan because they rarely expect to pay the deductible, while high-risk drivers choose the $250-deductible plan.",
+          "is_correct": true,
+          "feedback": "Correct. Because safe drivers face a low probability of needing to pay the deductible, they willingly trade a higher deductible for a lower premium, separating themselves from high-risk drivers."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T4_05",
+      "chapter": 13,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Layered Health Insurance Design",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "Combining Deductibles, Coinsurance, and Out-of-Pocket Maximums",
+      "prompt_template": "Why do modern health insurance plans combine upfront deductibles and coinsurance with an annual out-of-pocket maximum (above which the insurer pays 100%)?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Contrast routine low-cost visits (high moral hazard risk) with catastrophic hospitalizations (high financial risk)."
+        },
+        {
+          "tier": 2,
+          "text": "Connect this layered structure to the trade-off between incentives and risk sharing."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Upfront cost sharing curbs moral hazard on routine low-value care, while the out-of-pocket cap provides full risk sharing against catastrophic medical bills.",
+          "is_correct": true,
+          "feedback": "Correct. Layered cost sharing balances the risk-incentive trade-off: patients retain 'skin in the game' for routine care while staying protected from medical bankruptcy during severe illness."
+        },
+        {
+          "id": "opt_b",
+          "text": "Upfront deductibles eliminate risk aversion, while out-of-pocket caps encourage patients to schedule extra routine checkups.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Reversed Purpose): Deductibles do not eliminate risk aversion, and out-of-pocket caps are designed for catastrophic protection rather than stimulating routine visits."
+        },
+        {
+          "id": "opt_c",
+          "text": "Out-of-pocket maximums exist solely to increase insurer profit margins during catastrophic illnesses.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Payout Direction Error): Capping the patient's out-of-pocket cost shifts 100% of remaining covered catastrophic expenses onto the *insurer*, not the patient."
+        },
+        {
+          "id": "opt_d",
+          "text": "Deductibles prevent adverse selection after a patient hits their out-of-pocket maximum.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Timing & Concept Error): Once a patient is enrolled and seeking care, the issue is moral hazard and risk sharing, not pre-contract adverse selection."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T4_06",
+      "chapter": 13,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Optimal Coinsurance and Elasticity",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "Higher Coinsurance on Discretionary Care vs. Emergency Care",
+      "prompt_template": "Using the economic analysis of moral hazard deadweight loss, why do insurers typically impose higher coinsurance rates on elective, price-elastic services (such as optional physical therapy) than on urgent, price-inelastic emergency trauma care?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Recall how the price elasticity of medical demand affects the size of the moral hazard DWL triangle."
+        },
+        {
+          "tier": 2,
+          "text": "Compare how much utilization expands when out-of-pocket price falls for elastic versus inelastic care."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because emergency trauma care is inexpensive, so insurers do not mind paying 100% of the bill.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Cost Assumption Error): Emergency trauma care is typically very expensive; low coinsurance is optimal because demand is highly inelastic and financial risk is severe."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because price-inelastic services generate the largest moral hazard deadweight loss when co-payments are low.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Elasticity Reversal): Moral hazard DWL grows with price *elasticity*; inelastic services show very little overutilization when out-of-pocket price falls."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because price-elastic discretionary services suffer larger moral hazard overutilization when out-of-pocket price falls, whereas inelastic emergency care carries minimal moral hazard and high financial risk.",
+          "is_correct": true,
+          "feedback": "Correct. Since moral hazard DWL rises with demand elasticity, stronger cost sharing is warranted on elastic discretionary care, while generous risk sharing is optimal on inelastic emergency care."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because patients can easily predict emergency trauma in advance, creating severe adverse selection.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Predictability Error): Unanticipated trauma emergencies are less subject to pre-contract private forecasting than planned discretionary procedures."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T4_07",
+      "chapter": 13,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Principal-Agent Compensation Design",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "Why Employers Pair Base Salaries with Performance Bonuses",
+      "prompt_template": "A retail company wants to motivate store managers whose daily effort cannot be directly observed, even though store revenue also fluctuates randomly with local weather and foot traffic. Why is a mix of a fixed base salary plus a performance bonus typically preferred over either 100% flat salary or 100% commission?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Evaluate the two extremes: what fails under 100% flat salary, and what fails under 100% commission when managers are risk averse?"
+        },
+        {
+          "tier": 2,
+          "text": "Apply the fundamental trade-off between risk sharing and incentives."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because a 100% flat salary exposes managers to too much random income risk, while 100% commission eliminates effort incentives.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Swapped Extremes): A 100% flat salary eliminates income risk (but weakens effort incentives), whereas 100% commission maximizes effort incentives (but shifts all random revenue risk onto the risk-averse manager)."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because the base salary shields risk-averse managers from uncontrollable revenue swings while the performance bonus preserves marginal incentives for high effort.",
+          "is_correct": true,
+          "feedback": "Correct. Combining base pay with performance bonuses balances risk sharing (protecting managers from random shocks like weather) with principal-agent incentive alignment."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because managers are risk loving and require a guaranteed salary before they are willing to accept bonuses.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Risk-Preference Error): Risk-loving agents would prefer volatile 100% commission; base salaries are valued because workers are risk averse."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because performance bonuses eliminate adverse selection by preventing external applicants from interviewing.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Mechanism Mismatch): The scenario describes post-hiring unobservable effort (moral hazard / principal-agent), not barring interviews."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T4_08",
+      "chapter": 13,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Public Policy and Moral Hazard",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "Subsidized Coastal Flood Insurance and Location Decisions",
+      "prompt_template": "If a government program offers heavily subsidized, full-coverage flood insurance in high-risk coastal floodplains, what unintended behavioral response does moral hazard predict?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Ask how shielding homeowners from the true expected cost of flood damage changes their building and precaution incentives."
+        },
+        {
+          "tier": 2,
+          "text": "Focus on post-coverage or incentive-distorting behavior rather than pre-contract hidden traits."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Homeowners will immediately move inland because flood insurance lowers coastal property values.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Reversed Incentive): Subsidizing flood losses *lowers* the private cost of living on the coast, encouraging rather than discouraging coastal construction."
+        },
+        {
+          "id": "opt_b",
+          "text": "Private insurers will enter the coastal market and charge zero premiums.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Market-Entry Error): High flood risk requires positive actuarially fair premiums; private insurers cannot break even at zero premiums."
+        },
+        {
+          "id": "opt_c",
+          "text": "Coastal storms will become less frequent because of the Law of Large Numbers.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Physical-Causation Fallacy): The Law of Large Numbers describes statistical averaging of independent claims; it does not alter weather patterns, and coastal floods are correlated risks."
+        },
+        {
+          "id": "opt_d",
+          "text": "More households will build in risky coastal floodplains and invest less in flood-proofing precautions because they no longer bear the full financial cost of flood damage.",
+          "is_correct": true,
+          "feedback": "Correct. Shielding homeowners from the true expected cost of flood losses weakens marginal incentives to avoid hazardous locations or invest in mitigation—a classic moral hazard response."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T4_09",
+      "chapter": 13,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Personal Finance and Expected Utility",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "Why You Should Insure Your Home—Not Your Toaster",
+      "prompt_template": "Based on expected utility theory and the curvature of a concave utility-of-wealth curve u(W), why does it make economic sense to buy homeowner's insurance against a $400,000 house fire while declining a $30 extended warranty on a $150 kitchen appliance?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_a",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare the curvature of u(W) over a massive wealth swing versus a tiny $150 swing."
+        },
+        {
+          "tier": 2,
+          "text": "Compare the household's risk premium to the insurer's administrative markup in each case."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Over a catastrophic $400,000 swing, u(W) curves sharply downward, creating a large risk premium that justifies paying an insurer's markup; over a tiny $150 swing, u(W) is nearly linear, so the risk premium is pennies and outweighed by the warranty's steep markup.",
+          "is_correct": true,
+          "feedback": "Correct. Households are effectively almost risk neutral over small, affordable losses (tiny RP), making high-markup retail warranties poor deals, while catastrophic shocks generate huge risk premiums that make insurance highly valuable."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because house fires happen much more frequently than broken kitchen appliances.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Probability Error): House fires are actually *less* frequent than appliance failures; the key difference is the catastrophic *magnitude* of the wealth loss."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because retail extended warranties are always actuarially fair with zero administrative markup.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Pricing Error): Retail extended warranties typically carry steep administrative markups far above expected repair costs."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because households are risk loving when buying small appliances and risk averse only when buying real estate.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Shifting-Preferences Error): The same smooth concave utility function u(W) explains both choices because any smooth curve is locally nearly linear over tiny wealth changes."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T4_10",
+      "chapter": 13,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Decreasing Absolute Risk Aversion",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "Wealth Changes and Willingness to Accept Fixed-Dollar Risks",
+      "prompt_template": "For a household with utility u(W) = sqrt(W), the Arrow-Pratt Coefficient of Absolute Risk Aversion is A(W) = 1/(2W), which decreases as wealth W increases. What practical implication does this have as a household accumulates substantially more wealth?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_c",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Check the sign of A'(W) = -1/(2W^2) < 0: does absolute risk aversion rise or fall as W grows?"
+        },
+        {
+          "tier": 2,
+          "text": "Apply this to a fixed-dollar gamble or a fixed-dollar insurance deductible (e.g., choosing a $1,000 vs. $250 deductible)."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "The household becomes less willing to accept any fixed-dollar gamble and demands a smaller deductible on every policy.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Sign Reversal): Decreasing absolute risk aversion means the household becomes *more*—not less—willing to bear a fixed-dollar risk as wealth rises."
+        },
+        {
+          "id": "opt_b",
+          "text": "The household's willingness to accept a fixed-dollar gamble stays completely unchanged regardless of wealth.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (CARA Confusion): Constant willingness to bear fixed-dollar risk describes Constant Absolute Risk Aversion (A'(W) = 0), not u(W) = sqrt(W)."
+        },
+        {
+          "id": "opt_c",
+          "text": "The household becomes more willing to accept a fixed-dollar gamble (or self-insure a higher fixed deductible) because a fixed dollar loss causes a smaller utility drop at higher wealth.",
+          "is_correct": true,
+          "feedback": "Correct. Because A(W) = 1/(2W) falls with W (decreasing absolute risk aversion), a wealthier household is more willing to absorb a fixed-dollar risk or choose a higher deductible."
+        },
+        {
+          "id": "opt_d",
+          "text": "The household switches from risk averse to risk loving once wealth exceeds $10,000.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Sign-Flip Error): For u(W) = sqrt(W), A(W) = 1/(2W) > 0 for all W > 0, so the household remains risk averse at every wealth level."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T4_11",
+      "chapter": 13,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Commercial Insurance Gains from Trade",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "How Insurers Earn Positive Markups While Customers Gain Utility",
+      "prompt_template": "Insurance companies incur administrative overhead and charge premiums strictly above the actuarially fair expected loss. Under what condition does purchasing full coverage still create mutual gains from trade for both the risk-averse customer and the insurer?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_b",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Compare the insurer's administrative loading (Premium - Expected Loss) to the customer's Risk Premium (RP)."
+        },
+        {
+          "tier": 2,
+          "text": "Remember Max Premium = Expected Loss + RP."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Only when the insurer's premium is strictly below the actuarially fair expected loss.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Unsustainable Pricing): Charging below expected loss causes the insurer to lose money on average, failing to generate mutual gains."
+        },
+        {
+          "id": "opt_b",
+          "text": "Whenever the insurer's administrative markup above expected loss is less than or equal to the customer's risk premium, while pooling independent risks keeps insurer average payouts predictable.",
+          "is_correct": true,
+          "feedback": "Correct. As long as Expected Loss < Premium <= Expected Loss + RP, the customer gains utility relative to going uninsured and the insurer covers expected claims plus administrative costs."
+        },
+        {
+          "id": "opt_c",
+          "text": "Only when the customer is risk neutral and the insurer has monopoly power.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Zero-RP Error): A risk-neutral customer has RP = 0 and will refuse to pay any markup above expected loss."
+        },
+        {
+          "id": "opt_d",
+          "text": "Whenever the customer's certainty equivalent exceeds their initial wealth.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Impossible Condition): When facing a potential loss, CE is strictly below initial wealth W_0 (and below E[W] for a risk-averse person)."
+        }
+      ]
+    },
+    {
+      "id": "MICRO_CH13_T4_12",
+      "chapter": 13,
+      "tier": 4,
+      "taxonomy": "Tier 4: Critical Thinking / Empirical Policy Application",
+      "topic": "Diagnosing Asymmetric Information Failures",
+      "clo_alignment": [
+        "MI-4"
+      ],
+      "title": "Matching the Right Market Remedy to the Underlying Failure",
+      "prompt_template": "An insurer launches a zero-deductible health plan and observes unexpectedly high total claim payouts per enrollee. Before redesigning the contract, why must the insurer determine whether the high claims are driven by adverse selection or by moral hazard?",
+      "parameters": {},
+      "evaluation": {
+        "mode": "multiple_choice",
+        "correct_option_id": "opt_d",
+        "numeric_tolerance": 0
+      },
+      "hints": [
+        {
+          "tier": 1,
+          "text": "Think about how the root cause differs: is the insurer attracting sicker applicants before enrollment, or are existing enrollees overusing care after enrollment?"
+        },
+        {
+          "tier": 2,
+          "text": "Match each diagnosis to its appropriate contract-design tool."
+        }
+      ],
+      "options_template": [
+        {
+          "id": "opt_a",
+          "text": "Because adverse selection requires raising co-payments on emergency care, whereas moral hazard requires eliminating all deductibles.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Inverted Remedies): Eliminating deductibles worsens moral hazard, and high co-payments on inelastic emergency care cause severe risk-sharing losses."
+        },
+        {
+          "id": "opt_b",
+          "text": "Because if moral hazard is the cause, the insurer should stop checking applicant risk histories and lower co-payments further.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (Worsening Moral Hazard): Lowering co-payments further expands overutilization and increases moral hazard DWL."
+        },
+        {
+          "id": "opt_c",
+          "text": "Because adverse selection and moral hazard have identical causes and are always fixed by the exact same policy.",
+          "is_correct": false,
+          "feedback": "Diagnostic fallacy (One-Size-Fits-All Fallacy): The chapter emphasizes that although both stem from private information, they occur at different stages and require distinct remedies."
+        },
+        {
+          "id": "opt_d",
+          "text": "Because adverse selection (disproportionate enrollment of high-risk types) requires screening, risk-pool stabilization, or separating contract menus, whereas moral hazard (post-enrollment overutilization) requires cost sharing such as deductibles and coinsurance.",
+          "is_correct": true,
+          "feedback": "Correct. Diagnosing whether high claims reflect pre-contract hidden risk (adverse selection) or post-contract hidden behavior (moral hazard) determines whether to focus on screening/risk-pool design or marginal cost-sharing incentives."
+        }
+      ]
+    }
+  ]
+}

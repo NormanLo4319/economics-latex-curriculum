@@ -445,8 +445,27 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#production-functions-and-diminishing-returns" id="toc-production-functions-and-diminishing-returns" class="nav-link active" data-scroll-target="#production-functions-and-diminishing-returns"><span class="header-section-number">6.1</span> Production Functions and Diminishing Returns</a></li>
-  <li><a href="#cost-duality-and-minimum-crossings" id="toc-cost-duality-and-minimum-crossings" class="nav-link" data-scroll-target="#cost-duality-and-minimum-crossings"><span class="header-section-number">6.2</span> Cost Duality and Minimum Crossings</a></li>
+  <li><a href="#short-run-production-and-diminishing-marginal-product" id="toc-short-run-production-and-diminishing-marginal-product" class="nav-link active" data-scroll-target="#short-run-production-and-diminishing-marginal-product"><span class="header-section-number">6.1</span> Short-Run Production and Diminishing Marginal Product</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction" id="toc-conceptual-introduction" class="nav-link" data-scroll-target="#conceptual-introduction">1. Conceptual Introduction</a></li>
+  <li><a href="#visual-representation" id="toc-visual-representation" class="nav-link" data-scroll-target="#visual-representation">2. Visual Representation</a></li>
+  <li><a href="#real-world-application-restaurant-kitchen-bottlenecks" id="toc-real-world-application-restaurant-kitchen-bottlenecks" class="nav-link" data-scroll-target="#real-world-application-restaurant-kitchen-bottlenecks">3. Real-World Application: Restaurant Kitchen Bottlenecks</a></li>
+  <li><a href="#mathematical-foundation-algebra-level" id="toc-mathematical-foundation-algebra-level" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level">4. Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#short-run-cost-structure-and-curve-geometry" id="toc-short-run-cost-structure-and-curve-geometry" class="nav-link" data-scroll-target="#short-run-cost-structure-and-curve-geometry"><span class="header-section-number">6.2</span> Short-Run Cost Structure and Curve Geometry</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-1" id="toc-conceptual-introduction-1" class="nav-link" data-scroll-target="#conceptual-introduction-1">1. Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-1" id="toc-visual-representation-1" class="nav-link" data-scroll-target="#visual-representation-1">2. Visual Representation</a></li>
+  <li><a href="#real-world-application-fixed-overhead-vs.-variable-costs-in-commercial-aviation" id="toc-real-world-application-fixed-overhead-vs.-variable-costs-in-commercial-aviation" class="nav-link" data-scroll-target="#real-world-application-fixed-overhead-vs.-variable-costs-in-commercial-aviation">3. Real-World Application: Fixed Overhead vs.&nbsp;Variable Costs in Commercial Aviation</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-1" id="toc-mathematical-foundation-algebra-level-1" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-1">4. Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#long-run-costs-economies-of-scale-and-efficient-scale" id="toc-long-run-costs-economies-of-scale-and-efficient-scale" class="nav-link" data-scroll-target="#long-run-costs-economies-of-scale-and-efficient-scale"><span class="header-section-number">6.3</span> Long-Run Costs, Economies of Scale, and Efficient Scale</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-2" id="toc-conceptual-introduction-2" class="nav-link" data-scroll-target="#conceptual-introduction-2">1. Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-2" id="toc-visual-representation-2" class="nav-link" data-scroll-target="#visual-representation-2">2. Visual Representation</a></li>
+  <li><a href="#real-world-application-semiconductor-fabs-vs.-local-coffee-shops" id="toc-real-world-application-semiconductor-fabs-vs.-local-coffee-shops" class="nav-link" data-scroll-target="#real-world-application-semiconductor-fabs-vs.-local-coffee-shops">3. Real-World Application: Semiconductor Fabs vs.&nbsp;Local Coffee Shops</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-2" id="toc-mathematical-foundation-algebra-level-2" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-2">4. Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -473,19 +492,230 @@ window.Quarto = {
 </header>
 
 
-<section id="production-functions-and-diminishing-returns" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="production-functions-and-diminishing-returns"><span class="header-section-number">6.1</span> Production Functions and Diminishing Returns</h2>
-<p>Output <span class="math inline">\(Q = f(L, \bar{K})\)</span>. The Marginal Product of Labor is <span class="math inline">\(MP_L = \frac{\Delta Q}{\Delta L}\)</span>. By the Law of Diminishing Marginal Productivity, <span class="math inline">\(\frac{d(MP_L)}{dL} &lt; 0\)</span>.</p>
+<blockquote class="blockquote">
+<p>This chapter provides a rigorous, pedagogical treatment of Chapter 6: The Theory of the Firm: Production and Cost Curves, benchmarked to standard principles curriculum.</p>
+</blockquote>
+<section id="short-run-production-and-diminishing-marginal-product" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="short-run-production-and-diminishing-marginal-product"><span class="header-section-number">6.1</span> Short-Run Production and Diminishing Marginal Product</h2>
+<section id="conceptual-introduction" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction">1. Conceptual Introduction</h3>
+<p>To understand how businesses decide how much to produce and what prices they must charge to survive, economists look inside the firm’s production process. A <strong>production function</strong> describes the technological relationship between the physical inputs a firm hires—such as labor (<span class="math inline">\(L\)</span>) and physical capital (<span class="math inline">\(K\)</span>)—and the maximum quantity of output (<span class="math inline">\(Q\)</span>) it can generate.</p>
+<p>In analyzing production, economists distinguish between two operational time horizons:</p>
+<ul>
+<li><strong>The Short Run:</strong> A period brief enough that at least one input—typically factory square footage, ovens, or heavy machinery—is <strong>fixed</strong> (<span class="math inline">\(\bar{K}\)</span>). The firm can only expand output by hiring more variable inputs like hourly workers (<span class="math inline">\(L\)</span>).</li>
+<li><strong>The Long Run:</strong> A horizon long enough that <em>all</em> inputs become variable—the firm can build a larger factory, install new assembly lines, or exit the industry entirely.</li>
+</ul>
+<p>In the short run, hiring the first few workers allows staff to specialize—one person takes orders, another preps ingredients, and a third operates the espresso machine—so output surges rapidly. Soon, however, the kitchen becomes crowded. Because oven space and counter capacity are fixed, adding extra workers yields smaller and smaller output gains. This universal physical constraint is the <strong>Law of Diminishing Marginal Product</strong>: as successive units of a variable input are added to a fixed input, the <strong>Marginal Product of Labor (<span class="math inline">\(MP_L\)</span>)</strong> eventually declines.</p>
 </section>
-<section id="cost-duality-and-minimum-crossings" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="cost-duality-and-minimum-crossings"><span class="header-section-number">6.2</span> Cost Duality and Minimum Crossings</h2>
-<p>Total Cost <span class="math inline">\(TC = FC + VC(Q)\)</span>. Marginal Cost is inversely linked to productivity: <span class="math inline">\(MC = \frac{w}{MP_L}\)</span>. Average Total Cost <span class="math inline">\(ATC = AFC + AVC\)</span>. <span class="math inline">\(MC\)</span> intersects <span class="math inline">\(ATC\)</span> and <span class="math inline">\(AVC\)</span> at their minimum points:</p>
+<section id="visual-representation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation">2. Visual Representation</h3>
+<p>Figure 1 stacks Total Product (<span class="math inline">\(TP\)</span>) directly above Marginal Product (<span class="math inline">\(MP_L\)</span>) and Average Product (<span class="math inline">\(AP_L\)</span>), illustrating how specialization initially boosts productivity before diminishing returns set in.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_6_the_theory_of_the_firm_production_and_cost_curves_figure_01.svg" class="img-fluid figure-img" alt="Short-Run Production Curves. Up to L_1, specialization raises MP_L and Total Product accelerates. Beyond L_1, diminishing marginal product sets in; MP_L intersects AP_L at its maximum (L_2) and reaches zero where Total Product peaks."></p>
+<figcaption>Figure 1. Short-Run Production Curves. Up to <span class="math inline">\(L_1\)</span>, specialization raises <span class="math inline">\(MP_L\)</span> and Total Product accelerates. Beyond <span class="math inline">\(L_1\)</span>, diminishing marginal product sets in; <span class="math inline">\(MP_L\)</span> intersects <span class="math inline">\(AP_L\)</span> at its maximum (<span class="math inline">\(L_2\)</span>) and reaches zero where Total Product peaks.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-restaurant-kitchen-bottlenecks" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-restaurant-kitchen-bottlenecks">3. Real-World Application: Restaurant Kitchen Bottlenecks</h3>
+<p>Consider a campus sandwich shop with two commercial panini presses (fixed capital <span class="math inline">\(\bar{K}\)</span>). Hiring the first worker yields <span class="math inline">\(25\)</span> sandwiches per hour; a second worker specializing in prep raises output to <span class="math inline">\(60\)</span> sandwiches per hour (<span class="math inline">\(MP_2 = 35\)</span>). Hiring a third and fourth worker adds <span class="math inline">\(30\)</span> and <span class="math inline">\(20\)</span> sandwiches respectively (<span class="math inline">\(MP_3 = 30\)</span>, <span class="math inline">\(MP_4 = 20\)</span>). By Workers 5 and 6, crowding around the same two grills limits each additional worker to just <span class="math inline">\(8\)</span>–<span class="math inline">\(10\)</span> sandwiches per hour—demonstrating the classic law of diminishing marginal product.</p>
+</section>
+<section id="mathematical-foundation-algebra-level" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level">4. Mathematical Foundation (Algebra Level)</h3>
+<p>Marginal Product of Labor (<span class="math inline">\(MP_L\)</span>) and Average Product of Labor (<span class="math inline">\(AP_L\)</span>) are calculated as:</p>
 <p><span class="math display">\[
-\frac{d(ATC)}{dQ} = \frac{MC - ATC}{Q} = 0 \implies MC = ATC
+MP_L = \frac{\Delta Q}{\Delta L}, \qquad AP_L = \frac{Q}{L}
 \]</span></p>
+<p><strong>Worked Problem:</strong> A small print shop operates with fixed printing presses and observes the following daily output schedule as it hires additional technicians (<span class="math inline">\(L\)</span>):</p>
+<ul>
+<li><span class="math inline">\(L = 0 \implies Q = 0\)</span> posters</li>
+<li><span class="math inline">\(L = 1 \implies Q = 30\)</span> posters</li>
+<li><span class="math inline">\(L = 2 \implies Q = 70\)</span> posters</li>
+<li><span class="math inline">\(L = 3 \implies Q = 105\)</span> posters</li>
+<li><span class="math inline">\(L = 4 \implies Q = 128\)</span> posters</li>
+</ul>
+<p>Compute <span class="math inline">\(MP_L\)</span> and <span class="math inline">\(AP_L\)</span> for each worker from <span class="math inline">\(L = 1\)</span> to <span class="math inline">\(L = 4\)</span>, and identify with which worker diminishing marginal product begins.</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Worker 1 (<span class="math inline">\(L = 1\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+MP_1 = \frac{30 - 0}{1 - 0} = \mathbf{30}, \qquad AP_1 = \frac{30}{1} = \mathbf{30}
+\]</span></p>
+<ul>
+<li><strong>Worker 2 (<span class="math inline">\(L = 2\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+MP_2 = \frac{70 - 30}{2 - 1} = \mathbf{40}, \qquad AP_2 = \frac{70}{2} = \mathbf{35}
+\]</span></p>
+<ul>
+<li><strong>Worker 3 (<span class="math inline">\(L = 3\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+MP_3 = \frac{105 - 70}{3 - 2} = \mathbf{35}, \qquad AP_3 = \frac{105}{3} = \mathbf{35}
+\]</span></p>
+<ul>
+<li><strong>Worker 4 (<span class="math inline">\(L = 4\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+MP_4 = \frac{128 - 105}{4 - 3} = \mathbf{23}, \qquad AP_4 = \frac{128}{4} = \mathbf{32}
+\]</span></p>
+<p><strong>Conclusion:</strong> Marginal product rises from <span class="math inline">\(30\)</span> to <span class="math inline">\(40\)</span> with the second worker, then falls to <span class="math inline">\(35\)</span> with the third worker—so diminishing marginal product begins with <strong>Worker 3</strong>. Notice also that <span class="math inline">\(MP_3 = AP_3 = 35\)</span>, marking the peak of Average Product.</p>
+</section>
+</section>
+<section id="short-run-cost-structure-and-curve-geometry" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="short-run-cost-structure-and-curve-geometry"><span class="header-section-number">6.2</span> Short-Run Cost Structure and Curve Geometry</h2>
+<section id="conceptual-introduction-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-1">1. Conceptual Introduction</h3>
+<p>Every physical production schedule has a direct mirror image in dollar costs. In the short run, a firm’s <strong>Total Cost (<span class="math inline">\(TC\)</span>)</strong> splits into two categories:</p>
+<ul>
+<li><strong>Fixed Costs (<span class="math inline">\(FC\)</span>):</strong> Overhead expenses that do not vary with output level—such as building rent, equipment leases, and property insurance. Even if the firm produces <span class="math inline">\(Q = 0\)</span>, it still pays <span class="math inline">\(FC\)</span>.</li>
+<li><strong>Variable Costs (<span class="math inline">\(VC\)</span>):</strong> Expenses that rise as output increases—such as hourly wages, raw ingredients, and shipping boxes. At <span class="math inline">\(Q = 0\)</span>, <span class="math inline">\(VC = 0\)</span>.</li>
+</ul>
+<p>Dividing total costs by output <span class="math inline">\(Q\)</span> gives per-unit average costs: <strong>Average Fixed Cost (<span class="math inline">\(AFC = FC/Q\)</span>)</strong>, which falls continuously as overhead is spread over more units, <strong>Average Variable Cost (<span class="math inline">\(AVC = VC/Q\)</span>)</strong>, and <strong>Average Total Cost (<span class="math inline">\(ATC = TC/Q = AFC + AVC\)</span>)</strong>.</p>
+<p>The single most important cost metric for pricing and output decisions is <strong>Marginal Cost (<span class="math inline">\(MC = \Delta TC / \Delta Q\)</span>)</strong>—the extra cost of producing one additional unit. Because fixed costs do not change when <span class="math inline">\(Q\)</span> increases, marginal cost is driven entirely by variable inputs and is inversely linked to worker productivity (<span class="math inline">\(MC = w / MP_L\)</span>, where <span class="math inline">\(w\)</span> is the wage rate). When diminishing marginal product sets in (<span class="math inline">\(MP_L \downarrow\)</span>), marginal cost rises (<span class="math inline">\(MC \uparrow\)</span>), giving <span class="math inline">\(MC\)</span>, <span class="math inline">\(AVC\)</span>, and <span class="math inline">\(ATC\)</span> their classic U-shapes.</p>
+</section>
+<section id="visual-representation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-1">2. Visual Representation</h3>
+<p>Figure 2 illustrates the canonical geometry of short-run cost curves, highlighting how <span class="math inline">\(MC\)</span> intersects both <span class="math inline">\(AVC\)</span> and <span class="math inline">\(ATC\)</span> at their exact minimum points.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Why MC Crosses ATC and AVC at Their Minimums (By Design)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Think of your cumulative GPA. If your GPA is <span class="math inline">\(3.40\)</span> and you earn a <span class="math inline">\(3.80\)</span> in your next class (your <em>marginal</em> grade), your cumulative GPA gets pulled upward. If you earn a <span class="math inline">\(2.90\)</span>, your cumulative GPA gets pulled downward. Cost curves obey the exact same arithmetic: whenever <span class="math inline">\(MC &lt; ATC\)</span>, the next unit is cheaper than the average and pulls <span class="math inline">\(ATC\)</span> down; whenever <span class="math inline">\(MC &gt; ATC\)</span>, the next unit is more expensive and pulls <span class="math inline">\(ATC\)</span> up. Therefore, <span class="math inline">\(MC\)</span> must cross <span class="math inline">\(ATC\)</span> (and <span class="math inline">\(AVC\)</span>) at its exact lowest point!</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_6_the_theory_of_the_firm_production_and_cost_curves_figure_02.svg" class="img-fluid figure-img" alt="Short-Run Per-Unit Cost Curves. Average Fixed Cost (AFC) declines steadily as output expands. Marginal Cost (MC) slopes upward due to diminishing returns and intersects both AVC and ATC at their respective minimum points."></p>
+<figcaption>Figure 2. Short-Run Per-Unit Cost Curves. Average Fixed Cost (<span class="math inline">\(AFC\)</span>) declines steadily as output expands. Marginal Cost (<span class="math inline">\(MC\)</span>) slopes upward due to diminishing returns and intersects both <span class="math inline">\(AVC\)</span> and <span class="math inline">\(ATC\)</span> at their respective minimum points.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-fixed-overhead-vs.-variable-costs-in-commercial-aviation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-fixed-overhead-vs.-variable-costs-in-commercial-aviation">3. Real-World Application: Fixed Overhead vs.&nbsp;Variable Costs in Commercial Aviation</h3>
+<p>Operating a commercial jetliner involves massive fixed costs—aircraft lease payments, hangar maintenance, and pilot salaries—that must be paid whether a plane carries <span class="math inline">\(40\)</span> passengers or <span class="math inline">\(180\)</span> passengers. As an airline fills more seats on a route, its Average Fixed Cost per passenger drops sharply, pulling Average Total Cost downward. The airline reaches MES—the most efficient scale for that aircraft type—when it fills most of its available seats, balancing the fixed overhead against variable operating costs per flight.</p>
+</section>
+<section id="mathematical-foundation-algebra-level-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-1">4. Mathematical Foundation (Algebra Level)</h3>
+<p>The core short-run cost identities are:</p>
+<p><span class="math display">\[
+TC = FC + VC, \qquad ATC = \frac{TC}{Q} = AFC + AVC, \qquad MC = \frac{\Delta TC}{\Delta Q} = \frac{\Delta VC}{\Delta Q}
+\]</span></p>
+<p><strong>Worked Problem:</strong> A custom bakery has daily fixed rent and oven lease costs of <span class="math inline">\(FC = \$200\)</span>. Its total variable costs for baking batches of artisan sourdough loaves (<span class="math inline">\(Q\)</span>) are:</p>
+<ul>
+<li><span class="math inline">\(Q = 0 \implies VC = \$0\)</span></li>
+<li><span class="math inline">\(Q = 10 \implies VC = \$100\)</span></li>
+<li><span class="math inline">\(Q = 20 \implies VC = \$180\)</span></li>
+<li><span class="math inline">\(Q = 30 \implies VC = \$310\)</span></li>
+</ul>
+<p>Calculate <span class="math inline">\(TC\)</span>, <span class="math inline">\(AFC\)</span>, <span class="math inline">\(AVC\)</span>, <span class="math inline">\(ATC\)</span>, and <span class="math inline">\(MC\)</span> at <span class="math inline">\(Q = 20\)</span> and <span class="math inline">\(Q = 30\)</span> loaves.</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Compute Costs at <span class="math inline">\(Q = 20\)</span>:</strong></li>
+</ul>
+<p><span class="math display">\[
+TC_{20} = \$200 + \$180 = \mathbf{\$380}
+\]</span></p>
+<p><span class="math display">\[
+AFC_{20} = \frac{\$200}{20} = \mathbf{\$10.00}, \qquad AVC_{20} = \frac{\$180}{20} = \mathbf{\$9.00}, \qquad ATC_{20} = \frac{\$380}{20} = \mathbf{\$19.00}
+\]</span></p>
+<p><span class="math display">\[
+MC_{10 \to 20} = \frac{\$380 - \$300}{20 - 10} = \frac{\$80}{10} = \mathbf{\$8.00\text{ per loaf}}
+\]</span></p>
+<ul>
+<li><strong>Compute Costs at <span class="math inline">\(Q = 30\)</span>:</strong></li>
+</ul>
+<p><span class="math display">\[
+TC_{30} = \$200 + \$310 = \mathbf{\$510}
+\]</span></p>
+<p><span class="math display">\[
+AFC_{30} = \frac{\$200}{30} \approx \mathbf{\$6.67}, \qquad AVC_{30} = \frac{\$310}{30} \approx \mathbf{\$10.33}, \qquad ATC_{30} = \frac{\$510}{30} = \mathbf{\$17.00}
+\]</span></p>
+<p><span class="math display">\[
+MC_{20 \to 30} = \frac{\$510 - \$380}{30 - 20} = \frac{\$130}{10} = \mathbf{\$13.00\text{ per loaf}}
+\]</span></p>
+<p><strong>Conclusion:</strong> Between <span class="math inline">\(20\)</span> and <span class="math inline">\(30\)</span> loaves, <span class="math inline">\(MC = \$13.00\)</span> is still below <span class="math inline">\(ATC_{20} = \$19.00\)</span>, so <span class="math inline">\(ATC\)</span> continues falling from <span class="math inline">\(\$19.00\)</span> down to <span class="math inline">\(\$17.00\)</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Calculus Proof of Minimum Cost Crossings
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> Given a differentiable Total Cost function <span class="math inline">\(TC(Q)\)</span>, Average Total Cost is <span class="math inline">\(ATC(Q) = \frac{TC(Q)}{Q}\)</span>. Differentiating <span class="math inline">\(ATC(Q)\)</span> with respect to <span class="math inline">\(Q\)</span> via the quotient rule yields:</p>
+<p><span class="math display">\[
+\frac{d(ATC)}{dQ} = \frac{Q \cdot \frac{d(TC)}{dQ} - TC(Q) \cdot 1}{Q^2} = \frac{MC(Q) - ATC(Q)}{Q}
+\]</span></p>
+<p>Setting <span class="math inline">\(\frac{d(ATC)}{dQ} = 0\)</span> proves that <span class="math inline">\(ATC\)</span> achieves its critical minimum at the exact output where <span class="math inline">\(MC(Q) = ATC(Q)\)</span>.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="long-run-costs-economies-of-scale-and-efficient-scale" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="long-run-costs-economies-of-scale-and-efficient-scale"><span class="header-section-number">6.3</span> Long-Run Costs, Economies of Scale, and Efficient Scale</h2>
+<section id="conceptual-introduction-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-2">1. Conceptual Introduction</h3>
+<p>In the long run, a firm is no longer trapped inside a cramped kitchen or a single factory—it can choose among many possible plant sizes, each with its own short-run <span class="math inline">\(ATC\)</span> curve. Consider three representative cases: a small sandwich shop, a medium regional bakery chain, and a large metropolitan production facility, each with its own short-run <span class="math inline">\(ATC\)</span> curve. Tracing the lowest achievable per-unit cost at every output level forms the <strong>Long-Run Average Total Cost (<span class="math inline">\(LRATC\)</span>)</strong> envelope curve by selecting the cheapest plant size for each quantity.</p>
+<p>As a company scales up its long-run production capacity, <span class="math inline">\(LRATC\)</span> typically passes through three distinct phases:</p>
+<ul>
+<li><strong>Economies of Scale (<span class="math inline">\(LRATC\)</span> Slopes Downward):</strong> Doubling all inputs more than doubles output, driving per-unit costs down through worker specialization, bulk input discounts, and automated machinery.</li>
+<li><strong>Constant Returns to Scale (<span class="math inline">\(LRATC\)</span> Is Flat):</strong> The firm reaches <strong>Minimum Efficient Scale (<span class="math inline">\(Q_{\text{MES}}\)</span>)</strong>—the smallest output at which <span class="math inline">\(LRATC\)</span> reaches its lowest point. Beyond this scale, the firm experiences neither further cost savings nor rising costs, until diseconomies eventually appear.</li>
+<li><strong>Diseconomies of Scale (<span class="math inline">\(LRATC\)</span> Slopes Upward):</strong> Beyond a massive size, bureaucracy, communication breakdowns, and managerial bloat cause per-unit costs to rise again.</li>
+</ul>
+</section>
+<section id="visual-representation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-2">2. Visual Representation</h3>
+<p>Figure 3 shows the U-shaped Long-Run Average Total Cost (<span class="math inline">\(LRATC\)</span>) curve enveloping three short-run plant sizes (<span class="math inline">\(SRATC_1\)</span>, <span class="math inline">\(SRATC_2\)</span>, and <span class="math inline">\(SRATC_3\)</span>).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_6_the_theory_of_the_firm_production_and_cost_curves_figure_03.svg" class="img-fluid figure-img" alt="Long-Run Average Total Cost (LRATC). Expanding from a small plant to a medium plant captures economies of scale until reaching Minimum Efficient Scale (Q_{\text{MES}}), after which excessive size generates diseconomies of scale."></p>
+<figcaption>Figure 3. Long-Run Average Total Cost (<span class="math inline">\(LRATC\)</span>). Expanding from a small plant to a medium plant captures economies of scale until reaching Minimum Efficient Scale (<span class="math inline">\(Q_{\text{MES}}\)</span>), after which excessive size generates diseconomies of scale.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-semiconductor-fabs-vs.-local-coffee-shops" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-semiconductor-fabs-vs.-local-coffee-shops">3. Real-World Application: Semiconductor Fabs vs.&nbsp;Local Coffee Shops</h3>
+<p>Modern semiconductor fabrication plants cost over <span class="math inline">\(\$15\text{ billion}\)</span> to construct, meaning <span class="math inline">\(LRATC\)</span> falls steeply over millions of wafers—creating massive economies of scale that explain why only a handful of global firms (such as TSMC, Samsung, and Intel) manufacture leading-edge chips. By contrast, independent coffee shops reach Minimum Efficient Scale at a very modest daily volume, allowing hundreds of small cafés to coexist competitively across a single city.</p>
+</section>
+<section id="mathematical-foundation-algebra-level-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-2">4. Mathematical Foundation (Algebra Level)</h3>
+<p>Long-run returns to scale compare the percentage increase in output (<span class="math inline">\(\%\Delta Q\)</span>) to a proportional percentage increase in <em>all</em> inputs (<span class="math inline">\(\%\Delta \text{Inputs}\)</span>):</p>
+<p><span class="math display">\[
+\text{Economies of Scale} \iff \%\Delta Q &gt; \%\Delta \text{Inputs} \iff LRATC \downarrow
+\]</span></p>
+<p><strong>Worked Problem:</strong> A regional solar-panel manufacturer doubles all of its factory floor space, assembly robots, and technicians (<span class="math inline">\(+100\%\)</span> increase in all inputs). Its annual output rises from <span class="math inline">\(50{,}000\)</span> panels to <span class="math inline">\(125{,}000\)</span> panels, while total long-run cost doubles from <span class="math inline">\(\$10{,}000{,}000\)</span> to <span class="math inline">\(\$20{,}000{,}000\)</span>. Compute <span class="math inline">\(LRATC\)</span> before and after expansion and identify the scale regime.</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Compute Initial <span class="math inline">\(LRATC_1\)</span>:</strong></li>
+</ul>
+<p><span class="math display">\[
+LRATC_1 = \frac{\$10{,}000{,}000}{50{,}000} = \mathbf{\$200\text{ per panel}}
+\]</span></p>
+<ul>
+<li><strong>Compute Expanded <span class="math inline">\(LRATC_2\)</span>:</strong></li>
+</ul>
+<p><span class="math display">\[
+LRATC_2 = \frac{\$20{,}000{,}000}{125{,}000} = \mathbf{\$160\text{ per panel}}
+\]</span></p>
+<ul>
+<li><strong>Compare Input Growth vs.&nbsp;Output Growth:</strong> Inputs increased by <span class="math inline">\(100\%\)</span>, while output increased by <span class="math inline">\(\frac{125{,}000 - 50{,}000}{50{,}000} = +150\%\)</span>.</li>
+</ul>
+<p><strong>Conclusion:</strong> Because output grew faster than inputs (<span class="math inline">\(150\% &gt; 100\%\)</span>) and per-unit cost fell from <span class="math inline">\(\$200\)</span> to <span class="math inline">\(\$160\)</span>, the firm is experiencing <strong>economies of scale</strong>.</p>
 
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

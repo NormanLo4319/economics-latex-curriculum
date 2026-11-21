@@ -18,7 +18,7 @@
   urlcolor=blue!60!black
 }
 
-% Okabe-Ito Colorblind-Safe Palette
+% Okabe-Ito Colorblind-Safe Palette & Canonical Course Aliases
 \definecolor{oiOrange}{RGB}{230, 159, 0}
 \definecolor{oiSkyBlue}{RGB}{86, 180, 233}
 \definecolor{oiBluishGreen}{RGB}{0, 158, 115}
@@ -27,6 +27,14 @@
 \definecolor{oiVermilion}{RGB}{213, 94, 0}
 \definecolor{oiReddishPurple}{RGB}{204, 121, 167}
 \definecolor{oiGray}{RGB}{245, 247, 250}
+\colorlet{CourseBlue}{oiBlue}
+\colorlet{SlateBlue}{oiBlue}
+\colorlet{CourseOrange}{oiOrange}
+\colorlet{CourseAmber}{oiOrange}
+\colorlet{CourseTeal}{oiBluishGreen}
+\colorlet{ForestGreen}{oiBluishGreen}
+\colorlet{CoursePurple}{oiReddishPurple}
+\colorlet{Terracotta}{oiVermilion}
 
 % Pedagogical Callout Boxes
 \newtcolorbox{learningbox}[1][Learning Outcomes \& CLO Alignment]{
@@ -38,7 +46,7 @@
   boxrule=1pt
 }
 
-\newtcolorbox{bringithome}[1][Bring It Home: Why Did M1 Jump by \$11 Trillion Overnight in May 2020?]{
+\newtcolorbox{bringithome}[1][Bring It Home: Why Did M1 Jump by Over \$11 Trillion Overnight in May 2020?]{
   colback=oiOrange!8,
   colframe=oiOrange!85!black,
   fonttitle=\bfseries,
@@ -74,7 +82,7 @@
   boxrule=1pt
 }
 
-\newtcolorbox{advancedbox}[1][Optional Mathematical Extension: The Generalized Money Multiplier]{
+\newtcolorbox{advancedbox}[1][Optional Advanced Calculus Extension: The Generalized Money Multiplier]{
   colback=black!3,
   colframe=black!65,
   fonttitle=\bfseries,
@@ -112,7 +120,7 @@ In reality, no one woke up with triple the money in their pocket. In May 2020, t
 
 Every macroeconomy depends on an invisible infrastructure that allows millions of strangers to trade goods, save for retirement, and finance business investment without knowing one another personally. That infrastructure rests on two institutions: \textbf{money} and \textbf{financial intermediaries}. Without money, trade collapses into barter; without banks and capital markets, household savings sit idle instead of funding productive factories, housing, and technology.
 
-\subsection{Key Vocabulary}
+\subsection*{Key Vocabulary}
 \begin{description}[leftmargin=1.5em, style=nextline, itemsep=4pt]
   \item[Barter] The direct exchange of one good or service for another without using money; requires a \emph{double coincidence of wants}.
   \item[Medium of Exchange] Anything widely accepted as payment for goods, services, and debts.
@@ -125,7 +133,8 @@ Every macroeconomy depends on an invisible infrastructure that allows millions o
   \item[M2] A broader monetary aggregate equal to \texttt{M1} plus small-denomination time deposits (under \$100,000) and retail money market mutual fund shares.
   \item[Reserves] Vault cash held by commercial banks plus deposit balances commercial banks hold in their accounts at a Federal Reserve Bank.
   \item[Bank Capital (Net Worth)] The residual claim of bank owners: $\text{Assets} - \text{Liabilities}$. Serves as the primary buffer absorbing loan losses before depositors are harmed.
-  \item[Federal Open Market Committee (FOMC)] The 12-member policymaking body of the Federal Reserve System that sets the target range for the federal funds rate and directs open market operations.
+  \item[Federal Open Market Committee (FOMC)] The 12-member policymaking body of the Federal Reserve System that sets the target range for the federal funds rate and directs monetary policy implementation.
+  \item[Ample-Reserves Operating Regime] The post-2020 Federal Reserve framework in which the banking system holds abundant reserves and the Fed steers the federal funds rate primarily through administered rates---\textbf{Interest on Reserve Balances (IORB)}, the \textbf{Overnight Reverse Repurchase Agreement (ON RRP)} facility, and the \textbf{Discount Window}---rather than rationing scarce reserves.
 \end{description}
 
 % ==============================================================================
@@ -133,7 +142,7 @@ Every macroeconomy depends on an invisible infrastructure that allows millions o
 % ==============================================================================
 \section{Functions of Money and Post-2020 Monetary Aggregates}
 
-\subsection{Conceptual Introduction}
+\subsection*{Conceptual Introduction}
 
 Imagine an economy without money. A software engineer who wants groceries must find a grocer who simultaneously happens to need debugging services at that exact moment. Economists call this obstacle the \textbf{double coincidence of wants}. Searching for trading partners wastes enormous time, prevents workers from specializing in what they do best, and makes long-term credit contracts nearly impossible. Money solves this coordination failure by serving three distinct economic functions:
 
@@ -153,7 +162,7 @@ To track how much spendable purchasing power circulates in the U.S. economy, the
 
 Crucially, \textbf{credit cards are not money}. Swiping a credit card creates an instant short-term loan from the card-issuing bank to the buyer; the buyer still must settle that debt later using checking funds inside \texttt{M1}. Similarly, debit cards are not a separate component of the money supply—they are simply electronic keys that access existing checking balances already counted in \texttt{M1}.
 
-\subsection{Visual Representation}
+\subsection*{Visual Representation}
 
 Figure~\ref{fig:money_aggregates} illustrates the nested relationship between \texttt{M1}, \texttt{M2}, and non-monetary financial instruments or credit lines under the post-May 2020 Federal Reserve H.6 framework. Every dollar in \texttt{M1} is automatically part of \texttt{M2}, whereas credit card limits, corporate bonds, and equities lie entirely outside both aggregates.
 
@@ -193,18 +202,7 @@ Figure~\ref{fig:money_aggregates} illustrates the nested relationship between \t
 \label{fig:money_aggregates}
 \end{figure}
 
-\subsection{Real-World Application}
-
-\begin{fredbox}[Tracking Monetary Aggregates in FRED: \texttt{M1SL} and \texttt{M2SL}]
-When analyzing U.S. monetary trends on the Federal Reserve Bank of St. Louis FRED portal, economists examine two flagship monthly series:
-\begin{itemize}[leftmargin=1.5em, itemsep=2pt]
-  \item \texttt{M1SL}: M1 Money Stock (Seasonally Adjusted, Billions of Dollars).
-  \item \texttt{M2SL}: M2 Money Stock (Seasonally Adjusted, Billions of Dollars).
-\end{itemize}
-\textbf{Critical Empirical Break (May 2020):} Before May 2020, Federal Reserve Regulation D capped convenient transfers from savings accounts at six per month, so savings deposits were counted in \texttt{M2SL} but excluded from \texttt{M1SL}. In April 2020, the Board of Governors suspended the six-transfer limit to help households manage pandemic liquidity needs, and in May 2020 the H.6 release merged savings deposits into \texttt{M1SL}. Consequently, \texttt{M1SL} jumped from roughly \$4.8 trillion to \$16.2 trillion in a single month, whereas \texttt{M2SL} showed no artificial discontinuity because savings accounts were already inside \texttt{M2SL}. Whenever researchers compare \texttt{M1SL} across 2020, they must account for this definitional reclassification rather than mistaking it for an overnight printing surge.
-\end{fredbox}
-
-\subsection{Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 
 Formally, the two monetary aggregates are defined by additive accounting identities:
 \begin{equation}
@@ -257,12 +255,21 @@ Large-denomination time deposits ($\ge \$100{,}000$) & \$2,150 \\
 \]
 \end{workitout}
 
+\begin{fredbox}[Tracking Monetary Aggregates in FRED: \texttt{M1SL} and \texttt{M2SL}]
+When analyzing U.S. monetary trends on the Federal Reserve Bank of St. Louis FRED portal, economists examine two flagship monthly series:
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt]
+  \item \texttt{M1SL}: M1 Money Stock (Seasonally Adjusted, Billions of Dollars).
+  \item \texttt{M2SL}: M2 Money Stock (Seasonally Adjusted, Billions of Dollars).
+\end{itemize}
+\textbf{Critical Empirical Break (May 2020):} Before May 2020, Federal Reserve Regulation D capped convenient transfers from savings accounts at six per month, so savings deposits were counted in \texttt{M2SL} but excluded from \texttt{M1SL}. In April 2020, the Board of Governors suspended the six-transfer limit to help households manage pandemic liquidity needs, and in May 2020 the H.6 release merged savings deposits into \texttt{M1SL}. Consequently, \texttt{M1SL} jumped from roughly \$4.8 trillion to \$16.2 trillion in a single month, whereas \texttt{M2SL} showed no artificial discontinuity because savings accounts were already inside \texttt{M2SL}. Whenever researchers compare \texttt{M1SL} across 2020, they must account for this definitional reclassification rather than mistaking it for an overnight printing surge.
+\end{fredbox}
+
 % ==============================================================================
 % SECTION 3 (MODULE 11.2): BANKING, BALANCE SHEETS, AND DEPOSIT CREATION
 % ==============================================================================
 \section{Financial Intermediation, Bank Balance Sheets, and Deposit Creation}
 
-\subsection{Conceptual Introduction}
+\subsection*{Conceptual Introduction}
 
 Commercial banks are not mere warehouses that lock customer cash in underground vaults. Instead, banks operate as \textbf{financial intermediaries} that pool funds from millions of savers and channel them to creditworthy households, homebuyers, and businesses. In doing so, banks perform three vital economic transformations:
 \begin{itemize}[leftmargin=1.5em, itemsep=3pt]
@@ -286,7 +293,7 @@ In traditional textbooks, deposit creation is often illustrated through a mechan
   \item Borrower demand for credit at prevailing interest rates and bank underwriting standards.
 \end{itemize}
 
-\subsection{Visual Representation}
+\subsection*{Visual Representation}
 
 Figure~\ref{fig:t_account} displays a stylized commercial bank \textbf{T-account} balance sheet, separating economic resources owned by the bank (\textbf{Assets}) on the left from claims against those resources (\textbf{Liabilities} and \textbf{Bank Capital}) on the right.
 
@@ -342,17 +349,7 @@ Figure~\ref{fig:t_account} displays a stylized commercial bank \textbf{T-account
 \label{fig:t_account}
 \end{figure}
 
-\subsection{Real-World Application}
-
-\begin{clearitup}[Why Do Banks Fail? Illiquidity vs. Insolvency (March 2023 Case)]
-Students often assume a bank fails only when its borrowers stop repaying loans. In practice, a bank can collapse from either \textbf{insolvency} or \textbf{acute illiquidity}:
-\begin{itemize}[leftmargin=1.5em, itemsep=3pt]
-  \item \textbf{Insolvency (Capital Depletion):} Suppose a bank holds \$1,000M in assets, \$900M in deposits, and \$100M in capital. If \$120M of commercial real estate loans default, total assets fall to \$880M. Because deposits remain \$900M, bank capital becomes $-\$20\text{M}$—the bank cannot pay all depositors even if given years to liquidate.
-  \item \textbf{Illiquidity and Fire-Sale Losses:} In 2022–2023, Silicon Valley Bank (SVB) held massive portfolios of long-term U.S. Treasury and agency bonds with minimal default risk, funded largely by uninsured corporate tech deposits exceeding the \$250,000 FDIC insurance cap. When the Federal Reserve raised interest rates sharply in 2022, the market value of SVB's fixed-rate bonds fell. When nervous tech depositors initiated \$42 billion in withdrawals on March 9, 2023, SVB was forced to sell bonds at steep realized losses, wiping out its equity buffer and triggering regulatory closure the next morning.
-\end{itemize}
-\end{clearitup}
-
-\subsection{Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 
 Every commercial bank must satisfy the fundamental balance sheet accounting identity at every instant:
 \begin{equation}
@@ -404,16 +401,29 @@ Suppose \$40M of existing loans default and are written off as uncollectible:
 \end{itemize}
 \end{workitout}
 
+\begin{clearitup}[Why Do Banks Fail? Illiquidity vs. Insolvency (March 2023 Case)]
+Students often assume a bank fails only when its borrowers stop repaying loans. In practice, a bank can collapse from either \textbf{insolvency} or \textbf{acute illiquidity}:
+\begin{itemize}[leftmargin=1.5em, itemsep=3pt]
+  \item \textbf{Insolvency (Capital Depletion):} Suppose a bank holds \$1,000M in assets, \$900M in deposits, and \$100M in capital. If \$120M of commercial real estate loans default, total assets fall to \$880M. Because deposits remain \$900M, bank capital becomes $-\$20\text{M}$—the bank cannot pay all depositors even if given years to liquidate.
+  \item \textbf{Illiquidity and Fire-Sale Losses:} In 2022–2023, Silicon Valley Bank (SVB) held massive portfolios of long-term U.S. Treasury and agency bonds with minimal default risk, funded largely by uninsured corporate tech deposits exceeding the \$250,000 FDIC insurance cap. When the Federal Reserve raised interest rates sharply in 2022, the market value of SVB's fixed-rate bonds fell. When nervous tech depositors initiated \$42 billion in withdrawals on March 9, 2023, SVB was forced to sell bonds at steep realized losses, wiping out its equity buffer and triggering regulatory closure the next morning.
+\end{itemize}
+\end{clearitup}
+
 \begin{advancedbox}
 In a system where the public holds currency in fixed proportion $c = C/D$ to checkable deposits, banks must hold required reserves $rr \cdot D$, and banks voluntarily hold excess liquidity reserves $e \cdot D$, total central bank base money ($MB = C + R$) equals:
 \[
   MB = cD + rrD + eD = (c + rr + e)D
 \]
-Solving for checkable deposits $D$ yields the \textbf{generalized money multiplier} $m$:
+Solving for checkable deposits $D$ yields the \textbf{generalized money multiplier} $m(rr, e, c)$:
 \[
   D = \left(\frac{1}{rr + e + c}\right) MB \quad \Longrightarrow \quad M1 = C + D = \left(\frac{1 + c}{rr + e + c}\right) MB
 \]
-Notice that when $c = 0$ and $e = 0$, this expression collapses to the simple deposit multiplier $1/rr$. Whenever banks hold abundant excess reserves ($e$ is large) or households hold more currency ($c$ rises), the multiplier $m$ shrinks substantially.
+Notice that when $c = 0$ and $e = 0$, this expression collapses to the simple deposit multiplier $1/rr$. Taking partial derivatives with respect to excess reserves $e$ and the currency-deposit ratio $c$ demonstrates why the multiplier breaks down in an ample-reserves regime:
+\[
+  \frac{\partial m}{\partial e} = -\frac{1 + c}{(rr + e + c)^2} < 0, \qquad
+  \frac{\partial m}{\partial c} = \frac{rr + e - 1}{(rr + e + c)^2} < 0 \quad (\text{whenever } rr + e < 1).
+\]
+Whenever banks hold abundant excess reserves ($e$ is large) or households hold more currency ($c$ rises), the multiplier $m$ shrinks monotonically, severing any mechanical link between base money $MB$ and $M1$.
 \end{advancedbox}
 
 % ==============================================================================
@@ -421,7 +431,7 @@ Notice that when $c = 0$ and $e = 0$, this expression collapses to the simple de
 % ==============================================================================
 \section{Institutional Structure and Roles of the Federal Reserve System}
 
-\subsection{Conceptual Introduction}
+\subsection*{Conceptual Introduction}
 
 Established by Congress through the Federal Reserve Act of 1913 following recurring 19th- and early-20th-century banking panics, the \textbf{Federal Reserve System (the Fed)} serves as the central bank of the United States. Unlike a commercial bank—which maximizes shareholder profit by taking deposits from households and making loans to businesses—a central bank is a public-purpose monetary authority that issues base money, conducts monetary policy, supervises banking institutions, and acts as the \textbf{lender of last resort} during financial crises.
 
@@ -429,17 +439,24 @@ Congress designed the Federal Reserve with a distinctive hybrid structure that b
 \begin{enumerate}[leftmargin=1.5em, itemsep=3pt]
   \item \textbf{Board of Governors (Washington, D.C.):} A federal government agency consisting of seven Governors nominated by the President of the United States and confirmed by the U.S. Senate. Governors serve staggered \textbf{14-year non-renewable terms} (one expiring every two years) so that no single presidential administration can pack the Board to engineer short-term pre-election inflation. The Chair and Vice Chairs are appointed from among the Governors for four-year terms.
   \item \textbf{Twelve Regional Federal Reserve Banks:} Located in Boston, New York, Philadelphia, Cleveland, Richmond, Atlanta, Chicago, St. Louis, Minneapolis, Kansas City, Dallas, and San Francisco. These quasi-public institutions clear interbank payments, distribute physical currency, supervise regional member banks, and gather local economic intelligence (published in the \emph{Beige Book}).
-  \item \textbf{Federal Open Market Committee (FOMC):} The Fed's core monetary policymaking committee, composed of \textbf{12 voting members}: all 7 members of the Board of Governors, the President of the Federal Reserve Bank of New York (who holds a permanent vote because open market operations are executed through the New York Fed's trading desk), and 4 of the remaining 11 Regional Reserve Bank Presidents serving on an annual rotating basis (though all 12 presidents attend and deliberate at every FOMC meeting).
+  \item \textbf{Federal Open Market Committee (FOMC):} The Fed's core monetary policymaking committee, composed of \textbf{12 voting members}: all 7 members of the Board of Governors, the President of the Federal Reserve Bank of New York (who holds a permanent vote because market operations are executed through the New York Fed's trading desk), and 4 of the remaining 11 Regional Reserve Bank Presidents serving on an annual rotating basis (though all 12 presidents attend and deliberate at every FOMC meeting).
 \end{enumerate}
 
-Beyond setting monetary policy (examined in detail in Chapter~12), the Federal Reserve and allied regulators maintain a three-pillar safety net to prevent contagious bank runs:
+\textbf{Monetary Policy Implementation in the Post-2020 Ample-Reserves Regime:} Historically, textbooks described the Fed steering interest rates by rationing scarce bank reserves through daily open market purchases and sales. Since 2008—and formally institutionalized alongside the March 2020 reduction of reserve requirements to 0\%—the Federal Reserve operates in an \textbf{ample-reserves regime}. Rather than fine-tuning scarce reserves, the Fed controls the federal funds rate primarily through three \textbf{administered rates} (analyzed graphically in Chapter~12):
+\begin{itemize}[leftmargin=1.5em, itemsep=3pt]
+  \item \textbf{Interest on Reserve Balances (IORB):} The interest rate the Federal Reserve pays depository institutions on reserves held in their Fed accounts, which serves as the primary anchor for banks' willingness to lend overnight.
+  \item \textbf{Overnight Reverse Repurchase Agreement (ON RRP) Facility:} An overnight facility offering a safe administered interest rate to eligible nonbank financial institutions (such as money market mutual funds and government-sponsored enterprises), establishing a firm floor under short-term market rates.
+  \item \textbf{Discount Window (Primary Credit Rate):} The administered rate at which sound depository institutions can borrow overnight reserves directly from their Regional Federal Reserve Bank against pledged collateral, functioning as both an upper ceiling on interbank rates and the Fed's lender-of-last-resort backstop.
+\end{itemize}
+
+Beyond setting monetary policy, the Federal Reserve and allied regulators maintain a three-pillar safety net to prevent contagious bank runs:
 \begin{itemize}[leftmargin=1.5em, itemsep=3pt]
   \item \textbf{Deposit Insurance (FDIC):} The Federal Deposit Insurance Corporation insures deposits up to \$250,000 per depositor, per insured bank, per ownership category, removing the incentive for retail households to panic when rumors circulate.
   \item \textbf{Prudential Capital and Liquidity Supervision:} Regulators require banks to maintain minimum equity capital ratios (so shareholders absorb loan losses first) and hold High-Quality Liquid Assets (HQLA) to survive short-term cash outflows.
   \item \textbf{Lender of Last Resort (The Discount Window):} If an otherwise solvent bank experiences a sudden liquidity squeeze, it can pledge sound collateral to its Regional Federal Reserve Bank and borrow reserves overnight at the \textbf{discount rate}, preventing destructive fire sales of assets.
 \end{itemize}
 
-\subsection{Visual Representation}
+\subsection*{Visual Representation}
 
 Figure~\ref{fig:fed_structure} maps the institutional architecture of the Federal Reserve System and shows how the Board of Governors and the 12 Regional Federal Reserve Banks converge inside the 12-member FOMC.
 
@@ -471,42 +488,28 @@ Figure~\ref{fig:fed_structure} maps the institutional architecture of the Federa
     \textbf{\normalsize Federal Open Market Committee (FOMC — 12 Voting Members)}\\[4pt]
     \footnotesize
     \textbf{7} Members of the Board of Governors \quad+\quad \textbf{1} NY Fed President (Permanent Vote) \quad+\quad \textbf{4} Rotating Regional Presidents\\
-    \emph{Meets 8 times per year to set the target range for the federal funds rate and direct open market operations}
+    \emph{Meets 8 times per year to set the federal funds target range via administered rates (IORB, ON RRP, Discount Rate)}
   };
 
   % Bottom Bar: Commercial Banks & Financial System
-  \node[box, fill=oiGray, draw=black!55, text width=11.6cm] (banks) at (0, -3.1) {
+  \node[box, fill=oiGray, draw=black!55, text width=11.6cm] (banks) at (0, -3.15) {
     \textbf{Depository Institutions (Commercial Banks, Savings Banks, Credit Unions) \& Payment System}\\[2pt]
-    \footnotesize Hold reserve accounts at Regional Fed Banks $\bullet$ Subject to capital/liquidity supervision $\bullet$ Access Discount Window
+    \footnotesize Hold reserve accounts earning IORB $\bullet$ Subject to capital/liquidity supervision $\bullet$ Access Discount Window
   };
 
   % Arrows
-  \draw[arrow] (bog.south) -- ++(0, -0.45) -| (-2.2, 0.25) node[pos=0.25, left, font=\footnotesize] {All 7 vote};
-  \draw[arrow] (reg.south) -- ++(0, -0.45) -| (2.2, 0.25) node[pos=0.25, right, font=\footnotesize] {NY + 4 rotating vote};
-  \draw[arrow] (fomc.south) -- (banks.north) node[midway, right, font=\footnotesize] {Policy rates, open market operations, \& liquidity backstops};
+  \draw[arrow] (bog.south) -- ++(0, -0.42) -| ($(fomc.north)+(-2.2, 0)$)
+    node[pos=0.75, left=3pt, font=\footnotesize] {All 7 vote};
+  \draw[arrow] (reg.south) -- ++(0, -0.42) -| ($(fomc.north)+(2.2, 0)$)
+    node[pos=0.75, right=3pt, font=\footnotesize] {NY + 4 rotating vote};
+  \draw[arrow] (fomc.south) -- (banks.north)
+    node[midway, right=4pt, font=\footnotesize] {Administered rates (IORB, ON RRP, Discount Rate) \& liquidity backstops};
 \end{tikzpicture}
 \caption{Institutional Structure of the Federal Reserve System and Composition of the FOMC.}
 \label{fig:fed_structure}
 \end{figure}
 
-\subsection{Real-World Application}
-
-\begin{clearitup}[Distinguishing Bank Reserves from Bank Capital]
-Students and news commentators frequently confuse \textbf{bank reserves} with \textbf{bank capital}, yet they sit on opposite sides of a bank's balance sheet and solve completely different problems:
-\begin{center}
-\begin{tabular}{p{3.1cm}p{5.5cm}p{5.5cm}}
-\toprule
-\textbf{Dimension} & \textbf{Bank Reserves ($R$)} & \textbf{Bank Capital / Net Worth ($K$)} \\
-\midrule
-\textbf{Balance Sheet Side} & \textbf{Asset} (vault cash + Fed account balance) & \textbf{Equity / Net Worth} ($\text{Assets} - \text{Liabilities}$) \\
-\textbf{Economic Purpose} & Meets day-to-day customer cash withdrawals and interbank clearing outflows & Absorbs loan defaults and security losses so depositors remain protected \\
-\textbf{Failure Mode if Depleted} & \textbf{Illiquidity} (can be bridged by borrowing against good collateral at the Fed Discount Window) & \textbf{Insolvency} (assets are worth less than liabilities; requires recapitalization or FDIC resolution) \\
-\bottomrule
-\end{tabular}
-\end{center}
-\end{clearitup}
-
-\subsection{Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 
 At the system-wide level, the Federal Reserve's own balance sheet anchors the \textbf{monetary base} ($MB$), also called high-powered money:
 \begin{equation}
@@ -546,20 +549,35 @@ Bank X holds only \$40M in reserves ($R = \$40\text{M}$), so it faces a \$10M im
 \end{itemize}
 \end{workitout}
 
+\begin{clearitup}[Distinguishing Bank Reserves from Bank Capital]
+Students and news commentators frequently confuse \textbf{bank reserves} with \textbf{bank capital}, yet they sit on opposite sides of a bank's balance sheet and solve completely different problems:
+\begin{center}
+\begin{tabular}{p{3.1cm}p{5.5cm}p{5.5cm}}
+\toprule
+\textbf{Dimension} & \textbf{Bank Reserves ($R$)} & \textbf{Bank Capital / Net Worth ($K$)} \\
+\midrule
+\textbf{Balance Sheet Side} & \textbf{Asset} (vault cash + Fed account balance) & \textbf{Equity / Net Worth} ($\text{Assets} - \text{Liabilities}$) \\
+\textbf{Economic Purpose} & Meets day-to-day customer cash withdrawals and interbank clearing outflows & Absorbs loan defaults and security losses so depositors remain protected \\
+\textbf{Failure Mode if Depleted} & \textbf{Illiquidity} (can be bridged by borrowing against good collateral at the Fed Discount Window) & \textbf{Insolvency} (assets are worth less than liabilities; requires recapitalization or FDIC resolution) \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{clearitup}
+
 % ==============================================================================
 % SECTION 5: CHAPTER SUMMARY & REVIEW PROBLEMS
 % ==============================================================================
 \section{Chapter Summary and Review Problems}
 
-\subsection{Key Takeaways}
+\subsection*{Key Takeaways}
 \begin{itemize}[leftmargin=1.5em, itemsep=3pt]
   \item \textbf{Three Functions of Money:} Money serves as a \emph{medium of exchange} (eliminating barter's double coincidence of wants), a \emph{unit of account} (standardizing prices), and a \emph{store of value} (preserving liquid purchasing power). Modern economies use \emph{fiat money} rather than \emph{commodity money}.
   \item \textbf{Post-May 2020 Monetary Aggregates:} \texttt{M1} measures immediately spendable funds—currency in circulation, demand deposits, traveler's checks, and other liquid deposits (including savings accounts since May 2020). \texttt{M2} equals \texttt{M1} plus small time deposits ($<\$100{,}000$) and retail money market funds. Credit card limits are lines of credit, not money.
   \item \textbf{Bank Balance Sheets and Deposit Creation:} Banks satisfy $\text{Assets} \equiv \text{Liabilities} + \text{Bank Capital}$. Commercial banks create checkable deposits when they originate loans, but real-world lending is bounded by capital adequacy, liquidity buffers for interbank clearing, and credit demand rather than a mechanical $1/rr$ deposit multiplier.
-  \item \textbf{The Federal Reserve System:} Comprises the 7-member Board of Governors (14-year staggered terms), 12 Regional Federal Reserve Banks, and the 12-member FOMC. Financial stability is reinforced by FDIC deposit insurance, capital/liquidity supervision, and the Fed's Discount Window lender-of-last-resort facility.
+  \item \textbf{The Federal Reserve System \& Post-2020 Ample-Reserves Regime:} Comprises the 7-member Board of Governors (14-year staggered terms), 12 Regional Federal Reserve Banks, and the 12-member FOMC. The Fed steers short-term interest rates via administered rates---\textbf{IORB}, \textbf{ON RRP}, and the \textbf{Discount Window}---while reinforcing financial stability through FDIC deposit insurance and capital/liquidity supervision.
 \end{itemize}
 
-\subsection{Check Your Understanding}
+\subsection*{Check Your Understanding}
 
 \begin{enumerate}[leftmargin=1.5em, itemsep=6pt]
   \item \textbf{Classifying Monetary Aggregates:} Identify whether each of the following items is included in \texttt{M1} (and therefore also \texttt{M2}), included in \texttt{M2} only, or excluded from both:
@@ -585,7 +603,7 @@ Bank X holds only \$40M in reserves ($R = \$40\text{M}$), so it faces a \$10M im
   \end{enumerate}
 \end{enumerate}
 
-\subsection{Solutions to Check Your Understanding}
+\subsection*{Solutions to Check Your Understanding}
 
 \begin{enumerate}[leftmargin=1.5em, itemsep=6pt]
   \item \textbf{Classifying Monetary Aggregates:}

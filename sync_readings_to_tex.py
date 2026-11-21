@@ -1679,7 +1679,20 @@ def tex_caption_to_alt(caption: str) -> str:
   return caption_alt.replace('"', "'")
 
 
-def tikz_to_svg(tikz: str, output_path: Path) -> None:
+def extract_tikz_preamble(tex_body: str) -> str:
+  preamble_match = re.search(r"\\documentclass(.*?)\\begin\{document\}", tex_body, flags=re.DOTALL)
+  if not preamble_match:
+    return ""
+  preamble = preamble_match.group(1)
+  lines = []
+  for line in preamble.splitlines():
+    stripped = line.strip()
+    if stripped.startswith((r"\definecolor{", r"\usetikzlibrary{")):
+      lines.append(stripped)
+  return "\n".join(lines)
+
+
+def tikz_to_svg(tikz: str, output_path: Path, extra_preamble: str = "") -> None:
   latex = shutil.which("latex")
   dvisvgm = shutil.which("dvisvgm")
   if not latex or not dvisvgm:
@@ -1688,6 +1701,7 @@ def tikz_to_svg(tikz: str, output_path: Path) -> None:
   if not tikz_settings.is_file():
     raise FileNotFoundError(f"Shared TikZ settings not found: {tikz_settings}")
 
+  extra_block = f"{extra_preamble}\n" if extra_preamble else ""
   document = r"""\documentclass[tikz,border=3pt]{standalone}
 \usepackage{amsmath}
 \usepackage{xcolor}
@@ -1703,7 +1717,7 @@ def tikz_to_svg(tikz: str, output_path: Path) -> None:
 \definecolor{CoursePurple}{HTML}{CC79A7}
 \definecolor{CourseAmber}{HTML}{E69F00}
 \input{tikz-settings.tex}
-\begin{document}
+""" + extra_block + r"""\begin{document}
 """ + tikz + r"""
 \end{document}
 """
@@ -1737,6 +1751,7 @@ def tikz_to_svg(tikz: str, output_path: Path) -> None:
 
 
 def tex_to_qmd(tex_body: str, title: str, qmd_dir: Path) -> str:
+    extra_tikz_preamble = extract_tikz_preamble(tex_body)
     body = tex_body
     body = re.sub(r"\\documentclass.*?\\begin\{document\}", "", body, flags=re.DOTALL)
     for command in (r"\title", r"\author", r"\date"):
@@ -1749,20 +1764,6 @@ def tex_to_qmd(tex_body: str, title: str, qmd_dir: Path) -> str:
     body = re.sub(r"\\hrule", "", body)
 
     body = re.sub(r"\\begin\{abstract\}(.*?)\\end\{abstract\}", r"> \1\n", body, flags=re.DOTALL)
-
-    body = re.sub(
-        r"\\begin\{equation\}(.*?)\\end\{equation\}",
-        lambda match: f"\n\n$$\n{match.group(1).strip()}\n$$\n\n",
-        body,
-        flags=re.DOTALL,
-    )
-    body = re.sub(
-        r"\\\[(.*?)\\\]",
-        lambda match: f"\n\n$$\n{match.group(1).strip()}\n$$\n\n",
-        body,
-        flags=re.DOTALL,
-    )
-    body = body.replace(r"\(", "$").replace(r"\)", "$")
 
     if r"\begin{figure}" in body:
       figure_references = {}
@@ -1783,7 +1784,7 @@ def tex_to_qmd(tex_body: str, title: str, qmd_dir: Path) -> str:
 
         filename = f"{figure_slug}_figure_{figure_number:02d}.svg"
         asset_path = ROOT / "shared" / "figures" / filename
-        tikz_to_svg(tikz_match.group(0), asset_path)
+        tikz_to_svg(tikz_match.group(0), asset_path, extra_preamble=extra_tikz_preamble)
         web_asset_path = qmd_dir / "figures" / filename
         web_asset_path.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(asset_path, web_asset_path)
@@ -1794,6 +1795,20 @@ def tex_to_qmd(tex_body: str, title: str, qmd_dir: Path) -> str:
       for label, figure_number in figure_references.items():
         body = re.sub(rf"Figure~\\ref\{{{re.escape(label)}\}}", f"Figure {figure_number}", body)
         body = re.sub(rf"\\ref\{{{re.escape(label)}\}}", str(figure_number), body)
+
+    body = re.sub(
+        r"\\begin\{equation\}(.*?)\\end\{equation\}",
+        lambda match: f"\n\n$$\n{match.group(1).strip()}\n$$\n\n",
+        body,
+        flags=re.DOTALL,
+    )
+    body = re.sub(
+        r"(?<!\\)\\\[(.*?)(?<!\\)\\\]",
+        lambda match: f"\n\n$$\n{match.group(1).strip()}\n$$\n\n",
+        body,
+        flags=re.DOTALL,
+    )
+    body = body.replace(r"\(", "$").replace(r"\)", "$")
 
     body = re.sub(r"(?m)^[ \t]*%[^\n]*(?:\n|$)", "", body)
 

@@ -7,63 +7,275 @@ format:
 ---
 
 >
-This chapter provides a rigorous, pedagogical treatment of Chapter 11: Consumer Choice Theory: Utility and Indifference Curves, benchmarked to standard principles curriculum.
+This chapter develops the microeconomic foundations of consumer choice, aligned with the standard principles curriculum (Eric Chiang benchmark). Students examine how budget constraints capture relative prices and purchasing power, how diminishing marginal utility and convex indifference curves model preferences, how the equimarginal rule identifies optimal consumption bundles, and how price changes decompose into substitution and income effects that underlie downward-sloping demand curves.
 
-## Learning Outcomes and Key Terms
-Students should represent a budget constraint, identify an affordable choice, and explain how prices and income shape a consumer's decision. These objectives support C2001-1 and C2001-3. Key terms include budget set, utility, indifference curve, marginal utility, marginal rate of substitution, substitution effect, and income effect.
+::: {.callout-tip title="Bring It Home: Cash Stipends or Meal-Plan Discounts?"}
 
-## A Monthly Budget and Two Goods
-Suppose a student allocates a fixed monthly budget between meals ($X$) and transit trips ($Y$). The budget is limited, so buying more of one good means giving up some of the other. The consumer's choice depends on prices, income, and preferences; the model does not claim that every person calculates derivatives before buying lunch. It organizes the trade-offs implied by those constraints.
-
-## The Budget Line: Geometric Description
-Place meals $X$ on the horizontal axis and transit trips $Y$ on the vertical axis. The budget line slopes downward. Its horizontal intercept is the number of meals affordable if all income is spent on meals; its vertical intercept is the number of transit trips affordable if all income is spent on transit. A rise in income shifts the budget line outward in parallel when prices are fixed. A change in one price pivots the line around the intercept for the other good.
-
-The budget constraint is
-
-$$
-P_xX+P_yY=I, \qquad Y=\frac{I}{P_y}-\frac{P_x}{P_y}X.
-$$
-
-The slope is $-P_x/P_y$: it is the number of transit trips that must be forgone to purchase one more meal while staying on the same budget line.
-
-## Preferences, Utility, and Indifference Curves
-An indifference curve collects bundles that provide the same ordinal utility. A higher curve represents a preferred bundle when preferences are monotonic. With well-behaved preferences, indifference curves slope downward and are convex to the origin: as a person has more of $X$ relative to $Y$, they are generally willing to give up fewer units of $Y$ for another unit of $X$.
-
-Marginal utility ($MU_x$) is the change in utility from a small increase in $X$, holding $Y$ fixed. The marginal rate of substitution is the absolute slope of an indifference curve:
-
-$$
-MRS_{XY}=\frac{MU_x}{MU_y}.
-$$
-
-Utility numbers are a representation for ranking choices, not a literal measurement of happiness that can be compared across people.
-
-## Choice at a Tangency: Worked Example
-Let income be $I=60$, with $P_x=4$ and $P_y=3$. The consumer has Cobb-Douglas utility $U(X,Y)=XY$. Since $MU_x=Y$ and $MU_y=X$, the tangency condition $MRS=P_x/P_y$ implies $Y/X=4/3$. Combining this with the budget constraint gives $X^*=7.5$ meals and $Y^*=10$ transit trips. The bundle exhausts the budget: $4(7.5)+3(10)=60$.
-
-For an interior optimum with smooth, convex preferences:
-
-$$
-\frac{MU_x}{MU_y}=\frac{P_x}{P_y} \quad\Longleftrightarrow\quad \frac{MU_x}{P_x}=\frac{MU_y}{P_y}.
-$$
-
-At a corner solution, the consumer chooses only one good; the tangency equality need not hold. Perfect substitutes, perfect complements, and nonstandard preferences can also change the shape of the solution.
-
-## Price Changes: Substitution and Income Effects
-If the price of $X$ falls, the budget line pivots outward along the $X$ axis. The total change in the chosen amount of $X$ can be separated conceptually into a substitution effect and an income effect. The substitution effect reflects the change in relative prices while holding purchasing power conceptually constant; the income effect reflects the change in real purchasing power. For a normal good, both effects of a price decrease usually raise quantity demanded. For an inferior good, the income effect works in the opposite direction and may partly offset the substitution effect. A parallel budget shift is caused by a change in income at fixed prices; it is not the price-change income effect itself.
-
-::: {.callout-note title="Clear It Up: The Price Change Pivots the Budget Line"}
-
-A change in $P_x$ changes the budget line's slope and rotates it around the $Y$ intercept. A change in income shifts the entire budget line in parallel when both prices remain fixed. Keep these two geometric changes distinct.
+Imagine a public university designing a student affordability program with a fixed budget of $\$30$ per month for each eligible student. One committee proposes a **$50\%$ campus meal-plan discount** that cuts the price of a campus meal from $\$4$ to $\$2$. Another committee proposes giving each student an **unrestricted $\$30$ cash stipend** to spend on campus meals, transit trips, or any combination of both. Both policies cost the university the exact same $\$30$ per student, yet they reshape student choices in very different ways. Which policy makes students better off—and why? By the end of this chapter, you will use budget lines, indifference curves, and income and substitution effects to solve this policy question quantitatively.
 
 :::
 
-## FRED Data and Real Purchasing Power
-FRED series CPIAUCSL is the Consumer Price Index for All Urban Consumers: All Items in U.S. City Average. It is monthly, seasonally adjusted, and indexed to 1982-1984=100; its September 2026 observation is 336.298. The CPI is a broad price index, not the exact cost of every household's basket. It can help convert a nominal dollar amount to a broad real-dollar comparison, but it does not identify an individual's preferences or their personal inflation rate.
+## The Budget Constraint and Relative Prices
 
-## Check Your Understanding
+### Conceptual Introduction {.unnumbered}
+Behind every downward-sloping market demand curve lie millions of individual household decisions. To model how rational consumers allocate limited dollars across competing goods, economists separate *what a consumer can afford* from *what a consumer wants*. We begin with three explicit simplifying assumptions (*ceteris paribus*): the consumer chooses between two goods, earns a fixed nominal income $I$ with no saving or borrowing, and takes market prices $P_x$ and $P_y$ as given. The boundary of affordability is captured by the **budget constraint** (or **budget line**), which plots all combinations of two goods—say, campus meals ($X$) and commuter transit trips ($Y$)—that exhaust income $I$ at given prices $P_x$ and $P_y$.
 
-*  With $I=60$, $P_x=4$, and $P_y=3$, what are the two intercepts of the budget line?
-*  Why does the budget line pivot rather than shift in parallel when only $P_x$ changes?
-*  Is utility measured in directly comparable units across people? Explain.
+Every point on or inside the budget line belongs to the consumer's affordable **budget set** ($P_x X + P_y Y \le I$), while bundles outside the line are unaffordable. The steepness of the budget line reflects the **relative price** of the two goods: its slope equals $-P_x / P_y$, measuring the exact opportunity cost of buying one additional unit of Good $X$ in terms of forgone units of Good $Y$.
 
-Answers: (1) $X=15$ and $Y=20$. (2) The $X$ intercept changes while the $Y$ intercept remains $I/P_y$. (3) No; ordinal utility represents an individual's ranking of bundles.
+Changes in income and prices transform the budget line in two geometrically distinct ways that directly alter resource allocation:
+
+*  **A Change in Income ($I$):** Holding prices fixed, higher income shifts the entire budget line **outward in parallel** (preserving the exact same slope $-P_x / P_y$), whereas lower income shifts it inward in parallel.
+*  **A Change in One Price ($P_x$ or $P_y$):** Holding income and the other price fixed, a drop in $P_x$ rotates (pivots) the budget line outward along the horizontal $X$-axis while keeping the vertical $Y$-intercept anchored, making Good $X$ relatively cheaper in terms of Good $Y$.
+
+### Visual Representation {.unnumbered}
+Figure 1 illustrates a baseline budget constraint ($BL_1$) alongside a parallel outward shift from higher income in panel~(a) and an outward pivot from a lower price of Good $X$ in panel~(b).
+
+![Figure 1. Shifts and Pivots of the Budget Line. In panel~(a), an increase in income at constant prices shifts the budget line outward in parallel from $BL_1$ to $BL_2$. In panel~(b), a reduction in the price of $X$ pivots the line outward around the fixed vertical intercept $I / P_y$, flattening the slope.](figures/chapter_11_consumer_choice_theory_utility_and_indifference_curves_figure_01.svg){fig-alt="Shifts and Pivots of the Budget Line. In panel~(a), an increase in income at constant prices shifts the budget line outward in parallel from BL_1 to BL_2. In panel~(b), a reduction in the price of X pivots the line outward around the fixed vertical intercept I / P_y, flattening the slope."}
+
+### Real-World Application: Transit Subsidies vs. Unrestricted Cash Stipends {.unnumbered}
+Suppose a university wants to help low-income students commute and eat on campus. Giving students an unrestricted cash stipend shifts their budget constraint outward in parallel (expanding choices across all goods without distorting relative prices), whereas subsidizing campus meal plans by $50\%$ pivots the budget line outward along the meals axis—lowering the relative price of meals and incentivizing students to consume more campus meals specifically.
+
+### Mathematical Foundation (Algebra Level) {.unnumbered}
+Solving the budget identity $P_x X + P_y Y = I$ for $Y$ expresses the budget line in slope-intercept form:
+
+$$
+Y = \frac{I}{P_y} - \frac{P_x}{P_y}X
+$$
+
+**Work It Out: Computing Budget Intercepts and a Price Pivot.**
+A student has a monthly entertainment budget of $I = \$120$ to spend on movie tickets ($P_x = \$15$ each) and paperback books ($P_y = \$20$ each).
+
+*  Find the horizontal intercept, vertical intercept, and slope of the student's budget line.
+*  Write the budget line equation in slope-intercept form ($Y$ as a function of $X$).
+*  Suppose a student discount lowers movie ticket prices to $P_x^{\text{new}} = \$10$. Find the new horizontal intercept and slope.
+
+**Step-by-Step Breakdown:**
+
+*  **Compute Baseline Intercepts and Slope:**
+
+$$
+X_{\max} = \frac{\$120}{\$15} = \mathbf{8\text{ movies}}, \qquad Y_{\max} = \frac{\$120}{\$20} = \mathbf{6\text{ books}}
+$$
+
+$$
+\text{Slope} = -\frac{P_x}{P_y} = -\frac{15}{20} = \mathbf{-0.75\text{ books per movie}}
+$$
+
+*  **Write the Slope-Intercept Equation:**
+
+$$
+Y = \mathbf{6 - 0.75X}
+$$
+
+*  **Recompute After Price Drop to $P_x^{\text{new}} = \$10$:**
+The vertical intercept stays anchored at $Y_{\max} = \mathbf{6\text{ books}}$, while the horizontal intercept expands to:
+
+$$
+X_{\max}^{\text{new}} = \frac{\$120}{\$10} = \mathbf{12\text{ movies}}, \qquad \text{Slope}^{\text{new}} = -\frac{10}{20} = \mathbf{-0.50\text{ books per movie}}
+$$
+
+**Conclusion:** Lowering movie ticket prices to $\$10$ rotates the budget line outward along the horizontal axis and reduces the opportunity cost of a movie from $0.75$ books to $0.50$ books.
+
+## Preferences, Indifference Curves, and Optimal Tangency
+
+### Conceptual Introduction {.unnumbered}
+Once the budget line defines what is affordable, consumer preferences determine which affordable bundle yields the highest satisfaction, or **utility**. Economists begin with two complementary concepts: **Total Utility ($TU$)**, the cumulative satisfaction gained from consuming a given quantity of goods, and **Marginal Utility ($MU = \Delta TU / \Delta Q$)**, the extra satisfaction from consuming one additional unit. According to the **Law of Diminishing Marginal Utility**, as a consumer consumes additional units of a good within a given time period (*ceteris paribus*), each extra unit eventually adds less satisfaction than the previous unit—the first slice of pizza after class brings far more joy than the fourth.
+
+Because satisfaction cannot be measured on an objective thermometer across different people, modern economics treats utility as an **ordinal ranking**: utility numbers simply rank bundles from least preferred to most preferred. To map preferences geometrically, economists draw **indifference curves**—each curve connects all bundles $(X, Y)$ that leave the consumer equally satisfied. Assuming well-behaved preferences (non-satiation and strict convexity), indifference curves obey four properties: (1) curves further from the origin represent higher utility (*more is preferred to less*), (2) indifference curves slope downward, (3) indifference curves never cross, and (4) indifference curves are **bowed inward (convex to the origin)**. Convexity reflects **diminishing Marginal Rate of Substitution ($MRS_{XY}$)**: the more meals you already have relative to transit trips, the fewer transit trips you are willing to give up to obtain one more meal.
+
+To maximize utility at an interior optimum subject to their budget, a consumer selects the bundle on the highest reachable indifference curve—occurring at the exact **tangency point** where the slope of the indifference curve equals the slope of the budget line:
+
+$$
+MRS_{XY} = \frac{MU_x}{MU_y} = \frac{P_x}{P_y} \quad \Longleftrightarrow \quad \frac{MU_x}{P_x} = \frac{MU_y}{P_y}
+$$
+
+In plain English, the **equimarginal principle** (or utility-maximizing rule) states that the last dollar spent on Good $X$ must deliver the exact same marginal utility per dollar as the last dollar spent on Good $Y$. If $\frac{MU_x}{P_x} > \frac{MU_y}{P_y}$, the consumer can raise total satisfaction without spending an extra cent by shifting dollars out of Good $Y$ and into Good $X$ until the two ratios equalize.
+
+::: {.callout-note title="Clear It Up: Why Maximizing Utility Does NOT Mean $MU_x = MU_y$"}
+
+A common exam mistake is assuming a consumer maximizes utility when the marginal utility of Good $X$ equals the marginal utility of Good $Y$ ($MU_x = MU_y$). That ignores prices! If a $\$4$ latte gives $32$ utils of marginal satisfaction ($8$ utils per dollar) and a $\$2$ bagel gives $16$ utils ($8$ utils per dollar), the consumer is already at the optimum—even though $MU_{\text{latte}} = 32$ is double $MU_{\text{bagel}} = 16$. Always compare **marginal utility per dollar** ($MU / P$), never raw marginal utility alone.
+
+:::
+
+### Visual Representation {.unnumbered}
+Figure 2 shows the consumer's optimal bundle $E^*(7.5, 10)$ where indifference curve $U_2$ ($U = 75$) is tangent to the budget line, strictly outperforming affordable non-tangent points such as $A(3, 16)$ on lower curve $U_1$ ($U = 48$), while curve $U_3$ ($U = 108$) lies outside the affordable budget set.
+
+![Figure 2. Utility Maximization at Tangency. The consumer reaches the highest attainable indifference curve $U_2$ at bundle $E^*(7.5, 10)$, where the slope of the indifference curve ($-MRS_{XY}$) equals the slope of the budget line ($-P_x / P_y$). Non-tangent affordable bundles such as $A(3, 16)$ lie on lower indifference curve $U_1$.](figures/chapter_11_consumer_choice_theory_utility_and_indifference_curves_figure_02.svg){fig-alt="Utility Maximization at Tangency. The consumer reaches the highest attainable indifference curve U_2 at bundle E^*(7.5, 10), where the slope of the indifference curve (-MRS_{XY}) equals the slope of the budget line (-P_x / P_y). Non-tangent affordable bundles such as A(3, 16) lie on lower indifference curve U_1."}
+
+### Real-World Application: Grocery Shopping and the Equimarginal Rule {.unnumbered}
+When shoppers compare $\$12$ organic berries against $\$3$ bananas at the grocery store, they instinctively apply $\frac{MU_{\text{berries}}}{P_{\text{berries}}} = \frac{MU_{\text{bananas}}}{P_{\text{bananas}}}$: berries must feel at least four times as satisfying per carton as bananas to justify taking up four times as much budget space.
+
+### Mathematical Foundation (Algebra Level) {.unnumbered}
+At the principles level, utility maximization can be solved either sequentially with a discrete marginal-utility schedule or algebraically using the tangency condition paired with the budget constraint:
+
+$$
+\frac{MU_x}{MU_y} = \frac{P_x}{P_y} \quad \text{and} \quad P_x X + P_y Y = I
+$$
+
+**Work It Out (Part A): Discrete Utility Schedule and Marginal Utility per Dollar.**
+Suppose a commuter has a weekly morning snack budget of $I = \$12$ to spend on campus coffees ($P_c = \$4$) and bagels ($P_b = \$2$), with total and marginal utility given in Table~\ref{tab:mu_schedule}. Find the utility-maximizing bundle.
+
+\begin{table}[htbp]
+\centering
+\caption{Total Utility ($TU$), Marginal Utility ($MU$), and Marginal Utility per Dollar ($MU/P$) for Coffee ($\$4$) and Bagels ($\$2$).}
+\label{tab:mu_schedule}
+\begin{tabular}{ccccccc}
+\toprule
+Quantity ($Q$) & $TU_{\text{coffee}}$ & $MU_{\text{coffee}}$ & $MU_c / P_c$ ($\$4$) & $TU_{\text{bagel}}$ & $MU_{\text{bagel}}$ & $MU_b / P_b$ ($\$2$) \\
+\midrule
+1 & 40 & 40 & 10 & 24 & 24 & 12 \\
+2 & 72 & 32 & **8** & 40 & 16 & **8** \\
+3 & 92 & 20 & 5 & 50 & 10 & 5 \\
+4 & 100 & 8 & 2 & 56 & 6 & 3 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+**Step-by-Step Breakdown:**
+
+*  **Spend Dollars Sequentially on the Highest $MU/P$:**
+
+*  *Purchase 1:* The 1st bagel gives $MU_b/P_b = 12$ utils/dollar (beating the 1st coffee at $10$). Buy $1$ bagel ($\$2$ spent; $\$10$ remaining).
+*  *Purchase 2:* The 1st coffee gives $MU_c/P_c = 10$ utils/dollar (beating the 2nd bagel at $8$). Buy $1$ coffee ($\$6$ spent; $\$6$ remaining).
+*  *Purchases 3 & 4:* Both the 2nd coffee and the 2nd bagel give $8$ utils/dollar, and buying both costs $\$4 + \$2 = \$6$, exhausting the remaining budget.
+
+*  **Verify Both Optimality Conditions:**
+At $2$ coffees and $2$ bagels, $\frac{MU_c}{P_c} = \frac{32}{4} = \mathbf{8} = \frac{16}{2} = \frac{MU_b}{P_b}$, and total spending is $\$4(2) + \$2(2) = \$8 + \$4 = \mathbf{\$12}$. Total utility reaches $TU = 72 + 40 = \mathbf{112\text{ utils}}$, strictly beating alternative $\$12$ bundles such as $(1\text{ coffee}, 4\text{ bagels})$ ($TU = 40 + 56 = 96$) or $(3\text{ coffees}, 0\text{ bagels})$ ($TU = 92$).
+
+\medskip
+**Work It Out (Part B): Algebraic Tangency Problem.**
+Now return to our continuous student example: a student allocates $I = \$60$ per month between meals ($X$) priced at $P_x = \$4$ and transit trips ($Y$) priced at $P_y = \$3$. The student's utility function is $U(X, Y) = X \cdot Y$, with marginal utilities $MU_x = Y$ and $MU_y = X$. Solve for the utility-maximizing bundle $(X^*, Y^*)$ and compare it with affordable bundle $A(3, 16)$.
+
+**Step-by-Step Breakdown:**
+
+*  **Apply the Tangency Condition ($MRS_{XY} = P_x / P_y$):**
+
+$$
+\frac{MU_x}{MU_y} = \frac{P_x}{P_y} \implies \frac{Y}{X} = \frac{4}{3} \implies Y = \frac{4}{3}X
+$$
+
+*  **Substitute $Y = \frac{4}{3}X$ into the Budget Constraint ($4X + 3Y = 60$):**
+
+$$
+4X + 3\left(\frac{4}{3}X\right) = 60 \implies 4X + 4X = 60 \implies 8X = 60 \implies X^* = \mathbf{7.5\text{ meals}}
+$$
+
+*  **Solve for $Y^*$, Verify Budget Exhaustion, and Compare to Bundle $A$:**
+
+$$
+Y^* = \frac{4}{3}(7.5) = \mathbf{10\text{ transit trips}}
+$$
+
+Check budget exhaustion: $\$4(7.5) + \$3(10) = \$30 + \$30 = \$60$. At $E^*(7.5, 10)$, utility is $U^* = 7.5 \times 10 = \mathbf{75}$. By contrast, bundle $A(3, 16)$ also costs $\$4(3) + \$3(16) = \$60$, yet delivers only $U_A = 3 \times 16 = \mathbf{48} < 75$ because $MRS_{XY} = \frac{16}{3} \approx 5.33 > \frac{4}{3}$ (the student values another meal more than its market price ratio and should buy more meals and fewer transit trips).
+
+**Conclusion:** Purchasing $7.5$ meals and $10$ transit trips maximizes utility at $U^* = 75$.
+
+::: {.callout-note title="Optional Advanced Section: Partial Derivatives and the Marginal Rate of Substitution"}
+
+*Note for Economics Majors and Quantitative Students:*
+For a differentiable utility function $U(X, Y)$, marginal utilities are defined as partial derivatives: $MU_x = \frac{\partial U}{\partial X}$ and $MU_y = \frac{\partial U}{\partial Y}$. Along any indifference curve, utility is constant ($dU = 0$). Taking the total differential gives:
+
+$$
+dU = \frac{\partial U}{\partial X}\,dX + \frac{\partial U}{\partial Y}\,dY = 0 \implies MRS_{XY} = -\left.\frac{dY}{dX}\right|_{dU=0} = \frac{\partial U / \partial X}{\partial U / \partial Y} = \frac{MU_x}{MU_y}
+$$
+
+For the Cobb-Douglas utility function $U(X, Y) = X \cdot Y$, holding the other variable fixed gives $MU_x = \frac{\partial (XY)}{\partial X} = Y$ and $MU_y = \frac{\partial (XY)}{\partial Y} = X$, so $MRS_{XY} = Y / X$.
+
+:::
+
+## Income and Substitution Effects of a Price Change
+
+### Conceptual Introduction {.unnumbered}
+When the price of a good falls—say, laptop prices drop by $25\%$—consumers almost always buy more of it. Economists decompose this total change in quantity demanded into two distinct behavioral mechanisms:
+
+*  **The Substitution Effect:** Because laptops are now cheaper relative to tablets and smartphones, consumers substitute away from relatively pricier alternatives and buy more laptops, *holding real purchasing power (utility) constant* along the initial indifference curve. The substitution effect **always moves in the opposite direction of the price change** ($P_x \downarrow \implies X_{\text{sub}} \uparrow$).
+*  **The Income Effect:** A lower laptop price stretches the consumer's fixed paycheck further, boosting real purchasing power. For a **normal good**, higher purchasing power raises quantity demanded further ($X_{\text{inc}} \uparrow$), reinforcing the substitution effect. For an **inferior good**, higher purchasing power reduces quantity demanded ($X_{\text{inc}} \downarrow$), partially offsetting the substitution effect.
+
+Repeating this optimal-bundle exercise across many different prices of Good $X$—holding income $I$, other prices $P_y$, and preferences fixed—traces out the consumer's **individual demand curve**. Because the substitution effect is always negative and dominates the income effect for nearly all goods, utility maximization provides the rigorous behavioral foundation for the Law of Demand introduced in Chapter~3.
+
+::: {.callout-note title="Clear It Up: What Is a Giffen Good?"}
+
+For almost all inferior goods, the negative substitution effect of a price hike still overpowers the positive income effect, keeping the demand curve downward sloping. Only in an extraordinary theoretical case—a **Giffen good**, where an inferior staple consumes such a huge share of a low-income household's budget that the income effect outweighs the substitution effect—could a price rise ever increase quantity demanded.
+
+:::
+
+### Visual Representation {.unnumbered}
+Figure 3 decomposes a price drop from $P_{x1}$ to $P_{x2}$ into the pure substitution effect ($E_1 \to E_c$ along $U_1$, shifting quantity from $X_1$ to $X_c$) and the income effect ($E_c \to E_2$ onto higher indifference curve $U_2$, shifting quantity from $X_c$ to $X_2$).
+
+![Figure 3. Hicksian Decomposition of a Price Decrease. The movement from $E_1$ to $E_c$ along $U_1$ ($X_1 \to X_c$) isolates the pure **Substitution Effect (SE)** using compensated budget line $BL_c$ parallel to $BL_2$, while the outward shift from $E_c$ to $E_2$ onto $U_2$ ($X_c \to X_2$) captures the **Income Effect (IE)** for a normal good.](figures/chapter_11_consumer_choice_theory_utility_and_indifference_curves_figure_03.svg){fig-alt="Hicksian Decomposition of a Price Decrease. The movement from E_1 to E_c along U_1 (X_1 \to X_c) isolates the pure Substitution Effect (SE) using compensated budget line BL_c parallel to BL_2, while the outward shift from E_c to E_2 onto U_2 (X_c \to X_2) captures the Income Effect (IE) for a normal good."}
+
+### Real-World Application: Gasoline Price Spikes and Commuter Behavior {.unnumbered}
+When retail gasoline jumps from $\$3.50$ to $\$5.50$ per gallon, commuters respond through both channels: the **substitution effect** pushes drivers to carpool, take public transit, or combine errands, while the **income effect** leaves households with less discretionary money left over for dining out or weekend travel.
+
+### Mathematical Foundation (Algebra Level) {.unnumbered}
+Total quantity change equals the sum of the substitution and income effects:
+
+$$
+\Delta X_{\text{total}} = X_2 - X_1 = \underbrace{(X_c - X_1)}_{\text{Substitution Effect}} + \underbrace{(X_2 - X_c)}_{\text{Income Effect}}
+$$
+
+**Work It Out: Decomposing a Price Drop into Substitution and Income Effects.**
+Continuing our Cobb-Douglas student ($U = XY$, $I = \$60$, $P_y = \$3$), initially $P_{x1} = \$4$ and the student buys $X_1 = 7.5$ meals and $Y_1 = 10$ trips ($U_1 = 75$). Suppose a $50\%$ campus dining discount lowers meal prices to $P_{x2} = \$2$.
+
+*  Find the new optimal bundle $(X_2, Y_2)$ and total change in meals $\Delta X_{\text{total}}$.
+*  Find the compensated meal quantity $X_c$ that maintains $U_1 = 75$ at the new price ratio ($P_{x2} = \$2$, $P_y = \$3$), and separate $\Delta X_{\text{total}}$ into the substitution effect and the income effect.
+
+**Step-by-Step Breakdown:**
+
+*  **Solve for New Optimal Bundle ($X_2, Y_2$) at $P_{x2} = \$2$:**
+Tangency requires $\frac{Y}{X} = \frac{2}{3} \implies Y = \frac{2}{3}X$. Plug into $2X + 3Y = 60$:
+
+$$
+2X + 3\left(\frac{2}{3}X\right) = 60 \implies 4X = 60 \implies X_2 = \mathbf{15\text{ meals}}, \qquad Y_2 = \frac{2}{3}(15) = \mathbf{10\text{ trips}}
+$$
+
+Check budget exhaustion: $\$2(15) + \$3(10) = \$30 + \$30 = \$60$, with new utility $U_2 = 15 \times 10 = 150$. Total change in meals:
+
+$$
+\Delta X_{\text{total}} = 15 - 7.5 = \mathbf{+7.5\text{ meals}}
+$$
+
+*  **Compute $X_c$ and Decompose into Substitution and Income Effects:**
+To keep utility fixed at $U_1 = 75$ while matching the new price ratio $Y_c = \frac{2}{3}X_c$:
+
+$$
+X_c \cdot Y_c = 75 \implies X_c \left(\frac{2}{3}X_c\right) = 75 \implies X_c^2 = 112.5 \implies X_c = \sqrt{112.5} \approx \mathbf{10.61\text{ meals}}
+$$
+
+(with $Y_c = \frac{2}{3}(10.61) \approx 7.07$ trips). Rounding $X_c$ to one decimal place ($10.6$ meals) gives:
+
+$$
+\text{Substitution Effect} = X_c - X_1 = 10.6 - 7.5 = \mathbf{+3.1\text{ meals}}
+$$
+
+$$
+\text{Income Effect} = X_2 - X_c = 15.0 - 10.6 = \mathbf{+4.4\text{ meals}}
+$$
+
+(Using two decimals, $+3.11 + 4.39 = +7.50$ meals.)
+
+**Conclusion:** Of the $7.5$ extra meals purchased, $+3.1$ meals come from substituting toward cheaper food and $+4.4$ meals come from higher real purchasing power.
+
+::: {.callout-note title="Optional Advanced Section: Lagrangian Optimization and the Slutsky Equation"}
+
+*Note for Economics Majors and Quantitative Students:*
+Maximizing $U(X, Y)$ subject to $P_x X + P_y Y = I$ forms the Lagrangian $\mathcal{L} = U(X, Y) + \lambda(I - P_x X - P_y Y)$. First-order conditions yield $\frac{\partial U / \partial X}{P_x} = \frac{\partial U / \partial Y}{P_y} = \lambda$, where $\lambda$ is the marginal utility of income. In our baseline example ($U = XY$, $I = 60$, $P_x = 4$, $P_y = 3$), $\lambda = \frac{10}{4} = \frac{7.5}{3} = 2.5$ utils per extra dollar of income. The **Slutsky Equation** decomposes total price sensitivity into Hicksian substitution and income effects:
+
+$$
+\frac{\partial X}{\partial P_x} = \underbrace{\frac{\partial X^h}{\partial P_x}}_{\text{Substitution } (\le 0)} + \underbrace{\left(-X \frac{\partial X}{\partial I}\right)}_{\text{Income Effect}}
+$$
+
+For any normal good ($\partial X / \partial I > 0$), both terms are negative, guaranteeing a downward-sloping demand curve ($\partial X / \partial P_x < 0$).
+
+:::
+
+::: {.callout-tip title="Bring It Home: Cash Stipends vs. Meal-Plan Subsidies—Resolved"}
+
+We can now resolve the university's policy choice using our student model ($U = XY$, baseline $I = \$60$, $P_x = \$4$, $P_y = \$3$):
+
+*  **Option 1 — $50\%$ Campus Meal-Plan Discount ($P_x: \$4 \to \$2$):** As solved in Section~11.3, the budget line pivots outward and the student buys $X = 15$ meals and $Y = 10$ transit trips, achieving utility $U_{\text{subsidy}} = 15 \times 10 = \mathbf{150}$. Because the university subsidizes $\$2$ on each of the $15$ meals, the program costs the university exactly $\$2 \times 15 = \mathbf{\$30}$.
+*  **Option 2 — Unrestricted $\$30$ Cash Stipend ($I: \$60 \to \$90$, original prices):** With the exact same $\$30$ cost to the university, the budget line shifts outward in parallel ($4X + 3Y = 90$). Applying tangency ($Y = \frac{4}{3}X$) gives $4X + 4X = 90 \implies X_{\text{cash}} = \mathbf{11.25\text{ meals}}$ and $Y_{\text{cash}} = \frac{4}{3}(11.25) = \mathbf{15\text{ transit trips}}$, exhausting $\$4(11.25) + \$3(15) = \$90$. Student utility rises to $U_{\text{cash}} = 11.25 \times 15 = \mathbf{168.75 > 150}$!
+
+**Policy Takeaway:** For an identical $\$30$ fiscal cost, an unrestricted cash transfer allows the student to reach a strictly higher indifference curve than a single-good price subsidy because cash expands purchasing power without distorting relative prices away from the student's preferred trade-off between food and transit.
+
+:::

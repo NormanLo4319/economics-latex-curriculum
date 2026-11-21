@@ -36,7 +36,7 @@ Upon completing this chapter, students should be able to (supporting Course Lear
 
 \noindent\textbf{Key Terms:} aggregate output, business cycle, expansion, recession, peak, trough, Potential Real GDP ($Y^*$), long-run economic growth, net exports ($NX$), trade surplus, trade deficit, Gross Domestic Product (GDP), final good, intermediate good, value added, consumption ($C$), gross private domestic investment ($I$), government purchases ($G$), Gross Domestic Income (GDI), statistical discrepancy, Nominal GDP, Real GDP.
 
-\begin{examplecase}{Bring It Home: Why Does Headlines' ``Dollar GDP'' Sometimes Mislead Voters?}
+\begin{examplecase}{Bring It Home: Why Do ``Dollar GDP'' Headlines Sometimes Mislead Voters?}
 Suppose news headlines report that a nation's total dollar spending on goods and services rose by $8\%$ over the past year. At first glance, that sounds like an economic boom—more factories running, more jobs created, and higher living standards. Yet when families visit the grocery store or pay rent, they feel squeezed rather than richer. Did the economy actually produce $8\%$ more food, housing, and laptops, or did prices rise while physical output barely budged? And even when physical output does expand, why does buying a used home or a share of tech stock fail to add a single dollar to GDP? Building the National Income and Product Accounts (NIPA) gives us the exact accounting rules needed to separate genuine production from price inflation and financial paper shuffling.
 \end{examplecase}
 
@@ -45,14 +45,14 @@ Suppose news headlines report that a nation's total dollar spending on goods and
 % =============================================================================
 \section{The Macroeconomic Big Picture: Cycles, Growth, and International Balances}
 
-\subsection*{1. Conceptual Introduction}
+\subsection*{Conceptual Introduction}
 Macroeconomics studies the economy as a unified whole by tracking \textbf{aggregate output}—the total quantity of goods and services produced across an entire nation. Over short horizons of months or a few years, aggregate output rarely moves in a straight line. Instead, economies experience \textbf{business cycles}: alternating short-run periods of \textbf{expansion} (when total output, employment, and household incomes rise broadly) and \textbf{recession} (a significant, widespread decline in economic activity lasting more than a few months, measured from a business cycle \textbf{peak} down to a \textbf{trough}).
 
 Across decades, however, those short-run ups and downs occur around a rising long-run trajectory called \textbf{long-run economic growth}—the sustained upward trend in \textbf{Potential Real GDP ($Y^*$)} and output per capita. While short-run recessions reflect idle factories and unemployed workers operating below capacity ($Y < Y^*$), long-run growth expands the economy's underlying productive ceiling through physical capital deepening ($K/L$), human capital (education and workforce skills), and technological innovation.
 
 Because modern economies trade goods, services, and financial assets across borders, domestic output also interacts with the rest of the world through \textbf{exports ($X$)} (goods produced domestically and sold abroad) and \textbf{imports ($M$)} (goods produced abroad and purchased domestically). The difference between exports and imports defines \textbf{net exports ($NX = X - M$)}, or the trade balance. When exports exceed imports ($NX > 0$), a country runs a \textbf{trade surplus}, meaning domestic production exceeds domestic spending and the nation acts as a net lender to the rest of the world. Conversely, when imports exceed exports ($NX < 0$), a country runs a \textbf{trade deficit}, meaning domestic residents spend more than they produce domestically and finance the gap through net capital inflows from foreign savers.
 
-\subsection*{2. Visual Representation}
+\subsection*{Visual Representation}
 Figure~\ref{fig:business_cycle_growth} illustrates how short-run business cycle fluctuations oscillate around an upward-sloping long-run Potential Real GDP ($Y^*$) growth trend.
 
 \begin{figure}[htbp]
@@ -76,48 +76,44 @@ Figure~\ref{fig:business_cycle_growth} illustrates how short-run business cycle 
                   .. controls (9.1,3.45) and (9.5,4.35) .. (9.9,4.85);
 
     % Peak 1
-    \filldraw[CourseOrange] (2.38,2.62) circle (2.6pt);
-    \node[above, font=\footnotesize\bfseries, color=CourseOrange] at (2.38,2.72) {Peak};
+    \filldraw[CourseOrange] (2.33,2.60) circle (2.6pt);
+    \node[above, font=\footnotesize\bfseries, color=CourseOrange] at (2.33,2.70) {Peak};
 
     % Trough 1
-    \filldraw[CoursePurple] (4.12,1.53) circle (2.6pt);
-    \node[below, font=\footnotesize\bfseries, color=CoursePurple] at (4.12,1.40) {Trough};
+    \filldraw[CoursePurple] (4.20,1.54) circle (2.6pt);
+    \node[below, font=\footnotesize\bfseries, color=CoursePurple] at (4.20,1.40) {Trough};
 
     % Peak 2
-    \filldraw[CourseOrange] (6.82,4.15) circle (2.6pt);
-    \node[above, font=\footnotesize\bfseries, color=CourseOrange] at (6.82,4.25) {Peak};
+    \filldraw[CourseOrange] (7.05,4.17) circle (2.6pt);
+    \node[above, font=\footnotesize\bfseries, color=CourseOrange] at (7.05,4.27) {Peak};
 
     % Trough 2
-    \filldraw[CoursePurple] (8.42,3.33) circle (2.6pt);
-    \node[below, font=\footnotesize\bfseries, color=CoursePurple] at (8.42,3.20) {Trough};
+    \filldraw[CoursePurple] (8.52,3.34) circle (2.6pt);
+    \node[below, font=\footnotesize\bfseries, color=CoursePurple] at (8.52,3.20) {Trough};
 
     % Phase Brackets / Annotations
-    \draw[<->, >=Stealth, thick, color=CourseOrange] (2.45,3.25) -- (4.05,3.25)
+    \draw[<->, >=Stealth, thick, color=CourseOrange] (2.40,3.25) -- (4.13,3.25)
         node[midway, above, font=\footnotesize\bfseries, color=CourseOrange] {Recession};
-    \draw[<->, >=Stealth, thick, color=CourseBlue] (4.25,0.65) -- (6.75,0.65)
+    \draw[<->, >=Stealth, thick, color=CourseBlue] (4.30,0.65) -- (6.98,0.65)
         node[midway, below, font=\footnotesize\bfseries, color=CourseBlue] {Expansion};
 
-    % Output Gap Callout at Trough 2
-    \draw[dotted, thick, color=SlateBlue] (8.42,3.33) -- (8.42,4.14);
-    \node[right, font=\footnotesize, color=SlateBlue, fill=white, inner sep=1.5pt] at (8.48,3.73) {Recessionary Gap ($Y < Y^*$)};
+    % Output Gap Callout & Orthogonal Reference Drop-Line at Trough 2
+    \draw[dashed, color=SlateBlue!70] (8.52,0) -- (8.52,3.34);
+    \draw[dotted, thick, color=SlateBlue] (8.52,3.34) -- (8.52,4.18);
+    \node[right, font=\footnotesize, color=SlateBlue, fill=white, inner sep=1.5pt] at (8.58,3.76) {Recessionary Gap ($Y < Y^*$)};
 \end{tikzpicture}
 \caption{Short-Run Business Cycles vs.\ Long-Run Economic Growth. Actual Real GDP ($Y$, solid blue curve) fluctuates through expansions and recessions around the upward-sloping long-run Potential Real GDP trend ($Y^*$, dashed teal line).}
 \label{fig:business_cycle_growth}
 \end{figure}
 
-\subsection*{3. Real-World Application}
-\begin{examplecase}{U.S.\ Business Cycles, Pandemic Recovery, and Persistent Trade Deficits}
-In the United States, the non-partisan \textbf{National Bureau of Economic Research (NBER)} Business Cycle Dating Committee formally identifies business cycle peaks and troughs using broad monthly indicators of output, employment, real personal income, and industrial production—rather than relying solely on a two-quarter rule of thumb. For example, NBER dated a peak in February 2020 and a sharp, two-month pandemic trough in April 2020, followed by a sustained expansion that restored output above trend. Over the same decades, the United States has consistently recorded negative net exports ($NX < 0$), importing more consumer electronics, vehicles, and apparel than it exports in aircraft, software services, and agricultural goods—a trade deficit balanced by strong global capital inflows into U.S.\ Treasury securities and corporate assets.
-\end{examplecase}
-
-\subsection*{4. Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 To evaluate cyclical performance and external trade balances algebraically, macroeconomists track the \textbf{output gap} (percentage deviation of actual Real GDP $Y$ from Potential Real GDP $Y^*$) and \textbf{net exports ($NX$)}:
 \begin{equation}
 \text{Percentage Output Gap} = \frac{Y - Y^*}{Y^*} \times 100\%, \qquad NX = X - M
 \end{equation}
 When $Y < Y^*$, the output gap is negative (a \textbf{recessionary gap}); when $Y > Y^*$, the output gap is positive (an \textbf{inflationary/overheating gap}).
 
-\paragraph{Worked Problem 4.1 (Output Gaps & Open-Economy Trade Balances).}
+\paragraph{Work It Out 4.1 (Output Gaps \& Open-Economy Trade Balances).}
 Suppose an economy has Potential Real GDP of $Y^* = \$25{,}000\text{ billion}$, while a mild downturn holds actual Real GDP to $Y = \$24{,}250\text{ billion}$. In the same year, domestic firms export $X = \$3{,}100\text{ billion}$ of goods and services, while domestic households, firms, and governments purchase $M = \$3{,}850\text{ billion}$ of imports.
 \begin{enumerate}
     \item \textbf{Compute the Dollar and Percentage Output Gap:}
@@ -129,12 +125,16 @@ Suppose an economy has Potential Real GDP of $Y^* = \$25{,}000\text{ billion}$, 
     Because $NX = -\$750\text{B} < 0$, the country runs a \textbf{trade deficit} of $\$750\text{ billion}$ (financed by $\$750\text{ billion}$ in net capital inflows from abroad).
 \end{enumerate}
 
+\begin{examplecase}{Real-World Application: U.S.\ Business Cycles, Pandemic Recovery, and Persistent Trade Deficits}
+In the United States, the non-partisan \textbf{National Bureau of Economic Research (NBER)} Business Cycle Dating Committee formally identifies business cycle peaks and troughs using broad monthly indicators of output, employment, real personal income, and industrial production—rather than relying solely on a two-quarter rule of thumb. For example, NBER dated a peak in February 2020 and a sharp, two-month pandemic trough in April 2020, followed by a sustained expansion that restored output above trend. Over the same decades, the United States has consistently recorded negative net exports ($NX < 0$), importing more consumer electronics, vehicles, and apparel than it exports in aircraft, software services, and agricultural goods—a trade deficit balanced by strong global capital inflows into U.S.\ Treasury securities and corporate assets.
+\end{examplecase}
+
 % =============================================================================
 % SECTION 4.2: What GDP Counts: Boundaries and Value Added
 % =============================================================================
 \section{What GDP Counts: Boundaries and Value Added}
 
-\subsection*{1. Conceptual Introduction}
+\subsection*{Conceptual Introduction}
 To measure aggregate output reliably without counting the same production twice, macroeconomists define \textbf{Gross Domestic Product (GDP)} strictly as \emph{the total market value of all final goods and services produced within a country's geographic borders during a specific time period}. Every single phrase in that definition functions as an explicit accounting boundary rule:
 
 \begin{itemize}
@@ -144,7 +144,7 @@ To measure aggregate output reliably without counting the same production twice,
     \item \textbf{Current Production Only:} GDP measures \emph{new} production created during the current quarter or year. It excludes sales of used cars and existing homes (already counted when originally built), pure financial transactions such as buying stocks or bonds, and government transfer payments such as Social Security checks (which redistribute existing income rather than purchasing newly produced output).
 \end{itemize}
 
-\subsection*{2. Visual Representation}
+\subsection*{Visual Representation}
 Figure~\ref{fig:value_added_chain} illustrates a three-stage laptop supply chain—from silicon wafer fabrication to CPU processor manufacturing to final retail assembly—demonstrating why summing value added across stages equals the final market price without double counting.
 
 \begin{figure}[htbp]
@@ -197,18 +197,13 @@ Figure~\ref{fig:value_added_chain} illustrates a three-stage laptop supply chain
 \end{itemize}
 \end{coreprinciple}
 
-\subsection*{3. Real-World Application}
-\begin{examplecase}{Global Semiconductor Supply Chains and Border Accounting}
-Consider a modern smartphone or AI server assembled in the United States using advanced logic chips fabricated in Taiwan, memory modules produced in South Korea, and assembly/software engineering performed domestically. Under BEA national accounting rules, only the \emph{value added} created within U.S.\ borders enters U.S.\ GDP. When the U.S.\ assembler imports $\$400$ of foreign chips and sells a finished server domestically for $\$1{,}200$, the $\$1{,}200$ sale appears in final domestic spending ($C$ or $I$), while the $\$400$ imported component is subtracted in net exports ($-M$), leaving exactly $\$800$ of domestic U.S.\ value added recorded in U.S.\ GDP.
-\end{examplecase}
-
-\subsection*{4. Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 For any economy composed of $n$ production stages or firms, firm $i$'s value added ($VA_i$) equals its gross sales revenue ($R_i$) minus the cost of intermediate inputs ($IC_i$) purchased from other firms:
 \begin{equation}
 VA_i = R_i - IC_i, \qquad \text{GDP} = \sum_{i=1}^{n} VA_i = \text{Market Value of All Final Goods and Services}
 \end{equation}
 
-\paragraph{Worked Problem 4.2 (Multi-Stage Value Added vs.\ Double Counting).}
+\paragraph{Work It Out 4.2 (Multi-Stage Value Added vs.\ Double Counting).}
 Trace a three-stage domestic supply chain (matching Figure~\ref{fig:value_added_chain}):
 \begin{enumerate}
     \item \textbf{Stage 1 (Silicon Wafer Supplier):} Extracts raw quartz and produces a polished wafer with $\$0$ purchased intermediate inputs, selling it to a chipmaker for $\$100$.
@@ -222,12 +217,16 @@ Trace a three-stage domestic supply chain (matching Figure~\ref{fig:value_added_
     Summing gross receipts ($\$100 + \$350 + \$1{,}000 = \$1{,}450$) would overstate GDP by $\$450$ because the wafer ($\$100$) was counted three times and the CPU fabrication ($\$250$) was counted twice.
 \end{enumerate}
 
+\begin{examplecase}{Real-World Application: Global Semiconductor Supply Chains and Border Accounting}
+Consider a modern smartphone or AI server assembled in the United States using advanced logic chips fabricated in Taiwan, memory modules produced in South Korea, and assembly/software engineering performed domestically. Under BEA national accounting rules, only the \emph{value added} created within U.S.\ borders enters U.S.\ GDP. When the U.S.\ assembler imports $\$400$ of foreign chips and sells a finished server domestically for $\$1{,}200$, the $\$1{,}200$ sale appears in final domestic spending ($C$ or $I$), while the $\$400$ imported component is subtracted in net exports ($-M$), leaving exactly $\$800$ of domestic U.S.\ value added recorded in U.S.\ GDP.
+\end{examplecase}
+
 % =============================================================================
 % SECTION 4.3: Three Equivalent Accounting Views of the National Accounts
 % =============================================================================
 \section{Three Equivalent Accounting Views of the National Accounts}
 
-\subsection*{1. Conceptual Introduction}
+\subsection*{Conceptual Introduction}
 Every dollar spent by a buyer on a final good or service becomes a dollar of revenue for the producing firm, which in turn flows out as wages, rent, interest, or profit to the households and resource owners who supplied the inputs. Because every market transaction has both a buyer and a seller, the Bureau of Economic Analysis (BEA) measures aggregate output through \textbf{three mathematically equivalent approaches}: the \textbf{Expenditure Approach}, the \textbf{Production (Value-Added) Approach}, and the \textbf{Income Approach (Gross Domestic Income, GDI)}.
 
 The \textbf{Expenditure Approach} adds up total spending on final domestic output across four macroeconomic sectors:
@@ -240,7 +239,7 @@ The \textbf{Expenditure Approach} adds up total spending on final domestic outpu
 
 The \textbf{Income Approach (Gross Domestic Income, GDI)} sums all factor and non-factor incomes generated in producing domestic output: compensation of employees (wages, salaries, and benefits), proprietors' income, rental income of persons, corporate profits, net interest, taxes on production and imports less subsidies, and consumption of fixed capital (depreciation). In theory, $\text{GDP} \equiv \text{GDI}$ identically. In practice, because the BEA collects expenditure surveys and tax/payroll records from separate administrative sources with different reporting lags, measured GDP and measured GDI differ slightly; national accountants record this minor gap as the \textbf{statistical discrepancy}.
 
-\subsection*{2. Visual Representation}
+\subsection*{Visual Representation}
 Figure~\ref{fig:nipa_circular_flow} maps the three-way NIPA accounting identity showing how Expenditure ($C + I + G + NX$), Production (Value Added), and Factor Income (GDI) measure the exact same circular flow of aggregate output.
 
 \begin{figure}[htbp]
@@ -273,18 +272,13 @@ Figure~\ref{fig:nipa_circular_flow} maps the three-way NIPA accounting identity 
         node[midway, right=4pt, font=\scriptsize\bfseries, color=SlateBlue, align=left] {Revenue Paid\\as Factor Income};
     \draw[<->, >=Stealth, very thick, color=Terracotta] (exp.east) -- (inc.west)
         node[midway, above, font=\scriptsize\bfseries, color=Terracotta] {$\text{GDP} \equiv \text{GDI}$};
-    \node[below, font=\scriptsize\itshape, color=SlateBlue] at (5.0,0.45) {(Up to BEA Statistical Discrepancy)};
+    \node[below, font=\scriptsize\itshape, color=SlateBlue] at (5.0,-0.55) {(Up to BEA Statistical Discrepancy)};
 \end{tikzpicture}
 \caption{Three-Way NIPA Equivalence. Expenditure ($C + I + G + NX$), Production (Value Added), and Factor Income (GDI) measure the exact same flow of current domestic production from three vantage points.}
 \label{fig:nipa_circular_flow}
 \end{figure}
 
-\subsection*{3. Real-World Application}
-\begin{examplecase}{Why Economists Track Both GDP and GDI Around Turning Points}
-Although GDP and GDI must equal one another conceptually, their empirical quarterly releases from the BEA occasionally diverge by $0.5\%$ to $1.5\%$ because expenditure data come from retail, construction, and trade surveys while GDI comes from employer payroll tax filings and corporate profit reports. When the two series diverge near a potential recession, economists often average them together (published by the BEA as the ``Average of GDP and GDI'') to filter out measurement noise and get a clearer real-time signal of whether hiring and output are slowing down.
-\end{examplecase}
-
-\subsection*{4. Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 The fundamental national income accounting identity expresses aggregate output $Y$ from both the expenditure and income sides:
 \begin{equation}
 Y = C + I + G + (X - M)
@@ -294,7 +288,7 @@ Y = C + I + G + (X - M)
 \end{equation}
 where $(T_{\text{prod}} - \text{Sub})$ denotes taxes on production and imports less subsidies, and $\delta K$ denotes consumption of fixed capital (depreciation), with $\text{GDP} = \text{GDI} + \text{Statistical Discrepancy}$.
 
-\paragraph{Worked Problem 4.3 (Computing GDP and GDI from NIPA Accounts).}
+\paragraph{Work It Out 4.3 (Computing GDP and GDI from NIPA Accounts).}
 Table~\ref{tab:nipa_worked} reports annual national account figures (in billions of dollars) for a hypothetical open economy. Note that the table includes two deliberate boundary distractors: Social Security transfer payments ($\$1{,}400\text{B}$) and existing home resales ($\$950\text{B}$).
 
 \begin{table}[htbp]
@@ -303,7 +297,7 @@ Table~\ref{tab:nipa_worked} reports annual national account figures (in billions
 \label{tab:nipa_worked}
 \begin{tabular}{lr|lr}
 \toprule
-\textbf{Expenditure & Boundary Items} & \textbf{\$B} & \textbf{Income & Depreciation Items} & \textbf{\$B} \\
+\textbf{Expenditure \& Boundary Items} & \textbf{\$B} & \textbf{Income \& Depreciation Items} & \textbf{\$B} \\
 \midrule
 Personal Consumption ($C$) & $\$16{,}500$ & Compensation of Employees & $\$14{,}200$ \\
 Gross Private Domestic Investment ($I$) & $\$4{,}400$ & Proprietors' Income & $\$1{,}850$ \\
@@ -328,23 +322,27 @@ Imports ($M$) & $\$3{,}600$ & Net Interest & $\$650$ \\
     Here, $\text{GDP} = \text{GDI} = \$24{,}800\text{ billion}$ (zero statistical discrepancy).
 \end{enumerate}
 
+\begin{examplecase}{Real-World Application: Why Economists Track Both GDP and GDI Around Turning Points}
+Although GDP and GDI must equal one another conceptually, their empirical quarterly releases from the BEA occasionally diverge by $0.5\%$ to $1.5\%$ because expenditure data come from retail, construction, and trade surveys while GDI comes from employer payroll tax filings and corporate profit reports. When the two series diverge near a potential recession, economists often average them together (published by the BEA as the ``Average of GDP and GDI'') to filter out measurement noise and get a clearer real-time signal of whether hiring and output are slowing down.
+\end{examplecase}
+
 % =============================================================================
 % SECTION 4.4: Nominal GDP vs. Real GDP
 % =============================================================================
 \section{Nominal GDP vs.\ Real GDP}
 
-\subsection*{1. Conceptual Introduction}
-Suppose an economy produces only coffee and laptops, and total dollar spending rises from $\$10{,}000$ in Year 1 to $\$13{,}600$ in Year 2. Does that $36\%$ increase mean citizens actually enjoyed $36\%$ more goods and services? Not necessarily. Because GDP measures \emph{market value} ($\text{Price} \times \text{Quantity}$), total dollar spending can increase for two completely different reasons: (1) the economy produced \emph{more physical quantities} of goods and services, or (2) firms charged \emph{higher market prices} for the exact same quantities.
+\subsection*{Conceptual Introduction}
+Suppose an economy produces only coffee and laptops, and total dollar spending rises from $\$10{,}000$ in Year 1 to $\$14{,}000$ in Year 2. Does that $40\%$ increase mean citizens actually enjoyed $40\%$ more goods and services? Not necessarily. Because GDP measures \emph{market value} ($\text{Price} \times \text{Quantity}$), total dollar spending can increase for two completely different reasons: (1) the economy produced \emph{more physical quantities} of goods and services, or (2) firms charged \emph{higher market prices} for the exact same quantities.
 
 To disentangle physical output growth from price inflation, macroeconomists separate \textbf{Nominal GDP} from \textbf{Real GDP}:
 \begin{itemize}
     \item \textbf{Nominal GDP} measures the value of current-period production evaluated at \emph{current-period market prices}. Changes in Nominal GDP reflect both changes in physical quantities and changes in prices.
     \item \textbf{Real GDP} measures the value of current-period production evaluated at \emph{constant base-year prices} (or using a chain-type quantity index). By holding prices fixed at base-year levels, Real GDP eliminates price-level distortions so that any change in Real GDP reflects pure changes in physical output.
 \end{itemize}
-*(Note: How economists use the ratio of Nominal GDP to Real GDP to construct economy-wide price indexes—specifically the GDP Implicit Price Deflator, alongside the Consumer Price Index and Producer Price Index—is developed systematically in Chapter 5.)*
+\emph{(Note: How economists use the ratio of Nominal GDP to Real GDP to construct economy-wide price indexes—specifically the GDP Implicit Price Deflator, alongside the Consumer Price Index and Producer Price Index—is developed systematically in Chapter 5.)}
 
-\subsection*{2. Visual Representation}
-Figure~\ref{fig:nominal_vs_real_gdp} contrasts Nominal GDP against Base-Year Real GDP across two years for a simplified two-good economy (matching Worked Problem 4.4), illustrating how rising prices inflate Nominal GDP growth ($+36.0\%$) far above true physical output growth ($+13.3\%$).
+\subsection*{Visual Representation}
+Figure~\ref{fig:nominal_vs_real_gdp} contrasts Nominal GDP against Base-Year Real GDP across two years for a simplified two-good economy (matching Work It Out 4.4), illustrating how rising prices inflate Nominal GDP growth ($+40.0\%$) far above true physical output growth ($+12.0\%$).
 
 \begin{figure}[htbp]
 \centering
@@ -369,41 +367,31 @@ Figure~\ref{fig:nominal_vs_real_gdp} contrasts Nominal GDP against Base-Year Rea
 
     \node[below, font=\small\bfseries, color=SlateBlue] at (2.4,-0.15) {Year 1 (Base Year)};
 
-    % Year 2 Bars (Nominal = $13,600 -> height = 4.533; Real = $11,333 -> height = 3.778)
-    \fill[CourseOrange!85] (5.1,0) rectangle (6.3,4.533);
-    \node[above, font=\footnotesize\bfseries, color=CourseOrange] at (5.7,4.55) {$\$13{,}600$};
+    % Year 2 Bars (Nominal = $14,000 -> height = 4.667; Real = $11,200 -> height = 3.733)
+    \fill[CourseOrange!85] (5.1,0) rectangle (6.3,4.667);
+    \node[above, font=\footnotesize\bfseries, color=CourseOrange] at (5.7,4.69) {$\$14{,}000$};
 
-    \fill[CourseBlue!85] (6.5,0) rectangle (7.7,3.778);
-    \node[above, font=\footnotesize\bfseries, color=CourseBlue] at (7.1,3.80) {$\$11{,}333$};
+    \fill[CourseBlue!85] (6.5,0) rectangle (7.7,3.733);
+    \node[above, font=\footnotesize\bfseries, color=CourseBlue] at (7.1,3.76) {$\$11{,}200$};
 
     \node[below, font=\small\bfseries, color=SlateBlue] at (6.4,-0.15) {Year 2};
 
-    % Bracket highlighting pure price-inflation wedge ($13,600 - $11,333 = $2,267)
-    \draw[decorate, decoration={brace, amplitude=5pt}, thick, color=Terracotta] (7.85,4.533) -- (7.85,3.778)
-        node[midway, right=6pt, font=\scriptsize\bfseries, color=Terracotta, align=left] {Price Effect\\($+\$2{,}267$)};
+    % Bracket highlighting pure price-inflation wedge ($14,000 - $11,200 = $2,800)
+    \draw[decorate, decoration={brace, amplitude=5pt}, thick, color=Terracotta] (7.85,4.667) -- (7.85,3.733)
+        node[midway, right=6pt, font=\scriptsize\bfseries, color=Terracotta, align=left] {Price Effect\\($+\$2{,}800$)};
 
     % Legend
     \fill[CourseOrange!85] (0.8,5.15) rectangle (1.15,5.4);
-    \node[right, font=\footnotesize\bfseries, color=CourseOrange] at (1.2,5.27) {Nominal GDP ($+36.0\%$)};
+    \node[right, font=\footnotesize\bfseries, color=CourseOrange] at (1.2,5.27) {Nominal GDP ($+40.0\%$)};
 
     \fill[CourseBlue!85] (4.8,5.15) rectangle (5.15,5.4);
-    \node[right, font=\footnotesize\bfseries, color=CourseBlue] at (5.2,5.27) {Real GDP ($+13.3\%$)};
+    \node[right, font=\footnotesize\bfseries, color=CourseBlue] at (5.2,5.27) {Real GDP ($+12.0\%$)};
 \end{tikzpicture}
-\caption{Separating Quantity Growth from Price Inflation. In the base year (Year 1), Nominal GDP equals Real GDP ($\$10{,}000$). In Year 2, Nominal GDP jumps $36.0\%$ to $\$13{,}600$, but holding prices constant reveals that physical Real GDP grew by $13.3\%$ to $\$11{,}333$.}
+\caption{Separating Quantity Growth from Price Inflation. In the base year (Year 1), Nominal GDP equals Real GDP ($\$10{,}000$). In Year 2, Nominal GDP jumps $40.0\%$ to $\$14{,}000$, but holding prices constant reveals that physical Real GDP grew by $12.0\%$ to $\$11{,}200$.}
 \label{fig:nominal_vs_real_gdp}
 \end{figure}
 
-\subsection*{3. Real-World Application}
-\begin{examplecase}{FRED Data: Current-Dollar (\texttt{GDP}) vs.\ Chained-Dollar (\texttt{GDPC1}) Series}
-When retrieving U.S.\ national output from the Federal Reserve Economic Data (FRED) database maintained by the Federal Reserve Bank of St.\ Louis, always verify the series code and units:
-\begin{itemize}
-    \item \texttt{GDP}: Reports \textbf{Nominal Gross Domestic Product} in billions of current dollars at a seasonally adjusted annual rate (SAAR), quarterly.
-    \item \texttt{GDPC1}: Reports \textbf{Real Gross Domestic Product} in billions of chained 2017 dollars at a seasonally adjusted annual rate (SAAR), quarterly.
-\end{itemize}
-Always measure economic growth rates and business cycle recessions using \texttt{GDPC1} rather than \texttt{GDP}. Furthermore, because chained-dollar levels reflect relative price weights anchored to the 2017 reference year, never interpret \texttt{GDPC1} dollar levels as current-dollar spending.
-\end{examplecase}
-
-\subsection*{4. Mathematical Foundation}
+\subsection*{Mathematical Foundation}
 For an economy producing $k$ final goods indexed by $j = 1, \dots, k$, let $P_{j,t}$ and $Q_{j,t}$ denote the price and quantity of good $j$ in year $t$, and let $P_{j,0}$ denote the price of good $j$ in the chosen base year ($t = 0$):
 \begin{equation}
 \text{Nominal GDP}_t = \sum_{j=1}^{k} P_{j,t} \cdot Q_{j,t}, \qquad \text{Real GDP}_t = \sum_{j=1}^{k} P_{j,0} \cdot Q_{j,t}
@@ -413,7 +401,7 @@ The annual percentage growth rate of Real GDP between year $t-1$ and year $t$ is
 g_{Y,t} = \frac{\text{Real GDP}_t - \text{Real GDP}_{t-1}}{\text{Real GDP}_{t-1}} \times 100\%
 \end{equation}
 
-\paragraph{Worked Problem 4.4 (Calculating Nominal GDP, Base-Year Real GDP, and Real Growth).}
+\paragraph{Work It Out 4.4 (Calculating Nominal GDP, Base-Year Real GDP, and Real Growth).}
 Consider a two-good economy producing \textbf{Laptops} and \textbf{Coffee} across two years, with \textbf{Year 1 selected as the Base Year} (Table~\ref{tab:nom_real_worked}).
 
 \begin{table}[htbp]
@@ -424,8 +412,8 @@ Consider a two-good economy producing \textbf{Laptops} and \textbf{Coffee} acros
 \toprule
 \textbf{Product} & \textbf{Year 1 Price ($P_1$)} & \textbf{Year 1 Qty ($Q_1$)} & \textbf{Year 2 Price ($P_2$)} & \textbf{Year 2 Qty ($Q_2$)} \\
 \midrule
-Laptops & $\$800$ & $10$ & $\$960$ & $11$ \\
-Coffee (cups) & $\$4$ & $500$ & $\$5$ & $633.25$ \\
+Laptops & $\$800$ & $10$ & $\$1{,}000$ & $11$ \\
+Coffee (cups) & $\$4$ & $500$ & $\$5$ & $600$ \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -436,22 +424,32 @@ Coffee (cups) & $\$4$ & $500$ & $\$5$ & $633.25$ \\
     $$\text{Nominal GDP}_1 = (\$800 \times 10) + (\$4 \times 500) = \$8{,}000 + \$2{,}000 = \$10{,}000$$
     $$\text{Real GDP}_1 = (\$800 \times 10) + (\$4 \times 500) = \$10{,}000$$
     \item \textbf{Year 2 Nominal GDP (Current Year 2 Prices $\times$ Year 2 Quantities):}
-    $$\text{Nominal GDP}_2 = (\$960 \times 11) + (\$5 \times 633.25) = \$10{,}560 + \$3{,}166.25 = \$13{,}726.25$$
-    *(Note: If Year 2 coffee quantity is rounded to $608$ cups so that $\text{Nominal GDP}_2 = \$960(11) + \$5(608) = \$10{,}560 + \$3{,}040 = \$13{,}600$, Nominal GDP rises by $\frac{13{,}600 - 10{,}000}{10{,}000} \times 100\% = +36.0\%$.)*
+    $$\text{Nominal GDP}_2 = (\$1{,}000 \times 11) + (\$5 \times 600) = \$11{,}000 + \$3{,}000 = \$14{,}000$$
+    Nominal GDP rose by $\frac{\$14{,}000 - \$10{,}000}{\$10{,}000} \times 100\% = +40.0\%$.
     \item \textbf{Year 2 Real GDP (Constant Year 1 Base Prices $\times$ Year 2 Quantities):}
-    Using $608$ cups of coffee in Year 2 and holding prices fixed at Year 1 levels ($\$800$ per laptop, $\$4$ per cup):
-    $$\text{Real GDP}_2 = (\$800 \times 11) + (\$4 \times 608) = \$8{,}800 + \$2{,}432 = \$11{,}232$$
-    *(Or with $633.25$ cups: $\text{Real GDP}_2 = \$8{,}800 + \$2{,}533 = \$11{,}333$, yielding a $+13.33\%$ real growth rate.)*
-    \item \textbf{Compute Real GDP Growth Rate (using $608$ cups):}
-    $$g_{Y,2} = \frac{\$11{,}232 - \$10{,}000}{\$10{,}000} \times 100\% = \frac{1{,}232}{10{,}000} \times 100\% = +12.32\%$$
-    While Nominal GDP surged $+36.0\%$, true physical output expanded by $+12.32\%$—the remaining gap reflects price inflation rather than extra production.
+    Holding prices fixed at Year 1 levels ($\$800$ per laptop, $\$4$ per cup):
+    $$\text{Real GDP}_2 = (\$800 \times 11) + (\$4 \times 600) = \$8{,}800 + \$2{,}400 = \$11{,}200$$
+    \item \textbf{Compute Real GDP Growth Rate and Price Effect:}
+    $$g_{Y,2} = \frac{\$11{,}200 - \$10{,}000}{\$10{,}000} \times 100\% = \frac{1{,}200}{10{,}000} \times 100\% = +12.0\%$$
+    While Nominal GDP surged $+40.0\%$ (by $\$4{,}000$), true physical output expanded by $+12.0\%$ ($\$1{,}200$ in base-year dollars). The remaining $\$2{,}800$ gap ($\$14{,}000 - \$11{,}200$) reflects pure price inflation—resolving our opening \emph{Bring It Home} puzzle.
 \end{enumerate}
 
-\begin{casestudy}
-\boxheader{SlateBlue}{Optional Advanced Box: BEA Chain-Weighted Fisher Quantity Indexes}
-Holding base-year prices fixed forever introduces \textbf{substitution bias}: over time, goods experiencing rapid technological productivity gains (such as computers and semiconductors) fall sharply in relative price while their quantities surge. Evaluating modern computer quantities using decade-old high prices exaggerates modern Real GDP growth.
+\begin{examplecase}{Real-World Application: FRED Data—Current-Dollar (\texttt{GDP}) vs.\ Chained-Dollar (\texttt{GDPC1}) Series}
+When retrieving U.S.\ national output from the Federal Reserve Economic Data (FRED) database maintained by the Federal Reserve Bank of St.\ Louis, always verify the series code and units:
+\begin{itemize}
+    \item \texttt{GDP}: Reports \textbf{Nominal Gross Domestic Product} in billions of current dollars at a seasonally adjusted annual rate (SAAR), quarterly.
+    \item \texttt{GDPC1}: Reports \textbf{Real Gross Domestic Product} in billions of chained 2017 dollars at a seasonally adjusted annual rate (SAAR), quarterly.
+\end{itemize}
+Always measure economic growth rates and business cycle recessions using \texttt{GDPC1} rather than \texttt{GDP}. Furthermore, because chained-dollar levels reflect relative price weights anchored to the 2017 reference year, never interpret \texttt{GDPC1} dollar levels as current-dollar spending.
+\end{examplecase}
 
-To eliminate fixed-base-year distortion, the U.S.\ Bureau of Economic Analysis (BEA) computes \texttt{GDPC1} using a \textbf{chain-weighted Fisher ideal quantity index}. Between consecutive periods $t-1$ and $t$, the BEA computes two gross real growth factors—a Laspeyres index ($L_t$, using period $t-1$ prices) and a Paasche index ($P_t$, using period $t$ prices)—and takes their geometric mean:
+\begin{casestudy}
+\boxheader{SlateBlue}{Optional Advanced Calculus Box: Continuous Growth Decomposition and BEA Chain-Weighted Indexes}
+In continuous time, writing Nominal GDP as the product of the aggregate price level $P(t)$ and Real GDP $Y(t)$ gives $\text{Nominal GDP}(t) = P(t) \cdot Y(t)$. Taking natural logarithms and differentiating with respect to time $t$ yields the exact instantaneous growth-rate decomposition:
+$$\frac{d}{dt}\ln\bigl(\text{Nominal GDP}(t)\bigr) = \frac{d}{dt}\ln P(t) + \frac{d}{dt}\ln Y(t) \implies g_{\text{Nominal}} = \pi + g_{\text{Real}}$$
+where $\pi = \dot{P}/P$ is the instantaneous inflation rate and $g_{\text{Real}} = \dot{Y}/Y$ is the instantaneous real output growth rate. For small discrete annual changes, this calculus identity explains why Nominal GDP growth approximately equals inflation plus Real GDP growth.
+
+In addition, holding base-year prices fixed forever introduces \textbf{substitution bias}: over time, goods experiencing rapid technological productivity gains (such as computers and semiconductors) fall sharply in relative price while their quantities surge. Evaluating modern computer quantities using decade-old high prices exaggerates modern Real GDP growth. To eliminate fixed-base-year distortion, the U.S.\ Bureau of Economic Analysis (BEA) computes \texttt{GDPC1} using a \textbf{chain-weighted Fisher ideal quantity index}. Between consecutive periods $t-1$ and $t$, the BEA computes two gross real growth factors—a Laspeyres index ($L_t$, using period $t-1$ prices) and a Paasche index ($P_t$, using period $t$ prices)—and takes their geometric mean:
 $$Q_t^F = \sqrt{ L_t \cdot P_t } = \sqrt{ \left(\frac{\sum_{j} P_{j,t-1} Q_{j,t}}{\sum_{j} P_{j,t-1} Q_{j,t-1}}\right) \left(\frac{\sum_{j} P_{j,t} Q_{j,t}}{\sum_{j} P_{j,t} Q_{j,t-1}}\right) }$$
 Chaining these annual growth factors forward from the 2017 reference year produces real output growth rates that do not change arbitrarily whenever the government updates its reference year.
 \end{casestudy}
@@ -473,7 +471,7 @@ Chaining these annual growth factors forward from the 2017 reference year produc
 \addcontentsline{toc}{section}{Check Your Understanding}
 
 \begin{enumerate}
-    \item \textbf{GDP Inclusion & Boundary Rules:} Classify whether each transaction below is \emph{included} in current-year U.S.\ GDP (and if so, under which expenditure component $C, I, G,$ or $NX$) or \emph{excluded}, explaining why in one sentence:
+    \item \textbf{GDP Inclusion \& Boundary Rules:} Classify whether each transaction below is \emph{included} in current-year U.S.\ GDP (and if so, under which expenditure component $C, I, G,$ or $NX$) or \emph{excluded}, explaining why in one sentence:
     \begin{enumerate}
         \item A household purchases a newly built townhouse from a residential developer for $\$520{,}000$.
         \item A retiree receives a $\$2{,}100$ monthly Social Security payment from the federal government.
