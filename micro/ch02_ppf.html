@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; Chapter 2: The Production Possibilities Frontier &amp; Gains from Trade – Principles of Microeconomics</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./ch03_supply_demand.html" rel="next">
+<link href="./ch01_principles.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-a71520af13e4c6b5a7ac03cb4efe7867.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-663504756e947d720a454151098d9f2d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-a71520af13e4c6b5a7ac03cb4efe7867.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455).
+    // Not run on load: stylesheets are set before first paint there, and
+    // scrolling would undo the scroll to a URL fragment (#14973).
+    // The one pixel nudge keeps the reader where they were.
+    const refreshSafariScrollbar = () => {
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        const scrollY = window.scrollY;
+        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
+        setTimeout(() => {
+          window.scrollTo(0, scrollY);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      refreshSafariScrollbar();
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch01_principles.html">Foundations of Market Analysis</a></li><li class="breadcrumb-item"><a href="./ch02_ppf.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 2: The Production Possibilities Frontier &amp; Gains from Trade</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Principles of Microeconomics</a> 
+        <div class="sidebar-tools-main">
+  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Foundations of Market Analysis</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch01_principles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Chapter 1: Foundations of Microeconomic Analysis &amp; Core Principles</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch02_ppf.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 2: The Production Possibilities Frontier &amp; Gains from Trade</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch03_supply_demand.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Chapter 3: Supply, Demand, and Market Equilibrium</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch04_surplus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Chapter 4: Consumer and Producer Surplus, Market Efficiency, and Welfare</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch05_elasticity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Elasticity: Responsiveness of Demand and Supply</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Firm Behavior &amp; Market Structures</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch06_costs_production.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Chapter 6: The Theory of the Firm: Production and Cost Curves</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch07_perfect_competition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chapter 7: Perfect Competition and Long-Run Industry Equilibrium</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch08_monopoly.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Chapter 8: Monopoly, Market Power, and Price Discrimination</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch09_imperfect_competition_game_theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Chapter 9: Monopolistic Competition, Oligopoly, and Game Theory</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Market Failures &amp; Factor Markets</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch10_externalities_public_goods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Chapter 10: Externalities, Public Goods, and Common Resources</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch11_consumer_choice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Chapter 11: Consumer Choice Theory: Utility and Indifference Curves</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch12_factor_markets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Chapter 12: Factor Markets, Labor Demand, and Wage Determination</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch13_asymmetric_information_risk.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Chapter 13: Asymmetric Information, Risk, and Market Design</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch14_international_trade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Chapter 14: International Trade, Comparative Advantage, and Protectionism</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-outcomes-and-key-terms" id="toc-learning-outcomes-and-key-terms" class="nav-link active" data-scroll-target="#learning-outcomes-and-key-terms">Learning Outcomes and Key Terms</a></li>
+  <li><a href="#scarcity-productive-efficiency-and-the-ppf-model" id="toc-scarcity-productive-efficiency-and-the-ppf-model" class="nav-link" data-scroll-target="#scarcity-productive-efficiency-and-the-ppf-model"><span class="header-section-number">2.1</span> Scarcity, Productive Efficiency, and the PPF Model</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction" id="toc-conceptual-introduction" class="nav-link" data-scroll-target="#conceptual-introduction">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation" id="toc-visual-representation" class="nav-link" data-scroll-target="#visual-representation">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation" id="toc-mathematical-foundation" class="nav-link" data-scroll-target="#mathematical-foundation">Mathematical Foundation</a></li>
+  </ul></li>
+  <li><a href="#the-law-of-increasing-opportunity-cost-and-economic-growth" id="toc-the-law-of-increasing-opportunity-cost-and-economic-growth" class="nav-link" data-scroll-target="#the-law-of-increasing-opportunity-cost-and-economic-growth"><span class="header-section-number">2.2</span> The Law of Increasing Opportunity Cost and Economic Growth</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-1" id="toc-conceptual-introduction-1" class="nav-link" data-scroll-target="#conceptual-introduction-1">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-1" id="toc-visual-representation-1" class="nav-link" data-scroll-target="#visual-representation-1">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-1" id="toc-mathematical-foundation-1" class="nav-link" data-scroll-target="#mathematical-foundation-1">Mathematical Foundation</a></li>
+  </ul></li>
+  <li><a href="#specialization-ricardian-comparative-advantage-and-gains-from-trade" id="toc-specialization-ricardian-comparative-advantage-and-gains-from-trade" class="nav-link" data-scroll-target="#specialization-ricardian-comparative-advantage-and-gains-from-trade"><span class="header-section-number">2.3</span> Specialization, Ricardian Comparative Advantage, and Gains from Trade</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-2" id="toc-conceptual-introduction-2" class="nav-link" data-scroll-target="#conceptual-introduction-2">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-2" id="toc-visual-representation-2" class="nav-link" data-scroll-target="#visual-representation-2">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-2" id="toc-mathematical-foundation-2" class="nav-link" data-scroll-target="#mathematical-foundation-2">Mathematical Foundation</a></li>
+  </ul></li>
+  <li><a href="#check-your-understanding" id="toc-check-your-understanding" class="nav-link" data-scroll-target="#check-your-understanding">Check Your Understanding</a>
+  <ul class="collapse">
+  <li><a href="#worked-solutions" id="toc-worked-solutions" class="nav-link" data-scroll-target="#worked-solutions">Worked Solutions</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch01_principles.html">Foundations of Market Analysis</a></li><li class="breadcrumb-item"><a href="./ch02_ppf.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 2: The Production Possibilities Frontier &amp; Gains from Trade</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 2: The Production Possibilities Frontier &amp; Gains from Trade</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p>This chapter develops the Production Possibilities Frontier (PPF) as a foundational model of scarcity, productive efficiency, opportunity cost, and long-run economic growth. It then extends the framework to Ricardian comparative advantage, demonstrating how specialization and mutually beneficial Terms of Trade (<span class="math inline">\(TOT\)</span>) expand a region’s Consumption Possibilities Frontier (<span class="math inline">\(CPF\)</span>) strictly beyond its domestic production boundary.</p>
+</blockquote>
+<section id="learning-outcomes-and-key-terms" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="learning-outcomes-and-key-terms">Learning Outcomes and Key Terms</h2>
+<p>Upon completing this chapter, students should be able to:</p>
+<ul>
+<li><strong>Construct and interpret</strong> a Production Possibilities Frontier (PPF) to distinguish productively efficient, inefficient, and unattainable output combinations.</li>
+<li><strong>Calculate</strong> opportunity costs from linear equations and discrete production schedules, and explain why imperfect factor adaptability generates the Law of Increasing Opportunity Cost.</li>
+<li><strong>Identify</strong> the drivers of outward PPF shifts (capital accumulation, labor growth, human capital, and technological progress).</li>
+<li><strong>Distinguish</strong> absolute advantage from comparative advantage, establish valid Terms of Trade (<span class="math inline">\(TOT\)</span>) bounds, and prove how trade shifts the Consumption Possibilities Frontier (<span class="math inline">\(CPF\)</span>) outside the domestic PPF.</li>
+</ul>
+<p><strong>Key Terms:</strong> Production Possibilities Frontier (PPF), productive efficiency, allocative efficiency, Law of Increasing Opportunity Cost, Marginal Rate of Transformation (<span class="math inline">\(MRT\)</span>), economic growth, absolute advantage, comparative advantage, specialization, Terms of Trade (<span class="math inline">\(TOT\)</span>), Consumption Possibilities Frontier (<span class="math inline">\(CPF\)</span>), autarky.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Bring It Home: Why Doesn’t California Grow All Its Own Coffee or Build Every Laptop?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>California possesses some of the most productive farmland, engineering talent, and venture capital in the world. Technically, California farms could grow coffee beans in climate-controlled greenhouses, and California factories could assemble every smartphone and laptop sold in the state. Yet California imports virtually all of its coffee from Latin America and consumer electronics from East Asia, while exporting almonds, wine, software, and advanced semiconductor designs. The Production Possibilities Frontier and the principle of comparative advantage explain why doing everything yourself—even when you are good at it—makes everyone poorer.</p>
+</div>
+</div>
+</section>
+<section id="scarcity-productive-efficiency-and-the-ppf-model" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="scarcity-productive-efficiency-and-the-ppf-model"><span class="header-section-number">2.1</span> Scarcity, Productive Efficiency, and the PPF Model</h2>
+<section id="conceptual-introduction" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction">Conceptual Introduction</h3>
+<p>In Chapter 1, we saw how an individual student allocates a fixed weekly budget between two goods. Now we zoom out to an entire economy. Every society faces <strong>scarcity</strong>: its productive inputs—land and natural resources, labor hours, physical capital (machinery, factories, servers), and entrepreneurial ability—are finite at any moment in time. Because resources are limited, producing more of one good requires diverting inputs away from producing something else. Economists capture this fundamental trade-off with the <strong>Production Possibilities Frontier (PPF)</strong>, a curve showing the maximum combinations of two goods or services an economy can produce when all available resources are fully employed using current technology (holding resource supplies and technology fixed, <em>ceteris paribus</em>).</p>
+<p>The PPF divides all conceivable production bundles into three distinct zones. Any combination lying <strong>on the frontier</strong> represents <strong>productive efficiency</strong>: the economy is squeezing the maximum possible output from its existing inputs, so it is impossible to produce more of one good without giving up some of the other. Any combination lying <strong>inside the frontier</strong> is attainable but <strong>productively inefficient</strong>, meaning resources are sitting idle (such as unemployed workers during a recession) or are misallocated across industries. Finally, any combination lying <strong>outside the frontier</strong> is currently <strong>unattainable</strong> given existing factor supplies and technology.</p>
+<p>Crucially, reaching the frontier is only half of the economic problem. While <em>every</em> point on the PPF is productively efficient, society must still choose which specific point along the curve best satisfies human wants—a criterion known as <strong>allocative efficiency</strong>. Moving from one efficient point on the PPF to another requires paying an explicit <strong>opportunity cost</strong>: the quantity of Good <span class="math inline">\(Y\)</span> that must be forgone to obtain additional units of Good <span class="math inline">\(X\)</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Productive Efficiency vs.&nbsp;Allocative Efficiency
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Productive Efficiency</strong> means operating <em>on</em> the PPF—producing goods at the lowest possible resource cost without wasting inputs. Every point on the PPF is productively efficient.</li>
+<li><strong>Allocative Efficiency</strong> means choosing the single point on the PPF that society values most (where marginal benefit equals marginal cost, <span class="math inline">\(MB = MC\)</span>). An economy producing millions of unwanted cassette tapes at full capacity is productively efficient, yet allocatively inefficient.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="visual-representation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation">Visual Representation</h3>
+<p>Figure 1 illustrates a simplified <strong>linear</strong> Production Possibilities Frontier for an economy allocating fixed resources between Electric Vehicles (<span class="math inline">\(X\)</span>) and Grid Battery Packs (<span class="math inline">\(Y\)</span>), under the simplifying assumption that resources are equally adaptable between both industries (generating a constant opportunity cost).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_2_the_production_possibilities_frontier_gains_from_trade_figure_01.svg" class="img-fluid figure-img" alt="Linear Production Possibilities Frontier. Point A lies on the frontier and achieves productive efficiency; point U lies inside the frontier with underutilized capacity; point W lies outside the frontier and cannot be reached with current resources."></p>
+<figcaption>Figure 1. Linear Production Possibilities Frontier. Point <span class="math inline">\(A\)</span> lies on the frontier and achieves productive efficiency; point <span class="math inline">\(U\)</span> lies inside the frontier with underutilized capacity; point <span class="math inline">\(W\)</span> lies outside the frontier and cannot be reached with current resources.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Real-World Application: Land and Grid Allocation in California’s Central Valley
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>California’s Central Valley illustrates a concrete PPF trade-off between <strong>utility-scale solar power generation</strong> and <strong>irrigated specialty agriculture</strong> (such as almonds, tomatoes, and pistachios). Both activities compete for flat, sun-drenched acreage, senior water allocations, and high-voltage transmission interconnection capacity. During drought years or transmission bottlenecks, idling farmland without installing solar panels leaves the regional economy at an interior point like <span class="math inline">\(U\)</span>, forfeiting both farm output and clean electricity. Conversely, converting retired agricultural acreage into solar-plus-storage installations moves the region along its frontier toward higher clean-energy output, whereas simultaneously expanding irrigated acreage <em>and</em> solar capacity beyond available water and grid limits (point <span class="math inline">\(W\)</span>) is physically impossible without new desalination or transmission infrastructure.</p>
+</div>
+</div>
+</section>
+<section id="mathematical-foundation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation">Mathematical Foundation</h3>
+<p>When resources are equally suited to producing both goods, the PPF is a straight line with a constant slope. Suppose an economy’s resource constraint between Electric Vehicles (<span class="math inline">\(X\)</span>, in thousands) and Battery Packs (<span class="math inline">\(Y\)</span>, in thousands) is given by:</p>
+<p><span class="math display">\[
+2X + Y = 100 \quad \Longleftrightarrow \quad Y = 100 - 2X
+\]</span></p>
+<p>Here, the vertical intercept (<span class="math inline">\(X = 0 \implies Y = 100\)</span>) shows maximum battery production (<span class="math inline">\(100\)</span> thousand packs), and the horizontal intercept (<span class="math inline">\(Y = 0 \implies X = 50\)</span>) shows maximum vehicle production (<span class="math inline">\(50\)</span> thousand vehicles). The magnitude of the slope measures the constant <strong>opportunity cost</strong> of producing <span class="math inline">\(1\)</span> additional unit of <span class="math inline">\(X\)</span>:</p>
+<p><span class="math display">\[
+\text{Opportunity Cost of } 1X = \left|\frac{\Delta Y}{\Delta X}\right| = 2 \text{ battery packs per electric vehicle}
+\]</span></p>
+<p>(Equivalently, <span class="math inline">\(2\)</span> thousand battery packs per thousand electric vehicles.) Conversely, gaining <span class="math inline">\(1\)</span> battery pack requires sacrificing <span class="math inline">\(\frac{1}{2} = 0.5\)</span> electric vehicles.</p>
+</section>
+</section>
+<section id="the-law-of-increasing-opportunity-cost-and-economic-growth" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="the-law-of-increasing-opportunity-cost-and-economic-growth"><span class="header-section-number">2.2</span> The Law of Increasing Opportunity Cost and Economic Growth</h2>
+<section id="conceptual-introduction-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-1">Conceptual Introduction</h3>
+<p>While a straight-line PPF is useful for building intuition, real-world production frontiers bow outward—meaning they are <strong>concave to the origin</strong>. This curvature reflects the <strong>Law of Increasing Opportunity Cost</strong>: as an economy expands production of one good, the opportunity cost of producing each additional unit rises. Why does this happen? Productive resources are not identical; they exhibit <strong>imperfect factor adaptability</strong>. Certain parcels of land, specialized machines, and worker skill sets are naturally suited to one industry and poorly suited to another.</p>
+<p>When an economy begins shifting resources out of Good <span class="math inline">\(Y\)</span> (say, agricultural grain) and into Good <span class="math inline">\(X\)</span> (say, autonomous drones), rational managers first reassign the inputs best adapted to drone manufacturing—such as robotics engineers and precision electronics technicians—while leaving fertile farmland untouched. Initially, drone output rises substantially while grain output barely dips. However, as drone production expands further, the economy must pull in workers and land progressively less suited to aerospace assembly and far more productive in farming, causing the grain sacrificed per additional drone to escalate sharply.</p>
+<p>Over longer time horizons, the PPF is not static. <strong>Economic growth</strong> occurs when an economy expands its productive capacity, shifting the entire PPF outward so previously unattainable bundles become feasible. Four primary forces drive outward PPF shifts: (1) <strong>physical capital accumulation</strong> (building new factories, power grids, and computing clusters), (2) <strong>labor force growth</strong>, (3) <strong>human capital investment</strong> (education, vocational training, and public health), and (4) <strong>technological innovation</strong> that raises total factor productivity. Notably, an economy that devotes a larger share of current resources to capital goods rather than immediate consumption will experience faster outward PPF expansion in future years.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Economic Recovery vs.&nbsp;Long-Run Economic Growth
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Moving from Inside the PPF Toward the Frontier</strong> represents <em>short-run recovery</em>—putting unemployed workers and idle factories back to work. The economy’s productive capacity has not expanded; utilization has simply improved.</li>
+<li><strong>Shifting the Entire PPF Outward</strong> represents <em>long-run economic growth</em>—expanding the economy’s maximum productive potential through new capital, a larger or better-trained workforce, or improved technology.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="visual-representation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-1">Visual Representation</h3>
+<p>Figure 2 shows how equal <span class="math inline">\(2\)</span>-thousand-unit increases in drone production (<span class="math inline">\(X\)</span>) require progressively larger sacrifices of grain (<span class="math inline">\(Y\)</span>) along a bowed-out PPF. Figure 3 contrasts a broad outward expansion from economy-wide capital and technology growth with a sector-biased technological breakthrough in Good <span class="math inline">\(X\)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_2_the_production_possibilities_frontier_gains_from_trade_figure_02.svg" class="img-fluid figure-img" alt="Law of Increasing Opportunity Cost. Moving from B to C gains 2 thousand drones at a cost of 12 thousand tons of grain (6 tons per drone), whereas moving from D to E gains 2 thousand drones at a cost of 28 thousand tons of grain (14 tons per drone)."></p>
+<figcaption>Figure 2. Law of Increasing Opportunity Cost. Moving from <span class="math inline">\(B\)</span> to <span class="math inline">\(C\)</span> gains <span class="math inline">\(2\)</span> thousand drones at a cost of <span class="math inline">\(12\)</span> thousand tons of grain (<span class="math inline">\(6\)</span> tons per drone), whereas moving from <span class="math inline">\(D\)</span> to <span class="math inline">\(E\)</span> gains <span class="math inline">\(2\)</span> thousand drones at a cost of <span class="math inline">\(28\)</span> thousand tons of grain (<span class="math inline">\(14\)</span> tons per drone).</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_2_the_production_possibilities_frontier_gains_from_trade_figure_03.svg" class="img-fluid figure-img" alt="Dynamic Shifts of the Production Possibilities Frontier. Panel (a) shows an economy-wide expansion in resources or general-purpose technology shifting both intercepts outward; Panel (b) shows productivity gains specific to Good X rotating the horizontal intercept outward."></p>
+<figcaption>Figure 3. Dynamic Shifts of the Production Possibilities Frontier. Panel (a) shows an economy-wide expansion in resources or general-purpose technology shifting both intercepts outward; Panel (b) shows productivity gains specific to Good <span class="math inline">\(X\)</span> rotating the horizontal intercept outward.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Real-World Application: AI Data Center Buildout vs.&nbsp;Consumer Electronics and Grid Capacity
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Rapid expansion of artificial intelligence infrastructure illustrates both increasing opportunity cost in the short run and outward frontier shifts in the long run. Semiconductor cleanrooms, high-bandwidth memory fabs, and electrical transformers cannot be built overnight. Reallocating existing wafer capacity and electrical engineers from smartphones and automotive chips into AI server clusters initially taps flexible capacity, but pushing further forces manufacturers to cannibalize specialized industrial lines—sharply driving up the opportunity cost of each additional server rack. Over a multi-year horizon, however, constructing new fabrication plants, training electrical engineers, and deploying next-generation chip lithography expands the economy’s overall capacity, shifting <span class="math inline">\(\text{PPF}_0\)</span> outward to <span class="math inline">\(\text{PPF}_1\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="mathematical-foundation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-1">Mathematical Foundation</h3>
+<p>Table~<span class="math inline">\(\ref{tab:increasing_oc}\)</span> records the discrete production schedule plotted in Figure 2, generated by the concave frontier <span class="math inline">\(Y = 100 - X^2\)</span> for <span class="math inline">\(0 \le X \le 10\)</span> (where <span class="math inline">\(X\)</span> is measured in thousands of drones and <span class="math inline">\(Y\)</span> in thousand tons of grain). Over any discrete interval from <span class="math inline">\((X_1, Y_1)\)</span> to <span class="math inline">\((X_2, Y_2)\)</span>, the per-unit opportunity cost of Good <span class="math inline">\(X\)</span> is:</p>
+<p><span class="math display">\[
+\text{Per-Unit Opportunity Cost of } X = \left|\frac{\Delta Y}{\Delta X}\right| = \frac{|Y_2 - Y_1|}{X_2 - X_1}
+\]</span></p>
+<p>Because both the numerator (<span class="math inline">\(\Delta Y\)</span>, thousand tons) and denominator (<span class="math inline">\(\Delta X\)</span>, thousand drones) are measured in thousands, the factor of <span class="math inline">\(1{,}000\)</span> cancels, giving the opportunity cost directly in <strong>tons of grain per drone</strong>.</p>
+</section>
+</section>
+<section id="specialization-ricardian-comparative-advantage-and-gains-from-trade" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="specialization-ricardian-comparative-advantage-and-gains-from-trade"><span class="header-section-number">2.3</span> Specialization, Ricardian Comparative Advantage, and Gains from Trade</h2>
+<section id="conceptual-introduction-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-2">Conceptual Introduction</h3>
+<p>If every household or region tried to produce everything it consumed in isolation—a state economists call <strong>autarky</strong>—consumption would be strictly trapped on or inside its own domestic PPF. Yet in reality, individuals, regions, and nations specialize in a narrow range of activities and trade for everything else. Economist David Ricardo proved in 1817 that trade creates mutual gains not because one partner is better at everything, but because trading partners differ in their <strong>relative opportunity costs</strong>.</p>
+<p>To see why, we must separate two concepts that people frequently confuse. A producer has an <strong>absolute advantage</strong> in a good if it can produce more total output of that good using the same resources (or the same output using fewer inputs). By contrast, a producer has a <strong>comparative advantage</strong> in a good if it can produce that good at a <strong>lower domestic opportunity cost</strong> than its trading partner. Because opportunity cost is a ratio (<span class="math inline">\(\left|\Delta Y / \Delta X\right|\)</span>), it is mathematically impossible for one producer to have a comparative advantage in both goods unless their domestic opportunity costs are identical.</p>
+<p>When each region specializes in the good where it holds a comparative advantage and trades at a mutually agreed exchange price—the <strong>Terms of Trade (<span class="math inline">\(TOT\)</span>)</strong>—both partners can consume combinations of goods that lie strictly outside their domestic PPFs. In graphical terms, specialization and trade pivot a region’s <strong>Consumption Possibilities Frontier (<span class="math inline">\(CPF\)</span>)</strong> outward above its autarky PPF, generating net welfare gains for both sides. (The standard Ricardian model makes three simplifying assumptions: constant domestic opportunity costs along linear PPFs, full employment of resources in both regions, and zero transportation or tariff costs.)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Terms of Trade (<span class="math inline">\(TOT\)</span>) Rule &amp; Absolute Advantage Misconception
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Mutually beneficial trade occurs if and only if the Terms of Trade (<span class="math inline">\(TOT\)</span>, expressed as units of Good <span class="math inline">\(Y\)</span> exchanged per <span class="math inline">\(1\)</span> unit of Good <span class="math inline">\(X\)</span>) settle strictly between both regions’ domestic opportunity costs:</p>
+<p><span class="math display">\[
+\left|\frac{\Delta Y}{\Delta X}\right|_{\text{Exporter of } X} &lt; TOT &lt; \left|\frac{\Delta Y}{\Delta X}\right|_{\text{Importer of } X}
+\]</span></p>
+<p>Even if a high-productivity nation holds an <em>absolute advantage</em> in every single industry (producing more output per worker in both <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>), it still gains from trade by specializing in the sector where its productivity edge is largest—and therefore its domestic opportunity cost is lowest.</p>
+</div>
+</div>
+</section>
+<section id="visual-representation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-2">Visual Representation</h3>
+<p>Figure 4 illustrates Ricardian specialization and gains from trade between two regions—NorCal and SoCal—producing Microchips (<span class="math inline">\(X\)</span>) and Avocados (<span class="math inline">\(Y\)</span>). By specializing in its comparative-advantage good and trading at <span class="math inline">\(TOT = 3\)</span> million crates of avocados per million microchips, each region reaches a post-trade consumption bundle (<span class="math inline">\(T^*\)</span>) strictly beyond its domestic autarky frontier.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_2_the_production_possibilities_frontier_gains_from_trade_figure_04.svg" class="img-fluid figure-img" alt="Ricardian Specialization and the Consumption Possibilities Frontier (CPF). Trading at TOT = 3Y\text{ per }1X pivots both regions' Consumption Possibilities Frontiers strictly outside their domestic PPFs, allowing both T^*_N and T^*_S to exceed autarky consumption in both goods."></p>
+<figcaption>Figure 4. Ricardian Specialization and the Consumption Possibilities Frontier (<span class="math inline">\(CPF\)</span>). Trading at <span class="math inline">\(TOT = 3Y\text{ per }1X\)</span> pivots both regions’ Consumption Possibilities Frontiers strictly outside their domestic PPFs, allowing both <span class="math inline">\(T^*_N\)</span> and <span class="math inline">\(T^*_S\)</span> to exceed autarky consumption in both goods.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Real-World Application: Semiconductor Design vs.&nbsp;Advanced Packaging Supply Chains
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Modern semiconductor production splits cleanly along comparative advantage lines. Silicon Valley engineering clusters possess deep ecosystems of chip architects and electronic design automation (EDA) software, giving them a low opportunity cost in logic and AI processor design. Meanwhile, East Asian manufacturing hubs possess dense networks of precision cleanrooms, substrate suppliers, and assembly technicians, giving them a much lower opportunity cost in wafer fabrication and advanced chip packaging. Rather than each region attempting to build an isolated end-to-end supply chain in autarky, firms design chips in California, fabricate and package them abroad, and trade completed processors—expanding global computing power far beyond what either region could achieve alone.</p>
+</div>
+</div>
+</section>
+<section id="mathematical-foundation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-2">Mathematical Foundation</h3>
+<p>Consider two regions, <strong>NorCal</strong> and <strong>SoCal</strong>, each with fixed annual resources capable of producing Microchips (<span class="math inline">\(X\)</span>, in millions) and Avocados (<span class="math inline">\(Y\)</span>, in millions) along linear PPFs:</p>
+<ul>
+<li><strong>NorCal PPF:</strong> <span class="math inline">\(Y = 80 - 2X\)</span> (maximum <span class="math inline">\(40\text{M}\)</span> chips if <span class="math inline">\(Y = 0\)</span>, or <span class="math inline">\(80\text{M}\)</span> crates of avocados if <span class="math inline">\(X = 0\)</span>).</li>
+<li><strong>SoCal PPF:</strong> <span class="math inline">\(Y = 120 - 4X\)</span> (maximum <span class="math inline">\(30\text{M}\)</span> chips if <span class="math inline">\(Y = 0\)</span>, or <span class="math inline">\(120\text{M}\)</span> crates of avocados if <span class="math inline">\(X = 0\)</span>).</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Bring It Home: Why Specialization Beats Self-Sufficiency
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Returning to our opening question: California does not grow its own coffee or assemble every laptop because doing so would force the state to pull scarce land, water, and engineering talent out of sectors where its comparative advantage is highest. By specializing in high-value agriculture, software, and chip design and trading with partners that have lower relative opportunity costs in coffee cultivation and hardware assembly, California pushes its Consumption Possibilities Frontier outward—obtaining more total goods than autarky could ever deliver.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="check-your-understanding" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="check-your-understanding">Check Your Understanding</h2>
+<ul>
+<li><p><strong>Conceptual:</strong> Explain why an economy operating inside its PPF does not face an opportunity cost when expanding production of both goods simultaneously, whereas an economy operating on its PPF always faces an opportunity cost.</p></li>
+<li><p><strong>Linear PPF Analysis:</strong> An economy’s PPF between Cloud Servers (<span class="math inline">\(X\)</span>) and Medical Scanners (<span class="math inline">\(Y\)</span>) is given by <span class="math inline">\(Y = 60 - 3X\)</span>.</p></li>
+<li><p>What is the opportunity cost of producing <span class="math inline">\(1\)</span> Cloud Server? What is the opportunity cost of producing <span class="math inline">\(1\)</span> Medical Scanner?</p></li>
+<li><p>Determine whether bundles <span class="math inline">\((12, 24)\)</span>, <span class="math inline">\((10, 25)\)</span>, and <span class="math inline">\((15, 20)\)</span> are efficient, inefficient, or unattainable.</p></li>
+<li><p><strong>Comparative Advantage &amp; Trade:</strong> Country Alpha can produce either <span class="math inline">\(50\)</span> tons of Steel (<span class="math inline">\(X\)</span>) or <span class="math inline">\(100\)</span> tons of Wheat (<span class="math inline">\(Y\)</span>) along a linear PPF. Country Beta can produce either <span class="math inline">\(40\)</span> tons of Steel (<span class="math inline">\(X\)</span>) or <span class="math inline">\(40\)</span> tons of Wheat (<span class="math inline">\(Y\)</span>) along a linear PPF.</p></li>
+<li><p>Which country has the absolute advantage in Steel? Which has the comparative advantage in Steel?</p></li>
+<li><p>State the range of mutually beneficial Terms of Trade (<span class="math inline">\(TOT\)</span>) for <span class="math inline">\(1\)</span> ton of Steel in terms of Wheat.</p></li>
+<li><p>If both countries specialize completely and trade <span class="math inline">\(18\)</span> tons of Steel for <span class="math inline">\(27\)</span> tons of Wheat (<span class="math inline">\(TOT = 1.5\)</span>), calculate each country’s post-trade consumption bundle and compare it to autarky bundles <span class="math inline">\(A_{\text{Alpha}}(15, 70)\)</span> and <span class="math inline">\(A_{\text{Beta}}(20, 20)\)</span>.</p></li>
+</ul>
+<section id="worked-solutions" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="worked-solutions">Worked Solutions</h3>
+<ul>
+<li>Inside the PPF, idle or misallocated resources exist; putting unemployed inputs to work increases output of both goods without requiring sacrifices elsewhere. On the PPF, all resources are fully and efficiently employed, so expanding one sector requires withdrawing inputs from the other.</li>
+<li><strong>(a)</strong> <span class="math inline">\(\text{OC}_{1X} = 3\)</span> Medical Scanners; <span class="math inline">\(\text{OC}_{1Y} = \frac{1}{3}\)</span> Cloud Servers. <strong>(b)</strong> At <span class="math inline">\(X = 12\)</span>, <span class="math inline">\(Y_{\max} = 60 - 3(12) = 24 \implies (12, 24)\)</span> is <em>efficient</em>; at <span class="math inline">\(X = 10\)</span>, <span class="math inline">\(Y_{\max} = 30 &gt; 25 \implies (10, 25)\)</span> is <em>inefficient</em>; at <span class="math inline">\(X = 15\)</span>, <span class="math inline">\(Y_{\max} = 15 &lt; 20 \implies (15, 20)\)</span> is <em>unattainable</em>.</li>
+<li><strong>(a)</strong> Alpha has absolute advantage in both (<span class="math inline">\(50 &gt; 40\)</span> Steel; <span class="math inline">\(100 &gt; 40\)</span> Wheat). Opportunity cost of <span class="math inline">\(1\)</span> Steel: Alpha <span class="math inline">\(= \frac{100}{50} = 2\)</span> Wheat; Beta <span class="math inline">\(= \frac{40}{40} = 1\)</span> Wheat. Beta has comparative advantage in Steel (<span class="math inline">\(1 &lt; 2\)</span>), and Alpha has comparative advantage in Wheat (<span class="math inline">\(0.5 &lt; 1\)</span>). <strong>(b)</strong> <span class="math inline">\(1\text{ ton Wheat} &lt; TOT_{1\text{ Steel}} &lt; 2\text{ tons Wheat}\)</span>. <strong>(c)</strong> Beta specializes in Steel <span class="math inline">\((40, 0)\)</span>, exports <span class="math inline">\(18\)</span> Steel for <span class="math inline">\(27\)</span> Wheat, and consumes <span class="math inline">\((22, 27)\)</span>—gaining <span class="math inline">\(+2\)</span> tons of Steel and <span class="math inline">\(+7\)</span> tons of Wheat over autarky <span class="math inline">\((20, 20)\)</span>, and lying <span class="math inline">\(9\)</span> tons of Wheat outside Beta’s autarky PPF (<span class="math inline">\(Y_{\text{PPF}}(22) = 40 - 22 = 18 &lt; 27\)</span>). Alpha specializes in Wheat <span class="math inline">\((0, 100)\)</span>, exports <span class="math inline">\(27\)</span> Wheat for <span class="math inline">\(18\)</span> Steel, and consumes <span class="math inline">\((18, 73)\)</span>—gaining <span class="math inline">\(+3\)</span> tons of Steel and <span class="math inline">\(+3\)</span> tons of Wheat over autarky <span class="math inline">\((15, 70)\)</span>, and lying <span class="math inline">\(9\)</span> tons of Wheat outside Alpha’s autarky PPF (<span class="math inline">\(Y_{\text{PPF}}(18) = 100 - 2(18) = 64 &lt; 73\)</span>).</li>
+</ul>
+
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const toggle = window.document.createElement('button');
+      toggle.type = "button";
+      toggle.setAttribute("role", "switch");
+      toggle.setAttribute("aria-checked", "false");
+      toggle.classList.add('top-right');
+      toggle.classList.add('quarto-color-scheme-toggle');
+      toggle.setAttribute("aria-label", "Toggle dark mode");
+      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      toggle.appendChild(i);
+      // Put the toggle in a landmark of its own, so that landmark navigation
+      // can reach it.
+      //
+      // The container is always a fresh direct child of body, and the toggle is
+      // never moved into page furniture that the theme or the author controls.
+      // The toggle is positioned against the page, so any ancestor that
+      // establishes a containing block captures it: a positioned element or a
+      // grid for position: absolute, and transform, filter, will-change or
+      // contain for position: fixed. A direct child of body has none of these
+      // to inherit, and the shift when one appears is silent and visual.
+      //
+      // ARIA says a document should have at most one banner, and axe reports a
+      // duplicate whether or not the banners carry distinct labels. So use a
+      // header when the page has no banner yet, and a named region otherwise.
+      //
+      // A header is a banner wherever it sits, unless it is inside sectioning
+      // content, so this cannot just look at the children of body: a custom
+      // page layout wraps the title block header in a plain div. An explicit
+      // role="banner" always counts.
+      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
+      const hasBanner = Array.from(
+        window.document.querySelectorAll('header:not([role]), [role="banner"]')
+      ).some(function(el) {
+        return el.hasAttribute("role") || el.closest(sectioning) === null;
+      });
+      const container = window.document.createElement(hasBanner ? "div" : "header");
+      if (hasBanner) {
+        container.setAttribute("role", "region");
+        container.setAttribute("aria-label", "Toggle dark mode");
+      }
+      container.classList.add('quarto-color-scheme-toggle-container');
+      container.appendChild(toggle);
+      window.document.body.appendChild(container);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="./ch01_principles.html" class="pagination-link" aria-label="Chapter 1: Foundations of Microeconomic Analysis &amp; Core Principles">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Chapter 1: Foundations of Microeconomic Analysis &amp; Core Principles</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ch03_supply_demand.html" class="pagination-link" aria-label="Chapter 3: Supply, Demand, and Market Equilibrium">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Chapter 3: Supply, Demand, and Market Equilibrium</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

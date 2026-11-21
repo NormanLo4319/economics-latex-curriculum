@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>4&nbsp; Chapter 4: Aggregate Output – Principles of Macroeconomics</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./ch05_inflation_deflation.html" rel="next">
+<link href="./ch03_supply_demand.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-a71520af13e4c6b5a7ac03cb4efe7867.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-663504756e947d720a454151098d9f2d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-a71520af13e4c6b5a7ac03cb4efe7867.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455).
+    // Not run on load: stylesheets are set before first paint there, and
+    // scrolling would undo the scroll to a URL fragment (#14973).
+    // The one pixel nudge keeps the reader where they were.
+    const refreshSafariScrollbar = () => {
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        const scrollY = window.scrollY;
+        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
+        setTimeout(() => {
+          window.scrollTo(0, scrollY);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      refreshSafariScrollbar();
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch01_principles.html">Macroeconomic Foundations &amp; Measurement</a></li><li class="breadcrumb-item"><a href="./ch04_aggregate_output.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Chapter 4: Aggregate Output</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Principles of Macroeconomics</a> 
+        <div class="sidebar-tools-main">
+  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Macroeconomic Foundations &amp; Measurement</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch01_principles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Chapter 1: First Principles of Economics &amp; Macroeconomic Systems</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch02_macro_ppf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 2: The Macroeconomic Production Possibilities Frontier &amp; Capital Deepening</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch03_supply_demand.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Chapter 3: Supply, Demand, and Market Equilibrium</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch04_aggregate_output.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Chapter 4: Aggregate Output</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch05_inflation_deflation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Inflation and Deflation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch06_unemployment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ch06 Unemployment</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Long-Run Growth &amp; Financial Systems</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch07_savings_investment_financial_system.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chapter 7: Saving, Investment Spending, and the Financial System</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Short-Run Fluctuations &amp; Stabilization</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch08_aggregate_expenditure_multiplier.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Chapter 8: Income, Expenditure, and the Keynesian Cross</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch09_aggregate_demand_aggregate_supply.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Chapter 9: Aggregate Demand and Aggregate Supply (AD–AS)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch10_fiscal_policy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Chapter 10: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch11_money_banking_fed.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Ch11 Money Banking Fed</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch12_monetary_policy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Ch12 Monetary Policy</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-outcomes-and-key-terms" id="toc-learning-outcomes-and-key-terms" class="nav-link active" data-scroll-target="#learning-outcomes-and-key-terms">Learning Outcomes and Key Terms</a></li>
+  <li><a href="#the-macroeconomic-big-picture-cycles-growth-and-international-balances" id="toc-the-macroeconomic-big-picture-cycles-growth-and-international-balances" class="nav-link" data-scroll-target="#the-macroeconomic-big-picture-cycles-growth-and-international-balances"><span class="header-section-number">4.1</span> The Macroeconomic Big Picture: Cycles, Growth, and International Balances</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction" id="toc-conceptual-introduction" class="nav-link" data-scroll-target="#conceptual-introduction">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation" id="toc-visual-representation" class="nav-link" data-scroll-target="#visual-representation">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation" id="toc-mathematical-foundation" class="nav-link" data-scroll-target="#mathematical-foundation">Mathematical Foundation</a></li>
+  </ul></li>
+  <li><a href="#what-gdp-counts-boundaries-and-value-added" id="toc-what-gdp-counts-boundaries-and-value-added" class="nav-link" data-scroll-target="#what-gdp-counts-boundaries-and-value-added"><span class="header-section-number">4.2</span> What GDP Counts: Boundaries and Value Added</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-1" id="toc-conceptual-introduction-1" class="nav-link" data-scroll-target="#conceptual-introduction-1">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-1" id="toc-visual-representation-1" class="nav-link" data-scroll-target="#visual-representation-1">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-1" id="toc-mathematical-foundation-1" class="nav-link" data-scroll-target="#mathematical-foundation-1">Mathematical Foundation</a></li>
+  </ul></li>
+  <li><a href="#three-equivalent-accounting-views-of-the-national-accounts" id="toc-three-equivalent-accounting-views-of-the-national-accounts" class="nav-link" data-scroll-target="#three-equivalent-accounting-views-of-the-national-accounts"><span class="header-section-number">4.3</span> Three Equivalent Accounting Views of the National Accounts</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-2" id="toc-conceptual-introduction-2" class="nav-link" data-scroll-target="#conceptual-introduction-2">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-2" id="toc-visual-representation-2" class="nav-link" data-scroll-target="#visual-representation-2">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-2" id="toc-mathematical-foundation-2" class="nav-link" data-scroll-target="#mathematical-foundation-2">Mathematical Foundation</a></li>
+  </ul></li>
+  <li><a href="#nominal-gdp-vs.-real-gdp" id="toc-nominal-gdp-vs.-real-gdp" class="nav-link" data-scroll-target="#nominal-gdp-vs.-real-gdp"><span class="header-section-number">4.4</span> Nominal GDP vs.&nbsp;Real GDP</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-3" id="toc-conceptual-introduction-3" class="nav-link" data-scroll-target="#conceptual-introduction-3">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-3" id="toc-visual-representation-3" class="nav-link" data-scroll-target="#visual-representation-3">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-3" id="toc-mathematical-foundation-3" class="nav-link" data-scroll-target="#mathematical-foundation-3">Mathematical Foundation</a></li>
+  </ul></li>
+  <li><a href="#check-your-understanding" id="toc-check-your-understanding" class="nav-link" data-scroll-target="#check-your-understanding">Check Your Understanding</a>
+  <ul class="collapse">
+  <li><a href="#worked-solutions" id="toc-worked-solutions" class="nav-link" data-scroll-target="#worked-solutions">Worked Solutions</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch01_principles.html">Macroeconomic Foundations &amp; Measurement</a></li><li class="breadcrumb-item"><a href="./ch04_aggregate_output.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Chapter 4: Aggregate Output</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Chapter 4: Aggregate Output</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p>This chapter combines the macroeconomic big picture with national income and product accounting. We examine short-run business cycle fluctuations, long-run economic growth, and open-economy international trade balances alongside the Expenditure (<span class="math inline">\(Y = C + I + G + NX\)</span>), Production (Value-Added), and Income (Gross Domestic Income, GDI) measures of Gross Domestic Product (GDP). Finally, we distinguish Nominal GDP from Real GDP to separate true physical output expansion from price-level inflation.</p>
+</blockquote>
+<section id="learning-outcomes-and-key-terms" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="learning-outcomes-and-key-terms">Learning Outcomes and Key Terms</h2>
+<p>Upon completing this chapter, students should be able to (supporting Course Learning Objectives <strong>MA-1</strong>, <strong>MA-2</strong>, and <strong>C2002-1</strong>):</p>
+<ul>
+<li><strong>Distinguish</strong> short-run business cycle fluctuations (peaks, recessions, troughs, and expansions) from long-run secular economic growth in Potential Real GDP (<span class="math inline">\(Y^*\)</span>), and interpret open-economy trade balances (<span class="math inline">\(NX = X - M\)</span>).</li>
+<li><strong>Apply</strong> the four boundary rules of Gross Domestic Product (market value, final goods and services only, domestic production, and current production) to avoid double counting and exclude non-production transfers.</li>
+<li><strong>Compute</strong> national output across the three equivalent NIPA accounting approaches: Expenditure (<span class="math inline">\(Y = C + I + G + NX\)</span>), Production (Value Added), and Income (GDI).</li>
+<li><strong>Calculate</strong> Nominal GDP, Base-Year Real GDP, and real output growth rates to isolate physical production changes from price movements (referencing FRED series and ).</li>
+</ul>
+<p><strong>Key Terms:</strong> aggregate output, business cycle, expansion, recession, peak, trough, Potential Real GDP (<span class="math inline">\(Y^*\)</span>), long-run economic growth, net exports (<span class="math inline">\(NX\)</span>), trade surplus, trade deficit, Gross Domestic Product (GDP), final good, intermediate good, value added, consumption (<span class="math inline">\(C\)</span>), gross private domestic investment (<span class="math inline">\(I\)</span>), government purchases (<span class="math inline">\(G\)</span>), Gross Domestic Income (GDI), statistical discrepancy, Nominal GDP, Real GDP.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Bring It Home: Why Do ``Dollar GDP’’ Headlines Sometimes Mislead Voters?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose news headlines report that a nation’s total dollar spending on goods and services rose by <span class="math inline">\(8\%\)</span> over the past year. At first glance, that sounds like an economic boom—more factories running, more jobs created, and higher living standards. Yet when families visit the grocery store or pay rent, they feel squeezed rather than richer. Did the economy actually produce <span class="math inline">\(8\%\)</span> more food, housing, and laptops, or did prices rise while physical output barely budged? And even when physical output does expand, why does buying a used home or a share of tech stock fail to add a single dollar to GDP? Building the National Income and Product Accounts (NIPA) gives us the exact accounting rules needed to separate genuine production from price inflation and financial paper shuffling.</p>
+</div>
+</div>
+</section>
+<section id="the-macroeconomic-big-picture-cycles-growth-and-international-balances" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="the-macroeconomic-big-picture-cycles-growth-and-international-balances"><span class="header-section-number">4.1</span> The Macroeconomic Big Picture: Cycles, Growth, and International Balances</h2>
+<section id="conceptual-introduction" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction">Conceptual Introduction</h3>
+<p>Macroeconomics studies the economy as a unified whole by tracking <strong>aggregate output</strong>—the total quantity of goods and services produced across an entire nation. Over short horizons of months or a few years, aggregate output rarely moves in a straight line. Instead, economies experience <strong>business cycles</strong>: alternating short-run periods of <strong>expansion</strong> (when total output, employment, and household incomes rise broadly) and <strong>recession</strong> (a significant, widespread decline in economic activity lasting more than a few months, measured from a business cycle <strong>peak</strong> down to a <strong>trough</strong>).</p>
+<p>Across decades, however, those short-run ups and downs occur around a rising long-run trajectory called <strong>long-run economic growth</strong>—the sustained upward trend in <strong>Potential Real GDP (<span class="math inline">\(Y^*\)</span>)</strong> and output per capita. While short-run recessions reflect idle factories and unemployed workers operating below capacity (<span class="math inline">\(Y &lt; Y^*\)</span>), long-run growth expands the economy’s underlying productive ceiling through physical capital deepening (<span class="math inline">\(K/L\)</span>), human capital (education and workforce skills), and technological innovation.</p>
+<p>Because modern economies trade goods, services, and financial assets across borders, domestic output also interacts with the rest of the world through <strong>exports (<span class="math inline">\(X\)</span>)</strong> (goods produced domestically and sold abroad) and <strong>imports (<span class="math inline">\(M\)</span>)</strong> (goods produced abroad and purchased domestically). The difference between exports and imports defines <strong>net exports (<span class="math inline">\(NX = X - M\)</span>)</strong>, or the trade balance. When exports exceed imports (<span class="math inline">\(NX &gt; 0\)</span>), a country runs a <strong>trade surplus</strong>, meaning domestic production exceeds domestic spending and the nation acts as a net lender to the rest of the world. Conversely, when imports exceed exports (<span class="math inline">\(NX &lt; 0\)</span>), a country runs a <strong>trade deficit</strong>, meaning domestic residents spend more than they produce domestically and finance the gap through net capital inflows from foreign savers.</p>
+</section>
+<section id="visual-representation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation">Visual Representation</h3>
+<p>Figure 1 illustrates how short-run business cycle fluctuations oscillate around an upward-sloping long-run Potential Real GDP (<span class="math inline">\(Y^*\)</span>) growth trend.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_4_aggregate_output_figure_01.svg" class="img-fluid figure-img" alt="Short-Run Business Cycles vs. Long-Run Economic Growth. Actual Real GDP (Y, solid blue curve) fluctuates through expansions and recessions around the upward-sloping long-run Potential Real GDP trend (Y^*, dashed teal line)."></p>
+<figcaption>Figure 1. Short-Run Business Cycles vs.&nbsp;Long-Run Economic Growth. Actual Real GDP (<span class="math inline">\(Y\)</span>, solid blue curve) fluctuates through expansions and recessions around the upward-sloping long-run Potential Real GDP trend (<span class="math inline">\(Y^*\)</span>, dashed teal line).</figcaption>
+</figure>
+</div>
+</section>
+<section id="mathematical-foundation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation">Mathematical Foundation</h3>
+<p>To evaluate cyclical performance and external trade balances algebraically, macroeconomists track the <strong>output gap</strong> (percentage deviation of actual Real GDP <span class="math inline">\(Y\)</span> from Potential Real GDP <span class="math inline">\(Y^*\)</span>) and <strong>net exports (<span class="math inline">\(NX\)</span>)</strong>:</p>
+<p><span class="math display">\[
+\text{Percentage Output Gap} = \frac{Y - Y^*}{Y^*} \times 100\%, \qquad NX = X - M
+\]</span></p>
+<p>When <span class="math inline">\(Y &lt; Y^*\)</span>, the output gap is negative (a <strong>recessionary gap</strong>); when <span class="math inline">\(Y &gt; Y^*\)</span>, the output gap is positive (an <strong>inflationary/overheating gap</strong>).</p>
+<p>Suppose an economy has Potential Real GDP of <span class="math inline">\(Y^* = \$25{,}000\text{ billion}\)</span>, while a mild downturn holds actual Real GDP to <span class="math inline">\(Y = \$24{,}250\text{ billion}\)</span>. In the same year, domestic firms export <span class="math inline">\(X = \$3{,}100\text{ billion}\)</span> of goods and services, while domestic households, firms, and governments purchase <span class="math inline">\(M = \$3{,}850\text{ billion}\)</span> of imports.</p>
+<ul>
+<li><strong>Compute the Dollar and Percentage Output Gap:</strong> <span class="math display">\[\text{Dollar Output Gap} = Y - Y^* = \$24{,}250\text{B} - \$25{,}000\text{B} = -\$750\text{ billion}\]</span> <span class="math display">\[\text{Percentage Output Gap} = \frac{-750}{25{,}000} \times 100\% = -0.03 \times 100\% = -3.0\%\]</span> Because actual output falls <span class="math inline">\(3.0\%\)</span> below potential capacity, the economy faces a recessionary gap.</li>
+<li><strong>Compute Net Exports (<span class="math inline">\(NX\)</span>) and Classify the Trade Balance:</strong> <span class="math display">\[NX = X - M = \$3{,}100\text{B} - \$3{,}850\text{B} = -\$750\text{ billion}\]</span> Because <span class="math inline">\(NX = -\$750\text{B} &lt; 0\)</span>, the country runs a <strong>trade deficit</strong> of <span class="math inline">\(\$750\text{ billion}\)</span> (financed by <span class="math inline">\(\$750\text{ billion}\)</span> in net capital inflows from abroad).</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Real-World Application: U.S. Business Cycles, Pandemic Recovery, and Persistent Trade Deficits
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In the United States, the non-partisan <strong>National Bureau of Economic Research (NBER)</strong> Business Cycle Dating Committee formally identifies business cycle peaks and troughs using broad monthly indicators of output, employment, real personal income, and industrial production—rather than relying solely on a two-quarter rule of thumb. For example, NBER dated a peak in February 2020 and a sharp, two-month pandemic trough in April 2020, followed by a sustained expansion that restored output above trend. Over the same decades, the United States has consistently recorded negative net exports (<span class="math inline">\(NX &lt; 0\)</span>), importing more consumer electronics, vehicles, and apparel than it exports in aircraft, software services, and agricultural goods—a trade deficit balanced by strong global capital inflows into U.S.&nbsp;Treasury securities and corporate assets.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="what-gdp-counts-boundaries-and-value-added" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="what-gdp-counts-boundaries-and-value-added"><span class="header-section-number">4.2</span> What GDP Counts: Boundaries and Value Added</h2>
+<section id="conceptual-introduction-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-1">Conceptual Introduction</h3>
+<p>To measure aggregate output reliably without counting the same production twice, macroeconomists define <strong>Gross Domestic Product (GDP)</strong> strictly as <em>the total market value of all final goods and services produced within a country’s geographic borders during a specific time period</em>. Every single phrase in that definition functions as an explicit accounting boundary rule:</p>
+<ul>
+<li><strong>Market Value:</strong> Physical quantities of apples, MRI scans, and commercial aircraft cannot be added directly in physical units. GDP converts diverse outputs into a common dollar metric by multiplying each good’s quantity by its market price (and includes imputed rental values for owner-occupied housing so homeownership and renting are treated consistently).</li>
+<li><strong>Final Goods and Services Only:</strong> A <strong>final good</strong> is sold to its end user (such as a laptop bought by a student), whereas an <strong>intermediate good</strong> is used up entirely in producing another good during the same period (such as a processor chip or sheet aluminum sold to a laptop manufacturer). Counting both the chip’s sale and the laptop’s retail price would double-count the chip. National accountants avoid double counting either by counting only final sales or by summing each firm’s <strong>value added</strong>—the market value of a firm’s output minus the cost of intermediate inputs purchased from other firms.</li>
+<li><strong>Within Domestic Borders:</strong> GDP is strictly geographic. A Toyota vehicle assembled in Georgetown, Kentucky counts toward U.S.&nbsp;GDP regardless of Japanese corporate ownership, whereas a Ford vehicle assembled in Hermosillo, Mexico counts toward Mexican GDP.</li>
+<li><strong>Current Production Only:</strong> GDP measures <em>new</em> production created during the current quarter or year. It excludes sales of used cars and existing homes (already counted when originally built), pure financial transactions such as buying stocks or bonds, and government transfer payments such as Social Security checks (which redistribute existing income rather than purchasing newly produced output).</li>
+</ul>
+</section>
+<section id="visual-representation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-1">Visual Representation</h3>
+<p>Figure 2 illustrates a three-stage laptop supply chain—from silicon wafer fabrication to CPU processor manufacturing to final retail assembly—demonstrating why summing value added across stages equals the final market price without double counting.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_4_aggregate_output_figure_02.svg" class="img-fluid figure-img" alt="Value-Added Accounting Eliminates Double Counting. Summing gross sales across all three firms ($100 + $350 + $1{,}000 = $1{,}450) would count intermediate components twice; summing each stage's value added matches the $1{,}000 final retail price."></p>
+<figcaption>Figure 2. Value-Added Accounting Eliminates Double Counting. Summing gross sales across all three firms (<span class="math inline">\(\$100 + \$350 + \$1{,}000 = \$1{,}450\)</span>) would count intermediate components twice; summing each stage’s value added matches the <span class="math inline">\(\$1{,}000\)</span> final retail price.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Four Classic GDP Boundary Pitfalls
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Financial Investment vs.&nbsp;Economic Investment (<span class="math inline">\(I\)</span>):</strong> Buying <span class="math inline">\(\$10{,}000\)</span> of existing shares on the stock market transfers ownership of an existing financial claim; it does <em>not</em> create new goods and is excluded from GDP. Only newly built factories, machinery, software, new homes, and inventory additions count as <span class="math inline">\(I\)</span>.</li>
+<li><strong>Used Home Sales vs.&nbsp;Realtor Commissions:</strong> If a family buys a 20-year-old house for <span class="math inline">\(\$600{,}000\)</span> and pays a real estate agent a <span class="math inline">\(\$30{,}000\)</span> commission, the <span class="math inline">\(\$600{,}000\)</span> house value is excluded (counted 20 years ago), while the <span class="math inline">\(\$30{,}000\)</span> brokerage service is <em>included</em> because it represents current service production.</li>
+<li><strong>Domestic (GDP) vs.&nbsp;National (GNP):</strong> GDP counts output produced <em>inside U.S.&nbsp;borders</em> (even by foreign-owned firms), whereas Gross National Product (GNP) counts output produced by <em>U.S.-owned factors</em> anywhere in the world.</li>
+<li><strong>What GDP Leaves Out:</strong> GDP is a measure of market production, not total human well-being. It excludes unpaid household childcare, leisure time, underground cash transactions, and environmental degradation.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="mathematical-foundation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-1">Mathematical Foundation</h3>
+<p>For any economy composed of <span class="math inline">\(n\)</span> production stages or firms, firm <span class="math inline">\(i\)</span>’s value added (<span class="math inline">\(VA_i\)</span>) equals its gross sales revenue (<span class="math inline">\(R_i\)</span>) minus the cost of intermediate inputs (<span class="math inline">\(IC_i\)</span>) purchased from other firms:</p>
+<p><span class="math display">\[
+VA_i = R_i - IC_i, \qquad \text{GDP} = \sum_{i=1}^{n} VA_i = \text{Market Value of All Final Goods and Services}
+\]</span></p>
+<p>Trace a three-stage domestic supply chain (matching Figure 2):</p>
+<ul>
+<li><strong>Stage 1 (Silicon Wafer Supplier):</strong> Extracts raw quartz and produces a polished wafer with <span class="math inline">\(\$0\)</span> purchased intermediate inputs, selling it to a chipmaker for <span class="math inline">\(\$100\)</span>. <span class="math display">\[VA_1 = \$100 - \$0 = \$100\]</span></li>
+<li><strong>Stage 2 (CPU Processor Maker):</strong> Buys the <span class="math inline">\(\$100\)</span> wafer and fabricates a processor chip, selling it to a laptop assembler for <span class="math inline">\(\$350\)</span>. <span class="math display">\[VA_2 = \$350 - \$100 = \$250\]</span></li>
+<li><strong>Stage 3 (Laptop Assembler):</strong> Buys the <span class="math inline">\(\$350\)</span> CPU (assuming no other purchased components for simplicity) and sells the finished laptop to a college student for <span class="math inline">\(\$1{,}000\)</span>. <span class="math display">\[VA_3 = \$1{,}000 - \$350 = \$650\]</span></li>
+<li><strong>Verify Equivalence:</strong> <span class="math display">\[\text{Total Value Added} = VA_1 + VA_2 + VA_3 = \$100 + \$250 + \$650 = \$1{,}000 = \text{Final Laptop Price}\]</span> Summing gross receipts (<span class="math inline">\(\$100 + \$350 + \$1{,}000 = \$1{,}450\)</span>) would overstate GDP by <span class="math inline">\(\$450\)</span> because the wafer (<span class="math inline">\(\$100\)</span>) was counted three times and the CPU fabrication (<span class="math inline">\(\$250\)</span>) was counted twice.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Real-World Application: Global Semiconductor Supply Chains and Border Accounting
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Consider a modern smartphone or AI server assembled in the United States using advanced logic chips fabricated in Taiwan, memory modules produced in South Korea, and assembly/software engineering performed domestically. Under BEA national accounting rules, only the <em>value added</em> created within U.S.&nbsp;borders enters U.S.&nbsp;GDP. When the U.S.&nbsp;assembler imports <span class="math inline">\(\$400\)</span> of foreign chips and sells a finished server domestically for <span class="math inline">\(\$1{,}200\)</span>, the <span class="math inline">\(\$1{,}200\)</span> sale appears in final domestic spending (<span class="math inline">\(C\)</span> or <span class="math inline">\(I\)</span>), while the <span class="math inline">\(\$400\)</span> imported component is subtracted in net exports (<span class="math inline">\(-M\)</span>), leaving exactly <span class="math inline">\(\$800\)</span> of domestic U.S.&nbsp;value added recorded in U.S.&nbsp;GDP.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="three-equivalent-accounting-views-of-the-national-accounts" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="three-equivalent-accounting-views-of-the-national-accounts"><span class="header-section-number">4.3</span> Three Equivalent Accounting Views of the National Accounts</h2>
+<section id="conceptual-introduction-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-2">Conceptual Introduction</h3>
+<p>Every dollar spent by a buyer on a final good or service becomes a dollar of revenue for the producing firm, which in turn flows out as wages, rent, interest, or profit to the households and resource owners who supplied the inputs. Because every market transaction has both a buyer and a seller, the Bureau of Economic Analysis (BEA) measures aggregate output through <strong>three mathematically equivalent approaches</strong>: the <strong>Expenditure Approach</strong>, the <strong>Production (Value-Added) Approach</strong>, and the <strong>Income Approach (Gross Domestic Income, GDI)</strong>.</p>
+<p>The <strong>Expenditure Approach</strong> adds up total spending on final domestic output across four macroeconomic sectors:</p>
+<ul>
+<li><strong>Personal Consumption Expenditures (<span class="math inline">\(C\)</span>):</strong> Household spending on durable goods (cars, appliances), nondurable goods (groceries, gasoline), and services (healthcare, haircuts, housing rent).</li>
+<li><strong>Gross Private Domestic Investment (<span class="math inline">\(I\)</span>):</strong> Business spending on new machinery, factories, and software (nonresidential fixed investment), newly constructed homes (residential fixed investment), and changes in business inventories (<span class="math inline">\(\Delta \text{Inventories}\)</span>).</li>
+<li><strong>Government Consumption Expenditures and Gross Investment (<span class="math inline">\(G\)</span>):</strong> Federal, state, and local government spending on final goods and services (public school teachers’ salaries, highway construction, defense equipment), strictly <em>excluding</em> transfer payments such as Social Security or unemployment insurance.</li>
+<li><strong>Net Exports (<span class="math inline">\(NX = X - M\)</span>):</strong> Foreign spending on domestic exports (<span class="math inline">\(X\)</span>) minus domestic spending on foreign imports (<span class="math inline">\(M\)</span>). Imports are subtracted because <span class="math inline">\(C\)</span>, <span class="math inline">\(I\)</span>, and <span class="math inline">\(G\)</span> record total domestic purchases regardless of where goods were made; subtracting <span class="math inline">\(M\)</span> removes foreign-produced output so <span class="math inline">\(Y\)</span> reflects domestic production only.</li>
+</ul>
+<p>The <strong>Income Approach (Gross Domestic Income, GDI)</strong> sums all factor and non-factor incomes generated in producing domestic output: compensation of employees (wages, salaries, and benefits), proprietors’ income, rental income of persons, corporate profits, net interest, taxes on production and imports less subsidies, and consumption of fixed capital (depreciation). In theory, <span class="math inline">\(\text{GDP} \equiv \text{GDI}\)</span> identically. In practice, because the BEA collects expenditure surveys and tax/payroll records from separate administrative sources with different reporting lags, measured GDP and measured GDI differ slightly; national accountants record this minor gap as the <strong>statistical discrepancy</strong>.</p>
+</section>
+<section id="visual-representation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-2">Visual Representation</h3>
+<p>Figure 3 maps the three-way NIPA accounting identity showing how Expenditure (<span class="math inline">\(C + I + G + NX\)</span>), Production (Value Added), and Factor Income (GDI) measure the exact same circular flow of aggregate output.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_4_aggregate_output_figure_03.svg" class="img-fluid figure-img" alt="Three-Way NIPA Equivalence. Expenditure (C + I + G + NX), Production (Value Added), and Factor Income (GDI) measure the exact same flow of current domestic production from three vantage points."></p>
+<figcaption>Figure 3. Three-Way NIPA Equivalence. Expenditure (<span class="math inline">\(C + I + G + NX\)</span>), Production (Value Added), and Factor Income (GDI) measure the exact same flow of current domestic production from three vantage points.</figcaption>
+</figure>
+</div>
+</section>
+<section id="mathematical-foundation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-2">Mathematical Foundation</h3>
+<p>The fundamental national income accounting identity expresses aggregate output <span class="math inline">\(Y\)</span> from both the expenditure and income sides:</p>
+<p><span class="math display">\[
+Y = C + I + G + (X - M)
+\]</span></p>
+<p><span class="math display">\[
+\text{GDI} = \text{Compensation} + \text{Proprietors' Income} + \text{Rental Income} + \text{Corporate Profits} + \text{Net Interest} + (T_{\text{prod}} - \text{Sub}) + \delta K
+\]</span></p>
+<p>where <span class="math inline">\((T_{\text{prod}} - \text{Sub})\)</span> denotes taxes on production and imports less subsidies, and <span class="math inline">\(\delta K\)</span> denotes consumption of fixed capital (depreciation), with <span class="math inline">\(\text{GDP} = \text{GDI} + \text{Statistical Discrepancy}\)</span>.</p>
+<p>Table~<span class="math inline">\(\ref{tab:nipa_worked}\)</span> reports annual national account figures (in billions of dollars) for a hypothetical open economy. Note that the table includes two deliberate boundary distractors: Social Security transfer payments (<span class="math inline">\(\$1{,}400\text{B}\)</span>) and existing home resales (<span class="math inline">\(\$950\text{B}\)</span>).</p>
+<ul>
+<li><strong>Compute Net Exports (<span class="math inline">\(NX\)</span>):</strong> <span class="math display">\[NX = X - M = \$2{,}900\text{B} - \$3{,}600\text{B} = -\$700\text{ billion}\]</span></li>
+<li><strong>Compute GDP via the Expenditure Approach:</strong> Exclude Social Security transfers (<span class="math inline">\(\$1{,}400\text{B}\)</span>) and used home resales (<span class="math inline">\(\$950\text{B}\)</span>) because neither represents current production of final goods or services: <span class="math display">\[\text{GDP} = C + I + G + NX = 16{,}500 + 4{,}400 + 4{,}600 + (-700) = \$24{,}800\text{ billion}\]</span></li>
+<li><strong>Verify via the Income Approach (GDI):</strong> Sum all factor incomes, indirect business taxes net of subsidies, and depreciation: <span class="math display">\[\text{GDI} = 14{,}200 + 1{,}850 + 950 + 3{,}100 + 650 + 1{,}650 + 2{,}400 = \$24{,}800\text{ billion}\]</span> Here, <span class="math inline">\(\text{GDP} = \text{GDI} = \$24{,}800\text{ billion}\)</span> (zero statistical discrepancy).</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Real-World Application: Why Economists Track Both GDP and GDI Around Turning Points
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Although GDP and GDI must equal one another conceptually, their empirical quarterly releases from the BEA occasionally diverge by <span class="math inline">\(0.5\%\)</span> to <span class="math inline">\(1.5\%\)</span> because expenditure data come from retail, construction, and trade surveys while GDI comes from employer payroll tax filings and corporate profit reports. When the two series diverge near a potential recession, economists often average them together (published by the BEA as the ``Average of GDP and GDI’’) to filter out measurement noise and get a clearer real-time signal of whether hiring and output are slowing down.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="nominal-gdp-vs.-real-gdp" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="nominal-gdp-vs.-real-gdp"><span class="header-section-number">4.4</span> Nominal GDP vs.&nbsp;Real GDP</h2>
+<section id="conceptual-introduction-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-3">Conceptual Introduction</h3>
+<p>Suppose an economy produces only coffee and laptops, and total dollar spending rises from <span class="math inline">\(\$10{,}000\)</span> in Year 1 to <span class="math inline">\(\$14{,}000\)</span> in Year 2. Does that <span class="math inline">\(40\%\)</span> increase mean citizens actually enjoyed <span class="math inline">\(40\%\)</span> more goods and services? Not necessarily. Because GDP measures <em>market value</em> (<span class="math inline">\(\text{Price} \times \text{Quantity}\)</span>), total dollar spending can increase for two completely different reasons: (1) the economy produced <em>more physical quantities</em> of goods and services, or (2) firms charged <em>higher market prices</em> for the exact same quantities.</p>
+<p>To disentangle physical output growth from price inflation, macroeconomists separate <strong>Nominal GDP</strong> from <strong>Real GDP</strong>:</p>
+<ul>
+<li><strong>Nominal GDP</strong> measures the value of current-period production evaluated at <em>current-period market prices</em>. Changes in Nominal GDP reflect both changes in physical quantities and changes in prices.</li>
+<li><strong>Real GDP</strong> measures the value of current-period production evaluated at <em>constant base-year prices</em> (or using a chain-type quantity index). By holding prices fixed at base-year levels, Real GDP eliminates price-level distortions so that any change in Real GDP reflects pure changes in physical output.</li>
+</ul>
+<p><em>(Note: How economists use the ratio of Nominal GDP to Real GDP to construct economy-wide price indexes—specifically the GDP Implicit Price Deflator, alongside the Consumer Price Index and Producer Price Index—is developed systematically in Chapter 5.)</em></p>
+</section>
+<section id="visual-representation-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-3">Visual Representation</h3>
+<p>Figure 4 contrasts Nominal GDP against Base-Year Real GDP across two years for a simplified two-good economy (matching Work It Out 4.4), illustrating how rising prices inflate Nominal GDP growth (<span class="math inline">\(+40.0\%\)</span>) far above true physical output growth (<span class="math inline">\(+12.0\%\)</span>).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_4_aggregate_output_figure_04.svg" class="img-fluid figure-img" alt="Separating Quantity Growth from Price Inflation. In the base year (Year 1), Nominal GDP equals Real GDP ($10{,}000). In Year 2, Nominal GDP jumps 40.0% to $14{,}000, but holding prices constant reveals that physical Real GDP grew by 12.0% to $11{,}200."></p>
+<figcaption>Figure 4. Separating Quantity Growth from Price Inflation. In the base year (Year 1), Nominal GDP equals Real GDP (<span class="math inline">\(\$10{,}000\)</span>). In Year 2, Nominal GDP jumps <span class="math inline">\(40.0\%\)</span> to <span class="math inline">\(\$14{,}000\)</span>, but holding prices constant reveals that physical Real GDP grew by <span class="math inline">\(12.0\%\)</span> to <span class="math inline">\(\$11{,}200\)</span>.</figcaption>
+</figure>
+</div>
+</section>
+<section id="mathematical-foundation-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-3">Mathematical Foundation</h3>
+<p>For an economy producing <span class="math inline">\(k\)</span> final goods indexed by <span class="math inline">\(j = 1, \dots, k\)</span>, let <span class="math inline">\(P_{j,t}\)</span> and <span class="math inline">\(Q_{j,t}\)</span> denote the price and quantity of good <span class="math inline">\(j\)</span> in year <span class="math inline">\(t\)</span>, and let <span class="math inline">\(P_{j,0}\)</span> denote the price of good <span class="math inline">\(j\)</span> in the chosen base year (<span class="math inline">\(t = 0\)</span>):</p>
+<p><span class="math display">\[
+\text{Nominal GDP}_t = \sum_{j=1}^{k} P_{j,t} \cdot Q_{j,t}, \qquad \text{Real GDP}_t = \sum_{j=1}^{k} P_{j,0} \cdot Q_{j,t}
+\]</span></p>
+<p>The annual percentage growth rate of Real GDP between year <span class="math inline">\(t-1\)</span> and year <span class="math inline">\(t\)</span> is:</p>
+<p><span class="math display">\[
+g_{Y,t} = \frac{\text{Real GDP}_t - \text{Real GDP}_{t-1}}{\text{Real GDP}_{t-1}} \times 100\%
+\]</span></p>
+<p>Consider a two-good economy producing <strong>Laptops</strong> and <strong>Coffee</strong> across two years, with <strong>Year 1 selected as the Base Year</strong> (Table~<span class="math inline">\(\ref{tab:nom_real_worked}\)</span>).</p>
+<ul>
+<li><strong>Year 1 Nominal GDP and Real GDP (Base Year):</strong> In the base year, current prices equal base-year prices (<span class="math inline">\(P_1 = P_0\)</span>), so Nominal GDP and Real GDP are identical: <span class="math display">\[\text{Nominal GDP}_1 = (\$800 \times 10) + (\$4 \times 500) = \$8{,}000 + \$2{,}000 = \$10{,}000\]</span> <span class="math display">\[\text{Real GDP}_1 = (\$800 \times 10) + (\$4 \times 500) = \$10{,}000\]</span></li>
+<li><strong>Year 2 Nominal GDP (Current Year 2 Prices <span class="math inline">\(\times\)</span> Year 2 Quantities):</strong> <span class="math display">\[\text{Nominal GDP}_2 = (\$1{,}000 \times 11) + (\$5 \times 600) = \$11{,}000 + \$3{,}000 = \$14{,}000\]</span> Nominal GDP rose by <span class="math inline">\(\frac{\$14{,}000 - \$10{,}000}{\$10{,}000} \times 100\% = +40.0\%\)</span>.</li>
+<li><strong>Year 2 Real GDP (Constant Year 1 Base Prices <span class="math inline">\(\times\)</span> Year 2 Quantities):</strong> Holding prices fixed at Year 1 levels (<span class="math inline">\(\$800\)</span> per laptop, <span class="math inline">\(\$4\)</span> per cup): <span class="math display">\[\text{Real GDP}_2 = (\$800 \times 11) + (\$4 \times 600) = \$8{,}800 + \$2{,}400 = \$11{,}200\]</span></li>
+<li><strong>Compute Real GDP Growth Rate and Price Effect:</strong> <span class="math display">\[g_{Y,2} = \frac{\$11{,}200 - \$10{,}000}{\$10{,}000} \times 100\% = \frac{1{,}200}{10{,}000} \times 100\% = +12.0\%\]</span> While Nominal GDP surged <span class="math inline">\(+40.0\%\)</span> (by <span class="math inline">\(\$4{,}000\)</span>), true physical output expanded by <span class="math inline">\(+12.0\%\)</span> (<span class="math inline">\(\$1{,}200\)</span> in base-year dollars). The remaining <span class="math inline">\(\$2{,}800\)</span> gap (<span class="math inline">\(\$14{,}000 - \$11{,}200\)</span>) reflects pure price inflation—resolving our opening <em>Bring It Home</em> puzzle.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Real-World Application: FRED Data—Current-Dollar (\texttt{GDP
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>) vs.&nbsp;Chained-Dollar () Series} When retrieving U.S.&nbsp;national output from the Federal Reserve Economic Data (FRED) database maintained by the Federal Reserve Bank of St.&nbsp;Louis, always verify the series code and units:</p>
+<ul>
+<li>: Reports <strong>Nominal Gross Domestic Product</strong> in billions of current dollars at a seasonally adjusted annual rate (SAAR), quarterly.</li>
+<li>: Reports <strong>Real Gross Domestic Product</strong> in billions of chained 2017 dollars at a seasonally adjusted annual rate (SAAR), quarterly.</li>
+</ul>
+<p>Always measure economic growth rates and business cycle recessions using rather than . Furthermore, because chained-dollar levels reflect relative price weights anchored to the 2017 reference year, never interpret dollar levels as current-dollar spending.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="check-your-understanding" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="check-your-understanding">Check Your Understanding</h2>
+<ul>
+<li><p><strong>GDP Inclusion &amp; Boundary Rules:</strong> Classify whether each transaction below is <em>included</em> in current-year U.S.&nbsp;GDP (and if so, under which expenditure component <span class="math inline">\(C, I, G,\)</span> or <span class="math inline">\(NX\)</span>) or <em>excluded</em>, explaining why in one sentence:</p></li>
+<li><p>A household purchases a newly built townhouse from a residential developer for <span class="math inline">\(\$520{,}000\)</span>.</p></li>
+<li><p>A retiree receives a <span class="math inline">\(\$2{,}100\)</span> monthly Social Security payment from the federal government.</p></li>
+<li><p>A domestic consumer buys a <span class="math inline">\(\$1{,}200\)</span> smartphone assembled overseas and imported into the United States.</p></li>
+<li><p>An automaker buys <span class="math inline">\(\$40{,}000\)</span> of sheet steel from a domestic mill to stamp into new car doors sold later that same year.</p></li>
+<li><p><strong>Expenditure vs.&nbsp;Income Accounting:</strong> In a given year, an economy records <span class="math inline">\(C = \$12{,}400\text{B}\)</span>, <span class="math inline">\(I = \$3{,}200\text{B}\)</span>, <span class="math inline">\(G = \$3{,}800\text{B}\)</span>, <span class="math inline">\(X = \$2{,}100\text{B}\)</span>, and <span class="math inline">\(M = \$2{,}500\text{B}\)</span>.</p></li>
+<li><p>Calculate Net Exports (<span class="math inline">\(NX\)</span>) and total Expenditure GDP (<span class="math inline">\(Y\)</span>).</p></li>
+<li><p>If Compensation of Employees is <span class="math inline">\(\$11{,}100\text{B}\)</span>, Proprietors’ Income is <span class="math inline">\(\$1{,}400\text{B}\)</span>, Rental Income is <span class="math inline">\(\$700\text{B}\)</span>, Net Interest is <span class="math inline">\(\$500\text{B}\)</span>, Indirect Taxes Less Subsidies are <span class="math inline">\(\$1{,}300\text{B}\)</span>, and Depreciation is <span class="math inline">\(\$1{,}800\text{B}\)</span>, what must Corporate Profits equal if the statistical discrepancy is zero?</p></li>
+<li><p><strong>Nominal vs.&nbsp;Real GDP:</strong> Suppose an economy produces only electric bicycles. In Year 1 (Base Year), it produces <span class="math inline">\(1{,}000\)</span> bikes at <span class="math inline">\(\$1{,}500\)</span> each. In Year 2, it produces <span class="math inline">\(1{,}100\)</span> bikes at <span class="math inline">\(\$1{,}800\)</span> each.</p></li>
+<li><p>Compute Nominal GDP in Year 1 and Year 2, and find the percentage change in Nominal GDP.</p></li>
+<li><p>Compute Real GDP in Year 1 and Year 2 (using Year 1 base prices), and find the percentage growth rate of physical output.</p></li>
+</ul>
+<section id="worked-solutions" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="worked-solutions">Worked Solutions</h3>
+<ul>
+<li><strong>(a) Included in <span class="math inline">\(I\)</span>:</strong> Newly constructed residential housing counts as gross private domestic investment (<span class="math inline">\(I\)</span>). <strong>(b) Excluded:</strong> Social Security benefits are government transfer payments that redistribute income without purchasing current output. <strong>(c) Net zero effect on GDP:</strong> The <span class="math inline">\(\$1{,}200\)</span> purchase adds <span class="math inline">\(+\$1{,}200\)</span> to <span class="math inline">\(C\)</span> and <span class="math inline">\(-\$1{,}200\)</span> to <span class="math inline">\(NX\)</span> (<span class="math inline">\(-M\)</span>), leaving domestic GDP unchanged because the phone was produced abroad. <strong>(d) Excluded separately:</strong> Sheet steel is an intermediate good whose value is already embedded in the final retail price of the finished cars.</li>
+<li><strong>(a)</strong> <span class="math inline">\(NX = \$2{,}100\text{B} - \$2{,}500\text{B} = -\$400\text{ billion}\)</span>; <span class="math inline">\(Y = 12{,}400 + 3{,}200 + 3{,}800 + (-400) = \$19{,}000\text{ billion}\)</span>. <strong>(b)</strong> Summing known GDI items gives <span class="math inline">\(11{,}100 + 1{,}400 + 700 + 500 + 1{,}300 + 1{,}800 = \$16{,}800\text{B}\)</span>; with zero statistical discrepancy, Corporate Profits <span class="math inline">\(= \$19{,}000\text{B} - \$16{,}800\text{B} = \$2{,}200\text{ billion}\)</span>.</li>
+<li><strong>(a)</strong> <span class="math inline">\(\text{Nominal GDP}_1 = 1{,}000 \times \$1{,}500 = \$1{,}500{,}000\)</span>; <span class="math inline">\(\text{Nominal GDP}_2 = 1{,}100 \times \$1{,}800 = \$1{,}980{,}000\)</span>; percentage increase <span class="math inline">\(= \frac{1{,}980{,}000 - 1{,}500{,}000}{1{,}500{,}000} \times 100\% = +32.0\%\)</span>. <strong>(b)</strong> <span class="math inline">\(\text{Real GDP}_1 = \$1{,}500{,}000\)</span>; <span class="math inline">\(\text{Real GDP}_2 = 1{,}100 \times \$1{,}500 = \$1{,}650{,}000\)</span>; physical output growth <span class="math inline">\(= \frac{1{,}650{,}000 - 1{,}500{,}000}{1{,}500{,}000} \times 100\% = +10.0\%\)</span>.</li>
+</ul>
+
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const toggle = window.document.createElement('button');
+      toggle.type = "button";
+      toggle.setAttribute("role", "switch");
+      toggle.setAttribute("aria-checked", "false");
+      toggle.classList.add('top-right');
+      toggle.classList.add('quarto-color-scheme-toggle');
+      toggle.setAttribute("aria-label", "Toggle dark mode");
+      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      toggle.appendChild(i);
+      // Put the toggle in a landmark of its own, so that landmark navigation
+      // can reach it.
+      //
+      // The container is always a fresh direct child of body, and the toggle is
+      // never moved into page furniture that the theme or the author controls.
+      // The toggle is positioned against the page, so any ancestor that
+      // establishes a containing block captures it: a positioned element or a
+      // grid for position: absolute, and transform, filter, will-change or
+      // contain for position: fixed. A direct child of body has none of these
+      // to inherit, and the shift when one appears is silent and visual.
+      //
+      // ARIA says a document should have at most one banner, and axe reports a
+      // duplicate whether or not the banners carry distinct labels. So use a
+      // header when the page has no banner yet, and a named region otherwise.
+      //
+      // A header is a banner wherever it sits, unless it is inside sectioning
+      // content, so this cannot just look at the children of body: a custom
+      // page layout wraps the title block header in a plain div. An explicit
+      // role="banner" always counts.
+      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
+      const hasBanner = Array.from(
+        window.document.querySelectorAll('header:not([role]), [role="banner"]')
+      ).some(function(el) {
+        return el.hasAttribute("role") || el.closest(sectioning) === null;
+      });
+      const container = window.document.createElement(hasBanner ? "div" : "header");
+      if (hasBanner) {
+        container.setAttribute("role", "region");
+        container.setAttribute("aria-label", "Toggle dark mode");
+      }
+      container.classList.add('quarto-color-scheme-toggle-container');
+      container.appendChild(toggle);
+      window.document.body.appendChild(container);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="./ch03_supply_demand.html" class="pagination-link" aria-label="Chapter 3: Supply, Demand, and Market Equilibrium">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Chapter 3: Supply, Demand, and Market Equilibrium</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ch05_inflation_deflation.html" class="pagination-link" aria-label="Chapter 5: Inflation and Deflation">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Inflation and Deflation</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

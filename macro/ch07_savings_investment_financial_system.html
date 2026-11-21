@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>7&nbsp; Chapter 7: Saving, Investment Spending, and the Financial System – Principles of Macroeconomics</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./ch08_aggregate_expenditure_multiplier.html" rel="next">
+<link href="./ch06_unemployment.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-a71520af13e4c6b5a7ac03cb4efe7867.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-663504756e947d720a454151098d9f2d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-a71520af13e4c6b5a7ac03cb4efe7867.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455).
+    // Not run on load: stylesheets are set before first paint there, and
+    // scrolling would undo the scroll to a URL fragment (#14973).
+    // The one pixel nudge keeps the reader where they were.
+    const refreshSafariScrollbar = () => {
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        const scrollY = window.scrollY;
+        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
+        setTimeout(() => {
+          window.scrollTo(0, scrollY);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      refreshSafariScrollbar();
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch07_savings_investment_financial_system.html">Long-Run Growth &amp; Financial Systems</a></li><li class="breadcrumb-item"><a href="./ch07_savings_investment_financial_system.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chapter 7: Saving, Investment Spending, and the Financial System</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Principles of Macroeconomics</a> 
+        <div class="sidebar-tools-main">
+  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Macroeconomic Foundations &amp; Measurement</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch01_principles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Chapter 1: First Principles of Economics &amp; Macroeconomic Systems</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch02_macro_ppf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 2: The Macroeconomic Production Possibilities Frontier &amp; Capital Deepening</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch03_supply_demand.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Chapter 3: Supply, Demand, and Market Equilibrium</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch04_aggregate_output.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Chapter 4: Aggregate Output</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch05_inflation_deflation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Inflation and Deflation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch06_unemployment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ch06 Unemployment</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Long-Run Growth &amp; Financial Systems</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch07_savings_investment_financial_system.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chapter 7: Saving, Investment Spending, and the Financial System</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Short-Run Fluctuations &amp; Stabilization</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch08_aggregate_expenditure_multiplier.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Chapter 8: Income, Expenditure, and the Keynesian Cross</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch09_aggregate_demand_aggregate_supply.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Chapter 9: Aggregate Demand and Aggregate Supply (AD–AS)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch10_fiscal_policy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Chapter 10: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch11_money_banking_fed.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Ch11 Money Banking Fed</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch12_monetary_policy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Ch12 Monetary Policy</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-outcomes-and-key-terms" id="toc-learning-outcomes-and-key-terms" class="nav-link active" data-scroll-target="#learning-outcomes-and-key-terms">Learning Outcomes and Key Terms</a></li>
+  <li><a href="#saving-flows-wealth-stocks-and-macroeconomic-investment" id="toc-saving-flows-wealth-stocks-and-macroeconomic-investment" class="nav-link" data-scroll-target="#saving-flows-wealth-stocks-and-macroeconomic-investment"><span class="header-section-number">7.1</span> Saving Flows, Wealth Stocks, and Macroeconomic Investment</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction" id="toc-conceptual-introduction" class="nav-link" data-scroll-target="#conceptual-introduction">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation" id="toc-visual-representation" class="nav-link" data-scroll-target="#visual-representation">Visual Representation</a></li>
+  <li><a href="#real-world-application-u.s.-household-saving-rate-swings" id="toc-real-world-application-u.s.-household-saving-rate-swings" class="nav-link" data-scroll-target="#real-world-application-u.s.-household-saving-rate-swings">Real-World Application: U.S. Household Saving Rate Swings</a></li>
+  <li><a href="#mathematical-foundation" id="toc-mathematical-foundation" class="nav-link" data-scroll-target="#mathematical-foundation">Mathematical Foundation</a></li>
+  </ul></li>
+  <li><a href="#national-saving-and-the-open-economy-identity" id="toc-national-saving-and-the-open-economy-identity" class="nav-link" data-scroll-target="#national-saving-and-the-open-economy-identity"><span class="header-section-number">7.2</span> National Saving and the Open-Economy Identity</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-1" id="toc-conceptual-introduction-1" class="nav-link" data-scroll-target="#conceptual-introduction-1">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-1" id="toc-visual-representation-1" class="nav-link" data-scroll-target="#visual-representation-1">Visual Representation</a></li>
+  <li><a href="#real-world-application-u.s.-twin-deficits-and-foreign-capital-inflows" id="toc-real-world-application-u.s.-twin-deficits-and-foreign-capital-inflows" class="nav-link" data-scroll-target="#real-world-application-u.s.-twin-deficits-and-foreign-capital-inflows">Real-World Application: U.S. Twin Deficits and Foreign Capital Inflows</a></li>
+  <li><a href="#mathematical-foundation-1" id="toc-mathematical-foundation-1" class="nav-link" data-scroll-target="#mathematical-foundation-1">Mathematical Foundation</a></li>
+  </ul></li>
+  <li><a href="#the-financial-system-assets-intermediaries-and-core-tasks" id="toc-the-financial-system-assets-intermediaries-and-core-tasks" class="nav-link" data-scroll-target="#the-financial-system-assets-intermediaries-and-core-tasks"><span class="header-section-number">7.3</span> The Financial System: Assets, Intermediaries, and Core Tasks</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-2" id="toc-conceptual-introduction-2" class="nav-link" data-scroll-target="#conceptual-introduction-2">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-2" id="toc-visual-representation-2" class="nav-link" data-scroll-target="#visual-representation-2">Visual Representation</a></li>
+  <li><a href="#real-world-application-index-funds-and-liquidity-mismatch-risks" id="toc-real-world-application-index-funds-and-liquidity-mismatch-risks" class="nav-link" data-scroll-target="#real-world-application-index-funds-and-liquidity-mismatch-risks">Real-World Application: Index Funds and Liquidity Mismatch Risks</a></li>
+  <li><a href="#mathematical-foundation-2" id="toc-mathematical-foundation-2" class="nav-link" data-scroll-target="#mathematical-foundation-2">Mathematical Foundation</a></li>
+  </ul></li>
+  <li><a href="#the-market-for-loanable-funds" id="toc-the-market-for-loanable-funds" class="nav-link" data-scroll-target="#the-market-for-loanable-funds"><span class="header-section-number">7.4</span> The Market for Loanable Funds</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-3" id="toc-conceptual-introduction-3" class="nav-link" data-scroll-target="#conceptual-introduction-3">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-3" id="toc-visual-representation-3" class="nav-link" data-scroll-target="#visual-representation-3">Visual Representation</a></li>
+  <li><a href="#real-world-application-real-treasury-yields-and-corporate-investment-hurdles" id="toc-real-world-application-real-treasury-yields-and-corporate-investment-hurdles" class="nav-link" data-scroll-target="#real-world-application-real-treasury-yields-and-corporate-investment-hurdles">Real-World Application: Real Treasury Yields and Corporate Investment Hurdles</a></li>
+  <li><a href="#mathematical-foundation-3" id="toc-mathematical-foundation-3" class="nav-link" data-scroll-target="#mathematical-foundation-3">Mathematical Foundation</a></li>
+  </ul></li>
+  <li><a href="#government-budget-deficits-interest-rates-and-crowding-out" id="toc-government-budget-deficits-interest-rates-and-crowding-out" class="nav-link" data-scroll-target="#government-budget-deficits-interest-rates-and-crowding-out"><span class="header-section-number">7.5</span> Government Budget Deficits, Interest Rates, and Crowding Out</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-4" id="toc-conceptual-introduction-4" class="nav-link" data-scroll-target="#conceptual-introduction-4">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-4" id="toc-visual-representation-4" class="nav-link" data-scroll-target="#visual-representation-4">Visual Representation</a></li>
+  <li><a href="#real-world-application-u.s.-federal-deficits-and-empirical-crowding-out" id="toc-real-world-application-u.s.-federal-deficits-and-empirical-crowding-out" class="nav-link" data-scroll-target="#real-world-application-u.s.-federal-deficits-and-empirical-crowding-out">Real-World Application: U.S. Federal Deficits and Empirical Crowding Out</a></li>
+  <li><a href="#mathematical-foundation-4" id="toc-mathematical-foundation-4" class="nav-link" data-scroll-target="#mathematical-foundation-4">Mathematical Foundation</a></li>
+  </ul></li>
+  <li><a href="#chapter-summary-and-check-your-understanding" id="toc-chapter-summary-and-check-your-understanding" class="nav-link" data-scroll-target="#chapter-summary-and-check-your-understanding"><span class="header-section-number">7.6</span> Chapter Summary and Check Your Understanding</a>
+  <ul class="collapse">
+  <li><a href="#review-problems" id="toc-review-problems" class="nav-link" data-scroll-target="#review-problems">Review Problems</a></li>
+  <li><a href="#solutions-to-review-problems" id="toc-solutions-to-review-problems" class="nav-link" data-scroll-target="#solutions-to-review-problems">Solutions to Review Problems</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch07_savings_investment_financial_system.html">Long-Run Growth &amp; Financial Systems</a></li><li class="breadcrumb-item"><a href="./ch07_savings_investment_financial_system.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chapter 7: Saving, Investment Spending, and the Financial System</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chapter 7: Saving, Investment Spending, and the Financial System</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p>This chapter develops the macroeconomic framework linking household and government saving decisions, physical capital investment, and financial intermediation, benchmarked to Krugman and Wells. We distinguish saving flows from wealth stocks, derive the closed- and open-economy national saving identities, analyze how financial markets and intermediaries reduce transaction costs, diversify risk, and provide liquidity, and model equilibrium in the market for loanable funds to evaluate fiscal crowding out.</p>
+</blockquote>
+<section id="learning-outcomes-and-key-terms" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="learning-outcomes-and-key-terms">Learning Outcomes and Key Terms</h2>
+<p>Upon completing this chapter, students should be able to (aligned with Course Learning Outcomes MA-2, MA-3, and C2002-2):</p>
+<ul>
+<li><strong>Distinguish</strong> saving flows from wealth stocks and separate macroeconomic physical capital investment from personal financial asset purchases.</li>
+<li><strong>Derive</strong> private saving, public saving, and national saving from the expenditure identity, and apply the closed-economy (<span class="math inline">\(S = I\)</span>) and open-economy (<span class="math inline">\(I = S + NCI\)</span>) accounting identities.</li>
+<li><strong>Explain</strong> how financial assets and financial intermediaries channel funds from savers to borrowers by reducing transaction costs, diversifying risk, and providing liquidity.</li>
+<li><strong>Analyze</strong> equilibrium in the market for loanable funds (<span class="math inline">\(r^*, Q^*\)</span>) and evaluate how budget deficits and investment shifts alter real interest rates and cause partial crowding out.</li>
+</ul>
+<p><strong>Key Terms:</strong> saving, wealth, physical investment, financial investment, private saving (<span class="math inline">\(S_p\)</span>), public saving (<span class="math inline">\(S_g\)</span>), national saving (<span class="math inline">\(S\)</span>), budget surplus, budget deficit, net capital inflow (<span class="math inline">\(NCI\)</span>), financial system, financial intermediary, liquidity, diversification, loanable funds market, real interest rate (<span class="math inline">\(r\)</span>), crowding out.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Bring It Home: Why Do Trillions in U.S. Budget Deficits Coexist with Record Data-Center Investment?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Between 2023 and 2026, the U.S. federal government ran annual budget deficits exceeding <span class="math inline">\(\$1.6\text{ trillion}\)</span> while technology and utility firms simultaneously committed hundreds of billions of dollars to hyperscale AI data centers, semiconductor fabs, and electrical grid upgrades. In a closed economy with fixed saving, massive government borrowing should drive up real interest rates and squeeze out private business investment. Yet U.S. corporations continued raising capital at scale—aided by rising household saving yields and hundreds of billions of dollars in foreign capital inflows from global savers. Understanding how the financial system and the loanable-funds market reconcile competing claims on national saving explains how interest rates allocate scarce capital across public and private borrowers.</p>
+</div>
+</div>
+</section>
+<section id="saving-flows-wealth-stocks-and-macroeconomic-investment" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="saving-flows-wealth-stocks-and-macroeconomic-investment"><span class="header-section-number">7.1</span> Saving Flows, Wealth Stocks, and Macroeconomic Investment</h2>
+<section id="conceptual-introduction" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction">Conceptual Introduction</h3>
+<p> In everyday conversation, people use <code>saving'' and</code>wealth’’ interchangeably, yet macroeconomics draws a strict boundary between a <strong>flow</strong> and a <strong>stock</strong>. <strong>Saving (<span class="math inline">\(S\)</span>)</strong> is a flow variable: it measures the portion of current disposable income (<span class="math inline">\(Y_d\)</span>) that a household, business, or government chooses not to spend on current consumption during a specific time interval, such as a month, quarter, or year. By contrast, <strong>wealth (<span class="math inline">\(W\)</span>)</strong> is a stock variable: it measures the total net value of assets (bank deposits, bonds, equities, real estate, minus debts) owned at a single point in time. Positive saving acts like water flowing into a bathtub—each month of positive saving raises the water level of accumulated wealth, whereas negative saving (<strong>dissaving</strong>, when spending exceeds current income) drains the stock of wealth.</p>
+<p>Understanding how wealth evolves also requires separating active saving flows from asset valuation changes. A household’s net worth can rise over a year either because the household actively refrains from consuming part of its paycheck (<span class="math inline">\(S &gt; 0\)</span>) or because the market price of existing assets it already owns—such as a home or stock index fund—appreciates (<strong>capital gains</strong>). Conversely, falling asset prices (<strong>capital losses</strong>) can reduce household wealth even when a family continues to save out of every paycheck. Tracking both the saving flow and balance-sheet asset valuations explains why household spending responds sharply to housing and stock market swings.</p>
+<p>Equally critical is the macroeconomic distinction between <strong>physical investment (<span class="math inline">\(I\)</span>)</strong> and <strong>financial investment</strong>. In macroeconomic accounting (NIPA), investment refers exclusively to spending on newly produced physical capital goods—such as factory machinery, commercial buildings, software, cloud servers, and additions to business inventories—that expand the economy’s future productive capacity. When an individual buys shares of an existing corporation on the New York Stock Exchange or purchases an existing suburban house, no new physical capital is created; ownership of an existing asset simply transfers from seller to buyer. In macroeconomics, buying stocks or bonds is household <em>saving</em> (supplying funds to the financial system), whereas a firm using borrowed funds to build a new warehouse is <em>investment</em>.</p>
+</section>
+<section id="visual-representation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation">Visual Representation</h3>
+<p>Figure 1 illustrates the stock–flow relationship over a five-year horizon for a household starting with zero initial wealth (<span class="math inline">\(W_0 = \$0\)</span>). Each vertical bar represents the annual saving flow (<span class="math inline">\(S_t\)</span>), while the connected trajectory tracks cumulative end-of-year wealth (<span class="math inline">\(W_t = \sum_{k=1}^{t} S_k\)</span>). Notice that even when the annual saving flow dips in Years 3 and 4, cumulative wealth continues rising because every positive flow adds to the existing stock.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_7_saving_investment_spending_and_the_financial_system_figure_01.svg" class="img-fluid figure-img" alt="Annual Saving (Flow) vs. Cumulative Wealth (Stock). Blue bars measure annual saving flows (S_t: $5\text{k}, $10\text{k}, $8\text{k}, $7\text{k}, $9\text{k}), whereas the orange trajectory tracks the accumulated stock of wealth (W_t: $5\text{k}, $15\text{k}, $23\text{k}, $30\text{k}, $39\text{k})."></p>
+<figcaption>Figure 1. <strong>Annual Saving (Flow) vs.&nbsp;Cumulative Wealth (Stock).</strong> Blue bars measure annual saving flows (<span class="math inline">\(S_t\)</span>: <span class="math inline">\(\$5\text{k}, \$10\text{k}, \$8\text{k}, \$7\text{k}, \$9\text{k}\)</span>), whereas the orange trajectory tracks the accumulated stock of wealth (<span class="math inline">\(W_t\)</span>: <span class="math inline">\(\$5\text{k}, \$15\text{k}, \$23\text{k}, \$30\text{k}, \$39\text{k}\)</span>).</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-u.s.-household-saving-rate-swings" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-u.s.-household-saving-rate-swings">Real-World Application: U.S. Household Saving Rate Swings</h3>
+<p>The U.S. Bureau of Economic Analysis tracks household saving flows relative to disposable personal income through the <strong>Personal Saving Rate</strong> (FRED: ). During the 2007–2009 Great Recession, collapsing home prices and equity values erased trillions of dollars in household wealth; in response, families cut discretionary consumption and raised their personal saving rate from roughly <span class="math inline">\(2.5\%\)</span> in 2007 to over <span class="math inline">\(6\%\)</span> by 2009 to rebuild depleted wealth buffers. A decade later, during the 2020 COVID-19 lockdowns, pandemic stimulus transfers combined with closed restaurants and travel restrictions pushed above <span class="math inline">\(30\%\)</span> in April 2020, creating a massive stock of ``excess savings’’ that fueled consumer spending through 2022–2023 before the saving rate normalized near <span class="math inline">\(4\%\)</span>–<span class="math inline">\(5\%\)</span> in 2024–2026.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Economic Investment vs.&nbsp;Financial Investment
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Students frequently lose points on exams by labeling stock or bond purchases as ``investment.’’ In macroeconomics: [noitemsep] * <strong>Financial Investment (Household Saving):</strong> Buying stocks, corporate bonds, Treasury bills, or existing real estate transfers ownership of existing claims and supplies funds to financial markets. * <strong>Physical Investment (<span class="math inline">\(I\)</span> in GDP):</strong> Firms purchasing newly manufactured machinery, commercial structures, software, or residential construction adds directly to the nation’s capital stock (<span class="math inline">\(K\)</span>).</p>
+</div>
+</div>
+</section>
+<section id="mathematical-foundation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation">Mathematical Foundation</h3>
+<p>Let disposable income in period <span class="math inline">\(t\)</span> be <span class="math inline">\(Y_{d,t} = Y_t + TR_t - T_t\)</span> (total income plus government transfers minus taxes) and household consumption spending be <span class="math inline">\(C_t\)</span>. Household saving flow in period <span class="math inline">\(t\)</span> is:</p>
+<p><span class="math display">\[
+S_t = Y_{d,t} - C_t
+\]</span></p>
+<p>Given beginning-of-period wealth <span class="math inline">\(W_{t-1}\)</span> and net capital gains <span class="math inline">\(\Delta V_t\)</span> on existing assets, end-of-period wealth evolves according to the stock–flow accumulation identity:</p>
+<p><span class="math display">\[
+W_t = W_{t-1} + S_t + \Delta V_t
+\]</span></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Work It Out: Calculating Saving Flows and Ending Wealth
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose a household begins the year with <span class="math inline">\(W_0 = \$120{,}000\)</span> in financial and housing assets. During the year, the household earns <span class="math inline">\(\$95{,}000\)</span> in gross income, pays <span class="math inline">\(\$15{,}000\)</span> in taxes, receives <span class="math inline">\(\$0\)</span> in transfers, and spends <span class="math inline">\(\$68{,}000\)</span> on consumption goods and services. Meanwhile, its existing retirement index fund rises in market value by <span class="math inline">\(\Delta V_1 = +\$6{,}000\)</span>.</p>
+<ul>
+<li><strong>Compute Disposable Income (<span class="math inline">\(Y_{d,1}\)</span>):</strong> <span class="math display">\[Y_{d,1} = \$95{,}000 + \$0 - \$15{,}000 = \$80{,}000\]</span></li>
+<li><strong>Compute Annual Saving Flow (<span class="math inline">\(S_1\)</span>):</strong> <span class="math display">\[S_1 = Y_{d,1} - C_1 = \$80{,}000 - \$68{,}000 = \$12{,}000\]</span> The household’s personal saving rate is <span class="math inline">\(\frac{\$12{,}000}{\$80{,}000} \times 100 = 15.0\%\)</span>.</li>
+<li><strong>Compute End-of-Year Wealth Stock (<span class="math inline">\(W_1\)</span>):</strong> <span class="math display">\[W_1 = W_0 + S_1 + \Delta V_1 = \$120{,}000 + \$12{,}000 + \$6{,}000 = \$138{,}000\]</span></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>[Advanced: For Economics Majors] Continuous-Time Wealth Accumulation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In continuous time, let <span class="math inline">\(w(t)\)</span> denote the real wealth stock at instant <span class="math inline">\(t\)</span>, <span class="math inline">\(s(t) = y_d(t) - c(t)\)</span> denote the instantaneous saving flow rate, and <span class="math inline">\(r_a\)</span> denote the real capital-gain rate on existing assets. Wealth evolves according to the first-order linear differential equation: <span class="math display">\[\frac{dw(t)}{dt} = s(t) + r_a w(t)\]</span> Integrating from <span class="math inline">\(t = 0\)</span> to <span class="math inline">\(T\)</span> yields <span class="math inline">\(w(T) = w(0)e^{r_a T} + \int_0^T s(\tau)e^{r_a(T-\tau)}\,d\tau\)</span>, showing how early saving flows compound across time.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="national-saving-and-the-open-economy-identity" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="national-saving-and-the-open-economy-identity"><span class="header-section-number">7.2</span> National Saving and the Open-Economy Identity</h2>
+<section id="conceptual-introduction-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-1">Conceptual Introduction</h3>
+<p>To understand how an entire nation finances physical capital investment, we scale up from an individual household to the macroeconomy using the National Income and Product Accounts (NIPA) expenditure identity: <span class="math inline">\(Y = C + I + G + NX\)</span>. In any economy, total output produced (<span class="math inline">\(Y\)</span>) that is neither consumed by households (<span class="math inline">\(C\)</span>) nor purchased by government agencies (<span class="math inline">\(G\)</span>) represents output set aside from current consumption—which is the macroeconomic definition of <strong>national saving (<span class="math inline">\(S\)</span>)</strong>.</p>
+<p>National saving is generated by two domestic sectors. <strong>Private saving (<span class="math inline">\(S_p\)</span>)</strong> is the disposable income households and firms retain after paying net taxes (<span class="math inline">\(T_{\text{net}} = T - TR\)</span>) and purchasing consumption goods: <span class="math inline">\(S_p = Y - T_{\text{net}} - C\)</span>. <strong>Public saving (<span class="math inline">\(S_g\)</span>)</strong> is the difference between government net tax revenue and government purchases of goods and services: <span class="math inline">\(S_g = T_{\text{net}} - G\)</span>. When <span class="math inline">\(T_{\text{net}} &gt; G\)</span>, the government runs a <strong>budget surplus</strong> (<span class="math inline">\(S_g &gt; 0\)</span>) and adds to national saving; when <span class="math inline">\(T_{\text{net}} &lt; G\)</span>, the government runs a <strong>budget deficit</strong> (<span class="math inline">\(S_g &lt; 0\)</span>), reducing national saving.</p>
+<p>Linking national saving to domestic investment depends on whether the economy interacts financially with the rest of the world. In a <strong>closed economy</strong> (<span class="math inline">\(NX = 0\)</span>), every dollar of domestic investment must be financed by domestic saving, yielding the closed-economy saving–investment identity <span class="math inline">\(S = I\)</span>. In an <strong>open economy</strong>, domestic investment can exceed domestic national saving (<span class="math inline">\(I &gt; S\)</span>) if foreign savers lend funds to domestic borrowers. Because a trade deficit (<span class="math inline">\(NX &lt; 0\)</span>, meaning imports exceed exports) leaves foreign trading partners holding domestic currency that they reinvest in domestic bonds, stocks, and factories, <strong>net capital inflow (<span class="math inline">\(NCI\)</span>)</strong> equals the negative of net exports (<span class="math inline">\(NCI = -NX\)</span>), giving the open-economy funding identity <span class="math inline">\(I = S_p + S_g + NCI\)</span>.</p>
+</section>
+<section id="visual-representation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-1">Visual Representation</h3>
+<p>Figure 2 compares how domestic physical investment (<span class="math inline">\(I\)</span>) is financed under closed-economy versus open-economy accounting. In the left panel (Closed Economy), domestic investment equals national saving (<span class="math inline">\(I = S_p + S_g\)</span>). In the right panel (Open Economy with a budget deficit <span class="math inline">\(S_g &lt; 0\)</span> and a trade deficit <span class="math inline">\(NX &lt; 0\)</span>), positive net capital inflows (<span class="math inline">\(NCI = -NX &gt; 0\)</span>) supplement private saving to fund total domestic investment.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_7_saving_investment_spending_and_the_financial_system_figure_02.svg" class="img-fluid figure-img" alt="Closed vs. Open Economy Saving–Investment Accounting. In a closed economy (Panel A), national saving (S_p + S_g) exactly equals domestic investment (I). In an open economy running both a budget deficit (S_g < 0) and a trade deficit (NX < 0), net capital inflows (NCI = -NX > 0) help finance domestic investment and public borrowing (Panel B)."></p>
+<figcaption>Figure 2. <strong>Closed vs.&nbsp;Open Economy Saving–Investment Accounting.</strong> In a closed economy (Panel A), national saving (<span class="math inline">\(S_p + S_g\)</span>) exactly equals domestic investment (<span class="math inline">\(I\)</span>). In an open economy running both a budget deficit (<span class="math inline">\(S_g &lt; 0\)</span>) and a trade deficit (<span class="math inline">\(NX &lt; 0\)</span>), net capital inflows (<span class="math inline">\(NCI = -NX &gt; 0\)</span>) help finance domestic investment and public borrowing (Panel B).</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-u.s.-twin-deficits-and-foreign-capital-inflows" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-u.s.-twin-deficits-and-foreign-capital-inflows">Real-World Application: U.S. Twin Deficits and Foreign Capital Inflows</h3>
+<p>In recent U.S. macroeconomic data, Gross Private Domestic Investment (FRED: ) has consistently exceeded domestic national saving because Net Government Saving (FRED: ) has been deeply negative while private saving remains moderate. How does the United States sustain high domestic capital formation despite low net national saving? Foreign central banks, sovereign wealth funds, and international private investors purchase U.S. Treasury securities, corporate bonds, and equities—generating positive Net Capital Inflows (<span class="math inline">\(NCI &gt; 0\)</span>) that mirror the U.S. current account (trade) deficit (<span class="math inline">\(NX &lt; 0\)</span>).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Accounting Identities Do Not Prove Causation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The open-economy identity <span class="math inline">\(S - I = NX\)</span> (or <span class="math inline">\(I = S + NCI\)</span>) holds <em>ex post</em> by national accounting definition, just as <span class="math inline">\(2 + 2 = 4\)</span> is always true. However, an accounting identity alone does not tell us whether a fall in national saving <em>caused</em> a trade deficit or whether strong foreign demand for U.S. assets drove capital inflows (<span class="math inline">\(NCI &gt; 0\)</span>) that appreciated the dollar and widened the trade deficit (<span class="math inline">\(NX &lt; 0\)</span>). Economists use behavioral models (such as the loanable-funds market) to establish causal mechanisms.</p>
+</div>
+</div>
+</section>
+<section id="mathematical-foundation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-1">Mathematical Foundation</h3>
+<p>Starting from the aggregate expenditure identity <span class="math inline">\(Y = C + I + G + NX\)</span>, subtract <span class="math inline">\(C\)</span> and <span class="math inline">\(G\)</span> from both sides:</p>
+<p><span class="math display">\[
+Y - C - G = I + NX
+\]</span></p>
+<p>Add and subtract net taxes <span class="math inline">\(T_{\text{net}} = T - TR\)</span> on the left-hand side to separate private saving (<span class="math inline">\(S_p\)</span>) and public saving (<span class="math inline">\(S_g\)</span>):</p>
+<p><span class="math display">\[
+S = \underbrace{(Y - T_{\text{net}} - C)}_{S_p} + \underbrace{(T_{\text{net}} - G)}_{S_g} = Y - C - G
+\]</span></p>
+<p>Substituting <span class="math inline">\(S = Y - C - G\)</span> and defining Net Capital Inflow as <span class="math inline">\(NCI = -NX\)</span> (capital inflows from abroad minus capital outflows to abroad) yields the closed- and open-economy investment identities:</p>
+<p><span class="math display">\[
+\text{Closed Economy } (NX = 0): \quad I = S = S_p + S_g
+\]</span></p>
+<p><span class="math display">\[
+\text{Open Economy } (NCI = -NX): \quad I = S + NCI = S_p + S_g + NCI
+\]</span></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Work It Out: Decomposing National Saving and Net Capital Inflows
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose an open economy has GDP of <span class="math inline">\(Y = \$20{,}000\text{ billion}\)</span>, household consumption <span class="math inline">\(C = \$13{,}600\text{ billion}\)</span>, government purchases <span class="math inline">\(G = \$3{,}400\text{ billion}\)</span>, net tax collections <span class="math inline">\(T_{\text{net}} = \$3{,}000\text{ billion}\)</span>, and domestic physical investment <span class="math inline">\(I = \$3{,}600\text{ billion}\)</span>.</p>
+<ul>
+<li><strong>Calculate Private Saving (<span class="math inline">\(S_p\)</span>):</strong> <span class="math display">\[S_p = Y - T_{\text{net}} - C = \$20{,}000 - \$3{,}000 - \$13{,}600 = \$3{,}400\text{ billion}\]</span></li>
+<li><strong>Calculate Public Saving (<span class="math inline">\(S_g\)</span>):</strong> <span class="math display">\[S_g = T_{\text{net}} - G = \$3{,}000 - \$3{,}400 = -\$400\text{ billion} \quad (\text{a } \$400\text{B budget deficit})\]</span></li>
+<li><strong>Calculate National Saving (<span class="math inline">\(S\)</span>):</strong> <span class="math display">\[S = S_p + S_g = \$3{,}400 + (-\$400) = \$3{,}000\text{ billion}\]</span></li>
+<li><strong>Calculate Net Capital Inflow (<span class="math inline">\(NCI\)</span>) and Net Exports (<span class="math inline">\(NX\)</span>):</strong> <span class="math display">\[NCI = I - S = \$3{,}600 - \$3{,}000 = +\$600\text{ billion}\]</span> <span class="math display">\[NX = -NCI = -\$600\text{ billion} \quad (\text{a } \$600\text{B trade deficit financed by foreign saving})\]</span></li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="the-financial-system-assets-intermediaries-and-core-tasks" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="the-financial-system-assets-intermediaries-and-core-tasks"><span class="header-section-number">7.3</span> The Financial System: Assets, Intermediaries, and Core Tasks</h2>
+<section id="conceptual-introduction-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-2">Conceptual Introduction</h3>
+<p>National saving cannot automatically transform into factories, power grids, and software unless an institutional mechanism connects millions of small household savers with businesses seeking large sums for long-term capital projects. The <strong>financial system</strong> consists of the markets and institutions that channel funds from savers (lenders) to investors (borrowers). Savers supply funds by acquiring <strong>financial assets</strong>—paper or electronic claims that entitle the buyer to future income from the seller—including <strong>loans</strong> (direct debt contracts), <strong>bonds</strong> (tradeable IOUs promising fixed interest payments and principal repayment at maturity), <strong>stocks</strong> (shares of partial ownership in a corporation), and <strong>bank deposits</strong>.</p>
+<p>Rather than requiring every household to vet individual corporate borrowers directly, modern economies rely heavily on <strong>financial intermediaries</strong>—institutions that transform funds gathered from many individuals into financial assets. Major intermediaries include <strong>commercial banks</strong> (which accept liquid checking and savings deposits and originate business and mortgage loans), <strong>mutual funds and exchange-traded funds (ETFs)</strong> (which pool saver money to buy diversified portfolios of stocks and bonds), <strong>pension funds</strong> (which invest worker retirement contributions over multi-decade horizons), and <strong>life insurance companies</strong>.</p>
+<p>Across all these institutions, a well-functioning financial system performs three indispensable macroeconomic tasks: [noitemsep] * <strong>Reducing Transaction Costs:</strong> Standardized bond markets and bank lending departments eliminate the prohibitive search, legal, and credit-monitoring costs that would arise if an individual saver tried to negotiate loans directly with thousands of firms. * <strong>Reducing Risk through Diversification:</strong> Because future business profits are uncertain, investing all of one’s savings in a single company exposes a household to idiosyncratic failure. Mutual funds and banks pool funds across hundreds of firms and industries, allowing savers to earn steady average returns while shedding firm-specific risk. * <strong>Providing Liquidity:</strong> Businesses need funds locked into machinery for years, whereas households want rapid access to cash for emergencies. Banks and secondary stock/bond markets provide <strong>liquidity</strong>—the ability to convert an asset into spendable cash quickly without significant loss of value.</p>
+</section>
+<section id="visual-representation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-2">Visual Representation</h3>
+<p>Figure 3 maps the architecture of the financial system, showing how household and foreign saving flows through both direct financial markets (stocks and bonds) and financial intermediaries (banks, mutual funds, pension funds) to finance business capital formation while performing the three core financial tasks.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_7_saving_investment_spending_and_the_financial_system_figure_03.svg" class="img-fluid figure-img" alt="Architecture of the Financial System. Funds flow from domestic and foreign savers either directly through bond and stock markets or indirectly through financial intermediaries to finance physical investment (I)."></p>
+<figcaption>Figure 3. <strong>Architecture of the Financial System.</strong> Funds flow from domestic and foreign savers either directly through bond and stock markets or indirectly through financial intermediaries to finance physical investment (<span class="math inline">\(I\)</span>).</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-index-funds-and-liquidity-mismatch-risks" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-index-funds-and-liquidity-mismatch-risks">Real-World Application: Index Funds and Liquidity Mismatch Risks</h3>
+<p>Consider how retail index mutual funds and ETFs democratized diversification: for an expense ratio below <span class="math inline">\(0.05\%\)</span> per year, a first-time investor with <span class="math inline">\(\$500\)</span> can own fractional shares of 500 major U.S. corporations, achieving near-complete diversification of idiosyncratic firm risk at minimal transaction cost. Conversely, when financial intermediaries mismanage liquidity transformation, systemic fragility emerges. In March 2023, Silicon Valley Bank (SVB) held long-term fixed-rate Treasury bonds funded by uninsured, instantly withdrawable tech-startup deposits. When rising interest rates lowered the market value of SVB’s long-term bonds and depositors triggered rapid digital withdrawals, SVB suffered an acute liquidity run—illustrating why bank capital and liquidity regulations are essential to financial stability.</p>
+</section>
+<section id="mathematical-foundation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-2">Mathematical Foundation</h3>
+<p>Two foundational quantitative relationships govern financial assets:</p>
+<ul>
+<li><strong>Inverse Relationship Between Bond Prices and Interest Rates:</strong> For a one-year zero-coupon bond paying face value <span class="math inline">\(F\)</span> at maturity and selling today at market price <span class="math inline">\(P_B\)</span>, the nominal yield (interest rate) <span class="math inline">\(i\)</span> is:</li>
+</ul>
+<p><span class="math display">\[
+i = \frac{F - P_B}{P_B} \iff P_B = \frac{F}{1 + i}
+\]</span></p>
+<p>When market interest rates <span class="math inline">\(i\)</span> rise, the market price <span class="math inline">\(P_B\)</span> of existing fixed-payment bonds must fall so new buyers earn the competitive market yield. * <strong>The Fisher Equation (Real vs.&nbsp;Nominal Interest Rates):</strong> Because inflation erodes the purchasing power of repaid dollars, borrowers and lenders evaluate the <strong>real interest rate (<span class="math inline">\(r\)</span>)</strong>, approximated by subtracting expected inflation (<span class="math inline">\(\pi^e\)</span>) from the nominal interest rate (<span class="math inline">\(i\)</span>):</p>
+<p><span class="math display">\[
+r \approx i - \pi^e \qquad \left(\text{exact formula: } 1 + r = \frac{1 + i}{1 + \pi^e}\right)
+\]</span></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Work It Out: Bond Pricing, Real Yields, and Risk Diversification
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Bond Price and Yield:</strong> A one-year U.S. Treasury bill has a face value of <span class="math inline">\(F = \$1{,}000\)</span> and trades today at <span class="math inline">\(P_B = \$950\)</span>. Its nominal interest rate is: <span class="math display">\[i = \frac{\$1{,}000 - \$950}{\$950} = \frac{\$50}{\$950} \approx 0.0526 \quad (5.26\%)\]</span> If market interest rates rise to <span class="math inline">\(i' = 6.0\%\)</span>, the bond’s market price drops to: <span class="math display">\[P_B' = \frac{\$1{,}000}{1.06} \approx \$943.40\]</span></li>
+<li><strong>Real Interest Rate:</strong> If the nominal bond yield is <span class="math inline">\(i = 5.26\%\)</span> and expected inflation is <span class="math inline">\(\pi^e = 2.26\%\)</span>, the expected real return to the saver is: <span class="math display">\[r \approx 5.26\% - 2.26\% = 3.00\%\]</span></li>
+<li><strong>Diversification Math:</strong> Suppose each independent biotech startup has an annual return standard deviation of <span class="math inline">\(\sigma = 40\%\)</span>. An equally weighted mutual fund holding <span class="math inline">\(N = 100\)</span> uncorrelated startups reduces portfolio volatility to: <span class="math display">\[\sigma_p = \frac{\sigma}{\sqrt{N}} = \frac{40\%}{\sqrt{100}} = \frac{40\%}{10} = 4.0\%\]</span></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>[Advanced: For Economics Majors] Multi-Year Bond Valuation and Duration
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For a multi-year bond paying annual coupon <span class="math inline">\(C\)</span> for <span class="math inline">\(T\)</span> years plus face value <span class="math inline">\(F\)</span> at maturity, its present discounted value at yield <span class="math inline">\(i\)</span> is: <span class="math display">\[P_B(i) = \sum_{t=1}^{T} \frac{C}{(1+i)^t} + \frac{F}{(1+i)^T}\]</span> Differentiating with respect to <span class="math inline">\(i\)</span> yields <span class="math inline">\(\frac{dP_B}{di} = -\frac{D_{\text{Mac}}}{1+i} P_B &lt; 0\)</span>, where <span class="math inline">\(D_{\text{Mac}}\)</span> is Macaulay duration. Longer-maturity bonds have higher duration and suffer larger percentage price drops when interest rates rise.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="the-market-for-loanable-funds" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="the-market-for-loanable-funds"><span class="header-section-number">7.4</span> The Market for Loanable Funds</h2>
+<section id="conceptual-introduction-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-3">Conceptual Introduction</h3>
+<p>Economists model how the financial system coordinates saving and investment using the <strong>market for loanable funds</strong>—a hypothetical market that brings together all savers who want to lend funds and all borrowers who want to finance investment spending. The ``price’’ in this market is the <strong>real interest rate (<span class="math inline">\(r\)</span>)</strong>, which measures the inflation-adjusted return earned by lenders and the inflation-adjusted cost paid by borrowers.</p>
+<p>The <strong>demand for loanable funds (<span class="math inline">\(I\)</span>)</strong> comes from firms (and homebuyers) borrowing to finance physical investment projects, and it <strong>slopes downward</strong>. A firm undertakes a capital project only if its expected rate of return meets or exceeds the real interest rate (<span class="math inline">\(r\)</span>). When <span class="math inline">\(r\)</span> is high (say, <span class="math inline">\(7\%\)</span>), only highly profitable projects pass this hurdle, so the quantity of loanable funds demanded is low. When <span class="math inline">\(r\)</span> falls (say, to <span class="math inline">\(3\%\)</span>), many additional warehouse, factory, and equipment projects become profitable, increasing the quantity of investment funds demanded. Any change in perceived business opportunities—such as a breakthrough in artificial intelligence or an investment tax credit—shifts the entire investment demand curve rightward.</p>
+<p>The <strong>supply of loanable funds (<span class="math inline">\(S\)</span>)</strong> comes from national saving (private plus public saving) and net capital inflows, and it <strong>slopes upward</strong>. Households face an intertemporal trade-off between consuming today versus consuming in the future; a higher real interest rate raises the reward for deferring consumption, inducing households to save more and attracting foreign capital inflows. Changes in household thrift, tax incentives for retirement accounts (such as 401(k) or Roth IRA expansions), foreign capital flows, or government budget balances shift the supply curve of loanable funds. At the equilibrium real interest rate <span class="math inline">\(r^*\)</span>, the quantity of loanable funds supplied exactly equals the quantity demanded (<span class="math inline">\(Q_S(r^*) = Q_D(r^*) = Q^*\)</span>).</p>
+</section>
+<section id="visual-representation-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-3">Visual Representation</h3>
+<p>Figure 4 depicts equilibrium in the market for loanable funds. The downward-sloping investment demand curve (<span class="math inline">\(I\)</span>: <span class="math inline">\(r = 8.0 - 0.03Q\)</span>) intersects the upward-sloping supply curve (<span class="math inline">\(S\)</span>: <span class="math inline">\(r = 1.0 + 0.02Q\)</span>) at point <span class="math inline">\(E^*\)</span>, establishing an equilibrium real interest rate of <span class="math inline">\(r^* = 3.8\%\)</span> and equilibrium loanable funds of <span class="math inline">\(Q^* = \$140\text{ billion}\)</span>. At any rate above equilibrium (such as <span class="math inline">\(r = 5.0\%\)</span>), desired saving (<span class="math inline">\(\$200\text{B}\)</span>) exceeds desired investment (<span class="math inline">\(\$100\text{B}\)</span>), creating a <span class="math inline">\(\$100\text{B}\)</span> surplus of funds that drives <span class="math inline">\(r\)</span> down toward <span class="math inline">\(3.8\%\)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_7_saving_investment_spending_and_the_financial_system_figure_04.svg" class="img-fluid figure-img" alt="Loanable Funds Market Equilibrium. Upward-sloping supply S (r = 1.0 + 0.02Q) intersects downward-sloping investment demand I (r = 8.0 - 0.03Q) at Q^* = $140\text{ billion} and r^* = 3.8%."></p>
+<figcaption>Figure 4. <strong>Loanable Funds Market Equilibrium.</strong> Upward-sloping supply <span class="math inline">\(S\)</span> (<span class="math inline">\(r = 1.0 + 0.02Q\)</span>) intersects downward-sloping investment demand <span class="math inline">\(I\)</span> (<span class="math inline">\(r = 8.0 - 0.03Q\)</span>) at <span class="math inline">\(Q^* = \$140\text{ billion}\)</span> and <span class="math inline">\(r^* = 3.8\%\)</span>.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-real-treasury-yields-and-corporate-investment-hurdles" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-real-treasury-yields-and-corporate-investment-hurdles">Real-World Application: Real Treasury Yields and Corporate Investment Hurdles</h3>
+<p>Financial analysts monitor the 10-Year Treasury Inflation-Indexed Security yield (FRED: ) alongside the nominal 10-Year Treasury yield (FRED: ) as a real-time barometer of the economy’s benchmark real interest rate. Between 2020 and 2021, hovered near <span class="math inline">\(-1.0\%\)</span>, encouraging aggressive corporate borrowing for warehouse expansion, residential construction, and software investment. By 2024–2026, as rose near <span class="math inline">\(+1.8\%\)</span> to <span class="math inline">\(+2.1\%\)</span>, capital-intensive housing and commercial real estate projects faced much steeper borrowing hurdles, shifting private investment toward high-expected-return sectors such as artificial intelligence infrastructure and semiconductor manufacturing.</p>
+</section>
+<section id="mathematical-foundation-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-3">Mathematical Foundation</h3>
+<p>Let the supply of loanable funds (<span class="math inline">\(Q_S\)</span>, in billions of dollars) and the investment demand for loanable funds (<span class="math inline">\(Q_D\)</span>, in billions of dollars) be linear functions of the real interest rate <span class="math inline">\(r\)</span> (measured in percentage points): <span class="math display">\[\begin{align}
+\text{Supply of Loanable Funds:} \quad &amp; Q_S = -50 + 50r \qquad \left(\text{inverse: } r = 1.0 + 0.02Q_S\right) \\
+\text{Investment Demand:} \quad &amp; Q_D = \frac{800 - 100r}{3} \qquad \left(\text{inverse: } r = 8.0 - 0.03Q_D\right)
+\end{align}\]</span> Market equilibrium requires <span class="math inline">\(Q_S(r^*) = Q_D(r^*)\)</span>, or equivalently equating the inverse supply and demand curves at <span class="math inline">\(Q^*\)</span>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Work It Out: Solving for Loanable-Funds Equilibrium and Disequilibrium
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the supply curve <span class="math inline">\(r = 1.0 + 0.02Q\)</span> and investment demand curve <span class="math inline">\(r = 8.0 - 0.03Q\)</span> plotted in Figure 4:</p>
+<ul>
+<li><strong>Find Equilibrium Quantity (<span class="math inline">\(Q^*\)</span>):</strong> Set inverse supply equal to inverse demand: <span class="math display">\[1.0 + 0.02Q^* = 8.0 - 0.03Q^*\]</span> <span class="math display">\[0.05Q^* = 7.0 \implies Q^* = \frac{7.0}{0.05} = \$140\text{ billion}\]</span></li>
+<li><strong>Find Equilibrium Real Interest Rate (<span class="math inline">\(r^*\)</span>):</strong> Substitute <span class="math inline">\(Q^* = 140\)</span> into either curve: <span class="math display">\[r^* = 1.0 + 0.02(140) = 1.0 + 2.8 = 3.8\%\]</span></li>
+<li><strong>Verify Disequilibrium at <span class="math inline">\(r = 5.0\%\)</span>:</strong> [noitemsep]</li>
+<li>Quantity supplied: <span class="math inline">\(Q_S = -50 + 50(5.0) = \$200\text{ billion}\)</span>.</li>
+<li>Quantity demanded: <span class="math inline">\(Q_D = \frac{800 - 100(5.0)}{3} = \frac{300}{3} = \$100\text{ billion}\)</span>.</li>
+<li>Excess supply (surplus) <span class="math inline">\(= \$200\text{B} - \$100\text{B} = \$100\text{ billion}\)</span>, putting downward pressure on <span class="math inline">\(r\)</span> until <span class="math inline">\(r^* = 3.8\%\)</span>.</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>[Advanced: For Economics Majors] Two-Period Intertemporal Optimization
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A representative household maximizes lifetime utility <span class="math inline">\(U(C_1, C_2) = u(C_1) + \beta u(C_2)\)</span> subject to the intertemporal budget constraint <span class="math inline">\(C_1 + \frac{C_2}{1+r} = Y_1 + \frac{Y_2}{1+r}\)</span>, where <span class="math inline">\(\beta \in (0,1)\)</span> is the subjective discount factor. Setting up the Lagrangian <span class="math inline">\(\mathcal{L} = u(C_1) + \beta u(C_2) + \lambda\left(Y_1 - C_1 + \frac{Y_2 - C_2}{1+r}\right)\)</span> yields the consumption Euler equation: <span class="math display">\[\frac{u'(C_1)}{\beta u'(C_2)} = 1 + r\]</span> When <span class="math inline">\(r\)</span> rises, the relative price of current consumption (<span class="math inline">\(1+r\)</span>) increases, inducing the household to substitute away from <span class="math inline">\(C_1\)</span> and increase saving <span class="math inline">\(S_1 = Y_1 - C_1\)</span> (assuming the substitution effect dominates the income effect).</p>
+</div>
+</div>
+</section>
+</section>
+<section id="government-budget-deficits-interest-rates-and-crowding-out" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="government-budget-deficits-interest-rates-and-crowding-out"><span class="header-section-number">7.5</span> Government Budget Deficits, Interest Rates, and Crowding Out</h2>
+<section id="conceptual-introduction-4" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-4">Conceptual Introduction</h3>
+<p>Because national saving equals the sum of private saving and public saving (<span class="math inline">\(S = S_p + S_g\)</span>), fiscal policy directly affects the supply of loanable funds. When the federal government increases spending (<span class="math inline">\(G\)</span>) or cuts taxes (<span class="math inline">\(T\)</span>) without offsetting revenue, its budget balance (<span class="math inline">\(S_g = T_{\text{net}} - G\)</span>) moves into deficit (<span class="math inline">\(S_g &lt; 0\)</span>). Because the U.S. Treasury must issue government bonds to finance that deficit, it absorbs a share of private saving, shifting the <strong>supply of loanable funds leftward</strong> at every real interest rate.</p>
+<p>The leftward shift in loanable-funds supply creates a temporary shortage of funds at the initial real interest rate <span class="math inline">\(r_1^*\)</span>, bidding the equilibrium real interest rate up to a higher level <span class="math inline">\(r_2^* &gt; r_1^*\)</span>. As borrowing becomes more expensive, private businesses cancel or scale back marginal investment projects, reducing private investment from <span class="math inline">\(I_1^*\)</span> to <span class="math inline">\(I_2^*\)</span>. Economists call this negative side effect of government budget deficits <strong>crowding out</strong>: government borrowing drives up real interest rates and reduces private physical investment spending.</p>
+<p>Crucially, however, crowding out is typically <strong>partial rather than one-for-one</strong>. A <span class="math inline">\(\$50\text{ billion}\)</span> increase in the government budget deficit rarely reduces private investment by the full <span class="math inline">\(\$50\text{ billion}\)</span> for three reasons: (1) the higher real interest rate <span class="math inline">\(r_2^*\)</span> induces domestic households to save more along the upward-sloping supply curve, (2) higher U.S. real interest rates attract foreign capital inflows (<span class="math inline">\(NCI\)</span>) from global savers, and (3) during a deep recession with idle factories and slack labor, increased government spending raises national income (<span class="math inline">\(Y\)</span>), generating additional private saving and prompting the Federal Reserve to keep policy rates accommodative.</p>
+</section>
+<section id="visual-representation-4" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-4">Visual Representation</h3>
+<p>Figure 5 illustrates a <span class="math inline">\(\$50\text{ billion}\)</span> budget deficit shock using our baseline curves from Section~7.4. Initially, <span class="math inline">\(S_0\)</span> (<span class="math inline">\(r = 1.0 + 0.02Q\)</span>) and <span class="math inline">\(I\)</span> (<span class="math inline">\(r = 8.0 - 0.03Q\)</span>) intersect at <span class="math inline">\(E_1(Q_1^* = \$140\text{B}, r_1^* = 3.8\%)\)</span>. A <span class="math inline">\(\$50\text{ billion}\)</span> deficit shifts supply leftward by <span class="math inline">\(\$50\text{B}\)</span> at every interest rate to <span class="math inline">\(S_1\)</span> (<span class="math inline">\(r = 2.0 + 0.02Q\)</span>). Equilibrium moves to <span class="math inline">\(E_2(Q_2^* = \$120\text{B}, r_2^* = 4.4\%)\)</span>: private investment falls by <span class="math inline">\(\$20\text{B}\)</span> (partial crowding out), while higher interest rates induce <span class="math inline">\(+\$30\text{B}\)</span> of additional private saving (from <span class="math inline">\(\$140\text{B}\)</span> to <span class="math inline">\(\$170\text{B}\)</span> along <span class="math inline">\(S_0\)</span>) to absorb the remainder of the <span class="math inline">\(\$50\text{B}\)</span> deficit. Figure 6 contrasts complete crowding out (vertical supply), partial crowding out (upward-sloping supply), and recessionary/accommodative conditions (flat supply).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_7_saving_investment_spending_and_the_financial_system_figure_05.svg" class="img-fluid figure-img" alt="Crowding Out in the Loanable Funds Market. A $50\text{ billion} budget deficit shifts national saving left from S_0 to S_1, raising r^* from 3.8% to 4.4% and reducing private investment by $20\text{ billion} (from $140\text{B} to $120\text{B})."></p>
+<figcaption>Figure 5. <strong>Crowding Out in the Loanable Funds Market.</strong> A <span class="math inline">\(\$50\text{ billion}\)</span> budget deficit shifts national saving left from <span class="math inline">\(S_0\)</span> to <span class="math inline">\(S_1\)</span>, raising <span class="math inline">\(r^*\)</span> from <span class="math inline">\(3.8\%\)</span> to <span class="math inline">\(4.4\%\)</span> and reducing private investment by <span class="math inline">\(\$20\text{ billion}\)</span> (from <span class="math inline">\(\$140\text{B}\)</span> to <span class="math inline">\(\$120\text{B}\)</span>).</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_7_saving_investment_spending_and_the_financial_system_figure_06.svg" class="img-fluid figure-img" alt="Three Regimes of Crowding-Out Magnitude. The sensitivity of saving supply to the real interest rate—and the presence of foreign capital inflows or central bank accommodation—governs how strongly budget deficits crowd out private investment."></p>
+<figcaption>Figure 6. <strong>Three Regimes of Crowding-Out Magnitude.</strong> The sensitivity of saving supply to the real interest rate—and the presence of foreign capital inflows or central bank accommodation—governs how strongly budget deficits crowd out private investment.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-u.s.-federal-deficits-and-empirical-crowding-out" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-u.s.-federal-deficits-and-empirical-crowding-out">Real-World Application: U.S. Federal Deficits and Empirical Crowding Out</h3>
+<p>Empirical data from the Federal Reserve Bank of St.&nbsp;Louis allow economists to track fiscal deficits alongside real borrowing costs and private investment. Specifically, FRED series measures the annual federal surplus or deficit, reports net government saving across federal, state, and local governments, tracks gross private domestic investment, and measures the 10-year TIPS real interest rate. During the 2009 Great Recession, federal deficits surged above <span class="math inline">\(\$1.4\text{ trillion}\)</span> while fell below <span class="math inline">\(1\%\)</span>, demonstrating Panel (c) of Figure 6: economic slack and Federal Reserve accommodation prevented interest rate spikes. Conversely, during the full-employment expansion of 2023–2026, persistent structural deficits coincided with rising above <span class="math inline">\(2\%\)</span>, illustrating classic partial crowding out under full capacity.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Why Foreign Capital Inflows Cushion Crowding Out
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In an open economy like the United States, a higher real interest rate <span class="math inline">\(r_2^*\)</span> does not just coax extra saving out of domestic households—it also attracts foreign investors seeking higher real returns on U.S. Treasury bonds. Those foreign capital inflows (<span class="math inline">\(NCI &gt; 0\)</span>) partially replenish the domestic pool of loanable funds, moderating the rise in <span class="math inline">\(r^*\)</span> and reducing domestic investment crowding out, though at the cost of a wider trade deficit (<span class="math inline">\(NX &lt; 0\)</span>) and higher future interest payments to foreign bondholders.</p>
+</div>
+</div>
+</section>
+<section id="mathematical-foundation-4" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-4">Mathematical Foundation</h3>
+<p>Let initial loanable-funds supply be <span class="math inline">\(Q_{S,0} = -50 + 50r\)</span> (where <span class="math inline">\(S_g = 0\)</span> initially) and investment demand be <span class="math inline">\(Q_D = \frac{800 - 100r}{3}\)</span>. When the government runs a budget deficit of <span class="math inline">\(\Delta D = \$50\text{ billion}\)</span> (<span class="math inline">\(S_g' = -\$50\text{B}\)</span>), total national saving shifts leftward by <span class="math inline">\(\$50\text{B}\)</span> at every interest rate:</p>
+<p><span class="math display">\[
+Q_{S,1} = Q_{S,0} - \Delta D = (-50 + 50r) - 50 = -100 + 50r \qquad \left(\text{inverse: } r = 2.0 + 0.02Q_{S,1}\right)
+\]</span></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Work It Out: Quantifying Partial Crowding Out from a $50 Billion Deficit
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the baseline equilibrium <span class="math inline">\(E_1(Q_1^* = \$140\text{B}, r_1^* = 3.8\%)\)</span> from Figure 5, trace the impact of a <span class="math inline">\(\$50\text{ billion}\)</span> government budget deficit:</p>
+<ul>
+<li><strong>Solve for Post-Deficit Equilibrium Investment (<span class="math inline">\(I_2^*\)</span>):</strong> Equate the shifted inverse supply <span class="math inline">\(r = 2.0 + 0.02Q\)</span> to inverse investment demand <span class="math inline">\(r = 8.0 - 0.03Q\)</span>: <span class="math display">\[2.0 + 0.02Q_2^* = 8.0 - 0.03Q_2^*\]</span> <span class="math display">\[0.05Q_2^* = 6.0 \implies Q_2^* = I_2^* = \frac{6.0}{0.05} = \$120\text{ billion}\]</span></li>
+<li><strong>Solve for Post-Deficit Real Interest Rate (<span class="math inline">\(r_2^*\)</span>):</strong> Substitute <span class="math inline">\(Q_2^* = 120\)</span> into either curve: <span class="math display">\[r_2^* = 2.0 + 0.02(120) = 2.0 + 2.4 = 4.4\% \quad (\Delta r^* = +0.6\text{ percentage points})\]</span></li>
+<li><strong>Measure Private Investment Crowded Out (<span class="math inline">\(\Delta I\)</span>):</strong> <span class="math display">\[\Delta I = I_2^* - I_1^* = \$120\text{B} - \$140\text{B} = -\$20\text{ billion}\]</span></li>
+<li><strong>Verify How the $50B Deficit Is Financed (Partial Crowding Out Decomposition):</strong> At <span class="math inline">\(r_2^* = 4.4\%\)</span>, private saving along <span class="math inline">\(Q_{S,0} = -50 + 50r\)</span> rises to: <span class="math display">\[S_{p,2} = -50 + 50(4.4) = -50 + 220 = \$170\text{ billion} \quad (\Delta S_p = +\$30\text{B})\]</span> Thus, the <span class="math inline">\(\$50\text{B}\)</span> deficit is financed by <span class="math inline">\(+\$30\text{B}\)</span> in induced private saving plus <span class="math inline">\(-\$20\text{B}\)</span> in crowded-out private investment (<span class="math inline">\(\Delta S_p + |\Delta I| = \$30\text{B} + \$20\text{B} = \$50\text{B}\)</span>).</li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="chapter-summary-and-check-your-understanding" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="chapter-summary-and-check-your-understanding"><span class="header-section-number">7.6</span> Chapter Summary and Check Your Understanding</h2>
+<section id="review-problems" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="review-problems">Review Problems</h3>
+<ul>
+<li><p><strong>Flow vs.&nbsp;Stock Accounting:</strong> A household begins 2026 with <span class="math inline">\(\$85{,}000\)</span> in net wealth. During 2026, it earns <span class="math inline">\(\$72{,}000\)</span> in disposable income, spends <span class="math inline">\(\$64{,}000\)</span> on consumption, and experiences <span class="math inline">\(\$3{,}500\)</span> in capital gains on its index fund. Compute its 2026 saving flow, personal saving rate, and end-of-year wealth stock.</p></li>
+<li><p><strong>Physical vs.&nbsp;Financial Investment:</strong> Classify each transaction as macroeconomic physical investment (<span class="math inline">\(I\)</span>), household saving (financial investment), or consumption (<span class="math inline">\(C\)</span>): (a) a biotech firm builds a new <span class="math inline">\(\$40\text{ million}\)</span> laboratory; (b) a teacher buys <span class="math inline">\(\$5{,}000\)</span> of S&amp;P 500 ETF shares; (c) a family buys a newly built townhouse; (d) a retiree buys a 15-year-old condominium.</p></li>
+<li><p><strong>Open-Economy National Saving Identity:</strong> In an open economy, <span class="math inline">\(Y = \$15{,}000\text{B}\)</span>, <span class="math inline">\(C = \$10{,}200\text{B}\)</span>, <span class="math inline">\(G = \$2{,}700\text{B}\)</span>, <span class="math inline">\(T_{\text{net}} = \$2{,}400\text{B}\)</span>, and <span class="math inline">\(I = \$2{,}500\text{B}\)</span>. Calculate <span class="math inline">\(S_p\)</span>, <span class="math inline">\(S_g\)</span>, <span class="math inline">\(S\)</span>, <span class="math inline">\(NCI\)</span>, and <span class="math inline">\(NX\)</span>.</p></li>
+<li><p><strong>Bond Prices and Fisher Parity:</strong> A one-year Treasury bill with a <span class="math inline">\(\$1{,}000\)</span> face value sells for <span class="math inline">\(\$960\)</span>. Calculate its nominal yield <span class="math inline">\(i\)</span>. If expected inflation is <span class="math inline">\(\pi^e = 1.8\%\)</span>, what is the expected real interest rate <span class="math inline">\(r\)</span>?</p></li>
+<li><p><strong>Loanable-Funds Equilibrium and Crowding Out:</strong> Suppose loanable-funds supply is <span class="math inline">\(Q_S = -20 + 40r\)</span> and investment demand is <span class="math inline">\(Q_D = 220 - 20r\)</span> (in billions of dollars, with <span class="math inline">\(r\)</span> in percent).</p></li>
+<li><p>Find the initial equilibrium real interest rate <span class="math inline">\(r_1^*\)</span> and investment <span class="math inline">\(I_1^*\)</span>.</p></li>
+<li><p>If a <span class="math inline">\(\$30\text{ billion}\)</span> government budget deficit shifts supply leftward by <span class="math inline">\(\$30\text{B}\)</span>, find the new equilibrium <span class="math inline">\(r_2^*\)</span>, new investment <span class="math inline">\(I_2^*\)</span>, and the exact dollar amount of private investment crowded out.</p></li>
+</ul>
+</section>
+<section id="solutions-to-review-problems" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="solutions-to-review-problems">Solutions to Review Problems</h3>
+<ul>
+<li><strong>Saving Flow:</strong> <span class="math inline">\(S = \$72{,}000 - \$64{,}000 = \$8{,}000\)</span>. <strong>Saving Rate:</strong> <span class="math inline">\(\frac{\$8{,}000}{\$72{,}000} \times 100 = 11.11\%\)</span>. <strong>Ending Wealth:</strong> <span class="math inline">\(W_{\text{end}} = \$85{,}000 + \$8{,}000 + \$3{,}500 = \$96{,}500\)</span>.</li>
+<li><ol type="a">
+<li>Physical investment (<span class="math inline">\(I\)</span>); (b) Household saving / financial investment; (c) Physical investment (<span class="math inline">\(I\)</span>, residential construction); (d) Asset transfer of existing housing stock (neither new <span class="math inline">\(I\)</span> nor <span class="math inline">\(C\)</span>).</li>
+</ol></li>
+<li><span class="math inline">\(S_p = \$15{,}000 - \$2{,}400 - \$10{,}200 = \$2{,}400\text{B}\)</span>; <span class="math inline">\(S_g = \$2{,}400 - \$2{,}700 = -\$300\text{B}\)</span> (deficit); <span class="math inline">\(S = \$2{,}400 - \$300 = \$2{,}100\text{B}\)</span>; <span class="math inline">\(NCI = I - S = \$2{,}500 - \$2{,}100 = +\$400\text{B}\)</span>; <span class="math inline">\(NX = -NCI = -\$400\text{B}\)</span> (trade deficit).</li>
+<li>Nominal yield: <span class="math inline">\(i = \frac{\$1{,}000 - \$960}{\$960} = \frac{\$40}{\$960} \approx 4.17\%\)</span>. Expected real interest rate: <span class="math inline">\(r \approx 4.17\% - 1.80\% = 2.37\%\)</span>.</li>
+<li><ol type="a">
+<li>Set <span class="math inline">\(-20 + 40r_1^* = 220 - 20r_1^* \implies 60r_1^* = 240 \implies r_1^* = 4.0\%\)</span> and <span class="math inline">\(I_1^* = 220 - 20(4.0) = \$140\text{ billion}\)</span>. (b) Shifted supply is <span class="math inline">\(Q_{S,1} = -50 + 40r\)</span>. Set <span class="math inline">\(-50 + 40r_2^* = 220 - 20r_2^* \implies 60r_2^* = 270 \implies r_2^* = 4.5\%\)</span> and <span class="math inline">\(I_2^* = 220 - 20(4.5) = \$130\text{ billion}\)</span>. Private investment crowded out is <span class="math inline">\(\Delta I = \$130\text{B} - \$140\text{B} = -\$10\text{ billion}\)</span> (while induced private saving rose by <span class="math inline">\(+\$20\text{B}\)</span>).</li>
+</ol></li>
+</ul>
+
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const toggle = window.document.createElement('button');
+      toggle.type = "button";
+      toggle.setAttribute("role", "switch");
+      toggle.setAttribute("aria-checked", "false");
+      toggle.classList.add('top-right');
+      toggle.classList.add('quarto-color-scheme-toggle');
+      toggle.setAttribute("aria-label", "Toggle dark mode");
+      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      toggle.appendChild(i);
+      // Put the toggle in a landmark of its own, so that landmark navigation
+      // can reach it.
+      //
+      // The container is always a fresh direct child of body, and the toggle is
+      // never moved into page furniture that the theme or the author controls.
+      // The toggle is positioned against the page, so any ancestor that
+      // establishes a containing block captures it: a positioned element or a
+      // grid for position: absolute, and transform, filter, will-change or
+      // contain for position: fixed. A direct child of body has none of these
+      // to inherit, and the shift when one appears is silent and visual.
+      //
+      // ARIA says a document should have at most one banner, and axe reports a
+      // duplicate whether or not the banners carry distinct labels. So use a
+      // header when the page has no banner yet, and a named region otherwise.
+      //
+      // A header is a banner wherever it sits, unless it is inside sectioning
+      // content, so this cannot just look at the children of body: a custom
+      // page layout wraps the title block header in a plain div. An explicit
+      // role="banner" always counts.
+      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
+      const hasBanner = Array.from(
+        window.document.querySelectorAll('header:not([role]), [role="banner"]')
+      ).some(function(el) {
+        return el.hasAttribute("role") || el.closest(sectioning) === null;
+      });
+      const container = window.document.createElement(hasBanner ? "div" : "header");
+      if (hasBanner) {
+        container.setAttribute("role", "region");
+        container.setAttribute("aria-label", "Toggle dark mode");
+      }
+      container.classList.add('quarto-color-scheme-toggle-container');
+      container.appendChild(toggle);
+      window.document.body.appendChild(container);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="./ch06_unemployment.html" class="pagination-link" aria-label="Ch06 Unemployment">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ch06 Unemployment</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ch08_aggregate_expenditure_multiplier.html" class="pagination-link" aria-label="Chapter 8: Income, Expenditure, and the Keynesian Cross">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Chapter 8: Income, Expenditure, and the Keynesian Cross</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>9&nbsp; Chapter 9: Aggregate Demand and Aggregate Supply (AD–AS) – Principles of Macroeconomics</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./ch10_fiscal_policy.html" rel="next">
+<link href="./ch08_aggregate_expenditure_multiplier.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-a71520af13e4c6b5a7ac03cb4efe7867.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-663504756e947d720a454151098d9f2d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-a71520af13e4c6b5a7ac03cb4efe7867.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455).
+    // Not run on load: stylesheets are set before first paint there, and
+    // scrolling would undo the scroll to a URL fragment (#14973).
+    // The one pixel nudge keeps the reader where they were.
+    const refreshSafariScrollbar = () => {
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        const scrollY = window.scrollY;
+        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
+        setTimeout(() => {
+          window.scrollTo(0, scrollY);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      refreshSafariScrollbar();
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch08_aggregate_expenditure_multiplier.html">Short-Run Fluctuations &amp; Stabilization</a></li><li class="breadcrumb-item"><a href="./ch09_aggregate_demand_aggregate_supply.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Chapter 9: Aggregate Demand and Aggregate Supply (AD–AS)</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Principles of Macroeconomics</a> 
+        <div class="sidebar-tools-main">
+  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Macroeconomic Foundations &amp; Measurement</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch01_principles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Chapter 1: First Principles of Economics &amp; Macroeconomic Systems</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch02_macro_ppf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 2: The Macroeconomic Production Possibilities Frontier &amp; Capital Deepening</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch03_supply_demand.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Chapter 3: Supply, Demand, and Market Equilibrium</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch04_aggregate_output.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Chapter 4: Aggregate Output</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch05_inflation_deflation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Inflation and Deflation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch06_unemployment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ch06 Unemployment</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Long-Run Growth &amp; Financial Systems</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch07_savings_investment_financial_system.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chapter 7: Saving, Investment Spending, and the Financial System</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Short-Run Fluctuations &amp; Stabilization</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch08_aggregate_expenditure_multiplier.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Chapter 8: Income, Expenditure, and the Keynesian Cross</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch09_aggregate_demand_aggregate_supply.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Chapter 9: Aggregate Demand and Aggregate Supply (AD–AS)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch10_fiscal_policy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Chapter 10: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch11_money_banking_fed.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Ch11 Money Banking Fed</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch12_monetary_policy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Ch12 Monetary Policy</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-outcomes-key-terms-and-opening-dilemma" id="toc-learning-outcomes-key-terms-and-opening-dilemma" class="nav-link active" data-scroll-target="#learning-outcomes-key-terms-and-opening-dilemma"><span class="header-section-number">9.1</span> Learning Outcomes, Key Terms, and Opening Dilemma</a>
+  <ul class="collapse">
+  <li><a href="#course-learning-outcomes-clos" id="toc-course-learning-outcomes-clos" class="nav-link" data-scroll-target="#course-learning-outcomes-clos">Course Learning Outcomes (CLOs)</a></li>
+  <li><a href="#key-terms" id="toc-key-terms" class="nav-link" data-scroll-target="#key-terms">Key Terms</a></li>
+  </ul></li>
+  <li><a href="#aggregate-demand-total-planned-spending-and-the-price-level" id="toc-aggregate-demand-total-planned-spending-and-the-price-level" class="nav-link" data-scroll-target="#aggregate-demand-total-planned-spending-and-the-price-level"><span class="header-section-number">9.2</span> Aggregate Demand: Total Planned Spending and the Price Level</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction" id="toc-conceptual-introduction" class="nav-link" data-scroll-target="#conceptual-introduction">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation" id="toc-visual-representation" class="nav-link" data-scroll-target="#visual-representation">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation" id="toc-mathematical-foundation" class="nav-link" data-scroll-target="#mathematical-foundation">Mathematical Foundation</a></li>
+  <li><a href="#real-world-application" id="toc-real-world-application" class="nav-link" data-scroll-target="#real-world-application">Real-World Application</a></li>
+  </ul></li>
+  <li><a href="#short-run-and-long-run-aggregate-supply" id="toc-short-run-and-long-run-aggregate-supply" class="nav-link" data-scroll-target="#short-run-and-long-run-aggregate-supply"><span class="header-section-number">9.3</span> Short-Run and Long-Run Aggregate Supply</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-1" id="toc-conceptual-introduction-1" class="nav-link" data-scroll-target="#conceptual-introduction-1">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-1" id="toc-visual-representation-1" class="nav-link" data-scroll-target="#visual-representation-1">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-1" id="toc-mathematical-foundation-1" class="nav-link" data-scroll-target="#mathematical-foundation-1">Mathematical Foundation</a></li>
+  <li><a href="#real-world-application-1" id="toc-real-world-application-1" class="nav-link" data-scroll-target="#real-world-application-1">Real-World Application</a></li>
+  </ul></li>
+  <li><a href="#demand-shocks-stagflation-and-long-run-adjustment" id="toc-demand-shocks-stagflation-and-long-run-adjustment" class="nav-link" data-scroll-target="#demand-shocks-stagflation-and-long-run-adjustment"><span class="header-section-number">9.4</span> Demand Shocks, Stagflation, and Long-Run Adjustment</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-2" id="toc-conceptual-introduction-2" class="nav-link" data-scroll-target="#conceptual-introduction-2">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-2" id="toc-visual-representation-2" class="nav-link" data-scroll-target="#visual-representation-2">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-algebra-first-with-optional-calculus-box" id="toc-mathematical-foundation-algebra-first-with-optional-calculus-box" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-first-with-optional-calculus-box">Mathematical Foundation (Algebra-First with Optional Calculus Box)</a></li>
+  <li><a href="#real-world-application-2" id="toc-real-world-application-2" class="nav-link" data-scroll-target="#real-world-application-2">Real-World Application</a></li>
+  </ul></li>
+  <li><a href="#check-your-understanding" id="toc-check-your-understanding" class="nav-link" data-scroll-target="#check-your-understanding"><span class="header-section-number">9.5</span> Check Your Understanding</a>
+  <ul class="collapse">
+  <li><a href="#solutions" id="toc-solutions" class="nav-link" data-scroll-target="#solutions">Solutions</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch08_aggregate_expenditure_multiplier.html">Short-Run Fluctuations &amp; Stabilization</a></li><li class="breadcrumb-item"><a href="./ch09_aggregate_demand_aggregate_supply.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Chapter 9: Aggregate Demand and Aggregate Supply (AD–AS)</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Chapter 9: Aggregate Demand and Aggregate Supply (AD–AS)</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p>This chapter develops the Aggregate Demand–Aggregate Supply (<span class="math inline">\(AD\text{–}AS\)</span>) framework to explain short-run business cycle fluctuations in real output, unemployment, and the aggregate price level alongside long-run economic growth and nominal adjustment. Aligned with Krugman and Wells’s macroeconomics progression, each core topic integrates conceptual intuition, Okabe-Ito coordinate geometry, empirical U.S. Federal Reserve Economic Data (FRED) applications, and algebra-first equilibrium modeling.</p>
+</blockquote>
+<section id="learning-outcomes-key-terms-and-opening-dilemma" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="learning-outcomes-key-terms-and-opening-dilemma"><span class="header-section-number">9.1</span> Learning Outcomes, Key Terms, and Opening Dilemma</h2>
+<section id="course-learning-outcomes-clos" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="course-learning-outcomes-clos">Course Learning Outcomes (CLOs)</h3>
+<p>Upon completing this chapter, students will be able to:</p>
+<ul>
+<li>Distinguish a movement along the Aggregate Demand (<span class="math inline">\(AD\)</span>) curve caused by a change in the aggregate price level from a shift of the <span class="math inline">\(AD\)</span> curve caused by changes in planned spending (<span class="math inline">\(C, I, G, NX\)</span>).</li>
+<li>Explain why the Short-Run Aggregate Supply (<span class="math inline">\(SRAS\)</span>) curve slopes upward due to nominal wage and price stickiness, whereas the Long-Run Aggregate Supply (<span class="math inline">\(LRAS\)</span>) curve is vertical at potential output (<span class="math inline">\(Y^*\)</span>).</li>
+<li>Diagnose recessionary output gaps (<span class="math inline">\(Y &lt; Y^*\)</span>) and inflationary output gaps (<span class="math inline">\(Y &gt; Y^*\)</span>) using <span class="math inline">\(AD\text{–}SRAS\text{–}LRAS\)</span> equilibrium coordinates and trace the economy’s long-run self-correcting adjustment.</li>
+<li>Contrast the macroeconomic effects of demand shocks with adverse supply shocks (stagflation) both graphically and algebraically, and evaluate empirical co-movements across , , and .</li>
+</ul>
+<p><em>Curricular Alignment:</em> Supports SFSU ECON 102 Course Learning Outcome <strong>MA-3</strong> and California C-ID <strong>ECON 202 (C2002-2)</strong>.</p>
+</section>
+<section id="key-terms" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="key-terms">Key Terms</h3>
+<p><strong>Aggregate Demand (<span class="math inline">\(AD\)</span>)</strong> <span class="math inline">\(\bullet\)</span> <strong>Wealth Effect</strong> <span class="math inline">\(\bullet\)</span> <strong>Interest-Rate Effect</strong> <span class="math inline">\(\bullet\)</span> <strong>Exchange-Rate (Net Export) Effect</strong> <span class="math inline">\(\bullet\)</span> <strong>Short-Run Aggregate Supply (<span class="math inline">\(SRAS\)</span>)</strong> <span class="math inline">\(\bullet\)</span> <strong>Sticky Wages and Prices</strong> <span class="math inline">\(\bullet\)</span> <strong>Long-Run Aggregate Supply (<span class="math inline">\(LRAS\)</span>)</strong> <span class="math inline">\(\bullet\)</span> <strong>Potential Output (<span class="math inline">\(Y^*\)</span>)</strong> <span class="math inline">\(\bullet\)</span> <strong>Recessionary Gap</strong> <span class="math inline">\(\bullet\)</span> <strong>Inflationary Gap</strong> <span class="math inline">\(\bullet\)</span> <strong>Self-Correcting Mechanism</strong> <span class="math inline">\(\bullet\)</span> <strong>Demand Shock</strong> <span class="math inline">\(\bullet\)</span> <strong>Supply Shock</strong> <span class="math inline">\(\bullet\)</span> <strong>Stagflation</strong>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Bring It Home: Why Did 2021–2023 Combine High Inflation with Shifting Output?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In 2020, pandemic lockdowns caused total spending and production to plunge simultaneously. By 2021–2022, aggressive fiscal stimulus and pent-up household demand collided with global semiconductor shortages, port bottlenecks, and a sharp spike in global energy prices following geopolitical conflict. Consumer price inflation () surged to a four-decade high above 9%, while policymakers debated whether rising prices reflected excessive aggregate demand or constrained aggregate supply. The <span class="math inline">\(AD\text{–}AS\)</span> model provides the exact analytical lens required to separate demand-driven expansions from supply-driven stagflation.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="aggregate-demand-total-planned-spending-and-the-price-level" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="aggregate-demand-total-planned-spending-and-the-price-level"><span class="header-section-number">9.2</span> Aggregate Demand: Total Planned Spending and the Price Level</h2>
+<section id="conceptual-introduction" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction">Conceptual Introduction</h3>
+<p><strong>Aggregate Demand (<span class="math inline">\(AD\)</span>)</strong> represents the total quantity of domestically produced final goods and services that households, firms, governments, and foreign buyers plan to purchase at each aggregate price level (<span class="math inline">\(P\)</span>), holding all non-price determinants constant (<em>ceteris paribus</em>). Summing across the four expenditure sectors established in Chapter 4 gives total planned spending:</p>
+<p><span class="math display">\[
+AD = C + I + G + NX
+\]</span></p>
+<p>Unlike a microeconomic demand curve—which holds all other prices and consumer income constant while varying the relative price of a single good—the <span class="math inline">\(AD\)</span> curve tracks economy-wide real output (<span class="math inline">\(Y\)</span>) as the overall price level (<span class="math inline">\(P\)</span>, measured by the GDP deflator or CPI) changes across all markets simultaneously.</p>
+<p>Three distinct macroeconomic channels explain why the <span class="math inline">\(AD\)</span> curve slopes downward from left to right:</p>
+<ul>
+<li><strong>The Wealth (Real-Balances) Effect:</strong> When the aggregate price level <span class="math inline">\(P\)</span> falls, the real purchasing power of households’ fixed nominal financial assets (cash, checking deposits, nominal bonds) rises. Feeling wealthier, households increase real consumption spending (<span class="math inline">\(C\)</span>).</li>
+<li><strong>The Interest-Rate Effect:</strong> A lower price level reduces the amount of money households and firms need to hold for everyday transactions. As money demand falls, nominal and real interest rates (<span class="math inline">\(r\)</span>) decline, lowering borrowing costs and stimulating business investment (<span class="math inline">\(I\)</span>) and durable consumption (<span class="math inline">\(C\)</span>).</li>
+<li><strong>The Exchange-Rate (Net Export) Effect:</strong> When lower domestic interest rates reduce the return on U.S. financial assets relative to foreign assets, capital outflows depreciate the domestic currency. A weaker currency makes domestic exports cheaper for foreign buyers and imports more expensive for domestic residents, increasing net exports (<span class="math inline">\(NX = X - M\)</span>).</li>
+</ul>
+<p>When any factor <em>other than</em> the current domestic price level alters planned spending at every price level, the entire <span class="math inline">\(AD\)</span> curve shifts. Rightward shifts (<span class="math inline">\(AD_1 \rightarrow AD_2\)</span>) result from stronger consumer confidence, higher expected business profitability, expansionary fiscal policy (higher <span class="math inline">\(G\)</span> or lower taxes <span class="math inline">\(T\)</span>), expansionary monetary policy (lower policy interest rates), faster foreign GDP growth, or currency depreciation. Leftward shifts occur when these forces reverse.</p>
+</section>
+<section id="visual-representation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation">Visual Representation</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_9_aggregate_demand_and_aggregate_supply_ad_as_figure_01.svg" class="img-fluid figure-img" alt="Reading the AD Curve: A lower price level (P_A \rightarrow P_B) induces a movement along AD_1 from point A to point B (Y_A \rightarrow Y_B), whereas an autonomous spending surge at constant price level P_B shifts the entire curve rightward from AD_1 to AD_2 (point B to point C)."></p>
+<figcaption>Figure 1. <strong>Reading the <span class="math inline">\(AD\)</span> Curve:</strong> A lower price level (<span class="math inline">\(P_A \rightarrow P_B\)</span>) induces a movement along <span class="math inline">\(AD_1\)</span> from point <span class="math inline">\(A\)</span> to point <span class="math inline">\(B\)</span> (<span class="math inline">\(Y_A \rightarrow Y_B\)</span>), whereas an autonomous spending surge at constant price level <span class="math inline">\(P_B\)</span> shifts the entire curve rightward from <span class="math inline">\(AD_1\)</span> to <span class="math inline">\(AD_2\)</span> (point <span class="math inline">\(B\)</span> to point <span class="math inline">\(C\)</span>).</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Movement Along <span class="math inline">\(AD\)</span> vs.&nbsp;Shift of <span class="math inline">\(AD\)</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A change in the domestic aggregate price level <span class="math inline">\(P\)</span> causes a <strong>movement along</strong> a stationary <span class="math inline">\(AD\)</span> curve via the wealth, interest-rate, and exchange-rate effects. By contrast, a change in autonomous consumption, investment, government purchases, net exports, or monetary/fiscal policy at any <em>given</em> price level <strong>shifts</strong> the entire <span class="math inline">\(AD\)</span> curve. Never treat an endogenous change in <span class="math inline">\(P\)</span> as a shifter of <span class="math inline">\(AD\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="mathematical-foundation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation">Mathematical Foundation</h3>
+<p>Assume linear aggregate planned expenditure where autonomous spending responds inversely to the price level <span class="math inline">\(P\)</span> (capturing the wealth, interest-rate, and exchange-rate channels with slope parameter <span class="math inline">\(\beta &gt; 0\)</span>):</p>
+<p><span class="math display">\[
+AD: \quad Y = A_0 - \beta P \qquad \Longleftrightarrow \qquad P = \frac{A_0}{\beta} - \frac{1}{\beta} Y
+\]</span></p>
+<p>Here, <span class="math inline">\(A_0\)</span> summarizes non-price autonomous spending determinants (<span class="math inline">\(C_0, I_0, G, NX_0\)</span>). Any increase <span class="math inline">\(\Delta A_0 &gt; 0\)</span> shifts the horizontal intercept rightward by <span class="math inline">\(\Delta Y = \Delta A_0\)</span> at every price level <span class="math inline">\(P\)</span>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Work It Out: Quantifying a Movement Along <span class="math inline">\(AD\)</span> vs.&nbsp;a Fiscal Shift
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose baseline Aggregate Demand is given by <span class="math inline">\(Y = 45 - 0.25P\)</span> (with <span class="math inline">\(Y\)</span> in trillions of 2017 dollars and <span class="math inline">\(P\)</span> as a price index).</p>
+<ul>
+<li><p><strong>Movement Along <span class="math inline">\(AD\)</span>:</strong> Calculate real output demanded when <span class="math inline">\(P = 120\)</span> versus <span class="math inline">\(P = 100\)</span>.</p></li>
+<li><p>At <span class="math inline">\(P = 120\)</span>: <span class="math inline">\(Y_A = 45 - 0.25(120) = 45 - 30 = \$15.0\text{ trillion}\)</span>.</p></li>
+<li><p>At <span class="math inline">\(P = 100\)</span>: <span class="math inline">\(Y_B = 45 - 0.25(100) = 45 - 25 = \$20.0\text{ trillion}\)</span>.</p></li>
+<li><p>Moving from <span class="math inline">\(P = 120\)</span> to <span class="math inline">\(P = 100\)</span> expands quantity demanded by <span class="math inline">\(+\$5.0\text{ trillion}\)</span> along the same curve.</p></li>
+<li><p><strong>Shift of <span class="math inline">\(AD\)</span>:</strong> Suppose an autonomous investment boom increases <span class="math inline">\(A_0\)</span> by <span class="math inline">\(\$4.0\text{ trillion}\)</span> at every price level, yielding <span class="math inline">\(Y = 49 - 0.25P\)</span>. At <span class="math inline">\(P = 100\)</span>:</p></li>
+</ul>
+<p><span class="math display">\[
+Y_C = 49 - 0.25(100) = 49 - 25 = \$24.0\text{ trillion}
+\]</span></p>
+<p>At an unchanged price level of <span class="math inline">\(P = 100\)</span>, the <span class="math inline">\(AD\)</span> curve shifts horizontally rightward by <span class="math inline">\(\Delta Y = \$4.0\text{ trillion}\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="real-world-application" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application">Real-World Application</h3>
+<p><strong>Interest-Rate Sensitivity in U.S. Residential Investment (2022–2024):</strong> When the Federal Reserve raised its administered interest-rate corridor during 2022–2023 to curb post-pandemic inflation, 30-year fixed mortgage rates rose from roughly 3% to over 7%. Even before overall consumer prices fell, higher borrowing costs sharply reduced planned residential investment (<span class="math inline">\(I\)</span>) and auto/durable purchases (<span class="math inline">\(C\)</span>), shifting the U.S. <span class="math inline">\(AD\)</span> curve leftward relative to its 2021 trajectory and cooling excess demand.</p>
+</section>
+</section>
+<section id="short-run-and-long-run-aggregate-supply" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="short-run-and-long-run-aggregate-supply"><span class="header-section-number">9.3</span> Short-Run and Long-Run Aggregate Supply</h2>
+<section id="conceptual-introduction-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-1">Conceptual Introduction</h3>
+<p><strong>Aggregate Supply</strong> links the aggregate price level (<span class="math inline">\(P\)</span>) to the total quantity of real goods and services (<span class="math inline">\(Y\)</span>) that domestic firms are willing and able to produce. Crucially, supply behavior depends on the time horizon over which input costs adjust:</p>
+<ul>
+<li><strong>Short-Run Aggregate Supply (<span class="math inline">\(SRAS\)</span>):</strong> In the short run, nominal wages and many input prices are <em>sticky</em>—locked in by multi-year union contracts, annual salary cycles, or menu costs. When the overall price level <span class="math inline">\(P\)</span> rises while nominal unit production costs remain temporarily fixed, revenue per unit rises faster than cost per unit. Profit margins widen, inducing firms to expand production and hire more workers, which gives <span class="math inline">\(SRAS\)</span> its positive upward slope.</li>
+<li><strong>Long-Run Aggregate Supply (<span class="math inline">\(LRAS\)</span>):</strong> In the long run, all nominal wages, input prices, and price expectations adjust fully to match the aggregate price level. Because doubling all output prices and all input wages leaves real relative prices and profit margins unchanged, long-run output is independent of <span class="math inline">\(P\)</span>. Consequently, <span class="math inline">\(LRAS\)</span> is vertical at <strong>potential output (<span class="math inline">\(Y^*\)</span>)</strong>—the sustainable level of real GDP determined by the economy’s labor force, physical and human capital stock, natural resources, technology, and institutions (corresponding to the natural rate of unemployment <span class="math inline">\(u^*\)</span>).</li>
+</ul>
+<p>While <span class="math inline">\(LRAS\)</span> shifts rightward over decades through capital deepening, labor force growth, and technological innovation (mirroring outward shifts of the Macroeconomic PPF in Chapter 2), <span class="math inline">\(SRAS\)</span> shifts whenever unit production costs or price expectations change:</p>
+<ul>
+<li><strong>Nominal Wage Changes:</strong> Higher nominal wage settlements raise unit labor costs and shift <span class="math inline">\(SRAS\)</span> leftward (upward).</li>
+<li><strong>Commodity and Energy Prices:</strong> Spikes in oil, electricity, or raw material prices raise production costs and shift <span class="math inline">\(SRAS\)</span> leftward.</li>
+<li><strong>Expected Price Level (<span class="math inline">\(P^e\)</span>):</strong> When workers and firms expect higher inflation (<span class="math inline">\(P^e \uparrow\)</span>), they negotiate higher nominal wages today, shifting <span class="math inline">\(SRAS\)</span> leftward.</li>
+<li><strong>Productivity Shocks:</strong> Advances in total factor productivity lower unit costs and shift both <span class="math inline">\(SRAS\)</span> and <span class="math inline">\(LRAS\)</span> rightward.</li>
+</ul>
+</section>
+<section id="visual-representation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-1">Visual Representation</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_9_aggregate_demand_and_aggregate_supply_ad_as_figure_02.svg" class="img-fluid figure-img" alt="Macroeconomic Equilibrium and Output Gaps: Long-run equilibrium occurs at E^* where AD_1, SRAS_1, and vertical LRAS intersect at (Y^*, P^*). Short-run equilibria to the left of Y^* create recessionary gaps (u > u^*), whereas equilibria to the right of Y^* create inflationary gaps (u < u^*)."></p>
+<figcaption>Figure 2. <strong>Macroeconomic Equilibrium and Output Gaps:</strong> Long-run equilibrium occurs at <span class="math inline">\(E^*\)</span> where <span class="math inline">\(AD_1\)</span>, <span class="math inline">\(SRAS_1\)</span>, and vertical <span class="math inline">\(LRAS\)</span> intersect at <span class="math inline">\((Y^*, P^*)\)</span>. Short-run equilibria to the left of <span class="math inline">\(Y^*\)</span> create recessionary gaps (<span class="math inline">\(u &gt; u^*\)</span>), whereas equilibria to the right of <span class="math inline">\(Y^*\)</span> create inflationary gaps (<span class="math inline">\(u &lt; u^*\)</span>).</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Why Does <span class="math inline">\(SRAS\)</span> Slope Upward While <span class="math inline">\(LRAS\)</span> Is Vertical?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A higher aggregate price level boosts production only when output prices rise <em>faster</em> than nominal wages and input costs. In the short run, sticky contracts hold nominal wages temporarily fixed, so higher <span class="math inline">\(P\)</span> raises profit per unit and expands real GDP along <span class="math inline">\(SRAS\)</span>. In the long run, nominal wages adjust proportionally with <span class="math inline">\(P\)</span>, restoring original real wages and profit margins; therefore, long-run output returns to potential GDP (<span class="math inline">\(Y^*\)</span>) regardless of the price level.</p>
+</div>
+</div>
+</section>
+<section id="mathematical-foundation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-1">Mathematical Foundation</h3>
+<p>In linear form, Short-Run Aggregate Supply reflects sticky nominal wages (<span class="math inline">\(W_0\)</span>) anchored to the expected price level (<span class="math inline">\(P^e\)</span>) with supply slope parameter <span class="math inline">\(\gamma &gt; 0\)</span>:</p>
+<p><span class="math display">\[
+SRAS: \quad Y = Y^* + \gamma (P - P^e) \qquad \Longleftrightarrow \qquad P = P^e + \frac{1}{\gamma}(Y - Y^*)
+\]</span></p>
+<p>When actual prices equal expected prices (<span class="math inline">\(P = P^e\)</span>), short-run output equals potential output (<span class="math inline">\(Y = Y^*\)</span>), which defines the vertical <span class="math inline">\(LRAS\)</span> schedule. If <span class="math inline">\(P &gt; P^e\)</span>, real wages (<span class="math inline">\(W_0 / P\)</span>) fall temporarily and firms expand output above <span class="math inline">\(Y^*\)</span>; if <span class="math inline">\(P &lt; P^e\)</span>, real wages rise and firms cut production below <span class="math inline">\(Y^*\)</span>.</p>
+</section>
+<section id="real-world-application-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-1">Real-World Application</h3>
+<p><strong>AI Infrastructure, Productivity, and <span class="math inline">\(LRAS\)</span> vs.&nbsp;<span class="math inline">\(SRAS\)</span>:</strong> Heavy capital investment in data centers, automation, and cloud computing initially boosts <span class="math inline">\(AD\)</span> through higher business investment (<span class="math inline">\(I\)</span>). Over a multi-year horizon, however, if those technologies raise output per worker across logistics, healthcare, and software, they reduce unit labor costs—shifting both <span class="math inline">\(SRAS\)</span> and vertical <span class="math inline">\(LRAS\)</span> rightward and allowing higher non-inflationary potential output (<span class="math inline">\(Y^*\)</span>).</p>
+</section>
+</section>
+<section id="demand-shocks-stagflation-and-long-run-adjustment" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="demand-shocks-stagflation-and-long-run-adjustment"><span class="header-section-number">9.4</span> Demand Shocks, Stagflation, and Long-Run Adjustment</h2>
+<section id="conceptual-introduction-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-2">Conceptual Introduction</h3>
+<p>Macroeconomic fluctuations arise from exogenous <strong>shocks</strong> that displace the economy from <span class="math inline">\(E^* = (Y^*, P^*)\)</span>:</p>
+<ul>
+<li><strong>Positive Demand Shock (<span class="math inline">\(AD_1 \rightarrow AD_2\)</span>) and Self-Correction:</strong> A surge in planned spending raises both short-run output (<span class="math inline">\(Y_2 &gt; Y^*\)</span>) and the price level (<span class="math inline">\(P_2 &gt; P^*\)</span>), opening an <strong>inflationary gap</strong> where unemployment falls below <span class="math inline">\(u^*\)</span>. Because labor markets are tight and workers’ real purchasing power has been eroded by higher prices (<span class="math inline">\(P_2 &gt; P^e\)</span>), workers demand higher nominal wages as contracts renew. Rising nominal wages increase unit production costs, shifting <span class="math inline">\(SRAS\)</span> leftward (<span class="math inline">\(SRAS_1 \rightarrow SRAS_2\)</span>) until output returns to <span class="math inline">\(Y^*\)</span> at a permanently higher price level (<span class="math inline">\(P_3 &gt; P_2\)</span>). Conversely, after a negative demand shock creates a recessionary gap (<span class="math inline">\(Y &lt; Y^*\)</span>), high unemployment eventually puts downward pressure on nominal wage growth, shifting <span class="math inline">\(SRAS\)</span> rightward back to <span class="math inline">\(Y^*\)</span>—though downward nominal wage stickiness often makes self-correction from recessions slow and painful.</li>
+<li><strong>Adverse Supply Shock (<span class="math inline">\(SRAS_1 \rightarrow SRAS_2\)</span>) and Stagflation:</strong> A sharp spike in energy or commodity costs shifts <span class="math inline">\(SRAS\)</span> leftward. In the short run, real output falls (<span class="math inline">\(Y_2 &lt; Y^*\)</span>, raising unemployment) while the price level rises (<span class="math inline">\(P_2 &gt; P^*\)</span>). This combination of economic stagnation and rising inflation is called <strong>stagflation</strong>. Unlike demand shocks—where output and prices move in the <em>same</em> direction—supply shocks push output and prices in <em>opposite</em> directions, creating a painful policy dilemma because stimulating <span class="math inline">\(AD\)</span> fights unemployment at the cost of even higher inflation.</li>
+</ul>
+</section>
+<section id="visual-representation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-2">Visual Representation</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_9_aggregate_demand_and_aggregate_supply_ad_as_figure_03.svg" class="img-fluid figure-img" alt="Comparing Demand and Supply Shocks: In Panel A, a positive demand shock moves the economy from E_1 to E_2 (Y_2 > Y^*, P_2 > P_1), followed by rising nominal wages shifting SRAS_1 \rightarrow SRAS_2 to long-run equilibrium E_3 at Y^*. In Panel B, an adverse supply shock shifts SRAS_1 \rightarrow SRAS_2, reducing output (Y_2 < Y^*) while raising the price level (P_2 > P_1)."></p>
+<figcaption>Figure 3. <strong>Comparing Demand and Supply Shocks:</strong> In Panel A, a positive demand shock moves the economy from <span class="math inline">\(E_1\)</span> to <span class="math inline">\(E_2\)</span> (<span class="math inline">\(Y_2 &gt; Y^*\)</span>, <span class="math inline">\(P_2 &gt; P_1\)</span>), followed by rising nominal wages shifting <span class="math inline">\(SRAS_1 \rightarrow SRAS_2\)</span> to long-run equilibrium <span class="math inline">\(E_3\)</span> at <span class="math inline">\(Y^*\)</span>. In Panel B, an adverse supply shock shifts <span class="math inline">\(SRAS_1 \rightarrow SRAS_2\)</span>, reducing output (<span class="math inline">\(Y_2 &lt; Y^*\)</span>) while raising the price level (<span class="math inline">\(P_2 &gt; P_1\)</span>).</figcaption>
+</figure>
+</div>
+</section>
+<section id="mathematical-foundation-algebra-first-with-optional-calculus-box" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-first-with-optional-calculus-box">Mathematical Foundation (Algebra-First with Optional Calculus Box)</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Work It Out: Complete Equilibrium, Demand Shock, Self-Correction, and Stagflation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Consider an economy described by the following linear schedules (<span class="math inline">\(Y\)</span> in trillions of chained 2017 dollars, <span class="math inline">\(P\)</span> as price index):</p>
+<p><span class="math display">\[
+AD_1: \; P = 180 - 4Y \qquad\qquad SRAS_1: \; P = 20 + 4Y \qquad\qquad LRAS: \; Y^* = 20
+\]</span></p>
+<p><strong>Part A: Initial Long-Run Equilibrium (<span class="math inline">\(E_1\)</span>)</strong> \ Set <span class="math inline">\(AD_1 = SRAS_1\)</span>:</p>
+<p><span class="math display">\[
+180 - 4Y = 20 + 4Y \implies 160 = 8Y \implies Y_1 = 20
+\]</span></p>
+<p>Substitute <span class="math inline">\(Y_1 = 20\)</span> into <span class="math inline">\(AD_1\)</span>: <span class="math inline">\(P_1 = 180 - 4(20) = 100\)</span>. Since <span class="math inline">\(Y_1 = Y^* = 20\)</span>, the economy begins in long-run equilibrium at <span class="math inline">\((Y^* = 20, P_1 = 100)\)</span>.</p>
+<p><strong>Part B: Positive Demand Shock (<span class="math inline">\(AD_1 \rightarrow AD_2\)</span>) and Output Gap</strong> \ Suppose a surge in business investment shifts <span class="math inline">\(AD\)</span> to <span class="math inline">\(AD_2: \; P = 196 - 4Y\)</span>. Equate <span class="math inline">\(AD_2 = SRAS_1\)</span>:</p>
+<p><span class="math display">\[
+196 - 4Y = 20 + 4Y \implies 176 = 8Y \implies Y_2 = 22
+\]</span></p>
+<p>Substitute <span class="math inline">\(Y_2 = 22\)</span> into <span class="math inline">\(AD_2\)</span>: <span class="math inline">\(P_2 = 196 - 4(22) = 108\)</span>. \ The economy experiences an <strong>inflationary gap</strong> of <span class="math inline">\(Y_2 - Y^* = 22 - 20 = +\$2.0\text{ trillion}\)</span> (<span class="math inline">\(+10\%\)</span> above potential), and the price level rises by <span class="math inline">\(8\%\)</span>.</p>
+<p><strong>Part C: Long-Run Self-Correction (<span class="math inline">\(SRAS_1 \rightarrow SRAS_2\)</span>)</strong> \ Tight labor markets bid up nominal wages until output returns to <span class="math inline">\(Y_3 = Y^* = 20\)</span> along <span class="math inline">\(AD_2\)</span>:</p>
+<p><span class="math display">\[
+P_3 = 196 - 4(20) = 116
+\]</span></p>
+<p>The new short-run supply curve shifts upward by <span class="math inline">\(\Delta P = +16\)</span> to <span class="math inline">\(SRAS_2: \; P = 36 + 4Y\)</span>. In the long run, real output returns to <span class="math inline">\(Y^* = 20\)</span> while the price level settles permanently at <span class="math inline">\(P_3 = 116\)</span>.</p>
+<p><strong>Part D: Adverse Supply Shock / Stagflation (<span class="math inline">\(SRAS_1 \rightarrow SRAS_{\text{shock}}\)</span>)</strong> \ Return to initial equilibrium <span class="math inline">\(E_1 = (20, 100)\)</span> on <span class="math inline">\(AD_1\)</span> (<span class="math inline">\(P = 180 - 4Y\)</span>). Suppose an energy price spike shifts short-run supply upward by <span class="math inline">\(16\)</span> index points to <span class="math inline">\(SRAS_{\text{shock}}: \; P = 36 + 4Y\)</span>. Equate <span class="math inline">\(AD_1 = SRAS_{\text{shock}}\)</span>:</p>
+<p><span class="math display">\[
+180 - 4Y = 36 + 4Y \implies 144 = 8Y \implies Y_{\text{stag}} = 18
+\]</span></p>
+<p>Substitute <span class="math inline">\(Y_{\text{stag}} = 18\)</span> into <span class="math inline">\(AD_1\)</span>: <span class="math inline">\(P_{\text{stag}} = 180 - 4(18) = 108\)</span>. \ Output falls by <span class="math inline">\(\$2.0\text{ trillion}\)</span> (a recessionary gap of <span class="math inline">\(-\$2.0\text{ trillion}\)</span>) while the price level simultaneously rises from <span class="math inline">\(100\)</span> to <span class="math inline">\(108\)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Extension: Comparative Statics via Total Differentiation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For quantitative economics majors, consider a general differentiable short-run system:</p>
+<p><span class="math display">\[
+AD: \; Y = D(P, G) \quad (D_P &lt; 0, \; D_G &gt; 0) \qquad\text{and}\qquad SRAS: \; P = S(Y, W_0) \quad (S_Y &gt; 0, \; S_{W_0} &gt; 0)
+\]</span></p>
+<p>Taking total differentials holding nominal wages <span class="math inline">\(W_0\)</span> fixed (<span class="math inline">\(dW_0 = 0\)</span>) in the short run:</p>
+<p><span class="math display">\[
+dY = D_P \, dP + D_G \, dG \qquad\text{and}\qquad dP = S_Y \, dY
+\]</span></p>
+<p>Substituting <span class="math inline">\(dP = S_Y \, dY\)</span> into the <span class="math inline">\(AD\)</span> differential yields the short-run fiscal output and price multipliers:</p>
+<p><span class="math display">\[
+\frac{dY}{dG} = \frac{D_G}{1 - D_P S_Y} \qquad\text{and}\qquad \frac{dP}{dG} = \frac{S_Y D_G}{1 - D_P S_Y}
+\]</span></p>
+<p>Because <span class="math inline">\(D_P &lt; 0\)</span> and <span class="math inline">\(S_Y &gt; 0\)</span>, the denominator <span class="math inline">\(1 - D_P S_Y &gt; 1\)</span>. Thus, an upward-sloping <span class="math inline">\(SRAS\)</span> curve (<span class="math inline">\(S_Y &gt; 0\)</span>) dampens the short-run output multiplier relative to the fixed-price Keynesian Cross (<span class="math inline">\(S_Y = 0 \Rightarrow \frac{dY}{dG} = D_G\)</span>) by crowding out price-sensitive spending as <span class="math inline">\(P\)</span> rises. In the long run, as <span class="math inline">\(S_Y \rightarrow \infty\)</span> along vertical <span class="math inline">\(LRAS\)</span>, <span class="math inline">\(\lim_{S_Y \to \infty} \frac{dY}{dG} = 0\)</span> and <span class="math inline">\(\lim_{S_Y \to \infty} \frac{dP}{dG} = -\frac{D_G}{D_P} &gt; 0\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="real-world-application-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-2">Real-World Application</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>FRED Data Diagnostics: Identifying Shocks Across \texttt{GDPC1
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>, , and } Macroeconomists track three canonical St.&nbsp;Louis Fed FRED series to diagnose historical episodes:</p>
+<ul>
+<li>: Real Gross Domestic Product (billions of chained 2017 dollars, quarterly, seasonally adjusted annual rate).</li>
+<li>: Consumer Price Index for All Urban Consumers: All Items (index <span class="math inline">\(1982\text{–}1984 = 100\)</span>, monthly, seasonally adjusted).</li>
+<li>: Civilian Unemployment Rate (percent, monthly, seasonally adjusted).</li>
+</ul>
+<p><strong>Empirical Identification Rule:</strong> During the 2008–2009 Great Recession, contracted while decelerated/dipped and surged toward 10%—the classic signature of an adverse <strong>demand shock</strong>. Conversely, during the 1973–1975 and 1979–1980 oil price shocks, fell and jumped while inflation exceeded 11%—the unmistakable empirical footprint of an adverse <strong>supply shock (stagflation)</strong>. Because monthly price series () and quarterly output series () differ in frequency and undergo statistical revisions, structural identification requires examining relative input prices alongside aggregate movements.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Bring It Home: Resolving the 2021–2023 Inflation Puzzle
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Applying the <span class="math inline">\(AD\text{–}AS\)</span> framework reveals that 2021–2023 combined <em>both</em> shocks simultaneously: expansionary demand shifted <span class="math inline">\(AD\)</span> rightward (pushing output up and unemployment down toward 3.4%), while supply-chain bottlenecks and energy spikes shifted <span class="math inline">\(SRAS\)</span> leftward. Both shifts pushed the price level <span class="math inline">\(P\)</span> upward in the same direction, explaining why inflation surged dramatically even as real GDP recovery moderated.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="check-your-understanding" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="check-your-understanding"><span class="header-section-number">9.5</span> Check Your Understanding</h2>
+<ul>
+<li><strong>Conceptual Mechanism:</strong> Explain how a lower domestic aggregate price level increases real output demanded through the interest-rate and exchange-rate effects without shifting the <span class="math inline">\(AD\)</span> curve.</li>
+<li><strong>Directional Diagnostics:</strong> If households become more optimistic about future income and raise planned consumption at every price level, does this cause a movement along <span class="math inline">\(AD\)</span> or a shift? What happens to <span class="math inline">\(Y\)</span> and <span class="math inline">\(P\)</span> in the short run?</li>
+<li><strong>Supply Shock Identification:</strong> Why does an adverse <span class="math inline">\(SRAS\)</span> shock create a policy dilemma for central banks and fiscal authorities that a negative <span class="math inline">\(AD\)</span> shock does not?</li>
+<li><strong>Algebraic Equilibrium:</strong> Suppose <span class="math inline">\(AD: P = 150 - 3Y\)</span>, <span class="math inline">\(SRAS: P = 30 + 3Y\)</span>, and <span class="math inline">\(LRAS: Y^* = 20\)</span>. Solve for initial <span class="math inline">\((Y_1, P_1)\)</span>. If an adverse supply shock shifts <span class="math inline">\(SRAS\)</span> to <span class="math inline">\(P = 42 + 3Y\)</span>, calculate the new short-run equilibrium <span class="math inline">\((Y_2, P_2)\)</span> and the resulting output gap.</li>
+<li><strong>Long-Run Self-Correction:</strong> Starting from a recessionary gap where <span class="math inline">\(Y_1 = 18 &lt; Y^* = 20\)</span>, trace how falling nominal wage growth restores long-run equilibrium in the <span class="math inline">\(AD\text{–}AS\)</span> diagram.</li>
+<li><strong>FRED Empirical Reasoning:</strong> Why can co-movement between and alone not prove whether a historical business cycle was driven by a demand shock or a supply shock?</li>
+</ul>
+<section id="solutions" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="solutions">Solutions</h3>
+<ul>
+<li>A lower price level reduces transactions money demand, lowering domestic interest rates (<span class="math inline">\(r \downarrow\)</span>). Lower <span class="math inline">\(r\)</span> stimulates domestic business investment (<span class="math inline">\(I \uparrow\)</span>) and triggers capital outflows that depreciate the currency, boosting net exports (<span class="math inline">\(NX \uparrow\)</span>). Because both effects are triggered endogenously by <span class="math inline">\(\Delta P &lt; 0\)</span>, they represent a downward movement along a stationary <span class="math inline">\(AD\)</span> curve.</li>
+<li>It causes a <strong>rightward shift of <span class="math inline">\(AD\)</span></strong>. In the short run, the economy moves up along <span class="math inline">\(SRAS\)</span>, raising both real output (<span class="math inline">\(Y \uparrow\)</span>) and the price level (<span class="math inline">\(P \uparrow\)</span>).</li>
+<li>A negative <span class="math inline">\(AD\)</span> shock lowers both <span class="math inline">\(Y\)</span> and <span class="math inline">\(P\)</span>, so expansionary policy can simultaneously close the recessionary gap and stabilize prices. An adverse <span class="math inline">\(SRAS\)</span> shock (stagflation) lowers <span class="math inline">\(Y\)</span> while raising <span class="math inline">\(P\)</span>: stimulating <span class="math inline">\(AD\)</span> reduces unemployment at the cost of worsening inflation, whereas tightening <span class="math inline">\(AD\)</span> curbs inflation at the cost of a deeper recession.</li>
+<li>Initial equilibrium: <span class="math inline">\(150 - 3Y = 30 + 3Y \implies 120 = 6Y \implies Y_1 = 20\)</span>, and <span class="math inline">\(P_1 = 150 - 3(20) = 90\)</span>. After the supply shock: <span class="math inline">\(150 - 3Y = 42 + 3Y \implies 108 = 6Y \implies Y_2 = 18\)</span>, and <span class="math inline">\(P_2 = 150 - 3(18) = 96\)</span>. The economy has a recessionary output gap of <span class="math inline">\(Y_2 - Y^* = 18 - 20 = -\$2.0\text{ trillion}\)</span>.</li>
+<li>Persistent unemployment above <span class="math inline">\(u^*\)</span> gradually reduces nominal wage growth and unit production costs, shifting <span class="math inline">\(SRAS\)</span> rightward (downward) along <span class="math inline">\(AD\)</span> until output rises back to <span class="math inline">\(Y^* = 20\)</span> at a lower equilibrium price level.</li>
+<li>In a demand shock, and move in the <em>same</em> direction; in a supply shock, they move in <em>opposite</em> directions. However, when simultaneous demand and supply shocks occur (or when quarterly vs.&nbsp;monthly frequencies and data revisions obscure timing), observational co-movement alone cannot isolate causal magnitudes without a structural identification strategy.</li>
+</ul>
+
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const toggle = window.document.createElement('button');
+      toggle.type = "button";
+      toggle.setAttribute("role", "switch");
+      toggle.setAttribute("aria-checked", "false");
+      toggle.classList.add('top-right');
+      toggle.classList.add('quarto-color-scheme-toggle');
+      toggle.setAttribute("aria-label", "Toggle dark mode");
+      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      toggle.appendChild(i);
+      // Put the toggle in a landmark of its own, so that landmark navigation
+      // can reach it.
+      //
+      // The container is always a fresh direct child of body, and the toggle is
+      // never moved into page furniture that the theme or the author controls.
+      // The toggle is positioned against the page, so any ancestor that
+      // establishes a containing block captures it: a positioned element or a
+      // grid for position: absolute, and transform, filter, will-change or
+      // contain for position: fixed. A direct child of body has none of these
+      // to inherit, and the shift when one appears is silent and visual.
+      //
+      // ARIA says a document should have at most one banner, and axe reports a
+      // duplicate whether or not the banners carry distinct labels. So use a
+      // header when the page has no banner yet, and a named region otherwise.
+      //
+      // A header is a banner wherever it sits, unless it is inside sectioning
+      // content, so this cannot just look at the children of body: a custom
+      // page layout wraps the title block header in a plain div. An explicit
+      // role="banner" always counts.
+      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
+      const hasBanner = Array.from(
+        window.document.querySelectorAll('header:not([role]), [role="banner"]')
+      ).some(function(el) {
+        return el.hasAttribute("role") || el.closest(sectioning) === null;
+      });
+      const container = window.document.createElement(hasBanner ? "div" : "header");
+      if (hasBanner) {
+        container.setAttribute("role", "region");
+        container.setAttribute("aria-label", "Toggle dark mode");
+      }
+      container.classList.add('quarto-color-scheme-toggle-container');
+      container.appendChild(toggle);
+      window.document.body.appendChild(container);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="./ch08_aggregate_expenditure_multiplier.html" class="pagination-link" aria-label="Chapter 8: Income, Expenditure, and the Keynesian Cross">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Chapter 8: Income, Expenditure, and the Keynesian Cross</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ch10_fiscal_policy.html" class="pagination-link" aria-label="Chapter 10: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Chapter 10: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

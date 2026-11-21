@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>1&nbsp; Chapter 1: Foundations of Microeconomic Analysis &amp; Core Principles – Principles of Microeconomics</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./ch02_ppf.html" rel="next">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-a71520af13e4c6b5a7ac03cb4efe7867.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-663504756e947d720a454151098d9f2d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-a71520af13e4c6b5a7ac03cb4efe7867.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455).
+    // Not run on load: stylesheets are set before first paint there, and
+    // scrolling would undo the scroll to a URL fragment (#14973).
+    // The one pixel nudge keeps the reader where they were.
+    const refreshSafariScrollbar = () => {
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        const scrollY = window.scrollY;
+        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
+        setTimeout(() => {
+          window.scrollTo(0, scrollY);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      refreshSafariScrollbar();
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch01_principles.html">Foundations of Market Analysis</a></li><li class="breadcrumb-item"><a href="./ch01_principles.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Chapter 1: Foundations of Microeconomic Analysis &amp; Core Principles</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Principles of Microeconomics</a> 
+        <div class="sidebar-tools-main">
+  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Foundations of Market Analysis</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch01_principles.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Chapter 1: Foundations of Microeconomic Analysis &amp; Core Principles</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch02_ppf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 2: The Production Possibilities Frontier &amp; Gains from Trade</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch03_supply_demand.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Chapter 3: Supply, Demand, and Market Equilibrium</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch04_surplus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Chapter 4: Consumer and Producer Surplus, Market Efficiency, and Welfare</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch05_elasticity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Elasticity: Responsiveness of Demand and Supply</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Firm Behavior &amp; Market Structures</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch06_costs_production.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Chapter 6: The Theory of the Firm: Production and Cost Curves</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch07_perfect_competition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chapter 7: Perfect Competition and Long-Run Industry Equilibrium</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch08_monopoly.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Chapter 8: Monopoly, Market Power, and Price Discrimination</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch09_imperfect_competition_game_theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Chapter 9: Monopolistic Competition, Oligopoly, and Game Theory</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Market Failures &amp; Factor Markets</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch10_externalities_public_goods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Chapter 10: Externalities, Public Goods, and Common Resources</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch11_consumer_choice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Chapter 11: Consumer Choice Theory: Utility and Indifference Curves</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch12_factor_markets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Chapter 12: Factor Markets, Labor Demand, and Wage Determination</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch13_asymmetric_information_risk.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Chapter 13: Asymmetric Information, Risk, and Market Design</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch14_international_trade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Chapter 14: International Trade, Comparative Advantage, and Protectionism</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#scarcity-choice-and-opportunity-cost" id="toc-scarcity-choice-and-opportunity-cost" class="nav-link active" data-scroll-target="#scarcity-choice-and-opportunity-cost"><span class="header-section-number">1.1</span> Scarcity, Choice, and Opportunity Cost</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction" id="toc-conceptual-introduction" class="nav-link" data-scroll-target="#conceptual-introduction">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation" id="toc-visual-representation" class="nav-link" data-scroll-target="#visual-representation">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-algebra-level" id="toc-mathematical-foundation-algebra-level" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level">Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#marginal-decision-making-and-incentives" id="toc-marginal-decision-making-and-incentives" class="nav-link" data-scroll-target="#marginal-decision-making-and-incentives"><span class="header-section-number">1.2</span> Marginal Decision-Making and Incentives</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-1" id="toc-conceptual-introduction-1" class="nav-link" data-scroll-target="#conceptual-introduction-1">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-1" id="toc-visual-representation-1" class="nav-link" data-scroll-target="#visual-representation-1">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-1" id="toc-mathematical-foundation-algebra-level-1" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-1">Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#economic-models-ceteris-paribus-and-methodology" id="toc-economic-models-ceteris-paribus-and-methodology" class="nav-link" data-scroll-target="#economic-models-ceteris-paribus-and-methodology"><span class="header-section-number">1.3</span> Economic Models, Ceteris Paribus, and Methodology</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-2" id="toc-conceptual-introduction-2" class="nav-link" data-scroll-target="#conceptual-introduction-2">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-2" id="toc-visual-representation-2" class="nav-link" data-scroll-target="#visual-representation-2">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-2" id="toc-mathematical-foundation-algebra-level-2" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-2">Mathematical Foundation (Algebra Level)</a></li>
+  <li><a href="#selected-references" id="toc-selected-references" class="nav-link" data-scroll-target="#selected-references">Selected References</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch01_principles.html">Foundations of Market Analysis</a></li><li class="breadcrumb-item"><a href="./ch01_principles.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Chapter 1: Foundations of Microeconomic Analysis &amp; Core Principles</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Chapter 1: Foundations of Microeconomic Analysis &amp; Core Principles</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p>This chapter introduces the core foundations of microeconomic analysis: scarcity and opportunity cost, marginal decision-making and incentives, and economic modeling under <em>ceteris paribus</em>. Each section builds from plain-English intuition to coordinate geometry, algebra-first problem solving, and an optional calculus extension.</p>
+</blockquote>
+<section id="scarcity-choice-and-opportunity-cost" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="scarcity-choice-and-opportunity-cost"><span class="header-section-number">1.1</span> Scarcity, Choice, and Opportunity Cost</h2>
+<section id="conceptual-introduction" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction">Conceptual Introduction</h3>
+<p>Every day begins with a boundary you cannot escape: there are only 24 hours in a day, and your bank account holds a finite number of dollars. Yet human desires—for housing, education, travel, healthcare, clean air, and leisure—are virtually limitless. Economics exists because of this fundamental collision, known as <strong>scarcity</strong>: the condition in which limited productive resources cannot satisfy all human wants simultaneously. Because we cannot have everything, every individual, household, business, and government is forced to make choices.</p>
+<p>Whenever you choose one option, you automatically give up the next best alternative you could have pursued with that same time or money. Economists call this sacrifice your <strong>opportunity cost</strong>. Crucially, true economic opportunity cost is wider than the cash receipt you get at a checkout counter. It combines two distinct components: <strong>explicit costs</strong> (direct out-of-pocket dollar payments) and <strong>implicit costs</strong> (the non-monetary value of foregone time, foregone wages, or alternative uses of assets you already own).</p>
+<p>Understanding opportunity cost transforms how rational people evaluate decisions. A decision is only worthwhile if its total benefit exceeds its full economic cost—not merely its cash price. At the same time, rational decision-makers must ignore <strong>sunk costs</strong>: historical expenses that have already been paid and cannot be recovered regardless of what choice you make today. Letting unrecoverable past spending trap you into bad future choices is known as the <strong>sunk cost fallacy</strong>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Sunk Costs Are Not Opportunity Costs
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose you pay <span class="math inline">\(\$80\)</span> for a non-refundable concert ticket, and on the night of the show a severe winter storm hits. Driving to the arena risks a car accident and three hours in freezing traffic. The <span class="math inline">\(\$80\)</span> ticket price is a <strong>sunk cost</strong>—whether you stay home in a warm blanket or drive through the blizzard, that <span class="math inline">\(\$80\)</span> is gone forever. Your true opportunity cost of going to the concert tonight is your safety and three hours of warm study time, not the <span class="math inline">\(\$80\)</span> you already spent last month.</p>
+</div>
+</div>
+</section>
+<section id="visual-representation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation">Visual Representation</h3>
+<p>Figure 1 illustrates scarcity and opportunity cost on a simple linear budget constraint for a college student dividing a fixed weekly budget of <span class="math inline">\(\$60\)</span> between campus lunches (<span class="math inline">\(\$12\)</span> each) and commuter transit day-passes (<span class="math inline">\(\$6\)</span> each). This two-good diagram relies on three simplifying assumptions: income is fixed at <span class="math inline">\(\$60\)</span>, unit prices remain constant regardless of quantity purchased, and the student spends the entire budget.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_1_foundations_of_microeconomic_analysis_core_principles_figure_01.svg" class="img-fluid figure-img" alt="Scarcity and Opportunity Cost on a Budget Line. Moving from bundle A(2,6) to bundle B(3,4) gains 1 additional campus lunch by sacrificing 2 transit day-passes, illustrating a constant opportunity cost of 2 passes per lunch. Point U(4,6) costs $84 > $60 and is unaffordable."></p>
+<figcaption>Figure 1. Scarcity and Opportunity Cost on a Budget Line. Moving from bundle <span class="math inline">\(A(2,6)\)</span> to bundle <span class="math inline">\(B(3,4)\)</span> gains <span class="math inline">\(1\)</span> additional campus lunch by sacrificing <span class="math inline">\(2\)</span> transit day-passes, illustrating a constant opportunity cost of <span class="math inline">\(2\)</span> passes per lunch. Point <span class="math inline">\(U(4,6)\)</span> costs <span class="math inline">\(\$84 &gt; \$60\)</span> and is unaffordable.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Bring It Home: The True Economic Cost of a College Degree
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When families evaluate the cost of attending a four-year public university, they usually focus on the bursar’s bill: tuition, campus fees, and textbooks. Yet for most full-time undergraduates, the largest single cost of higher education never appears on an invoice.</p>
+<ul>
+<li><strong>Explicit Costs:</strong> Suppose annual tuition, fees, and books total <span class="math inline">\(\$11{,}000\)</span> per year. (Room and board are excluded here under the simplifying assumption that the student would pay similar rent and grocery bills even while working full-time.)</li>
+<li><strong>Implicit Costs:</strong> By attending classes full-time instead of working an entry-level full-time job paying <span class="math inline">\(\$38{,}000\)</span> per year, the student foregoes <span class="math inline">\(\$38{,}000\)</span> in annual wages.</li>
+</ul>
+<p>Adding both components gives an illustrative annual economic opportunity cost of <span class="math inline">\(\$11{,}000 + \$38{,}000 = \mathbf{\$49{,}000}\)</span>. Assuming these amounts remain constant for four years, the total is <span class="math inline">\(\$196{,}000\)</span>. Actual costs depend on tuition, financial aid, living arrangements, work hours, and the wages a student could otherwise earn. The model predicts that lower available wages reduce the opportunity cost of full-time schooling, all else equal; it does not imply enrollment rises in every recession.</p>
+</div>
+</div>
+</section>
+<section id="mathematical-foundation-algebra-level" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level">Mathematical Foundation (Algebra Level)</h3>
+<p>Total Economic Cost sums explicit monetary outlays and implicit opportunity costs:</p>
+<p><span class="math display">\[
+\text{Total Economic Cost} = \text{Explicit Costs} + \text{Implicit Costs}
+\]</span></p>
+<p>Along a linear budget constraint <span class="math inline">\(P_x X + P_y Y = I\)</span>, solving for <span class="math inline">\(Y\)</span> gives the slope-intercept form <span class="math inline">\(Y = \frac{I}{P_y} - \frac{P_x}{P_y}X\)</span>. The vertical intercept <span class="math inline">\(\frac{I}{P_y}\)</span> is the maximum affordable quantity of <span class="math inline">\(Y\)</span>, and the magnitude of the slope is the constant opportunity cost of one unit of Good <span class="math inline">\(X\)</span>:</p>
+<p><span class="math display">\[
+\text{Opportunity Cost of } 1 \text{ unit of } X = \left|\frac{\Delta Y}{\Delta X}\right| = \frac{P_x}{P_y}
+\]</span></p>
+<p>In Figure 1, <span class="math inline">\(12X + 6Y = 60\)</span> rearranges to <span class="math inline">\(Y = 10 - 2X\)</span>, so each additional lunch costs <span class="math inline">\(\frac{\$12}{\$6} = 2\)</span> transit day-passes.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Work It Out: Calculating Economic vs.&nbsp;Accounting Cost
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problem:</strong> Maya currently works as a graphic designer earning <span class="math inline">\(\$65{,}000\)</span> per year. She is considering quitting her job to launch her own independent design studio. In her first year, she expects to pay <span class="math inline">\(\$18{,}000\)</span> for studio rent, <span class="math inline">\(\$7{,}000\)</span> for software and equipment leases, and <span class="math inline">\(\$15{,}000\)</span> for marketing and supplies. Additionally, she must move <span class="math inline">\(\$20{,}000\)</span> out of a personal savings account that was earning <span class="math inline">\(5\%\)</span> annual interest to hold as refundable studio deposits and working capital (recovered if she closes the business). Calculate Maya’s explicit costs, implicit costs, and total economic cost for Year 1.</p>
+<p><strong>Step-by-Step Solution:</strong></p>
+<ul>
+<li><strong>Sum All Explicit Out-of-Pocket Costs:</strong> Add the direct monetary payments required to run the studio:</li>
+</ul>
+<p><span class="math display">\[
+\text{Explicit Costs} = \$18{,}000 + \$7{,}000 + \$15{,}000 = \mathbf{\$40{,}000}
+\]</span></p>
+<ul>
+<li><strong>Calculate Implicit Foregone Interest:</strong> Because the <span class="math inline">\(\$20{,}000\)</span> deposit/working-capital principal is recoverable, only the foregone interest is an annual economic cost:</li>
+</ul>
+<p><span class="math display">\[
+\text{Foregone Interest} = \$20{,}000 \times 0.05 = \$1{,}000
+\]</span></p>
+<ul>
+<li><strong>Sum All Implicit Opportunity Costs:</strong> Combine Maya’s foregone salary with her foregone savings interest:</li>
+</ul>
+<p><span class="math display">\[
+\text{Implicit Costs} = \$65{,}000 + \$1{,}000 = \mathbf{\$66{,}000}
+\]</span></p>
+<ul>
+<li><strong>Compute Total Economic Cost:</strong></li>
+</ul>
+<p><span class="math display">\[
+\text{Total Economic Cost} = \$40{,}000 + \$66{,}000 = \mathbf{\$106{,}000}
+\]</span></p>
+<p><strong>Conclusion:</strong> Even if Maya’s studio brings in <span class="math inline">\(\$80{,}000\)</span> in client revenue—giving her an accounting profit of <span class="math inline">\(\$80{,}000 - \$40{,}000 = \$40{,}000\)</span>—she would suffer an <em>economic loss</em> of <span class="math inline">\(\$80{,}000 - \$106{,}000 = -\$26{,}000\)</span> compared to keeping her salaried job.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Calculus of Opportunity Cost and Slopes
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> For any smooth trade-off frontier <span class="math inline">\(Y = f(X)\)</span>, the instantaneous (marginal) opportunity cost of Good <span class="math inline">\(X\)</span> in terms of Good <span class="math inline">\(Y\)</span> is the absolute value of the first derivative, <span class="math inline">\(\left|\frac{dY}{dX}\right|\)</span>. For the linear budget constraint <span class="math inline">\(P_x X + P_y Y = I\)</span> with fixed prices and income, differentiating implicitly yields:</p>
+<p><span class="math display">\[
+P_x\,dX + P_y\,dY = 0 \implies \frac{dY}{dX} = -\frac{P_x}{P_y}
+\]</span></p>
+<p>Because <span class="math inline">\(\frac{d^2 Y}{dX^2} = 0\)</span>, the opportunity cost <span class="math inline">\(\frac{P_x}{P_y}\)</span> is constant at every bundle along the line. By contrast, when resources are specialized (as on a bowed-out Production Possibilities Frontier in Chapter 2), <span class="math inline">\(\frac{dY}{dX} &lt; 0\)</span> and <span class="math inline">\(\frac{d^2 Y}{dX^2} &lt; 0\)</span>, so marginal opportunity cost <span class="math inline">\(\left|\frac{dY}{dX}\right|\)</span> rises as <span class="math inline">\(X\)</span> expands.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="marginal-decision-making-and-incentives" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="marginal-decision-making-and-incentives"><span class="header-section-number">1.2</span> Marginal Decision-Making and Incentives</h2>
+<section id="conceptual-introduction-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-1">Conceptual Introduction</h3>
+<p>Most real-world economic decisions are not ``all-or-nothing’’ ultimatums. A student rarely chooses between studying zero hours or 24 hours straight; they decide whether to study <em>one more hour</em> tonight. A coffee shop does not decide between brewing zero cups or one million cups; it decides whether to stay open <em>one extra hour</em> in the evening. Economists analyze these incremental adjustments through <strong>marginal analysis</strong>, comparing the <strong>marginal benefit (<span class="math inline">\(MB\)</span>)</strong> of one additional unit of an activity against its <strong>marginal cost (<span class="math inline">\(MC\)</span>)</strong>.</p>
+<p>The basic rule is straightforward: as long as the extra benefit of one more unit exceeds its extra cost (<span class="math inline">\(MB &gt; MC\)</span>), expanding the activity increases net benefit. If the extra cost is greater (<span class="math inline">\(MC &gt; MB\)</span>), scale back. For a smooth, interior choice, net benefit is maximized where <span class="math inline">\(MB=MC\)</span>; with indivisible choices, compare successive units and stop before the next unit whose marginal cost exceeds its marginal benefit.</p>
+<p>Because rational agents weigh marginal benefits against marginal costs, changing either side of that ledger predictably alters human behavior. Economists call any reward or penalty that shifts <span class="math inline">\(MB\)</span> or <span class="math inline">\(MC\)</span> an <strong>incentive</strong>. When policymakers introduce taxes, subsidies, fines, or regulations, people respond to the new incentives—sometimes in clever, unintended ways that backfire against the policy’s original goal.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Marginal Cost Is Not Average Cost
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Students frequently confuse <strong>average cost</strong> (total cost divided by total units produced) with <strong>marginal cost</strong> (the extra cost of adding <em>one more</em> unit). Average cost spreads already-committed fixed expenses across all units, whereas marginal cost isolates only the new resources required for the next unit. When deciding whether to expand an activity by one unit, compare marginal benefit to <em>marginal</em> cost—not average cost.</p>
+</div>
+</div>
+</section>
+<section id="visual-representation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-1">Visual Representation</h3>
+<p>Figure 2 illustrates marginal optimization using hypothetical linear schedules measured in dollar-equivalent value per hour ($/hr), holding exam difficulty and prior preparation constant (<em>ceteris paribus</em>). Assuming study time <span class="math inline">\(H\)</span> is continuously divisible, the downward-sloping Marginal Benefit curve intersects the upward-sloping Marginal Cost curve at <span class="math inline">\(H^* = 4\)</span> study hours.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_1_foundations_of_microeconomic_analysis_core_principles_figure_02.svg" class="img-fluid figure-img" alt="Marginal Optimization Rule. Under the illustrative linear schedules, marginal benefit (MB = 20 - 3H) and marginal cost (MC = 2H) intersect at H^* = 4 hours, where both equal $8/\text{hr}. At H = 2, MB ($14) > MC ($4); beyond H^* = 4, MC > MB."></p>
+<figcaption>Figure 2. Marginal Optimization Rule. Under the illustrative linear schedules, marginal benefit (<span class="math inline">\(MB = 20 - 3H\)</span>) and marginal cost (<span class="math inline">\(MC = 2H\)</span>) intersect at <span class="math inline">\(H^* = 4\)</span> hours, where both equal <span class="math inline">\(\$8/\text{hr}\)</span>. At <span class="math inline">\(H = 2\)</span>, <span class="math inline">\(MB (\$14) &gt; MC (\$4)\)</span>; beyond <span class="math inline">\(H^* = 4\)</span>, <span class="math inline">\(MC &gt; MB\)</span>.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Bring It Home: Seatbelt Laws and the Peltzman Effect
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Beginning January 1, 1968, federal safety standards required new U.S. passenger cars to have seat belts. The goal was to improve safety. Economist Sam Peltzman (1975) argued that drivers might respond to some safety improvements by taking greater risks:</p>
+<ul>
+<li>By making car crashes far more survivable for the driver, safety equipment lowered the <em>marginal cost</em> to a driver of speeding or braking late.</li>
+<li>If drivers perceive lower personal risk, some may drive faster or more aggressively, offsetting part of the safety benefit and shifting risk toward people outside the vehicle.</li>
+</ul>
+<p>This proposed behavioral response is often called the <strong>Peltzman effect</strong>. It is a hypothesis about incentives, not a claim that seat belts generally increase fatalities; the size and distribution of any response depend on evidence and context.</p>
+</div>
+</div>
+</section>
+<section id="mathematical-foundation-algebra-level-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-1">Mathematical Foundation (Algebra Level)</h3>
+<p>Marginal Benefit and Marginal Cost measure the change in total benefit (<span class="math inline">\(TB\)</span>) and total cost (<span class="math inline">\(TC\)</span>) from a one-unit increase in quantity (<span class="math inline">\(\Delta Q = 1\)</span>):</p>
+<p><span class="math display">\[
+\begin{aligned}
+MB &amp;= \frac{\Delta TB}{\Delta Q}, \\
+MC &amp;= \frac{\Delta TC}{\Delta Q}, \\
+\text{Interior optimum: } &amp; MB = MC
+\end{aligned}
+\]</span></p>
+<p>Applying this rule to Figure 2, setting <span class="math inline">\(MB = MC\)</span> gives <span class="math inline">\(20 - 3H = 2H \implies 5H = 20 \implies H^* = 4\)</span> hours, with <span class="math inline">\(MB = MC = 2(4) = \$8/\text{hr}\)</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Work It Out: Pricing a Last-Minute Standby Airline Seat
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problem:</strong> A regional airline operates a 150-seat flight from San Francisco to Seattle. Total fixed and fuel costs for the flight equal <span class="math inline">\(\$15{,}000\)</span>, which works out to an <em>average cost</em> of <span class="math inline">\(\$15{,}000 / 150 = \$100\)</span> per seat. Ten minutes before boarding closes, 12 seats remain empty. Adding one standby passenger requires only <span class="math inline">\(\$15\)</span> in extra jet fuel, cabin snacks, and baggage handling. A standby passenger offers to pay <span class="math inline">\(\$65\)</span> for a ticket. Assuming selling this standby ticket does not displace or cannibalize any full-fare passengers, should the airline sell the seat?</p>
+<p><strong>Step-by-Step Solution:</strong></p>
+<ul>
+<li><strong>Identify Sunk Costs vs.&nbsp;Marginal Cost (<span class="math inline">\(MC\)</span>):</strong> The <span class="math inline">\(\$15{,}000\)</span> cost to fly the plane is already committed regardless of whether the empty seat is filled. The incremental cost of boarding one additional passenger is:</li>
+</ul>
+<p><span class="math display">\[
+MC = \mathbf{\$15}
+\]</span></p>
+<ul>
+<li><strong>Identify Marginal Benefit (<span class="math inline">\(MB\)</span>):</strong> The additional revenue collected from selling the standby ticket is:</li>
+</ul>
+<p><span class="math display">\[
+MB = \mathbf{\$65}
+\]</span></p>
+<ul>
+<li><strong>Apply the Marginal Decision Rule (<span class="math inline">\(MB\)</span> vs.&nbsp;<span class="math inline">\(MC\)</span>):</strong> Compare marginal benefit to marginal cost (ignoring the irrelevant <span class="math inline">\(\$100\)</span> average cost):</li>
+</ul>
+<p><span class="math display">\[
+MB\ (\$65) &gt; MC\ (\$15) \implies \text{Net Operating Gain} = \$65 - \$15 = \mathbf{+\$50}
+\]</span></p>
+<p><strong>Conclusion:</strong> Yes—the airline should sell the seat. Although the <span class="math inline">\(\$65\)</span> fare is below the <span class="math inline">\(\$100\)</span> average cost per seat, it exceeds the <span class="math inline">\(\$15\)</span> incremental cost and adds <span class="math inline">\(\$50\)</span> to profit.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Calculus of Net Benefit Maximization
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> Let Total Benefit be <span class="math inline">\(TB(Q)\)</span> and Total Cost be <span class="math inline">\(TC(Q)\)</span>. Net Benefit is <span class="math inline">\(NB(Q) = TB(Q) - TC(Q)\)</span>. Maximizing <span class="math inline">\(NB(Q)\)</span> requires setting the first derivative with respect to <span class="math inline">\(Q\)</span> equal to zero:</p>
+<p><span class="math display">\[
+\frac{d(NB)}{dQ} = \frac{d(TB)}{dQ} - \frac{d(TC)}{dQ} = 0 \implies MB(Q^*) = MC(Q^*)
+\]</span></p>
+<p>The second-order sufficient condition for a maximum requires <span class="math inline">\(\frac{d^2(NB)}{dQ^2} = \frac{d(MB)}{dQ} - \frac{d(MC)}{dQ} &lt; 0\)</span>, which holds whenever <span class="math inline">\(MC\)</span> crosses <span class="math inline">\(MB\)</span> from below (such as downward-sloping <span class="math inline">\(MB\)</span> and upward-sloping <span class="math inline">\(MC\)</span>). In Figure 2, integrating <span class="math inline">\(MB = 20 - 3H\)</span> and <span class="math inline">\(MC = 2H\)</span> from zero gives <span class="math inline">\(TB(H) = 20H - 1.5H^2\)</span> and <span class="math inline">\(TC(H) = H^2\)</span>, so <span class="math inline">\(NB(H) = 20H - 2.5H^2\)</span>. Setting <span class="math inline">\(\frac{d(NB)}{dH} = 20 - 5H = 0\)</span> confirms <span class="math inline">\(H^* = 4\)</span>, <span class="math inline">\(\frac{d^2(NB)}{dH^2} = -5 &lt; 0\)</span>, and maximum net benefit <span class="math inline">\(NB(4) = 20(4) - 2.5(16) = \$40\)</span> (equal to the triangle area <span class="math inline">\(\frac{1}{2} \times 4 \times \$20 = \$40\)</span>).</p>
+</div>
+</div>
+</section>
+</section>
+<section id="economic-models-ceteris-paribus-and-methodology" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="economic-models-ceteris-paribus-and-methodology"><span class="header-section-number">1.3</span> Economic Models, Ceteris Paribus, and Methodology</h2>
+<section id="conceptual-introduction-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-2">Conceptual Introduction</h3>
+<p>The real economy involves millions of consumers, firms, prices, weather events, and policy changes interacting simultaneously. To make sense of this complexity without getting lost in irrelevant detail, economists build simplified analytical maps called <strong>economic models</strong>. Just as a subway map omits every tree and storefront so you can clearly trace train routes, an economic model strips away secondary noise to isolate how one specific variable affects another.</p>
+<p>To test a single cause-and-effect link cleanly, economists rely on the foundational assumption of <strong><em>ceteris paribus</em></strong>—a Latin phrase meaning <em>``all other things held constant.’’</em> When an economist states that a lower price increases the quantity of coffee demanded <em>ceteris paribus</em>, they mean quantity rises assuming consumer income, weather, competitor prices, and tastes remain frozen. Without <em>ceteris paribus</em>, it is impossible to tell whether coffee sales rose because of a price discount or because a winter cold snap hit the city.</p>
+<p>Finally, rigorous economic analysis separates two distinct types of statements:</p>
+<ul>
+<li><strong>Positive Economics:</strong> Testable statements about <em>what is</em> or <em>what may happen</em> if a policy changes (e.g., <em>``A minimum-wage increase may affect teen restaurant employment’’</em>). The direction and size of any effect are empirical questions.</li>
+<li><strong>Normative Economics:</strong> Value judgments and opinions about <em>what ought to be</em> (e.g., <em>``The government should raise the minimum wage to reduce poverty’’</em>). Normative claims depend on ethical priorities and cannot be settled by data alone.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Positive Does Not Mean ``True,’’ and Correlation Is Not Causation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Two methodological traps trip up introductory students. First, a <strong>positive</strong> statement does not have to be factually correct—claiming <em><code>Raising tuition always increases college enrollment''* is a positive statement because it can be tested and refuted with data, whereas *</code>Tuition should be free’’</em> is normative. Second, observing two variables move together (<strong>correlation</strong>) does not prove one causes the other: if ice cream sales and swimming accidents rise together in July, warm summer weather—an omitted third variable—drives both.</p>
+</div>
+</div>
+</section>
+<section id="visual-representation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-2">Visual Representation</h3>
+<p>Figure 3 maps the economy’s core interactions using a simplified two-sector <strong>Circular Flow Diagram</strong>. To isolate the fundamental exchange between households and firms, this baseline model intentionally abstracts away from government taxation and spending, financial intermediaries, and international trade.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_1_foundations_of_microeconomic_analysis_core_principles_figure_03.svg" class="img-fluid figure-img" alt="The Circular Flow Model. Solid outer arrows trace dollar flows (consumer spending becoming firm revenue, and factor payments becoming household income), while dashed inner arrows trace physical goods and productive inputs."></p>
+<figcaption>Figure 3. The Circular Flow Model. Solid outer arrows trace dollar flows (consumer spending becoming firm revenue, and factor payments becoming household income), while dashed inner arrows trace physical goods and productive inputs.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Bring It Home: Separating Micro from Macro in Housing Policy
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Economics divides into two complementary lenses:</p>
+<ul>
+<li><strong>Microeconomics</strong> examines individual markets, households, and firms—such as how a city’s zoning law affects apartment rents in San Francisco or how rideshare drivers respond to surge pricing.</li>
+<li><strong>Macroeconomics</strong> examines the economy as a whole—such as national GDP growth, Federal Reserve interest-rate policy, and U.S. unemployment rates.</li>
+</ul>
+<p>For example, a macroeconomic study of higher mortgage rates might ask how home construction changes nationally, while a microeconomic study of a local housing market might ask how individual buyers adjust between owning and renting. These are questions a model can organize; establishing causation requires empirical evidence beyond the model itself.</p>
+</div>
+</div>
+</section>
+<section id="mathematical-foundation-algebra-level-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-2">Mathematical Foundation (Algebra Level)</h3>
+<p>A linear model isolates a dependent variable <span class="math inline">\(Y\)</span> as a function of an explanatory variable <span class="math inline">\(X\)</span>, holding all other determinants fixed inside the intercept <span class="math inline">\(a\)</span>:</p>
+<p><span class="math display">\[
+Y = a + bX \qquad (\text{holding all non-}X\text{ factors constant})
+\]</span></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Work It Out: Applying <em>Ceteris Paribus</em> to Public Transit Ridership
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Problem:</strong> Suppose a city’s monthly transit ridership <span class="math inline">\(R\)</span> (in thousands of rides) depends linearly on the subway fare <span class="math inline">\(F\)</span> (in dollars) and average local gasoline prices <span class="math inline">\(G\)</span> (in dollars per gallon) according to the illustrative model:</p>
+<p><span class="math display">\[
+R = 120 - 15F + 10G
+\]</span></p>
+<p>Using <em>ceteris paribus</em>, calculate monthly ridership when the fare is <span class="math inline">\(F = \$2.00\)</span> and gas is <span class="math inline">\(G = \$4.00\)</span>, and find the pure effect of raising the fare to <span class="math inline">\(F = \$3.00\)</span> while holding gas prices constant.</p>
+<p><strong>Step-by-Step Solution:</strong></p>
+<ul>
+<li><strong>Freeze the Non-Fare Variable (<span class="math inline">\(G = \$4.00\)</span>):</strong> Holding <span class="math inline">\(G = 4.00\)</span> constant collapses the model into the single-variable linear form <span class="math inline">\(R = a + bF\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+R = 120 + 10(4.00) - 15F = 160 - 15F
+\]</span></p>
+<ul>
+<li><strong>Compute Baseline Ridership (<span class="math inline">\(F = \$2.00\)</span>, <span class="math inline">\(G = \$4.00\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+\begin{aligned}
+R_1 &amp;= 120 - 15(2.00) + 10(4.00) \\
+&amp;= 120 - 30 + 40 \\
+&amp;= \mathbf{130\text{ thousand rides}}
+\end{aligned}
+\]</span></p>
+<ul>
+<li><strong>Apply <em>Ceteris Paribus</em> (<span class="math inline">\(F = \$3.00\)</span>, holding <span class="math inline">\(G = \$4.00\)</span> fixed):</strong></li>
+</ul>
+<p><span class="math display">\[
+\begin{aligned}
+R_2 &amp;= 120 - 15(3.00) + 10(4.00) \\
+&amp;= 120 - 45 + 40 \\
+&amp;= \mathbf{115\text{ thousand rides}}
+\end{aligned}
+\]</span></p>
+<ul>
+<li><strong>Isolate the <em>Ceteris Paribus</em> Effect of the Fare Hike:</strong></li>
+</ul>
+<p><span class="math display">\[
+\Delta R = R_2 - R_1 = 115 - 130 = \mathbf{-15\text{ thousand rides}}
+\]</span></p>
+<p><strong>Conclusion:</strong> Holding gasoline prices constant within this model, each <span class="math inline">\(\$1.00\)</span> increase in subway fare reduces monthly transit ridership by <span class="math inline">\(15{,}000\)</span> rides.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Partial Derivatives as Formal <em>Ceteris Paribus</em>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> In multivariable calculus, the <em>ceteris paribus</em> assumption is formalized by the <strong>partial derivative</strong>, which differentiates a function with respect to one explanatory variable while treating all other variables as constants. For the transit ridership model <span class="math inline">\(R(F, G) = 120 - 15F + 10G\)</span>:</p>
+<p><span class="math display">\[
+\frac{\partial R}{\partial F} = -15 \qquad \text{and} \qquad \frac{\partial R}{\partial G} = +10
+\]</span></p>
+<p>When both fare and gas price change simultaneously, the total differential separates their individual contributions:</p>
+<p><span class="math display">\[
+dR = \frac{\partial R}{\partial F}\,dF + \frac{\partial R}{\partial G}\,dG = -15\,dF + 10\,dG
+\]</span></p>
+</div>
+</div>
+</section>
+<section id="selected-references" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="selected-references">Selected References</h3>
+<ul>
+<li>National Highway Traffic Safety Administration. ``Seat Belts in New Passenger Cars’’ (interpretation 11695JEG; requirement effective January 1, 1968). <a href="https://www.nhtsa.gov/interpretations/11695jeg" class="uri">https://www.nhtsa.gov/interpretations/11695jeg</a></li>
+<li>Peltzman, Sam. 1975. ``The Effects of Automobile Safety Regulation.’’ <em>Journal of Political Economy</em> 83(4): 677–725. <a href="https://doi.org/10.1086/260352" class="uri">https://doi.org/10.1086/260352</a></li>
+</ul>
+
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const toggle = window.document.createElement('button');
+      toggle.type = "button";
+      toggle.setAttribute("role", "switch");
+      toggle.setAttribute("aria-checked", "false");
+      toggle.classList.add('top-right');
+      toggle.classList.add('quarto-color-scheme-toggle');
+      toggle.setAttribute("aria-label", "Toggle dark mode");
+      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      toggle.appendChild(i);
+      // Put the toggle in a landmark of its own, so that landmark navigation
+      // can reach it.
+      //
+      // The container is always a fresh direct child of body, and the toggle is
+      // never moved into page furniture that the theme or the author controls.
+      // The toggle is positioned against the page, so any ancestor that
+      // establishes a containing block captures it: a positioned element or a
+      // grid for position: absolute, and transform, filter, will-change or
+      // contain for position: fixed. A direct child of body has none of these
+      // to inherit, and the shift when one appears is silent and visual.
+      //
+      // ARIA says a document should have at most one banner, and axe reports a
+      // duplicate whether or not the banners carry distinct labels. So use a
+      // header when the page has no banner yet, and a named region otherwise.
+      //
+      // A header is a banner wherever it sits, unless it is inside sectioning
+      // content, so this cannot just look at the children of body: a custom
+      // page layout wraps the title block header in a plain div. An explicit
+      // role="banner" always counts.
+      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
+      const hasBanner = Array.from(
+        window.document.querySelectorAll('header:not([role]), [role="banner"]')
+      ).some(function(el) {
+        return el.hasAttribute("role") || el.closest(sectioning) === null;
+      });
+      const container = window.document.createElement(hasBanner ? "div" : "header");
+      if (hasBanner) {
+        container.setAttribute("role", "region");
+        container.setAttribute("aria-label", "Toggle dark mode");
+      }
+      container.classList.add('quarto-color-scheme-toggle-container');
+      container.appendChild(toggle);
+      window.document.body.appendChild(container);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="Preface">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ch02_ppf.html" class="pagination-link" aria-label="Chapter 2: The Production Possibilities Frontier &amp; Gains from Trade">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 2: The Production Possibilities Frontier &amp; Gains from Trade</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>5&nbsp; Chapter 5: Elasticity: Responsiveness of Demand and Supply – Principles of Microeconomics</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./ch06_costs_production.html" rel="next">
+<link href="./ch04_surplus.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-a71520af13e4c6b5a7ac03cb4efe7867.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-663504756e947d720a454151098d9f2d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-a71520af13e4c6b5a7ac03cb4efe7867.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455).
+    // Not run on load: stylesheets are set before first paint there, and
+    // scrolling would undo the scroll to a URL fragment (#14973).
+    // The one pixel nudge keeps the reader where they were.
+    const refreshSafariScrollbar = () => {
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        const scrollY = window.scrollY;
+        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
+        setTimeout(() => {
+          window.scrollTo(0, scrollY);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      refreshSafariScrollbar();
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch01_principles.html">Foundations of Market Analysis</a></li><li class="breadcrumb-item"><a href="./ch05_elasticity.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Elasticity: Responsiveness of Demand and Supply</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Principles of Microeconomics</a> 
+        <div class="sidebar-tools-main">
+  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Foundations of Market Analysis</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch01_principles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Chapter 1: Foundations of Microeconomic Analysis &amp; Core Principles</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch02_ppf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 2: The Production Possibilities Frontier &amp; Gains from Trade</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch03_supply_demand.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Chapter 3: Supply, Demand, and Market Equilibrium</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch04_surplus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Chapter 4: Consumer and Producer Surplus, Market Efficiency, and Welfare</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch05_elasticity.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Elasticity: Responsiveness of Demand and Supply</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Firm Behavior &amp; Market Structures</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch06_costs_production.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Chapter 6: The Theory of the Firm: Production and Cost Curves</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch07_perfect_competition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chapter 7: Perfect Competition and Long-Run Industry Equilibrium</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch08_monopoly.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Chapter 8: Monopoly, Market Power, and Price Discrimination</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch09_imperfect_competition_game_theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Chapter 9: Monopolistic Competition, Oligopoly, and Game Theory</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Market Failures &amp; Factor Markets</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch10_externalities_public_goods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Chapter 10: Externalities, Public Goods, and Common Resources</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch11_consumer_choice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Chapter 11: Consumer Choice Theory: Utility and Indifference Curves</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch12_factor_markets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Chapter 12: Factor Markets, Labor Demand, and Wage Determination</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch13_asymmetric_information_risk.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Chapter 13: Asymmetric Information, Risk, and Market Design</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch14_international_trade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Chapter 14: International Trade, Comparative Advantage, and Protectionism</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#price-elasticity-of-demand-and-the-midpoint-formula" id="toc-price-elasticity-of-demand-and-the-midpoint-formula" class="nav-link active" data-scroll-target="#price-elasticity-of-demand-and-the-midpoint-formula"><span class="header-section-number">5.1</span> Price Elasticity of Demand and the Midpoint Formula</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction" id="toc-conceptual-introduction" class="nav-link" data-scroll-target="#conceptual-introduction">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation" id="toc-visual-representation" class="nav-link" data-scroll-target="#visual-representation">Visual Representation</a></li>
+  <li><a href="#real-world-application-necessities-and-substitutes" id="toc-real-world-application-necessities-and-substitutes" class="nav-link" data-scroll-target="#real-world-application-necessities-and-substitutes">Real-World Application: Necessities and Substitutes</a></li>
+  <li><a href="#mathematical-foundation-algebra-level" id="toc-mathematical-foundation-algebra-level" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level">Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#the-total-revenue-test" id="toc-the-total-revenue-test" class="nav-link" data-scroll-target="#the-total-revenue-test"><span class="header-section-number">5.2</span> The Total Revenue Test</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-1" id="toc-conceptual-introduction-1" class="nav-link" data-scroll-target="#conceptual-introduction-1">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-1" id="toc-visual-representation-1" class="nav-link" data-scroll-target="#visual-representation-1">Visual Representation</a></li>
+  <li><a href="#real-world-application-subscription-and-ticket-pricing" id="toc-real-world-application-subscription-and-ticket-pricing" class="nav-link" data-scroll-target="#real-world-application-subscription-and-ticket-pricing">Real-World Application: Subscription and Ticket Pricing</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-1" id="toc-mathematical-foundation-algebra-level-1" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-1">Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#income-cross-price-and-supply-elasticities" id="toc-income-cross-price-and-supply-elasticities" class="nav-link" data-scroll-target="#income-cross-price-and-supply-elasticities"><span class="header-section-number">5.3</span> Income, Cross-Price, and Supply Elasticities</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-2" id="toc-conceptual-introduction-2" class="nav-link" data-scroll-target="#conceptual-introduction-2">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-2" id="toc-visual-representation-2" class="nav-link" data-scroll-target="#visual-representation-2">Visual Representation</a></li>
+  <li><a href="#elasticity-shifts-income-and-related-good-prices" id="toc-elasticity-shifts-income-and-related-good-prices" class="nav-link" data-scroll-target="#elasticity-shifts-income-and-related-good-prices">Elasticity Shifts: Income and Related-Good Prices</a></li>
+  <li><a href="#real-world-application-capacity-and-substitutes" id="toc-real-world-application-capacity-and-substitutes" class="nav-link" data-scroll-target="#real-world-application-capacity-and-substitutes">Real-World Application: Capacity and Substitutes</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-2" id="toc-mathematical-foundation-algebra-level-2" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-2">Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#elasticity-and-economic-tax-incidence" id="toc-elasticity-and-economic-tax-incidence" class="nav-link" data-scroll-target="#elasticity-and-economic-tax-incidence"><span class="header-section-number">5.4</span> Elasticity and Economic Tax Incidence</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-3" id="toc-conceptual-introduction-3" class="nav-link" data-scroll-target="#conceptual-introduction-3">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-3" id="toc-visual-representation-3" class="nav-link" data-scroll-target="#visual-representation-3">Visual Representation</a></li>
+  <li><a href="#real-world-application-cigarette-excise-taxes" id="toc-real-world-application-cigarette-excise-taxes" class="nav-link" data-scroll-target="#real-world-application-cigarette-excise-taxes">Real-World Application: Cigarette Excise Taxes</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-3" id="toc-mathematical-foundation-algebra-level-3" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-3">Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch01_principles.html">Foundations of Market Analysis</a></li><li class="breadcrumb-item"><a href="./ch05_elasticity.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Elasticity: Responsiveness of Demand and Supply</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Elasticity: Responsiveness of Demand and Supply</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p>This chapter develops elasticity as a unit-free measure of economic responsiveness in competitive markets, aligned with the Principles of Microeconomics curriculum. It covers price elasticity of demand and the midpoint formula, the total revenue test, income, cross-price, and supply elasticities, and how relative elasticities govern economic tax incidence.</p>
+</blockquote>
+<section id="price-elasticity-of-demand-and-the-midpoint-formula" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="price-elasticity-of-demand-and-the-midpoint-formula"><span class="header-section-number">5.1</span> Price Elasticity of Demand and the Midpoint Formula</h2>
+<section id="conceptual-introduction" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction">Conceptual Introduction</h3>
+<p>In Chapter 3, we established the Law of Demand: when the price of a good goes up, consumers buy less of it. But for a business owner setting prices or a policymaker designing a tax, knowing the <em>direction</em> of the change is not enough—they need to know <em>how much</em> quantity changes. If a café raises the price of its morning latte by <span class="math inline">\(10\%\)</span>, will customer traffic drop by <span class="math inline">\(2\%\)</span> or collapse by <span class="math inline">\(40\%\)</span>? Economists measure this sensitivity using the <strong>Price Elasticity of Demand (<span class="math inline">\(\varepsilon_d\)</span>)</strong>, defined as the percentage change in quantity demanded divided by the percentage change in price.</p>
+<p>Why do economists use percentage changes rather than the raw slope of the demand curve? Because raw slope depends entirely on arbitrary measurement units. Switching a pricing table from dollars to cents, or measuring coffee in ounces instead of cups, changes the numerical slope even though consumer behavior has not changed at all. By converting both price and quantity movements into unit-free percentages, elasticity allows us to compare the responsiveness of insulin, concert tickets, and gasoline on a single standardized scale.</p>
+<p>Because demand curves slope downward, price and quantity move in opposite directions, making the raw ratio negative. By convention, economists take the absolute value <span class="math inline">\(|\varepsilon_d|\)</span> (or report the magnitude) to classify demand into three regimes:</p>
+<ul>
+<li><strong>Elastic Demand (<span class="math inline">\(|\varepsilon_d| &gt; 1\)</span>):</strong> Consumers are highly sensitive to price; the percentage change in quantity is larger than the percentage change in price.</li>
+<li><strong>Unit Elastic Demand (<span class="math inline">\(|\varepsilon_d| = 1\)</span>):</strong> The percentage change in quantity exactly matches the percentage change in price.</li>
+<li><strong>Inelastic Demand (<span class="math inline">\(|\varepsilon_d| &lt; 1\)</span>):</strong> Consumers are relatively unresponsive to price; the percentage change in quantity is smaller than the percentage change in price.</li>
+</ul>
+</section>
+<section id="visual-representation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation">Visual Representation</h3>
+<p>Figure 1 contrasts steep (inelastic) and flat (elastic) demand curves passing through the same initial market point, alongside the extreme polar cases of perfectly inelastic and perfectly elastic demand.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Slope Is Not the Same as Elasticity
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A linear demand curve has a <em>constant slope</em> from top to bottom, yet its <em>elasticity changes at every single point</em>! Near the top-left of a straight-line demand curve (high price, low quantity), a <span class="math inline">\(\$1\)</span> price cut represents a tiny percentage drop in price but a huge percentage jump in quantity, making demand <strong>elastic</strong>. Near the bottom-right (low price, high quantity), that exact same <span class="math inline">\(\$1\)</span> price cut is a large percentage drop in price and a tiny percentage gain in quantity, making demand <strong>inelastic</strong>.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_5_elasticity_responsiveness_of_demand_and_supply_figure_01.svg" class="img-fluid figure-img" alt="For the same price change, quantity responds less on steep inelastic demand than on flatter elastic demand; panel (b) shows the limiting cases."></p>
+<figcaption>Figure 1. For the same price change, quantity responds less on steep inelastic demand than on flatter elastic demand; panel (b) shows the limiting cases.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-necessities-and-substitutes" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-necessities-and-substitutes">Real-World Application: Necessities and Substitutes</h3>
+<p>Consider a household deciding how to allocate its budget between a medically necessary prescription and restaurant meals. If close alternatives for a purchase are limited, buyers may have less room to reduce quantity when its price rises; if many alternatives are available, buyers have more ways to switch. This comparison illustrates the economic mechanism, not a medical recommendation or a measured elasticity for either market.</p>
+<ul>
+<li>A treatment with few clinically appropriate alternatives may have less price-responsive demand than a discretionary purchase. Actual responsiveness depends on the treatment, patient group, insurance coverage, and time horizon.</li>
+<li>Restaurant meals often have alternatives such as cooking at home or choosing another restaurant. Those options can make switching easier, but the size of the response must be estimated rather than assumed.</li>
+</ul>
+<p>Four structural determinants help explain responsiveness: (1) <strong>availability of close substitutes</strong>, (2) <strong>necessity versus discretionary use</strong>, (3) <strong>share of the household budget</strong> (a given price change matters more when the good takes a larger share), and (4) <strong>time horizon</strong> (buyers generally have more opportunity to adjust over a longer period).</p>
+</section>
+<section id="mathematical-foundation-algebra-level" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level">Mathematical Foundation (Algebra Level)</h3>
+<p>If you compute a percentage change from Point A to Point B and then reverse direction from Point B back to Point A, standard percentage formulas give two different answers because the starting base changes. To eliminate this direction bias, economists use the <strong>Midpoint (Arc) Elasticity Formula</strong>, dividing each change by the average of the starting and ending values:</p>
+<p><span class="math display">\[
+\varepsilon_d = \frac{\%\Delta Q_d}{\%\Delta P} = \frac{\dfrac{Q_2 - Q_1}{(Q_1 + Q_2)/2}}{\dfrac{P_2 - P_1}{(P_1 + P_2)/2}}
+\]</span></p>
+<p><strong>Worked Problem:</strong> Suppose a hypothetical transit agency raises the monthly express-pass fare from <span class="math inline">\(P_1 = \$80\)</span> to <span class="math inline">\(P_2 = \$100\)</span>, and monthly sales fall from <span class="math inline">\(Q_1 = 1{,}200\)</span> to <span class="math inline">\(Q_2 = 800\)</span> passes. Calculate the price elasticity of demand using the midpoint formula and classify the demand regime.</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Calculate the Percentage Change in Quantity Demanded (<span class="math inline">\(\%\Delta Q_d\)</span>):</strong> First find the change in quantity and the midpoint quantity:</li>
+</ul>
+<p><span class="math display">\[
+\Delta Q = Q_2 - Q_1 = 800 - 1{,}200 = -400\text{ passes}
+\]</span></p>
+<p><span class="math display">\[
+Q_{\text{mid}} = \frac{Q_1 + Q_2}{2} = \frac{1{,}200 + 800}{2} = \frac{2{,}000}{2} = 1{,}000\text{ passes}
+\]</span></p>
+<p>Divide the change by the midpoint:</p>
+<p><span class="math display">\[
+\%\Delta Q_d = \frac{-400}{1{,}000} = -0.40 \quad (\text{or } -40\%)
+\]</span></p>
+<ul>
+<li><strong>Calculate the Percentage Change in Price (<span class="math inline">\(\%\Delta P\)</span>):</strong> Find the change in price and the midpoint price:</li>
+</ul>
+<p><span class="math display">\[
+\Delta P = P_2 - P_1 = \$100 - \$80 = +\$20
+\]</span></p>
+<p><span class="math display">\[
+P_{\text{mid}} = \frac{P_1 + P_2}{2} = \frac{\$80 + \$100}{2} = \frac{\$180}{2} = \$90
+\]</span></p>
+<p>Divide the change by the midpoint:</p>
+<p><span class="math display">\[
+\%\Delta P = \frac{20}{90} \approx +0.2222 \quad (\text{or } +22.22\%)
+\]</span></p>
+<ul>
+<li><strong>Divide <span class="math inline">\(\%\Delta Q_d\)</span> by <span class="math inline">\(\%\Delta P\)</span>:</strong></li>
+</ul>
+<p><span class="math display">\[
+\varepsilon_d = \frac{-0.40}{20/90} = -0.40 \times \frac{90}{20} = -0.40 \times 4.5 = -1.80
+\]</span></p>
+<ul>
+<li><strong>Take the Absolute Value and Classify:</strong></li>
+</ul>
+<p><span class="math display">\[
+|\varepsilon_d| = |-1.80| = \mathbf{1.80}
+\]</span></p>
+<p>Because <span class="math inline">\(1.80 &gt; 1\)</span>, demand for express commuter bus passes over this price range is <strong>elastic</strong>.</p>
+<p><strong>Conclusion:</strong> Over this price range, the midpoint elasticity is <span class="math inline">\(-1.80\)</span>: demand is elastic, so quantity responds more than proportionally to price. This arc estimate is not a forecast for every 1% price change.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Point Elasticity via Calculus
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> For infinitesimally small price changes along a differentiable demand function <span class="math inline">\(Q_d = f(P)\)</span>, the <strong>point price elasticity of demand</strong> replaces discrete differences with the first derivative:</p>
+<p><span class="math display">\[
+\varepsilon_d = \frac{dQ_d}{dP} \cdot \frac{P}{Q_d}
+\]</span></p>
+<p>For example, given linear demand <span class="math inline">\(Q_d = 100 - 2P\)</span>, we have <span class="math inline">\(\frac{dQ_d}{dP} = -2\)</span>. At <span class="math inline">\(P = \$30\)</span>, <span class="math inline">\(Q_d = 100 - 2(30) = 40\)</span>, giving:</p>
+<p><span class="math display">\[
+\varepsilon_d = (-2) \cdot \frac{30}{40} = -1.5 \implies |\varepsilon_d| = 1.5 \text{ (Elastic)}
+\]</span></p>
+<p>Notice that when <span class="math inline">\(P = \$25\)</span> and <span class="math inline">\(Q_d = 50\)</span> (the exact midpoint of the linear demand curve), <span class="math inline">\(|\varepsilon_d| = |-2 \cdot \frac{25}{50}| = 1.0\)</span> (Unit Elastic).</p>
+</div>
+</div>
+</section>
+</section>
+<section id="the-total-revenue-test" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="the-total-revenue-test"><span class="header-section-number">5.2</span> The Total Revenue Test</h2>
+<section id="conceptual-introduction-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-1">Conceptual Introduction</h3>
+<p>Every business manager faces a fundamental pricing dilemma: if I raise my price, will my company bring in more money or less money? At first glance, raising prices sounds like a guaranteed way to boost sales dollars. Yet every price increase sets off a tug-of-war between two opposing forces inside the firm’s <strong>Total Revenue (<span class="math inline">\(TR = P \times Q\)</span>)</strong>:</p>
+<ul>
+<li><strong>The Price Effect:</strong> Each unit still sold now brings in more dollars (<span class="math inline">\(P \uparrow\)</span>), pushing total revenue upward.</li>
+<li><strong>The Quantity Effect:</strong> Fewer total units are sold because some buyers walk away (<span class="math inline">\(Q \downarrow\)</span>), pulling total revenue downward.</li>
+</ul>
+<p>Which force wins the tug-of-war depends entirely on the price elasticity of demand. When demand is <strong>inelastic</strong> (<span class="math inline">\(|\varepsilon_d| &lt; 1\)</span>), customers barely cut back their purchases when prices rise; the positive Price Effect overpowers the weak Quantity Effect, so <strong>raising price increases total revenue</strong>. Conversely, when demand is <strong>elastic</strong> (<span class="math inline">\(|\varepsilon_d| &gt; 1\)</span>), customers flee in large numbers; the negative Quantity Effect crushes the Price Effect, so <strong>raising price actually reduces total revenue</strong>.</p>
+<p>This relationship gives firms and economists a practical diagnostic known as the <strong>Total Revenue Test</strong>. Even without estimating a full econometric demand curve, observing how total dollar receipts move after a price change immediately reveals whether demand is elastic, inelastic, or unit elastic. Furthermore, it proves that a firm seeking to maximize total revenue (before accounting for production costs) should operate right at the <strong>unit elastic midpoint</strong> (<span class="math inline">\(|\varepsilon_d| = 1\)</span>), where revenue reaches its peak.</p>
+</section>
+<section id="visual-representation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-1">Visual Representation</h3>
+<p>Figure 2 stacks a linear demand curve directly above its corresponding parabolic Total Revenue curve, showing how revenue rises along the elastic upper half, peaks at the unit-elastic midpoint, and falls along the inelastic lower half.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_5_elasticity_responsiveness_of_demand_and_supply_figure_02.svg" class="img-fluid figure-img" alt="Demand Elasticity and Total Revenue. Moving down the linear demand curve from Q=0 to Q=25 lowers price in the elastic region, causing Total Revenue to climb to its maximum of $1{,}250 at the unit-elastic midpoint. Beyond Q=25, further price cuts enter the inelastic region and cause Total Revenue to decline."></p>
+<figcaption>Figure 2. Demand Elasticity and Total Revenue. Moving down the linear demand curve from <span class="math inline">\(Q=0\)</span> to <span class="math inline">\(Q=25\)</span> lowers price in the elastic region, causing Total Revenue to climb to its maximum of <span class="math inline">\(\$1{,}250\)</span> at the unit-elastic midpoint. Beyond <span class="math inline">\(Q=25\)</span>, further price cuts enter the inelastic region and cause Total Revenue to decline.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-subscription-and-ticket-pricing" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-subscription-and-ticket-pricing">Real-World Application: Subscription and Ticket Pricing</h3>
+<p>The following are stylized examples, not observations about any named company or event. They show how a seller can use the total-revenue test to reason about a price change:</p>
+<ul>
+<li>Suppose a monthly subscription price rises from <span class="math inline">\(\$15\)</span> to <span class="math inline">\(\$17\)</span> while subscribers fall from <span class="math inline">\(1{,}000\)</span> to <span class="math inline">\(970\)</span>. Revenue changes from <span class="math inline">\(\$15{,}000\)</span> to <span class="math inline">\(\$16{,}490\)</span> per month, so revenue rises over this interval.</li>
+<li>Suppose a ticket price falls from <span class="math inline">\(\$100\)</span> to <span class="math inline">\(\$70\)</span> while sales rise from 100 to 200 tickets. Revenue changes from <span class="math inline">\(\$10{,}000\)</span> to <span class="math inline">\(\$14{,}000\)</span>, so demand is elastic over this interval by the total-revenue test.</li>
+</ul>
+</section>
+<section id="mathematical-foundation-algebra-level-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-1">Mathematical Foundation (Algebra Level)</h3>
+<p>Total Revenue is the product of market price and quantity sold:</p>
+<p><span class="math display">\[
+TR = P \times Q
+\]</span></p>
+<p>To test how a price change alters total revenue, compute <span class="math inline">\(TR_1 = P_1 \times Q_1\)</span> before the change and <span class="math inline">\(TR_2 = P_2 \times Q_2\)</span> after the change:</p>
+<ul>
+<li>If <span class="math inline">\(P \uparrow\)</span> and <span class="math inline">\(TR \uparrow\)</span> (price and revenue move in the <strong>same</strong> direction), demand is <strong>inelastic</strong> (<span class="math inline">\(|\varepsilon_d| &lt; 1\)</span>).</li>
+<li>If <span class="math inline">\(P \uparrow\)</span> and <span class="math inline">\(TR \downarrow\)</span> (price and revenue move in <strong>opposite</strong> directions), demand is <strong>elastic</strong> (<span class="math inline">\(|\varepsilon_d| &gt; 1\)</span>).</li>
+<li>If <span class="math inline">\(P \uparrow\)</span> and <span class="math inline">\(TR\)</span> stays <strong>unchanged</strong>, demand is <strong>unit elastic</strong> (<span class="math inline">\(|\varepsilon_d| = 1\)</span>).</li>
+</ul>
+<p><strong>Worked Problem:</strong> Suppose a campus bookstore selling university hoodies faces the stylized linear demand schedule <span class="math inline">\(P = 100 - 2Q\)</span>, where <span class="math inline">\(P\)</span> is dollars per hoodie and <span class="math inline">\(Q\)</span> is hoodies sold per week, as plotted in Figure 2. Compare weekly total revenue across three pricing strategies:</p>
+<ul>
+<li><strong>Strategy A:</strong> High price <span class="math inline">\(P_A = \$70\)</span></li>
+<li><strong>Strategy B:</strong> Midpoint price <span class="math inline">\(P_B = \$50\)</span></li>
+<li><strong>Strategy C:</strong> Low price <span class="math inline">\(P_C = \$30\)</span></li>
+</ul>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Compute Quantity and Revenue under Strategy A (<span class="math inline">\(P_A = \$70\)</span>):</strong> Substitute <span class="math inline">\(P = 70\)</span> into <span class="math inline">\(P = 100 - 2Q\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+70 = 100 - 2Q_A \implies 2Q_A = 30 \implies Q_A = 15\text{ hoodies}
+\]</span></p>
+<p>Calculate Total Revenue:</p>
+<p><span class="math display">\[
+TR_A = P_A \times Q_A = \$70 \times 15 = \mathbf{\$1{,}050}
+\]</span></p>
+<ul>
+<li><strong>Compute Quantity and Revenue under Strategy B (<span class="math inline">\(P_B = \$50\)</span>):</strong> Substitute <span class="math inline">\(P = 50\)</span> into <span class="math inline">\(P = 100 - 2Q\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+50 = 100 - 2Q_B \implies 2Q_B = 50 \implies Q_B = 25\text{ hoodies}
+\]</span></p>
+<p>Calculate Total Revenue:</p>
+<p><span class="math display">\[
+TR_B = P_B \times Q_B = \$50 \times 25 = \mathbf{\$1{,}250}
+\]</span></p>
+<p><em>Interpretation:</em> Cutting price from <span class="math inline">\(\$70\)</span> to <span class="math inline">\(\$50\)</span> increased Total Revenue from <span class="math inline">\(\$1{,}050\)</span> to <span class="math inline">\(\$1{,}250\)</span>, confirming that demand between <span class="math inline">\(P=\$70\)</span> and <span class="math inline">\(P=\$50\)</span> is <strong>elastic</strong>.</p>
+<ul>
+<li><strong>Compute Quantity and Revenue under Strategy C (<span class="math inline">\(P_C = \$30\)</span>):</strong> Substitute <span class="math inline">\(P = 30\)</span> into <span class="math inline">\(P = 100 - 2Q\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+30 = 100 - 2Q_C \implies 2Q_C = 70 \implies Q_C = 35\text{ hoodies}
+\]</span></p>
+<p>Calculate Total Revenue:</p>
+<p><span class="math display">\[
+TR_C = P_C \times Q_C = \$30 \times 35 = \mathbf{\$1{,}050}
+\]</span></p>
+<p><em>Interpretation:</em> Cutting price further from <span class="math inline">\(\$50\)</span> to <span class="math inline">\(\$30\)</span> reduced Total Revenue from <span class="math inline">\(\$1{,}250\)</span> back down to <span class="math inline">\(\$1{,}050\)</span>, confirming that demand below <span class="math inline">\(P=\$50\)</span> is <strong>inelastic</strong>.</p>
+<p><strong>Conclusion:</strong> Total Revenue is maximized at <span class="math inline">\(\mathbf{\$1{,}250}\)</span> when <span class="math inline">\(P = \$50\)</span> and <span class="math inline">\(Q = 25\)</span> hoodies. This is the unit-elastic midpoint for this linear demand curve; the maximum for a general demand curve need not occur at its geometric midpoint.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Work It Out: Connecting Midpoint Elasticity and the Total Revenue Test
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Prompt:</strong> Suppose a student-run film society tests raising its semester pass price from <span class="math inline">\(P_1 = \$18\)</span> to <span class="math inline">\(P_2 = \$22\)</span>. Under <em>ceteris paribus</em> assumptions, semester pass sales decrease from <span class="math inline">\(Q_1 = 525\)</span> to <span class="math inline">\(Q_2 = 475\)</span>.</p>
+<ul>
+<li>Compute initial total revenue (<span class="math inline">\(TR_1\)</span>) and new total revenue (<span class="math inline">\(TR_2\)</span>). Based on the Total Revenue Test alone, predict whether demand over this interval is elastic or inelastic.</li>
+<li>Verify your prediction by computing the midpoint price elasticity of demand (<span class="math inline">\(\varepsilon_d\)</span>).</li>
+</ul>
+<p><strong>Guided Solution:</strong></p>
+<ul>
+<li><strong>Apply the Total Revenue Test:</strong></li>
+</ul>
+<p><span class="math display">\[
+TR_1 = \$18 \times 525 = \$9{,}450, \qquad TR_2 = \$22 \times 475 = \$10{,}450
+\]</span></p>
+<p>Because price rose and total revenue also rose (<span class="math inline">\(\Delta TR = +\$1{,}000\)</span>), the price effect outweighed the quantity effect. The Total Revenue Test predicts <strong>inelastic demand</strong> (<span class="math inline">\(|\varepsilon_d| &lt; 1\)</span>). * <strong>Verify with the Midpoint Formula:</strong></p>
+<p><span class="math display">\[
+\%\Delta Q_d = \frac{475 - 525}{(525 + 475)/2} = \frac{-50}{500} = -0.10 \quad (-10\%)
+\]</span></p>
+<p><span class="math display">\[
+\%\Delta P = \frac{22 - 18}{(18 + 22)/2} = \frac{4}{20} = +0.20 \quad (+20\%)
+\]</span></p>
+<p><span class="math display">\[
+\varepsilon_d = \frac{-0.10}{+0.20} = -0.50 \implies |\varepsilon_d| = \mathbf{0.50} &lt; 1
+\]</span></p>
+<p>The direct elasticity calculation confirms that demand is <strong>inelastic</strong> over this price interval, matching the Total Revenue Test.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Calculus Proof of the Total Revenue Test
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors:</em> Express Total Revenue as a function of price, <span class="math inline">\(TR(P) = P \cdot Q(P)\)</span>. Differentiating with respect to <span class="math inline">\(P\)</span> using the product rule gives:</p>
+<p><span class="math display">\[
+\frac{d(TR)}{dP} = Q(P) + P \frac{dQ}{dP} = Q(P) \left[ 1 + \frac{dQ}{dP} \cdot \frac{P}{Q(P)} \right] = Q(P) \left( 1 + \varepsilon_d \right)
+\]</span></p>
+<p>Since <span class="math inline">\(\varepsilon_d = -|\varepsilon_d|\)</span> for downward-sloping demand, we can rewrite this as:</p>
+<p><span class="math display">\[
+\frac{d(TR)}{dP} = Q(P) \left( 1 - |\varepsilon_d| \right)
+\]</span></p>
+<ul>
+<li>When <span class="math inline">\(|\varepsilon_d| &lt; 1\)</span> (inelastic), <span class="math inline">\(1 - |\varepsilon_d| &gt; 0 \implies \frac{d(TR)}{dP} &gt; 0\)</span> (price increases raise <span class="math inline">\(TR\)</span>).</li>
+<li>When <span class="math inline">\(|\varepsilon_d| &gt; 1\)</span> (elastic), <span class="math inline">\(1 - |\varepsilon_d| &lt; 0 \implies \frac{d(TR)}{dP} &lt; 0\)</span> (price increases lower <span class="math inline">\(TR\)</span>).</li>
+<li>At an interior stationary point with positive quantity, setting <span class="math inline">\(\frac{d(TR)}{dP}=0\)</span> yields <span class="math inline">\(|\varepsilon_d|=1\)</span>. At an interior revenue maximum, this is the unit-elastic point; for a linear demand curve, that point is also the geometric midpoint.</li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="income-cross-price-and-supply-elasticities" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="income-cross-price-and-supply-elasticities"><span class="header-section-number">5.3</span> Income, Cross-Price, and Supply Elasticities</h2>
+<section id="conceptual-introduction-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-2">Conceptual Introduction</h3>
+<p>While own-price elasticity measures movement <em>along</em> a demand curve, two related demand elasticities measure how much the entire demand curve <em>shifts</em> when income or related-good prices change:</p>
+<ul>
+<li><strong>Income Elasticity of Demand (<span class="math inline">\(\varepsilon_I\)</span>):</strong> Measures the percentage change in quantity demanded divided by the percentage change in consumer income (<span class="math inline">\(I\)</span>). Unlike own-price elasticity, <strong>never drop the plus or minus sign</strong> here! A positive value (<span class="math inline">\(\varepsilon_I &gt; 0\)</span>) identifies a <strong>normal good</strong> (if <span class="math inline">\(\varepsilon_I &gt; 1\)</span>, it is an income-elastic <em>luxury</em>; if <span class="math inline">\(0 &lt; \varepsilon_I &lt; 1\)</span>, it is an income-inelastic <em>necessity</em>). A negative value (<span class="math inline">\(\varepsilon_I &lt; 0\)</span>) identifies an <strong>inferior good</strong>, which households buy less of as their paychecks grow.</li>
+<li><strong>Cross-Price Elasticity of Demand (<span class="math inline">\(\varepsilon_{xy}\)</span>):</strong> Measures the percentage change in quantity demanded of Good <span class="math inline">\(X\)</span> divided by the percentage change in the price of Good <span class="math inline">\(Y\)</span>. Again, the sign carries critical economic meaning: if <span class="math inline">\(\varepsilon_{xy} &gt; 0\)</span>, rising prices for Good <span class="math inline">\(Y\)</span> drive consumers to buy more of Good <span class="math inline">\(X\)</span>, proving the two goods are <strong>substitutes</strong> (such as Uber and Lyft). If <span class="math inline">\(\varepsilon_{xy} &lt; 0\)</span>, rising prices for Good <span class="math inline">\(Y\)</span> cause sales of Good <span class="math inline">\(X\)</span> to fall, proving they are <strong>complements</strong> (such as game consoles and video games).</li>
+</ul>
+<p>On the other side of the market, the <strong>Price Elasticity of Supply (<span class="math inline">\(\varepsilon_s\)</span>)</strong> measures how flexibly producers can expand output when market prices rise (<span class="math inline">\(\varepsilon_s = \%\Delta Q_s / \%\Delta P \ge 0\)</span>). Supply elasticity is governed primarily by production capacity and time: agricultural crops after harvest or beachfront land have nearly vertical, inelastic supply (<span class="math inline">\(\varepsilon_s \approx 0\)</span>), whereas digital software downloads or mass-produced apparel can scale up rapidly at nearly constant cost, exhibiting high supply elasticity (<span class="math inline">\(\varepsilon_s &gt; 1\)</span>).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Why You Must Keep the Sign for <span class="math inline">\(\varepsilon_I\)</span> and <span class="math inline">\(\varepsilon_{xy}\)</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For own-price elasticity of demand (<span class="math inline">\(\varepsilon_d\)</span>), economists often report the absolute value <span class="math inline">\(|\varepsilon_d|\)</span> because the Law of Demand already implies a negative sign. Do <strong>not</strong> take absolute values for income elasticity (<span class="math inline">\(\varepsilon_I\)</span>) or cross-price elasticity (<span class="math inline">\(\varepsilon_{xy}\)</span>): dropping the sign erases the economic classification. For example, <span class="math inline">\(\varepsilon_I = +0.5\)</span> indicates a normal necessity while <span class="math inline">\(\varepsilon_I = -0.5\)</span> indicates an inferior good; similarly, <span class="math inline">\(\varepsilon_{xy} = +0.5\)</span> indicates substitutes while <span class="math inline">\(\varepsilon_{xy} = -0.5\)</span> indicates complements.</p>
+</div>
+</div>
+</section>
+<section id="visual-representation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-2">Visual Representation</h3>
+<p>Figure 3 illustrates how production time horizons transform the Price Elasticity of Supply from rigid in the immediate market period to highly responsive in the long run.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_5_elasticity_responsiveness_of_demand_and_supply_figure_03.svg" class="img-fluid figure-img" alt="Supply Elasticity Across Time Horizons. Following an unexpected demand surge from D_1 to D_2, fixed immediate capacity (S_{\text{immediate}}) forces price to spike to E_{\text{imm}}. Over the short run (S_{\text{short-run}}) and long run (S_{\text{long-run}}), firms expand factories and enter the market, flattening the supply curve and moderating the price increase."></p>
+<figcaption>Figure 3. Supply Elasticity Across Time Horizons. Following an unexpected demand surge from <span class="math inline">\(D_1\)</span> to <span class="math inline">\(D_2\)</span>, fixed immediate capacity (<span class="math inline">\(S_{\text{immediate}}\)</span>) forces price to spike to <span class="math inline">\(E_{\text{imm}}\)</span>. Over the short run (<span class="math inline">\(S_{\text{short-run}}\)</span>) and long run (<span class="math inline">\(S_{\text{long-run}}\)</span>), firms expand factories and enter the market, flattening the supply curve and moderating the price increase.</figcaption>
+</figure>
+</div>
+</section>
+<section id="elasticity-shifts-income-and-related-good-prices" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="elasticity-shifts-income-and-related-good-prices">Elasticity Shifts: Income and Related-Good Prices</h3>
+<p>Income elasticity and cross-price elasticity describe shifts in demand, rather than movements along a demand curve. The sign of the elasticity predicts the direction of the shift when the explanatory variable changes.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_5_elasticity_responsiveness_of_demand_and_supply_figure_04.svg" class="img-fluid figure-img" alt="How income and related-good prices shift demand. The direction depends on whether the good is normal or inferior, and whether the related goods are substitutes or complements."></p>
+<figcaption>Figure 4. How income and related-good prices shift demand. The direction depends on whether the good is normal or inferior, and whether the related goods are substitutes or complements.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-capacity-and-substitutes" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-capacity-and-substitutes">Real-World Application: Capacity and Substitutes</h3>
+<ul>
+<li><strong>Capacity over time:</strong> A producer in a capacity-intensive industry, such as semiconductor fabrication, may be unable to expand output immediately when demand rises. Investment and entry can make supply more responsive over a longer horizon. This is a qualitative illustration; specific build times, costs, and price movements require a dated source.</li>
+<li><strong>Related services:</strong> If two ride-hailing services are substitutes, a price increase for one may shift demand toward the other. If two goods are complements, a price increase for one may reduce demand for the other. These are illustrative mechanisms, not claims about measured responses by named firms.</li>
+</ul>
+</section>
+<section id="mathematical-foundation-algebra-level-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-2">Mathematical Foundation (Algebra Level)</h3>
+<p>Using the midpoint method, the three elasticity formulas are: <span class="math display">\[\begin{align}
+\varepsilon_I &amp;= \frac{\%\Delta Q_d}{\%\Delta I}
+= \frac{\dfrac{Q_2 - Q_1}{(Q_1 + Q_2)/2}}{\dfrac{I_2 - I_1}{(I_1 + I_2)/2}},\\
+\varepsilon_{xy} &amp;= \frac{\%\Delta Q_x}{\%\Delta P_y}
+= \frac{\dfrac{Q_{x2} - Q_{x1}}{(Q_{x1} + Q_{x2})/2}}{\dfrac{P_{y2} - P_{y1}}{(P_{y1} + P_{y2})/2}},\\
+\varepsilon_s &amp;= \frac{\%\Delta Q_s}{\%\Delta P}
+= \frac{\dfrac{Q_{s2} - Q_{s1}}{(Q_{s1} + Q_{s2})/2}}{\dfrac{P_2 - P_1}{(P_1 + P_2)/2}}.
+\end{align}\]</span></p>
+<p><strong>Worked Problem:</strong> In a hypothetical example, a graduating college senior’s annual income rises from <span class="math inline">\(I_1 = \$30{,}000\)</span> to <span class="math inline">\(I_2 = \$50{,}000\)</span>, while other factors affecting demand are held constant. Assume:</p>
+<ul>
+<li>Their annual purchases of instant ramen packs drop from <span class="math inline">\(Q_1 = 120\)</span> packs to <span class="math inline">\(Q_2 = 40\)</span> packs.</li>
+<li>Meanwhile, when the price of oat milk rises from <span class="math inline">\(P_{y1} = \$4.00\)</span> to <span class="math inline">\(P_{y2} = \$5.00\)</span> per carton, local café demand for espresso shots falls from <span class="math inline">\(Q_{x1} = 500\)</span> to <span class="math inline">\(Q_{x2} = 450\)</span> shots per day.</li>
+</ul>
+<p>Compute both the Income Elasticity of Demand for instant ramen and the Cross-Price Elasticity between espresso shots and oat milk.</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Calculate Percentage Change in Income (<span class="math inline">\(\%\Delta I\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+\%\Delta I = \frac{50{,}000 - 30{,}000}{(30{,}000 + 50{,}000)/2} = \frac{20{,}000}{40{,}000} = +0.50 \quad (+50\%)
+\]</span></p>
+<ul>
+<li><strong>Calculate Income Elasticity of Demand for Instant Ramen (<span class="math inline">\(\varepsilon_I\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+\%\Delta Q_{\text{ramen}} = \frac{40 - 120}{(120 + 40)/2} = \frac{-80}{80} = -1.00 \quad (-100\%)
+\]</span></p>
+<p>Divide <span class="math inline">\(\%\Delta Q_{\text{ramen}}\)</span> by <span class="math inline">\(\%\Delta I\)</span>:</p>
+<p><span class="math display">\[
+\varepsilon_I = \frac{-1.00}{+0.50} = \mathbf{-2.00}
+\]</span></p>
+<p><em>Classification:</em> Because <span class="math inline">\(\varepsilon_I &lt; 0\)</span>, instant ramen is an <strong>inferior good</strong>.</p>
+<ul>
+<li><strong>Calculate Cross-Price Elasticity (<span class="math inline">\(\varepsilon_{\text{espresso, oat milk}}\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+\%\Delta Q_{\text{espresso}} = \frac{450 - 500}{(500 + 450)/2} = \frac{-50}{475} \approx -0.1053 \quad (-10.53\%)
+\]</span></p>
+<p><span class="math display">\[
+\%\Delta P_{\text{oat milk}} = \frac{5.00 - 4.00}{(4.00 + 5.00)/2} = \frac{1.00}{4.50} \approx +0.2222 \quad (+22.22\%)
+\]</span></p>
+<p>Divide <span class="math inline">\(\%\Delta Q_{\text{espresso}}\)</span> by <span class="math inline">\(\%\Delta P_{\text{oat milk}}\)</span>:</p>
+<p><span class="math display">\[
+\varepsilon_{xy} = \frac{-50/475}{1.00/4.50} = -\frac{50}{475} \times 4.50 = -\frac{225}{475} \approx \mathbf{-0.47}
+\]</span></p>
+<p><em>Classification:</em> Because <span class="math inline">\(\varepsilon_{xy} &lt; 0\)</span>, espresso shots and oat milk are <strong>complements</strong>.</p>
+<p><strong>Conclusion:</strong> Retaining the algebraic signs reveals that instant ramen is an inferior good (<span class="math inline">\(\varepsilon_I = -2.00\)</span>) and oat milk and espresso are complementary goods (<span class="math inline">\(\varepsilon_{xy} \approx -0.47\)</span>).</p>
+<p><strong>Worked Supply Example (Illustrative):</strong> Suppose price rises from <span class="math inline">\(\$10\)</span> to <span class="math inline">\(\$12\)</span> while quantity supplied rises from 100 to 120 units. Using the midpoint formula:</p>
+<p><span class="math display">\[
+\%\Delta Q_s=\frac{120-100}{(120+100)/2}=\frac{20}{110},
+\qquad
+\%\Delta P=\frac{12-10}{(12+10)/2}=\frac{2}{11}.
+\]</span></p>
+<p>Therefore,</p>
+<p><span class="math display">\[
+\varepsilon_s=\frac{20/110}{2/11}=1.
+\]</span></p>
+<p>Supply is unit elastic over this interval. These values are hypothetical and are not an estimate for a particular market.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Point Income, Cross-Price, and Supply Elasticities
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> For a differentiable multivariable demand function <span class="math inline">\(Q_x = f(P_x, I, P_y)\)</span> and supply function <span class="math inline">\(Q_s = g(P)\)</span>, point elasticities use partial and ordinary derivatives:</p>
+<p><span class="math display">\[
+\varepsilon_I = \frac{\partial Q_x}{\partial I} \cdot \frac{I}{Q_x}, \qquad \varepsilon_{xy} = \frac{\partial Q_x}{\partial P_y} \cdot \frac{P_y}{Q_x}, \qquad \varepsilon_s = \frac{dQ_s}{dP} \cdot \frac{P}{Q_s}
+\]</span></p>
+<p>For example, given <span class="math inline">\(Q_x = 100 - 4P_x + 0.01I + 5P_y\)</span> evaluated at <span class="math inline">\((P_x = \$25,\; I = \$40{,}000,\; P_y = \$20)\)</span>, we find <span class="math inline">\(Q_x = 100 - 100 + 400 + 100 = 500\)</span>, yielding:</p>
+<p><span class="math display">\[
+\varepsilon_I = 0.01 \cdot \frac{40{,}000}{500} = +0.80 \text{ (normal necessity)}, \qquad \varepsilon_{xy} = 5 \cdot \frac{20}{500} = +0.20 \text{ (substitutes)}.
+\]</span></p>
+<p>Similarly, for linear supply <span class="math inline">\(Q_s = -20 + 4P\)</span> at <span class="math inline">\(P = \$25\)</span>, we have <span class="math inline">\(Q_s = 80\)</span> and <span class="math inline">\(\varepsilon_s = 4 \cdot \frac{25}{80} = 1.25\)</span> (elastic supply).</p>
+</div>
+</div>
+</section>
+</section>
+<section id="elasticity-and-economic-tax-incidence" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="elasticity-and-economic-tax-incidence"><span class="header-section-number">5.4</span> Elasticity and Economic Tax Incidence</h2>
+<section id="conceptual-introduction-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-3">Conceptual Introduction</h3>
+<p>Under the standard competitive supply-and-demand model, for a given per-unit tax and absent differences in compliance or transaction costs, <strong>statutory incidence</strong> (whether the law collects the tax from the buyer or the seller) does not change the economic burden. So what <em>does</em> determine how consumers and producers divide that burden? The answer is <strong>relative price elasticity</strong>.</p>
+<p>Think of a tax wedge as a financial squeeze between buyers and sellers. Whichever side of the market is <strong>more inelastic</strong>—meaning they have fewer alternatives and cannot easily walk away—gets trapped and absorbs the lion’s share of the tax burden. Conversely, whichever side is <strong>more elastic</strong> can easily escape the tax by switching to substitutes or shifting production elsewhere, forcing the other party to pay.</p>
+<p>This principle produces two polar rules of public finance:</p>
+<ul>
+<li><strong>When Demand Is More Inelastic Than Supply (<span class="math inline">\(|\varepsilon_d| &lt; \varepsilon_s\)</span>):</strong> Consumers have few substitutes while producers can easily redirect resources. Sellers pass most of the tax forward to buyers through a sharply higher retail price (<span class="math inline">\(P_b - P^* &gt; P^* - P_s\)</span>).</li>
+<li><strong>When Supply Is More Inelastic Than Demand (<span class="math inline">\(\varepsilon_s &lt; |\varepsilon_d|\)</span>):</strong> Producers are locked into fixed assets or specialized locations while consumers can easily switch away. Sellers must absorb most of the tax by accepting a sharply lower net price (<span class="math inline">\(P^* - P_s &gt; P_b - P^*\)</span>).</li>
+</ul>
+</section>
+<section id="visual-representation-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-3">Visual Representation</h3>
+<p>Figure 5 compares the exact same excise tax <span class="math inline">\(t\)</span> across two markets: one with inelastic demand (left) where buyers pay almost the entire tax, and one with elastic demand (right) where sellers absorb most of the burden.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_5_elasticity_responsiveness_of_demand_and_supply_figure_05.svg" class="img-fluid figure-img" alt="Elasticity Determines Tax Incidence. In panel (a), steep inelastic demand forces buyers to pay almost the entire tax (P_b - P^*). In panel (b), flat elastic demand allows buyers to walk away, forcing sellers with inelastic supply to absorb most of the tax (P^* - P_s)."></p>
+<figcaption>Figure 5. Elasticity Determines Tax Incidence. In panel (a), steep inelastic demand forces buyers to pay almost the entire tax (<span class="math inline">\(P_b - P^*\)</span>). In panel (b), flat elastic demand allows buyers to walk away, forcing sellers with inelastic supply to absorb most of the tax (<span class="math inline">\(P^* - P_s\)</span>).</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-cigarette-excise-taxes" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-cigarette-excise-taxes">Real-World Application: Cigarette Excise Taxes</h3>
+<ul>
+<li>Cigarette excise taxes are a policy example in which the statutory tax does not by itself reveal who bears the economic burden. Estimating buyer and seller shares requires evidence about how both prices and quantities respond in a specified market and period.</li>
+<li>The addictive nature of a product may affect the availability of substitutes, but it does not establish a universal demand elasticity or a precise tax pass-through rate. Avoid numerical incidence claims unless the market, period, and source are stated.</li>
+</ul>
+</section>
+<section id="mathematical-foundation-algebra-level-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-3">Mathematical Foundation (Algebra Level)</h3>
+<p>We can compute the exact dollar burden and percentage share borne by buyers and sellers using standard linear equations:</p>
+<p><span class="math display">\[
+\text{Buyer Tax Share} = \frac{P_b - P^*}{t}, \qquad \text{Seller Tax Share} = \frac{P^* - P_s}{t}
+\]</span></p>
+<p>Notice that <span class="math inline">\((P_b - P^*) + (P^* - P_s) = P_b - P_s = t\)</span>, so the two shares always sum to <span class="math inline">\(100\%\)</span>.</p>
+<p><strong>Worked Problem:</strong> Consider a stylized competitive market for a specialty allergy medication with linear demand and supply:</p>
+<p><span class="math display">\[
+\text{Demand: } P_d = 110 - 4Q, \qquad \text{Supply: } P_s = 10 + Q
+\]</span></p>
+<p>Suppose the government imposes a per-unit excise tax of <span class="math inline">\(t = \$20\)</span>. Calculate the pre-tax equilibrium, post-tax prices (<span class="math inline">\(P_b\)</span> and <span class="math inline">\(P_s\)</span>), and the exact percentage of the tax paid by buyers versus sellers.</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Find the Pre-Tax Equilibrium (<span class="math inline">\(Q^*, P^*\)</span>):</strong> Set <span class="math inline">\(P_d = P_s\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+110 - 4Q = 10 + Q \implies 100 = 5Q \implies Q^* = \mathbf{20\text{ units}}
+\]</span></p>
+<p>Plug <span class="math inline">\(Q^* = 20\)</span> into either equation to find <span class="math inline">\(P^*\)</span>:</p>
+<p><span class="math display">\[
+P^* = 10 + 20 = \mathbf{\$30}
+\]</span></p>
+<ul>
+<li><strong>Impose the Tax Wedge (<span class="math inline">\(P_b - P_s = \$20\)</span>):</strong> Substitute the demand and supply expressions into the tax wedge equation:</li>
+</ul>
+<p><span class="math display">\[
+(110 - 4Q_t) - (10 + Q_t) = 20
+\]</span></p>
+<p>Simplify the left-hand side:</p>
+<p><span class="math display">\[
+100 - 5Q_t = 20 \implies 5Q_t = 80 \implies Q_t = \mathbf{16\text{ units}}
+\]</span></p>
+<ul>
+<li><strong>Compute Post-Tax Buyer Price (<span class="math inline">\(P_b\)</span>) and Seller Price (<span class="math inline">\(P_s\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+P_b = 110 - 4(16) = 110 - 64 = \mathbf{\$46}
+\]</span></p>
+<p><span class="math display">\[
+P_s = 10 + 16 = \mathbf{\$26}
+\]</span></p>
+<p><em>Check:</em> <span class="math inline">\(P_b - P_s = \$46 - \$26 = \$20 = t\)</span>.</p>
+<ul>
+<li><strong>Calculate Dollar Burdens and Percentage Shares:</strong></li>
+</ul>
+<p><span class="math display">\[
+\text{Buyer Dollar Burden} = P_b - P^* = \$46 - \$30 = \mathbf{\$16\text{ per unit}} \quad \Longrightarrow \quad \frac{\$16}{\$20} = \mathbf{80\%}
+\]</span></p>
+<p><span class="math display">\[
+\text{Seller Dollar Burden} = P^* - P_s = \$30 - \$26 = \mathbf{\$4\text{ per unit}} \quad \Longrightarrow \quad \frac{\$4}{\$20} = \mathbf{20\%}
+\]</span></p>
+<p><strong>Conclusion:</strong> At the pre-tax equilibrium, demand elasticity has magnitude <span class="math inline">\(0.375\)</span> and supply elasticity is <span class="math inline">\(1.50\)</span>. Demand is more inelastic in this example, and the calculated tax wedge assigns <strong><span class="math inline">\(80\%\)</span></strong> of the per-unit burden to buyers and <strong><span class="math inline">\(20\%\)</span></strong> to sellers. Curve slopes alone do not generally measure relative elasticity.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Work It Out: Tax Incidence When Supply Is Inelastic
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Prompt:</strong> Consider a stylized competitive market for stadium-adjacent event parking permits, where nearby lots are relatively fixed in supply while drivers can switch to transit or rideshares:</p>
+<p><span class="math display">\[
+\text{Demand: } P_d = 70 - Q, \qquad \text{Supply: } P_s = -30 + 3Q \quad (Q \ge 10)
+\]</span></p>
+<p>Suppose the city levies a per-permit excise tax of <span class="math inline">\(t = \$16\)</span>. Find (1) the pre-tax equilibrium <span class="math inline">\((Q^*, P^*)\)</span>, (2) the post-tax quantity <span class="math inline">\(Q_t\)</span> and prices <span class="math inline">\((P_b, P_s)\)</span>, and (3) the dollar burden and percentage share borne by buyers versus lot owners.</p>
+<p><strong>Guided Solution:</strong></p>
+<ul>
+<li><strong>Pre-Tax Equilibrium:</strong> Set <span class="math inline">\(70 - Q = -30 + 3Q \implies 100 = 4Q \implies Q^* = \mathbf{25\text{ permits}}\)</span> and <span class="math inline">\(P^* = 70 - 25 = \mathbf{\$45}\)</span>.</li>
+<li><strong>Post-Tax Wedge (<span class="math inline">\(P_b - P_s = 16\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+(70 - Q_t) - (-30 + 3Q_t) = 16 \implies 100 - 4Q_t = 16 \implies 4Q_t = 84 \implies Q_t = \mathbf{21\text{ permits}}
+\]</span></p>
+<p>Substitute <span class="math inline">\(Q_t = 21\)</span> into the demand and supply curves:</p>
+<p><span class="math display">\[
+P_b = 70 - 21 = \mathbf{\$49}, \qquad P_s = -30 + 3(21) = \mathbf{\$33} \quad (\text{Check: } \$49 - \$33 = \$16 = t).
+\]</span></p>
+<ul>
+<li><strong>Economic Tax Incidence:</strong></li>
+</ul>
+<p><span class="math display">\[
+\text{Buyer Burden} = \$49 - \$45 = \mathbf{\$4} \;\left(\frac{4}{16} = \mathbf{25\%}\right), \qquad \text{Seller Burden} = \$45 - \$33 = \mathbf{\$12} \;\left(\frac{12}{16} = \mathbf{75\%}\right).
+\]</span></p>
+<p>Because supply is more inelastic (<span class="math inline">\(\varepsilon_s = \frac{1}{3} \cdot \frac{45}{25} = 0.60\)</span>) than demand (<span class="math inline">\(|\varepsilon_d| = 1 \cdot \frac{45}{25} = 1.80\)</span>), lot owners absorb <span class="math inline">\(75\%\)</span> of the tax burden, illustrating panel~(b) of Figure 5.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: The Elasticity Tax-Pass-Through Formula
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> For small taxes, the exact share of an excise tax passed forward to buyers depends directly on the ratio of supply elasticity to the sum of demand and supply elasticities:</p>
+<p><span class="math display">\[
+\frac{dP_b}{dt} = \frac{\varepsilon_s}{\varepsilon_s + |\varepsilon_d|}, \qquad \frac{dP_s}{dt} = -\frac{|\varepsilon_d|}{\varepsilon_s + |\varepsilon_d|}
+\]</span></p>
+<p>In our worked problem above, at the pre-tax equilibrium <span class="math inline">\((Q^*=20, P^*=30)\)</span>:</p>
+<p><span class="math display">\[
+|\varepsilon_d| = \left|-\frac{1}{4}\right| \cdot \frac{30}{20} = 0.375, \qquad \varepsilon_s = (1) \cdot \frac{30}{20} = 1.50
+\]</span></p>
+<p>Plugging into the pass-through formula:</p>
+<p><span class="math display">\[
+\text{Buyer Share} = \frac{1.50}{1.50 + 0.375} = \frac{1.50}{1.875} = \mathbf{0.80 \text{ (80\%)}}
+\]</span></p>
+<p>This confirms the exact <span class="math inline">\(80\% / 20\%\)</span> split derived via linear algebra.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Bring It Home: Designing a City Commuter Pricing and Tax Package
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose a metropolitan transit authority faces a budget shortfall and evaluates four linked policy levers in a stylized commuter corridor (illustrative economic mechanisms, not empirical estimates for a specific city):</p>
+<ul>
+<li><strong>Own-Price Elasticity and Total Revenue:</strong> Rush-hour rail commuters have few immediate alternatives, so their demand is typically less price-responsive than weekend leisure riders. Raising peak fares moves total revenue upward if peak demand is inelastic (<span class="math inline">\(|\varepsilon_d| &lt; 1\)</span>), whereas raising off-peak fares can <em>reduce</em> total revenue if leisure demand is elastic (<span class="math inline">\(|\varepsilon_d| &gt; 1\)</span>).</li>
+<li><strong>Cross-Price and Income Elasticities:</strong> If downtown garage parking and commuter rail are substitutes (<span class="math inline">\(\varepsilon_{xy} &gt; 0\)</span>), higher downtown parking prices shift rail demand to the right. Meanwhile, whether transit ridership rises or falls as regional wages grow depends on the sign of income elasticity (<span class="math inline">\(\varepsilon_I\)</span>).</li>
+<li><strong>Supply Elasticity Over Time:</strong> Adding express buses takes months of procurement and driver hiring. Immediately after a demand surge, seat capacity is nearly fixed (<span class="math inline">\(\varepsilon_s \approx 0\)</span>), causing crowding; over the long run, fleet expansion flattens the supply curve.</li>
+<li><strong>Economic Tax Incidence:</strong> If the city adds a per-trip excise fee on rideshares, the split between higher passenger fares and lower driver net payouts depends on the relative elasticity of rider demand versus driver supply—not on whether the statute collects the fee from passengers or platforms.</li>
+</ul>
+<p>Together, these four tools explain why effective pricing and public finance depend on measuring responsiveness rather than relying on intuition about direction alone.</p>
+</div>
+</div>
+
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const toggle = window.document.createElement('button');
+      toggle.type = "button";
+      toggle.setAttribute("role", "switch");
+      toggle.setAttribute("aria-checked", "false");
+      toggle.classList.add('top-right');
+      toggle.classList.add('quarto-color-scheme-toggle');
+      toggle.setAttribute("aria-label", "Toggle dark mode");
+      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      toggle.appendChild(i);
+      // Put the toggle in a landmark of its own, so that landmark navigation
+      // can reach it.
+      //
+      // The container is always a fresh direct child of body, and the toggle is
+      // never moved into page furniture that the theme or the author controls.
+      // The toggle is positioned against the page, so any ancestor that
+      // establishes a containing block captures it: a positioned element or a
+      // grid for position: absolute, and transform, filter, will-change or
+      // contain for position: fixed. A direct child of body has none of these
+      // to inherit, and the shift when one appears is silent and visual.
+      //
+      // ARIA says a document should have at most one banner, and axe reports a
+      // duplicate whether or not the banners carry distinct labels. So use a
+      // header when the page has no banner yet, and a named region otherwise.
+      //
+      // A header is a banner wherever it sits, unless it is inside sectioning
+      // content, so this cannot just look at the children of body: a custom
+      // page layout wraps the title block header in a plain div. An explicit
+      // role="banner" always counts.
+      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
+      const hasBanner = Array.from(
+        window.document.querySelectorAll('header:not([role]), [role="banner"]')
+      ).some(function(el) {
+        return el.hasAttribute("role") || el.closest(sectioning) === null;
+      });
+      const container = window.document.createElement(hasBanner ? "div" : "header");
+      if (hasBanner) {
+        container.setAttribute("role", "region");
+        container.setAttribute("aria-label", "Toggle dark mode");
+      }
+      container.classList.add('quarto-color-scheme-toggle-container');
+      container.appendChild(toggle);
+      window.document.body.appendChild(container);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="./ch04_surplus.html" class="pagination-link" aria-label="Chapter 4: Consumer and Producer Surplus, Market Efficiency, and Welfare">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Chapter 4: Consumer and Producer Surplus, Market Efficiency, and Welfare</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ch06_costs_production.html" class="pagination-link" aria-label="Chapter 6: The Theory of the Firm: Production and Cost Curves">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Chapter 6: The Theory of the Firm: Production and Cost Curves</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>4&nbsp; Chapter 4: Consumer and Producer Surplus, Market Efficiency, and Welfare – Principles of Microeconomics</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./ch05_elasticity.html" rel="next">
+<link href="./ch03_supply_demand.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-a71520af13e4c6b5a7ac03cb4efe7867.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-663504756e947d720a454151098d9f2d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-a71520af13e4c6b5a7ac03cb4efe7867.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455).
+    // Not run on load: stylesheets are set before first paint there, and
+    // scrolling would undo the scroll to a URL fragment (#14973).
+    // The one pixel nudge keeps the reader where they were.
+    const refreshSafariScrollbar = () => {
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        const scrollY = window.scrollY;
+        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
+        setTimeout(() => {
+          window.scrollTo(0, scrollY);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      refreshSafariScrollbar();
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch01_principles.html">Foundations of Market Analysis</a></li><li class="breadcrumb-item"><a href="./ch04_surplus.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Chapter 4: Consumer and Producer Surplus, Market Efficiency, and Welfare</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Principles of Microeconomics</a> 
+        <div class="sidebar-tools-main">
+  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Foundations of Market Analysis</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch01_principles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Chapter 1: Foundations of Microeconomic Analysis &amp; Core Principles</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch02_ppf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 2: The Production Possibilities Frontier &amp; Gains from Trade</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch03_supply_demand.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Chapter 3: Supply, Demand, and Market Equilibrium</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch04_surplus.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Chapter 4: Consumer and Producer Surplus, Market Efficiency, and Welfare</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch05_elasticity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Elasticity: Responsiveness of Demand and Supply</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Firm Behavior &amp; Market Structures</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch06_costs_production.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Chapter 6: The Theory of the Firm: Production and Cost Curves</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch07_perfect_competition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chapter 7: Perfect Competition and Long-Run Industry Equilibrium</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch08_monopoly.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Chapter 8: Monopoly, Market Power, and Price Discrimination</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch09_imperfect_competition_game_theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Chapter 9: Monopolistic Competition, Oligopoly, and Game Theory</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Market Failures &amp; Factor Markets</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch10_externalities_public_goods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Chapter 10: Externalities, Public Goods, and Common Resources</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch11_consumer_choice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Chapter 11: Consumer Choice Theory: Utility and Indifference Curves</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch12_factor_markets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Chapter 12: Factor Markets, Labor Demand, and Wage Determination</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch13_asymmetric_information_risk.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Chapter 13: Asymmetric Information, Risk, and Market Design</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch14_international_trade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Chapter 14: International Trade, Comparative Advantage, and Protectionism</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#consumer-surplus-and-marginal-willingness-to-pay" id="toc-consumer-surplus-and-marginal-willingness-to-pay" class="nav-link active" data-scroll-target="#consumer-surplus-and-marginal-willingness-to-pay"><span class="header-section-number">4.1</span> Consumer Surplus and Marginal Willingness to Pay</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction" id="toc-conceptual-introduction" class="nav-link" data-scroll-target="#conceptual-introduction">1. Conceptual Introduction</a></li>
+  <li><a href="#visual-representation" id="toc-visual-representation" class="nav-link" data-scroll-target="#visual-representation">2. Visual Representation</a></li>
+  <li><a href="#real-world-application-airline-dynamic-pricing-and-flight-upgrades" id="toc-real-world-application-airline-dynamic-pricing-and-flight-upgrades" class="nav-link" data-scroll-target="#real-world-application-airline-dynamic-pricing-and-flight-upgrades">3. Real-World Application: Airline Dynamic Pricing and Flight Upgrades</a></li>
+  <li><a href="#mathematical-foundation-algebra-level" id="toc-mathematical-foundation-algebra-level" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level">4. Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#producer-surplus-and-marginal-cost" id="toc-producer-surplus-and-marginal-cost" class="nav-link" data-scroll-target="#producer-surplus-and-marginal-cost"><span class="header-section-number">4.2</span> Producer Surplus and Marginal Cost</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-1" id="toc-conceptual-introduction-1" class="nav-link" data-scroll-target="#conceptual-introduction-1">1. Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-1" id="toc-visual-representation-1" class="nav-link" data-scroll-target="#visual-representation-1">2. Visual Representation</a></li>
+  <li><a href="#real-world-application-coffee-shops-and-morning-espresso-sales" id="toc-real-world-application-coffee-shops-and-morning-espresso-sales" class="nav-link" data-scroll-target="#real-world-application-coffee-shops-and-morning-espresso-sales">3. Real-World Application: Coffee Shops and Morning Espresso Sales</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-1" id="toc-mathematical-foundation-algebra-level-1" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-1">4. Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#allocative-efficiency-and-price-controls" id="toc-allocative-efficiency-and-price-controls" class="nav-link" data-scroll-target="#allocative-efficiency-and-price-controls"><span class="header-section-number">4.3</span> Allocative Efficiency and Price Controls</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-2" id="toc-conceptual-introduction-2" class="nav-link" data-scroll-target="#conceptual-introduction-2">1. Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-2" id="toc-visual-representation-2" class="nav-link" data-scroll-target="#visual-representation-2">2. Visual Representation</a></li>
+  <li><a href="#real-world-application-rent-control-in-san-francisco-and-new-york" id="toc-real-world-application-rent-control-in-san-francisco-and-new-york" class="nav-link" data-scroll-target="#real-world-application-rent-control-in-san-francisco-and-new-york">3. Real-World Application: Rent Control in San Francisco and New York</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-2" id="toc-mathematical-foundation-algebra-level-2" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-2">4. Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#market-distortions-taxes-wedges-and-deadweight-loss" id="toc-market-distortions-taxes-wedges-and-deadweight-loss" class="nav-link" data-scroll-target="#market-distortions-taxes-wedges-and-deadweight-loss"><span class="header-section-number">4.4</span> Market Distortions: Taxes, Wedges, and Deadweight Loss</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-3" id="toc-conceptual-introduction-3" class="nav-link" data-scroll-target="#conceptual-introduction-3">1. Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-3" id="toc-visual-representation-3" class="nav-link" data-scroll-target="#visual-representation-3">2. Visual Representation</a></li>
+  <li><a href="#real-world-application-california-gasoline-excise-taxes" id="toc-real-world-application-california-gasoline-excise-taxes" class="nav-link" data-scroll-target="#real-world-application-california-gasoline-excise-taxes">3. Real-World Application: California Gasoline Excise Taxes</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-3" id="toc-mathematical-foundation-algebra-level-3" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-3">4. Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch01_principles.html">Foundations of Market Analysis</a></li><li class="breadcrumb-item"><a href="./ch04_surplus.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Chapter 4: Consumer and Producer Surplus, Market Efficiency, and Welfare</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Chapter 4: Consumer and Producer Surplus, Market Efficiency, and Welfare</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p>This chapter provides a rigorous, pedagogical treatment of Chapter 4: Consumer and Producer Surplus, Market Efficiency, and Welfare, benchmarked to standard principles curriculum.</p>
+</blockquote>
+<section id="consumer-surplus-and-marginal-willingness-to-pay" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="consumer-surplus-and-marginal-willingness-to-pay"><span class="header-section-number">4.1</span> Consumer Surplus and Marginal Willingness to Pay</h2>
+<section id="conceptual-introduction" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction">1. Conceptual Introduction</h3>
+<p>Have you ever walked into a store prepared to spend <span class="math inline">\(\$50\)</span> on a pair of shoes, only to find them on sale for <span class="math inline">\(\$30\)</span>? If so, you walked out with the shoes <em>and</em> an extra <span class="math inline">\(\$20\)</span> in your pocket that you were completely willing to part with. In economics, that <span class="math inline">\(\$20\)</span> gain is called your <strong>Consumer Surplus (<span class="math inline">\(CS\)</span>)</strong>. Every shopper enters the market with a personal maximum price in mind—the highest dollar amount they would pay before walking away empty-handed. Economists call this boundary your <strong>willingness to pay (WTP)</strong>. Whenever the actual market price is lower than what you were willing to pay, you capture a net financial and psychological win.</p>
+<p>In a market, buyers purchase goods one unit at a time. The very first buyers—or the first few items purchased—usually have the highest personal value to consumers (what economists sometimes call ``early buyers’’ or intramarginal units). For instance, your first cup of coffee in the morning might be worth <span class="math inline">\(\$8\)</span> to you, but the café only charges <span class="math inline">\(\$4\)</span>, giving you <span class="math inline">\(\$4\)</span> in surplus. Your second cup might be worth <span class="math inline">\(\$5\)</span>, giving you <span class="math inline">\(\$1\)</span> in surplus. By the time you consider a third cup, its value to you might drop to exactly <span class="math inline">\(\$4\)</span>. For that final unit, your willingness to pay matches the market price, yielding zero extra surplus. If price rose to <span class="math inline">\(\$4.01\)</span>, you simply would not buy it.</p>
+<p>When we add up the surplus enjoyed by every single customer in the entire market, we get <strong>Total Consumer Surplus</strong>. It represents the total dollar value of happiness, savings, and satisfaction that consumers walk away with over and above what they had to pay. When prices drop—thanks to new technology, cheaper shipping, or increased competition—consumer surplus expands, leaving households with more money left over to spend on other goals like tuition, healthcare, or savings.</p>
+</section>
+<section id="visual-representation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation">2. Visual Representation</h3>
+<p>Figure 1 graphs consumer surplus on a standard market diagram.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Graphing Tip: Why is Price on the Vertical Y-Axis?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In high school algebra, you usually put the independent variable on the horizontal <span class="math inline">\(x\)</span>-axis and the dependent variable on the vertical <span class="math inline">\(y\)</span>-axis (<span class="math inline">\(y = f(x)\)</span>). In economics, by historical tradition dating back to Alfred Marshall in 1890, we place <strong>Price (<span class="math inline">\(P\)</span>)</strong> on the vertical axis and <strong>Quantity (<span class="math inline">\(Q\)</span>)</strong> on the horizontal axis. When looking at a demand equation like <span class="math inline">\(P = 100 - 2Q\)</span>, to find the top vertical intercept (the <strong>choke price</strong> where nobody buys anything), simply plug in <span class="math inline">\(Q = 0\)</span>, giving <span class="math inline">\(P = \$100\)</span>.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_4_consumer_and_producer_surplus_market_efficiency_and_welfare_figure_01.svg" class="img-fluid figure-img" alt="Consumer Surplus on the Linear Demand Plane. Consumer surplus is the shaded blue triangle located below the demand curve and above the $60 market price line."></p>
+<figcaption>Figure 1. Consumer Surplus on the Linear Demand Plane. Consumer surplus is the shaded blue triangle located below the demand curve and above the <span class="math inline">\(\$60\)</span> market price line.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-airline-dynamic-pricing-and-flight-upgrades" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-airline-dynamic-pricing-and-flight-upgrades">3. Real-World Application: Airline Dynamic Pricing and Flight Upgrades</h3>
+<p>Imagine a college student flying home for Thanksgiving break versus a business consultant booking a flight to close a critical <span class="math inline">\(\$100,000\)</span> client deal.</p>
+<ul>
+<li>The <strong>consultant</strong> has an urgent deadline. Their company’s maximum willingness to pay for a last-minute seat is <strong>$900</strong>.</li>
+<li>The <strong>student</strong> has a tight budget. Their personal maximum willingness to pay is <strong>$400</strong>.</li>
+</ul>
+<p>When both go online, the airline lists the standard coach fare at <strong>$350</strong>. Both travelers buy a ticket at that exact price, but look at the difference in their net surplus:</p>
+<p><span class="math display">\[
+\text{Consultant's Surplus} = \$900 - \$350 = \mathbf{\$550}
+\]</span></p>
+<p><span class="math display">\[
+\text{Student's Surplus} = \$400 - \$350 = \mathbf{\$50}
+\]</span></p>
+<p>Both sit in identical seats drinking the same tomato juice, but the consultant captures <span class="math inline">\(\$550\)</span> in surplus while the student captures <span class="math inline">\(\$50\)</span>. This real-world difference explains why airlines work so hard with algorithms to separate travelers and charge higher fares to business passengers whenever possible.</p>
+</section>
+<section id="mathematical-foundation-algebra-level" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level">4. Mathematical Foundation (Algebra Level)</h3>
+<p>Because the demand curve in our example is a straight line, the area of Consumer Surplus forms a simple right-angled triangle. You do not need any advanced calculus—just basic high school geometry:</p>
+<p><span class="math display">\[
+\text{Consumer Surplus } (CS) = \frac{1}{2} \times \text{Base} \times \text{Height}
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><span class="math inline">\(\text{Base} = Q^*\)</span> (The quantity of units bought at the market price).</li>
+<li><span class="math inline">\(\text{Height} = P_{\text{choke}} - P^*\)</span> (The vertical gap between the highest walk-away price on the demand curve and the actual price paid).</li>
+</ul>
+<p><strong>Worked Problem:</strong> A campus bookstore sells portable battery chargers according to the demand equation:</p>
+<p><span class="math display">\[
+P = 100 - 2Q
+\]</span></p>
+<p>If the market price settles at <span class="math inline">\(P^* = \$60\)</span>, calculate the total Consumer Surplus enjoyed by students.</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Find the Choke Price (<span class="math inline">\(P_{\text{choke}}\)</span>):</strong> The choke price is the vertical intercept where quantity demanded drops to zero (<span class="math inline">\(Q = 0\)</span>). Plug <span class="math inline">\(0\)</span> in for <span class="math inline">\(Q\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+P_{\text{choke}} = 100 - 2(0) = \$100
+\]</span></p>
+<p><em>Meaning: If the store charged <span class="math inline">\(\$100\)</span> or more, zero students would buy a charger.</em></p>
+<ul>
+<li><strong>Solve for the Quantity Bought (<span class="math inline">\(Q^*\)</span>):</strong> Plug the market price of <span class="math inline">\(\$60\)</span> into the demand equation and solve for <span class="math inline">\(Q\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+60 = 100 - 2Q
+\]</span></p>
+<p>Subtract <span class="math inline">\(100\)</span> from both sides:</p>
+<p><span class="math display">\[
+-40 = -2Q
+\]</span></p>
+<p>Divide both sides by <span class="math inline">\(-2\)</span>:</p>
+<p><span class="math display">\[
+Q^* = 20\text{ chargers}
+\]</span></p>
+<p><em>Meaning: At a price of <span class="math inline">\(\$60\)</span>, students purchase 20 chargers.</em></p>
+<ul>
+<li><strong>Find the Height of the Surplus Triangle:</strong></li>
+</ul>
+<p><span class="math display">\[
+\text{Height} = P_{\text{choke}} - P^* = \$100 - \$60 = \$40
+\]</span></p>
+<ul>
+<li><strong>Calculate the Area of the Consumer Surplus Triangle:</strong></li>
+</ul>
+<p><span class="math display">\[
+CS = \frac{1}{2} \times \text{Base} \times \text{Height} = \frac{1}{2} \times 20 \times \$40 = 10 \times \$40 = \mathbf{\$400}
+\]</span></p>
+<p><strong>Conclusion:</strong> Students receive a total net economic benefit of <strong>$400</strong> beyond what they paid for the chargers.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Calculus Extension
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> When demand curves are curved rather than straight lines (<span class="math inline">\(P = P(q)\)</span>), the area is found by taking the definite integral of marginal willingness to pay minus the market price from 0 to <span class="math inline">\(Q^*\)</span>:</p>
+<p><span class="math display">\[
+CS = \int_{0}^{Q^*} \left[ P(q) - P^* \right] dq
+\]</span></p>
+<p>For our linear equation <span class="math inline">\(P(q) = 100 - 2q\)</span> with <span class="math inline">\(Q^* = 20\)</span> and <span class="math inline">\(P^* = 60\)</span>:</p>
+<p><span class="math display">\[
+CS = \int_{0}^{20} (100 - 2q - 60)\,dq = \int_{0}^{20} (40 - 2q)\,dq = \left[ 40q - q^2 \right]_{0}^{20} = (40(20) - 20^2) - 0 = 800 - 400 = \mathbf{\$400}
+\]</span></p>
+<p>Notice that elementary triangle geometry and calculus yield the exact same <span class="math inline">\(\$400\)</span> result.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="producer-surplus-and-marginal-cost" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="producer-surplus-and-marginal-cost"><span class="header-section-number">4.2</span> Producer Surplus and Marginal Cost</h2>
+<section id="conceptual-introduction-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-1">1. Conceptual Introduction</h3>
+<p>Just as consumers gain surplus by paying less than their maximum valuation, sellers gain surplus by selling goods for more than it cost to make them. Every business owner has a minimum price they must receive before they agree to produce and sell an additional unit. Economists call this threshold their <strong>willingness to accept (WTA)</strong>, which directly equals the <strong>marginal cost (<span class="math inline">\(MC\)</span>)</strong> of producing that extra item.</p>
+<p><strong>Producer Surplus (<span class="math inline">\(PS\)</span>)</strong> is the net operating gain earned by firms. It is the gap between the money a firm collects at the market price and the minimum cost required to produce those items:</p>
+<p><span class="math display">\[
+PS = \text{Total Revenue Received} - \text{Total Variable Cost of Production}
+\]</span></p>
+<p>A vital point for business and economics students is that <strong>producer surplus is not the same thing as total accounting profit</strong>. Profit subtracts all costs, including fixed overhead like building rent, machinery leases, and insurance (<span class="math inline">\(\text{Profit} = \text{Revenue} - \text{Variable Costs} - \text{Fixed Costs}\)</span>). Producer surplus only looks at operating revenue minus the direct, day-to-day variable costs of making the product (<span class="math inline">\(PS = \text{Revenue} - \text{Variable Costs}\)</span>). That operating surplus is the cash flow a firm uses to pay its fixed rent and earn an eventual profit.</p>
+<p>Because supply curves slope upward (due to diminishing returns and rising production costs), earlier units can be produced very cheaply, generating large operating surplus. The very last unit produced breaks even on operating costs (<span class="math inline">\(P^* = MC\)</span>).</p>
+</section>
+<section id="visual-representation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-1">2. Visual Representation</h3>
+<p>Figure 2 depicts Producer Surplus as the red shaded triangle located above the supply curve and below the market price line.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_4_consumer_and_producer_surplus_market_efficiency_and_welfare_figure_02.svg" class="img-fluid figure-img" alt="Producer Surplus on the Linear Supply Plane. Producer surplus is the shaded red triangle located above the supply curve and below the $60 market price line."></p>
+<figcaption>Figure 2. Producer Surplus on the Linear Supply Plane. Producer surplus is the shaded red triangle located above the supply curve and below the <span class="math inline">\(\$60\)</span> market price line.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-coffee-shops-and-morning-espresso-sales" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-coffee-shops-and-morning-espresso-sales">3. Real-World Application: Coffee Shops and Morning Espresso Sales</h3>
+<p>Consider an independent café in San Francisco selling cold brew coffee for <strong>$5.00</strong> a cup.</p>
+<ul>
+<li>The direct variable cost (coffee beans, filtered water, compostable cup, and milk) for the barista to brew the first batch of cups is only about <strong>$1.50 per cup</strong>.</li>
+<li>On those early cups, the coffee shop earns a producer surplus of:</li>
+</ul>
+<p><span class="math display">\[
+\text{Surplus per Cup} = \$5.00 - \$1.50 = \mathbf{\$3.50}
+\]</span></p>
+<p>As the morning rush peaks, the café has to hire extra staff and run grinders continuously at higher overtime expense, pushing the marginal cost of the 300th cup up to <strong>$4.50</strong>. Even on that late cup, the café still captures <span class="math inline">\(\$0.50\)</span> in surplus.</p>
+<p>Across 300 cups, the accumulated producer surplus might total <span class="math inline">\(\$600\)</span> for the morning. Does the owner pocket all <span class="math inline">\(\$600\)</span> as pure profit? No—they must use that <span class="math inline">\(\$600\)</span> producer surplus to pay fixed bills like the <span class="math inline">\(\$4,000\)</span> monthly shop rent, electric utilities, and insurance. Whatever is left over after paying fixed costs is their economic profit.</p>
+</section>
+<section id="mathematical-foundation-algebra-level-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-1">4. Mathematical Foundation (Algebra Level)</h3>
+<p>For a linear supply curve, Producer Surplus (<span class="math inline">\(PS\)</span>) is calculated as the area of a right-angled triangle:</p>
+<p><span class="math display">\[
+\text{Producer Surplus } (PS) = \frac{1}{2} \times \text{Base} \times \text{Height}
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><span class="math inline">\(\text{Base} = Q^*\)</span> (The quantity sold in the market).</li>
+<li><span class="math inline">\(\text{Height} = P^* - P_{\text{min}}\)</span> (The difference between the market price received and the minimum threshold price at the bottom of the supply curve).</li>
+</ul>
+<p><strong>Worked Problem:</strong> A group of student tutoring services has an aggregate supply curve given by:</p>
+<p><span class="math display">\[
+P = 20 + 2Q
+\]</span></p>
+<p>If the equilibrium tutoring wage settles at <span class="math inline">\(P^* = \$60\)</span> per session, compute the total Producer Surplus earned by the student tutors.</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Find the Minimum Supply Price (<span class="math inline">\(P_{\text{min}}\)</span>):</strong> Plug <span class="math inline">\(Q = 0\)</span> into the supply curve:</li>
+</ul>
+<p><span class="math display">\[
+P_{\text{min}} = 20 + 2(0) = \$20
+\]</span></p>
+<p><em>Meaning: Below <span class="math inline">\(\$20\)</span>, no tutor is willing to work a session.</em></p>
+<ul>
+<li><strong>Solve for the Quantity Supplied (<span class="math inline">\(Q^*\)</span>):</strong> Set the market price equal to the supply equation:</li>
+</ul>
+<p><span class="math display">\[
+60 = 20 + 2Q \implies 40 = 2Q \implies Q^* = 20\text{ sessions}
+\]</span></p>
+<ul>
+<li><strong>Calculate the Height of the Triangle:</strong></li>
+</ul>
+<p><span class="math display">\[
+\text{Height} = P^* - P_{\text{min}} = \$60 - \$20 = \$40
+\]</span></p>
+<ul>
+<li><strong>Compute the Total Producer Surplus Area:</strong></li>
+</ul>
+<p><span class="math display">\[
+PS = \frac{1}{2} \times \text{Base} \times \text{Height} = \frac{1}{2} \times 20 \times \$40 = 10 \times \$40 = \mathbf{\$400}
+\]</span></p>
+<p><strong>Conclusion:</strong> The student tutors earn a collective operating surplus of <strong>$400</strong> above their minimum hourly opportunity costs.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Calculus Extension
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors:</em> For continuous, non-linear marginal cost curves <span class="math inline">\(MC(q)\)</span>, Producer Surplus is the integral of the market price minus marginal cost from 0 to <span class="math inline">\(Q^*\)</span>:</p>
+<p><span class="math display">\[
+PS = \int_{0}^{Q^*} \left[ P^* - MC(q) \right] dq = \int_{0}^{20} (60 - (20 + 2q))\,dq = \int_{0}^{20} (40 - 2q)\,dq = \left[ 40q - q^2 \right]_{0}^{20} = \mathbf{\$400}
+\]</span></p>
+</div>
+</div>
+</section>
+</section>
+<section id="allocative-efficiency-and-price-controls" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="allocative-efficiency-and-price-controls"><span class="header-section-number">4.3</span> Allocative Efficiency and Price Controls</h2>
+<section id="conceptual-introduction-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-2">1. Conceptual Introduction</h3>
+<p>When we combine both sides of the market, we arrive at the total economic gain created by voluntary trade, known as <strong>Total Social Surplus (<span class="math inline">\(TS\)</span>)</strong>:</p>
+<p><span class="math display">\[
+\text{Total Social Surplus} = \text{Consumer Surplus} + \text{Producer Surplus}
+\]</span></p>
+<p>Notice something remarkable about this equation: the market price itself actually cancels out! Price simply determines how the economic pie is divided between buyers and sellers. If the price goes up, buyers get less surplus and sellers get more; if the price goes down, buyers get more and sellers get less. But the <em>overall size</em> of the pie depends entirely on how many mutually beneficial trades are allowed to happen.</p>
+<p>A competitive market in equilibrium achieves what economists call <strong>allocative efficiency</strong>. At the point where the supply and demand curves cross, the marginal benefit to society matches the marginal cost of producing the good (<span class="math inline">\(MB = MC\)</span>). Every buyer who values the good at more than it costs to make gets one, and no resources are wasted making products that people don’t value. Economists call this condition <strong>Pareto efficiency</strong>: at this exact output level, you cannot make one person better off without making someone else worse off.</p>
+<p>When governments try to dictate prices by law—such as imposing a legal maximum price (<strong>price ceiling</strong>)—the market cannot reach this balance. If the ceiling is set below the natural equilibrium price, two things happen: sellers produce fewer units because low prices do not cover their costs, while buyers rush to purchase more because it is cheap. This creates an immediate physical <strong>shortage</strong>. More importantly, trades that both buyers and sellers wanted to make are legally blocked, shrinking the total economic pie and creating a permanent loss to society called <strong>deadweight loss</strong>.</p>
+</section>
+<section id="visual-representation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-2">2. Visual Representation</h3>
+<p>Figure 3 shows the market in natural balance, maximizing the total economic pie to <span class="math inline">\(\$800\)</span>. Figure 4 shows what happens when the government imposes a price ceiling at <span class="math inline">\(\$40\)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_4_consumer_and_producer_surplus_market_efficiency_and_welfare_figure_03.svg" class="img-fluid figure-img" alt="Maximized Social Surplus in a Free Market. At equilibrium E^*(20, $60), Total Social Surplus is $400 + $400 = $800, and no trades are wasted."></p>
+<figcaption>Figure 3. Maximized Social Surplus in a Free Market. At equilibrium <span class="math inline">\(E^*(20, \$60)\)</span>, Total Social Surplus is <span class="math inline">\(\$400 + \$400 = \$800\)</span>, and no trades are wasted.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_4_consumer_and_producer_surplus_market_efficiency_and_welfare_figure_04.svg" class="img-fluid figure-img" alt="The Impact of a Binding Price Ceiling. Capping the price at $40 causes quantity supplied to collapse to 10 while quantity demanded jumps to 30, creating a shortage of 20 units and an orange Deadweight Loss triangle of lost trades."></p>
+<figcaption>Figure 4. The Impact of a Binding Price Ceiling. Capping the price at <span class="math inline">\(\$40\)</span> causes quantity supplied to collapse to <span class="math inline">\(10\)</span> while quantity demanded jumps to <span class="math inline">\(30\)</span>, creating a shortage of <span class="math inline">\(20\)</span> units and an orange Deadweight Loss triangle of lost trades.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-rent-control-in-san-francisco-and-new-york" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-rent-control-in-san-francisco-and-new-york">3. Real-World Application: Rent Control in San Francisco and New York</h3>
+<p>In expensive housing markets like San Francisco and New York City, local governments often cap how much landlords can raise apartment rents each year. The compassionate goal is simple: keep current residents from being priced out of their neighborhoods.</p>
+<p>However, consider the economic consequences over time:</p>
+<ul>
+<li><strong>Supply Collapses:</strong> Landlords faced with capped rents cannot cover rising maintenance, plumbing, and property tax costs. Some convert apartments into luxury condos, while developers stop building modest rental apartments altogether.</li>
+<li><strong>Demand Surges:</strong> Low capped rents encourage people to stay in huge apartments alone or move in from outside the city.</li>
+<li><strong>The Result:</strong> A severe <strong>housing shortage</strong>. College students and young workers searching for an apartment face lines around the block, application lotteries, and expensive broker finder fees. While incumbent tenants lucky enough to have a rent-controlled lease benefit, many others are locked out completely—an exact demonstration of deadweight loss and shortages in action.</li>
+</ul>
+</section>
+<section id="mathematical-foundation-algebra-level-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-2">4. Mathematical Foundation (Algebra Level)</h3>
+<p>Let’s analyze the exact numbers when the government imposes a price ceiling of <span class="math inline">\(\bar{P} = \$40\)</span> on our battery charger market (<span class="math inline">\(P_d = 100 - 2Q\)</span> and <span class="math inline">\(P_s = 20 + 2Q\)</span>).</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Calculate Quantity Supplied (<span class="math inline">\(Q_s\)</span>) under the Ceiling:</strong> Plug <span class="math inline">\(P = \$40\)</span> into the supply equation:</li>
+</ul>
+<p><span class="math display">\[
+40 = 20 + 2Q_s \implies 20 = 2Q_s \implies Q_s = \mathbf{10\text{ units}}
+\]</span></p>
+<p><em>Result: Sellers only produce 10 chargers because <span class="math inline">\(\$40\)</span> barely covers their costs.</em></p>
+<ul>
+<li><strong>Calculate Quantity Demanded (<span class="math inline">\(Q_d\)</span>) under the Ceiling:</strong> Plug <span class="math inline">\(P = \$40\)</span> into the demand equation:</li>
+</ul>
+<p><span class="math display">\[
+40 = 100 - 2Q_d \implies 2Q_d = 60 \implies Q_d = \mathbf{30\text{ units}}
+\]</span></p>
+<p><em>Result: At the bargain price of <span class="math inline">\(\$40\)</span>, students line up wanting 30 chargers.</em></p>
+<ul>
+<li><strong>Calculate the Physical Shortage:</strong></li>
+</ul>
+<p><span class="math display">\[
+\text{Shortage} = Q_d - Q_s = 30 - 10 = \mathbf{20\text{ units}}
+\]</span></p>
+<ul>
+<li><strong>Identify the Actual Number of Transactions:</strong> Because it takes two willing parties to make a deal, the number of units actually bought and sold is limited by whoever produces the least:</li>
+</ul>
+<p><span class="math display">\[
+Q_{\text{actual}} = \min(Q_s, Q_d) = \min(10, 30) = \mathbf{10\text{ units}}
+\]</span></p>
+<ul>
+<li><strong>Calculate the Value of the 10th Unit to Consumers:</strong> What was the 10th charger worth to students? Plug <span class="math inline">\(Q = 10\)</span> into the demand curve:</li>
+</ul>
+<p><span class="math display">\[
+P = 100 - 2(10) = \$80
+\]</span></p>
+<ul>
+<li><strong>Calculate Deadweight Loss (<span class="math inline">\(DWL\)</span>):</strong> The market dropped from producing 20 units down to 10 units. Trades for units 11 through 20 were completely eliminated. The lost value forms the orange triangle in Figure 4:</li>
+</ul>
+<p><span class="math display">\[
+\text{Base of DWL Triangle} = \text{Vertical Gap at } Q=10 = \$80 - \$40 = \$40
+\]</span></p>
+<p><span class="math display">\[
+\text{Height of DWL Triangle} = Q^* - Q_s = 20 - 10 = 10\text{ units}
+\]</span></p>
+<p><span class="math display">\[
+DWL = \frac{1}{2} \times \text{Base} \times \text{Height} = \frac{1}{2} \times \$40 \times 10 = \mathbf{\$200}
+\]</span></p>
+<p><strong>Conclusion:</strong> The price ceiling destroyed <strong>$200</strong> in social surplus that both students and producers would have shared if trade had not been blocked.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Social Planner Maximization
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors:</em> A benevolent social planner chooses total output <span class="math inline">\(Q\)</span> to maximize total surplus:</p>
+<p><span class="math display">\[
+\max_Q W(Q) = \int_{0}^{Q} \left[ P_d(q) - P_s(q) \right] dq
+\]</span></p>
+<p>Taking the first derivative with respect to <span class="math inline">\(Q\)</span> and setting it to 0:</p>
+<p><span class="math display">\[
+\frac{dW}{dQ} = P_d(Q) - P_s(Q) = 0 \implies P_d(Q^*) = P_s(Q^*)
+\]</span></p>
+<p>This proves mathematically that social welfare is strictly maximized where supply meets demand. Any artificial intervention that forces <span class="math inline">\(Q \neq Q^*\)</span> mathematically guarantees <span class="math inline">\(W(Q) &lt; W(Q^*)\)</span>.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="market-distortions-taxes-wedges-and-deadweight-loss" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="market-distortions-taxes-wedges-and-deadweight-loss"><span class="header-section-number">4.4</span> Market Distortions: Taxes, Wedges, and Deadweight Loss</h2>
+<section id="conceptual-introduction-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-3">1. Conceptual Introduction</h3>
+<p>Governments need revenue to fund essential public goods like highways, libraries, and public colleges. One of the most common ways they raise money is by levying an <strong>excise tax</strong>—a flat dollar tax per unit sold, such as a <span class="math inline">\(\$1.00\)</span> tax on a pack of cigarettes or a <span class="math inline">\(\$0.50\)</span> tax per gallon of gasoline.</p>
+<p>When a tax is enacted, it drives a physical <strong>tax wedge</strong> between what the buyer pays and what the seller actually gets to keep:</p>
+<p><span class="math display">\[
+P_{\text{buyer}} - P_{\text{seller}} = t
+\]</span></p>
+<p>A widespread misconception among the general public is that politicians can decide who pays a tax simply by writing it into law. If politicians say ``the oil company must pay this <span class="math inline">\(\$0.50\)</span> tax,’’ people assume the oil company bears 100% of the cost. In economics, this is completely false. The legal rule is called <strong>statutory incidence</strong>, but the true financial burden is called <strong>economic incidence</strong>. As you will see below, <strong>it makes zero difference whether the tax is legally placed on the buyer or the seller</strong>—the final prices paid, prices received, and quantity sold are 100% mathematically identical!</p>
+<p>Because the tax raises the price buyers pay and lowers the price sellers keep, fewer total transactions take place (<span class="math inline">\(Q_t &lt; Q^*\)</span>). The government successfully collects revenue, but the lost trades that never happened generate <strong>Deadweight Loss (<span class="math inline">\(DWL\)</span>)</strong>. Furthermore, as the tax rate increases, deadweight loss does not grow in a straight line—it explodes with the square of the tax rate (<span class="math inline">\(DWL \propto t^2\)</span>). This principle, known as the <strong>Quadratic Excess Burden Theorem</strong>, means that doubling a tax rate actually <em>quadruples</em> the wasted welfare in the economy!</p>
+</section>
+<section id="visual-representation-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-3">2. Visual Representation</h3>
+<p>Figure 5 illustrates a tax wedge of <span class="math inline">\(t = \$12\)</span> placed on our charger market.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_4_consumer_and_producer_surplus_market_efficiency_and_welfare_figure_05.svg" class="img-fluid figure-img" alt="The Anatomy of an Excise Tax. A $12 tax contracts market quantity from 20 to 17. The government collects $204 in revenue (the orange box), while $18 in social welfare is permanently destroyed as deadweight loss (the red triangle)."></p>
+<figcaption>Figure 5. The Anatomy of an Excise Tax. A <span class="math inline">\(\$12\)</span> tax contracts market quantity from 20 to 17. The government collects <span class="math inline">\(\$204\)</span> in revenue (the orange box), while <span class="math inline">\(\$18\)</span> in social welfare is permanently destroyed as deadweight loss (the red triangle).</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-california-gasoline-excise-taxes" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-california-gasoline-excise-taxes">3. Real-World Application: California Gasoline Excise Taxes</h3>
+<p>Every time drivers in California fill their fuel tanks, they pay approximately <strong>$0.54 per gallon</strong> in state excise taxes, plus federal taxes and environmental fees.</p>
+<ul>
+<li><strong>Where does the money go?</strong> The orange rectangle in Figure 5 represents the billions of dollars flowing directly into state coffers to pave roads, fix highway bridges, and fund regional transit like BART and Caltrain.</li>
+<li><strong>Where is the deadweight loss?</strong> Because gas costs more, some families cancel a weekend road trip, small contractors drive fewer delivery routes, and some commuters spend extra hours on slower buses. The loss in satisfaction and economic productivity from those foregone trips represents the red triangle: deadweight loss that nobody captures.</li>
+</ul>
+</section>
+<section id="mathematical-foundation-algebra-level-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-3">4. Mathematical Foundation (Algebra Level)</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Key Concept: Statutory Neutrality (Who Pays Doesn’t Matter!)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose the government passes a <span class="math inline">\(\$12\)</span> tax on our chargers. Look at what happens under the two legal options:</p>
+<ul>
+<li><strong>Case A (Tax collected from sellers):</strong> Sellers must pay <span class="math inline">\(\$12\)</span> per charger to the government, so their required price increases by <span class="math inline">\(\$12\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+P_s^{\text{new}} = (20 + 2Q) + 12 = 32 + 2Q
+\]</span></p>
+<p>Set equal to Demand: <span class="math inline">\(100 - 2Q = 32 + 2Q \implies 68 = 4Q \implies \mathbf{Q_t = 17}\)</span>. Buyers pay <span class="math inline">\(P_b = 100 - 2(17) = \mathbf{\$66}\)</span>. Sellers keep <span class="math inline">\(P_s = 66 - 12 = \mathbf{\$54}\)</span>.</p>
+<ul>
+<li><strong>Case B (Tax collected from buyers):</strong> Buyers must hand <span class="math inline">\(\$12\)</span> to the government at the checkout register, so their willingness to pay the store drops by <span class="math inline">\(\$12\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+P_d^{\text{new}} = (100 - 2Q) - 12 = 88 - 2Q
+\]</span></p>
+<p>Set equal to original Supply: <span class="math inline">\(88 - 2Q = 20 + 2Q \implies 68 = 4Q \implies \mathbf{Q_t = 17}\)</span>. Store receives <span class="math inline">\(P_s = 20 + 2(17) = \mathbf{\$54}\)</span>. Buyer pays <span class="math inline">\(P_b = 54 + 12 = \mathbf{\$66}\)</span>.</p>
+<p><strong>The Takeaway:</strong> Regardless of who physically writes the check to the government, the outcome is 100% identical: <strong>buyers pay $66, sellers keep $54, and output is 17 units</strong>.</p>
+</div>
+</div>
+<p><strong>Worked Problem: Computing Government Revenue and Deadweight Loss</strong> Using our charger market where <span class="math inline">\(P_d = 100 - 2Q\)</span>, <span class="math inline">\(P_s = 20 + 2Q\)</span>, and tax <span class="math inline">\(t = \$12\)</span>:</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><p><strong>Find the Pre-Tax Baseline (<span class="math inline">\(Q^*, P^*\)</span>):</strong> Unregulated equilibrium occurred at <span class="math inline">\(Q^* = 20\)</span> units and <span class="math inline">\(P^* = \$60\)</span>.</p></li>
+<li><p><strong>Determine Post-Tax Volume (<span class="math inline">\(Q_t\)</span>):</strong> From our statutory proof above, <span class="math inline">\(Q_t = \mathbf{17\text{ chargers}}\)</span>.</p></li>
+<li><p><strong>Determine the Prices Paid and Received:</strong></p></li>
+</ul>
+<p><span class="math display">\[
+P_b = 100 - 2(17) = \mathbf{\$66\text{ (paid by buyer)}}
+\]</span></p>
+<p><span class="math display">\[
+P_s = 20 + 2(17) = \mathbf{\$54\text{ (kept by seller)}}
+\]</span></p>
+<p>Notice that the <span class="math inline">\(\$12\)</span> tax was split evenly: buyers pay <span class="math inline">\(\$6\)</span> more (<span class="math inline">\(66 - 60 = 6\)</span>) and sellers receive <span class="math inline">\(\$6\)</span> less (<span class="math inline">\(60 - 54 = 6\)</span>) because the demand and supply curves have identical steepness (both have slopes with magnitude 2).</p>
+<ul>
+<li><strong>Calculate Output Contraction (<span class="math inline">\(\Delta Q\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+\Delta Q = Q^* - Q_t = 20 - 17 = \mathbf{3\text{ chargers}}
+\]</span></p>
+<p><em>Meaning: 3 students and 3 sellers were priced out of doing business together.</em></p>
+<ul>
+<li><strong>Calculate Government Tax Revenue (<span class="math inline">\(T_{\text{rev}}\)</span>):</strong> Multiply the per-unit tax by the number of units actually sold:</li>
+</ul>
+<p><span class="math display">\[
+T_{\text{rev}} = \text{Tax per unit} \times Q_t = \$12 \times 17 = \mathbf{\$204}
+\]</span></p>
+<ul>
+<li><strong>Calculate Deadweight Loss (<span class="math inline">\(DWL\)</span>):</strong> The lost trades form the red Harberger triangle with base equal to the tax wedge (<span class="math inline">\(t = \$12\)</span>) and height equal to the lost units (<span class="math inline">\(\Delta Q = 3\)</span>):</li>
+</ul>
+<p><span class="math display">\[
+DWL = \frac{1}{2} \times \text{Base} \times \text{Height} = \frac{1}{2} \times t \times \Delta Q = \frac{1}{2} \times \$12 \times 3 = 6 \times 3 = \mathbf{\$18}
+\]</span></p>
+<p><strong>Conclusion:</strong> The government successfully raises <strong>$204</strong> in tax revenue, but causes <strong>$18</strong> of economic value to be permanently lost to society.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: The Quadratic Excess Burden Theorem
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Quantitative Students:</em> Why do economists caution so strongly against high tax rates? Let linear demand have slope <span class="math inline">\(-b\)</span> and supply have slope <span class="math inline">\(d\)</span>. The output reduction is <span class="math inline">\(\Delta Q = \frac{t}{b + d}\)</span>. Plugging this into the Harberger triangle formula yields:</p>
+<p><span class="math display">\[
+DWL(t) = \frac{1}{2} \times t \times \Delta Q = \frac{1}{2} t \left( \frac{t}{b + d} \right) = \frac{t^2}{2(b + d)}
+\]</span></p>
+<p>Differentiating with respect to the tax rate <span class="math inline">\(t\)</span>:</p>
+<p><span class="math display">\[
+\frac{d(DWL)}{dt} = \frac{t}{b + d} &gt; 0, \quad \frac{d^2(DWL)}{dt^2} = \frac{1}{b + d} &gt; 0
+\]</span></p>
+<p>Because the second derivative is strictly positive, <strong>deadweight loss grows with the square of the tax rate (<span class="math inline">\(t^2\)</span>)</strong>.</p>
+<ul>
+<li>If tax is <span class="math inline">\(t = \$12\)</span>, <span class="math inline">\(DWL = \frac{12^2}{2(2+2)} = \frac{144}{8} = \mathbf{\$18}\)</span>.</li>
+<li>If tax doubles to <span class="math inline">\(t = \$24\)</span>, <span class="math inline">\(DWL = \frac{24^2}{8} = \frac{576}{8} = \mathbf{\$72}\)</span>.</li>
+</ul>
+<p>Doubling the tax from <span class="math inline">\(\$12\)</span> to <span class="math inline">\(\$24\)</span> did not double the deadweight loss—it <strong>quadrupled</strong> it from <span class="math inline">\(\$18\)</span> to <span class="math inline">\(\$72\)</span>!</p>
+</div>
+</div>
+
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const toggle = window.document.createElement('button');
+      toggle.type = "button";
+      toggle.setAttribute("role", "switch");
+      toggle.setAttribute("aria-checked", "false");
+      toggle.classList.add('top-right');
+      toggle.classList.add('quarto-color-scheme-toggle');
+      toggle.setAttribute("aria-label", "Toggle dark mode");
+      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      toggle.appendChild(i);
+      // Put the toggle in a landmark of its own, so that landmark navigation
+      // can reach it.
+      //
+      // The container is always a fresh direct child of body, and the toggle is
+      // never moved into page furniture that the theme or the author controls.
+      // The toggle is positioned against the page, so any ancestor that
+      // establishes a containing block captures it: a positioned element or a
+      // grid for position: absolute, and transform, filter, will-change or
+      // contain for position: fixed. A direct child of body has none of these
+      // to inherit, and the shift when one appears is silent and visual.
+      //
+      // ARIA says a document should have at most one banner, and axe reports a
+      // duplicate whether or not the banners carry distinct labels. So use a
+      // header when the page has no banner yet, and a named region otherwise.
+      //
+      // A header is a banner wherever it sits, unless it is inside sectioning
+      // content, so this cannot just look at the children of body: a custom
+      // page layout wraps the title block header in a plain div. An explicit
+      // role="banner" always counts.
+      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
+      const hasBanner = Array.from(
+        window.document.querySelectorAll('header:not([role]), [role="banner"]')
+      ).some(function(el) {
+        return el.hasAttribute("role") || el.closest(sectioning) === null;
+      });
+      const container = window.document.createElement(hasBanner ? "div" : "header");
+      if (hasBanner) {
+        container.setAttribute("role", "region");
+        container.setAttribute("aria-label", "Toggle dark mode");
+      }
+      container.classList.add('quarto-color-scheme-toggle-container');
+      container.appendChild(toggle);
+      window.document.body.appendChild(container);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="./ch03_supply_demand.html" class="pagination-link" aria-label="Chapter 3: Supply, Demand, and Market Equilibrium">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Chapter 3: Supply, Demand, and Market Equilibrium</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ch05_elasticity.html" class="pagination-link" aria-label="Chapter 5: Elasticity: Responsiveness of Demand and Supply">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Elasticity: Responsiveness of Demand and Supply</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

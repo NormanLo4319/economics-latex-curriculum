@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>11&nbsp; Chapter 11: Consumer Choice Theory: Utility and Indifference Curves – Principles of Microeconomics</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./ch12_factor_markets.html" rel="next">
+<link href="./ch10_externalities_public_goods.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-a71520af13e4c6b5a7ac03cb4efe7867.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-663504756e947d720a454151098d9f2d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-a71520af13e4c6b5a7ac03cb4efe7867.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455).
+    // Not run on load: stylesheets are set before first paint there, and
+    // scrolling would undo the scroll to a URL fragment (#14973).
+    // The one pixel nudge keeps the reader where they were.
+    const refreshSafariScrollbar = () => {
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        const scrollY = window.scrollY;
+        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
+        setTimeout(() => {
+          window.scrollTo(0, scrollY);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      refreshSafariScrollbar();
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch10_externalities_public_goods.html">Market Failures &amp; Factor Markets</a></li><li class="breadcrumb-item"><a href="./ch11_consumer_choice.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Chapter 11: Consumer Choice Theory: Utility and Indifference Curves</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Principles of Microeconomics</a> 
+        <div class="sidebar-tools-main">
+  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Foundations of Market Analysis</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch01_principles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Chapter 1: Foundations of Microeconomic Analysis &amp; Core Principles</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch02_ppf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 2: The Production Possibilities Frontier &amp; Gains from Trade</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch03_supply_demand.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Chapter 3: Supply, Demand, and Market Equilibrium</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch04_surplus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Chapter 4: Consumer and Producer Surplus, Market Efficiency, and Welfare</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch05_elasticity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Elasticity: Responsiveness of Demand and Supply</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Firm Behavior &amp; Market Structures</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch06_costs_production.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Chapter 6: The Theory of the Firm: Production and Cost Curves</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch07_perfect_competition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chapter 7: Perfect Competition and Long-Run Industry Equilibrium</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch08_monopoly.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Chapter 8: Monopoly, Market Power, and Price Discrimination</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch09_imperfect_competition_game_theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Chapter 9: Monopolistic Competition, Oligopoly, and Game Theory</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Market Failures &amp; Factor Markets</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch10_externalities_public_goods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Chapter 10: Externalities, Public Goods, and Common Resources</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch11_consumer_choice.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Chapter 11: Consumer Choice Theory: Utility and Indifference Curves</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch12_factor_markets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Chapter 12: Factor Markets, Labor Demand, and Wage Determination</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch13_asymmetric_information_risk.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Chapter 13: Asymmetric Information, Risk, and Market Design</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch14_international_trade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Chapter 14: International Trade, Comparative Advantage, and Protectionism</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-budget-constraint-and-relative-prices" id="toc-the-budget-constraint-and-relative-prices" class="nav-link active" data-scroll-target="#the-budget-constraint-and-relative-prices"><span class="header-section-number">11.1</span> The Budget Constraint and Relative Prices</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction" id="toc-conceptual-introduction" class="nav-link" data-scroll-target="#conceptual-introduction">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation" id="toc-visual-representation" class="nav-link" data-scroll-target="#visual-representation">Visual Representation</a></li>
+  <li><a href="#real-world-application-transit-subsidies-vs.-unrestricted-cash-stipends" id="toc-real-world-application-transit-subsidies-vs.-unrestricted-cash-stipends" class="nav-link" data-scroll-target="#real-world-application-transit-subsidies-vs.-unrestricted-cash-stipends">Real-World Application: Transit Subsidies vs.&nbsp;Unrestricted Cash Stipends</a></li>
+  <li><a href="#mathematical-foundation-algebra-level" id="toc-mathematical-foundation-algebra-level" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level">Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#preferences-indifference-curves-and-optimal-tangency" id="toc-preferences-indifference-curves-and-optimal-tangency" class="nav-link" data-scroll-target="#preferences-indifference-curves-and-optimal-tangency"><span class="header-section-number">11.2</span> Preferences, Indifference Curves, and Optimal Tangency</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-1" id="toc-conceptual-introduction-1" class="nav-link" data-scroll-target="#conceptual-introduction-1">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-1" id="toc-visual-representation-1" class="nav-link" data-scroll-target="#visual-representation-1">Visual Representation</a></li>
+  <li><a href="#real-world-application-grocery-shopping-and-the-equimarginal-rule" id="toc-real-world-application-grocery-shopping-and-the-equimarginal-rule" class="nav-link" data-scroll-target="#real-world-application-grocery-shopping-and-the-equimarginal-rule">Real-World Application: Grocery Shopping and the Equimarginal Rule</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-1" id="toc-mathematical-foundation-algebra-level-1" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-1">Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  <li><a href="#income-and-substitution-effects-of-a-price-change" id="toc-income-and-substitution-effects-of-a-price-change" class="nav-link" data-scroll-target="#income-and-substitution-effects-of-a-price-change"><span class="header-section-number">11.3</span> Income and Substitution Effects of a Price Change</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-2" id="toc-conceptual-introduction-2" class="nav-link" data-scroll-target="#conceptual-introduction-2">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-2" id="toc-visual-representation-2" class="nav-link" data-scroll-target="#visual-representation-2">Visual Representation</a></li>
+  <li><a href="#real-world-application-gasoline-price-spikes-and-commuter-behavior" id="toc-real-world-application-gasoline-price-spikes-and-commuter-behavior" class="nav-link" data-scroll-target="#real-world-application-gasoline-price-spikes-and-commuter-behavior">Real-World Application: Gasoline Price Spikes and Commuter Behavior</a></li>
+  <li><a href="#mathematical-foundation-algebra-level-2" id="toc-mathematical-foundation-algebra-level-2" class="nav-link" data-scroll-target="#mathematical-foundation-algebra-level-2">Mathematical Foundation (Algebra Level)</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch10_externalities_public_goods.html">Market Failures &amp; Factor Markets</a></li><li class="breadcrumb-item"><a href="./ch11_consumer_choice.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Chapter 11: Consumer Choice Theory: Utility and Indifference Curves</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Chapter 11: Consumer Choice Theory: Utility and Indifference Curves</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p>This chapter develops the microeconomic foundations of consumer choice, aligned with the standard principles curriculum (Eric Chiang benchmark). Students examine how budget constraints capture relative prices and purchasing power, how diminishing marginal utility and convex indifference curves model preferences, how the equimarginal rule identifies optimal consumption bundles, and how price changes decompose into substitution and income effects that underlie downward-sloping demand curves.</p>
+</blockquote>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Bring It Home: Cash Stipends or Meal-Plan Discounts?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Imagine a public university designing a student affordability program with a fixed budget of <span class="math inline">\(\$30\)</span> per month for each eligible student. One committee proposes a <strong><span class="math inline">\(50\%\)</span> campus meal-plan discount</strong> that cuts the price of a campus meal from <span class="math inline">\(\$4\)</span> to <span class="math inline">\(\$2\)</span>. Another committee proposes giving each student an <strong>unrestricted <span class="math inline">\(\$30\)</span> cash stipend</strong> to spend on campus meals, transit trips, or any combination of both. Both policies cost the university the exact same <span class="math inline">\(\$30\)</span> per student, yet they reshape student choices in very different ways. Which policy makes students better off—and why? By the end of this chapter, you will use budget lines, indifference curves, and income and substitution effects to solve this policy question quantitatively.</p>
+</div>
+</div>
+<section id="the-budget-constraint-and-relative-prices" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="the-budget-constraint-and-relative-prices"><span class="header-section-number">11.1</span> The Budget Constraint and Relative Prices</h2>
+<section id="conceptual-introduction" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction">Conceptual Introduction</h3>
+<p>Behind every downward-sloping market demand curve lie millions of individual household decisions. To model how rational consumers allocate limited dollars across competing goods, economists separate <em>what a consumer can afford</em> from <em>what a consumer wants</em>. We begin with three explicit simplifying assumptions (<em>ceteris paribus</em>): the consumer chooses between two goods, earns a fixed nominal income <span class="math inline">\(I\)</span> with no saving or borrowing, and takes market prices <span class="math inline">\(P_x\)</span> and <span class="math inline">\(P_y\)</span> as given. The boundary of affordability is captured by the <strong>budget constraint</strong> (or <strong>budget line</strong>), which plots all combinations of two goods—say, campus meals (<span class="math inline">\(X\)</span>) and commuter transit trips (<span class="math inline">\(Y\)</span>)—that exhaust income <span class="math inline">\(I\)</span> at given prices <span class="math inline">\(P_x\)</span> and <span class="math inline">\(P_y\)</span>.</p>
+<p>Every point on or inside the budget line belongs to the consumer’s affordable <strong>budget set</strong> (<span class="math inline">\(P_x X + P_y Y \le I\)</span>), while bundles outside the line are unaffordable. The steepness of the budget line reflects the <strong>relative price</strong> of the two goods: its slope equals <span class="math inline">\(-P_x / P_y\)</span>, measuring the exact opportunity cost of buying one additional unit of Good <span class="math inline">\(X\)</span> in terms of forgone units of Good <span class="math inline">\(Y\)</span>.</p>
+<p>Changes in income and prices transform the budget line in two geometrically distinct ways that directly alter resource allocation:</p>
+<ul>
+<li><strong>A Change in Income (<span class="math inline">\(I\)</span>):</strong> Holding prices fixed, higher income shifts the entire budget line <strong>outward in parallel</strong> (preserving the exact same slope <span class="math inline">\(-P_x / P_y\)</span>), whereas lower income shifts it inward in parallel.</li>
+<li><strong>A Change in One Price (<span class="math inline">\(P_x\)</span> or <span class="math inline">\(P_y\)</span>):</strong> Holding income and the other price fixed, a drop in <span class="math inline">\(P_x\)</span> rotates (pivots) the budget line outward along the horizontal <span class="math inline">\(X\)</span>-axis while keeping the vertical <span class="math inline">\(Y\)</span>-intercept anchored, making Good <span class="math inline">\(X\)</span> relatively cheaper in terms of Good <span class="math inline">\(Y\)</span>.</li>
+</ul>
+</section>
+<section id="visual-representation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation">Visual Representation</h3>
+<p>Figure 1 illustrates a baseline budget constraint (<span class="math inline">\(BL_1\)</span>) alongside a parallel outward shift from higher income in panel~(a) and an outward pivot from a lower price of Good <span class="math inline">\(X\)</span> in panel~(b).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_11_consumer_choice_theory_utility_and_indifference_curves_figure_01.svg" class="img-fluid figure-img" alt="Shifts and Pivots of the Budget Line. In panel~(a), an increase in income at constant prices shifts the budget line outward in parallel from BL_1 to BL_2. In panel~(b), a reduction in the price of X pivots the line outward around the fixed vertical intercept I / P_y, flattening the slope."></p>
+<figcaption>Figure 1. Shifts and Pivots of the Budget Line. In panel~(a), an increase in income at constant prices shifts the budget line outward in parallel from <span class="math inline">\(BL_1\)</span> to <span class="math inline">\(BL_2\)</span>. In panel~(b), a reduction in the price of <span class="math inline">\(X\)</span> pivots the line outward around the fixed vertical intercept <span class="math inline">\(I / P_y\)</span>, flattening the slope.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-transit-subsidies-vs.-unrestricted-cash-stipends" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-transit-subsidies-vs.-unrestricted-cash-stipends">Real-World Application: Transit Subsidies vs.&nbsp;Unrestricted Cash Stipends</h3>
+<p>Suppose a university wants to help low-income students commute and eat on campus. Giving students an unrestricted cash stipend shifts their budget constraint outward in parallel (expanding choices across all goods without distorting relative prices), whereas subsidizing campus meal plans by <span class="math inline">\(50\%\)</span> pivots the budget line outward along the meals axis—lowering the relative price of meals and incentivizing students to consume more campus meals specifically.</p>
+</section>
+<section id="mathematical-foundation-algebra-level" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level">Mathematical Foundation (Algebra Level)</h3>
+<p>Solving the budget identity <span class="math inline">\(P_x X + P_y Y = I\)</span> for <span class="math inline">\(Y\)</span> expresses the budget line in slope-intercept form:</p>
+<p><span class="math display">\[
+Y = \frac{I}{P_y} - \frac{P_x}{P_y}X
+\]</span></p>
+<p><strong>Work It Out: Computing Budget Intercepts and a Price Pivot.</strong> A student has a monthly entertainment budget of <span class="math inline">\(I = \$120\)</span> to spend on movie tickets (<span class="math inline">\(P_x = \$15\)</span> each) and paperback books (<span class="math inline">\(P_y = \$20\)</span> each).</p>
+<ul>
+<li>Find the horizontal intercept, vertical intercept, and slope of the student’s budget line.</li>
+<li>Write the budget line equation in slope-intercept form (<span class="math inline">\(Y\)</span> as a function of <span class="math inline">\(X\)</span>).</li>
+<li>Suppose a student discount lowers movie ticket prices to <span class="math inline">\(P_x^{\text{new}} = \$10\)</span>. Find the new horizontal intercept and slope.</li>
+</ul>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Compute Baseline Intercepts and Slope:</strong></li>
+</ul>
+<p><span class="math display">\[
+X_{\max} = \frac{\$120}{\$15} = \mathbf{8\text{ movies}}, \qquad Y_{\max} = \frac{\$120}{\$20} = \mathbf{6\text{ books}}
+\]</span></p>
+<p><span class="math display">\[
+\text{Slope} = -\frac{P_x}{P_y} = -\frac{15}{20} = \mathbf{-0.75\text{ books per movie}}
+\]</span></p>
+<ul>
+<li><strong>Write the Slope-Intercept Equation:</strong></li>
+</ul>
+<p><span class="math display">\[
+Y = \mathbf{6 - 0.75X}
+\]</span></p>
+<ul>
+<li><strong>Recompute After Price Drop to <span class="math inline">\(P_x^{\text{new}} = \$10\)</span>:</strong> The vertical intercept stays anchored at <span class="math inline">\(Y_{\max} = \mathbf{6\text{ books}}\)</span>, while the horizontal intercept expands to:</li>
+</ul>
+<p><span class="math display">\[
+X_{\max}^{\text{new}} = \frac{\$120}{\$10} = \mathbf{12\text{ movies}}, \qquad \text{Slope}^{\text{new}} = -\frac{10}{20} = \mathbf{-0.50\text{ books per movie}}
+\]</span></p>
+<p><strong>Conclusion:</strong> Lowering movie ticket prices to <span class="math inline">\(\$10\)</span> rotates the budget line outward along the horizontal axis and reduces the opportunity cost of a movie from <span class="math inline">\(0.75\)</span> books to <span class="math inline">\(0.50\)</span> books.</p>
+</section>
+</section>
+<section id="preferences-indifference-curves-and-optimal-tangency" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="preferences-indifference-curves-and-optimal-tangency"><span class="header-section-number">11.2</span> Preferences, Indifference Curves, and Optimal Tangency</h2>
+<section id="conceptual-introduction-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-1">Conceptual Introduction</h3>
+<p>Once the budget line defines what is affordable, consumer preferences determine which affordable bundle yields the highest satisfaction, or <strong>utility</strong>. Economists begin with two complementary concepts: <strong>Total Utility (<span class="math inline">\(TU\)</span>)</strong>, the cumulative satisfaction gained from consuming a given quantity of goods, and <strong>Marginal Utility (<span class="math inline">\(MU = \Delta TU / \Delta Q\)</span>)</strong>, the extra satisfaction from consuming one additional unit. According to the <strong>Law of Diminishing Marginal Utility</strong>, as a consumer consumes additional units of a good within a given time period (<em>ceteris paribus</em>), each extra unit eventually adds less satisfaction than the previous unit—the first slice of pizza after class brings far more joy than the fourth.</p>
+<p>Because satisfaction cannot be measured on an objective thermometer across different people, modern economics treats utility as an <strong>ordinal ranking</strong>: utility numbers simply rank bundles from least preferred to most preferred. To map preferences geometrically, economists draw <strong>indifference curves</strong>—each curve connects all bundles <span class="math inline">\((X, Y)\)</span> that leave the consumer equally satisfied. Assuming well-behaved preferences (non-satiation and strict convexity), indifference curves obey four properties: (1) curves further from the origin represent higher utility (<em>more is preferred to less</em>), (2) indifference curves slope downward, (3) indifference curves never cross, and (4) indifference curves are <strong>bowed inward (convex to the origin)</strong>. Convexity reflects <strong>diminishing Marginal Rate of Substitution (<span class="math inline">\(MRS_{XY}\)</span>)</strong>: the more meals you already have relative to transit trips, the fewer transit trips you are willing to give up to obtain one more meal.</p>
+<p>To maximize utility at an interior optimum subject to their budget, a consumer selects the bundle on the highest reachable indifference curve—occurring at the exact <strong>tangency point</strong> where the slope of the indifference curve equals the slope of the budget line:</p>
+<p><span class="math display">\[
+MRS_{XY} = \frac{MU_x}{MU_y} = \frac{P_x}{P_y} \quad \Longleftrightarrow \quad \frac{MU_x}{P_x} = \frac{MU_y}{P_y}
+\]</span></p>
+<p>In plain English, the <strong>equimarginal principle</strong> (or utility-maximizing rule) states that the last dollar spent on Good <span class="math inline">\(X\)</span> must deliver the exact same marginal utility per dollar as the last dollar spent on Good <span class="math inline">\(Y\)</span>. If <span class="math inline">\(\frac{MU_x}{P_x} &gt; \frac{MU_y}{P_y}\)</span>, the consumer can raise total satisfaction without spending an extra cent by shifting dollars out of Good <span class="math inline">\(Y\)</span> and into Good <span class="math inline">\(X\)</span> until the two ratios equalize.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Why Maximizing Utility Does NOT Mean <span class="math inline">\(MU_x = MU_y\)</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A common exam mistake is assuming a consumer maximizes utility when the marginal utility of Good <span class="math inline">\(X\)</span> equals the marginal utility of Good <span class="math inline">\(Y\)</span> (<span class="math inline">\(MU_x = MU_y\)</span>). That ignores prices! If a <span class="math inline">\(\$4\)</span> latte gives <span class="math inline">\(32\)</span> utils of marginal satisfaction (<span class="math inline">\(8\)</span> utils per dollar) and a <span class="math inline">\(\$2\)</span> bagel gives <span class="math inline">\(16\)</span> utils (<span class="math inline">\(8\)</span> utils per dollar), the consumer is already at the optimum—even though <span class="math inline">\(MU_{\text{latte}} = 32\)</span> is double <span class="math inline">\(MU_{\text{bagel}} = 16\)</span>. Always compare <strong>marginal utility per dollar</strong> (<span class="math inline">\(MU / P\)</span>), never raw marginal utility alone.</p>
+</div>
+</div>
+</section>
+<section id="visual-representation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-1">Visual Representation</h3>
+<p>Figure 2 shows the consumer’s optimal bundle <span class="math inline">\(E^*(7.5, 10)\)</span> where indifference curve <span class="math inline">\(U_2\)</span> (<span class="math inline">\(U = 75\)</span>) is tangent to the budget line, strictly outperforming affordable non-tangent points such as <span class="math inline">\(A(3, 16)\)</span> on lower curve <span class="math inline">\(U_1\)</span> (<span class="math inline">\(U = 48\)</span>), while curve <span class="math inline">\(U_3\)</span> (<span class="math inline">\(U = 108\)</span>) lies outside the affordable budget set.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_11_consumer_choice_theory_utility_and_indifference_curves_figure_02.svg" class="img-fluid figure-img" alt="Utility Maximization at Tangency. The consumer reaches the highest attainable indifference curve U_2 at bundle E^*(7.5, 10), where the slope of the indifference curve (-MRS_{XY}) equals the slope of the budget line (-P_x / P_y). Non-tangent affordable bundles such as A(3, 16) lie on lower indifference curve U_1."></p>
+<figcaption>Figure 2. Utility Maximization at Tangency. The consumer reaches the highest attainable indifference curve <span class="math inline">\(U_2\)</span> at bundle <span class="math inline">\(E^*(7.5, 10)\)</span>, where the slope of the indifference curve (<span class="math inline">\(-MRS_{XY}\)</span>) equals the slope of the budget line (<span class="math inline">\(-P_x / P_y\)</span>). Non-tangent affordable bundles such as <span class="math inline">\(A(3, 16)\)</span> lie on lower indifference curve <span class="math inline">\(U_1\)</span>.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-grocery-shopping-and-the-equimarginal-rule" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-grocery-shopping-and-the-equimarginal-rule">Real-World Application: Grocery Shopping and the Equimarginal Rule</h3>
+<p>When shoppers compare <span class="math inline">\(\$12\)</span> organic berries against <span class="math inline">\(\$3\)</span> bananas at the grocery store, they instinctively apply <span class="math inline">\(\frac{MU_{\text{berries}}}{P_{\text{berries}}} = \frac{MU_{\text{bananas}}}{P_{\text{bananas}}}\)</span>: berries must feel at least four times as satisfying per carton as bananas to justify taking up four times as much budget space.</p>
+</section>
+<section id="mathematical-foundation-algebra-level-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-1">Mathematical Foundation (Algebra Level)</h3>
+<p>At the principles level, utility maximization can be solved either sequentially with a discrete marginal-utility schedule or algebraically using the tangency condition paired with the budget constraint:</p>
+<p><span class="math display">\[
+\frac{MU_x}{MU_y} = \frac{P_x}{P_y} \quad \text{and} \quad P_x X + P_y Y = I
+\]</span></p>
+<p><strong>Work It Out (Part A): Discrete Utility Schedule and Marginal Utility per Dollar.</strong> Suppose a commuter has a weekly morning snack budget of <span class="math inline">\(I = \$12\)</span> to spend on campus coffees (<span class="math inline">\(P_c = \$4\)</span>) and bagels (<span class="math inline">\(P_b = \$2\)</span>), with total and marginal utility given in Table~<span class="math inline">\(\ref{tab:mu_schedule}\)</span>. Find the utility-maximizing bundle.</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><p><strong>Spend Dollars Sequentially on the Highest <span class="math inline">\(MU/P\)</span>:</strong></p></li>
+<li><p><em>Purchase 1:</em> The 1st bagel gives <span class="math inline">\(MU_b/P_b = 12\)</span> utils/dollar (beating the 1st coffee at <span class="math inline">\(10\)</span>). Buy <span class="math inline">\(1\)</span> bagel (<span class="math inline">\(\$2\)</span> spent; <span class="math inline">\(\$10\)</span> remaining).</p></li>
+<li><p><em>Purchase 2:</em> The 1st coffee gives <span class="math inline">\(MU_c/P_c = 10\)</span> utils/dollar (beating the 2nd bagel at <span class="math inline">\(8\)</span>). Buy <span class="math inline">\(1\)</span> coffee (<span class="math inline">\(\$6\)</span> spent; <span class="math inline">\(\$6\)</span> remaining).</p></li>
+<li><p><em>Purchases 3 &amp; 4:</em> Both the 2nd coffee and the 2nd bagel give <span class="math inline">\(8\)</span> utils/dollar, and buying both costs <span class="math inline">\(\$4 + \$2 = \$6\)</span>, exhausting the remaining budget.</p></li>
+<li><p><strong>Verify Both Optimality Conditions:</strong> At <span class="math inline">\(2\)</span> coffees and <span class="math inline">\(2\)</span> bagels, <span class="math inline">\(\frac{MU_c}{P_c} = \frac{32}{4} = \mathbf{8} = \frac{16}{2} = \frac{MU_b}{P_b}\)</span>, and total spending is <span class="math inline">\(\$4(2) + \$2(2) = \$8 + \$4 = \mathbf{\$12}\)</span>. Total utility reaches <span class="math inline">\(TU = 72 + 40 = \mathbf{112\text{ utils}}\)</span>, strictly beating alternative <span class="math inline">\(\$12\)</span> bundles such as <span class="math inline">\((1\text{ coffee}, 4\text{ bagels})\)</span> (<span class="math inline">\(TU = 40 + 56 = 96\)</span>) or <span class="math inline">\((3\text{ coffees}, 0\text{ bagels})\)</span> (<span class="math inline">\(TU = 92\)</span>).</p></li>
+</ul>
+<p><strong>Work It Out (Part B): Algebraic Tangency Problem.</strong> Now return to our continuous student example: a student allocates <span class="math inline">\(I = \$60\)</span> per month between meals (<span class="math inline">\(X\)</span>) priced at <span class="math inline">\(P_x = \$4\)</span> and transit trips (<span class="math inline">\(Y\)</span>) priced at <span class="math inline">\(P_y = \$3\)</span>. The student’s utility function is <span class="math inline">\(U(X, Y) = X \cdot Y\)</span>, with marginal utilities <span class="math inline">\(MU_x = Y\)</span> and <span class="math inline">\(MU_y = X\)</span>. Solve for the utility-maximizing bundle <span class="math inline">\((X^*, Y^*)\)</span> and compare it with affordable bundle <span class="math inline">\(A(3, 16)\)</span>.</p>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Apply the Tangency Condition (<span class="math inline">\(MRS_{XY} = P_x / P_y\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+\frac{MU_x}{MU_y} = \frac{P_x}{P_y} \implies \frac{Y}{X} = \frac{4}{3} \implies Y = \frac{4}{3}X
+\]</span></p>
+<ul>
+<li><strong>Substitute <span class="math inline">\(Y = \frac{4}{3}X\)</span> into the Budget Constraint (<span class="math inline">\(4X + 3Y = 60\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+4X + 3\left(\frac{4}{3}X\right) = 60 \implies 4X + 4X = 60 \implies 8X = 60 \implies X^* = \mathbf{7.5\text{ meals}}
+\]</span></p>
+<ul>
+<li><strong>Solve for <span class="math inline">\(Y^*\)</span>, Verify Budget Exhaustion, and Compare to Bundle <span class="math inline">\(A\)</span>:</strong></li>
+</ul>
+<p><span class="math display">\[
+Y^* = \frac{4}{3}(7.5) = \mathbf{10\text{ transit trips}}
+\]</span></p>
+<p>Check budget exhaustion: <span class="math inline">\(\$4(7.5) + \$3(10) = \$30 + \$30 = \$60\)</span>. At <span class="math inline">\(E^*(7.5, 10)\)</span>, utility is <span class="math inline">\(U^* = 7.5 \times 10 = \mathbf{75}\)</span>. By contrast, bundle <span class="math inline">\(A(3, 16)\)</span> also costs <span class="math inline">\(\$4(3) + \$3(16) = \$60\)</span>, yet delivers only <span class="math inline">\(U_A = 3 \times 16 = \mathbf{48} &lt; 75\)</span> because <span class="math inline">\(MRS_{XY} = \frac{16}{3} \approx 5.33 &gt; \frac{4}{3}\)</span> (the student values another meal more than its market price ratio and should buy more meals and fewer transit trips).</p>
+<p><strong>Conclusion:</strong> Purchasing <span class="math inline">\(7.5\)</span> meals and <span class="math inline">\(10\)</span> transit trips maximizes utility at <span class="math inline">\(U^* = 75\)</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Partial Derivatives and the Marginal Rate of Substitution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> For a differentiable utility function <span class="math inline">\(U(X, Y)\)</span>, marginal utilities are defined as partial derivatives: <span class="math inline">\(MU_x = \frac{\partial U}{\partial X}\)</span> and <span class="math inline">\(MU_y = \frac{\partial U}{\partial Y}\)</span>. Along any indifference curve, utility is constant (<span class="math inline">\(dU = 0\)</span>). Taking the total differential gives:</p>
+<p><span class="math display">\[
+dU = \frac{\partial U}{\partial X}\,dX + \frac{\partial U}{\partial Y}\,dY = 0 \implies MRS_{XY} = -\left.\frac{dY}{dX}\right|_{dU=0} = \frac{\partial U / \partial X}{\partial U / \partial Y} = \frac{MU_x}{MU_y}
+\]</span></p>
+<p>For the Cobb-Douglas utility function <span class="math inline">\(U(X, Y) = X \cdot Y\)</span>, holding the other variable fixed gives <span class="math inline">\(MU_x = \frac{\partial (XY)}{\partial X} = Y\)</span> and <span class="math inline">\(MU_y = \frac{\partial (XY)}{\partial Y} = X\)</span>, so <span class="math inline">\(MRS_{XY} = Y / X\)</span>.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="income-and-substitution-effects-of-a-price-change" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="income-and-substitution-effects-of-a-price-change"><span class="header-section-number">11.3</span> Income and Substitution Effects of a Price Change</h2>
+<section id="conceptual-introduction-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-2">Conceptual Introduction</h3>
+<p>When the price of a good falls—say, laptop prices drop by <span class="math inline">\(25\%\)</span>—consumers almost always buy more of it. Economists decompose this total change in quantity demanded into two distinct behavioral mechanisms:</p>
+<ul>
+<li><strong>The Substitution Effect:</strong> Because laptops are now cheaper relative to tablets and smartphones, consumers substitute away from relatively pricier alternatives and buy more laptops, <em>holding real purchasing power (utility) constant</em> along the initial indifference curve. The substitution effect <strong>always moves in the opposite direction of the price change</strong> (<span class="math inline">\(P_x \downarrow \implies X_{\text{sub}} \uparrow\)</span>).</li>
+<li><strong>The Income Effect:</strong> A lower laptop price stretches the consumer’s fixed paycheck further, boosting real purchasing power. For a <strong>normal good</strong>, higher purchasing power raises quantity demanded further (<span class="math inline">\(X_{\text{inc}} \uparrow\)</span>), reinforcing the substitution effect. For an <strong>inferior good</strong>, higher purchasing power reduces quantity demanded (<span class="math inline">\(X_{\text{inc}} \downarrow\)</span>), partially offsetting the substitution effect.</li>
+</ul>
+<p>Repeating this optimal-bundle exercise across many different prices of Good <span class="math inline">\(X\)</span>—holding income <span class="math inline">\(I\)</span>, other prices <span class="math inline">\(P_y\)</span>, and preferences fixed—traces out the consumer’s <strong>individual demand curve</strong>. Because the substitution effect is always negative and dominates the income effect for nearly all goods, utility maximization provides the rigorous behavioral foundation for the Law of Demand introduced in Chapter~3.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: What Is a Giffen Good?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For almost all inferior goods, the negative substitution effect of a price hike still overpowers the positive income effect, keeping the demand curve downward sloping. Only in an extraordinary theoretical case—a <strong>Giffen good</strong>, where an inferior staple consumes such a huge share of a low-income household’s budget that the income effect outweighs the substitution effect—could a price rise ever increase quantity demanded.</p>
+</div>
+</div>
+</section>
+<section id="visual-representation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-2">Visual Representation</h3>
+<p>Figure 3 decomposes a price drop from <span class="math inline">\(P_{x1}\)</span> to <span class="math inline">\(P_{x2}\)</span> into the pure substitution effect (<span class="math inline">\(E_1 \to E_c\)</span> along <span class="math inline">\(U_1\)</span>, shifting quantity from <span class="math inline">\(X_1\)</span> to <span class="math inline">\(X_c\)</span>) and the income effect (<span class="math inline">\(E_c \to E_2\)</span> onto higher indifference curve <span class="math inline">\(U_2\)</span>, shifting quantity from <span class="math inline">\(X_c\)</span> to <span class="math inline">\(X_2\)</span>).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_11_consumer_choice_theory_utility_and_indifference_curves_figure_03.svg" class="img-fluid figure-img" alt="Hicksian Decomposition of a Price Decrease. The movement from E_1 to E_c along U_1 (X_1 \to X_c) isolates the pure Substitution Effect (SE) using compensated budget line BL_c parallel to BL_2, while the outward shift from E_c to E_2 onto U_2 (X_c \to X_2) captures the Income Effect (IE) for a normal good."></p>
+<figcaption>Figure 3. Hicksian Decomposition of a Price Decrease. The movement from <span class="math inline">\(E_1\)</span> to <span class="math inline">\(E_c\)</span> along <span class="math inline">\(U_1\)</span> (<span class="math inline">\(X_1 \to X_c\)</span>) isolates the pure <strong>Substitution Effect (SE)</strong> using compensated budget line <span class="math inline">\(BL_c\)</span> parallel to <span class="math inline">\(BL_2\)</span>, while the outward shift from <span class="math inline">\(E_c\)</span> to <span class="math inline">\(E_2\)</span> onto <span class="math inline">\(U_2\)</span> (<span class="math inline">\(X_c \to X_2\)</span>) captures the <strong>Income Effect (IE)</strong> for a normal good.</figcaption>
+</figure>
+</div>
+</section>
+<section id="real-world-application-gasoline-price-spikes-and-commuter-behavior" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-gasoline-price-spikes-and-commuter-behavior">Real-World Application: Gasoline Price Spikes and Commuter Behavior</h3>
+<p>When retail gasoline jumps from <span class="math inline">\(\$3.50\)</span> to <span class="math inline">\(\$5.50\)</span> per gallon, commuters respond through both channels: the <strong>substitution effect</strong> pushes drivers to carpool, take public transit, or combine errands, while the <strong>income effect</strong> leaves households with less discretionary money left over for dining out or weekend travel.</p>
+</section>
+<section id="mathematical-foundation-algebra-level-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-algebra-level-2">Mathematical Foundation (Algebra Level)</h3>
+<p>Total quantity change equals the sum of the substitution and income effects:</p>
+<p><span class="math display">\[
+\Delta X_{\text{total}} = X_2 - X_1 = \underbrace{(X_c - X_1)}_{\text{Substitution Effect}} + \underbrace{(X_2 - X_c)}_{\text{Income Effect}}
+\]</span></p>
+<p><strong>Work It Out: Decomposing a Price Drop into Substitution and Income Effects.</strong> Continuing our Cobb-Douglas student (<span class="math inline">\(U = XY\)</span>, <span class="math inline">\(I = \$60\)</span>, <span class="math inline">\(P_y = \$3\)</span>), initially <span class="math inline">\(P_{x1} = \$4\)</span> and the student buys <span class="math inline">\(X_1 = 7.5\)</span> meals and <span class="math inline">\(Y_1 = 10\)</span> trips (<span class="math inline">\(U_1 = 75\)</span>). Suppose a <span class="math inline">\(50\%\)</span> campus dining discount lowers meal prices to <span class="math inline">\(P_{x2} = \$2\)</span>.</p>
+<ul>
+<li>Find the new optimal bundle <span class="math inline">\((X_2, Y_2)\)</span> and total change in meals <span class="math inline">\(\Delta X_{\text{total}}\)</span>.</li>
+<li>Find the compensated meal quantity <span class="math inline">\(X_c\)</span> that maintains <span class="math inline">\(U_1 = 75\)</span> at the new price ratio (<span class="math inline">\(P_{x2} = \$2\)</span>, <span class="math inline">\(P_y = \$3\)</span>), and separate <span class="math inline">\(\Delta X_{\text{total}}\)</span> into the substitution effect and the income effect.</li>
+</ul>
+<p><strong>Step-by-Step Breakdown:</strong></p>
+<ul>
+<li><strong>Solve for New Optimal Bundle (<span class="math inline">\(X_2, Y_2\)</span>) at <span class="math inline">\(P_{x2} = \$2\)</span>:</strong> Tangency requires <span class="math inline">\(\frac{Y}{X} = \frac{2}{3} \implies Y = \frac{2}{3}X\)</span>. Plug into <span class="math inline">\(2X + 3Y = 60\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+2X + 3\left(\frac{2}{3}X\right) = 60 \implies 4X = 60 \implies X_2 = \mathbf{15\text{ meals}}, \qquad Y_2 = \frac{2}{3}(15) = \mathbf{10\text{ trips}}
+\]</span></p>
+<p>Check budget exhaustion: <span class="math inline">\(\$2(15) + \$3(10) = \$30 + \$30 = \$60\)</span>, with new utility <span class="math inline">\(U_2 = 15 \times 10 = 150\)</span>. Total change in meals:</p>
+<p><span class="math display">\[
+\Delta X_{\text{total}} = 15 - 7.5 = \mathbf{+7.5\text{ meals}}
+\]</span></p>
+<ul>
+<li><strong>Compute <span class="math inline">\(X_c\)</span> and Decompose into Substitution and Income Effects:</strong> To keep utility fixed at <span class="math inline">\(U_1 = 75\)</span> while matching the new price ratio <span class="math inline">\(Y_c = \frac{2}{3}X_c\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+X_c \cdot Y_c = 75 \implies X_c \left(\frac{2}{3}X_c\right) = 75 \implies X_c^2 = 112.5 \implies X_c = \sqrt{112.5} \approx \mathbf{10.61\text{ meals}}
+\]</span></p>
+<p>(with <span class="math inline">\(Y_c = \frac{2}{3}(10.61) \approx 7.07\)</span> trips). Rounding <span class="math inline">\(X_c\)</span> to one decimal place (<span class="math inline">\(10.6\)</span> meals) gives:</p>
+<p><span class="math display">\[
+\text{Substitution Effect} = X_c - X_1 = 10.6 - 7.5 = \mathbf{+3.1\text{ meals}}
+\]</span></p>
+<p><span class="math display">\[
+\text{Income Effect} = X_2 - X_c = 15.0 - 10.6 = \mathbf{+4.4\text{ meals}}
+\]</span></p>
+<p>(Using two decimals, <span class="math inline">\(+3.11 + 4.39 = +7.50\)</span> meals.)</p>
+<p><strong>Conclusion:</strong> Of the <span class="math inline">\(7.5\)</span> extra meals purchased, <span class="math inline">\(+3.1\)</span> meals come from substituting toward cheaper food and <span class="math inline">\(+4.4\)</span> meals come from higher real purchasing power.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional Advanced Section: Lagrangian Optimization and the Slutsky Equation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Note for Economics Majors and Quantitative Students:</em> Maximizing <span class="math inline">\(U(X, Y)\)</span> subject to <span class="math inline">\(P_x X + P_y Y = I\)</span> forms the Lagrangian <span class="math inline">\(\mathcal{L} = U(X, Y) + \lambda(I - P_x X - P_y Y)\)</span>. First-order conditions yield <span class="math inline">\(\frac{\partial U / \partial X}{P_x} = \frac{\partial U / \partial Y}{P_y} = \lambda\)</span>, where <span class="math inline">\(\lambda\)</span> is the marginal utility of income. In our baseline example (<span class="math inline">\(U = XY\)</span>, <span class="math inline">\(I = 60\)</span>, <span class="math inline">\(P_x = 4\)</span>, <span class="math inline">\(P_y = 3\)</span>), <span class="math inline">\(\lambda = \frac{10}{4} = \frac{7.5}{3} = 2.5\)</span> utils per extra dollar of income. The <strong>Slutsky Equation</strong> decomposes total price sensitivity into Hicksian substitution and income effects:</p>
+<p><span class="math display">\[
+\frac{\partial X}{\partial P_x} = \underbrace{\frac{\partial X^h}{\partial P_x}}_{\text{Substitution } (\le 0)} + \underbrace{\left(-X \frac{\partial X}{\partial I}\right)}_{\text{Income Effect}}
+\]</span></p>
+<p>For any normal good (<span class="math inline">\(\partial X / \partial I &gt; 0\)</span>), both terms are negative, guaranteeing a downward-sloping demand curve (<span class="math inline">\(\partial X / \partial P_x &lt; 0\)</span>).</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Bring It Home: Cash Stipends vs.&nbsp;Meal-Plan Subsidies—Resolved
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We can now resolve the university’s policy choice using our student model (<span class="math inline">\(U = XY\)</span>, baseline <span class="math inline">\(I = \$60\)</span>, <span class="math inline">\(P_x = \$4\)</span>, <span class="math inline">\(P_y = \$3\)</span>):</p>
+<ul>
+<li><strong>Option 1 — <span class="math inline">\(50\%\)</span> Campus Meal-Plan Discount (<span class="math inline">\(P_x: \$4 \to \$2\)</span>):</strong> As solved in Section~11.3, the budget line pivots outward and the student buys <span class="math inline">\(X = 15\)</span> meals and <span class="math inline">\(Y = 10\)</span> transit trips, achieving utility <span class="math inline">\(U_{\text{subsidy}} = 15 \times 10 = \mathbf{150}\)</span>. Because the university subsidizes <span class="math inline">\(\$2\)</span> on each of the <span class="math inline">\(15\)</span> meals, the program costs the university exactly <span class="math inline">\(\$2 \times 15 = \mathbf{\$30}\)</span>.</li>
+<li><strong>Option 2 — Unrestricted <span class="math inline">\(\$30\)</span> Cash Stipend (<span class="math inline">\(I: \$60 \to \$90\)</span>, original prices):</strong> With the exact same <span class="math inline">\(\$30\)</span> cost to the university, the budget line shifts outward in parallel (<span class="math inline">\(4X + 3Y = 90\)</span>). Applying tangency (<span class="math inline">\(Y = \frac{4}{3}X\)</span>) gives <span class="math inline">\(4X + 4X = 90 \implies X_{\text{cash}} = \mathbf{11.25\text{ meals}}\)</span> and <span class="math inline">\(Y_{\text{cash}} = \frac{4}{3}(11.25) = \mathbf{15\text{ transit trips}}\)</span>, exhausting <span class="math inline">\(\$4(11.25) + \$3(15) = \$90\)</span>. Student utility rises to <span class="math inline">\(U_{\text{cash}} = 11.25 \times 15 = \mathbf{168.75 &gt; 150}\)</span>!</li>
+</ul>
+<p><strong>Policy Takeaway:</strong> For an identical <span class="math inline">\(\$30\)</span> fiscal cost, an unrestricted cash transfer allows the student to reach a strictly higher indifference curve than a single-good price subsidy because cash expands purchasing power without distorting relative prices away from the student’s preferred trade-off between food and transit.</p>
+</div>
+</div>
+
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const toggle = window.document.createElement('button');
+      toggle.type = "button";
+      toggle.setAttribute("role", "switch");
+      toggle.setAttribute("aria-checked", "false");
+      toggle.classList.add('top-right');
+      toggle.classList.add('quarto-color-scheme-toggle');
+      toggle.setAttribute("aria-label", "Toggle dark mode");
+      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      toggle.appendChild(i);
+      // Put the toggle in a landmark of its own, so that landmark navigation
+      // can reach it.
+      //
+      // The container is always a fresh direct child of body, and the toggle is
+      // never moved into page furniture that the theme or the author controls.
+      // The toggle is positioned against the page, so any ancestor that
+      // establishes a containing block captures it: a positioned element or a
+      // grid for position: absolute, and transform, filter, will-change or
+      // contain for position: fixed. A direct child of body has none of these
+      // to inherit, and the shift when one appears is silent and visual.
+      //
+      // ARIA says a document should have at most one banner, and axe reports a
+      // duplicate whether or not the banners carry distinct labels. So use a
+      // header when the page has no banner yet, and a named region otherwise.
+      //
+      // A header is a banner wherever it sits, unless it is inside sectioning
+      // content, so this cannot just look at the children of body: a custom
+      // page layout wraps the title block header in a plain div. An explicit
+      // role="banner" always counts.
+      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
+      const hasBanner = Array.from(
+        window.document.querySelectorAll('header:not([role]), [role="banner"]')
+      ).some(function(el) {
+        return el.hasAttribute("role") || el.closest(sectioning) === null;
+      });
+      const container = window.document.createElement(hasBanner ? "div" : "header");
+      if (hasBanner) {
+        container.setAttribute("role", "region");
+        container.setAttribute("aria-label", "Toggle dark mode");
+      }
+      container.classList.add('quarto-color-scheme-toggle-container');
+      container.appendChild(toggle);
+      window.document.body.appendChild(container);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="./ch10_externalities_public_goods.html" class="pagination-link" aria-label="Chapter 10: Externalities, Public Goods, and Common Resources">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Chapter 10: Externalities, Public Goods, and Common Resources</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ch12_factor_markets.html" class="pagination-link" aria-label="Chapter 12: Factor Markets, Labor Demand, and Wage Determination">
+        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Chapter 12: Factor Markets, Labor Demand, and Wage Determination</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

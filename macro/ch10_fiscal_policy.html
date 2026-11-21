@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>10&nbsp; Chapter 10: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt – Principles of Macroeconomics</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./ch11_money_banking_fed.html" rel="next">
+<link href="./ch09_aggregate_demand_aggregate_supply.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-a71520af13e4c6b5a7ac03cb4efe7867.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-663504756e947d720a454151098d9f2d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-a71520af13e4c6b5a7ac03cb4efe7867.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455).
+    // Not run on load: stylesheets are set before first paint there, and
+    // scrolling would undo the scroll to a URL fragment (#14973).
+    // The one pixel nudge keeps the reader where they were.
+    const refreshSafariScrollbar = () => {
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        const scrollY = window.scrollY;
+        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
+        setTimeout(() => {
+          window.scrollTo(0, scrollY);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      refreshSafariScrollbar();
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch08_aggregate_expenditure_multiplier.html">Short-Run Fluctuations &amp; Stabilization</a></li><li class="breadcrumb-item"><a href="./ch10_fiscal_policy.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Chapter 10: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Principles of Macroeconomics</a> 
+        <div class="sidebar-tools-main">
+  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Macroeconomic Foundations &amp; Measurement</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch01_principles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Chapter 1: First Principles of Economics &amp; Macroeconomic Systems</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch02_macro_ppf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 2: The Macroeconomic Production Possibilities Frontier &amp; Capital Deepening</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch03_supply_demand.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Chapter 3: Supply, Demand, and Market Equilibrium</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch04_aggregate_output.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Chapter 4: Aggregate Output</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch05_inflation_deflation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Inflation and Deflation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch06_unemployment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ch06 Unemployment</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Long-Run Growth &amp; Financial Systems</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch07_savings_investment_financial_system.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chapter 7: Saving, Investment Spending, and the Financial System</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Short-Run Fluctuations &amp; Stabilization</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch08_aggregate_expenditure_multiplier.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Chapter 8: Income, Expenditure, and the Keynesian Cross</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch09_aggregate_demand_aggregate_supply.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Chapter 9: Aggregate Demand and Aggregate Supply (AD–AS)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch10_fiscal_policy.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Chapter 10: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch11_money_banking_fed.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Ch11 Money Banking Fed</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch12_monetary_policy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Ch12 Monetary Policy</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-outcomes-key-terms-and-opening-hook" id="toc-learning-outcomes-key-terms-and-opening-hook" class="nav-link active" data-scroll-target="#learning-outcomes-key-terms-and-opening-hook"><span class="header-section-number">10.1</span> Learning Outcomes, Key Terms, and Opening Hook</a>
+  <ul class="collapse">
+  <li><a href="#course-learning-outcomes" id="toc-course-learning-outcomes" class="nav-link" data-scroll-target="#course-learning-outcomes">Course Learning Outcomes</a></li>
+  <li><a href="#key-terms" id="toc-key-terms" class="nav-link" data-scroll-target="#key-terms">Key Terms</a></li>
+  </ul></li>
+  <li><a href="#fiscal-policy-in-the-adas-model" id="toc-fiscal-policy-in-the-adas-model" class="nav-link" data-scroll-target="#fiscal-policy-in-the-adas-model"><span class="header-section-number">10.2</span> Fiscal Policy in the AD–AS Model</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction" id="toc-conceptual-introduction" class="nav-link" data-scroll-target="#conceptual-introduction">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation" id="toc-visual-representation" class="nav-link" data-scroll-target="#visual-representation">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation" id="toc-mathematical-foundation" class="nav-link" data-scroll-target="#mathematical-foundation">Mathematical Foundation</a></li>
+  <li><a href="#real-world-application" id="toc-real-world-application" class="nav-link" data-scroll-target="#real-world-application">Real-World Application</a></li>
+  </ul></li>
+  <li><a href="#fiscal-multipliers-purchases-transfers-and-taxes" id="toc-fiscal-multipliers-purchases-transfers-and-taxes" class="nav-link" data-scroll-target="#fiscal-multipliers-purchases-transfers-and-taxes"><span class="header-section-number">10.3</span> Fiscal Multipliers: Purchases, Transfers, and Taxes</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-1" id="toc-conceptual-introduction-1" class="nav-link" data-scroll-target="#conceptual-introduction-1">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-1" id="toc-visual-representation-1" class="nav-link" data-scroll-target="#visual-representation-1">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-1" id="toc-mathematical-foundation-1" class="nav-link" data-scroll-target="#mathematical-foundation-1">Mathematical Foundation</a></li>
+  <li><a href="#real-world-application-1" id="toc-real-world-application-1" class="nav-link" data-scroll-target="#real-world-application-1">Real-World Application</a></li>
+  </ul></li>
+  <li><a href="#automatic-stabilizers-lags-and-crowding-out" id="toc-automatic-stabilizers-lags-and-crowding-out" class="nav-link" data-scroll-target="#automatic-stabilizers-lags-and-crowding-out"><span class="header-section-number">10.4</span> Automatic Stabilizers, Lags, and Crowding Out</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-2" id="toc-conceptual-introduction-2" class="nav-link" data-scroll-target="#conceptual-introduction-2">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-2" id="toc-visual-representation-2" class="nav-link" data-scroll-target="#visual-representation-2">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-2" id="toc-mathematical-foundation-2" class="nav-link" data-scroll-target="#mathematical-foundation-2">Mathematical Foundation</a></li>
+  <li><a href="#real-world-application-2" id="toc-real-world-application-2" class="nav-link" data-scroll-target="#real-world-application-2">Real-World Application</a></li>
+  </ul></li>
+  <li><a href="#budget-deficits-surpluses-and-sovereign-debt" id="toc-budget-deficits-surpluses-and-sovereign-debt" class="nav-link" data-scroll-target="#budget-deficits-surpluses-and-sovereign-debt"><span class="header-section-number">10.5</span> Budget Deficits, Surpluses, and Sovereign Debt</a>
+  <ul class="collapse">
+  <li><a href="#conceptual-introduction-3" id="toc-conceptual-introduction-3" class="nav-link" data-scroll-target="#conceptual-introduction-3">Conceptual Introduction</a></li>
+  <li><a href="#visual-representation-3" id="toc-visual-representation-3" class="nav-link" data-scroll-target="#visual-representation-3">Visual Representation</a></li>
+  <li><a href="#mathematical-foundation-3" id="toc-mathematical-foundation-3" class="nav-link" data-scroll-target="#mathematical-foundation-3">Mathematical Foundation</a></li>
+  <li><a href="#real-world-application-3" id="toc-real-world-application-3" class="nav-link" data-scroll-target="#real-world-application-3">Real-World Application</a></li>
+  </ul></li>
+  <li><a href="#bring-it-home-and-check-your-understanding" id="toc-bring-it-home-and-check-your-understanding" class="nav-link" data-scroll-target="#bring-it-home-and-check-your-understanding"><span class="header-section-number">10.6</span> Bring It Home and Check Your Understanding</a>
+  <ul class="collapse">
+  <li><a href="#review-problems" id="toc-review-problems" class="nav-link" data-scroll-target="#review-problems">Review Problems</a></li>
+  <li><a href="#worked-solutions" id="toc-worked-solutions" class="nav-link" data-scroll-target="#worked-solutions">Worked Solutions</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch08_aggregate_expenditure_multiplier.html">Short-Run Fluctuations &amp; Stabilization</a></li><li class="breadcrumb-item"><a href="./ch10_fiscal_policy.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Chapter 10: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Chapter 10: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p>This chapter provides a rigorous, pedagogical treatment of <strong>Chapter 10: Fiscal Policy, Automatic Stabilizers, and Sovereign Debt</strong>, aligned with Course Learning Objectives <strong>MA-4</strong> and <strong>C2002-3</strong> and benchmarked to Krugman and Wells’ <em>Macroeconomics</em>. Students examine how federal government purchases, transfer payments, and taxation shift aggregate demand, how automatic stabilizers dampen business cycle volatility without legislative delay, how spending and tax multipliers operate in algebra-first expenditure models, and how annual budget deficits accumulate into sovereign debt.</p>
+</blockquote>
+<section id="learning-outcomes-key-terms-and-opening-hook" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="learning-outcomes-key-terms-and-opening-hook"><span class="header-section-number">10.1</span> Learning Outcomes, Key Terms, and Opening Hook</h2>
+<section id="course-learning-outcomes" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="course-learning-outcomes">Course Learning Outcomes</h3>
+<p>Upon completing this chapter, students should be able to:</p>
+<ul>
+<li><strong>Distinguish Fiscal Instruments:</strong> Differentiate between discretionary fiscal policy (deliberate legislative changes in government purchases, transfers, and tax rates) and automatic stabilizers (built-in fiscal rules that adjust countercyclically without new legislation).</li>
+<li><strong>Analyze AD–AS Stabilization:</strong> Use the Aggregate Demand–Aggregate Supply (AD–AS) model to evaluate how expansionary and contractionary fiscal policies close recessionary and inflationary output gaps, and identify implementation lags and crowding-out constraints.</li>
+<li><strong>Compute Fiscal Multipliers:</strong> Derive and apply the government purchases multiplier (<span class="math inline">\(k_G\)</span>), transfer multiplier (<span class="math inline">\(k_{TR}\)</span>), lump-sum tax multiplier (<span class="math inline">\(k_T\)</span>), balanced-budget multiplier (<span class="math inline">\(k_{BB}\)</span>), and proportional-tax multiplier (<span class="math inline">\(k_G^{\text{auto}}\)</span>) using high-school algebra.</li>
+<li><strong>Evaluate Deficits and Sovereign Debt:</strong> Distinguish an annual budget deficit (a flow variable) from public debt (a stock variable), separate cyclical from structural deficits, and evaluate debt sustainability using the Debt-to-GDP ratio (<span class="math inline">\(B/Y\)</span>).</li>
+</ul>
+</section>
+<section id="key-terms" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="key-terms">Key Terms</h3>
+<p>[leftmargin=1.5em] * <strong>Fiscal Policy:</strong> Deliberate changes in federal government purchases, transfer payments, and taxation designed to influence aggregate demand, employment, and price stability. * <strong>Expansionary Fiscal Policy:</strong> Increases in government purchases (<span class="math inline">\(G\)</span>), increases in transfer payments (<span class="math inline">\(TR\)</span>), or cuts in taxes (<span class="math inline">\(T\)</span>) intended to shift aggregate demand rightward and close a recessionary gap. * <strong>Contractionary Fiscal Policy:</strong> Decreases in government purchases (<span class="math inline">\(G\)</span>), reductions in transfers (<span class="math inline">\(TR\)</span>), or increases in taxes (<span class="math inline">\(T\)</span>) intended to shift aggregate demand leftward and close an inflationary gap. * <strong>Automatic Stabilizers:</strong> Built-in features of the tax and transfer system—such as progressive income taxes and unemployment insurance—that automatically stimulate aggregate demand during recessions and restrain it during booms. * <strong>Government Purchases Multiplier (<span class="math inline">\(k_G\)</span>):</strong> The ratio of the total change in equilibrium real GDP to an initial autonomous change in government purchases (<span class="math inline">\(\Delta Y / \Delta G\)</span>). * <strong>Tax Multiplier (<span class="math inline">\(k_T\)</span>):</strong> The ratio of the total change in equilibrium real GDP to an initial autonomous change in lump-sum taxes (<span class="math inline">\(\Delta Y / \Delta T\)</span>). * <strong>Crowding Out:</strong> The reduction in private investment (<span class="math inline">\(I\)</span>) and interest-sensitive consumption (<span class="math inline">\(C\)</span>) that occurs when deficit-financed government borrowing raises real interest rates (<span class="math inline">\(r\)</span>) in the loanable funds market. * <strong>Budget Deficit (Flow) vs.&nbsp;Public Debt (Stock):</strong> A budget deficit is the excess of government outlays over tax revenues during a single fiscal year; public debt is the cumulative stock of outstanding government liabilities owed to bondholders at a point in time.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Bring It Home: Two U.S. Fiscal Responses—2009 vs.&nbsp;2020
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When a severe macroeconomic shock hits, Congress and the President face an immediate design question: <em>How quickly can federal dollars reach households and firms, and which fiscal instrument delivers the largest bang per buck?</em></p>
+<p>During the Great Recession, Congress enacted the <strong>American Recovery and Reinvestment Act (ARRA) of February 2009</strong>, a <span class="math inline">\(\$787\text{ billion}\)</span> package combining federal infrastructure and state fiscal relief grants, payroll tax credits, and extended unemployment benefits. Because highway, bridge, and clean-energy projects required engineering bids and environmental reviews, much of the direct government purchase component (<span class="math inline">\(G\)</span>) rolled out over 2010 and 2011. Eleven years later, when the COVID-19 shock triggered an abrupt lockdown in March 2020, lawmakers passed the <strong>CARES Act</strong>, prioritizing immediate direct household stimulus checks, expanded unemployment insurance supplements (<span class="math inline">\(TR\)</span>), and forgivable small-business payroll loans that reached bank accounts within weeks.</p>
+<p>Comparing these two landmark interventions highlights the central trade-offs of fiscal policy: direct government purchases carry a larger theoretical multiplier than tax cuts or transfers, yet transfers and automatic stabilizers disburse far faster when timing is critical.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="fiscal-policy-in-the-adas-model" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="fiscal-policy-in-the-adas-model"><span class="header-section-number">10.2</span> Fiscal Policy in the AD–AS Model</h2>
+<section id="conceptual-introduction" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction">Conceptual Introduction</h3>
+<p>Fiscal policy refers to the federal government’s use of taxation (<span class="math inline">\(T\)</span>), transfer payments (<span class="math inline">\(TR\)</span>), and direct purchases of goods and services (<span class="math inline">\(G\)</span>) to stabilize the macroeconomy around potential output (<span class="math inline">\(Y_p\)</span>). While state and local governments also tax and spend, most operate under balanced-budget rules that force them to cut spending or raise taxes when revenues fall during a downturn. Only the federal government possesses the borrowing capacity to run deliberate countercyclical deficits during recessions and surpluses during inflationary booms.</p>
+<p>The core mechanism operates through the expenditure identity <span class="math inline">\(AD = C + I + G + NX\)</span>. Direct government purchases (<span class="math inline">\(G\)</span>)—such as federal highway construction, defense equipment, or public health research—enter aggregate demand one-for-one at any given price level. By contrast, changes in personal taxes (<span class="math inline">\(T\)</span>) and government transfers (<span class="math inline">\(TR\)</span>, such as Social Security, Medicaid, and unemployment insurance) operate indirectly by altering household disposable income (<span class="math inline">\(Y_D = Y - T + TR\)</span>), which in turn changes consumption spending (<span class="math inline">\(C\)</span>).</p>
+<p>In the short run, when nominal wages and input prices are sticky, shifting the Aggregate Demand curve alters both real GDP (<span class="math inline">\(Y\)</span>) and the aggregate price level (<span class="math inline">\(P\)</span>). If an economy is trapped below potential GDP in a recessionary gap, expansionary fiscal policy lifts planned spending, encouraging firms to expand production and rehire laid-off workers. Conversely, if an overheating economy sits above potential GDP in an inflationary gap, contractionary fiscal policy cools excess demand and relieves upward pressure on prices.</p>
+</section>
+<section id="visual-representation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation">Visual Representation</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_10_fiscal_policy_automatic_stabilizers_and_sovereign_debt_figure_01.svg" class="img-fluid figure-img" alt="Fiscal Stabilization in the AD–AS Model. In Panel (a), expansionary fiscal policy (\Delta G > 0 or \Delta T < 0) shifts AD_1 rightward to AD_2, eliminating the recessionary gap (Y_p - Y_1) and raising equilibrium from E_1 to E_2. In Panel (b), contractionary fiscal policy (\Delta G < 0 or \Delta T > 0) shifts AD_1 leftward to AD_2, closing the inflationary gap (Y_1 - Y_p) and moderating the price level from P_1 to P_2."></p>
+<figcaption>Figure 1. <strong>Fiscal Stabilization in the AD–AS Model.</strong> In Panel (a), expansionary fiscal policy (<span class="math inline">\(\Delta G &gt; 0\)</span> or <span class="math inline">\(\Delta T &lt; 0\)</span>) shifts <span class="math inline">\(AD_1\)</span> rightward to <span class="math inline">\(AD_2\)</span>, eliminating the recessionary gap (<span class="math inline">\(Y_p - Y_1\)</span>) and raising equilibrium from <span class="math inline">\(E_1\)</span> to <span class="math inline">\(E_2\)</span>. In Panel (b), contractionary fiscal policy (<span class="math inline">\(\Delta G &lt; 0\)</span> or <span class="math inline">\(\Delta T &gt; 0\)</span>) shifts <span class="math inline">\(AD_1\)</span> leftward to <span class="math inline">\(AD_2\)</span>, closing the inflationary gap (<span class="math inline">\(Y_1 - Y_p\)</span>) and moderating the price level from <span class="math inline">\(P_1\)</span> to <span class="math inline">\(P_2\)</span>.</figcaption>
+</figure>
+</div>
+<p>Figure 1 illustrates how fiscal policy targets short-run output gaps. Notice that when <span class="math inline">\(SRAS_1\)</span> slopes upward, an expansionary fiscal boost does not translate entirely into real output gains: part of the rightward demand shift is absorbed by a higher price level (<span class="math inline">\(P_1 \rightarrow P_2\)</span>). The closer the economy operates to full capacity (<span class="math inline">\(Y_p\)</span>), the steeper the effective supply curve becomes, meaning additional fiscal stimulus generates progressively more inflation and less real GDP growth.</p>
+</section>
+<section id="mathematical-foundation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation">Mathematical Foundation</h3>
+<p>To measure the horizontal shift of the Aggregate Demand curve before price-level feedback occurs, economists decompose planned aggregate expenditure (<span class="math inline">\(AE\)</span>) into autonomous components and induced consumption:</p>
+<p><span class="math display">\[
+AE = C_0 + c(Y - T + TR) + I_p + G + NX_0
+\]</span></p>
+<p>where <span class="math inline">\(C_0\)</span> is autonomous consumption, <span class="math inline">\(c \in (0,1)\)</span> is the Marginal Propensity to Consume (<span class="math inline">\(MPC\)</span>), <span class="math inline">\(T\)</span> is lump-sum taxes, <span class="math inline">\(TR\)</span> is government transfer payments, <span class="math inline">\(I_p\)</span> is planned investment, <span class="math inline">\(G\)</span> is government purchases, and <span class="math inline">\(NX_0\)</span> is autonomous net exports.</p>
+<p>At a fixed price level, goods-market equilibrium requires <span class="math inline">\(Y = AE\)</span>. Solving for equilibrium real GDP (<span class="math inline">\(Y^*\)</span>) yields: <span class="math display">\[\begin{align}
+Y^* &amp;= C_0 + cY^* - cT + cTR + I_p + G + NX_0 \nonumber \\
+Y^*(1 - c) &amp;= C_0 - cT + cTR + I_p + G + NX_0 \nonumber \\
+Y^* &amp;= \frac{1}{1 - c}\left(C_0 + I_p + G + NX_0 - cT + cTR\right)
+\end{align}\]</span></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Horizontal Shift of AD vs.&nbsp;Equilibrium Change in Real GDP
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The fiscal multiplier formulas measure the <em>horizontal shift</em> of the <span class="math inline">\(AD\)</span> curve (<span class="math inline">\(\Delta AD_{\text{horizontal}}\)</span>) at a constant price level. Because the <span class="math inline">\(SRAS\)</span> curve slopes upward in the short run, a rising price level reduces real wealth and raises interest rates, partially offsetting the initial demand shift. Consequently, when <span class="math inline">\(SRAS\)</span> is upward sloping, the actual short-run change in equilibrium output (<span class="math inline">\(\Delta Y_{\text{SR}}\)</span>) is strictly smaller than the full Keynesian multiplier shift (<span class="math inline">\(\Delta Y_{\text{SR}} &lt; k_G \cdot \Delta G\)</span>).</p>
+</div>
+</div>
+</section>
+<section id="real-world-application" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application">Real-World Application</h3>
+<p><strong>Closing an Inflationary Gap vs.&nbsp;Avoiding Over-Stimulation:</strong> Following the 2020–2021 pandemic recovery, U.S. real GDP rebounded rapidly above pre-pandemic trend projections while supply chains remained constrained. By mid-2021, the U.S. economy exhibited classic symptoms of an inflationary gap: job openings exceeded unemployed workers, and core inflation accelerated sharply. In such an environment, further expansionary fiscal policy pushes <span class="math inline">\(AD\)</span> further up the steep portion of <span class="math inline">\(SRAS\)</span>, amplifying price pressures rather than real production. Conversely, during the 1968 Revenue and Expenditure Control Act, Congress enacted a temporary <span class="math inline">\(10\%\)</span> income tax surcharge specifically to shift <span class="math inline">\(AD\)</span> leftward and cool Vietnam-era demand-pull inflation.</p>
+</section>
+</section>
+<section id="fiscal-multipliers-purchases-transfers-and-taxes" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="fiscal-multipliers-purchases-transfers-and-taxes"><span class="header-section-number">10.3</span> Fiscal Multipliers: Purchases, Transfers, and Taxes</h2>
+<section id="conceptual-introduction-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-1">Conceptual Introduction</h3>
+<p>When the federal government spends <span class="math inline">\(\$1\text{ billion}\)</span> on a new transit corridor, total national income typically rises by more than <span class="math inline">\(\$1\text{ billion}\)</span>. This amplification is the <strong>multiplier effect</strong>: the initial spending becomes income for construction workers, engineers, and steel suppliers, who then spend a fraction <span class="math inline">\(c\)</span> (<span class="math inline">\(MPC\)</span>) of their new income on groceries, rent, and services, generating a cascade of secondary spending rounds.</p>
+<p>Crucially, however, different fiscal tools trigger different initial spending rounds. When the government purchases goods and services directly (<span class="math inline">\(\Delta G\)</span>), <span class="math inline">\(100\%\)</span> of the outlay enters aggregate expenditure in Round 1. By contrast, when the government cuts lump-sum taxes (<span class="math inline">\(\Delta T &lt; 0\)</span>) or increases transfer payments (<span class="math inline">\(\Delta TR &gt; 0\)</span>), households first receive the funds as disposable income and save a fraction <span class="math inline">\((1 - c)\)</span> (<span class="math inline">\(MPS\)</span>) immediately. Only the consumed fraction <span class="math inline">\(c\)</span> enters Round 1 of aggregate spending.</p>
+<p>As a result, the government purchases multiplier (<span class="math inline">\(k_G\)</span>) is strictly larger in absolute magnitude than both the tax multiplier (<span class="math inline">\(k_T\)</span>) and the transfer multiplier (<span class="math inline">\(k_{TR}\)</span>). Moreover, if the government increases purchases and taxes by the exact same dollar amount (<span class="math inline">\(\Delta G = \Delta T\)</span>), the two effects do not cancel out; instead, they produce a net expansionary stimulus equal to the initial outlay.</p>
+</section>
+<section id="visual-representation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-1">Visual Representation</h3>
+<p>Table~<span class="math inline">\(\ref{tab:multiplier-rounds}\)</span> traces the round-by-round spending cascade for a <span class="math inline">\(\$100\text{ billion}\)</span> fiscal intervention when <span class="math inline">\(MPC = 0.80\)</span> (<span class="math inline">\(MPS = 0.20\)</span>), contrasting direct government purchases (<span class="math inline">\(\Delta G = +\$100\text{B}\)</span>) against a lump-sum tax cut (<span class="math inline">\(\Delta T = -\$100\text{B}\)</span>).</p>
+</section>
+<section id="mathematical-foundation-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-1">Mathematical Foundation</h3>
+<p>Taking changes (<span class="math inline">\(\Delta\)</span>) in our equilibrium output equation <span class="math inline">\(Y^* = \frac{1}{1-c}(C_0 + I_p + G + NX_0 - cT + cTR)\)</span> while holding <span class="math inline">\(C_0\)</span>, <span class="math inline">\(I_p\)</span>, and <span class="math inline">\(NX_0\)</span> constant gives the four core fiscal multipliers: <span class="math display">\[\begin{align}
+k_G &amp;= \frac{\Delta Y}{\Delta G} = \frac{1}{1 - c} \label{eq:kg} \\[4pt]
+k_{TR} &amp;= \frac{\Delta Y}{\Delta TR} = \frac{c}{1 - c} \label{eq:ktr} \\[4pt]
+k_T &amp;= \frac{\Delta Y}{\Delta T} = -\frac{c}{1 - c} \label{eq:kt} \\[4pt]
+k_{BB} &amp;= k_G + k_T = \frac{1}{1 - c} + \left(-\frac{c}{1 - c}\right) = \frac{1 - c}{1 - c} = 1 \label{eq:kbb}
+\end{align}\]</span> Notice that for any <span class="math inline">\(0 &lt; c &lt; 1\)</span>, <span class="math inline">\(|k_G| &gt; |k_T|\)</span> because <span class="math inline">\(1 &gt; c\)</span>, and the <strong>Balanced-Budget Multiplier (<span class="math inline">\(k_{BB}\)</span>)</strong> equals exactly <span class="math inline">\(1\)</span> regardless of the value of <span class="math inline">\(c\)</span>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Work It Out: Sizing a Fiscal Package to Close a Recessionary Gap
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose an economy has a Marginal Propensity to Consume of <span class="math inline">\(c = 0.75\)</span>. Potential real GDP is <span class="math inline">\(Y_p = \$20{,}000\text{ billion}\)</span>, and current equilibrium output is <span class="math inline">\(Y_0 = \$19{,}400\text{ billion}\)</span> (assuming a fixed price level in the short run).</p>
+<p><strong>Step 1: Compute the output gap.</strong></p>
+<p><span class="math display">\[
+\text{Recessionary Gap} = Y_p - Y_0 = \$20{,}000\text{B} - \$19{,}400\text{B} = \$600\text{ billion}
+\]</span></p>
+<p>To restore full employment, policymakers must shift aggregate demand rightward by <span class="math inline">\(\Delta Y = +\$600\text{ billion}\)</span>.</p>
+<p><strong>Step 2: Calculate the required change in government purchases (<span class="math inline">\(\Delta G\)</span>).</strong> First compute the government purchases multiplier:</p>
+<p><span class="math display">\[
+k_G = \frac{1}{1 - c} = \frac{1}{1 - 0.75} = \frac{1}{0.25} = 4
+\]</span></p>
+<p>Now solve <span class="math inline">\(\Delta Y = k_G \cdot \Delta G\)</span> for <span class="math inline">\(\Delta G\)</span>:</p>
+<p><span class="math display">\[
+\$600\text{B} = 4 \cdot \Delta G \implies \Delta G = \frac{\$600\text{B}}{4} = +\$150\text{ billion}
+\]</span></p>
+<p><strong>Step 3: Calculate the required lump-sum tax cut (<span class="math inline">\(\Delta T\)</span>) if used alone.</strong> Compute the lump-sum tax multiplier:</p>
+<p><span class="math display">\[
+k_T = -\frac{c}{1 - c} = -\frac{0.75}{1 - 0.75} = -\frac{0.75}{0.25} = -3
+\]</span></p>
+<p>Solve <span class="math inline">\(\Delta Y = k_T \cdot \Delta T\)</span> for <span class="math inline">\(\Delta T\)</span>:</p>
+<p><span class="math display">\[
+\$600\text{B} = -3 \cdot \Delta T \implies \Delta T = \frac{\$600\text{B}}{-3} = -\$200\text{ billion}
+\]</span></p>
+<p>Because households save <span class="math inline">\(25\%\)</span> of a tax cut initially, Congress must cut taxes by <span class="math inline">\(\$200\text{ billion}\)</span>—<span class="math inline">\(\$50\text{ billion}\)</span> more than the <span class="math inline">\(\$150\text{ billion}\)</span> in direct government purchases—to achieve the same <span class="math inline">\(+\$600\text{ billion}\)</span> expansion in aggregate demand.</p>
+<p><strong>Step 4: Calculate the balanced-budget expansion (<span class="math inline">\(\Delta G = \Delta T\)</span>).</strong> If Congress is required to keep the budget deficit unchanged (<span class="math inline">\(\Delta G = \Delta T\)</span>), use <span class="math inline">\(k_{BB} = 1\)</span>:</p>
+<p><span class="math display">\[
+\Delta Y = k_{BB} \cdot \Delta G \implies \$600\text{B} = 1 \cdot \Delta G \implies \Delta G = \Delta T = +\$600\text{ billion}
+\]</span></p>
+</div>
+</div>
+</section>
+<section id="real-world-application-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-1">Real-World Application</h3>
+<p><strong>Targeting High-MPC Households During Downturns:</strong> In practice, the effective multiplier of a tax cut or transfer payment depends heavily on <em>who</em> receives the funds. Empirical studies of the 2001 and 2008 tax rebates and the 2020–2021 Economic Impact Payments show that liquidity-constrained, lower-income households exhibit a high marginal propensity to consume (<span class="math inline">\(c \approx 0.70\text{–}0.90\)</span>), spending stimulus checks rapidly on food, utilities, and rent. Higher-income households, who hold ample liquid savings, exhibit a much lower short-run <span class="math inline">\(MPC\)</span> (<span class="math inline">\(c \approx 0.10\text{–}0.25\)</span>), saving most of a temporary tax rebate or using it to pay down debt. Consequently, phase-out income thresholds and targeted transfers such as SNAP (food assistance) and unemployment insurance generate substantially larger short-run demand multipliers than broad across-the-board tax rate reductions.</p>
+</section>
+</section>
+<section id="automatic-stabilizers-lags-and-crowding-out" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="automatic-stabilizers-lags-and-crowding-out"><span class="header-section-number">10.4</span> Automatic Stabilizers, Lags, and Crowding Out</h2>
+<section id="conceptual-introduction-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-2">Conceptual Introduction</h3>
+<p>Discretionary fiscal policy suffers from three unavoidable timing bottlenecks known as <strong>policy lags</strong>:</p>
+<ul>
+<li><strong>Recognition Lag:</strong> The time required for statistical agencies (such as the BEA and BLS) to collect and revise GDP and employment data so policymakers realize a recession or inflation surge has begun.</li>
+<li><strong>Legislative Lag:</strong> The months required for Congress and the President to negotiate, draft, and pass tax or spending bills.</li>
+<li><strong>Implementation Lag:</strong> The time needed for federal agencies to award contracts, distribute grants, and put money into circulation.</li>
+</ul>
+<p>Because of these lags, poorly timed discretionary stimulus can arrive after the economy has already begun recovering on its own, inadvertently fueling inflation.</p>
+<p><strong>Automatic stabilizers</strong> bypass recognition and legislative lags entirely. Progressive personal income taxes, corporate profit taxes, unemployment insurance (UI), and means-tested transfers (such as SNAP and Medicaid) are written into standing law. When GDP contracts, households fall into lower tax brackets and laid-off workers automatically qualify for UI benefits, cushioning disposable income. When the economy booms, rising incomes push households into higher tax brackets and transfer outlays automatically shrink, cooling aggregate demand.</p>
+<p>Even when fiscal stimulus arrives on time, its net effect can be dampened by <strong>crowding out</strong>. When the federal government runs a budget deficit, the U.S. Treasury borrows in the loanable funds market by issuing Treasury securities. Increased demand for loanable funds pushes up the equilibrium real interest rate (<span class="math inline">\(r\)</span>), which raises the cost of borrowing for businesses and households, reducing private investment (<span class="math inline">\(I\)</span>) and durable-goods consumption.</p>
+</section>
+<section id="visual-representation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-2">Visual Representation</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/chapter_10_fiscal_policy_automatic_stabilizers_and_sovereign_debt_figure_02.svg" class="img-fluid figure-img" alt="Automatic Stabilizers and Crowding Out. In Panel (a), a proportional income tax rate t flattens the aggregate expenditure line from slope c to slope c(1-t), reducing the multiplier and insulating GDP against spending shocks. In Panel (b), deficit-financed fiscal expansion shifts demand for loanable funds from D_1 to D_2, raising the real interest rate from r_1 to r_2 and crowding out private investment from I_1 to I_2."></p>
+<figcaption>Figure 2. <strong>Automatic Stabilizers and Crowding Out.</strong> In Panel (a), a proportional income tax rate <span class="math inline">\(t\)</span> flattens the aggregate expenditure line from slope <span class="math inline">\(c\)</span> to slope <span class="math inline">\(c(1-t)\)</span>, reducing the multiplier and insulating GDP against spending shocks. In Panel (b), deficit-financed fiscal expansion shifts demand for loanable funds from <span class="math inline">\(D_1\)</span> to <span class="math inline">\(D_2\)</span>, raising the real interest rate from <span class="math inline">\(r_1\)</span> to <span class="math inline">\(r_2\)</span> and crowding out private investment from <span class="math inline">\(I_1\)</span> to <span class="math inline">\(I_2\)</span>.</figcaption>
+</figure>
+</div>
+<p>Figure 2 displays both built-in moderation mechanisms. In Panel (a), flattening the <span class="math inline">\(AE\)</span> line reduces the horizontal output swing caused by any vertical shock to autonomous investment or exports. In Panel (b), crowding out explains why expansionary fiscal policy has its strongest impact during deep recessions (when private investment demand is weak and interest rates are near zero) and its weakest impact when the economy is near full employment and credit markets are tight.</p>
+</section>
+<section id="mathematical-foundation-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-2">Mathematical Foundation</h3>
+<p>To model proportional income taxation as an automatic stabilizer, replace lump-sum taxes <span class="math inline">\(T\)</span> with a tax function <span class="math inline">\(T = T_0 + tY\)</span>, where <span class="math inline">\(T_0\)</span> is autonomous taxes and <span class="math inline">\(t \in (0,1)\)</span> is the marginal income tax rate. Disposable income becomes:</p>
+<p><span class="math display">\[
+Y_D = Y - (T_0 + tY) + TR = (1 - t)Y - T_0 + TR
+\]</span></p>
+<p>Substituting <span class="math inline">\(Y_D\)</span> into planned aggregate expenditure <span class="math inline">\(AE = C_0 + cY_D + I_p + G + NX_0\)</span> and solving <span class="math inline">\(Y^* = AE\)</span>: <span class="math display">\[\begin{align}
+Y^* &amp;= C_0 + c(1 - t)Y^* - cT_0 + cTR + I_p + G + NX_0 \nonumber \\
+Y^*\big[1 - c(1 - t)\big] &amp;= C_0 - cT_0 + cTR + I_p + G + NX_0 \nonumber \\
+k_G^{\text{auto}} &amp;= \frac{\Delta Y}{\Delta G} = \frac{1}{1 - c(1 - t)}
+\end{align}\]</span> Because <span class="math inline">\(0 &lt; t &lt; 1\)</span>, <span class="math inline">\((1 - t) &lt; 1\)</span>, which ensures <span class="math inline">\(1 - c(1 - t) &gt; 1 - c\)</span> and therefore <span class="math inline">\(k_G^{\text{auto}} &lt; k_G\)</span>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Work It Out: Comparing Multipliers With and Without Proportional Taxes
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose <span class="math inline">\(c = 0.80\)</span>.</p>
+<ul>
+<li><strong>With lump-sum taxes (<span class="math inline">\(t = 0\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+k_G = \frac{1}{1 - 0.80} = \frac{1}{0.20} = 5.0
+\]</span></p>
+<p>If private investment falls by <span class="math inline">\(\Delta I_p = -\$100\text{ billion}\)</span>, equilibrium GDP drops by <span class="math inline">\(5.0 \times (-\$100\text{B}) = -\$500\text{ billion}\)</span>. * <strong>With a proportional income tax rate (<span class="math inline">\(t = 0.25\)</span>):</strong></p>
+<p><span class="math display">\[
+k_G^{\text{auto}} = \frac{1}{1 - 0.80(1 - 0.25)} = \frac{1}{1 - 0.80(0.75)} = \frac{1}{1 - 0.60} = \frac{1}{0.40} = 2.5
+\]</span></p>
+<p>The exact same <span class="math inline">\(-\$100\text{ billion}\)</span> drop in private investment now reduces equilibrium GDP by <span class="math inline">\(2.5 \times (-\$100\text{B}) = -\$250\text{ billion}\)</span>—cutting recessionary volatility in half automatically.</p>
+</div>
+</div>
+</section>
+<section id="real-world-application-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-2">Real-World Application</h3>
+<p><strong>Automatic Stabilizers During the 2020–2022 Business Cycle:</strong> Even before Congress enacted discretionary stimulus in 2020, existing U.S. automatic stabilizers absorbed a substantial share of household income losses. As payroll employment dropped sharply in Q2 2020, federal income tax withholding fell automatically while regular state unemployment insurance claims surged. Later, during the rapid nominal wage and GDP expansion of 2021–2022, progressive federal income tax brackets automatically collected surging capital gains and income tax receipts while pandemic-era transfer outlays wound down, shrinking the federal deficit by more than half between FY 2021 and FY 2022 without requiring a single contractionary tax-hike bill.</p>
+</section>
+</section>
+<section id="budget-deficits-surpluses-and-sovereign-debt" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="budget-deficits-surpluses-and-sovereign-debt"><span class="header-section-number">10.5</span> Budget Deficits, Surpluses, and Sovereign Debt</h2>
+<section id="conceptual-introduction-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="conceptual-introduction-3">Conceptual Introduction</h3>
+<p>Public debates frequently conflate the federal budget deficit with the national debt, yet they measure fundamentally different economic quantities. A <strong>budget deficit</strong> is a <em>flow</em> variable measured over a single fiscal year (October 1 through September 30 for the U.S. federal government): it equals total government outlays (<span class="math inline">\(G + TR + \text{net interest}\)</span>) minus total tax revenues (<span class="math inline">\(T\)</span>). When revenues exceed outlays, the government runs a <strong>budget surplus</strong>. By contrast, <strong>public debt</strong> (sovereign debt) is a <em>stock</em> variable representing the cumulative total of past deficits minus past surpluses at a specific date.</p>
+<p>Economists further separate the observed budget balance into two components:</p>
+<ul>
+<li><strong>Cyclical Deficit:</strong> The temporary portion of a deficit caused automatically by the business cycle when real GDP falls below potential (<span class="math inline">\(Y &lt; Y_p\)</span>), depressing tax receipts and raising transfer payments.</li>
+<li><strong>Structural (Cyclically Adjusted) Deficit:</strong> The underlying deficit that would persist even if the economy were operating at full-employment potential output (<span class="math inline">\(Y = Y_p\)</span>).</li>
+</ul>
+<p>Evaluating fiscal sustainability requires comparing public debt not to a household credit card, but to the economy’s capacity to service interest payments—measured by the <strong>Debt-to-GDP ratio (<span class="math inline">\(B_t / Y_t\)</span>)</strong>. Just as a household’s mortgage burden depends on its annual income, a nation’s debt burden depends on the size and growth rate of its nominal GDP.</p>
+</section>
+<section id="visual-representation-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="visual-representation-3">Visual Representation</h3>
+<p>Table~<span class="math inline">\(\ref{tab:deficit-decomposition}\)</span> illustrates how the cyclical and structural components of the federal budget behave across phases of the business cycle.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>FRED Data: Monitoring Federal Deficits and Debt-to-GDP
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Two primary St.&nbsp;Louis Fed (FRED) series allow students to track U.S. fiscal dynamics rigorously:</p>
+<ul>
+<li><strong> (Federal Surplus or Deficit [-]):</strong> Reports the annual unified federal budget balance in millions of dollars by fiscal year (not seasonally adjusted), where negative values indicate deficits. Because is an annual fiscal-year flow, students must never divide it by a single quarter’s GDP without annualizing or matching time periods.</li>
+<li><strong> (Federal Debt: Total Public Debt as Percent of Gross Domestic Product):</strong> Reports quarterly gross federal debt divided by annualized nominal GDP (percent, seasonally adjusted, available from 1966 onward). Alongside historical OMB budget records from the immediate postwar period, these data show how the U.S. Debt-to-GDP ratio fell steadily from over <span class="math inline">\(118\%\)</span> at the end of World War II in 1946 to roughly <span class="math inline">\(31\%\)</span> in 1981—even though nominal dollar debt rose—because nominal GDP growth outpaced debt accumulation.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="mathematical-foundation-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematical-foundation-3">Mathematical Foundation</h3>
+<p>Let <span class="math inline">\(B_{t-1}\)</span> denote public debt at the end of year <span class="math inline">\(t-1\)</span>, <span class="math inline">\(r\)</span> the nominal interest rate on government bonds, <span class="math inline">\(G_t + TR_t\)</span> non-interest (primary) outlays, and <span class="math inline">\(T_t\)</span> tax revenues. The government’s intertemporal budget constraint is:</p>
+<p><span class="math display">\[
+\text{Total Deficit}_t = \underbrace{(G_t + TR_t - T_t)}_{\text{Primary Deficit } (D_t)} + \underbrace{r B_{t-1}}_{\text{Interest Outlays}}
+\]</span></p>
+<p>End-of-year debt evolves according to <span class="math inline">\(B_t = (1 + r)B_{t-1} + D_t\)</span>. Dividing both sides by nominal GDP <span class="math inline">\(Y_t = (1 + g)Y_{t-1}\)</span> (where <span class="math inline">\(g\)</span> is the nominal GDP growth rate) yields the law of motion for the Debt-to-GDP ratio <span class="math inline">\(b_t = B_t / Y_t\)</span>:</p>
+<p><span class="math display">\[
+b_t = \left(\frac{1 + r}{1 + g}\right) b_{t-1} + d_t \implies \Delta b_t \approx (r - g)b_{t-1} + d_t
+\]</span></p>
+<p>where <span class="math inline">\(d_t = D_t / Y_t\)</span> is the primary deficit as a share of GDP. When <span class="math inline">\(g &gt; r\)</span>, a country can stabilize its Debt-to-GDP ratio (<span class="math inline">\(\Delta b_t = 0\)</span>) even while running a modest primary deficit (<span class="math inline">\(d_t = (g - r)b_{t-1} &gt; 0\)</span>). When <span class="math inline">\(r &gt; g\)</span>, stabilizing the Debt-to-GDP ratio requires running a <strong>primary budget surplus</strong> (<span class="math inline">\(d_t &lt; 0\)</span>).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Clear It Up: Deficit Flow vs.&nbsp;Debt Stock
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Running a smaller budget deficit (for example, shrinking the annual deficit from <span class="math inline">\(\$1.8\text{ trillion}\)</span> to <span class="math inline">\(\$1.4\text{ trillion}\)</span>) does <em>not</em> reduce the national debt. Because the deficit is still positive, the total stock of public debt still increases by <span class="math inline">\(\$1.4\text{ trillion}\)</span>—it simply grows at a slower pace. Public debt falls in dollar terms only when the government runs a <strong>budget surplus</strong>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Work It Out: Stabilizing the Debt-to-GDP Ratio
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose a country enters the year with a Debt-to-GDP ratio of <span class="math inline">\(b_{t-1} = 100\%\)</span> (<span class="math inline">\(1.00\)</span>), faces an average nominal interest rate on public debt of <span class="math inline">\(r = 4.5\%\)</span> (<span class="math inline">\(0.045\)</span>), and experiences nominal GDP growth of <span class="math inline">\(g = 3.0\%\)</span> (<span class="math inline">\(0.030\)</span>).</p>
+<p><strong>Step 1: Compute the interest-growth differential <span class="math inline">\((r - g)\)</span>.</strong></p>
+<p><span class="math display">\[
+r - g = 0.045 - 0.030 = +0.015 \quad (1.5\% \text{ of GDP})
+\]</span></p>
+<p><strong>Step 2: Find the primary budget balance (<span class="math inline">\(d_t\)</span>) required to keep <span class="math inline">\(\Delta b_t = 0\)</span>.</strong> Using the linear approximation <span class="math inline">\(\Delta b_t \approx (r - g)b_{t-1} + d_t = 0\)</span>:</p>
+<p><span class="math display">\[
+0 = (0.015)(1.00) + d_t \implies d_t = -0.015 \quad (-1.5\% \text{ of GDP})
+\]</span></p>
+<p>Because <span class="math inline">\(r &gt; g\)</span>, the government must run a <strong>primary budget surplus of approximately <span class="math inline">\(1.5\%\)</span> of GDP</strong> (collecting <span class="math inline">\(1.5\%\)</span> of GDP more in taxes than it spends on non-interest programs) simply to prevent its Debt-to-GDP ratio from rising above <span class="math inline">\(100\%\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="real-world-application-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="real-world-application-3">Real-World Application</h3>
+<p><strong>Post-WWII De-Leveraging vs.&nbsp;21st-Century Structural Deficits:</strong> Between 1946 and 1974, the U.S. federal government rarely ran large budget surpluses, yet the Debt-to-GDP ratio fell by nearly 85 percentage points because real GDP growth and moderate inflation expanded the denominator (<span class="math inline">\(Y_t\)</span>) faster than the nominal interest rate (<span class="math inline">\(r\)</span>) compounded the numerator (<span class="math inline">\(B_t\)</span>). In contrast, when an aging population drives up mandatory entitlement outlays (Social Security and Medicare) while interest rates exceed the economy’s long-run growth rate (<span class="math inline">\(r &gt; g\)</span>), structural primary deficits cause the Debt-to-GDP ratio to climb continuously unless tax revenues or spending trajectories are adjusted.</p>
+</section>
+</section>
+<section id="bring-it-home-and-check-your-understanding" class="level2" data-number="10.6">
+<h2 data-number="10.6" class="anchored" data-anchor-id="bring-it-home-and-check-your-understanding"><span class="header-section-number">10.6</span> Bring It Home and Check Your Understanding</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Bring It Home: Designing an Effective Fiscal Toolkit
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Returning to our comparison of the 2009 ARRA and 2020 CARES Act packages, modern macroeconomists view discretionary stimulus and automatic stabilizers as complements rather than substitutes. During a sudden downturn, <strong>automatic stabilizers</strong> (unemployment insurance and progressive taxes) provide immediate, self-terminating support with zero legislative lag. If a recession proves deep and persistent, targeted <strong>discretionary transfers</strong> to liquidity-constrained households deliver rapid demand support, while high-multiplier <strong>public infrastructure investments (<span class="math inline">\(\Delta G\)</span>)</strong> boost both short-run aggregate demand and long-run potential output (<span class="math inline">\(LRAS\)</span>)—provided policymakers pair short-run stimulus with a credible medium-run fiscal framework that keeps the Debt-to-GDP ratio on a sustainable path.</p>
+</div>
+</div>
+<section id="review-problems" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="review-problems">Review Problems</h3>
+<ul>
+<li><strong>Multiplier Comparison:</strong> In a closed economy with lump-sum taxes and <span class="math inline">\(MPC = 0.80\)</span>, compare the horizontal shift in aggregate demand resulting from (a) a <span class="math inline">\(\$50\text{ billion}\)</span> increase in government purchases, (b) a <span class="math inline">\(\$50\text{ billion}\)</span> cut in lump-sum taxes, and (c) a <span class="math inline">\(\$50\text{ billion}\)</span> increase in government purchases financed entirely by a <span class="math inline">\(\$50\text{ billion}\)</span> lump-sum tax increase.</li>
+<li><strong>Automatic Stabilizers:</strong> Explain both intuitively and algebraically why raising the marginal income tax rate <span class="math inline">\(t\)</span> from <span class="math inline">\(0\)</span> to <span class="math inline">\(0.20\)</span> reduces the amplitude of business-cycle fluctuations when <span class="math inline">\(c = 0.75\)</span>.</li>
+<li><strong>AD–AS vs.&nbsp;Keynesian Cross:</strong> Suppose <span class="math inline">\(MPC = 0.75\)</span> and government purchases rise by <span class="math inline">\(\Delta G = +\$100\text{ billion}\)</span>. Explain why the short-run increase in equilibrium real GDP (<span class="math inline">\(\Delta Y_{\text{SR}}\)</span>) is less than <span class="math inline">\(\$400\text{ billion}\)</span> when the <span class="math inline">\(SRAS\)</span> curve slopes upward.</li>
+<li><strong>Deficits, Debt, and FRED Data:</strong> Suppose the U.S. federal deficit narrows from <span class="math inline">\(-\$1{,}700\text{ billion}\)</span> in FY 2025 to <span class="math inline">\(-\$1{,}300\text{ billion}\)</span> in FY 2026. Does total public debt rise or fall in FY 2026? Why must an analyst align fiscal-year dates when comparing to quarterly GDP?</li>
+<li><strong>Debt-to-GDP Dynamics:</strong> An economy has a Debt-to-GDP ratio of <span class="math inline">\(80\%\)</span>, a nominal interest rate on debt of <span class="math inline">\(r = 3.5\%\)</span>, and a nominal GDP growth rate of <span class="math inline">\(g = 5.0\%\)</span>. Can this government run a primary budget deficit while still reducing its Debt-to-GDP ratio? Calculate the maximum primary deficit (as a <span class="math inline">\(\%\)</span> of GDP) consistent with a non-increasing Debt-to-GDP ratio.</li>
+</ul>
+</section>
+<section id="worked-solutions" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="worked-solutions">Worked Solutions</h3>
+<ul>
+<li><strong>Multiplier Comparison:</strong> With <span class="math inline">\(c = 0.80\)</span>:</li>
+</ul>
+<ol type="a">
+<li><span class="math inline">\(k_G = \frac{1}{1 - 0.80} = 5 \implies \Delta AD = 5 \times \$50\text{B} = +\$250\text{ billion}\)</span>.</li>
+<li><span class="math inline">\(k_T = -\frac{0.80}{1 - 0.80} = -4 \implies \Delta AD = (-4) \times (-\$50\text{B}) = +\$200\text{ billion}\)</span>.</li>
+<li><span class="math inline">\(k_{BB} = k_G + k_T = 5 - 4 = 1 \implies \Delta AD = 1 \times \$50\text{B} = +\$50\text{ billion}\)</span>.</li>
+</ol>
+<ul>
+<li><strong>Automatic Stabilizers:</strong> Intuitively, a proportional income tax siphons off a fraction <span class="math inline">\(t\)</span> of every dollar earned during an expansion and cushions disposable income losses by fraction <span class="math inline">\(t\)</span> during a downturn, weakening the induced consumption feedback loop. Algebraically, with <span class="math inline">\(c = 0.75\)</span>, the lump-sum multiplier is <span class="math inline">\(k_G = \frac{1}{1 - 0.75} = 4.0\)</span>, whereas with <span class="math inline">\(t = 0.20\)</span> the multiplier falls to <span class="math inline">\(k_G^{\text{auto}} = \frac{1}{1 - 0.75(1 - 0.20)} = \frac{1}{1 - 0.60} = 2.5\)</span>.</li>
+<li><strong>AD–AS vs.&nbsp;Keynesian Cross:</strong> The simple multiplier <span class="math inline">\(k_G = \frac{1}{1 - 0.75} = 4\)</span> shifts the <span class="math inline">\(AD\)</span> curve horizontally to the right by <span class="math inline">\(\$400\text{ billion}\)</span> at the initial price level <span class="math inline">\(P_1\)</span>. However, along an upward-sloping <span class="math inline">\(SRAS\)</span> curve, higher demand pushes up the price level (<span class="math inline">\(P_1 \rightarrow P_2\)</span>), which reduces real household wealth, raises interest rates, and reduces net exports, causing an upward-left movement along the new <span class="math inline">\(AD_2\)</span> curve so <span class="math inline">\(\Delta Y_{\text{SR}} &lt; \$400\text{ billion}\)</span>.</li>
+<li><strong>Deficits, Debt, and FRED Data:</strong> Total public debt <strong>rises</strong> by <span class="math inline">\(\$1{,}300\text{ billion}\)</span> because a deficit of <span class="math inline">\(-\$1{,}300\text{ billion}\)</span> still represents net new borrowing (debt falls only when there is a budget surplus). When using , analysts must match the federal fiscal year (October 1–September 30) rather than comparing an annual fiscal-year flow directly against a single calendar quarter’s GDP.</li>
+<li><strong>Debt-to-GDP Dynamics:</strong> Yes. Because <span class="math inline">\(g = 5.0\% &gt; r = 3.5\%\)</span>, nominal GDP growth outpaces interest compounding. Using <span class="math inline">\(\Delta b_t \approx (r - g)b_{t-1} + d_t \le 0\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+(0.035 - 0.050)(0.80) + d_t \le 0 \implies -0.012 + d_t \le 0 \implies d_t \le +0.012 \quad (1.2\% \text{ of GDP})
+\]</span></p>
+<p>Any primary deficit strictly below <span class="math inline">\(1.2\%\)</span> of GDP will reduce the Debt-to-GDP ratio.</p>
+
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const toggle = window.document.createElement('button');
+      toggle.type = "button";
+      toggle.setAttribute("role", "switch");
+      toggle.setAttribute("aria-checked", "false");
+      toggle.classList.add('top-right');
+      toggle.classList.add('quarto-color-scheme-toggle');
+      toggle.setAttribute("aria-label", "Toggle dark mode");
+      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      toggle.appendChild(i);
+      // Put the toggle in a landmark of its own, so that landmark navigation
+      // can reach it.
+      //
+      // The container is always a fresh direct child of body, and the toggle is
+      // never moved into page furniture that the theme or the author controls.
+      // The toggle is positioned against the page, so any ancestor that
+      // establishes a containing block captures it: a positioned element or a
+      // grid for position: absolute, and transform, filter, will-change or
+      // contain for position: fixed. A direct child of body has none of these
+      // to inherit, and the shift when one appears is silent and visual.
+      //
+      // ARIA says a document should have at most one banner, and axe reports a
+      // duplicate whether or not the banners carry distinct labels. So use a
+      // header when the page has no banner yet, and a named region otherwise.
+      //
+      // A header is a banner wherever it sits, unless it is inside sectioning
+      // content, so this cannot just look at the children of body: a custom
+      // page layout wraps the title block header in a plain div. An explicit
+      // role="banner" always counts.
+      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
+      const hasBanner = Array.from(
+        window.document.querySelectorAll('header:not([role]), [role="banner"]')
+      ).some(function(el) {
+        return el.hasAttribute("role") || el.closest(sectioning) === null;
+      });
+      const container = window.document.createElement(hasBanner ? "div" : "header");
+      if (hasBanner) {
+        container.setAttribute("role", "region");
+        container.setAttribute("aria-label", "Toggle dark mode");
+      }
+      container.classList.add('quarto-color-scheme-toggle-container');
+      container.appendChild(toggle);
+      window.document.body.appendChild(container);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="./ch09_aggregate_demand_aggregate_supply.html" class="pagination-link" aria-label="Chapter 9: Aggregate Demand and Aggregate Supply (AD--AS)">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Chapter 9: Aggregate Demand and Aggregate Supply (AD–AS)</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ch11_money_banking_fed.html" class="pagination-link" aria-label="Ch11 Money Banking Fed">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Ch11 Money Banking Fed</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
