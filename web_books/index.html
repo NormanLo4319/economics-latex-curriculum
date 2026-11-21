@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Principles of Economics — Open Web-Books</title>
+  <meta name="description" content="Principles of Microeconomics and Principles of Macroeconomics: An Institutional and Social Science Perspective by Norman Lo.">
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 4px 10px -6px rgba(15, 23, 42, 0.06);
+      --micro: #0369a1;
+      --micro-hover: #075985;
+      --micro-soft: #e0f2fe;
+      --macro: #0f766e;
+      --macro-hover: #115e59;
+      --macro-soft: #ccfbf1;
+      --pill-bg: #f1f5f9;
+      --pill-text: #334155;
+    }
+
+    [data-theme="dark"] {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --border: #334155;
+      --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.45);
+      --micro: #38bdf8;
+      --micro-hover: #7dd3fc;
+      --micro-soft: rgba(56, 189, 248, 0.14);
+      --macro: #2dd4bf;
+      --macro-hover: #5eead4;
+      --macro-soft: rgba(45, 212, 191, 0.14);
+      --pill-bg: #334155;
+      --pill-text: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1rem 1.5rem 0;
+      max-width: 1040px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .theme-toggle {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      padding: 0.45rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: border-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .theme-toggle:hover {
+      border-color: var(--muted);
+    }
+
+    main {
+      flex: 1;
+      max-width: 1040px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3.5rem;
+    }
+
+    header.hero {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 2.75rem;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: var(--pill-bg);
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(1.9rem, 3.6vw, 2.7rem);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 0;
+      font-size: 1.05rem;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.85rem;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 0.25rem 0.65rem;
+      border-radius: 999px;
+      margin-bottom: 0.9rem;
+    }
+
+    .badge.micro {
+      background: var(--micro-soft);
+      color: var(--micro);
+    }
+
+    .badge.macro {
+      background: var(--macro-soft);
+      color: var(--macro);
+    }
+
+    .card h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.45rem;
+      line-height: 1.25;
+    }
+
+    .card p {
+      margin: 0 0 1.15rem;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .parts {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.5rem;
+      border-top: 1px solid var(--border);
+      padding-top: 0.9rem;
+    }
+
+    .parts li {
+      font-size: 0.88rem;
+      color: var(--muted);
+      padding: 0.22rem 0;
+    }
+
+    .parts li strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .cta {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      padding: 0.8rem 1.25rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.98rem;
+      color: #ffffff;
+      background: var(--micro);
+      transition: background-color 0.15s ease, opacity 0.15s ease;
+    }
+
+    [data-theme="dark"] .cta {
+      color: #0f172a;
+    }
+
+    .cta:hover {
+      background: var(--micro-hover);
+    }
+
+    .cta.macro {
+      background: var(--macro);
+    }
+
+    .cta.macro:hover {
+      background: var(--macro-hover);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.86rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    kbd {
+      background: var(--pill-bg);
+      color: var(--pill-text);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.08rem 0.38rem;
+      font-size: 0.8rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">
+      <span id="theme-icon" aria-hidden="true">🌙</span>
+      <span id="theme-label">Dark mode</span>
+    </button>
+  </div>
+
+  <main>
+    <header class="hero">
+      <span class="eyebrow">Open Economics Web-Books</span>
+      <h1>Principles of Economics</h1>
+      <p class="subtitle">
+        An Institutional and Social Science Perspective &mdash; interactive online textbooks with vector economic diagrams, worked quantitative examples, and full-text search.
+      </p>
+    </header>
+
+    <section class="grid" aria-label="Available Textbooks">
+      <article class="card">
+        <div>
+          <span class="badge micro">14 Chapters &middot; 3 Parts</span>
+          <h2>Principles of Microeconomics</h2>
+          <p>
+            Analytical and empirical foundations of individual choice, price theory, market structures, welfare analysis, market failures, and international trade.
+          </p>
+          <ul class="parts">
+            <li><strong>Part I:</strong> Foundations of Market Analysis (Ch. 1&ndash;5)</li>
+            <li><strong>Part II:</strong> Firm Behavior &amp; Market Structures (Ch. 6&ndash;9)</li>
+            <li><strong>Part III:</strong> Market Failures &amp; Factor Markets (Ch. 10&ndash;14)</li>
+          </ul>
+        </div>
+        <a class="cta" href="./micro/index.html">Read Microeconomics &rarr;</a>
+      </article>
+
+      <article class="card">
+        <div>
+          <span class="badge macro">12 Chapters &middot; 3 Parts</span>
+          <h2>Principles of Macroeconomics</h2>
+          <p>
+            Aggregate output, inflation, unemployment, financial systems, business cycles, fiscal policy, and modern monetary policy under the ample-reserves framework.
+          </p>
+          <ul class="parts">
+            <li><strong>Part I:</strong> Macroeconomic Foundations &amp; Measurement (Ch. 1&ndash;6)</li>
+            <li><strong>Part II:</strong> Long-Run Growth &amp; Financial Systems (Ch. 7)</li>
+            <li><strong>Part III:</strong> Short-Run Fluctuations &amp; Stabilization (Ch. 8&ndash;12)</li>
+          </ul>
+        </div>
+        <a class="cta macro" href="./macro/index.html">Read Macroeconomics &rarr;</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    By Norman Lo &middot; 2026 &middot; Tip: Inside either book, press <kbd>s</kbd> to search across all chapters.
+  </footer>
+
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const btn = document.getElementById("theme-toggle");
+      const icon = document.getElementById("theme-icon");
+      const label = document.getElementById("theme-label");
+
+      function applyTheme(theme) {
+        root.setAttribute("data-theme", theme);
+        const isDark = theme === "dark";
+        icon.textContent = isDark ? "☀️" : "🌙";
+        label.textContent = isDark ? "Light mode" : "Dark mode";
+      }
+
+      const saved = localStorage.getItem("econ-webbook-theme");
+      const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      applyTheme(saved || (prefersDark ? "dark" : "light"));
+
+      btn.addEventListener("click", function () {
+        const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        localStorage.setItem("econ-webbook-theme", next);
+        applyTheme(next);
+      });
+    })();
+  </script>
+</body>
+</html>

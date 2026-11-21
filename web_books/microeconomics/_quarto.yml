@@ -12,6 +12,13 @@ book:
     style: "docked"
     search: true
     collapse-level: 1
+    tools:
+      - icon: house
+        text: "All Web-Books"
+        href: ../index.html
+      - icon: book
+        text: "Macroeconomics"
+        href: ../macro/index.html
   page-navigation: true
   chapters:
     - index.qmd
